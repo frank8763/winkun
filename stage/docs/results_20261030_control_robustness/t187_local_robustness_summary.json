@@ -1,0 +1,95 @@
+{
+  "state": "COMPLETE",
+  "training": {
+    "fixed_source": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t187_local_robustness/fixed_source/checkpoint_latest.pt",
+      "sha256": "dfeed77724ee1bc921d28d3dc9ac06c5d9642fdf6ac66da53d61c03f4ae0d875",
+      "physics_steps": 307547,
+      "actor_updates": 116,
+      "training_episodes": 64,
+      "training_success": 58,
+      "training_collisions": 6
+    },
+    "randomized_reset": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t187_local_robustness/randomized_reset/checkpoint_latest.pt",
+      "sha256": "b131a94f590af8bc4e6e3294e8c9940c1d68cda606d8c10404ae2020189ac11d",
+      "physics_steps": 330179,
+      "actor_updates": 120,
+      "training_episodes": 64,
+      "training_success": 55,
+      "training_collisions": 9
+    }
+  },
+  "scores": {
+    "initial_embedding": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "development_grid": {
+        "safe_success": 48,
+        "n": 54,
+        "collisions": 6
+      },
+      "fresh_holdout": {
+        "safe_success": 21,
+        "n": 24,
+        "collisions": 3
+      }
+    },
+    "fixed_source": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "development_grid": {
+        "safe_success": 54,
+        "n": 54,
+        "collisions": 0
+      },
+      "fresh_holdout": {
+        "safe_success": 24,
+        "n": 24,
+        "collisions": 0
+      }
+    },
+    "randomized_reset": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "development_grid": {
+        "safe_success": 53,
+        "n": 54,
+        "collisions": 1
+      },
+      "fresh_holdout": {
+        "safe_success": 24,
+        "n": 24,
+        "collisions": 0
+      }
+    }
+  },
+  "max_cpu_gpu_behavior_logp_error": 3.8623809814453125e-05,
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scope": "One paired pilot seed, two full-state near-goal anchors. Only training reset perturbation differs; same parent and PPO objective. Local robustness is not original5m performance. Development grid already consumed in T186; fresh fixed holdout not used for training/selection. No automatic promotion or algorithm superiority claim."
+}

@@ -1,0 +1,481 @@
+{
+  "experiment": "STAGE_T186_EXACT_SUCCESS_STATE_ROBUSTNESS_GATE",
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/checkpoint_latest.pt",
+  "anchors": {
+    "LEFT": {
+      "id": "phase1_side0_draw0",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "course_bin": 1,
+      "reset_task": {
+        "seed_requested": 2029653601,
+        "seed_actual": 2029653601,
+        "distance_m": 1.0725596218501023,
+        "angle_deg": -13.357274353413814,
+        "goal_xy": [
+          1.5750185651952417,
+          -3.676543648434686
+        ],
+        "start_pose": [
+          2.2215503794128546,
+          -2.820751176144986,
+          -1.9846653054486456
+        ],
+        "phase": 1,
+        "canonical5m": false,
+        "reset_only_pose_initialization": true,
+        "final_goal_never_changed_during_episode": true,
+        "signature": "470c762237fb604fcea07401cdaa026c26037a9cd1d0260f70bf2e56a2487b31",
+        "quaternion": [
+          0.5467382112897416,
+          0.0,
+          0.0,
+          -0.8373036058179218
+        ]
+      },
+      "prior_T172_success": true
+    },
+    "RIGHT": {
+      "id": "phase1_side1_draw0",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "course_bin": 1,
+      "reset_task": {
+        "seed_requested": 2029654802,
+        "seed_actual": 2029654802,
+        "distance_m": 1.3277782831531277,
+        "angle_deg": -5.672219466666458,
+        "goal_xy": [
+          5.486694873876159,
+          0.043289980823624674
+        ],
+        "start_pose": [
+          6.448595281008868,
+          0.9585728747810045,
+          -2.2820242379615814
+        ],
+        "phase": 1,
+        "canonical5m": false,
+        "reset_only_pose_initialization": true,
+        "final_goal_never_changed_during_episode": true,
+        "signature": "33ccae798ad29992b9a5b0c89d1f730b21ec1912d5ecc7135d8827b98fa29811",
+        "quaternion": [
+          0.41667464501864926,
+          0.0,
+          0.0,
+          -0.9090556859723076
+        ]
+      },
+      "prior_T172_success": true
+    }
+  },
+  "jobs": [
+    {
+      "id": "LEFT_000",
+      "side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "LEFT_001",
+      "side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "LEFT_002",
+      "side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "LEFT_010",
+      "side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "LEFT_011",
+      "side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "LEFT_012",
+      "side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "LEFT_020",
+      "side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "LEFT_021",
+      "side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "LEFT_022",
+      "side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "LEFT_100",
+      "side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "LEFT_101",
+      "side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "LEFT_102",
+      "side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "LEFT_110",
+      "side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "LEFT_111",
+      "side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "LEFT_112",
+      "side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "LEFT_120",
+      "side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "LEFT_121",
+      "side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "LEFT_122",
+      "side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "LEFT_200",
+      "side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "LEFT_201",
+      "side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "LEFT_202",
+      "side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "LEFT_210",
+      "side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "LEFT_211",
+      "side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "LEFT_212",
+      "side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "LEFT_220",
+      "side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "LEFT_221",
+      "side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "LEFT_222",
+      "side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "RIGHT_000",
+      "side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "RIGHT_001",
+      "side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "RIGHT_002",
+      "side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "RIGHT_010",
+      "side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "RIGHT_011",
+      "side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "RIGHT_012",
+      "side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "RIGHT_020",
+      "side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "RIGHT_021",
+      "side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "RIGHT_022",
+      "side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "RIGHT_100",
+      "side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "RIGHT_101",
+      "side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "RIGHT_102",
+      "side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "RIGHT_110",
+      "side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "RIGHT_111",
+      "side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "RIGHT_112",
+      "side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "RIGHT_120",
+      "side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "RIGHT_121",
+      "side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "RIGHT_122",
+      "side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "RIGHT_200",
+      "side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "RIGHT_201",
+      "side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "RIGHT_202",
+      "side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "RIGHT_210",
+      "side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "RIGHT_211",
+      "side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "RIGHT_212",
+      "side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "RIGHT_220",
+      "side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "RIGHT_221",
+      "side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "RIGHT_222",
+      "side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    }
+  ],
+  "control_hold_steps": 100,
+  "episode_step_cap": 23334,
+  "restore_future_steps": 200,
+  "min_success_per_side": 22,
+  "physics_budget": 1330000,
+  "wall_seconds": 300,
+  "max_run_bytes": 16777216,
+  "optimizer_updates": 0,
+  "contract": "Full native integrationstate+Python attrs/RNG/history snapshot. Independent200step future errors must0, newGOALsource reproduction mandatory. At reset only perturbx/y\u00b1.03m,yaw\u00b12deg, all54casesdeclared. Originalobstacles andfinalgoal unchanged; no planner/waypoints. 22/27safeGOALeachside required before local-region expansion. Failedgate means no automatic curriculum launch. Allnewruns1GiB cap,40GiBminimumfree.",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t186_anchor_robustness/run.py": "e1a3dc7ab554df66e21b6f11ef131dd101d8f9dc99c500f3c41004278bb11c38",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/checkpoint_latest.pt": "9ae6a3160addfd91ea0f81de60abdde2064c0b51ae24028e55eb7c3e2af4fe24",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t183_onpolicy_course/protocol.json": "75ed14c847adf918e5a26eb3da4c4bfcc8879b30ca6748e9e1028e646d12d2b7",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t177_frontier_onpolicy/common.py": "592b49826215b283ea5c5b50e10c7203e443a104981f0b1c3fd98a2799c16e31"
+  }
+}

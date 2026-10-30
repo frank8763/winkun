@@ -1,0 +1,73 @@
+{
+  "state": "COMPLETE",
+  "bounds": [
+    {
+      "model": "T177initial",
+      "checkpoint_sha256": "175acb05a8b0b9571e8438f337a3c8cdec40666aeae5c6e6b0815b00b759348f",
+      "mean_native_action_box_lower": [
+        0.0,
+        -1.0
+      ],
+      "upper": [
+        1.0,
+        1.0
+      ],
+      "minimum_wheel_command_lower_bound": 1.25,
+      "scope": "For fixed saved head parameters and bodyTanh outputs in[-1,1]^2. This is an analytic bound, not an observed minimum or proof head could never learn another range."
+    },
+    {
+      "model": "T177full",
+      "checkpoint_sha256": "1afb26fa6df1eaec41e71ad0438d3e7bcf36d54c36b2b2172f5b2c8dc3f94dd9",
+      "mean_native_action_box_lower": [
+        -0.0028299689292907715,
+        -1.0009307861328125
+      ],
+      "upper": [
+        1.001596212387085,
+        1.0009112358093262
+      ],
+      "minimum_wheel_command_lower_bound": 1.242935088581949,
+      "scope": "For fixed saved head parameters and bodyTanh outputs in[-1,1]^2. This is an analytic bound, not an observed minimum or proof head could never learn another range."
+    },
+    {
+      "model": "T183keep10",
+      "checkpoint_sha256": "9ae6a3160addfd91ea0f81de60abdde2064c0b51ae24028e55eb7c3e2af4fe24",
+      "mean_native_action_box_lower": [
+        -0.0012090206146240234,
+        -1.0004841089248657
+      ],
+      "upper": [
+        0.9984520673751831,
+        0.9990339875221252
+      ],
+      "minimum_wheel_command_lower_bound": 1.2469792756269982,
+      "scope": "For fixed saved head parameters and bodyTanh outputs in[-1,1]^2. This is an analytic bound, not an observed minimum or proof head could never learn another range."
+    }
+  ],
+  "input_states": 4096,
+  "initial_max_native_output_error": 0.0,
+  "zero_wheel_command_representability_checks": [
+    {
+      "sample": 0,
+      "native_throttle": -1.0,
+      "wheel_command": 0.0
+    },
+    {
+      "sample": 2048,
+      "native_throttle": -1.0,
+      "wheel_command": 0.0
+    },
+    {
+      "sample": 4095,
+      "native_throttle": -1.0,
+      "wheel_command": 0.0
+    }
+  ],
+  "direct_head_gradient_norm_for_zero_drive_target": 25.18836212158203,
+  "native_physics_steps": 0,
+  "optimizer_updates": 0,
+  "initial_checkpoint_sha256": "d709bfe89dbca3d8046a2a9f5676079d19ac942eb0b124396b86f3c8447780a3",
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scope": "Architecture/interface audit only. Directhead is internal to one network, zero initialized and unbounded before native action clipping. Shows expressibility and nonzero gradient, not learned stopping, safe braking, 5m success or algorithm novelty."
+}

@@ -1,0 +1,41 @@
+{
+  "experiment": "STAGE_T188_NATIVE_ACTION_HEAD_INTERFACE_FIX_AUDIT",
+  "parent_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/checkpoint_latest.pt",
+  "bound_checkpoints": {
+    "T177initial": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/initial_policy.pt",
+    "T177full": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/full_range/checkpoint_latest.pt",
+    "T183keep10": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/checkpoint_latest.pt"
+  },
+  "anchor_states": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz",
+  "batch_files": [
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/batch_0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/batch_3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/batch_7.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/batch_11.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep1/batch_0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep1/batch_3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep1/batch_7.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep1/batch_11.npz"
+  ],
+  "optimizer_updates": 0,
+  "physics_steps": 0,
+  "max_run_bytes": 16777216,
+  "scope": "Mathematical bound audit and internal featurehead implementation, initialfunctionexact onrecordedstates, zero-drive reachability under diagnosticparameterintervention. No changes to previous policies or interpretation as navigation success. No unvalidatedCritic.",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t188_direct_action_head/policy.py": "a26615dbe29fcf4831a116acbaf9a5594977730050fe974439f81f5f57dd07df",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t188_direct_action_head/audit.py": "fd97dc3956a84bf786347fe156293f7db90a0da46ae934db714f96417f6d2723",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t177_frontier_onpolicy/common.py": "592b49826215b283ea5c5b50e10c7203e443a104981f0b1c3fd98a2799c16e31",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/initial_policy.pt": "175acb05a8b0b9571e8438f337a3c8cdec40666aeae5c6e6b0815b00b759348f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/full_range/checkpoint_latest.pt": "1afb26fa6df1eaec41e71ad0438d3e7bcf36d54c36b2b2172f5b2c8dc3f94dd9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/checkpoint_latest.pt": "9ae6a3160addfd91ea0f81de60abdde2064c0b51ae24028e55eb7c3e2af4fe24",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz": "c124283516a486b9527dacec00e426a5047e0076506504123347dfe736b841da",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/batch_0.npz": "0705cb45494e8744f471c24ebc34399c07022e07fb492f7b7b84004f116cf430",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/batch_3.npz": "b44d2e42b55bebdf0e2145498d2ff1b570fff1b3fc66bf6dd55e3e805f642b27",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/batch_7.npz": "7babce5ca0f0f7a9e6f23d5a57b09aefc49214682ef650a8ab0283c584953947",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/batch_11.npz": "42abdf813b33e2f21db080f599712884932e040825d202d5416b009f30e15f07",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep1/batch_0.npz": "0705cb45494e8744f471c24ebc34399c07022e07fb492f7b7b84004f116cf430",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep1/batch_3.npz": "c4654c0789301b838aa42d9b86142f29bb12a7990540e5298d55afd7febd0c0d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep1/batch_7.npz": "475fe62022c59f9fd9ea72c0a8f615c683c7be15e5aa3650621c8abf89895047",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep1/batch_11.npz": "790b59e20114db320b572797668003ca8eb697c902c67417a21b92a26e7af475"
+  }
+}
