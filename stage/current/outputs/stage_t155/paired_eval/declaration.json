@@ -1,0 +1,50 @@
+{
+  "experiment": "STAGE_T155_SMOOTHED_BC_PAIRED_SCREEN",
+  "models": {
+    "T152_BC": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t152/candidate_actor.pt",
+      "sha256": "1d6348486337d24eeed98f82f493f3700f7b57cb833e3da86e53a37d00e8fd1a"
+    }
+  },
+  "cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "demonstration_task"
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "demonstration_task"
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "other_training_task"
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "hard_training_task"
+    }
+  ],
+  "step_cap": 14000,
+  "wall_limit_seconds": 1200,
+  "source_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t149/paired_eval.py": "7f24f4e6e54b4694f92d15d07ca4d606bad977ccf5684d02f2897da30a396661",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "purpose": "Fixed-window smoothing ablation; same four training tasks; offline smoothed labels are not a success claim",
+  "selection_rule": "one fixed candidate after 1000 updates; all four cases reported",
+  "training_changes": false,
+  "engineering_gate": "4/4 safe success within 28 seconds, then assess additional start/goal cases; never claim generalization from train tasks"
+}

@@ -1,0 +1,128 @@
+{
+  "experiment": "STAGE_T153_FROZEN_3M_REGRESSION_AND_4M_TRANSFER",
+  "models": {
+    "T157_selected": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t157/bias05.pt",
+      "sha256": "b4c10e46ec79d9d984b1d2e9d6e386cae2015d030c36d04405f195c82d58a875"
+    }
+  },
+  "cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "4m_transfer"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "4m_transfer"
+    },
+    {
+      "id": "new3m_2026103071_LEFT",
+      "seed": 2026103071,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new3m_first_evaluation"
+    },
+    {
+      "id": "new3m_2026103071_RIGHT",
+      "seed": 2026103071,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new3m_first_evaluation"
+    },
+    {
+      "id": "new3m_2026103072_LEFT",
+      "seed": 2026103072,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new3m_first_evaluation"
+    },
+    {
+      "id": "new3m_2026103072_RIGHT",
+      "seed": 2026103072,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new3m_first_evaluation"
+    }
+  ],
+  "step_cap": 18667,
+  "wall_limit_seconds": 1800,
+  "source_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_eval.py": "ce1c71d65ca520bb95ca61c7d827630551382e4ca6e323209815bfbc873ad93f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "purpose": "Freeze the policy selected on four training tasks; repeat those 3m tasks, test two 4m transfers, and evaluate four new 3m start-goal tasks. No further parameter selection from these results.",
+  "selection_rule": "selected policy is fixed before any transfer or new-task results",
+  "upstream_gate": {
+    "experiment": "STAGE_T157_POLICY_SEARCH_SELECTION",
+    "selected": "bias05",
+    "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t157/bias05.pt",
+    "sha256": "b4c10e46ec79d9d984b1d2e9d6e386cae2015d030c36d04405f195c82d58a875",
+    "selection_rule": "first offset in ascending order achieving 4/4 safe success within 14000 steps on all four training tasks; zero collisions required",
+    "training_tasks_safe_success": 4,
+    "training_tasks_collision": 0,
+    "training_tasks_n": 4,
+    "independent_generalization_confirmed": false,
+    "td3_resume_compatible": false,
+    "automatic_promotion": false,
+    "neural_policy_only": true
+  },
+  "limits": "3m 28s; 4m 37.334s, scaled by goal distance; physical command range and success radius unchanged",
+  "training": false,
+  "automatic_promotion": false,
+  "new_task_feasibility": "Start/goal collision-free checked; full vehicle reachability not pre-proven."
+}

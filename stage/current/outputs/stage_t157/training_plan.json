@@ -1,0 +1,19 @@
+{
+  "experiment": "STAGE_T157_ONE_PARAMETER_NEURAL_POLICY_SEARCH",
+  "initial_policy": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t156/candidate_actor.pt",
+  "initial_sha256": "2d744e123420427bb6a26ab22d4f929012fe551298d598e8663184e1bcb44ee6",
+  "trainable_parameter": "actor.net.4.bias[0] only, before tanh",
+  "fixed_bias_offsets": [
+    0.5,
+    1.0
+  ],
+  "baseline_offset": 0.0,
+  "objective": "first offset in ascending order achieving 4/4 safe success within 14000 steps on all four training tasks; zero collisions required",
+  "selection_uses_training_tasks": true,
+  "independent_test_claim": false,
+  "inference_action_override": false,
+  "steering_parameters_changed": false,
+  "other_network_parameters_changed": false,
+  "automatic_promotion": false,
+  "reason": "BC has restored 3/4 training tasks; the remaining hard-right is moving safely but too slowly. Optimize one actual neural throttle parameter with simulator feedback."
+}

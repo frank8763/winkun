@@ -1,0 +1,60 @@
+{
+  "experiment": "STAGE_TD3_T42",
+  "parent_sha256": "21501f7c03ddc2cf291f1033daf279820c1c564934189df51fef26670e61c41a",
+  "evaluator_sha256": "a9d5e883b4375d6a3f3abc420bb9567b55a190744fca4061a95560ba70414d03",
+  "archive_sha256": "743c3b3099031a0f4104e2e41af22c12d491a70a6f3d780ca34477463cf9192b",
+  "verified_successes": 2,
+  "total_transitions": 20319,
+  "episode_offsets": [
+    0,
+    10612,
+    20319
+  ],
+  "episodes": [
+    {
+      "task": 1,
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 3.0,
+      "frames": 10612,
+      "success": true,
+      "collision": false,
+      "end": "GOAL",
+      "remaining_m": 0.19999744261980146,
+      "start_xy": [
+        -0.75,
+        0.75
+      ],
+      "goal_xy": [
+        0.6450111391171451,
+        -1.9059261890608115
+      ]
+    },
+    {
+      "task": 4,
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "distance_m": 3.0,
+      "frames": 9707,
+      "success": true,
+      "collision": false,
+      "end": "GOAL",
+      "remaining_m": 0.19973725400780307,
+      "start_xy": [
+        1.75,
+        -4.0
+      ],
+      "goal_xy": [
+        4.31093776207436,
+        -5.56256128800811
+      ]
+    }
+  ],
+  "training": false,
+  "raw_actor_actions": true,
+  "reward_semantics_review_required": true,
+  "old_validation_scenes_now_training_eligible": true,
+  "model_promoted": false
+}

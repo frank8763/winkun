@@ -1,0 +1,86 @@
+{
+  "experiment": "STAGE_T149_ACTUAL_ACTION_INTERFACE",
+  "training": false,
+  "environment_class": "<class 'training.e2e_phase10_lidar_v7_curriculum.phase10_stage1a_dense_env.Phase10Stage1ADenseEnv'>",
+  "sources": {
+    "policy_to_commands": {
+      "file": "/home/linghu/catkin_ws/src/mk-mini/training/e2e_phase10_lidar_v7_curriculum/phase10_strict_mujoco_env.py",
+      "source": "    def _policy_to_commands(\n        self,\n        action: np.ndarray,\n    ) -> tuple[float, float, float, float]:\n        action = np.clip(\n            np.asarray(action, dtype=np.float32).reshape(2),\n            -1.0,\n            1.0,\n        )\n\n        # Squared mapping preserves the full speed range while giving the\n        # policy much finer low-speed control near obstacles and the goal.\n        raw_speed_ratio = 0.5 * (float(action[0]) + 1.0)\n        speed_ratio = raw_speed_ratio * raw_speed_ratio\n        wheel = speed_ratio * self.max_wheel\n        steer = float(action[1]) * self.max_steer\n\n        # Logging only. These values never update qpos/qvel.\n        command_v = self.speed_gain * wheel\n        command_w = (\n            command_v\n            / max(self.wheelbase, 1.0e-3)\n            * math.tan(steer)\n        )\n\n        return (\n            float(steer),\n            float(wheel),\n            float(command_v),\n            float(command_w),\n        )\n"
+    },
+    "native_step_checked": {
+      "file": "/home/linghu/stage_daad_g4h_multibranch_night_v1/runner/native_env.py",
+      "source": "def step_checked(env,action):\n    import mujoco\n    from training.e2e_phase10_lidar_v7_curriculum.stage9_runtime_fullplant_fix_v5_2 import get_last_step_record\n    a=np.asarray(action,dtype=np.float32).reshape(2)\n    if not np.isfinite(a).all() or np.any(np.abs(a)>1.00001):raise RuntimeError('BAD_STAGE_ACTION')\n    obs,reward,term,trunc,info=env.step(a)\n    ob=np.asarray(obs,dtype=np.float32).reshape(-1)\n    if ob.shape!=(112,) or not np.isfinite(ob).all() or not math.isfinite(float(reward)):\n        raise RuntimeError('NATIVE_STEP_NONFINITE')\n    for key in ('goal_dist','collision','reach_goal'):\n        if key not in info:raise RuntimeError('MISSING_NATIVE_EVENT:'+key)\n    distance=float(info['goal_dist']);collision=bool(info['collision']);goal=bool(info['reach_goal'])\n    if not math.isfinite(distance) or distance<0:raise RuntimeError('BAD_GOAL_DISTANCE')\n    if goal and collision:raise RuntimeError('GOAL_AND_CONTACT_SAME_STEP')\n    if (goal or collision) and not term:raise RuntimeError('EVENT_MUST_TERMINATE')\n    # Preserve dynamic actuation witness: real MuJoCo steps, not a qpos kinematic override.\n    record=get_last_step_record(env.data)\n    if not record or int(record.get('physics_calls',0))<1:\n        raise RuntimeError('ACKERMANN_FULLPLANT_STEP_NOT_CONFIRMED')\n    return ob,float(reward),bool(term),bool(trunc),dict(info)\n"
+    }
+  },
+  "frame_skip": 1,
+  "physics_dt": 0.002,
+  "commands": [
+    {
+      "actor_raw": -1.0,
+      "trainer_action": [
+        0.0,
+        0.0
+      ],
+      "steer_rad": 0.0,
+      "wheel_command": 1.25,
+      "command_v": 0.0375,
+      "command_w": 0.0
+    },
+    {
+      "actor_raw": -0.5,
+      "trainer_action": [
+        0.25,
+        0.0
+      ],
+      "steer_rad": 0.0,
+      "wheel_command": 1.953125,
+      "command_v": 0.05859375,
+      "command_w": 0.0
+    },
+    {
+      "actor_raw": 0.0,
+      "trainer_action": [
+        0.5,
+        0.0
+      ],
+      "steer_rad": 0.0,
+      "wheel_command": 2.8125,
+      "command_v": 0.08437499999999999,
+      "command_w": 0.0
+    },
+    {
+      "actor_raw": 0.5,
+      "trainer_action": [
+        0.75,
+        0.0
+      ],
+      "steer_rad": 0.0,
+      "wheel_command": 3.828125,
+      "command_v": 0.11484375,
+      "command_w": 0.0
+    },
+    {
+      "actor_raw": 1.0,
+      "trainer_action": [
+        1.0,
+        0.0
+      ],
+      "steer_rad": 0.0,
+      "wheel_command": 5.0,
+      "command_v": 0.15,
+      "command_w": 0.0
+    }
+  ],
+  "one_native_step_at_minimum": {
+    "elapsed_s": 0.002,
+    "info": {
+      "speed_ratio": 0.25,
+      "command_v": 0.0375,
+      "command_w": 0.0,
+      "wheel": 1.25,
+      "steer": 0.0
+    },
+    "terminated": false,
+    "truncated": false
+  }
+}

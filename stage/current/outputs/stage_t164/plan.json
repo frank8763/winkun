@@ -1,0 +1,30 @@
+{
+  "experiment": "STAGE_T164_PAIRED_PHYSICAL_DISCOUNT_PILOT",
+  "arms": {
+    "gamma099": {
+      "directory": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t164/gamma099",
+      "gamma": 0.99,
+      "plan_sha256": "aa429cc7b9418ab394edb43188b2b23e6e1faff7818acb6c391966b35f2f2c88"
+    },
+    "gamma2s": {
+      "directory": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t164/gamma2s",
+      "gamma": 0.999000499833375,
+      "plan_sha256": "c707f416d464dcc50c46551a9738c7e7f44e9393ffe91a0686a8ef161d0de895"
+    }
+  },
+  "training_seeds": [
+    2026103064
+  ],
+  "new_frames_per_arm": 256000,
+  "total_new_physics_frames": 512000,
+  "maximum_training_wall_seconds_per_arm": 2400,
+  "automatic_promotion": false,
+  "scientific_novelty_claim": false,
+  "phase_isolation": true,
+  "parent_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t161/episode_011.pt",
+  "parent_sha256": "d62e94c060449a0ca2ed94db3748532703f54e071a2c14d7ad3bb73ea4dba7ee",
+  "selection": "Both final budget checkpoints, never intermediate checkpoint selection",
+  "purpose": "Separate larger 5m exposure from gamma adjustment; both arms share the increased 5m exposure",
+  "retention": "fixed T161 targets on six old task observation banks; no inference teacher/routing",
+  "evaluation": "all eight training tasks; not blind or cross-scene generalization"
+}

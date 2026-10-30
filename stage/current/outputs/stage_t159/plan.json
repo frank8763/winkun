@@ -1,0 +1,94 @@
+{
+  "experiment": "STAGE_T159_SINGLE_NETWORK_3M_4M_CONSOLIDATION",
+  "teachers": {
+    "T157": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t157/bias05.pt",
+      "sha256": "b4c10e46ec79d9d984b1d2e9d6e386cae2015d030c36d04405f195c82d58a875"
+    },
+    "T158": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t158/episode_006.pt",
+      "sha256": "4aeef71556328b6a38ce889aefa07f5c292f2d45ba6ba25cf399d525ade14497"
+    }
+  },
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t159/consolidate.py": "2f9c23c6f72a99b91ab98b9a72515ab5a459992254a7ddd0f473e1179ac7561c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t157/bias05.pt": "b4c10e46ec79d9d984b1d2e9d6e386cae2015d030c36d04405f195c82d58a875",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t158/episode_006.pt": "4aeef71556328b6a38ce889aefa07f5c292f2d45ba6ba25cf399d525ade14497"
+  },
+  "tasks": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "teacher": "T157"
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "teacher": "T157"
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "teacher": "T157"
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "teacher": "T157"
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "4m_transfer",
+      "teacher": "T158"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "4m_transfer",
+      "teacher": "T157"
+    }
+  ],
+  "seed": 2026103059,
+  "updates": 3000,
+  "batch_size": 384,
+  "samples_per_task": 64,
+  "learning_rate": 3e-05,
+  "selection_rule": "one final checkpoint at fixed update 3000; no best-of-checkpoint selection",
+  "inference": "one 112-input/2-output neural Actor, no teacher routing, lookup or action override",
+  "study_type": "engineering policy consolidation using own neural successes; training tasks are not independent validation",
+  "reference": "https://arxiv.org/abs/1511.06295",
+  "reference_limit": "continuous-action supervised policy consolidation, not reproduction of the original DQN/logit loss",
+  "automatic_promotion": false,
+  "gate": "all four 3m and both 4m tasks safe within unchanged limits; otherwise retain separate historical incumbents and report failure"
+}

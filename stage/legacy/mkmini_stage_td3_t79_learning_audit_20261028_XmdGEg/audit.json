@@ -1,0 +1,269 @@
+{
+  "experiment": "T79",
+  "purpose": "TD3 learning mechanism diagnosis",
+  "model": "T77",
+  "native_cases": [
+    {
+      "task": 1,
+      "model": "T77",
+      "checkpoint_sha256": "2e1d158520eb5c112b82a96b058d86b66a72d542ff33a7541faeae2d8a619ff4",
+      "requested_seed": 2029653601,
+      "actual_seed": 2029653601,
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "start_xy": [
+        -0.75,
+        0.75
+      ],
+      "goal_xy": [
+        0.6450111391171451,
+        -1.9059261890608115
+      ],
+      "frames": 10500,
+      "closest_m": 0.19994533433751804,
+      "remaining_m": 0.19994533433751804,
+      "success": true,
+      "collision": false,
+      "end": "GOAL",
+      "danger_frames": 4815,
+      "danger_mean_throttle": 0.9900684728615009,
+      "training": false,
+      "action_override": false
+    },
+    {
+      "task": 2,
+      "model": "T77",
+      "checkpoint_sha256": "2e1d158520eb5c112b82a96b058d86b66a72d542ff33a7541faeae2d8a619ff4",
+      "requested_seed": 2029653602,
+      "actual_seed": 2029653602,
+      "angle_deg": 13.6,
+      "distance_m": 3.0,
+      "start_xy": [
+        1.75,
+        -4.0
+      ],
+      "goal_xy": [
+        4.31093776207436,
+        -5.56256128800811
+      ],
+      "frames": 9791,
+      "closest_m": 0.19996486526708127,
+      "remaining_m": 0.19996486526708127,
+      "success": true,
+      "collision": false,
+      "end": "GOAL",
+      "danger_frames": 0,
+      "danger_mean_throttle": null,
+      "training": false,
+      "action_override": false
+    },
+    {
+      "task": 3,
+      "model": "T77",
+      "checkpoint_sha256": "2e1d158520eb5c112b82a96b058d86b66a72d542ff33a7541faeae2d8a619ff4",
+      "requested_seed": 2029654801,
+      "actual_seed": 2029654801,
+      "angle_deg": -12.5,
+      "distance_m": 3.0,
+      "start_xy": [
+        1.75,
+        -4.0
+      ],
+      "goal_xy": [
+        3.3623608142541768,
+        -6.529879958546968
+      ],
+      "frames": 14000,
+      "closest_m": 0.7956808909713936,
+      "remaining_m": 0.7956808909713936,
+      "success": false,
+      "collision": false,
+      "end": "TRUNCATED",
+      "danger_frames": 0,
+      "danger_mean_throttle": null,
+      "training": false,
+      "action_override": false
+    },
+    {
+      "task": 4,
+      "model": "T77",
+      "checkpoint_sha256": "2e1d158520eb5c112b82a96b058d86b66a72d542ff33a7541faeae2d8a619ff4",
+      "requested_seed": 2029654802,
+      "actual_seed": 2029654802,
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "start_xy": [
+        1.0,
+        2.25
+      ],
+      "goal_xy": [
+        3.6920169243256953,
+        0.9259739884941749
+      ],
+      "frames": 12226,
+      "closest_m": 1.6800101571368935,
+      "remaining_m": 1.6800101571368935,
+      "success": false,
+      "collision": true,
+      "end": "CONTACT",
+      "danger_frames": 5476,
+      "danger_mean_throttle": 0.18957805555991397,
+      "training": false,
+      "action_override": false
+    }
+  ],
+  "source_audit": {
+    "/home/linghu/mkmini_stage_td3_t71_actor_ablation_20261028_dE1arY/T71B/train.py": {
+      "sha256": "19a03f58bba9b7122b1eb17c1f9806f9e00b75a0acc058a0a7af3eaaac410763",
+      "ast_parse_pass": true,
+      "keyword_lines": {
+        "actor_loss": [
+          1158,
+          1161
+        ],
+        "critic_loss": [
+          1153
+        ],
+        "behavior.clon": [],
+        "\\bbc_loss\\b": [],
+        "\\bbc_coef": [],
+        "anchor": [],
+        "steer.*hinge": [],
+        "actor_lr": [
+          52,
+          163,
+          247,
+          659
+        ],
+        "replay.*sample": [],
+        "replay.*capacity": [],
+        "maxlen": [
+          554,
+          632
+        ],
+        "buffer_size": [],
+        "goal_pairs": [
+          166,
+          547
+        ],
+        "reward\\s*=": [
+          858,
+          862
+        ],
+        "_t77_gate": [],
+        "_t77_bonus": [],
+        "TRAIN_COUNTER": [],
+        "max_steps": [
+          706,
+          708,
+          711
+        ]
+      }
+    },
+    "/home/linghu/mkmini_stage_td3_t77_goal_recovery_20261028_AMyCJl/train.py": {
+      "sha256": "146cd006d8f5fef82d0ecf711bf18dac40618f74084d3f7fdd8708962e689369",
+      "ast_parse_pass": true,
+      "keyword_lines": {
+        "actor_loss": [
+          1235,
+          1238
+        ],
+        "critic_loss": [
+          1230
+        ],
+        "behavior.clon": [],
+        "\\bbc_loss\\b": [],
+        "\\bbc_coef": [],
+        "anchor": [],
+        "steer.*hinge": [],
+        "actor_lr": [
+          52,
+          163,
+          247,
+          659
+        ],
+        "replay.*sample": [],
+        "replay.*capacity": [],
+        "maxlen": [
+          554,
+          632
+        ],
+        "buffer_size": [],
+        "goal_pairs": [
+          166,
+          547
+        ],
+        "reward\\s*=": [
+          859,
+          863,
+          904
+        ],
+        "_t77_gate": [
+          884,
+          900,
+          918
+        ],
+        "_t77_bonus": [
+          898,
+          905,
+          936
+        ],
+        "TRAIN_COUNTER": [],
+        "max_steps": [
+          706,
+          708,
+          711
+        ]
+      }
+    },
+    "/home/linghu/mkmini_stage_td3_t77_goal_recovery_20261028_AMyCJl/td3_core_goal_contrast.py": {
+      "sha256": "c7e06605579a8dec7d0bd95033ae4379975833968fe69968e7294396e9b21cdc",
+      "ast_parse_pass": true,
+      "keyword_lines": {
+        "actor_loss": [
+          165,
+          172,
+          184,
+          193,
+          291,
+          417,
+          418,
+          433,
+          439,
+          440,
+          471
+        ],
+        "critic_loss": [
+          154,
+          160,
+          468,
+          469
+        ],
+        "behavior.clon": [],
+        "\\bbc_loss\\b": [],
+        "\\bbc_coef": [],
+        "anchor": [
+          426
+        ],
+        "steer.*hinge": [],
+        "actor_lr": [],
+        "replay.*sample": [],
+        "replay.*capacity": [],
+        "maxlen": [],
+        "buffer_size": [],
+        "goal_pairs": [],
+        "reward\\s*=": [
+          115
+        ],
+        "_t77_gate": [],
+        "_t77_bonus": [],
+        "TRAIN_COUNTER": [],
+        "max_steps": []
+      }
+    }
+  },
+  "training": false,
+  "simulation": false,
+  "planner": false,
+  "automatic_promotion": false
+}

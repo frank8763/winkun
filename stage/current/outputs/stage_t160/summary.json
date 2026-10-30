@@ -1,0 +1,355 @@
+{
+  "experiment": "STAGE_T160_FROZEN_5M_TRANSFER_AND_NEW_3M_PANEL",
+  "plan_sha256": "fa20a482d714ee262d4c61c3d4d8be31fa5860e8a01397f367f1d81eff7d5401",
+  "actor_unchanged": {
+    "T159_frozen": true
+  },
+  "training": false,
+  "automatic_promotion": false,
+  "training_runs_per_model": 1,
+  "generalization_claim": false,
+  "unique_scene_signatures": 1,
+  "unique_task_signatures": 6,
+  "cases": [
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "first_5m_transfer",
+      "model": "T159_frozen",
+      "actual_seed": 2029653601,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "09e8b841596ae710e35c4d32bca8d559858edd888aaa000aeb54f4920a24e620",
+      "start_pose": [
+        -0.75,
+        0.75,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "initial_distance_m": 5.0,
+      "steps": 15529,
+      "success": false,
+      "safe_success": false,
+      "collision": true,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 1.4951068707674353,
+      "nearest_m": 1.4951068707674353,
+      "final_bearing_deg": 14.558082371617338,
+      "travel_m": 3.5562916662024855,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 31.057999999993665,
+      "goal_radius_m": 0.2,
+      "milestones": {},
+      "end": "COLLISION",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t160/5m_2029653601_LEFT_T159_frozen.jsonl"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "first_5m_transfer",
+      "model": "T159_frozen",
+      "actual_seed": 2029654802,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "df0f84ebb0e30a4dbf1b64a97d0385fa367e2bfacc1ac6a73c4dddb327656899",
+      "start_pose": [
+        1.0,
+        2.25,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        5.486694873876159,
+        0.043289980823624674
+      ],
+      "initial_distance_m": 5.0,
+      "steps": 19949,
+      "success": false,
+      "safe_success": false,
+      "collision": true,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 1.586917307934551,
+      "nearest_m": 1.586917307934551,
+      "final_bearing_deg": 8.757639279735166,
+      "travel_m": 3.486307047817681,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 39.898000000002796,
+      "goal_radius_m": 0.2,
+      "milestones": {},
+      "end": "COLLISION",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t160/5m_2029654802_RIGHT_T159_frozen.jsonl"
+    },
+    {
+      "id": "new3m_2026103083_LEFT",
+      "seed": 2026103083,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new_3m_first_evaluation",
+      "model": "T159_frozen",
+      "actual_seed": 2026103083,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "ec7492a96bb987f160192f01f28f34142ff7951a1c846756bfdae6d41a2a20bc",
+      "start_pose": [
+        3.75,
+        4.0,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        5.145011139117145,
+        1.3440738109391885
+      ],
+      "initial_distance_m": 3.0,
+      "steps": 14000,
+      "success": false,
+      "safe_success": false,
+      "collision": false,
+      "terminated": false,
+      "truncated": true,
+      "remaining_m": 0.767464230313818,
+      "nearest_m": 0.7592539352267674,
+      "final_bearing_deg": 101.41646881782668,
+      "travel_m": 3.162794866442501,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 27.99999999999536,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 7119,
+          "remaining_m": 1.1998738612182736,
+          "bearing_deg": 39.531704175363096,
+          "raw_action": [
+            0.7777357697486877,
+            -0.4109453558921814
+          ],
+          "pose": [
+            4.31335129305804,
+            2.2089663957656485,
+            -1.4949424501407225,
+            0.003704821414842861,
+            -0.1548951561168071,
+            -0.036428350317761364
+          ]
+        },
+        "0.8": {
+          "step": 10626,
+          "remaining_m": 0.7999853402671667,
+          "bearing_deg": 79.40248979189869,
+          "raw_action": [
+            -0.13803483545780182,
+            0.697735607624054
+          ],
+          "pose": [
+            4.347502388339296,
+            1.4069732312475671,
+            -1.4645418342607115,
+            0.012709050594044495,
+            -0.07030353189901022,
+            0.029754708176104205
+          ]
+        }
+      },
+      "end": "TRUNCATED",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t160/new3m_2026103083_LEFT_T159_frozen.jsonl"
+    },
+    {
+      "id": "new3m_2026103083_RIGHT",
+      "seed": 2026103083,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new_3m_first_evaluation",
+      "model": "T159_frozen",
+      "actual_seed": 2026103083,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "1aa0204a99828bbc23c23d38c6921820346519e956419682b52b07f51c075958",
+      "start_pose": [
+        -0.75,
+        0.5,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        1.9420169243256953,
+        -0.8240260115058251
+      ],
+      "initial_distance_m": 3.0,
+      "steps": 10886,
+      "success": false,
+      "safe_success": false,
+      "collision": true,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 0.627653163507304,
+      "nearest_m": 0.627653163507304,
+      "final_bearing_deg": 54.291504542376465,
+      "travel_m": 2.651399478339354,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 21.771999999998812,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 6812,
+          "remaining_m": 1.1998765683298664,
+          "bearing_deg": 34.716961303221574,
+          "raw_action": [
+            0.8500288128852844,
+            0.09839045256376266
+          ],
+          "pose": [
+            0.749731190090453,
+            -0.6892725062965526,
+            -0.7184688505745072,
+            0.1216331949758024,
+            -0.10421726998327377,
+            0.006001554871764081
+          ]
+        },
+        "0.8": {
+          "step": 8824,
+          "remaining_m": 0.7999842088663424,
+          "bearing_deg": 43.442479906602124,
+          "raw_action": [
+            -0.7140350937843323,
+            0.4321995973587036
+          ],
+          "pose": [
+            1.154435796689891,
+            -0.9643495727043019,
+            -0.5818942188995547,
+            0.04908725531564041,
+            -0.02857300857171798,
+            0.013960171971732037
+          ]
+        }
+      },
+      "end": "COLLISION",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t160/new3m_2026103083_RIGHT_T159_frozen.jsonl"
+    },
+    {
+      "id": "new3m_2026103084_LEFT",
+      "seed": 2026103084,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new_3m_first_evaluation",
+      "model": "T159_frozen",
+      "actual_seed": 2026103084,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "acc7ce4274ceb0877858940634c387fcd874db8327a89aa8f644b69d5a11812a",
+      "start_pose": [
+        -2.75,
+        1.75,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        -1.3549888608828549,
+        -0.9059261890608115
+      ],
+      "initial_distance_m": 3.0,
+      "steps": 5124,
+      "success": false,
+      "safe_success": false,
+      "collision": true,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 1.6990739844070968,
+      "nearest_m": 1.6990739844070968,
+      "final_bearing_deg": 11.435371505125923,
+      "travel_m": 1.3125611045649623,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 10.248000000000092,
+      "goal_radius_m": 0.2,
+      "milestones": {},
+      "end": "COLLISION",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t160/new3m_2026103084_LEFT_T159_frozen.jsonl"
+    },
+    {
+      "id": "new3m_2026103084_RIGHT",
+      "seed": 2026103084,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new_3m_first_evaluation",
+      "model": "T159_frozen",
+      "actual_seed": 2026103084,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "bf9365d75bab1f0aae16ba7956f9f9680f724e608a3963d33e0aaa70c7dc9911",
+      "start_pose": [
+        -3.0,
+        1.75,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        -0.3079830756743047,
+        0.4259739884941749
+      ],
+      "initial_distance_m": 3.0,
+      "steps": 14000,
+      "success": false,
+      "safe_success": false,
+      "collision": false,
+      "terminated": false,
+      "truncated": true,
+      "remaining_m": 0.974901199132766,
+      "nearest_m": 0.9410851566234002,
+      "final_bearing_deg": 106.83143615685681,
+      "travel_m": 3.5008945384883026,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 27.99999999999536,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 8739,
+          "remaining_m": 1.199948936595519,
+          "bearing_deg": 62.6635043199742,
+          "raw_action": [
+            0.8556299805641174,
+            0.2514897584915161
+          ],
+          "pose": [
+            -1.443490299253575,
+            0.03802966821610492,
+            -0.7644690426695377,
+            0.11784560069112718,
+            -0.10688467747614429,
+            0.020951936036917113
+          ]
+        }
+      },
+      "end": "TRUNCATED",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t160/new3m_2026103084_RIGHT_T159_frozen.jsonl"
+    }
+  ]
+}

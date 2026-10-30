@@ -1,0 +1,867 @@
+{
+  "experiment": "STAGE_T153_FROZEN_3M_REGRESSION_AND_4M_TRANSFER",
+  "plan_sha256": "537d1ae578522fa48346e82f8b38aebf48741f6bca2d3a57e2ec666f472e8ade",
+  "actor_unchanged": {
+    "T157_selected": true
+  },
+  "training": false,
+  "automatic_promotion": false,
+  "training_runs_per_model": 1,
+  "generalization_claim": false,
+  "unique_scene_signatures": 1,
+  "unique_task_signatures": 10,
+  "cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "model": "T157_selected",
+      "actual_seed": 2029653601,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "42927fb63134a991975666f3b9b75741dffbd760283e9f2b4322553d3b43e737",
+      "start_pose": [
+        -0.75,
+        0.75,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        0.6450111391171451,
+        -1.9059261890608115
+      ],
+      "initial_distance_m": 3.0,
+      "steps": 10367,
+      "success": true,
+      "safe_success": true,
+      "collision": false,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 0.19969761011596845,
+      "nearest_m": 0.19969761011596845,
+      "final_bearing_deg": 10.466198888587659,
+      "travel_m": 2.8333413113081156,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 20.733999999999387,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 6460,
+          "remaining_m": 1.1999798003736357,
+          "bearing_deg": -2.0145958754946642,
+          "raw_action": [
+            0.9882493019104004,
+            -0.4176607131958008
+          ],
+          "pose": [
+            0.21525569616468046,
+            -0.7855415316518117,
+            -1.1693647591578757,
+            0.05780131932562492,
+            -0.15724341013205093,
+            -0.03485336234556575
+          ]
+        },
+        "0.8": {
+          "step": 7937,
+          "remaining_m": 0.799823378596931,
+          "bearing_deg": 0.8870636445332557,
+          "raw_action": [
+            0.9914757013320923,
+            -0.38366833329200745
+          ],
+          "pose": [
+            0.35268078648129414,
+            -1.1614395190135844,
+            -1.2121154357699486,
+            0.051945591469476915,
+            -0.16001943699653154,
+            -0.030833357097001395
+          ]
+        },
+        "0.5": {
+          "step": 8965,
+          "remaining_m": 0.49985014999805644,
+          "bearing_deg": 3.9380525663898895,
+          "raw_action": [
+            0.9793210625648499,
+            -0.027746252715587616
+          ],
+          "pose": [
+            0.44880283491689477,
+            -1.4461953179895493,
+            -1.2361429251752558,
+            0.03024113415194897,
+            -0.08933946862271991,
+            -0.002125549580381754
+          ]
+        },
+        "0.3": {
+          "step": 10027,
+          "remaining_m": 0.2999855150160968,
+          "bearing_deg": 7.276818765165558,
+          "raw_action": [
+            0.9741129875183105,
+            0.07303860038518906
+          ],
+          "pose": [
+            0.512492340578211,
+            -1.6367978233070875,
+            -1.2402516544653905,
+            0.034985553255575876,
+            -0.09738619092511164,
+            -0.0005623622822942586
+          ]
+        }
+      },
+      "end": "GOAL",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_transfer/2029653601_LEFT_T157_selected.jsonl"
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "model": "T157_selected",
+      "actual_seed": 2029653602,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "d4719dafee704b604d292886b6b327c7b3c9cc998443afda9d5bb5435ad0e805",
+      "start_pose": [
+        1.75,
+        -4.0,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        4.31093776207436,
+        -5.56256128800811
+      ],
+      "initial_distance_m": 2.9999999999999996,
+      "steps": 8755,
+      "success": true,
+      "safe_success": true,
+      "collision": false,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 0.19970795877525496,
+      "nearest_m": 0.19970795877525496,
+      "final_bearing_deg": -1.2894305921005633,
+      "travel_m": 2.821915916531721,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 17.510000000001174,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 5744,
+          "remaining_m": 1.199913629455066,
+          "bearing_deg": 5.68526160283791,
+          "raw_action": [
+            0.8910450339317322,
+            0.18345311284065247
+          ],
+          "pose": [
+            3.2184612611675387,
+            -5.066287358490936,
+            -0.525621640552049,
+            0.1408958114719277,
+            -0.07830191521406016,
+            0.014210124264970765
+          ]
+        },
+        "0.8": {
+          "step": 6971,
+          "remaining_m": 0.7998775924500222,
+          "bearing_deg": 4.799715859631895,
+          "raw_action": [
+            0.9160476326942444,
+            0.3508870303630829
+          ],
+          "pose": [
+            3.5734749498028107,
+            -5.252798857393645,
+            -0.4814311677556164,
+            0.14967464904186606,
+            -0.07046060792704771,
+            0.032102591869851684
+          ]
+        },
+        "0.5": {
+          "step": 7866,
+          "remaining_m": 0.4999484756058339,
+          "bearing_deg": 2.5244198640546585,
+          "raw_action": [
+            0.9627499580383301,
+            0.318203866481781
+          ],
+          "pose": [
+            3.847678700146016,
+            -5.374573203806298,
+            -0.42955126585497494,
+            0.15621252724782617,
+            -0.06455471958941339,
+            0.02929127894328947
+          ]
+        },
+        "0.3": {
+          "step": 8458,
+          "remaining_m": 0.29988364195995354,
+          "bearing_deg": 0.43563718458637346,
+          "raw_action": [
+            0.9665518403053284,
+            0.27793654799461365
+          ],
+          "pose": [
+            4.033576877736448,
+            -5.448538752715928,
+            -0.3976402538336656,
+            0.15768778976011202,
+            -0.06041159678875936,
+            0.025096275509311154
+          ]
+        }
+      },
+      "end": "GOAL",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_transfer/2029653602_RIGHT_T157_selected.jsonl"
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "model": "T157_selected",
+      "actual_seed": 2029654801,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "009f56426a677a765921ae400cb2765cd3b57a75d3d71454bb75e30d9c1ae54b",
+      "start_pose": [
+        1.75,
+        -4.0,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        3.3623608142541768,
+        -6.529879958546968
+      ],
+      "initial_distance_m": 3.0000000000000004,
+      "steps": 10190,
+      "success": true,
+      "safe_success": true,
+      "collision": false,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 0.19978630633236386,
+      "nearest_m": 0.19978630633236386,
+      "final_bearing_deg": -32.62354957199551,
+      "travel_m": 2.85171049789757,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 20.379999999999583,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 5821,
+          "remaining_m": 1.1999792642065104,
+          "bearing_deg": -8.748348624411866,
+          "raw_action": [
+            0.9657774567604065,
+            -0.013841311447322369
+          ],
+          "pose": [
+            2.8533395248569757,
+            -5.443211857668872,
+            -0.9800396832474856,
+            0.0502328886506704,
+            -0.07612648183864154,
+            -0.0008313478564859027
+          ]
+        },
+        "0.8": {
+          "step": 8064,
+          "remaining_m": 0.799963407175947,
+          "bearing_deg": -12.065711908713654,
+          "raw_action": [
+            0.967261552810669,
+            -0.15385451912879944
+          ],
+          "pose": [
+            3.0748217448183164,
+            -5.783379632781125,
+            -0.9925419116699272,
+            0.05267334815465432,
+            -0.08088170669256468,
+            -0.007446596741662089
+          ]
+        },
+        "0.5": {
+          "step": 9164,
+          "remaining_m": 0.49983957979134175,
+          "bearing_deg": -16.149945462459772,
+          "raw_action": [
+            0.9679197669029236,
+            -0.3128661513328552
+          ],
+          "pose": [
+            3.233599086118389,
+            -6.046909956483206,
+            -1.0283827320147927,
+            0.08199474852776069,
+            -0.14806374736334227,
+            -0.028774119418660996
+          ]
+        },
+        "0.3": {
+          "step": 9849,
+          "remaining_m": 0.2998682112596108,
+          "bearing_deg": -23.584559923743726,
+          "raw_action": [
+            0.9740437269210815,
+            -0.4210287928581238
+          ],
+          "pose": [
+            3.3316240572934173,
+            -6.23159117918111,
+            -1.0564868783909804,
+            0.07108774115349839,
+            -0.1407444186423226,
+            -0.03444729122164839
+          ]
+        }
+      },
+      "end": "GOAL",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_transfer/2029654801_LEFT_T157_selected.jsonl"
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "model": "T157_selected",
+      "actual_seed": 2029654802,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "b2c4c2ab2126d8274f1dedaef43f7e0a9785bf32a1ba493b1c072753ab99b9bc",
+      "start_pose": [
+        1.0,
+        2.25,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        3.6920169243256953,
+        0.9259739884941749
+      ],
+      "initial_distance_m": 3.0,
+      "steps": 12448,
+      "success": true,
+      "safe_success": true,
+      "collision": false,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 0.19982409765511186,
+      "nearest_m": 0.19982409765511186,
+      "final_bearing_deg": 26.512840223625666,
+      "travel_m": 2.9346677746066097,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 24.89599999999708,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 7610,
+          "remaining_m": 1.1998910091496502,
+          "bearing_deg": 14.59535143220048,
+          "raw_action": [
+            0.5555275678634644,
+            0.6917712688446045
+          ],
+          "pose": [
+            2.5049066502144464,
+            1.1006383264045831,
+            -0.4008228252065778,
+            0.12447388112000356,
+            -0.040190512365644034,
+            0.054081003289279825
+          ]
+        },
+        "0.8": {
+          "step": 9706,
+          "remaining_m": 0.7998464524654209,
+          "bearing_deg": 8.461076314335898,
+          "raw_action": [
+            -0.08748792111873627,
+            0.5001388192176819
+          ],
+          "pose": [
+            2.8961208269322616,
+            1.0053701450473775,
+            -0.24710162985160547,
+            0.08890363514095753,
+            -0.016563323494906777,
+            0.02600291333117984
+          ]
+        },
+        "0.5": {
+          "step": 11143,
+          "remaining_m": 0.49993562746360976,
+          "bearing_deg": 7.229988833917021,
+          "raw_action": [
+            0.3553323447704315,
+            -0.10485832393169403
+          ],
+          "pose": [
+            3.193007680903059,
+            0.9563944846472834,
+            -0.1870735486334184,
+            0.1177754551639127,
+            -0.023236596646725862,
+            -0.005127569766679796
+          ]
+        },
+        "0.3": {
+          "step": 11992,
+          "remaining_m": 0.2998918201469993,
+          "bearing_deg": 15.573872292213906,
+          "raw_action": [
+            0.3994404971599579,
+            -0.40315714478492737
+          ],
+          "pose": [
+            3.392585525766278,
+            0.9093625060849619,
+            -0.21639540173373337,
+            0.11946937208753387,
+            -0.031839314167623374,
+            -0.0275163149438451
+          ]
+        }
+      },
+      "end": "GOAL",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_transfer/2029654802_RIGHT_T157_selected.jsonl"
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "4m_transfer",
+      "model": "T157_selected",
+      "actual_seed": 2029653743,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "fb8dafc1b22a37563de12afe93f81a8c15bbd2b347d536857ef84cf38f432107",
+      "start_pose": [
+        -1.0,
+        1.25,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        0.8600148521561934,
+        -2.2912349187477488
+      ],
+      "initial_distance_m": 4.0,
+      "steps": 9402,
+      "success": false,
+      "safe_success": false,
+      "collision": true,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 1.519804926051402,
+      "nearest_m": 1.519804926051402,
+      "final_bearing_deg": 23.90657390329085,
+      "travel_m": 2.5379400928848526,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 18.804000000000457,
+      "goal_radius_m": 0.2,
+      "milestones": {},
+      "end": "COLLISION",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_transfer/4m_2029653601_LEFT_T157_selected.jsonl"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "4m_transfer",
+      "model": "T157_selected",
+      "actual_seed": 2029654944,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "ed03fcf5cc1b3ff933e65fb57e6f368af7f57a96504844e87dabcd64c91de72a",
+      "start_pose": [
+        1.25,
+        -3.75,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        4.8393558991009265,
+        -5.5153680153411
+      ],
+      "initial_distance_m": 3.9999999999999996,
+      "steps": 11814,
+      "success": true,
+      "safe_success": true,
+      "collision": false,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 0.19995713017873204,
+      "nearest_m": 0.19995713017873204,
+      "final_bearing_deg": -1.566898479502497,
+      "travel_m": 3.8598468504435197,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 23.627999999997783,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 8838,
+          "remaining_m": 1.1999210732999572,
+          "bearing_deg": 6.786883148456298,
+          "raw_action": [
+            0.9288826584815979,
+            0.32557183504104614
+          ],
+          "pose": [
+            3.676189741675563,
+            -5.220656169007031,
+            -0.36660171413758685,
+            0.15747552300970177,
+            -0.05357994408347822,
+            0.029572641646265548
+          ]
+        },
+        "0.8": {
+          "step": 10032,
+          "remaining_m": 0.7998767376357461,
+          "bearing_deg": 4.268203954283528,
+          "raw_action": [
+            0.9617067575454712,
+            0.31300148367881775
+          ],
+          "pose": [
+            4.059499898342852,
+            -5.337527037238677,
+            -0.29870346789758123,
+            0.1631732613855196,
+            -0.04373010779233853,
+            0.028724813346890157
+          ]
+        },
+        "0.5": {
+          "step": 10921,
+          "remaining_m": 0.49999877502809936,
+          "bearing_deg": 1.9296112056834553,
+          "raw_action": [
+            0.9606731534004211,
+            0.27983206510543823
+          ],
+          "pose": [
+            4.350958011448767,
+            -5.408287305750118,
+            -0.24951185541626672,
+            0.16443593843716334,
+            -0.036315502109848026,
+            0.02530617483226995
+          ]
+        },
+        "0.3": {
+          "step": 11516,
+          "remaining_m": 0.29989040193667266,
+          "bearing_deg": -0.028996542493083238,
+          "raw_action": [
+            0.9628598093986511,
+            0.23616239428520203
+          ],
+          "pose": [
+            4.546853087574679,
+            -5.449213964648951,
+            -0.22191743935828265,
+            0.16473939832728904,
+            -0.03270943143654154,
+            0.02073950124399983
+          ]
+        }
+      },
+      "end": "GOAL",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_transfer/4m_2029654802_RIGHT_T157_selected.jsonl"
+    },
+    {
+      "id": "new3m_2026103071_LEFT",
+      "seed": 2026103071,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new3m_first_evaluation",
+      "model": "T157_selected",
+      "actual_seed": 2026103071,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "afc0d18304c07f42cf5466d0a507f0bc71b8094a28dd5c7a43daa035726084ec",
+      "start_pose": [
+        -0.25,
+        0.25,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        1.1450111391171451,
+        -2.4059261890608115
+      ],
+      "initial_distance_m": 3.0,
+      "steps": 9201,
+      "success": true,
+      "safe_success": true,
+      "collision": false,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 0.19972056953090978,
+      "nearest_m": 0.19972056953090978,
+      "final_bearing_deg": -5.062781602848555,
+      "travel_m": 2.8181163012116017,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 18.40200000000068,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 5979,
+          "remaining_m": 1.1998170937882284,
+          "bearing_deg": 3.4144272085958653,
+          "raw_action": [
+            0.9583330154418945,
+            -0.26042628288269043
+          ],
+          "pose": [
+            0.6494122125981403,
+            -1.3132493097503537,
+            -1.2045755053552372,
+            0.05642112064339571,
+            -0.16096587286385475,
+            -0.02377583683389672
+          ]
+        },
+        "0.8": {
+          "step": 7276,
+          "remaining_m": 0.7998478088634822,
+          "bearing_deg": 5.785530111070108,
+          "raw_action": [
+            0.821500301361084,
+            0.13144566118717194
+          ],
+          "pose": [
+            0.7866235867208194,
+            -1.6908633389342758,
+            -1.2071679054748026,
+            0.0581246225100223,
+            -0.14857855671134176,
+            0.008936574775052957
+          ]
+        },
+        "0.5": {
+          "step": 8261,
+          "remaining_m": 0.4999077194865198,
+          "bearing_deg": 3.051447815566274,
+          "raw_action": [
+            0.7518537044525146,
+            0.5451053977012634
+          ],
+          "pose": [
+            0.9128778659023431,
+            -1.9631826160201686,
+            -1.1411510530265483,
+            0.07016462799974023,
+            -0.12902436769137912,
+            0.049237400287899476
+          ]
+        },
+        "0.3": {
+          "step": 8903,
+          "remaining_m": 0.2998608445139114,
+          "bearing_deg": -1.844722004064889,
+          "raw_action": [
+            0.9204971790313721,
+            0.44182315468788147
+          ],
+          "pose": [
+            1.012961629716929,
+            -2.136706105969378,
+            -1.0825898939102259,
+            0.08527994509234993,
+            -0.14065089511921386,
+            0.040685623169864314
+          ]
+        }
+      },
+      "end": "GOAL",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_transfer/new3m_2026103071_LEFT_T157_selected.jsonl"
+    },
+    {
+      "id": "new3m_2026103071_RIGHT",
+      "seed": 2026103071,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new3m_first_evaluation",
+      "model": "T157_selected",
+      "actual_seed": 2026103071,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "add260b7e3e2e7510c0989d207aabfa01c23f0025e3922ff30fce5e892661867",
+      "start_pose": [
+        -2.75,
+        1.25,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        -0.05798307567430472,
+        -0.0740260115058251
+      ],
+      "initial_distance_m": 3.0,
+      "steps": 14000,
+      "success": false,
+      "safe_success": false,
+      "collision": false,
+      "terminated": false,
+      "truncated": true,
+      "remaining_m": 0.9274501916466966,
+      "nearest_m": 0.8631564843669942,
+      "final_bearing_deg": 111.89786833135567,
+      "travel_m": 3.5982082867559773,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 27.99999999999536,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 7417,
+          "remaining_m": 1.1998283016538125,
+          "bearing_deg": 56.26545157208848,
+          "raw_action": [
+            0.8743628859519958,
+            0.42614006996154785
+          ],
+          "pose": [
+            -1.2134512167908797,
+            -0.3972617278400178,
+            -0.7092457359826866,
+            0.12737489668942567,
+            -0.09984499551670047,
+            0.030844200648632133
+          ]
+        }
+      },
+      "end": "TRUNCATED",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_transfer/new3m_2026103071_RIGHT_T157_selected.jsonl"
+    },
+    {
+      "id": "new3m_2026103072_LEFT",
+      "seed": 2026103072,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new3m_first_evaluation",
+      "model": "T157_selected",
+      "actual_seed": 2026103072,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "35834371a8b3391660da659d38d16094f501d6a1e67db0b0c4ab29c21027b71f",
+      "start_pose": [
+        -2.5,
+        -2.0,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        -1.1049888608828549,
+        -4.6559261890608115
+      ],
+      "initial_distance_m": 3.0,
+      "steps": 4984,
+      "success": false,
+      "safe_success": false,
+      "collision": true,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 1.8436495872930254,
+      "nearest_m": 1.8436495872930254,
+      "final_bearing_deg": -1.0345834648568828,
+      "travel_m": 1.159980280992685,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 9.967999999999998,
+      "goal_radius_m": 0.2,
+      "milestones": {},
+      "end": "COLLISION",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_transfer/new3m_2026103072_LEFT_T157_selected.jsonl"
+    },
+    {
+      "id": "new3m_2026103072_RIGHT",
+      "seed": 2026103072,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new3m_first_evaluation",
+      "model": "T157_selected",
+      "actual_seed": 2026103072,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "78f6112fa5cf3fdaffdba19305dc641d24dfa99a57b723290e293e0b7336c55e",
+      "start_pose": [
+        3.5,
+        1.25,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        6.192016924325696,
+        -0.0740260115058251
+      ],
+      "initial_distance_m": 3.0000000000000004,
+      "steps": 3709,
+      "success": false,
+      "safe_success": false,
+      "collision": true,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 2.206155078426144,
+      "nearest_m": 2.206155078426144,
+      "final_bearing_deg": 28.80696699724686,
+      "travel_m": 0.8821000410061502,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 7.417999999999405,
+      "goal_radius_m": 0.2,
+      "milestones": {},
+      "end": "COLLISION",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_transfer/new3m_2026103072_RIGHT_T157_selected.jsonl"
+    }
+  ]
+}

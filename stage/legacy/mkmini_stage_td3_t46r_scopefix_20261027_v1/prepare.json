@@ -1,0 +1,36 @@
+{
+  "experiment": "STAGE_TD3_T46R",
+  "parent_checkpoint_sha256": "21501f7c03ddc2cf291f1033daf279820c1c564934189df51fef26670e61c41a",
+  "success_archive_sha256": "743c3b3099031a0f4104e2e41af22c12d491a70a6f3d780ca34477463cf9192b",
+  "initial_frames": 13491,
+  "target_frames": 16491,
+  "tasks": [
+    [
+      -17.3,
+      3.0
+    ],
+    [
+      13.6,
+      3.0
+    ],
+    [
+      -20.0,
+      0.4
+    ],
+    [
+      20.0,
+      0.4
+    ]
+  ],
+  "bc_weight": 1.0,
+  "mixed_replay_inherited": true,
+  "files": {
+    "train.py": "6c1f294e33cb98eea485325f2a6fd114ff689d2f6cd9f3f56be831464dc525dc",
+    "td3_core_goal_contrast.py": "b28b45562d79dff52090a24e6b21a74bcd24d830ab89a706cb46467df8d531ea",
+    "goal_pairs.npz": "3cfeedea79a983c9afdeab780dae8f199caea18ad77c89fe5a85d6346e19ce89"
+  },
+  "automatic_promotion": false,
+  "source_branch": "STAGE_TD3_T46B",
+  "repair": "BC_NUMPY_SCOPE",
+  "repaired_core_sha256": "b28b45562d79dff52090a24e6b21a74bcd24d830ab89a706cb46467df8d531ea"
+}

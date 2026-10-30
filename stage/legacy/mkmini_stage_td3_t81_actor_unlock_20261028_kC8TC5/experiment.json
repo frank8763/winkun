@@ -1,0 +1,28 @@
+{
+  "experiment": "STAGE_TD3_T81",
+  "baseline": "T71B",
+  "frozen_parent": "T67C022",
+  "initial_frames": 134491,
+  "target_frames": 190491,
+  "changes": {
+    "actor_lr": 3e-05,
+    "success_bc_weight": 0.1,
+    "t53_actor_anchor_gradient_weight": 0.0
+  },
+  "unchanged": [
+    "TD3 network",
+    "112D observations",
+    "native lidar",
+    "vehicle model",
+    "environment",
+    "training tasks",
+    "reward",
+    "replay capacity",
+    "physics stepping"
+  ],
+  "parent_checkpoint_sha256": "8d078708eae6564a74f5fc13d08df63d060bd27d048728a62fb6135186cbe62f",
+  "new_initial_checkpoint_sha256": "9e893b63cedbebcd9a77c0c41abfd7d9e17e16998b363020a52e1ba96cb69277",
+  "train_sha256": "b548eee59e75e87563d14c0eff024a72126b819572e90f9eeb9a259f4f3fb022",
+  "core_sha256": "bc2d8803cdc4aac454d03603a8cfe379ad04151d7b4600ebec636c037238a508",
+  "automatic_promotion": false
+}

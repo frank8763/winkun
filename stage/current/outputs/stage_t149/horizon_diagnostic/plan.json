@@ -1,0 +1,44 @@
+{
+  "experiment": "STAGE_T150_EXPLORATORY_HORIZON_DIAGNOSTIC",
+  "models": {
+    "T146": {
+      "checkpoint": "/home/linghu/mkmini_stage_td3_t146_rightturn_continuation_20261029_v1/checkpoints/episode_0727.pt",
+      "sha256": "fb0b9558993a7dcca93e07c57865047f41290d87c63adf62f3d4a342f0c45d50"
+    },
+    "T148_0733": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/checkpoints/episode_0733.pt",
+      "sha256": "5ce48eb88330512613901f7b0dc8a3b5374056d1a2256c444edd0ed5da4a84d3"
+    }
+  },
+  "cases": [
+    {
+      "id": "2029653601_LEFT",
+      "group": "known_seed_crossed_goals",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "group": "known_seed_crossed_goals",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8
+    }
+  ],
+  "step_cap": 42000,
+  "wall_limit_seconds": 1200,
+  "source_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t149/paired_eval.py": "7f24f4e6e54b4694f92d15d07ca4d606bad977ccf5684d02f2897da30a396661",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "purpose": "Adaptive diagnostic after early screen; compare 28s vs 84s on the two canonical training tasks, never change the original acceptance threshold.",
+  "primary_metrics": [
+    "safe_success per side",
+    "collision per side"
+  ],
+  "selection_rule": "Canonical exact training pair; exploratory and selected after T149 results. Report all four model-task executions, including failures.",
+  "training_changes": false,
+  "baseline_plan_sha256": "f95c78bb20bd18271a0ddcee57a751a0ac13a6bb85afc60a7b7f77a70a259ca1"
+}

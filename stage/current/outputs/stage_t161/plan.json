@@ -1,0 +1,98 @@
+{
+  "experiment": "STAGE_T161_3M_4M_RETENTION_5M_CURRICULUM",
+  "initial_actor": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t159/consolidated_actor.pt",
+  "critic_parent": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t158/episode_006.pt",
+  "retention_observations": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t159/six_task_success.npz",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t159/consolidated_actor.pt": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t158/episode_006.pt": "4aeef71556328b6a38ce889aefa07f5c292f2d45ba6ba25cf399d525ade14497",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t159/six_task_success.npz": "657c5a64ff39f3c38c7cadc605b14ed79dd6de3bb09f957d72e92b7197fcd289",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t161/train_curriculum.py": "e116c7278465fb0000819a5752a5b8b0fba6e1981cb4fde1d655523ebb6a52b3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "seed": 2026103061,
+  "new_frames": 128000,
+  "wall_seconds": 1800,
+  "actor_lr": 1e-05,
+  "critic_lr": 0.0001,
+  "gamma": 0.99,
+  "rl_alpha": 0.5,
+  "replay_capacity": 60000,
+  "update_every_frames": 4,
+  "critic_adaptation_frames": 4000,
+  "exploration_std": 0.12,
+  "noise_hold_physics_frames": 25,
+  "tasks": [
+    {
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667
+    },
+    {
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667
+    },
+    {
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "distance_m": 5.0,
+      "step_cap": 23334
+    },
+    {
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "distance_m": 5.0,
+      "step_cap": 23334
+    }
+  ],
+  "initialization": "Actor and target from consolidated T159. Critic/optimizer from T158 final. Actor optimizer reset; explicit warm start, not a full continuation.",
+  "objective": "normalized TD3 policy gradient plus frozen T159 retention, uniformly sampled from all six successful 3m/4m trajectory state banks",
+  "reward": "unchanged T148 native reward + T59 clearance penalty + T66 progress bonus",
+  "masked_action_history_columns": [
+    57,
+    58,
+    74,
+    75,
+    86,
+    87,
+    98,
+    99,
+    110,
+    111
+  ],
+  "planner": false,
+  "waypoints": false,
+  "automatic_promotion": false,
+  "study_type": "bounded engineering curriculum pilot; multiple declared design differences, not a single-factor superiority experiment",
+  "reference": "https://arxiv.org/abs/2106.06860",
+  "reference_limit": "inspired by Q-scale normalization and policy regularization; online frozen-policy retention is not an exact TD3+BC reproduction",
+  "post_training_gate": "Retain all six fixed 3m/4m tasks, report both 5m tasks. Never label 5m stable unless the actual frozen tests pass. No automatic promotion."
+}

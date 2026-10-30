@@ -1,0 +1,79 @@
+{
+  "experiment": "STAGE_T160_FROZEN_5M_TRANSFER_AND_NEW_3M_PANEL",
+  "models": {
+    "T159_frozen": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t159/consolidated_actor.pt",
+      "sha256": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570"
+    }
+  },
+  "cases": [
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "first_5m_transfer"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "first_5m_transfer"
+    },
+    {
+      "id": "new3m_2026103083_LEFT",
+      "seed": 2026103083,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new_3m_first_evaluation"
+    },
+    {
+      "id": "new3m_2026103083_RIGHT",
+      "seed": 2026103083,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new_3m_first_evaluation"
+    },
+    {
+      "id": "new3m_2026103084_LEFT",
+      "seed": 2026103084,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new_3m_first_evaluation"
+    },
+    {
+      "id": "new3m_2026103084_RIGHT",
+      "seed": 2026103084,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "new_3m_first_evaluation"
+    }
+  ],
+  "step_cap": 23334,
+  "wall_limit_seconds": 1200,
+  "source_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_eval.py": "ce1c71d65ca520bb95ca61c7d827630551382e4ca6e323209815bfbc873ad93f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "purpose": "Frozen single policy after fixed 3m/4m course passes; report both 5m migrations and four fresh 3m start-goal tasks, with no retraining or selection from their results",
+  "selection_rule": "one fixed T159 checkpoint at update 3000, chosen before new task outcomes",
+  "limits": "3m 28s; 5m 46.668s scaled by distance",
+  "training": false,
+  "automatic_promotion": false,
+  "new_task_feasibility": "Start/goal collision-free checked; full vehicle reachability not pre-proven.",
+  "new_training_frames": 64000
+}

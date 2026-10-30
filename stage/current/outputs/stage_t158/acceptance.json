@@ -1,0 +1,42 @@
+{
+  "decision": "RETAIN_T157_FOR_FIXED_3M_COURSE; DO_NOT_REPLACE_WITH_T158",
+  "reason": "T158 acquired both 4m tasks but regressed from 4/4 to 2/4 on the fixed 3m course.",
+  "metrics": {
+    "T157_selected": {
+      "3m_regression_after_selection": {
+        "n": 4,
+        "safe_success": 4,
+        "collisions": 0
+      },
+      "4m_transfer": {
+        "n": 2,
+        "safe_success": 1,
+        "collisions": 1
+      },
+      "reserved_new3m_first_evaluation": {
+        "n": 4,
+        "safe_success": 1,
+        "collisions": 3
+      }
+    },
+    "T158_final": {
+      "3m_regression_after_selection": {
+        "n": 4,
+        "safe_success": 2,
+        "collisions": 0
+      },
+      "4m_transfer": {
+        "n": 2,
+        "safe_success": 2,
+        "collisions": 0
+      },
+      "reserved_new3m_first_evaluation": {
+        "n": 4,
+        "safe_success": 1,
+        "collisions": 3
+      }
+    }
+  },
+  "automatic_promotion": false,
+  "new_4m_left_skill_retained_as_distillation_teacher": true
+}

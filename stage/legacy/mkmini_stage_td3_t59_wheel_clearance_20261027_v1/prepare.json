@@ -1,0 +1,35 @@
+{
+  "experiment": "STAGE_TD3_T59",
+  "parent_sha256": "8d4ad4008a7647dbe96ad67b66f0a22c0d51c035744d25259560d1e936e4e8e0",
+  "initial_frames": 22491,
+  "target_frames": 30491,
+  "episode_cap": 4000,
+  "tasks": [
+    [
+      -20.0,
+      1.2
+    ],
+    [
+      20.0,
+      1.2
+    ],
+    [
+      20.0,
+      3.0
+    ],
+    [
+      -20.0,
+      3.0
+    ]
+  ],
+  "external_clearance_reward": true,
+  "wheel_and_chassis": true,
+  "self_contacts_excluded": true,
+  "model_modified": false,
+  "automatic_promotion": false,
+  "files": {
+    "train.py": "1386af42c287590513b25f8d24fc1268706fb0e6f9fab9faa41460761b5db4c3",
+    "td3_core_goal_contrast.py": "35f97fa8f9a88c0807339801691b4e01f06f58967d9520fb4f136a6a09c79a07",
+    "goal_pairs.npz": "3cfeedea79a983c9afdeab780dae8f199caea18ad77c89fe5a85d6346e19ce89"
+  }
+}

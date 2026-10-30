@@ -1,0 +1,85 @@
+{
+  "experiment": "STAGE_T163_FIXED_POLICY_FIRST_EVENT_DIAGNOSTICS",
+  "models": {
+    "T159": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t159/consolidated_actor.pt",
+      "sha256": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570"
+    },
+    "T161": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t161/episode_011.pt",
+      "sha256": "d62e94c060449a0ca2ed94db3748532703f54e071a2c14d7ad3bb73ea4dba7ee"
+    }
+  },
+  "cases": [
+    {
+      "id": "T159_5m_LEFT",
+      "model": "T159",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "distance_m": 5.0,
+      "step_cap": 23334
+    },
+    {
+      "id": "T159_5m_RIGHT",
+      "model": "T159",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "distance_m": 5.0,
+      "step_cap": 23334
+    },
+    {
+      "id": "T161_5m_LEFT",
+      "model": "T161",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "distance_m": 5.0,
+      "step_cap": 23334
+    },
+    {
+      "id": "T161_5m_RIGHT",
+      "model": "T161",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "distance_m": 5.0,
+      "step_cap": 23334
+    },
+    {
+      "id": "T159_3m_RIGHT_anchor",
+      "model": "T159",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "T159_4m_LEFT_anchor",
+      "model": "T159",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667
+    }
+  ],
+  "horizons_s": [
+    0.2,
+    1.0,
+    3.0,
+    10.0
+  ],
+  "sample_every_physics_steps": 25,
+  "wall_seconds": 600,
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t159/consolidated_actor.pt": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t161/episode_011.pt": "d62e94c060449a0ca2ed94db3748532703f54e071a2c14d7ad3bb73ea4dba7ee",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t163/collect_events.py": "e3a2428e4cb64398c554b3b87d2272d5f07b46ccf47bb8ec9ef7a4547daacbc2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t163/event_labels.py": "e6ea6a07a0027999b7537c0510fda7bf6053818fec0b14ba3580c8014b5dc1c1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "training": false,
+  "planner": false,
+  "waypoints": false,
+  "purpose": "Collect causal sensor inputs and competing-event/censoring labels for method feasibility, no model fitting or policy selection",
+  "labels": "0=no first event within horizon,1=goal first,2=collision first,-1=unknown after censoring",
+  "diagnostic_privilege": "poses and native contacts are diagnostics/labels only, never policy input"
+}

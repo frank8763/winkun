@@ -1,0 +1,64 @@
+{
+  "experiment": "STAGE_T164_GAMMA2S",
+  "initial_actor": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t161/episode_011.pt",
+  "critic_parent": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t161/episode_011.pt",
+  "retention_observations": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t159/six_task_success.npz",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t161/episode_011.pt": "d62e94c060449a0ca2ed94db3748532703f54e071a2c14d7ad3bb73ea4dba7ee",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t159/six_task_success.npz": "657c5a64ff39f3c38c7cadc605b14ed79dd6de3bb09f957d72e92b7197fcd289",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t164/gamma2s/train_curriculum.py": "5f8284e98e477eadd7a2b30384aef3a4a845ac4f5c3a2c4ca2fb07bf065d8fc5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "seed": 2026103064,
+  "new_frames": 256000,
+  "wall_seconds": 2400,
+  "actor_lr": 1e-05,
+  "critic_lr": 0.0001,
+  "gamma": 0.999000499833375,
+  "rl_alpha": 0.5,
+  "replay_capacity": 60000,
+  "update_every_frames": 4,
+  "critic_adaptation_frames": 4000,
+  "exploration_std": 0.12,
+  "noise_hold_physics_frames": 25,
+  "tasks": [
+    {
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "distance_m": 5.0,
+      "step_cap": 23334
+    },
+    {
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "distance_m": 5.0,
+      "step_cap": 23334
+    }
+  ],
+  "initialization": "Actor/target, Critic/target and Critic optimizer from fixed final T161. Actor optimizer reset in both arms. Parent replay retained, RNG reset to shared declared seed. Explicit warm start; not complete resume.",
+  "objective": "normalized TD3 Q objective plus fixed T161 action retention at all six T159 successful trajectory state banks",
+  "reward": "unchanged T148 native reward + T59 clearance penalty + T66 progress bonus",
+  "masked_action_history_columns": [
+    57,
+    58,
+    74,
+    75,
+    86,
+    87,
+    98,
+    99,
+    110,
+    111
+  ],
+  "planner": false,
+  "waypoints": false,
+  "automatic_promotion": false,
+  "study_type": "one-training-seed paired local gamma sensitivity pilot; not from-scratch algorithm ranking",
+  "reference": "https://arxiv.org/abs/2106.06860",
+  "reference_limit": "inspired by Q-scale normalization and policy regularization; online frozen-policy retention is not an exact TD3+BC reproduction",
+  "post_training_gate": "Evaluate both final-budget candidates against common T161 parent and preserved T159 on all eight fixed tasks; no automatic promotion",
+  "physical_discount_efold_s": 2.000000000000061,
+  "comparison": "Only gamma differs between arms; shared initial weights/replay, seed, update budget, rewards, tasks and action interface",
+  "limitation": "Warm-start Critic learned at gamma=.99. Contrast includes adaptation to changed return semantics; verify from-scratch with multiple seeds before causal general claims."
+}

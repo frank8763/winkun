@@ -1,0 +1,19 @@
+{
+  "experiment": "STAGE_TD3_T85",
+  "baseline": "T71B",
+  "frozen_parent": "T67C022",
+  "initial_frames": 134491,
+  "target_frames": 190491,
+  "single_functional_change": "T66 reward uses distance progress in meters",
+  "distance_before": "10 * obs[48]",
+  "distance_after": "10 * next_obs[48]",
+  "reward_coefficient": 16.0,
+  "reward_delta_clip_m": 0.02,
+  "actor_changes": false,
+  "replay_changes": false,
+  "environment_changes": false,
+  "automatic_promotion": false,
+  "source_sha256": "be59498eee12a9765e3fbaf6871c0a5541a8a0848db0d8ef094025dab53504cb",
+  "core_sha256": "c7e06605579a8dec7d0bd95033ae4379975833968fe69968e7294396e9b21cdc",
+  "initial_checkpoint_sha256": "5471e31c29e681c055d6096e4f55dc8d7333219448873fdf7bba0a52c1b926fc"
+}

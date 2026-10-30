@@ -1,0 +1,47 @@
+{
+  "experiment": "STAGE_T152_SUCCESS_BC_WITH_VERIFIED_HARD_RIGHT",
+  "parent_checkpoint": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/checkpoints/episode_0748.pt",
+    "sha256": "7dd897ef7d01556198ebfd09721d1986905598a5ef819d008e648c55895cd248"
+  },
+  "success_archive": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t152/combined_success.npz",
+    "sha256": "3b19c856fed1a2bd0c30780d36f781a1040797d686b13b139652dd0007ef1a1c"
+  },
+  "core_source": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py",
+    "sha256": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "training_source_sha256": "54dfe4652066e18013c17b405fb3da456f9db7cde3801627d2dbf970f8cb92b7",
+  "seed": 20261030,
+  "updates": 1000,
+  "batch_size": 256,
+  "left_samples_per_batch": 128,
+  "right_samples_per_batch": 128,
+  "learning_rate": 0.0001,
+  "changes": [
+    "Compared with T151, replace 64 easy-right samples with 64 newly verified hard-right samples; keep initialization, network, seed, optimizer settings and update budget fixed."
+  ],
+  "control_interface_changed": false,
+  "automatic_promotion": false,
+  "checkpoint_selection": "fixed final update 1000; no outcome-based selection",
+  "references": [
+    "https://arxiv.org/abs/1709.10089",
+    "https://arxiv.org/abs/1709.10087"
+  ],
+  "limitations": [
+    "BC-only research candidate, not a full TD3 training checkpoint",
+    "one hard-right trajectory contains exploration noise",
+    "fixed training tasks are not independent holdout"
+  ],
+  "trajectory_samples_per_batch": [
+    128,
+    64,
+    64
+  ],
+  "archive_provenance": {
+    "old_archive_sha256": "743c3b3099031a0f4104e2e41af22c12d491a70a6f3d780ca34477463cf9192b",
+    "hard_right_archive_sha256": "389efd853fbe4575f6a7d182e9af9d10f60bf8f63853b521fe458340c858eb3d",
+    "donor_checkpoint_sha256": "7bbbcedd75ff4997015bc9878426ba76433fe7ad2156775d01877c14db5d1926"
+  }
+}

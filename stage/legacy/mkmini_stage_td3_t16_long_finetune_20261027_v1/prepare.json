@@ -1,0 +1,31 @@
+{
+  "experiment": "STAGE_TD3_T16",
+  "source_T12_checkpoint_sha256": "ab7ca56e87e238615c7601789f40a8ef571eb45617b584c2bb5860b15560a146",
+  "initial_frames": 4000,
+  "target_frames": 20000,
+  "tasks": [
+    [
+      20,
+      1.2
+    ],
+    [
+      20,
+      1.0
+    ],
+    [
+      -20,
+      1.0
+    ],
+    [
+      -20,
+      1.2
+    ]
+  ],
+  "episode_cap": 4000,
+  "files": {
+    "train.py": "d070a928330a4b3b4218d9210cf590cdbaf8f6e880d3d4eb6fa2ebce29816f00",
+    "td3_core_goal_contrast.py": "58b3752da0451a0b8eef8f5557401e9ccb4813cae8e30191c151f12b4a542d68",
+    "goal_pairs.npz": "3cfeedea79a983c9afdeab780dae8f199caea18ad77c89fe5a85d6346e19ce89"
+  },
+  "automatic_promotion": false
+}

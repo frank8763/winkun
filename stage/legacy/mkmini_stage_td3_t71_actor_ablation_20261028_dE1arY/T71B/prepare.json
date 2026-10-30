@@ -1,0 +1,38 @@
+{
+  "experiment": "STAGE_TD3_T71B",
+  "parent": "T67C022",
+  "parent_checkpoint_sha256": "8d078708eae6564a74f5fc13d08df63d060bd27d048728a62fb6135186cbe62f",
+  "parent_frames": 134491,
+  "target_frames": 190491,
+  "training_tasks": [
+    [
+      -17.3,
+      3.0
+    ],
+    [
+      13.6,
+      3.0
+    ],
+    [
+      18.8,
+      3.0
+    ],
+    [
+      -12.5,
+      3.0
+    ]
+  ],
+  "training_seeds": [
+    2029653601,
+    2029653602,
+    2029654802,
+    2029654801
+  ],
+  "changed_variable": "historical_actor_loss_decay",
+  "files": {
+    "train.py": "19a03f58bba9b7122b1eb17c1f9806f9e00b75a0acc058a0a7af3eaaac410763",
+    "td3_core_goal_contrast.py": "c7e06605579a8dec7d0bd95033ae4379975833968fe69968e7294396e9b21cdc",
+    "goal_pairs.npz": "3cfeedea79a983c9afdeab780dae8f199caea18ad77c89fe5a85d6346e19ce89"
+  },
+  "automatic_promotion": false
+}

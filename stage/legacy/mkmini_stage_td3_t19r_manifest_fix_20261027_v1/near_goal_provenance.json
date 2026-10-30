@@ -1,0 +1,50 @@
+{
+  "experiment": "STAGE_TD3_T19R",
+  "repair": "STRICT_RESUME_MANIFEST_COMPATIBILITY",
+  "previous_checkpoint_sha256": "fe3f4213e373c64c0f0a168610af385afe167a2d27e08a8111e9ac7a5b9c421c",
+  "parent_T16_sha256": "21501f7c03ddc2cf291f1033daf279820c1c564934189df51fef26670e61c41a",
+  "runtime_manifest": {
+    "experiment": "STAGE_TD3_T19",
+    "algorithm": "TD3",
+    "initialization": "FRESH",
+    "source_core": "73259472bbfbf2b831aef790c30c54a11e6ad88275c56bfb81121781322cf99e",
+    "source_stage": "4e9855bd90f523fb5c7c12ac4ea5c7ca5a7242cd08a63808ef3b3c89120c1556",
+    "source_helper": "6f01a39f90bd071974701eac417b6801252af2ee99582ce9247d717d742bfc8d",
+    "frozen_reference": "cb650414dab55dbc0a913cc439fe947a7979fd0755f5aff3912fda68c5ab35d8",
+    "target_frames": 17491,
+    "warmup_frames": 2048,
+    "actor_lr": 3e-05,
+    "critic_lr": 0.0001,
+    "training_seed": 20261027,
+    "goal_pair_dataset_sha256": "3cfeedea79a983c9afdeab780dae8f199caea18ad77c89fe5a85d6346e19ce89",
+    "goal_rank_margin": 0.4,
+    "goal_rank_beta": 0.05,
+    "planner": false,
+    "waypoints": false,
+    "automatic_promotion": false
+  },
+  "near_goal_metadata": {
+    "near_goal_beta": 0.04,
+    "near_goal_channel": 48,
+    "near_goal_encoding": {
+      "index": 48,
+      "slope": 0.10000000297745221,
+      "span": 0.06500000320374966,
+      "residual": 3.4716091806830107e-09,
+      "across_scene_error": 0.0,
+      "value_at_025": 0.02500000037252903,
+      "value_at_045": 0.04500000178813934,
+      "values": [
+        0.02500000037252903,
+        0.03500000014901161,
+        0.04500000178813934,
+        0.06499999761581421,
+        0.09000000357627869
+      ]
+    }
+  },
+  "new_checkpoint_sha256": "ed079d59deaa087d01a2ecd5369a13c030cdb90b45e3ebf333434798689f2ea6",
+  "initial_frames": 13491,
+  "target_frames": 17491,
+  "automatic_promotion": false
+}

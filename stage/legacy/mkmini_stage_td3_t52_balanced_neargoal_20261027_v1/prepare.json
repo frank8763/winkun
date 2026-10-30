@@ -1,0 +1,35 @@
+{
+  "experiment": "STAGE_TD3_T52",
+  "parent_sha256": "e76b37d474cba39a8bb93f8ec6da1b9d2507110f30f9a6d617f62cb4db38330e",
+  "core_sha256": "b28b45562d79dff52090a24e6b21a74bcd24d830ab89a706cb46467df8d531ea",
+  "initial_frames": 16491,
+  "target_frames": 28491,
+  "episode_cap": 3000,
+  "tasks": [
+    [
+      -20.0,
+      1.2
+    ],
+    [
+      20.0,
+      1.2
+    ],
+    [
+      -20.0,
+      3.0
+    ],
+    [
+      20.0,
+      3.0
+    ]
+  ],
+  "near_goal_sampling": true,
+  "success_radius_unchanged": true,
+  "obstacle_geometry_unchanged": true,
+  "files": {
+    "train.py": "10a5a4d75807f49a33d39cd5d9d833308256579bb3ffb526d2e9feed7bf7c87b",
+    "td3_core_goal_contrast.py": "b28b45562d79dff52090a24e6b21a74bcd24d830ab89a706cb46467df8d531ea",
+    "goal_pairs.npz": "3cfeedea79a983c9afdeab780dae8f199caea18ad77c89fe5a85d6346e19ce89"
+  },
+  "automatic_promotion": false
+}

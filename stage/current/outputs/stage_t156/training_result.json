@@ -1,0 +1,75 @@
+{
+  "experiment": "STAGE_T156_BC_WITHOUT_EXPLICIT_ACTION_HISTORY",
+  "result": "TRAINING_COMPLETED_NOT_YET_EVALUATED",
+  "initial_archive_fit": {
+    "left_mse": 0.6838459968566895,
+    "right_mse": 0.19031596183776855,
+    "throttle_rmse": 0.6422563195228577,
+    "steer_rmse": 0.5420363545417786
+  },
+  "final_archive_fit": {
+    "left_mse": 0.0003019633877556771,
+    "right_mse": 0.0022125046234577894,
+    "throttle_rmse": 0.03969937562942505,
+    "steer_rmse": 0.03985302150249481
+  },
+  "training_losses": [
+    {
+      "update": 100,
+      "mse": 0.003352897008880973,
+      "elapsed_s": 1.088693562982371
+    },
+    {
+      "update": 200,
+      "mse": 0.0021073264069855213,
+      "elapsed_s": 2.0488081719959155
+    },
+    {
+      "update": 300,
+      "mse": 0.0020341521594673395,
+      "elapsed_s": 2.98489111798699
+    },
+    {
+      "update": 400,
+      "mse": 0.0020090024918317795,
+      "elapsed_s": 3.9362098329875153
+    },
+    {
+      "update": 500,
+      "mse": 0.001308512408286333,
+      "elapsed_s": 4.879997350974008
+    },
+    {
+      "update": 600,
+      "mse": 0.0016231993213295937,
+      "elapsed_s": 5.826650333998259
+    },
+    {
+      "update": 700,
+      "mse": 0.0011353484587743878,
+      "elapsed_s": 6.793221440981142
+    },
+    {
+      "update": 800,
+      "mse": 0.0009731089230626822,
+      "elapsed_s": 7.94357889299863
+    },
+    {
+      "update": 900,
+      "mse": 0.0018552032997831702,
+      "elapsed_s": 8.89948496298166
+    },
+    {
+      "update": 1000,
+      "mse": 0.0008243609336204827,
+      "elapsed_s": 9.861885530990548
+    }
+  ],
+  "checkpoint_sha256": "2d744e123420427bb6a26ab22d4f929012fe551298d598e8663184e1bcb44ee6",
+  "elapsed_seconds": 10.183164286980173,
+  "environment_frames": 0,
+  "learning_method": "behavior cloning only",
+  "automatic_promotion": false,
+  "generalization_claim": false,
+  "note": "Archive-fit error is not a navigation success metric."
+}

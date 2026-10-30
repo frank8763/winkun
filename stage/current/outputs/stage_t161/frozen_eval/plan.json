@@ -1,0 +1,101 @@
+{
+  "experiment": "STAGE_T161_FIXED_BUDGET_PAIRED_3M_4M_5M_SCREEN",
+  "models": {
+    "T159_initial": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t159/consolidated_actor.pt",
+      "sha256": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570"
+    },
+    "T158_final": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t161/episode_011.pt",
+      "sha256": "d62e94c060449a0ca2ed94db3748532703f54e071a2c14d7ad3bb73ea4dba7ee"
+    }
+  },
+  "cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "4m_transfer"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "4m_transfer"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "5m_training_task_screen"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "5m_training_task_screen"
+    }
+  ],
+  "step_cap": 23334,
+  "wall_limit_seconds": 1800,
+  "source_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_eval.py": "ce1c71d65ca520bb95ca61c7d827630551382e4ca6e323209815bfbc873ad93f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "purpose": "Final 128k-frame 5m pilot paired against the fixed consolidated T159; all eight training-task outcomes reported, not a new-scene generalization test",
+  "selection_rule": "Final checkpoint after 128000 physical frames; no outcome-based intermediate selection",
+  "limits": "3m 28s, 4m 37.334s, 5m 46.668s; radius 0.20m unchanged",
+  "training": false,
+  "automatic_promotion": false,
+  "new_task_feasibility": "Start/goal collision-free checked; full vehicle reachability not pre-proven.",
+  "new_training_frames": 128000
+}

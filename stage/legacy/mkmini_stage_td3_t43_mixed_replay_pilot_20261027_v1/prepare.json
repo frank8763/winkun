@@ -1,0 +1,39 @@
+{
+  "experiment": "STAGE_TD3_T43R",
+  "parent_checkpoint_sha256": "21501f7c03ddc2cf291f1033daf279820c1c564934189df51fef26670e61c41a",
+  "history_archive_sha256": "440e3887596e6900dde36e59c69d1823be6cf6948b3c92ac3e4c60e9eafb6de0",
+  "success_archive_sha256": "743c3b3099031a0f4104e2e41af22c12d491a70a6f3d780ca34477463cf9192b",
+  "initial_frames": 13491,
+  "target_frames": 25491,
+  "tasks": [
+    [
+      20,
+      3.0
+    ],
+    [
+      20,
+      0.4
+    ],
+    [
+      -20,
+      3.0
+    ],
+    [
+      -20,
+      1.2
+    ]
+  ],
+  "batch_composition": {
+    "online": 32,
+    "old_success": 8,
+    "old_all": 8,
+    "three_m_left": 8,
+    "three_m_right": 8
+  },
+  "files": {
+    "train.py": "ecf59419dc2860cfb36f3cbcaef2c0b3f37d70c5c7f5014ac530acec5e5f8126",
+    "td3_core_goal_contrast.py": "58b3752da0451a0b8eef8f5557401e9ccb4813cae8e30191c151f12b4a542d68",
+    "goal_pairs.npz": "3cfeedea79a983c9afdeab780dae8f199caea18ad77c89fe5a85d6346e19ce89"
+  },
+  "automatic_promotion": false
+}

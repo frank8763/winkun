@@ -1,0 +1,752 @@
+{
+  "experiment": "STAGE_T151_BC_PAIRED_FROZEN_TRAIN_TASK_SCREEN",
+  "plan_sha256": "74c7c8f5b2260601ecd60dc2ed2eb1b4f27041d3bcc44278d42cf5d9dd812a15",
+  "actor_unchanged": {
+    "T148_0748": true,
+    "T151_BC": true
+  },
+  "training": false,
+  "automatic_promotion": false,
+  "training_runs_per_model": 1,
+  "generalization_claim": false,
+  "unique_scene_signatures": 1,
+  "unique_task_signatures": 4,
+  "cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "demonstration_task",
+      "model": "T148_0748",
+      "actual_seed": 2029653601,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "42927fb63134a991975666f3b9b75741dffbd760283e9f2b4322553d3b43e737",
+      "start_pose": [
+        -0.75,
+        0.75,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        0.6450111391171451,
+        -1.9059261890608115
+      ],
+      "initial_distance_m": 3.0,
+      "steps": 14000,
+      "success": false,
+      "safe_success": false,
+      "collision": false,
+      "terminated": false,
+      "truncated": true,
+      "remaining_m": 0.41495044283013427,
+      "nearest_m": 0.41495044283013427,
+      "final_bearing_deg": -77.91166353501688,
+      "travel_m": 2.9113670577516735,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 27.99999999999536,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 8500,
+          "remaining_m": 1.1999329911454208,
+          "bearing_deg": -19.424234027507406,
+          "raw_action": [
+            0.36146464943885803,
+            -0.300668329000473
+          ],
+          "pose": [
+            0.3914959345368731,
+            -0.7330795561689318,
+            -1.0189008104434032,
+            0.061714632949877585,
+            -0.11099077357289619,
+            -0.020285834916241925
+          ]
+        },
+        "0.8": {
+          "step": 10179,
+          "remaining_m": 0.7999578302142294,
+          "bearing_deg": -26.514272135367815,
+          "raw_action": [
+            0.842144250869751,
+            0.2616118788719177
+          ],
+          "pose": [
+            0.5995104420206908,
+            -1.1072634212515222,
+            -1.0511253958030666,
+            0.08116234915942348,
+            -0.13287135335899752,
+            0.021780088387475017
+          ]
+        },
+        "0.5": {
+          "step": 11610,
+          "remaining_m": 0.49997437374111847,
+          "bearing_deg": -54.124194353492385,
+          "raw_action": [
+            0.14081256091594696,
+            -0.06307286769151688
+          ],
+          "pose": [
+            0.8229607836782044,
+            -1.438691453196261,
+            -0.9900466374215813,
+            0.03568262529416395,
+            -0.05507200780076591,
+            -0.0013733073904807717
+          ]
+        }
+      },
+      "end": "TRUNCATED",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t151/paired_eval/2029653601_LEFT_T148_0748.jsonl"
+    },
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "demonstration_task",
+      "model": "T151_BC",
+      "actual_seed": 2029653601,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "42927fb63134a991975666f3b9b75741dffbd760283e9f2b4322553d3b43e737",
+      "start_pose": [
+        -0.75,
+        0.75,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        0.6450111391171451,
+        -1.9059261890608115
+      ],
+      "initial_distance_m": 3.0,
+      "steps": 13666,
+      "success": true,
+      "safe_success": true,
+      "collision": false,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 0.19993311051411608,
+      "nearest_m": 0.19993311051411608,
+      "final_bearing_deg": -16.095497231154088,
+      "travel_m": 2.845978981719036,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 27.33199999999573,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 6685,
+          "remaining_m": 1.199690922712457,
+          "bearing_deg": -2.507850159468288,
+          "raw_action": [
+            0.8552135229110718,
+            -0.13655772805213928
+          ],
+          "pose": [
+            0.23889821749380788,
+            -0.777063662032288,
+            -1.1816882091549186,
+            0.054653817222741076,
+            -0.155761187619384,
+            -0.04516167869328138
+          ]
+        },
+        "0.8": {
+          "step": 7937,
+          "remaining_m": 0.7998271223686876,
+          "bearing_deg": 0.773291145429937,
+          "raw_action": [
+            0.9516060948371887,
+            -0.19150426983833313
+          ],
+          "pose": [
+            0.3687824962506555,
+            -1.1553123319167318,
+            -1.2316699788739787,
+            0.05309635285713312,
+            -0.158641262360162,
+            -0.016088142874785574
+          ]
+        },
+        "0.5": {
+          "step": 10554,
+          "remaining_m": 0.4999665723116058,
+          "bearing_deg": -3.981510255933624,
+          "raw_action": [
+            -0.9148253202438354,
+            0.7477807402610779
+          ],
+          "pose": [
+            0.48256012785936536,
+            -1.4330876940433892,
+            -1.1703747661800386,
+            0.016660153990169044,
+            -0.03323372112340158,
+            0.01598951523751766
+          ]
+        },
+        "0.3": {
+          "step": 12441,
+          "remaining_m": 0.299968962822867,
+          "bearing_deg": -7.167048002812936,
+          "raw_action": [
+            -0.9787272810935974,
+            0.7161145806312561
+          ],
+          "pose": [
+            0.5618528052839039,
+            -1.617714339597425,
+            -1.1648049933489355,
+            0.01860070856364385,
+            -0.034581183905329924,
+            0.014026001805528448
+          ]
+        }
+      },
+      "end": "GOAL",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t151/paired_eval/2029653601_LEFT_T151_BC.jsonl"
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "demonstration_task",
+      "model": "T151_BC",
+      "actual_seed": 2029653602,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "d4719dafee704b604d292886b6b327c7b3c9cc998443afda9d5bb5435ad0e805",
+      "start_pose": [
+        1.75,
+        -4.0,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        4.31093776207436,
+        -5.56256128800811
+      ],
+      "initial_distance_m": 2.9999999999999996,
+      "steps": 9682,
+      "success": true,
+      "safe_success": true,
+      "collision": false,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 0.19999009937647036,
+      "nearest_m": 0.19999009937647036,
+      "final_bearing_deg": 0.47922240675697986,
+      "travel_m": 2.821171413709413,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 19.364000000000146,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 6508,
+          "remaining_m": 1.199880908097091,
+          "bearing_deg": 5.687919197184301,
+          "raw_action": [
+            0.7110028266906738,
+            0.188242107629776
+          ],
+          "pose": [
+            3.219181343885129,
+            -5.0647841119960715,
+            -0.5270568873861893,
+            0.1280927621184097,
+            -0.07136088990377996,
+            0.013445276946208453
+          ]
+        },
+        "0.8": {
+          "step": 7830,
+          "remaining_m": 0.7999700922460298,
+          "bearing_deg": 4.9230852704520975,
+          "raw_action": [
+            0.7708841562271118,
+            0.33991697430610657
+          ],
+          "pose": [
+            3.5735999305004875,
+            -5.252262930587287,
+            -0.4842625312342786,
+            0.13847478794517115,
+            -0.06582123463785539,
+            0.02872099598229574
+          ]
+        },
+        "0.5": {
+          "step": 8766,
+          "remaining_m": 0.49999261941415646,
+          "bearing_deg": 2.9956158488709184,
+          "raw_action": [
+            0.8920028805732727,
+            0.2994599938392639
+          ],
+          "pose": [
+            3.847136621239843,
+            -5.375796405791913,
+            -0.4351006138187155,
+            0.1499797917022052,
+            -0.06343885155514023,
+            0.0263654942942811
+          ]
+        },
+        "0.3": {
+          "step": 9377,
+          "remaining_m": 0.2999495606355123,
+          "bearing_deg": 1.5229534974042989,
+          "raw_action": [
+            0.9130589962005615,
+            0.26312509179115295
+          ],
+          "pose": [
+            4.032283957191946,
+            -5.4515577027056965,
+            -0.40566941284018343,
+            0.15260927514806363,
+            -0.060261453334170656,
+            0.02281690875811765
+          ]
+        }
+      },
+      "end": "GOAL",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t151/paired_eval/2029653602_RIGHT_T151_BC.jsonl"
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "demonstration_task",
+      "model": "T148_0748",
+      "actual_seed": 2029653602,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "d4719dafee704b604d292886b6b327c7b3c9cc998443afda9d5bb5435ad0e805",
+      "start_pose": [
+        1.75,
+        -4.0,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        4.31093776207436,
+        -5.56256128800811
+      ],
+      "initial_distance_m": 2.9999999999999996,
+      "steps": 9723,
+      "success": true,
+      "safe_success": true,
+      "collision": false,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 0.1998920214008934,
+      "nearest_m": 0.1998920214008934,
+      "final_bearing_deg": -10.36212196565137,
+      "travel_m": 2.819911364595114,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 19.4460000000001,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 6484,
+          "remaining_m": 1.1998854714137706,
+          "bearing_deg": 4.127679340109051,
+          "raw_action": [
+            0.6321584582328796,
+            0.2084701806306839
+          ],
+          "pose": [
+            3.2253754873268257,
+            -5.051406035511567,
+            -0.5121122269077181,
+            0.12385298264144595,
+            -0.06639638519252739,
+            0.014489195637265207
+          ]
+        },
+        "0.8": {
+          "step": 7833,
+          "remaining_m": 0.7998097407762025,
+          "bearing_deg": 2.5399284610386355,
+          "raw_action": [
+            0.794468879699707,
+            0.30720245838165283
+          ],
+          "pose": [
+            3.582336849389784,
+            -5.232657769573252,
+            -0.4695021372408651,
+            0.1404193595623099,
+            -0.06508268515211323,
+            0.025720216577672688
+          ]
+        },
+        "0.5": {
+          "step": 8787,
+          "remaining_m": 0.49982959562959905,
+          "bearing_deg": -1.037625157999204,
+          "raw_action": [
+            0.9060229063034058,
+            0.27240505814552307
+          ],
+          "pose": [
+            3.8579812949601484,
+            -5.35123201041823,
+            -0.4184257971972291,
+            0.15158787728283793,
+            -0.0618835953666082,
+            0.023635274620390233
+          ]
+        },
+        "0.3": {
+          "step": 9406,
+          "remaining_m": 0.29976615529980916,
+          "bearing_deg": -5.412677865189272,
+          "raw_action": [
+            0.8692151308059692,
+            0.3055271804332733
+          ],
+          "pose": [
+            4.045251120614613,
+            -5.423743578716143,
+            -0.3870055835146975,
+            0.15123207302519506,
+            -0.05541716816492678,
+            0.026626168980705273
+          ]
+        }
+      },
+      "end": "GOAL",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t151/paired_eval/2029653602_RIGHT_T148_0748.jsonl"
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "other_training_task",
+      "model": "T148_0748",
+      "actual_seed": 2029654801,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "009f56426a677a765921ae400cb2765cd3b57a75d3d71454bb75e30d9c1ae54b",
+      "start_pose": [
+        1.75,
+        -4.0,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        3.3623608142541768,
+        -6.529879958546968
+      ],
+      "initial_distance_m": 3.0000000000000004,
+      "steps": 14000,
+      "success": false,
+      "safe_success": false,
+      "collision": false,
+      "terminated": false,
+      "truncated": true,
+      "remaining_m": 0.5421490086799546,
+      "nearest_m": 0.5421490086799546,
+      "final_bearing_deg": -34.742375691439605,
+      "travel_m": 2.5518408396420056,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 27.99999999999536,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 8551,
+          "remaining_m": 1.1999754376227423,
+          "bearing_deg": -14.44679481885951,
+          "raw_action": [
+            0.6742879152297974,
+            0.03842293843626976
+          ],
+          "pose": [
+            2.922253167614856,
+            -5.413525933039159,
+            -0.9431240905269913,
+            0.048747047379106984,
+            -0.06753776313095529,
+            0.004464430579241241
+          ]
+        },
+        "0.8": {
+          "step": 11112,
+          "remaining_m": 0.7998692256233396,
+          "bearing_deg": -22.39151554348333,
+          "raw_action": [
+            0.1556546837091446,
+            0.14165334403514862
+          ],
+          "pose": [
+            3.1699478041407336,
+            -5.753498601456031,
+            -0.9370524516589046,
+            0.05177841461476952,
+            -0.069305698184147,
+            -0.006666216556127192
+          ]
+        }
+      },
+      "end": "TRUNCATED",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t151/paired_eval/2029654801_LEFT_T148_0748.jsonl"
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "other_training_task",
+      "model": "T151_BC",
+      "actual_seed": 2029654801,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "009f56426a677a765921ae400cb2765cd3b57a75d3d71454bb75e30d9c1ae54b",
+      "start_pose": [
+        1.75,
+        -4.0,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        3.3623608142541768,
+        -6.529879958546968
+      ],
+      "initial_distance_m": 3.0000000000000004,
+      "steps": 11446,
+      "success": true,
+      "safe_success": true,
+      "collision": false,
+      "terminated": true,
+      "truncated": false,
+      "remaining_m": 0.19987162531576838,
+      "nearest_m": 0.19987162531576838,
+      "final_bearing_deg": -20.513474682416437,
+      "travel_m": 2.823436635804473,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 22.89199999999819,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 6178,
+          "remaining_m": 1.1999090076069927,
+          "bearing_deg": -3.9667200281055135,
+          "raw_action": [
+            0.8858814835548401,
+            0.04592462256550789
+          ],
+          "pose": [
+            2.806425211811708,
+            -5.466528073010799,
+            -1.0198319531432047,
+            0.05172991375057116,
+            -0.08409281704979639,
+            0.002553597141799847
+          ]
+        },
+        "0.8": {
+          "step": 8263,
+          "remaining_m": 0.7999936042506334,
+          "bearing_deg": -6.226936575503697,
+          "raw_action": [
+            0.8552626371383667,
+            -0.0023282612673938274
+          ],
+          "pose": [
+            3.0164597416145185,
+            -5.8085324592176555,
+            -1.014985410327845,
+            0.04535596006790127,
+            -0.07440701991784879,
+            -0.0020461115213269393
+          ]
+        },
+        "0.5": {
+          "step": 9977,
+          "remaining_m": 0.4998276791132081,
+          "bearing_deg": -8.991861895941314,
+          "raw_action": [
+            0.8757982850074768,
+            -0.0839126855134964
+          ],
+          "pose": [
+            3.172813697194025,
+            -6.067387148633256,
+            -1.0249002150896662,
+            0.04588808431322044,
+            -0.07561208644405,
+            -0.0029011272333296723
+          ]
+        },
+        "0.3": {
+          "step": 11122,
+          "remaining_m": 0.29986586934150855,
+          "bearing_deg": -14.463031515228861,
+          "raw_action": [
+            0.8958341479301453,
+            -0.18039606511592865
+          ],
+          "pose": [
+            3.277899572819645,
+            -6.24215467587046,
+            -1.0328415466373708,
+            0.06311413920999738,
+            -0.10685027501368194,
+            -0.016388909364838198
+          ]
+        }
+      },
+      "end": "GOAL",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t151/paired_eval/2029654801_LEFT_T151_BC.jsonl"
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "hard_training_task",
+      "model": "T151_BC",
+      "actual_seed": 2029654802,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "b2c4c2ab2126d8274f1dedaef43f7e0a9785bf32a1ba493b1c072753ab99b9bc",
+      "start_pose": [
+        1.0,
+        2.25,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        3.6920169243256953,
+        0.9259739884941749
+      ],
+      "initial_distance_m": 3.0,
+      "steps": 14000,
+      "success": false,
+      "safe_success": false,
+      "collision": false,
+      "terminated": false,
+      "truncated": true,
+      "remaining_m": 0.9289162421188184,
+      "nearest_m": 0.9289162421188184,
+      "final_bearing_deg": 23.221328141100155,
+      "travel_m": 2.124406455118438,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 27.99999999999536,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 12091,
+          "remaining_m": 1.1999615852309595,
+          "bearing_deg": 18.127192022220367,
+          "raw_action": [
+            0.08447851985692978,
+            0.00773131987079978
+          ],
+          "pose": [
+            2.537500715403055,
+            1.2530827309100447,
+            -0.5924728500464138,
+            0.04656664805389016,
+            -0.03125165104674867,
+            0.001487227592312755
+          ]
+        }
+      },
+      "end": "TRUNCATED",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t151/paired_eval/2029654802_RIGHT_T151_BC.jsonl"
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "hard_training_task",
+      "model": "T148_0748",
+      "actual_seed": 2029654802,
+      "scene_signature": "c5114b4f9deff0911ba0ceeaba587bbd4513a70b7b8430ab4fb8340dfc2d6d80",
+      "task_signature": "b2c4c2ab2126d8274f1dedaef43f7e0a9785bf32a1ba493b1c072753ab99b9bc",
+      "start_pose": [
+        1.0,
+        2.25,
+        -0.7852155609250646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_xy": [
+        3.6920169243256953,
+        0.9259739884941749
+      ],
+      "initial_distance_m": 3.0,
+      "steps": 14000,
+      "success": false,
+      "safe_success": false,
+      "collision": false,
+      "terminated": false,
+      "truncated": true,
+      "remaining_m": 0.7395996507787658,
+      "nearest_m": 0.7395996507787658,
+      "final_bearing_deg": 9.92572468207777,
+      "travel_m": 2.2989098612688603,
+      "step_simulation_s": 0.002,
+      "simulation_duration_s": 27.99999999999536,
+      "goal_radius_m": 0.2,
+      "milestones": {
+        "1.2": {
+          "step": 10143,
+          "remaining_m": 1.1999209275612457,
+          "bearing_deg": 15.238353598661137,
+          "raw_action": [
+            0.049704909324645996,
+            0.43670299649238586
+          ],
+          "pose": [
+            2.5398504104301125,
+            1.26111956381502,
+            -0.5490311114353392,
+            0.08950729514127564,
+            -0.04828007227500163,
+            0.024960849121805725
+          ]
+        },
+        "0.8": {
+          "step": 13311,
+          "remaining_m": 0.7999315546962225,
+          "bearing_deg": 10.782598593698202,
+          "raw_action": [
+            -0.8807693123817444,
+            0.5916808843612671
+          ],
+          "pose": [
+            2.911437403428391,
+            1.1008628210548914,
+            -0.4086018712006208,
+            0.04396081274711794,
+            -0.01529684244562648,
+            0.01707214637852971
+          ]
+        }
+      },
+      "end": "TRUNCATED",
+      "trace_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t151/paired_eval/2029654802_RIGHT_T148_0748.jsonl"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "experiment": "STAGE_TD3_T19",
+  "parent_checkpoint_sha256": "21501f7c03ddc2cf291f1033daf279820c1c564934189df51fef26670e61c41a",
+  "initial_frames": 13491,
+  "target_frames": 17491,
+  "single_change": "near_goal_actor_throttle_loss",
+  "beta": 0.04,
+  "goal_distance_channel": {
+    "index": 48,
+    "slope": 0.10000000297745221,
+    "span": 0.06500000320374966,
+    "residual": 3.4716091806830107e-09,
+    "across_scene_error": 0.0,
+    "value_at_025": 0.02500000037252903,
+    "value_at_045": 0.04500000178813934,
+    "values": [
+      0.02500000037252903,
+      0.03500000014901161,
+      0.04500000178813934,
+      0.06499999761581421,
+      0.09000000357627869
+    ]
+  },
+  "files": {
+    "train.py": "e25d0007f086640671a021e5f14c28dfe5fdbcabeb3013e9be10c52a04b4b0c5",
+    "td3_core_goal_contrast.py": "73259472bbfbf2b831aef790c30c54a11e6ad88275c56bfb81121781322cf99e",
+    "goal_pairs.npz": "3cfeedea79a983c9afdeab780dae8f199caea18ad77c89fe5a85d6346e19ce89"
+  },
+  "automatic_promotion": false
+}

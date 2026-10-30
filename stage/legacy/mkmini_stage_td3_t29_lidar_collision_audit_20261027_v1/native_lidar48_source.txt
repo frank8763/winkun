@@ -1,0 +1,55 @@
+    def _lidar48(self) -> np.ndarray:
+        x, y, yaw, _, _, _ = self._pose()
+
+        angles = np.linspace(
+            -0.75 * math.pi,
+            0.75 * math.pi,
+            48,
+            dtype=np.float32,
+        )
+        max_range = 6.0
+        output = np.ones(48, dtype=np.float32)
+
+        origin = np.array(
+            [
+                x + 0.48 * math.cos(yaw),
+                y + 0.48 * math.sin(yaw),
+                0.36,
+            ],
+            dtype=np.float64,
+        )
+
+        geomgroup = np.ones(6, dtype=np.uint8)
+        geomid = np.array([-1], dtype=np.int32)
+
+        for index, relative in enumerate(angles):
+            theta = yaw + float(relative)
+            direction = np.array(
+                [
+                    math.cos(theta),
+                    math.sin(theta),
+                    0.0,
+                ],
+                dtype=np.float64,
+            )
+
+            distance = mujoco.mj_ray(
+                self.model,
+                self.data,
+                origin,
+                direction,
+                geomgroup,
+                1,
+                self.base_body_id,
+                geomid,
+            )
+
+            if distance < 0.0:
+                distance = max_range
+
+            output[index] = min(
+                float(distance),
+                max_range,
+            ) / max_range
+
+        return output

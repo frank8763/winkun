@@ -1,0 +1,36 @@
+{
+  "experiment": "STAGE_T151_BALANCED_SUCCESS_BC_RECOVERY",
+  "parent_checkpoint": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/checkpoints/episode_0748.pt",
+    "sha256": "7dd897ef7d01556198ebfd09721d1986905598a5ef819d008e648c55895cd248"
+  },
+  "success_archive": {
+    "path": "/home/linghu/mkmini_stage_td3_t42_verified_3m_replay_20261027_v1/verified_3m_success.npz",
+    "sha256": "743c3b3099031a0f4104e2e41af22c12d491a70a6f3d780ca34477463cf9192b"
+  },
+  "core_source": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py",
+    "sha256": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "training_source_sha256": "fcd47661e2661d2bcdffd340607fc71ef7cb75a3f96bb4fb02dff8f1587c052f",
+  "seed": 20261030,
+  "updates": 1000,
+  "batch_size": 256,
+  "left_samples_per_batch": 128,
+  "right_samples_per_batch": 128,
+  "learning_rate": 0.0001,
+  "changes": [
+    "actor-only BC on verified archive; no critic or RL loss updates"
+  ],
+  "control_interface_changed": false,
+  "automatic_promotion": false,
+  "checkpoint_selection": "fixed final update 1000; no outcome-based selection",
+  "references": [
+    "https://arxiv.org/abs/1709.10089",
+    "https://arxiv.org/abs/1709.10087"
+  ],
+  "limitations": [
+    "BC-only diagnostic, not reproduction of DAPG or demonstration-augmented RL",
+    "two old success trajectories; no claim of independent-task generalization"
+  ]
+}

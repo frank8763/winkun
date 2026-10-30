@@ -1,0 +1,54 @@
+{
+  "experiment": "STAGE_T155_BC_PHYSICAL_COMMAND_SMOOTHING",
+  "parent_checkpoint": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/checkpoints/episode_0748.pt",
+    "sha256": "7dd897ef7d01556198ebfd09721d1986905598a5ef819d008e648c55895cd248"
+  },
+  "success_archive": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t155/smoothed_targets.npz",
+    "sha256": "975191bbb4ab4f53ac04683cfca010672371de2fa5124f66e492c173f534bf68"
+  },
+  "core_source": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py",
+    "sha256": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "training_source_sha256": "b3018248de560770993ac59e3bfc78321ff12eef24b227f4e113da420bd74555",
+  "seed": 20261030,
+  "updates": 1000,
+  "batch_size": 256,
+  "left_samples_per_batch": 128,
+  "right_samples_per_batch": 128,
+  "learning_rate": 0.0001,
+  "changes": [
+    "Compared with T152, only hard-right supervision targets are averaged over a fixed 51-frame/102ms window; throttle averaged in squared physical-command space, steer averaged in raw space.",
+    "Initialization, state samples, seed, optimizer, updates and evaluation cases remain fixed."
+  ],
+  "control_interface_changed": false,
+  "automatic_promotion": false,
+  "checkpoint_selection": "fixed final update 1000; no outcome-based selection",
+  "references": [
+    "https://arxiv.org/abs/1709.10089",
+    "https://arxiv.org/abs/1709.10087"
+  ],
+  "limitations": [
+    "Smoothed labels themselves are not a verified successful action sequence.",
+    "Actual neural closed-loop evaluation is required; no inference-time smoothing or controller overrides.",
+    "Training tasks only; no generalization claim."
+  ],
+  "trajectory_samples_per_batch": [
+    128,
+    64,
+    64
+  ],
+  "archive_provenance": {
+    "old_archive_sha256": "743c3b3099031a0f4104e2e41af22c12d491a70a6f3d780ca34477463cf9192b",
+    "hard_right_archive_sha256": "389efd853fbe4575f6a7d182e9af9d10f60bf8f63853b521fe458340c858eb3d",
+    "donor_checkpoint_sha256": "7bbbcedd75ff4997015bc9878426ba76433fe7ad2156775d01877c14db5d1926"
+  },
+  "label_processing": {
+    "window_frames": 51,
+    "window_seconds": 0.102,
+    "method": "centered box mean with edge padding; offline targets only",
+    "physical_speed_conversion": "normalized_wheel=((raw+3)/4)^2; filtered_raw=4*sqrt(mean(normalized_wheel))-3"
+  }
+}

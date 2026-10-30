@@ -1,0 +1,191 @@
+{
+  "experiment": "STAGE_T149_READ_ONLY_REPLAY_AND_TIME_AUDIT",
+  "training": false,
+  "batch_weights": {
+    "online": 0.5,
+    "old_success": 0.125,
+    "old_random": 0.125,
+    "success_left": 0.125,
+    "success_right": 0.125
+  },
+  "frozen_banks": {
+    "old_random": {
+      "n": 13491,
+      "initial_task_side": {
+        "LEFT": 7646,
+        "RIGHT": 5845
+      },
+      "goal_left_fraction": 0.5667482025053739,
+      "goal_right_fraction": 0.43325179749462606,
+      "near_goal_020_045_fraction": 0.4179082351197094,
+      "t118_turn_mask_fraction": 0.8448595359869543,
+      "t118_near_mask_fraction": 0.2806315321325328,
+      "reward_quantiles": {
+        "min": -0.05144711019582107,
+        "p10": -0.022070285637956488,
+        "median": 0.0331480535016088,
+        "p90": 0.04934316108800732,
+        "max": 8.012406880795018
+      },
+      "terminal_transitions": 4
+    },
+    "old_success": {
+      "n": 7166,
+      "initial_task_side": {
+        "LEFT": 6321,
+        "RIGHT": 845
+      },
+      "goal_left_fraction": 0.8820820541445716,
+      "goal_right_fraction": 0.11791794585542842,
+      "near_goal_020_045_fraction": 0.4600893106335473,
+      "t118_turn_mask_fraction": 0.992464415294446,
+      "t118_near_mask_fraction": 0.24699972090427016,
+      "reward_quantiles": {
+        "min": -0.01659767802004082,
+        "p10": 0.013753786746157216,
+        "median": 0.03511757212313768,
+        "p90": 0.04961172879183859,
+        "max": 8.012406880795018
+      },
+      "terminal_transitions": 4
+    },
+    "success_left": {
+      "n": 10612,
+      "initial_task_side": {
+        "LEFT": 10612
+      },
+      "goal_left_fraction": 0.5026385224274407,
+      "goal_right_fraction": 0.058424425179042595,
+      "near_goal_020_045_fraction": 0.12834526950621938,
+      "t118_turn_mask_fraction": 0.058424425179042595,
+      "t118_near_mask_fraction": 0.0,
+      "reward_quantiles": {
+        "min": -0.001495414413511753,
+        "p10": 0.02106566186994314,
+        "median": 0.03604242578148842,
+        "p90": 0.04702320210635662,
+        "max": 7.998631477355957
+      },
+      "terminal_transitions": 1
+    },
+    "success_right": {
+      "n": 9707,
+      "initial_task_side": {
+        "RIGHT": 9707
+      },
+      "goal_left_fraction": 0.0,
+      "goal_right_fraction": 0.5321932625940043,
+      "near_goal_020_045_fraction": 0.07860306994952096,
+      "t118_turn_mask_fraction": 0.0,
+      "t118_near_mask_fraction": 0.0,
+      "reward_quantiles": {
+        "min": 0.0021917843259871006,
+        "p10": 0.027513475716114046,
+        "median": 0.031070750206708908,
+        "p90": 0.044745898246765135,
+        "max": 8.009380340576172
+      },
+      "terminal_transitions": 1
+    }
+  },
+  "models": {
+    "T146": {
+      "checkpoint_sha256": "fb0b9558993a7dcca93e07c57865047f41290d87c63adf62f3d4a342f0c45d50",
+      "frames": 7396322,
+      "online_bank": {
+        "n": 20000,
+        "initial_task_side": {
+          "RIGHT": 19570,
+          "LEFT": 430
+        },
+        "goal_left_fraction": 0.0215,
+        "goal_right_fraction": 0.9785,
+        "near_goal_020_045_fraction": 0.25725,
+        "t118_turn_mask_fraction": 0.4963,
+        "t118_near_mask_fraction": 0.15995,
+        "reward_quantiles": {
+          "min": -12.366667259835925,
+          "p10": -0.23145619273373375,
+          "median": -0.007401241951789905,
+          "p90": 0.03475140153960822,
+          "max": 0.07663140424274506
+        },
+        "terminal_transitions": 1
+      },
+      "expected_full_batch_fractions": {
+        "goal_left_fraction": 0.2546835973846733,
+        "goal_right_fraction": 0.6319734288903878,
+        "near_goal_020_045_fraction": 0.2642432356511246,
+        "t118_turn_mask_fraction": 0.48511854705755536,
+        "t118_near_mask_fraction": 0.14592890662960037,
+        "initial_task_LEFT_fraction": 0.3168537820812432
+      },
+      "optimizer_lrs": {
+        "actor": [
+          1e-05
+        ],
+        "critic": [
+          0.0001
+        ]
+      }
+    },
+    "T148_0733": {
+      "checkpoint_sha256": "5ce48eb88330512613901f7b0dc8a3b5374056d1a2256c444edd0ed5da4a84d3",
+      "frames": 7461490,
+      "online_bank": {
+        "n": 20000,
+        "initial_task_side": {
+          "RIGHT": 9947,
+          "LEFT": 10053
+        },
+        "goal_left_fraction": 0.50265,
+        "goal_right_fraction": 0.49735,
+        "near_goal_020_045_fraction": 0.11425,
+        "t118_turn_mask_fraction": 0.4721,
+        "t118_near_mask_fraction": 0.0529,
+        "reward_quantiles": {
+          "min": -12.32529253189834,
+          "p10": -0.2482924217640457,
+          "median": -0.06417499081552777,
+          "p90": 0.045501782972559086,
+          "max": 7.884347202573743
+        },
+        "terminal_transitions": 2
+      },
+      "expected_full_batch_fractions": {
+        "goal_left_fraction": 0.49525859738467326,
+        "goal_right_fraction": 0.3913984288903877,
+        "near_goal_020_045_fraction": 0.19274323565112467,
+        "t118_turn_mask_fraction": 0.47301854705755536,
+        "t118_near_mask_fraction": 0.09240390662960037,
+        "initial_task_LEFT_fraction": 0.5574287820812431
+      },
+      "optimizer_lrs": {
+        "actor": [
+          1e-05
+        ],
+        "critic": [
+          0.0001
+        ]
+      }
+    }
+  },
+  "time_scale": {
+    "measured_step_s": 0.002,
+    "gamma": 0.99,
+    "efold_steps": 99.49916247342207,
+    "efold_seconds": 0.19899832494684416,
+    "half_life_seconds": 0.13793512787305687,
+    "terminal_reward_discount_at_7500_steps": 1.836367007808879e-33,
+    "note": "Terminal-reward attenuation alone is not proof of failure; dense rewards and actor auxiliary objectives also matter."
+  },
+  "limitations": [
+    "Labels denote initial task side, not current goal-bearing sign.",
+    "Old and new reward distributions need not be stationary; quantiles alone do not establish comparability.",
+    "Coverage is not a causal explanation for navigation failure."
+  ],
+  "sources": {
+    "time_discretization": "https://proceedings.mlr.press/v97/tallec19a.html",
+    "experience_replay": "https://proceedings.mlr.press/v119/fedus20a.html"
+  }
+}

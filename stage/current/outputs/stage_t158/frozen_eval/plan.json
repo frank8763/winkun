@@ -1,0 +1,119 @@
+{
+  "experiment": "STAGE_T158_FINAL_PILOT_PAIRED_3M_4M_SCREEN",
+  "models": {
+    "T157_selected": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t157/bias05.pt",
+      "sha256": "b4c10e46ec79d9d984b1d2e9d6e386cae2015d030c36d04405f195c82d58a875"
+    },
+    "T158_final": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t158/episode_006.pt",
+      "sha256": "4aeef71556328b6a38ce889aefa07f5c292f2d45ba6ba25cf399d525ade14497"
+    }
+  },
+  "cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "3m_regression_after_selection",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "4m_transfer"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "4m_transfer"
+    },
+    {
+      "id": "reserved3m_2026103081_LEFT",
+      "seed": 2026103081,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "reserved_new3m_first_evaluation"
+    },
+    {
+      "id": "reserved3m_2026103081_RIGHT",
+      "seed": 2026103081,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "reserved_new3m_first_evaluation"
+    },
+    {
+      "id": "reserved3m_2026103082_LEFT",
+      "seed": 2026103082,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "reserved_new3m_first_evaluation"
+    },
+    {
+      "id": "reserved3m_2026103082_RIGHT",
+      "seed": 2026103082,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "reserved_new3m_first_evaluation"
+    }
+  ],
+  "step_cap": 18667,
+  "wall_limit_seconds": 1800,
+  "source_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t153/distance_eval.py": "ce1c71d65ca520bb95ca61c7d827630551382e4ca6e323209815bfbc873ad93f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "purpose": "Fixed 64k-frame pilot compared with frozen T157, all regression, transfer and reserved new cases reported; not multiple-seed algorithm evidence",
+  "selection_rule": "final checkpoint after fixed 64000 new physical frames; no intermediate selection",
+  "limits": "3m 28s; 4m 37.334s, scaled by goal distance; physical command range and success radius unchanged",
+  "training": false,
+  "automatic_promotion": false,
+  "new_task_feasibility": "Start/goal collision-free checked; full vehicle reachability not pre-proven.",
+  "new_training_frames": 64000
+}

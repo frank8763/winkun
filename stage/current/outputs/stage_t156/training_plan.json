@@ -1,0 +1,66 @@
+{
+  "experiment": "STAGE_T156_BC_WITHOUT_EXPLICIT_ACTION_HISTORY",
+  "parent_checkpoint": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/checkpoints/episode_0748.pt",
+    "sha256": "7dd897ef7d01556198ebfd09721d1986905598a5ef819d008e648c55895cd248"
+  },
+  "success_archive": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t155/smoothed_targets.npz",
+    "sha256": "975191bbb4ab4f53ac04683cfca010672371de2fa5124f66e492c173f534bf68"
+  },
+  "core_source": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/outputs/stage_t148/td3_core_goal_contrast.py",
+    "sha256": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "training_source_sha256": "2121cd5fe0ad7dd2776fe3412cb74f5a62bccb3fb917e5a119f2badb6d4a4ed8",
+  "seed": 20261030,
+  "updates": 1000,
+  "batch_size": 256,
+  "left_samples_per_batch": 128,
+  "right_samples_per_batch": 128,
+  "learning_rate": 0.0001,
+  "changes": [
+    "Only change relative to T155: zero and freeze 10 first-layer columns carrying previous actions, including the four history frames. LiDAR, goal, velocity and LiDAR/goal history remain available."
+  ],
+  "control_interface_changed": false,
+  "automatic_promotion": false,
+  "checkpoint_selection": "fixed final update 1000; no outcome-based selection",
+  "references": [
+    "https://proceedings.neurips.cc/paper/2020/hash/1b113258af3968aaf3969ca67e744ff8-Abstract.html",
+    "https://papers.nips.cc/paper_files/paper/2023/hash/06b71ad997f7e3e4b2e2f2ea12e5a759-Abstract-Conference.html"
+  ],
+  "limitations": [
+    "Smoothed labels themselves are not a verified successful action sequence.",
+    "Actual neural closed-loop evaluation is required; no inference-time smoothing or controller overrides.",
+    "Training tasks only; no generalization claim."
+  ],
+  "trajectory_samples_per_batch": [
+    128,
+    64,
+    64
+  ],
+  "archive_provenance": {
+    "old_archive_sha256": "743c3b3099031a0f4104e2e41af22c12d491a70a6f3d780ca34477463cf9192b",
+    "hard_right_archive_sha256": "389efd853fbe4575f6a7d182e9af9d10f60bf8f63853b521fe458340c858eb3d",
+    "donor_checkpoint_sha256": "7bbbcedd75ff4997015bc9878426ba76433fe7ad2156775d01877c14db5d1926"
+  },
+  "label_processing": {
+    "window_frames": 51,
+    "window_seconds": 0.102,
+    "method": "centered box mean with edge padding; offline targets only",
+    "physical_speed_conversion": "normalized_wheel=((raw+3)/4)^2; filtered_raw=4*sqrt(mean(normalized_wheel))-3"
+  },
+  "ignored_columns": [
+    57,
+    58,
+    74,
+    75,
+    86,
+    87,
+    98,
+    99,
+    110,
+    111
+  ],
+  "hypothesis": "Avoid the BC copycat shortcut through explicit past-action features; this is a feature ablation, not a reproduction of the full adversarial or PALR algorithms."
+}

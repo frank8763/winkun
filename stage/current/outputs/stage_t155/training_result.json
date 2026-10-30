@@ -1,0 +1,75 @@
+{
+  "experiment": "STAGE_T155_BC_PHYSICAL_COMMAND_SMOOTHING",
+  "result": "TRAINING_COMPLETED_NOT_YET_EVALUATED",
+  "initial_archive_fit": {
+    "left_mse": 0.01402635034173727,
+    "right_mse": 0.23122547566890717,
+    "throttle_rmse": 0.39018505811691284,
+    "steer_rmse": 0.4085141122341156
+  },
+  "final_archive_fit": {
+    "left_mse": 0.0007693126099184155,
+    "right_mse": 0.002543054288253188,
+    "throttle_rmse": 0.048038873821496964,
+    "steer_rmse": 0.0400991216301918
+  },
+  "training_losses": [
+    {
+      "update": 100,
+      "mse": 0.006030738353729248,
+      "elapsed_s": 0.9399577959848102
+    },
+    {
+      "update": 200,
+      "mse": 0.006096881814301014,
+      "elapsed_s": 1.8394452119828202
+    },
+    {
+      "update": 300,
+      "mse": 0.0028946949169039726,
+      "elapsed_s": 2.7388435659813695
+    },
+    {
+      "update": 400,
+      "mse": 0.0025528203696012497,
+      "elapsed_s": 3.6376244129787665
+    },
+    {
+      "update": 500,
+      "mse": 0.002767250407487154,
+      "elapsed_s": 4.533620546979364
+    },
+    {
+      "update": 600,
+      "mse": 0.0018677999032661319,
+      "elapsed_s": 5.42548295497545
+    },
+    {
+      "update": 700,
+      "mse": 0.0019410751992836595,
+      "elapsed_s": 6.325380062975455
+    },
+    {
+      "update": 800,
+      "mse": 0.0015188491670414805,
+      "elapsed_s": 7.280085558973951
+    },
+    {
+      "update": 900,
+      "mse": 0.001792748225852847,
+      "elapsed_s": 8.22390870397794
+    },
+    {
+      "update": 1000,
+      "mse": 0.001683601876720786,
+      "elapsed_s": 9.242351483000675
+    }
+  ],
+  "checkpoint_sha256": "d31fb334d8e0cb309ba74098b8de562d2929f47ba71999086c71fd9808841201",
+  "elapsed_seconds": 9.553201516973786,
+  "environment_frames": 0,
+  "learning_method": "behavior cloning only",
+  "automatic_promotion": false,
+  "generalization_claim": false,
+  "note": "Archive-fit error is not a navigation success metric."
+}
