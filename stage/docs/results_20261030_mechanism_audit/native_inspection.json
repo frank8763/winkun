@@ -1,0 +1,48 @@
+{
+  "state": "PASS",
+  "physics_steps": 0,
+  "native_command_owner": "Phase10StrictMuJoCoEnv._policy_to_commands",
+  "native_command_source": "/home/linghu/catkin_ws/src/mk-mini/training/e2e_phase10_lidar_v7_curriculum/phase10_strict_mujoco_env.py",
+  "native_command_source_sha256": "9f2b202ac3cf35e4d1aeebc7f8788c493c823b20b658af58f32596b797851173",
+  "native_command_source_text": "    def _policy_to_commands(\n        self,\n        action: np.ndarray,\n    ) -> tuple[float, float, float, float]:\n        action = np.clip(\n            np.asarray(action, dtype=np.float32).reshape(2),\n            -1.0,\n            1.0,\n        )\n\n        # Squared mapping preserves the full speed range while giving the\n        # policy much finer low-speed control near obstacles and the goal.\n        raw_speed_ratio = 0.5 * (float(action[0]) + 1.0)\n        speed_ratio = raw_speed_ratio * raw_speed_ratio\n        wheel = speed_ratio * self.max_wheel\n        steer = float(action[1]) * self.max_steer\n\n        # Logging only. These values never update qpos/qvel.\n        command_v = self.speed_gain * wheel\n        command_w = (\n            command_v\n            / max(self.wheelbase, 1.0e-3)\n            * math.tan(steer)\n        )\n\n        return (\n            float(steer),\n            float(wheel),\n            float(command_v),\n            float(command_w),\n        )\n",
+  "max_steer": 0.4363323129985824,
+  "max_wheel": 5.0,
+  "speed_gain": 0.03,
+  "wheelbase_logging_only": 0.42,
+  "obstacle": {
+    "id": 20,
+    "type": 5,
+    "cylinder_type": 5,
+    "size": [
+      0.25,
+      0.25,
+      0.0
+    ],
+    "local_pos": [
+      0.899999976158142,
+      -3.09999990463257,
+      0.25
+    ],
+    "world_pos": [
+      0.899999976158142,
+      -3.09999990463257,
+      0.25
+    ],
+    "body": 0,
+    "rbound": 0.3535533905932738,
+    "aabb": [
+      0.0,
+      0.0,
+      0.0,
+      0.25,
+      0.25,
+      0.25
+    ]
+  },
+  "original_model_hash": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+  "actual_seed": 2029653601,
+  "goal": [
+    1.5750185651952417,
+    -3.676543648434686
+  ]
+}

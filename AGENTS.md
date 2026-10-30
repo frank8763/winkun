@@ -17,3 +17,5 @@
 - T165–T172 已完成（T170按预声明课程门槛提前停止）；当前没有运行中的训练或评估。先读最新 RESEARCH_STATUS.md 和 results_20261030/analysis.md，不得重复启动这些目录。T159仍为保留Actor；T171近目标课程成功不能当作原始5m通过。T172匹配起点诊断T159为12/24、T171为5/24，未见新增成功能力。
 - T173–T175已完成，Actor全程冻结。终止均衡修正了已存碰撞终止误差，但MC/配对优势在留出状态仍未达门槛，禁止据此自动进行Actor更新或晋升。读results_20261030_q_audit/findings.md与next_protocol.md；下一阶段数据覆盖草案尚未启动。全部新runs仍1GiB上限，不重复启动已完成目录。
 - T176–T178已全部完成。先读stage/docs/results_20261030_scene_exploration/findings.md。T177/T178为独立Critic-free MC/PPO协议（不使用未过门槛的T174/T175价值梯度）；四组均旧6/6、原始5m0/2、前沿0/4，全部训练到达0。T159保留，不重复启动、不自动晋升。后续障碍尺寸课程仅为有界草案，尚未启动；新runs总量仍上限1GiB。
+
+- T179（stage/runs/t179_mechanism_audit及其contact_recheck）已全部完成，只有冻结诊断与离线梯度计算，优化器更新0。先读results_20261030_mechanism_audit/findings.md；原尺寸课程草案未启动并已被新诊断建议替代。T180最多40回合的参数敏感性草案尚未启动，无自动晋升。不得重复T179。

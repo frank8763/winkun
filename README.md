@@ -9,6 +9,7 @@
 ## 入口
 
 - [最新实验状态](stage/docs/RESEARCH_STATUS.md)
+- [最新失败机制复查与实验选择（T179）](stage/docs/results_20261030_mechanism_audit/findings.md)
 - [场景、动作范围与持续探索对照（T176–T178）](stage/docs/results_20261030_scene_exploration/findings.md)
 - [Critic原因诊断与修复对照（T173–T175）](stage/docs/results_20261030_q_audit/findings.md)
 - [本轮长距离诊断与文献边界](stage/docs/results_20261030/analysis.md)
@@ -27,7 +28,7 @@
 
 ## 当前能力和实验状态
 
-T159 单 Actor 通过六项固定 3/4 米训练任务；这不是独立泛化测试。迁移后T165已严格恢复并补足T164原预算，随后完成T166–T172有界诊断和训练。两项原始5米仍未通过，保留T159。T173–T175定位并修复已存碰撞终止样本的局部价值误差，留出动作排序仍不可靠。T176–T178进一步完成场景组件、原生油门范围与探索相关时间对照：四个新PPO候选均旧6/6、原始5m0/2，无晋升。详见[最新报告](stage/docs/results_20261030_scene_exploration/findings.md)。目前无训练作业，不重复启动已完成目录。
+T159 单 Actor 通过六项固定 3/4 米训练任务；这不是独立泛化测试。迁移后T165已严格恢复并补足T164原预算，随后完成T166–T172有界诊断和训练。两项原始5米仍未通过，保留T159。T173–T175定位并修复已存碰撞终止样本的局部价值误差，留出动作排序仍不可靠。T176–T178进一步完成场景组件、原生油门范围与探索相关时间对照：四个新PPO候选均旧6/6、原始5m0/2，无晋升。详见[最新报告](stage/docs/results_20261030_scene_exploration/findings.md)。T179进一步确认小障碍也发生车身碰撞，未发现转向网络普遍饱和；下一步先检验原场景策略行为覆盖，见[最新分析](stage/docs/results_20261030_mechanism_audit/findings.md)。目前无训练作业，不重复启动已完成目录。
 
 源码和较小的协议/结果进入 Git；必要检查点、训练数据、原始轨迹与日志进入 Release 附件。聊天原文、登录凭据不上传。
 

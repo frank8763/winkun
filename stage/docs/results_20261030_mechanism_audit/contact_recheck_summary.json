@@ -1,0 +1,340 @@
+{
+  "state": "COMPLETE",
+  "scores": {
+    "0.25/legacy/100": {
+      "safe_success": 0,
+      "n": 1,
+      "collisions": 1
+    },
+    "1/legacy/100": {
+      "safe_success": 0,
+      "n": 1,
+      "collisions": 1
+    },
+    "0.5/legacy/100": {
+      "safe_success": 0,
+      "n": 1,
+      "collisions": 1
+    }
+  },
+  "cases": [
+    {
+      "id": "scale0.25_legacy_hold100",
+      "kind": "scene_control",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "scene": "circle9_radius",
+      "control_hold_steps": 100,
+      "scale": 0.25,
+      "history": "legacy",
+      "radius_m": 0.0625,
+      "ray_probe_m": 0.9375,
+      "expected_ray_probe_m": 0.9375,
+      "initial_obs_sha256": "d947702d11723af0b442231a0ea95627243da3389b7bb8ba59e456b21364b179",
+      "reset_hash": "4481498431fb806699750437380a8518e5b294a14e75e69c19dd9ac662053976",
+      "scene_hash": "5e9c038835561cec8146463c5343a0463e8c3321e368364e0d4e4b867c6857ec",
+      "actual_seed": 2029653601,
+      "removed_obstacles": [],
+      "initial_lidar_min_m": 1.1404929161071777,
+      "steps": 15673,
+      "simulation_s": 31.345999999993506,
+      "success": false,
+      "collision": true,
+      "safe_success": false,
+      "remaining_m": 1.3444978464420154,
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "travel_m": 3.7496609445153237,
+      "steady_speed_m_s": 0.11506032660432265,
+      "steady_yaw_rate_rad_s": 0.012773660118984474,
+      "steady_turn_radius_m": 9.00762393335624,
+      "final_pose": [
+        0.7212505654871735,
+        -2.63791250035482,
+        -1.3133636261353137,
+        0.01999047784886994,
+        -0.06630821404172621,
+        0.024642324922468227
+      ],
+      "actor_unchanged": true,
+      "terminal_contacts": [
+        {
+          "geom1": "real_circle_obs_9",
+          "geom2": "chassis_collision",
+          "dist_m": -2.385742028515941e-05
+        },
+        {
+          "geom1": "real_circle_obs_9",
+          "geom2": "chassis_collision",
+          "dist_m": -2.385742028515941e-05
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015500145778531954
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015486966367899202
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.01542954918648716
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015417182580370378
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015672734744160588
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015663430468096123
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015602396596307286
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.0155933878604161
+        }
+      ]
+    },
+    {
+      "id": "scale1_legacy_hold100",
+      "kind": "scene_control",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "scene": "circle9_radius",
+      "control_hold_steps": 100,
+      "scale": 1,
+      "history": "legacy",
+      "radius_m": 0.25,
+      "ray_probe_m": 0.75,
+      "expected_ray_probe_m": 0.75,
+      "initial_obs_sha256": "c7472a8766abb1d3a8df44036a51ed08f56a781581b239367100959da6c47e26",
+      "reset_hash": "4481498431fb806699750437380a8518e5b294a14e75e69c19dd9ac662053976",
+      "scene_hash": "a6eeca09610ea2b1c175122c4ba0dc012d2e4ead08fa7453e87973eca8f2762b",
+      "actual_seed": 2029653601,
+      "removed_obstacles": [],
+      "initial_lidar_min_m": 1.1404929161071777,
+      "steps": 15384,
+      "simulation_s": 30.767999999993826,
+      "success": false,
+      "collision": true,
+      "safe_success": false,
+      "remaining_m": 1.4943303067969518,
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "travel_m": 3.559006793063149,
+      "steady_speed_m_s": 0.06696109059739366,
+      "steady_yaw_rate_rad_s": 0.00762251445799418,
+      "steady_turn_radius_m": 8.784645928374411,
+      "final_pose": [
+        0.7443956362755579,
+        -2.43433246841546,
+        -1.2359078588976034,
+        0.017712022144755712,
+        -0.041404085629006264,
+        0.010108960067686792
+      ],
+      "actor_unchanged": true,
+      "terminal_contacts": [
+        {
+          "geom1": "real_circle_obs_9",
+          "geom2": "chassis_collision",
+          "dist_m": -8.140436640382687e-05
+        },
+        {
+          "geom1": "real_circle_obs_9",
+          "geom2": "chassis_collision",
+          "dist_m": -8.140436640382687e-05
+        },
+        {
+          "geom1": "real_circle_obs_9",
+          "geom2": "chassis_collision",
+          "dist_m": -8.140436640382687e-05
+        },
+        {
+          "geom1": "real_circle_obs_9",
+          "geom2": "chassis_collision",
+          "dist_m": -8.140436640382687e-05
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.0156947592520557
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015687580312562552
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015641927950595172
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.01563509805672471
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015705413593313566
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015698774109103336
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015652971854350967
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015645902026536485
+        }
+      ]
+    },
+    {
+      "id": "scale0.5_legacy_hold100",
+      "kind": "scene_control",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "scene": "circle9_radius",
+      "control_hold_steps": 100,
+      "scale": 0.5,
+      "history": "legacy",
+      "radius_m": 0.125,
+      "ray_probe_m": 0.875,
+      "expected_ray_probe_m": 0.875,
+      "initial_obs_sha256": "7ae0fea3c281382477ad1c338e9c18af654c125570d146f358e5a8f8b82e1d07",
+      "reset_hash": "4481498431fb806699750437380a8518e5b294a14e75e69c19dd9ac662053976",
+      "scene_hash": "767beab2b9b727025d6fa697faa15e9a7a63f27ad71b4b478e72fae6aa7f2703",
+      "actual_seed": 2029653601,
+      "removed_obstacles": [],
+      "initial_lidar_min_m": 1.1404929161071777,
+      "steps": 18134,
+      "simulation_s": 36.26799999999836,
+      "success": false,
+      "collision": true,
+      "safe_success": false,
+      "remaining_m": 1.4090594051606038,
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "travel_m": 3.6871285305345167,
+      "steady_speed_m_s": 0.09369469832247282,
+      "steady_yaw_rate_rad_s": 0.012582011936350179,
+      "steady_turn_radius_m": 7.4467182829308305,
+      "final_pose": [
+        0.6877002681501347,
+        -2.5819594136676556,
+        -1.3142937376139876,
+        0.011000646783885083,
+        -0.03376125898284255,
+        0.015114929404978474
+      ],
+      "actor_unchanged": true,
+      "terminal_contacts": [
+        {
+          "geom1": "real_circle_obs_9",
+          "geom2": "chassis_collision",
+          "dist_m": -3.808890309603171e-05
+        },
+        {
+          "geom1": "real_circle_obs_9",
+          "geom2": "chassis_collision",
+          "dist_m": -3.808890309603171e-05
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015520490580058138
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015507898805830894
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015499136315279119
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.01548828807838766
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015869288647216415
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015866455942247185
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.015848835225097696
+        },
+        {
+          "geom1": "floor",
+          "geom2": null,
+          "dist_m": -0.01584594336298814
+        }
+      ]
+    }
+  ],
+  "paired_reset_hashes": "PASS",
+  "actor_unchanged": true,
+  "physics_steps": 49191,
+  "automatic_promotion": false,
+  "limits": "Post-hoc3case contact provenance recheck selected after radius diagnostic. Exact reruns are not additional independent evidence or training."
+}

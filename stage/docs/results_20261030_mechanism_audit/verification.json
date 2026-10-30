@@ -1,0 +1,69 @@
+{
+  "state": "PASS",
+  "main_cases": 12,
+  "main_physics_steps": 202797,
+  "contact_rechecks": 3,
+  "contact_recheck_physics_steps": 49191,
+  "gradient_updates": 0,
+  "t176_reference_replays": "exact_steps_final_pose_and_distance",
+  "contact_recheck_replays": "exact_initial_obs_scene_reset_steps_final_pose",
+  "native_owner": "Phase10StrictMuJoCoEnv._policy_to_commands",
+  "visibility_diagnostic": [
+    {
+      "id": "scale1_legacy_hold100",
+      "ray_match_count_12to6s_before_contact_min": 5,
+      "max": 9,
+      "mean": 5.8,
+      "scope": "Analytic vertical-cylinder intersections matched to saved ray ranges within1e-4m, not stored native hit-ID telemetry. Different radius policies follow different physical trajectories; not a matched-pose visibility-effect estimate."
+    },
+    {
+      "id": "scale0.25_legacy_hold100",
+      "ray_match_count_12to6s_before_contact_min": 1,
+      "max": 2,
+      "mean": 1.2,
+      "scope": "Analytic vertical-cylinder intersections matched to saved ray ranges within1e-4m, not stored native hit-ID telemetry. Different radius policies follow different physical trajectories; not a matched-pose visibility-effect estimate."
+    },
+    {
+      "id": "scale0.75_legacy_hold100",
+      "ray_match_count_12to6s_before_contact_min": 3,
+      "max": 8,
+      "mean": 4.933333333333334,
+      "scope": "Analytic vertical-cylinder intersections matched to saved ray ranges within1e-4m, not stored native hit-ID telemetry. Different radius policies follow different physical trajectories; not a matched-pose visibility-effect estimate."
+    },
+    {
+      "id": "scale0.5_legacy_hold100",
+      "ray_match_count_12to6s_before_contact_min": 4,
+      "max": 6,
+      "mean": 4.566666666666666,
+      "scope": "Analytic vertical-cylinder intersections matched to saved ray ranges within1e-4m, not stored native hit-ID telemetry. Different radius policies follow different physical trajectories; not a matched-pose visibility-effect estimate."
+    }
+  ],
+  "prior_training_accounting": {
+    "t177_frontier_onpolicy/legacy_range": {
+      "physics_steps": 222695,
+      "decisions": 2251,
+      "episodes": 48,
+      "updates": 80
+    },
+    "t177_frontier_onpolicy/full_range": {
+      "physics_steps": 262605,
+      "decisions": 2653,
+      "episodes": 48,
+      "updates": 92
+    },
+    "t178_exploration_time/tau1s": {
+      "physics_steps": 254884,
+      "decisions": 2575,
+      "episodes": 48,
+      "updates": 96
+    },
+    "t178_exploration_time/tau8s": {
+      "physics_steps": 291797,
+      "decisions": 2941,
+      "episodes": 48,
+      "updates": 104
+    }
+  },
+  "prior_T177_T178_raw_files_verified_unchanged": 75,
+  "all_new_runs_bytes": 655149761
+}

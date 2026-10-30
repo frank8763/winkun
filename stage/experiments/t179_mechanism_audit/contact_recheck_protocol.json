@@ -1,0 +1,78 @@
+{
+  "experiment": "STAGE_T179B_POSTHOC_CONTACT_PROVENANCE",
+  "actor_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt",
+  "jobs": [
+    {
+      "id": "scale0.25_legacy_hold100",
+      "kind": "scene_control",
+      "scene": "circle9_radius",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "history": "legacy",
+      "scale": 0.25,
+      "hold": 100,
+      "step_cap": 23334
+    },
+    {
+      "id": "scale0.5_legacy_hold100",
+      "kind": "scene_control",
+      "scene": "circle9_radius",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "history": "legacy",
+      "scale": 0.5,
+      "hold": 100,
+      "step_cap": 23334
+    },
+    {
+      "id": "scale1_legacy_hold100",
+      "kind": "scene_control",
+      "scene": "circle9_radius",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "history": "legacy",
+      "scale": 1,
+      "hold": 100,
+      "step_cap": 23334
+    }
+  ],
+  "physics_budget": 70002,
+  "wall_seconds": 180,
+  "optimizer_updates": 0,
+  "max_new_run_bytes": 16777216,
+  "all_new_runs_cap_bytes": 1073741824,
+  "geometry_contract": "Cylinder9 worldbody radius only shrinks0.25m->scale*0.25. Positive scales retain conservative original compiled broadphase bounds; no enlarged geometry. Zero removes collisionmasks and moves target100m as T176. Actual mj_ray radius checked analytically at every reset. Other geometries unchanged. Goals/start unchanged, no planner or waypoints. No environment writes after reset.",
+  "comparison": "5 scales x2history modes at5Hz, plus0/1refill at20Hz to reproduceT176; predeclared12cases. 5Hz matches proposed next training. This is not Actor training or original-scene improvement.",
+  "offline_audit": "No optimizer steps. Read T177/T178 firstbatch at exact initialized behavior and lastbatch at final post-update policy; measure RL/retention gradients and Tanh saturation. Gradient snapshots do not reconstruct all historical updates.",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t179_mechanism_audit/gradient_audit.py": "ec07f98c41bbed12608a61849a5649a3f78a9649df5f4eea4832cb2c25fb04e7",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t179_mechanism_audit/run.py": "85f3595b793fc295306e91755be145b59a657a25064b00fbe15a0f81c9611768",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t179_mechanism_audit/inspect_native.py": "331bf5b7603fa18abe5ebaf300a0c70cde36b174f74a27b934cd21ed7d0a26ef",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t177_frontier_onpolicy/common.py": "592b49826215b283ea5c5b50e10c7203e443a104981f0b1c3fd98a2799c16e31",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t179_mechanism_audit/native_inspection.json": "02a4dcaf79376db52224574e407dba21164ca411f893315e2aac8af1881b4a9f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t179_mechanism_audit/contact_recheck.py": "b51cee99cad3466014c4c526ea0912f7f79ca07f0f42904bb2c3d3357c1f0383"
+  },
+  "selection_reason": "Main12case audit found collisions at all positive radii but did not store terminal geom IDs. Re-run3preselected legacy cases scale .25,.5,1 only to identify contact provenance; preserve main evidence and do not count duplicates as independent outcomes."
+}
