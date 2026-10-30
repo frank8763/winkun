@@ -1,0 +1,516 @@
+{
+  "experiment": "T194",
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t193_success_consolidation/final_policy.pt",
+  "baseline_summary": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t193_success_consolidation/summary.json",
+  "primary_cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "throttle_bias_deltas": [
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "jobs": [
+    {
+      "id": "d0.05_2029653601_LEFT",
+      "delta": 0.05,
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.05_2029653602_RIGHT",
+      "delta": 0.05,
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.05_2029654801_LEFT",
+      "delta": 0.05,
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.05_2029654802_RIGHT",
+      "delta": 0.05,
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.05_4m_2029653601_LEFT",
+      "delta": 0.05,
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      }
+    },
+    {
+      "id": "d0.05_4m_2029654802_RIGHT",
+      "delta": 0.05,
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      }
+    },
+    {
+      "id": "d0.05_5m_2029653601_LEFT",
+      "delta": 0.05,
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "d0.05_5m_2029654802_RIGHT",
+      "delta": 0.05,
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "d0.1_2029653601_LEFT",
+      "delta": 0.1,
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.1_2029653602_RIGHT",
+      "delta": 0.1,
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.1_2029654801_LEFT",
+      "delta": 0.1,
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.1_2029654802_RIGHT",
+      "delta": 0.1,
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.1_4m_2029653601_LEFT",
+      "delta": 0.1,
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      }
+    },
+    {
+      "id": "d0.1_4m_2029654802_RIGHT",
+      "delta": 0.1,
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      }
+    },
+    {
+      "id": "d0.1_5m_2029653601_LEFT",
+      "delta": 0.1,
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "d0.1_5m_2029654802_RIGHT",
+      "delta": 0.1,
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "d0.2_2029653601_LEFT",
+      "delta": 0.2,
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.2_2029653602_RIGHT",
+      "delta": 0.2,
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.2_2029654801_LEFT",
+      "delta": 0.2,
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.2_2029654802_RIGHT",
+      "delta": 0.2,
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.2_4m_2029653601_LEFT",
+      "delta": 0.2,
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      }
+    },
+    {
+      "id": "d0.2_4m_2029654802_RIGHT",
+      "delta": 0.2,
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      }
+    },
+    {
+      "id": "d0.2_5m_2029653601_LEFT",
+      "delta": 0.2,
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "d0.2_5m_2029654802_RIGHT",
+      "delta": 0.2,
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "d0.3_2029653601_LEFT",
+      "delta": 0.3,
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.3_2029653602_RIGHT",
+      "delta": 0.3,
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.3_2029654801_LEFT",
+      "delta": 0.3,
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.3_2029654802_RIGHT",
+      "delta": 0.3,
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      }
+    },
+    {
+      "id": "d0.3_4m_2029653601_LEFT",
+      "delta": 0.3,
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      }
+    },
+    {
+      "id": "d0.3_4m_2029654802_RIGHT",
+      "delta": 0.3,
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      }
+    },
+    {
+      "id": "d0.3_5m_2029653601_LEFT",
+      "delta": 0.3,
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "d0.3_5m_2029654802_RIGHT",
+      "delta": 0.3,
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    }
+  ],
+  "wall_seconds": 300,
+  "max_physics": 746688,
+  "max_bytes": 16777216,
+  "controlled_difference": "Only native_head.bias[0] receives one predeclared additive delta; all other weights byte-equal to T193. Single closed-loop neural policy, no controller/planner/waypoint/teacher or action replay. Original scenes/goals/caps/radius retained.",
+  "selection": "Baseline0 reuses completed T193 evidence, not extra independent trials. Among new candidates with all old6 safe success, select most original5m successes, then smallest delta; retain no candidate if no new5m success. Fixed development tasks, not generalization or RL gradient learning.",
+  "scope": "Frozen neural parameter sensitivity and engineering model selection after T193 RIGHT5m timeout at.974m, not new deepRL training/algorithm novelty. No automatic promotion; official T159 retained. Stageonly, newruns1GiB/free40GiB.",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t193_success_consolidation/final_policy.pt": "dca5757b099f4e40a748af793da430bed71bd9cf37cb6582d3a7f49e0d72cf98",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t193_success_consolidation/summary.json": "04de24235e43105c0bbc03c62b5c382054f9d792f6a02d89e836537307bf6497",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t194_drive_sensitivity/prepare.py": "5deab79dd887e99711fe56934008d55bed09e495e8784300b20a1e162f34dead",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t194_drive_sensitivity/common.py": "37c072e8ad7736221a7250433744c199ab8cdb7c0ab944429fedcdf0d1d7bcdc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t194_drive_sensitivity/run.py": "7d8a51a2363fea3d9c939d0bb84d7d87e16074bccfb9ee3766d835d43e5d6057"
+  }
+}

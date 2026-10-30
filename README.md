@@ -9,7 +9,10 @@
 ## 入口
 
 - [最新实验状态](stage/docs/RESEARCH_STATUS.md)
-- [最新控制稳健性训练与动作头修改（T186–T188）](stage/docs/results_20261030_control_robustness/findings.md)
+- [右侧原始5米首次确定性通过与复核（T193–T195）](stage/docs/results_20261030_success_consolidation/findings.md)
+- [目标重标记审计与SAC/HER对照（T191–T192）](stage/docs/results_20261030_her_contract/findings.md)
+- [动作头训练与起点课程（T189–T190）](stage/docs/results_20261030_head_curriculum/findings.md)
+- [局部稳健性训练与动作头修改（T186–T188）](stage/docs/results_20261030_control_robustness/findings.md)
 - [实际课程RL训练与证据边界（T180–T185）](stage/docs/results_20261030_onpolicy_course/findings.md)
 - [失败机制复查与实验选择（T179）](stage/docs/results_20261030_mechanism_audit/findings.md)
 - [场景、动作范围与持续探索对照（T176–T178）](stage/docs/results_20261030_scene_exploration/findings.md)
@@ -36,7 +39,11 @@
 
 ## 当前能力和实验状态
 
-T159 单 Actor 通过六项固定 3/4 米训练任务；这不是独立泛化测试。迁移后T165已严格恢复并补足T164原预算，随后完成T166–T172有界诊断和训练。两项原始5米仍未通过，保留T159。T173–T175定位并修复已存碰撞终止样本的局部价值误差，留出动作排序仍不可靠。T176–T178进一步完成场景组件、原生油门范围与探索相关时间对照：四个新PPO候选均旧6/6、原始5m0/2，无晋升。详见[最新报告](stage/docs/results_20261030_scene_exploration/findings.md)。T179进一步确认小障碍也发生车身碰撞，未发现转向网络普遍饱和；下一步先检验原场景策略行为覆盖，见[最新分析](stage/docs/results_20261030_mechanism_audit/findings.md)。T183进一步完成192回合实际MC/PPO训练：两组旧6/6、原始5m0/2，较强保持组仅恢复一个历史成功课程案例。T184/T185检验了起点连接与推理契约，详见[最新结果](stage/docs/results_20261030_onpolicy_course/findings.md)。T187局部训练提高了小扰动下的到达稳定性，仍未通过原始5m；T188动作头候选仅完成初始化核验，尚未训练。见[最新修改](stage/docs/results_20261030_control_robustness/findings.md)。目前无训练作业，不重复启动已完成目录。
+当前T194研究候选用一个113→2神经Actor完成原始RIGHT5米：**42.794秒、无碰撞**；旧六项3/4米仍6/6。保存模型T195精确复现，RIGHT起点±3cm/±2°网格27/27。原始LEFT5米仍碰撞，左右合计1/2，尚未进入更长距离。它是固定训练任务与同图开发网格的结果，不是跨地图或真机泛化。
+
+模型来源是T192真实SAC探索成功、T193监督策略整合及T194有界神经参数校准；不能称从零纯RL或已证明新算法优势。最终部署仍由单网络按当前观测直接生成原生命令，无规划器、路点或运行时教师。正式保留T159，新候选无自动晋升；详情、哈希和所有失败见[最新报告](stage/docs/results_20261030_success_consolidation/findings.md)。
+
+T189–T195已全部结束，无运行作业，不重复启动。下一阶段LEFT集中探索是有界草案，尚未启动。历史阶段按上述入口查看，实验失败与证据边界保留。
 
 源码和较小的协议/结果进入 Git；必要检查点、训练数据、原始轨迹与日志进入 Release 附件。聊天原文、登录凭据不上传。
 

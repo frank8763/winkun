@@ -1,0 +1,146 @@
+{
+  "state": "COMPLETE",
+  "scores": {
+    "old6": {
+      "safe_success": 6,
+      "n": 6
+    },
+    "original5m": {
+      "safe_success": 0,
+      "n": 2
+    }
+  },
+  "evaluation": [
+    {
+      "case": "2029653601_LEFT",
+      "distance_m": 3.0,
+      "physics_steps": 10136,
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "nearest_m": 0.19979628482149697,
+      "remaining_m": 0.19979628482149697,
+      "simulation_s": 20.272000000000002,
+      "trace_sha256": "7a434d5d182e98d200e75a4477d9de2d693bbeee681aa89fcd316ec24ea767b8",
+      "deployment": "Single closed-loop neural policy; no saved actions or routes"
+    },
+    {
+      "case": "2029653602_RIGHT",
+      "distance_m": 3.0,
+      "physics_steps": 8785,
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "nearest_m": 0.19988951039378333,
+      "remaining_m": 0.19988951039378333,
+      "simulation_s": 17.57,
+      "trace_sha256": "6f137fa9e7ec4cb9c5d7005877041d4380c0fb98f42b4fce2a3e9be9e477cc9e",
+      "deployment": "Single closed-loop neural policy; no saved actions or routes"
+    },
+    {
+      "case": "2029654801_LEFT",
+      "distance_m": 3.0,
+      "physics_steps": 10093,
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "nearest_m": 0.1998512531275594,
+      "remaining_m": 0.1998512531275594,
+      "simulation_s": 20.186,
+      "trace_sha256": "d776b8b2ed7926af6ee1b6f92f0b9ef746b467762030dec1043dddbb5b097065",
+      "deployment": "Single closed-loop neural policy; no saved actions or routes"
+    },
+    {
+      "case": "2029654802_RIGHT",
+      "distance_m": 3.0,
+      "physics_steps": 12967,
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "nearest_m": 0.19986120058447782,
+      "remaining_m": 0.19986120058447782,
+      "simulation_s": 25.934,
+      "trace_sha256": "d877e8000f6c69991a9729cd04f8eab5619d7340b588be22db46adbb95edcf1e",
+      "deployment": "Single closed-loop neural policy; no saved actions or routes"
+    },
+    {
+      "case": "4m_2029653601_LEFT",
+      "distance_m": 4.0,
+      "physics_steps": 15954,
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "nearest_m": 0.199983026711878,
+      "remaining_m": 0.199983026711878,
+      "simulation_s": 31.908,
+      "trace_sha256": "1d4388110be5f6bf01fe630c1158ef47add8f385c0d9c657ea985de79c0dcc18",
+      "deployment": "Single closed-loop neural policy; no saved actions or routes"
+    },
+    {
+      "case": "4m_2029654802_RIGHT",
+      "distance_m": 4.0,
+      "physics_steps": 11904,
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "nearest_m": 0.19994254706187936,
+      "remaining_m": 0.19994254706187936,
+      "simulation_s": 23.808,
+      "trace_sha256": "71d41892ce4904939f6c3620c2de096f502e678468ce3fa21f015a124cbc962b",
+      "deployment": "Single closed-loop neural policy; no saved actions or routes"
+    },
+    {
+      "case": "5m_2029653601_LEFT",
+      "distance_m": 5.0,
+      "physics_steps": 17845,
+      "success": false,
+      "collision": true,
+      "timeout": false,
+      "nearest_m": 1.4771156326341992,
+      "remaining_m": 1.4771156326341992,
+      "simulation_s": 35.69,
+      "trace_sha256": "6c49e64497d89f8c4e3b344c5e68c8293fbd245bc54572f88e2492c4e5afafa0",
+      "deployment": "Single closed-loop neural policy; no saved actions or routes"
+    },
+    {
+      "case": "5m_2029654802_RIGHT",
+      "distance_m": 5.0,
+      "physics_steps": 23334,
+      "success": false,
+      "collision": false,
+      "timeout": true,
+      "nearest_m": 0.9740985199130296,
+      "remaining_m": 0.9740985199130296,
+      "simulation_s": 46.668,
+      "trace_sha256": "57ee8a5a597eb07fad2433a3eac9b28a81f9efebec17b1912c6c25208b035d4d",
+      "deployment": "Single closed-loop neural policy; no saved actions or routes"
+    }
+  ],
+  "training_sources": [
+    "5m_2029654802_RIGHT",
+    "2029653601_LEFT",
+    "2029653602_RIGHT",
+    "2029654801_LEFT",
+    "2029654802_RIGHT",
+    "4m_2029653601_LEFT",
+    "4m_2029654802_RIGHT"
+  ],
+  "training_mse": {
+    "5m_2029654802_RIGHT": 0.06363481283187866,
+    "2029653601_LEFT": 0.0005446748691610992,
+    "2029653602_RIGHT": 0.0005475716316141188,
+    "2029654801_LEFT": 0.0009015094256028533,
+    "2029654802_RIGHT": 0.0009528452064841986,
+    "4m_2029653601_LEFT": 0.000465376244392246,
+    "4m_2029654802_RIGHT": 0.0005080372211523354
+  },
+  "supervised_updates": 5000,
+  "rl_updates": 0,
+  "new_training_physics": 0,
+  "data_replay_physics": 23043,
+  "frozen_evaluation_physics": 111018,
+  "checkpoint_sha256": "dca5757b099f4e40a748af793da430bed71bd9cf37cb6582d3a7f49e0d72cf98",
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scope": "Supervised policy consolidation from real end-to-end RL successful behavior and existing old6 demonstration states. Not pureRL, not freshRL optimizer updates, not independent generalization/novelty. T159 incumbent; all code/data inwinkun, noPhase, allnewruns1GiB/free40GiB."
+}

@@ -1,0 +1,52 @@
+{
+  "state": "PASS",
+  "protocols": {
+    "t193_success_consolidation": {
+      "sha256": "8cb280dc6cd4d6d1434c50aacf3ccde6fd0672dbf158f0e5aa247f8962f832f2",
+      "verified_inputs": 8
+    },
+    "t194_drive_sensitivity": {
+      "sha256": "42a7ec9bcb7938698b097bccb0da1178827d64f3a4d3f5b4dfd64d43c3185b33",
+      "verified_inputs": 5
+    },
+    "t195_selected_verification": {
+      "sha256": "18469550e50a80ebe7f42ffd9c241404ea7a42c7d8f902ad897772eec8d153e6",
+      "verified_inputs": 7
+    }
+  },
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "previous_archived_files_unchanged": 165,
+  "right5m_seconds": 42.794000000000004,
+  "right5m_remaining_m": 0.19994760488346855,
+  "right_reset_grid": {
+    "success": 27,
+    "n": 27,
+    "collision": 0,
+    "timeout": 0
+  },
+  "left5m_remaining_m": 1.4766742181226913,
+  "left5m_failure": "collision",
+  "old6": {
+    "success": 6,
+    "n": 6
+  },
+  "original5m": {
+    "success": 1,
+    "n": 2
+  },
+  "candidate": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt",
+    "sha256": "4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656",
+    "delta": 0.2
+  },
+  "supervised_updates": 5000,
+  "new_rl_updates": 0,
+  "new_training_physics": 0,
+  "data_replay_physics": 23043,
+  "T193_evaluation_physics": 111018,
+  "T194_evaluation_physics": 414677,
+  "T195_evaluation_physics": 665469,
+  "scope": "RIGHT fixed task and local reset development grid only. The same canonical reproduction is not independent success evidence; no generalized navigation, novelty or complete LEFT/RIGHT5m pass.",
+  "all_new_runs_bytes": 830283015
+}

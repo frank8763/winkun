@@ -1,5 +1,17 @@
 # Stage当前状态（2026-10-30）
 
+**T189–T195全部完成，无运行作业。RIGHT原始5m首次确定性通过42.794s、无碰撞，保存模型精确重现，右起点±3cm/±2°网格27/27；旧六项6/6。LEFT原始5m仍碰撞剩余1.477m，因此原两项5m为1/2。** 未进入更长距离，没有泛化或创新有效性结论。T159正式保留；T194(+.2)是下一阶段的具名研究候选，不自动晋升。
+
+新候选路径stage/runs/t194_drive_sensitivity/selected_policy.pt，SHA256 4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656。来源是T192真实SAC探索RIGHT成功→T193精确数据重放/5000次均衡监督整合→T194预声明四偏置校准→T195模型与reset网格核验。单网络闭环无地图/规划器/路点/运行时教师，原成功半径和时限未放宽；不声称从零纯RL训练、算法优越性或27个独立泛化样本。见results_20261030_success_consolidation/findings.md。
+
+下一T196仅LEFT集中探索与七项保持的有界草案，尚未启动；见最新next_protocol.md。所有已结束目录不得重复，所有新runs累计1GiB、可用盘至少40GiB，Stage/Phase隔离。
+
+T191/T192已在[增量Release](https://github.com/frank8763/winkun/releases/tag/stage-her-contract-2026-10-30)核验备份，165原始文件/166本地逐项校验成员，远端附件服务端SHA256与大小匹配，未做完整远端二进制读回；临时压缩包已删除。
+
+以下是此前阶段记录，当前状态以上述入口为准。
+
+
+
 **T191/T192已完成；T193当前执行。** 原始5m确定性仍0/2，T159正式保留。T192新SAC/BC对照两组各64回合，共1745324新增训练物理步、17528决策、8000 Actor更新和11000 Critic更新；两组旧6/6、原5m均超时0/2。no_her右5m出现一次真实训练GOAL（46.086s），HER原始5m训练0/32，不证明HER或SAC优越。
 
 T193从最早真实右5m成功出发，先精确数据重放验证，再5000次均衡监督整合，最后单个网络闭环原8任务。它不是新RL交互/更新，重放不算部署验收。查stage/runs/t193_success_consolidation/launch.json、status.json和run.log，不得重复。T191/T192目录已完成，禁止重启；无自动晋升。全部Stage/Phase隔离、所有新runs累计1GiB、空闲盘至少40GiB。
