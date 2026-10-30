@@ -45,6 +45,8 @@
 - [T197–T198 超时信号与执行器诊断 Release](https://github.com/frank8763/winkun/releases/tag/stage-timeout-progress-2026-10-30)
 - [T199–T200 SAC梯度、匹配容量训练与最终模型 Release](https://github.com/frank8763/winkun/releases/tag/stage-sac-gradient-2026-10-30)
 
+- [T202 LEFT失败原因审计原始证据 Release](https://github.com/frank8763/winkun/releases/tag/stage-cause-audit-2026-10-30)
+
 ## 当前能力和实验状态
 
 当前T194研究候选用一个113→2神经Actor完成原始RIGHT5米：**42.794秒、无碰撞**；旧六项3/4米仍6/6。保存模型T195精确复现，RIGHT起点±3cm/±2°网格27/27。原始LEFT5米仍碰撞，左右合计1/2，尚未进入更长距离。它是固定训练任务与同图开发网格的结果，不是跨地图或真机泛化。

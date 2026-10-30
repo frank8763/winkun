@@ -8,6 +8,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import shutil
 import subprocess
 import tarfile
@@ -126,21 +127,32 @@ def publish():
                'X-GitHub-Api-Version': '2022-11-28', 'User-Agent': 'Stage-verified-archive'}
 
     def request(method, url, payload=None):
-        data = json.dumps(payload).encode() if payload is not None else None
-        extra = {'Content-Type': 'application/json'} if data is not None else {}
-        for attempt in range(3):
-            req = urllib.request.Request(url, data=data, method=method, headers={**headers, **extra})
+        # The authorized CLI is working on this host while urllib API GETs time out.
+        # Authentication stays in memory/environment, never command arguments/output.
+        assert url.startswith('https://api.github.com/')
+        endpoint = url.removeprefix('https://api.github.com/')
+        command = [str(cli), 'api', '--hostname', 'github.com', '--method', method, endpoint]
+        if payload is not None:
+            command += ['--input', '-']
+        attempts = 1 if method == 'POST' else 3
+        for attempt in range(attempts):
             try:
-                with urllib.request.urlopen(req, timeout=60) as response:
-                    return json.load(response)
-            except urllib.error.HTTPError as error:
-                if error.code not in (429, 500, 502, 503, 504) or attempt == 2:
-                    raise RuntimeError(f'GitHub API HTTP{error.code} {method}') from None
-                time.sleep(2 + attempt)
-            except (OSError, ValueError):
-                if attempt == 2:
-                    raise RuntimeError(f'GitHub network/JSON failure {method}') from None
-                time.sleep(2 + attempt)
+                response = subprocess.run(command, input=json.dumps(payload) if payload is not None else None,
+                                          text=True, capture_output=True, timeout=25,
+                                          env={**os.environ, 'GH_TOKEN': token})
+                if response.returncode:
+                    match = re.search(r'HTTP\s+(\d{3})', response.stderr)
+                    code = int(match.group(1)) if match else None
+                    if code not in (None, 429, 500, 502, 503, 504):
+                        raise RuntimeError(f'GitHub API HTTP{code} {method}')
+                    if attempt == attempts - 1:
+                        raise RuntimeError(f'GitHub CLI API failure {method}; inspect before retry')
+                else:
+                    return json.loads(response.stdout)
+            except (subprocess.TimeoutExpired, OSError, ValueError):
+                if attempt == attempts - 1:
+                    raise RuntimeError(f'GitHub CLI network/JSON failure {method}; inspect before retry') from None
+            time.sleep(2 + attempt)
 
     api = f'https://api.github.com/repos/{SLUG}'
     # Target lookup avoids downloading the full release history on flaky links.
@@ -172,14 +184,16 @@ def publish():
         asset = next((a for a in assets if a['name'] == name), None)
         if asset is None:
             url = f'https://uploads.github.com/repos/{SLUG}/releases/{release["id"]}/assets?name=' + urllib.parse.quote(name)
-            with p.open('rb') as stream:
-                req = urllib.request.Request(url, data=stream, method='POST', headers={
-                    **headers, 'Content-Type': 'application/octet-stream', 'Content-Length': str(p.stat().st_size)})
-                try:
-                    with urllib.request.urlopen(req, timeout=300) as response:
-                        asset = json.load(response)
-                except (OSError, ValueError):
-                    raise RuntimeError('Asset upload interrupted; inspect server assets before retry') from None
+            try:
+                response = subprocess.run([str(cli), 'api', '--hostname', 'github.com', '--method', 'POST',
+                                           url, '--input', str(p), '--header', 'Content-Type: application/octet-stream'],
+                                          text=True, capture_output=True, timeout=60,
+                                          env={**os.environ, 'GH_TOKEN': token})
+                if response.returncode:
+                    raise RuntimeError('Asset upload interrupted; inspect server assets before retry')
+                asset = json.loads(response.stdout)
+            except (subprocess.TimeoutExpired, OSError, ValueError):
+                raise RuntimeError('Asset upload interrupted; inspect server assets before retry') from None
         remote = request('GET', api + f'/releases/assets/{asset["id"]}?verify=' + str(time.time_ns()))
         assert remote['state'] == 'uploaded' and remote['size'] == p.stat().st_size
         digest = sha(p)

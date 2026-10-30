@@ -81,3 +81,10 @@ native保持梯度/Q梯度范数比12.73–14.72，两者余弦-.571至-.260；Q
 - [PCGrad，NeurIPS2020](https://proceedings.neurips.cc/paper_files/paper/2020/hash/3fe78a8acf5fda99de95303940a2420c-Abstract.html)：梯度冲突及投影处理已有方法。尚未实现或验证，不能当作本项目原创或已解决抗遗忘。
 
 原始数据/协议在stage/runs/t202_cause_audit与stage/experiments/t202_cause_audit。全部结果为单张已消费地图的机制开发证据，四噪声种子不是独立地图或独立训练重复。
+
+
+## 备份与容量
+
+本轮68个原始文件共3521329字节，已在[增量Release](https://github.com/frank8763/winkun/releases/tag/stage-cause-audit-2026-10-30)核验备份。本地69个解压成员逐项哈希匹配，远端三个附件的服务端SHA256/大小匹配；未做完整远端二进制读回。归档3175482字节、SHA256 ecadc34a890650f2928749cef3633966df2adb8e5404806f722dc9648f6dd61d，核验后已删除临时包。全部新runs约938.03MiB，低于1GiB，空闲盘仍超过40GiB；所有实验进程已退出。
+
+首次urllib备份API GET连续超时，未建立Release；随后使用已授权GitHub CLI完成上传并再次核验发布后的附件URL/哈希。未重启实验或重复打包，原始源文件和模型哈希不变。
