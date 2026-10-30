@@ -1,0 +1,283 @@
+{
+  "state": "PASS",
+  "input_hash_checks": {
+    "t180_policy_sensitivity": {
+      "inputs": 4,
+      "protocol_sha256": "3c6ae24d0e5a787caa57a951f319cbdf8599b7f551dd36482638791994222ad0",
+      "state": "COMPLETE"
+    },
+    "t181_lateral_start": {
+      "inputs": 5,
+      "protocol_sha256": "e8a45b0c6982155542245a183099f1859eaefb9c6f6ec84f7c4fe84b3e1c7079",
+      "state": "COMPLETE"
+    },
+    "t182_success_course_preflight": {
+      "inputs": 6,
+      "protocol_sha256": "36c5af2f4119a40b3ea40d87e4dfe253a2b6496ad63514aa92fbd366f6b5b945",
+      "state": "FAILED"
+    },
+    "t182b_success_course_preflight": {
+      "inputs": 6,
+      "protocol_sha256": "869d659815dc6ae451bb9478c2f91cf2c897605972ee7dbb833c760596020e16",
+      "state": "FAILED"
+    },
+    "t182c_success_course_preflight": {
+      "inputs": 7,
+      "protocol_sha256": "7280d135bdd4f7a2e40bd050d0c1915bc88840aa60ee342547cb6bb2ee9ce468",
+      "state": "COMPLETE"
+    },
+    "t183_onpolicy_course": {
+      "inputs": 7,
+      "protocol_sha256": "75ed14c847adf918e5a26eb3da4c4bfcc8879b30ca6748e9e1028e646d12d2b7",
+      "state": "COMPLETE"
+    },
+    "t184_course_connection": {
+      "inputs": 5,
+      "protocol_sha256": "674d9742850f964273629d8977b41bb0e8768c627307254587cabe51d72fe82b",
+      "state": "COMPLETE"
+    },
+    "t185_inference_contract": {
+      "inputs": 6,
+      "protocol_sha256": "77977d754ec943cfd003fc0c919073f2d11448220e2e11c55f83a06ff1514c13",
+      "state": "COMPLETE"
+    }
+  },
+  "training": {
+    "keep10": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/checkpoint_latest.pt",
+      "sha256": "9ae6a3160addfd91ea0f81de60abdde2064c0b51ae24028e55eb7c3e2af4fe24",
+      "physics_steps": 701482,
+      "actor_updates": 244,
+      "training_episodes": 96,
+      "training_success": 42,
+      "training_collisions": 53,
+      "decisions": 7063,
+      "training_timeouts": 1,
+      "by_course_bin": {
+        "0": {
+          "n": 32,
+          "success": 32,
+          "collisions": 0
+        },
+        "1": {
+          "n": 24,
+          "success": 5,
+          "collisions": 19
+        },
+        "2": {
+          "n": 12,
+          "success": 5,
+          "collisions": 7
+        },
+        "3": {
+          "n": 8,
+          "success": 0,
+          "collisions": 8
+        },
+        "None": {
+          "n": 20,
+          "success": 0,
+          "collisions": 19
+        }
+      },
+      "max_actor_parameter_change_vs_initial": 0.0014243461191654205
+    },
+    "keep1": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep1/checkpoint_latest.pt",
+      "sha256": "549413b9a5c3b4aa01263f3beedfd3d258bf275ee3f87ff51c340656f8e07414",
+      "physics_steps": 715022,
+      "actor_updates": 252,
+      "training_episodes": 96,
+      "training_success": 42,
+      "training_collisions": 52,
+      "decisions": 7204,
+      "training_timeouts": 2,
+      "by_course_bin": {
+        "0": {
+          "n": 32,
+          "success": 32,
+          "collisions": 0
+        },
+        "1": {
+          "n": 24,
+          "success": 5,
+          "collisions": 19
+        },
+        "2": {
+          "n": 12,
+          "success": 5,
+          "collisions": 7
+        },
+        "3": {
+          "n": 8,
+          "success": 0,
+          "collisions": 8
+        },
+        "None": {
+          "n": 20,
+          "success": 0,
+          "collisions": 18
+        }
+      },
+      "max_actor_parameter_change_vs_initial": 0.002562999725341797
+    }
+  },
+  "paired_course_outcomes": {
+    "keep10": {
+      "both_success": [
+        "course_phase0_side0_draw0",
+        "course_phase0_side0_draw1",
+        "course_phase0_side0_draw2",
+        "course_phase0_side1_draw0",
+        "course_phase0_side1_draw1",
+        "course_phase0_side1_draw2",
+        "course_phase1_side1_draw0",
+        "course_phase2_side0_draw1",
+        "course_phase2_side1_draw0",
+        "course_phase2_side1_draw1",
+        "course_phase3_side1_draw2"
+      ],
+      "new_success": [
+        "course_phase1_side0_draw0"
+      ],
+      "lost_success": [],
+      "per_bin": {
+        "0": {
+          "n": 6,
+          "success": 6
+        },
+        "1": {
+          "n": 6,
+          "success": 2
+        },
+        "2": {
+          "n": 6,
+          "success": 3
+        },
+        "3": {
+          "n": 6,
+          "success": 1
+        }
+      },
+      "comparison_to_historical_T172_20Hz": {
+        "new_success": [],
+        "lost_success": [],
+        "caveat": "HistoricalT172differentcaps,variableGPUbatch andmissingfullintegrationstate. This setcomparison is provenance, not a controlled algorithm/cadence comparison."
+      }
+    },
+    "keep1": {
+      "both_success": [
+        "course_phase0_side0_draw0",
+        "course_phase0_side0_draw1",
+        "course_phase0_side0_draw2",
+        "course_phase0_side1_draw0",
+        "course_phase0_side1_draw1",
+        "course_phase0_side1_draw2",
+        "course_phase1_side1_draw0",
+        "course_phase2_side0_draw1",
+        "course_phase2_side1_draw0",
+        "course_phase2_side1_draw1",
+        "course_phase3_side1_draw2"
+      ],
+      "new_success": [],
+      "lost_success": [],
+      "per_bin": {
+        "0": {
+          "n": 6,
+          "success": 6
+        },
+        "1": {
+          "n": 6,
+          "success": 1
+        },
+        "2": {
+          "n": 6,
+          "success": 3
+        },
+        "3": {
+          "n": 6,
+          "success": 1
+        }
+      },
+      "comparison_to_historical_T172_20Hz": {
+        "new_success": [],
+        "lost_success": [
+          "phase1_side0_draw0"
+        ],
+        "caveat": "HistoricalT172differentcaps,variableGPUbatch andmissingfullintegrationstate. This setcomparison is provenance, not a controlled algorithm/cadence comparison."
+      }
+    }
+  },
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scores": {
+    "initial_embedding": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "course_reset": {
+        "safe_success": 11,
+        "n": 24,
+        "collisions": 12
+      }
+    },
+    "keep10": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "course_reset": {
+        "safe_success": 12,
+        "n": 24,
+        "collisions": 11
+      }
+    },
+    "keep1": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "course_reset": {
+        "safe_success": 11,
+        "n": 24,
+        "collisions": 12
+      }
+    }
+  },
+  "max_behavior_logp_error": 3.8504600524902344e-05,
+  "diagnostic_physics_steps_recorded_unique": 1122999,
+  "incomplete_attempt_unrecorded_physics": {
+    "exact": null,
+    "upper_bound": 373344,
+    "reason": "Two interrupted preflights; at most8 in-flight capped episodes each. Their logs preserved; never assume zero or double-count recorded9caseprefix."
+  },
+  "inference_contract": {
+    "left_all8_failed": true,
+    "right_all8_success": true,
+    "max_same_state_native_action_difference": 1.1995434761047363e-06
+  },
+  "all_new_runs_bytes": 684507456,
+  "training_physics_steps": 1416504,
+  "training_decisions": 14267,
+  "actor_optimizer_updates": 496,
+  "T183_frozen_evaluation_physics_steps": 875228
+}

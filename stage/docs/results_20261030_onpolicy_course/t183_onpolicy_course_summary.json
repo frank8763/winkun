@@ -1,0 +1,80 @@
+{
+  "state": "COMPLETE",
+  "training": {
+    "keep10": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep10/checkpoint_latest.pt",
+      "sha256": "9ae6a3160addfd91ea0f81de60abdde2064c0b51ae24028e55eb7c3e2af4fe24",
+      "physics_steps": 701482,
+      "actor_updates": 244,
+      "training_episodes": 96,
+      "training_success": 42,
+      "training_collisions": 53
+    },
+    "keep1": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t183_onpolicy_course/keep1/checkpoint_latest.pt",
+      "sha256": "549413b9a5c3b4aa01263f3beedfd3d258bf275ee3f87ff51c340656f8e07414",
+      "physics_steps": 715022,
+      "actor_updates": 252,
+      "training_episodes": 96,
+      "training_success": 42,
+      "training_collisions": 52
+    }
+  },
+  "scores": {
+    "initial_embedding": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "course_reset": {
+        "safe_success": 11,
+        "n": 24,
+        "collisions": 12
+      }
+    },
+    "keep10": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "course_reset": {
+        "safe_success": 12,
+        "n": 24,
+        "collisions": 11
+      }
+    },
+    "keep1": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "course_reset": {
+        "safe_success": 11,
+        "n": 24,
+        "collisions": 12
+      }
+    }
+  },
+  "max_cpu_gpu_behavior_logp_error": 3.8504600524902344e-05,
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scope": "One paired pilot seed, fixed consumed T172 course resets, same original map. Course success is not complete5m. Fixed curriculum schedule and original-start injections common to both arms; only retention weight10vs1 differs. No SACvsTD3vsPPO ranking or automatic promotion."
+}
