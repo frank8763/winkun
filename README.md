@@ -32,6 +32,8 @@
 
 - [T180–T185 课程RL模型和原始证据 Release](https://github.com/frank8763/winkun/releases/tag/stage-onpolicy-course-2026-10-30)
 
+- [T186–T188 局部控制模型、状态快照与动作头审计 Release](https://github.com/frank8763/winkun/releases/tag/stage-control-robustness-2026-10-30)
+
 ## 当前能力和实验状态
 
 T159 单 Actor 通过六项固定 3/4 米训练任务；这不是独立泛化测试。迁移后T165已严格恢复并补足T164原预算，随后完成T166–T172有界诊断和训练。两项原始5米仍未通过，保留T159。T173–T175定位并修复已存碰撞终止样本的局部价值误差，留出动作排序仍不可靠。T176–T178进一步完成场景组件、原生油门范围与探索相关时间对照：四个新PPO候选均旧6/6、原始5m0/2，无晋升。详见[最新报告](stage/docs/results_20261030_scene_exploration/findings.md)。T179进一步确认小障碍也发生车身碰撞，未发现转向网络普遍饱和；下一步先检验原场景策略行为覆盖，见[最新分析](stage/docs/results_20261030_mechanism_audit/findings.md)。T183进一步完成192回合实际MC/PPO训练：两组旧6/6、原始5m0/2，较强保持组仅恢复一个历史成功课程案例。T184/T185检验了起点连接与推理契约，详见[最新结果](stage/docs/results_20261030_onpolicy_course/findings.md)。T187局部训练提高了小扰动下的到达稳定性，仍未通过原始5m；T188动作头候选仅完成初始化核验，尚未训练。见[最新修改](stage/docs/results_20261030_control_robustness/findings.md)。目前无训练作业，不重复启动已完成目录。

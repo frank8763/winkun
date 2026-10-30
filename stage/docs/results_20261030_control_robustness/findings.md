@@ -66,3 +66,7 @@ T187固定源组在仍保有上述下界时已经通过所有局部测试，说�
 训练任务按实际能力选择参考[Reverse Curriculum Generation](https://proceedings.mlr.press/v78/florensa17a.html)和[Automatic Goal Generation](https://proceedings.mlr.press/v80/florensa18a.html)的思想；本轮没有复现其全部算法，也没有实现GoalGAN。当前参数化和局部稳健性训练均不能单独支撑原创算法或顶刊有效性主张，仍需原任务、多种子、跨布局与传感误差证据。
 
 全部协议/输入哈希、模型、成败配对与数据计量见[verification_and_metrics.json](verification_and_metrics.json)。Stage与Phase隔离，旧归档与失败证据保持不变。
+
+## 远端归档与占用
+
+本轮113个原始文件共20924084字节（约19.95MiB）及两个训练最终点、一个未训练初始化模型已在[增量Release](https://github.com/frank8763/winkun/releases/tag/stage-control-robustness-2026-10-30)核验发布。压缩包16640714字节，SHA256 `b4a87bb958c62821493d513dce26c3614b2973697b1efcea45e087d78d669c4c`。本地114个解压成员逐一哈希匹配，远端3附件服务端SHA256/大小匹配，未做完整远端二进制重新下载。临时包已删除。全部新增runs逻辑大小705432550字节（约672.75MiB），低于1GiB。历史3240文件及前轮248个原始输出哈希再次通过；本轮全部父/子进程退出。
