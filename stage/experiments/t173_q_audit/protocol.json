@@ -1,0 +1,740 @@
+{
+  "experiment": "STAGE_T173_FROZEN_VALUE_AND_ONE_DECISION_COUNTERFACTUAL_AUDIT",
+  "critic_actor_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t171_reverse_curriculum/checkpoint_latest.pt",
+  "incumbent_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt",
+  "jobs": [
+    {
+      "id": "mc_2029653601_LEFT",
+      "kind": "mc",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 0,
+      "intervention": "baseline"
+    },
+    {
+      "id": "mc_2029653602_RIGHT",
+      "kind": "mc",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 0,
+      "intervention": "baseline"
+    },
+    {
+      "id": "mc_2029654801_LEFT",
+      "kind": "mc",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 0,
+      "intervention": "baseline"
+    },
+    {
+      "id": "mc_2029654802_RIGHT",
+      "kind": "mc",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 0,
+      "intervention": "baseline"
+    },
+    {
+      "id": "mc_4m_2029653601_LEFT",
+      "kind": "mc",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "prefix_steps": 0,
+      "intervention": "baseline"
+    },
+    {
+      "id": "mc_4m_2029654802_RIGHT",
+      "kind": "mc",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "prefix_steps": 0,
+      "intervention": "baseline"
+    },
+    {
+      "id": "mc_5m_2029653601_LEFT",
+      "kind": "mc",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 0,
+      "intervention": "baseline"
+    },
+    {
+      "id": "mc_5m_2029654802_RIGHT",
+      "kind": "mc",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 0,
+      "intervention": "baseline"
+    },
+    {
+      "id": "branch_5m_2029653601_LEFT_0_baseline",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 0,
+      "intervention": "baseline"
+    },
+    {
+      "id": "branch_5m_2029653601_LEFT_0_q_plus",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 0,
+      "intervention": "q_plus"
+    },
+    {
+      "id": "branch_5m_2029653601_LEFT_0_q_minus",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 0,
+      "intervention": "q_minus"
+    },
+    {
+      "id": "branch_5m_2029653601_LEFT_0_T159",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 0,
+      "intervention": "T159"
+    },
+    {
+      "id": "branch_5m_2029653601_LEFT_5000_baseline",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 5000,
+      "intervention": "baseline"
+    },
+    {
+      "id": "branch_5m_2029653601_LEFT_5000_q_plus",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 5000,
+      "intervention": "q_plus"
+    },
+    {
+      "id": "branch_5m_2029653601_LEFT_5000_q_minus",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 5000,
+      "intervention": "q_minus"
+    },
+    {
+      "id": "branch_5m_2029653601_LEFT_5000_T159",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 5000,
+      "intervention": "T159"
+    },
+    {
+      "id": "branch_5m_2029653601_LEFT_10000_baseline",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 10000,
+      "intervention": "baseline"
+    },
+    {
+      "id": "branch_5m_2029653601_LEFT_10000_q_plus",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 10000,
+      "intervention": "q_plus"
+    },
+    {
+      "id": "branch_5m_2029653601_LEFT_10000_q_minus",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 10000,
+      "intervention": "q_minus"
+    },
+    {
+      "id": "branch_5m_2029653601_LEFT_10000_T159",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 10000,
+      "intervention": "T159"
+    },
+    {
+      "id": "repeat_5m_2029653601_LEFT_10000",
+      "kind": "repeat",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 10000,
+      "intervention": "baseline"
+    },
+    {
+      "id": "branch_5m_2029654802_RIGHT_0_baseline",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 0,
+      "intervention": "baseline"
+    },
+    {
+      "id": "branch_5m_2029654802_RIGHT_0_q_plus",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 0,
+      "intervention": "q_plus"
+    },
+    {
+      "id": "branch_5m_2029654802_RIGHT_0_q_minus",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 0,
+      "intervention": "q_minus"
+    },
+    {
+      "id": "branch_5m_2029654802_RIGHT_0_T159",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 0,
+      "intervention": "T159"
+    },
+    {
+      "id": "branch_5m_2029654802_RIGHT_5000_baseline",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 5000,
+      "intervention": "baseline"
+    },
+    {
+      "id": "branch_5m_2029654802_RIGHT_5000_q_plus",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 5000,
+      "intervention": "q_plus"
+    },
+    {
+      "id": "branch_5m_2029654802_RIGHT_5000_q_minus",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 5000,
+      "intervention": "q_minus"
+    },
+    {
+      "id": "branch_5m_2029654802_RIGHT_5000_T159",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 5000,
+      "intervention": "T159"
+    },
+    {
+      "id": "branch_5m_2029654802_RIGHT_10000_baseline",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 10000,
+      "intervention": "baseline"
+    },
+    {
+      "id": "branch_5m_2029654802_RIGHT_10000_q_plus",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 10000,
+      "intervention": "q_plus"
+    },
+    {
+      "id": "branch_5m_2029654802_RIGHT_10000_q_minus",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 10000,
+      "intervention": "q_minus"
+    },
+    {
+      "id": "branch_5m_2029654802_RIGHT_10000_T159",
+      "kind": "branch",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 10000,
+      "intervention": "T159"
+    },
+    {
+      "id": "repeat_5m_2029654802_RIGHT_10000",
+      "kind": "repeat",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "prefix_steps": 10000,
+      "intervention": "baseline"
+    },
+    {
+      "id": "branch_2029654802_RIGHT_0_baseline",
+      "kind": "branch",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 0,
+      "intervention": "baseline"
+    },
+    {
+      "id": "branch_2029654802_RIGHT_0_q_plus",
+      "kind": "branch",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 0,
+      "intervention": "q_plus"
+    },
+    {
+      "id": "branch_2029654802_RIGHT_0_q_minus",
+      "kind": "branch",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 0,
+      "intervention": "q_minus"
+    },
+    {
+      "id": "branch_2029654802_RIGHT_0_T159",
+      "kind": "branch",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 0,
+      "intervention": "T159"
+    },
+    {
+      "id": "branch_2029654802_RIGHT_5000_baseline",
+      "kind": "branch",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 5000,
+      "intervention": "baseline"
+    },
+    {
+      "id": "branch_2029654802_RIGHT_5000_q_plus",
+      "kind": "branch",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 5000,
+      "intervention": "q_plus"
+    },
+    {
+      "id": "branch_2029654802_RIGHT_5000_q_minus",
+      "kind": "branch",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 5000,
+      "intervention": "q_minus"
+    },
+    {
+      "id": "branch_2029654802_RIGHT_5000_T159",
+      "kind": "branch",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 5000,
+      "intervention": "T159"
+    },
+    {
+      "id": "branch_2029654802_RIGHT_10000_baseline",
+      "kind": "branch",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 10000,
+      "intervention": "baseline"
+    },
+    {
+      "id": "branch_2029654802_RIGHT_10000_q_plus",
+      "kind": "branch",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 10000,
+      "intervention": "q_plus"
+    },
+    {
+      "id": "branch_2029654802_RIGHT_10000_q_minus",
+      "kind": "branch",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 10000,
+      "intervention": "q_minus"
+    },
+    {
+      "id": "branch_2029654802_RIGHT_10000_T159",
+      "kind": "branch",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 10000,
+      "intervention": "T159"
+    },
+    {
+      "id": "repeat_2029654802_RIGHT_10000",
+      "kind": "repeat",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "prefix_steps": 10000,
+      "intervention": "baseline"
+    }
+  ],
+  "wall_seconds": 900,
+  "maximum_physics_steps": 2300000,
+  "diagnostic_step_cap": 46668,
+  "physics_dt_s": 0.002,
+  "control_hold_steps": 25,
+  "gradient_updates": 0,
+  "candidate_action_contract": "At specified0/10/20s on-policy states: baseline,T159 action,Q1 normalized action gradient plus/minus0.25 clipped to[-1,1]. Exactly one25-physics-step decision is intervened; subsequent actions always frozenT171. This is offline diagnostic only, no deployed planner or teacher switch.",
+  "counterfactual_pairing": "Each branch rebuilt from exact original reset and identicalT171 prefix, no physical state insertion. FullMuJoCo integration state+observation+finalgoal hashes must match. Three baseline repeats quantify deterministic return tolerance.",
+  "mc_contract": "Complete native terminal return with declaredT169 reward/60s physical gamma. Truncated labels censored. Independent closed-form terminal reward/potential telescoping check. Q1 andmin(Q1,Q2) both audited; Actor was trained usingQ1.",
+  "diagnostic_deadline": "93.336s total episode cap only to expose terminal outcomes forQ audit; original strict primary3m/4m/5m deadlines preserved separately.",
+  "ranking_metrics": "Per-state Q1 prediction differences vs actual MC return differences. Zero-action or tiny-return differences reported separately; do not inflate independence using trajectory frames.",
+  "scope": "Development audit, one scene, fixed known tasks and finalT171 only. No statistical generalization or unique causal-root claim.",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t173_q_audit/audit.py": "58b4bbb4957ea0a8bfb35b6f25612980954a86ea2478287a113f625158a381da",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t171_reverse_curriculum/checkpoint_latest.pt": "520dda9ee77b3a9139ad5a15c84d7a8765f6476c7eb255a195d1623f9d1e5d6d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t169_value_seed/reward_contract.py": "53689b31e3785d5eaab673649d0e53fc80d91093facfbd04d350844e35f27ba1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t171_reverse_curriculum/protocol.json": "5f70094f42bc587480a230c81c7ccfbd26dad211d651f125b14e67fb7c8a28e6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "automatic_promotion": false,
+  "cap_all_new_runs_bytes": 1073741824,
+  "cap_this_run_bytes": 67108864,
+  "references": [
+    "https://proceedings.mlr.press/v80/fujimoto18a.html",
+    "https://proceedings.neurips.cc/paper/2019/hash/c2073ffa77b5357a498057413bb09d3a-Abstract.html"
+  ]
+}

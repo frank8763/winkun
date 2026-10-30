@@ -1,0 +1,84 @@
+{
+  "checks": [
+    {
+      "run": "t173_q_audit",
+      "input_hashes": "PASS",
+      "state": "COMPLETE",
+      "actor_unchanged": true,
+      "automatic_promotion": false
+    },
+    {
+      "run": "t174_critic_alignment",
+      "input_hashes": "PASS",
+      "state": "COMPLETE",
+      "actor_unchanged": true,
+      "automatic_promotion": false
+    },
+    {
+      "run": "t175_paired_advantage",
+      "input_hashes": "PASS",
+      "state": "COMPLETE",
+      "actor_unchanged": true,
+      "automatic_promotion": false
+    }
+  ],
+  "t173_qplus_5m_ranking": {
+    "correct": 2,
+    "n": 6
+  },
+  "t174": {
+    "uniform": {
+      "collision_terminal_q1_mae": 9.799530157824373,
+      "return_label_holdout_q1_mae": 5.375982050115987,
+      "critic_gate": false
+    },
+    "terminal_balanced": {
+      "collision_terminal_q1_mae": 0.14382054988231796,
+      "return_label_holdout_q1_mae": 5.572454155548081,
+      "critic_gate": false
+    },
+    "terminal_balanced_mc": {
+      "collision_terminal_q1_mae": 0.09667448741373419,
+      "return_label_holdout_q1_mae": 5.137265926228464,
+      "critic_gate": false
+    }
+  },
+  "t175": {
+    "mc_only": {
+      "training_action_ranking": {
+        "correct": 5,
+        "n": 17
+      },
+      "held_state_action_ranking": {
+        "correct": 4,
+        "n": 9
+      },
+      "training_delta_return_mae": 0.26797644776682955,
+      "held_state_delta_return_mae": 0.25838670411863773,
+      "training_course_q1_mae": 0.1901555988428305,
+      "held_initial_return_q1_mae": 6.941874347971391,
+      "critic_gate": false
+    },
+    "mc_plus_paired": {
+      "training_action_ranking": {
+        "correct": 16,
+        "n": 17
+      },
+      "held_state_action_ranking": {
+        "correct": 5,
+        "n": 9
+      },
+      "training_delta_return_mae": 0.0023669790654846055,
+      "held_state_delta_return_mae": 0.18635760707298232,
+      "training_course_q1_mae": 0.18959057946643948,
+      "held_initial_return_q1_mae": 6.828038432048272,
+      "critic_gate": false
+    }
+  },
+  "online_actor_updates": 0,
+  "new_native_diagnostic_steps": 795686,
+  "critic_updates": 10000,
+  "retained_actor": "T159",
+  "primary_5m_status": "unchanged0/2",
+  "scope": "One inherited seed per control, one map. No independent training repetitions, no new navigation policy, no automatic promotion."
+}

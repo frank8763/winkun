@@ -1,0 +1,73 @@
+{
+  "experiment": "STAGE_T175_FROZEN_ACTOR_PAIRED_ADVANTAGE_IDENTIFICATION",
+  "parent_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t174_critic_alignment/terminal_balanced_mc/critic_alignment.pt",
+  "replay_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t171_reverse_curriculum/checkpoint_latest.pt",
+  "demonstrations": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz",
+  "initial_state_return_holdout": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t175_paired_advantage/value_holdout.npz",
+  "arms": {
+    "mc_only": {
+      "terminal_balanced": true,
+      "mc_weight": 1.0,
+      "pair_weight": 0.0
+    },
+    "mc_plus_paired": {
+      "terminal_balanced": true,
+      "mc_weight": 1.0,
+      "pair_weight": 1.0
+    }
+  },
+  "seed": 2026103075,
+  "critic_updates_per_arm": 2000,
+  "wall_seconds": 900,
+  "actor_updates": 0,
+  "new_physics_steps": 0,
+  "mc_train_courses": [
+    "2029653601_LEFT",
+    "2029653602_RIGHT",
+    "2029654801_LEFT",
+    "2029654802_RIGHT",
+    "4m_2029653601_LEFT",
+    "4m_2029654802_RIGHT",
+    "5m_2029653601_LEFT",
+    "5m_2029654802_RIGHT"
+  ],
+  "mc_development_return_holdout_courses": [],
+  "mc_sampling": "Eachcourse16states: first2initialblocks+14uniform; all8nominalT171traces. Shared bybotharms. Coursevaluefit is in-sample, not validation.",
+  "td_batch": "SameT174 terminal-balanced192replay+64demos",
+  "pair_training": "6completeprefixstates: threecourses(5mleft/right,old3mright) at0and20s,3candidatevsbaseline perstate,18true one-decisionMCdifferences.",
+  "pair_holdout": "The entire10s state for eachof3courses:9candidate differences excluded fromallpairgradientterms. BaselineMCvalues atthese states occur incommonvaluefitting; onlycounterfactual actionlabels heldout.",
+  "pair_loss": "Bothcritic heads: MSE((Q(s,a)-Q(s,baseline))/.05, observedMCdifference/.05). Samefixedcandidatebankforwardcomputedbotharms; coefficient0vs1 isonlyarmdifference.",
+  "initial_value_validation": "Reconstructed24T172resetstates,16completeMCinitialreturnlabels evaluatedonly,8truncationsmasked. No exactinitialreturnlabel entersgradients. Same-map consumeddevelopment, notblindgeneralization. T172GPUvsT173CPU frozenactor numericalvariant documented.",
+  "critic_gate": "CollisionandgoalterminalQ1MAE<=1; initial-valueholdout16caseMAE<=2; actionpairholdoutsign>=7of9. NoActorupdateorautomaticpromotion.",
+  "common": {
+    "critic_lr": 0.0001,
+    "gamma_efold_s": 60,
+    "hold_steps": 25,
+    "target_tau": 0.005,
+    "target_every": 2,
+    "target_noise": 0.15,
+    "target_noise_clip": 0.4,
+    "gradient_clip": 10
+  },
+  "source_limit": "MCandcounterfactualQ labels are exactforfixedT171continuation only, notarbitrarynewpolicy. FirstactioninterventionsalreadyruninT173; noexternalplannerorwaypoint.",
+  "cap_all_new_runs_bytes": 1073741824,
+  "checkpoint_limit_bytes": 67108864,
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t175_paired_advantage/train.py": "8746a29770aa26b57fa7e886577bd975b0dadd6bffadc259339c0c6974a0c4c2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t174_critic_alignment/terminal_balanced_mc/critic_alignment.pt": "2dffa8b878c96c60cc416c7013c22138379bb4afb29b24ddb2edceadd9c285f9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t171_reverse_curriculum/checkpoint_latest.pt": "520dda9ee77b3a9139ad5a15c84d7a8765f6476c7eb255a195d1623f9d1e5d6d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz": "c124283516a486b9527dacec00e426a5047e0076506504123347dfe736b841da",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t175_paired_advantage/value_holdout.npz": "06871b7f6bfe1214f7ad011725169ed2ee37283a7ebde3af7ca42b636ae4a50b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/results.jsonl": "1efc12c9d66eee8e440c4461893ec3ebc336359d9510ef52b5ad6ea99ea1e501",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_2029653601_LEFT.npz": "04868b2aff118cf3eefc1c83fed93e472c992988bbb4e713e4b4156d3a1a2e21",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_2029653602_RIGHT.npz": "aba480f2c1bcf30d34da727aa4fa5d554c978a8614c593929a9ca0ef4dab8bc6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_2029654801_LEFT.npz": "a3ea75b9d20545a91a110d556494169e8a7a2dfee3fc2062967848a29c0fe9f0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_2029654802_RIGHT.npz": "4bea3ae007fee6b2365fd4b043502157965f2a24b95d71f1ff0c8b5bdb82bf48",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_4m_2029653601_LEFT.npz": "b652c6992dda95a989847174ae562a8fad788e6a870d796cc829ffcf1546f55c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_4m_2029654802_RIGHT.npz": "0096bbe70bae068cfa0a960a317e185a3c68ab56ea9ef38d63fc4ebb2347ea72",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_5m_2029653601_LEFT.npz": "bf169bb48d95ef86e48ae403cfd1250f6506415b606f4213a7a8249a5fb0ed1c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_5m_2029654802_RIGHT.npz": "c7eaeddef8666a844ff02ede40ce904875aa6467239794fd27bc15537c445568"
+  },
+  "automatic_promotion": false
+}

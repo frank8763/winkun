@@ -1,0 +1,2671 @@
+{
+  "state": "COMPLETE",
+  "arms": {
+    "mc_only": {
+      "before": {
+        "terminal_errors": {
+          "collision": {
+            "n": 24,
+            "q1_mae": 0.09667448741373419,
+            "minq_mae": 0.0803670296126866
+          },
+          "goal": {
+            "n": 69,
+            "q1_mae": 0.09004518391767605,
+            "minq_mae": 0.09249986626807084
+          }
+        },
+        "mc_courses": {
+          "2029653601_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.16415833007073255,
+            "minq_mae": 0.17339709690255686,
+            "q1_bias": -0.03211412994525027,
+            "initial_q1": 3.868072032928467,
+            "initial_mc": 7.804116413563691
+          },
+          "2029653602_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.15439343739554678,
+            "minq_mae": 0.16022986532481595,
+            "q1_bias": -0.09903059518348145,
+            "initial_q1": 8.031484603881836,
+            "initial_mc": 8.218104091566468
+          },
+          "2029654801_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.09817054363642376,
+            "minq_mae": 0.12195786908109683,
+            "q1_bias": -0.013530140183246669,
+            "initial_q1": 7.885629653930664,
+            "initial_mc": 7.840976867350614
+          },
+          "2029654802_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.10373053798375026,
+            "minq_mae": 0.1357497378927081,
+            "q1_bias": -0.04141523721253971,
+            "initial_q1": 6.745327949523926,
+            "initial_mc": 6.938271088214528
+          },
+          "4m_2029653601_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 2.7809763913581405,
+            "minq_mae": 2.8841955824691916,
+            "q1_bias": -2.7809763913581405,
+            "initial_q1": 5.142458915710449,
+            "initial_mc": 6.768062503970957
+          },
+          "4m_2029654802_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.6152709544499558,
+            "minq_mae": 0.6420956989901271,
+            "q1_bias": -0.5051544468886853,
+            "initial_q1": 7.471949100494385,
+            "initial_mc": 7.74575393424823
+          },
+          "5m_2029653601_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.24398250887853165,
+            "minq_mae": 0.2135503806054799,
+            "q1_bias": 0.12769315905822232,
+            "initial_q1": 0.9982591271400452,
+            "initial_mc": -4.4677703426175235
+          },
+          "5m_2029654802_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 12.015550432877296,
+            "minq_mae": 11.925009660549945,
+            "q1_bias": 12.014262163653978,
+            "initial_q1": 5.9490966796875,
+            "initial_mc": -3.5605838326214037
+          }
+        },
+        "branch_predictions": [
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_baseline",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "baseline",
+            "q1": 0.9982580542564392,
+            "q2": 0.591776967048645,
+            "complete_mc_return": -4.4677703426175235
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_q_minus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1": 0.86336749792099,
+            "q2": 0.5640966296195984,
+            "complete_mc_return": -4.509441945117613
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_q_plus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1": 1.202406644821167,
+            "q2": 0.7053926587104797,
+            "complete_mc_return": -4.353420158720343
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_T159",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1": 0.9664011001586914,
+            "q2": 0.5757539868354797,
+            "complete_mc_return": -4.498453941751883
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_baseline",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "baseline",
+            "q1": -5.794487476348877,
+            "q2": -5.908759593963623,
+            "complete_mc_return": -5.878185205893273
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_q_plus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1": -5.6985697746276855,
+            "q2": -5.948693752288818,
+            "complete_mc_return": -5.8874925436483965
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_q_minus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1": -5.854820728302002,
+            "q2": -5.832992076873779,
+            "complete_mc_return": -5.891304027126414
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_T159",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1": -5.791954517364502,
+            "q2": -5.909720420837402,
+            "complete_mc_return": -5.630556381994387
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_baseline",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "baseline",
+            "q1": -7.212252140045166,
+            "q2": -7.310776710510254,
+            "complete_mc_return": -7.34365873103796
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_q_minus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1": -7.525327682495117,
+            "q2": -7.402225971221924,
+            "complete_mc_return": -7.36165947455934
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_q_plus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1": -6.8705973625183105,
+            "q2": -7.1755242347717285,
+            "complete_mc_return": -7.344907387261274
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_T159",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1": -7.2282795906066895,
+            "q2": -7.276805400848389,
+            "complete_mc_return": -7.343658731037984
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_baseline",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "baseline",
+            "q1": 5.949095249176025,
+            "q2": 5.678610324859619,
+            "complete_mc_return": -3.5605838326214037
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_q_plus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1": 6.1576361656188965,
+            "q2": 5.801272869110107,
+            "complete_mc_return": -3.5756264053134483
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_q_minus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1": 5.755107402801514,
+            "q2": 5.56247091293335,
+            "complete_mc_return": -3.5571653699278967
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_T159",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1": 5.97123384475708,
+            "q2": 5.681320667266846,
+            "complete_mc_return": -3.5518199913526347
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_baseline",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "baseline",
+            "q1": 5.399454116821289,
+            "q2": 5.648623466491699,
+            "complete_mc_return": -4.663065431669492
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_q_plus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1": 5.51491641998291,
+            "q2": 5.582987308502197,
+            "complete_mc_return": -4.658675973077535
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_q_minus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1": 5.297972679138184,
+            "q2": 5.720353603363037,
+            "complete_mc_return": -4.659553572189726
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_T159",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1": 5.403670787811279,
+            "q2": 5.594992160797119,
+            "complete_mc_return": -4.667985969884949
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_baseline",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "baseline",
+            "q1": 8.102279663085938,
+            "q2": 7.824705600738525,
+            "complete_mc_return": -5.951436025746296
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_q_plus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1": 8.364580154418945,
+            "q2": 8.072051048278809,
+            "complete_mc_return": -5.952473650923255
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_q_minus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1": 7.840670108795166,
+            "q2": 7.576364040374756,
+            "complete_mc_return": -5.957872090479549
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_q_plus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1": 6.954981803894043,
+            "q2": 6.9394917488098145,
+            "complete_mc_return": 7.298423869200813
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_baseline",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "baseline",
+            "q1": 6.745327472686768,
+            "q2": 6.83071231842041,
+            "complete_mc_return": 6.938271088214528
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_q_minus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1": 6.5353851318359375,
+            "q2": 6.71925687789917,
+            "complete_mc_return": 7.295391871504418
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_T159",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1": 7.9289398193359375,
+            "q2": 7.6600260734558105,
+            "complete_mc_return": -5.953926616736787
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_T159",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1": 6.738536834716797,
+            "q2": 6.827301979064941,
+            "complete_mc_return": 6.954887552861613
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_q_plus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1": 8.268518447875977,
+            "q2": 8.046396255493164,
+            "complete_mc_return": 8.183266782893465
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_baseline",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "baseline",
+            "q1": 8.102642059326172,
+            "q2": 7.938460350036621,
+            "complete_mc_return": 7.787232053045385
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_q_minus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1": 7.953372478485107,
+            "q2": 7.843445301055908,
+            "complete_mc_return": 8.212977884770085
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_T159",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1": 8.089215278625488,
+            "q2": 7.919773578643799,
+            "complete_mc_return": 8.211600008209823
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_baseline",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "baseline",
+            "q1": 9.024527549743652,
+            "q2": 9.017101287841797,
+            "complete_mc_return": 8.926897102144272
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_q_plus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1": 9.372557640075684,
+            "q2": 9.314765930175781,
+            "complete_mc_return": 8.92720592287687
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_q_minus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1": 8.742257118225098,
+            "q2": 8.754781723022461,
+            "complete_mc_return": 8.93153049417977
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_T159",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1": 8.962834358215332,
+            "q2": 8.953031539916992,
+            "complete_mc_return": 8.94018569354053
+          }
+        ],
+        "action_rank_comparisons": [
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1_gain": -0.13489055633544922,
+            "mc_gain": -0.04167160250008983,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1_gain": 0.20414859056472778,
+            "mc_gain": 0.1143501838971801,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1_gain": -0.0318569540977478,
+            "mc_gain": -0.030683599134359696,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1_gain": 0.0959177017211914,
+            "mc_gain": -0.009307337755123157,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1_gain": -0.060333251953125,
+            "mc_gain": -0.013118821233140565,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1_gain": 0.002532958984375,
+            "mc_gain": 0.24762882389888663,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1_gain": -0.31307554244995117,
+            "mc_gain": -0.01800074352137937,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1_gain": 0.34165477752685547,
+            "mc_gain": -0.0012486562233133824,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1_gain": -0.016027450561523438,
+            "mc_gain": -2.398081733190338e-14,
+            "informative": false,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1_gain": 0.2085409164428711,
+            "mc_gain": -0.015042572692044676,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1_gain": -0.19398784637451172,
+            "mc_gain": 0.003418462693506985,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1_gain": 0.022138595581054688,
+            "mc_gain": 0.008763841268768946,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1_gain": 0.1154623031616211,
+            "mc_gain": 0.004389458591957052,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1_gain": -0.10148143768310547,
+            "mc_gain": 0.0035118594797660663,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1_gain": 0.004216670989990234,
+            "mc_gain": -0.0049205382154573485,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1_gain": 0.2623004913330078,
+            "mc_gain": -0.001037625176959267,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1_gain": -0.2616095542907715,
+            "mc_gain": -0.0064360647332533105,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1_gain": 0.2096543312072754,
+            "mc_gain": 0.3601527809862848,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1_gain": -0.20994234085083008,
+            "mc_gain": 0.35712078328988994,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1_gain": -0.17333984375,
+            "mc_gain": -0.0024905909904910928,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1_gain": -0.006790637969970703,
+            "mc_gain": 0.016616464647084328,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1_gain": 0.1658763885498047,
+            "mc_gain": 0.39603472984807997,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1_gain": -0.14926958084106445,
+            "mc_gain": 0.4257458317246998,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1_gain": -0.013426780700683594,
+            "mc_gain": 0.4243679551644375,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1_gain": 0.34803009033203125,
+            "mc_gain": 0.00030882073259874687,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1_gain": -0.2822704315185547,
+            "mc_gain": 0.004633392035497508,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1_gain": -0.06169319152832031,
+            "mc_gain": 0.013288591396257488,
+            "informative": true,
+            "sign_agreement": false
+          }
+        ],
+        "initial_state_return_holdout_q1_mae": 8.706337269307067,
+        "mean_return_holdout_q1_mae": 8.706337269307067,
+        "paired_action_return_holdout": {
+          "correct": 4,
+          "n": 9
+        },
+        "fixed_5m_qplus_candidate_sign_agreement": {
+          "correct": 2,
+          "n": 6
+        },
+        "critic_gate": false
+      },
+      "after": {
+        "terminal_errors": {
+          "collision": {
+            "n": 24,
+            "q1_mae": 0.0721565102408918,
+            "minq_mae": 0.07268413055644356
+          },
+          "goal": {
+            "n": 69,
+            "q1_mae": 0.1237772031168196,
+            "minq_mae": 0.1257605774728874
+          }
+        },
+        "mc_courses": {
+          "2029653601_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.15207715897598426,
+            "minq_mae": 0.16322264134596956,
+            "q1_bias": -0.08315498043522285,
+            "initial_q1": 7.376308441162109,
+            "initial_mc": 7.804116413563691
+          },
+          "2029653602_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.14896726308336597,
+            "minq_mae": 0.14896726308336597,
+            "q1_bias": -0.13495162541822858,
+            "initial_q1": 8.130278587341309,
+            "initial_mc": 8.218104091566468
+          },
+          "2029654801_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.1629281782535491,
+            "minq_mae": 0.163861472153421,
+            "q1_bias": -0.1375153840761495,
+            "initial_q1": 7.763760089874268,
+            "initial_mc": 7.840976867350614
+          },
+          "2029654802_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.2154404166284344,
+            "minq_mae": 0.22116109753928162,
+            "q1_bias": -0.202866708446247,
+            "initial_q1": 6.779841899871826,
+            "initial_mc": 6.938271088214528
+          },
+          "4m_2029653601_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.24596635112230184,
+            "minq_mae": 0.25971355264460916,
+            "q1_bias": -0.19604036456488066,
+            "initial_q1": 6.698026180267334,
+            "initial_mc": 6.768062503970957
+          },
+          "4m_2029654802_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.19352746626721562,
+            "minq_mae": 0.19183362016941197,
+            "q1_bias": -0.17527386325030492,
+            "initial_q1": 7.653263568878174,
+            "initial_mc": 7.74575393424823
+          },
+          "5m_2029653601_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.1936497833087588,
+            "minq_mae": 0.19145265358073138,
+            "q1_bias": -0.0312582244963412,
+            "initial_q1": -4.214964866638184,
+            "initial_mc": -4.4677703426175235
+          },
+          "5m_2029654802_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.20868817310303414,
+            "minq_mae": 0.21013089414136688,
+            "q1_bias": -0.0690559157962984,
+            "initial_q1": -3.664907932281494,
+            "initial_mc": -3.5605838326214037
+          }
+        },
+        "branch_predictions": [
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_baseline",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "baseline",
+            "q1": -4.214964866638184,
+            "q2": -4.2444939613342285,
+            "complete_mc_return": -4.4677703426175235
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_q_minus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1": -3.85724139213562,
+            "q2": -3.7354540824890137,
+            "complete_mc_return": -4.509441945117613
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_q_plus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1": -4.451616287231445,
+            "q2": -4.605655670166016,
+            "complete_mc_return": -4.353420158720343
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_T159",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1": -4.171374320983887,
+            "q2": -4.1985344886779785,
+            "complete_mc_return": -4.498453941751883
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_baseline",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "baseline",
+            "q1": -6.037019729614258,
+            "q2": -5.977420806884766,
+            "complete_mc_return": -5.878185205893273
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_q_plus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1": -6.190257549285889,
+            "q2": -6.32375955581665,
+            "complete_mc_return": -5.8874925436483965
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_q_minus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1": -5.812241554260254,
+            "q2": -5.637043476104736,
+            "complete_mc_return": -5.891304027126414
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_T159",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1": -6.048134803771973,
+            "q2": -5.997079849243164,
+            "complete_mc_return": -5.630556381994387
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_baseline",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "baseline",
+            "q1": -7.208482265472412,
+            "q2": -7.2488861083984375,
+            "complete_mc_return": -7.34365873103796
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_q_minus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1": -7.181076526641846,
+            "q2": -7.134645462036133,
+            "complete_mc_return": -7.36165947455934
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_q_plus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1": -7.222621440887451,
+            "q2": -7.4076948165893555,
+            "complete_mc_return": -7.344907387261274
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_T159",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1": -7.212654113769531,
+            "q2": -7.230452537536621,
+            "complete_mc_return": -7.343658731037984
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_baseline",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "baseline",
+            "q1": -3.664910316467285,
+            "q2": -3.5547406673431396,
+            "complete_mc_return": -3.5605838326214037
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_q_plus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1": -3.663360357284546,
+            "q2": -3.293856620788574,
+            "complete_mc_return": -3.5756264053134483
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_q_minus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1": -3.5581459999084473,
+            "q2": -3.7445480823516846,
+            "complete_mc_return": -3.5571653699278967
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_T159",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1": -3.6928935050964355,
+            "q2": -3.5572562217712402,
+            "complete_mc_return": -3.5518199913526347
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_baseline",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "baseline",
+            "q1": -4.820040225982666,
+            "q2": -4.740177154541016,
+            "complete_mc_return": -4.663065431669492
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_q_plus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1": -5.01436185836792,
+            "q2": -4.926945209503174,
+            "complete_mc_return": -4.658675973077535
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_q_minus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1": -4.60002326965332,
+            "q2": -4.467177867889404,
+            "complete_mc_return": -4.659553572189726
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_T159",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1": -4.850951194763184,
+            "q2": -4.80838680267334,
+            "complete_mc_return": -4.667985969884949
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_baseline",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "baseline",
+            "q1": -6.382862091064453,
+            "q2": -6.377223491668701,
+            "complete_mc_return": -5.951436025746296
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_q_plus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1": -6.979361534118652,
+            "q2": -6.85476016998291,
+            "complete_mc_return": -5.952473650923255
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_q_minus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1": -5.649545192718506,
+            "q2": -5.809299468994141,
+            "complete_mc_return": -5.957872090479549
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_q_plus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1": 6.735633850097656,
+            "q2": 7.02864933013916,
+            "complete_mc_return": 7.298423869200813
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_baseline",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "baseline",
+            "q1": 6.779840469360352,
+            "q2": 6.881828308105469,
+            "complete_mc_return": 6.938271088214528
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_q_minus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1": 6.753677845001221,
+            "q2": 6.665219306945801,
+            "complete_mc_return": 7.295391871504418
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_T159",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1": -5.901025772094727,
+            "q2": -6.001804351806641,
+            "complete_mc_return": -5.953926616736787
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_T159",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1": 6.778017044067383,
+            "q2": 6.872444152832031,
+            "complete_mc_return": 6.954887552861613
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_q_plus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1": 7.563484191894531,
+            "q2": 7.84033203125,
+            "complete_mc_return": 8.183266782893465
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_baseline",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "baseline",
+            "q1": 7.7602620124816895,
+            "q2": 7.897890090942383,
+            "complete_mc_return": 7.787232053045385
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_q_minus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1": 7.976649761199951,
+            "q2": 7.967187881469727,
+            "complete_mc_return": 8.212977884770085
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_T159",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1": 7.743098258972168,
+            "q2": 7.875567436218262,
+            "complete_mc_return": 8.211600008209823
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_baseline",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "baseline",
+            "q1": 8.604243278503418,
+            "q2": 8.517318725585938,
+            "complete_mc_return": 8.926897102144272
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_q_plus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1": 8.218595504760742,
+            "q2": 8.219908714294434,
+            "complete_mc_return": 8.92720592287687
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_q_minus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1": 8.980972290039062,
+            "q2": 8.80461597442627,
+            "complete_mc_return": 8.93153049417977
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_T159",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1": 8.749801635742188,
+            "q2": 8.62586498260498,
+            "complete_mc_return": 8.94018569354053
+          }
+        ],
+        "action_rank_comparisons": [
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1_gain": 0.3577234745025635,
+            "mc_gain": -0.04167160250008983,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1_gain": -0.23665142059326172,
+            "mc_gain": 0.1143501838971801,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1_gain": 0.043590545654296875,
+            "mc_gain": -0.030683599134359696,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1_gain": -0.15323781967163086,
+            "mc_gain": -0.009307337755123157,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1_gain": 0.2247781753540039,
+            "mc_gain": -0.013118821233140565,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1_gain": -0.011115074157714844,
+            "mc_gain": 0.24762882389888663,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1_gain": 0.027405738830566406,
+            "mc_gain": -0.01800074352137937,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1_gain": -0.014139175415039062,
+            "mc_gain": -0.0012486562233133824,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1_gain": -0.004171848297119141,
+            "mc_gain": -2.398081733190338e-14,
+            "informative": false,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1_gain": 0.0015499591827392578,
+            "mc_gain": -0.015042572692044676,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1_gain": 0.10676431655883789,
+            "mc_gain": 0.003418462693506985,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1_gain": -0.02798318862915039,
+            "mc_gain": 0.008763841268768946,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1_gain": -0.1943216323852539,
+            "mc_gain": 0.004389458591957052,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1_gain": 0.2200169563293457,
+            "mc_gain": 0.0035118594797660663,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1_gain": -0.030910968780517578,
+            "mc_gain": -0.0049205382154573485,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1_gain": -0.5964994430541992,
+            "mc_gain": -0.001037625176959267,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1_gain": 0.7333168983459473,
+            "mc_gain": -0.0064360647332533105,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1_gain": -0.04420661926269531,
+            "mc_gain": 0.3601527809862848,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1_gain": -0.02616262435913086,
+            "mc_gain": 0.35712078328988994,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1_gain": 0.48183631896972656,
+            "mc_gain": -0.0024905909904910928,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1_gain": -0.00182342529296875,
+            "mc_gain": 0.016616464647084328,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1_gain": -0.1967778205871582,
+            "mc_gain": 0.39603472984807997,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1_gain": 0.21638774871826172,
+            "mc_gain": 0.4257458317246998,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1_gain": -0.017163753509521484,
+            "mc_gain": 0.4243679551644375,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1_gain": -0.3856477737426758,
+            "mc_gain": 0.00030882073259874687,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1_gain": 0.37672901153564453,
+            "mc_gain": 0.004633392035497508,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1_gain": 0.14555835723876953,
+            "mc_gain": 0.013288591396257488,
+            "informative": true,
+            "sign_agreement": true
+          }
+        ],
+        "initial_state_return_holdout_q1_mae": 6.941874347971391,
+        "mean_return_holdout_q1_mae": 6.941874347971391,
+        "paired_action_return_holdout": {
+          "correct": 4,
+          "n": 9
+        },
+        "fixed_5m_qplus_candidate_sign_agreement": {
+          "correct": 3,
+          "n": 6
+        },
+        "critic_gate": false
+      },
+      "checkpoint": "stage/runs/t175_paired_advantage/mc_only/critic_alignment.pt",
+      "checkpoint_sha256": "ec5e3daee3842311f7d1d3961dbc694e7fe3a1b1b679225f3555fee7ffd6ef80",
+      "actor_unchanged": true,
+      "actor_updates": 0,
+      "new_physics_steps": 0
+    },
+    "mc_plus_paired": {
+      "before": {
+        "terminal_errors": {
+          "collision": {
+            "n": 24,
+            "q1_mae": 0.09667448741373419,
+            "minq_mae": 0.0803670296126866
+          },
+          "goal": {
+            "n": 69,
+            "q1_mae": 0.09004518391767605,
+            "minq_mae": 0.09249986626807084
+          }
+        },
+        "mc_courses": {
+          "2029653601_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.16415833007073255,
+            "minq_mae": 0.17339709690255686,
+            "q1_bias": -0.03211412994525027,
+            "initial_q1": 3.868072032928467,
+            "initial_mc": 7.804116413563691
+          },
+          "2029653602_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.15439343739554678,
+            "minq_mae": 0.16022986532481595,
+            "q1_bias": -0.09903059518348145,
+            "initial_q1": 8.031484603881836,
+            "initial_mc": 8.218104091566468
+          },
+          "2029654801_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.09817054363642376,
+            "minq_mae": 0.12195786908109683,
+            "q1_bias": -0.013530140183246669,
+            "initial_q1": 7.885629653930664,
+            "initial_mc": 7.840976867350614
+          },
+          "2029654802_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.10373053798375026,
+            "minq_mae": 0.1357497378927081,
+            "q1_bias": -0.04141523721253971,
+            "initial_q1": 6.745327949523926,
+            "initial_mc": 6.938271088214528
+          },
+          "4m_2029653601_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 2.7809763913581405,
+            "minq_mae": 2.8841955824691916,
+            "q1_bias": -2.7809763913581405,
+            "initial_q1": 5.142458915710449,
+            "initial_mc": 6.768062503970957
+          },
+          "4m_2029654802_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.6152709544499558,
+            "minq_mae": 0.6420956989901271,
+            "q1_bias": -0.5051544468886853,
+            "initial_q1": 7.471949100494385,
+            "initial_mc": 7.74575393424823
+          },
+          "5m_2029653601_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.24398250887853165,
+            "minq_mae": 0.2135503806054799,
+            "q1_bias": 0.12769315905822232,
+            "initial_q1": 0.9982591271400452,
+            "initial_mc": -4.4677703426175235
+          },
+          "5m_2029654802_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 12.015550432877296,
+            "minq_mae": 11.925009660549945,
+            "q1_bias": 12.014262163653978,
+            "initial_q1": 5.9490966796875,
+            "initial_mc": -3.5605838326214037
+          }
+        },
+        "branch_predictions": [
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_baseline",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "baseline",
+            "q1": 0.9982580542564392,
+            "q2": 0.591776967048645,
+            "complete_mc_return": -4.4677703426175235
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_q_minus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1": 0.86336749792099,
+            "q2": 0.5640966296195984,
+            "complete_mc_return": -4.509441945117613
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_q_plus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1": 1.202406644821167,
+            "q2": 0.7053926587104797,
+            "complete_mc_return": -4.353420158720343
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_T159",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1": 0.9664011001586914,
+            "q2": 0.5757539868354797,
+            "complete_mc_return": -4.498453941751883
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_baseline",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "baseline",
+            "q1": -5.794487476348877,
+            "q2": -5.908759593963623,
+            "complete_mc_return": -5.878185205893273
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_q_plus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1": -5.6985697746276855,
+            "q2": -5.948693752288818,
+            "complete_mc_return": -5.8874925436483965
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_q_minus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1": -5.854820728302002,
+            "q2": -5.832992076873779,
+            "complete_mc_return": -5.891304027126414
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_T159",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1": -5.791954517364502,
+            "q2": -5.909720420837402,
+            "complete_mc_return": -5.630556381994387
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_baseline",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "baseline",
+            "q1": -7.212252140045166,
+            "q2": -7.310776710510254,
+            "complete_mc_return": -7.34365873103796
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_q_minus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1": -7.525327682495117,
+            "q2": -7.402225971221924,
+            "complete_mc_return": -7.36165947455934
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_q_plus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1": -6.8705973625183105,
+            "q2": -7.1755242347717285,
+            "complete_mc_return": -7.344907387261274
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_T159",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1": -7.2282795906066895,
+            "q2": -7.276805400848389,
+            "complete_mc_return": -7.343658731037984
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_baseline",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "baseline",
+            "q1": 5.949095249176025,
+            "q2": 5.678610324859619,
+            "complete_mc_return": -3.5605838326214037
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_q_plus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1": 6.1576361656188965,
+            "q2": 5.801272869110107,
+            "complete_mc_return": -3.5756264053134483
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_q_minus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1": 5.755107402801514,
+            "q2": 5.56247091293335,
+            "complete_mc_return": -3.5571653699278967
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_T159",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1": 5.97123384475708,
+            "q2": 5.681320667266846,
+            "complete_mc_return": -3.5518199913526347
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_baseline",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "baseline",
+            "q1": 5.399454116821289,
+            "q2": 5.648623466491699,
+            "complete_mc_return": -4.663065431669492
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_q_plus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1": 5.51491641998291,
+            "q2": 5.582987308502197,
+            "complete_mc_return": -4.658675973077535
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_q_minus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1": 5.297972679138184,
+            "q2": 5.720353603363037,
+            "complete_mc_return": -4.659553572189726
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_T159",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1": 5.403670787811279,
+            "q2": 5.594992160797119,
+            "complete_mc_return": -4.667985969884949
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_baseline",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "baseline",
+            "q1": 8.102279663085938,
+            "q2": 7.824705600738525,
+            "complete_mc_return": -5.951436025746296
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_q_plus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1": 8.364580154418945,
+            "q2": 8.072051048278809,
+            "complete_mc_return": -5.952473650923255
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_q_minus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1": 7.840670108795166,
+            "q2": 7.576364040374756,
+            "complete_mc_return": -5.957872090479549
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_q_plus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1": 6.954981803894043,
+            "q2": 6.9394917488098145,
+            "complete_mc_return": 7.298423869200813
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_baseline",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "baseline",
+            "q1": 6.745327472686768,
+            "q2": 6.83071231842041,
+            "complete_mc_return": 6.938271088214528
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_q_minus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1": 6.5353851318359375,
+            "q2": 6.71925687789917,
+            "complete_mc_return": 7.295391871504418
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_T159",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1": 7.9289398193359375,
+            "q2": 7.6600260734558105,
+            "complete_mc_return": -5.953926616736787
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_T159",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1": 6.738536834716797,
+            "q2": 6.827301979064941,
+            "complete_mc_return": 6.954887552861613
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_q_plus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1": 8.268518447875977,
+            "q2": 8.046396255493164,
+            "complete_mc_return": 8.183266782893465
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_baseline",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "baseline",
+            "q1": 8.102642059326172,
+            "q2": 7.938460350036621,
+            "complete_mc_return": 7.787232053045385
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_q_minus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1": 7.953372478485107,
+            "q2": 7.843445301055908,
+            "complete_mc_return": 8.212977884770085
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_T159",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1": 8.089215278625488,
+            "q2": 7.919773578643799,
+            "complete_mc_return": 8.211600008209823
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_baseline",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "baseline",
+            "q1": 9.024527549743652,
+            "q2": 9.017101287841797,
+            "complete_mc_return": 8.926897102144272
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_q_plus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1": 9.372557640075684,
+            "q2": 9.314765930175781,
+            "complete_mc_return": 8.92720592287687
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_q_minus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1": 8.742257118225098,
+            "q2": 8.754781723022461,
+            "complete_mc_return": 8.93153049417977
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_T159",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1": 8.962834358215332,
+            "q2": 8.953031539916992,
+            "complete_mc_return": 8.94018569354053
+          }
+        ],
+        "action_rank_comparisons": [
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1_gain": -0.13489055633544922,
+            "mc_gain": -0.04167160250008983,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1_gain": 0.20414859056472778,
+            "mc_gain": 0.1143501838971801,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1_gain": -0.0318569540977478,
+            "mc_gain": -0.030683599134359696,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1_gain": 0.0959177017211914,
+            "mc_gain": -0.009307337755123157,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1_gain": -0.060333251953125,
+            "mc_gain": -0.013118821233140565,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1_gain": 0.002532958984375,
+            "mc_gain": 0.24762882389888663,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1_gain": -0.31307554244995117,
+            "mc_gain": -0.01800074352137937,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1_gain": 0.34165477752685547,
+            "mc_gain": -0.0012486562233133824,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1_gain": -0.016027450561523438,
+            "mc_gain": -2.398081733190338e-14,
+            "informative": false,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1_gain": 0.2085409164428711,
+            "mc_gain": -0.015042572692044676,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1_gain": -0.19398784637451172,
+            "mc_gain": 0.003418462693506985,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1_gain": 0.022138595581054688,
+            "mc_gain": 0.008763841268768946,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1_gain": 0.1154623031616211,
+            "mc_gain": 0.004389458591957052,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1_gain": -0.10148143768310547,
+            "mc_gain": 0.0035118594797660663,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1_gain": 0.004216670989990234,
+            "mc_gain": -0.0049205382154573485,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1_gain": 0.2623004913330078,
+            "mc_gain": -0.001037625176959267,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1_gain": -0.2616095542907715,
+            "mc_gain": -0.0064360647332533105,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1_gain": 0.2096543312072754,
+            "mc_gain": 0.3601527809862848,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1_gain": -0.20994234085083008,
+            "mc_gain": 0.35712078328988994,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1_gain": -0.17333984375,
+            "mc_gain": -0.0024905909904910928,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1_gain": -0.006790637969970703,
+            "mc_gain": 0.016616464647084328,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1_gain": 0.1658763885498047,
+            "mc_gain": 0.39603472984807997,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1_gain": -0.14926958084106445,
+            "mc_gain": 0.4257458317246998,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1_gain": -0.013426780700683594,
+            "mc_gain": 0.4243679551644375,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1_gain": 0.34803009033203125,
+            "mc_gain": 0.00030882073259874687,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1_gain": -0.2822704315185547,
+            "mc_gain": 0.004633392035497508,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1_gain": -0.06169319152832031,
+            "mc_gain": 0.013288591396257488,
+            "informative": true,
+            "sign_agreement": false
+          }
+        ],
+        "initial_state_return_holdout_q1_mae": 8.706337269307067,
+        "mean_return_holdout_q1_mae": 8.706337269307067,
+        "paired_action_return_holdout": {
+          "correct": 4,
+          "n": 9
+        },
+        "fixed_5m_qplus_candidate_sign_agreement": {
+          "correct": 2,
+          "n": 6
+        },
+        "critic_gate": false
+      },
+      "after": {
+        "terminal_errors": {
+          "collision": {
+            "n": 24,
+            "q1_mae": 0.057751649270885386,
+            "minq_mae": 0.0650816743582477
+          },
+          "goal": {
+            "n": 69,
+            "q1_mae": 0.10860934629187502,
+            "minq_mae": 0.14017321261369495
+          }
+        },
+        "mc_courses": {
+          "2029653601_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.1646695130152314,
+            "minq_mae": 0.19133755243195827,
+            "q1_bias": -0.03064386059269356,
+            "initial_q1": 6.728050231933594,
+            "initial_mc": 7.804116413563691
+          },
+          "2029653602_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.11161774021452628,
+            "minq_mae": 0.12084875822966902,
+            "q1_bias": -0.049472992200566404,
+            "initial_q1": 8.154141426086426,
+            "initial_mc": 8.218104091566468
+          },
+          "2029654801_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.1352915413008333,
+            "minq_mae": 0.18451827502510396,
+            "q1_bias": -0.0877927044063333,
+            "initial_q1": 7.7780890464782715,
+            "initial_mc": 7.840976867350614
+          },
+          "2029654802_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.2187288655387016,
+            "minq_mae": 0.2663928956497653,
+            "q1_bias": -0.19664750211478355,
+            "initial_q1": 6.496284484863281,
+            "initial_mc": 6.938271088214528
+          },
+          "4m_2029653601_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.2641737236350091,
+            "minq_mae": 0.32936068428533777,
+            "q1_bias": -0.18792758113287383,
+            "initial_q1": 6.705739498138428,
+            "initial_mc": 6.768062503970957
+          },
+          "4m_2029654802_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.1865483890262738,
+            "minq_mae": 0.23237318628780895,
+            "q1_bias": -0.14319458508502686,
+            "initial_q1": 7.673430442810059,
+            "initial_mc": 7.74575393424823
+          },
+          "5m_2029653601_LEFT": {
+            "role": "mc_train",
+            "q1_mae": 0.208649525560217,
+            "minq_mae": 0.21676486600577197,
+            "q1_bias": -0.0175620506399659,
+            "initial_q1": -3.661557197570801,
+            "initial_mc": -4.4677703426175235
+          },
+          "5m_2029654802_RIGHT": {
+            "role": "mc_train",
+            "q1_mae": 0.22704533744072347,
+            "minq_mae": 0.22579659418611572,
+            "q1_bias": -0.018288461041591528,
+            "initial_q1": -3.4536783695220947,
+            "initial_mc": -3.5605838326214037
+          }
+        },
+        "branch_predictions": [
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_baseline",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "baseline",
+            "q1": -3.661557197570801,
+            "q2": -4.2171711921691895,
+            "complete_mc_return": -4.4677703426175235
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_q_minus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1": -3.707233190536499,
+            "q2": -4.258443832397461,
+            "complete_mc_return": -4.509441945117613
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_q_plus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1": -3.547685384750366,
+            "q2": -4.103832721710205,
+            "complete_mc_return": -4.353420158720343
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_0_T159",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1": -3.692268133163452,
+            "q2": -4.2469353675842285,
+            "complete_mc_return": -4.498453941751883
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_baseline",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "baseline",
+            "q1": -5.964879989624023,
+            "q2": -5.976478576660156,
+            "complete_mc_return": -5.878185205893273
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_q_plus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1": -6.011810302734375,
+            "q2": -5.866368293762207,
+            "complete_mc_return": -5.8874925436483965
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_q_minus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1": -5.897061824798584,
+            "q2": -5.950793266296387,
+            "complete_mc_return": -5.891304027126414
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_5000_T159",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1": -5.96943998336792,
+            "q2": -5.974844455718994,
+            "complete_mc_return": -5.630556381994387
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_baseline",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "baseline",
+            "q1": -7.06264591217041,
+            "q2": -7.296469688415527,
+            "complete_mc_return": -7.34365873103796
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_q_minus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1": -7.080080032348633,
+            "q2": -7.314007759094238,
+            "complete_mc_return": -7.36165947455934
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_q_plus",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1": -7.064858436584473,
+            "q2": -7.299384117126465,
+            "complete_mc_return": -7.344907387261274
+          },
+          {
+            "job_id": "branch_5m_2029653601_LEFT_10000_T159",
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1": -7.0631632804870605,
+            "q2": -7.296567916870117,
+            "complete_mc_return": -7.343658731037984
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_baseline",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "baseline",
+            "q1": -3.4536778926849365,
+            "q2": -3.092482089996338,
+            "complete_mc_return": -3.5605838326214037
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_q_plus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1": -3.4652774333953857,
+            "q2": -3.1079940795898438,
+            "complete_mc_return": -3.5756264053134483
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_q_minus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1": -3.4516565799713135,
+            "q2": -3.087938070297241,
+            "complete_mc_return": -3.5571653699278967
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_0_T159",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1": -3.4436264038085938,
+            "q2": -3.083371162414551,
+            "complete_mc_return": -3.5518199913526347
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_baseline",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "baseline",
+            "q1": -4.817317962646484,
+            "q2": -4.732963562011719,
+            "complete_mc_return": -4.663065431669492
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_q_plus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1": -4.767401218414307,
+            "q2": -4.795285701751709,
+            "complete_mc_return": -4.658675973077535
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_q_minus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1": -4.851424694061279,
+            "q2": -4.61957311630249,
+            "complete_mc_return": -4.659553572189726
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_5000_T159",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1": -4.820067882537842,
+            "q2": -4.79194450378418,
+            "complete_mc_return": -4.667985969884949
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_baseline",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "baseline",
+            "q1": -6.230129718780518,
+            "q2": -6.485130786895752,
+            "complete_mc_return": -5.951436025746296
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_q_plus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1": -6.230316162109375,
+            "q2": -6.484975337982178,
+            "complete_mc_return": -5.952473650923255
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_q_minus",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1": -6.232064247131348,
+            "q2": -6.4888916015625,
+            "complete_mc_return": -5.957872090479549
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_q_plus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1": 6.857945919036865,
+            "q2": 6.530772686004639,
+            "complete_mc_return": 7.298423869200813
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_baseline",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "baseline",
+            "q1": 6.496284484863281,
+            "q2": 6.177418231964111,
+            "complete_mc_return": 6.938271088214528
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_q_minus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1": 6.849466323852539,
+            "q2": 6.5394415855407715,
+            "complete_mc_return": 7.295391871504418
+          },
+          {
+            "job_id": "branch_5m_2029654802_RIGHT_10000_T159",
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1": -6.234004974365234,
+            "q2": -6.488515377044678,
+            "complete_mc_return": -5.953926616736787
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_0_T159",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1": 6.501490592956543,
+            "q2": 6.186887741088867,
+            "complete_mc_return": 6.954887552861613
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_q_plus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1": 8.051477432250977,
+            "q2": 7.868297576904297,
+            "complete_mc_return": 8.183266782893465
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_baseline",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "baseline",
+            "q1": 8.012012481689453,
+            "q2": 7.8951544761657715,
+            "complete_mc_return": 7.787232053045385
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_q_minus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1": 8.013096809387207,
+            "q2": 7.939776420593262,
+            "complete_mc_return": 8.212977884770085
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_5000_T159",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1": 7.996458530426025,
+            "q2": 7.871481418609619,
+            "complete_mc_return": 8.211600008209823
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_baseline",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "baseline",
+            "q1": 8.67180347442627,
+            "q2": 8.678567886352539,
+            "complete_mc_return": 8.926897102144272
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_q_plus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1": 8.669785499572754,
+            "q2": 8.678766250610352,
+            "complete_mc_return": 8.92720592287687
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_q_minus",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1": 8.677617073059082,
+            "q2": 8.683537483215332,
+            "complete_mc_return": 8.93153049417977
+          },
+          {
+            "job_id": "branch_2029654802_RIGHT_10000_T159",
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1": 8.686059951782227,
+            "q2": 8.692105293273926,
+            "complete_mc_return": 8.94018569354053
+          }
+        ],
+        "action_rank_comparisons": [
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1_gain": -0.04567599296569824,
+            "mc_gain": -0.04167160250008983,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1_gain": 0.11387181282043457,
+            "mc_gain": 0.1143501838971801,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1_gain": -0.030710935592651367,
+            "mc_gain": -0.030683599134359696,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1_gain": -0.04693031311035156,
+            "mc_gain": -0.009307337755123157,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1_gain": 0.06781816482543945,
+            "mc_gain": -0.013118821233140565,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1_gain": -0.004559993743896484,
+            "mc_gain": 0.24762882389888663,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1_gain": -0.017434120178222656,
+            "mc_gain": -0.01800074352137937,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1_gain": -0.0022125244140625,
+            "mc_gain": -0.0012486562233133824,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029653601_LEFT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1_gain": -0.0005173683166503906,
+            "mc_gain": -2.398081733190338e-14,
+            "informative": false,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1_gain": -0.011599540710449219,
+            "mc_gain": -0.015042572692044676,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1_gain": 0.002021312713623047,
+            "mc_gain": 0.003418462693506985,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1_gain": 0.010051488876342773,
+            "mc_gain": 0.008763841268768946,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1_gain": 0.049916744232177734,
+            "mc_gain": 0.004389458591957052,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1_gain": -0.03410673141479492,
+            "mc_gain": 0.0035118594797660663,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1_gain": -0.002749919891357422,
+            "mc_gain": -0.0049205382154573485,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1_gain": -0.00018644332885742188,
+            "mc_gain": -0.001037625176959267,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1_gain": -0.0019345283508300781,
+            "mc_gain": -0.0064360647332533105,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_plus",
+            "q1_gain": 0.361661434173584,
+            "mc_gain": 0.3601527809862848,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "q_minus",
+            "q1_gain": 0.3531818389892578,
+            "mc_gain": 0.35712078328988994,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "5m_2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1_gain": -0.003875255584716797,
+            "mc_gain": -0.0024905909904910928,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 0,
+            "intervention": "T159",
+            "q1_gain": 0.005206108093261719,
+            "mc_gain": 0.016616464647084328,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_plus",
+            "q1_gain": 0.03946495056152344,
+            "mc_gain": 0.39603472984807997,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "q_minus",
+            "q1_gain": 0.0010843276977539062,
+            "mc_gain": 0.4257458317246998,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 5000,
+            "intervention": "T159",
+            "q1_gain": -0.015553951263427734,
+            "mc_gain": 0.4243679551644375,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_plus",
+            "q1_gain": -0.002017974853515625,
+            "mc_gain": 0.00030882073259874687,
+            "informative": true,
+            "sign_agreement": false
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "q_minus",
+            "q1_gain": 0.0058135986328125,
+            "mc_gain": 0.004633392035497508,
+            "informative": true,
+            "sign_agreement": true
+          },
+          {
+            "case": "2029654802_RIGHT",
+            "prefix_steps": 10000,
+            "intervention": "T159",
+            "q1_gain": 0.014256477355957031,
+            "mc_gain": 0.013288591396257488,
+            "informative": true,
+            "sign_agreement": true
+          }
+        ],
+        "initial_state_return_holdout_q1_mae": 6.828038432048272,
+        "mean_return_holdout_q1_mae": 6.828038432048272,
+        "paired_action_return_holdout": {
+          "correct": 5,
+          "n": 9
+        },
+        "fixed_5m_qplus_candidate_sign_agreement": {
+          "correct": 6,
+          "n": 6
+        },
+        "critic_gate": false
+      },
+      "checkpoint": "stage/runs/t175_paired_advantage/mc_plus_paired/critic_alignment.pt",
+      "checkpoint_sha256": "6cda4faa6db06dc7de8f4d66d553e0bca6c01212682e8429f952ecb9e0696eeb",
+      "actor_unchanged": true,
+      "actor_updates": 0,
+      "new_physics_steps": 0
+    }
+  },
+  "automatic_promotion": false,
+  "actor_updates": 0,
+  "new_physics_steps": 0,
+  "note": "Critic-only repair. IdenticalActor implies unchanged navigation behavior; no new5m success claim."
+}

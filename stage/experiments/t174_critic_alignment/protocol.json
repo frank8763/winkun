@@ -1,0 +1,74 @@
+{
+  "experiment": "STAGE_T174_CRITIC_ONLY_TERMINAL_AND_MC_ALIGNMENT_CONTROLS",
+  "parent_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t171_reverse_curriculum/checkpoint_latest.pt",
+  "demonstrations": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz",
+  "arms": {
+    "uniform": {
+      "terminal_balanced": false,
+      "mc_weight": 0.0
+    },
+    "terminal_balanced": {
+      "terminal_balanced": true,
+      "mc_weight": 0.0
+    },
+    "terminal_balanced_mc": {
+      "terminal_balanced": true,
+      "mc_weight": 1.0
+    }
+  },
+  "seed": 2026103074,
+  "critic_updates_per_arm": 2000,
+  "wall_seconds": 900,
+  "actor_updates": 0,
+  "new_physics_steps": 0,
+  "mc_train_courses": [
+    "2029653601_LEFT",
+    "2029653602_RIGHT",
+    "2029654801_LEFT",
+    "2029654802_RIGHT",
+    "5m_2029653601_LEFT"
+  ],
+  "mc_development_return_holdout_courses": [
+    "4m_2029653601_LEFT",
+    "4m_2029654802_RIGHT",
+    "5m_2029654802_RIGHT"
+  ],
+  "mc_minibatch": "16 per training course,80 total; drawn/computed in all arms, coefficient0/0/1",
+  "td_batch": "192 savedT171 replay +64 sameT169 demos; balanced replaces last96 replay positions with48 collisionterminal+48 goalterminal draws withreplacement",
+  "common_hyperparameters": {
+    "critic_lr": 0.0001,
+    "target_tau": 0.005,
+    "target_update_every": 2,
+    "target_noise": 0.15,
+    "target_noise_clip": 0.4,
+    "gradient_clip": 10,
+    "discount": "Saved per-transition60s physical discount"
+  },
+  "controlled_differences": "uniform->balanced changes replay sampling only; balanced->balanced_mc addsMC objective only. SameActor,parentCritic,optimizer,initialtargets,data,updatebudget,independentRNGstreams reset identically.",
+  "critic_gate": "collisionterminalQ1MAE<=1 AND goalterminalQ1MAE<=1 AND mean return-label holdout3coursesQ1MAE<=2 AND predicted signs forfixedT173 Qplus candidates correctin>=4of6 original5m comparisons. This gate authorizes consideration of next update experiment, not promotion.",
+  "holdout_limits": "Return-label holdout means these exactMC labels are excluded fromauxiliaryfitting. Known same-map task/noisy transitions may exist inparentReplay; not unseen-task generalization. T173data are development evidence used to design thispilot.",
+  "actor_target": "Shared common Polyak tracking toward unchangedT171Actor; noActorgradient",
+  "mc_policy_mismatch_note": "MC alignsnominal deterministicActor; TDtargets retaintargetsmoothing. It is a declared diagnosticregularizer, not an exact policy-evaluation theorem.",
+  "checkpoint": "Fixed2000update finalonly, each<=64MiB, no bestcheckpointselection, no automaticpromotion",
+  "cap_all_new_runs_bytes": 1073741824,
+  "minimum_free_bytes": 42949672960,
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t174_critic_alignment/train.py": "9821209df072f3d014737e3503621043a44c83aedce56d4b7d2a3b2064a8381f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t171_reverse_curriculum/checkpoint_latest.pt": "520dda9ee77b3a9139ad5a15c84d7a8765f6476c7eb255a195d1623f9d1e5d6d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz": "c124283516a486b9527dacec00e426a5047e0076506504123347dfe736b841da",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/results.jsonl": "1efc12c9d66eee8e440c4461893ec3ebc336359d9510ef52b5ad6ea99ea1e501",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_2029653601_LEFT.npz": "04868b2aff118cf3eefc1c83fed93e472c992988bbb4e713e4b4156d3a1a2e21",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_2029653602_RIGHT.npz": "aba480f2c1bcf30d34da727aa4fa5d554c978a8614c593929a9ca0ef4dab8bc6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_2029654801_LEFT.npz": "a3ea75b9d20545a91a110d556494169e8a7a2dfee3fc2062967848a29c0fe9f0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_2029654802_RIGHT.npz": "4bea3ae007fee6b2365fd4b043502157965f2a24b95d71f1ff0c8b5bdb82bf48",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_5m_2029653601_LEFT.npz": "bf169bb48d95ef86e48ae403cfd1250f6506415b606f4213a7a8249a5fb0ed1c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_4m_2029653601_LEFT.npz": "b652c6992dda95a989847174ae562a8fad788e6a870d796cc829ffcf1546f55c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_4m_2029654802_RIGHT.npz": "0096bbe70bae068cfa0a960a317e185a3c68ab56ea9ef38d63fc4ebb2347ea72",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t173_q_audit/mc_5m_2029654802_RIGHT.npz": "c7eaeddef8666a844ff02ede40ce904875aa6467239794fd27bc15537c445568"
+  },
+  "references": [
+    "https://proceedings.mlr.press/v80/fujimoto18a.html",
+    "https://proceedings.mlr.press/v97/fu19a.html"
+  ]
+}
