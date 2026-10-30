@@ -1,0 +1,114 @@
+{
+  "state": "COMPLETE",
+  "training": {
+    "action_noise": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/action_noise/checkpoint_latest.pt",
+      "sha256": "2aee7f9250a3f72a94a027bbce4c3d64901e6b5de30d4c2f4a8394417e4b900a",
+      "physics_steps": 624899,
+      "decisions": 6275,
+      "actor_updates": 3000,
+      "critic_updates": 4500,
+      "episodes": 48,
+      "success": 12,
+      "original5m_success": 0,
+      "original5m_n": 36,
+      "terminal_metrics": {
+        "original": {
+          "n": 52,
+          "q1_mae": 0.012696494348347187,
+          "q2_mae": 0.013514040969312191
+        }
+      },
+      "original_replay_transitions": 6740,
+      "replay_transitions": 6740
+    },
+    "parameter_noise": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/parameter_noise/checkpoint_latest.pt",
+      "sha256": "1ffb197d7a41bddc4ef888ff47e64a1bdac744127f797bd22694c2f795f22dd6",
+      "physics_steps": 722188,
+      "decisions": 7246,
+      "actor_updates": 3000,
+      "critic_updates": 4500,
+      "episodes": 48,
+      "success": 12,
+      "original5m_success": 0,
+      "original5m_n": 36,
+      "terminal_metrics": {
+        "original": {
+          "n": 52,
+          "q1_mae": 0.003749150549992919,
+          "q2_mae": 0.0046018133871257305
+        }
+      },
+      "original_replay_transitions": 7711,
+      "replay_transitions": 7711
+    }
+  },
+  "scores": {
+    "initial": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 1,
+        "timeout": 0
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 0,
+        "collision": 0,
+        "timeout": 0
+      }
+    },
+    "action_noise": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 0,
+        "timeout": 1
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 12,
+        "collision": 0,
+        "timeout": 12
+      }
+    },
+    "parameter_noise": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 0,
+        "timeout": 1
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 12,
+        "collision": 0,
+        "timeout": 12
+      }
+    }
+  },
+  "evaluation_physics": 885490,
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scope": "Single paired pilot seed, warm-start fixed-map development tasks. Extra parameter noise includes extra marginal variation, not a clean temporal-only ablation. No novelty/generalization/algorithm superiority claim. T159 official incumbent; T194 research candidate preserved. No automatic extension.",
+  "diagnostic_physics": 15232
+}

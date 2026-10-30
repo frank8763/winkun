@@ -1,0 +1,537 @@
+{
+  "primary_cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "anchor_sources": {
+    "LEFT": {
+      "id": "phase1_side0_draw0",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "course_bin": 1,
+      "reset_task": {
+        "seed_requested": 2029653601,
+        "seed_actual": 2029653601,
+        "distance_m": 1.0725596218501023,
+        "angle_deg": -13.357274353413814,
+        "goal_xy": [
+          1.5750185651952417,
+          -3.676543648434686
+        ],
+        "start_pose": [
+          2.2215503794128546,
+          -2.820751176144986,
+          -1.9846653054486456
+        ],
+        "phase": 1,
+        "canonical5m": false,
+        "reset_only_pose_initialization": true,
+        "final_goal_never_changed_during_episode": true,
+        "signature": "470c762237fb604fcea07401cdaa026c26037a9cd1d0260f70bf2e56a2487b31",
+        "quaternion": [
+          0.5467382112897416,
+          0.0,
+          0.0,
+          -0.8373036058179218
+        ]
+      },
+      "prior_T172_success": true,
+      "snapshot_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/LEFT_fullstate.npz"
+    },
+    "RIGHT": {
+      "id": "phase1_side1_draw0",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "course_bin": 1,
+      "reset_task": {
+        "seed_requested": 2029654802,
+        "seed_actual": 2029654802,
+        "distance_m": 1.3277782831531277,
+        "angle_deg": -5.672219466666458,
+        "goal_xy": [
+          5.486694873876159,
+          0.043289980823624674
+        ],
+        "start_pose": [
+          6.448595281008868,
+          0.9585728747810045,
+          -2.2820242379615814
+        ],
+        "phase": 1,
+        "canonical5m": false,
+        "reset_only_pose_initialization": true,
+        "final_goal_never_changed_during_episode": true,
+        "signature": "33ccae798ad29992b9a5b0c89d1f730b21ec1912d5ecc7135d8827b98fa29811",
+        "quaternion": [
+          0.41667464501864926,
+          0.0,
+          0.0,
+          -0.9090556859723076
+        ]
+      },
+      "prior_T172_success": true,
+      "snapshot_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/RIGHT_fullstate.npz"
+    }
+  },
+  "initial_std": [
+    0.5,
+    0.5
+  ],
+  "alpha": 0.001,
+  "warmup_updates": 1500,
+  "updates_per_batch": 500,
+  "seed_episodes": [
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_RIGHT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_RIGHT.npz"
+  ],
+  "experiment": "T196",
+  "seed": 2026103096,
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt",
+  "retention_targets": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz",
+  "parameter_basis": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/parameter_basis.npz",
+  "parameter_scale": 0.3,
+  "training_jobs": [
+    {
+      "id": "5m_2029653601_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "near_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "snapshot_side": "LEFT"
+    },
+    {
+      "id": "near_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "snapshot_side": "LEFT"
+    }
+  ],
+  "evaluation_resets": [
+    {
+      "id": "left_holdout_0",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        0.0078106145761221366,
+        0.018528688745725108,
+        1.8464141418179056
+      ]
+    },
+    {
+      "id": "left_holdout_1",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.005458206675360684,
+        -0.018225137172637566,
+        -1.5313637748549924
+      ]
+    },
+    {
+      "id": "left_holdout_2",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        0.028888420196571223,
+        0.011201138584958956,
+        -0.9351349966373403
+      ]
+    },
+    {
+      "id": "left_holdout_3",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.020231939019416213,
+        -0.004130043102781214,
+        -0.26257475218923965
+      ]
+    },
+    {
+      "id": "left_holdout_4",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.027587480139050356,
+        0.023188350262095675,
+        1.2783584064142843
+      ]
+    },
+    {
+      "id": "left_holdout_5",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.002095321868588476,
+        0.018988928100215588,
+        1.4077807987097732
+      ]
+    },
+    {
+      "id": "left_holdout_6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        0.018061842472211043,
+        0.02032405619391625,
+        -1.355524713426934
+      ]
+    },
+    {
+      "id": "left_holdout_7",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        0.011534381033573175,
+        -0.02507112245005901,
+        -0.3579965206629363
+      ]
+    },
+    {
+      "id": "left_holdout_8",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        0.018944899706750895,
+        0.014589763543053871,
+        1.2614404974010096
+      ]
+    },
+    {
+      "id": "left_holdout_9",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.014919230208222885,
+        0.016944875940007764,
+        -1.898633221296476
+      ]
+    },
+    {
+      "id": "left_holdout_10",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.004285140905975527,
+        -0.010521256615816574,
+        0.12179705168892996
+      ]
+    },
+    {
+      "id": "left_holdout_11",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        0.027786949429842014,
+        -0.015174156237537042,
+        1.2949766891404981
+      ]
+    }
+  ],
+  "batches_per_arm": 6,
+  "episodes_per_arm": 48,
+  "max_physics_per_arm": 1120032,
+  "wall_seconds": 1800,
+  "max_bytes": 83886080,
+  "parent_evaluation": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t195_selected_verification/evaluation.jsonl",
+  "controlled_difference": "Additional whole-episode parameter perturbation in steering direct_head, fixed coefficientseed and scale. Both arms retain same independent tanh-Gaussian action noise, SAC/retention objective and task budget. Does not isolate temporal coherence from increased total exploration amplitude.",
+  "parameter_contract": "PCA whitening top8 hidden features fitted only to declared historical training states plus constantbias; nine standardNormal coefficients scaled.3/sqrt9 folded into direct_head steering weights/bias once per episode. No map/planner/waypoint/runtime teacher. All parent behavior actor parameters fixed within each episode. Central SAC actor receives true off-policy transitions.",
+  "training_contract": "Each batch6originalLEFT5m+2nearLEFT. Fresh twinCritic/targets/optimizers,1500critic-only warmup with observedterminalMAE<.15 before Actor updates;500critic+500actor updates/batch. Same reward/10, finite-task gamma exp(-.002/60), alpha.001,tau.005, terminalbalanced25%. Warmup gate is not full calibration or action-ranking proof. No HER or oldfailedCritic reuse.",
+  "retention_contract": "Seven equally sampled groups32states each; frozen T194 target actions on six T169 old-task states with physical remaining clock and T192 realRIGHTsuccess states. Retention10 in both arms. Targets are training-only regularization, not new observed success or runtime teacher.",
+  "evaluation_contract": "Before Actor updates, require old6+RIGHT5m safeGOAL. After fixedbudget, both central actors frozen on old6+originalLEFT/RIGHT5m+12freshLEFTreset perturbations predeclared. Preserve original scene/radius/caps/legacy history. No best-midpoint selection or automatic promotion.",
+  "budget": "96complete training episodes<=2240064physics, fullwall1800s. Separate frozen diagnostic<=23534steps with120s cap. NewT196outputs<=80MiB, allnewruns1GiB/free40GiB. Retain behavioractor weights perbatch for exact reconstruction and only rollinglatest/previousfullcheckpoints; delete owned previous after final arm evaluation with hash receipt.",
+  "scope": "Single paired pilot seed, warm-start fixed-map development tasks. Extra parameter noise includes extra marginal variation, not a clean temporal-only ablation. No novelty/generalization/algorithm superiority claim. T159 official incumbent; T194 research candidate preserved. No automatic extension.",
+  "references": [
+    "https://arxiv.org/abs/1706.01905",
+    "https://proceedings.mlr.press/v80/haarnoja18b.html"
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt": "4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t195_selected_verification/evaluation.jsonl": "39a5f998b6ca221255649e7561aa61404f452effd56ef3d8515e5d2adec27bc3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz": "c124283516a486b9527dacec00e426a5047e0076506504123347dfe736b841da",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t192_sac_her/episodes/no_her_b4_w7.npz": "ad9c2824a8bea0fb394b95b1fbc4e09d2d6e4077f779e5a4dd7732950528c407",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/parameter_basis.npz": "79d0aa70ba9d8934e3e240b3ed2e3076220dd2b99c0d20fd4aa2099089834247",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz": "5e4f037f39b34fa7cbd070270f7a0147048a4c887478890c31137a7b8ec6e8ba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t192_sac_her/episodes/no_her_b0_w2.npz": "bace35a5a8abef273b780dcb7aa3b5b413f8fcec3cfd7a428449fca602a09ee3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t192_sac_her/episodes/no_her_b1_w2.npz": "e4a6b47b023064a5449759d571e21b425229761eaf66baaa65a40b368d0a15f1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t192_sac_her/episodes/no_her_b2_w2.npz": "56361e24b1b9a3a36c1179d3d368c0e8b0bb920d6b59ac525489c28dbbe71ac0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t192_sac_her/episodes/no_her_b3_w2.npz": "aa04035838c5844ffa6ff6628cf12282db30989306c62549ab38391682a9ac3f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_LEFT.npz": "3ebc68e0cebe10c6375911e9a46f216ff5715202d771be8008d5b3c3f0a96f13",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_RIGHT.npz": "8a73f36dc2447f4fd79c557ce6c67edd96b53b46b6247d44735b011312181ea6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_LEFT.npz": "f3d5ef7ec153f2fbaba213bb3cb4dd449a6f8693bfb12cbe6155cddf2be07bf8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_RIGHT.npz": "54c559d5c5b7bc2240bc4aa20058864f0da1bd2d9337305a77d37ac2aa268491",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t196_left_exploration/diagnose.py": "2b98cb4bef2a26789a37898ed9bac14006cdc74420a78dbf1541c4ad3c05c7a6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t196_left_exploration/prepare.py": "dcfeb54bc9f5d9e2937cafecb3b65eef6dcc210e6ac4345e5688ac15b41b2eb2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t196_left_exploration/collect.py": "5a742564ff53516fa12dc5d55bd6efa95d3367dd2671a58c2dfb87a007b1bfa4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t196_left_exploration/common.py": "506bd489eb58e9662054478b6d573d14fc4d5fd447058605f101feba7c29b4af",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t196_left_exploration/train.py": "c26e69e1737099674a63439cadfc01dac7fab6237e74bf9e502173227f0448ce",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t196_left_exploration/replay.py": "c25292f9fb261399c02402dd99ce7b17cb2c2d31a3774f05e86d756f006c1f79",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/LEFT_fullstate.npz": "821ee9028a6f138e7ba6cdeae24ecf1ca732ad9e05f19c22f3414e1aa4a1eb69"
+  }
+}
