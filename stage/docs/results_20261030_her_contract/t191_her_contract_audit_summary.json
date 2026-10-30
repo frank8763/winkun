@@ -1,0 +1,163 @@
+{
+  "state": "COMPLETE",
+  "gate": "PASS_OBSERVATION_AND_TERMINATION_CONTRACT",
+  "cases": [
+    {
+      "id": "original_LEFT",
+      "actual_seed": 2029653601,
+      "physics_steps": 14873,
+      "decisions": 149,
+      "success": false,
+      "collision": true,
+      "timeout": false,
+      "remaining_m": 1.4903059598220778,
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "initial_history_goals": [
+        [
+          -1.757363496459039,
+          0.6677493445290865
+        ],
+        [
+          -1.757363496459039,
+          0.6677493445290865
+        ],
+        [
+          -1.757363496459039,
+          0.6677493445290865
+        ],
+        [
+          -1.757363496459039,
+          0.6677493445290865
+        ]
+      ],
+      "initial_history_goal_differs_from_final": true,
+      "snapshot_history_witness": "actual generation hook installed before native factory",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_LEFT.npz",
+      "sha256": "3ebc68e0cebe10c6375911e9a46f216ff5715202d771be8008d5b3c3f0a96f13"
+    },
+    {
+      "id": "original_RIGHT",
+      "actual_seed": 2029654802,
+      "physics_steps": 23334,
+      "decisions": 234,
+      "success": false,
+      "collision": false,
+      "timeout": true,
+      "remaining_m": 1.6705347703245084,
+      "goal_xy": [
+        5.486694873876159,
+        0.043289980823624674
+      ],
+      "initial_history_goals": [
+        [
+          -2.1320418440507876,
+          0.5561522396998613
+        ],
+        [
+          -2.1320418440507876,
+          0.5561522396998613
+        ],
+        [
+          -2.1320418440507876,
+          0.5561522396998613
+        ],
+        [
+          -2.1320418440507876,
+          0.5561522396998613
+        ]
+      ],
+      "initial_history_goal_differs_from_final": true,
+      "snapshot_history_witness": "actual generation hook installed before native factory",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_RIGHT.npz",
+      "sha256": "8a73f36dc2447f4fd79c557ce6c67edd96b53b46b6247d44735b011312181ea6"
+    },
+    {
+      "id": "near_LEFT",
+      "actual_seed": 2029653601,
+      "physics_steps": 4306,
+      "decisions": 44,
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "remaining_m": 0.1999274063091091,
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "initial_history_goals": [
+        [
+          1.5750185651952417,
+          -3.676543648434686
+        ],
+        [
+          1.5750185651952417,
+          -3.676543648434686
+        ],
+        [
+          1.5750185651952417,
+          -3.676543648434686
+        ],
+        [
+          1.5750185651952417,
+          -3.676543648434686
+        ]
+      ],
+      "initial_history_goal_differs_from_final": false,
+      "snapshot_history_witness": "T186 reset source pose/goal verified against stored fields; no claim of new generation witness before collection",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_LEFT.npz",
+      "sha256": "f3d5ef7ec153f2fbaba213bb3cb4dd449a6f8693bfb12cbe6155cddf2be07bf8"
+    },
+    {
+      "id": "near_RIGHT",
+      "actual_seed": 2029654802,
+      "physics_steps": 3780,
+      "decisions": 38,
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "remaining_m": 0.19985123110951927,
+      "goal_xy": [
+        5.486694873876159,
+        0.043289980823624674
+      ],
+      "initial_history_goals": [
+        [
+          5.486694873876159,
+          0.043289980823624674
+        ],
+        [
+          5.486694873876159,
+          0.043289980823624674
+        ],
+        [
+          5.486694873876159,
+          0.043289980823624674
+        ],
+        [
+          5.486694873876159,
+          0.043289980823624674
+        ]
+      ],
+      "initial_history_goal_differs_from_final": false,
+      "snapshot_history_witness": "T186 reset source pose/goal verified against stored fields; no claim of new generation witness before collection",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_RIGHT.npz",
+      "sha256": "54c559d5c5b7bc2240bc4aa20058864f0da1bd2d9337305a77d37ac2aa268491"
+    }
+  ],
+  "native_physics_steps": 46293,
+  "optimizer_updates": 0,
+  "relabel_cases": 32,
+  "eligible_relabel_cases": 32,
+  "max_original_observation_rebuild_error": 0.0,
+  "interior_hold_first_hits": 32,
+  "first_hits_before_selected_future": 32,
+  "original5m_safe_success": 0,
+  "ready_training_replay": false,
+  "actor_unchanged": true,
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scope": "Data contract audit only; future achieved goals are offline labels, never runtime waypoints. Goal-conditioned off-policy training must be declared separately. Initial factory stale-goal history preserved, with actual generation witnesses. Snapshot initial frame metadata separately qualified. No new original5m success."
+}

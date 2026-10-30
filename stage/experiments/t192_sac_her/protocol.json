@@ -1,0 +1,255 @@
+{
+  "experiment": "T192",
+  "seed": 2026103092,
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t190_adaptive_start_curriculum/checkpoint_latest.pt",
+  "primary_cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "anchor_sources": {
+    "LEFT": {
+      "id": "phase1_side0_draw0",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "course_bin": 1,
+      "reset_task": {
+        "seed_requested": 2029653601,
+        "seed_actual": 2029653601,
+        "distance_m": 1.0725596218501023,
+        "angle_deg": -13.357274353413814,
+        "goal_xy": [
+          1.5750185651952417,
+          -3.676543648434686
+        ],
+        "start_pose": [
+          2.2215503794128546,
+          -2.820751176144986,
+          -1.9846653054486456
+        ],
+        "phase": 1,
+        "canonical5m": false,
+        "reset_only_pose_initialization": true,
+        "final_goal_never_changed_during_episode": true,
+        "signature": "470c762237fb604fcea07401cdaa026c26037a9cd1d0260f70bf2e56a2487b31",
+        "quaternion": [
+          0.5467382112897416,
+          0.0,
+          0.0,
+          -0.8373036058179218
+        ]
+      },
+      "prior_T172_success": true,
+      "snapshot_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/LEFT_fullstate.npz"
+    },
+    "RIGHT": {
+      "id": "phase1_side1_draw0",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "course_bin": 1,
+      "reset_task": {
+        "seed_requested": 2029654802,
+        "seed_actual": 2029654802,
+        "distance_m": 1.3277782831531277,
+        "angle_deg": -5.672219466666458,
+        "goal_xy": [
+          5.486694873876159,
+          0.043289980823624674
+        ],
+        "start_pose": [
+          6.448595281008868,
+          0.9585728747810045,
+          -2.2820242379615814
+        ],
+        "phase": 1,
+        "canonical5m": false,
+        "reset_only_pose_initialization": true,
+        "final_goal_never_changed_during_episode": true,
+        "signature": "33ccae798ad29992b9a5b0c89d1f730b21ec1912d5ecc7135d8827b98fa29811",
+        "quaternion": [
+          0.41667464501864926,
+          0.0,
+          0.0,
+          -0.9090556859723076
+        ]
+      },
+      "prior_T172_success": true,
+      "snapshot_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/RIGHT_fullstate.npz"
+    }
+  },
+  "retention_demonstrations": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz",
+  "training_jobs": [
+    {
+      "id": "near_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "snapshot_side": "LEFT"
+    },
+    {
+      "id": "near_RIGHT",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "snapshot_side": "RIGHT"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    }
+  ],
+  "seed_episodes": [
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_RIGHT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_RIGHT.npz"
+  ],
+  "initial_std": [
+    0.5,
+    0.5
+  ],
+  "alpha": 0.001,
+  "warmup_updates": 1500,
+  "updates_per_batch": 500,
+  "batches_per_arm": 8,
+  "episodes_per_arm": 64,
+  "max_physics_per_arm": 1493376,
+  "wall_seconds": 1800,
+  "controlled_difference": "Only HER goal-relabel replay augmentation: no_her samples original transitions; her samples50% original50% retrospectively relabeled. Both use same four fixed T191 seed episodes, fresh twin256-256 Critics/targets, fresh optimizers, same T190 Actor parent, task schedule, exploration seeds and update counts. Fixed terminal-balanced25% replay in both. Single paired seed.",
+  "algorithm": "SAC-style squashed Gaussian Actor with fixedalpha.001, twinQmin target, tau.005, normalized finite-horizon reward/10, exp(-.002/60) physics discount. 1500 critic-only warmup updates then500critic+500actor per batch. Actor bodylr1e-5, heads1e-4,logstd1e-4; criticlr3e-4. BC retention10 on six old tasks, history action columns frozen0. No T174/T175 or other historical Critic reuse.",
+  "reward_contract": "Same task events +10GOAL,-10collision,-5finite timeout,-.01/sec and Phi=-.3distance, allnormalized/10. Recompute complete action-duration reward; future goals truncate at first physical radius hit, zero bootstrap; missing exact interior-terminal next observation excluded from target-network/entropy calls. No relabeled-goal actor execution or runtime waypoints.",
+  "critic_gate": "Before first Actor update, observed seed terminal MAE of bothQ <.15 in each sampled group. This verifies terminal targets only, not complete Critic calibration or unseen action ranking. Full algorithm performance judged by frozen native outcomes, not this sanity gate.",
+  "scope": "Bounded exploratory SAC+BC/HER pilot, not exact reproduction of canonical SAC or HER papers. One warm-start parent and seed; old6/original5m are consumed training tasks. No algorithm superiority, cross-map generalization or novelty claim. No automatic promotion; T159 retained. Max128 complete new training episodes, no automatic extension.",
+  "budget": "Both arms64completeepisodes<=2986752physics; fixed final28evalcases; wall1800s. All newruns1GiB/free40GiB, owned latest/previous only, keep evaluated final and raw data. No Phase.",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t190_adaptive_start_curriculum/checkpoint_latest.pt": "bfe0c216525ff55d0413903c50677312dcf524857a2adf80ba2e8669bfb2e0d2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/summary.json": "08e9a327f9a7edfb4343343d8e01d2745da3868892346a1611054dee3d46cd81",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz": "c124283516a486b9527dacec00e426a5047e0076506504123347dfe736b841da",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t192_sac_her/prepare.py": "5bc14d84ff0b3a5e093fad759ff67b0a3f14a1f134f43b96b8d13b99a01cf9bc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t192_sac_her/collect.py": "ac96d82c0884454585427ef7ef5a051c2af75eed04c5ec8bfa9e7433406a90a6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t192_sac_her/common.py": "5cd1398c90bdd576f31736b71dbd61021a1e00e65762543f12f7c9fb04e32686",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t192_sac_her/train.py": "912256131aff22a89eb05cca768005f59d74c3d9a520b0b335fd7b5876dfe253",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t192_sac_her/replay.py": "c0047f847aa514b003586a1a414ff260c307708c0f40ac0619897e2c76227ae3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_LEFT.npz": "3ebc68e0cebe10c6375911e9a46f216ff5715202d771be8008d5b3c3f0a96f13",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_RIGHT.npz": "8a73f36dc2447f4fd79c557ce6c67edd96b53b46b6247d44735b011312181ea6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_LEFT.npz": "f3d5ef7ec153f2fbaba213bb3cb4dd449a6f8693bfb12cbe6155cddf2be07bf8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_RIGHT.npz": "54c559d5c5b7bc2240bc4aa20058864f0da1bd2d9337305a77d37ac2aa268491",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/LEFT_fullstate.npz": "821ee9028a6f138e7ba6cdeae24ecf1ca732ad9e05f19c22f3414e1aa4a1eb69",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/RIGHT_fullstate.npz": "9e71a6ee3aaf77c52844470f9f88a07f278da8ce3f5e2dfd484fdef9b10105cc"
+  }
+}

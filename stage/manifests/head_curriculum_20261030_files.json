@@ -1,0 +1,4123 @@
+{
+  "schema": 1,
+  "scope": "Completed Stage T189 action-head RL comparison and T190 bounded adaptive reset curriculum; no Phase, caches, credentials, or original chats",
+  "source_bytes": 54176977,
+  "source_files": 823,
+  "files": [
+    {
+      "path": "stage/runs/t189_head_training/analysis.log",
+      "bytes": 10165,
+      "sha256": "fd877ac831d3585a5d150c83411725b113462dff3a8ab7a5baa081adf6847d15"
+    },
+    {
+      "path": "stage/runs/t189_head_training/episodes.jsonl",
+      "bytes": 291148,
+      "sha256": "22d3365536905eb49951d32d60d10435fe42ab1516b79c059184ec4d7c8b9434"
+    },
+    {
+      "path": "stage/runs/t189_head_training/evaluation.jsonl",
+      "bytes": 513279,
+      "sha256": "ffec1fa612fd664fb53db593e45c22b571878140957e90dacf4972dc181de230"
+    },
+    {
+      "path": "stage/runs/t189_head_training/frozen_head/batch_0.npz",
+      "bytes": 486642,
+      "sha256": "16e3f9f389010845b0c8f41fe37660d9698bea67ce10b2155609a2e790f8bc9f"
+    },
+    {
+      "path": "stage/runs/t189_head_training/frozen_head/batch_1.npz",
+      "bytes": 536750,
+      "sha256": "02d8ba8a5e5fad05eca65f3b85f3e6ee7f39ce34ea7de7ff4f4da59c92698822"
+    },
+    {
+      "path": "stage/runs/t189_head_training/frozen_head/batch_2.npz",
+      "bytes": 501131,
+      "sha256": "38862e5808332fef6d9c640afb4f68ec7b34d1e42236e32f38230b16fd15a3f0"
+    },
+    {
+      "path": "stage/runs/t189_head_training/frozen_head/batch_3.npz",
+      "bytes": 537894,
+      "sha256": "6411823d9e151ab6731fc7cdbbc1de4d36fe348b41d717a9eaf366677c5b8495"
+    },
+    {
+      "path": "stage/runs/t189_head_training/frozen_head/batch_4.npz",
+      "bytes": 494043,
+      "sha256": "ae6ac7c0bc0ea688e69092f9f678108509dcb73bbc026ec38d0e244f736acc7d"
+    },
+    {
+      "path": "stage/runs/t189_head_training/frozen_head/batch_5.npz",
+      "bytes": 489916,
+      "sha256": "43b45a7c3e47db2a3359a8556ef8f3b6de2e8dbefa54491a0b673924a5fdc769"
+    },
+    {
+      "path": "stage/runs/t189_head_training/frozen_head/batch_6.npz",
+      "bytes": 539724,
+      "sha256": "9db91eb06296985b09d25579a512d36f5a5cc872121c7ab2075667fff85eab60"
+    },
+    {
+      "path": "stage/runs/t189_head_training/frozen_head/batch_7.npz",
+      "bytes": 543222,
+      "sha256": "a2c0832b8c5c95eb77874d3e2ca6d11bd9af87f545503a72844c6be555fb782a"
+    },
+    {
+      "path": "stage/runs/t189_head_training/frozen_head/checkpoint_latest.pt",
+      "bytes": 6899813,
+      "sha256": "0a49bafd37a685fb7fff78e4ecb97b3adf31e5ea670532a0a34ec9d9e4d34c6b"
+    },
+    {
+      "path": "stage/runs/t189_head_training/frozen_head/discarded_predecessor.json",
+      "bytes": 167,
+      "sha256": "a7648b01d4cf4c0fc416b673b44e3a7b9089e94c52d23347581b3d802a65219b"
+    },
+    {
+      "path": "stage/runs/t189_head_training/frozen_head/optimizer_groups.json",
+      "bytes": 216,
+      "sha256": "f83562bcf459bc0174b2f8249ace41e66608409138c43cfef82e98c42bea7855"
+    },
+    {
+      "path": "stage/runs/t189_head_training/initial_policy.pt",
+      "bytes": 2301625,
+      "sha256": "fb8161f9e0b220de430b27a8f21ec8b3dc3fa6ffde4355c8bd77cfdf1de6bf8b"
+    },
+    {
+      "path": "stage/runs/t189_head_training/initialization.json",
+      "bytes": 375,
+      "sha256": "8cbd60456a80cfdcd6b89e68fdef501e2d4e80eee8fd7dbb491ad0c4b07ee44e"
+    },
+    {
+      "path": "stage/runs/t189_head_training/launch.json",
+      "bytes": 198,
+      "sha256": "6f0b3005d7a2399a73aa3d347d82f44e85c3aeefff02cccd1f549bca2a443313"
+    },
+    {
+      "path": "stage/runs/t189_head_training/preflight.json",
+      "bytes": 16762,
+      "sha256": "8b4551f379ef0a09193e960f4d26a2235cdcbefb086492994bb43e81a0619354"
+    },
+    {
+      "path": "stage/runs/t189_head_training/protocol.json",
+      "bytes": 33344,
+      "sha256": "168201fbfdd78b294bdb11215bbaf31846fbe9d5a2adacf5e093976289e29d58"
+    },
+    {
+      "path": "stage/runs/t189_head_training/scene_review/original5m_training_paths.png",
+      "bytes": 116053,
+      "sha256": "377c98501d9f511016472397d29720fe60ecfdbb717dad06821fb2f5efa4da67"
+    },
+    {
+      "path": "stage/runs/t189_head_training/scene_review/scene.json",
+      "bytes": 9764,
+      "sha256": "7bcb7d050c41ddcf90fe0febc482076d2e4a83816783c16bdeba83f1c1e01585"
+    },
+    {
+      "path": "stage/runs/t189_head_training/scene_review.log",
+      "bytes": 1546,
+      "sha256": "95b50ffd2e6df394dd9ed04e4408353b8702fd63ea281a48822ebf27ba2d3086"
+    },
+    {
+      "path": "stage/runs/t189_head_training/status.json",
+      "bytes": 2495,
+      "sha256": "933a2ae816c501d389b6c2ae720283b8fe0b6964f4a13661781078492b2f0f57"
+    },
+    {
+      "path": "stage/runs/t189_head_training/summary.json",
+      "bytes": 2966,
+      "sha256": "1ebdaea57caa319f2f4ff8dbbbadd05dbd592688f892947b16c01fdfbf560117"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_5m_2029653601_LEFT.npz",
+      "bytes": 9920,
+      "sha256": "a7c558dbc3edf50fc7968ab32fce83d2e59fca24def282a2f2eabf4c754012e7"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_5m_2029654802_RIGHT.npz",
+      "bytes": 12591,
+      "sha256": "0ddb7d553ff135f9801babc71ad815332db5a449504e0021fb04fb71ae98a27d"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_0_0.npz",
+      "bytes": 3388,
+      "sha256": "263a07397cb8cbef11dc1ed52d140db70f8b1ed66099044ecc4d20dc2cb99392"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_0_1.npz",
+      "bytes": 3410,
+      "sha256": "11292e65ee1478b8804df6aa48e07a38b5d78dab85724e2588d51de9b4bd39fa"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_0_2.npz",
+      "bytes": 6188,
+      "sha256": "1032b247f8383c6182c257625507c5826f158a08707a58c1395a5121b26b58cc"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_0_3.npz",
+      "bytes": 14564,
+      "sha256": "7062f4f2309e769dcf0d1e960298c6de1452a35be0ef66e981f7c560620c0e22"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_0_4.npz",
+      "bytes": 2990,
+      "sha256": "30609469056ac6392ba10166fcb3036bf10253387f6e2ac2a7c3e3f99ff158ba"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_0_5.npz",
+      "bytes": 3326,
+      "sha256": "ffab6face7a562a1b41375d7ee5a4eacc26ee1e9a10e0ca910cce7099cf3c261"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_0_6.npz",
+      "bytes": 10904,
+      "sha256": "998484d57432fa6eb10d78fc61c383cc6b289926dc855898b0f381404cac8ebe"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_0_7.npz",
+      "bytes": 14016,
+      "sha256": "172f47b33c245e8c16cb21ebb584c71026ced19605fd41f12a472d2fd89a37b5"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_1_0.npz",
+      "bytes": 2933,
+      "sha256": "3f398a890ab9cc5a7d8c6c8cad8c158bf17d3929127af4f3d9e0e0d68c624648"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_1_1.npz",
+      "bytes": 3144,
+      "sha256": "45fed4677ebeea42371159759376161154f522fc6e1a6f5bec1fbce29986b839"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_1_2.npz",
+      "bytes": 10853,
+      "sha256": "5e46146ef8c03d2a16fdee9e8cf7a3b7f49bc175c474648d9a5f1c4b83d47d2a"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_1_3.npz",
+      "bytes": 14529,
+      "sha256": "8d50eaad8a29ed578dfb758870e5e05a6780fb45001b9b1f07333a819be449fc"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_1_4.npz",
+      "bytes": 3235,
+      "sha256": "f7c58aa00d848c7708656893fcb7c4976f852ccbf66cb02c62ca7c01fd19077b"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_1_5.npz",
+      "bytes": 3860,
+      "sha256": "42e91d2abc753e1e77178c9b9dd0acf13754f822d2e35ad2db121215ad7013e1"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_1_6.npz",
+      "bytes": 12301,
+      "sha256": "f07099e612830c5a4640d0bbd3acee3bd2a54801f996f874240089ba3dd349ac"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_1_7.npz",
+      "bytes": 13232,
+      "sha256": "bcba9304812e4e23c06f562b21c925e0abd7156f21322e3a44341d9115866bff"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_2_0.npz",
+      "bytes": 2838,
+      "sha256": "ad8242d1fb02a585d2e11ca218f828c550c91e625bd3484d36c4f256103e8dce"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_2_1.npz",
+      "bytes": 3655,
+      "sha256": "e96d2d9d21e8c996680027f6e1e86cc99933dfc0b6c2faf12c6825fff2baa7c1"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_2_2.npz",
+      "bytes": 11646,
+      "sha256": "c6c7e2acc9997f7323273c0142972791c5e0032fa1fc2b072107dc35a4fb3b58"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_2_3.npz",
+      "bytes": 15708,
+      "sha256": "fb62f9e5ce4f193b040672d4d11566b09679cd7dba287a30b47a1b3a35d9d8f0"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_2_4.npz",
+      "bytes": 2616,
+      "sha256": "e6d185065791b5c72de93b2646f6bef07e62bc4ddffa764ac4cf0ef4db78f6db"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_2_5.npz",
+      "bytes": 3309,
+      "sha256": "7a3ea4e3418e78ea9aa59219f7f40580f223e38b4ba93c58e99f2049055f1460"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_2_6.npz",
+      "bytes": 6041,
+      "sha256": "37a7ad44283c69b63497af68a9c40d625c1c3b1dfb0cf0dcd6268f2c92fb1f2f"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_2_7.npz",
+      "bytes": 15123,
+      "sha256": "b59af9de2a3697788ea1e25f375ac9e402dbde49fcb5db229ac3f083e3a4ea27"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_3_0.npz",
+      "bytes": 3231,
+      "sha256": "be2d83df4aa807bec3a798c9aa7eae9c52738aa20a18566a50f4cb356001dd1c"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_3_1.npz",
+      "bytes": 2911,
+      "sha256": "26c1ed6ba6379cf24c9d8a4f7c9ef370580e303b4da684f714c03e9c518b0a82"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_3_2.npz",
+      "bytes": 11177,
+      "sha256": "97416580667999fb497b35932873c6a49464345faf35cb093685817bd44f4c50"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_3_3.npz",
+      "bytes": 15404,
+      "sha256": "ec3509c78e104a2234d033f961277fb3c08729164a982c5bea034a4bb9c6fc78"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_3_4.npz",
+      "bytes": 2681,
+      "sha256": "bb564c9d56868dc7d704a33c9cb49202505bdb48f2fbffc05c23ea4771f1c986"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_3_5.npz",
+      "bytes": 3180,
+      "sha256": "192041bb8d6a9e1912c6d14b81d9bc6be6114b1ff6ad5daca88294f1ad9e3dd7"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_3_6.npz",
+      "bytes": 10717,
+      "sha256": "c3ced19f027c4fba22459f2440f21c1ace905df0e2c01e316a44435004b559b4"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_3_7.npz",
+      "bytes": 13755,
+      "sha256": "8e9fc4e1eb8d40eb8462b92f2458a5e0988a65c12c320ddde33cc6fe1a4878f9"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_4_0.npz",
+      "bytes": 2880,
+      "sha256": "7533cfbc5ac18cdf24d98668838c8e8e3168a19be9dfe6e35c8b23f5647f0da8"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_4_1.npz",
+      "bytes": 2845,
+      "sha256": "0f4459f06ba9e86a969ded7f189bf4946e84bdb1297f4875d1c17c5ac5b6d250"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_4_2.npz",
+      "bytes": 11841,
+      "sha256": "c33c882667876a8f569586a1d594b81b01ece3e02c3ec041fafaf2a556ed4b6a"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_4_3.npz",
+      "bytes": 14969,
+      "sha256": "f5eaa895455ef3def7950e11dc6f60a51d239e36f96b355b95352153790f6def"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_4_4.npz",
+      "bytes": 2970,
+      "sha256": "4a02df2f0c002c6da6b80a2b623eb31346194ab2466ab8600d12460e88567090"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_4_5.npz",
+      "bytes": 4103,
+      "sha256": "8be03cb7da7bf06b46d0e08c19540890bd8dc38c3f9f5af9eddd9a67f1d07908"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_4_6.npz",
+      "bytes": 6822,
+      "sha256": "d557cfda714a3596e0efc4a050fb231a2b580bb5c8c18e533889f055bd11a872"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_4_7.npz",
+      "bytes": 13548,
+      "sha256": "c29e1579625704c31c0a760c73f6717d268a9aba9b72cb9e4c0fd218c60ee429"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_5_0.npz",
+      "bytes": 3125,
+      "sha256": "c43561e6bf2332c96ffd2c1e8c38ad45053f74151f33217590455271238f6687"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_5_1.npz",
+      "bytes": 3241,
+      "sha256": "727bb3e8d68606f2c440f2d383ab2db283a803dbda85edd59167438d7fca4db0"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_5_2.npz",
+      "bytes": 8786,
+      "sha256": "cfc0e1ae69c0182fef0b865d376e9a86ba362c94e0e4d03f78e0553c415c618e"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_5_3.npz",
+      "bytes": 13432,
+      "sha256": "b0e578582a69856df4ba68b941810200d6c4918b9dfbd5bc6a746a7aae4d9ab8"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_5_4.npz",
+      "bytes": 2838,
+      "sha256": "09e6efef6ebc716e9e8336bfc6bb4bf4b4c3800901497beaa5136e1637eeeb44"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_5_5.npz",
+      "bytes": 3697,
+      "sha256": "7a221e77f689598be2c4c1f8b28e2c1c6d3a9c960378cb30f43ca7255647fd1d"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_5_6.npz",
+      "bytes": 10317,
+      "sha256": "3fe59b6bd60291ccb2f53a3c0512da645b0e491a112534199e3d4f55fcaeacdb"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_5_7.npz",
+      "bytes": 13589,
+      "sha256": "eea7c23e2e8bb2ab53897c253008e8658d432ff5af8810d9690417c2b99591da"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_6_0.npz",
+      "bytes": 3061,
+      "sha256": "16003fec9166730b42351045d9b51df8e505ed3eff9d7811fe28961c4cb6080f"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_6_1.npz",
+      "bytes": 3225,
+      "sha256": "38684029999136bf7be97e9df559d4e39bde639329ed7a53206568eadc2e80f8"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_6_2.npz",
+      "bytes": 10937,
+      "sha256": "f5f46f2f5e95cecf6dbfc7deec0e0b5eca0a1fb556c19fc5fcc511eee870652c"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_6_3.npz",
+      "bytes": 14990,
+      "sha256": "cef56b038c97573defe6b839663846961457b30fb35af023122a58812519e4c4"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_6_4.npz",
+      "bytes": 3458,
+      "sha256": "eab65c9f4ef46e2cf8c926b7f165640daf338529d0ea64222eae231586c433c4"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_6_5.npz",
+      "bytes": 3534,
+      "sha256": "a8d23881ae165618ce0fe53d1fec0e21f136e17a6dfc1883f5092225cc436fa6"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_6_6.npz",
+      "bytes": 11393,
+      "sha256": "8a66be7683b564a7bac0d4eb6e8caa4152c2bde268a59066b6e8d4f077ef184a"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_6_7.npz",
+      "bytes": 13158,
+      "sha256": "56feb8ad9894298ab5c005481f7f87d561d914c1606785e4f81f5cd1cf3dbc1f"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_7_0.npz",
+      "bytes": 2660,
+      "sha256": "b68621d7d42b4fd83261b8c659564eeeb8746d2372073c49164597ecc040483f"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_7_1.npz",
+      "bytes": 3658,
+      "sha256": "8226137e69d0aece8a635da012e7ecca55ccc437322379a7f96b9dd45b7005aa"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_7_2.npz",
+      "bytes": 11847,
+      "sha256": "60554939cc8b501ac40da8bd887aa770164eb0ce3d66eeeba8b4d0e637fedf1c"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_7_3.npz",
+      "bytes": 15791,
+      "sha256": "1d0518538f73b62816bab8fa1ebd1dce2387d8744fe59d365c43577cd892e3d2"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_7_4.npz",
+      "bytes": 2955,
+      "sha256": "64cb68264d328832169d6115395741b650a5f92e7651e6e88b8700fb3538c1eb"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_7_5.npz",
+      "bytes": 3214,
+      "sha256": "a367d8f2b7c870e945aa0a98ebf5901ba0e1e402c75528876146d923877cb5a7"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_7_6.npz",
+      "bytes": 10794,
+      "sha256": "9e6994139d89bf5bff19255be9582c5fa0dcb598611a8cf1e2b4f60286e94cb8"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/frozen_head_frozen_head_7_7.npz",
+      "bytes": 13810,
+      "sha256": "7029a7eeb4f0fe10e7bbbb65acdeeeaa1f97873b3e928d105e0286f7e3b150f7"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/initial_embedding_5m_2029653601_LEFT.npz",
+      "bytes": 10024,
+      "sha256": "662d5a66783fe0771f049573bc34ad2c0fce4da654ed657d407814895276bff9"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/initial_embedding_5m_2029654802_RIGHT.npz",
+      "bytes": 12416,
+      "sha256": "4b5e5f130e441ce0d320e6fc252821578756959b55d66e9f1062ddc8c387e49c"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_5m_2029653601_LEFT.npz",
+      "bytes": 9757,
+      "sha256": "9ea65f8fe468d5456e4aea12f33ae291a996daa3fe540527146a137b44516364"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_5m_2029654802_RIGHT.npz",
+      "bytes": 12617,
+      "sha256": "5c669bfd7472f107cdc7458c44adcfa7341fc7c65bfcc42e99e938c862c6e133"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_0_0.npz",
+      "bytes": 3388,
+      "sha256": "263a07397cb8cbef11dc1ed52d140db70f8b1ed66099044ecc4d20dc2cb99392"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_0_1.npz",
+      "bytes": 3410,
+      "sha256": "11292e65ee1478b8804df6aa48e07a38b5d78dab85724e2588d51de9b4bd39fa"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_0_2.npz",
+      "bytes": 6188,
+      "sha256": "1032b247f8383c6182c257625507c5826f158a08707a58c1395a5121b26b58cc"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_0_3.npz",
+      "bytes": 14564,
+      "sha256": "7062f4f2309e769dcf0d1e960298c6de1452a35be0ef66e981f7c560620c0e22"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_0_4.npz",
+      "bytes": 2990,
+      "sha256": "30609469056ac6392ba10166fcb3036bf10253387f6e2ac2a7c3e3f99ff158ba"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_0_5.npz",
+      "bytes": 3326,
+      "sha256": "ffab6face7a562a1b41375d7ee5a4eacc26ee1e9a10e0ca910cce7099cf3c261"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_0_6.npz",
+      "bytes": 10904,
+      "sha256": "998484d57432fa6eb10d78fc61c383cc6b289926dc855898b0f381404cac8ebe"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_0_7.npz",
+      "bytes": 14016,
+      "sha256": "172f47b33c245e8c16cb21ebb584c71026ced19605fd41f12a472d2fd89a37b5"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_1_0.npz",
+      "bytes": 2923,
+      "sha256": "de328d1d3397d5246678ee28fa4fdc779203336c4136aec60bdfb30ad83ad55e"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_1_1.npz",
+      "bytes": 3143,
+      "sha256": "0a8244662f5923e530c31b3e0104a839c665f2cd4f8d86153e44d62c599ad08d"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_1_2.npz",
+      "bytes": 10842,
+      "sha256": "aa2622504f9cb4e3156424ad6e84505153dc881a597bd2b7f45299b7c8292a86"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_1_3.npz",
+      "bytes": 14531,
+      "sha256": "2585212f34efa8285e36abaa3bfed44bfa9473f7f6f0364c7ea1895bb2a805e4"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_1_4.npz",
+      "bytes": 3156,
+      "sha256": "e3418140f9f8ded873289c7a9c34ac9a15aa657fe6950c6410977399f5529229"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_1_5.npz",
+      "bytes": 3864,
+      "sha256": "5dd780471f2273bf5d0eade8d9554c9c9b4b562b19d8466a6c16ef2e98125f58"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_1_6.npz",
+      "bytes": 12278,
+      "sha256": "566546e4f359e1a97333c656694d8fd2599f6808f0ccedcbdef31a632aafd54b"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_1_7.npz",
+      "bytes": 13147,
+      "sha256": "95472e3e194af3c30074f96fb2d988ce04010d2a8da542a018a8e6411a0b1efd"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_2_0.npz",
+      "bytes": 2771,
+      "sha256": "5c2eccd1bcc5016a53adf3a5adf46f7a1a88e6ea8a251bf58ff5e9f6fb4f6019"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_2_1.npz",
+      "bytes": 3525,
+      "sha256": "98795250ab4852364b67b09bfc235815a1274ae30016c354e440f5dbaebcd7c8"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_2_2.npz",
+      "bytes": 11647,
+      "sha256": "dc3165c45a435c6eac1ce4444df04c1bbbe3b927530af4d3ff3734af7d494e12"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_2_3.npz",
+      "bytes": 14837,
+      "sha256": "a6ff0768847f0e10d7304747e3fe512f9c41528e296ff66848f9201a291ca106"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_2_4.npz",
+      "bytes": 2597,
+      "sha256": "ea12656199054539fa60bf2a738b95db452703830315c101ccd1bd49b0e08505"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_2_5.npz",
+      "bytes": 3223,
+      "sha256": "7639668ccf891e002b2ef006ff13eed21b89dcc2566fe9083f4f94ebfaacc63f"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_2_6.npz",
+      "bytes": 8069,
+      "sha256": "f89ca456f614109faf98663afc9cf7bacdcbe22145434453c4c522899f6cee7c"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_2_7.npz",
+      "bytes": 14022,
+      "sha256": "33fe66b1e81ddd87b81049f1da30d35fa014a93d206c17c3ae6cd8e9592d1a07"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_3_0.npz",
+      "bytes": 3184,
+      "sha256": "8653cdc297ce4c3a770e4fafde58f505b855468b039b181cf4d24dc873b467dc"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_3_1.npz",
+      "bytes": 2990,
+      "sha256": "b8ace15c2866dd613911916a0fe6dfe8611b9dfa4fdcc8e19c55b22786176f87"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_3_2.npz",
+      "bytes": 11314,
+      "sha256": "9d8cb2c637e72c864c5256807d279d271c3f242556a3ea80d128e94d8aa9e479"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_3_3.npz",
+      "bytes": 15639,
+      "sha256": "2d85c09afc3404421493c6b2e1f842db5453f2d3a7e1a0c8ce77459c935cbea2"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_3_4.npz",
+      "bytes": 2735,
+      "sha256": "38086b816e6f09ceecb3b62a2a6c4685d7bcaeee0760f9d71d94093748a03e43"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_3_5.npz",
+      "bytes": 3135,
+      "sha256": "ce9221d025747250923c99f284bd9b9d9f54c2a45a603f79d525b97c0eeb6ba3"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_3_6.npz",
+      "bytes": 10778,
+      "sha256": "01ccc8d17b43b98b8734653222dde8e01b9fca76e7bb52245d6025a27b9ee092"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_3_7.npz",
+      "bytes": 14752,
+      "sha256": "6b8498f5a40ab623db7f0537336d17c14e364ea67b09eb170090a90a1a4911c2"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_4_0.npz",
+      "bytes": 2828,
+      "sha256": "944c1c2fad95b34b40b06b63ff183d905e2caab67212753aaa6cd6efbf5714ec"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_4_1.npz",
+      "bytes": 2905,
+      "sha256": "6c42497f4350656a8bae992aefb5ee5d8df7062be81cddf889d322f10e7e7fcd"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_4_2.npz",
+      "bytes": 5842,
+      "sha256": "6f80a75dbe82c28ae99925c28a16db844659e5b866cfaa2325efd940280fae2a"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_4_3.npz",
+      "bytes": 15660,
+      "sha256": "ec01636c76056f09ccac62e6a75ea300945aa8b6aca588ac2609673a57f68203"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_4_4.npz",
+      "bytes": 3012,
+      "sha256": "00ea42141a619935f695d4ce1f698d1957e9e03196fa7316d9cbad212a6817e8"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_4_5.npz",
+      "bytes": 4105,
+      "sha256": "c06f0b308807a868eab761d288703e42d223564d76db335b8df9c0a2277c0d43"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_4_6.npz",
+      "bytes": 6598,
+      "sha256": "c27f40a07b9795c207acfd48d04c2d84c2349dcc23e90cae04aeb87d876914bf"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_4_7.npz",
+      "bytes": 13579,
+      "sha256": "fda80ac2be3027db4317799df00e8c4a01fb194e8e567a11a7754e7a842899c6"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_5_0.npz",
+      "bytes": 3313,
+      "sha256": "3fce44d4ce3c6446315f74f4ca4e0b8861d0fd7b667fa8f4ecb6d72d5561b2ad"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_5_1.npz",
+      "bytes": 3240,
+      "sha256": "013ee53edfe879883ad2118e5b1b5c93dbb78df7f6162a50f6c37408c4861db5"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_5_2.npz",
+      "bytes": 9125,
+      "sha256": "0343f9258d4688fe2bd206a93e81e0e28babfe65c9dfd3b0591a2f0a8d7e0f85"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_5_3.npz",
+      "bytes": 13907,
+      "sha256": "5d372300e12e0794caeba611f2232c3aaf3b69175d8849a09f8613d497ef0e8f"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_5_4.npz",
+      "bytes": 2801,
+      "sha256": "e2223719f883ab6b92340b40e555880afdff49e06758547b848bf1d024d43710"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_5_5.npz",
+      "bytes": 3694,
+      "sha256": "8dd65f48cad1bd55a32bde665ea48b06be666275b1f44a182dcba6b4c5382a2b"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_5_6.npz",
+      "bytes": 10319,
+      "sha256": "59575d7c54ecd357b0a07b4649053da045bdd832cd660e7c07fa7fedd4a9b036"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_5_7.npz",
+      "bytes": 14156,
+      "sha256": "f71669bd4ab2988bcbd1a0a74939893f4d6d4feb0652f9cd637eb556e2deecf9"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_6_0.npz",
+      "bytes": 3063,
+      "sha256": "077cfd56d748c7581477c30044525efbd436fe3aee806d78e476392d304b33ab"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_6_1.npz",
+      "bytes": 3228,
+      "sha256": "41220aa645ea0bb2bd0571683064ff64526400b9a6490a030aa0f162047ae0f9"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_6_2.npz",
+      "bytes": 11464,
+      "sha256": "331ccf731c036af850a5a8d4b43c130255c022ddc9f7f29a16e3515736a92041"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_6_3.npz",
+      "bytes": 15056,
+      "sha256": "8d45ef61235bc23012e70d798dfed168d061988bac14370ea4ba01a94c0ab8dd"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_6_4.npz",
+      "bytes": 3386,
+      "sha256": "8645690c23743c39d741aeab7c29aba940101495f6bba2f2c092f9cb06546642"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_6_5.npz",
+      "bytes": 3609,
+      "sha256": "6c1213b7c714234b57480380f75ff4d35a61634c676dab2b735accc75787d748"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_6_6.npz",
+      "bytes": 11263,
+      "sha256": "98ba0d13988b519a5e49810439c378a09edd32d3e34ff298a5bf8a4a492fd46d"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_6_7.npz",
+      "bytes": 12934,
+      "sha256": "d907c7df76191847e32a44d894167c547710bb8302701b89dfd777e24fbd52bc"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_7_0.npz",
+      "bytes": 2668,
+      "sha256": "02bc28a84d5ec419cdf2ddd5e728b35782dd792a9802dcc96a0de59648a650ea"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_7_1.npz",
+      "bytes": 3729,
+      "sha256": "cb51e751922c0378ac28f8cdbae0fc81687f7a0d9ec98bed82754d1dc0a738fc"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_7_2.npz",
+      "bytes": 11836,
+      "sha256": "7957c19365100c4d2516742d6154a06d179e624e1b90c8255d32b6cc79731683"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_7_3.npz",
+      "bytes": 16077,
+      "sha256": "1cd9bc19cdcf71a719198fd14b7860ea3f3d4d56b41ce23603c9583d98dce639"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_7_4.npz",
+      "bytes": 2949,
+      "sha256": "55ced4edf6f390051ce6b99a913007ff2395a6838ca8d92ffd18bff34ea9d7b3"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_7_5.npz",
+      "bytes": 3295,
+      "sha256": "530685675795dc0b1b0392db508c57cc6c6dbcb38197997c5fce71a4b6e32b6a"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_7_6.npz",
+      "bytes": 10849,
+      "sha256": "05c5a8dc67f4f693dba28c22cc98486b11dd33398a9895b2ad830a15b0fbd03f"
+    },
+    {
+      "path": "stage/runs/t189_head_training/telemetry/trainable_head_trainable_head_7_7.npz",
+      "bytes": 14107,
+      "sha256": "ee7bb4e325f5a7bb268acd739b979cc73be596a1a0e16d333d2cb19c671c21e6"
+    },
+    {
+      "path": "stage/runs/t189_head_training/train.log",
+      "bytes": 9511,
+      "sha256": "7aca110d7551db1696bba52cf5fcc04be1b1399fd07eec2cad5c1f007ef0247e"
+    },
+    {
+      "path": "stage/runs/t189_head_training/trainable_head/batch_0.npz",
+      "bytes": 486642,
+      "sha256": "16e3f9f389010845b0c8f41fe37660d9698bea67ce10b2155609a2e790f8bc9f"
+    },
+    {
+      "path": "stage/runs/t189_head_training/trainable_head/batch_1.npz",
+      "bytes": 535728,
+      "sha256": "e098b541b6275430cedd56e4f2eb173de3c0b82619063e83bc8ff23235ef0117"
+    },
+    {
+      "path": "stage/runs/t189_head_training/trainable_head/batch_2.npz",
+      "bytes": 505266,
+      "sha256": "0bfb2435244d462823cb2d733a2ecd67ab97fdd4e6a2881389c78739ba2983e0"
+    },
+    {
+      "path": "stage/runs/t189_head_training/trainable_head/batch_3.npz",
+      "bytes": 549023,
+      "sha256": "addbd02877cdc8725cd5aaf74e00190f05ca3151d0472399369898c145b6676b"
+    },
+    {
+      "path": "stage/runs/t189_head_training/trainable_head/batch_4.npz",
+      "bytes": 432863,
+      "sha256": "c6e2ca6b11a85434824eed5cbd2e631c212d54a5685c9b2ba6abda2cf6750d8b"
+    },
+    {
+      "path": "stage/runs/t189_head_training/trainable_head/batch_5.npz",
+      "bytes": 503377,
+      "sha256": "d09fee750c626d5d5bde6dbf5324037a606a399f0d2e618668a0db1091d47a92"
+    },
+    {
+      "path": "stage/runs/t189_head_training/trainable_head/batch_6.npz",
+      "bytes": 543625,
+      "sha256": "6850616877e4a684a10b82cfdb307c395acdb294f20e2e0d77c98e8f5dfdfbee"
+    },
+    {
+      "path": "stage/runs/t189_head_training/trainable_head/batch_7.npz",
+      "bytes": 549011,
+      "sha256": "6610fe422d9a365ee1d393251f2ba09b0b12c01a7c09c0d1a10084790e0536a3"
+    },
+    {
+      "path": "stage/runs/t189_head_training/trainable_head/checkpoint_latest.pt",
+      "bytes": 6911253,
+      "sha256": "0a5ab163b78dbe912a83a87c237e51b14cd6af92c31275d7d6cb359ccf96df58"
+    },
+    {
+      "path": "stage/runs/t189_head_training/trainable_head/discarded_predecessor.json",
+      "bytes": 167,
+      "sha256": "ec893a47a8c2f0d22e50eb32bbcaba47c6077106adbe9c173d0068e099df2660"
+    },
+    {
+      "path": "stage/runs/t189_head_training/trainable_head/optimizer_groups.json",
+      "bytes": 293,
+      "sha256": "de31f558c877230c4e2a9753acf2f5d45f381e3b3f8d6e085b548d711e943cad"
+    },
+    {
+      "path": "stage/runs/t189_head_training/verification.json",
+      "bytes": 10165,
+      "sha256": "fd877ac831d3585a5d150c83411725b113462dff3a8ab7a5baa081adf6847d15"
+    },
+    {
+      "path": "stage/runs/t189_head_training/workers/0/worker.log",
+      "bytes": 40536,
+      "sha256": "47a27d071e5ce8cfb144f2476746bde22ac3f6bdd780b8122802a14ba0f6ffef"
+    },
+    {
+      "path": "stage/runs/t189_head_training/workers/1/worker.log",
+      "bytes": 40752,
+      "sha256": "2ed093df2b678a435dcb706fba92b00235672be93e7379db8d402266e1d5d7a5"
+    },
+    {
+      "path": "stage/runs/t189_head_training/workers/2/worker.log",
+      "bytes": 40715,
+      "sha256": "b49f3aea65b2ee94adeba643ecf402bc8fdc93347737f89b3ddf1e843f3d63b6"
+    },
+    {
+      "path": "stage/runs/t189_head_training/workers/3/worker.log",
+      "bytes": 40666,
+      "sha256": "47871c4413b9fe38e3aa2e457b7310dbfdd75e22d0a75cafc642638ef530d434"
+    },
+    {
+      "path": "stage/runs/t189_head_training/workers/4/worker.log",
+      "bytes": 43186,
+      "sha256": "b18ba3ad74bfe8f1919b26216fae5c430a1a3653168a2114eeb0cfd0f8a7428f"
+    },
+    {
+      "path": "stage/runs/t189_head_training/workers/5/worker.log",
+      "bytes": 43442,
+      "sha256": "19992e6d29e7670e93e465496962b5b64ba9d44308babd6099dd3f67a374c525"
+    },
+    {
+      "path": "stage/runs/t189_head_training/workers/6/worker.log",
+      "bytes": 37352,
+      "sha256": "6ab4c8b6af22b0c72d312d5179b90532d063918634907add1f07b66989775824"
+    },
+    {
+      "path": "stage/runs/t189_head_training/workers/7/worker.log",
+      "bytes": 37447,
+      "sha256": "384491fe5ea2ef1a5f3593a3953f1976677d492f7fb0480be57930a0e0c1dd58"
+    },
+    {
+      "path": "stage/runs/t189_head_training/workers.json",
+      "bytes": 135,
+      "sha256": "6c4fb79caf638ab414c0e3c4c3b271f56db6de9d6671fff8891e1dc5485db79b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/checkpoint_latest.pt",
+      "bytes": 6912085,
+      "sha256": "bfe0c216525ff55d0413903c50677312dcf524857a2adf80ba2e8669bfb2e0d2"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/discarded_predecessor.json",
+      "bytes": 170,
+      "sha256": "d13d71deb4fbe8541e6dde301a258f4056d85265fd44d69124e2ab178677f089"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/episodes.jsonl",
+      "bytes": 482073,
+      "sha256": "6d8f812c6e27e872e3cc74b191fe69b31691599aed47515f0fca298850bd7990"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/evaluation.jsonl",
+      "bytes": 628419,
+      "sha256": "5080c41379b201c2849db70d5fa63aa71f90636a96148c5a364551a513ee9450"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/launch.json",
+      "bytes": 128,
+      "sha256": "3956a4d7197abe23b37f6627e004d6e3291ba01c1a5c2111106ba99e6a686903"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/optimizer_groups.json",
+      "bytes": 293,
+      "sha256": "32f94569f66a8facafca83e2bf4b4379de319b59d93252bb3083943409abe96f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/pool_provenance_note.json",
+      "bytes": 8470,
+      "sha256": "c045085fdc326afb4eeb9329dec95937626a329761443a6397db0c32db4d732d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/protocol.json",
+      "bytes": 25093,
+      "sha256": "a7594fd2ed49e5c72718c60f1b5d0d3e4e2aa8315d87b0fd8e0d5935703d1675"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round0_batch0.npz",
+      "bytes": 494313,
+      "sha256": "1f442a07f9f1a4e32815cae0a91dffe898cf91ff0b69698149bfe06548a06c42"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round0_batch1.npz",
+      "bytes": 566585,
+      "sha256": "2d6f5952a37d20cf72e044833ebf136efca6c9fe348631a522faf7a706fbfd75"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round0_batch2.npz",
+      "bytes": 338364,
+      "sha256": "b8182a4a2bfa14cc44e823d5472c63cf039a86e65114aaadf31e060b4809d5b3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round0_batch3.npz",
+      "bytes": 453952,
+      "sha256": "4d4680b58f3fdc843216e1808f161938c85067f99fbaca505e8a1d3277325ad5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round0_batch4.npz",
+      "bytes": 362634,
+      "sha256": "e30a60e1dd1a8befbd3a191ea8a463f17be2fcbba0597ea4bc23a23c06d7af22"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round0_batch5.npz",
+      "bytes": 442275,
+      "sha256": "40819e82570314687a04ff02a1e24a188aa7f0c7ebb995c8e2a30a5a206fc4b2"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round0_batch6.npz",
+      "bytes": 290738,
+      "sha256": "2ce33787e20adb6a2b055ca30117775847e5d0d732f8d9a018d664ca2ed1a48b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round0_batch7.npz",
+      "bytes": 393992,
+      "sha256": "128caa0aae9bcb80cd4df3f4bd91b7eeeba7ea2916e9f1b02395321d1914ddf1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round1_batch0.npz",
+      "bytes": 473418,
+      "sha256": "4d6e85a925ccb9d574724ae90e79a632e1078a4ce3e247df986a30f5ec2b0eba"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round1_batch1.npz",
+      "bytes": 439833,
+      "sha256": "6286098e1e05b82f993459db74275505a8cd66523cc252db44e9920e194b9a3f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round1_batch2.npz",
+      "bytes": 549217,
+      "sha256": "dc17f1a1a42ee1faf84cfc545be72cdb2df51d1d594756317315893e267497d5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round1_batch3.npz",
+      "bytes": 441844,
+      "sha256": "7678e2b085b65cfdf05ab28bacf465f21354c32089c52c0cc582cdd4ca9dda6b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round1_batch4.npz",
+      "bytes": 414725,
+      "sha256": "b25d00f9def836c91a8ee2db40a297e45fcc16b99cd096c8482bc3f3b235997d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round1_batch5.npz",
+      "bytes": 609836,
+      "sha256": "0a420f475bea047efa1e203ec5444a5288a8197f914704d89eff61a64d46c800"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round1_batch6.npz",
+      "bytes": 375204,
+      "sha256": "751e2ceded62e1b1cfce4bbc4b592db2874c825d1bdb19565ee4a1249ba3da63"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round1_batch7.npz",
+      "bytes": 693450,
+      "sha256": "0b28f8466f1419df281773aee5afbd27386de0080943d4399acc5ce3f62dc21b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round2_batch0.npz",
+      "bytes": 475848,
+      "sha256": "0c2b373bc9df75c74862678fd90fa2e235893c4235fa0d8a7188791514b6b977"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round2_batch1.npz",
+      "bytes": 465381,
+      "sha256": "79151e09cf86ee8a47bb63326baab3fd67a3929fec3f8828f3bfec9833ab62b4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round2_batch2.npz",
+      "bytes": 426038,
+      "sha256": "33d189b029e52dba67001f9bf94422304243ca81eaecdaa02a458e537dfecadc"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round2_batch3.npz",
+      "bytes": 549261,
+      "sha256": "117c9903f6d7b3cda722d670451db0de56f1480e9e04b253ad5750fef32c542a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round2_batch4.npz",
+      "bytes": 600671,
+      "sha256": "5e6402f55c6f0656128880d7445001dd0a5d0c0bb35cad00b5022fd2b5c2b50e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round2_batch5.npz",
+      "bytes": 442471,
+      "sha256": "318ab1eceb2abf59b378301a28a5d16db3747d56368e6d34d5c517e792ee7aef"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round2_batch6.npz",
+      "bytes": 474830,
+      "sha256": "c0d0801b76a4d69102204b8e22c094aa7f1ce60a4e6197c86f85479a457badf5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round2_batch7.npz",
+      "bytes": 560732,
+      "sha256": "a298fe44a78bbdbb88f1967c62fafa0497fd39e6231dc06b841eebfc5fd0c5c4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round3_batch0.npz",
+      "bytes": 412400,
+      "sha256": "b7561821f279416bb190287f223d07dc60cfdaaf335a75c3a1d712ea6ee7451a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round3_batch1.npz",
+      "bytes": 649980,
+      "sha256": "b9e099eda08d220fc98c1efe10c1bebd3c4912eda4fb75e43059ed984594c501"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round3_batch2.npz",
+      "bytes": 373242,
+      "sha256": "4cc1cd8f24f53e5968a344334406e833fd02ef9aa98988231775fb5686060662"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round3_batch3.npz",
+      "bytes": 468316,
+      "sha256": "ed9ff5101b1ee4e5d56c0617354c3650d65a5700b87b24c42be5794cc859e5fb"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round3_batch4.npz",
+      "bytes": 306754,
+      "sha256": "3f27b5311958794f5ff71a231f26b92d5eccc94d50732e61795201af55a7de10"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round3_batch5.npz",
+      "bytes": 562074,
+      "sha256": "ec713b00cd2881bf9aeaa0d776525b4ed61f275cdab10fcdb484e22826eaf48c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round3_batch6.npz",
+      "bytes": 471857,
+      "sha256": "573c32b2959dc1713ba287894c30792377926ef76a6e5836dbb8caf2fc27c937"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round3_batch7.npz",
+      "bytes": 554748,
+      "sha256": "e9c957026427ade2a92af52ad85fcc7e1be2c5f876c1b2afc3e5e18eea77cb22"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round_0_proposals.json",
+      "bytes": 9342,
+      "sha256": "48317f61458b5447164a413d3f0048ab45d5fbaef683088752a2d7f24dde8abc"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round_0_result.json",
+      "bytes": 1482,
+      "sha256": "d03ed02e10fdeb8f7c58b3ad15afbb8a75a69a035e49e2a0b42f696227f68c56"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round_1_proposals.json",
+      "bytes": 10271,
+      "sha256": "01a43ec551eaeab03a11253172623bff68e6bd11bba9f5313c3b4388decf4a1a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round_1_result.json",
+      "bytes": 2077,
+      "sha256": "bf086b8e99fb24d9872124a67413d09fdb229cf39a39f793aa58e4793815919e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round_2_proposals.json",
+      "bytes": 10903,
+      "sha256": "24d45ef03e968b02c1e4c5657a7f686e7e2a00b4070528ebc6e9b757a2735aa5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round_2_result.json",
+      "bytes": 2378,
+      "sha256": "87f820fcd96f72076d27a1905e5bbe17370b9b6494df71e537e747e5aeec1174"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round_3_proposals.json",
+      "bytes": 11210,
+      "sha256": "f0b495e70302f169f99105208b6f3440105179391ec58dd33a017341e1226f8a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/round_3_result.json",
+      "bytes": 1783,
+      "sha256": "c1ffc00826b3100b5b942a3510bed585bcd9146a1dbfd9c8f3b7e94f96f996cd"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/status.json",
+      "bytes": 9517,
+      "sha256": "3204a23fd70ca5307f5cb190d3e4777329e0b3bea34f64e3434f24e684786a31"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/summary.json",
+      "bytes": 9483,
+      "sha256": "ed801b4a8480020d1ba5d5c5128ea6eb3106afe3784e8d01172e65a148f1724a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b0_w0.npz",
+      "bytes": 6506,
+      "sha256": "651d2ed84725ae43af09aeaa73dc05ef1f0140a1eb10e6eb06b5e3911545d742"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b0_w1.npz",
+      "bytes": 8237,
+      "sha256": "bb8ba6821f43b71b2a82f33572f90389c27aceaf0c2bed542a2069aa2456fa0b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b0_w2.npz",
+      "bytes": 2997,
+      "sha256": "92ef9f756f2e3ed8062839ebf33d3b5d0bf3acd206ebf83739abc42e965412f1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b0_w3.npz",
+      "bytes": 10784,
+      "sha256": "8ea43b5768345e31c835759189ab4956998964cdc2bf3da47f1744238316920b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b0_w4.npz",
+      "bytes": 6507,
+      "sha256": "84cff3435811004056f57ec7317165939685c938b988dc0b0dccb568f7df6300"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b0_w5.npz",
+      "bytes": 7893,
+      "sha256": "0f98bd6ecf06c347e6da7ad631294ef5b632739b6fc783c2821954f8152366ec"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b0_w6.npz",
+      "bytes": 3017,
+      "sha256": "00ed99ad4cfeb4d60d6f4112744eb42cf97858178c60b374adc093f9662d3bd3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b0_w7.npz",
+      "bytes": 10638,
+      "sha256": "c0c27323c99bd9bbf41c30a4cc862de2ad625c4279a97b11ddb9108f1bf6a3c9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b1_w0.npz",
+      "bytes": 6125,
+      "sha256": "3d3752706ff7cb7a785addce1a89469a2e8436fb57ed50696d880d80569a0bd9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b1_w1.npz",
+      "bytes": 11317,
+      "sha256": "e680d05f9e30002cb174d1a09041e750fb8b2e207f6ed21870652dd10dde0f40"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b1_w2.npz",
+      "bytes": 3834,
+      "sha256": "9e1b42ecae38b105ac0a44890e19f6a6c64601ef9937f4cd2c18cbd2881f8fe1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b1_w3.npz",
+      "bytes": 14197,
+      "sha256": "894868453c29b53f8d0c66d09050f38c1fac5387303691ff2d7204885d4dabe9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b1_w4.npz",
+      "bytes": 7260,
+      "sha256": "6c49a2c697b5f26a01934a57a4721eb067dfa355ecffe1fb161eedc3ac4720a8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b1_w5.npz",
+      "bytes": 11695,
+      "sha256": "7e46493992675a5346d72740ac769f31d51ad0e0eef8d8c9ad2a6584e7d1d0d9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b1_w6.npz",
+      "bytes": 3318,
+      "sha256": "c9b35c9556e28233eaf40082afc726b7d0b045b6b52a516dbbd741afe1c61655"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b1_w7.npz",
+      "bytes": 13889,
+      "sha256": "803284ec6c7a398a5590c5ba2162d331ed2acec2855e8f7aaba5859d5f442f81"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b2_w0.npz",
+      "bytes": 1966,
+      "sha256": "97ae7794535ddb77511d55d935f3d4d0781cbd8fee0b7b14f0184ff06432b124"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b2_w1.npz",
+      "bytes": 3703,
+      "sha256": "82c14f7244dce03613ab7181fa0fb93264543ab236b3745a159c4cce779ec34c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b2_w2.npz",
+      "bytes": 3465,
+      "sha256": "d9b21141717d85d22af41e50c449c8d083830a83609b920217100bcd3cd31cbe"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b2_w3.npz",
+      "bytes": 10702,
+      "sha256": "7505863b31f6ab8104fd390204aacea02cf5943222f832c3bb03ec65ff7acdd3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b2_w4.npz",
+      "bytes": 1832,
+      "sha256": "51dcb20834438877cfaf8b060073a937a0ead95fa41c8cd46762582299c6ff06"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b2_w5.npz",
+      "bytes": 3618,
+      "sha256": "c09e157f36562895839a3cf884243b47d5f2cb06afdf1ad4c53385ec8e50bd76"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b2_w6.npz",
+      "bytes": 3160,
+      "sha256": "41ee484bb564f4dbd7a03951fee584846e2564ba9e079fc5033cb250cc9eebd4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b2_w7.npz",
+      "bytes": 11687,
+      "sha256": "1ff91badcbedcd40a4dce4648121fc7cbeb699e6248bfc842d79d55dc6f47cf3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b3_w0.npz",
+      "bytes": 2004,
+      "sha256": "6ca7109e66af621f82c1a05480c7c64579c9804799d8db7dd94eefe840b0726f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b3_w1.npz",
+      "bytes": 9512,
+      "sha256": "faafc1d1269898aadcace84489a5d65a4660c807d83bd6b0fcd308bfcf77c9f6"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b3_w2.npz",
+      "bytes": 3706,
+      "sha256": "d29ff2fc735e5178dbc232d2dbe98f4499dacef5ed2114a80fc52e68f82a997c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b3_w3.npz",
+      "bytes": 13194,
+      "sha256": "3bbf9d58dccf73bb4d08bfd0b1b1b54885ae7aef956c63ba3784b48ae6e32070"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b3_w4.npz",
+      "bytes": 1739,
+      "sha256": "dde7bcd06a3f204f9342bfd378d6d250e35f1adc91ebf6e12c22af0546c868a0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b3_w5.npz",
+      "bytes": 9818,
+      "sha256": "882ce1580f77a5eeb832cba6d80990862c3a0cc016a99a9a7c903dca15fe2933"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b3_w6.npz",
+      "bytes": 3686,
+      "sha256": "ed72d2beb441111ccabc39114783df1156fee77d4a79c8bc7b8bf29f9447ed0a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b3_w7.npz",
+      "bytes": 13272,
+      "sha256": "1bed761883edb97e243c2ecc7af542d1285798b47c93e5ec2971641934802184"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b4_w0.npz",
+      "bytes": 6225,
+      "sha256": "b70684111ea15b17d427afed00c32bff5976beee670c5d1d26b97969b145532e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b4_w1.npz",
+      "bytes": 6093,
+      "sha256": "615ffb2693e769f9b5c7e3c33154fc14cb49c2b9ff7914d653e9c1d84bf8994a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b4_w2.npz",
+      "bytes": 3066,
+      "sha256": "3fc41c1df4c86aabcf65701e54c506803e0d569285303ce8fc65cc11cb6b84e9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b4_w3.npz",
+      "bytes": 7403,
+      "sha256": "4149f5459fa7c8ed476f818c265ac49b9866e91974b6ae5a00ef5c87b90568dd"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b4_w4.npz",
+      "bytes": 7164,
+      "sha256": "2654ab3999d7bc2daa37e6c247703ff27e89a680dd4927808cbd1319206b5c56"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b4_w5.npz",
+      "bytes": 6616,
+      "sha256": "6111b70cfe646bd090f79e262615e89b3483f2175a2bb45156a8baa436dcf555"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b4_w6.npz",
+      "bytes": 3278,
+      "sha256": "562c9b659d89c55337d613bfaa52e547fbf25e16c7c8befb12296aa883a0d391"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b4_w7.npz",
+      "bytes": 5769,
+      "sha256": "d19b5dff4d771fcc124a5320a546eed194c8590546cb984fd3852d8fa1167b84"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b5_w0.npz",
+      "bytes": 5726,
+      "sha256": "e308af7b14f06cd53cd7e57988dc4ae224d990b29b8cba3f64c1a5de1427be80"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b5_w1.npz",
+      "bytes": 3730,
+      "sha256": "ff10158c74237ba78b92738823aa1bf39a0831e7072e10ea74c35e92283b8191"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b5_w2.npz",
+      "bytes": 3337,
+      "sha256": "8fcf269163b6fc5b590d333f0521aabca71ac794f46124581f4ad91640cea9a1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b5_w3.npz",
+      "bytes": 14543,
+      "sha256": "d0e6ea60031bfc1f0ba570258557303978d86f97426e894c92625acb6afe1b0c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b5_w4.npz",
+      "bytes": 7854,
+      "sha256": "0e0e8b104f9e778eea0f910ca412b82b289ab5841fb58136ee514b8ab19519ae"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b5_w5.npz",
+      "bytes": 3464,
+      "sha256": "650a364ac91d17661ba017efca76c207582d4aa21beab67d12f816c36e3df37f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b5_w6.npz",
+      "bytes": 3166,
+      "sha256": "1a50a99e33385e171799907ed4c468209c5b7341ad32fecc9cd7531b816bfc97"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b5_w7.npz",
+      "bytes": 15455,
+      "sha256": "27e1c7feae664f49e32e7e630641311fce1cc56246e41da2a76523319d3eb05a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b6_w0.npz",
+      "bytes": 2032,
+      "sha256": "bb4d8c0fc3554e1a74de7b89ac0e99a1e32adb53594380a03eb8f2b05c1c1f2b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b6_w1.npz",
+      "bytes": 3867,
+      "sha256": "7fe1281141805f651a77811fda17adde3ee408af47d3d5d9c46b7c06fbd6804d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b6_w2.npz",
+      "bytes": 3320,
+      "sha256": "7f941b6f6d497dc047f7f473efa8d0d53c767ddea045a4677cfcd6d60cfb3f5b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b6_w3.npz",
+      "bytes": 5920,
+      "sha256": "910efd4bc70ffc33ae1996b3fda4bf9e8c1a11f8b70158b6754a78333c32d403"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b6_w4.npz",
+      "bytes": 2174,
+      "sha256": "babbd81c619211d97eb9f9345eac5ee65864deeeb10b8e57bb39b333b2a7d3c0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b6_w5.npz",
+      "bytes": 3832,
+      "sha256": "2e6d64abf2379b003cd06b8b1323962d9d352bc79ed7a6780bd352573d4e59dc"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b6_w6.npz",
+      "bytes": 3168,
+      "sha256": "51878a9572c7f5cc43bbd7da0903ae9b94f5b2c104a243ef15e48167716569db"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b6_w7.npz",
+      "bytes": 12072,
+      "sha256": "11c894b22a853df2212e8877cf07c907216fc61d1a1030b42741fcc631618833"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b7_w0.npz",
+      "bytes": 2011,
+      "sha256": "7b8de55b751f97dcf04d0521a9c0950d64d4c43743d3d0031a23c69b3001f5ed"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b7_w1.npz",
+      "bytes": 5611,
+      "sha256": "adb4ce4e6b6621f4735a9c7921e1daeae146ee8adb452f61e50268841fda3441"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b7_w2.npz",
+      "bytes": 3673,
+      "sha256": "930f3c719f29227cc50bf32f403aaa013c4485a3acb7f4fc2056b6b67eb27c72"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b7_w3.npz",
+      "bytes": 14731,
+      "sha256": "9dd59b4090d54dd13f04f8e26b4be49098f0ab5db87d94a00412c08a68adc437"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b7_w4.npz",
+      "bytes": 2007,
+      "sha256": "d7139801f3652720383ba8f437396c6ad3d2359f5d67d88b94e06b7d9d1d8ae1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b7_w5.npz",
+      "bytes": 4958,
+      "sha256": "536163ced6bd6287bbbee263cdeaa50b05815994647bbadfca8dbda1fa7c1527"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b7_w6.npz",
+      "bytes": 3259,
+      "sha256": "720cc39c3d0dd53b384022ed4271e3ed524a98333bc25232bb8eee47a695376e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r0_b7_w7.npz",
+      "bytes": 15423,
+      "sha256": "54bc3323ed932fbab7d6c0120025d03d9501acc813a3f746cfd1248c441f2d77"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b0_w0.npz",
+      "bytes": 15891,
+      "sha256": "27525b91e7d26e2786b3514a3c51329fe29b92dd0fa298b9dade9c1a33915021"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b0_w1.npz",
+      "bytes": 5796,
+      "sha256": "2b58cf99e6afca63162986da7428da789ebdfd83e740d441059a2b7ac4bf2a36"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b0_w2.npz",
+      "bytes": 3214,
+      "sha256": "b1fad71244d405b5ed6b59368cdabd9d1a537ed525dcd480b4be56580fa9ff89"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b0_w3.npz",
+      "bytes": 12325,
+      "sha256": "d6c685e375d01f606059f863be720c38950ccb93ceb6e274f1d14489bb448496"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b0_w4.npz",
+      "bytes": 15369,
+      "sha256": "eb85bb12d7ba412415c559610cd2546c03103f173fddd472081411d8a5db9878"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b0_w5.npz",
+      "bytes": 6568,
+      "sha256": "8882f07b1edcb25c62168cc18345f0f7e61d09d3b43ba43c8744ba1770ff6f64"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b0_w6.npz",
+      "bytes": 3279,
+      "sha256": "01a31b64688cbf15247cf69319f9caac3921df5d9e2615f48e90fd457e7434bc"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b0_w7.npz",
+      "bytes": 5631,
+      "sha256": "d3af7f0cc8a4184c95a6768aad67f01799c07716fbe94959685cf7b36aa9a17b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b1_w0.npz",
+      "bytes": 7847,
+      "sha256": "fc62532df36b1eb755cf95ae1601227e06e70f18857a62bcab19555a58fc280d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b1_w1.npz",
+      "bytes": 2883,
+      "sha256": "d0b7dc563837dcdee74a3492431ec7e2c3755e46375564d25f6d9d766180c3b7"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b1_w2.npz",
+      "bytes": 3221,
+      "sha256": "809d1177fdda9c93cfa0b859c2f5a1692c98ad0fd4b9ee7dcbea6257ebeaad81"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b1_w3.npz",
+      "bytes": 13886,
+      "sha256": "61e024433b41c90e945f649fdf167af0775769c85aceecfa04e20ba5dc8b39e8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b1_w4.npz",
+      "bytes": 7311,
+      "sha256": "1141b59bfe9b700374be988aee9afa7816db8b0a973a9b518e7dab7b833bb160"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b1_w5.npz",
+      "bytes": 2995,
+      "sha256": "8370fb4c34f80ec1434f1fa1ac5d685a4fc8ab1180001220bbd41f05a404ccaf"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b1_w6.npz",
+      "bytes": 3544,
+      "sha256": "c46268093ab3af6c8ac825f38aca5c3707fff592f9c20c51d8096e0aa8def25a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b1_w7.npz",
+      "bytes": 16035,
+      "sha256": "62d8cacdbe5cff8184e12d8f86a0a3a398434fa6c49da51efcd8b61c352539cb"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b2_w0.npz",
+      "bytes": 15161,
+      "sha256": "b6b393bc7975c77648ecfbc6d86e62f9931f8ce66ffb00b26dd978b9959f336a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b2_w1.npz",
+      "bytes": 11473,
+      "sha256": "5ee01d636f8a54d91d65208ab47f0ae1b1cd4df6f36e1da3f5bd635fdca8498f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b2_w2.npz",
+      "bytes": 2778,
+      "sha256": "37ec29f771a7970da3dfc71867e404524a14d7f0a8d1691c260737bb19dbc5a8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b2_w3.npz",
+      "bytes": 5581,
+      "sha256": "24deef04dd3e842ae22027d1fdb3585ed8ba29e694f6fe271184cb719609d968"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b2_w4.npz",
+      "bytes": 15214,
+      "sha256": "3dcf50ed42003690ccd26013e0d61e1d0999d5e25a4da81f4df394ad43912912"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b2_w5.npz",
+      "bytes": 6475,
+      "sha256": "32efe42afb604ae4aa5c883273af776c55cf7ee470f9b8f53f87cad1a678de9d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b2_w6.npz",
+      "bytes": 2533,
+      "sha256": "8be31ea293c484b373fe2459a1dc7e1783d77ff84a67ffc36a3c6f85ee1a8012"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b2_w7.npz",
+      "bytes": 10781,
+      "sha256": "43076a0c2990cd0cf695e81e31e942cfdfbb928a58e8c78d9a91b368b63c37ba"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b3_w0.npz",
+      "bytes": 5225,
+      "sha256": "09b98e994d8997adb312423c020feff3a1d12bd5ba5c31d4013ad14c427cbf90"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b3_w1.npz",
+      "bytes": 5600,
+      "sha256": "07b1fdb3767a2358d0fc719ebadc9341ba86c99d43f78b74c62a4f86c84cc080"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b3_w2.npz",
+      "bytes": 3647,
+      "sha256": "bb729965baa91f8d0b151363254898731856845470435f41f2205e0ebbd0ca26"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b3_w3.npz",
+      "bytes": 16294,
+      "sha256": "7fe6d5c29f0c8e5101a8644bc6ca215576207aed392749130f786b43b85f8fd3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b3_w4.npz",
+      "bytes": 4743,
+      "sha256": "e0705316c68d12f35d97c0c5036149bb7cd6cc2760b19619065fed6928aa485a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b3_w5.npz",
+      "bytes": 5118,
+      "sha256": "76d6816460e6ff58bfe760f347c167ed8fe2a035a881716559bf12b11ddbe542"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b3_w6.npz",
+      "bytes": 3427,
+      "sha256": "de6a995845397fdceda9e000a7be7e4d05d2a0ae463b8944c1546182212da355"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b3_w7.npz",
+      "bytes": 14063,
+      "sha256": "40c9fa18a3c36207c3e627fd86b9e63e1a4ca302dd37215c1f1395a336d6fb9a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b4_w0.npz",
+      "bytes": 2848,
+      "sha256": "2bc99ee5367bbfd8d2cc4ea8b69a39f136bef4fa312d78a3852ba4c516a4319c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b4_w1.npz",
+      "bytes": 8969,
+      "sha256": "aa04b581d036313aed66c5a3c92aa3ae0bf76317ec7120a7b656c80b7117d051"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b4_w2.npz",
+      "bytes": 4695,
+      "sha256": "9a91d81c2dd97220079b1194cce8225062ae977cd0998c1613ba4800f10ae8b5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b4_w3.npz",
+      "bytes": 11783,
+      "sha256": "2ceead28e326dd9a98efa9bc41206731e61cc013834ae629e4a92bd9e49027bd"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b4_w4.npz",
+      "bytes": 1500,
+      "sha256": "4fcfbe2050647076c6c4dfdb6d49d9bfa39bec63aabe2cffa12c0faea3167199"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b4_w5.npz",
+      "bytes": 9707,
+      "sha256": "fbca0143710c302a7cb7a1b2110f726f0c727f120a0393e8507c3f9cad73d0bc"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b4_w6.npz",
+      "bytes": 3785,
+      "sha256": "ab84f33f89e119668745e32a10744c3f8a427cb7063a0d5199ff9eccca5a9c22"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b4_w7.npz",
+      "bytes": 5414,
+      "sha256": "8acf1e99b31468ddfbbdca50b2d933315df5e720ada7f49b723b0043bcceb803"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b5_w0.npz",
+      "bytes": 15139,
+      "sha256": "18f0c4aba8191043a685dba727494bbed4db7a0764c6503ce3419ceab9bfef8b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b5_w1.npz",
+      "bytes": 8068,
+      "sha256": "d8374ed36106cf49d92d27949d71db5fb66fe77c43d66b2e9ccbab6a3abe2a4c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b5_w2.npz",
+      "bytes": 3375,
+      "sha256": "482d58daa043537b3df391e352d4cb711998e7ca5c7576eee68de9ce14b25685"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b5_w3.npz",
+      "bytes": 15434,
+      "sha256": "1ed43e3b7bbdcb58a0f228b91d35149a763441a99ef3a3a12e31cb39c7a0e3ff"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b5_w4.npz",
+      "bytes": 15628,
+      "sha256": "1d9ccb3dfb1754554475fcf9c01c5793f951c885147fa723e48df8d686791ce4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b5_w5.npz",
+      "bytes": 9279,
+      "sha256": "2590512f21f4af994a02aa96a5bfbd0486446a1722edcb3974a0463e975a5e84"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b5_w6.npz",
+      "bytes": 3193,
+      "sha256": "8b371805cc981a5ff628bea027fb9da95f8b08f69e818c8ebc6ba35263d49474"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b5_w7.npz",
+      "bytes": 15657,
+      "sha256": "6dda4993d93d85db34cefc3e5d03d27f87dc44625f58d97d7dcc18275facfe7a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b6_w0.npz",
+      "bytes": 7952,
+      "sha256": "dc3e9eabbf7bc3a0988daae3c51e225388d565a177a7202c7927c2b4e6307b23"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b6_w1.npz",
+      "bytes": 1792,
+      "sha256": "eed8e23c75e18e41489a94d38ae48e1efea75e90b2ed8dbe5ba16ed2369b2ad2"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b6_w2.npz",
+      "bytes": 3968,
+      "sha256": "30d017999544485f02e9dcd64c292bea3590c7213da3db52ee335a410e5e1abd"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b6_w3.npz",
+      "bytes": 11399,
+      "sha256": "d7c8cf2766b99bf7b777a50c9fa0642810c5e0d493bba9843b66c743c50e293e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b6_w4.npz",
+      "bytes": 7954,
+      "sha256": "e0e46d97a9978798fea2a3bcd44060488af1ba1183acf797756b69a4398f1c39"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b6_w5.npz",
+      "bytes": 1938,
+      "sha256": "e1bc226cbb1d075698c953f448d19e72e8cea44a599fbe0afc7381577eeca626"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b6_w6.npz",
+      "bytes": 4847,
+      "sha256": "89c1776f6b95d9e7ac2b4b8ddc43c150fd04e5927c34f9b3c33847ae1948ad7b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b6_w7.npz",
+      "bytes": 5535,
+      "sha256": "f2cf5c783b50b9ead0c732120a6d486054a7996dc5989a3b652dec74a5b17d9b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b7_w0.npz",
+      "bytes": 15177,
+      "sha256": "5416e9b982aa1414e29b74faba61b688a6bb7f0da3c8ac2c8874831493feba17"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b7_w1.npz",
+      "bytes": 10959,
+      "sha256": "4aa4dc97e3a043f37b370747459e4520b83987a195ab5f1b84f83f863b6bee5e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b7_w2.npz",
+      "bytes": 3794,
+      "sha256": "a33d718e4deb596fabf88aa3dbb343afd91816d7b9aa35780a84b33cf2b68558"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b7_w3.npz",
+      "bytes": 15623,
+      "sha256": "25dfafbcbae6ce61693109b34aef47da09c2577707f4cd94e6f481ef316bb381"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b7_w4.npz",
+      "bytes": 15157,
+      "sha256": "97a301c93d8aadadb609d8193d78ff85a3d3cbbaf292a53e912ab6197584462d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b7_w5.npz",
+      "bytes": 11920,
+      "sha256": "5feb7b46c3362273b825b696cfdccdc6cf8c5ac591c8f576ea5c94af9851f8e1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b7_w6.npz",
+      "bytes": 3510,
+      "sha256": "88cbe766fedeceb9c159d5983e21c59e1e4792af73751d0799f27ea09628e36a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r1_b7_w7.npz",
+      "bytes": 15878,
+      "sha256": "954ba16bbfd5a7cbe441fe0f906469b60b680f1d905b7fc43cbcf9123d4c19a1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b0_w0.npz",
+      "bytes": 7623,
+      "sha256": "cf119f0dec77c5cdb1b4b45d1c8f4296b65c6ec3a409dead6c42afa19d7aa452"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b0_w1.npz",
+      "bytes": 1906,
+      "sha256": "0992cbd450d886465414c9ce74a0e4a3b1e43c4c19dd47535de207512c3257c6"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b0_w2.npz",
+      "bytes": 7764,
+      "sha256": "6d2c9ca6ac8678c29b4b9a96ede2a5f12062ebc45ccabae02549609791df7a84"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b0_w3.npz",
+      "bytes": 11122,
+      "sha256": "1c0a0a65836a32885c9af124a615395987e9cd62281db77e85815064e6ab5ec8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b0_w4.npz",
+      "bytes": 7776,
+      "sha256": "716941f2d6629a586af3b222ab48b1ddb379ab74cbc7ab4b5e0b2abf3d8dd994"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b0_w5.npz",
+      "bytes": 3049,
+      "sha256": "40bfabff84239ca4f8db751f9fbcca8ed99c48d8378ec5010692739fd8fb563a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b0_w6.npz",
+      "bytes": 2907,
+      "sha256": "551cba51ded61224619faa5270d6846caa8dd87ec4f15e93eec5855693873fa5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b0_w7.npz",
+      "bytes": 13482,
+      "sha256": "b2888dc00361b824dccd160c2d96c720924dc3594789857b8c07cf64f43dcabc"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b1_w0.npz",
+      "bytes": 1403,
+      "sha256": "4707b2943cd8af514583dbac8146ef69b0996468dba14f03c44dbc8365132994"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b1_w1.npz",
+      "bytes": 9307,
+      "sha256": "1a3cf06b0f8a2ead19162a0f06ee2d55822a9d8132cfb0560290a0b1faddcaf1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b1_w2.npz",
+      "bytes": 4101,
+      "sha256": "e2ebd79350a138fa073a245b837e5312960928ee83cd5b215dbda7b504b68e55"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b1_w3.npz",
+      "bytes": 13495,
+      "sha256": "bef9845d04c8afdedccf49b5574ea83e2728407db686d5ea9c3cbd7ec8284606"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b1_w4.npz",
+      "bytes": 1546,
+      "sha256": "41cab1c6a618d35f330f0db0603c4bd1247e54d903ff76abc68562203061afab"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b1_w5.npz",
+      "bytes": 9950,
+      "sha256": "4cea1dcabe473acf31e28cbae5b6df872105411ad204473bcca64c55e0ffbd35"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b1_w6.npz",
+      "bytes": 4164,
+      "sha256": "90b104462da44f8f832fcaa2a403e16c148475463c288a74f1cab7ec87122de2"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b1_w7.npz",
+      "bytes": 16062,
+      "sha256": "95943e309859deb65c72355dc1868d1e1944cecec4f876baee6ab5022e986ef7"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b2_w0.npz",
+      "bytes": 8207,
+      "sha256": "10f8253093ddfc08cfd44ab593ea95676e2f331c77c9c30f086d85c7db6ed0f1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b2_w1.npz",
+      "bytes": 3068,
+      "sha256": "850d6f4ae391e31328b6f201e229d7681aadd6ba47dc8c20d887b61645275ebc"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b2_w2.npz",
+      "bytes": 2521,
+      "sha256": "a16d0d0374e01034177e64e0ee81de0ff3e938e14017c19f0c8e398c806d64a9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b2_w3.npz",
+      "bytes": 12723,
+      "sha256": "65e514cb8a333e5c9b011f1fec56971b9aabb4f11ccbc806926e7f298e993f74"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b2_w4.npz",
+      "bytes": 7433,
+      "sha256": "aa1862566bdecae45df531392c8165c85bc34ba818fce606cba49b96663ce9df"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b2_w5.npz",
+      "bytes": 2861,
+      "sha256": "43f7798ebbc765437f0f3c42c5afb4b3e64fae3cf2a76a968568cf7674a77041"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b2_w6.npz",
+      "bytes": 2220,
+      "sha256": "9902d2a036a4b53dd5e2ebf4de4920b6fa7751ca99b1a9d2ebbc2d677b6fd95d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b2_w7.npz",
+      "bytes": 11941,
+      "sha256": "f15437dd1a9b55057238f63ffed7610c2b7f50c73f3554d0f88b6e872608f5ac"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b3_w0.npz",
+      "bytes": 6718,
+      "sha256": "93ad90df1fcc8e1177176a65b968245578e22bb52245f414701627cfcac431f1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b3_w1.npz",
+      "bytes": 12089,
+      "sha256": "3279cbab99c729937be6119af66bb02e7bb21b9cc3c00807e75ea2b91a0d0748"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b3_w2.npz",
+      "bytes": 2326,
+      "sha256": "acb80730be38884accb190b63e36eec43d6689b9bc704fb7ba83dee25df74e0f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b3_w3.npz",
+      "bytes": 14348,
+      "sha256": "cfa9cc19157dd9e898a8537ee43b78306c2d522daff89482938268d04e35b057"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b3_w4.npz",
+      "bytes": 6700,
+      "sha256": "30f6653011bd720f5ec43c5f8b24523e33264f15048bfbf691bf9a7d5600f9ea"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b3_w5.npz",
+      "bytes": 9586,
+      "sha256": "c350bb587e8b5e5baf6105a4fdc18e5a7dc2efc1a0905951bda6d6248dad4653"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b3_w6.npz",
+      "bytes": 2572,
+      "sha256": "6cb3ddb1a2d16a67b59d699de3ee44ac1c4c0c441c4095df2107e2722791302c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b3_w7.npz",
+      "bytes": 14663,
+      "sha256": "90f643dda11ddae4128f6f25402c7c6101598477eb8e51cf9f1d7d50cd2099c7"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b4_w0.npz",
+      "bytes": 9410,
+      "sha256": "d412c5c9186bc055c0df64f3d407da9147e6ccb5b225a8dfd43e4826e8ea6346"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b4_w1.npz",
+      "bytes": 11100,
+      "sha256": "8bd6c667a8e7b80afaf2a031fa74e2288d61e42ed8f37e960b0af81d310e620c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b4_w2.npz",
+      "bytes": 4561,
+      "sha256": "3d1ae381a1aae96930db375ad771380ad509580b8738ed5216e7bb6a0c65663d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b4_w3.npz",
+      "bytes": 10648,
+      "sha256": "767e9c035f4f850c4b7effb1688f4418d81449dc036f95d1e84e1f476138efda"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b4_w4.npz",
+      "bytes": 9038,
+      "sha256": "994bc1bac058a862b0e937b7c93d8020d25133961138abecc70b0d1abed7f399"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b4_w5.npz",
+      "bytes": 10963,
+      "sha256": "6eb66830fde463b6f3436e26dff91d2cfbcdab2fa1d8507b43e63443720e0a17"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b4_w6.npz",
+      "bytes": 4389,
+      "sha256": "b348321763a2a2aee6d6793f885f7a2cbc54d5f878fe6b9b2b5636170b7233cb"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b4_w7.npz",
+      "bytes": 13089,
+      "sha256": "d24f26dc39d2a16f6ea9bc4e1e4a802d084ed6d0afacdc88bc527477cc7c2f30"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b5_w0.npz",
+      "bytes": 3185,
+      "sha256": "f890a48c2043e53f6f7bc31a0f2dfc6a9e0c582d7103a4c8d42f3ffd6d787b81"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b5_w1.npz",
+      "bytes": 4170,
+      "sha256": "9df05aac91b6c2608bd727f100e040f18edb39bec79a474c8ec37ae3e52f9358"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b5_w2.npz",
+      "bytes": 5357,
+      "sha256": "71923955d6f7f928eda7a0b9d0c52df6c6ced80960e95a0d4326cc795142604d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b5_w3.npz",
+      "bytes": 16283,
+      "sha256": "4c3b06efd827b8d7988a62e00dc00589f164044e9c493619dc6fc2ae444eea85"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b5_w4.npz",
+      "bytes": 3321,
+      "sha256": "337d98d69fd7bca3a8658e18e86180fbb63fca3a50737320611dd24779dbe221"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b5_w5.npz",
+      "bytes": 3962,
+      "sha256": "6bfef26b418b2f3446645bcd28ff6eb7b1fe8e1e5483ddad85eed7f5fe6c9347"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b5_w6.npz",
+      "bytes": 5486,
+      "sha256": "cd50b2b3ebeed6b3ce04324c0c9bb0a22ec6d4963ffcfcda9dea1a77f66146c0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b5_w7.npz",
+      "bytes": 16442,
+      "sha256": "faa7ea5daf000eb095a3fd397b133c81fdd9148f116cbc97a1c5b4a3090d3e64"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b6_w0.npz",
+      "bytes": 8636,
+      "sha256": "3094da73eebd7d54602965081d4c1abcf93b50e81aee2b9180d459c62727e409"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b6_w1.npz",
+      "bytes": 5041,
+      "sha256": "6d94cbbf080d8bfb2e419cd181ad49fecd7914309d66059d912cf87d9827e4f5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b6_w2.npz",
+      "bytes": 1876,
+      "sha256": "4410a6a73e48c8bcda67966e3b7b1002cf913446a101f15523c2e898b307ff52"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b6_w3.npz",
+      "bytes": 12794,
+      "sha256": "aa78b74075dac9167fcafe8b663777b55ed4622db139ee6b6717f2b7423f8bde"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b6_w4.npz",
+      "bytes": 7811,
+      "sha256": "68bff9a0bfb80430f3f6e3b909c6e7a76d59fde4a6c59182edb1655af892262c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b6_w5.npz",
+      "bytes": 5609,
+      "sha256": "07fa2ea6a2ba5c738fc199d2114ed8d23187270fcc87f9087d7481af4ec6f678"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b6_w6.npz",
+      "bytes": 2256,
+      "sha256": "a8d1eb446f643f452d4f42cfb52c96f37ee197e584ecfbf05b12e2599b084aed"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b6_w7.npz",
+      "bytes": 11977,
+      "sha256": "0d759832307905b5e42261fbbf60d25831a7051c3d87d0a7546af7f4de8da061"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b7_w0.npz",
+      "bytes": 1656,
+      "sha256": "27b602c44a44e7ad3a1bf49c35f85d0365cbbe7a590e2a8c3b01f4983dd15151"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b7_w1.npz",
+      "bytes": 15173,
+      "sha256": "8da8a0c0c021f25a95cc1d0e359d36d0078b4b0381049b15a1d930c01fcc9113"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b7_w2.npz",
+      "bytes": 3713,
+      "sha256": "1b28c08a8e62b510ff96070aae76921afdb1c1a0d4b766d32fcba17ce37afdec"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b7_w3.npz",
+      "bytes": 16148,
+      "sha256": "86bee280ca550f046ab6dbc254dd30459c3df920d89b47c62388ad31ee8e35e7"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b7_w4.npz",
+      "bytes": 1805,
+      "sha256": "8cc1abac57c7ab50d073b47f3ff97ceffd3c937abf878e824d3869e139a55e6b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b7_w5.npz",
+      "bytes": 10559,
+      "sha256": "4229fe51a0a0f5ed6dbcc34c7e49be311dc7200fd1952e116c900ed736becc7a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b7_w6.npz",
+      "bytes": 3106,
+      "sha256": "954821abe00a51939edf93c2e2ded32d262e1ef451f772768b223695b4b8a8fd"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r2_b7_w7.npz",
+      "bytes": 16406,
+      "sha256": "f149c49afb77e062e0f960d56153fd232f9cea093efa82ab88103f83fc7340f0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b0_w0.npz",
+      "bytes": 5406,
+      "sha256": "8c313688008e7ecb71ac93a8b1a183faaa7b17b1edfa439a4958485d5f14666d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b0_w1.npz",
+      "bytes": 3230,
+      "sha256": "0f83e4fd8fe189bb5b4c1622a9d682985f4dca8398579b32a4016306598d1a67"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b0_w2.npz",
+      "bytes": 7461,
+      "sha256": "3834558b8322beca3bd4277818627f6c3cf3b67a15ff6c3327d55d3e329ddb15"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b0_w3.npz",
+      "bytes": 11093,
+      "sha256": "b1d5bebeebbde3a24681d2aa6dae80f58f76fe3a8f6aca838648fd3e1510ec9a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b0_w4.npz",
+      "bytes": 5314,
+      "sha256": "080492f4d5287bf7e47160b2e5746ed32c6d9d7163cdbaa8e3bf23938334d1dd"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b0_w5.npz",
+      "bytes": 3143,
+      "sha256": "f35c9bddd9c1251d988413b2f1a64042dd6f4ff70d8401c0ef8c84892c7a9cb5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b0_w6.npz",
+      "bytes": 2868,
+      "sha256": "5e165a620006a87be95e5fd1568face73dc5ecb5e4d4184b081191f8c0634e9e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b0_w7.npz",
+      "bytes": 12284,
+      "sha256": "ac479616e2951dad4b17b008e057b7e6a96ba1761017f064b22974e5544b23d5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b1_w0.npz",
+      "bytes": 15848,
+      "sha256": "3417c7208b7879aad70a422320472fd9761638b6f04a39e252b9a6a9e5174ead"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b1_w1.npz",
+      "bytes": 10406,
+      "sha256": "5dfa10d3c3f2c98798a18e1a72210ca92324a43bc1891b4d1512f2cd9bca3cdb"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b1_w2.npz",
+      "bytes": 3102,
+      "sha256": "5c8dc505a8cf3ddde7bb606424e05a16bebfac2c1a5ba30a6ee2daf94dc18831"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b1_w3.npz",
+      "bytes": 14894,
+      "sha256": "d19bce58df9dd05a16e1c23b31e1e215e927bfbe56128afa986ce3d184d64125"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b1_w4.npz",
+      "bytes": 15544,
+      "sha256": "22106fd95ee618c886938edd3ae801746a1d238949fc701326ebe3521765e59a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b1_w5.npz",
+      "bytes": 10233,
+      "sha256": "eb4bfb785584450efb40c029a4372d0b5b5870d595574db69ace96d3399ee0d9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b1_w6.npz",
+      "bytes": 3267,
+      "sha256": "d7652281dc0cca3ebe1f0dbf4fb56ac35fde9448a3dd337b64bff07d02be2cea"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b1_w7.npz",
+      "bytes": 16388,
+      "sha256": "1f15ecd1cc06374e7f3c01df4804bf7d190a2d0dec0ce97bf0feb98115006fef"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b2_w0.npz",
+      "bytes": 5525,
+      "sha256": "d2654d2ec1d3d03d31e24bdb551fb99fd0729aec4c0755d6764b547c1f91bdd0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b2_w1.npz",
+      "bytes": 2866,
+      "sha256": "51d2b0dbcbe7a409af74043b949cea1a1bd536ae3ceaf0954c2f017e924e4a8e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b2_w2.npz",
+      "bytes": 1389,
+      "sha256": "dfb03454f05c379e3f42f723785b0173e93495972638abbd7002090421b4236c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b2_w3.npz",
+      "bytes": 11179,
+      "sha256": "75a5a06deb5dffadc38ffb3a73750c572158364f0501baebdfb3b85b0e931097"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b2_w4.npz",
+      "bytes": 5497,
+      "sha256": "58b3480d0a8b3e7aaca324cbfccf2cd460dfc9954e1f6395d9fb260f2c567034"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b2_w5.npz",
+      "bytes": 3264,
+      "sha256": "61bbaa60bc2e7f8e6f48846e88570676996abfddd9486f8592aee5587378a7fe"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b2_w6.npz",
+      "bytes": 1534,
+      "sha256": "550762d966bbdc7a609780364994335079868e65760c92b8dba2d6139470b258"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b2_w7.npz",
+      "bytes": 13001,
+      "sha256": "9e9c91bbbd3571e7530f49f199e6ac8f444f8748768e8c610f45863a593085fe"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b3_w0.npz",
+      "bytes": 6235,
+      "sha256": "c36fb9662d5451b1149236e2d6d6957ed07b1ceff94cfee57e74b6e15753b503"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b3_w1.npz",
+      "bytes": 5468,
+      "sha256": "f1f84b82985a84f63746021de66f0459518ca633f0b9fe3b32188e3786293be8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b3_w2.npz",
+      "bytes": 3980,
+      "sha256": "e576e2b06e271ced9d37145d8f4eb79418bd7570ad6ad2b02226a72a80530831"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b3_w3.npz",
+      "bytes": 13493,
+      "sha256": "70e4608269834babb37508d9de2b558dc2e1eb3c5c4ab018a58b99abcfd2c511"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b3_w4.npz",
+      "bytes": 5318,
+      "sha256": "5b7f03968ced5bd66452eda6172d137156120e74e8163f2d61ad9bcbe894fc88"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b3_w5.npz",
+      "bytes": 5033,
+      "sha256": "625e8f918efdde8e3806bfbeb1cf52c79e8a5fcc2369add37d2787b00e224f42"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b3_w6.npz",
+      "bytes": 4175,
+      "sha256": "4cb4a51baa491bc91003996c4214624f7b639597ab9e251575fac0bd1e2eb431"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b3_w7.npz",
+      "bytes": 16429,
+      "sha256": "7381f650079b0d24108c2a40e3c0594ec50be1734910652fc143fd00e17b093e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b4_w0.npz",
+      "bytes": 3925,
+      "sha256": "1f7a76a3ea7ed583882cf76d185d0d1bf45592177667a7fd4df2fd4d90e6d1a7"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b4_w1.npz",
+      "bytes": 3715,
+      "sha256": "4694dff026e6a3f879dd617f29b9aa454d5388e9fc6bafd4539d969838005a2e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b4_w2.npz",
+      "bytes": 585,
+      "sha256": "840c21ed0e97019d3d05dece5280e6d779519e2cc8e9908636353297ef78f866"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b4_w3.npz",
+      "bytes": 8611,
+      "sha256": "ec60fb36a82ee7b994f98aa7608eb7be55631942ec663aa8737b005f62cef361"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b4_w4.npz",
+      "bytes": 3649,
+      "sha256": "573e43c166500a322bb8221314e14e6577113fc5b42faf7213f04182338ab444"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b4_w5.npz",
+      "bytes": 4128,
+      "sha256": "73e8a05105c7eda0f10b267978ec0092d90f5bcb07e5e528c9135db0d352f017"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b4_w6.npz",
+      "bytes": 585,
+      "sha256": "df6f6adc57f891d6dc9f83299ceb98712e3e5c4b920f6268455761ed8b46796c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b4_w7.npz",
+      "bytes": 11708,
+      "sha256": "0fbd215d005aba58062dc2d0b9dedd0b1038b6045f3da431bff44fe4f16987b8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b5_w0.npz",
+      "bytes": 6263,
+      "sha256": "029e4894a2b16708218b9fd01249641db04b1e37b140fc9deedf688acebe4bb3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b5_w1.npz",
+      "bytes": 10261,
+      "sha256": "577591df495cfa2aef1c1efd359d570471a876e08db0a45eb0711d08b478e0c4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b5_w2.npz",
+      "bytes": 3617,
+      "sha256": "c4c32343b6ad8d3d4d7c4aa6d2ea54d78beafc2918029cb431d0bcd140bda242"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b5_w3.npz",
+      "bytes": 16435,
+      "sha256": "92aebd93de80b6666a759e6f0556952b7e787122daa9f7d5296fc9978e57d045"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b5_w4.npz",
+      "bytes": 2649,
+      "sha256": "c486fe1258aea823c9b824df6460c8edceda7cd069f72e993289e32fb0ecc1bd"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b5_w5.npz",
+      "bytes": 11357,
+      "sha256": "6bdfcef3d9f1d45ddcb8f026df67fe97b650c59342ea37bfdd3254e4c830eeb9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b5_w6.npz",
+      "bytes": 4284,
+      "sha256": "4fab5e74cd74cbcf70bd64a49bbab3f47bbd10952b90fe1af02ffb36cb809506"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b5_w7.npz",
+      "bytes": 16445,
+      "sha256": "34113203bf99dccf162c5bc23d1bd1865d6377c6c49a447be15aafcacbce1a43"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b6_w0.npz",
+      "bytes": 8041,
+      "sha256": "6f0f0a535b65b885d65b82fb3a2c97a4d46fd62cb5a9b31e2f33b09594d38cde"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b6_w1.npz",
+      "bytes": 5413,
+      "sha256": "06af299ac781c1c0e1fe2d06d41b337e6627ed0b90e0e7628218e23f2b4908fd"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b6_w2.npz",
+      "bytes": 5091,
+      "sha256": "c987ae9b6338e0de908cec675e2008d7bc625b4516212d54f26f14f0936df771"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b6_w3.npz",
+      "bytes": 12732,
+      "sha256": "3ed18a883654d67e0939797307224759248e0297244740b6de5faacaa9869bc6"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b6_w4.npz",
+      "bytes": 7866,
+      "sha256": "e4e535333c9724998175f0264457e0256e32acbf9e510f02d1744d8000a07d03"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b6_w5.npz",
+      "bytes": 4734,
+      "sha256": "a70ee3854c906ffc1f9cc6c6a565b85c8d0178570433ed2594bdfc093e79c71e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b6_w6.npz",
+      "bytes": 5628,
+      "sha256": "0787e21106a22a6f5b85a4c81ad6606e0f4084074f4eb1ae8010692cc71bce5a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b6_w7.npz",
+      "bytes": 7400,
+      "sha256": "054cadf5ce11ea303db60241808ec698d5f64248d2d8f2257e3220560391c895"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b7_w0.npz",
+      "bytes": 11119,
+      "sha256": "267174ecdec08cde6916f38666251f951ccdf47a69a4a94fceeb817002e37ee0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b7_w1.npz",
+      "bytes": 5188,
+      "sha256": "4812dcc2d963041dc25981c6be1409af0ba5622aca6b0d6375313c8cda8a55b0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b7_w2.npz",
+      "bytes": 4678,
+      "sha256": "2394579c2b67c7df1bc087caba9ff270190854247298237f89fc87a6638cc08c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b7_w3.npz",
+      "bytes": 15443,
+      "sha256": "c34f640b448f441b9bc891ddd2017487503076142c6e0b77b7467be1c8ea14c6"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b7_w4.npz",
+      "bytes": 10385,
+      "sha256": "de4b0ae40bb799eb24441e3336ae4bce5e92886166d5be1afe0ed4c00167590f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b7_w5.npz",
+      "bytes": 5542,
+      "sha256": "3b72f8ea3701b2cf0791915379ac6a8966af82ecdf34816bb9f9a0120204ef33"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b7_w6.npz",
+      "bytes": 4618,
+      "sha256": "f4b7753de46384bb8bb536b47ec4fa287c1e32ffa43b92daa4a221ab693bff91"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/curriculum_r3_b7_w7.npz",
+      "bytes": 16282,
+      "sha256": "8c68f86bfd03aaca1e20f33786036b170f9fb918a113e0adeeb0463da559e41e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_2029653601_LEFT.npz",
+      "bytes": 6515,
+      "sha256": "7e2f5b39efed7b5b0e736ecb18861d67d93bea607909aca86f93f8a3597d4165"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_2029653602_RIGHT.npz",
+      "bytes": 5846,
+      "sha256": "8b730f9ae046009f565631c135532d4263520cc46c6a03b386f71efa9bf9db7b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_2029654801_LEFT.npz",
+      "bytes": 6617,
+      "sha256": "f0945429d3fcc4dfb803fc73acfff71b89229e9fd9ff66a4d9827cff52774ad5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_2029654802_RIGHT.npz",
+      "bytes": 8150,
+      "sha256": "349fcc79c16d6fd262aa29cedc3c3723a9a9a920349e988b0f07aa48c68bc27b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_4m_2029653601_LEFT.npz",
+      "bytes": 10193,
+      "sha256": "2e5f6dd5b92e11dd142c53c659c07baf41207d868cf1aa390a03b0894853b13a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_4m_2029654802_RIGHT.npz",
+      "bytes": 7756,
+      "sha256": "4da991aa2cead5f81c027c4bdf0921e9240894c9ec278f4639173377348c5548"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_5m_2029653601_LEFT.npz",
+      "bytes": 9519,
+      "sha256": "a860cb36a7e71bc81fbf188a18a298de106783e41f0dce78c97cbd4610f18e99"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_5m_2029654802_RIGHT.npz",
+      "bytes": 14689,
+      "sha256": "e5d1fc6ef64e76538b130d80b0b70ffcb001bc08994dd42c0b0fe7524bf4abea"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_000.npz",
+      "bytes": 3240,
+      "sha256": "8e1c99ecec5c6db688bff63116347d77757b98d80fc0c43cb40e473eeab66041"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_001.npz",
+      "bytes": 3183,
+      "sha256": "c62b1df56f09f01b2e5579bbe0263d6a27f2debecb398395a05f942285120a6a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_002.npz",
+      "bytes": 3470,
+      "sha256": "445becc211c15dbfd078dc7ec5083db02adf1148dc8aaac094991cb4e68c1208"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_010.npz",
+      "bytes": 3365,
+      "sha256": "8aedba8de43d2a323b9baaadfefa04cfb9db02d05c963cdbe5d43173f683633b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_011.npz",
+      "bytes": 2944,
+      "sha256": "9d19e36018c60fbafc9765689198cd42b310a7269c2c7dc5d02fcd894dac5e44"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_012.npz",
+      "bytes": 3338,
+      "sha256": "7bf8874bae267e5b9f552b1acb4308f14041b9ccfae89f16f5d1ba415c5d29dc"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_020.npz",
+      "bytes": 3239,
+      "sha256": "9912f001b1f91bffa32f00d4970ae3aba2c889ba7ab6e436324c70ed918f5b29"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_021.npz",
+      "bytes": 3348,
+      "sha256": "7e4600ea7dcf0f2e4517b74882cf4016904450c5776ed0377b0e1284ca9f3d57"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_022.npz",
+      "bytes": 3410,
+      "sha256": "27ce7f3f21ab5cd1f2069fb777b92899ae7be9503bc99c10e2832d04815edbe3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_100.npz",
+      "bytes": 3169,
+      "sha256": "00f78174186a853a471386d0adbe5256c2771dfede13aa426dd5902d7dadeded"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_101.npz",
+      "bytes": 3296,
+      "sha256": "5964a82ca78bc8a1a7066b6ee8facccd3206326052b654648b688153dc57e77d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_102.npz",
+      "bytes": 3281,
+      "sha256": "95e0bce9e688353e79cd3e5d49e62a5a0d3627e1d31b8fd7ca8371d15a936140"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_110.npz",
+      "bytes": 3233,
+      "sha256": "a7ddc036a43cd836e2a90393ec87bd0a2597906297231e75c145bf66a4a72188"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_111.npz",
+      "bytes": 3058,
+      "sha256": "c8056c9eb4a59ed439dfe065a5026886fa92b7d82443fad7eb6f6a1630e1eda9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_112.npz",
+      "bytes": 3339,
+      "sha256": "8366c63cbdf50966940db804f9514cbe1d4e28888544ccd405e4c77e7721bce0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_120.npz",
+      "bytes": 3175,
+      "sha256": "7b5e4f57484215cf32e8a7c28a3163080d4277be8ac8e1bdc19c94eba6705eda"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_121.npz",
+      "bytes": 3238,
+      "sha256": "f314bfcdefc8f3314f6e8b727bb73b9e4267c67d329692c4bd077dce71aa0fe4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_122.npz",
+      "bytes": 3222,
+      "sha256": "aefb6154d6a0de3d36db712daccb3adbb82b67e54501f757083439efbf6e09c0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_200.npz",
+      "bytes": 3353,
+      "sha256": "368cd091e37baf609b5cc3a0d34f556c91ac84df8bc8072867d02106d7524e85"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_201.npz",
+      "bytes": 3179,
+      "sha256": "a209015e900c6bbb50851c6f8266dab49dbe6e0170a21a7ea7e080ae2d110ab5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_202.npz",
+      "bytes": 3538,
+      "sha256": "113dc3131da00d65d45d31ccf4438b9b54d8b6c9d7449993112845e5c9e4ae7f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_210.npz",
+      "bytes": 3304,
+      "sha256": "984c6d3cc3420327bc7be8b746036b6f36c852983bf2e9fb360bed03dd37b9c2"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_211.npz",
+      "bytes": 3122,
+      "sha256": "68b8384852a89230111c0bda3507dea71d0244c60292174b5643971d6db904ce"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_212.npz",
+      "bytes": 3531,
+      "sha256": "b41375a6704807be94454646c315ebcf112e9d802224b8176081d74aac3fa934"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_220.npz",
+      "bytes": 3364,
+      "sha256": "a2e3a9e8ee1a26056c382ddadff6708bb9a328454d8528e06f6757aeef5a4a79"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_221.npz",
+      "bytes": 3419,
+      "sha256": "6f66f0f61e3445bc81d63f63197d02ec85cf07599923d7541f4c3c565bb8d855"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_LEFT_222.npz",
+      "bytes": 3416,
+      "sha256": "a583f3753fa48da6ba64e4a92029d4e677f52efbdcb0892bf95026cc97fd4745"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_000.npz",
+      "bytes": 2862,
+      "sha256": "d7663abc8b3e4e484853ffc4e31ed8a69fbfb5654b4f1efe8d3c34481d4ae0c3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_001.npz",
+      "bytes": 2813,
+      "sha256": "b0b041710107e956d291f15703640c62cbdb4510dc3457a9e00e241cdd3f774f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_002.npz",
+      "bytes": 2936,
+      "sha256": "5650f10c454cafbae24c1ed0f478e2e35c9e98f7e07fbfac4554b81d367ed8a3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_010.npz",
+      "bytes": 2810,
+      "sha256": "b1a5392f6807efb84cc1f0727549de9e7f2de2c39d8746a4dc62a11cf73c1f43"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_011.npz",
+      "bytes": 2751,
+      "sha256": "91b8c77bd65e93053a7c722bf00405d24d5ec089ce3f70c3dca39acc69e576ab"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_012.npz",
+      "bytes": 2939,
+      "sha256": "ee48e1aee90cdbd7ed1f709f9dc951eba062bf4de66336334427dccbae910b39"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_020.npz",
+      "bytes": 2925,
+      "sha256": "5fde44ee541c39d517fcd239dc373742f816f988aa9f95bc3efb2e35b298ab09"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_021.npz",
+      "bytes": 2863,
+      "sha256": "b23a686f5210f1ccd9827373ac32d294f62ff09a6378e6a5d9ed3b733ee3e958"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_022.npz",
+      "bytes": 3002,
+      "sha256": "b9d120b68a8e77de9cbd83e6387f41d6b9ad1329e730321e76ac957215c6683a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_100.npz",
+      "bytes": 2806,
+      "sha256": "1b72205d864a3e7cfbb36432374ce8d5fa26c8671fdcd839c95d9c9f103d9544"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_101.npz",
+      "bytes": 2803,
+      "sha256": "5bdb8cd5cdfd5e971f729faa3da6d54b735c242db25a4f236fc378d9ae605947"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_102.npz",
+      "bytes": 2940,
+      "sha256": "949beaa786c6d262f606e62d8051973f2050e64a1b4400bde0c13f5d9c6c02e9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_110.npz",
+      "bytes": 2748,
+      "sha256": "274bbd51bbaf52e85fcebf6976b65c766823b509411c37b23093df18ea7fa928"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_111.npz",
+      "bytes": 2692,
+      "sha256": "cb21377c0d5e3ac2915baeb130561a2107d618700f78cf22c4bb25e3f33a348d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_112.npz",
+      "bytes": 2877,
+      "sha256": "b818a64d818273d0bfc620b371e66f20c09cc05b6e6f40598aab67a32d662e73"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_120.npz",
+      "bytes": 2991,
+      "sha256": "ec61c67d79c2ec8fac4f3f1c2ff23b35718292c5a75fa1d5fa6208388c70863b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_121.npz",
+      "bytes": 2866,
+      "sha256": "93b37b1473dff1d4f97da4d51e556c39d1dc3c7bde693dc59381adce7dfdc3bb"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_122.npz",
+      "bytes": 2935,
+      "sha256": "b6e48812fad78ae1a86a86afdfd1a5572ee970faf60c533d921a5181d8c5dbc6"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_200.npz",
+      "bytes": 2986,
+      "sha256": "080becb9bd64e67887004624c2409a92d34b5676ac2788ca417d18dbffdf9265"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_201.npz",
+      "bytes": 2873,
+      "sha256": "fd38a887fb575226a2e382e277551c01593222bc457876b367b20807c0825139"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_202.npz",
+      "bytes": 3003,
+      "sha256": "22eabeeaa19cb295519211bc9f7afeb7471366507d083c4a6908f0f301951678"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_210.npz",
+      "bytes": 2919,
+      "sha256": "269a51e12b932795d5805b181703365d76a3088ac8c876d0807eae8230c0f592"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_211.npz",
+      "bytes": 2808,
+      "sha256": "8e3d46361947a6cdeccad7c18994a690173cb73eadb21a8f370b9c36b0368181"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_212.npz",
+      "bytes": 2930,
+      "sha256": "ca6f819db8ac1c39cf6ffcac916ebce81f2aa09651fd3bf5e8e5bc6ceffb3ea0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_220.npz",
+      "bytes": 2925,
+      "sha256": "cecb7d012481ff48b26b3830070dc0f39e6024522e09ec4f0d022f953ded908a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_221.npz",
+      "bytes": 2868,
+      "sha256": "587d402515cd7e7a9f1f9fc03a2a18302df62b9b7d78ed01c70504bf977ed3c1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_dev_RIGHT_222.npz",
+      "bytes": 3055,
+      "sha256": "dad30123a66f720eba5714fcb256b716e4903df0e12fc39bf8dbfa4fc73069a8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_LEFT_0.npz",
+      "bytes": 3290,
+      "sha256": "820915297d44f47e62b845f8a2dbc9c186dcc2ac8145d455f56aadd947c73ae3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_LEFT_1.npz",
+      "bytes": 3065,
+      "sha256": "42dd6c7aeff4d72f527f99c8ebc79ebc33d0b515acf297b8a1f09cc434fbfa88"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_LEFT_10.npz",
+      "bytes": 3412,
+      "sha256": "b9bda8ef3ccfebd5b1cfb0498b3bcb0a2ed0ca4c469236147a460e97b1809e00"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_LEFT_11.npz",
+      "bytes": 3003,
+      "sha256": "542b443dc93e73617df7282748ab941a9823ec9d7ebfdcb36b9db7fcb7fdf75a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_LEFT_2.npz",
+      "bytes": 3239,
+      "sha256": "6dd7149b5488871f7941027615c1a24a6390b381d87a9c84d3d82a4acf7d1350"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_LEFT_3.npz",
+      "bytes": 3175,
+      "sha256": "1ad704b5455f7489d4621293d20268f601fe9a324a0d6b6a2c003b27a6003021"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_LEFT_4.npz",
+      "bytes": 3061,
+      "sha256": "bd80f231d2f9e42fa9e24c17214f7e94dad28651a08f3fab49870f1dcf9f76d8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_LEFT_5.npz",
+      "bytes": 3240,
+      "sha256": "763cb2c3f21342f976484b951d297619a68d423028216131a2d1ce9cf63ecdcc"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_LEFT_6.npz",
+      "bytes": 3117,
+      "sha256": "b389521a576cbe96ad34e7ab9144bc6702578bf1ba6e295416dcbdcccc92197f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_LEFT_7.npz",
+      "bytes": 3281,
+      "sha256": "ae0b75d8403f2c22d53ec1e5b369397f7e40993bd2bba87fe40985b9e29ca1ed"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_LEFT_8.npz",
+      "bytes": 3404,
+      "sha256": "d7df3acf306a125f6af44afa9182b0c2934c27fac31acad91e7fdf320834342c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_LEFT_9.npz",
+      "bytes": 3167,
+      "sha256": "12d6379c6120e8783a8f6290a3910426ed30d37ba0e95514449428cf54d94af7"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_RIGHT_0.npz",
+      "bytes": 2868,
+      "sha256": "70b075b93bb470d1851cf038278d53182f5f77d3504eb6775b16f68576bab925"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_RIGHT_1.npz",
+      "bytes": 2994,
+      "sha256": "a0330947c1ad6bad0fa11ce4015036abbc6bed3a4e038ca9a64b389552fa58b4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_RIGHT_10.npz",
+      "bytes": 2873,
+      "sha256": "15bed5db3bdec99aa4e370adb4c0c2aae4be1041ed47e7ee4781493bde15579f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_RIGHT_11.npz",
+      "bytes": 2874,
+      "sha256": "8280a5785ecf733ef48f4621da9a68bb35792a87a7386a6d217cb232d83d8063"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_RIGHT_2.npz",
+      "bytes": 2874,
+      "sha256": "fde915bd4a4eaac4ad378ddf8a0092806969e2819c964ac952e2fa88be4e5c5c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_RIGHT_3.npz",
+      "bytes": 2927,
+      "sha256": "bad60c6d302d4ab816ec64691bcb3579f47ecf46e796f8021d6d9b2a332a3b2e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_RIGHT_4.npz",
+      "bytes": 2859,
+      "sha256": "8fe64b410b8e0acb2334d491bf00a30c02b93e87fc368b493e3dde42660ea326"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_RIGHT_5.npz",
+      "bytes": 2868,
+      "sha256": "d2b78a150e7da6ea8973a5bbb894d1b05252e29159a9a116279d4f9ef6aeb3e4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_RIGHT_6.npz",
+      "bytes": 2944,
+      "sha256": "8ceedf80180661eb7931e944382034f0898176036f9cbeb872fcfa65e13c7d00"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_RIGHT_7.npz",
+      "bytes": 2989,
+      "sha256": "34beb0500723501c828fa602a799890fdbfe5bff09e8fefbabb11d6ce5ece1d1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_RIGHT_8.npz",
+      "bytes": 2871,
+      "sha256": "e50c2b3adb6ce922ca1670364d37172fd77f009bcc095da269f2741e535aad5e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/final_fresh_T190_RIGHT_9.npz",
+      "bytes": 2805,
+      "sha256": "2d899f68e91e6e54011e91c58005b976c3037cb00ad5ccba0f73216d490d33b2"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_LEFT_1.npz",
+      "bytes": 4098,
+      "sha256": "2f7ae629f9949aaa304a4fbcec1824212a747f210c40d730e918c7be4ea0626a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_LEFT_11.npz",
+      "bytes": 2367,
+      "sha256": "67c2cbf554bf685e5d616b8886b849abdcedb38163ebf824c69d115df84551e3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_LEFT_12.npz",
+      "bytes": 4025,
+      "sha256": "36538a2cb353a44a142c21e44129703c0be4aea01e3a29ce4a5e114a521f3c39"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_LEFT_15.npz",
+      "bytes": 1980,
+      "sha256": "eae5d1aa7a97f764a48bf73bc07111ea3d58be74b9124241a4f2f94b95286461"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_LEFT_3.npz",
+      "bytes": 6460,
+      "sha256": "5b93dccddf263780fa03f3800bb2a2bd23865339efb72be50503e86f97b13b3a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_LEFT_7.npz",
+      "bytes": 6099,
+      "sha256": "eb19dd3d07ba1b59047a0a63773369be5aa3274c219d8ecfd9ad9180afe8732b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_LEFT_9.npz",
+      "bytes": 1746,
+      "sha256": "2bc540849ecec42409dae176ac21184d1bcea4f3a1a5f796f9c4633a94253a44"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_0.npz",
+      "bytes": 7931,
+      "sha256": "9e1ec22dac7a5472adbd20054c4af1ab46b726fbb25058ac9f062348bba2ecd2"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_1.npz",
+      "bytes": 10549,
+      "sha256": "bb3a608eed24378e240d346bf0616bed43e01f175bdf40552bc9e975fd276bd4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_10.npz",
+      "bytes": 2335,
+      "sha256": "a522babb8637b85714c54a70e046b5e24e3b7adc9c12feb35179f08f37523561"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_11.npz",
+      "bytes": 8947,
+      "sha256": "7361e69dc0b24f12705ba7ace9ac3256a12c8d37bc5c5c4b50da44422ab827c7"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_12.npz",
+      "bytes": 8535,
+      "sha256": "f5ccb1f478c779a398008aca89758b9f7b20044d2e35ca69cb7ee8336001d43c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_13.npz",
+      "bytes": 4074,
+      "sha256": "d4b1f79754deea3e0bd79874a7ed85fa76b98ded718768b19331641fd196639d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_14.npz",
+      "bytes": 10731,
+      "sha256": "d721980e5da9751244044fe44f32570ef55d5811aa1ec737592cbffd37a93ddb"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_15.npz",
+      "bytes": 4477,
+      "sha256": "6cbc408dd34600a629692c412def934eb156d46f3311b6c984af324d72ea6f83"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_2.npz",
+      "bytes": 3330,
+      "sha256": "5471a65ebba8a7dba81966aefbcf15a7709ad421b4f77702b37e8eff8c4493d3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_3.npz",
+      "bytes": 9264,
+      "sha256": "fee6b55d608f73ec7da2269b08b77f883f3cc969352f4298051628a7dd7bfb3e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_4.npz",
+      "bytes": 6410,
+      "sha256": "9f36077ce0a13a2f3a7cb5787dce0b7e22531abc46882635fd39a19a7b33b694"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_5.npz",
+      "bytes": 3161,
+      "sha256": "3efb010de85f24dda4ada6df6d4324b4c261f3c50e8d2b29fe82f75e43c44d81"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_6.npz",
+      "bytes": 3353,
+      "sha256": "5edcb4d538350a411210fdae742702f8cf234a5f1f75f1bb694547718dfb8823"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_7.npz",
+      "bytes": 4330,
+      "sha256": "3d86184efb41908989fcbca937c6b02331429fea0b8c00975b743e70042d6d7a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_8.npz",
+      "bytes": 3767,
+      "sha256": "7d19cbb1ca4ee1c14f935e547fc51631f20fa224e3a1d9e4c74e23593551e602"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_after_round0_RIGHT_9.npz",
+      "bytes": 8153,
+      "sha256": "1f1789f9558f1ff3e9177191fd4fce58c8a13ef18278a466bcb55f3e10844c9c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_LEFT_1.npz",
+      "bytes": 4103,
+      "sha256": "0e167204b8f6c28f94bd0a371097468e1f8b500b2fc8a26b7a15e12bfa76a824"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_LEFT_11.npz",
+      "bytes": 2385,
+      "sha256": "15d8ac19f87dfa4294ee9f940026f2c765a693a40396bd2538a26ede10a8cdae"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_LEFT_12.npz",
+      "bytes": 3639,
+      "sha256": "8b6c1423d05e00079fdd5445ca6e8c716e1fd96710df748eb990979783ce4941"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_LEFT_15.npz",
+      "bytes": 1987,
+      "sha256": "7b02ec06ca7c03c00b85b0b4fd5b5a3c0c7d2517532f1c3f46cf46547574c688"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_LEFT_3.npz",
+      "bytes": 6140,
+      "sha256": "998b407a42ca5eb37629f0c05b2599e851ccbfc6bcefeeafcd69662efb3d70e0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_LEFT_7.npz",
+      "bytes": 6039,
+      "sha256": "b0fc3c220e83f5934b56ea785a254f5d55450ce35a77b23040c0b3faa9fe9553"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_LEFT_9.npz",
+      "bytes": 1802,
+      "sha256": "a0a20d63caabe67d4620eff0d084824756fc1bdbd84ac6eb5fa9674eb232a08f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_0.npz",
+      "bytes": 7694,
+      "sha256": "c1127e9f1bbd5b41f213143605e9fabec730749b893bbb2f9a961958540fe224"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_1.npz",
+      "bytes": 10716,
+      "sha256": "2883865a4d539f9ecba4e122a966a6c0e59b9f3b416cba933d948197c758b796"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_10.npz",
+      "bytes": 2334,
+      "sha256": "c36b347d44887e085d42572638031707da245fa612c48c44440a27180a3e4114"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_11.npz",
+      "bytes": 8938,
+      "sha256": "b4402630dae2d2dd157f316f48cab761d81d6d591f914c385771b8b0c5e6077f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_12.npz",
+      "bytes": 8179,
+      "sha256": "db196efbf5f17b17b0c058c4ddba711db20eada17a39314a1e942d13e8a5b0c1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_13.npz",
+      "bytes": 4049,
+      "sha256": "05aa89f41a1353000f67b9ef16b7bad5f7baabd0d2e064ce1ab78db141c42326"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_14.npz",
+      "bytes": 10852,
+      "sha256": "f722eeeba0dbae2daacfdcca7eeefedab3a180060ef272cf5400c1bba88ca6d0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_15.npz",
+      "bytes": 4346,
+      "sha256": "3bfeb7599f74b1844265fac0206ca4e6efae4b3dd6bee050feb28c0f71a676ca"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_2.npz",
+      "bytes": 3336,
+      "sha256": "2297593fe9e3f9d794e269f952a4a0a47045e59fec36ebe0ebd28fb56c69db5c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_3.npz",
+      "bytes": 9464,
+      "sha256": "b48c7828708e5f5559945c7b3e224e4a9ade3a723064759d9e9fe5976ec8229d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_4.npz",
+      "bytes": 6664,
+      "sha256": "1671b386952cfbb3c0376c17cd1c40fc9a8b76f1e6296809170070145df8b290"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_5.npz",
+      "bytes": 3231,
+      "sha256": "eca5e306fc5025a2201e7c5ca734e5b13ed7c726cd653ff104f2cafca8175b54"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_6.npz",
+      "bytes": 3416,
+      "sha256": "93150db2ee706ed8788d89f8b0aeb4c62b37b60a8a605a671b25db48a71cb2ef"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_7.npz",
+      "bytes": 4345,
+      "sha256": "fad44c1d4c32d6644dac28e493fde8a1b39cb243b433f4e709c26bc556fa8839"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_8.npz",
+      "bytes": 3775,
+      "sha256": "6285183bb38b9803793c883c311e7cb78a3bae668177d594921e84b44b9442d4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_before_round0_RIGHT_9.npz",
+      "bytes": 7696,
+      "sha256": "90369d9500ceee73bf295c1ec059995c289a99cf8da0a74a2f5f80d1470b23c3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_primary_2029653601_LEFT.npz",
+      "bytes": 6617,
+      "sha256": "f888f247eeb54611e986f03bcf25d77f1302d50b860cc0c04ed61ba0c1a33d4b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_primary_2029653602_RIGHT.npz",
+      "bytes": 5845,
+      "sha256": "55414dc6587f83d9b8fe9a1cd8d031f9d5bd798bdb6b19948ff6c06db490d1e0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_primary_2029654801_LEFT.npz",
+      "bytes": 6614,
+      "sha256": "6b4c778717406d2dba07261e173d67caee363b558457602701635dbfce07eb38"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_primary_2029654802_RIGHT.npz",
+      "bytes": 8744,
+      "sha256": "6f3420da898d7771b4e42a63b84b6c90b753e261b979225e6e0bac68856d66d7"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_primary_4m_2029653601_LEFT.npz",
+      "bytes": 10480,
+      "sha256": "fe5ce0f089904d7367eba07219698d265edc84d96fe19b59491fb0d0cfe5b106"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_primary_4m_2029654802_RIGHT.npz",
+      "bytes": 7741,
+      "sha256": "31c735cb47c2959010ba5d8fa3db3c11f053d93a202753108e3f44e172e0b6ea"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_primary_5m_2029653601_LEFT.npz",
+      "bytes": 9992,
+      "sha256": "fa9a4ea94c75ea5c5018d61f33bd1b4ed3f3e94e23140112efa64fc7f146bdf3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_primary_5m_2029654802_RIGHT.npz",
+      "bytes": 13846,
+      "sha256": "442b40ea1d35020ddcc0909b6b0eb5c31781390664ef84418bc84d61627af115"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_roots_root_LEFT.npz",
+      "bytes": 3287,
+      "sha256": "5b67909554b39cd7d508ba115ea35b7cf309c5cf1a7a731715bd7e9b08bc0b07"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round0_roots_root_RIGHT.npz",
+      "bytes": 3044,
+      "sha256": "42222bf4eab656496c5c9329bd2cdf64aed0e134bf83a121ea5129bcf5c5a9f7"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_LEFT_1.npz",
+      "bytes": 14529,
+      "sha256": "db7ee23975daef916399f6aa9542bb616625038ef25e68bf3c045ad332928cc0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_LEFT_10.npz",
+      "bytes": 1448,
+      "sha256": "d6a2dd22080aadcb4cbc12645d9351d2e0d9d6a8f8b362a89d21a22c6d4b3153"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_LEFT_12.npz",
+      "bytes": 2108,
+      "sha256": "9b8fa24069acc4d0210e0219d14c41977e88f351796cfabc993c5d5ee602d686"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_LEFT_15.npz",
+      "bytes": 2225,
+      "sha256": "fa892b96ddcad4510d4712b0320f93cc86e98da57e064aa3d2652a4daa71209b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_LEFT_3.npz",
+      "bytes": 7261,
+      "sha256": "c930908d3b3732265076c899f270ea29113c1c17b550b982d1c95875dd7c8f29"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_LEFT_4.npz",
+      "bytes": 12312,
+      "sha256": "f2004a08a0db999947c0b2b3d7a25a9e5e682b6935d4faf89814f0733236846e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_LEFT_7.npz",
+      "bytes": 4104,
+      "sha256": "2bfc82918697c0ead84467c305ee4a89599ee35f4edd28ed809dd6627c7d724e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_LEFT_8.npz",
+      "bytes": 4677,
+      "sha256": "c881b8269d7111ee5f780fc3f0dfdaa60ad1482bb33c066098610b2067b5c4b6"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_0.npz",
+      "bytes": 5520,
+      "sha256": "627874abf19580a78261f29c3e5ed5865f4ef0bb562ee233aada7aa9a486e5e3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_1.npz",
+      "bytes": 2696,
+      "sha256": "b6fb2da239da8ee2d9c91f032c4203ea2d392be0d7ed463ce51e69052a006f8a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_10.npz",
+      "bytes": 1739,
+      "sha256": "2d7037728038f3e933daf6ec6c3a8f9f90139965ca59f1b5e97eef30e7b0e3bf"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_11.npz",
+      "bytes": 7221,
+      "sha256": "42755af73473edd58b9698b35cba5d690114bc852e15fd0d8b050c880b721776"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_12.npz",
+      "bytes": 2249,
+      "sha256": "13e0266f5ea8b99cf57f6a5797c78037ce0c95eb6e6fdf79761b8e5621357156"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_13.npz",
+      "bytes": 9588,
+      "sha256": "812bd4bb8c1bd31eec5e32cf5c7e16d0214e2f98ea13cb1b5aa7428cb102bd64"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_14.npz",
+      "bytes": 5500,
+      "sha256": "104fddc7080ee035da7973cf4b1b9bfa6f8ee3be2490adf180a06d7459ac76b3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_15.npz",
+      "bytes": 9133,
+      "sha256": "b51b18709e06ac1933ae4e8bd6740a42b7b957cb7d1d74a21e95385f536df3da"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_2.npz",
+      "bytes": 9613,
+      "sha256": "fc5069d619445143e38afb88d30f51d8efb2679a2ac3f9311caaafd384c822d5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_3.npz",
+      "bytes": 4600,
+      "sha256": "550c65cbd1b21df9336d07032429e372dccf82e5f143d13a6bfe84555aac5482"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_4.npz",
+      "bytes": 8475,
+      "sha256": "d979029006aff9117df265dfb73ef09c69df697d7f1b1f9887542571a53e905c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_5.npz",
+      "bytes": 7412,
+      "sha256": "0e21441d989cb95b5c5dee5dd7b4f6db5a1e1638fb8ec401fd0722b0bee7d2c6"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_6.npz",
+      "bytes": 1914,
+      "sha256": "44f69f536ea8a4634842fbb29fec448cad922f5cc73edf1b049b60979a0d34ce"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_7.npz",
+      "bytes": 9074,
+      "sha256": "5b456d1f7d288854bab6181530510133fb4526881c1f2bf817a301b8fd426b22"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_8.npz",
+      "bytes": 4599,
+      "sha256": "fb87104f72d1a7e72599883c1841f78e81ca5b8edb4e3d93efc82455fcf675f5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_after_round1_RIGHT_9.npz",
+      "bytes": 7388,
+      "sha256": "025d94f44ba4fa881521e3ec74ba1bb8e1dd7d35c864d2e3f858b89e046f279f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_LEFT_1.npz",
+      "bytes": 14534,
+      "sha256": "bb1e30bdc99422e74482463bcda10f2309832ca8159a6dd04c31a2d53eb116f7"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_LEFT_10.npz",
+      "bytes": 1628,
+      "sha256": "b9336b895af438236cbdd653d63afff40cf3885401b73e57a1d2b2174e142a99"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_LEFT_12.npz",
+      "bytes": 2222,
+      "sha256": "5f62f7f8963823bc1717bf2cca50f44524105a70564b5779f4c4603cd6a085a0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_LEFT_15.npz",
+      "bytes": 2225,
+      "sha256": "2e7f2db9d5d21c94446ae4dce8807c3cd16778e3c9cfd6daacc791e64ace8c47"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_LEFT_3.npz",
+      "bytes": 7618,
+      "sha256": "9ba8b3648263b83eceb1c7a609b7b2afa2c2ed6cd7b387659eeafa0b130bdfad"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_LEFT_4.npz",
+      "bytes": 14555,
+      "sha256": "0f448b9b6bc625760062a00b34803c2ff8d671c160c86066fe969f5533d51fcc"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_LEFT_7.npz",
+      "bytes": 4353,
+      "sha256": "8d64530e3c92e618136aaaac8d9d46d7887df638758f372e63605073dbf685be"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_LEFT_8.npz",
+      "bytes": 4546,
+      "sha256": "f0a0b21a37f93d9280a5bcd44b82f995ca6519f13f1697447719af0dc7902264"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_0.npz",
+      "bytes": 5471,
+      "sha256": "f23cf83be00d185995ea58d1f9aa04c69153445b5d2aeac5d8e1b98eb2d90594"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_1.npz",
+      "bytes": 2638,
+      "sha256": "4c0a6956ded5b4d17bebcbe7c62f58b23ebd33fb74d6859ac819e53fef8bc2e9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_10.npz",
+      "bytes": 1778,
+      "sha256": "1f6ec84c561da1db02e838a576b1bcc221014fd26e8f34e1977c580d13e381a4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_11.npz",
+      "bytes": 7983,
+      "sha256": "b73c12d07a3eb3b5ebe143079a4a1b2c2079dc6b9b12c3d69df002d8f2818378"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_12.npz",
+      "bytes": 2246,
+      "sha256": "8e638a1f1b12ace58e11629243ed8842eb3733b34e68b255d745f228ae0f75ef"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_13.npz",
+      "bytes": 10214,
+      "sha256": "91e775cec2d1a4c36e40b061c5435369d34d466d8929d1f560a19d5ae31fea80"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_14.npz",
+      "bytes": 4590,
+      "sha256": "133593686ee6cf7a9644befe54b736c99172fd4256228ecdb26d161fa318000c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_15.npz",
+      "bytes": 9297,
+      "sha256": "18ba09ba918937e28052dcf225c6fd581546653a72f74592ff36f2802bd5373a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_2.npz",
+      "bytes": 7284,
+      "sha256": "1f1879fa59b5f1ff6446fc7c269a32fbedcdb683c20b9d8d1c99c24cb0ada4d8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_3.npz",
+      "bytes": 4545,
+      "sha256": "81e461173050b9ba50603a29065abe21d4d88454dad28ef629a4cab01f787c5a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_4.npz",
+      "bytes": 9079,
+      "sha256": "c836cedca6ab1808d6ab50d51322ca5cc44152ef602267331841519ff7ac79db"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_5.npz",
+      "bytes": 8227,
+      "sha256": "b42c59d893a48075d606932941710a4374c96945e677a466da93f9796f3647d8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_6.npz",
+      "bytes": 1902,
+      "sha256": "8d499540b6bfdab2fa5fc1a1c4d101c33e56f7d9220afe4350d146f1b5f39e23"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_7.npz",
+      "bytes": 10529,
+      "sha256": "d375abd7117414482937c8416edbc3378fed8838584b80eb2e2680d2db9de13d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_8.npz",
+      "bytes": 4570,
+      "sha256": "4904a28443432a653d4ae1609203fedaa21c7e98d67bc4b8d03bad186dd974f9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_before_round1_RIGHT_9.npz",
+      "bytes": 8354,
+      "sha256": "6a158fbe8dc6aa4af60cd93b0f459f6b90bcc6fff5e3a295689fa97131c3a470"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_primary_2029653601_LEFT.npz",
+      "bytes": 6610,
+      "sha256": "1ad80e0ca7a27737beb30c7aa5756f730040200d274c634de75c54cc128cb3c7"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_primary_2029653602_RIGHT.npz",
+      "bytes": 5839,
+      "sha256": "32cc3c3069e6c10a29c4d6ba6facbf5d69b7f5e763968ac412da63c649b02062"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_primary_2029654801_LEFT.npz",
+      "bytes": 6437,
+      "sha256": "83aa4cc4a69e725f01bf3482d0f101637da25e4afa4e14ecc02124ec9d8ffd76"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_primary_2029654802_RIGHT.npz",
+      "bytes": 8328,
+      "sha256": "648c1a3e76badf37d5928a6b5ca8476ff13be841139a8599720f773f192801b5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_primary_4m_2029653601_LEFT.npz",
+      "bytes": 10477,
+      "sha256": "a2faa68e63608012eef11c2c2b1c1fbeaaa31f5d7046b172d7d5e12d752b5c71"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_primary_4m_2029654802_RIGHT.npz",
+      "bytes": 7719,
+      "sha256": "d327ce5c6e29a468ae88b9adac85f52131df54d096038973549e8e681e0a3fba"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_primary_5m_2029653601_LEFT.npz",
+      "bytes": 9929,
+      "sha256": "47ad5f4f8a94ad788918432dcebb2ca81a9ca723c578877de33f5e4ec8d1b2a0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_primary_5m_2029654802_RIGHT.npz",
+      "bytes": 13520,
+      "sha256": "30a78922961a5591d69f59b4daa99f3f7a37b8a9511bbd1f67bcf7a861d1963b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_roots_root_LEFT.npz",
+      "bytes": 3283,
+      "sha256": "c8d3a9813adb8596a832fa030cbc8ca1a84e7b887547300070b9938c90015f89"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round1_roots_root_RIGHT.npz",
+      "bytes": 3041,
+      "sha256": "9f46b737ca6763bca034d9cbf5800d45231effd54c67287822b869fcd2085cc9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_LEFT_11.npz",
+      "bytes": 6786,
+      "sha256": "a9af9a3218a50c5baf9c104f5ec2794289a0c9415e2a6e7c899aa77a22c5a03d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_LEFT_12.npz",
+      "bytes": 1360,
+      "sha256": "aa2d1df36619af88f506a96cac376cea89548563a95dc3256eadb47283b4c314"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_LEFT_13.npz",
+      "bytes": 8196,
+      "sha256": "bae0e7f693dd803e894aa41f33df23aeb3fefcd4e55705b9e396ddcb417dd7c3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_LEFT_14.npz",
+      "bytes": 4394,
+      "sha256": "eb2d2a7bc776f475e5a8099f8fb9d4818a783147e6403086ff70ee5b98c39438"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_LEFT_15.npz",
+      "bytes": 2780,
+      "sha256": "831ba437edb9da2f470e3d652d14f014916a2d120a5e40cdd21f4c1edc75a831"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_LEFT_2.npz",
+      "bytes": 7202,
+      "sha256": "f0c39e45948aca2ee5abeb3b167271bffd5c8491878c6b70069cc4a43ce295c9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_LEFT_3.npz",
+      "bytes": 1618,
+      "sha256": "12047bbb5c5fc0ea01b724c26e7453d6d084683a292558cfad910a2d992681d5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_LEFT_5.npz",
+      "bytes": 576,
+      "sha256": "eeff851bc9d5dfbbe75a0846d4947707147e180a6d9f0ea580a725ec7162c3cf"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_LEFT_7.npz",
+      "bytes": 3844,
+      "sha256": "27e1ed09678c4955d28287a55c0b8f542b2ccbfa7a058e0f8d381ea5a60ac264"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_LEFT_8.npz",
+      "bytes": 7266,
+      "sha256": "a8c274e62d85f5404ea366595f81efcb7e40ee475ec64463d0648e2949523a87"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_0.npz",
+      "bytes": 3720,
+      "sha256": "0fe21c05b5f0e24faad375fa9907e69aad152ada4985453a119b07399669ab81"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_1.npz",
+      "bytes": 1910,
+      "sha256": "d5d498974ecfae7a609af73dcd560232d2f8c19208a13fbf49501422a93be6a8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_10.npz",
+      "bytes": 3869,
+      "sha256": "48e0006d4e6c2e3c69d4fa954001bc2132728b2c14d75ddccbbfdc4b1deb621e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_11.npz",
+      "bytes": 4798,
+      "sha256": "27f8b073d5b18127358a9a524c6f2331e28c7f6ace41680beddf9c80b975b580"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_12.npz",
+      "bytes": 8765,
+      "sha256": "96494c31ae95f55f33121a274d4635e40971da7221de8e3e73a57fb21f67b7ea"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_13.npz",
+      "bytes": 1502,
+      "sha256": "84ccd07087214a304c9ac6a6c5e6ee13aedb7211cad7a7367b9ccfeae33fbcf4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_14.npz",
+      "bytes": 5220,
+      "sha256": "b8267786477a9125ce96ffaef1524f470974b9be6e3a4ed7ce160cf53e3f3dbe"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_15.npz",
+      "bytes": 3336,
+      "sha256": "e3b7b1a9378a58f960234f2d2e96f831f6b7a3975537fbb8a130a8c0ed036c58"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_2.npz",
+      "bytes": 3825,
+      "sha256": "429ad9c73d13922f9344150a00ea9a4198252b09290e54c0270ec6d519712176"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_3.npz",
+      "bytes": 3396,
+      "sha256": "9c3326e1abd374890acf4b8aafe3f3e389003f9c705596f7608ed0e798d52e8c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_4.npz",
+      "bytes": 4058,
+      "sha256": "d64e5c2d146df7f689f7e810b47eeb645dddd39cc9c096a968653f1a95697058"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_5.npz",
+      "bytes": 4605,
+      "sha256": "4d0d335dea3bd474a784ce57eff771d20e23dda591ba17fa8f37717391890d24"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_6.npz",
+      "bytes": 9169,
+      "sha256": "a022bcb237470110e42a392dbe9ffb8333bff863f2de9e5d5dba5a41304e5c8e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_7.npz",
+      "bytes": 2881,
+      "sha256": "d467538c9c678bb328257df6b16d740b1fa86582f7e38d27efde6e00f4d765e7"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_8.npz",
+      "bytes": 9815,
+      "sha256": "8f285d78e03ae60c86a6b5574226fe42296831e9895cdfae847121b2404a21c1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_after_round2_RIGHT_9.npz",
+      "bytes": 12007,
+      "sha256": "32d954ed9f084ebf32be1c74b35cda210664017a535aa5888b713659da323543"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_LEFT_11.npz",
+      "bytes": 6174,
+      "sha256": "ad2286f0774d24f64b210ba886976456d8ef0e5ec87231c13137cd2a50c0c853"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_LEFT_12.npz",
+      "bytes": 1309,
+      "sha256": "52d0ca623da78fd46228de0b760382f451b694574b64f2b25bb33f69e14902fc"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_LEFT_13.npz",
+      "bytes": 8176,
+      "sha256": "3e76863013e04ebaeff93f4c34cf2811e2bb1ac1ebb7b51b0e7fdc6e69d2feb4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_LEFT_14.npz",
+      "bytes": 4369,
+      "sha256": "2e80ed6ee8d8daa3ee0c4aed2d5b52df44deda7949434f9227c909a785c47e6e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_LEFT_15.npz",
+      "bytes": 2841,
+      "sha256": "cb98f3bdb891c4d7853c035cf267fa30a1349614b148ec95ad2b589c05120440"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_LEFT_2.npz",
+      "bytes": 6897,
+      "sha256": "1680ee746699895fa26859e57a702b31b3863a00aeddd5251f7ba67fbf805ab3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_LEFT_3.npz",
+      "bytes": 1626,
+      "sha256": "372e735484b1016e631486c60832d7b243ed68c1abe088ea48c9a24eb7c59124"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_LEFT_5.npz",
+      "bytes": 576,
+      "sha256": "97a4cf38201d089acc0f94644a3c9281b416352cbb724cab2e3754e2db8f4332"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_LEFT_7.npz",
+      "bytes": 3787,
+      "sha256": "fab0d8a568d9bcb42da68fd2e884cb378a45b31eb28ec7893e34d33fa8c46c4b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_LEFT_8.npz",
+      "bytes": 7273,
+      "sha256": "a71d3a03134cb1eee2096a1c88c9ca4943f72c0927f4bc1846b0f419997c5cca"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_0.npz",
+      "bytes": 3365,
+      "sha256": "f2b87aa287f512d6bb5fb68860a29ef198d9e13ae7ac2b02e56671792711b7b5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_1.npz",
+      "bytes": 2019,
+      "sha256": "a84483096d0604a7523fed5dea06dcab72bf87e7bfae1d36d91f6d30c8b7b1fd"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_10.npz",
+      "bytes": 4288,
+      "sha256": "1c977e7b8c307dd600c9c25a6c3018284c7c6c0b68efba665abf232ee27553a2"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_11.npz",
+      "bytes": 4739,
+      "sha256": "da5f79c21dbf5463007cfd9a8f8bbacb810c945eba6548582ad99b8a8c1ecbba"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_12.npz",
+      "bytes": 8477,
+      "sha256": "585c46d71ca836f4967c6dc011291950225a90697f497cea007d674f3227e080"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_13.npz",
+      "bytes": 1437,
+      "sha256": "b5d75bff3410585fd4ab08d3673903928a3674d0a1cd29e125337c709c3376ee"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_14.npz",
+      "bytes": 5226,
+      "sha256": "0ce0205626e6c13bbc7d8b6cc350e37a507a9f391449494175fbe7d8eae2d17e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_15.npz",
+      "bytes": 3402,
+      "sha256": "7b73c9ea27821f5c34a92071a1069338b23170d665086cad4c4bd257de390d7d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_2.npz",
+      "bytes": 3828,
+      "sha256": "8c9500d0ad6eb11737bc24ee4b60dea56c5081a34de1e8b8b29bb877d81defae"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_3.npz",
+      "bytes": 3455,
+      "sha256": "f0f76ba0ef3d97c2ad13a2f06f2c369b41aab79f874f7ee62f8de7c84b5f4ce8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_4.npz",
+      "bytes": 4361,
+      "sha256": "79ac5dd1f287be8c8a2971546424036e99dcb84711e4e5b3a55892d88a2b6ca3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_5.npz",
+      "bytes": 4494,
+      "sha256": "eee01490bc2ab0994e6cf35ec11a579b26172a699cf655ae277d81f1b36cc406"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_6.npz",
+      "bytes": 8897,
+      "sha256": "6a5b625e5dd0b0725c7b0dc11c5b53f430239529a1dadfd068581a366b0739ec"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_7.npz",
+      "bytes": 3002,
+      "sha256": "39a03bd7a0ffe014196c7638a9c0d67546a28d045b521754d83e2ae788fa06a5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_8.npz",
+      "bytes": 9723,
+      "sha256": "16c5ae6b54c4b09e01d63f395ae1b895397486d7ab0b9d06e7644bf3032048b8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_before_round2_RIGHT_9.npz",
+      "bytes": 11766,
+      "sha256": "09bb4d3a30ce8ffffbf648e050b1f029d5e6343bf23616162c018cec65649db2"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_primary_2029653601_LEFT.npz",
+      "bytes": 6628,
+      "sha256": "2d6a4e5e073016870f729e38c1764eaad33a9b88aaf27a315d6c3f51617f29e8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_primary_2029653602_RIGHT.npz",
+      "bytes": 5854,
+      "sha256": "a25d8d92b6b0b503489fea76fbcc0c12d4b7acd21033cd221d55f4e4af2bbf48"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_primary_2029654801_LEFT.npz",
+      "bytes": 6484,
+      "sha256": "7afdc666ff82d8c19befda69b32d7272839342b9772fc91171526a7fb6e1078c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_primary_2029654802_RIGHT.npz",
+      "bytes": 8330,
+      "sha256": "1b88b8aa16d308bd1428ab56cf3ec5f70fc8407b50dc44b887fdab6c2aa6d684"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_primary_4m_2029653601_LEFT.npz",
+      "bytes": 10316,
+      "sha256": "8dd6c9e8af36018edca9876adbad1d4db30a33d647d4ae0e0c7c6f13111d3440"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_primary_4m_2029654802_RIGHT.npz",
+      "bytes": 7747,
+      "sha256": "2e6304a13b794da62a2496aaacd294b7432ecf667ea3e71fb431c8189d9d0d5a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_primary_5m_2029653601_LEFT.npz",
+      "bytes": 9694,
+      "sha256": "6aad6f6949b6be621919bc26248c73d237480103c8122ebf6b238f9873124f42"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_primary_5m_2029654802_RIGHT.npz",
+      "bytes": 13907,
+      "sha256": "7c2f40fcecfea0657d78173ab2f79d9970d24b6f20867447530860adb4aebcb9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_roots_root_LEFT.npz",
+      "bytes": 3223,
+      "sha256": "32a2637ae1e8849508ed6bd060c5abce553d2a5fadc6456edf32d3c7b03ea74c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round2_roots_root_RIGHT.npz",
+      "bytes": 2979,
+      "sha256": "71e53cf699e5ccd6933b69c4a6a6735754dbff8068ffd8dfa2378d77ac1b5cc3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_LEFT_0.npz",
+      "bytes": 2397,
+      "sha256": "2e0a8c1644e0c4d504d6883836666a28a8fd2412ba2020a99debc615d0acb351"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_LEFT_1.npz",
+      "bytes": 5678,
+      "sha256": "c60f7687029576a661627ac01a50df4ed342a952fcf5e866e083f28bc8d2d2cb"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_LEFT_10.npz",
+      "bytes": 7942,
+      "sha256": "49ce586fae6df99e06b6e0ee4be52246447eefeeaf22e1779f16ef909c72d82a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_LEFT_12.npz",
+      "bytes": 10076,
+      "sha256": "a2249de27eff3540f75841a299558cbc64be725fe5cfb7d016c559fc7d8e513b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_LEFT_13.npz",
+      "bytes": 2432,
+      "sha256": "610a1eba0bad3ff98bc40a3ee98957a8bb37337d696aca09ba2d0dd3a3937914"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_LEFT_14.npz",
+      "bytes": 3599,
+      "sha256": "a0d540ca3da41be6e7cbf08dfb0826ed19608188d7b55efa110c67bc88bc6e9e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_LEFT_2.npz",
+      "bytes": 14546,
+      "sha256": "0f93382fd202677edc838d7f9240dd3182fe4b706ba87f5d796d4cc178a81618"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_LEFT_4.npz",
+      "bytes": 1044,
+      "sha256": "a98756ea84594d3cad960d122433fb64a5a4e1e509c8e284091e7d75116e2add"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_LEFT_5.npz",
+      "bytes": 6101,
+      "sha256": "1efabfe30c502028decd449e8f3814c00f9172c0269d176ffc1555bc8ffed6d4"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_LEFT_6.npz",
+      "bytes": 5714,
+      "sha256": "8816d63f5099e96e7e2157925de53ea8ad65edd4f180d99db41e0ff03c31bb20"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_LEFT_8.npz",
+      "bytes": 3376,
+      "sha256": "fb6bd901d30f32aef3322828a37486199e36b682bf83ea41a0acf8f0095bbdff"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_LEFT_9.npz",
+      "bytes": 2762,
+      "sha256": "7009e1031646458f546b6d597b24a84aeedd37ea8566e287d4f629897c86f684"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_0.npz",
+      "bytes": 3661,
+      "sha256": "a5720ae7e3561f701048720c0fa782fe60110ce3854bef0fb081cdb062fa76cb"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_10.npz",
+      "bytes": 3950,
+      "sha256": "5fafdef3cb913fcbec387dbfd9e261e39c780625b83e610f1b4d1db59976f053"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_11.npz",
+      "bytes": 5096,
+      "sha256": "9643ed47ef485d9818b58a6baa58f792dbb90dcc9d30349c4091e90c62b050f8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_12.npz",
+      "bytes": 4245,
+      "sha256": "36def2775accfb70784135aeb840d4a9ad75436c0e4c2a9b0858cc98fc4a097b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_13.npz",
+      "bytes": 5110,
+      "sha256": "5edebf7fc0f6e0078eaa57ed54b4545c74c34455e609198554c1e1910a2ea27d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_14.npz",
+      "bytes": 3347,
+      "sha256": "c8772d0bb03dd2aaa8de0d9d84c380e38f43b3d59b99f00cff9374fbadfcfce8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_15.npz",
+      "bytes": 7157,
+      "sha256": "7110bf204335e608b2724abaa0eef938ad1281b50dbdf4c06049acc8d6045932"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_2.npz",
+      "bytes": 10392,
+      "sha256": "993fa1a1d90c3e11ed97b1d61324e612510398e760d2eb4a99f2b0e4853a9fc9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_3.npz",
+      "bytes": 2873,
+      "sha256": "2f40698d4c5a6167af406d6d87d7a2778e0c6072313a1d6cbf84ec48f41a55e9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_4.npz",
+      "bytes": 5017,
+      "sha256": "b652ea6ad7e34146ff5cd52a0252444b29d737ec99775b09d602dba74762b6ef"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_5.npz",
+      "bytes": 3889,
+      "sha256": "438ddccb500c91cced6356a58e6114423246fdc63676a51be30720f77daaeb20"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_6.npz",
+      "bytes": 9949,
+      "sha256": "db987293bd3308a40d99ebcc1131f6461587238552b6fcbc9396b1deac70ceb9"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_7.npz",
+      "bytes": 5870,
+      "sha256": "91c018ce0f84c90ecc45f7facd5bff5649d8fcf2a329861cd7b7ed816eb068ce"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_8.npz",
+      "bytes": 4616,
+      "sha256": "95e18161b1fc3d99f89e3f36a4ce7a404ff5ef5e4272ab03a92c727e5c9ddbd0"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_after_round3_RIGHT_9.npz",
+      "bytes": 14567,
+      "sha256": "8a36e7e446cd8f5c719c2ae9d093ad90a7a9f3f1bc9f9f94fcd8407da6f3802e"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_LEFT_0.npz",
+      "bytes": 2390,
+      "sha256": "7039b5724d6bb69f4b7a0db8f6f74d7be16179baed44e090bd53173ed9c1663a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_LEFT_1.npz",
+      "bytes": 5214,
+      "sha256": "0f66132a82705c7d1ce7f373a35645f897ddab9bdec332f80159785087960f15"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_LEFT_10.npz",
+      "bytes": 6915,
+      "sha256": "61e8bb21ccb8cb22599615c578b90db5cb6b2c3e407c31197cba0bdcd7ec8e27"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_LEFT_12.npz",
+      "bytes": 8946,
+      "sha256": "ac11abb46da4794a5442b46388ffa08922a95f15485166e45704fc26c861182f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_LEFT_13.npz",
+      "bytes": 2360,
+      "sha256": "3fb73bf8236f065cfe3a32d00e122a3a0c31f9b7e51cf1aeb25917507b373a86"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_LEFT_14.npz",
+      "bytes": 3538,
+      "sha256": "fdde3758d86b1d146edadcdb395b3b9cfcd6dc62423f7d8638a8f80304aeb431"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_LEFT_2.npz",
+      "bytes": 14534,
+      "sha256": "f503e65dd4ca27c4bd0b7fb23ca82354499fefdb84e41918b0f5ef4ccb12b3bf"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_LEFT_4.npz",
+      "bytes": 975,
+      "sha256": "9d438541f422d7b138921e5cb20c2db3d220aea5ad2f106eb3b4abd9a12fb8fb"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_LEFT_5.npz",
+      "bytes": 5094,
+      "sha256": "c10d7042b9fe2b1b2f4b64352ac82bb0a3cc061119b296176e4fb9201dbef65d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_LEFT_6.npz",
+      "bytes": 4992,
+      "sha256": "2c6246fff188f47d478413012d1e4c9c51da3274ff9b659c34027fbaf9f90f04"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_LEFT_8.npz",
+      "bytes": 3565,
+      "sha256": "b3f659f8dc00f595d9ff9be25d71f3286e671bccbd30951f483584427167490c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_LEFT_9.npz",
+      "bytes": 2529,
+      "sha256": "286787f0c8beb9996527aa52e12bee0e79ac86648378f60724a1107b7cc59bfa"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_0.npz",
+      "bytes": 3540,
+      "sha256": "ee1ba21c624db6518f903aab976ffac25032fd63755062632292885d17c491fb"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_10.npz",
+      "bytes": 3516,
+      "sha256": "72aa757063c326c880a61cebe8b9b35904fa4d18966e5209b24bc718753eb62c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_11.npz",
+      "bytes": 5147,
+      "sha256": "a3375c0eda757addf3849fe3cc3bd0b600b084d29b2a2cc924c7f3006c886799"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_12.npz",
+      "bytes": 4056,
+      "sha256": "8c1f4c31019214a5521dd29a3cc3e7883c5230ff79be6b41da1bd73abc9a081c"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_13.npz",
+      "bytes": 4388,
+      "sha256": "46b0aa3915e330726867597ac45953c899bc7aaae2b221e8ccd7a145204c0dbd"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_14.npz",
+      "bytes": 3104,
+      "sha256": "642504f14c0ee9a1d035c57a9d6e6a196360c0ce029a547418bafd15ee40b89a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_15.npz",
+      "bytes": 6765,
+      "sha256": "cefb32014bdbe9c217d04dea0c72501f9f46b55c202683c157bf1829403f5d15"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_2.npz",
+      "bytes": 8848,
+      "sha256": "5cd022eadbb55cef4887d68f1a4d1a3d14ab93121eb4695d3b46ae451be5b184"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_3.npz",
+      "bytes": 2753,
+      "sha256": "2336344321ed145bc2788d92d92e6a52bfd1d0f4cc36da07547c210872de0cfd"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_4.npz",
+      "bytes": 4840,
+      "sha256": "7880a96a47cc945137b5ecd58215be938823621000fb226156aedf4d4b268292"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_5.npz",
+      "bytes": 3714,
+      "sha256": "cdc3776397603b2b62f82f2ce9f7f4c1744dd0b47085d3dee6730469f0e74a41"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_6.npz",
+      "bytes": 9180,
+      "sha256": "371cbbf530be43d8c6dbec08fdb5df13204b850388a4dc9026b5b61fc459b4d8"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_7.npz",
+      "bytes": 6290,
+      "sha256": "dc217dac203cf9109c1a1a86a45418bf6c7f692513c3da470059e34cb3bd7802"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_8.npz",
+      "bytes": 4545,
+      "sha256": "2856efea977d4e010fcaea8c6959ad27a9121c5c9a4f934c45eb71c58ae02d85"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_before_round3_RIGHT_9.npz",
+      "bytes": 13540,
+      "sha256": "e198468b07b45c1fd3806fda6056913b543f30472afe2a9240c78dbc9e768dfc"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_primary_2029653601_LEFT.npz",
+      "bytes": 6515,
+      "sha256": "7e2f5b39efed7b5b0e736ecb18861d67d93bea607909aca86f93f8a3597d4165"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_primary_2029653602_RIGHT.npz",
+      "bytes": 5846,
+      "sha256": "8b730f9ae046009f565631c135532d4263520cc46c6a03b386f71efa9bf9db7b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_primary_2029654801_LEFT.npz",
+      "bytes": 6617,
+      "sha256": "f0945429d3fcc4dfb803fc73acfff71b89229e9fd9ff66a4d9827cff52774ad5"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_primary_2029654802_RIGHT.npz",
+      "bytes": 8150,
+      "sha256": "349fcc79c16d6fd262aa29cedc3c3723a9a9a920349e988b0f07aa48c68bc27b"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_primary_4m_2029653601_LEFT.npz",
+      "bytes": 10193,
+      "sha256": "2e5f6dd5b92e11dd142c53c659c07baf41207d868cf1aa390a03b0894853b13a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_primary_4m_2029654802_RIGHT.npz",
+      "bytes": 7756,
+      "sha256": "4da991aa2cead5f81c027c4bdf0921e9240894c9ec278f4639173377348c5548"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_primary_5m_2029653601_LEFT.npz",
+      "bytes": 9519,
+      "sha256": "a860cb36a7e71bc81fbf188a18a298de106783e41f0dce78c97cbd4610f18e99"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_primary_5m_2029654802_RIGHT.npz",
+      "bytes": 14689,
+      "sha256": "e5d1fc6ef64e76538b130d80b0b70ffcb001bc08994dd42c0b0fe7524bf4abea"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_roots_root_LEFT.npz",
+      "bytes": 3240,
+      "sha256": "8e1c99ecec5c6db688bff63116347d77757b98d80fc0c43cb40e473eeab66041"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/telemetry/round3_roots_root_RIGHT.npz",
+      "bytes": 2862,
+      "sha256": "d7663abc8b3e4e484853ffc4e31ed8a69fbfb5654b4f1efe8d3c34481d4ae0c3"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/train.log",
+      "bytes": 18955,
+      "sha256": "d0d6a36d0bfab00c8893e88b00ffb90e4954743d79d378e820cb7e1af5557ddb"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/verification.log",
+      "bytes": 3127,
+      "sha256": "5d8ca2e483d098eeaafbe7bbf2522431c60d2532142bd8ce56aed8cfd4bb1d2d"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/workers/0/worker.log",
+      "bytes": 66844,
+      "sha256": "edac78e595ff6908eeee7399ae114cca856d99f2b4d69a8f82ec25616697210f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/workers/1/worker.log",
+      "bytes": 67194,
+      "sha256": "ea229a98ff70f10b433d885020ecd87429f502eaa18bc397d9dc8945a05ac62f"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/workers/2/worker.log",
+      "bytes": 63950,
+      "sha256": "78c97eb2f5b35d2239ae77d2dd33c9c2874d7ad5df1b6bcfb8fdc56cadd7bcab"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/workers/3/worker.log",
+      "bytes": 63775,
+      "sha256": "f9c585ba676e28ef756eb002e2c82a95c0e9dab22fc233a76817e65c992c74e1"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/workers/4/worker.log",
+      "bytes": 66945,
+      "sha256": "7f63159c62d7c3ca6a25dfca36d97e0e3cb3d68b948c2db6c4dc38788d2617eb"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/workers/5/worker.log",
+      "bytes": 67325,
+      "sha256": "81f981b84221360d5846fab4c4fcc3e86fa8110af095e6763f6b9e0279d27f0a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/workers/6/worker.log",
+      "bytes": 62944,
+      "sha256": "859129f3a8cb81edc580a86ed4f5a4e772dd26b92fdb75bc930b0c16c7d70a56"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/workers/7/worker.log",
+      "bytes": 62969,
+      "sha256": "e1b09f85f6e652af37023985779e376845049cad766e9d1eb7efde51d6f6172a"
+    },
+    {
+      "path": "stage/runs/t190_adaptive_start_curriculum/workers.json",
+      "bytes": 135,
+      "sha256": "ee7a21d7d6c188e791037b0ab0e8c7dd031ca0c61193a9a1991a4c9e66413760"
+    }
+  ]
+}

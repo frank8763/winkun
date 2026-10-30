@@ -1,0 +1,118 @@
+{
+  "experiment": "T193",
+  "seed": 2026103093,
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t190_adaptive_start_curriculum/checkpoint_latest.pt",
+  "primary_cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "retention_demonstrations": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz",
+  "successful_sources": [
+    {
+      "id": "no_her_b4_w7",
+      "arm": "no_her",
+      "case": "5m_2029654802_RIGHT",
+      "snapshot_side": null,
+      "physics_steps": 23043,
+      "decisions": 231,
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "nearest_m": 0.19995849429264884,
+      "remaining_m": 0.19995849429264884,
+      "actual_seed": 2029654802,
+      "stochastic": true,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t192_sac_her/episodes/no_her_b4_w7.npz",
+      "sha256": "ad9c2824a8bea0fb394b95b1fbc4e09d2d6e4077f779e5a4dd7732950528c407"
+    }
+  ],
+  "supervised_updates": 5000,
+  "wall_seconds": 600,
+  "max_physics": 210006,
+  "max_bytes": 33554432,
+  "selection": "Earliest recorded safe native original5m stochastic SAC training success per side in completed T192 episodes.jsonl. No fastest/best-checkpoint selection; maximum2trajectories. All T192 failures remain preserved.",
+  "validation": "First replay saved native actions in a newly created original task and verify113states, every physicsxy and exactGOAL step. This replay only audits the training data, not network deployment success or independent evidence. Stop on mismatch.",
+  "training": "Start stable old6-retaining T190Actor, freshAdam bodylr3e-5, native/direct heads3e-4. Fixed5000supervisedMSE updates,32uniformstates/task/step across six T169 successes and each newly verified5m trajectory. All tasks equal weight, no temporal filtering or invented action labels. Past-action input columns frozen0. No new RL samples or RL updates.",
+  "evaluation": "One fixed final network on original8tasks; all actions closed-loop from current113observation. No action replay, trajectory lookup, planner, waypoint or teacher at deployment. Original scene0.20m radius/caps unchanged. Report all8 separately, no automatic promotion.",
+  "scope": "Supervised policy consolidation from real end-to-end RL successful behavior and existing old6 demonstration states. Not pureRL, not freshRL optimizer updates, not independent generalization/novelty. T159 incumbent; all code/data inwinkun, noPhase, allnewruns1GiB/free40GiB.",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t190_adaptive_start_curriculum/checkpoint_latest.pt": "bfe0c216525ff55d0413903c50677312dcf524857a2adf80ba2e8669bfb2e0d2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t192_sac_her/summary.json": "5ac3a53766a72e721f09265d2ca4e2760eadcda1b91c7ca08dc09f759beb6140",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t192_sac_her/episodes.jsonl": "7fb12408d6da3ced8427c5b62050d91053f9700a39a1fdb49c02f0c1c3f269dc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz": "c124283516a486b9527dacec00e426a5047e0076506504123347dfe736b841da",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t193_success_consolidation/prepare.py": "a47d6de1e832fa96b422c3026b36e8246740f70f7e85b3e36175300d9f015843",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t193_success_consolidation/common.py": "efbf074a90f70f96d59929286f24290eff2aa42e9422a2ae3ef2b82d96a080b1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t193_success_consolidation/run.py": "1f490fcf0784228447d6302e5241267aa0ba6acce40e1b23eee3b390794b5449",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t192_sac_her/episodes/no_her_b4_w7.npz": "ad9c2824a8bea0fb394b95b1fbc4e09d2d6e4077f779e5a4dd7732950528c407"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "experiment": "T191",
+  "seed": 2026103091,
+  "jobs": [
+    {
+      "id": "original_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "original_RIGHT",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "near_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "snapshot_side": "LEFT"
+    },
+    {
+      "id": "near_RIGHT",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "snapshot_side": "RIGHT"
+    }
+  ],
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t190_adaptive_start_curriculum/checkpoint_latest.pt",
+  "anchor_sources": {
+    "LEFT": {
+      "id": "phase1_side0_draw0",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "course_bin": 1,
+      "reset_task": {
+        "seed_requested": 2029653601,
+        "seed_actual": 2029653601,
+        "distance_m": 1.0725596218501023,
+        "angle_deg": -13.357274353413814,
+        "goal_xy": [
+          1.5750185651952417,
+          -3.676543648434686
+        ],
+        "start_pose": [
+          2.2215503794128546,
+          -2.820751176144986,
+          -1.9846653054486456
+        ],
+        "phase": 1,
+        "canonical5m": false,
+        "reset_only_pose_initialization": true,
+        "final_goal_never_changed_during_episode": true,
+        "signature": "470c762237fb604fcea07401cdaa026c26037a9cd1d0260f70bf2e56a2487b31",
+        "quaternion": [
+          0.5467382112897416,
+          0.0,
+          0.0,
+          -0.8373036058179218
+        ]
+      },
+      "prior_T172_success": true,
+      "snapshot_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/LEFT_fullstate.npz"
+    },
+    "RIGHT": {
+      "id": "phase1_side1_draw0",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "course_bin": 1,
+      "reset_task": {
+        "seed_requested": 2029654802,
+        "seed_actual": 2029654802,
+        "distance_m": 1.3277782831531277,
+        "angle_deg": -5.672219466666458,
+        "goal_xy": [
+          5.486694873876159,
+          0.043289980823624674
+        ],
+        "start_pose": [
+          6.448595281008868,
+          0.9585728747810045,
+          -2.2820242379615814
+        ],
+        "phase": 1,
+        "canonical5m": false,
+        "reset_only_pose_initialization": true,
+        "final_goal_never_changed_during_episode": true,
+        "signature": "33ccae798ad29992b9a5b0c89d1f730b21ec1912d5ecc7135d8827b98fa29811",
+        "quaternion": [
+          0.41667464501864926,
+          0.0,
+          0.0,
+          -0.9090556859723076
+        ]
+      },
+      "prior_T172_success": true,
+      "snapshot_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/RIGHT_fullstate.npz"
+    }
+  },
+  "hold_steps": 100,
+  "max_physics": 93336,
+  "wall_seconds": 300,
+  "max_bytes": 16777216,
+  "optimizer_updates": 0,
+  "goal_radius_m": 0.2,
+  "relabel_samples_per_episode": 8,
+  "contract": "Frozen one-network policy, original goals/scenes/time limits, no goal or pose writes during actual episodes. In-memory history-frame hook only records generation pose/goal. All113 fields rebuilt, original cached3m history retained. Offline future achieved-position labels; no route, planner, waypoint or runtime teacher.",
+  "terminal_contract": "Native contact has priority; stop relabeled episode at first true per-physics-step radius hit, preserve original finite clock, no fictitious post-contact data. A terminal before action hold ends needs reward/discount truncation; stored later endpoint is not the exact first-hit observation and cannot enter next-state losses. Audit does not yet emit replay.",
+  "scope": "Bounded data audit, not HER training, policy improvement or novelty evidence. All old experiments preserved; Stage/Phase isolated. All new runs cumulatively1GiB and disk free40GiB.",
+  "references": [
+    "https://arxiv.org/abs/1707.01495"
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t190_adaptive_start_curriculum/checkpoint_latest.pt": "bfe0c216525ff55d0413903c50677312dcf524857a2adf80ba2e8669bfb2e0d2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t191_her_contract_audit/prepare.py": "f98cee4233ddc94c062c3052523edeffb75b794663ea67699d9b8f706745d4dd",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t191_her_contract_audit/common.py": "e7768b9a15956a56f137e6363a38b32ee5f7b581b76a51a06986c3f0a73905b1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t191_her_contract_audit/run.py": "ba67693275b9a679c8f6a26266aaf692b391cd1ca5cdcefb1c33d4664123c5fe",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/LEFT_fullstate.npz": "821ee9028a6f138e7ba6cdeae24ecf1ca732ad9e05f19c22f3414e1aa4a1eb69",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/RIGHT_fullstate.npz": "9e71a6ee3aaf77c52844470f9f88a07f278da8ce3f5e2dfd484fdef9b10105cc"
+  }
+}

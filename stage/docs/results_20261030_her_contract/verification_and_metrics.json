@@ -1,0 +1,145 @@
+{
+  "state": "PASS",
+  "protocols": {
+    "t191_her_contract_audit": {
+      "sha256": "fb7aeed30289d72df00d80bf91fc3397d6569239f5c4f02b885b48088e1e17b7",
+      "inputs_verified": 6
+    },
+    "t192_sac_her": {
+      "sha256": "c3682c52d5e25f9cd02d5137570186b5ba20a2544bc7604623c4aef95d8a5b09",
+      "inputs_verified": 14
+    }
+  },
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "T191": {
+    "native_physics_steps": 46293,
+    "optimizer_updates": 0,
+    "relabel_cases": 32,
+    "eligible_relabel_cases": 32,
+    "max_original_observation_rebuild_error": 0.0,
+    "interior_hold_first_hits": 32,
+    "original5m_safe_success": 0
+  },
+  "T192": {
+    "training": {
+      "no_her": {
+        "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t192_sac_her/no_her/checkpoint_latest.pt",
+        "sha256": "7e8a28eec5cf81c63e443d8ff6a67c2c83424399930febeaa34e9a0f6d678b77",
+        "physics_steps": 938523,
+        "decisions": 9424,
+        "actor_updates": 4000,
+        "critic_updates": 5500,
+        "episodes": 64,
+        "success": 25,
+        "original5m_success": 1,
+        "original5m_n": 32,
+        "terminal_metrics": {
+          "original": {
+            "n": 68,
+            "q1_mae": 0.01849910244345665,
+            "q2_mae": 0.017119061201810837
+          }
+        },
+        "original_replay_transitions": 9889,
+        "her_replay_transitions": 0
+      },
+      "her": {
+        "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t192_sac_her/her/checkpoint_latest.pt",
+        "sha256": "3838547443a5682da0ab9082c1df3f6e7717da0c032269ef6a1c56d18adc0a5a",
+        "physics_steps": 806801,
+        "decisions": 8104,
+        "actor_updates": 4000,
+        "critic_updates": 5500,
+        "episodes": 64,
+        "success": 30,
+        "original5m_success": 0,
+        "original5m_n": 32,
+        "terminal_metrics": {
+          "original": {
+            "n": 68,
+            "q1_mae": 0.017011744901537895,
+            "q2_mae": 0.015282590873539448
+          },
+          "hindsight": {
+            "n": 528,
+            "q1_mae": 0.012832758948206902,
+            "q2_mae": 0.010233030654489994
+          }
+        },
+        "original_replay_transitions": 8569,
+        "her_replay_transitions": 32337
+      }
+    },
+    "scores": {
+      "initial": {
+        "old6": {
+          "safe_success": 6,
+          "n": 6,
+          "collision": 0,
+          "timeout": 0
+        },
+        "original_5m": {
+          "safe_success": 0,
+          "n": 2,
+          "collision": 1,
+          "timeout": 1
+        },
+        "near_goal": {
+          "safe_success": 0,
+          "n": 0,
+          "collision": 0,
+          "timeout": 0
+        }
+      },
+      "no_her": {
+        "old6": {
+          "safe_success": 6,
+          "n": 6,
+          "collision": 0,
+          "timeout": 0
+        },
+        "original_5m": {
+          "safe_success": 0,
+          "n": 2,
+          "collision": 0,
+          "timeout": 2
+        },
+        "near_goal": {
+          "safe_success": 2,
+          "n": 2,
+          "collision": 0,
+          "timeout": 0
+        }
+      },
+      "her": {
+        "old6": {
+          "safe_success": 6,
+          "n": 6,
+          "collision": 0,
+          "timeout": 0
+        },
+        "original_5m": {
+          "safe_success": 0,
+          "n": 2,
+          "collision": 0,
+          "timeout": 2
+        },
+        "near_goal": {
+          "safe_success": 2,
+          "n": 2,
+          "collision": 0,
+          "timeout": 0
+        }
+      }
+    },
+    "evaluation_physics": 356881
+  },
+  "initial_training_batch_exactly_matched": true,
+  "previous_archived_files_unchanged": 823,
+  "new_online_training_physics": 1745324,
+  "new_training_decisions": 17528,
+  "actor_updates": 8000,
+  "critic_updates": 11000,
+  "all_new_runs_bytes": 820199852
+}
