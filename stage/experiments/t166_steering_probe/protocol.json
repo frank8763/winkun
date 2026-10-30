@@ -1,0 +1,23 @@
+{
+  "experiment": "STAGE_T166_PREDECLARED_STEERING_PARAMETER_PROBE",
+  "parent_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt",
+  "parent_sha256": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570",
+  "steering_bias_deltas": [
+    -0.3,
+    -0.15,
+    0.15,
+    0.3
+  ],
+  "changed_parameter": "actor.net.4.bias[1] only; throttle and all other neural parameters unchanged",
+  "run_directory": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t166_steering_probe",
+  "training_type": "bounded parameter search on a DRL-derived distilled Actor; not TD3 gradient training or a new algorithm claim",
+  "inference": "single Actor, raw neural outputs, original native mapping; no steering override, planner, route or teacher routing",
+  "tasks": "two known fixed 5m courses, full outcomes reported; development/model-search data, not blind generalization",
+  "acceptance": "Only smallest absolute delta passing BOTH 5m courses is eligible for six-old-task regression. No runtime task-based policy switching. If none pass both, no model promotion.",
+  "frame_cap_per_case": 23334,
+  "wall_seconds": 600,
+  "disk_cap_bytes": 67108864,
+  "automatic_distance_expansion": false,
+  "reference": "https://arxiv.org/abs/1706.01905",
+  "reference_limit": "Parameter-space exploration is established; this is a deterministic low-dimensional diagnostic, not a reproduction or novelty claim."
+}

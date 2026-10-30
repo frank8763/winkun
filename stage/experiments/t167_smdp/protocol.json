@@ -1,0 +1,37 @@
+{
+  "experiment": "STAGE_T167_CAUSAL_PHYSICAL_TIME_AND_FIXED_START_PILOT",
+  "gate_cadences_physics_steps": [
+    25,
+    10
+  ],
+  "selection": "Largest control hold with all six old fixed courses passing; otherwise do not launch SMDP training. All cadence outcomes retained.",
+  "policy_input": "unchanged 112 dimensions; no task ID, map, obstacle coordinates, planner or waypoints",
+  "next_training_predeclaration": {
+    "physics_budget": 256000,
+    "max_distance_m": 5,
+    "discount_efold_seconds": 10,
+    "reward": "discounted native-step reward sum including same T59/T66, divided by constant control-hold length",
+    "critic_initialization": "fresh; one-step old replay/Critic not reused for SMDP semantics",
+    "actor_initialization": "T159",
+    "retention_teacher": "frozen T159 on all six successful task state banks",
+    "final_goals": "23 endpoint-feasible goals from fixed-start audit plus the two original 5m goals; no intermediate waypoints",
+    "noise_std": 0.15,
+    "noise_hold_seconds": 1,
+    "wall_limit_seconds": 1200
+  },
+  "study_type": "declared multi-change engineering pilot; not a controlled new-algorithm superiority claim",
+  "cap_all_new_runs_bytes": 1073741824,
+  "references": [
+    "https://proceedings.mlr.press/v97/tallec19a.html",
+    "https://proceedings.mlr.press/v80/pardo18a.html",
+    "https://arxiv.org/abs/1706.01905"
+  ],
+  "source_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t167_smdp/cadence_eval.py": "8e50c8aeafcf020823c6bf3802637b9a1a14b25a13ae91bfd0245094846381ba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t167_smdp/train.py": "f4840f807da79df7775d192fac1ad455e1203d49dce57ff4739307e73e8412b7",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t167_smdp/pipeline.py": "012897a247bf3b3c9a1eace876df6ee150d00d725d44268fad735c4868b61607",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t167_smdp/evaluation_declaration.json": "b39e108bd07d4c402912a64983dbf7a405dbb3dfcaf197914887ffec9f115e1a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t167_smdp/fixed_goal_eval.py": "c73238f54c646a8bc9edba1888e9376191f6df78aa007faa2cbdf12fb15ac318",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t167_smdp/task_bank.json": "1048620046dad519792454fbd31dba1458b52da276be3c547e3991c09b87bf88"
+  }
+}

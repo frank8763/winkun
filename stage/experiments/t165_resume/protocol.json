@@ -1,0 +1,35 @@
+{
+  "experiment": "STAGE_T165_T164_VERIFIED_BOUNDARY_CONTINUATION",
+  "arms": [
+    "gamma099",
+    "gamma2s"
+  ],
+  "run_directory": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t165_resume",
+  "source_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t165_resume/train.py": "4a918c97c2b7e17ff2d1fe0815b6a844f0e4e6469fce89fd25d47180d46323f7",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t165_resume/resume_support.py": "594b7d0f6cd80283e5fdc989684c7885051d4f430763ddd5164940da31c8357f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t165_resume/pipeline.py": "e182f2a25b76ae7deb3243473ccb19551dbe0f4f43578002cf0450cd6d1047b5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t165_resume/evaluation_declaration.json": "8a302c0b21ff5a0ed92359c993e8b0f15602edf0b591a31b93080832f781a170"
+  },
+  "original_target_frames_per_arm": 256000,
+  "resume_frames": {
+    "gamma099": 170199,
+    "gamma2s": 165498
+  },
+  "remaining_frames_total": 176303,
+  "wall_limit_seconds_per_arm": 900,
+  "disk_cap_bytes": 1073741824,
+  "minimum_free_bytes": 42949672960,
+  "checkpoints_per_arm": 2,
+  "after_eval_keep": "final checkpoint only per arm; discard owned rolling predecessor with hash receipt",
+  "Phase_isolated": true,
+  "planner": false,
+  "waypoints": false,
+  "automatically_expand_distance": false,
+  "study_type": "one-training-history engineering sensitivity pilot; not a novel-method proof",
+  "references": [
+    "https://proceedings.mlr.press/v97/tallec19a.html",
+    "https://arxiv.org/abs/2506.05997",
+    "https://proceedings.mlr.press/v162/yu22d.html"
+  ]
+}

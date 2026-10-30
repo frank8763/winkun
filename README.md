@@ -4,9 +4,12 @@
 
 ## 本机工作目录与执行
 
-后续在本仓库根目录开发和运行代码。执行 `./run_stage.sh` 只检查依赖和文件哈希；获准继续研究后，新代码放 `stage/experiments/`，结果放 `stage/runs/`，通过 `./run_stage.sh stage/experiments/实验脚本.py` 执行。GitHub 保存版本与模型附件，实际计算由本机或另行配置的计算设备承担。迁移整理完成后等待用户检查，当前不自动训练。
+后续在本仓库根目录开发和运行代码。执行 `./run_stage.sh` 只检查依赖和文件哈希；获准继续研究后，新代码放 `stage/experiments/`，结果放 `stage/runs/`，通过 `./run_stage.sh stage/experiments/实验脚本.py` 执行。GitHub 保存版本与模型附件，实际计算由本机或另行配置的计算设备承担。用户已检查迁移并授权继续；当前研究状态见[RESEARCH_STATUS](stage/docs/RESEARCH_STATUS.md)，按有界协议运行。
 
 ## 入口
+
+- [最新实验状态](stage/docs/RESEARCH_STATUS.md)
+- [本轮长距离诊断与文献边界](stage/docs/results_20261030/analysis.md)
 
 - [迁移完成、清理明细与磁盘释放报告](stage/docs/CLEANUP_REPORT.md)
 - [迁移与恢复说明](stage/docs/MIGRATION.md)

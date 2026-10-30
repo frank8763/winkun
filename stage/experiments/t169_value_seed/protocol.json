@@ -1,0 +1,38 @@
+{
+  "experiment": "STAGE_T169_SUCCESS_VALUE_SEED_PILOT",
+  "stage_only": true,
+  "planner": false,
+  "waypoints": false,
+  "actor_parent": "T159",
+  "cadence_physics_steps": 25,
+  "discount_efold_s": 60,
+  "physics_budget": 128000,
+  "wall_seconds": 900,
+  "critic_pretrain_updates": 1000,
+  "critic_initial_action_columns": "Zero and held zero during supervised value fit, released for online TD3 learning; initial Q independent of action, not NAF reproduction",
+  "demonstrations": "six fresh frozen T159 safe old courses at20Hz, complete discounted MC returns; no manual demonstrations",
+  "replay_batch": "32 online +32 fixed verified success transitions",
+  "reward": "-0.01 per second, +10 goal, -10 collision, Phi=-0.3*goal_distance with absorbing terminal Phi=0; exact physical discount; NEW sparse objective, not equivalent to old composite reward",
+  "retention_weight": 10,
+  "training_episode_cap": "twice original distance-scaled cap, to collect outcomes; original acceptance caps unchanged",
+  "primary_eval": "six old courses and original two5m at unchanged deadlines",
+  "secondary_eval": "same two5m at93.336s, predeclared diagnostic only; late success does not pass46.668s acceptance",
+  "checkpoint_selection": "final128k only, no intermediate search",
+  "disk_cap_all_new_runs_bytes": 1073741824,
+  "study_type": "multi-change single-run engineering pilot; no new-algorithm superiority or generalization claim",
+  "references": [
+    "https://proceedings.mlr.press/v97/tallec19a.html",
+    "https://proceedings.mlr.press/v48/gu16.html",
+    "https://arxiv.org/abs/1709.10089",
+    "https://proceedings.mlr.press/v80/pardo18a.html",
+    "https://people.eecs.berkeley.edu/~pabbeel/cs287-fa09/readings/NgHaradaRussell-shaping-ICML1999.pdf"
+  ],
+  "source_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t169_value_seed/collect.py": "8a5cb17501f647c85faaeaad766efc663fd3fd790f2f9ab8745d65e5f483de6b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t169_value_seed/train.py": "5e69723571733e64d63a7eba3c16443ced76f42101b71b0da56165a98280f8cd",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t169_value_seed/pipeline.py": "e8bf795b6e993a51c8a5b7897395fc3c406e59d48cb2ce099d6120af4770af58",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t169_value_seed/reward_contract.py": "53689b31e3785d5eaab673649d0e53fc80d91093facfbd04d350844e35f27ba1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t169_value_seed/evaluation_declaration.json": "0abec468cb4991586dc2274b834ee88a272c3281a138633a1efc6d74dc4f392c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t169_value_seed/value_pretrain.py": "dda6836f398eb9e4ca64d15405f8a496a610de5e28da43827b9afe2bd14477aa"
+  }
+}

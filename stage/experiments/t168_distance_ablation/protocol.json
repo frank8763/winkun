@@ -1,0 +1,27 @@
+{
+  "experiment": "STAGE_T168_PREDECLARED_METRIC_GOAL_CHANNEL_ABLATION",
+  "parent": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt",
+  "parent_sha256": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570",
+  "scales": [
+    0.0,
+    0.5
+  ],
+  "columns": [
+    48,
+    51,
+    52,
+    72,
+    84,
+    96,
+    108
+  ],
+  "operation": "Multiply only the specified first-layer weight columns; full true final-goal observation still provided; bearing/velocity/lidar weights unchanged. No virtual goal or runtime input remapping.",
+  "cadence_physics_steps": 25,
+  "tasks": "Original two fixed 5m tasks; six old tasks only if a declared candidate passes both",
+  "selection": "Smallest change from scale1 among candidates passing both5m, then require all six old regressions; no automatic promotion",
+  "type": "bounded neural feature ablation/engineering parameter search on a DRL-derived distilled Actor, not fresh TD3 learning or novelty proof",
+  "disk_cap_bytes": 67108864,
+  "planner": false,
+  "waypoints": false,
+  "generalization_claim": false
+}
