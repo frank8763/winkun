@@ -1,0 +1,80 @@
+{
+  "state": "COMPLETE",
+  "training": {
+    "tau1s": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t178_exploration_time/tau1s/checkpoint_latest.pt",
+      "sha256": "4cc373579f26bae63037f32609305e51153c0bb15b2f53244d0416c414c64b92",
+      "physics_steps": 254884,
+      "actor_updates": 96,
+      "training_episodes": 48,
+      "training_success": 0,
+      "training_collisions": 48
+    },
+    "tau8s": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t178_exploration_time/tau8s/checkpoint_latest.pt",
+      "sha256": "31eca216327d0cb685e615ed09c9e1a72238c43eaa2ca3c1ed1feb292b15a674",
+      "physics_steps": 291797,
+      "actor_updates": 104,
+      "training_episodes": 48,
+      "training_success": 0,
+      "training_collisions": 43
+    }
+  },
+  "scores": {
+    "initial_embedding": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "frontier_subtask": {
+        "safe_success": 0,
+        "n": 4,
+        "collisions": 4
+      }
+    },
+    "tau1s": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "frontier_subtask": {
+        "safe_success": 0,
+        "n": 4,
+        "collisions": 4
+      }
+    },
+    "tau8s": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "frontier_subtask": {
+        "safe_success": 0,
+        "n": 4,
+        "collisions": 4
+      }
+    }
+  },
+  "max_cpu_gpu_behavior_logp_error": 5.91278076171875e-05,
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scope": "One seed, fixed sourcefrontiers, same map. Frontier success is not complete5m. Only within-PPO AR noise-correlation-time arms constitute controlled comparison; no SACvsTD3vsPPO superiority claim."
+}

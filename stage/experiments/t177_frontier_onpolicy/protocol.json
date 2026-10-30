@@ -1,0 +1,145 @@
+{
+  "experiment": "STAGE_T177_FAILURE_FRONTIER_AR_PPO_MC_ACTION_RANGE_CONTROL",
+  "seed": 2026103077,
+  "batches_per_arm": 6,
+  "episodes_per_batch": 8,
+  "episodes_per_arm": 48,
+  "frontier_step_cap": 12000,
+  "max_physics_per_arm": 576000,
+  "wall_seconds": 1200,
+  "noise_correlation_s": 1.0,
+  "initial_std": [
+    0.6,
+    0.8
+  ],
+  "policy": "113->800->600->2Tanh->trainable2x2nativecommandhead;113rdinputremainingbudget. SingleActor. InitiallyphysicalnativecommandsmatchT159within1e-5. Inferenceisdeterministicmeanclippedtoarmdomain.",
+  "control_hold_steps": 100,
+  "arms": {
+    "legacy_range": {
+      "native_throttle": [
+        0,
+        1
+      ]
+    },
+    "full_range": {
+      "native_throttle": [
+        -1,
+        1
+      ]
+    }
+  },
+  "controlled_difference": "Onlyallowednative-throttlelowerbound differs. Sameinitialpolicyparameters,initialphysicalmean,architecture,MCobjective,6x8episodemaxbudget,sourcefrontiers,explorationGaussianseeds,optimizer,BCregularizer. ActualstepsandKLstoppedupdatecountsvarywithoutcomes.",
+  "objective": "Finite24sfrontiertask: -.01persecond,+10goal,-10collision,-5tasktimeout;discount exp(-.002/60), potential-.3distance withabsorbingpotential0 ongoal/collision/tasktimeout. This isdeclaredfinitehorizonobjective,notT169continuingobjectiveequivalence. Deadlinefeaturevisible.",
+  "advantage": "CompleteobservedMCreturntogo minusindependentpartnerepisode(samefixedreset) returntogo atsametimeindex;partnerabsorbedtail0. Fixeddivisionby10, weightingexp(-elapsed/60). NoCriticorbootstrap.",
+  "ppo": "LatentGaussianconditionalAR(1): mean=mu(s)+rho*(previouslatent-mu(previousstate)),rho=exp(-control_dt/1s); innovationstd=sigma*sqrt(1-rho^2),firststd=sigma. Storeunclippedlatentandpreviousstate;recomputebothmu termsforlikelihood. CPU/GPUbehaviorlogpmustmatch<2e-4. PPOclip.1,4epochs,batch128,KLstop.02,gradientclip.5. Entropybonus.001onlatentconditionallaw,notclippedactionentropy.",
+  "optimizer": {
+    "body_lr": 1e-05,
+    "native_head_lr": 0.0001,
+    "logstd_lr": 0.001
+  },
+  "retention": "192statesbalanced32peroldcourse,T169successful112obs withconvertednativeactiontargets(.5*(oldthrottle+1),oldsteering). Clockfromphysicalelapsed/originalcasecap. MSEweight10. NooldCriticorreplayreuseundernewactionsemantics.",
+  "retention_demonstrations": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz",
+  "primary_cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "evaluation": "Finalbudgetonly,initialnativeembedding+twofinalarms,all6old+2original5m+4frontiers,deterministicmean. Primarysuccessradius.2,original3m28s/4m37.334s/5m46.668s unchanged. Frontierremainingdistance~1.87-2.51m,not5mcapability.",
+  "selection": "Nointerimfrozenmodelselection,noautomaticpromotion. T159remainsincumbentunlessseparatelyaccepted.",
+  "scope": "Onepairedpilotseedandonegeometrylayout. On-policyPPO+AR+frontier+deadline differsfrompreviousTD3inmultiplefactors; onlythrottle-rangecomparisoniscontrolled. NotPPOvsSACvsTD3ranking,notnovelalgorithmproof.",
+  "storage": {
+    "all_new_runs_cap_bytes": 1073741824,
+    "checkpoint_max_bytes": 33554432,
+    "retained_perarm": "latest/previousduringtraining,finalonlyafterevaluation",
+    "minimum_free_bytes": 42949672960
+  },
+  "references": [
+    "https://arxiv.org/abs/1707.06347",
+    "https://www.ijcai.org/proceedings/2019/0382.pdf",
+    "https://proceedings.mlr.press/v80/pardo18a.html",
+    "https://proceedings.mlr.press/v78/florensa17a.html"
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t177_frontier_onpolicy/common.py": "592b49826215b283ea5c5b50e10c7203e443a104981f0b1c3fd98a2799c16e31",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t177_frontier_onpolicy/worker.py": "d2ac2a7c2b43174edacd37e0c57bd8e792b653370191af67ad411d3817959db5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t177_frontier_onpolicy/train.py": "6dc0783517c50480c8119746f1018d39de88d2018ea8a22a9d6c71f00ad7fc3d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/preparation.json": "f6d1f22cc36bc6d4d4223af74e411b76f6619d02145006c69c0d327deb3b6701",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/cross_environment_verification.json": "7f618b42a9406bfac06af4025d28607a382be7ce9405f9fe80f5bc44bf83ffc6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/initial_policy.pt": "175acb05a8b0b9571e8438f337a3c8cdec40666aeae5c6e6b0815b00b759348f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz": "c124283516a486b9527dacec00e426a5047e0076506504123347dfe736b841da",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/LEFT_before12s.npz": "b48c78068530ca2ed19ddf53650f3e479ae954c4516dfffeac1f631de300afb4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/LEFT_before6s.npz": "fe9fcc343610c83572b5764a2b6ec18df5aba648ff17277d5e8139ebe76e2c38",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/RIGHT_before12s.npz": "e1ddf24fb46c9c521b3d24ffb9b3e8b5798448b19fb1c1acc5634b439f16b016",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/RIGHT_before6s.npz": "a589740f56ac563d4b3f95a4b050a59300f9e871cfb3e3272d9df5cd5480a95c"
+  }
+}

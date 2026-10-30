@@ -1,0 +1,80 @@
+{
+  "state": "COMPLETE",
+  "training": {
+    "legacy_range": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/legacy_range/checkpoint_latest.pt",
+      "sha256": "f9c0d416097dd45f2dcab21d114ea62b6f9bb2b6ea40fe03c68f3f1170fc287d",
+      "physics_steps": 222695,
+      "actor_updates": 80,
+      "training_episodes": 48,
+      "training_success": 0,
+      "training_collisions": 48
+    },
+    "full_range": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/full_range/checkpoint_latest.pt",
+      "sha256": "1afb26fa6df1eaec41e71ad0438d3e7bcf36d54c36b2b2172f5b2c8dc3f94dd9",
+      "physics_steps": 262605,
+      "actor_updates": 92,
+      "training_episodes": 48,
+      "training_success": 0,
+      "training_collisions": 48
+    }
+  },
+  "scores": {
+    "initial_embedding": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "frontier_subtask": {
+        "safe_success": 0,
+        "n": 4,
+        "collisions": 4
+      }
+    },
+    "legacy_range": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "frontier_subtask": {
+        "safe_success": 0,
+        "n": 4,
+        "collisions": 4
+      }
+    },
+    "full_range": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "frontier_subtask": {
+        "safe_success": 0,
+        "n": 4,
+        "collisions": 4
+      }
+    }
+  },
+  "max_cpu_gpu_behavior_logp_error": 1.430511474609375e-05,
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scope": "One seed, fixed sourcefrontiers, same map. Frontier success is not complete5m. Only within-PPO actionrange arms constitute controlled comparison; no SACvsTD3vsPPO superiority claim."
+}

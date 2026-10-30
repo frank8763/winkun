@@ -1,0 +1,195 @@
+{
+  "state": "PASS",
+  "protocols": {
+    "t176_scene_controls": {
+      "sha256": "0e704d053f755250ca206411de19aaed0ff01ff949d9ecba21790843f49aa5d3",
+      "verified_inputs": 5
+    },
+    "t177_frontier_onpolicy": {
+      "sha256": "49b34960a6e4adafefa59689a9dc376ba74f6fdc74c2e86e9d24941beb0a6c6f",
+      "verified_inputs": 12
+    },
+    "t178_exploration_time": {
+      "sha256": "6fd0fd494daf60e1b11db5da62e4d91dd020b05330a8832e5313e9bed8871b46",
+      "verified_inputs": 15
+    }
+  },
+  "training": {
+    "t177_frontier_onpolicy/legacy_range": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/legacy_range/checkpoint_latest.pt",
+      "sha256": "f9c0d416097dd45f2dcab21d114ea62b6f9bb2b6ea40fe03c68f3f1170fc287d",
+      "physics_steps": 222695,
+      "actor_updates": 80,
+      "training_episodes": 48,
+      "training_success": 0,
+      "training_collisions": 48,
+      "training_timeouts": 0,
+      "max_policy_parameter_change": 0.0025698840618133545,
+      "decision_count": 2251,
+      "clipped_decision_fraction": 0.6392714349178144,
+      "negative_native_throttle_fraction": 0.0,
+      "frozen_scores": {
+        "old_3m_4m": {
+          "safe_success": 6,
+          "n": 6,
+          "collisions": 0
+        },
+        "original_5m": {
+          "safe_success": 0,
+          "n": 2,
+          "collisions": 2
+        },
+        "frontier_subtask": {
+          "safe_success": 0,
+          "n": 4,
+          "collisions": 4
+        }
+      }
+    },
+    "t177_frontier_onpolicy/full_range": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t177_frontier_onpolicy/full_range/checkpoint_latest.pt",
+      "sha256": "1afb26fa6df1eaec41e71ad0438d3e7bcf36d54c36b2b2172f5b2c8dc3f94dd9",
+      "physics_steps": 262605,
+      "actor_updates": 92,
+      "training_episodes": 48,
+      "training_success": 0,
+      "training_collisions": 48,
+      "training_timeouts": 0,
+      "max_policy_parameter_change": 0.0014699101448059082,
+      "decision_count": 2653,
+      "clipped_decision_fraction": 0.4229174519411986,
+      "negative_native_throttle_fraction": 0.35544666415378817,
+      "frozen_scores": {
+        "old_3m_4m": {
+          "safe_success": 6,
+          "n": 6,
+          "collisions": 0
+        },
+        "original_5m": {
+          "safe_success": 0,
+          "n": 2,
+          "collisions": 2
+        },
+        "frontier_subtask": {
+          "safe_success": 0,
+          "n": 4,
+          "collisions": 4
+        }
+      }
+    },
+    "t178_exploration_time/tau1s": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t178_exploration_time/tau1s/checkpoint_latest.pt",
+      "sha256": "4cc373579f26bae63037f32609305e51153c0bb15b2f53244d0416c414c64b92",
+      "physics_steps": 254884,
+      "actor_updates": 96,
+      "training_episodes": 48,
+      "training_success": 0,
+      "training_collisions": 48,
+      "training_timeouts": 0,
+      "max_policy_parameter_change": 0.0029342907946556807,
+      "decision_count": 2575,
+      "clipped_decision_fraction": 0.37514563106796117,
+      "negative_native_throttle_fraction": 0.31805825242718444,
+      "frozen_scores": {
+        "old_3m_4m": {
+          "safe_success": 6,
+          "n": 6,
+          "collisions": 0
+        },
+        "original_5m": {
+          "safe_success": 0,
+          "n": 2,
+          "collisions": 2
+        },
+        "frontier_subtask": {
+          "safe_success": 0,
+          "n": 4,
+          "collisions": 4
+        }
+      }
+    },
+    "t178_exploration_time/tau8s": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t178_exploration_time/tau8s/checkpoint_latest.pt",
+      "sha256": "31eca216327d0cb685e615ed09c9e1a72238c43eaa2ca3c1ed1feb292b15a674",
+      "physics_steps": 291797,
+      "actor_updates": 104,
+      "training_episodes": 48,
+      "training_success": 0,
+      "training_collisions": 43,
+      "training_timeouts": 5,
+      "max_policy_parameter_change": 0.001442641019821167,
+      "decision_count": 2941,
+      "clipped_decision_fraction": 0.3617817069024141,
+      "negative_native_throttle_fraction": 0.39748384903094186,
+      "frozen_scores": {
+        "old_3m_4m": {
+          "safe_success": 6,
+          "n": 6,
+          "collisions": 0
+        },
+        "original_5m": {
+          "safe_success": 0,
+          "n": 2,
+          "collisions": 2
+        },
+        "frontier_subtask": {
+          "safe_success": 0,
+          "n": 4,
+          "collisions": 4
+        }
+      }
+    }
+  },
+  "new_training_physics_steps": 1031981,
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scene_scores": {
+    "scene_control/circles_only/25": {
+      "safe_success": 0,
+      "n": 2,
+      "collisions": 1
+    },
+    "scene_control/original/25": {
+      "safe_success": 0,
+      "n": 2,
+      "collisions": 2
+    },
+    "scene_control/rectangles_only/25": {
+      "safe_success": 1,
+      "n": 2,
+      "collisions": 1
+    },
+    "scene_control/empty/25": {
+      "safe_success": 0,
+      "n": 2,
+      "collisions": 0
+    },
+    "cadence_old/original/100": {
+      "safe_success": 6,
+      "n": 6,
+      "collisions": 0
+    },
+    "scene_control/culprit_removed/25": {
+      "safe_success": 1,
+      "n": 2,
+      "collisions": 0
+    },
+    "cadence_5m/original/100": {
+      "safe_success": 0,
+      "n": 2,
+      "collisions": 2
+    }
+  },
+  "scene_physics_steps": 349020,
+  "scene_empty_nearest": {
+    "empty_5m_2029653601_LEFT": {
+      "sampled_nearest_m": 0.33853595093753586,
+      "sampling_physics_steps": 25
+    },
+    "empty_5m_2029654802_RIGHT": {
+      "sampled_nearest_m": 0.5536754883871726,
+      "sampling_physics_steps": 25
+    }
+  },
+  "all_new_runs_bytes": 653753215
+}

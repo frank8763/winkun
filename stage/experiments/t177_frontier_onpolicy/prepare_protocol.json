@@ -1,0 +1,94 @@
+{
+  "experiment": "T177_NATIVE_COMMAND_EMBEDDING_AND_FAILURE_FRONTIER_RESET_GATE",
+  "incumbent_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt",
+  "cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "physics_budget": 300000,
+  "cadence_selection": "Try100physicssteps5Hz then25steps20Hz onlyif all6oldtasks notretained. Firstpassingcadence selected.",
+  "snapshot_times_before_collision_s": [
+    12,
+    6
+  ],
+  "reset_verification": "FullMuJoCointegrationstate+allpicklableenvironmentattributes, restoredonlybeforeepisode. Compare200nativefuturesteps againstoriginalfrozenfulltrajectory, maxstate/observationerror<1e-7. No trainingifnotPASS.",
+  "native_command_embedding": "113input(initialclockweightzero),T159body plusin-networklinearoutputdiag(.5,1),bias(.5,0). Initialmeanmatcheslegacyphysicalnativecommandto1e-5. SingleActor; noexternalplannerorwaypoints.",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t177_frontier_onpolicy/common.py": "592b49826215b283ea5c5b50e10c7203e443a104981f0b1c3fd98a2799c16e31",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t177_frontier_onpolicy/prepare.py": "ba8260fade311d97d9f04ee0829b2de22e2c453968b711605db3186eec11d64e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "automatic_training": false
+}

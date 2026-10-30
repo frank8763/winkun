@@ -1,0 +1,491 @@
+{
+  "experiment": "STAGE_T176_FROZEN_SCENE_COMPONENT_AND_ACTUATOR_CONTROLS",
+  "actor_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt",
+  "jobs": [
+    {
+      "id": "original_5m_2029653601_LEFT",
+      "kind": "scene_control",
+      "scene": "original",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 23334
+    },
+    {
+      "id": "original_5m_2029654802_RIGHT",
+      "kind": "scene_control",
+      "scene": "original",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 23334
+    },
+    {
+      "id": "empty_5m_2029653601_LEFT",
+      "kind": "scene_control",
+      "scene": "empty",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 23334
+    },
+    {
+      "id": "empty_5m_2029654802_RIGHT",
+      "kind": "scene_control",
+      "scene": "empty",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 23334
+    },
+    {
+      "id": "rectangles_only_5m_2029653601_LEFT",
+      "kind": "scene_control",
+      "scene": "rectangles_only",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 23334
+    },
+    {
+      "id": "rectangles_only_5m_2029654802_RIGHT",
+      "kind": "scene_control",
+      "scene": "rectangles_only",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 23334
+    },
+    {
+      "id": "circles_only_5m_2029653601_LEFT",
+      "kind": "scene_control",
+      "scene": "circles_only",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 23334
+    },
+    {
+      "id": "circles_only_5m_2029654802_RIGHT",
+      "kind": "scene_control",
+      "scene": "circles_only",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 23334
+    },
+    {
+      "id": "culprit_removed_5m_2029653601_LEFT",
+      "kind": "scene_control",
+      "scene": "culprit_removed",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 23334
+    },
+    {
+      "id": "culprit_removed_5m_2029654802_RIGHT",
+      "kind": "scene_control",
+      "scene": "culprit_removed",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 23334
+    },
+    {
+      "id": "5Hz_2029653601_LEFT",
+      "kind": "cadence_old",
+      "scene": "original",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "hold": 100,
+      "step_cap": 14000
+    },
+    {
+      "id": "5Hz_2029653602_RIGHT",
+      "kind": "cadence_old",
+      "scene": "original",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "hold": 100,
+      "step_cap": 14000
+    },
+    {
+      "id": "5Hz_2029654801_LEFT",
+      "kind": "cadence_old",
+      "scene": "original",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "hold": 100,
+      "step_cap": 14000
+    },
+    {
+      "id": "5Hz_2029654802_RIGHT",
+      "kind": "cadence_old",
+      "scene": "original",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "hold": 100,
+      "step_cap": 14000
+    },
+    {
+      "id": "5Hz_4m_2029653601_LEFT",
+      "kind": "cadence_old",
+      "scene": "original",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "hold": 100,
+      "step_cap": 18667
+    },
+    {
+      "id": "5Hz_4m_2029654802_RIGHT",
+      "kind": "cadence_old",
+      "scene": "original",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "hold": 100,
+      "step_cap": 18667
+    },
+    {
+      "id": "5Hz_5m_2029653601_LEFT",
+      "kind": "cadence_5m",
+      "scene": "original",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 100,
+      "step_cap": 23334
+    },
+    {
+      "id": "5Hz_5m_2029654802_RIGHT",
+      "kind": "cadence_5m",
+      "scene": "original",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 100,
+      "step_cap": 23334
+    },
+    {
+      "id": "probe_-1.0_-1.0",
+      "kind": "actuator_probe",
+      "scene": "empty",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 5000,
+      "raw_action": [
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "id": "probe_-1.0_0.0",
+      "kind": "actuator_probe",
+      "scene": "empty",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 5000,
+      "raw_action": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "id": "probe_-1.0_1.0",
+      "kind": "actuator_probe",
+      "scene": "empty",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 5000,
+      "raw_action": [
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "probe_0.0_-1.0",
+      "kind": "actuator_probe",
+      "scene": "empty",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 5000,
+      "raw_action": [
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "id": "probe_0.0_0.0",
+      "kind": "actuator_probe",
+      "scene": "empty",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 5000,
+      "raw_action": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "probe_0.0_1.0",
+      "kind": "actuator_probe",
+      "scene": "empty",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 5000,
+      "raw_action": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "probe_1.0_-1.0",
+      "kind": "actuator_probe",
+      "scene": "empty",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 5000,
+      "raw_action": [
+        1.0,
+        -1.0
+      ]
+    },
+    {
+      "id": "probe_1.0_0.0",
+      "kind": "actuator_probe",
+      "scene": "empty",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 5000,
+      "raw_action": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "id": "probe_1.0_1.0",
+      "kind": "actuator_probe",
+      "scene": "empty",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "hold": 25,
+      "step_cap": 5000,
+      "raw_action": [
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "physics_budget": 600000,
+  "wall_seconds": 900,
+  "actor_updates": 0,
+  "scene_intervention": "Modelinstance only beforefirstphysicalstep; officialobstacle geom_pos translated100m andcollisionmasksdisabled, untouched obstacles unchanged. No source or archive mutation. Empty initial lidar must beall6m. Sameoriginalfactoryreset,goal,physicalstate,successradius,deadline; historiesrefilledconsistently.",
+  "control_cadence_gate": "5Hz100physics-step hold accepted for consideration onlyif all6originaloldtasks pass. Full5m unaffectedprimaryrules. NoActortraining inthisrun.",
+  "actuator_probe": "Fixedrawactions onlyin emptydiagnostic,10seconds. Samelegacydoublethrottle mapping; measureactualfinal2s speed/yaw/radius. Notnavigationperformance.",
+  "scope": "Onefrozenincumbent,onegeometryfamily. Scenecomponentsremoved forcausaldiagnostics only, notoriginal5m success. CannotcompareSACversusTD3.",
+  "cap_all_new_runs_bytes": 1073741824,
+  "cap_run_bytes": 67108864,
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t176_scene_controls/run.py": "fb9c3c75d81bd1bdff9e4e5dd41e001d14117cfbbeeba6cd998188bf5cee3f7c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runtime/mk-mini/training/e2e_phase10_lidar_v1/phase10_scene_e2e_env.py": "b01165f5d03b760a3ac770ed31e84df0544c36764e625aaa4c2fea5970aedf91"
+  },
+  "automatic_promotion": false
+}
