@@ -8,6 +8,9 @@
 
 T191/T192已在[增量Release](https://github.com/frank8763/winkun/releases/tag/stage-her-contract-2026-10-30)核验备份，165原始文件/166本地逐项校验成员，远端附件服务端SHA256与大小匹配，未做完整远端二进制读回；临时压缩包已删除。
 
+
+T193–T195的115个原始文件和模型已在[增量Release](https://github.com/frank8763/winkun/releases/tag/stage-success-consolidation-2026-10-30)备份：本地116成员逐项哈希校验，远端三个附件服务端SHA256与大小一致；未执行远端完整二进制读回。临时归档已在核验后删除。本阶段原始数据约9.74MiB，所有新runs累计约791.95MiB，低于1GiB，可用盘约200.6GiB。所有实验进程已退出。
+
 以下是此前阶段记录，当前状态以上述入口为准。
 
 
