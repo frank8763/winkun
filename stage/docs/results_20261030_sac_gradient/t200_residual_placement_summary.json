@@ -1,0 +1,116 @@
+{
+  "state": "COMPLETE",
+  "training": {
+    "native": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t200_residual_placement/native/checkpoint_latest.pt",
+      "sha256": "e10880bc761cab3d5e3c380dc35ef5516a0b1981cfdbc37c06b945c0f979fdc8",
+      "physics_steps": 526727,
+      "decisions": 5286,
+      "actor_updates": 2000,
+      "critic_updates": 3500,
+      "episodes": 32,
+      "success": 5,
+      "original5m_success": 0,
+      "original5m_n": 24,
+      "terminal_metrics": {
+        "original": {
+          "n": 132,
+          "q1_mae": 0.009296395815908909,
+          "q2_mae": 0.012615038082003593
+        }
+      },
+      "original_replay_transitions": 19272,
+      "replay_transitions": 19272,
+      "complete_optimizer_resume_supported": false
+    },
+    "latent": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t200_residual_placement/latent/checkpoint_latest.pt",
+      "sha256": "e60bb4ab3f6fa8e9112a0e5616f39f57ac1d0c51f3f90c25a90ee327c0d323a5",
+      "physics_steps": 556162,
+      "decisions": 5579,
+      "actor_updates": 2000,
+      "critic_updates": 3500,
+      "episodes": 32,
+      "success": 5,
+      "original5m_success": 0,
+      "original5m_n": 24,
+      "terminal_metrics": {
+        "original": {
+          "n": 132,
+          "q1_mae": 0.007584273815155029,
+          "q2_mae": 0.008530604653060436
+        }
+      },
+      "original_replay_transitions": 19565,
+      "replay_transitions": 19565,
+      "complete_optimizer_resume_supported": false
+    }
+  },
+  "scores": {
+    "initial": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 1,
+        "timeout": 0
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 0,
+        "collision": 0,
+        "timeout": 0
+      }
+    },
+    "native": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 0,
+        "timeout": 1
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 12,
+        "collision": 0,
+        "timeout": 12
+      }
+    },
+    "latent": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 0,
+        "timeout": 1
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 12,
+        "collision": 0,
+        "timeout": 12
+      }
+    }
+  },
+  "evaluation_physics": 885807,
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scope": "One paired pilot seed, warm-start consumed fixedtasks, same capacity extrahead placement. DifferentfromT196/T197parent/noise/budget; causalcomparison withinT200 only. No algorithm superiority, originality/generalization or automaticpromotion. T159 and verifiedT194 preserved. Final bounded comparison, no automatic extension.",
+  "diagnostic_physics": 0
+}

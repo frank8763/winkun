@@ -1,0 +1,163 @@
+{
+  "state": "PASS",
+  "protocols": {
+    "t199_sac_mean_gradient": {
+      "sha256": "0246f5e4e2f216b916ec8e70f3b207e35a9bba44b2e0210118fc279f79bcb865",
+      "inputs_verified": 16
+    },
+    "t200_residual_placement": {
+      "sha256": "2e8cc2419990839537d8bf4eeeef4245753cb858b1f6f80540d0c1c62aa2a4ab",
+      "inputs_verified": 109
+    }
+  },
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "training": {
+    "native": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t200_residual_placement/native/checkpoint_latest.pt",
+      "sha256": "e10880bc761cab3d5e3c380dc35ef5516a0b1981cfdbc37c06b945c0f979fdc8",
+      "physics_steps": 526727,
+      "decisions": 5286,
+      "actor_updates": 2000,
+      "critic_updates": 3500,
+      "episodes": 32,
+      "success": 5,
+      "original5m_success": 0,
+      "original5m_n": 24,
+      "terminal_metrics": {
+        "original": {
+          "n": 132,
+          "q1_mae": 0.009296395815908909,
+          "q2_mae": 0.012615038082003593
+        }
+      },
+      "original_replay_transitions": 19272,
+      "replay_transitions": 19272,
+      "complete_optimizer_resume_supported": false,
+      "commonstate_base_clip_fractions": [
+        0.0066225165501236916,
+        0.0
+      ],
+      "commonstate_native_mean_range": [
+        [
+          -0.8902289867401123,
+          -0.9529514312744141
+        ],
+        [
+          0.9999989867210388,
+          0.11789628863334656
+        ]
+      ],
+      "extra_mean_path_available_even_if_base_clipped": false
+    },
+    "latent": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t200_residual_placement/latent/checkpoint_latest.pt",
+      "sha256": "e60bb4ab3f6fa8e9112a0e5616f39f57ac1d0c51f3f90c25a90ee327c0d323a5",
+      "physics_steps": 556162,
+      "decisions": 5579,
+      "actor_updates": 2000,
+      "critic_updates": 3500,
+      "episodes": 32,
+      "success": 5,
+      "original5m_success": 0,
+      "original5m_n": 24,
+      "terminal_metrics": {
+        "original": {
+          "n": 132,
+          "q1_mae": 0.007584273815155029,
+          "q2_mae": 0.008530604653060436
+        }
+      },
+      "original_replay_transitions": 19565,
+      "replay_transitions": 19565,
+      "complete_optimizer_resume_supported": false,
+      "commonstate_base_clip_fractions": [
+        0.013245033100247383,
+        0.0
+      ],
+      "commonstate_native_mean_range": [
+        [
+          -0.8617671728134155,
+          -0.9045609831809998
+        ],
+        [
+          0.9999982714653015,
+          0.3951539993286133
+        ]
+      ],
+      "extra_mean_path_available_even_if_base_clipped": true
+    }
+  },
+  "first_behavior_batch_exactly_equal": true,
+  "max_reconstructed_action_error": 2.3245811462402344e-06,
+  "previous_archived_files_unchanged": 146,
+  "new_training_physics": 1082889,
+  "new_training_decisions": 10865,
+  "actor_updates": 4000,
+  "critic_updates": 7000,
+  "frozen_evaluation_physics": 885807,
+  "scores": {
+    "initial": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 1,
+        "timeout": 0
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 0,
+        "collision": 0,
+        "timeout": 0
+      }
+    },
+    "native": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 0,
+        "timeout": 1
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 12,
+        "collision": 0,
+        "timeout": 12
+      }
+    },
+    "latent": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 0,
+        "timeout": 1
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 12,
+        "collision": 0,
+        "timeout": 12
+      }
+    }
+  },
+  "own_final_bytes": 32203392,
+  "all_new_runs_bytes": 980031062
+}

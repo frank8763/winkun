@@ -9,6 +9,7 @@
 ## 入口
 
 - [最新实验状态](stage/docs/RESEARCH_STATUS.md)
+- [LEFT专项、SAC梯度与最终失败证据（T196–T200）](stage/docs/results_20261030_sac_gradient/findings.md)
 - [右侧原始5米首次确定性通过与复核（T193–T195）](stage/docs/results_20261030_success_consolidation/findings.md)
 - [目标重标记审计与SAC/HER对照（T191–T192）](stage/docs/results_20261030_her_contract/findings.md)
 - [动作头训练与起点课程（T189–T190）](stage/docs/results_20261030_head_curriculum/findings.md)
@@ -45,7 +46,7 @@
 
 模型来源是T192真实SAC探索成功、T193监督策略整合及T194有界神经参数校准；不能称从零纯RL或已证明新算法优势。最终部署仍由单网络按当前观测直接生成原生命令，无规划器、路点或运行时教师。正式保留T159，新候选无自动晋升；详情、哈希和所有失败见[最新报告](stage/docs/results_20261030_success_consolidation/findings.md)。
 
-T189–T195已全部结束，无运行作业，不重复启动。下一阶段LEFT集中探索是有界草案，尚未启动。历史阶段按上述入口查看，实验失败与证据边界保留。
+T196–T200的LEFT专项也已全部结束，无运行作业。三组配对训练未产生LEFT到达增益，RIGHT与旧六项保留；接触、执行器状态、均值梯度与熵尺度证据见最新报告。下一阶段熵尺度对照仅为有界草案，尚未启动。所有已结束目录不重复。历史阶段按上述入口查看，实验失败与证据边界保留。
 
 源码和较小的协议/结果进入 Git；必要检查点、训练数据、原始轨迹与日志进入 Release 附件。聊天原文、登录凭据不上传。
 

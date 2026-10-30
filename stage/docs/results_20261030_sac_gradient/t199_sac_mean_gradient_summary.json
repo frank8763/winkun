@@ -1,0 +1,119 @@
+{
+  "state": "COMPLETE",
+  "common_state_audit": [
+    {
+      "model": "T194",
+      "checkpoint_sha256": "4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656",
+      "common_state_count": 151,
+      "saturated_fraction_per_action": [
+        0.6092715263366699,
+        0.0
+      ],
+      "raw_native_min": [
+        0.19951124489307404,
+        -0.859934389591217
+      ],
+      "raw_native_max": [
+        1.208700180053711,
+        0.7492810487747192
+      ],
+      "local_throttle_latent_gradient_native_bias_on_saturated_states": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "T196_action",
+      "checkpoint_sha256": "2aee7f9250a3f72a94a027bbce4c3d64901e6b5de30d4c2f4a8394417e4b900a",
+      "common_state_count": 151,
+      "saturated_fraction_per_action": [
+        0.013245033100247383,
+        0.0
+      ],
+      "raw_native_min": [
+        -0.2926757037639618,
+        -0.9681142568588257
+      ],
+      "raw_native_max": [
+        1.0337491035461426,
+        0.7306695580482483
+      ],
+      "local_throttle_latent_gradient_native_bias_on_saturated_states": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "T196_parameter",
+      "checkpoint_sha256": "1ffb197d7a41bddc4ef888ff47e64a1bdac744127f797bd22694c2f795f22dd6",
+      "common_state_count": 151,
+      "saturated_fraction_per_action": [
+        0.0,
+        0.0066225165501236916
+      ],
+      "raw_native_min": [
+        -0.6091217994689941,
+        -0.8853585124015808
+      ],
+      "raw_native_max": [
+        0.9611629247665405,
+        1.0062884092330933
+      ],
+      "local_throttle_latent_gradient_native_bias_on_saturated_states": null
+    },
+    {
+      "model": "T197_control",
+      "checkpoint_sha256": "8df5325dec20ce1969ecebf5924e2da6497d97a50a6d4867b4939b9fb46cc2b1",
+      "common_state_count": 151,
+      "saturated_fraction_per_action": [
+        0.06622516363859177,
+        0.0066225165501236916
+      ],
+      "raw_native_min": [
+        -1.1335203647613525,
+        -1.0099327564239502
+      ],
+      "raw_native_max": [
+        0.9500382542610168,
+        0.36516186594963074
+      ],
+      "local_throttle_latent_gradient_native_bias_on_saturated_states": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "T197_penalty",
+      "checkpoint_sha256": "0cc4258db8aa3ab2711a5a89a4cfffd945ce843360c3543a720f6cf726fbabe2",
+      "common_state_count": 151,
+      "saturated_fraction_per_action": [
+        0.0,
+        0.0
+      ],
+      "raw_native_min": [
+        -0.8238652348518372,
+        -0.9117486476898193
+      ],
+      "raw_native_max": [
+        0.9455136060714722,
+        0.9897264242172241
+      ],
+      "local_throttle_latent_gradient_native_bias_on_saturated_states": null
+    }
+  ],
+  "initial_function_errors": {
+    "native": 0.0,
+    "latent": 0.0
+  },
+  "verification_states": 4096,
+  "saturated_state_entropy_gradient_extra_steering_throttle_head": {
+    "native": 0.0,
+    "latent": 11.735252380371094
+  },
+  "initial_checkpoint_sha256": "785de9ab9b859ac4a671d50c81fbd645e105812b8d7c1dd7ceb04de9ffe916e0",
+  "native_physics_steps": 0,
+  "optimizer_updates": 0,
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scope": "Exact local gradient blockage from inverse-squash clipping. New post-atanh residual restores a local mean-gradient path with same initial behavior. Native and latent controls have equal1202 newparameters. Shared oldparameters can still move clipped states indirectly; not proof old model permanently untrainable or blockage alone caused LEFTfailure. No online new-head evidence yet."
+}

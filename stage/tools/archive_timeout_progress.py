@@ -143,13 +143,27 @@ def publish():
                 time.sleep(2 + attempt)
 
     api = f'https://api.github.com/repos/{SLUG}'
-    releases = request('GET', api + '/releases?per_page=100')
-    release = next((r for r in releases if r['tag_name'] == TAG), None)
+    # Target lookup avoids downloading the full release history on flaky links.
+    state_path = TRANSFER / 'remote_upload_state.json'
+    if state_path.exists():
+        known = json.loads(state_path.read_text())
+        assert known['tag'] == TAG
+        release = request('GET', api + '/releases/' + str(known['release_id']))
+    else:
+        try:
+            release = request('GET', api + '/releases/tags/' + urllib.parse.quote(TAG))
+        except RuntimeError as error:
+            if str(error) != 'GitHub API HTTP404 GET':
+                raise
+            # Include authenticated drafts before creating a new draft release.
+            releases = request('GET', api + '/releases?per_page=20')
+            release = next((r for r in releases if r['tag_name'] == TAG), None)
     if release is None:
         release = request('POST', api + '/releases', {
             'tag_name': TAG, 'target_commitish': local['source_commit'], 'draft': True,
             'name': 'Stage T197–T198 LEFT learning signal and actuator-state audit — 2026-10-30',
             'body': 'Stage only. Source/protocols/summaries are in Git. Preserves bounded paired SAC with/without a finite-timeout residual-distance penalty, shared historical data hashes, all new true native episodes and per-batch behavior actors, final policies, the rejected zero-physics precheck and all outcomes. Read findings for LEFT5m and seven-task retention; no claim reward shaping is policy-invariant. Read the accompanying findings for original5m and old-task outcomes; local reset successes are not original5m success or generalization. T159 remains incumbent. Per-file SHA256 manifest included. No Phase research, account credentials or chat originals.'})
+    write(state_path, {'tag': TAG, 'release_id': release['id']})
     assets = request('GET', api + f'/releases/{release["id"]}/assets?per_page=100')
     upload_files = [archive_path, MANIFEST, TRANSFER / 'package_receipt.json']
     verified = []
