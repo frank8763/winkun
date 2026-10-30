@@ -6,6 +6,8 @@
 
 T175价值+配对监督能拟合训练动作16/17，但留出状态5/9、16个不同初始状态价值MAE6.828，未通过门槛。五个Critic候选的Actor逐参数与T171完全相同，不得当成5m改进模型。下一阶段优先扩大当前冻结策略下的真实失败前沿状态/动作后果覆盖，草案results_20261030_q_audit/next_protocol.md尚未启动，不自动进行Actor训练。
 
+T173–T175的57个原始文件已在[增量Release](https://github.com/frank8763/winkun/releases/tag/stage-critic-audit-2026-10-30)核验备份，压缩包101369945字节，临时包已删除。全部新增runs当前约585.71MiB，仍低于1GiB；本次增量约111.48MiB。收据results_20261030_q_audit/release_receipt.json；源文件清单stage/manifests/q_audit_20261030_files.json。3240个历史归档文件哈希再核验全部通过，无运行进程。
+
 **原始两项5m仍为0/2，保留T159。** T159通过六项固定3/4m训练任务，不能当作泛化。T170最终保住6/6；T171最终5/6，未通过替换条件。见[完整结果、文献与后续问题](results_20261030/analysis.md)。
 
 T165严格补足原T164两组256k物理步；T167新增256k；T169新增128k；T170按预声明课程门槛在500193步停止（原计划1M）；T171完成500k。合计本轮新增在线训练1,560,496个原生物理步，不含冻结评估、审计和演示采集；不将旧训练量重计为新增量。
@@ -20,4 +22,4 @@ T169–T171使用新稀疏目标、终止一致势函数塑形、60s物理折扣
 
 新增运行目录上限1GiB，最少40GiB可用盘。检查点只轮换latest/previous；每轮冻结评估后保留最终点，删除本轮旧滚动点并记录哈希。原始归档、T145/T146只读。代码/协议/汇总进入Git；模型、数据、原始轨迹以核验过的Release附件保存。
 
-本轮327个原始输出已在[独立Release](https://github.com/frank8763/winkun/releases/tag/stage-progress-2026-10-30)备份，逐文件本地哈希与远端附件SHA256/大小核验通过；临时压缩包已删除，本轮本地输出约474.23MiB。见results_20261030/release_receipt.json及stage/manifests/progress_20261030_files.json。
+T165–T172阶段的327个原始输出已在[前一阶段Release](https://github.com/frank8763/winkun/releases/tag/stage-progress-2026-10-30)备份，逐文件本地哈希与远端附件SHA256/大小核验通过；该阶段结束时本地输出约474.23MiB。见results_20261030/release_receipt.json及stage/manifests/progress_20261030_files.json，最新增量与总占用见上文。

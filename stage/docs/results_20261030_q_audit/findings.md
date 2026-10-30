@@ -6,6 +6,8 @@
 
 代码和协议在stage/experiments/t173_q_audit、t174_critic_alignment、t175_paired_advantage；原始输出在同名stage/runs目录。Phase聊天、模型、研究结果和规划器均未使用。历史快照、T145/T146只读。所有模型与结果按哈希核验。
 
+57个本轮原始文件已备份到[增量Release](https://github.com/frank8763/winkun/releases/tag/stage-critic-audit-2026-10-30)：源116757651字节、压缩101369945字节；本地解压逐成员校验58项（含清单），远端三个附件SHA256和大小均匹配，未声称完整远端下载回读。临时压缩包已删除。父T169演示和T171检查点依赖[前一阶段Release](https://github.com/frank8763/winkun/releases/tag/stage-progress-2026-10-30)，旧运行依赖仍遵循MIGRATION.md的绝对路径兼容限制，不声称一键跨机恢复。收据release_receipt.json，清单stage/manifests/q_audit_20261030_files.json。新增约111.48MiB，全部新runs约585.71MiB，1GiB上限保持。
+
 ## T173：原生价值与动作干预审计
 
 冻结T171 Actor和Critic，CPU单样本推理、20Hz动作、500Hz原生物理。八项已知任务连续执行到真实GOAL/COLLISION或93.336s诊断时限。每个物理块的实际回报与原T169稀疏目标、60s折扣一致，另用终止势函数望远镜求和的闭式公式逐轨迹核验。诊断延时不会放宽原始主验收：3m28s、4m37.334s、5m46.668s。T171困难3m右侧在诊断延时内到达，仍不算原主验收通过。
