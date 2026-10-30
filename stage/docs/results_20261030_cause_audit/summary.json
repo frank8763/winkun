@@ -1,0 +1,275 @@
+{
+  "state": "COMPLETE",
+  "physics_steps": 812032,
+  "optimizer_updates": 0,
+  "training_physics_steps": 0,
+  "branches": 48,
+  "groups": [
+    {
+      "arm": "native",
+      "anchor": 0,
+      "action": "baseline",
+      "n": 4,
+      "minQ": -0.026500992476940155,
+      "mean_soft_MC": -0.11399561752083694,
+      "sample_std_soft_MC": 0.016031772962482854,
+      "Q_minus_MC_mean": 0.08749462504389678,
+      "successes": 0
+    },
+    {
+      "arm": "native",
+      "anchor": 0,
+      "action": "q_positive",
+      "n": 4,
+      "minQ": -0.026492685079574585,
+      "mean_soft_MC": -0.1148346080506421,
+      "sample_std_soft_MC": 0.007889396379739438,
+      "Q_minus_MC_mean": 0.08834192297106752,
+      "successes": 0
+    },
+    {
+      "arm": "native",
+      "anchor": 0,
+      "action": "q_negative",
+      "n": 4,
+      "minQ": -0.027849219739437103,
+      "mean_soft_MC": -0.11781609083463997,
+      "sample_std_soft_MC": 0.015358159413923544,
+      "Q_minus_MC_mean": 0.08996687109520286,
+      "successes": 0
+    },
+    {
+      "arm": "native",
+      "anchor": 14000,
+      "action": "baseline",
+      "n": 4,
+      "minQ": -0.16129866242408752,
+      "mean_soft_MC": -0.2759374526624331,
+      "sample_std_soft_MC": 0.006739092764490359,
+      "Q_minus_MC_mean": 0.11463879023834556,
+      "successes": 0
+    },
+    {
+      "arm": "native",
+      "anchor": 14000,
+      "action": "q_positive",
+      "n": 4,
+      "minQ": -0.15772473812103271,
+      "mean_soft_MC": -0.2754611287105453,
+      "sample_std_soft_MC": 0.005912632932601453,
+      "Q_minus_MC_mean": 0.11773639058951257,
+      "successes": 0
+    },
+    {
+      "arm": "native",
+      "anchor": 14000,
+      "action": "q_negative",
+      "n": 4,
+      "minQ": -0.1657159924507141,
+      "mean_soft_MC": -0.2737062685577902,
+      "sample_std_soft_MC": 0.010886833860070317,
+      "Q_minus_MC_mean": 0.10799027610707607,
+      "successes": 0
+    },
+    {
+      "arm": "latent",
+      "anchor": 0,
+      "action": "baseline",
+      "n": 4,
+      "minQ": 0.014514604583382607,
+      "mean_soft_MC": -0.09066370262681908,
+      "sample_std_soft_MC": 0.013682525703312657,
+      "Q_minus_MC_mean": 0.10517830721020169,
+      "successes": 0
+    },
+    {
+      "arm": "latent",
+      "anchor": 0,
+      "action": "q_positive",
+      "n": 4,
+      "minQ": 0.014708524569869041,
+      "mean_soft_MC": -0.09641701166005148,
+      "sample_std_soft_MC": 0.010210731550749188,
+      "Q_minus_MC_mean": 0.11112553622992052,
+      "successes": 0
+    },
+    {
+      "arm": "latent",
+      "anchor": 0,
+      "action": "q_negative",
+      "n": 4,
+      "minQ": 0.011472426354885101,
+      "mean_soft_MC": -0.09323782104050818,
+      "sample_std_soft_MC": 0.0117403729435619,
+      "Q_minus_MC_mean": 0.10471024739539328,
+      "successes": 0
+    },
+    {
+      "arm": "latent",
+      "anchor": 14000,
+      "action": "baseline",
+      "n": 4,
+      "minQ": -0.19493412971496582,
+      "mean_soft_MC": -0.26119488649616446,
+      "sample_std_soft_MC": 0.009088018430115488,
+      "Q_minus_MC_mean": 0.06626075678119864,
+      "successes": 0
+    },
+    {
+      "arm": "latent",
+      "anchor": 14000,
+      "action": "q_positive",
+      "n": 4,
+      "minQ": -0.18868020176887512,
+      "mean_soft_MC": -0.2612403347618545,
+      "sample_std_soft_MC": 0.00910800267192745,
+      "Q_minus_MC_mean": 0.07256013299297936,
+      "successes": 0
+    },
+    {
+      "arm": "latent",
+      "anchor": 14000,
+      "action": "q_negative",
+      "n": 4,
+      "minQ": -0.19776016473770142,
+      "mean_soft_MC": -0.26099382750084255,
+      "sample_std_soft_MC": 0.009398830214545571,
+      "Q_minus_MC_mean": 0.06323366276314113,
+      "successes": 0
+    }
+  ],
+  "paired_differences": [
+    {
+      "arm": "native",
+      "anchor": 0,
+      "action": "q_positive",
+      "predicted_delta": 8.307397365570068e-06,
+      "paired_MC_deltas": [
+        0.01408706135613487,
+        -0.008339189711979625,
+        -0.007019647513304944,
+        -0.0020841862500710073
+      ],
+      "mean_MC_delta": -0.0008389905298051767,
+      "sample_std_MC_delta": 0.010308427713987513,
+      "mean_sign_agrees": false,
+      "scope": "Four common-random-number samples, no significance or independent-map claim"
+    },
+    {
+      "arm": "native",
+      "anchor": 0,
+      "action": "q_negative",
+      "predicted_delta": -0.0013482272624969482,
+      "paired_MC_deltas": [
+        0.02460703202600016,
+        -0.00841888590038957,
+        -0.0008911823416591219,
+        -0.03057885703916359
+      ],
+      "mean_MC_delta": -0.00382047331380303,
+      "sample_std_MC_delta": 0.022758590344117986,
+      "mean_sign_agrees": true,
+      "scope": "Four common-random-number samples, no significance or independent-map claim"
+    },
+    {
+      "arm": "native",
+      "anchor": 14000,
+      "action": "q_positive",
+      "predicted_delta": 0.0035739243030548096,
+      "paired_MC_deltas": [
+        0.0021778665274709286,
+        -0.0003715106254897904,
+        -0.0003782367910010742,
+        0.0004771766965712687
+      ],
+      "mean_MC_delta": 0.00047632395188783316,
+      "sample_std_MC_delta": 0.001203376554751862,
+      "mean_sign_agrees": true,
+      "scope": "Four common-random-number samples, no significance or independent-map claim"
+    },
+    {
+      "arm": "native",
+      "anchor": 14000,
+      "action": "q_negative",
+      "predicted_delta": -0.004417330026626587,
+      "paired_MC_deltas": [
+        0.0005886718580957462,
+        -0.0020788218029857974,
+        0.009045923702659664,
+        0.0013689626608019978
+      ],
+      "mean_MC_delta": 0.0022311841046429026,
+      "sample_std_MC_delta": 0.004776962040559824,
+      "mean_sign_agrees": false,
+      "scope": "Four common-random-number samples, no significance or independent-map claim"
+    },
+    {
+      "arm": "latent",
+      "anchor": 0,
+      "action": "q_positive",
+      "predicted_delta": 0.00019391998648643494,
+      "paired_MC_deltas": [
+        0.0023968651864867824,
+        -0.0005964445159469395,
+        -0.017597837957196424,
+        -0.0072158188462730505
+      ],
+      "mean_MC_delta": -0.005753309033232408,
+      "sample_std_MC_delta": 0.008859089340808372,
+      "mean_sign_agrees": false,
+      "scope": "Four common-random-number samples, no significance or independent-map claim"
+    },
+    {
+      "arm": "latent",
+      "anchor": 0,
+      "action": "q_negative",
+      "predicted_delta": -0.003042178228497505,
+      "paired_MC_deltas": [
+        -0.002685195241529048,
+        0.0022461021101234796,
+        -0.006530073240952491,
+        -0.003327307282398384
+      ],
+      "mean_MC_delta": -0.002574118413689111,
+      "sample_std_MC_delta": 0.003626924134265981,
+      "mean_sign_agrees": true,
+      "scope": "Four common-random-number samples, no significance or independent-map claim"
+    },
+    {
+      "arm": "latent",
+      "anchor": 14000,
+      "action": "q_positive",
+      "predicted_delta": 0.006253927946090698,
+      "paired_MC_deltas": [
+        -0.00011247042463324863,
+        -6.371958518436305e-06,
+        -3.0412042257843552e-06,
+        -5.990947538264679e-05
+      ],
+      "mean_MC_delta": -4.544826569002902e-05,
+      "sample_std_MC_delta": 5.17249553548541e-05,
+      "mean_sign_agrees": false,
+      "scope": "Four common-random-number samples, no significance or independent-map claim"
+    },
+    {
+      "arm": "latent",
+      "anchor": 14000,
+      "action": "q_negative",
+      "predicted_delta": -0.0028260350227355957,
+      "paired_MC_deltas": [
+        -0.00012213359024587644,
+        0.00010747653785420086,
+        -0.00013539846364096775,
+        0.000954291497320181
+      ],
+      "mean_MC_delta": 0.00020105899532188443,
+      "sample_std_MC_delta": 0.0005143844047240736,
+      "mean_sign_agrees": false,
+      "scope": "Four common-random-number samples, no significance or independent-map claim"
+    }
+  ],
+  "all_input_hashes_unchanged": true,
+  "all_new_runs_bytes": 983516755,
+  "own_bytes_before_summary": 3444063,
+  "scope": "Compute full native environment MC and soft-Q MC excluding current action entropy, matching SAC Q definition. Stable latent log density, physical gamma exp(-.002/60), finite absorbing events. Compare minQ to four-sample MC mean and paired action differences. Small consumed fixed-task audit, no statistically conclusive universal ranking claim. Stochastic continuation is same final policy, unlike historical behavior-vs-current-policy comparisons."
+}

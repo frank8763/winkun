@@ -1,0 +1,89 @@
+{
+  "state": "COMPLETE",
+  "analysis_type": "POST_HOC_ANALYTIC_AND_SAVED_BEHAVIOR_ONLY",
+  "physics_steps": 0,
+  "optimizer_updates": 0,
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t199_sac_mean_gradient/initial_residual_policy.pt": "785de9ab9b859ac4a671d50c81fbd645e105812b8d7c1dd7ceb04de9ffe916e0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t200_residual_placement/episodes/native_b0_w0.npz": "bbec05592137e7746b08df2c2f9d34f466c1952aafbe4738d035e7c556069d68",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t200_residual_placement/episodes/native_b0_w1.npz": "2a3260941910e6c3c1270b67b43d3c8de967d1fd6a06a8e84eda3ca275d4c64e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t200_residual_placement/episodes/native_b0_w2.npz": "e64195c427a3f66f3db92df1f67f2e74a45e5e78a37fb9bc9b398b3c458a5cb0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t200_residual_placement/episodes/native_b0_w3.npz": "963ccfdf0b31d7b652426ebb9a06f384dc9e9d6bd823d20131103151b44d3d7b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t200_residual_placement/episodes/native_b0_w4.npz": "326825f12afff2330dfb8c5eac5b7b543f0150828cd6436de33233efd549d0d4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t200_residual_placement/episodes/native_b0_w5.npz": "f4627e95e83554403467906f1e6fbde038e274fddbee0dbf72b6e4e32f795879",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t200_residual_placement/episodes/native_b0_w6.npz": "1e3b16391619ee7a63ff915673fb78ec514f49ae34d47fee91dcda62b9642cff",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t200_residual_placement/episodes/native_b0_w7.npz": "088763f143205a24e6ded5f43b259c6830f96c79af39acbdb85f49c2d9ae96c6"
+  },
+  "parent_on_common_LEFT": {
+    "common_states": 151,
+    "near_positive_clip_states": 92,
+    "fraction_near_positive_clip": 0.609271523178808,
+    "training_sigma_latent": [
+      0.5,
+      0.5
+    ],
+    "latent_throttle_mean_range_on_clip": [
+      7.247732639312744,
+      7.247732639312744
+    ],
+    "probability_native_throttle_below": {
+      "0.9": {
+        "min": 3.647206355031788e-31,
+        "max": 3.647206355031788e-31
+      },
+      "0.5": {
+        "min": 3.154087428742815e-41,
+        "max": 3.154087428742815e-41
+      },
+      "0.0": {
+        "min": 6.471121085258964e-48,
+        "max": 6.471121085258964e-48
+      }
+    },
+    "central95_native_throttle_range_at_minimum_clip_mu": [
+      0.999992806679783,
+      0.9999998572658679
+    ]
+  },
+  "actual_first_native_behavior_batch": {
+    "original_LEFT": {
+      "episodes": 6,
+      "decisions": 877,
+      "positive_clip_decisions": 551,
+      "positive_clip_fraction": 0.6282782212086659,
+      "observed_throttle_below_0_9_on_positive_clip": 0,
+      "observed_throttle_range_on_positive_clip": [
+        0.9999852180480957,
+        0.9999999403953552
+      ],
+      "deterministic_throttle_min_max": [
+        0.11629613488912582,
+        0.9999989867210388
+      ]
+    },
+    "near_LEFT": {
+      "episodes": 2,
+      "decisions": 69,
+      "positive_clip_decisions": 69,
+      "positive_clip_fraction": 1.0,
+      "observed_throttle_below_0_9_on_positive_clip": 0,
+      "observed_throttle_range_on_positive_clip": [
+        0.9999803304672241,
+        0.9999998807907104
+      ],
+      "deterministic_throttle_min_max": [
+        0.9999989867210388,
+        0.9999989867210388
+      ]
+    }
+  },
+  "environment_objective_example": {
+    "initial_distance_m": 5,
+    "collision_at_30_064s_return": -0.4795515868748429,
+    "timeout_at_46_668s_return": -0.11215106810405381,
+    "hypothetical_GOAL_at_RIGHT_reference_time_42_794s_return": 0.6094763675221337,
+    "hypothetical_success_probability_needed_to_beat_safe_timeout_if_otherwise_collision": 0.33736555364570814,
+    "scope": "Analytic event/time examples, not an observed LEFT success or estimate of reachable policy value. Terminal-invariant potential leaves same-state/same-time timeout trajectories equal regardless of final distance; T197 distance penalty already tested without LEFT success."
+  },
+  "scope": "Inverse-squash warm start can collapse physical throttle exploration despite latent sigma.5. Restoring a latent mean gradient leaves initial sampled action distribution unchanged; it does not restore broad physical action coverage. Final models may leave this regime, so this is not sufficient proof of sole failure cause. Extra T196 parameter noise affected steering only."
+}
