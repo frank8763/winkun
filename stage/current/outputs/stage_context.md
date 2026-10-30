@@ -145,3 +145,9 @@ T162 完成输入来源与时间审计，确认四帧包含当前、最老只有
 T163 已完成六次冻结事件数据采集，删失标签检查通过；见 findings.md。额外 T59 净空项仅覆盖矩形，但原生碰撞/雷达覆盖圆形，此差异需做公平基线核验，不能夸大为全系统漏掉障碍物。
 
 T164 已启动两组 5 米 RL pilot，每组固定 256k 新物理步、2400s 上限，同 T161 final 初始化，唯一设计差异 gamma=.99 vs exp(-.002/2)。六项旧任务用固定父 Actor 保持。总新预算512k；最后自动冻结两候选并与 T159、T161 在八项训练课程配对，不自动晋升。先查 launch.json、pipeline_status.json、两组 status.json 和日志，不得重复启动。Critic warm start 的 gamma 适应与单训练种子限制已公开。Phase 隔离不变。
+
+## 2026-10-30 用户要求迁移和清理，暂停研究推进
+
+目标 GitHub 仓库 frank8763/winkun（public）。所有当前 Stage 训练已停止，迁移完成后等待用户检查，不自动继续。T148 已达8M并完成最终配对测试；T164未完成预算，实际停止后最新完整checkpoint为两组episode_008，分别170199/165498新物理步。第一次SIGTERM因继承handler未退出，随后验证进程身份并终止，最新断点再次验证；记录在stage_migration/final_pause_verified.json。
+
+迁移范围为当前T148–T164、Stage TD3历史证据及已验证模拟器依赖，保留关键模型与原始数据，不声称完整迁移全部早期分支。聊天原文及账号凭据不上传。T145/T146按只读规则保留；Phase不动。冗余中间断点仅在保留资料的远端校验后，依明确清单清理。最新完成情况查看stage_migration/CLEANUP_REPORT.md。
