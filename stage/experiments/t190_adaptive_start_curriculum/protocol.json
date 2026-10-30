@@ -1,0 +1,831 @@
+{
+  "primary_cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "anchor_sources": {
+    "LEFT": {
+      "id": "phase1_side0_draw0",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "course_bin": 1,
+      "reset_task": {
+        "seed_requested": 2029653601,
+        "seed_actual": 2029653601,
+        "distance_m": 1.0725596218501023,
+        "angle_deg": -13.357274353413814,
+        "goal_xy": [
+          1.5750185651952417,
+          -3.676543648434686
+        ],
+        "start_pose": [
+          2.2215503794128546,
+          -2.820751176144986,
+          -1.9846653054486456
+        ],
+        "phase": 1,
+        "canonical5m": false,
+        "reset_only_pose_initialization": true,
+        "final_goal_never_changed_during_episode": true,
+        "signature": "470c762237fb604fcea07401cdaa026c26037a9cd1d0260f70bf2e56a2487b31",
+        "quaternion": [
+          0.5467382112897416,
+          0.0,
+          0.0,
+          -0.8373036058179218
+        ]
+      },
+      "prior_T172_success": true,
+      "snapshot_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/LEFT_fullstate.npz"
+    },
+    "RIGHT": {
+      "id": "phase1_side1_draw0",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "course_bin": 1,
+      "reset_task": {
+        "seed_requested": 2029654802,
+        "seed_actual": 2029654802,
+        "distance_m": 1.3277782831531277,
+        "angle_deg": -5.672219466666458,
+        "goal_xy": [
+          5.486694873876159,
+          0.043289980823624674
+        ],
+        "start_pose": [
+          6.448595281008868,
+          0.9585728747810045,
+          -2.2820242379615814
+        ],
+        "phase": 1,
+        "canonical5m": false,
+        "reset_only_pose_initialization": true,
+        "final_goal_never_changed_during_episode": true,
+        "signature": "33ccae798ad29992b9a5b0c89d1f730b21ec1912d5ecc7135d8827b98fa29811",
+        "quaternion": [
+          0.41667464501864926,
+          0.0,
+          0.0,
+          -0.9090556859723076
+        ]
+      },
+      "prior_T172_success": true,
+      "snapshot_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/RIGHT_fullstate.npz"
+    }
+  },
+  "anchor_step_cap": 23334,
+  "retention_demonstrations": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz",
+  "initial_std": [
+    0.22,
+    0.22
+  ],
+  "objective": "Finite46.668s task, -.01/sec,+10GOAL,-10contact,-5tasktimeout. exp(-.002/60) physics discount;Phi=-.3distance,absorbingPhi0 onalltaskends. CompleteMC, no learnedCritic/bootstrap. Clockinput113visible. Primarydeadlinesoriginal3m28s/4m37.334s/5m46.668s unchanged.",
+  "algorithm": "Same ARconditionalGaussian clippedPPO/paired independentreset-matchedMCbaseline asT177/T178. clip.1,epochs4,minibatch128,KLstop.02,gradclip.5,entropy.001;bodylr1e-5,nativehead1e-4,logstd1e-3. All8 episodes complete, independentpartnersi+4 withsame reset, behavior logp CPU/GPU<2e-4.",
+  "experiment": "T190",
+  "seed": 2026103090,
+  "parent_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t189_head_training/trainable_head/checkpoint_latest.pt",
+  "rounds": 4,
+  "batches_per_round": 8,
+  "episodes_per_batch": 8,
+  "max_training_physics": 5973504,
+  "max_probe_physics": 6906864,
+  "max_final_physics": 2193396,
+  "wall_seconds": 1800,
+  "proposal_per_side": 16,
+  "proposal_radius_m": [
+    0.35,
+    1.05
+  ],
+  "proposal_yaw_deg": 50.0,
+  "max_pool_per_side": 4,
+  "protocol": "Training-only reset proposals: seeded isotropic x/y offsets and yaw offsets around observed successful reset poses. Never change goal/geometry/radius/time limit or pose after stepping starts. Invalid proposals are recorded, not resampled. Pool is unordered training starts, never runtime waypoints.",
+  "selection": "After each round, retain root, two successful resets closest in Euclidean position to original start, and one farthest from those for diversity. Uses start coordinates only to choose next reset distribution; no map queries, route edges or runtime planner. New proposals are evaluated before and after training. Paired gains/losses are development evidence.",
+  "training": "Each of 8 batches has independent paired episodes from one valid failed proposal per side (or valid proposal when no failure), one previously successful reset alternating side, and one original5m alternating side. All actors single neural policies. Fresh optimizer; same AR MC/PPO and retention10 as T189. No Critic, replay value target or intermediate goals.",
+  "stop": "Stop after four rounds, or old6 regression, or old6+original5m2 all safe success. Do not silently rollback or pick an intermediate best model. Preserve final and all failures; T159 remains incumbent.",
+  "scope": "Exploratory adaptive curriculum from a selected research parent, not a controlled superiority study. Reset selection and task mix differ from T189. Fixed original5m tasks are training targets, not generalization. No novelty claim. Maximum256 complete training episodes, never extend automatically.",
+  "references": [
+    "https://proceedings.mlr.press/v78/florensa17a.html",
+    "https://arxiv.org/abs/1707.06347"
+  ],
+  "evaluation_resets": [
+    {
+      "id": "dev_LEFT_000",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_001",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_002",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_010",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_011",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_012",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_020",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_021",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_022",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_100",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_101",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_102",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_110",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_111",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_112",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_120",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_121",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_122",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_200",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_201",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_202",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_210",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_211",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_212",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_220",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_221",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_LEFT_222",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_000",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_001",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_002",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_010",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_011",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_012",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_020",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_021",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_022",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_100",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_101",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_102",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_110",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_111",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_112",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_120",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_121",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_122",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_200",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_201",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_202",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_210",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_211",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_212",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_220",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_221",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "dev_RIGHT_222",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0,
+      "reset_group": "development_grid"
+    },
+    {
+      "id": "fresh_T190_LEFT_0",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.014919592566421086,
+      "delta_y_m": 0.026137252561869655,
+      "delta_yaw_deg": -1.8440565290264237,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_LEFT_1",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.029404904316471532,
+      "delta_y_m": -0.008003848957942757,
+      "delta_yaw_deg": -1.7800054824345524,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_LEFT_2",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.0165963061675272,
+      "delta_y_m": 0.022665066798342043,
+      "delta_yaw_deg": -0.013972774113100606,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_LEFT_3",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.007439250633677886,
+      "delta_y_m": 0.029686752890530264,
+      "delta_yaw_deg": -0.8462494719666767,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_LEFT_4",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.02393967816792178,
+      "delta_y_m": -0.005211463888971941,
+      "delta_yaw_deg": -1.9631543122761954,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_LEFT_5",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.02846518401424744,
+      "delta_y_m": -0.016809159781201562,
+      "delta_yaw_deg": -0.651796575661109,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_LEFT_6",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.02032734096349655,
+      "delta_y_m": -0.026111810105664497,
+      "delta_yaw_deg": -1.8165970568515037,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_LEFT_7",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.01955667251281648,
+      "delta_y_m": 0.023877137210242066,
+      "delta_yaw_deg": 1.4342803861811033,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_LEFT_8",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.013341212134800745,
+      "delta_y_m": 0.005401904107917681,
+      "delta_yaw_deg": 1.3215731155334272,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_LEFT_9",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.012205700950533693,
+      "delta_y_m": -0.01878911048874691,
+      "delta_yaw_deg": -1.4496748403041018,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_LEFT_10",
+      "snapshot_side": "LEFT",
+      "delta_x_m": -0.00019317808576948398,
+      "delta_y_m": 0.02974480556266807,
+      "delta_yaw_deg": -1.6025812451610415,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_LEFT_11",
+      "snapshot_side": "LEFT",
+      "delta_x_m": 0.012430964574333098,
+      "delta_y_m": -0.007291467816489757,
+      "delta_yaw_deg": -0.813682863526378,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_RIGHT_0",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.020516236813649336,
+      "delta_y_m": 0.002122461588483497,
+      "delta_yaw_deg": -1.3973409336775027,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_RIGHT_1",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.025130121649790865,
+      "delta_y_m": 0.027260151272913972,
+      "delta_yaw_deg": 1.8586506719054081,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_RIGHT_2",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.018671847672395412,
+      "delta_y_m": -0.028927480477189106,
+      "delta_yaw_deg": 1.4130914175131934,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_RIGHT_3",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.006109659430599778,
+      "delta_y_m": 0.022363766650600296,
+      "delta_yaw_deg": 0.06049463614979933,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_RIGHT_4",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.022430330447409406,
+      "delta_y_m": 0.003717700051091677,
+      "delta_yaw_deg": -0.8275416246951255,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_RIGHT_5",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.016584285645191398,
+      "delta_y_m": -0.026196423289768435,
+      "delta_yaw_deg": -0.10837240729640252,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_RIGHT_6",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.005073101804008842,
+      "delta_y_m": -0.004965861500440219,
+      "delta_yaw_deg": 1.843076713205809,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_RIGHT_7",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": 0.014379661604021848,
+      "delta_y_m": 0.015769357544695953,
+      "delta_yaw_deg": 1.1234350660284784,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_RIGHT_8",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.016642396499189124,
+      "delta_y_m": 0.007863205688472992,
+      "delta_yaw_deg": 0.32878059224032796,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_RIGHT_9",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.0030177558820607825,
+      "delta_y_m": 0.013956818829775453,
+      "delta_yaw_deg": -1.2972670785215028,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_RIGHT_10",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.013918760503675305,
+      "delta_y_m": 0.029713694979943694,
+      "delta_yaw_deg": -1.6263816481858582,
+      "reset_group": "fresh_holdout"
+    },
+    {
+      "id": "fresh_T190_RIGHT_11",
+      "snapshot_side": "RIGHT",
+      "delta_x_m": -0.006867388303459249,
+      "delta_y_m": 0.0035631889345261528,
+      "delta_yaw_deg": 0.7029965466846173,
+      "reset_group": "fresh_holdout"
+    }
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t189_head_training/trainable_head/checkpoint_latest.pt": "0a5ab163b78dbe912a83a87c237e51b14cd6af92c31275d7d6cb359ccf96df58",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t189_head_training/summary.json": "1ebdaea57caa319f2f4ff8dbbbadd05dbd592688f892947b16c01fdfbf560117",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz": "c124283516a486b9527dacec00e426a5047e0076506504123347dfe736b841da",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t190_adaptive_start_curriculum/worker.py": "022e8b3d584ce4cc758f1f5585c379166a412a3e50bc52c875ff88fffcdd6823",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t190_adaptive_start_curriculum/prepare.py": "04d3bcd8c2fd56aa1910e2074664f84fc65a1c62e04c408a57348a0e5cb454b8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t190_adaptive_start_curriculum/common.py": "3950b9ab4a2281cb76662e4223b3ea3c72da73aba3b2cbc0cc0fcd27078b5cdb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t190_adaptive_start_curriculum/train.py": "6b3e49b5d867bcac86b12a4c7220dc2aa10dfb3c0cb730dbba7028937eec776c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/LEFT_fullstate.npz": "821ee9028a6f138e7ba6cdeae24ecf1ca732ad9e05f19c22f3414e1aa4a1eb69",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/RIGHT_fullstate.npz": "9e71a6ee3aaf77c52844470f9f88a07f278da8ce3f5e2dfd484fdef9b10105cc"
+  }
+}

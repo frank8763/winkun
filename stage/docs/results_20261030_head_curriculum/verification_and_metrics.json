@@ -1,0 +1,126 @@
+{
+  "state": "PASS",
+  "protocols": {
+    "t189_head_training": {
+      "sha256": "168201fbfdd78b294bdb11215bbaf31846fbe9d5a2adacf5e093976289e29d58",
+      "inputs_verified": 9
+    },
+    "t190_adaptive_start_curriculum": {
+      "sha256": "a7594fd2ed49e5c72718c60f1b5d0d3e4e2aa8315d87b0fd8e0d5935703d1675",
+      "inputs_verified": 9
+    }
+  },
+  "experiments": {
+    "t189_head_training": {
+      "training_physics": 1376574,
+      "training_decisions": 13831,
+      "optimizer_updates": 460,
+      "training_episodes": 128,
+      "diagnostic_evaluation_physics": 1346127,
+      "scores": {
+        "initial_embedding": {
+          "old_3m_4m": {
+            "safe_success": 6,
+            "n": 6,
+            "collisions": 0
+          },
+          "original_5m": {
+            "safe_success": 0,
+            "n": 2,
+            "collisions": 2
+          },
+          "development_grid": {
+            "safe_success": 54,
+            "n": 54,
+            "collisions": 0
+          },
+          "fresh_holdout": {
+            "safe_success": 24,
+            "n": 24,
+            "collisions": 0
+          }
+        },
+        "frozen_head": {
+          "old_3m_4m": {
+            "safe_success": 6,
+            "n": 6,
+            "collisions": 0
+          },
+          "original_5m": {
+            "safe_success": 0,
+            "n": 2,
+            "collisions": 2
+          },
+          "development_grid": {
+            "safe_success": 54,
+            "n": 54,
+            "collisions": 0
+          },
+          "fresh_holdout": {
+            "safe_success": 24,
+            "n": 24,
+            "collisions": 0
+          }
+        },
+        "trainable_head": {
+          "old_3m_4m": {
+            "safe_success": 6,
+            "n": 6,
+            "collisions": 0
+          },
+          "original_5m": {
+            "safe_success": 0,
+            "n": 2,
+            "collisions": 2
+          },
+          "development_grid": {
+            "safe_success": 54,
+            "n": 54,
+            "collisions": 0
+          },
+          "fresh_holdout": {
+            "safe_success": 24,
+            "n": 24,
+            "collisions": 0
+          }
+        }
+      }
+    },
+    "t190_adaptive_start_curriculum": {
+      "training_physics": 2723138,
+      "training_decisions": 27366,
+      "optimizer_updates": 928,
+      "training_episodes": 256,
+      "diagnostic_evaluation_physics": 2527639,
+      "scores": {
+        "old_3m_4m": {
+          "safe_success": 6,
+          "n": 6,
+          "collision": 0
+        },
+        "original_5m": {
+          "safe_success": 0,
+          "n": 2,
+          "collision": 1
+        },
+        "development_grid": {
+          "safe_success": 54,
+          "n": 54,
+          "collision": 0
+        },
+        "fresh_holdout": {
+          "safe_success": 24,
+          "n": 24,
+          "collision": 0
+        }
+      }
+    }
+  },
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "previous_archived_files_unchanged": 113,
+  "all_new_runs_bytes": 759597930,
+  "total_new_training_physics": 4099712,
+  "total_new_training_decisions": 41197,
+  "total_optimizer_updates": 1388
+}

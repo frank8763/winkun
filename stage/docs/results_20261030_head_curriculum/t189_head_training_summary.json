@@ -1,0 +1,105 @@
+{
+  "state": "COMPLETE",
+  "training": {
+    "frozen_head": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t189_head_training/frozen_head/checkpoint_latest.pt",
+      "sha256": "0a49bafd37a685fb7fff78e4ecb97b3adf31e5ea670532a0a34ec9d9e4d34c6b",
+      "physics_steps": 689534,
+      "actor_updates": 228,
+      "training_episodes": 64,
+      "training_success": 32,
+      "training_collisions": 32,
+      "training_decisions": 6930,
+      "original5m_success": 0,
+      "original5m_n": 32,
+      "direct_head_weight_norm": 0.0
+    },
+    "trainable_head": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t189_head_training/trainable_head/checkpoint_latest.pt",
+      "sha256": "0a5ab163b78dbe912a83a87c237e51b14cd6af92c31275d7d6cb359ccf96df58",
+      "physics_steps": 687040,
+      "actor_updates": 232,
+      "training_episodes": 64,
+      "training_success": 32,
+      "training_collisions": 32,
+      "training_decisions": 6901,
+      "original5m_success": 0,
+      "original5m_n": 32,
+      "direct_head_weight_norm": 0.0453995019197464
+    }
+  },
+  "scores": {
+    "initial_embedding": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "development_grid": {
+        "safe_success": 54,
+        "n": 54,
+        "collisions": 0
+      },
+      "fresh_holdout": {
+        "safe_success": 24,
+        "n": 24,
+        "collisions": 0
+      }
+    },
+    "frozen_head": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "development_grid": {
+        "safe_success": 54,
+        "n": 54,
+        "collisions": 0
+      },
+      "fresh_holdout": {
+        "safe_success": 24,
+        "n": 24,
+        "collisions": 0
+      }
+    },
+    "trainable_head": {
+      "old_3m_4m": {
+        "safe_success": 6,
+        "n": 6,
+        "collisions": 0
+      },
+      "original_5m": {
+        "safe_success": 0,
+        "n": 2,
+        "collisions": 2
+      },
+      "development_grid": {
+        "safe_success": 54,
+        "n": 54,
+        "collisions": 0
+      },
+      "fresh_holdout": {
+        "safe_success": 24,
+        "n": 24,
+        "collisions": 0
+      }
+    }
+  },
+  "max_cpu_gpu_behavior_logp_error": 6.103515625e-05,
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "frozen_evaluation_physics": 1275774,
+  "preflight_physics": 70353,
+  "scope": "One paired pilot seed. Half near-goal and half original5m episodes in each batch. Parent T187 is research-only. A trained new head is not automatically better; no claim of generalization or innovation and no automatic promotion. No map/planner/waypoints/runtime teacher. Zero drive does not imply active braking."
+}
