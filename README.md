@@ -8,7 +8,9 @@
 
 ## 入口
 
+- [迁移完成、清理明细与磁盘释放报告](stage/docs/CLEANUP_REPORT.md)
 - [迁移与恢复说明](stage/docs/MIGRATION.md)
+- [保留模型与暂停恢复边界](stage/docs/RESTORE_CHECKPOINTS.md)
 - [当前实验记录](stage/current/outputs/stage_progress.md)
 - [顶刊研究路线与创新边界](stage/current/outputs/stage_t162/research_direction.md)
 - [5 米失败诊断](stage/current/outputs/stage_t163/findings.md)

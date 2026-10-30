@@ -2,6 +2,7 @@
 from pathlib import Path
 import hashlib,json,sys
 import numpy,torch,mujoco
+from training.e2e_phase10_lidar_v7_curriculum.phase10_stage1a_dense_env import Phase10Stage1ADenseEnv
 root=Path(__file__).resolve().parents[2]
 m=json.loads((root/'stage/manifests/archive_manifest.json').read_text());bad=[]
 for row in m['files']:
