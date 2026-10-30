@@ -23,6 +23,7 @@
 - [模型和数据 Release](https://github.com/frank8763/winkun/releases/tag/stage-archive-2026-10-30)
 - [本轮T165–T172模型与原始证据 Release](https://github.com/frank8763/winkun/releases/tag/stage-progress-2026-10-30)
 - [T173–T175 Critic诊断模型与原始证据 Release](https://github.com/frank8763/winkun/releases/tag/stage-critic-audit-2026-10-30)
+- [T176–T178 场景与探索模型、原始证据 Release](https://github.com/frank8763/winkun/releases/tag/stage-scene-exploration-2026-10-30)
 
 ## 当前能力和实验状态
 

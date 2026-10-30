@@ -75,3 +75,5 @@ T177组间仅油门下界变化；T178组间仅探索相关时间变化。T177�
 ## 核验与归档
 
 协议、源码输入哈希、四个最终模型哈希、步数和冻结分数见[verification_and_metrics.json](verification_and_metrics.json)。原始失败、状态恢复快照、批次数据和模型均保留；本轮旧滚动断点在最终评估后删除，逐组保存哈希收据。所有新runs总量约623.5MiB，低于1GiB上限；临时归档上传核验后删除。最终远端收据与精确占用以release_receipt.json为准。
+
+本轮116个原始输出（39588790字节）已在[增量Release](https://github.com/frank8763/winkun/releases/tag/stage-scene-exploration-2026-10-30)备份。压缩包33056991字节，SHA256 `8724a274fea9a5f3979f8fbfd2cf9b5f53464d48547f0fbc7c57ff17e00ef2ad`。本地解压流117个成员逐个哈希通过；远端3个附件服务端SHA256/大小匹配，未做完整远端二进制重新下载。临时包已删除。全部新runs文件逻辑大小653753721字节（623.47MiB；文件系统实际占用约626MiB），仍低于1GiB。历史3240文件哈希再次全部通过；所有本轮父/子训练进程均已退出。
