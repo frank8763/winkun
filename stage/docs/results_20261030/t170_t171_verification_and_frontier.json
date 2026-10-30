@@ -1,0 +1,133 @@
+{
+  "verification": [
+    {
+      "run": "t170_vector_td3",
+      "hashes_and_frozen_pairing": "PASS",
+      "checkpoint_sha256": "08956e8aa74a540b6746cfdf69f730fb2e7642f14450c6a47f565753f838e174"
+    },
+    {
+      "run": "t171_reverse_curriculum",
+      "hashes_and_frozen_pairing": "PASS",
+      "checkpoint_sha256": "520dda9ee77b3a9139ad5a15c84d7a8765f6476c7eb255a195d1623f9d1e5d6d"
+    }
+  ],
+  "t171_training_by_assigned_reset_phase": [
+    {
+      "phase": 0,
+      "completed_episodes": 55,
+      "success": 52,
+      "collisions": 3,
+      "ends": {
+        "GOAL": 52,
+        "COLLISION": 3
+      },
+      "canonical_5m_episodes": 0,
+      "canonical_5m_success": 0,
+      "minimum_start_distance_m": 0.50462738921784,
+      "maximum_start_distance_m": 0.992739007610826
+    },
+    {
+      "phase": 1,
+      "completed_episodes": 22,
+      "success": 9,
+      "collisions": 10,
+      "ends": {
+        "COLLISION": 10,
+        "GOAL": 9,
+        "TRUNCATED": 3
+      },
+      "canonical_5m_episodes": 0,
+      "canonical_5m_success": 0,
+      "minimum_start_distance_m": 1.0684156256076425,
+      "maximum_start_distance_m": 1.9784440359674045
+    },
+    {
+      "phase": 2,
+      "completed_episodes": 17,
+      "success": 8,
+      "collisions": 9,
+      "ends": {
+        "GOAL": 8,
+        "COLLISION": 9
+      },
+      "canonical_5m_episodes": 4,
+      "canonical_5m_success": 0,
+      "minimum_start_distance_m": 2.0475344046178847,
+      "maximum_start_distance_m": 5.0
+    },
+    {
+      "phase": 3,
+      "completed_episodes": 2,
+      "success": 0,
+      "collisions": 2,
+      "ends": {
+        "COLLISION": 2
+      },
+      "canonical_5m_episodes": 0,
+      "canonical_5m_success": 0,
+      "minimum_start_distance_m": 3.536096261055202,
+      "maximum_start_distance_m": 4.1199412822990755
+    }
+  ],
+  "t171_final_frozen_failures": [
+    {
+      "id": "2029654802_RIGHT",
+      "group": "old_3m_4m_retention",
+      "end": "TRUNCATED",
+      "remaining_m": 0.20789609194585018,
+      "nearest_m": 0.20789609194585018,
+      "simulation_duration_s": 27.99999999999536
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "group": "original_5m_primary",
+      "end": "COLLISION",
+      "remaining_m": 1.5020614095087466,
+      "nearest_m": 1.5020614095087466,
+      "simulation_duration_s": 33.61999999999512
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "group": "original_5m_primary",
+      "end": "COLLISION",
+      "remaining_m": 1.9121562135101862,
+      "nearest_m": 1.9121562135101862,
+      "simulation_duration_s": 44.7280000000087
+    },
+    {
+      "id": "prospective_2029799001_LEFT",
+      "group": "consumed_development_same_map_3m",
+      "end": "TRUNCATED",
+      "remaining_m": 0.5986430031934964,
+      "nearest_m": 0.2013066919742572,
+      "simulation_duration_s": 27.99999999999536
+    },
+    {
+      "id": "prospective_2029799001_RIGHT",
+      "group": "consumed_development_same_map_3m",
+      "end": "COLLISION",
+      "remaining_m": 2.4275961088715508,
+      "nearest_m": 2.4275961088715508,
+      "simulation_duration_s": 21.275999999999087
+    },
+    {
+      "id": "prospective_2029799002_LEFT",
+      "group": "consumed_development_same_map_3m",
+      "end": "TRUNCATED",
+      "remaining_m": 1.331410815576179,
+      "nearest_m": 1.331410815576179,
+      "simulation_duration_s": 27.99999999999536
+    }
+  ],
+  "interpretation_limits": [
+    "Noisy online successes are not frozen-policy evaluation.",
+    "Episodes spanning a phase transition retain their reset-phase label.",
+    "At the budget boundary active episodes are censored, not scored as failures.",
+    "Phase3 has only2 completed episodes; no stable long-range success estimate.",
+    "The four same-map3m cases were consumed inT170 and are development cases inT171.",
+    "All runs use one geometric layout and one training seed each."
+  ],
+  "retained_actor": "T159",
+  "original_5m_safe_success": "0/2",
+  "automatic_promotion": false
+}

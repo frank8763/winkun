@@ -1,0 +1,66 @@
+{
+  "experiment": "STAGE_T171_FIXED_FINAL_GOAL_REVERSE_START_CURRICULUM",
+  "n_envs": 8,
+  "seed": 2026103071,
+  "physics_budget": 500000,
+  "wall_seconds": 900,
+  "control_hold_steps": 25,
+  "discount_efold_seconds": 60,
+  "actor_parent": "T159 incumbent, not a promoted failed candidate",
+  "critic_parent": "T170 final, same60s reward/control semantics, explicit warm start",
+  "actor_frozen_frames": 100000,
+  "start_radius_stages_m": [
+    [
+      0.5,
+      1.0
+    ],
+    [
+      1.0,
+      2.0
+    ],
+    [
+      2.0,
+      3.5
+    ],
+    [
+      3.5,
+      5.0
+    ]
+  ],
+  "heading_error_stages_deg": [
+    10,
+    20,
+    30,
+    45
+  ],
+  "competence_gates": "each stage at least100k frames, >=12 completed episodes, last20 success fraction .5/.4/.3; otherwise remain at the stage within the same fixed500k budget",
+  "fixed_final_goals": "the two original5m target locations stay constant throughout each episode; reset start poses sampled around them",
+  "canonical_5m_injection": "from phase2, every fourth reset uses original canonical5m start, never a route or waypoint",
+  "reset_only": "qpos/qvel/ctrl initialization before first native step of each episode; no qpos/qvel write during navigation",
+  "sampling": "bounded collision-free radial reset rejection, not Brownian trajectory expansion; exact RCG reproduction not claimed; full path feasibility not established",
+  "policy": "one shared112\u21922 Actor, no environment ID/map/waypoint/planner/teacher action at inference",
+  "reward_and_update": "same asT170/T169, no further reward change",
+  "cap_all_new_runs_bytes": 1073741824,
+  "checkpoint_limit_bytes": 134217728,
+  "gpu_memory_fraction": 0.35,
+  "automatic_promotion": false,
+  "evaluation": "same strict6 old+2 original5m plus the four now-consumed3m development cases, not a fresh blind test",
+  "reference": "https://proceedings.mlr.press/v78/florensa17a.html",
+  "reference_limit": "Adopt starting-near-goal expansion as an engineering curriculum. RCG and parallel RCG exist; no novelty claim.",
+  "actor_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt",
+  "critic_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t170_vector_td3/checkpoint_latest.pt",
+  "demonstrations": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz",
+  "cpu_affinity": "Distinct fixed CPU per process before importing PyTorch, after startup clock failure; physical contract reverified",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t170_vector_td3/checkpoint_latest.pt": "08956e8aa74a540b6746cfdf69f730fb2e7642f14450c6a47f565753f838e174",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz": "c124283516a486b9527dacec00e426a5047e0076506504123347dfe736b841da",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t171_reverse_curriculum/worker.py": "53443a3505ba68f3e8b3c8a31672de3c854b829168e69641b29a28e8b69432cc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t171_reverse_curriculum/train.py": "8f1169a8a870e68cf1a6ef0e39505e73c2d80b64f2310eeff588226fac401f6e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t171_reverse_curriculum/pipeline.py": "ccde5915cc75d8a2f22e33ba70f1015fc10ece41a1145b3bf032b54984ce5312",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t171_reverse_curriculum/evaluation_declaration.json": "9065c95fab9f750baa66e4d36dd19379f30fd94abba47118d72b636d9c878123",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t169_value_seed/reward_contract.py": "53689b31e3785d5eaab673649d0e53fc80d91093facfbd04d350844e35f27ba1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  }
+}

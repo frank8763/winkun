@@ -1,0 +1,67 @@
+{
+  "experiment": "STAGE_T170_GPU_VECTOR_GOAL_CURRICULUM",
+  "n_envs": 8,
+  "physics_budget": 1000000,
+  "wall_seconds": 900,
+  "control_hold_steps": 25,
+  "discount_efold_seconds": 60,
+  "seed": 2026103070,
+  "replay_capacity": 20000,
+  "batch_size": 256,
+  "batch_composition": {
+    "online": 192,
+    "verified_success": 64
+  },
+  "actor_parent": "T159 incumbent",
+  "critic_parent": "T169 final networks/optimizer, compatible60s SMDP reward; explicit warm start, not full resume",
+  "actor_optimizer": "fresh Adam1e-5",
+  "critic_optimizer": "T169 state, learning rate1e-4",
+  "retention_weight": 10,
+  "actor_update_every_critic_updates": 2,
+  "gaussian_noise_std": 0.15,
+  "noise_hold_seconds": 1,
+  "goal_curriculum": {
+    "0_250k": "1\u20132m final goals, relative angle\u00b125deg",
+    "250k_500k": "2\u20133m final goals, relative angle\u00b145deg",
+    "500k_1m": "3\u20135m final goals, relative angle\u00b160deg, original5m cases periodically injected"
+  },
+  "stage_gate_at_250k": "At least8 safe training arrivals and16 distinct initial tasks, else stop and report budget incomplete",
+  "stage_gate_at_500k": "At least20 safe training arrivals cumulatively, else stop and report budget incomplete",
+  "random_requested_seed_range": [
+    2029700000,
+    2029750000
+  ],
+  "prospective_eval_seeds": [
+    2029799001,
+    2029799002
+  ],
+  "geometry": "same verified Stage geometry, no cross-map generalization claim",
+  "policy": "one shared Actor, unchanged112\u21922 observations/actions, no environment ID, global map, planner or waypoints",
+  "output": "stage/runs/t170_vector_td3",
+  "checkpoint_policy": "latest+previous rotation each250k; keepfinal only after eval, no full live-env resume claim",
+  "cap_all_new_runs_bytes": 1073741824,
+  "checkpoint_size_limit_bytes": 134217728,
+  "minimum_free_bytes": 42949672960,
+  "gpu_memory_fraction": 0.35,
+  "automatic_promotion": false,
+  "study": "single-run engineering pilot with broader task coverage and vectorized collection; no algorithm superiority or novelty proof",
+  "primary_gate": "all six old courses and both original5m strict cases",
+  "additional_eval": "four prospectively reserved same-map3m tasks, no prior policy evaluation; vehicle reachability not pre-proven",
+  "actor_frozen_physics_frames": 250000,
+  "initial_quarter": "Collect broad short-goal outcomes and adapt Critic; Actor/Actor target remain frozen T159 until first curriculum gate",
+  "actor_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt",
+  "critic_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/learn/checkpoint_latest.pt",
+  "demonstrations": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/learn/checkpoint_latest.pt": "c86e8d22d9bd5abf97dbcfa1fbf97c3dee23d62ec0fe2214d1f4601c9ba4c7a5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t169_value_seed/demonstrations.npz": "c124283516a486b9527dacec00e426a5047e0076506504123347dfe736b841da",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t170_vector_td3/worker.py": "ecaa54345bbd2f1a01d09cb22c742626277681f791c81848d03048f3a0ba6431",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t170_vector_td3/train.py": "9008ed18286f01262b4c0d84369bd6d31f89a01ce70b27da964d84c891a963ac",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t170_vector_td3/pipeline.py": "c916f36ae7ffd64dd77d74788b35d2bf53ee275ed4e88d311a2cd50180a94b2f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t170_vector_td3/evaluation_declaration.json": "c73689ea977c824f0121e54d64f7b7ead5fd43fb622bfa666aa86d1e5ebb6601",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t169_value_seed/reward_contract.py": "53689b31e3785d5eaab673649d0e53fc80d91093facfbd04d350844e35f27ba1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  }
+}

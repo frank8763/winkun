@@ -1,0 +1,134 @@
+{
+  "experiment": "STAGE_T170_FIXED_STOPPING_RULE_FROZEN_SCREEN",
+  "models": {
+    "T159_incumbent": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt",
+      "sha256": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570",
+      "control_hold_physics_steps": 25
+    }
+  },
+  "cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "prospective_2029799001_LEFT",
+      "seed": 2029799001,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "prospective_same_map_3m"
+    },
+    {
+      "id": "prospective_2029799001_RIGHT",
+      "seed": 2029799001,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "prospective_same_map_3m"
+    },
+    {
+      "id": "prospective_2029799002_LEFT",
+      "seed": 2029799002,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "prospective_same_map_3m"
+    },
+    {
+      "id": "prospective_2029799002_RIGHT",
+      "seed": 2029799002,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 3.0,
+      "step_cap": 14000,
+      "group": "prospective_same_map_3m"
+    }
+  ],
+  "step_cap": 23334,
+  "wall_limit_seconds": 1500,
+  "source_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t167_smdp/cadence_eval.py": "8e50c8aeafcf020823c6bf3802637b9a1a14b25a13ae91bfd0245094846381ba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/train.py": "9c6e7cc8a3968a687c6a9ec1f520bf39780c6a1ea2e4ef7b316f73260be18a9d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "purpose": "Vectorized shared-policy curriculum, final stopping-rule checkpoint only; original strict gates and prospective same-map task panel",
+  "selection_rule": "Final1M checkpoint or declared curriculum gate stop, no intermediate evaluation selection",
+  "limits": "3m 28s, 4m 37.334s, 5m 46.668s; radius 0.20m unchanged",
+  "training": false,
+  "automatic_promotion": false,
+  "new_task_feasibility": "Start/goal collision-free checked; full vehicle reachability not pre-proven.",
+  "new_training_frames": 1000000
+}

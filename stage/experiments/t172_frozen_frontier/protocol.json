@@ -1,0 +1,58 @@
+{
+  "experiment": "STAGE_T172_FROZEN_MATCHED_REVERSE_START_FRONTIER_AUDIT",
+  "models": {
+    "T159": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt",
+      "sha256": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570"
+    },
+    "T171": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t171_reverse_curriculum/checkpoint_latest.pt",
+      "sha256": "520dda9ee77b3a9139ad5a15c84d7a8765f6476c7eb255a195d1623f9d1e5d6d"
+    }
+  },
+  "seed": 2026103072,
+  "wall_seconds": 900,
+  "maximum_physics_steps": 2300000,
+  "native_physics_dt_s": 0.002,
+  "control_hold_steps": 25,
+  "cases_per_model": 24,
+  "draws_per_phase_and_side": 3,
+  "reset_radius_bins_m": [
+    [
+      0.5,
+      1.0
+    ],
+    [
+      1.0,
+      2.0
+    ],
+    [
+      2.0,
+      3.5
+    ],
+    [
+      3.5,
+      5.0
+    ]
+  ],
+  "heading_error_bins_deg": [
+    10,
+    20,
+    30,
+    45
+  ],
+  "training_updates": 0,
+  "checkpoint_selection": "T159 and the already frozen T171 final only, no best checkpoint selection",
+  "diagnostic_deadline": "Native T171 training cap=max(14000,ceil(2*initial_distance/3*14000)); not the original strict5m primary endpoint",
+  "scope": "Post-T171 development diagnostic, single geometric map, new deterministic reset draws, not a blind generalization test. Paired final-goal/reset pose hashes must match. Collision-free reset alone does not establish path feasibility or map interior membership.",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t159/consolidated_actor.pt": "d0065843f6766407038bae679b32177b20991a429010bb3cb83872413f8ea570",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t171_reverse_curriculum/checkpoint_latest.pt": "520dda9ee77b3a9139ad5a15c84d7a8765f6476c7eb255a195d1623f9d1e5d6d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t172_frozen_frontier/evaluate.py": "6062cf69df48c7bd7a91e87eddcd8d00bd9c95555510d0278cdbad8504bf7332",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t171_reverse_curriculum/worker.py": "53443a3505ba68f3e8b3c8a31672de3c854b829168e69641b29a28e8b69432cc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t169_value_seed/reward_contract.py": "53689b31e3785d5eaab673649d0e53fc80d91093facfbd04d350844e35f27ba1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/current/outputs/stage_t148/td3_core_goal_contrast.py": "5f493f1b60d5b72f6520dfb41b6c3426d680f41760b366c46d044f4c6809b654"
+  },
+  "disk_cap_all_new_runs_bytes": 1073741824,
+  "automatic_promotion": false
+}
