@@ -1,0 +1,38 @@
+{
+  "experiment": "T198",
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt",
+  "cases": [
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/left_frontier_fullstate.npz",
+  "snapshot_elapsed": 14000,
+  "max_physics": 46868,
+  "wall_seconds": 180,
+  "max_bytes": 8388608,
+  "optimizer_updates": 0,
+  "scope": "Frozen evidence audit only. Actual frontsteering joints/targets observed for original LEFT/RIGHT rollouts, plus two reset-only \u00b1.2rad steering interventions. No statewrites after stepping, goal/geometry/caps unchanged. Joint states are not supplied to deployed Actor yet. This is not a navigation success experiment or causal proof of existing failure. T159/T194 preserved; Stageonly; allnewruns1GiB/free40GiB.",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt": "4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/left_frontier_fullstate.npz": "460fdd3f016e61f65e782cdef878c689be15e91c0466b768ed06e30160d0750e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t198_actuator_state_audit/prepare.py": "1ee51f522f54cadcc09b3af7165bbcbc242aa8c45962a763d11e58d1ef4268bd",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t198_actuator_state_audit/common.py": "20de509ef5348c99a87d59c5ecd7b260d71a26f71e1dccc5b3935155359b154d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t198_actuator_state_audit/run.py": "acd982f16a251248f1264abe6c8baf61b52b45fd5b293d77a3ddff56f3367fd8"
+  }
+}

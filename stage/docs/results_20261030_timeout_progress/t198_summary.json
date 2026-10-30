@@ -1,0 +1,72 @@
+{
+  "state": "COMPLETE",
+  "episodes": [
+    {
+      "case": "5m_2029653601_LEFT",
+      "physics_steps": 15032,
+      "success": false,
+      "collision": true,
+      "timeout": false,
+      "tracking_absolute_error_quantiles_rad": [
+        0.03364793977232114,
+        0.06815458917944674,
+        0.11183398757449742,
+        0.2983323499826134
+      ],
+      "decision_boundary_error_quantiles_rad": [
+        0.03344507169588998,
+        0.06390449016034729,
+        0.09740138602456129,
+        0.1119612879505617
+      ],
+      "trace_sha256": "be26e36e913d3871ff5f98e27b28d66ddb3da05c7e7ffaea4d6d24393eb2a294"
+    },
+    {
+      "case": "5m_2029654802_RIGHT",
+      "physics_steps": 21397,
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "tracking_absolute_error_quantiles_rad": [
+        0.034550133776473604,
+        0.06344579595380417,
+        0.13750903717535165,
+        0.466319600036585
+      ],
+      "decision_boundary_error_quantiles_rad": [
+        0.0341877588316125,
+        0.058706314969314825,
+        0.09491025914813911,
+        0.1262724874496814
+      ],
+      "trace_sha256": "298383fed67d830fe99fe38d27aa548cf72eadcba242572a5efaeb27d9759834"
+    }
+  ],
+  "physics_steps": 36629,
+  "optimizer_updates": 0,
+  "history_action_columns_all_zero": true,
+  "reset_probe": {
+    "initial_observation_max_difference": 0.0,
+    "initial_command_max_difference": 0.0,
+    "same_observation_established": true,
+    "joint_angles_rad": [
+      -0.2,
+      0.2
+    ],
+    "same_neural_command_100physics_steps": 100,
+    "final_pose_difference": [
+      -0.00018057565388451824,
+      -0.0009266979956943366,
+      -0.0026284806883549727,
+      0.005970638153219965,
+      -0.012733126338138251,
+      0.00045450970666137055
+    ],
+    "final_xy_difference_m": 0.0009441275030416824,
+    "final_observation_max_difference": 0.01406010240316391,
+    "scope": "Constructed reset-only steering state intervention, same initial base pose/velocity and cachedhistory. First100physicssteps use same initial neural command only if initialobservations/commands match. This is an observability probe, not navigation deployment, source of successful routes or proof of failure cause."
+  },
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scope": "Frozen evidence audit only. Actual frontsteering joints/targets observed for original LEFT/RIGHT rollouts, plus two reset-only \u00b1.2rad steering interventions. No statewrites after stepping, goal/geometry/caps unchanged. Joint states are not supplied to deployed Actor yet. This is not a navigation success experiment or causal proof of existing failure. T159/T194 preserved; Stageonly; allnewruns1GiB/free40GiB."
+}

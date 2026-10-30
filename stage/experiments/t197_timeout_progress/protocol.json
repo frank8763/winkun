@@ -1,0 +1,729 @@
+{
+  "primary_cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "anchor_sources": {
+    "LEFT": {
+      "id": "phase1_side0_draw0",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "course_bin": 1,
+      "reset_task": {
+        "seed_requested": 2029653601,
+        "seed_actual": 2029653601,
+        "distance_m": 1.0725596218501023,
+        "angle_deg": -13.357274353413814,
+        "goal_xy": [
+          1.5750185651952417,
+          -3.676543648434686
+        ],
+        "start_pose": [
+          2.2215503794128546,
+          -2.820751176144986,
+          -1.9846653054486456
+        ],
+        "phase": 1,
+        "canonical5m": false,
+        "reset_only_pose_initialization": true,
+        "final_goal_never_changed_during_episode": true,
+        "signature": "470c762237fb604fcea07401cdaa026c26037a9cd1d0260f70bf2e56a2487b31",
+        "quaternion": [
+          0.5467382112897416,
+          0.0,
+          0.0,
+          -0.8373036058179218
+        ]
+      },
+      "prior_T172_success": true,
+      "snapshot_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/LEFT_fullstate.npz"
+    },
+    "RIGHT": {
+      "id": "phase1_side1_draw0",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "course_bin": 1,
+      "reset_task": {
+        "seed_requested": 2029654802,
+        "seed_actual": 2029654802,
+        "distance_m": 1.3277782831531277,
+        "angle_deg": -5.672219466666458,
+        "goal_xy": [
+          5.486694873876159,
+          0.043289980823624674
+        ],
+        "start_pose": [
+          6.448595281008868,
+          0.9585728747810045,
+          -2.2820242379615814
+        ],
+        "phase": 1,
+        "canonical5m": false,
+        "reset_only_pose_initialization": true,
+        "final_goal_never_changed_during_episode": true,
+        "signature": "33ccae798ad29992b9a5b0c89d1f730b21ec1912d5ecc7135d8827b98fa29811",
+        "quaternion": [
+          0.41667464501864926,
+          0.0,
+          0.0,
+          -0.9090556859723076
+        ]
+      },
+      "prior_T172_success": true,
+      "snapshot_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/RIGHT_fullstate.npz"
+    }
+  },
+  "initial_std": [
+    0.5,
+    0.5
+  ],
+  "alpha": 0.001,
+  "warmup_updates": 1500,
+  "updates_per_batch": 500,
+  "parameter_basis": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/parameter_basis.npz",
+  "parameter_scale": 0.3,
+  "training_jobs": [
+    {
+      "id": "5m_2029653601_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      }
+    },
+    {
+      "id": "near_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "snapshot_side": "LEFT"
+    },
+    {
+      "id": "near_LEFT",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "snapshot_side": "LEFT"
+    }
+  ],
+  "batches_per_arm": 6,
+  "episodes_per_arm": 48,
+  "max_physics_per_arm": 1120032,
+  "experiment": "T197",
+  "seed": 2026103097,
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/action_noise/checkpoint_latest.pt",
+  "retention_targets": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t197_timeout_progress/retention_targets.npz",
+  "seed_episodes": [
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_RIGHT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_RIGHT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w1.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w2.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w4.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w5.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w6.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w7.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w1.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w2.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w4.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w5.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w6.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w7.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w1.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w2.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w4.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w5.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w6.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w7.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w1.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w2.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w4.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w5.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w6.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w7.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w1.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w2.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w4.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w5.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w6.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w7.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w1.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w2.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w4.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w5.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w6.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w7.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w1.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w2.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w4.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w5.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w6.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w7.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w1.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w2.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w4.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w5.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w6.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w7.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w1.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w2.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w4.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w5.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w6.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w7.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w1.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w2.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w4.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w5.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w6.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w7.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w1.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w2.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w4.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w5.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w6.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w7.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w0.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w1.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w2.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w3.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w4.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w5.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w6.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w7.npz"
+  ],
+  "evaluation_resets": [
+    {
+      "id": "left_T197_holdout_0",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.004813537947354084,
+        0.015199561135151043,
+        -0.24256846772705876
+      ]
+    },
+    {
+      "id": "left_T197_holdout_1",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.005652645532553329,
+        0.021135076092701405,
+        -1.4979820475691188
+      ]
+    },
+    {
+      "id": "left_T197_holdout_2",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        0.02412840791240487,
+        0.004354601489343059,
+        0.9042687511449268
+      ]
+    },
+    {
+      "id": "left_T197_holdout_3",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.017331893893671253,
+        -0.02733611249911856,
+        -0.6466168751015982
+      ]
+    },
+    {
+      "id": "left_T197_holdout_4",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.02716628198974693,
+        -0.0071251295866733184,
+        -1.0359445561901182
+      ]
+    },
+    {
+      "id": "left_T197_holdout_5",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.0049804377465496735,
+        -0.00755537041264405,
+        -1.1129294745201062
+      ]
+    },
+    {
+      "id": "left_T197_holdout_6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        0.01940992502751717,
+        0.00033452207870205905,
+        1.8485914135717985
+      ]
+    },
+    {
+      "id": "left_T197_holdout_7",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.006090872555150763,
+        -0.024327409566024725,
+        -1.9445467158429572
+      ]
+    },
+    {
+      "id": "left_T197_holdout_8",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        0.026067243298352777,
+        0.01493905458946538,
+        1.990006825419373
+      ]
+    },
+    {
+      "id": "left_T197_holdout_9",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.014192963616438604,
+        -0.02556676236299961,
+        -1.4719870470770542
+      ]
+    },
+    {
+      "id": "left_T197_holdout_10",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        -0.007444288775135116,
+        0.015493166679939517,
+        -1.4450479010665336
+      ]
+    },
+    {
+      "id": "left_T197_holdout_11",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "group": "left_fresh_reset",
+      "perturbation": [
+        0.026439641638710557,
+        -0.005030606878249581,
+        -0.008972037556507217
+      ]
+    }
+  ],
+  "wall_seconds": 1800,
+  "max_bytes": 67108864,
+  "arms": {
+    "no_timeout_distance": {
+      "timeout_penalty": 0.0
+    },
+    "timeout_distance": {
+      "timeout_penalty": 2.0
+    }
+  },
+  "controlled_difference": "Only extra finite-timeout terminal penalty -k*min(remaining_distance_m,2), k0 versus2 before /10 normalization. Same Actor parent, fresh Critics/optimizers, seeds, parameter/action exploration, source100episodes, seven-task retention and update/episode budgets.",
+  "training_contract": "Both arms include same whole-episode steering parameter noise(.3scale, fixed T196basis) and tanh-Gaussian action noise. 48episodes/arm,6originalLEFT+2nearLEFT perbatch. FreshCritic1500warmup;3000Actor+4500Critic total perarm. Reward0arm exactly same T196 objective; penaltyarm changes training objective, not policy-invariant shaping.",
+  "retention_contract": "Frozen common T196 action-noise final Actor on same seven groups as T196: old6T169states+trueRIGHTsuccessstates. Uniform32/group, MSEweight10; training-only teacher, singleActor deployed.",
+  "penalty_contract": "At true finite timeout only, event-5 becomes -5-2*min(distance,2), in[-9,-5]. GOAL+10 and collision-10 unchanged. Original goal geometry/radius.20m/deadlines unchanged. Penalty is not navigation success or invariant reward shaping. No artificial waypoint or goal-distance shortcut.",
+  "evaluation_contract": "Initialold6+RIGHT must pass. FinalcentralActors only on original8 plus12newLEFTperturbations fixedbeforetraining; no mid-checkpoint selection, no automatic promotion. All extra exploratory successes separately preserved.",
+  "budget": "96completeepisodes<=2240064newtrainingphysics,48frozenfinal/initialcases,wall1800s;T197newfiles<=64MiB,allnewruns1GiB/free40GiB. Previousrawinputsreusedread-only, not recounted as new interactions. Ownedrollingpreviousdeletedafterfinalarmvalidation with hash receipt.",
+  "scope": "Single paired pilot seed in known fixedgeometry. Relative to T196 parent/replay/teacher/noise differ; only withinT197 reward term controlled. No algorithm superiority, originality or generalization claim; formalT159 and verifiedT194 preserved. No automatic extension.",
+  "references": [
+    "https://proceedings.mlr.press/v80/haarnoja18b.html"
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/action_noise/checkpoint_latest.pt": "2aee7f9250a3f72a94a027bbce4c3d64901e6b5de30d4c2f4a8394417e4b900a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/summary.json": "1d1840f45b40e8eca1234110884e0e388521a98df611436358078052fe417aa9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz": "5e4f037f39b34fa7cbd070270f7a0147048a4c887478890c31137a7b8ec6e8ba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/parameter_basis.npz": "79d0aa70ba9d8934e3e240b3ed2e3076220dd2b99c0d20fd4aa2099089834247",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t197_timeout_progress/retention_targets.npz": "b2d435116c762885eac5c5d9611ffe0d874275e69c709fd68d5527f6c27f14a6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_LEFT.npz": "3ebc68e0cebe10c6375911e9a46f216ff5715202d771be8008d5b3c3f0a96f13",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/original_RIGHT.npz": "8a73f36dc2447f4fd79c557ce6c67edd96b53b46b6247d44735b011312181ea6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_LEFT.npz": "f3d5ef7ec153f2fbaba213bb3cb4dd449a6f8693bfb12cbe6155cddf2be07bf8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t191_her_contract_audit/near_RIGHT.npz": "54c559d5c5b7bc2240bc4aa20058864f0da1bd2d9337305a77d37ac2aa268491",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w0.npz": "4c4883daf93e1292d1c3b88bf8a746eceac0b18126c99329de0eeea7a31a4bab",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w1.npz": "58d7ec5d43d5d9e39315baaff6db028a08537eafd465f63115cfffd5f7b2ed1c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w2.npz": "32f1d3fa669b23ec1a904e1811564dbb03c4bee7e47f3c5696bdd5cb98a7f89c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w3.npz": "5fa467782291744e19ac573386d41367cb4c22e723a2474e172272e7a138f3bf",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w4.npz": "318e7965243154e29755035d748a78d421981330599f184ce23807b0b04952be",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w5.npz": "c6f34555faa8bca24f1970b0e5bdd5e3e11e179d2fcfaf75c7bb3d3fc96280a1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w6.npz": "c488e7c7b3cb1bd9b9b7848b1a553e3c7bcf7c183522a11f88a36f4198354b9c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b0_w7.npz": "798f13738f042a19d1be757328d2e4a0a7e23292ff1c8713e8233e94d59dae4c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w0.npz": "86667382b36e051a6f62f13dfd4b579212c812ba24b6af030b790bc154835fe4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w1.npz": "af2cad00bf26741b0dc17d6973668aef0792c5e05bdc013acf6bc45150a1e4aa",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w2.npz": "d498aedda82cb7fad5c04ec4b404fe45bc73adbc34c7ea7d72e5371357dbbb3b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w3.npz": "5d2148575fa72a062d5b5b63339191dbe1ae89e93210869db7815f44e077c6d6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w4.npz": "8c2f8b580c835e215205b38cbc4d34ad437645aa6e7d83ed897c61b15a884a2f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w5.npz": "71b19f4c838655e447d097d8957535c8aa60c50f9cde3a798a08ef9a3747c5cf",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w6.npz": "0f36f0dde5bfb49922b48a3b96bbec3dc2f2f0b3cbf374f70b7a2d945af8d680",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b1_w7.npz": "fa9dd379e6a6be0eb4279d5da1d6047949cd885c5975a35a60fb7b6df14d7211",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w0.npz": "a8dee9fdd857f73d243fc8874cfa2b498215f4c60c41bdf70dd7ea3c831b1ed7",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w1.npz": "63117746cc0c98df39a874f845345633b36a7cc985d738383a64fa8a470d9a5c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w2.npz": "bc232e2053e8e22fcb0ac2045e11101cb6bece758e5499e1b958c423f45c15d1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w3.npz": "c86e0924a27784954891404eba76d0ceaf341c2078f465b01e081df814cd50d2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w4.npz": "a639245cfe59aafc140ee87f850230f814ac049068f6e6dec90c481e4a6fe9c7",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w5.npz": "fd4514c7e7cb2ab2db634fcf0c74d70b4a9442df00c6addfd199050ba52b587e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w6.npz": "33bead953306f18f058a57eed8d74bc8288258655ed61287fa7a7ce18f95f03e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b2_w7.npz": "d6f9f5e6bd89ab3c5fa3081e468b39e311e86876ddf51660389a467e5e82a78c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w0.npz": "9da3e0a8df0af05c1a68e2a79a4d1bbe85def4f08b111cc4252b47122af82419",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w1.npz": "02f83ecf964a2ef9caf9564e1171837d77a6ebf3614f52785e6b5f870287b3ce",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w2.npz": "171bec984ee37e70e65274b93aa3cfef7c3810cbb2798d2928033bf08aa72d7d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w3.npz": "edd178b40e477e5f69ab9a98a672bf0d5bd3037a67322c5071d891f0c43bb7fe",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w4.npz": "487dd8314629cc45c1ecbf8df017de8a6da4e781262623b04e3e6b91dc88afc1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w5.npz": "aca09bc19307c42fe7d3e32f138508dd586742f3a1c9988810e9e920d0654a32",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w6.npz": "d8c91ea681f238305a906986657b0097a08e60787ad1c7851cbec24d506aeeaa",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b3_w7.npz": "cfb34e44d39c74a7cf9c8291a777e0ca5fe253c573c3ede437f9c7325376edc1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w0.npz": "55088db72ed34cf338256dfd7fbcb05223e06908ce6b5a830bbaaf189595c2e9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w1.npz": "4f6509cd744ca8274b618517e260739e35578bbcdc7be619a65a4d4581900560",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w2.npz": "eb17124e423dc837ccee5246bb57e0077720a0f96070e1f34f54f08dd839ffce",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w3.npz": "b897516f9ad147ab35e3c00ffec97b66380cc295cc7098d67c0e8e041ddd0ef8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w4.npz": "637cf5f76dcc5e8dcfb18727969b0738eed58a579bcdc0d8c7e276d79cd9207f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w5.npz": "11bf03d3acad41cb88406d52e79eb38fa55c4e0b61f544570aa72625cbbea2aa",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w6.npz": "72b7e7805ea0547bc036a33faa78303ca43ca00a969e343875f6afef1a68faf9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b4_w7.npz": "32ac83f37ec6094bdc607613c7378859ffd960e2da8a10817b8c187c112056fa",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w0.npz": "adb5ef14b3dfc6bbad93b5372960166dc92671159c3b39a6bad2143cd0af6ef4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w1.npz": "07a256676335f28497c8d53b6c150ee67d8d884ef89bdc02edbf51113627b79d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w2.npz": "de4701a8c00274cb21167748d72c005ae342c7ab54c5244d2bc7060e14af7626",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w3.npz": "f68ab0a3985c2ab644b8ac756ff362128c1aae8c24f42e354b1ca23170e528e3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w4.npz": "1ed04bf867622458c11d21b24e718161d8993b07158f7397dc61d65b30ff28d8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w5.npz": "9b5a2df86b4544eb31bb35a3a2891d0352320bb77e0fb8fe56f952cb1fe65a1c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w6.npz": "aee4c22576d648802708a1623210f111d2cf1963a4f25280a5a8370f4125590c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/action_noise_b5_w7.npz": "708111717390ad2fd81425f8a5cfc745cbef9fdca472c8f6dac39f07ace669a3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w0.npz": "aeed2c64c56992fb2c03647cefb469a075f59a69667b5e3c96848845d1eda5e1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w1.npz": "d6455bf2e7b748f39b230040ad0c71a34a9f211a6e833a9df0015be1502d0a38",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w2.npz": "c74ca17b34f1e8acdef23ca61cb7e28738f8cf96c6005dd95bbda5ee58eee4c2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w3.npz": "a90bab15e3638184413bc40413c9ae463c99b1bd790deaed8430888cdfcb66e4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w4.npz": "e9b523a9e26a088f8efa719756e6be76f3f862d052a64b99d4f2558cc379497d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w5.npz": "1452e80171219517b30209e6a8cbad2d75091df57765bac754329b7f8cc00457",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w6.npz": "3d076bea28672729af1883208395ee38dfd0b143a8a0b9640ce24250aaa90f57",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b0_w7.npz": "234bb9a004b7d4e628eec8dc8fb1d0ee91f05e4824c57c4f763dd33cab5ae6bd",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w0.npz": "b07b798f1255b16e516ed42e4221919d447847de7834fc98b0304133e215177a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w1.npz": "763d65659793d7766482ec35ad502e5b48a57c6499a7e00d71ba82ba88bfe89a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w2.npz": "73f241b84edbcb8a054f1e01bf63b05b41abe25ce51745d6730c91fe2854ee79",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w3.npz": "1f41a90045edf57015d2aa14137a92a9fa74891901dcad611234d5b3120db3b9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w4.npz": "bd7f75955c91c68861a66e80fc9b1fc45f78fbb4a7c4a5f46d88d4bcbd6d05df",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w5.npz": "608a7f8dce38ac7386696dcfca5d019cb97854a8552d825de1fc881ecf6ec06a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w6.npz": "e69edcc5bafc152512dbe5f6ea4740a40a4ce37f64c4f555b9665e97a5da41d1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b1_w7.npz": "dfe70adb27499e63b7a41b70c9d61e7931b9457c079a0984850808c8501952d9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w0.npz": "f683abb38fc3b0bfbae26551dfe948e5609f9570798ff8b4281c464f2c36832c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w1.npz": "31187ed11154c78c7e18f318d0615c6ffb101e489d47e047ac62b0a7e7077fb5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w2.npz": "b92256138a97895f10920dc6e2c6a25471aca8dc27a21ff2b02be74fcbac4c8f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w3.npz": "843dabf8f7c1f46350ae661ee515b3a043bf698d74653be3477053c569fef94d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w4.npz": "04de93aeabf5a65ab6c941ec52dfd9aabe7ef9a3f9583f54d4b82554dc1df224",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w5.npz": "e20d70518310b0403e41964d216f215c536ea768285aa64d71a2508120bf737f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w6.npz": "cdc0edeacb4d33d9fffc1f9a7be60996753b373334464c02b3cf8b420470051d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b2_w7.npz": "65036a1bb108bcdbb30ba3e2f20f25dbccabcaed2fb67bc4b8a758b423876998",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w0.npz": "f8089ce5e37dc8847ec22d521f49742c48397332c3e1f531e8ad7bfcdf5926d2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w1.npz": "f45e961dbbf423272a28e25cc35d3f5886e72011c065ffe3dbb88eab6aac7736",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w2.npz": "cbb61f521c16cefd46b22c3ef6a138f3e0565db2be56d79f6de64f69906b2861",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w3.npz": "db712c5de3bb35d5542317e0f38cc918fd0349185d210b85dcb203989f41e320",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w4.npz": "dcb177e61637b9d7b97aa2025ea3918ca5db03e7560d34c685b0826c09cd73b5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w5.npz": "1a4f366c76ca31c6453cc49f7e4736e45c78fd11cad8d4a812d4fef743673370",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w6.npz": "01bf56c66734b0283ff32a55de16f39c1e4619176a3724d8235bac3039a72ee6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b3_w7.npz": "cd39d81e852e9641781e4623ed920a42d2a384cdc13f5800e54edaa17f915f10",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w0.npz": "13ae9079e74fee3ebf30dbf2c2d1048040a192958b9a0b52081b01b4a0e31057",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w1.npz": "defd23b8d73827d5f2fed5cde99a132342a9e0706703acc0b8387c2bedcece4e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w2.npz": "50dae07d3818d36ac730c60b904639ad09518ebc40740620934953d2bc262b18",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w3.npz": "3f7d1a3b20fa0d112917baa1b101d92fd783ada6a40b93088eb3ce3df4848605",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w4.npz": "26c7baa56b4597846ffbbc173bfe71003ea5186b59e50ecd9a9ba95c9a741814",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w5.npz": "097cf512e978c00b4bdf47af37749e748f98828573645d7566af9fd74482744a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w6.npz": "0e0b72d9aa81e6e46912d8cd5cede54bba026355ad184db3bf63f0a967b5abbc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b4_w7.npz": "8775e1007c5de65d45e606bac50b280c72f9932bdae9fcd1187ad3e3f3834d86",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w0.npz": "c6159b9e75b58d8454c155ea17c770271c9befe90b9f547027296205bc87f0ae",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w1.npz": "11a06ad666c76784c5f6808172f6613c9ee533c5c1fefa4423a6c2cb374950b3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w2.npz": "903bd8ea9d02dc1c79ca9e7b0cefcb5d1de3719383d2ab8f264de8425e281aee",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w3.npz": "e5e6625cf9d784ded34eeaf0af20ef316bd380a5dee44f401004c32fc354ade3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w4.npz": "3845ec0846c166cda687ce23d711d11ca7208591b349d6442ee60f739747243c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w5.npz": "c76b41703bb4532857b76d3a084421812ff6be9c8555106350778881df674f57",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w6.npz": "3f0bf0072e16d52ba32b0dd74754b297449a4578c755f9487d1da7435888715d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/episodes/parameter_noise_b5_w7.npz": "a5bb139ac0e5e2c6507bea3f10df4d19a6f005e97cee306d77de406eff87c8a5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t197_timeout_progress/prepare.py": "aea7e34ec41579542d8d6decd1baf2627b4a65274a4b90b3be2768335c54e44b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t197_timeout_progress/collect.py": "5a742564ff53516fa12dc5d55bd6efa95d3367dd2671a58c2dfb87a007b1bfa4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t197_timeout_progress/common.py": "e1b4859f6547c2ef56cc112e5a14847bfcee999e9cce99d592cc50f726c491d7",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t197_timeout_progress/train.py": "e2bc0da88af80d2e5862504383a033c2dbf06a8ce404847b7ad0774a6aa755ad",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t197_timeout_progress/replay.py": "df9b47d5b0cf3006d1ba88347639695f5878104a0e9cc17e9dad17f273c94a0c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/LEFT_fullstate.npz": "821ee9028a6f138e7ba6cdeae24ecf1ca732ad9e05f19c22f3414e1aa4a1eb69"
+  }
+}

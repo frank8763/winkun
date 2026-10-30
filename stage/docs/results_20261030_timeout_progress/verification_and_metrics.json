@@ -1,0 +1,135 @@
+{
+  "state": "PASS",
+  "protocol_sha256": "97259b22c1fba43634fb307eee4359525842e5a0f1d78c3d53a1df8a37e48c9a",
+  "inputs_verified": 111,
+  "training": {
+    "no_timeout_distance": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t197_timeout_progress/no_timeout_distance/checkpoint_latest.pt",
+      "sha256": "8df5325dec20ce1969ecebf5924e2da6497d97a50a6d4867b4939b9fb46cc2b1",
+      "physics_steps": 830105,
+      "decisions": 8331,
+      "actor_updates": 3000,
+      "critic_updates": 4500,
+      "episodes": 48,
+      "success": 10,
+      "original5m_success": 0,
+      "original5m_n": 36,
+      "terminal_metrics": {
+        "original": {
+          "n": 148,
+          "q1_mae": 0.010993564501404762,
+          "q2_mae": 0.01120680756866932
+        }
+      },
+      "original_replay_transitions": 22317,
+      "replay_transitions": 22317
+    },
+    "timeout_distance": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t197_timeout_progress/timeout_distance/checkpoint_latest.pt",
+      "sha256": "0cc4258db8aa3ab2711a5a89a4cfffd945ce843360c3543a720f6cf726fbabe2",
+      "physics_steps": 794195,
+      "decisions": 7971,
+      "actor_updates": 3000,
+      "critic_updates": 4500,
+      "episodes": 48,
+      "success": 11,
+      "original5m_success": 0,
+      "original5m_n": 36,
+      "terminal_metrics": {
+        "original": {
+          "n": 148,
+          "q1_mae": 0.008964648470282555,
+          "q2_mae": 0.009603604674339294
+        }
+      },
+      "original_replay_transitions": 21957,
+      "replay_transitions": 21957
+    }
+  },
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "first_behavior_batch_exactly_equal": true,
+  "max_reconstructed_behavior_action_error": 2.3245811462402344e-06,
+  "previous_archived_files_unchanged": 142,
+  "new_training_physics": 1624300,
+  "new_training_decisions": 16302,
+  "actor_updates": 6000,
+  "critic_updates": 9000,
+  "diagnostic_physics": 0,
+  "frozen_evaluation_physics": 885865,
+  "scores": {
+    "initial": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 0,
+        "timeout": 1
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 0,
+        "collision": 0,
+        "timeout": 0
+      }
+    },
+    "no_timeout_distance": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 0,
+        "timeout": 1
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 12,
+        "collision": 0,
+        "timeout": 12
+      }
+    },
+    "timeout_distance": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 0,
+        "timeout": 1
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 12,
+        "collision": 2,
+        "timeout": 10
+      }
+    }
+  },
+  "own_run_bytes": 57795245,
+  "all_new_runs_bytes": 945499518,
+  "storage_guard_note": {
+    "state": "RECORDED",
+    "nominal_own_limit_bytes": 67108864,
+    "observed_owned_bytes_during_last_checkpoint_with_previous": 67788519,
+    "final_owned_bytes_before_note": 57794404,
+    "observed_transient_subbudget_exceeded": true,
+    "exact_peak_continuously_measured": false,
+    "explanation": "Guard checked between batches and after final predecessor removal, not before allocation of temporary partial checkpoint. Observed retained checkpoint peak exceeded64MiB; partial serialization may have been higher. Global all-new-runs1GiB guard/reserve remained available; final owned run below64MiB. Do not claim the transient subbudget was met.",
+    "future_fix": "Account for pending behavior/episode/partial bytes before starting batch; remove only owned obsolete predecessor before new allocation while retaining latest, with hash receipt."
+  },
+  "precheck_outcome": "PRECHECK_REJECTED"
+}

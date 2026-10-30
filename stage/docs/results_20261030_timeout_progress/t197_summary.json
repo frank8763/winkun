@@ -1,0 +1,114 @@
+{
+  "state": "COMPLETE",
+  "training": {
+    "no_timeout_distance": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t197_timeout_progress/no_timeout_distance/checkpoint_latest.pt",
+      "sha256": "8df5325dec20ce1969ecebf5924e2da6497d97a50a6d4867b4939b9fb46cc2b1",
+      "physics_steps": 830105,
+      "decisions": 8331,
+      "actor_updates": 3000,
+      "critic_updates": 4500,
+      "episodes": 48,
+      "success": 10,
+      "original5m_success": 0,
+      "original5m_n": 36,
+      "terminal_metrics": {
+        "original": {
+          "n": 148,
+          "q1_mae": 0.010993564501404762,
+          "q2_mae": 0.01120680756866932
+        }
+      },
+      "original_replay_transitions": 22317,
+      "replay_transitions": 22317
+    },
+    "timeout_distance": {
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t197_timeout_progress/timeout_distance/checkpoint_latest.pt",
+      "sha256": "0cc4258db8aa3ab2711a5a89a4cfffd945ce843360c3543a720f6cf726fbabe2",
+      "physics_steps": 794195,
+      "decisions": 7971,
+      "actor_updates": 3000,
+      "critic_updates": 4500,
+      "episodes": 48,
+      "success": 11,
+      "original5m_success": 0,
+      "original5m_n": 36,
+      "terminal_metrics": {
+        "original": {
+          "n": 148,
+          "q1_mae": 0.008964648470282555,
+          "q2_mae": 0.009603604674339294
+        }
+      },
+      "original_replay_transitions": 21957,
+      "replay_transitions": 21957
+    }
+  },
+  "scores": {
+    "initial": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 0,
+        "timeout": 1
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 0,
+        "collision": 0,
+        "timeout": 0
+      }
+    },
+    "no_timeout_distance": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 0,
+        "timeout": 1
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 12,
+        "collision": 0,
+        "timeout": 12
+      }
+    },
+    "timeout_distance": {
+      "old6": {
+        "safe_success": 6,
+        "n": 6,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original_5m": {
+        "safe_success": 1,
+        "n": 2,
+        "collision": 0,
+        "timeout": 1
+      },
+      "left_fresh_reset": {
+        "safe_success": 0,
+        "n": 12,
+        "collision": 2,
+        "timeout": 10
+      }
+    }
+  },
+  "evaluation_physics": 885865,
+  "automatic_promotion": false,
+  "incumbent": "T159",
+  "scope": "Single paired pilot seed in known fixedgeometry. Relative to T196 parent/replay/teacher/noise differ; only withinT197 reward term controlled. No algorithm superiority, originality or generalization claim; formalT159 and verifiedT194 preserved. No automatic extension.",
+  "diagnostic_physics": 0
+}
