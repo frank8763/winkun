@@ -2,6 +2,8 @@
 
 本轮所有新代码位于本仓库 stage/experiments/，新输出位于 stage/runs/。Phase实验、聊天、规划器和模型均未参与。归档快照和原T145/T146没有修改。
 
+代码、协议、结果汇总已推送；327个必要原始输出（含最终模型、演示数据、失败日志、轨迹）另存于[本轮Release](https://github.com/frank8763/winkun/releases/tag/stage-progress-2026-10-30)。归档源497250904字节，压缩后213930122字节；本地解压逐成员核验328项（含清单），远端附件SHA256/大小与本地一致。没有声称进行完整远端二进制下载回读。清单见stage/manifests/progress_20261030_files.json，核验收据见release_receipt.json。远端核验后已删除临时压缩包；本轮运行目录保留约474.23MiB，低于1GiB上限。
+
 ## 已完成的结果
 
 | 实验 | 实际内容 | 冻结结果与决策 |

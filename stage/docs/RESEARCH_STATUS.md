@@ -15,3 +15,5 @@ T172已补完零梯度冻结配对：24个完全相同径向起点，T159成功1
 T169–T171使用新稀疏目标、终止一致势函数塑形、60s物理折扣与成功经验。多因素探索不是独立算法对照，尚无创新有效性、跨地图或真机结论。首次T171预检在PyTorch导入时失败；保留失败日志，固定进程CPU亲和性后重新通过预检，未改模拟器或回报。
 
 新增运行目录上限1GiB，最少40GiB可用盘。检查点只轮换latest/previous；每轮冻结评估后保留最终点，删除本轮旧滚动点并记录哈希。原始归档、T145/T146只读。代码/协议/汇总进入Git；模型、数据、原始轨迹以核验过的Release附件保存。
+
+本轮327个原始输出已在[独立Release](https://github.com/frank8763/winkun/releases/tag/stage-progress-2026-10-30)备份，逐文件本地哈希与远端附件SHA256/大小核验通过；临时压缩包已删除，本轮本地输出约474.23MiB。见results_20261030/release_receipt.json及stage/manifests/progress_20261030_files.json。

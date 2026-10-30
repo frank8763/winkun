@@ -19,6 +19,7 @@
 - [5 米失败诊断](stage/current/outputs/stage_t163/findings.md)
 - [模型、数据与来源的 SHA256 清单](stage/manifests/archive_manifest.json)
 - [模型和数据 Release](https://github.com/frank8763/winkun/releases/tag/stage-archive-2026-10-30)
+- [本轮T165–T172模型与原始证据 Release](https://github.com/frank8763/winkun/releases/tag/stage-progress-2026-10-30)
 
 ## 当前能力和实验状态
 
