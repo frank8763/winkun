@@ -1,0 +1,548 @@
+{
+  "schema": 1,
+  "scope": "Completed Stage T199 inverse-squash mean-gradient audit and T200 equal-size residual placement SAC comparison; no Phase, caches, credentials, or original chats",
+  "source_bytes": 34567822,
+  "source_files": 108,
+  "files": [
+    {
+      "path": "stage/runs/t199_sac_mean_gradient/audit.log",
+      "bytes": 3588,
+      "sha256": "eae03854a225151578a5852e57e0b96284b60f1ca76a6d7a484fedd24dc008e5"
+    },
+    {
+      "path": "stage/runs/t199_sac_mean_gradient/initial_residual_policy.pt",
+      "bytes": 2307308,
+      "sha256": "785de9ab9b859ac4a671d50c81fbd645e105812b8d7c1dd7ceb04de9ffe916e0"
+    },
+    {
+      "path": "stage/runs/t199_sac_mean_gradient/launch.json",
+      "bytes": 157,
+      "sha256": "421411dba1f05c85ea3df7b718811294e23dbbe69e1938f81c4a6ff03ea0dbc0"
+    },
+    {
+      "path": "stage/runs/t199_sac_mean_gradient/protocol.json",
+      "bytes": 5139,
+      "sha256": "0246f5e4e2f216b916ec8e70f3b207e35a9bba44b2e0210118fc279f79bcb865"
+    },
+    {
+      "path": "stage/runs/t199_sac_mean_gradient/status.json",
+      "bytes": 3588,
+      "sha256": "eae03854a225151578a5852e57e0b96284b60f1ca76a6d7a484fedd24dc008e5"
+    },
+    {
+      "path": "stage/runs/t199_sac_mean_gradient/summary.json",
+      "bytes": 3588,
+      "sha256": "eae03854a225151578a5852e57e0b96284b60f1ca76a6d7a484fedd24dc008e5"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/entropy_audit.log",
+      "bytes": 1887,
+      "sha256": "e33d2249c455ef0648c5e4891f64bb84fb59cc58974973ad28b1b4289d1b127f"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/entropy_scale_audit.json",
+      "bytes": 34947,
+      "sha256": "e4986468d4a607897de8852ea86cdb44371197482734e5e30c244be74bbe85cc"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b0_w0.npz",
+      "bytes": 104685,
+      "sha256": "bbec05592137e7746b08df2c2f9d34f466c1952aafbe4738d035e7c556069d68"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b0_w1.npz",
+      "bytes": 105359,
+      "sha256": "2a3260941910e6c3c1270b67b43d3c8de967d1fd6a06a8e84eda3ca275d4c64e"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b0_w2.npz",
+      "bytes": 108050,
+      "sha256": "e64195c427a3f66f3db92df1f67f2e74a45e5e78a37fb9bc9b398b3c458a5cb0"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b0_w3.npz",
+      "bytes": 100939,
+      "sha256": "963ccfdf0b31d7b652426ebb9a06f384dc9e9d6bd823d20131103151b44d3d7b"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b0_w4.npz",
+      "bytes": 104117,
+      "sha256": "326825f12afff2330dfb8c5eac5b7b543f0150828cd6436de33233efd549d0d4"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b0_w5.npz",
+      "bytes": 100766,
+      "sha256": "f4627e95e83554403467906f1e6fbde038e274fddbee0dbf72b6e4e32f795879"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b0_w6.npz",
+      "bytes": 20114,
+      "sha256": "1e3b16391619ee7a63ff915673fb78ec514f49ae34d47fee91dcda62b9642cff"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b0_w7.npz",
+      "bytes": 21789,
+      "sha256": "088763f143205a24e6ded5f43b259c6830f96c79af39acbdb85f49c2d9ae96c6"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b1_w0.npz",
+      "bytes": 147905,
+      "sha256": "52e9463db9393529967a9392719132b7ac8fda2eb5e6cf7cb17a5b27d3122bee"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b1_w1.npz",
+      "bytes": 159256,
+      "sha256": "e2ba7e66520341c165bc0fb1a5786b17f9236793d6006f9fc4d80e07fd3c339f"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b1_w2.npz",
+      "bytes": 150892,
+      "sha256": "5fb6a3cef1ca8255fcda9c3291a793400a7efed485d7701065f49bac528d708e"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b1_w3.npz",
+      "bytes": 127749,
+      "sha256": "243b6cd3d4ba2a2fbcd030149d7cc82c5dd85ecf4ef2c5a9084fbb7da57707b5"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b1_w4.npz",
+      "bytes": 139928,
+      "sha256": "8040539e6ac800cb78a3c4b5bf94228d359c900e8637558c6052213f688b6d2f"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b1_w5.npz",
+      "bytes": 150460,
+      "sha256": "5c6b65046837c28ea8ae08cf701a195af90dd20ad5fee453643e039a6c988f5d"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b1_w6.npz",
+      "bytes": 97413,
+      "sha256": "e70b8419d5b9e32d8f41e07845e8b1771f4ce3ef50ec95600f5489b86d64725b"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b1_w7.npz",
+      "bytes": 96669,
+      "sha256": "c70415b08648e445ce358fd8d38080a8eb4d1c4f1d456b8dbe68bf651b585f85"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b2_w0.npz",
+      "bytes": 160247,
+      "sha256": "1a41e97813d5c1bbfaacbd2b0810abe4c793b9d415959c0f83a8b017f25a87d0"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b2_w1.npz",
+      "bytes": 165700,
+      "sha256": "542c7c3f35f29a13d1d0759d0e12a7c265debc376a819e48c50b5188ad2ada86"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b2_w2.npz",
+      "bytes": 115508,
+      "sha256": "5e083a7d6b6fdaf0082c507b8b99349a928f30e0b3ed70dc9422d11b40852ddf"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b2_w3.npz",
+      "bytes": 159218,
+      "sha256": "bb7617058dea7890d6fc812d21085bf2fa38801dffce649e77dd454029133169"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b2_w4.npz",
+      "bytes": 166527,
+      "sha256": "7c5692db24fd488aa301be068197db2417d8c338a1fdaf62f7b9227419a70bf8"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b2_w5.npz",
+      "bytes": 98963,
+      "sha256": "e899c24dc651e8b347cd2b125836c0aa41483cc74a5ebf69580677b708dcfd8f"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b2_w6.npz",
+      "bytes": 99886,
+      "sha256": "54fdf6b15b8189e1776f0d23859c083aae578cc51c743016856948cc9bb9e2c4"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b2_w7.npz",
+      "bytes": 22359,
+      "sha256": "d56b6f293b12d07da88e6be9643914e6ffbda23b9721e61489cbb20680627c46"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b3_w0.npz",
+      "bytes": 159912,
+      "sha256": "db744c1549882ea4275e228b21c0af695b0dafad2d1007294605ac716e9442f8"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b3_w1.npz",
+      "bytes": 163431,
+      "sha256": "3327655e468cc763d15ea548c53798b97b2726a97fa83d0c7688870cc7b619c4"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b3_w2.npz",
+      "bytes": 121837,
+      "sha256": "447e95eb8e439cfe0460b5ce2a66bb67525570f293c10d1c01128bac27dfcc65"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b3_w3.npz",
+      "bytes": 157530,
+      "sha256": "88b16465bc9ed3d86529ae5eaf9ffa55e210a8f7f4c4ae4b36ecfbfa23784830"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b3_w4.npz",
+      "bytes": 166330,
+      "sha256": "0a248033af27fb33b13bae4358e7abd25be72917d51b2554ad7dce2296a35b83"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b3_w5.npz",
+      "bytes": 165570,
+      "sha256": "5f8ff8d16ccad4b6801c70564e7ce5ebf708de4935bc29dd670015aac098c54f"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b3_w6.npz",
+      "bytes": 20174,
+      "sha256": "96bd7023f218d8e95b01f9367e179d976898abb0d671ddb8b0a6e05fdf332da7"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/latent_b3_w7.npz",
+      "bytes": 20706,
+      "sha256": "5a6305edc6e9fe29508e86b5f389652242281713abee62415b031fb5a8b6d2b0"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b0_w0.npz",
+      "bytes": 104685,
+      "sha256": "bbec05592137e7746b08df2c2f9d34f466c1952aafbe4738d035e7c556069d68"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b0_w1.npz",
+      "bytes": 105359,
+      "sha256": "2a3260941910e6c3c1270b67b43d3c8de967d1fd6a06a8e84eda3ca275d4c64e"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b0_w2.npz",
+      "bytes": 108050,
+      "sha256": "e64195c427a3f66f3db92df1f67f2e74a45e5e78a37fb9bc9b398b3c458a5cb0"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b0_w3.npz",
+      "bytes": 100939,
+      "sha256": "963ccfdf0b31d7b652426ebb9a06f384dc9e9d6bd823d20131103151b44d3d7b"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b0_w4.npz",
+      "bytes": 104117,
+      "sha256": "326825f12afff2330dfb8c5eac5b7b543f0150828cd6436de33233efd549d0d4"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b0_w5.npz",
+      "bytes": 100766,
+      "sha256": "f4627e95e83554403467906f1e6fbde038e274fddbee0dbf72b6e4e32f795879"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b0_w6.npz",
+      "bytes": 20114,
+      "sha256": "1e3b16391619ee7a63ff915673fb78ec514f49ae34d47fee91dcda62b9642cff"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b0_w7.npz",
+      "bytes": 21789,
+      "sha256": "088763f143205a24e6ded5f43b259c6830f96c79af39acbdb85f49c2d9ae96c6"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b1_w0.npz",
+      "bytes": 130944,
+      "sha256": "39f633d207526a5cfa1d999353581c88d978817bc807704162a0d755032c539d"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b1_w1.npz",
+      "bytes": 141316,
+      "sha256": "0d7f6aca66cab3063136ad959e6166b6c1f84fc563fd9de8a4bdc34fdfec7f5c"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b1_w2.npz",
+      "bytes": 130773,
+      "sha256": "56e5d6275e4b12f6cd6a1a0a17cc291d98cf96cec2dd941ad3881fc8f427dd03"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b1_w3.npz",
+      "bytes": 98382,
+      "sha256": "c47d3390dd9637dca3fa636f524eab73582482f6370f6fce255fbef327f017bb"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b1_w4.npz",
+      "bytes": 125076,
+      "sha256": "a106d0b57f3a2647409f427e1c1f0a304e1fb57e654e96811826821dd49f1719"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b1_w5.npz",
+      "bytes": 128896,
+      "sha256": "87d292fb4f23af0d8938c8d5ccbb5083a1e9497d46f425f4f30d5088e71e63b7"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b1_w6.npz",
+      "bytes": 98699,
+      "sha256": "af3718f6a674b5827a4b55f6f710e2cc2fb59ac90e02bc41302498a7e48587d8"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b1_w7.npz",
+      "bytes": 97954,
+      "sha256": "933bafe6bb0bb7458ea9d56c5e23d3a6418d652d865d6ed11fc6fc9741b66f32"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b2_w0.npz",
+      "bytes": 115831,
+      "sha256": "0aec6f640e4c64fec947e21a16eebdf1499b81deaa4f61b7be599be8bb0cf915"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b2_w1.npz",
+      "bytes": 166784,
+      "sha256": "4d9300800b4fd91855b94c0fe6e08d7f42a02fc37463d182addeb27600cda5e4"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b2_w2.npz",
+      "bytes": 164766,
+      "sha256": "1f7d89fb68af4c8cb0c5e69c2aff371791f6fd267ebd3a6bdf8e3b9ab987601f"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b2_w3.npz",
+      "bytes": 133673,
+      "sha256": "dc1d983c50fb83db85df78df58368dc00d4694bfab7e878bfcf60352a6a91013"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b2_w4.npz",
+      "bytes": 168165,
+      "sha256": "a0c046fe4d2742b751db2f18530d6529c808de40d0b7f17e50209cea7ebec31f"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b2_w5.npz",
+      "bytes": 95422,
+      "sha256": "ae0a71bb7b5a91d7c166c87e43439e639ce39fc2308a900d85f31640a1b7a2d9"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b2_w6.npz",
+      "bytes": 49628,
+      "sha256": "f66e8965f400d56e170822a73dcde143a5e5b8ca040cd7693ca77708bd43c4bd"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b2_w7.npz",
+      "bytes": 21819,
+      "sha256": "8ad057561854d99e20c8ad7c832f3f9ff379d7d6266c8329a18edf82896d3e89"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b3_w0.npz",
+      "bytes": 151614,
+      "sha256": "5a26a44e0844b7fb1597cb089b8e6e1e58516904d46ccdb5ba9aad47c2854311"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b3_w1.npz",
+      "bytes": 154457,
+      "sha256": "f274a865da806b0ec7d2c5c2ac1f951f29d417d0124c6fab6b44ab06484c77c5"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b3_w2.npz",
+      "bytes": 152125,
+      "sha256": "03aee8efebe5dabd98de5bfac952a1576b38c7daf3bb563c02b27ab174e0ca3c"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b3_w3.npz",
+      "bytes": 153317,
+      "sha256": "abe8f39b299b0c1f379d13dfb57539df3479fd277d6dacb697850351825f46a6"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b3_w4.npz",
+      "bytes": 165369,
+      "sha256": "d7dd80ebc646e6c368af96c101eae8e830cf1a57c97a9b0eddeafe48677985db"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b3_w5.npz",
+      "bytes": 164731,
+      "sha256": "fb18515139f06ecd35694384d40baa584a8e219f1200c3c55b8739a0d436b93b"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b3_w6.npz",
+      "bytes": 20695,
+      "sha256": "bed97da2ef3677d01469e28de841e83e09f528582b6f53b8c657478f60588fac"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes/native_b3_w7.npz",
+      "bytes": 21772,
+      "sha256": "c89e56d330df6058588fab2674583ae27c023f12443cccf8661e23fe45e746df"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/episodes.jsonl",
+      "bytes": 53933,
+      "sha256": "47a6b238a8c0f9216e140f65d87979ffd9da66f068795a0c972cccd80f58b6bf"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/evaluation.jsonl",
+      "bytes": 21076,
+      "sha256": "ec824f2df7fac4bc5bef4d65a4ecc83f2e3c1f6df08e18ec29959509878723e8"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/latent/behavior_batch_0.npz",
+      "bytes": 2111394,
+      "sha256": "3acc353a2c30149c0dccd4a348661ee5d12b1af8756f5e7799e04d1ef8975d5c"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/latent/behavior_batch_1.npz",
+      "bytes": 2115603,
+      "sha256": "9ea69d4c398db6809c2d4993e81d5f263f5de6d9f0d809692be27e2324307b28"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/latent/behavior_batch_2.npz",
+      "bytes": 2115434,
+      "sha256": "a63e0ed406014b9dcfac1d046403b13a911aca8199766abb558705c67d79f073"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/latent/behavior_batch_3.npz",
+      "bytes": 2115541,
+      "sha256": "5f141956b5c0651815c68f501572e927107a81c1a7cfe26241af38e03e050b6d"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/latent/checkpoint_latest.pt",
+      "bytes": 3883269,
+      "sha256": "e60bb4ab3f6fa8e9112a0e5616f39f57ac1d0c51f3f90c25a90ee327c0d323a5"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/latent/critic_warmup.json",
+      "bytes": 298,
+      "sha256": "d111977e2c988fda2a646235091cea241cdace93b2a83e87a28a08f3e187b54d"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/latent/discarded_predecessor.json",
+      "bytes": 163,
+      "sha256": "d519875c6d4bfde5fa57741223848b2f6fe5da8a7bfa81199703428e46151f14"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/latent/optimizer_cleanup_receipt.json",
+      "bytes": 430,
+      "sha256": "cb0f8b7352ccdfe9471e81694dfab29e9e9ba61e0c1ed0f01c8a2a51fd0365fd"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/latent/replay_receipts.json",
+      "bytes": 32930,
+      "sha256": "fc0fb0673c9b02893c05909ca9c56da307a6ff446dddfb71a66990b8427b4eff"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/launch.json",
+      "bytes": 162,
+      "sha256": "4fa9353a196bb6723205499d9d4d9acb4d820d7947f47acbbb4a87e168905ecd"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/native/behavior_batch_0.npz",
+      "bytes": 2111394,
+      "sha256": "3acc353a2c30149c0dccd4a348661ee5d12b1af8756f5e7799e04d1ef8975d5c"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/native/behavior_batch_1.npz",
+      "bytes": 2115454,
+      "sha256": "2c4823c54be8b8f93e8e0d59330c80b47bd30b558a1ebe22ed74cf5c27a5bd6f"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/native/behavior_batch_2.npz",
+      "bytes": 2115286,
+      "sha256": "7ee3a596776d44bb4de8eb88c1db4e288abb8913a7b3611bce9834ad2fc86fe6"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/native/behavior_batch_3.npz",
+      "bytes": 2115484,
+      "sha256": "245134fcbe5d6cf3a0ace5a23568257688ac1ef8f66733a72f1308938c791e01"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/native/checkpoint_latest.pt",
+      "bytes": 3883269,
+      "sha256": "e10880bc761cab3d5e3c380dc35ef5516a0b1981cfdbc37c06b945c0f979fdc8"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/native/critic_warmup.json",
+      "bytes": 298,
+      "sha256": "d111977e2c988fda2a646235091cea241cdace93b2a83e87a28a08f3e187b54d"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/native/discarded_predecessor.json",
+      "bytes": 163,
+      "sha256": "93ebe6ceef88d13c0d42e90f91dece53e51990f145f09c748ba331fd99c9ce29"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/native/optimizer_cleanup_receipt.json",
+      "bytes": 430,
+      "sha256": "9b24378ef2983558509b07361595664db9b2c4d97eeec90bf55e5ce0928c9bd5"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/native/replay_receipts.json",
+      "bytes": 32929,
+      "sha256": "66e1387a5657bc373d575da3cf1833914323dffdbc1dce66ae9e528c5f5cadd2"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/preparation.json",
+      "bytes": 241,
+      "sha256": "b475e149161b88976cb6d0eb39860bd548976c2261c7a90622a093ee5bad3173"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/protocol.json",
+      "bytes": 49001,
+      "sha256": "2e8cc2419990839537d8bf4eeeef4245753cb858b1f6f80540d0c1c62aa2a4ab"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/status.json",
+      "bytes": 3226,
+      "sha256": "e241bd0a30cd91e163655eade95cdd7f4c2b7601980bb0d80f64477fe061fad6"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/summary.json",
+      "bytes": 3193,
+      "sha256": "e05dd2af4e772ec66717d9ff63a8e33340fc58bad3a06b7aa535147b3ef72583"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/train.log",
+      "bytes": 5763,
+      "sha256": "003caff058cec1ab7eea416d6b008804258cd19d5b13125fb4a360d634ff1144"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/verification.log",
+      "bytes": 4228,
+      "sha256": "398b621477df46302a1a7b3d596942536b6017276e88ab43d41dad46816e659b"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/workers/0/worker.log",
+      "bytes": 12616,
+      "sha256": "a65b574bda09fda48773f07dbcd3d08e53f74c88b58ef0fa930bc41b4e01109f"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/workers/1/worker.log",
+      "bytes": 12718,
+      "sha256": "06417abeb8d8aa667943f605c8b324f3fec4d0312a2db6ae234d5cf5b2e233a1"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/workers/2/worker.log",
+      "bytes": 12739,
+      "sha256": "63dac7fe76c19a3ff07ec323a174e839967dd6cb994a089cc8bd35770205c529"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/workers/3/worker.log",
+      "bytes": 12631,
+      "sha256": "96c64b57db96f084f863ec484293dd408c6835427197aa7d83efeac83b60d478"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/workers/4/worker.log",
+      "bytes": 12989,
+      "sha256": "1b1e2c5011f3c9274bfca5732d51f6185ce754d05f0c635ec2b20b2a014092d1"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/workers/5/worker.log",
+      "bytes": 13121,
+      "sha256": "ae6d84f6d7d5190a36ecf2827bab397848da082aa7baeae7d5579601eae04c6a"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/workers/6/worker.log",
+      "bytes": 11024,
+      "sha256": "c2439e078161f40f301082ed6b4785d25ad007b5cc4cd968e1f37b854b422bea"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/workers/7/worker.log",
+      "bytes": 11039,
+      "sha256": "8b30baf55a4bd99eb33587cc39ecb6c74926aa8d914cd05b7fd4a39a6e4cdef2"
+    },
+    {
+      "path": "stage/runs/t200_residual_placement/workers.json",
+      "bytes": 135,
+      "sha256": "07048066d2ff85dd39c915e2540d0329baaaf4d160daf8e74b7de2e3379e71ad"
+    }
+  ]
+}

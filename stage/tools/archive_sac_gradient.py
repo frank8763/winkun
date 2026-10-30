@@ -190,6 +190,12 @@ def publish():
         print(json.dumps({'verified_asset': name, 'bytes': remote['size']}), flush=True)
     release = request('PATCH', api + f'/releases/{release["id"]}', {'draft': False})
     assert not release['draft']
+    # Draft asset URLs may contain an untagged identifier; refresh after publishing.
+    published_assets = request('GET', api + f'/releases/{release["id"]}/assets?per_page=100')
+    for row in verified:
+        current = next(a for a in published_assets if a['id'] == row['asset_id'])
+        assert current['size'] == row['bytes'] and current['digest'] == 'sha256:' + row['sha256']
+        row['url'] = current['browser_download_url']
     receipt = {'state': 'PUBLISHED_VERIFIED', 'url': release['html_url'], 'release_id': release['id'],
                'tag': TAG, 'source_commit': local['source_commit'], 'assets': verified,
                'local_archive_members_verified': local['locally_verified_members'],

@@ -8,7 +8,9 @@ T200后验行为熵分量与环境回报同量级，下一T201仅为较小alpha�
 
 T197子预算曾在滚动partial/previous同时存在时瞬时超出64MiB（至少64.65MiB，精确峰值未知），最终回落约55.12MiB，记录storage_guard_note.json；全局所有新runs仍低于1GiB。T200已增加pending字节预留与完成验收后精简优化器payload，保留全Actor/Critic/target权重和收据，最终不能精确恢复优化器。
 
-Stage/Phase隔离，所有新代码/输出都在winkun；总新runs硬上限1GiB，可用盘≥40GiB。下一训练前先核对剩余容量，不静默扩大预算。以下是此前阶段记录，当前入口以上述状态为准。
+Stage/Phase隔离，所有新代码/输出都在winkun；总新runs硬上限1GiB，可用盘≥40GiB。下一训练前先核对剩余容量，不静默扩大预算。最新原始数据与模型备份已完成核验，临时包已删除；全部新runs约934.67MiB。收据见results_20261030_sac_gradient/release_receipt.json；本地逐成员哈希及远端附件SHA256/大小匹配，未做完整远端二进制读回。
+
+以下是此前阶段记录，当前入口以上述状态为准。
 
 
 
