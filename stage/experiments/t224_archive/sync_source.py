@@ -1,7 +1,7 @@
 """Content-exact GitHub API source snapshot while preserving local history."""
 from pathlib import Path
 import sys,json,subprocess,datetime,hashlib
-from archive import api,ROOT,DOC,write
+from archive import api,ROOT,DOC,OUT,write
 
 def main():
     assert not subprocess.check_output(['git','status','--porcelain','--untracked-files=no'],cwd=ROOT,text=True).strip(),'Commit tracked changes first'
@@ -36,6 +36,6 @@ def main():
                 subprocess.run(['git','merge','--no-edit','-m','Preserve local Stage history alongside verified API source snapshot',sha],cwd=ROOT,check=True);matched=True;break
         if matched:break
     assert matched,'Remote source verified but local commit encoding unrecovered; inspect before any further sync'
-    write(DOC/'latest_source_sync_receipt.json',dict(state='REMOTE_HEAD_AND_FULL_ROOT_TREE_VERIFIED',local_source_commit=local,remote_commit=final['sha'],root_tree=target,changed_files=len(names),url=final['html_url'],raw_binary_in_git=False))
+    write(OUT/'latest_source_sync_receipt.json',dict(state='REMOTE_HEAD_AND_FULL_ROOT_TREE_VERIFIED',local_source_commit=local,remote_commit=final['sha'],root_tree=target,changed_files=len(names),url=final['html_url'],raw_binary_in_git=False))
     print(json.dumps(dict(state='SOURCE_SYNC_VERIFIED',url=final['html_url'],files=len(names))))
 if __name__=='__main__':main()

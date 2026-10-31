@@ -1,0 +1,868 @@
+{
+  "experiments": {
+    "t225_paired_coverage": {
+      "state": "COMPLETE",
+      "stop_reason": "BUDGET_COMPLETE",
+      "scores": {
+        "parent_LEFT_06": {
+          "n": 6,
+          "safeGOAL": 0,
+          "CONTACT": 6
+        },
+        "parent_LEFT_21": {
+          "n": 6,
+          "safeGOAL": 0,
+          "CONTACT": 6
+        },
+        "candidate_LEFT_06": {
+          "n": 6,
+          "safeGOAL": 0,
+          "CONTACT": 5
+        },
+        "candidate_LEFT_21": {
+          "n": 6,
+          "safeGOAL": 0,
+          "CONTACT": 5
+        }
+      },
+      "success_source_gate": false,
+      "episodes": 28,
+      "replays": 28,
+      "physics_steps": 855220,
+      "commands": 56,
+      "navigation_updates": 0,
+      "recipe_reconstruction_updates": 3000,
+      "export": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t225_paired_coverage/T221_reconstructed_Actor.pt.gz",
+        "sha256": "efec5f2f0e9206c8527911ee49c520d0db5a60acbc7ab4f5b21af73ecdd5743d",
+        "bytes": 2115561,
+        "content_sha256": "516aae1fa7e2d3aae36a3f21fe8e0667310a49bcdfb802d9dd46a6f74c1f090e"
+      },
+      "all_workers_stopped": true,
+      "automatic_promotion": false,
+      "stable_5m": false,
+      "elapsed_s": 176.81138318300145,
+      "own_bytes": 5218695,
+      "runs_MiB": 1017.5475912094116
+    },
+    "t226_local_exploration": {
+      "state": "FAILED",
+      "stop_reason": "FAILED",
+      "scores": {
+        "LEFT_06": {
+          "n": 0,
+          "safeGOAL": 0,
+          "CONTACT": 0,
+          "paired_high_sigma_n": 6,
+          "paired_high_sigma_safeGOAL": 0
+        },
+        "LEFT_21": {
+          "n": 0,
+          "safeGOAL": 0,
+          "CONTACT": 0,
+          "paired_high_sigma_n": 6,
+          "paired_high_sigma_safeGOAL": 0
+        }
+      },
+      "success_source_gate": false,
+      "episodes": 0,
+      "replays": 0,
+      "physics_steps": 78268,
+      "commands": 4,
+      "navigation_updates": 0,
+      "recipe_reconstruction_updates": 0,
+      "export": null,
+      "all_workers_stopped": true,
+      "automatic_promotion": false,
+      "stable_5m": false,
+      "elapsed_s": 20.425676546999966,
+      "own_bytes": 190835,
+      "runs_MiB": 1017.732442855835
+    },
+    "t227_small_noise_recovery": {
+      "state": "COMPLETE",
+      "stop_reason": "BUDGET_COMPLETE",
+      "scores": {
+        "LEFT_06": {
+          "n": 6,
+          "safeGOAL": 2,
+          "CONTACT": 3,
+          "paired_high_sigma_n": 6,
+          "paired_high_sigma_safeGOAL": 0
+        },
+        "LEFT_21": {
+          "n": 6,
+          "safeGOAL": 3,
+          "CONTACT": 2,
+          "paired_high_sigma_n": 6,
+          "paired_high_sigma_safeGOAL": 0
+        }
+      },
+      "success_source_gate": true,
+      "episodes": 12,
+      "replays": 12,
+      "physics_steps": 442812,
+      "commands": 24,
+      "navigation_updates": 0,
+      "prior_failed_commands": 4,
+      "prior_failed_physics": 78268,
+      "recipe_reconstruction_updates": 0,
+      "export": null,
+      "all_workers_stopped": true,
+      "automatic_promotion": false,
+      "stable_5m": false,
+      "elapsed_s": 87.68245069800105,
+      "own_bytes": 971712,
+      "runs_MiB": 1018.6611251831055
+    },
+    "t228_balanced_stability": {
+      "state": "ENDED_WITH_ACCEPTANCE_AND_POSTPROCESSING_ERROR",
+      "stop_reason": "INVALID_START_CASE_THEN_MISSING_DELTA_FIELDS_IN_SUMMARY",
+      "scores": {
+        "task0": {
+          "case": "2029653601_LEFT",
+          "measured": 27,
+          "valid_start": 27,
+          "invalid_start": 0,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "task1": {
+          "case": "2029653602_RIGHT",
+          "measured": 27,
+          "valid_start": 27,
+          "invalid_start": 0,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "task2": {
+          "case": "2029654801_LEFT",
+          "measured": 27,
+          "valid_start": 27,
+          "invalid_start": 0,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "task3": {
+          "case": "2029654802_RIGHT",
+          "measured": 27,
+          "valid_start": 27,
+          "invalid_start": 0,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "task4": {
+          "case": "4m_2029653601_LEFT",
+          "measured": 27,
+          "valid_start": 27,
+          "invalid_start": 0,
+          "safeGOAL": 24,
+          "CONTACT": 3,
+          "timeout": 0
+        },
+        "task5": {
+          "case": "4m_2029654802_RIGHT",
+          "measured": 9,
+          "valid_start": 5,
+          "invalid_start": 4,
+          "safeGOAL": 5,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "task6": {
+          "case": "5m_2029653601_LEFT",
+          "measured": 0,
+          "valid_start": 0,
+          "invalid_start": 0,
+          "safeGOAL": 0,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "task7": {
+          "case": "5m_2029654802_RIGHT",
+          "measured": 0,
+          "valid_start": 0,
+          "invalid_start": 0,
+          "safeGOAL": 0,
+          "CONTACT": 0,
+          "timeout": 0
+        }
+      },
+      "original_centers_n": 5,
+      "original_centers_safeGOAL": 5,
+      "development_n": 144,
+      "development_safeGOAL": 137,
+      "heldout_n": 0,
+      "heldout_status": "NOT_RUN",
+      "supervised_updates": 3000,
+      "shadow_updates": 3000,
+      "RL_updates": 0,
+      "reconstruction_verified": true,
+      "export": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t228_balanced_stability/final_Actor.pt.gz",
+        "sha256": "5b850325b61c9391c9857a3df0214c44d24b75f9cfa7cc1bc35fdb804d811234",
+        "bytes": 2115404,
+        "content_sha256": "50cc064bc2ba244a018d4f04073604e858baa7822048359a2af02861863f491f"
+      },
+      "physics_steps": 1515679,
+      "commands": 144,
+      "stable_local_3m_4m_5m_gate": false,
+      "all_workers_stopped": true,
+      "automatic_promotion": false,
+      "posthoc_recovery": {
+        "physics_steps": 0,
+        "optimizer_calls": 0,
+        "original_logs_unchanged": true,
+        "original_status_unchanged": true,
+        "source": "Original protocol + original development.jsonl + original status + run.log traceback, no experiment restart"
+      }
+    },
+    "t229_valid_start_acceptance": {
+      "state": "COMPLETE",
+      "stop_reason": "VALIDITY_AND_MISSING_CASES_COMPLETE",
+      "scores": {
+        "task0": {
+          "grid_total": 27,
+          "valid_starts": 27,
+          "invalid_starts": 0,
+          "measured_valid": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "task1": {
+          "grid_total": 27,
+          "valid_starts": 27,
+          "invalid_starts": 0,
+          "measured_valid": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "task2": {
+          "grid_total": 27,
+          "valid_starts": 27,
+          "invalid_starts": 0,
+          "measured_valid": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "task3": {
+          "grid_total": 27,
+          "valid_starts": 27,
+          "invalid_starts": 0,
+          "measured_valid": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "task4": {
+          "grid_total": 27,
+          "valid_starts": 27,
+          "invalid_starts": 0,
+          "measured_valid": 27,
+          "safeGOAL": 24,
+          "CONTACT": 3,
+          "timeout": 0
+        },
+        "task5": {
+          "grid_total": 27,
+          "valid_starts": 22,
+          "invalid_starts": 5,
+          "measured_valid": 22,
+          "safeGOAL": 22,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "task6": {
+          "grid_total": 27,
+          "valid_starts": 27,
+          "invalid_starts": 0,
+          "measured_valid": 27,
+          "safeGOAL": 23,
+          "CONTACT": 4,
+          "timeout": 0
+        },
+        "task7": {
+          "grid_total": 27,
+          "valid_starts": 27,
+          "invalid_starts": 0,
+          "measured_valid": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0
+        }
+      },
+      "validity_cases": 216,
+      "invalid_start_ids": [
+        "dev_task5_05",
+        "dev_task5_06",
+        "dev_task5_07",
+        "dev_task5_08",
+        "dev_task5_17"
+      ],
+      "merged_measured_valid": 211,
+      "merged_safeGOAL": 204,
+      "new_rollouts": 75,
+      "new_physics_steps": 1329805,
+      "new_commands": 291,
+      "prior_T228_physics_separately_counted": true,
+      "controls_verified": 4,
+      "optimizer_calls": 0,
+      "valid_domain_local_gate": false,
+      "original_strict_T228_gate": false,
+      "heldout_n": 0,
+      "automatic_promotion": false,
+      "all_workers_stopped": true,
+      "elapsed_s": 241.94245025799864,
+      "own_bytes": 5354059,
+      "runs_MiB": 999.9770355224609
+    },
+    "t230_remaining_sources": {
+      "state": "COMPLETE",
+      "stop_reason": "BUDGET_COMPLETE",
+      "scores": {
+        "dev_task4_00": {
+          "n": 6,
+          "safeGOAL": 2,
+          "CONTACT": 4,
+          "timeout": 0
+        },
+        "dev_task4_06": {
+          "n": 6,
+          "safeGOAL": 3,
+          "CONTACT": 3,
+          "timeout": 0
+        },
+        "dev_task4_15": {
+          "n": 6,
+          "safeGOAL": 2,
+          "CONTACT": 4,
+          "timeout": 0
+        },
+        "dev_task6_00": {
+          "n": 6,
+          "safeGOAL": 0,
+          "CONTACT": 5,
+          "timeout": 1
+        },
+        "dev_task6_02": {
+          "n": 6,
+          "safeGOAL": 4,
+          "CONTACT": 2,
+          "timeout": 0
+        },
+        "dev_task6_03": {
+          "n": 6,
+          "safeGOAL": 3,
+          "CONTACT": 3,
+          "timeout": 0
+        },
+        "dev_task6_24": {
+          "n": 6,
+          "safeGOAL": 3,
+          "CONTACT": 3,
+          "timeout": 0
+        }
+      },
+      "success_source_gate": false,
+      "episodes": 42,
+      "replays": 42,
+      "physics_steps": 1281942,
+      "commands": 84,
+      "navigation_updates": 0,
+      "recipe_reconstruction_updates": 0,
+      "export": null,
+      "all_workers_stopped": true,
+      "automatic_promotion": false,
+      "stable_5m": false,
+      "elapsed_s": 248.00012700800107,
+      "own_bytes": 2825338,
+      "runs_MiB": 1002.6771936416626
+    },
+    "t231_retained_behavior_repair": {
+      "state": "COMPLETE",
+      "stop_reason": "DEVELOPMENT_GATE_FAILED_HELDOUT_NOT_RUN",
+      "scores": {
+        "task0": {
+          "development_n": 27,
+          "development_safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safeGOAL": 0
+        },
+        "task1": {
+          "development_n": 27,
+          "development_safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safeGOAL": 0
+        },
+        "task2": {
+          "development_n": 27,
+          "development_safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safeGOAL": 0
+        },
+        "task3": {
+          "development_n": 27,
+          "development_safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safeGOAL": 0
+        },
+        "task4": {
+          "development_n": 27,
+          "development_safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safeGOAL": 0
+        },
+        "task5": {
+          "development_n": 22,
+          "development_safeGOAL": 22,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safeGOAL": 0
+        },
+        "task6": {
+          "development_n": 27,
+          "development_safeGOAL": 25,
+          "CONTACT": 2,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safeGOAL": 0
+        },
+        "task7": {
+          "development_n": 27,
+          "development_safeGOAL": 27,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safeGOAL": 0
+        }
+      },
+      "original_centers_n": 8,
+      "original_centers_safeGOAL": 8,
+      "development_n": 211,
+      "development_safeGOAL": 209,
+      "development_invalid_starts_predeclared": 5,
+      "heldout_requested": 64,
+      "heldout_valid": 64,
+      "heldout_invalid_ids": [],
+      "heldout_n": 0,
+      "heldout_safeGOAL": 0,
+      "supervised_updates": 3000,
+      "shadow_updates": 3000,
+      "RL_updates": 0,
+      "reconstruction_verified": true,
+      "export": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t231_retained_behavior_repair/final_Actor.pt.gz",
+        "sha256": "cca393cf49f9cfd937f9b54f008094e52da31f073bdb84ab0dba5fd6cad8831f",
+        "bytes": 2115696,
+        "content_sha256": "9ae9f9b3226794c997332f345137c7386a4d830fc1683f815e6fb52f6d1b6fe7"
+      },
+      "physics_steps": 2835687,
+      "commands": 275,
+      "stable_valid_local_3m_4m_5m_gate": false,
+      "original_T228_strict_gate": false,
+      "multimap_generalization_claim": false,
+      "automatic_promotion": false,
+      "all_workers_stopped": true,
+      "elapsed_s": 514.9897855460003,
+      "own_bytes": 3045751,
+      "runs_MiB": 1007.8443641662598
+    },
+    "t232_complementary_sources": {
+      "state": "COMPLETE",
+      "stop_reason": "BUDGET_COMPLETE",
+      "scores": {
+        "dev_task4_00": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task4_06": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task4_15": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_00": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_01": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_02": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_03": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_04": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_05": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_06": {
+          "n": 1,
+          "safeGOAL": 0,
+          "CONTACT": 1,
+          "timeout": 0
+        },
+        "dev_task6_07": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_08": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_09": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_10": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_11": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_12": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_13": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_14": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_15": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_16": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_17": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_18": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_19": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_20": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_21": {
+          "n": 1,
+          "safeGOAL": 0,
+          "CONTACT": 1,
+          "timeout": 0
+        },
+        "dev_task6_22": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_23": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_24": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_25": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "dev_task6_26": {
+          "n": 1,
+          "safeGOAL": 1,
+          "CONTACT": 0,
+          "timeout": 0
+        }
+      },
+      "success_source_gate": true,
+      "episodes": 30,
+      "replays": 30,
+      "physics_steps": 1151354,
+      "commands": 60,
+      "navigation_updates": 0,
+      "recipe_reconstruction_updates": 0,
+      "export": null,
+      "all_workers_stopped": true,
+      "automatic_promotion": false,
+      "stable_5m": false,
+      "elapsed_s": 198.45938777399897,
+      "own_bytes": 2360046,
+      "runs_MiB": 1004.9307947158813
+    },
+    "t234_weight_calibration": {
+      "calibration_final_overlap_exact": false,
+      "state": "COMPLETE",
+      "stop_reason": "FIXED_ALPHA_GRID_FAILED",
+      "calibration": [
+        {
+          "alpha": 0.025,
+          "policy_hash": "b5dd26dcaa39e0100ad47c45e09008a76141fd46f079135fd89e0fff38f86a8d",
+          "critical_n": 2,
+          "critical_safe": 0,
+          "other_n": 0,
+          "other_safe": 0,
+          "passed": false
+        },
+        {
+          "alpha": 0.05,
+          "policy_hash": "3a44394f170954cf320d3e20deb4f4e1f7d27e02656882d6caa1231e3eb49458",
+          "critical_n": 2,
+          "critical_safe": 0,
+          "other_n": 0,
+          "other_safe": 0,
+          "passed": false
+        },
+        {
+          "alpha": 0.1,
+          "policy_hash": "877fc612a8c5c4235e210dd68c0095d5de509374e910d66e4f88d3a1ff7f4d6a",
+          "critical_n": 2,
+          "critical_safe": 0,
+          "other_n": 0,
+          "other_safe": 0,
+          "passed": false
+        },
+        {
+          "alpha": 0.2,
+          "policy_hash": "2e9bdcd805e7ab3fc8cbf83d33f5776619d2764fb121f3586102e3feb19ce5e5",
+          "critical_n": 2,
+          "critical_safe": 0,
+          "other_n": 0,
+          "other_safe": 0,
+          "passed": false
+        },
+        {
+          "alpha": 0.4,
+          "policy_hash": "eefa2c53b7dc497e031db6e4a1f26673126bebb58e44b371e747c1bf6e5f4791",
+          "critical_n": 2,
+          "critical_safe": 1,
+          "other_n": 0,
+          "other_safe": 0,
+          "passed": false
+        }
+      ],
+      "selected_alpha": null,
+      "policy_hash": "eefa2c53b7dc497e031db6e4a1f26673126bebb58e44b371e747c1bf6e5f4791",
+      "export": null,
+      "scores": {
+        "task0": {
+          "development_n": 0,
+          "development_safe": 0,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task1": {
+          "development_n": 0,
+          "development_safe": 0,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task2": {
+          "development_n": 0,
+          "development_safe": 0,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task3": {
+          "development_n": 0,
+          "development_safe": 0,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task4": {
+          "development_n": 0,
+          "development_safe": 0,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task5": {
+          "development_n": 0,
+          "development_safe": 0,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task6": {
+          "development_n": 0,
+          "development_safe": 0,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task7": {
+          "development_n": 0,
+          "development_safe": 0,
+          "CONTACT": 0,
+          "timeout": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        }
+      },
+      "original_centers_n": 0,
+      "original_centers_safe": 0,
+      "development_n": 0,
+      "development_safe": 0,
+      "development_invalid_starts_predeclared": 5,
+      "heldout_n": 0,
+      "heldout_safe": 0,
+      "optimizer_calls": 0,
+      "physics_steps": 156366,
+      "commands": 10,
+      "stable_valid_local_3m_4m_5m_gate": false,
+      "original_T228_strict_gate": false,
+      "multimap_generalization_claim": false,
+      "automatic_promotion": false,
+      "all_workers_stopped": true,
+      "elapsed_s": 54.734609675000684,
+      "own_bytes": 193630,
+      "runs_MiB": 1008.0356292724609
+    },
+    "t235_output_head_audit": {
+      "state": "OFFLINE_GATE_FAILED",
+      "physics_steps": 0,
+      "optimizer_calls": 0,
+      "supervised_linear_solves": 1,
+      "train_states": 320,
+      "correlated_heldout_states": 81,
+      "retention_states": 3914,
+      "linear_system_dimension": 601,
+      "normal_equation_residual": 2.678492134392319e-14,
+      "baseline_hard_heldout_RMSE": 0.010761429198385644,
+      "new_hard_heldout_RMSE": 0.00745862995684538,
+      "hard_heldout_RMSE_fraction": 0.6930891630978042,
+      "hard_heldout_native_max": 0.03126925230026245,
+      "retention_native_q99": 0.019547034502029416,
+      "retention_native_max": 0.041892871260643005,
+      "fold_to_float32_native_max_error": 1.1291592567908015e-07,
+      "all_non_head_parameters_unchanged": true,
+      "changed_parameter_count": 1202,
+      "export": null,
+      "automatic_promotion": false,
+      "navigation_test_started": false,
+      "stable_5m_claim": false,
+      "elapsed_s": 0.8406637719999708,
+      "own_bytes": 35981,
+      "runs_MiB": 1008.0785312652588
+    }
+  },
+  "retained_research_candidate": "T231",
+  "best_complete_valid_development": {
+    "n": 211,
+    "safeGOAL": 209,
+    "known_invalid_start_states": 5,
+    "original_centers_safeGOAL": 8,
+    "original_centers_n": 8,
+    "heldout_n": 0
+  },
+  "stable_5m": false,
+  "MuJoCo_preview_started": false,
+  "video_draft": "T233 unregistered; no successfulstabilityclaim",
+  "Stage_only": true
+}

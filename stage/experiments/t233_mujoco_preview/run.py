@@ -18,7 +18,7 @@ def main():
         for f,h in plan['input_hashes'].items():assert C.sha(f)==h,f
         torch.set_num_threads(1);torch.use_deterministic_algorithms(True)
         state=torch.load(io.BytesIO(gzip.decompress(Path(plan['checkpoint']).read_bytes())),map_location='cpu',weights_only=False)['policy'];assert S.digest(state)==plan['policy_hash'];p=S.policy(state).eval().requires_grad_(False)
-        native,create=S.native_setup(OUT/'native');torch.set_num_threads(1)
+        (OUT/'native').mkdir(exist_ok=True);native,create=S.native_setup(OUT/'native');torch.set_num_threads(1)
         for i,job in enumerate(plan['jobs']):
             env,obs,_=R.task_env(create,job);renderer=mujoco.Renderer(env.model,height=240,width=320);camera=mujoco.MjvCamera();mujoco.mjv_defaultCamera(camera)
             xy=np.asarray(env._pose()[:2]);goal=env.goal_xy.copy();camera.lookat[:]=[*((xy+goal)/2),.15];camera.distance=job['case']['distance_m']*1.25+1.5;camera.azimuth=90;camera.elevation=-70
@@ -52,11 +52,11 @@ def main():
             frame();C.save(OUT/'status.json',dict(state='FRESH_NATIVE_VIDEO',physics_steps=physics,frames=frame_count,elapsed_s=time.monotonic()-start))
             if all(c['done'] for c in cases):break
         assert all(c['done'] for c in cases);encoder.stdin.close();assert encoder.wait(timeout=30)==0
-        centers=[r for r in map(json.loads,(ROOT/'stage/runs/t231_retained_behavior_repair/development.jsonl').read_text().splitlines()) if r['delta_x_m']==r['delta_y_m']==r['delta_yaw_deg']==0.]
+        centers=[r for r in map(json.loads,(ROOT/'stage/runs/t234_weight_calibration/development.jsonl').read_text().splitlines()) if r['delta_x_m']==r['delta_y_m']==r['delta_yaw_deg']==0.]
         for c,expected in zip(cases,centers):
             assert c['steps']==expected['physics_steps'] and R.arrays_hash(R.integration(c['env']))==expected['integration_sha256']
             assert np.array_equal(c['goal'],c['env'].goal_xy) and C.model_hash(c['env'])==c['scene']
-            assert c['success'] and not c['collision'];verified.append(dict(task=c['index'],case=c['job']['case']['id'],success=c['success'],collision=c['collision'],physics_steps=c['steps'],remaining_m=c['remaining'],integration_sha256=expected['integration_sha256'],exact_to_T231=True))
+            assert c['success'] and not c['collision'];verified.append(dict(task=c['index'],case=c['job']['case']['id'],success=c['success'],collision=c['collision'],physics_steps=c['steps'],remaining_m=c['remaining'],integration_sha256=expected['integration_sha256'],exact_to_T234=True))
         ffprobe=shutil.which('ffprobe')
         if ffprobe:
             probe=json.loads(subprocess.check_output([ffprobe,'-v','error','-count_frames','-select_streams','v:0','-show_entries','stream=nb_read_frames','-of','json',str(movie)]));assert int(probe['streams'][0]['nb_read_frames'])==frame_count
