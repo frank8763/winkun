@@ -28,10 +28,10 @@ def run(args, timeout=180):
 
 def git_save(message, paths):
     run(['git', 'add', '--', *paths])
-    changed = subprocess.run(['git', 'diff', '--cached', '--quiet'], cwd=ROOT).returncode
+    changed = subprocess.run(['git', 'diff', '--cached', '--quiet', '--', *paths], cwd=ROOT).returncode
     assert changed in [0, 1]
     if changed:
-        run(['git', 'commit', '-m', message])
+        run(['git', 'commit', '--only', '-m', message, '--', *paths])
     run(['git', 'push', 'origin', 'HEAD'])
 
 
