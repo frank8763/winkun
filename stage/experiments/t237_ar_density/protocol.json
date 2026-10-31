@@ -1,0 +1,31 @@
+{
+  "experiment": "T237",
+  "seed": 2026103251,
+  "quadrature_nodes": 1024,
+  "draws": 16384,
+  "max_physics": 0,
+  "optimizer_calls": 0,
+  "wall_seconds": 120,
+  "final_bytes": 524288,
+  "peak_bytes": 524288,
+  "global_bytes": 1073741824,
+  "gates": {
+    "normalization_abs_max": 1e-07,
+    "finite_difference_relative_max": 1e-05,
+    "reset_marginal_max": 1e-10,
+    "score_mean_max_standard_errors": 6.0,
+    "roundtrip_latent_max": 0.0005
+  },
+  "contract": "Zero-physics mathematical preflight of NEW history-conditional bounded AR1 policy, sigma(.035,.03),rho.98. Stable reflected logCDF/finite positive mass, no density clamp. Native action float32 inversion checked, prior-state mean gradient retained. Fixed1024pointGauss-Legendreconditional normalization; rho0/reset marginal identity; all4current/previousmean finite differences;16384joint conditional draws per2components atfixed mean(.3,.95),priorlatent(.4,-.7),stationary innovations; expectedscore compared6MCSE, native roundtrip and actual perstep likelihood reconstruction. No optimizer/navigation/model export/map/planner/teacher/Phase; no parameter grid. Failing any gate prohibits this data path in subsequent RL; 120s/512KiB/global1GiB/free40GiB.",
+  "references": [
+    "https://www.ijcai.org/proceedings/2019/0382.pdf",
+    "https://arxiv.org/html/2312.11091v2",
+    "https://arxiv.org/abs/1707.06347"
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t237_ar_density/prepare.py": "0813747a4d99f7a1666b8c2d9925d3cf450bdc16e8addf3715849bf7e00c06e8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t237_ar_density/run.py": "79706ee1e1866b6a9d6359af448a03df1c2c11aac634790bd0d424d4a89f5d49",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t237_ar_density/copula.py": "7721a930b944835b7cdfef150e22a74434069fa18f7769f533beec2f2104b14c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t236_closed_loop_audit/summary.json": "06c03c779f07f91117e5deb14028a7010f02b24b1aa8d83b0cc501be017499cc"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "experiment": "T238",
+  "seed": 2026103251,
+  "quadrature_nodes": 1024,
+  "draws": 16384,
+  "max_physics": 0,
+  "optimizer_calls": 0,
+  "wall_seconds": 120,
+  "final_bytes": 524288,
+  "peak_bytes": 524288,
+  "global_bytes": 1073741824,
+  "gates": {
+    "normalization_abs_max": 1e-07,
+    "finite_difference_relative_max": 1e-05,
+    "reset_marginal_max": 1e-10,
+    "score_mean_max_standard_errors": 6.0,
+    "roundtrip_latent_max": 0.0005
+  },
+  "contract": "Zero-physics mathematical preflight of NEW history-conditional bounded AR1 policy, sigma(.035,.03),rho.98. Stable reflected logCDF/finite positive mass, no density clamp. Native action float32 inversion checked, prior-state mean gradient retained. Fixed1024pointGauss-Legendreconditional normalization over seven conditional-sigma latent range, omitted normal tail<3e-12, continuousfloat64inverseCDF and independent autograd da/dz Jacobian. T237 zero-density action-space quadrature underflow retained asoriginalfailedpreflight; scientificonline policy unchanged; rho0/reset marginal identity; all4current/previousmean finite differences;16384joint conditional draws per2components atfixed mean(.3,.95),priorlatent(.4,-.7),stationary innovations; expectedscore compared6MCSE, native roundtrip and actual perstep likelihood reconstruction. No optimizer/navigation/model export/map/planner/teacher/Phase; no parameter grid. Failing any gate prohibits this data path in subsequent RL; 120s/512KiB/global1GiB/free40GiB.",
+  "references": [
+    "https://www.ijcai.org/proceedings/2019/0382.pdf",
+    "https://arxiv.org/html/2312.11091v2",
+    "https://arxiv.org/abs/1707.06347"
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t238_ar_density_recovery/prepare.py": "2b7145e05c907bac78138b9637a5beafc54ae7e63c42cd9bb14a5432dbd547de",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t238_ar_density_recovery/run.py": "efc2956675ec35429bdd90e9215cc7c2c4181332cc428452ee45c9cccdff5eec",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t238_ar_density_recovery/copula.py": "6deef8030335f1cedc8e4f08e368c101106a108c2bda8fcb33ecbddbba0e4edc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t237_ar_density/summary.json": "34c9de622cd76f0db3b8cb1c4ac51c1bf4f2b3d4ac3215bb8a4116d317cfcb9c"
+  }
+}
