@@ -1,0 +1,352 @@
+{
+  "experiment": "T205",
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt",
+  "case": {
+    "id": "5m_2029653601_LEFT",
+    "seed": 2029653601,
+    "angle_deg": -17.3,
+    "side": "LEFT",
+    "distance_m": 5.0,
+    "step_cap": 23334,
+    "group": "original_5m_primary"
+  },
+  "baseline_reference": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/left_baseline_trace.npz",
+  "baseline_expected_steps": 15032,
+  "baseline_expected_remaining_m": 1.4766742181226913,
+  "start_steps": [
+    10000,
+    12500
+  ],
+  "probes": [
+    {
+      "id": "s10000_baseline",
+      "start": 10000,
+      "hold_steps": 0,
+      "throttle_cap": null,
+      "steer_delta": 0.0,
+      "kind": "baseline"
+    },
+    {
+      "id": "s10000_h100_cNone_s-0.6",
+      "start": 10000,
+      "hold_steps": 100,
+      "throttle_cap": null,
+      "steer_delta": -0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h100_cNone_s-0.3",
+      "start": 10000,
+      "hold_steps": 100,
+      "throttle_cap": null,
+      "steer_delta": -0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h100_cNone_s0.3",
+      "start": 10000,
+      "hold_steps": 100,
+      "throttle_cap": null,
+      "steer_delta": 0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h100_cNone_s0.6",
+      "start": 10000,
+      "hold_steps": 100,
+      "throttle_cap": null,
+      "steer_delta": 0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h100_c0.0_s-0.6",
+      "start": 10000,
+      "hold_steps": 100,
+      "throttle_cap": 0.0,
+      "steer_delta": -0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h100_c0.0_s-0.3",
+      "start": 10000,
+      "hold_steps": 100,
+      "throttle_cap": 0.0,
+      "steer_delta": -0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h100_c0.0_s0.0",
+      "start": 10000,
+      "hold_steps": 100,
+      "throttle_cap": 0.0,
+      "steer_delta": 0.0,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h100_c0.0_s0.3",
+      "start": 10000,
+      "hold_steps": 100,
+      "throttle_cap": 0.0,
+      "steer_delta": 0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h100_c0.0_s0.6",
+      "start": 10000,
+      "hold_steps": 100,
+      "throttle_cap": 0.0,
+      "steer_delta": 0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h2000_cNone_s-0.6",
+      "start": 10000,
+      "hold_steps": 2000,
+      "throttle_cap": null,
+      "steer_delta": -0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h2000_cNone_s-0.3",
+      "start": 10000,
+      "hold_steps": 2000,
+      "throttle_cap": null,
+      "steer_delta": -0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h2000_cNone_s0.3",
+      "start": 10000,
+      "hold_steps": 2000,
+      "throttle_cap": null,
+      "steer_delta": 0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h2000_cNone_s0.6",
+      "start": 10000,
+      "hold_steps": 2000,
+      "throttle_cap": null,
+      "steer_delta": 0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h2000_c0.0_s-0.6",
+      "start": 10000,
+      "hold_steps": 2000,
+      "throttle_cap": 0.0,
+      "steer_delta": -0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h2000_c0.0_s-0.3",
+      "start": 10000,
+      "hold_steps": 2000,
+      "throttle_cap": 0.0,
+      "steer_delta": -0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h2000_c0.0_s0.0",
+      "start": 10000,
+      "hold_steps": 2000,
+      "throttle_cap": 0.0,
+      "steer_delta": 0.0,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h2000_c0.0_s0.3",
+      "start": 10000,
+      "hold_steps": 2000,
+      "throttle_cap": 0.0,
+      "steer_delta": 0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s10000_h2000_c0.0_s0.6",
+      "start": 10000,
+      "hold_steps": 2000,
+      "throttle_cap": 0.0,
+      "steer_delta": 0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_baseline",
+      "start": 12500,
+      "hold_steps": 0,
+      "throttle_cap": null,
+      "steer_delta": 0.0,
+      "kind": "baseline"
+    },
+    {
+      "id": "s12500_h100_cNone_s-0.6",
+      "start": 12500,
+      "hold_steps": 100,
+      "throttle_cap": null,
+      "steer_delta": -0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h100_cNone_s-0.3",
+      "start": 12500,
+      "hold_steps": 100,
+      "throttle_cap": null,
+      "steer_delta": -0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h100_cNone_s0.3",
+      "start": 12500,
+      "hold_steps": 100,
+      "throttle_cap": null,
+      "steer_delta": 0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h100_cNone_s0.6",
+      "start": 12500,
+      "hold_steps": 100,
+      "throttle_cap": null,
+      "steer_delta": 0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h100_c0.0_s-0.6",
+      "start": 12500,
+      "hold_steps": 100,
+      "throttle_cap": 0.0,
+      "steer_delta": -0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h100_c0.0_s-0.3",
+      "start": 12500,
+      "hold_steps": 100,
+      "throttle_cap": 0.0,
+      "steer_delta": -0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h100_c0.0_s0.0",
+      "start": 12500,
+      "hold_steps": 100,
+      "throttle_cap": 0.0,
+      "steer_delta": 0.0,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h100_c0.0_s0.3",
+      "start": 12500,
+      "hold_steps": 100,
+      "throttle_cap": 0.0,
+      "steer_delta": 0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h100_c0.0_s0.6",
+      "start": 12500,
+      "hold_steps": 100,
+      "throttle_cap": 0.0,
+      "steer_delta": 0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h2000_cNone_s-0.6",
+      "start": 12500,
+      "hold_steps": 2000,
+      "throttle_cap": null,
+      "steer_delta": -0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h2000_cNone_s-0.3",
+      "start": 12500,
+      "hold_steps": 2000,
+      "throttle_cap": null,
+      "steer_delta": -0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h2000_cNone_s0.3",
+      "start": 12500,
+      "hold_steps": 2000,
+      "throttle_cap": null,
+      "steer_delta": 0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h2000_cNone_s0.6",
+      "start": 12500,
+      "hold_steps": 2000,
+      "throttle_cap": null,
+      "steer_delta": 0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h2000_c0.0_s-0.6",
+      "start": 12500,
+      "hold_steps": 2000,
+      "throttle_cap": 0.0,
+      "steer_delta": -0.6,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h2000_c0.0_s-0.3",
+      "start": 12500,
+      "hold_steps": 2000,
+      "throttle_cap": 0.0,
+      "steer_delta": -0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h2000_c0.0_s0.0",
+      "start": 12500,
+      "hold_steps": 2000,
+      "throttle_cap": 0.0,
+      "steer_delta": 0.0,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h2000_c0.0_s0.3",
+      "start": 12500,
+      "hold_steps": 2000,
+      "throttle_cap": 0.0,
+      "steer_delta": 0.3,
+      "kind": "intervention"
+    },
+    {
+      "id": "s12500_h2000_c0.0_s0.6",
+      "start": 12500,
+      "hold_steps": 2000,
+      "throttle_cap": 0.0,
+      "steer_delta": 0.6,
+      "kind": "intervention"
+    }
+  ],
+  "max_physics": 650000,
+  "wall_seconds": 360,
+  "batch_reserve_seconds": 35,
+  "workers": 4,
+  "final_bytes": 16777216,
+  "peak_bytes": 20971520,
+  "pending_bytes": 2097152,
+  "optimizer_updates": 0,
+  "training_physics_steps": 0,
+  "contract": "Frozen T194 original LEFT scene/goal/radius. Reproduce original full episode exactly and capture true full integration/environment/history at20s,25s. Two unchanged suffix baselines must match original suffix states/actions/poses/final integration exactly. Thirtysix preregistered paired branches compare1decision(.2s) vs20decisions(4s) native steering residuals[-.6,-.3,0,.3,.6], with native throttle cap0 or unchanged. Zeroeffect duplicates excluded. After the window frozen neural policy continues. Same absolute remaining-time input and original remaining horizon; no resettime budget extension. No map/geometry consulted to choose an action, no sequence optimization or adaptive probe selection, no planner/waypoints. Intervention episodes are causal actuator diagnostics, never end-to-end neural navigation success or onpolicy training samples.",
+  "outcomes": "Primary safeGOAL by original deadline. Secondary collision object/time, nearest/final goal distance, return-to-frozen-policy outcome, avoidance displacement/yaw, actual actuator steering response. CONTACT/TIMEOUT never treated asGOAL. Report all36 cases and2 baseline suffixes; deterministic cases not independent noise seeds. Entire-episode original path checked once, subsequent suffix branches do not count as full5m deployment. Noautomatic new training or promotion.",
+  "gate": "Source must exactly match frozen T196 baseline and both suffix controls must exactly match states/actions/poses/final integration; otherwise abort before interventions. Effects interpreted as tested interventions only. If safeGOAL exists, separately plan neuralpolicy learning/reproduction; do not deploy timed control. If none, no claim of impossible geometry and no budget expansion.",
+  "references": [
+    "https://ai.stanford.edu/~ang/papers/shaping-icml99.pdf",
+    "https://onno-eberhard.appspot.com/pink",
+    "https://arxiv.org/abs/1706.01905"
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt": "4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/left_baseline_trace.npz": "5e2f0dcfa230140f1fd2d3dafa127a2dd8cc61d7199eda463864629734c1b30b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/diagnostic.json": "114fbf27d42426859677dc89529c674d55f624e3d11019a063653c7c00501f45",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t204_native_course/summary.json": "44d7cb31198d0548e265ff795b69fb4ab5e9ab6e37aba58bd5f0706392409695",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t200_residual_placement/common.py": "a213ec43cb4a8e54cf6abb780a122d2e117d28a41d69e4d6430477868aab0552",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t205_temporal_intervention/prepare.py": "2ccd8621be663d61dd7eb887ccb6bc7b87dd719308ebcd13e301dc7e0b63058d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t205_temporal_intervention/run.py": "b1c933e4f5891bd006da1b48fd1b9eb1473ef37cf2abd1590944207d853d64de"
+  }
+}
