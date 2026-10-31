@@ -1,9 +1,9 @@
-"""Archive only ended Stage T225–T229 raw evidence, RAM-only exact readback."""
+"""Archive only ended Stage T225–T233 raw evidence, RAM-only exact readback."""
 from archive import *
 
 def main():
     names=[]
-    for i in range(225,230):
+    for i in range(225,234):
         candidates=list((ROOT/'stage/runs').glob(f't{i}_*'))
         if not candidates:continue
         assert len(candidates)==1
@@ -12,8 +12,8 @@ def main():
     assert {'t225_paired_coverage','t226_local_exploration','t227_small_noise_recovery','t228_balanced_stability'}.issubset(names)
     tag='stage-local-stability-2026-10-31';receipt=DOC/'stability_release_receipt.json';assert not receipt.exists(),'Inspect existing verified receipt'
     files=sorted(f for name in names for f in (ROOT/'stage/runs'/name).rglob('*') if f.is_file() and f.suffix not in ('.lock','.partial','.pyc'))
-    manifest=[dict(path=str(p.relative_to(ROOT)),bytes=p.stat().st_size,sha256=sha(p.read_bytes())) for p in files];assert sum(r['bytes'] for r in manifest)<25*1024**2
-    write(DOC/'stability_source_manifest.json',dict(scope='EndedStageT225–T229rawsources/failures/finalmodels/frozenacceptance; no Phase/credentials/chats',files=manifest))
+    manifest=[dict(path=str(p.relative_to(ROOT)),bytes=p.stat().st_size,sha256=sha(p.read_bytes())) for p in files];assert sum(r['bytes'] for r in manifest)<40*1024**2
+    write(DOC/'stability_source_manifest.json',dict(scope='EndedStageT225–T233rawsources/failures/finalmodels/frozenacceptance; no Phase/credentials/chats',files=manifest))
     output=io.BytesIO()
     with tarfile.open(fileobj=output,mode='w:gz',compresslevel=3) as archive:
         for p,r in zip(files,manifest):assert sha(p.read_bytes())==r['sha256'];archive.add(p,arcname=r['path'],recursive=False)
