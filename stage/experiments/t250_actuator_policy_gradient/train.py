@@ -55,6 +55,12 @@ def main():
                 for j in plan['hard_jobs']:
                     for k in range(plan['draws_per_reset']):jobs.append(dict(j,id=f'r{rnd}_{arm}_{j["id"]}_s{k}',source_reset_id=j['id'],arm=arm,round=rnd,seed=plan['seed']+10*rnd+k,mode='conditional_AR'))
             items=roll(jobs,dict(learner=p,frozen=frozen),'training.jsonl',replay=True);rows.extend(i['row'] for i in items);train=[i for i in items if i['row']['arm']=='learner'];controls=[i for i in items if i['row']['arm']=='frozen']
+            if rnd==0:
+                oldfirst=[r for r in map(json.loads,(ROOT/'stage/runs/t245_multitask_pcgrad/training.jsonl').read_text().splitlines()) if r['round']==0]
+                assert len(oldfirst)==16
+                for item in train:
+                    a=item['arrays'];basehash={k:digest(v[:,:113] if k in ['states','next_states'] else v) for k,v in a.items()};r=item['row'];old=next(q for q in oldfirst if q['id']==r['id']);assert basehash==old['array_hashes'] and r['integration_sha256']==old['integration_sha256']
+                C.save(OUT/'historical_feature_off_initial_batch.json',dict(all16_BASE_arrays_and_integration_exact=True,initial16_not_new_independent_data=True,source='T245fixedsameseedinitialrollouts'))
             data=batch(train,p,plan);before=copy.deepcopy(p);shadow_opt=torch.optim.Adam([q for q in before.parameters() if q.requires_grad],lr=plan['lr']);shadow_opt.load_state_dict(copy.deepcopy(opt.state_dict()))
             live=update(p,opt,data,ax,ay,offset,plan,rnd,lambda:guard(reserve=plan['final_reserve_seconds']));accepted+=sum(r['accepted'] for r in live)
             shadow=update(before,shadow_opt,data,ax,ay,offset,plan,rnd,lambda:guard(reserve=plan['final_reserve_seconds']));shadow_accepted+=sum(r['accepted'] for r in shadow)
@@ -87,7 +93,7 @@ def main():
     for group in ['task'+str(i) for i in range(8)]:
         rr=[r for r in dev if r['job']['group']==group];hh=[r for r in hold if r['job']['group']==group];scores[group]=dict(n=len(rr),safeGOAL=sum(safe(r) for r in rr),CONTACT=sum(r['collision'] for r in rr),heldout_n=len(hh),heldout_safe=sum(safe(r) for r in hh))
     gate=len(dev)==211 and all(safe(r) for r in dev) and len(hold)==64 and all(safe(r) for r in hold)
-    summary=dict(state='FAILED' if reason=='FAILED' else 'COMPLETE',stop_reason=reason,scores=scores,unique_training_episodes=len(rows),exact_replays=replay_count,RL_accepted_updates=accepted,shadow_accepted_updates=shadow_accepted,rounds=len(checks),development_n=len(dev),development_safeGOAL=sum(safe(r) for r in dev),known_invalid_initial_states=5,heldout_n=len(hold),heldout_safe=sum(safe(r) for r in hold),stable_valid_local_3m_4m_5m_gate=gate,export=export,physics_steps=physics,commands=commands,all_workers_stopped=all(not w.is_alive() for w in workers),automatic_promotion=False,elapsed_s=time.monotonic()-start,own_bytes=used(OUT),runs_MiB=used(ROOT/'stage/runs')/1024**2)
+    summary=dict(state='FAILED' if reason=='FAILED' else 'COMPLETE',stop_reason=reason,scores=scores,unique_training_episodes=len(rows),exact_replays=replay_count,RL_accepted_updates=accepted,shadow_accepted_updates=shadow_accepted,rounds=len(checks),development_n=len(dev),development_safeGOAL=sum(safe(r) for r in dev),known_invalid_initial_states=5,initial16_reconstructed_historical_control=True,additional_independent_policy_induced_episodes=max(0,len(rows)-16),measured_steering_inputs=4,total_policy_inputs=117,heldout_n=len(hold),heldout_safe=sum(safe(r) for r in hold),stable_valid_local_3m_4m_5m_gate=gate,export=export,physics_steps=physics,commands=commands,all_workers_stopped=all(not w.is_alive() for w in workers),automatic_promotion=False,elapsed_s=time.monotonic()-start,own_bytes=used(OUT),runs_MiB=used(ROOT/'stage/runs')/1024**2)
     C.save(OUT/'summary.json',summary);C.save(OUT/'status.json',summary);print(json.dumps(summary),flush=True)
     assert physics<=plan['max_physics'] and commands<=plan['max_commands'] and used(OUT)<plan['final_bytes'] and used(ROOT/'stage/runs')<plan['global_bytes']
 if __name__=='__main__':main()

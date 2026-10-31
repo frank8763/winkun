@@ -1,0 +1,5448 @@
+{
+  "experiment": "T250",
+  "seed": 2026103301,
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t239_ar_policy_gradient/final_Actor.pt.gz",
+  "retention_targets": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz",
+  "original_left_states": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t221_left_success/verified_success.npz",
+  "retained_sources": [
+    {
+      "id": "dev_task5_09",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_09.npz",
+      "sha256": "87cc3e21c936ed1222b0792e3f609bce1a36cbc5ff7baa7595d001f997f35446"
+    },
+    {
+      "id": "dev_task5_10",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_10.npz",
+      "sha256": "17074f87c72d9bf8da35c26c212affe9e80a1d8172abc693f15cacacfd4b8b23"
+    },
+    {
+      "id": "dev_task5_11",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_11.npz",
+      "sha256": "da3c6adfa8836e57185c797a63a0b414aeac36dafd63a0946d2c8b973d6779b8"
+    },
+    {
+      "id": "dev_task5_12",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_12.npz",
+      "sha256": "b7f3651fb4da2ab582a31d6cdfb2b5c5424295a5dd9bc69779c6baf8e080c21f"
+    },
+    {
+      "id": "dev_task5_13",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_13.npz",
+      "sha256": "d1c9fcee1249f10cc0bd3c2a2ba8f02b8ef608c27de119423fb0071b15da8d8d"
+    },
+    {
+      "id": "dev_task5_14",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_14.npz",
+      "sha256": "791f064a25e60545415a692f662ba2b8b9c4edf03b0c3bdd980c318345dde76f"
+    },
+    {
+      "id": "dev_task5_15",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_15.npz",
+      "sha256": "aa12e8f752db72fded6403b1182ed9783434a5f33157d650dabcacbdee6631a3"
+    },
+    {
+      "id": "dev_task5_16",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_16.npz",
+      "sha256": "12e57a6666d1738f915940514ee978afe9c1e4d211fd7ff024c10374b7c6831e"
+    },
+    {
+      "id": "dev_task5_18",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_18.npz",
+      "sha256": "1e0bf4b9c671a24dcfe0df6d6588f677fcd7fa6bc5f8970adc508a43a7e0676c"
+    },
+    {
+      "id": "dev_task5_19",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_19.npz",
+      "sha256": "35ece126a0d129b4fec8b51dff49f0049a3fa93ecddef5a76f6c3d2a957894aa"
+    },
+    {
+      "id": "dev_task5_20",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_20.npz",
+      "sha256": "e858b683158fe9d008c19529abfdb801d8f2403d264b5176894dfeb1d95889c4"
+    },
+    {
+      "id": "dev_task5_21",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_21.npz",
+      "sha256": "947dc63617e79c28cf01a233515596e41e6f6b362dd6bd5d68e289c0fdff2da5"
+    },
+    {
+      "id": "dev_task5_22",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_22.npz",
+      "sha256": "de45d46e714c280fb9afdde4165d6c39b00a33415cef48dd861aa972fcca499a"
+    },
+    {
+      "id": "dev_task5_23",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_23.npz",
+      "sha256": "1272ef7d4e6e6a9aa92316787d3c211fceb2077cc0c9e17d686606994c71926c"
+    },
+    {
+      "id": "dev_task5_24",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_24.npz",
+      "sha256": "b346c0362abaa651ba008eee2bf3689e547afe42a0c7df0886c07c14a363dad4"
+    },
+    {
+      "id": "dev_task5_25",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_25.npz",
+      "sha256": "06c3481ad7f62a62cf68a3f86f9a5173a867af736b15e4391a833c39e8c4874a"
+    },
+    {
+      "id": "dev_task5_26",
+      "task": 5,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_26.npz",
+      "sha256": "6dbe24be7d5370b3381e3cc33d6bcbd09858cc5eed33556db994ed807ffce6ac"
+    },
+    {
+      "id": "dev_task6_01",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_01.npz",
+      "sha256": "e01b3789939b62fc492cddd80f323d0219e503b5f079301a3f48c25e173dee6b"
+    },
+    {
+      "id": "dev_task6_04",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_04.npz",
+      "sha256": "462af609436850f83a02419543921178476c4426e991f262b36d269b4f41cdae"
+    },
+    {
+      "id": "dev_task6_05",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_05.npz",
+      "sha256": "0e236f01b5dae2818a5eb499253b00b9980aa9c39e82e6524ec85841469d4c06"
+    },
+    {
+      "id": "dev_task6_06",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_06.npz",
+      "sha256": "408124abcf2fa6adeb7546ff62425946aa073ad80d93a790dabad5041bbdfa5a"
+    },
+    {
+      "id": "dev_task6_07",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_07.npz",
+      "sha256": "014201694d805241ff0848d1526089b5a69980b92a6b2d9cefa0cddf5d0845e3"
+    },
+    {
+      "id": "dev_task6_08",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_08.npz",
+      "sha256": "59daebee2556aa06a99e0faae75d5f0d0403df58524be89e49b881718c9074c0"
+    },
+    {
+      "id": "dev_task6_09",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_09.npz",
+      "sha256": "5ea13dcf62d67a04b33b321776590245a86fa332ed713e8b44629629269cb915"
+    },
+    {
+      "id": "dev_task6_10",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_10.npz",
+      "sha256": "02acf3cd2d89524e58bac1da6b8541da4230d4cd5178a247ed565d8e254938ae"
+    },
+    {
+      "id": "dev_task6_11",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_11.npz",
+      "sha256": "9eef2f9025d1af1bda50078d2bce328f2c20596341e093a2bb7f5892340818d6"
+    },
+    {
+      "id": "dev_task6_12",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_12.npz",
+      "sha256": "e4ea8180efa473f23b025c12d81183c57c42b5f493c4f88de9ad6e1d5c193767"
+    },
+    {
+      "id": "dev_task6_13",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_13.npz",
+      "sha256": "79978de35e945dd8be6e36ace3180614ed46936002da51efb3df72a0e31f5749"
+    },
+    {
+      "id": "dev_task6_14",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_14.npz",
+      "sha256": "8f57874fb86dcbfff6f28f29a6bff9971a2a92718c4faee56e2986bb0c7c7d03"
+    },
+    {
+      "id": "dev_task6_15",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_15.npz",
+      "sha256": "0eeacd91e99ec66b971508657e4554b6a0cac8a68a95807d518a33ffb78da33a"
+    },
+    {
+      "id": "dev_task6_16",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_16.npz",
+      "sha256": "37ffafc9c16c9a0c95591c76bda2c7673ad46240cdf3d1b61dc9675b91d5612c"
+    },
+    {
+      "id": "dev_task6_17",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_17.npz",
+      "sha256": "691bddaf5b075f5a7459cf5d7e724e9388e2fdee8cd2c99bc0b1af9cf3ee0ce9"
+    },
+    {
+      "id": "dev_task6_18",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_18.npz",
+      "sha256": "65f1761be5baad601596de4e90a8ad7a2dd3566dd160fa3f0d0d61f0abb9973e"
+    },
+    {
+      "id": "dev_task6_19",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_19.npz",
+      "sha256": "4a8b69fbe70fd802f2d03241e2bd960b2eb8bfffbf5fdc687f6f213a0494db02"
+    },
+    {
+      "id": "dev_task6_20",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_20.npz",
+      "sha256": "98d063bda1244670dfdd6de2e1e8b5cc3df62d78d6015fe267b43b4fd79a3c61"
+    },
+    {
+      "id": "dev_task6_21",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_21.npz",
+      "sha256": "006ab740be06fe82e41335b30ddb4e4bb27d191ef4e064827081387b73bdc037"
+    },
+    {
+      "id": "dev_task6_22",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_22.npz",
+      "sha256": "4635109880d16e959ba8d555a4ec95be20bde39c6b686ceef76174b6ec98a574"
+    },
+    {
+      "id": "dev_task6_23",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_23.npz",
+      "sha256": "88bdcc17655d634c786bad725d0be7791d12ebd3d97354fd57cfcdfdb7a03de8"
+    },
+    {
+      "id": "dev_task6_25",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_25.npz",
+      "sha256": "37dc7f664ca839bea4de428c21736fab1359260fc52e3bbb6e1d9f77b18cf5c1"
+    },
+    {
+      "id": "dev_task6_26",
+      "task": 6,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_26.npz",
+      "sha256": "f5263b43a02539b7ce46118e31d44f6d92932dfc7d3ff9dde69d5b2a22c162f9"
+    },
+    {
+      "id": "dev_task7_00",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_00.npz",
+      "sha256": "80dc900ca2ff5bdfdc1752922659784ed82555cf49a4209211151500888289df"
+    },
+    {
+      "id": "dev_task7_01",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_01.npz",
+      "sha256": "24bb0843252f3afe97d9cfb65dfb598463fac29f9744dddaef4be5601846f7dc"
+    },
+    {
+      "id": "dev_task7_02",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_02.npz",
+      "sha256": "5810f24334dc00671e34f67d6c037df38e8f5f59437c8fa452090edfda5f07ed"
+    },
+    {
+      "id": "dev_task7_03",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_03.npz",
+      "sha256": "1d3a3d7d96a01f9fb05e58815640a08d098e49000c3c4735a83cc098c3f4e78b"
+    },
+    {
+      "id": "dev_task7_04",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_04.npz",
+      "sha256": "c7c1d73fea7553878eff80ab72b4064b74c0e0c02eafebc863e376e7b83ae6db"
+    },
+    {
+      "id": "dev_task7_05",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_05.npz",
+      "sha256": "1354f09747af78b492c2228451182e3118baea4c3637b7d3cd064b7d9e92a089"
+    },
+    {
+      "id": "dev_task7_06",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_06.npz",
+      "sha256": "b7639d37f67370587df4f00aa49ab066bc524401c5e415823eb107eab5f25952"
+    },
+    {
+      "id": "dev_task7_07",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_07.npz",
+      "sha256": "15f0bb457b0817192cae7d73780fd3e27996afa19f4cb96b6b6132da1737ec99"
+    },
+    {
+      "id": "dev_task7_08",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_08.npz",
+      "sha256": "cc56ad25001a4505c33869e1d4814e9bd96af2f7828e29824aec586fbf287f68"
+    },
+    {
+      "id": "dev_task7_09",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_09.npz",
+      "sha256": "55709df5429566497de2bc34725315d3a7aece19dc7e3f27901c2358c0f33336"
+    },
+    {
+      "id": "dev_task7_10",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_10.npz",
+      "sha256": "49887cedcb2c0e6b90e4c6afcac7a4a6abd0909e17de6adeaaf7ec9b37af526a"
+    },
+    {
+      "id": "dev_task7_11",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_11.npz",
+      "sha256": "8be14fd1374004ab225262796d7e6b90bbc1fb679266a498b2234a9cd7050815"
+    },
+    {
+      "id": "dev_task7_12",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_12.npz",
+      "sha256": "12d46ba4f8ae45da8f507e45295fe313c1a057234e80689e703861ca7d7bddac"
+    },
+    {
+      "id": "dev_task7_13",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_13.npz",
+      "sha256": "340266eaf633487d75c5f6ee909c5f8c0d32c41f747ccd155b10f6c21c243c48"
+    },
+    {
+      "id": "dev_task7_14",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_14.npz",
+      "sha256": "4ffc8b0cd7bb64c4c9cc94181b28d1df246cf5fbe776f03d35471e178571a686"
+    },
+    {
+      "id": "dev_task7_15",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_15.npz",
+      "sha256": "e8cd8ad511c53afc3fd93bc077c2fcdd651131ff94ae463c7a8d5346d981fe34"
+    },
+    {
+      "id": "dev_task7_16",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_16.npz",
+      "sha256": "dffb08ff943753ba4485e7b3d92d55aca1430a60d080942486e75224c6517f66"
+    },
+    {
+      "id": "dev_task7_17",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_17.npz",
+      "sha256": "5b173122dc40d21b185912b0c512c4332ca46a21d03036ba880920e7c1f82a50"
+    },
+    {
+      "id": "dev_task7_18",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_18.npz",
+      "sha256": "33c2effef20b08684361fc26e369674f4a957ee02614590aeeaeb90ed12439eb"
+    },
+    {
+      "id": "dev_task7_19",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_19.npz",
+      "sha256": "9853403abc28a31a5080ddacf8c9fbaf12f62979024c001e81de06dd749afe30"
+    },
+    {
+      "id": "dev_task7_20",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_20.npz",
+      "sha256": "b6204649fdb89b653338f9e11ee3e7c163e04c9dcbdf24d4f15db9974105e13d"
+    },
+    {
+      "id": "dev_task7_21",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_21.npz",
+      "sha256": "c211ec4c5c6d5b6a892334ef2656617b34c5ab68a5128754eb44b6abeabd299b"
+    },
+    {
+      "id": "dev_task7_22",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_22.npz",
+      "sha256": "4732a781fff4d99ca295d718aab3588eb238a42b3f46a14df111965b6cc0c536"
+    },
+    {
+      "id": "dev_task7_23",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_23.npz",
+      "sha256": "3b84c2972590fe1b04e3e665edcd1793ef2336c84bb984dbb2e01f04208dc6ee"
+    },
+    {
+      "id": "dev_task7_24",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_24.npz",
+      "sha256": "396144fef9b3504c63693ce8bbc68260c53c54fb631374d2ad58f964ecea1d23"
+    },
+    {
+      "id": "dev_task7_25",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_25.npz",
+      "sha256": "7db6d011a42c773fc0682aee73c53bd30018af130db7e44aa8516767e326593e"
+    },
+    {
+      "id": "dev_task7_26",
+      "task": 7,
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_26.npz",
+      "sha256": "332a5e9dc5cc1137aced1c121c59742cd9ff4b6979f1eaf0ec27575d605d4630"
+    }
+  ],
+  "hard_jobs": [
+    {
+      "id": "dev_task6_00",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task6_12",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task6_21",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task6_24",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    }
+  ],
+  "center_jobs": [
+    {
+      "id": "dev_task0_13",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task1_13",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task2_13",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task3_13",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task4_13",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task5_13",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task6_13",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task7_13",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    }
+  ],
+  "development_jobs": [
+    {
+      "id": "dev_task0_00",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task0_01",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task0_02",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task0_03",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task0_04",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task0_05",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task0_06",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task0_07",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task0_08",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task0_09",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task0_10",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task0_11",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task0_12",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task0_13",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task0_14",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task0_15",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task0_16",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task0_17",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task0_18",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task0_19",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task0_20",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task0_21",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task0_22",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task0_23",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task0_24",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task0_25",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task0_26",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task1_00",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task1_01",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task1_02",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task1_03",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task1_04",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task1_05",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task1_06",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task1_07",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task1_08",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task1_09",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task1_10",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task1_11",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task1_12",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task1_13",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task1_14",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task1_15",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task1_16",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task1_17",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task1_18",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task1_19",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task1_20",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task1_21",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task1_22",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task1_23",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task1_24",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task1_25",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task1_26",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task2_00",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task2_01",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task2_02",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task2_03",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task2_04",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task2_05",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task2_06",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task2_07",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task2_08",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task2_09",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task2_10",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task2_11",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task2_12",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task2_13",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task2_14",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task2_15",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task2_16",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task2_17",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task2_18",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task2_19",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task2_20",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task2_21",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task2_22",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task2_23",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task2_24",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task2_25",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task2_26",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task3_00",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task3_01",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task3_02",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task3_03",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task3_04",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task3_05",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task3_06",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task3_07",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task3_08",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task3_09",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task3_10",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task3_11",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task3_12",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task3_13",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task3_14",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task3_15",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task3_16",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task3_17",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task3_18",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task3_19",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task3_20",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task3_21",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task3_22",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task3_23",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task3_24",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task3_25",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task3_26",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task4_00",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task4_01",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task4_02",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task4_03",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task4_04",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task4_05",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task4_06",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task4_07",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task4_08",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task4_09",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task4_10",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task4_11",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task4_12",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task4_13",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task4_14",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task4_15",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task4_16",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task4_17",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task4_18",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task4_19",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task4_20",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task4_21",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task4_22",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task4_23",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task4_24",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task4_25",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task4_26",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task5_00",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task5_01",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task5_02",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task5_03",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task5_04",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task5_09",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task5_10",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task5_11",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task5_12",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task5_13",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task5_14",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task5_15",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task5_16",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task5_18",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task5_19",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task5_20",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task5_21",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task5_22",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task5_23",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task5_24",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task5_25",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task5_26",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task6_00",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task6_01",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task6_02",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task6_03",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task6_04",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task6_05",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task6_06",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task6_07",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task6_08",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task6_09",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task6_10",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task6_11",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task6_12",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task6_13",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task6_14",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task6_15",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task6_16",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task6_17",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task6_18",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task6_19",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task6_20",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task6_21",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task6_22",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task6_23",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task6_24",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task6_25",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task6_26",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task7_00",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task7_01",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task7_02",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task7_03",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task7_04",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task7_05",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task7_06",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task7_07",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task7_08",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task7_09",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task7_10",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task7_11",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task7_12",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task7_13",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task7_14",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task7_15",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task7_16",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task7_17",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task7_18",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task7_19",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task7_20",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task7_21",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task7_22",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task7_23",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "dev_task7_24",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task7_25",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task7_26",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    }
+  ],
+  "heldout_jobs": [
+    {
+      "id": "hold_task0_00",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task0_01",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task0_02",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task0_03",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task0_04",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task0_05",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task0_06",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task0_07",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task1_00",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task1_01",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task1_02",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task1_03",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task1_04",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task1_05",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task1_06",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task1_07",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task2_00",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task2_01",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task2_02",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task2_03",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task2_04",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task2_05",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task2_06",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task2_07",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task3_00",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task3_01",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task3_02",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task3_03",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task3_04",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task3_05",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task3_06",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task3_07",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task4_00",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task4_01",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task4_02",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task4_03",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task4_04",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task4_05",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task4_06",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task4_07",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task5_00",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task5_01",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task5_02",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task5_03",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task5_04",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task5_05",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task5_06",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task5_07",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task6_00",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task6_01",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task6_02",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task6_03",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task6_04",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task6_05",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task6_06",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task6_07",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task7_00",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task7_01",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task7_02",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task7_03",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task7_04",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task7_05",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task7_06",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task7_07",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    }
+  ],
+  "rounds": 4,
+  "draws_per_reset": 4,
+  "actor_attempts_per_round": 4,
+  "lr": 3e-06,
+  "retention_weight": 100.0,
+  "anchor_stride": 2,
+  "anchor_batch_each": 32,
+  "step_factors": [
+    1.0,
+    0.5,
+    0.25,
+    0.125,
+    0.0625,
+    0.03125,
+    0.015625,
+    0.0078125
+  ],
+  "max_conditional_k3": 0.02,
+  "max_abs_log_ratio": 1.0,
+  "max_anchor_MSE": 4e-06,
+  "max_anchor_q99": 0.02,
+  "max_anchor_error": 0.02,
+  "batch_mean_tolerance": 3e-06,
+  "batch_logp_tolerance": 0.005,
+  "max_commands": 464,
+  "max_physics": 10826976,
+  "wall_seconds": 1800,
+  "final_reserve_seconds": 650,
+  "final_bytes": 10485760,
+  "peak_bytes": 10485760,
+  "global_bytes": 1073741824,
+  "contract": "NewactualRL fourcriticaltaskpilot with117causalinputs (original113+currentmeasuredLF/RFsteeringpositions/.5rad+rates/3rad/s clipped3). ZERO4x800noBiasinputfusion+3200params preservesbestT239initialnativefunction, T251all211baseline10BASEarrays/integrationexact established, failed24 included. AllActorparameters plusencoderbranchtrainable, unusedlogstdfrozen. Same4rounds/4critical00,12,21,24x4freshseeds=64newlearnerrollouts+64independentexactregeneration; samefixedseed2026103301asT245featureoff historicalcontrol, first16completeBASEarraysandfinalintegrationmustexactpriorT245initial16 beforefirstupdate. Later48are newpolicy-induceddata, initial16reconstructionnotindependentnewtests. T245fewer3200params andfloatgradientprojectiondifferences remain, NOTmatchedcapacitysinglefactorsensorcausality/algorithmnovelty/safetyproof. SameARsigma.035,.03/rho.98correcthistoryconditionallikelihood/PPOstyleMC/PCGrad/lr3e-6/4attempts/old8centerstop/k3.02/logratio1/retentionweight100/MSE4e-6/max.02/q99redundant.02. RetentionanchorsareactualT239210safe113states joinedtrueT2514encodercontext withoffset/hashidentity, notzeroorinventedencoders. Syntheticconditionalgradientinclencoderbranch>0/PCGradsanity beforelaunch; everyliveActor/Adam/projection independentlyshadowexact; baseline4zeroencoderbranchdeterministic BASEarrays/integrationexactT239; addedstatehashes reportedseparately. Recordencodergradientnorm eachattempt. NooldCritic/bootstrap/supervisoryteacherlabels/planner/waypoints/map/taskid/routing/Phase, currentencodermeasurementsNOTtrueworldmap. Uses simulationencoderreadouts, realdeploymentrequiresactualsensors. Originalnative100hold/.002physics/goalradius/horizon/reward unchanged; no10Hzexperimentcarryover. 4initialcontrols+128trainregeneration+48roundchecks+211dev+64possibleheldout=455commands,max464/10.826976Mallphys/1800s/reserve650final/10MiBown/global1GiB/free40GiB. FinalfixedbudgetActor notbestintermediate, anyoldcenterlossstopsfurthertraining. ALL211validdevthen64stillunseennavigation; known5invalidstartsseparate. Preservealloldmodels/failures/zero-stepT249error/T251recovery. Noautomaticnexttraining/seed/featuregrid/promotion/longdistance; onlygatepassedrate100117inputfreshMuJoCo thenuserdecidesdistance.",
+  "references": [
+    "https://www.ijcai.org/proceedings/2019/0382.pdf",
+    "https://arxiv.org/html/2312.11091v2",
+    "https://arxiv.org/abs/1707.06347",
+    "https://proceedings.mlr.press/v15/ross11a.html",
+    "https://arxiv.org/abs/2001.06782",
+    "https://proceedings.mlr.press/v162/ni22a.html"
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t239_ar_policy_gradient/prepare.py": "ba28c389d86fd0db8bdda807244353f335bb73f3fad44a6ccecef65662036cd8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t239_ar_policy_gradient/train.py": "dde13a5937519aa93e0e64118f1c2a9c719925985b7dcbed85e91f2f618aa296",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t239_ar_policy_gradient/contracts.py": "d81ae8d8a6f6b836d0c030757569862c9e219d74aed9a9ba98674cc5e2c8c2ac",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t239_ar_policy_gradient/ar_support.py": "91b503f0461ff7af477aedcab4a3c531f3bbb57f80834c22aab5a2c54b024b25",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t231_retained_behavior_repair/final_Actor.pt.gz": "cca393cf49f9cfd937f9b54f008094e52da31f073bdb84ab0dba5fd6cad8831f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz": "5e4f037f39b34fa7cbd070270f7a0147048a4c887478890c31137a7b8ec6e8ba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t221_left_success/verified_success.npz": "31d22d5b54690443e38f01059cb9b7afdd29a879a2d153582134669929837ef8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_09.npz": "87cc3e21c936ed1222b0792e3f609bce1a36cbc5ff7baa7595d001f997f35446",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_10.npz": "17074f87c72d9bf8da35c26c212affe9e80a1d8172abc693f15cacacfd4b8b23",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_11.npz": "da3c6adfa8836e57185c797a63a0b414aeac36dafd63a0946d2c8b973d6779b8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_12.npz": "b7f3651fb4da2ab582a31d6cdfb2b5c5424295a5dd9bc69779c6baf8e080c21f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_13.npz": "d1c9fcee1249f10cc0bd3c2a2ba8f02b8ef608c27de119423fb0071b15da8d8d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_14.npz": "791f064a25e60545415a692f662ba2b8b9c4edf03b0c3bdd980c318345dde76f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_15.npz": "aa12e8f752db72fded6403b1182ed9783434a5f33157d650dabcacbdee6631a3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_16.npz": "12e57a6666d1738f915940514ee978afe9c1e4d211fd7ff024c10374b7c6831e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_18.npz": "1e0bf4b9c671a24dcfe0df6d6588f677fcd7fa6bc5f8970adc508a43a7e0676c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_19.npz": "35ece126a0d129b4fec8b51dff49f0049a3fa93ecddef5a76f6c3d2a957894aa",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_20.npz": "e858b683158fe9d008c19529abfdb801d8f2403d264b5176894dfeb1d95889c4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_21.npz": "947dc63617e79c28cf01a233515596e41e6f6b362dd6bd5d68e289c0fdff2da5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_22.npz": "de45d46e714c280fb9afdde4165d6c39b00a33415cef48dd861aa972fcca499a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_23.npz": "1272ef7d4e6e6a9aa92316787d3c211fceb2077cc0c9e17d686606994c71926c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_24.npz": "b346c0362abaa651ba008eee2bf3689e547afe42a0c7df0886c07c14a363dad4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_25.npz": "06c3481ad7f62a62cf68a3f86f9a5173a867af736b15e4391a833c39e8c4874a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task5_26.npz": "6dbe24be7d5370b3381e3cc33d6bcbd09858cc5eed33556db994ed807ffce6ac",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_01.npz": "e01b3789939b62fc492cddd80f323d0219e503b5f079301a3f48c25e173dee6b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_04.npz": "462af609436850f83a02419543921178476c4426e991f262b36d269b4f41cdae",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_05.npz": "0e236f01b5dae2818a5eb499253b00b9980aa9c39e82e6524ec85841469d4c06",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_06.npz": "408124abcf2fa6adeb7546ff62425946aa073ad80d93a790dabad5041bbdfa5a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_07.npz": "014201694d805241ff0848d1526089b5a69980b92a6b2d9cefa0cddf5d0845e3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_08.npz": "59daebee2556aa06a99e0faae75d5f0d0403df58524be89e49b881718c9074c0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_09.npz": "5ea13dcf62d67a04b33b321776590245a86fa332ed713e8b44629629269cb915",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_10.npz": "02acf3cd2d89524e58bac1da6b8541da4230d4cd5178a247ed565d8e254938ae",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_11.npz": "9eef2f9025d1af1bda50078d2bce328f2c20596341e093a2bb7f5892340818d6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_12.npz": "e4ea8180efa473f23b025c12d81183c57c42b5f493c4f88de9ad6e1d5c193767",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_13.npz": "79978de35e945dd8be6e36ace3180614ed46936002da51efb3df72a0e31f5749",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_14.npz": "8f57874fb86dcbfff6f28f29a6bff9971a2a92718c4faee56e2986bb0c7c7d03",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_15.npz": "0eeacd91e99ec66b971508657e4554b6a0cac8a68a95807d518a33ffb78da33a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_16.npz": "37ffafc9c16c9a0c95591c76bda2c7673ad46240cdf3d1b61dc9675b91d5612c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_17.npz": "691bddaf5b075f5a7459cf5d7e724e9388e2fdee8cd2c99bc0b1af9cf3ee0ce9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_18.npz": "65f1761be5baad601596de4e90a8ad7a2dd3566dd160fa3f0d0d61f0abb9973e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_19.npz": "4a8b69fbe70fd802f2d03241e2bd960b2eb8bfffbf5fdc687f6f213a0494db02",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_20.npz": "98d063bda1244670dfdd6de2e1e8b5cc3df62d78d6015fe267b43b4fd79a3c61",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_21.npz": "006ab740be06fe82e41335b30ddb4e4bb27d191ef4e064827081387b73bdc037",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_22.npz": "4635109880d16e959ba8d555a4ec95be20bde39c6b686ceef76174b6ec98a574",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_23.npz": "88bdcc17655d634c786bad725d0be7791d12ebd3d97354fd57cfcdfdb7a03de8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_25.npz": "37dc7f664ca839bea4de428c21736fab1359260fc52e3bbb6e1d9f77b18cf5c1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task6_26.npz": "f5263b43a02539b7ce46118e31d44f6d92932dfc7d3ff9dde69d5b2a22c162f9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_00.npz": "80dc900ca2ff5bdfdc1752922659784ed82555cf49a4209211151500888289df",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_01.npz": "24bb0843252f3afe97d9cfb65dfb598463fac29f9744dddaef4be5601846f7dc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_02.npz": "5810f24334dc00671e34f67d6c037df38e8f5f59437c8fa452090edfda5f07ed",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_03.npz": "1d3a3d7d96a01f9fb05e58815640a08d098e49000c3c4735a83cc098c3f4e78b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_04.npz": "c7c1d73fea7553878eff80ab72b4064b74c0e0c02eafebc863e376e7b83ae6db",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_05.npz": "1354f09747af78b492c2228451182e3118baea4c3637b7d3cd064b7d9e92a089",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_06.npz": "b7639d37f67370587df4f00aa49ab066bc524401c5e415823eb107eab5f25952",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_07.npz": "15f0bb457b0817192cae7d73780fd3e27996afa19f4cb96b6b6132da1737ec99",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_08.npz": "cc56ad25001a4505c33869e1d4814e9bd96af2f7828e29824aec586fbf287f68",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_09.npz": "55709df5429566497de2bc34725315d3a7aece19dc7e3f27901c2358c0f33336",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_10.npz": "49887cedcb2c0e6b90e4c6afcac7a4a6abd0909e17de6adeaaf7ec9b37af526a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_11.npz": "8be14fd1374004ab225262796d7e6b90bbc1fb679266a498b2234a9cd7050815",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_12.npz": "12d46ba4f8ae45da8f507e45295fe313c1a057234e80689e703861ca7d7bddac",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_13.npz": "340266eaf633487d75c5f6ee909c5f8c0d32c41f747ccd155b10f6c21c243c48",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_14.npz": "4ffc8b0cd7bb64c4c9cc94181b28d1df246cf5fbe776f03d35471e178571a686",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_15.npz": "e8cd8ad511c53afc3fd93bc077c2fcdd651131ff94ae463c7a8d5346d981fe34",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_16.npz": "dffb08ff943753ba4485e7b3d92d55aca1430a60d080942486e75224c6517f66",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_17.npz": "5b173122dc40d21b185912b0c512c4332ca46a21d03036ba880920e7c1f82a50",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_18.npz": "33c2effef20b08684361fc26e369674f4a957ee02614590aeeaeb90ed12439eb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_19.npz": "9853403abc28a31a5080ddacf8c9fbaf12f62979024c001e81de06dd749afe30",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_20.npz": "b6204649fdb89b653338f9e11ee3e7c163e04c9dcbdf24d4f15db9974105e13d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_21.npz": "c211ec4c5c6d5b6a892334ef2656617b34c5ab68a5128754eb44b6abeabd299b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_22.npz": "4732a781fff4d99ca295d718aab3588eb238a42b3f46a14df111965b6cc0c536",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_23.npz": "3b84c2972590fe1b04e3e665edcd1793ef2336c84bb984dbb2e01f04208dc6ee",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_24.npz": "396144fef9b3504c63693ce8bbc68260c53c54fb631374d2ad58f964ecea1d23",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_25.npz": "7db6d011a42c773fc0682aee73c53bd30018af130db7e44aa8516767e326593e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t229_valid_start_acceptance/dev_task7_26.npz": "332a5e9dc5cc1137aced1c121c59742cd9ff4b6979f1eaf0ec27575d605d4630",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz": "00296a456f2dd035d10ffe9df34d4961a416a032226b6c8b789f502a4a057cec",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz": "ba4dbae9277fae6f81ebe9106758f04afbec42956ca44d3be786a5bb8236e093",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz": "4da2af524f55170cfb74cde770fbba3641c2fe8119f830341bf7f9d4381d5bb1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz": "fad7bdf9ab6382e085d4340920a524a49aeeb21094d5c1a59a950d10a34358b0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz": "868fb81ad5ef30744abdac3cfbfb1067c04d057f05ac5e4edec842f00b8949fa",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz": "767365cbaf7948a2084bb49e55587cfe428a484b161dfd2a7f289a1f55d9ed4d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz": "f120ea666a45905881074d0a2d47c512d08a8032b953739514d5867a1dbf1f1c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz": "e58812dad4ab96e64fe0f9aa92ee94d6d79717506c360eae38e2bfe1f04312be",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t238_ar_density_recovery/copula.py": "6deef8030335f1cedc8e4f08e368c101106a108c2bda8fcb33ecbddbba0e4edc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t238_ar_density_recovery/summary.json": "f8061ec1fa0a1bfa9792f77df9500fddb7f683f1d8ca01c4fb49f3d63ef4f241",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t229_valid_start_acceptance/valid_support.py": "c65ab4285e456ce9c5e9a61a70371bdd3ee3c4196829e30a5c13b32872fb7b8b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t223_coverage_repair/repair_support.py": "884777e4c1abf19d99916459997feb01302d34fce7c307c1e6dc4e9c60c6d191",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t219_rnd_runtime/support.py": "22a4b244fcd4bd7802569f8b33abca6b954eb75d27ebcaf855e1febed6a26101",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t219_rnd_runtime/native_compat/g5b.py": "d218726bf0b08c19d0fbfee0e09821f62b6c0f95fb3575dfa0d45855880bb5f6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/native_update_guard.py": "8c1f0720347bd8b1f9c816976502f0cbb36dc21fd2640282d4ac2bcc9e7bb5a2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t231_retained_behavior_repair/development.jsonl": "b197636a26b14b2d3859402b2c4341d75161bc1d2fe8830562d3ed409e8c5a88",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t236_closed_loop_audit/summary.json": "06c03c779f07f91117e5deb14028a7010f02b24b1aa8d83b0cc501be017499cc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t236_closed_loop_audit/dev_task6_00.npz": "a3d737659a002c1d35d7f4bb806b501b61b56e78dcad0e4ae27ceb67029627df",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t236_closed_loop_audit/dev_task6_24.npz": "513cab8c6e188b10f23b9b21233abd208237f049bb639011b8f39b95f895446c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t250_actuator_policy_gradient/prepare.py": "bbf9bc2442725fc5b4909f08cffc74dc9cc1dac9fe389b6332cfdb7f436dc492",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t250_actuator_policy_gradient/train.py": "b326fdfc9eeb612070fab977c1fbb46f258842a11f6c4c83c2948bff57392227",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t250_actuator_policy_gradient/contracts.py": "06b726259e67c134a269b95444ec5a0837b120d5ec04ded750e2ed8b05a273c9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t250_actuator_policy_gradient/steering_pg_support.py": "923f2f034abc3d096449253e01b073e9df5e6add00d586fb657072ce085496da",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t245_multitask_pcgrad/training.jsonl": "bc5c1d18fc204a766e2a146664b7bc86c47078b276e401ee40c8e5f4f21b3809",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t245_multitask_pcgrad/summary.json": "ca4bf3d26245d044967e336a33c4deeae140ac6f8e6c6b69001e416829828cdc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t239_ar_policy_gradient/final_Actor.pt.gz": "a8fc975f0555708ebf55e8b04eafb0bbb2d9cc3edcbb8576c973a7f3f9d617ed",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t242_induced_state_recovery/T239_all_induced_states.npz": "db28d24af1c54069f195905da0ab0510ff87fcaddd90fbfc3aa2222ee5dae676",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t251_actuator_recovery/actual_steering_context.npz": "cb11be2fc2677fd649e5e286a4690e8be3d13fe0e06989c21405f11c10f203c6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t239_ar_policy_gradient/development.jsonl": "c74ba421e85337af4ed6ecbf6389db28931dd621762f47d0e91cf5e9ad193a8a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t239_ar_policy_gradient/summary.json": "13f3a1a33d71ab75cf1d48a2e7c06c6fd97d67ab78b045ce0b54460b86dc56cc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t251_actuator_recovery/summary.json": "063bc04aa638a22101c09ba35a3a23a0314672be2b974a933b0411afbdbc7450",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t251_actuator_recovery/actuator_support.py": "557613f9ce5c61b727a6c9bed1459e3d57feb378dfff0de4b5e360e477893ca3"
+  },
+  "induced_states": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t242_induced_state_recovery/T239_all_induced_states.npz",
+  "steering_context": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t251_actuator_recovery/actual_steering_context.npz"
+}
