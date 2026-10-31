@@ -1,0 +1,18 @@
+"""Bound same-state recovery test using retained own neural policies only."""
+from pathlib import Path
+import hashlib,json,shutil
+ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent;OUT=ROOT/'stage/runs/t247_recovery_branches'
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def main():
+    assert not OUT.exists(),'No duplicateT247'
+    prior=json.loads((ROOT/'stage/runs/t245_multitask_pcgrad/summary.json').read_text());assert prior['all_workers_stopped'] and prior['development_safeGOAL']==209
+    base=json.loads((ROOT/'stage/experiments/t239_ar_policy_gradient/protocol.json').read_text());best=json.loads((ROOT/'stage/runs/t239_ar_policy_gradient/summary.json').read_text());other=json.loads((ROOT/'stage/runs/t240_retention_ablation/summary.json').read_text());job=next(j for j in base['development_jobs'] if j['id']=='dev_task6_24');expected=next(r for r in map(json.loads,(ROOT/'stage/runs/t239_ar_policy_gradient/development.jsonl').read_text().splitlines()) if r['job']['source_reset_id']==job['id']);assert expected['collision']
+    plan=dict(experiment='T247',checkpoint=best['export']['path'],recovery_checkpoint=other['export']['path'],job=job,expected_source=expected,start_steps=[2000,5000,9000,12000],max_commands=14,max_physics=242676,wall_seconds=300,final_bytes=2*1024**2,peak_bytes=2*1024**2,global_bytes=1024**3,
+      contract='Frozen causal continuation diagnostic of single remaining BESTT239failure24. T239fullsource twice independentlyexact original10arrays/integration; capture4fullintegration+history snapshots atpredeclared4/10/18/24s. Fromeachsamefullstate: T239suffix mustexactoriginalsource slice and finalintegration; T240retainedownneuralpolicy suffix generatedtwiceindependently allarrays/integrationexact. Preserveabsolute originaltimebudget/remainingtimeobservation/history/goal/scene, no resetcredit/teleportpastobstacle. Allcontrols/failuresretained, max14commands/242676physicalsteps/300s/2MiBown/global1GiB/free40GiB. Modelswitches existONLYinthis training-data/causaldiagnostic, are NOT end-to-enddeployment success or runtimeTeacher/routing/planner/waypoint/map/Phase. T240recoveryGOALifany supports recoverability of testedstudent-inducedfullstate, notallstates; no suffixwindowsearch/seed/extraactorsearch. Recoverygate requiresall4T240safeand allcontrols/repeats exact; failinggate forbids correctiontraining basedonthisprotocol. Zerooptimizer/ActorExport/RLupdates/heldoutnavigation. Storedprefixstates withT240queries are labels ONLYnotindependent safetyproof. UserreviewsMuJoCo onlyafter211+64singleActor passes, notdiagnosticcontroller success.',
+      references=['https://proceedings.mlr.press/v15/ross11a.html','https://proceedings.mlr.press/v78/laskey17a.html','https://arxiv.org/abs/1803.03835'])
+    paths=list(HERE.glob('*.py'))+[Path(plan[k]) for k in ['checkpoint','recovery_checkpoint']]+[Path(job['exact_snapshot']),ROOT/'stage/runs/t245_multitask_pcgrad/summary.json',ROOT/'stage/runs/t239_ar_policy_gradient/development.jsonl',ROOT/'stage/experiments/t229_valid_start_acceptance/valid_support.py',ROOT/'stage/experiments/t223_coverage_repair/repair_support.py',ROOT/'stage/experiments/t219_rnd_runtime/support.py',ROOT/'stage/experiments/t219_rnd_runtime/native_compat/g5b.py'];plan['input_hashes']={str(p):sha(p) for p in paths}
+    used=sum(p.stat().st_size for p in (ROOT/'stage/runs').rglob('*') if p.is_file());assert used+plan['peak_bytes']<plan['global_bytes'] and shutil.disk_usage(ROOT).free>40*1024**3
+    OUT.mkdir()
+    for p in [HERE/'protocol.json',OUT/'protocol.json']:p.write_text(json.dumps(plan,indent=2)+'\n')
+    print(json.dumps(dict(state='REGISTERED',runs_MiB=used/1024**2)))
+if __name__=='__main__':main()

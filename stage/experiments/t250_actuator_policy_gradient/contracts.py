@@ -1,0 +1,24 @@
+"""Zero-physics integration/gradient checks; synthetic actions aren't episodes."""
+from steering_pg_support import *
+def main():
+    plan=json.loads((HERE/'protocol.json').read_text());assert not (OUT/'synthetic_contracts.json').exists()
+    for f,h in plan['input_hashes'].items():assert C.sha(f)==h
+    torch.set_num_threads(1);torch.use_deterministic_algorithms(True);p=S.policy(read(plan['checkpoint']));original=digest(p.state_dict());items=[];rng=np.random.default_rng(plan['seed'])
+    for reset in ['dev_task6_00','dev_task6_24']:
+        with np.load(plan['induced_states']) as z:
+            ix=int(np.flatnonzero(z['case_ids']==reset)[0]);begin=int(z['offsets'][ix]);x=z['states'][begin:begin+16].copy()
+        with np.load(plan['steering_context']) as z:x=np.concatenate([x,z['encoders'][begin:begin+16]],axis=1)
+        for k in range(4):
+            acts=[];means=[];lps=[];latent=None
+            for state in x:
+                first=latent is None;noise=rng.normal(size=2);latent=noise if first else AR.RHO*latent+math.sqrt(1-AR.RHO**2)*noise
+                with torch.no_grad():m=p.physical_mean(torch.tensor(state[None]))[0];a=AR.sample(m,latent);lp=AR.logp(m[None],a[None],(m if first else means[-1])[None],(a if first else acts[-1])[None],torch.tensor([first]))
+                acts.append(a);means.append(m);lps.append(float(lp))
+            rew=np.zeros(16);rew[-1]=1 if k%2 else -1
+            item=dict(row=dict(source_reset_id=reset),arrays=dict(states=x,actions=torch.stack(acts).numpy(),means=torch.stack(means).numpy(),logp=np.asarray(lps),native_counts=np.full(16,100,dtype=np.uint8),rewards=rew));items.append(item)
+    data=batch(items,p,plan);m=p.physical_mean(data['x']);lp=AR.logp(m,data['actions'],m[data['prev']],data['actions'][data['prev']],data['reset']);loss=-(lp*data['advantage']*data['weights']).sum()/8/234;loss.backward();gn=float(p.body.net[0].weight.grad.norm());assert math.isfinite(gn) and gn>0 and digest(p.state_dict())==original
+    simple=[torch.tensor([1.,0.]),torch.tensor([0.,2.])];v,c=project(simple,plan['seed']);assert c==0 and torch.equal(v,torch.tensor([.5,1.]))
+    v,c=project([torch.tensor([1.,0.]),torch.tensor([-1.,0.])],plan['seed']);assert c==2 and torch.equal(v,torch.zeros(2))
+    v,c=project([torch.tensor([1.,0.]),torch.tensor([-1.,1.])],plan['seed']);assert c==2 and torch.allclose(v,torch.tensor([.25,.75]),atol=1e-7)
+    r=dict(state='PASS',pcgrad_identity_and_conflict_checks=True,protocol_sha256=C.sha(HERE/'protocol.json'),physics_steps=0,optimizer_calls=0,synthetic_sequences=8,synthetic_states=128,first_layer_gradient_norm=gn,all_gradients_finite=all(q.grad is None or bool(torch.isfinite(q.grad).all()) for q in p.parameters()),parameters_unchanged=True,encoder_gradient_norm=float(p.body.net[0].proprio.weight.grad.norm()),density_check=data['density_check']);assert r['all_gradients_finite'] and r['encoder_gradient_norm']>0;C.save(OUT/'synthetic_contracts.json',r);print(json.dumps(r))
+if __name__=='__main__':main()

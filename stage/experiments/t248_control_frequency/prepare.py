@@ -1,0 +1,17 @@
+from pathlib import Path
+import json,hashlib,shutil
+ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent;OUT=ROOT/'stage/runs/t248_control_frequency'
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def main():
+    assert not OUT.exists(),'No duplicateT248'
+    recent=json.loads((ROOT/'stage/runs/t247_recovery_branches/summary.json').read_text());assert recent['state']=='COMPLETE' and recent['all_workers_stopped'] and not recent['recovery_source_gate']
+    old=json.loads((ROOT/'stage/experiments/t239_ar_policy_gradient/protocol.json').read_text());p=json.loads((ROOT/'stage/runs/t239_ar_policy_gradient/summary.json').read_text());critical=[j for j in old['development_jobs'] if j['id'] in ['dev_task6_00','dev_task6_12','dev_task6_21','dev_task6_24']];assert len(critical)==4
+    plan=dict(experiment='T248',checkpoint=p['export']['path'],hold_steps=50,control_jobs=critical,screen_jobs=old['center_jobs']+critical,development_jobs=old['development_jobs'],heldout_jobs=old['heldout_jobs'],max_commands=303,max_physics=7070202,wall_seconds=1100,final_bytes=7*1024**2,peak_bytes=7*1024**2,global_bytes=1024**3,
+      contract='Frozen BESTT239 policy control-rate singlefactor100->50nativeholdsteps (5->10Hz), no optimizer/newweights/no action smoothing/teacher/planner/map/waypoint/Phase. SAMEoriginalnativephysics2ms/frame_skip1/goalradius.2/23334stepdeadline/scenes/resets/remainingtimeobservation/causal113features. DoesNOTrelaxgoal/contact/timehorizon; changescontrollerdecisionrate and distribution, notoriginal100holdstabilityproof/newRLalgorithmgain. Fourcritical100holdcontrols exactlyall10arrays/integrationmatchT239prior; then50holdoriginal8centers+4critical all12 twice independentexact. Ifany50screenfailure, stopwithout211/64, preserveallfailures and no otherfrequencygrid. Onlyallscreen12safe+exact permits full211validdevat50;12overlapcases exactscreen/final;all211safe then64still-unseennavigationheldout50. Known5invalidoriginalstartsseparate. No modelselection/frequencysearch/automatictraining/longdistance; staticfrozenneuralActor directnativeactions. Counts4controls+24screenregeneration+211dev+64possibleheldout=303/7.070202Mallphysics/1100s/7MiBown/global1GiB/free40GiB. Compactaction/pose/nativecounts/rewardtraces withallobservationshasheduponcollection, sourcecheck100establishesimplementationidentity. Gatepassingwouldonlybe8fixedtaskslocalvaliddomainat10Hz; userreviewsNEWrate-matchedMuJoCo aftergate before longer distance.',
+      references=['https://proceedings.mlr.press/v97/tallec19a.html','https://proceedings.mlr.press/v119/metelli20a.html','https://arxiv.org/abs/1903.11524'])
+    paths=list(HERE.glob('*.py'))+[Path(plan['checkpoint']),ROOT/'stage/runs/t247_recovery_branches/summary.json',ROOT/'stage/runs/t239_ar_policy_gradient/development.jsonl']+[Path(j['exact_snapshot']) for j in plan['development_jobs']+plan['heldout_jobs']]+[ROOT/'stage/experiments/t219_rnd_runtime/support.py',ROOT/'stage/experiments/t219_rnd_runtime/native_compat/g5b.py',ROOT/'stage/experiments/t229_valid_start_acceptance/valid_support.py'];plan['input_hashes']={str(p):sha(p) for p in paths}
+    used=sum(p.stat().st_size for p in (ROOT/'stage/runs').rglob('*') if p.is_file());assert used+plan['peak_bytes']<plan['global_bytes'] and shutil.disk_usage(ROOT).free>40*1024**3
+    OUT.mkdir()
+    for p in [HERE/'protocol.json',OUT/'protocol.json']:p.write_text(json.dumps(plan,indent=2)+'\n')
+    print(json.dumps(dict(state='REGISTERED',runs_MiB=used/1024**2)))
+if __name__=='__main__':main()

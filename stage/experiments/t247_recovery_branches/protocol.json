@@ -1,0 +1,109 @@
+{
+  "experiment": "T247",
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t239_ar_policy_gradient/final_Actor.pt.gz",
+  "recovery_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t240_retention_ablation/final_Actor.pt.gz",
+  "job": {
+    "id": "dev_task6_24",
+    "group": "task6",
+    "case": {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+    "delta_x_m": 0.03,
+    "delta_y_m": 0.03,
+    "delta_yaw_deg": -2.0
+  },
+  "expected_source": {
+    "id": "final_dev_task6_24",
+    "arm": "learner",
+    "seed": 0,
+    "mode": "deterministic",
+    "delta_x_m": 0.03,
+    "delta_y_m": 0.03,
+    "delta_yaw_deg": -2.0,
+    "complete": true,
+    "success": false,
+    "collision": true,
+    "timeout": false,
+    "physics_steps": 15526,
+    "initial_distance_m": 5.012772835965577,
+    "remaining_m": 1.482121521991746,
+    "nearest_m": 1.482121521991746,
+    "array_hashes": {
+      "states": "bb750cdf3e7b78a62e0ea5561781c7d87c1f83d0d2defb197149aac6ec53ad27",
+      "actions": "7af7110511a7252c070af576835e06b6a736fb518d747b2571ac83ea3a9aeb2b",
+      "means": "a45af7f5ef1b454fa141c729f15094abe48bd801b91c8b04b7b2c69795ec2820",
+      "logp": "c89e3a70b2aa83b2c7e375f11a35432620384e992f9f994055beec0c25f1f2f4",
+      "native_counts": "65455643ce7bf88103d92958c0e98d4c815392ac5ac04ded98ed7a8efdff8cb6",
+      "next_states": "5518b3add91da0b0f51e6dcc733d9f58ea37a4f5a867664632e847e23a415a65",
+      "poses": "91ef1113576b0b6919adf4a04b835b144161763b44691c1ae73d3378788da61f",
+      "next_poses": "295817014113bd5d02365d942b9fc29f0443e74a5f5f15d2bed36de77b21a51f",
+      "end_flags": "9b38419cc907d270ad2a7650d6b9ad16b2a706adaab813d0520f52674ab03de9",
+      "rewards": "99c3213cf5f857091425bd730eb0376362927359c8aa6e470512f355d1bf4115"
+    },
+    "integration_sha256": "1418beddab4e38f71a0516266f68b72ee657e9dec7ff99c4ace052ad11fd4c92",
+    "policy_hash": "8a2328d7c4b8b0101fb36b0ba1ef49540156c9ff3cb0335ccab9b295e163878a",
+    "job": {
+      "id": "final_dev_task6_24",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "source_reset_id": "dev_task6_24",
+      "arm": "learner",
+      "round": -1,
+      "seed": 0,
+      "mode": "deterministic",
+      "policy_hash": "8a2328d7c4b8b0101fb36b0ba1ef49540156c9ff3cb0335ccab9b295e163878a"
+    },
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t239_ar_policy_gradient/episodes/final_dev_task6_24.npz",
+    "sha256": "a50697f7caf377f32ee411a5358d114622b4eb36c659ddc519a0a314cab31bb0"
+  },
+  "start_steps": [
+    2000,
+    5000,
+    9000,
+    12000
+  ],
+  "max_commands": 14,
+  "max_physics": 242676,
+  "wall_seconds": 300,
+  "final_bytes": 2097152,
+  "peak_bytes": 2097152,
+  "global_bytes": 1073741824,
+  "contract": "Frozen causal continuation diagnostic of single remaining BESTT239failure24. T239fullsource twice independentlyexact original10arrays/integration; capture4fullintegration+history snapshots atpredeclared4/10/18/24s. Fromeachsamefullstate: T239suffix mustexactoriginalsource slice and finalintegration; T240retainedownneuralpolicy suffix generatedtwiceindependently allarrays/integrationexact. Preserveabsolute originaltimebudget/remainingtimeobservation/history/goal/scene, no resetcredit/teleportpastobstacle. Allcontrols/failuresretained, max14commands/242676physicalsteps/300s/2MiBown/global1GiB/free40GiB. Modelswitches existONLYinthis training-data/causaldiagnostic, are NOT end-to-enddeployment success or runtimeTeacher/routing/planner/waypoint/map/Phase. T240recoveryGOALifany supports recoverability of testedstudent-inducedfullstate, notallstates; no suffixwindowsearch/seed/extraactorsearch. Recoverygate requiresall4T240safeand allcontrols/repeats exact; failinggate forbids correctiontraining basedonthisprotocol. Zerooptimizer/ActorExport/RLupdates/heldoutnavigation. Storedprefixstates withT240queries are labels ONLYnotindependent safetyproof. UserreviewsMuJoCo onlyafter211+64singleActor passes, notdiagnosticcontroller success.",
+  "references": [
+    "https://proceedings.mlr.press/v15/ross11a.html",
+    "https://proceedings.mlr.press/v78/laskey17a.html",
+    "https://arxiv.org/abs/1803.03835"
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t247_recovery_branches/prepare.py": "8358136273e88a809538577918189982524511490f779470faec9fe94ebf45e8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t247_recovery_branches/run.py": "3342bf871a497803d31689d90922466516155ceee7b9145539c0c205f626e47e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t239_ar_policy_gradient/final_Actor.pt.gz": "a8fc975f0555708ebf55e8b04eafb0bbb2d9cc3edcbb8576c973a7f3f9d617ed",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t240_retention_ablation/final_Actor.pt.gz": "119420c8d76db2a0557d2dfa40c80639d8d3423549d4117d3e0b0ba4c6de973a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz": "f120ea666a45905881074d0a2d47c512d08a8032b953739514d5867a1dbf1f1c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t245_multitask_pcgrad/summary.json": "ca4bf3d26245d044967e336a33c4deeae140ac6f8e6c6b69001e416829828cdc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t239_ar_policy_gradient/development.jsonl": "c74ba421e85337af4ed6ecbf6389db28931dd621762f47d0e91cf5e9ad193a8a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t229_valid_start_acceptance/valid_support.py": "c65ab4285e456ce9c5e9a61a70371bdd3ee3c4196829e30a5c13b32872fb7b8b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t223_coverage_repair/repair_support.py": "884777e4c1abf19d99916459997feb01302d34fce7c307c1e6dc4e9c60c6d191",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t219_rnd_runtime/support.py": "22a4b244fcd4bd7802569f8b33abca6b954eb75d27ebcaf855e1febed6a26101",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t219_rnd_runtime/native_compat/g5b.py": "d218726bf0b08c19d0fbfee0e09821f62b6c0f95fb3575dfa0d45855880bb5f6"
+  }
+}
