@@ -1,0 +1,145 @@
+{
+  "state": "POSTHOC_DIRECTION_AUDIT_COMPLETE",
+  "physics_steps": 0,
+  "optimizer_calls": 0,
+  "models_exported": false,
+  "max_wall_seconds": 60,
+  "elapsed_s": 3.6772395329899155,
+  "initial": {
+    "objective": -0.00018852551898054467,
+    "anchor_max_KL": 0.009934733527237062,
+    "balanced_MSE": 0.0001884875528048724
+  },
+  "gradient_norm": 2.882664203643799,
+  "trials": [
+    {
+      "kind": "plain_gradient",
+      "nominal_step_L2": 0.01,
+      "actual_step_L2": 0.009999939240515232,
+      "objective_improvement": -0.01565886391545701,
+      "anchor_max_KL": 0.14860807082245134,
+      "balanced_MSE": 0.004554984159767628,
+      "behavior_mean_KL": 0.0449411718993085,
+      "all_nonlinear_checks_pass": false,
+      "projection_certificate": null
+    },
+    {
+      "kind": "linearized_projected",
+      "nominal_step_L2": 0.01,
+      "actual_step_L2": 0.00998872984200716,
+      "objective_improvement": -0.0125126795275063,
+      "anchor_max_KL": 0.13164218803867844,
+      "balanced_MSE": 0.0041112145408988,
+      "behavior_mean_KL": 0.042081760732935916,
+      "all_nonlinear_checks_pass": false,
+      "projection_certificate": {
+        "active_constraints": [
+          1
+        ],
+        "multipliers": [
+          0.0003186064161342771
+        ],
+        "linearized_max_violation": 1.951563910473908e-18,
+        "proposal_norm": 0.010000230107887136,
+        "projected_norm": 0.009989008490650082
+      }
+    },
+    {
+      "kind": "plain_gradient",
+      "nominal_step_L2": 0.005,
+      "actual_step_L2": 0.004999969620257616,
+      "objective_improvement": 0.006948266922356075,
+      "anchor_max_KL": 0.045687749194519144,
+      "balanced_MSE": 0.0013028091052547097,
+      "behavior_mean_KL": 0.011680976154840634,
+      "all_nonlinear_checks_pass": false,
+      "projection_certificate": null
+    },
+    {
+      "kind": "linearized_projected",
+      "nominal_step_L2": 0.005,
+      "actual_step_L2": 0.00499714445322752,
+      "objective_improvement": 0.007316803350533753,
+      "anchor_max_KL": 0.043989030941083314,
+      "balanced_MSE": 0.0012464119354262948,
+      "behavior_mean_KL": 0.011371686152027799,
+      "all_nonlinear_checks_pass": false,
+      "projection_certificate": {
+        "active_constraints": [
+          1
+        ],
+        "multipliers": [
+          6.294487236799976e-05
+        ],
+        "linearized_max_violation": 4.607859233063394e-19,
+        "proposal_norm": 0.005000115053943568,
+        "projected_norm": 0.004997292010994154
+      }
+    },
+    {
+      "kind": "plain_gradient",
+      "nominal_step_L2": 0.0025,
+      "actual_step_L2": 0.002499984810128808,
+      "objective_improvement": 0.00680820487506318,
+      "anchor_max_KL": 0.017917532729123362,
+      "balanced_MSE": 0.00048461256665177643,
+      "behavior_mean_KL": 0.0029722742643131447,
+      "all_nonlinear_checks_pass": false,
+      "projection_certificate": null
+    },
+    {
+      "kind": "linearized_projected",
+      "nominal_step_L2": 0.0025,
+      "actual_step_L2": 0.002499984810128808,
+      "objective_improvement": 0.00680820487506318,
+      "anchor_max_KL": 0.017917532729123362,
+      "balanced_MSE": 0.00048461256665177643,
+      "behavior_mean_KL": 0.0029722742643131447,
+      "all_nonlinear_checks_pass": false,
+      "projection_certificate": {
+        "active_constraints": [],
+        "multipliers": [],
+        "linearized_max_violation": -2.0710665240708965e-05,
+        "proposal_norm": 0.002500057526971784,
+        "projected_norm": 0.002500057526971784
+      }
+    },
+    {
+      "kind": "plain_gradient",
+      "nominal_step_L2": 0.00125,
+      "actual_step_L2": 0.001249992405064404,
+      "objective_improvement": 0.003560098790813807,
+      "anchor_max_KL": 0.008858818908019313,
+      "balanced_MSE": 0.00027230565319769084,
+      "behavior_mean_KL": 0.0007491698496213709,
+      "all_nonlinear_checks_pass": false,
+      "projection_certificate": null
+    },
+    {
+      "kind": "linearized_projected",
+      "nominal_step_L2": 0.00125,
+      "actual_step_L2": 0.001249992405064404,
+      "objective_improvement": 0.003560098790813807,
+      "anchor_max_KL": 0.008858818908019313,
+      "balanced_MSE": 0.00027230565319769084,
+      "behavior_mean_KL": 0.0007491698496213709,
+      "all_nonlinear_checks_pass": false,
+      "projection_certificate": {
+        "active_constraints": [],
+        "multipliers": [],
+        "linearized_max_violation": -4.111155621791829e-05,
+        "proposal_norm": 0.001250028763485892,
+        "projected_norm": 0.001250028763485892
+      }
+    }
+  ],
+  "scope": "Archived original-arm round1 behavior, completeMC-minus-zero baseline (not reconstruction of stored previous V or Adam moments). Fresh analytical gradient only. Two-constraint Euclidean local projection, not natural gradient/fullCPO/A-GEM replication. Strict nonlinear recheck. No navigation/retention/generalization outcome. No training initialized from candidates.",
+  "sources": [
+    "https://arxiv.org/html/1705.10528",
+    "https://arxiv.org/html/1812.00420"
+  ],
+  "source_sha256": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/tools/audit_t211_direction.py": "e3e4adc4f3ad60d57f5d6e1566f77c087dba7e9055c104d5c8c48c53cfa55383",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/functional_constraint_direction.py": "e922b4ce7175f5874084679c0bb8401cf4572d655600a1ff3d86e2c1bf0f6ba6"
+  }
+}

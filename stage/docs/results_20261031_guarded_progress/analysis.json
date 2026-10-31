@@ -1,0 +1,138 @@
+{
+  "state": "COMPLETE",
+  "stop_reason": "ROUND_BUDGET_COMPLETE",
+  "training_episodes": 32,
+  "training_physics_steps": 508901,
+  "physics_steps": 1665727,
+  "commands": 122,
+  "actor_accepted_updates": {
+    "original": 3,
+    "terminal_progress": 8
+  },
+  "actor_proposals": {
+    "original": 7,
+    "terminal_progress": 12
+  },
+  "value_updates": {
+    "original": 36,
+    "terminal_progress": 36
+  },
+  "stable_5m_gate_passed": false,
+  "final_reload_measured": true,
+  "arms": {
+    "original": {
+      "training_complete": 16,
+      "training_safe_GOAL": 0,
+      "training_contact": 16,
+      "training_timeout": 0,
+      "final_old8_completed": 8,
+      "final_old8_safe_GOAL": 7,
+      "final_old7_safe_GOAL": 7,
+      "final_LEFT": {
+        "id": "final_reload_original_6",
+        "arm": "original",
+        "round": 3,
+        "role": "evaluation",
+        "mode": "deterministic",
+        "seed": 0,
+        "weights": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t211_guarded_progress/models/original_round3.pt",
+        "weights_sha256": "c0b3509f7cb3c0d01a72f9e1d87a9fdecd7398d8c1363fbd7df1cb593ffdbdba",
+        "case": {
+          "id": "5m_2029653601_LEFT",
+          "seed": 2029653601,
+          "angle_deg": -17.3,
+          "side": "LEFT",
+          "distance_m": 5.0,
+          "step_cap": 23334,
+          "group": "original_5m_primary"
+        },
+        "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+        "complete": true,
+        "physics_steps": 14918,
+        "decisions": 150,
+        "success": false,
+        "collision": true,
+        "timeout": false,
+        "remaining_m": 1.4776207812536972,
+        "nearest_m": 1.4776207812536972,
+        "initial_distance_m": 5.0,
+        "environment_return": -0.4817199964738642,
+        "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t211_guarded_progress/episodes/final_reload_original_6.npz",
+        "trace_sha256": "48fdf4248e0ca0129fc4529dcdd50b9954d07d203c697d2eab654a6f2dbfedcf",
+        "integration_sha256": "58c4df8eac2547cc9894caa9699ed696fae64156384aa2583204e66d6bd56274"
+      },
+      "max_accepted_behavior_mean_KL": 0.002398738111058235,
+      "max_accepted_parent_anchor_KL": 0.009934733527237062,
+      "accepted_step_factors": [
+        0.25,
+        0.0625,
+        0.0625
+      ],
+      "max_batch_logp_error": 1.921074527988509e-05
+    },
+    "terminal_progress": {
+      "training_complete": 16,
+      "training_safe_GOAL": 0,
+      "training_contact": 16,
+      "training_timeout": 0,
+      "final_old8_completed": 8,
+      "final_old8_safe_GOAL": 7,
+      "final_old7_safe_GOAL": 7,
+      "final_LEFT": {
+        "id": "final_reload_terminal_progress_6",
+        "arm": "terminal_progress",
+        "round": 3,
+        "role": "evaluation",
+        "mode": "deterministic",
+        "seed": 0,
+        "weights": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t211_guarded_progress/models/terminal_progress_round3.pt",
+        "weights_sha256": "ec75a886196887439ee00aae485edde5bc643a9158b112cbd8c4aaf9c6b5386a",
+        "case": {
+          "id": "5m_2029653601_LEFT",
+          "seed": 2029653601,
+          "angle_deg": -17.3,
+          "side": "LEFT",
+          "distance_m": 5.0,
+          "step_cap": 23334,
+          "group": "original_5m_primary"
+        },
+        "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+        "complete": true,
+        "physics_steps": 14897,
+        "decisions": 149,
+        "success": false,
+        "collision": true,
+        "timeout": false,
+        "remaining_m": 1.4808358376593735,
+        "nearest_m": 1.4808358376593735,
+        "initial_distance_m": 5.0,
+        "environment_return": -0.48212033987523417,
+        "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t211_guarded_progress/episodes/final_reload_terminal_progress_6.npz",
+        "trace_sha256": "6425b3482fba1f80d03ee03fc7c697e615f52552f75a25150795c6e398d9c914",
+        "integration_sha256": "31a1af6875815d132787b98071e3ca5476f27efe71a4080df7930931b40a37d1"
+      },
+      "max_accepted_behavior_mean_KL": 0.0023944287635485543,
+      "max_accepted_parent_anchor_KL": 0.009878253271436153,
+      "accepted_step_factors": [
+        0.25,
+        0.0625,
+        0.03125,
+        0.03125,
+        0.015625,
+        0.125,
+        0.125,
+        0.015625
+      ],
+      "max_batch_logp_error": 1.5881438692577632e-05
+    }
+  },
+  "elapsed_s": 337.3031018189504,
+  "input_hashes_unchanged": true,
+  "analysis_physics_steps": 0,
+  "analysis_optimizer_updates": 0,
+  "T159_T194_replaced": false,
+  "all_workers_stopped": true,
+  "all_new_runs_MiB": 1006.932448387146,
+  "own_MiB": 22.635522842407227,
+  "figure": "stage/runs/t211_guarded_progress/left_distance.png"
+}

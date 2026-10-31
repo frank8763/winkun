@@ -1,0 +1,81 @@
+{
+  "state": "POSTHOC_GUARD_CONTRACT_PASS",
+  "physics_steps": 0,
+  "navigation_optimizer_updates": 0,
+  "toy_optimizer_step_calls": 3,
+  "toy_retained_updates": 1,
+  "full_actor_selection": [
+    {
+      "arm": "original",
+      "accepted": true,
+      "factor": 0.125,
+      "attempts": [
+        {
+          "factor": 1.0,
+          "accept": false,
+          "training_mean_KL": 0.13127925562996773,
+          "old7_anchor_max_KL": 0.47258606597109
+        },
+        {
+          "factor": 0.5,
+          "accept": false,
+          "training_mean_KL": 0.03204530557086481,
+          "old7_anchor_max_KL": 0.12340499825919667
+        },
+        {
+          "factor": 0.25,
+          "accept": false,
+          "training_mean_KL": 0.007899556342516642,
+          "old7_anchor_max_KL": 0.03124499140238953
+        },
+        {
+          "factor": 0.125,
+          "accept": true,
+          "training_mean_KL": 0.001959445694487822,
+          "old7_anchor_max_KL": 0.007844383879955702
+        }
+      ],
+      "full_actor_rejection_restores_all_tensors": true
+    },
+    {
+      "arm": "terminal_progress",
+      "accepted": true,
+      "factor": 0.125,
+      "attempts": [
+        {
+          "factor": 1.0,
+          "accept": false,
+          "training_mean_KL": 0.13159060823583657,
+          "old7_anchor_max_KL": 0.47525366138467195
+        },
+        {
+          "factor": 0.5,
+          "accept": false,
+          "training_mean_KL": 0.03212152363871214,
+          "old7_anchor_max_KL": 0.12413077687321458
+        },
+        {
+          "factor": 0.25,
+          "accept": false,
+          "training_mean_KL": 0.0079183832176119,
+          "old7_anchor_max_KL": 0.031430612342642
+        },
+        {
+          "factor": 0.125,
+          "accept": true,
+          "training_mean_KL": 0.001964114875347569,
+          "old7_anchor_max_KL": 0.00789151766503486
+        }
+      ],
+      "full_actor_rejection_restores_all_tensors": true
+    }
+  ],
+  "nonempty_Adam_state_rejection_and_exception_rollback_verified": true,
+  "models_exported": false,
+  "next_online_experiment_started": false,
+  "scope": "Local KL checks only, not full surrogate-improvement/online trainer integration or closed-loop retention. Factor1/8 is selected posthoc, not a preregistered result. No claim of five-meter success.",
+  "source_sha256": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/tools/check_t210_guard.py": "03c13b8b128ad28825775744a944375448acbba78e40bff2a39360b791ad05c4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/native_update_guard.py": "8c1f0720347bd8b1f9c816976502f0cbb36dc21fd2640282d4ac2bcc9e7bb5a2"
+  }
+}

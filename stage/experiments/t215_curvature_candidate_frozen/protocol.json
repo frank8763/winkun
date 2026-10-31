@@ -1,0 +1,112 @@
+{
+  "experiment": "T215",
+  "wall_seconds": 180,
+  "workers": 4,
+  "max_episodes": 8,
+  "max_physics": 150000,
+  "final_bytes": 3145728,
+  "peak_bytes": 4194304,
+  "weights": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t214_preconditioned_curvature/offline_candidate.pt",
+  "weights_sha256": "5e4904ef6d6feae34133bc20f3870b52d035ccb4c0228c5244bd1991fe151028",
+  "cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "snapshots": [
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz"
+  ],
+  "scope": "Exactly8fixedoriginalold8deterministicrollouts, savedT214offlinecandidate; zerotraining/optimizer. No scenechange, planner,mapinput,waypoint,teacher,automaticpromotion or follow-ontraining; fixedtrainingtasksnotgeneralization.",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t215_curvature_candidate_frozen/run.py": "9d05b2052c1fb4ebccf5a75344c3f74d0833177bbc0befe19fa012c980f48c37",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t215_curvature_candidate_frozen/support.py": "41ed574a81b968e3b905170a322b2fcd2889169df255f766ce47c31df24ed409",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t214_preconditioned_curvature/offline_candidate.pt": "5e4904ef6d6feae34133bc20f3870b52d035ccb4c0228c5244bd1991fe151028",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t214_preconditioned_curvature/summary.json": "76555af6b9edc6929e48ccf93369be94623e66984110f9e0d8d613f33f10b5fe",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz": "00296a456f2dd035d10ffe9df34d4961a416a032226b6c8b789f502a4a057cec",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz": "ba4dbae9277fae6f81ebe9106758f04afbec42956ca44d3be786a5bb8236e093",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz": "4da2af524f55170cfb74cde770fbba3641c2fe8119f830341bf7f9d4381d5bb1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz": "fad7bdf9ab6382e085d4340920a524a49aeeb21094d5c1a59a950d10a34358b0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz": "868fb81ad5ef30744abdac3cfbfb1067c04d057f05ac5e4edec842f00b8949fa",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz": "767365cbaf7948a2084bb49e55587cfe428a484b161dfd2a7f289a1f55d9ed4d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz": "f120ea666a45905881074d0a2d47c512d08a8032b953739514d5867a1dbf1f1c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz": "e58812dad4ab96e64fe0f9aa92ee94d6d79717506c360eae38e2bfe1f04312be",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t203_native_exploration/runtime.py": "3f7f6ef5d5be39ab38b67c04f0b19711cba30d99b7389ae7ab96b1b9adac4032",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t200_residual_placement/common.py": "a213ec43cb4a8e54cf6abb780a122d2e117d28a41d69e4d6430477868aab0552"
+  }
+}

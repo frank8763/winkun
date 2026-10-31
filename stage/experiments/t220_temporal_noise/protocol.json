@@ -1,0 +1,47 @@
+{
+  "experiment": "T220",
+  "seed": 2026103220,
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt",
+  "case": {
+    "id": "5m_2029653601_LEFT",
+    "seed": 2029653601,
+    "angle_deg": -17.3,
+    "side": "LEFT",
+    "distance_m": 5.0,
+    "step_cap": 23334,
+    "group": "original_5m_primary"
+  },
+  "snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+  "arms": {
+    "white": 0.0,
+    "ar09": 0.9,
+    "ar098": 0.98
+  },
+  "episodes_per_arm": 6,
+  "workers": 4,
+  "max_commands": 21,
+  "max_physics": 490014,
+  "wall_seconds": 240,
+  "final_bytes": 655360,
+  "peak_bytes": 655360,
+  "global_bytes": 1073741824,
+  "references": [
+    "https://arxiv.org/html/2312.11091v2",
+    "https://onno-eberhard.appspot.com/pink"
+  ],
+  "contract": "Frozen T194 MLP, exact original LEFT full reset/native physics and original GOAL. Only latent temporal correlation differs; same per-seed Gaussian innovations, sigma(.35,.30), stationary z0. AR(1) copula via normal-CDF/truncated-normal-inverse-CDF; no action script, planner, waypoints, teacher, scene edits, RND reward or optimization. Not pink-noise/PPO reproduction or learned navigation. Noise latent marginal N(0,1), feedback means conditional action law is history dependent. Stored logp is zero placeholder, not behavior likelihood; prohibited as on-policy learning data. All10arrays hashed; compact original actions retained. First complete seed each arm must exact-replay in RAM before further batch. If any sampledGOAL, stop after finishing current paired 3-arm seed block; keep evidence, not deterministic GOAL claim. No automatic training/promotion. At most18rollouts+3replays=21commands/490014allphysics/240s, own640KiB/global1GiB/free40GiB, no duplicate/resume/extension.",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t220_temporal_noise/prepare.py": "8d6a371ccd69c9c3e7743b0fa2f12daf6368bfda3e3a3050d7576206f248ba96",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t220_temporal_noise/run.py": "7e289eacf2602d42f062d1943a8157c74a0fe2abfde1df3264806526eb87836e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t220_temporal_noise/contracts.py": "c486d6bca24e2c705a644c6015b37e0f57d286ed209405eb52d5f1093922bd28",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t220_temporal_noise/temporal_support.py": "5df1020dae97d7654e04fe6b93c1038515cad69e874fe32f4702d4cce09bc8ec",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t219_rnd_runtime/support.py": "22a4b244fcd4bd7802569f8b33abca6b954eb75d27ebcaf855e1febed6a26101",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t219_rnd_runtime/native_compat/g5b.py": "d218726bf0b08c19d0fbfee0e09821f62b6c0f95fb3575dfa0d45855880bb5f6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t217_rnd_preflight/model.py": "a468fdee238395ff19a57cc35847f7190ec7bf5bdb9f6df4971b43f35d3f0627",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t216_left_specialist/support.py": "3018410a67be73b95f9ea8203ad02685373a72ae0ed2a4020463f9b80043fbdb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t203_native_exploration/runtime.py": "3f7f6ef5d5be39ab38b67c04f0b19711cba30d99b7389ae7ab96b1b9adac4032",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t200_residual_placement/common.py": "a213ec43cb4a8e54cf6abb780a122d2e117d28a41d69e4d6430477868aab0552",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt": "4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz": "f120ea666a45905881074d0a2d47c512d08a8032b953739514d5867a1dbf1f1c"
+  }
+}

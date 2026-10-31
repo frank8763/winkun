@@ -1,0 +1,154 @@
+{
+  "experiment": "T210",
+  "seed": 2026103210,
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt",
+  "retention_targets": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz",
+  "primary_cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "task_snapshots": [
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz"
+  ],
+  "arms": [
+    "original",
+    "terminal_progress"
+  ],
+  "terminal_distance_coefficients": {
+    "original": 0.0,
+    "terminal_progress": 0.3
+  },
+  "max_rounds": 4,
+  "training_episodes_per_arm_per_round": 4,
+  "workers": 4,
+  "actor_lr": 3e-05,
+  "value_lr": 0.0003,
+  "epochs": 3,
+  "minibatch": 256,
+  "clip_ratio": 0.2,
+  "target_KL": 0.02,
+  "grad_clip": 0.5,
+  "retention_weight": 1.0,
+  "anchor_per_task": 64,
+  "wall_seconds": 900,
+  "final_reserve_seconds": 180,
+  "max_episodes": 200,
+  "max_physics": 4700000,
+  "final_bytes": 37748736,
+  "peak_bytes": 41943040,
+  "pending_bytes": 2097152,
+  "robustness_xy": [
+    -0.03,
+    0.0,
+    0.03
+  ],
+  "robustness_yaw": [
+    -2.0,
+    0.0,
+    2.0
+  ],
+  "method_contract": "Two identical full-parameter 113->800->600->2 Stage Actors warm-start T194, native affine/direct heads trainable too; unused logstd fixed, native truncated Gaussian sigma(.35,.30). No CNN/GRU/added sensor/auxiliary/curiosity/curriculum/oldQ. Only arm difference is terminal remaining-distance penalty coefficient0 versus.3 at ALL goal/contact/true finite-horizon timeout terminals. Original reward otherwise exact T203. This changes the task objective; no policy-invariance claim. LEFT original starts only; old7 offline balanced action-MSE anchors weight1 both arms. Complete fresh episodes, MC-minus-previous-state-V advantages (GAE lambda1), globally standardized; new independent 113->128->128->1 V fitted to complete MC after each batch, no Q action gradient. Adam3epochs,256minibatch,clippedPPO.2,globalgradclip.5,stop subsequent epochs/minibatches when sampledapproxKL>.02. Same initial V and random action seeds in each arm, diverging states allowed. Engineering pilot not algorithm novelty or multiseseed proof.",
+  "accounting_contract": "4rounds*4LEFT*2arms=32trainingepisodes<=746688trainingphysics; parent8, per-round deterministic old8*2*4=64, final reloadold8*2=16, atmost2training replays, one prespecified first passing arm reloadold8+54grid; <=200rollout/replay commands,4.7Mallphysics. Store every behavior fullActor and complete training observations/actions/logp; eval actions/poses/flags. All model changes and minibatch counts recorded. No optimizer snapshots: not an exactly resumable training export. First paired round with center LEFT GOAL stops training; latest centers only, no historical best selection. T159/T194 unchanged. Old8+savedreload+54grid allsafe required for stable5m. Failed/partial not silently promoted. 900s, last180s evaluation reserve; allnewruns1GiB/free40GiB/ownfinal36MiB/peak40MiB; no duplicate, continuation, or next trial auto-launch.",
+  "references": [
+    "https://arxiv.org/abs/2005.12729",
+    "https://arxiv.org/abs/1707.06347",
+    "https://github.com/openai/spinningup/blob/master/spinup/algos/pytorch/ppo/ppo.py",
+    "https://arxiv.org/html/2210.04839"
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt": "4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz": "5e4f037f39b34fa7cbd070270f7a0147048a4c887478890c31137a7b8ec6e8ba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz": "00296a456f2dd035d10ffe9df34d4961a416a032226b6c8b789f502a4a057cec",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz": "ba4dbae9277fae6f81ebe9106758f04afbec42956ca44d3be786a5bb8236e093",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz": "4da2af524f55170cfb74cde770fbba3641c2fe8119f830341bf7f9d4381d5bb1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz": "fad7bdf9ab6382e085d4340920a524a49aeeb21094d5c1a59a950d10a34358b0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz": "868fb81ad5ef30744abdac3cfbfb1067c04d057f05ac5e4edec842f00b8949fa",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz": "767365cbaf7948a2084bb49e55587cfe428a484b161dfd2a7f289a1f55d9ed4d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz": "f120ea666a45905881074d0a2d47c512d08a8032b953739514d5867a1dbf1f1c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz": "e58812dad4ab96e64fe0f9aa92ee94d6d79717506c360eae38e2bfe1f04312be",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t210_full_parameter_progress/prepare.py": "7e7f85ae2728fbb918ca0adb81495b5bbeb9531ccb4ba401078451f675da29ed",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t210_full_parameter_progress/train.py": "7c440caa8714563d46861341f27fad5b462c0cc39d9150945da16bdc7786178c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t210_full_parameter_progress/contracts.py": "a4dcf5ba7767bbbb2325bc01b1f55f3ee9360d68daec9e0a23fb9ce91b0f69cc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t210_full_parameter_progress/support.py": "d2474f71a87232a0075dfb7c1a5065ca5725b52b437c6381730c24f432221c25",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t203_native_exploration/runtime.py": "3f7f6ef5d5be39ab38b67c04f0b19711cba30d99b7389ae7ab96b1b9adac4032",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t200_residual_placement/common.py": "a213ec43cb4a8e54cf6abb780a122d2e117d28a41d69e4d6430477868aab0552",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/research_20261031_navigation/review.md": "42fc09aa97fc4fdd8c6b077a18df4a627f22a78755d1343e48df3b5b7602c8be"
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "t212_curvature_direction": {
+    "state": "COMPLETE",
+    "stop_reason": "COMPLETE",
+    "physics_steps": 0,
+    "optimizer_calls": 0,
+    "online_training_updates": 0,
+    "offline_parameter_candidates": 6,
+    "contracts": {
+      "symmetry_relative_error": 1.093604973145901e-14,
+      "positive_quadratic": 0.131184185024056,
+      "finite_difference_relative_error": 1.9740864714536892e-09,
+      "metric_old_states": 121,
+      "metric_new_states": 96,
+      "parameters": 574210,
+      "gradient_norm": 2.882732094333751,
+      "all_checks_pass": true
+    },
+    "export": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t212_curvature_direction/offline_candidate.pt",
+      "sha256": "a931a8e0e340f054ecb4c23cf8087d0d22549dc4bd8210f9280c72daf9556832",
+      "selection": {
+        "id": "ordinary_gradient",
+        "step_L2": 0.000625,
+        "objective_improvement": 0.0017883828391681183,
+        "balanced_anchor_MSE": 0.0002144660975318402,
+        "behavior_mean_KL": 0.00018802758375468322,
+        "parent_anchor_max_KL": 0.0059801976097855905,
+        "all_nonlinear_checks_pass": true
+      }
+    },
+    "elapsed_s": 7.282855798956007,
+    "CG_solves": [
+      {
+        "id": "GN_beta0.1_damping0.1",
+        "iterations": 20,
+        "actual_relative_residual": 1.1953601585957818,
+        "converged": false
+      },
+      {
+        "id": "GN_beta1.0_damping0.1",
+        "iterations": 20,
+        "actual_relative_residual": 2.3646240528202878,
+        "converged": false
+      }
+    ],
+    "locked_inputs_unchanged": true
+  },
+  "t213_curvature_frozen": {
+    "state": "COMPLETE",
+    "episodes": 8,
+    "physics_steps": 101853,
+    "training_physics_steps": 0,
+    "optimizer_updates": 0,
+    "old7_safe_GOAL": 7,
+    "LEFT_safe_GOAL": false,
+    "old8_safe_GOAL": 7,
+    "all_workers_stopped": true,
+    "elapsed_s": 25.49958093301393,
+    "LEFT": {
+      "id": "original_old6",
+      "arm": "offline_candidate",
+      "round": 0,
+      "role": "evaluation",
+      "mode": "deterministic",
+      "seed": 0,
+      "weights": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t212_curvature_direction/offline_candidate.pt",
+      "weights_sha256": "a931a8e0e340f054ecb4c23cf8087d0d22549dc4bd8210f9280c72daf9556832",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "complete": true,
+      "physics_steps": 14975,
+      "decisions": 150,
+      "success": false,
+      "collision": true,
+      "timeout": false,
+      "remaining_m": 1.4793691868715448,
+      "nearest_m": 1.4793691868715448,
+      "initial_distance_m": 5.0,
+      "environment_return": -0.48063476168010266,
+      "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t213_curvature_frozen/episodes/original_old6.npz",
+      "trace_sha256": "6993dff0d1eb7974d8382a2ec26a487739a72a4a774a8da6e0e75512010b6512",
+      "integration_sha256": "3cd79959e353a329bbb588788af21eaa7fa1dc6ef761de7d3e168df6b5d6da8e"
+    },
+    "locked_inputs_unchanged": true
+  },
+  "t214_preconditioned_curvature": {
+    "state": "COMPLETE",
+    "stop_reason": "COMPLETE",
+    "physics_steps": 0,
+    "optimizer_calls": 0,
+    "online_training_updates": 0,
+    "offline_parameter_candidates": 18,
+    "contracts": {
+      "symmetry_relative_error": 7.230347387793414e-14,
+      "positive_quadratic": 0.14167764088671758,
+      "finite_difference_relative_error": 3.38984410094109e-10,
+      "metric_old_states": 121,
+      "metric_new_states": 96,
+      "parameters": 574210,
+      "gradient_norm": 2.882732094333751,
+      "all_checks_pass": true,
+      "diagonal_old_minmax": [
+        0.0,
+        18.461864438342737
+      ],
+      "diagonal_new_minmax": [
+        0.0,
+        15.41441956600459
+      ]
+    },
+    "export": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t214_preconditioned_curvature/offline_candidate.pt",
+      "sha256": "5e4904ef6d6feae34133bc20f3870b52d035ccb4c0228c5244bd1991fe151028",
+      "selection": {
+        "id": "CG_beta1.0_damping0.1",
+        "step_L2": 0.01,
+        "objective_improvement": 0.006839287188016215,
+        "balanced_anchor_MSE": 0.00019247244927100837,
+        "behavior_mean_KL": 0.0001485350635916651,
+        "parent_anchor_max_KL": 0.009953775520964282,
+        "all_nonlinear_checks_pass": true
+      }
+    },
+    "elapsed_s": 31.717278858995996,
+    "CG_solves": [
+      {
+        "id": "CG_beta1.0_damping0.1",
+        "iterations": 77,
+        "actual_relative_residual": 0.1364931989440635,
+        "converged": true
+      },
+      {
+        "id": "PCG_beta1.0_damping0.1",
+        "iterations": 80,
+        "actual_relative_residual": 0.3173802381960958,
+        "converged": false
+      },
+      {
+        "id": "PCG_beta1.0_damping1.0",
+        "iterations": 42,
+        "actual_relative_residual": 0.14106292123869343,
+        "converged": true
+      }
+    ],
+    "locked_inputs_unchanged": true
+  },
+  "t215_curvature_candidate_frozen": {
+    "state": "COMPLETE",
+    "episodes": 8,
+    "physics_steps": 102391,
+    "training_physics_steps": 0,
+    "optimizer_updates": 0,
+    "old7_safe_GOAL": 7,
+    "LEFT_safe_GOAL": false,
+    "old8_safe_GOAL": 7,
+    "all_workers_stopped": true,
+    "elapsed_s": 25.745547379017808,
+    "LEFT": {
+      "id": "original_old6",
+      "arm": "offline_candidate",
+      "round": 0,
+      "role": "evaluation",
+      "mode": "deterministic",
+      "seed": 0,
+      "weights": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t214_preconditioned_curvature/offline_candidate.pt",
+      "weights_sha256": "5e4904ef6d6feae34133bc20f3870b52d035ccb4c0228c5244bd1991fe151028",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "complete": true,
+      "physics_steps": 14902,
+      "decisions": 150,
+      "success": false,
+      "collision": true,
+      "timeout": false,
+      "remaining_m": 1.4793297719318073,
+      "nearest_m": 1.4793297719318073,
+      "initial_distance_m": 5.0,
+      "environment_return": -0.4820249945975835,
+      "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t215_curvature_candidate_frozen/episodes/original_old6.npz",
+      "trace_sha256": "5191e3548b03c8b74db28b866d06aae08260d41137cd57a0d8e81550b7aaa07d",
+      "integration_sha256": "a7713a6354a322263d346abc5227a1f4d1852c2935fc748fbb269ac8b959c968"
+    },
+    "locked_inputs_unchanged": true
+  },
+  "t216_left_specialist": {
+    "state": "COMPLETE",
+    "stop_reason": "STORAGE_RESERVE",
+    "round": 2,
+    "physics_steps": 558083,
+    "episodes": 41,
+    "training_physics_steps": 129007,
+    "training_episodes": 8,
+    "actor_optimizer_updates": {
+      "left_only": 12
+    },
+    "value_optimizer_updates": {
+      "left_only": 18
+    },
+    "actor_optimizer_proposals": {
+      "left_only": 12
+    },
+    "actor_trainable_parameters": 574210,
+    "final_models": {
+      "left_only": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t216_left_specialist/models/left_only_round1.pt",
+        "sha256": "7955d5b484e99304c0b081674da63a4eaf4cc17d82a9d09073999529697fb700"
+      }
+    },
+    "selected_arm": null,
+    "robustness_completed": 0,
+    "robustness_safe_GOAL": 0,
+    "invalid_grid": [],
+    "stable_5m_gate_passed": false,
+    "all_workers_stopped": true,
+    "automatic_promotion": false,
+    "elapsed_s": 122.59049392602174,
+    "own_bytes": 6124292,
+    "all_new_runs_bytes": 1066965983,
+    "old7_safe_GOAL": 7,
+    "LEFT": {
+      "id": "final_reload_left_only_6",
+      "arm": "left_only",
+      "round": 2,
+      "role": "evaluation",
+      "mode": "deterministic",
+      "seed": 0,
+      "weights": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t216_left_specialist/models/left_only_round1.pt",
+      "weights_sha256": "7955d5b484e99304c0b081674da63a4eaf4cc17d82a9d09073999529697fb700",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "complete": true,
+      "physics_steps": 15395,
+      "decisions": 154,
+      "success": false,
+      "collision": true,
+      "timeout": false,
+      "remaining_m": 1.4791954728797745,
+      "nearest_m": 1.4791954728797745,
+      "initial_distance_m": 5.0,
+      "environment_return": -0.4727015510663069,
+      "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t216_left_specialist/episodes/final_reload_left_only_6.npz",
+      "trace_sha256": "c2653842ff56649389add7278e743ee6285c1010179efb3cf842485e00fb49fb",
+      "integration_sha256": "39336d4f5f52a9205bb05855dca373a2c868a2a56bd24514e306e6d6b397ffce"
+    },
+    "training_safe_GOAL": 0,
+    "training_contact": 8,
+    "locked_inputs_unchanged": true
+  },
+  "new_physics_steps": 762327,
+  "new_online_training_physics_steps": 129007,
+  "all_new_runs_MiB": 1017.5622482299805
+}

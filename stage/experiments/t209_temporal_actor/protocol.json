@@ -1,0 +1,29 @@
+{
+  "experiment": "T209_ARCHITECTURE_CONTRACT_ONLY",
+  "parent": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt",
+  "causal_source": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t205_temporal_intervention/traces/source.npz",
+  "retention_targets": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz",
+  "max_wall_seconds": 90,
+  "max_bytes": 1048576,
+  "physics_steps": 0,
+  "optimizer_updates": 0,
+  "new_online_training_authorized_by_this_protocol": false,
+  "contract": "Model and mathematical gradient preflight only. Zero-initialized neural residual preserves parent at initialization. Existing113obs+previousnativeaction2+currentlymeasuredsteer2+previousdecision_dt1 =>118causalpacket. Native2msphysics and100stepdecision .2s. StreamGRU atdecisionrate, episode-start reset only; memoryoff control identical parametercount butresetseachdecision. CNNhandlesordered48rays. AllActorparameters trainableexceptunusedfixedlogstd; separatefresh recurrentVbaseline, noQgradient. Auxiliaryprogress/contactheads definedbutnotconnectedtoActor ortraining. No runtimeplanner/waypoints/map/teacher/filter. No onlinepolicyupdate ornavigation rollout in thisprotocol.",
+  "gates": "Initial parentactionequality on actualretentionstates; nonzero native-density gradients reach parentfeaturelayers; zero-residualhead intentionallyblocks newcoregradient initially, nonzero synthetichead copyproves future endtoendpath without optimizerstep; streaming/sequence agreement; future-observation perturbation cannot change previousoutputs; explicit episode reset removes earlierhistory; memoryon olderprefix can affectaction andmemoryoff cannot, withsamecurrentpacket. These prove onlyimplementationproperties, notGRUbenefit/GOAL/learningconvergence.",
+  "evidence": [
+    "https://arxiv.org/html/2210.04839",
+    "https://proceedings.mlr.press/v162/ni22a.html",
+    "https://arxiv.org/html/2012.04406",
+    "https://github.com/twni2016/pomdp-baselines"
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt": "4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t205_temporal_intervention/traces/source.npz": "591b8108996407775d9652396f5521b1a41724188a23d04404790d20357ed1b1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz": "5e4f037f39b34fa7cbd070270f7a0147048a4c887478890c31137a7b8ec6e8ba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t209_temporal_actor/prepare.py": "a03a2a0f71352861123c844d9b1cccfb4f0eb59144c69054d7b877640e0ec1ad",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t209_temporal_actor/contracts.py": "d37a18278969bec79a1ebf9a2073604b10cfe09e1fd39b923f21b56e5589e266",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t209_temporal_actor/model.py": "81156d817a4e891a6d7f9fe445ebe99e42eb4639307e999c71c99558a7f224f7",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t203_native_exploration/runtime.py": "3f7f6ef5d5be39ab38b67c04f0b19711cba30d99b7389ae7ab96b1b9adac4032",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t200_residual_placement/common.py": "a213ec43cb4a8e54cf6abb780a122d2e117d28a41d69e4d6430477868aab0552"
+  }
+}

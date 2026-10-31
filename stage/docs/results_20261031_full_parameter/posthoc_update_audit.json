@@ -1,0 +1,200 @@
+{
+  "state": "POSTHOC_FROZEN_AUDIT_COMPLETE",
+  "physics_steps": 0,
+  "optimizer_updates": 0,
+  "training_run_state": "FAILED",
+  "density_recomputation": [
+    {
+      "arm": "original",
+      "round": 0,
+      "decisions": 655,
+      "single_forward_logp_max_error": 0.0,
+      "batch_forward_logp_max_error": 7.400268003721067e-06,
+      "batch_native_mean_max_error": 1.2516975402832031e-06,
+      "max_probability_ratio_relative_error": 7.400295385817657e-06
+    },
+    {
+      "arm": "original",
+      "round": 1,
+      "decisions": 591,
+      "single_forward_logp_max_error": 0.0,
+      "batch_forward_logp_max_error": 1.6223264250658787e-05,
+      "batch_native_mean_max_error": 2.4437904357910156e-06,
+      "max_probability_ratio_relative_error": 1.6223132654258343e-05
+    },
+    {
+      "arm": "terminal_progress",
+      "round": 0,
+      "decisions": 655,
+      "single_forward_logp_max_error": 0.0,
+      "batch_forward_logp_max_error": 7.400268003721067e-06,
+      "batch_native_mean_max_error": 1.2516975402832031e-06,
+      "max_probability_ratio_relative_error": 7.400295385817657e-06
+    },
+    {
+      "arm": "terminal_progress",
+      "round": 1,
+      "decisions": 594,
+      "single_forward_logp_max_error": 0.0,
+      "batch_forward_logp_max_error": 1.8599248901907117e-05,
+      "batch_native_mean_max_error": 2.4437904357910156e-06,
+      "max_probability_ratio_relative_error": 1.859942186910324e-05
+    }
+  ],
+  "first_update_interpolation": [
+    {
+      "arm": "original",
+      "factor": 1.0,
+      "exact_mean_KL_training": 0.13127925562996773,
+      "exact_max_KL_training": 0.24537446140412492,
+      "sampled_approx_KL_training": 0.12572252484138174,
+      "exact_mean_KL_old7_anchors": 0.1365769198366946,
+      "exact_max_KL_old7_anchors": 0.47258606597109,
+      "old7_action_MSE": 0.01338870171457529
+    },
+    {
+      "arm": "original",
+      "factor": 0.5,
+      "exact_mean_KL_training": 0.03204530557086481,
+      "exact_max_KL_training": 0.06035668266135675,
+      "sampled_approx_KL_training": 0.03075865298142655,
+      "exact_mean_KL_old7_anchors": 0.034610565005062655,
+      "exact_max_KL_old7_anchors": 0.12340499825919667,
+      "old7_action_MSE": 0.0033919198904186487
+    },
+    {
+      "arm": "original",
+      "factor": 0.25,
+      "exact_mean_KL_training": 0.007899556342516642,
+      "exact_max_KL_training": 0.015067481661184719,
+      "sampled_approx_KL_training": 0.007602097602190184,
+      "exact_mean_KL_old7_anchors": 0.008690159715242165,
+      "exact_max_KL_old7_anchors": 0.03124499140238953,
+      "old7_action_MSE": 0.0008517068927176297
+    },
+    {
+      "arm": "original",
+      "factor": 0.125,
+      "exact_mean_KL_training": 0.001959445694487822,
+      "exact_max_KL_training": 0.0037511837135293766,
+      "sampled_approx_KL_training": 0.0018891440856235824,
+      "exact_mean_KL_old7_anchors": 0.0021758074679623833,
+      "exact_max_KL_old7_anchors": 0.007844383879955702,
+      "old7_action_MSE": 0.0002132638037437573
+    },
+    {
+      "arm": "original",
+      "factor": 0.0625,
+      "exact_mean_KL_training": 0.00048804187506333525,
+      "exact_max_KL_training": 0.0009379721874887089,
+      "sampled_approx_KL_training": 0.00047104005074356104,
+      "exact_mean_KL_old7_anchors": 0.000544587028716456,
+      "exact_max_KL_old7_anchors": 0.0019641483647039235,
+      "old7_action_MSE": 5.338094706530683e-05
+    },
+    {
+      "arm": "original",
+      "factor": 0.0,
+      "exact_mean_KL_training": 0.0,
+      "exact_max_KL_training": 0.0,
+      "sampled_approx_KL_training": 6.959679651923989e-13,
+      "exact_mean_KL_old7_anchors": 0.0,
+      "exact_max_KL_old7_anchors": 0.0,
+      "old7_action_MSE": 0.0
+    },
+    {
+      "arm": "original",
+      "quadrature_contract_max_error": 1.0038152725710958e-08,
+      "grid_points": 4097
+    },
+    {
+      "arm": "terminal_progress",
+      "factor": 1.0,
+      "exact_mean_KL_training": 0.13159060823583657,
+      "exact_max_KL_training": 0.24552424522288024,
+      "sampled_approx_KL_training": 0.1260498809886012,
+      "exact_mean_KL_old7_anchors": 0.1368337371502115,
+      "exact_max_KL_old7_anchors": 0.47525366138467195,
+      "old7_action_MSE": 0.01341348234564066
+    },
+    {
+      "arm": "terminal_progress",
+      "factor": 0.5,
+      "exact_mean_KL_training": 0.03212152363871214,
+      "exact_max_KL_training": 0.060345272464085505,
+      "sampled_approx_KL_training": 0.030840872752665574,
+      "exact_mean_KL_old7_anchors": 0.03467665949823118,
+      "exact_max_KL_old7_anchors": 0.12413077687321458,
+      "old7_action_MSE": 0.0033983129542320967
+    },
+    {
+      "arm": "terminal_progress",
+      "factor": 0.25,
+      "exact_mean_KL_training": 0.0079183832176119,
+      "exact_max_KL_training": 0.015064440152327578,
+      "sampled_approx_KL_training": 0.007622712403975067,
+      "exact_mean_KL_old7_anchors": 0.008706833467794661,
+      "exact_max_KL_old7_anchors": 0.031430612342642,
+      "old7_action_MSE": 0.0008533214568160474
+    },
+    {
+      "arm": "terminal_progress",
+      "factor": 0.125,
+      "exact_mean_KL_training": 0.001964114875347569,
+      "exact_max_KL_training": 0.003750480322245912,
+      "sampled_approx_KL_training": 0.001894296282235298,
+      "exact_mean_KL_old7_anchors": 0.002179997802948106,
+      "exact_max_KL_old7_anchors": 0.00789151766503486,
+      "old7_action_MSE": 0.0002136698312824592
+    },
+    {
+      "arm": "terminal_progress",
+      "factor": 0.0625,
+      "exact_mean_KL_training": 0.0004892051779753441,
+      "exact_max_KL_training": 0.0009378513037348957,
+      "sampled_approx_KL_training": 0.00047232734193019345,
+      "exact_mean_KL_old7_anchors": 0.000545635853750341,
+      "exact_max_KL_old7_anchors": 0.001975889799932345,
+      "old7_action_MSE": 5.3482599469134584e-05
+    },
+    {
+      "arm": "terminal_progress",
+      "factor": 0.0,
+      "exact_mean_KL_training": 0.0,
+      "exact_max_KL_training": 0.0,
+      "sampled_approx_KL_training": 6.959679651923989e-13,
+      "exact_mean_KL_old7_anchors": 0.0,
+      "exact_max_KL_old7_anchors": 0.0,
+      "old7_action_MSE": 0.0
+    },
+    {
+      "arm": "terminal_progress",
+      "quadrature_contract_max_error": 1.001679178491699e-08,
+      "grid_points": 4097
+    }
+  ],
+  "first_update_parameter_delta_cosine_between_arms": 0.9969658255577087,
+  "input_sha256": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t210_full_parameter_progress/protocol.json": "2f0a1de49ecbdb000270004c9e1e829f8bd33aa34ea2104c0b5b36c4cab093f2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt": "4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g0_original_train0.npz": "1ca1cd15b0ee42e6da9aa7e6390fd6be3a04463430acf062d180c552f9ce307f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g0_original_train1.npz": "03d1a7bbd5e01dda6742686ebac322691662e77743832ac69dfe964f72e59157",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g0_original_train2.npz": "83ec1b24a8b714f9ee2dc58c1cd363ad8bac0e9ed0951f4979507809c7e1e826",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g0_original_train3.npz": "891a25bc7b09ac9eeda6378371e7c30da81c05184bad65cd3cdcc1297ae65267",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/models/original_round0.pt": "5680e670e58c1700811cc251f4f344b054ddddd0e672b67e6081cf4973b24e97",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g1_original_train0.npz": "ee2ce5f91e0918d1eb783507f97dc6e4ba6b48c89b47aa3459a6552d9e49b3dd",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g1_original_train1.npz": "373d61245faaf01a552f1baacb7d835bd51fe8c8643e75cd02bb2ace47850bfb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g1_original_train2.npz": "8a6aae1e23108f734d16bd0a97a9d7e3cdaba9c3df45e3368aaee7a3f8b99235",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g1_original_train3.npz": "6b83801637c4a37fa8d9f8f41805da5982bdb9a1ad7c1e2cafb72f46f8e111ca",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g0_terminal_progress_train0.npz": "1ca1cd15b0ee42e6da9aa7e6390fd6be3a04463430acf062d180c552f9ce307f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g0_terminal_progress_train1.npz": "03d1a7bbd5e01dda6742686ebac322691662e77743832ac69dfe964f72e59157",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g0_terminal_progress_train2.npz": "83ec1b24a8b714f9ee2dc58c1cd363ad8bac0e9ed0951f4979507809c7e1e826",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g0_terminal_progress_train3.npz": "891a25bc7b09ac9eeda6378371e7c30da81c05184bad65cd3cdcc1297ae65267",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/models/terminal_progress_round0.pt": "fa27b8a5be50f80a6b0a8287ee7ffcc43b7403dfaeace4ff8a1079fa302fb3b6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g1_terminal_progress_train0.npz": "f6ae8f4d50a7044a8bd7e31c1a35bd077ca9f32ed822afc70c15cd0750fef143",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g1_terminal_progress_train1.npz": "775b488df2e9423b7f454891f18555ddf6090b727b785e4061c4a91e56fd38c5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g1_terminal_progress_train2.npz": "da21edd09fe7d27de1257a5a48e8198ea51caccc8be8bfb3aab75b1de1640b62",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t210_full_parameter_progress/episodes/g1_terminal_progress_train3.npz": "380d9b37ab1f2cc37019640059cfc9cff1f35bdde3cf452d4d4ebbb50e44093d"
+  },
+  "interpretation": "Exact single-state collection law reconstructed with zero error. Batch-vs-single float32 forward discrepancy tripped1e-5gate; no stale-policy mismatch observed on checked records. Sampling estimator and exact truncated-Gaussian KL both reported; no interpolated candidate executed or exported. Offline anchor bounds do not guarantee closed-loop retention or success. PPO early stop after first oversized Adam step is not a hard trust-region guarantee. No original evidence overwritten."
+}

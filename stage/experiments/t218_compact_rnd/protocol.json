@@ -1,0 +1,162 @@
+{
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt",
+  "retention_targets": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz",
+  "primary_cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "task_snapshots": [
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz"
+  ],
+  "actor_lr": 3e-05,
+  "value_lr": 0.0003,
+  "clip_ratio": 0.2,
+  "grad_clip": 0.5,
+  "actor_attempts_per_round": 6,
+  "minimum_objective_improvement": 1e-08,
+  "step_factors": [
+    1.0,
+    0.5,
+    0.25,
+    0.125,
+    0.0625,
+    0.03125,
+    0.015625
+  ],
+  "max_behavior_mean_KL": 0.01,
+  "batch_mean_tolerance": 1e-05,
+  "batch_logp_tolerance": 0.0001,
+  "experiment": "T218",
+  "seed": 2026103218,
+  "arms": [
+    "control",
+    "rnd"
+  ],
+  "max_rounds": 4,
+  "per_arm_per_round": 4,
+  "workers": 4,
+  "wall_seconds": 900,
+  "final_reserve_seconds": 180,
+  "max_commands": 120,
+  "max_physics": 2200000,
+  "final_bytes": 6291456,
+  "peak_bytes": 6291456,
+  "export_reserve_bytes": 5242880,
+  "retention_weight": 0.0,
+  "max_parent_anchor_KL": 1000000000.0,
+  "max_balanced_anchor_MSE": 1000000000.0,
+  "rnd_checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t217_rnd_preflight/rnd_preflight.pt",
+  "rnd_scale": 0.00037339888513088226,
+  "rnd_episode_cap": 0.05,
+  "rnd_predictor_updates_per_round": 50,
+  "rnd_lr": 0.001,
+  "value_epochs": 3,
+  "minibatch": 256,
+  "method_contract": "Pairedcontrol/RNDsingleLEFTspecialist32freshtrainingepisodesmax, sameT194/full574210MLP/freshindependentV/nativeGaussian/seed/terminaldistance.3/MCbaseline/fullbatchguardedPPO. Botharms oldretentiondisabled, old7measurednotpromoted. ONLYrewarddifference RNDcap.05vs0;RNDmodelsbothwarm-startT217,fixednormalization/target/scale, eachbatchrewardcomputedbefore50predictorAdamupdates;collisionmasked,physicalcount/23334scaled. SameinitialV/RND/allactionsseeds;initialpairedobservationsmustmatch. NoCNN/GRU/maps/poseinRND/planner/waypoints/runtimeTeacher/Phase research. No novelty=GOALclaim ororiginalsceneedit. Everytrainingrolloutimmediatelyreplayedwithactualactions/exactsnapshot/behaviorpolicyINRAM, all10arraycanonicalhashes/finalintegrationbitwiseequalbeforelearning. Replaynottraininginteraction. Newlycapturedfilesretainactions,means,logp,counts,poses,flags,rewards;observationscaptured/hashcheckedinRAMandexactlyreconstructed, notwrittenthenremoved. Noexistingevidencedeleted. Per-roundpolicyhashes+source+initialstate+verifiedreplaydata+exactoptimizerrecipe reconstructallbehaviorpolicies. EachActor/V/RNDupdate independentlyrecomputedonshadowfromsameinitialstate/inputs/seeds;canonicalparameterANDoptimizerstatehashesequalaftereachbatch. Shadowupdatesseparatelycounted,neverusedtocontrolsimulator. No restoreacrosslibraryversionguarantee. KeepONLYfinalcompressedActorandRNDperarm,readbackhashverified,workerfinalold8 usesdeserializedweights. IntermediateweightsRAMonly,reconstructioncontractmandatory. 900s,last180sevalreserve,6MiBown/global1GiB/free40GiB, no duplicate/resume/extension/nexttrialautolaunch,T159/T194unchanged.",
+  "accounting_contract": "Parentold8=8eval;4rounds*2arms*4=32freshtrainingrollouts+32immediatereplays;finalsavedreloadold8*2=16eval =>88commandsmax,hard120/2.2Mphysics. No per-roundold7gates;centerLEFTfinalonly, sampledGOALstopsafterpairedround thenfinaltests. No automatic54grid/promotion/longdistance. Atmost48Actorproposalsliveand48shadow;ValueandRNDupdatecountsexplicit. Diskguardreserves5MiBfinalmodels beforenewbatches. Ifreserve/wall/countfails stop,keepcompactfailures;finalincompletemissingnot0/8. Do not acceptnavigationconclusionsif replayortrainingreconstructionfails.",
+  "references": [
+    "https://arxiv.org/abs/1810.12894",
+    "https://github.com/openai/random-network-distillation/blob/master/policies/cnn_gru_policy_dynamics.py",
+    "https://arxiv.org/html/2404.12594"
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t218_compact_rnd/prepare.py": "10b249d7cc5394c556951ec8440936a0e45edec9e3a93fbbbd4f9615c40cc99b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t218_compact_rnd/train.py": "ac0a25a992362d77960dee1055af651da086764ef1937e829e4a48d185424c6b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t218_compact_rnd/contracts.py": "aeffe2810c84ae9d2ccb42edead75d72a5b97b519c8ce8961e94583ec822290a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t218_compact_rnd/support.py": "46040ba27d36d191b30caae0f2e3d9fbdf0d28a26b5041a88204962d9863efa5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt": "4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz": "5e4f037f39b34fa7cbd070270f7a0147048a4c887478890c31137a7b8ec6e8ba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t217_rnd_preflight/rnd_preflight.pt": "0016911959de2ca87bd6461ce52a27c7a93b79633320ed494167cdde17818913",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz": "00296a456f2dd035d10ffe9df34d4961a416a032226b6c8b789f502a4a057cec",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz": "ba4dbae9277fae6f81ebe9106758f04afbec42956ca44d3be786a5bb8236e093",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz": "4da2af524f55170cfb74cde770fbba3641c2fe8119f830341bf7f9d4381d5bb1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz": "fad7bdf9ab6382e085d4340920a524a49aeeb21094d5c1a59a950d10a34358b0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz": "868fb81ad5ef30744abdac3cfbfb1067c04d057f05ac5e4edec842f00b8949fa",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz": "767365cbaf7948a2084bb49e55587cfe428a484b161dfd2a7f289a1f55d9ed4d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz": "f120ea666a45905881074d0a2d47c512d08a8032b953739514d5867a1dbf1f1c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz": "e58812dad4ab96e64fe0f9aa92ee94d6d79717506c360eae38e2bfe1f04312be",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t216_left_specialist/support.py": "3018410a67be73b95f9ea8203ad02685373a72ae0ed2a4020463f9b80043fbdb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t216_left_specialist/learner.py": "c77532359d32779269c4b266c37b5ae2670db1f05c6b4a302b87aaa7d0413a4f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t217_rnd_preflight/model.py": "a468fdee238395ff19a57cc35847f7190ec7bf5bdb9f6df4971b43f35d3f0627",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/native_update_guard.py": "8c1f0720347bd8b1f9c816976502f0cbb36dc21fd2640282d4ac2bcc9e7bb5a2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t203_native_exploration/runtime.py": "3f7f6ef5d5be39ab38b67c04f0b19711cba30d99b7389ae7ab96b1b9adac4032",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t200_residual_placement/common.py": "a213ec43cb4a8e54cf6abb780a122d2e117d28a41d69e4d6430477868aab0552"
+  }
+}
