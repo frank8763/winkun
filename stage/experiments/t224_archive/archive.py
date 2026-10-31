@@ -84,7 +84,7 @@ def compact():
     print(json.dumps(final),flush=True)
 def restore(name):
     records=[]
-    for ledger in ('cold_storage_receipt.json','closed_resume_storage_receipt.json','reverse_curriculum_storage_receipt.json','smdp_storage_receipt.json'):
+    for ledger in ('cold_storage_receipt.json','closed_resume_storage_receipt.json','reverse_curriculum_storage_receipt.json','smdp_storage_receipt.json','overnight_reserve_storage_receipt.json'):
         if (DOC/ledger).exists():records+=json.loads((DOC/ledger).read_text())['records']
     r=next(r for r in records if r['original_path']==name);dest=ROOT/name
     assert not dest.exists();z=ROOT/r['compressed_path'];assert sha(z.read_bytes())==r['compressed_sha256'];b=gzip.decompress(z.read_bytes());assert sha(b)==r['original_sha256']

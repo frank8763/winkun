@@ -15,3 +15,8 @@
 在不改原报告/旧删除账本的前提下：已结束T171完整断点原Release二进制完整读回、原成员每字节核验后，原始payload本地gzip保存，释放26,632,867B；已结束T167 learn同法释放16,168,026B。未torch重存或剥离Actor/Critic/replay/optimizer，当前T159/T194/T221/T231/T239/T240等保留策略不动。账本reverse_curriculum_storage_receipt.json、smdp_storage_receipt.json及archive.py restore的原SHA/1GiB守卫已保留。与前四失败Critic/T170的39,413,884B合计82,214,777B。
 
 T236–T240654原文件与T242/T243/T245376原文件两Release均完整远端二进制读回及逐成员SHA/大小核验，本轮原失败/模型/数据不删除；归档全在RAM，不落磁盘临时大包。活动作业仍在stage/runs，总量守既有1GiB/free40GiB；历史数字不回改，准确当前大小以实时计算为准。Phase、原T145/T146未改动。
+
+
+## 今夜有界预算预留（2026-10-31）
+
+T165 gamma099/gamma2s和T169已结束全检查点经213930122B历史原始Release完整远端读回、原SHA与三个逐成员原字节匹配后，本地无损gzip保留所有Actor/Critic/replay/optimizer内容。释放173807286B（165.7555MiB）；没有删内容。原始路径/SHA/压缩路径/SHA与恢复守卫见overnight_reserve_storage_receipt.json及archive.py restore。T145/T146、T164暂停、具名最佳模型和Phase未改。全局newruns1GiB不变；T255新增峰值150MiB，启动前总量843.72MiB。
