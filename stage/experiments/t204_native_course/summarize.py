@@ -41,7 +41,8 @@ def main():
     assert sum(physics.values()) == summary['total_physics']
     arms = {}
     for arm in plan['arms']:
-        training = [r for r in rows if r['arm'] == arm and r['role'] == 'training']
+        all_training = [r for r in rows if r['arm'] == arm and r['role'] == 'training']
+        training = [r for r in all_training if r['complete']]
         original = [r for r in training if r['task'] == 'primary_' + plan['primary_cases'][6]['id']]
         final = [r for r in summary['final_evaluation'] if r['id'].startswith(arm + '_final_')]
         actions, means = [], []
@@ -57,7 +58,7 @@ def main():
             coverage = {'decisions': len(action), 'native_mean_at_or_above_upper_bound': int(clip.sum()),
                         'clip_throttle_below_0_9_fraction': float((action[clip, 0] < .9).mean()) if clip.any() else None,
                         'throttle_quantiles': np.quantile(action[:, 0], [0, .1, .5, .9, 1]).tolist()}
-        arms[arm] = {'training_episodes': len(training), 'training_safe_GOAL': sum(safe(r) for r in training),
+        arms[arm] = {'training_episodes': len(training), 'wall_censored_training_episodes': sum(not r['complete'] for r in all_training), 'training_safe_GOAL': sum(safe(r) for r in training),
                      'training_CONTACT': sum(r['collision'] for r in training),
                      'training_TIMEOUT': sum(r['timeout'] for r in training),
                      'original_LEFT_training_episodes': len(original),
@@ -67,6 +68,7 @@ def main():
                                      'nearest_m': r['nearest_m'], 'remaining_m': r['remaining_m']} for r in final],
                      'novel_success_tasks': sorted({r['task'] for r in novel if r['arm'] == arm}),
                      'behavior_coverage': coverage}
+    assert sum(a['training_episodes'] for a in arms.values()) == summary['stats']['training_episodes']
     result = {'state': 'COMPLETE', 'stop_reason': summary['stop_reason'], 'physics': dict(physics),
               'stats': summary['stats'], 'rounds_completed': len(rounds), 'arms': arms,
               'unique_new_capability_tasks': len({r['task'] for r in novel}),
