@@ -1,15 +1,18 @@
 """Bounded postprocessing for an existing T207 job; never launches training."""
 from pathlib import Path
-import json,subprocess,time,os,fcntl,traceback
+import json,subprocess,time,os,fcntl,traceback,signal
 ROOT=Path(__file__).resolve().parents[3];OUT=ROOT/'stage/runs/t207_parameter_pg';HERE=Path(__file__).resolve().parent;DOCS=ROOT/'stage/docs/results_20261031_parameter_pg';TRANSFER=ROOT/'stage/runs/_transfer_parameter_pg_20261031'
 def save(name,value):
  p=TRANSFER/name;t=p.with_suffix('.partial');t.write_text(json.dumps(value,indent=2)+'\n');os.replace(t,p)
 def run(args,timeout=90):return subprocess.run(args,cwd=ROOT,check=True,timeout=timeout)
 def push():
- try:
-  subprocess.run(['git','-c','http.lowSpeedLimit=1000','-c','http.lowSpeedTime=15','push','origin','HEAD'],cwd=ROOT,check=True,timeout=45)
-  return True
- except (subprocess.CalledProcessError,subprocess.TimeoutExpired):return False
+ child=subprocess.Popen(['git','-c','http.lowSpeedLimit=1000','-c','http.lowSpeedTime=15','push','origin','HEAD'],cwd=ROOT,start_new_session=True)
+ try:return child.wait(timeout=45)==0
+ except subprocess.TimeoutExpired:
+  os.killpg(child.pid,signal.SIGTERM)
+  try:child.wait(timeout=3)
+  except subprocess.TimeoutExpired:os.killpg(child.pid,signal.SIGKILL);child.wait()
+  return False
 def commit(message,paths):
  run(['git','add','--',*paths]);changed=subprocess.run(['git','diff','--cached','--quiet','--',*paths],cwd=ROOT).returncode;assert changed in [0,1]
  if changed:run(['git','commit','--only','-m',message,'--',*paths])
