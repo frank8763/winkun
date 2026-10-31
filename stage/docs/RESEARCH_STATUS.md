@@ -1,3 +1,5 @@
+T255已结束且原始归档完整远端读回核验。s2_reset五米局部开发211/211、留出64/64、重载275逐例精确，五原无效初态单列；其他三组210/211，不证明GRU收益/普遍多种子稳定。8m左接触/右超时，两次复现精确。原pipeline FAILED仅视频ffprobe缺失，现有1段223帧可解码、2段未跑；该次原生metadata未序列化，原summary计数漏视频，审计推断总2732命令/43357267步、保守上界43358384。全部训练/模拟器停止，不重启、不补跑；仅空闲防休眠至08:35。零物理审计见overnight_20261031/postrun_audit.json和MORNING_REPORT.md；原始summary/协议/失败/模型不改，Phase隔离。小时巡检将关闭，08:30汇总保留。
+
 T255今夜独立有界协议已结束。5米严格门槛=True；实际分组结果和失败见overnight_20261031/MORNING_REPORT.md及stage/runs/t255_overnight/summary.json。不重启/续训；T239/T250与全部失败保留，Phase隔离。
 
 T255今晚两固定种子匹配参数memory-carry/hidden-reset独立有界协议已注册，零物理contracts通过（初始函数误差0、stream误差2.98e-8、因果/reset/条件密度/梯度可达）。准备唯一启动supervise.py；先查stage/runs/t255_overnight/status.json、supervisor_started.json和PLAN.md，禁止重复/重启。四组各最多12轮16探索+16精确重生/4梯度提案+shadow，旧八中心失守或连续两轮0接受即停该组；最终四组完整211开发，仅第一个开发达标候选测64，再重载275精确复验全过才2方向八米冻结诊断/3例新视频，无8m训练。用户今夜明确条件扩距授权；未过仍只五米。3300命令/80M所有物理步/24000秒/训练最晚04:30、总最晚08:20/新增150MiB/global1GiB/free40GiB。T165/T169全payload经完整历史远端归档及原字节核验后本地无损gzip保留，释放165.7555MiB，当前newruns843.72MiB；恢复账本保留，旧最佳T239/T250210/211与所有失败、T164暂停/Phase不动。明早11月1日08:30本聊天汇总已设置，读stage/docs/overnight_20261031/PLAN.md。
