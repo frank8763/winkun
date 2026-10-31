@@ -1,0 +1,1585 @@
+{
+  "experiments": {
+    "t217_rnd_preflight": {
+      "state": "RND_PREFLIGHT_PASS",
+      "gates": {
+        "target_frozen": true,
+        "seen_error_learns": true,
+        "enough_far_samples": true,
+        "far_seen_separation": true,
+        "noise_sensitivity": true,
+        "collision_mask_and_episode_cap": true
+      },
+      "train_n": 2059,
+      "heldout_n": 1612,
+      "train_tasks": [
+        0,
+        1,
+        4
+      ],
+      "heldout_tasks": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "familiar_left_episode_ids": [
+        "g0_left_only_train0",
+        "g0_left_only_train1",
+        "g0_left_only_train2",
+        "g0_left_only_train3"
+      ],
+      "initial_seen_error": 0.026882128790020943,
+      "seen_error": {
+        "n": 256,
+        "mean": 0.0001479114725952968,
+        "median": 0.00011046181316487491,
+        "q95": 0.00037339888513088226
+      },
+      "heldout_error": {
+        "n": 1612,
+        "mean": 0.0025713928043842316,
+        "median": 0.0017174999229609966,
+        "q95": 0.006575681734830141
+      },
+      "heldout_far_error": {
+        "n": 1256,
+        "mean": 0.003266068873926997,
+        "median": 0.0036927047185599804,
+        "q95": 0.006907335482537746
+      },
+      "far_seen_median_ratio": 33.429694957553,
+      "seen_noise_error": {
+        "n": 256,
+        "mean": 0.00014782224025111645,
+        "median": 0.00011086784797953442,
+        "q95": 0.0003745418507605791
+      },
+      "positive_noise_increment": {
+        "n": 256,
+        "mean": 6.295493903962779e-07,
+        "median": 0.0,
+        "q95": 3.031942469533533e-06
+      },
+      "normalization_std_floor": 0.05,
+      "training_curve": [
+        {
+          "step": 1,
+          "loss": 0.027025572955608368
+        },
+        {
+          "step": 51,
+          "loss": 0.0012538618175312877
+        },
+        {
+          "step": 101,
+          "loss": 0.0006494858535006642
+        },
+        {
+          "step": 151,
+          "loss": 0.0004328505601733923
+        },
+        {
+          "step": 201,
+          "loss": 0.00033227968378923833
+        },
+        {
+          "step": 251,
+          "loss": 0.0002739233896136284
+        },
+        {
+          "step": 301,
+          "loss": 0.0002183314791182056
+        },
+        {
+          "step": 351,
+          "loss": 0.00018781294056680053
+        },
+        {
+          "step": 401,
+          "loss": 0.00018459546845406294
+        },
+        {
+          "step": 451,
+          "loss": 0.0001789485104382038
+        }
+      ],
+      "left_failure_corridor": [
+        {
+          "id": "g0_left_only_train0",
+          "observations": 154,
+          "RND_error": {
+            "n": 154,
+            "mean": 0.00026986002922058105,
+            "median": 0.00023808506375644356,
+            "q95": 0.0006039905129000545
+          },
+          "raw_intrinsic_sum": 0.020236579701304436,
+          "collision_bonus_sum": 0.0,
+          "known_navigation_success": false,
+          "predictor_training_familiar_episode": true
+        },
+        {
+          "id": "g0_left_only_train1",
+          "observations": 167,
+          "RND_error": {
+            "n": 167,
+            "mean": 0.00019329159113112837,
+            "median": 0.000131508000777103,
+            "q95": 0.0004799698945134878
+          },
+          "raw_intrinsic_sum": 0.016859212890267372,
+          "collision_bonus_sum": 0.0,
+          "known_navigation_success": false,
+          "predictor_training_familiar_episode": true
+        },
+        {
+          "id": "g0_left_only_train2",
+          "observations": 161,
+          "RND_error": {
+            "n": 161,
+            "mean": 0.00014072569319978356,
+            "median": 0.00011065944272559136,
+            "q95": 0.00031866651261225343
+          },
+          "raw_intrinsic_sum": 0.012764476239681244,
+          "collision_bonus_sum": 0.0,
+          "known_navigation_success": false,
+          "predictor_training_familiar_episode": true
+        },
+        {
+          "id": "g0_left_only_train3",
+          "observations": 166,
+          "RND_error": {
+            "n": 166,
+            "mean": 0.00017492842744104564,
+            "median": 0.00010570200538495556,
+            "q95": 0.0004709496279247105
+          },
+          "raw_intrinsic_sum": 0.015298914164304733,
+          "collision_bonus_sum": 0.0,
+          "known_navigation_success": false,
+          "predictor_training_familiar_episode": true
+        },
+        {
+          "id": "g1_left_only_train0",
+          "observations": 158,
+          "RND_error": {
+            "n": 158,
+            "mean": 0.00046284354175440967,
+            "median": 0.0003838258271571249,
+            "q95": 0.000993498251773417
+          },
+          "raw_intrinsic_sum": 0.024614401161670685,
+          "collision_bonus_sum": 0.0,
+          "known_navigation_success": false,
+          "predictor_training_familiar_episode": false
+        },
+        {
+          "id": "g1_left_only_train1",
+          "observations": 162,
+          "RND_error": {
+            "n": 162,
+            "mean": 0.00017193550593219697,
+            "median": 0.00014538537652697414,
+            "q95": 0.00039158572326414287
+          },
+          "raw_intrinsic_sum": 0.015472445636987686,
+          "collision_bonus_sum": 0.0,
+          "known_navigation_success": false,
+          "predictor_training_familiar_episode": false
+        },
+        {
+          "id": "g1_left_only_train2",
+          "observations": 166,
+          "RND_error": {
+            "n": 166,
+            "mean": 0.0002551928337197751,
+            "median": 0.00017404787649866194,
+            "q95": 0.0006546324584633112
+          },
+          "raw_intrinsic_sum": 0.019750501960515976,
+          "collision_bonus_sum": 0.0,
+          "known_navigation_success": false,
+          "predictor_training_familiar_episode": false
+        },
+        {
+          "id": "g1_left_only_train3",
+          "observations": 161,
+          "RND_error": {
+            "n": 161,
+            "mean": 0.00022786443878430873,
+            "median": 0.00015763871488161385,
+            "q95": 0.0005263152997940779
+          },
+          "raw_intrinsic_sum": 0.017854534089565277,
+          "collision_bonus_sum": 0.0,
+          "known_navigation_success": false,
+          "predictor_training_familiar_episode": false
+        }
+      ],
+      "checkpoint": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t217_rnd_preflight/rnd_preflight.pt",
+        "sha256": "0016911959de2ca87bd6461ce52a27c7a93b79633320ed494167cdde17818913"
+      },
+      "target_sha256_before_after": "3109986f9297a81b930f3fe471b0fc6fbcf62aca5ea571b2a38488efce17afc1",
+      "scope": "Same-scene archived-view sanity checks, not true OOD ground truth, real-noise validation, improved exploration or GOAL. RND checkpoint cannot auto-enable online training.",
+      "physics_steps": 0,
+      "navigation_Actor_updates": 0,
+      "navigation_Value_updates": 0,
+      "RND_predictor_updates": 500,
+      "elapsed_s": 24.31467830400004,
+      "own_bytes": 271376,
+      "all_new_runs_MiB": 1017.8210525512695,
+      "input_hashes_unchanged": true,
+      "new_online_navigation_started": false
+    },
+    "t218_compact_rnd": {
+      "state": "FAILED",
+      "stop_reason": "FAILED",
+      "physics_steps": 0,
+      "commands": 0,
+      "training_physics_steps": 0,
+      "training_episodes": 0,
+      "Actor_updates": {
+        "control": 0,
+        "rnd": 0
+      },
+      "Actor_proposals": {
+        "control": 0,
+        "rnd": 0
+      },
+      "Value_updates": {
+        "control": 0,
+        "rnd": 0
+      },
+      "RND_updates": {
+        "control": 0,
+        "rnd": 0
+      },
+      "shadow_updates": {
+        "control": {
+          "actor_proposals": 0,
+          "actor_accepted": 0,
+          "value": 0,
+          "RND": 0
+        },
+        "rnd": {
+          "actor_proposals": 0,
+          "actor_accepted": 0,
+          "value": 0,
+          "RND": 0
+        }
+      },
+      "training_batches_exactly_reconstructed": 0,
+      "compact_replay_episodes": 0,
+      "paired_rounds_completed": 0,
+      "reconstruction_valid": false,
+      "final_saved_reload_old8": [],
+      "exports": {
+        "control": {
+          "Actor": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t218_compact_rnd/control_Actor.pt.gz",
+            "sha256": "3c212e5f8dd915d8f2f8f83190fdedf20b5ea0d5df94af8564e3ebe48dc9d2b6",
+            "bytes": 2110627,
+            "content_sha256": "e183de7d3cf022baebaaa809dc3b6ccb9a2ed72f18f718c26ba4d2bbc6a720ab"
+          },
+          "RND": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t218_compact_rnd/control_RND.pt.gz",
+            "sha256": "5c661b410166df84c031abd326e087530ebcdc82e725ab50a2c5721458609174",
+            "bytes": 231237,
+            "content_sha256": "a2cf6ebc56674471f5d4aac855ea0dcb6449f47b73e0f8f07ec2db0bfcc4d06d"
+          }
+        },
+        "rnd": {
+          "Actor": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t218_compact_rnd/rnd_Actor.pt.gz",
+            "sha256": "3c212e5f8dd915d8f2f8f83190fdedf20b5ea0d5df94af8564e3ebe48dc9d2b6",
+            "bytes": 2110627,
+            "content_sha256": "e183de7d3cf022baebaaa809dc3b6ccb9a2ed72f18f718c26ba4d2bbc6a720ab"
+          },
+          "RND": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t218_compact_rnd/rnd_RND.pt.gz",
+            "sha256": "5c661b410166df84c031abd326e087530ebcdc82e725ab50a2c5721458609174",
+            "bytes": 231237,
+            "content_sha256": "a2cf6ebc56674471f5d4aac855ea0dcb6449f47b73e0f8f07ec2db0bfcc4d06d"
+          }
+        }
+      },
+      "all_workers_stopped": true,
+      "automatic_promotion": false,
+      "stable_5m_gate_passed": false,
+      "elapsed_s": 2.3776255830000537,
+      "own_bytes": 4696411,
+      "all_new_runs_MiB": 1022.3165426254272,
+      "restore_contract": "Rebuild every observation from compact actions/exact native snapshots; verified all10arrays beforelearning. Re-run recorded deterministic Actor/Value/RND optimizerrecipe frominitialhashedstates; everybatchshadow reproducedparameterANDoptimizerhashes exactly. Version/environmentlocked; intermediatepolicyfilesnotexported. Noexistingdataremoved."
+    },
+    "t219_rnd_runtime": {
+      "state": "COMPLETE",
+      "stop_reason": "ROUND_BUDGET_COMPLETE",
+      "physics_steps": 1362694,
+      "commands": 88,
+      "training_physics_steps": 528035,
+      "training_episodes": 32,
+      "Actor_updates": {
+        "control": 24,
+        "rnd": 24
+      },
+      "Actor_proposals": {
+        "control": 24,
+        "rnd": 24
+      },
+      "Value_updates": {
+        "control": 36,
+        "rnd": 36
+      },
+      "RND_updates": {
+        "control": 200,
+        "rnd": 200
+      },
+      "shadow_updates": {
+        "control": {
+          "actor_proposals": 24,
+          "actor_accepted": 24,
+          "value": 36,
+          "RND": 200
+        },
+        "rnd": {
+          "actor_proposals": 24,
+          "actor_accepted": 24,
+          "value": 36,
+          "RND": 200
+        }
+      },
+      "training_batches_exactly_reconstructed": 8,
+      "compact_replay_episodes": 32,
+      "paired_rounds_completed": 4,
+      "reconstruction_valid": true,
+      "final_saved_reload_old8": [
+        {
+          "id": "final_reload_control_0",
+          "arm": "control",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "2029653601_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "group": "old_3m_4m_retention",
+            "distance_m": 3.0,
+            "step_cap": 14000
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+          "policy_hash": "4fd9968c2e93ec25d875b1dd5fe15bedd34cb60ae60aff2b35d914a7da010044",
+          "complete": true,
+          "physics_steps": 10564,
+          "decisions": 106,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19996414461369433,
+          "nearest_m": 0.19996414461369433,
+          "initial_distance_m": 3.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_control_0.npz",
+          "trace_sha256": "506722d931dc5222b7f247ec869774402146da22197c6e0011bfdeacca9f06af",
+          "array_hashes": {
+            "states": "2d2cd199fb7ec9a665eade678f7bfe95427b20550e6406a95ff47aa82924b645",
+            "actions": "ce9dca3e14006ed624ae37694581fdc7a70bf409b04893efbcf391b3048be063",
+            "means": "eb4f87122b2191288078ec2c6992702f755482524d3c1f18c89d59512b918aa6",
+            "logp": "0e0da02ddee752df6854142c1e74c73d3afdae9bc31ccd3acd69dc403048db86",
+            "native_counts": "87a7a98a882a85c5799f9602113c2bc9df91455d3b5a65ba70c8f54aaaad47fd",
+            "next_states": "fdf17e915664b6582a0d847f415c77834c18c886b88f43e789a46c80bc19d4a0",
+            "poses": "31450c33094dd6d03985aeada1ae19b616d757d7edd18f08a1ba796b7d669b73",
+            "next_poses": "c848e6794d6949c784f92d52060a12dfd2f639572de6c930dc597b0b6a0cc5ae",
+            "end_flags": "583efcaa631ddc0f981fb2ed8dfd33f42b1094f2367be72b3bd1e571101a62de",
+            "rewards": "239121de6005143383acda33d9c5a235175b014a60911c5365ebae016ea5925a"
+          },
+          "integration_sha256": "acb6f30dec43a59f93bd1688839f5387665b1844ee86c2a669b763f695f5b7e7"
+        },
+        {
+          "id": "final_reload_control_1",
+          "arm": "control",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "2029653602_RIGHT",
+            "seed": 2029653602,
+            "angle_deg": 13.6,
+            "side": "RIGHT",
+            "group": "old_3m_4m_retention",
+            "distance_m": 3.0,
+            "step_cap": 14000
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+          "policy_hash": "4fd9968c2e93ec25d875b1dd5fe15bedd34cb60ae60aff2b35d914a7da010044",
+          "complete": true,
+          "physics_steps": 8424,
+          "decisions": 85,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19988237721065943,
+          "nearest_m": 0.19988237721065943,
+          "initial_distance_m": 2.9999999999999996,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_control_1.npz",
+          "trace_sha256": "d4a39a5585d9b1ef93f959a6b9b5179add90e19881e4d26908f70dd8de2f425e",
+          "array_hashes": {
+            "states": "3035012f1e663fe5e1b6fd5f6718a084b6391811d869d2f13a831ffe9b8501fa",
+            "actions": "aae29911bd3aba018595fd233c88c99002019ad093d8c0e6c7242d57a98e7912",
+            "means": "1fce9d07384e9f088c40cdb0ce77b4e0eb235c66f862d72b97766d3e1d01b851",
+            "logp": "23102dbbecb9fc1924af136095dc2dd75d085130f470965acd675ae2e849c510",
+            "native_counts": "9ebef7fa08c6fb85badedf65ff60640195e61ca379187b7db5af297659db9c8d",
+            "next_states": "c2ce772a0959f692146914128b7c53cfe4c513f7274c72ede7ae551467bc274a",
+            "poses": "b82959b3a66897b4db0c437fa5c4beeecc70024f01b7f602a8a9fd33b2ea33f4",
+            "next_poses": "0b79e79eb597ca77f3365e53184f9e548b00077039f83df2ad44e140ed09605a",
+            "end_flags": "48b78613fdb13e149af23fcd5033124ce4b125440c2512ca564771e1a55a5241",
+            "rewards": "4d9d05e00793a04fb2b5e75882dcc34a98a5ba019daa3bc9f75c524dc43bb1c6"
+          },
+          "integration_sha256": "5daadfd049cccc60b73888aa361255944b15abac644b1721cd50e853604da682"
+        },
+        {
+          "id": "final_reload_control_2",
+          "arm": "control",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "2029654801_LEFT",
+            "seed": 2029654801,
+            "angle_deg": -12.5,
+            "side": "LEFT",
+            "group": "old_3m_4m_retention",
+            "distance_m": 3.0,
+            "step_cap": 14000
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+          "policy_hash": "4fd9968c2e93ec25d875b1dd5fe15bedd34cb60ae60aff2b35d914a7da010044",
+          "complete": true,
+          "physics_steps": 10029,
+          "decisions": 101,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19975974832083304,
+          "nearest_m": 0.19975974832083304,
+          "initial_distance_m": 3.0000000000000004,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_control_2.npz",
+          "trace_sha256": "93f8deb985e25b6b2e2855628a553f896f9e966f42746b34a53efba2072d6fef",
+          "array_hashes": {
+            "states": "aa69f9cc29fca8b3558cd8a6df7b398da5ae3245982b617b97023e0b1399bc0a",
+            "actions": "75ad216668c59cf87811ce958b5a297a37b460a5ad0e94eded423d77fe821481",
+            "means": "5c80fdcf3bd4f6665ca799c1dedb772c31ca4760968824c2a3c9955609d6c0fb",
+            "logp": "d6d8ac8ec6af92f824c754737ea4b453f383e7f42a0bd53ce21663c20dfce595",
+            "native_counts": "de2b2023e86a95d0d6885aec4d199f8d6bbcc10f90c73f7c5bc0beacc72c3f19",
+            "next_states": "39468a7b6051daecb7a4e1c1c313a4deb4631effa09c51ce030e8c27f479dbbc",
+            "poses": "e0336a13589c610be2a6140fbdfe096788a705e91b995ef0bf731faa8b03f94c",
+            "next_poses": "869fccec8550f3f38cf8839a69d04bc0bc694218490c963328f55319889ba20c",
+            "end_flags": "f63d64084ff96f1586f6da769d275efe3857c821094bbddb7cddb958cadeb259",
+            "rewards": "bda81ea363990e92a01c7dc45f1ef9faf4f08b5cdbed971b0a0e9d7044273424"
+          },
+          "integration_sha256": "b68c2e7fb27fd0cfb43a297f959bd2d7aff3351180405e411e583fe2660d4bfb"
+        },
+        {
+          "id": "final_reload_control_3",
+          "arm": "control",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "2029654802_RIGHT",
+            "seed": 2029654802,
+            "angle_deg": 18.8,
+            "side": "RIGHT",
+            "group": "old_3m_4m_retention",
+            "distance_m": 3.0,
+            "step_cap": 14000
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+          "policy_hash": "4fd9968c2e93ec25d875b1dd5fe15bedd34cb60ae60aff2b35d914a7da010044",
+          "complete": true,
+          "physics_steps": 14000,
+          "decisions": 140,
+          "success": false,
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 0.2458082640360295,
+          "nearest_m": 0.2458082640360295,
+          "initial_distance_m": 3.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_control_3.npz",
+          "trace_sha256": "ac896691a72226ac0f6ecc633984acde577ad3c224744eaa3e94af87030aa170",
+          "array_hashes": {
+            "states": "73c7d8433f13bfc67bb2a186fb6d2d77bdbe3bcda7037e50ecbfd7810d6e3ee0",
+            "actions": "adb37cde08af05544b45c3748eacdfee94160684906dc89d5de01d4e4cb7b4e0",
+            "means": "30941df17db3ea729d65e9f14f1c9d7dad1c467d84137ea2067c545695002af5",
+            "logp": "f980dd78d0adfda28de17a38468067390088c6d2e1a945451edbb5a6ccfb7dc7",
+            "native_counts": "04b8327dabd66e67d363e14eba858c18174793e5f76e292fc825d9833f01eac5",
+            "next_states": "f734edb78fb39322ed67338145ea9ed4599b26e2d53457e5bc152db4c43dabc5",
+            "poses": "c6c50294df5f85333148d78899367cac352c7a1d7e4f56338d715f7a584a5e54",
+            "next_poses": "74ce674746b5f51f470e3ed53da7dc06a71300c949d1dc1fbb9c210134ad8455",
+            "end_flags": "af3c501942ef201b8c5b949b965e465f3bcbc45a1850d864c2fc59dd0ac61211",
+            "rewards": "4a260912e42faabad4fd186c7332c46a48e1ece8f8b9c8526b82220e0c874007"
+          },
+          "integration_sha256": "0b9ae86d0685f4d2475136b92ff597fcee6fa87f0ae886e64d3e9db8d7f401e4"
+        },
+        {
+          "id": "final_reload_control_4",
+          "arm": "control",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "4m_2029653601_LEFT",
+            "seed": 2029653601,
+            "side": "LEFT",
+            "angle_deg": -17.3,
+            "distance_m": 4.0,
+            "step_cap": 18667,
+            "group": "old_3m_4m_retention"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+          "policy_hash": "4fd9968c2e93ec25d875b1dd5fe15bedd34cb60ae60aff2b35d914a7da010044",
+          "complete": true,
+          "physics_steps": 9793,
+          "decisions": 98,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 1.443659506710837,
+          "nearest_m": 1.443659506710837,
+          "initial_distance_m": 4.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_control_4.npz",
+          "trace_sha256": "97e585c6cf77d8bd01c1f6ec2fa6edefa430e1b3be5635bb8d11e8cedcd5949c",
+          "array_hashes": {
+            "states": "d2df71d0ae4e04e2036f6de4af3a933575e0c9c85a6a0fe27040f90cca1e3e61",
+            "actions": "c4a3ba76ac82bc2f8a6fa34ae92331264c194167d0f633191a2420f43a19f224",
+            "means": "afc778d8a312dc52f2a4279869c8ea9c46f6b7880e5eca8e2e82d4e9653f05c8",
+            "logp": "8d2e0db21d98318c1aab2f0237092155df8ce44f5941be625d8626fb46b120cc",
+            "native_counts": "2c88ca869b3a3346ece46f750b85c87f96893d4571be60a7450685db3ca27559",
+            "next_states": "f9f6d37966fcd413203cefc151ad587fa85a6647eb74829af06dae7785ebbda8",
+            "poses": "f0e50775f82366b2f8a3c9aeafb4fa9f38cb3c5ff08f345285f40555a9cc893e",
+            "next_poses": "b6831390c12aa093983276de836b456eb9cfea3a3fb0a248297c7aeba0ea74be",
+            "end_flags": "0624ac78949deff6684656bb99cfb1ee8124eb9affa2b0238daabf871664cc52",
+            "rewards": "622437f4d79bb4b135822c047fa36c35c865697776a9b639924f7b8c8946739a"
+          },
+          "integration_sha256": "c8c3e48b6836a6eb442fceefa7f05dfc3129fed4cc5e16891f858d919d364e81"
+        },
+        {
+          "id": "final_reload_control_5",
+          "arm": "control",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "4m_2029654802_RIGHT",
+            "seed": 2029654802,
+            "side": "RIGHT",
+            "angle_deg": 18.8,
+            "distance_m": 4.0,
+            "step_cap": 18667,
+            "group": "old_3m_4m_retention"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+          "policy_hash": "4fd9968c2e93ec25d875b1dd5fe15bedd34cb60ae60aff2b35d914a7da010044",
+          "complete": true,
+          "physics_steps": 11563,
+          "decisions": 116,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19988997567949268,
+          "nearest_m": 0.19988997567949268,
+          "initial_distance_m": 3.9999999999999996,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_control_5.npz",
+          "trace_sha256": "91b28f677783e53321f8e287813a977de75a4b2cd2bd7979f0c5ff395425f3e6",
+          "array_hashes": {
+            "states": "1d810ec48fea13fc61955b247e398d1748b4a9e0f67b93bfb14bd58a74806e93",
+            "actions": "6f0475cad40fadaa3a41d647d7c1fe6f6c775e3838c5f22a9c90144ba53ed66a",
+            "means": "18300f4653ca945110c495cb2df5288fa9978e5e62328965cb4082ef8fa628e3",
+            "logp": "2a7c63c161fd53b1b26dcf06b16bedaa80fc0c91f353c01fcb19e4d2125515d8",
+            "native_counts": "86d82a1139227602d3cabd4459bd78216508788014f36852662f9ec9f5f0dcec",
+            "next_states": "581cb636701bebdff4a8bcd2188f186afd15fecfb61a192ace1360993c30e7d4",
+            "poses": "825d0eea54d4b789f9afd1f0fc1337e21368c8a04bea0940dedf9f3cb4add322",
+            "next_poses": "c45f1b133cbbf766c48024cd4b5f32586beeb51fcd56529009def5873a7a5fe2",
+            "end_flags": "c311a166d1391d43037d7b20822c3d0de66fdd90ffc16691a268aaefc9a025ae",
+            "rewards": "992dd478394f2eda0504ecaf5a6dd3946d49b7abe8092050b397d8463ddf5201"
+          },
+          "integration_sha256": "f3aa523707b0b493ade1bcb0449aa8fd4513f8a8d0f8f4a2fd06518a4ad1a02d"
+        },
+        {
+          "id": "final_reload_control_6",
+          "arm": "control",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "5m_2029653601_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.0,
+            "step_cap": 23334,
+            "group": "original_5m_primary"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+          "policy_hash": "4fd9968c2e93ec25d875b1dd5fe15bedd34cb60ae60aff2b35d914a7da010044",
+          "complete": true,
+          "physics_steps": 13732,
+          "decisions": 138,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 1.4965808329983408,
+          "nearest_m": 1.4965808329983408,
+          "initial_distance_m": 5.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_control_6.npz",
+          "trace_sha256": "1f6eb393f0cf066a3a07d984d1f0a43027366eb4ff09f21979109077716b9e67",
+          "array_hashes": {
+            "states": "1b4537ceb13972da871faf1c32a2733d19d65a40988b61634bed5433325ab6ad",
+            "actions": "eae300075d0c626269a93c93ad5e939b6da9ccb0cee7f706b2f4c0cbe9e39a78",
+            "means": "f635296c66a6a645350f0dce5d4edbfeaf502cf0d4278db33591cf4de08d8ed6",
+            "logp": "f01b805092e03a01b3ed1a6520a88f1ab29ea82e45ab2e0dc62881f26d083d1f",
+            "native_counts": "6111a26b3c00c302839e2dac5982863d630563cd640026d3428ca3c0963e138d",
+            "next_states": "afade4535a8299d91624d21bd1facce63eef780b7fd3450b62fbb9d9f9a766e5",
+            "poses": "c92adec5ba5df25d6c2d01ac4e79989e5aff1b270991ba5774512f7b1b9c0896",
+            "next_poses": "fec42cd0d5f513f857bd11d892a572a61876413068a545b5c5ea00d541f9ca32",
+            "end_flags": "ac5528ec62f6bcb7acf2747e8e83e980174b898159aca88d73997110a31f6f05",
+            "rewards": "7dcacc71f865ed2eea079ec705fd47f8a2b4a05a447fde9341aba7e83424347f"
+          },
+          "integration_sha256": "5cf6373cfbfaf15c46fd7adaf1bf322596d70e1e03a273d5cfb87f4ce6bf9f3e"
+        },
+        {
+          "id": "final_reload_control_7",
+          "arm": "control",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "5m_2029654802_RIGHT",
+            "seed": 2029654802,
+            "angle_deg": 18.8,
+            "side": "RIGHT",
+            "distance_m": 5.0,
+            "step_cap": 23334,
+            "group": "original_5m_primary"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+          "policy_hash": "4fd9968c2e93ec25d875b1dd5fe15bedd34cb60ae60aff2b35d914a7da010044",
+          "complete": true,
+          "physics_steps": 21810,
+          "decisions": 219,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 0.32520530700890077,
+          "nearest_m": 0.32520530700890077,
+          "initial_distance_m": 5.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_control_7.npz",
+          "trace_sha256": "46c9bc7217c3d37240e6d4b80aea8dc1189b16d7f2f9aed6d18758f0926a3f3c",
+          "array_hashes": {
+            "states": "3bc5c72981c2c00a6d8d3b4e61a7d8b500b87ce064d710e9acf72469ff00fb10",
+            "actions": "e81ac7e71bb05d3c4fd8b11552e4edfe2a328b60ef3844e75504147a81644df4",
+            "means": "149073cbd3e9c6df0bb64d78a552c6faea8b7d3c46893d66709a89d5078ee238",
+            "logp": "85416bd91f2d91af11fd6cf7ba2df6522cb97e3b0c9bd4edb83e899d0c98cda2",
+            "native_counts": "e7a8b4e1db93bf2b5d6f238cfe37377167596c5ad75f10f7655a024e6307feed",
+            "next_states": "d0ac1599e08c4d0964fb2b872dbb7f90c588199b294d7e1a55490375030ccce9",
+            "poses": "7ccc98a62243479f0141425d2905b27bdfaae39aa6293ec18b77aa49aed1bbd7",
+            "next_poses": "5240e86e938de0a20118237636c47c5ab6a4c47d0d0f8679dbff2cfbd2f1e68a",
+            "end_flags": "1dd043b9a627ccca0f87acd97b9196f16a4eb48db41a7580a80dd2fa66446aac",
+            "rewards": "daf0ee23ff2d5602a1942cf45cdd7d7e7b9dd7f0df78d3738810f8b295947493"
+          },
+          "integration_sha256": "c25a8fce47673eeeb7c6db2f64dcc188bd17a30e53055dbf2a3ed07d6ffc452a"
+        },
+        {
+          "id": "final_reload_rnd_0",
+          "arm": "rnd",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "2029653601_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "group": "old_3m_4m_retention",
+            "distance_m": 3.0,
+            "step_cap": 14000
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+          "policy_hash": "80d71bae5a50d2c421c46f09399b140155a69f8aabf06836f47fb5d4403fbe26",
+          "complete": true,
+          "physics_steps": 10311,
+          "decisions": 104,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.1998439165576023,
+          "nearest_m": 0.1998439165576023,
+          "initial_distance_m": 3.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_rnd_0.npz",
+          "trace_sha256": "e14a3a944a6c5fdf6dc15c085fe315cb28ca0cb3ce5f096ba75a58d6a88d674f",
+          "array_hashes": {
+            "states": "7f5f1b5248e50ac819793c6d94f90eeb9191c869031201ac3013fdde72a080ee",
+            "actions": "f09ba1095092c1df240949231479594e9fed6b2fae072d534ec241b7fbb0ae23",
+            "means": "1b432ea8ec83de502371e94d637f59f5e83a6e02e51d1ead74619d77a2365bdc",
+            "logp": "d7966b9d05e2736ab26e0ab0b6cff8cc323215548f7b34f0482c872ecfcaca1a",
+            "native_counts": "20c51f8a8abb9f6b054b45846cb3883c1bda8982a088b65dd35b4caf735e7231",
+            "next_states": "d4e9e010197f806979ae093c95c0092bb4dd57239dfff56eafcbce1733c87194",
+            "poses": "e8c2b48ee697e3ca4b8d2e4d17cc11c79688aa287904a1e9eb87a9229c1a170c",
+            "next_poses": "5d85621d71886c1b23c7f91fb242fc136222d6afcabbedd06ec13b1542f3529d",
+            "end_flags": "d8e1f72c90efd709d10c465b8c40d4b544a0fe9ced3731a5c545573927e342d0",
+            "rewards": "d85173189d53c5b22c5ea45498b833e06aed17b9b2259fd0338f68eb43f7178f"
+          },
+          "integration_sha256": "da1e3ff2d5d30a7d07d4b6f2620af1c6241d8cebc804e3cb57af037077e3852e"
+        },
+        {
+          "id": "final_reload_rnd_1",
+          "arm": "rnd",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "2029653602_RIGHT",
+            "seed": 2029653602,
+            "angle_deg": 13.6,
+            "side": "RIGHT",
+            "group": "old_3m_4m_retention",
+            "distance_m": 3.0,
+            "step_cap": 14000
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+          "policy_hash": "80d71bae5a50d2c421c46f09399b140155a69f8aabf06836f47fb5d4403fbe26",
+          "complete": true,
+          "physics_steps": 8327,
+          "decisions": 84,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.1998230021114668,
+          "nearest_m": 0.1998230021114668,
+          "initial_distance_m": 2.9999999999999996,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_rnd_1.npz",
+          "trace_sha256": "5b89414e0de6e87113019e6bf6fb7bad28f452d88b8fdc9658a2c5960453fea0",
+          "array_hashes": {
+            "states": "37f0ad29f4c063ef6d542b6b2e6005c8d1cd6f718b5fc8682b7624ea2c6ef818",
+            "actions": "04b8f859c519e39d38b71e7a01a8fb8c4108e2e95eeda9dd55d3bfcff1d91469",
+            "means": "6db025864e3c9066555cc277a69557fc80d222907a826a2378f6bde82fd739a2",
+            "logp": "ac72a364a31f7754b43f04a0d66cbb5ee535c2e4389eb76aa368d1750f3222ee",
+            "native_counts": "cddb905cf3540424c15e10b0da639ff6beb9dafda699554fcc0253767155ada2",
+            "next_states": "bd4316c9a00bf1e39b6881236f2b8570652f622fd14e3fdfa59ec500f19b65dc",
+            "poses": "e1fcf0b70f7174232c1e1d033fac3edf48218fccf921ade3d3a3cdd8d46279a4",
+            "next_poses": "dbf93e9eb9bfdbed8046b7f4c20c74e40eca5407b970a29301903733d91e9aa2",
+            "end_flags": "f0fb13f81ee1624db4b5805714b9aa81289bfd16edbfb4a9866752ee250aefc4",
+            "rewards": "2da84c6f9ffe574f49d583b71a57c55b005044629980b734e774682564804466"
+          },
+          "integration_sha256": "794a7689f4847bae3d6596307bce345796e68331966eff162b96d6e402ee823e"
+        },
+        {
+          "id": "final_reload_rnd_2",
+          "arm": "rnd",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "2029654801_LEFT",
+            "seed": 2029654801,
+            "angle_deg": -12.5,
+            "side": "LEFT",
+            "group": "old_3m_4m_retention",
+            "distance_m": 3.0,
+            "step_cap": 14000
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+          "policy_hash": "80d71bae5a50d2c421c46f09399b140155a69f8aabf06836f47fb5d4403fbe26",
+          "complete": true,
+          "physics_steps": 10268,
+          "decisions": 103,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19991085174390008,
+          "nearest_m": 0.19991085174390008,
+          "initial_distance_m": 3.0000000000000004,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_rnd_2.npz",
+          "trace_sha256": "0e435011a4577069b2e2303dc692092a1be7597ca3cf8964f67ed75a25a3be5b",
+          "array_hashes": {
+            "states": "20d02044fc83d1bc0f74c6572efb135497863fe41566d1286bed042a78a12106",
+            "actions": "eda0f18cbac346f77b28525648a7fafd0cb962a9904405aa3221d1bf202bb870",
+            "means": "2a157428d7e5429975f98463bcbe7d3febcf1b41e54e8dc932dba565b1c5fec0",
+            "logp": "93cd97f260bce881dbc7e92a813ab81eb0253ecab9d9e5de9dd2428c630720dc",
+            "native_counts": "b6badc04081047f79ecdf3b13daeaab928c2ed51f8797a4f3a70a994ceb96e7f",
+            "next_states": "187d5c218efcc253c770014791e703ec5d38967d3eb57d2f5af7a5bca682adaf",
+            "poses": "fd9d98e3a3f96659f788a11304b89bb0173c5d5efd7a72b0ab9043edb0bcda5d",
+            "next_poses": "b1896ce3f35e9048a46630309873ab2a531fede610a816573fb4e97f2adb13a4",
+            "end_flags": "85d77e730459aa2fa6dc5bd0a57df5ab076b26378eaf7692ce585715d28d1b90",
+            "rewards": "c1a1977684bdcdebe6a077216ff18d622aeb3afa851c51949cec1baadc16672e"
+          },
+          "integration_sha256": "5324edfb5a1b78190433164a26f9c4e9cc360b921ef76399950e571770da9fac"
+        },
+        {
+          "id": "final_reload_rnd_3",
+          "arm": "rnd",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "2029654802_RIGHT",
+            "seed": 2029654802,
+            "angle_deg": 18.8,
+            "side": "RIGHT",
+            "group": "old_3m_4m_retention",
+            "distance_m": 3.0,
+            "step_cap": 14000
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+          "policy_hash": "80d71bae5a50d2c421c46f09399b140155a69f8aabf06836f47fb5d4403fbe26",
+          "complete": true,
+          "physics_steps": 13590,
+          "decisions": 136,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19992935472178888,
+          "nearest_m": 0.19992935472178888,
+          "initial_distance_m": 3.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_rnd_3.npz",
+          "trace_sha256": "118a54d3bb3fff78c71c31444a4c32a56fb251c612805af05eb014651a8570c7",
+          "array_hashes": {
+            "states": "3d9576beaf2972df432cbae58da0e3bfd62d38f46b01650b800f91b2705332f6",
+            "actions": "0ed12f4cf28911389ae8392af53352436a589ec2a64b1716f8ad7bb59f178fa6",
+            "means": "b035ad5bb6561ab49de3450528e1a3fd391866a87b6d42c970dd3d16ef94bcf9",
+            "logp": "203b1e072f9f6faf8fa1f5479676c438751d2d691f76ff9a7dd5a24be6f4cb21",
+            "native_counts": "2a6a090c0a7166978850556a51b308455da410ab0d2e2a7094ab51482cc06aed",
+            "next_states": "26b3a767eee044f9050f7d28c84eb0d0cdb78998ddb71881b7df3c5a0951ae78",
+            "poses": "1efb66497f5ed36c589b0af1cec0498de0e6471e98da2ae4cd10a47d437eba63",
+            "next_poses": "1458062dfbb6753b374a75c81f36e1e24fe1c9105f60375a914441de03d4be01",
+            "end_flags": "1c4288878d9e4e8967110f2c8d46fd0c80213b9d0cdaee225740f93e2dab3830",
+            "rewards": "1a6059a7581976157cf38a5ea984f843cd07490f459256a60733871a1816ca0a"
+          },
+          "integration_sha256": "3d36f592be5e9a335608624c890beeaddbe8b287e5d2fbdf768888136b30eb1b"
+        },
+        {
+          "id": "final_reload_rnd_4",
+          "arm": "rnd",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "4m_2029653601_LEFT",
+            "seed": 2029653601,
+            "side": "LEFT",
+            "angle_deg": -17.3,
+            "distance_m": 4.0,
+            "step_cap": 18667,
+            "group": "old_3m_4m_retention"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+          "policy_hash": "80d71bae5a50d2c421c46f09399b140155a69f8aabf06836f47fb5d4403fbe26",
+          "complete": true,
+          "physics_steps": 14354,
+          "decisions": 144,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.1999518223900674,
+          "nearest_m": 0.1999518223900674,
+          "initial_distance_m": 4.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_rnd_4.npz",
+          "trace_sha256": "21c5b2bc7b7aead769ebd6450466a3d7b8d3148ce81670d21566670791292b93",
+          "array_hashes": {
+            "states": "1af1ebcbc3848f9176aedf2e3424cd4f1cdbdfc2f7685a2caf2fa65d7b9b96f0",
+            "actions": "03812ffea309d2723b614eed25681d4c2081f42f0dc79f7a39810d471ea52c34",
+            "means": "862746a187aeb8df6714741880b2b3e8d76bda81960f5b7b770abe867d1c3aba",
+            "logp": "2f13edbbf5b04792b269e080a021f67ac8db4e9ec099c3ef94681701b751a9e8",
+            "native_counts": "7d30d509c0bb57d535af744943b7f57d0b52235775219f23ab63bd82ee3f943b",
+            "next_states": "b642fe8d5d2c01ad1a4464d7d20797130cc4114615a6d260e576a4eb488fdea4",
+            "poses": "579ec8f399dc62f6ff643d8ef5a4e1c483c83c1c2d88e79d78b41bf6857a0541",
+            "next_poses": "c976cd7d431471d8255a9f79d983a774bbd300ee8c7a743e3d41be4ba1042b8e",
+            "end_flags": "ad62b619f6d4a79876ccb677ffc643abeb60a7672111173c0cac2caa3caeba14",
+            "rewards": "10538032f4021011d6736beec3257475b00163ee73280432dcde2af82b6cbd61"
+          },
+          "integration_sha256": "d9a0794f58fd155c30dceca1a026e4522bf714ec8e4758f44ba182c57d04c54a"
+        },
+        {
+          "id": "final_reload_rnd_5",
+          "arm": "rnd",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "4m_2029654802_RIGHT",
+            "seed": 2029654802,
+            "side": "RIGHT",
+            "angle_deg": 18.8,
+            "distance_m": 4.0,
+            "step_cap": 18667,
+            "group": "old_3m_4m_retention"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+          "policy_hash": "80d71bae5a50d2c421c46f09399b140155a69f8aabf06836f47fb5d4403fbe26",
+          "complete": true,
+          "physics_steps": 11437,
+          "decisions": 115,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19999989375818814,
+          "nearest_m": 0.19999989375818814,
+          "initial_distance_m": 3.9999999999999996,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_rnd_5.npz",
+          "trace_sha256": "1cb5d5e212045045fd786e85595d6e4c17d695cc039cb1219a8a6edc63b4f9b7",
+          "array_hashes": {
+            "states": "de436401b4c80ff8be77b3c8d02152ffb07f71565470bfe08a9c7e8c8db51eff",
+            "actions": "3ea9cc6cf146ecda2c959d54fde1966ff43e484a67e60a47741e786e13846f94",
+            "means": "8234b3acb432698a9925fafaebc7abf02adf60050bf34154404bb4b723e3ebad",
+            "logp": "9795bfd6be3fbec4eb99d2e998d46d7dfce3174ab5be7340cd929e23a0f47fa2",
+            "native_counts": "64afe3a2a7cd1d96e6c3b20feb7aac01b8f9222822159dbbc7437d26d80e0d79",
+            "next_states": "d6db57fc487a24edc7b0ef2b51afc5e668640456d0ea7bd8b0f03d70b148dbad",
+            "poses": "d7e6a986ffa8cb94fc6ea455ff84a21385f965ba785dcb145de3da87251d87d6",
+            "next_poses": "30ddc08e45ff54c2ec63b019d277b56ad2d6ba8dd7db508f95a14cf6b948a9ed",
+            "end_flags": "6c30e3cf323a011ea0b193f9f7fa0634920a302bfbcbd62cf77f5182313c8355",
+            "rewards": "d8b52b7143be05fffae84862a58390dd618b30f6e00c6fb42deb6a1c352f0d69"
+          },
+          "integration_sha256": "b47f5650fb43eb893f440e76894562c17bda112112b1e6610706457615b33e2c"
+        },
+        {
+          "id": "final_reload_rnd_6",
+          "arm": "rnd",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "5m_2029653601_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.0,
+            "step_cap": 23334,
+            "group": "original_5m_primary"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+          "policy_hash": "80d71bae5a50d2c421c46f09399b140155a69f8aabf06836f47fb5d4403fbe26",
+          "complete": true,
+          "physics_steps": 14392,
+          "decisions": 144,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 1.4879621385150754,
+          "nearest_m": 1.4879621385150754,
+          "initial_distance_m": 5.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_rnd_6.npz",
+          "trace_sha256": "6412fb3c2bea3fa5cfe8eb2ca66b63b5d3d5964e5217d9beabffb5412781f741",
+          "array_hashes": {
+            "states": "01192f439d451ec357f25528bb8ef7d5c4275df56eb98c7217ca81a6803eacee",
+            "actions": "6d0adfe854bda68b87038eeccf5ec84017154b8fffa4129b32c620f299a9a10e",
+            "means": "862746a187aeb8df6714741880b2b3e8d76bda81960f5b7b770abe867d1c3aba",
+            "logp": "2f13edbbf5b04792b269e080a021f67ac8db4e9ec099c3ef94681701b751a9e8",
+            "native_counts": "f6a320fe349ba618e726af840771cea855b81d0421120a60e2b1b5a8b015c03a",
+            "next_states": "b89f9500f072d06c38bb963aba8cef9b79ef0b8e6d99e9236d7d5ffaa569c3ec",
+            "poses": "46a9fbe391c7fb229f69787cba5af51cded65e8dc1b00202567199bc717852d4",
+            "next_poses": "41be88901aabf6049a6016ff92c1c9c7e932a9fad42a3b81b0a841d5c7d8d016",
+            "end_flags": "209569612961334fb166326ee4dc263a2ba659643e6ac2f8c98a2e605a46c064",
+            "rewards": "5019d6273c42689a472d9d82715af0d0707190c2f7fbf1eb4d94694f546ca852"
+          },
+          "integration_sha256": "61dedfc952405c36a24101b398889eaec8bbbcd13c41bcc08758be2ca5dd58b6"
+        },
+        {
+          "id": "final_reload_rnd_7",
+          "arm": "rnd",
+          "round": 3,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "5m_2029654802_RIGHT",
+            "seed": 2029654802,
+            "angle_deg": 18.8,
+            "side": "RIGHT",
+            "distance_m": 5.0,
+            "step_cap": 23334,
+            "group": "original_5m_primary"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+          "policy_hash": "80d71bae5a50d2c421c46f09399b140155a69f8aabf06836f47fb5d4403fbe26",
+          "complete": true,
+          "physics_steps": 22669,
+          "decisions": 227,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19996421271015855,
+          "nearest_m": 0.19996421271015855,
+          "initial_distance_m": 5.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/episodes/final_reload_rnd_7.npz",
+          "trace_sha256": "32e453b26463523420fccf4ec53f271d146eb4e4d973d192da14a2b678fe5a90",
+          "array_hashes": {
+            "states": "d6d80e26f74f0aab243c5175954a7a3cd19fef44f648ab23ab28837c126d784b",
+            "actions": "02f9b827b35ebff1484ac63b79e67c09a681745631df6232c9e759a11cf38f63",
+            "means": "11af67398a61dc54eb5e700f9cc0fc8b285db47a657ee8f653abc5656bf43195",
+            "logp": "d112ecaebdd3bf192f5df62a10a2a98edce28396af3e29dc5146d9116caaf930",
+            "native_counts": "2ccfc4e68fa030424ec7072ff077820b9c22d037577ec2850975c353b5b20366",
+            "next_states": "7d196e1b6e0034932029986da6bc590853e3fe29cef26ff3c5e7919727d85edb",
+            "poses": "5e7408850a786fee0547c6c1b5303849f1a966546ba0f85175e10d2fe8866e73",
+            "next_poses": "6fd98362606e1540f3c1e7fc6c647f294d29aea4550b2fa729c6ed45c5a61b46",
+            "end_flags": "aa0ef1f00d36d20908891a4dde45e300f9e6481a68b079b6b5e1c0f47836f9ae",
+            "rewards": "67db562b4fa2c15b497ea7abdfc24b35fe161c0063747b76a31c9338be284088"
+          },
+          "integration_sha256": "19e3e3a0447d674fa811b0a91b590b3716feec8e31af62d52c5ada1b7e63efa9"
+        }
+      ],
+      "exports": {
+        "control": {
+          "Actor": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/control_Actor.pt.gz",
+            "sha256": "d009079ebbfed76ed50d643d220d869d280784f2040708c5501eead105d8ef72",
+            "bytes": 2115687,
+            "content_sha256": "3338932fb1f08d2d9c322654d3d3eeff61b23fd8bdf756330a277822936a47fe"
+          },
+          "RND": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/control_RND.pt.gz",
+            "sha256": "98d8e69b256825464bae9d81f30dc85a020ffe82f7a1ba834d0335a05361cda1",
+            "bytes": 231363,
+            "content_sha256": "e5b0e1cecd52abf7d6c9598b947464b0ede6158cd8501cf9c1cfe406bea7fb07"
+          }
+        },
+        "rnd": {
+          "Actor": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/rnd_Actor.pt.gz",
+            "sha256": "103f158ce3c6633e656cdf8b38e6efaf4bb9a72040a50d5938e635657fd77250",
+            "bytes": 2115508,
+            "content_sha256": "8067e96554fd455766e43976724bbec6cb0ad57ed3093ab220423fe1f1c56a90"
+          },
+          "RND": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t219_rnd_runtime/rnd_RND.pt.gz",
+            "sha256": "d5701a5b57da9e28d7ac5cc05996617babf579bb358e881ffe77ef06fb217c4c",
+            "bytes": 231364,
+            "content_sha256": "b6291359a934fcf974624eb671fa351313bef29c152be48a4cf80558d6dd3914"
+          }
+        }
+      },
+      "all_workers_stopped": true,
+      "automatic_promotion": false,
+      "stable_5m_gate_passed": false,
+      "elapsed_s": 260.6389793100002,
+      "own_bytes": 5658067,
+      "all_new_runs_MiB": 1023.2570629119873,
+      "restore_contract": "Rebuild every observation from compact actions/exact native snapshots; verified all10arrays beforelearning. Re-run recorded deterministic Actor/Value/RND optimizerrecipe frominitialhashedstates; everybatchshadow reproducedparameterANDoptimizerhashes exactly. Version/environmentlocked; intermediatepolicyfilesnotexported. Noexistingdataremoved."
+    },
+    "t220_temporal_noise": {
+      "state": "COMPLETE",
+      "stop_reason": "SAMPLED_GOAL_PAIRED_BLOCK_STOP",
+      "physics_steps": 121999,
+      "commands": 9,
+      "diagnostic_episodes": 6,
+      "exact_replay_episodes": 3,
+      "optimizer_calls": 0,
+      "arms": {
+        "white": {
+          "n": 2,
+          "safeGOAL": 0,
+          "CONTACT": 2,
+          "timeout": 0,
+          "minimum_remaining_m": 1.4672176411806457,
+          "minimum_nearest_m": 1.4672176411806457
+        },
+        "ar09": {
+          "n": 2,
+          "safeGOAL": 0,
+          "CONTACT": 2,
+          "timeout": 0,
+          "minimum_remaining_m": 1.4046026378478946,
+          "minimum_nearest_m": 1.4046026378478946
+        },
+        "ar098": {
+          "n": 2,
+          "safeGOAL": 1,
+          "CONTACT": 1,
+          "timeout": 0,
+          "minimum_remaining_m": 0.19994546320405115,
+          "minimum_nearest_m": 0.19994546320405115
+        }
+      },
+      "all_workers_stopped": true,
+      "automatic_promotion": false,
+      "deterministic_LEFT_passed": false,
+      "stable_5m_gate_passed": false,
+      "elapsed_s": 35.51597660900006,
+      "own_bytes": 100063,
+      "all_runs_MiB": 1023.4248113632202
+    },
+    "t221_left_success": {
+      "state": "COMPLETE",
+      "stop_reason": "BUDGET_COMPLETE",
+      "physics_steps": 146493,
+      "commands": 10,
+      "supervised_updates": 3000,
+      "shadow_supervised_updates": 3000,
+      "RL_updates": 0,
+      "reconstruction_verified": true,
+      "final_reconstructed_old8": [
+        {
+          "id": "final_reconstructed_0",
+          "arm": "consolidated",
+          "round": -1,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "2029653601_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "group": "old_3m_4m_retention",
+            "distance_m": 3.0,
+            "step_cap": 14000
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+          "policy_hash": "2d075594fd336e4097bdad09fd7e60c73bb6037b67de34ffa92be97a06003f01",
+          "complete": true,
+          "physics_steps": 10455,
+          "decisions": 105,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19983113529966087,
+          "nearest_m": 0.19983113529966087,
+          "initial_distance_m": 3.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t221_left_success/episodes/final_reconstructed_0.npz",
+          "trace_sha256": "9d984cebdbd604ea8ca160c4e1e8b1be5618f9ae6c24346f6e8503cc352e3ee8",
+          "array_hashes": {
+            "states": "e82cf5d4645991b1bcc04251e7ca090817ee10a4675707f474a495f41710a835",
+            "actions": "082f711f1c98932b431ab0c29129494a3e0534da3a9f1ee1d074559b6a69006f",
+            "means": "e92f992813da099db4f4ce0787bcb8f9fa2294439f1aa299a78afc163e3c3e43",
+            "logp": "b915df6a18b22af33ddd78f45eaaddd0ff5f4e12ba4a3af22e62f416abeb0a6c",
+            "native_counts": "db82dfb6b0703fbe5bb9104099ca0c4cb313e29d80bf9bce7b52a6cfa14da51d",
+            "next_states": "b71957a22733becb1763a7aba9fa85f0c65058bc8d50f66518ac437a7693f6d4",
+            "poses": "07aa99587ac0c37186e1110a076e5186abe615551cf1ee6cb615be6c81a6fdf8",
+            "next_poses": "062a21d83ebba310979c9d9f356e01d28ab36e7489760e87201564533df73756",
+            "end_flags": "8051571a8f508667d933e3d030cd268ba0cbdf690e7ad8c703f2cdda1be4d406",
+            "rewards": "cc72f5b02a7c7fa766dfcee4c241d9b1d644911fc9e466ce294b94cc3f5de4d5"
+          },
+          "integration_sha256": "28052a3c54e1c6121e3bde613c3bfb663c25a8cc7f8bd034645b0c18dba6c2de"
+        },
+        {
+          "id": "final_reconstructed_1",
+          "arm": "consolidated",
+          "round": -1,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "2029653602_RIGHT",
+            "seed": 2029653602,
+            "angle_deg": 13.6,
+            "side": "RIGHT",
+            "group": "old_3m_4m_retention",
+            "distance_m": 3.0,
+            "step_cap": 14000
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+          "policy_hash": "2d075594fd336e4097bdad09fd7e60c73bb6037b67de34ffa92be97a06003f01",
+          "complete": true,
+          "physics_steps": 8274,
+          "decisions": 83,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19990569694518046,
+          "nearest_m": 0.19990569694518046,
+          "initial_distance_m": 2.9999999999999996,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t221_left_success/episodes/final_reconstructed_1.npz",
+          "trace_sha256": "c7696fe9c3795dcedc373a7c57d536cc4e1f447abc1369a71c5465e27f961d7d",
+          "array_hashes": {
+            "states": "473e044aa3476f0cdae8d9a7cd11fd74b23cb6a899ae4433515808e5d636f403",
+            "actions": "dd48e3135b12ae0ee89ba93408c1146685ff3ba5117c141a1ae9d30fc3d7b040",
+            "means": "e5de766c1562abf863f72cf1fb4647afaa99373126bf3b909e8191aa8457a898",
+            "logp": "c8a48ad061846375cddd94bb0fb0a3a53b4021709c36db308943f626c8bad256",
+            "native_counts": "a7b4992381bb6734cbaf37d09672e18843b35b7fb6835620ce4b5dbe3b1ea28c",
+            "next_states": "7038ce3269ed913ed6593d6c335299caa9c6dbc5f36fd7633a9ccda7cfce4188",
+            "poses": "68227cde0953de5542673aef2ffe108a1704c6e0ab963325705e029b0e343a23",
+            "next_poses": "51040223538a8792ae0317c3b8cbb31e2b61b8c48de0e2e50e511e58ab7cafc0",
+            "end_flags": "9e081904b2f67c8fb6370cd18328f53f7cd60726b884ddbbd8ff1d2fd9c4ea93",
+            "rewards": "d2fbcade966785a75c7a24fe6efadc5e5aa731216e8fe2dd718197548060805a"
+          },
+          "integration_sha256": "f762d6743676f585a978f0505177532b23c3f569eafdc1d517d48e5e35bdb792"
+        },
+        {
+          "id": "final_reconstructed_2",
+          "arm": "consolidated",
+          "round": -1,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "2029654801_LEFT",
+            "seed": 2029654801,
+            "angle_deg": -12.5,
+            "side": "LEFT",
+            "group": "old_3m_4m_retention",
+            "distance_m": 3.0,
+            "step_cap": 14000
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+          "policy_hash": "2d075594fd336e4097bdad09fd7e60c73bb6037b67de34ffa92be97a06003f01",
+          "complete": true,
+          "physics_steps": 9916,
+          "decisions": 100,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19998058207547376,
+          "nearest_m": 0.19998058207547376,
+          "initial_distance_m": 3.0000000000000004,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t221_left_success/episodes/final_reconstructed_2.npz",
+          "trace_sha256": "821a36e730c8f51f8a94ef8c2938d7576b65cbeb085b3be600790448225e5124",
+          "array_hashes": {
+            "states": "f4a0839f2175bfcf730a5fe82690d99c571f225848c9796460a69e0c3c87add2",
+            "actions": "74998d29148b7b0fdad103a322a42fa608f81e39d7ee91bcb863475847f17eb9",
+            "means": "e95d836f6888e1e88c456a8649d6eac4ce30b3c5413baa7d0e50a86192e35ab0",
+            "logp": "9846189928cf638083b1f196f12a839452d5933a056cd10ccd0a13d50687d5df",
+            "native_counts": "73daa62e53c223da716838d5f49aa490539005847ad4b9ae0575cefb1c12f61c",
+            "next_states": "54eae5784169d2bb5a454deadaf09716ec3aa352eb9d31106a7588b1c82268c7",
+            "poses": "6b5b03e91c529a3ee23a6f530587841f0f19eb90d919433822a5afeeaf0c61d6",
+            "next_poses": "ac29f110e32631ee6dc1264f63d7a822c66e05bb3dd4a4cec620b746c0a1a6bd",
+            "end_flags": "b730e52eab93b756ae8c9594c1f9beb0efb55fb314246cf6b0a7b2c621419aa4",
+            "rewards": "bddeee66d9874d23dedeb4009ae572416368906fb0fcbe66bd4b7d27606b51aa"
+          },
+          "integration_sha256": "df7b11a1ba8b7e9dde9208616910973bb811ab76ca6560ea6ecfcbb0ece4dcb9"
+        },
+        {
+          "id": "final_reconstructed_3",
+          "arm": "consolidated",
+          "round": -1,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "2029654802_RIGHT",
+            "seed": 2029654802,
+            "angle_deg": 18.8,
+            "side": "RIGHT",
+            "group": "old_3m_4m_retention",
+            "distance_m": 3.0,
+            "step_cap": 14000
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+          "policy_hash": "2d075594fd336e4097bdad09fd7e60c73bb6037b67de34ffa92be97a06003f01",
+          "complete": true,
+          "physics_steps": 11810,
+          "decisions": 119,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19980474244456373,
+          "nearest_m": 0.19980474244456373,
+          "initial_distance_m": 3.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t221_left_success/episodes/final_reconstructed_3.npz",
+          "trace_sha256": "4571828c742280debb907f4121095cdebda000e96788cd4c2e5188223b6c0840",
+          "array_hashes": {
+            "states": "a165f4d8975bb3511d5282cfd41b15253b912c71b8be3d5c2a40c90008c5ad66",
+            "actions": "84dd73ab57b12952ad5162ea01ee4a620b1404f3fcbfba0c6ff2e25170b1e623",
+            "means": "83762cc2335d70689a2066bbf0eb4b4d6cda889d3395a3d299bc70b6f5fce085",
+            "logp": "a5ac2bad3124f257b3a571bc0ffc2496edb11ac8ca1f9fc4e794a40dd9d831ba",
+            "native_counts": "ee38a491c11a96edd2fab936e61d6dfbdc99fd3931b2b596f926650f36edbf7e",
+            "next_states": "edfc66c98f33a357b034db61ae54744fbb9bab124146fd6bd8c77400f99975e7",
+            "poses": "c44d21967433e5070b479e65cada6c7505ad67ed0f36ed697cf02db261f9ae93",
+            "next_poses": "e461e8bc2dbf13d9b9828600a4ca8ccc96c7d3fc4b8499293b3aa5c56518bb94",
+            "end_flags": "4319a74662202c9c8fd928b7c8170e19dd8b23d967da6a6fd2cd930e659d7319",
+            "rewards": "99f73464621886192eb85effa3b0f9596149d97b534f6abfb103a1e749736f29"
+          },
+          "integration_sha256": "2ccd8987a0ec999af03913dc800e5cc55768a8e4e87af633866e9657a7bae9fa"
+        },
+        {
+          "id": "final_reconstructed_4",
+          "arm": "consolidated",
+          "round": -1,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "4m_2029653601_LEFT",
+            "seed": 2029653601,
+            "side": "LEFT",
+            "angle_deg": -17.3,
+            "distance_m": 4.0,
+            "step_cap": 18667,
+            "group": "old_3m_4m_retention"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+          "policy_hash": "2d075594fd336e4097bdad09fd7e60c73bb6037b67de34ffa92be97a06003f01",
+          "complete": true,
+          "physics_steps": 13817,
+          "decisions": 139,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.1998258983512957,
+          "nearest_m": 0.1998258983512957,
+          "initial_distance_m": 4.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t221_left_success/episodes/final_reconstructed_4.npz",
+          "trace_sha256": "3c22e68b88b8bf8c722e7a0625b56a146ed239950efe760f3c5eb81eb272a51b",
+          "array_hashes": {
+            "states": "e09f7cea17f5c3fced19423a4b92f0f9842c14a2a001ba7d1f28ec31e96ef341",
+            "actions": "5dd9c50133c9f0fb0c845525855105c723ce81a29b6141978413c363e58f3a83",
+            "means": "e11dae290b3349ee1a6776dbda35a69525a0bdcc21f6fbcea928d2a5bd29834c",
+            "logp": "9c753d97aab53e6dd689f0d063417df36bd52f87a42e6637c7053bf49db909d3",
+            "native_counts": "6679724fab2c2931107d5c8d3587a2571cef6105695ae4f208ad00f2e196683d",
+            "next_states": "299677e8354287168aa4d222c4388ad904a8098abc46af4563861fa6f639e253",
+            "poses": "986e2e6d4793f3d87e3e0973dcb4c53274d5d440a9de4cd6b78652217cd5bf0f",
+            "next_poses": "d2a3f29c9ad6932465716002ed92af4f14fe775a89045baef50ce0de87177522",
+            "end_flags": "57e8b983acf7eead0b6cd35e10987252a6c46a56c52d4388c1558e86ac3e999f",
+            "rewards": "c087432f737b7eb92d2e04df51638b0f846fe2c5a31730bcce1dff3b3c9ca603"
+          },
+          "integration_sha256": "00962fab9df945a29290c379f4198f00db223b34e02a74aa02969ea46966b0e2"
+        },
+        {
+          "id": "final_reconstructed_5",
+          "arm": "consolidated",
+          "round": -1,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "4m_2029654802_RIGHT",
+            "seed": 2029654802,
+            "side": "RIGHT",
+            "angle_deg": 18.8,
+            "distance_m": 4.0,
+            "step_cap": 18667,
+            "group": "old_3m_4m_retention"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+          "policy_hash": "2d075594fd336e4097bdad09fd7e60c73bb6037b67de34ffa92be97a06003f01",
+          "complete": true,
+          "physics_steps": 11340,
+          "decisions": 114,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19983287637041197,
+          "nearest_m": 0.19983287637041197,
+          "initial_distance_m": 3.9999999999999996,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t221_left_success/episodes/final_reconstructed_5.npz",
+          "trace_sha256": "f6c37e6b1962ef1a1a7c331fcb543385cb88ada0521c6b42c5d37a8cd2c6f215",
+          "array_hashes": {
+            "states": "83b81afdfa9e2b16bc20bc862e494a679c051033d77eb3a7cc5cfc553b7380e8",
+            "actions": "08db88a51ca69e8bebabf2821af8b26292530c73bc87be104eff5c4502ee7fc3",
+            "means": "cd1a5d3102381aff6065c850eed34ef9dc5b09c1dfa6cb9ccdfa9d5e938c5410",
+            "logp": "a9dc891d6dedb9c69b4a8fcceff97e0f8ad39396eea0fe1e3a59113043003ab4",
+            "native_counts": "50f05d5e08a49eda1e8e43a1ab72abc5cd99542052e339ff3a206d71ad08c613",
+            "next_states": "831f7941185a25c7932c2a5f666715f21a6a0e4e33d950e4314841637ba7431d",
+            "poses": "a44d2a4d49202bf24732f0db19d590bd5f4cdf10b53d36ae847890fae47ee056",
+            "next_poses": "032a779881bd126d81153b66f6d5ee25f040b050fbd482f5da33a83b015696b0",
+            "end_flags": "1b38cabf03f64fc4015840fcf47a5cd932a3c61e39e06d7243ba2da7d0fef7bf",
+            "rewards": "94a390d9ce1d5bf615ff888c46b6c0f0fccf97b8cba70683a78fc1a04a6bf73b"
+          },
+          "integration_sha256": "a1fee779d6119221563ead17caeddf8212785bd0ef5d9fb2495c6fe24e5f8c5e"
+        },
+        {
+          "id": "final_reconstructed_6",
+          "arm": "consolidated",
+          "round": -1,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "5m_2029653601_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.0,
+            "step_cap": 23334,
+            "group": "original_5m_primary"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+          "policy_hash": "2d075594fd336e4097bdad09fd7e60c73bb6037b67de34ffa92be97a06003f01",
+          "complete": true,
+          "physics_steps": 19606,
+          "decisions": 197,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.1999711693105123,
+          "nearest_m": 0.1999711693105123,
+          "initial_distance_m": 5.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t221_left_success/episodes/final_reconstructed_6.npz",
+          "trace_sha256": "e91a8a5f27cf92f8acfd5b92fe202f67dbe0f2ee4f0834100b4601f5e13d2a69",
+          "array_hashes": {
+            "states": "f30455baf38e1dfc0bd40844b4d67fc2fc73dd2127c74114794c66c02264c2e0",
+            "actions": "ee4538c0dcb13dfa82fcb1375937bd3488cb534550af2f254c24b2bb9132ebb6",
+            "means": "5a3ce19670fd722e66567601dfbb7f8e7d1f6c7f19b10ce496a6301a04a0f5e7",
+            "logp": "bf876759e2c29acb271351d31e371bb470768b53af94fa8a8aa6377c6193716a",
+            "native_counts": "450ad25d5b95960ac3e406afe4e1481c1e0aa9600032fa9f2535492c62b582a4",
+            "next_states": "84c64523e4f9064c94b64b80456e9e0bd6e3b22788523783d9a5a2b670f568c1",
+            "poses": "e8d529e07a17750d0a8b72f40ae2a21e9f962f391b2d3d6c29e6346ad66c5e8a",
+            "next_poses": "8a14cb8c692b7bef4bf3a4a5b46a63d4f1474b297e6a2de7a7e741bd43a99feb",
+            "end_flags": "9aa799ee80cb263dc3b82e808f8cdd184f31a159d0a39758f969a80d256d41a4",
+            "rewards": "9cf16217e45455a87ebfb13e595652c8dff2b1d4c4363c39302dd5ae2912e338"
+          },
+          "integration_sha256": "4cceb6820ab85915ecfad86746625e6b7dd83771eea959f120f7a78fcd61f393"
+        },
+        {
+          "id": "final_reconstructed_7",
+          "arm": "consolidated",
+          "round": -1,
+          "role": "evaluation",
+          "seed": 0,
+          "mode": "deterministic",
+          "case": {
+            "id": "5m_2029654802_RIGHT",
+            "seed": 2029654802,
+            "angle_deg": 18.8,
+            "side": "RIGHT",
+            "distance_m": 5.0,
+            "step_cap": 23334,
+            "group": "original_5m_primary"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+          "policy_hash": "2d075594fd336e4097bdad09fd7e60c73bb6037b67de34ffa92be97a06003f01",
+          "complete": true,
+          "physics_steps": 22149,
+          "decisions": 222,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19999294966134867,
+          "nearest_m": 0.19999294966134867,
+          "initial_distance_m": 5.0,
+          "trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t221_left_success/episodes/final_reconstructed_7.npz",
+          "trace_sha256": "8be05f1ab51e5d78cefaa64f18696b809c96a0a99bccd13a4f163c8587652c29",
+          "array_hashes": {
+            "states": "e14a6802d0cb28a52f121340d8f521a120440f0b1b71343a3928ec0460bfc531",
+            "actions": "8bb4e04af5b3c9775cf801f225cdea8b954ef04390ec6b4b84410e54fbc828b9",
+            "means": "65741690b3e4122daa1a53a216a523b965659a183c2b5d0d85b7d9a3a264b33d",
+            "logp": "6d2e40d83560afb897c2b680cecab70b4b032f6da5216536260137e9714edc83",
+            "native_counts": "41589b5b4d68f87f0a41efdedd87bf9a66ebc0a0df194a340443f18fa206f643",
+            "next_states": "01aae89a9b648e20f0997246fa89f3169cf5cfaad1a0fbd7c9fdeb0a7436ec4e",
+            "poses": "9fbb9246ef7c2b1ed02d121dc565e4002399173f5cae70745e1067a5f76248ed",
+            "next_poses": "57787c0b85a36b2725682acd7d1306fc4417d2d8e98b3b372002d1ee0b132d79",
+            "end_flags": "aa09a5886109b533631a85b9f917e32d97bca05eba416a31519ca4fe19677144",
+            "rewards": "0d824793ac8aed8048cda43a9db3c336f3d130e973a8bb6c07d734b11753f6ad"
+          },
+          "integration_sha256": "971fcecf4baf766ce677e607997b7a824a0d9077e289f66f9791033e3f88f806"
+        }
+      ],
+      "old8_safeGOAL": 8,
+      "old8_measured": 8,
+      "automatic_promotion": false,
+      "stable_5m_gate_passed": false,
+      "all_workers_stopped": true,
+      "elapsed_s": 74.59314151099989,
+      "own_bytes": 221333,
+      "all_runs_MiB": 1023.6384258270264,
+      "model_storage": "Matched-version deterministic reconstruction from hashed parent + verified_success.npz + source recipe; no binary final checkpoint"
+    },
+    "t222_stability": {
+      "state": "COMPLETE",
+      "stop_reason": "CASE_BUDGET_COMPLETE",
+      "scores": {
+        "old6": {
+          "n": 6,
+          "safeGOAL": 6,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "LEFT": {
+          "n": 27,
+          "safeGOAL": 25,
+          "CONTACT": 2,
+          "timeout": 0
+        },
+        "RIGHT": {
+          "n": 27,
+          "safeGOAL": 9,
+          "CONTACT": 0,
+          "timeout": 18
+        }
+      },
+      "centers_exact_to_T221": {
+        "LEFT": true,
+        "RIGHT": true
+      },
+      "reconstructed_policy_sha256": "2d075594fd336e4097bdad09fd7e60c73bb6037b67de34ffa92be97a06003f01",
+      "reconstruction_verified": true,
+      "navigation_training_updates": 0,
+      "recipe_reconstruction_optimizer_calls": 3000,
+      "physics_steps": 1213368,
+      "commands": 60,
+      "stable_5m_local_grid_gate_passed": false,
+      "independent_generalization_claim": false,
+      "automatic_promotion": false,
+      "all_workers_stopped": true,
+      "elapsed_s": 209.24865139899975,
+      "own_bytes": 166300,
+      "all_runs_MiB": 1023.8313999176025
+    },
+    "t223_coverage_repair": {
+      "state": "COMPLETE",
+      "stop_reason": "SOURCE_SUCCESS_GATE_FAILED",
+      "scores": {
+        "old6": {
+          "n": 0,
+          "safeGOAL": 0,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "LEFT": {
+          "n": 0,
+          "safeGOAL": 0,
+          "CONTACT": 0,
+          "timeout": 0
+        },
+        "RIGHT": {
+          "n": 0,
+          "safeGOAL": 0,
+          "CONTACT": 0,
+          "timeout": 0
+        }
+      },
+      "source_scores": {
+        "LEFT": {
+          "n": 2,
+          "safeGOAL": 0
+        },
+        "RIGHT": {
+          "n": 4,
+          "safeGOAL": 4
+        }
+      },
+      "supervised_updates": 0,
+      "shadow_updates": 0,
+      "RL_updates": 0,
+      "reconstruction_verified": false,
+      "physics_steps": 238108,
+      "commands": 12,
+      "development_grid_gate_passed": false,
+      "stable_independent_heldout_claim": false,
+      "automatic_promotion": false,
+      "all_workers_stopped": true,
+      "elapsed_s": 51.610887697999715,
+      "own_bytes": 43299,
+      "all_runs_MiB": 1023.8750896453857
+    }
+  },
+  "retained": "T159 official; T194 robust RIGHT baseline; T221 reconstructible original old8 successful candidate",
+  "stable_5m": false,
+  "all_new_runs_logical_MiB": 1023.8773078918457
+}
