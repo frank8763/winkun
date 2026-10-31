@@ -81,3 +81,5 @@
 - T207参数探索策略梯度已独立注册、contracts通过；rank3×2头部系数，frozen/learned配对对照，最多8代/405全部回合/9.5M全部物理步/900秒，末180秒留验收，最终32MiB峰值40MiB/global1GiB。先查stage/runs/t207_parameter_pg/launch/status，不重复。这是低维神经策略微调，不能称全骨干DRL训练或算法创新；样本成功与learned中心策略通过分别报告，不自动晋升/续训。
 
 - T207已完成并停止：GENERATION_BUDGET_COMPLETE，稳定5m门槛=False，参数更新尝试8；不重启、不续训、不自动晋升。读results_20261031_parameter_pg/findings.md。后处理只汇总与备份，零新增交互。
+
+- T207完成：frozen/learned探索LEFT各0/64，最终old8各7/8；learned LEFT为46.668s无接触超时剩1.55034m。不能把回报提高当到达。T205/T206/T207已Release核验备份并删除临时包。T208终止空间距离学习信号只草案，未注册/未启动，见results_20261031_parameter_pg/next_protocol.md；不自动追加。

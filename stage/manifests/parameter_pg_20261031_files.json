@@ -1,0 +1,1698 @@
+{
+  "schema": 1,
+  "scope": "Stage T207 paired frozen/learned episodic parameter-policy-gradient fine-tuning; all behavior coefficients, gradients, noise, full failure trajectories and final models. No Phase, caches, credentials, or original chats",
+  "source_bytes": 21183268,
+  "source_files": 338,
+  "files": [
+    {
+      "path": "stage/runs/t207_parameter_pg/basis.npz",
+      "bytes": 14448,
+      "sha256": "b5d550057356a5bf76bc5e780b7da190da8271219c1f141b47e11d3f00e0560f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/behavior_parameters.jsonl",
+      "bytes": 66762,
+      "sha256": "da82eea0ea29c0c5a78c7419ecc0cf7f70b53767dce26522b8a07f81bb19e282"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/contracts.json",
+      "bytes": 427,
+      "sha256": "4c4b2edcbb0ec6c6c14ece09013bd543e9b89048a32cf64a4c08d28c39b62369"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/epsilon_0.npz",
+      "bytes": 998,
+      "sha256": "5b2c5cf745079231ee98fba387d0e1562c4a2b6f24face51824fea3dbea36137"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/epsilon_1.npz",
+      "bytes": 1045,
+      "sha256": "c7236c535c88833067a5055be9ec8c92e1d87e6c6d5afce98f086a46a11c989f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/epsilon_2.npz",
+      "bytes": 1048,
+      "sha256": "89678242b730e443d3ecffef6556d6228b41586fb1d8cbdc17196d5d81bfe967"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/epsilon_3.npz",
+      "bytes": 1045,
+      "sha256": "72cd0888a54eaafd0229817469219d23a328d9c7170197d2fc26bad5cb742e1c"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/epsilon_4.npz",
+      "bytes": 1045,
+      "sha256": "3f6566b6d7da80d8fba67d3af27b083b90f0aebd91631cebcc4b1e68a90b8b2c"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/epsilon_5.npz",
+      "bytes": 1044,
+      "sha256": "d54856ef9a535f3f44e100ed81b7c9d8549999f51dadbf731e0fda8337df68ac"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/epsilon_6.npz",
+      "bytes": 1046,
+      "sha256": "f11db0c30e3688dbcc69b9ffa698961f95e4fcb5a5f0fa104c17ddb210f33ed3"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/epsilon_7.npz",
+      "bytes": 1045,
+      "sha256": "1b408dc73a0f80fe40bec981ff1d888a554d60443a2be5990a65550c8415cc99"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/frozen_final.pt",
+      "bytes": 2301783,
+      "sha256": "eb45d5dd3b7cb6fdb3b61b0980ee4c68bb3d1cc725958e6e8789aeaeeb722b18"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/generations.jsonl",
+      "bytes": 11560,
+      "sha256": "b2635f13ed8144126be16ef33aabe081668c648116ece0e9d7ef3253c2465191"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/frozen_final_eval.npz",
+      "bytes": 10077,
+      "sha256": "8c7a0408203c99b42fdea542bcc3571bc1c805c27197f6e01a70a5ab4b3c9999"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_frozen_central.npz",
+      "bytes": 10077,
+      "sha256": "8c7a0408203c99b42fdea542bcc3571bc1c805c27197f6e01a70a5ab4b3c9999"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_frozen_s-1.0_p0.npz",
+      "bytes": 10407,
+      "sha256": "b90a28f9c0e9e93e2863705aa1802ccd0e2d5dd72dbff6c2aa4d7d742e116436"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_frozen_s-1.0_p1.npz",
+      "bytes": 10416,
+      "sha256": "72ba4f35b5993872d3cad052a9008e1e6d75f5d688ba795ef3568688f55b8b9b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_frozen_s-1.0_p2.npz",
+      "bytes": 10415,
+      "sha256": "269c6089f00abc1f4a114760aa2123f29f85e63b89957b63faef59d67c8e15db"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_frozen_s-1.0_p3.npz",
+      "bytes": 10395,
+      "sha256": "ef33680890e74c919bff567d00d733d9e38cd4ed4b2160cdf06cc91168e405e6"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_frozen_s1.0_p0.npz",
+      "bytes": 10409,
+      "sha256": "abed24d4b5c7ef4c143b272ae42ff9e47e53cccdfa9a103ee5105ada29c9c7a1"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_frozen_s1.0_p1.npz",
+      "bytes": 10417,
+      "sha256": "09c343d1319aa09eed70e33d5d4f50f4a546d37b0b60876b943856ec2d4ca5ea"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_frozen_s1.0_p2.npz",
+      "bytes": 10418,
+      "sha256": "1470f0f614e2d07775283a3001d59617438a5a5c6bd3c50894f4115963ae1e9f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_frozen_s1.0_p3.npz",
+      "bytes": 10408,
+      "sha256": "b86bf4cd0293042e20b4e2e9abc2adef52cef8d8240a32f1a2a0aa2a33f949ed"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_learned_central.npz",
+      "bytes": 10369,
+      "sha256": "c82db45d4fe762e846f602a376b63a6e59068a33671c8a4a46369a02ee9e0caa"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_learned_factor1.0.npz",
+      "bytes": 10369,
+      "sha256": "c82db45d4fe762e846f602a376b63a6e59068a33671c8a4a46369a02ee9e0caa"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_learned_s-1.0_p0.npz",
+      "bytes": 10407,
+      "sha256": "b90a28f9c0e9e93e2863705aa1802ccd0e2d5dd72dbff6c2aa4d7d742e116436"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_learned_s-1.0_p1.npz",
+      "bytes": 10416,
+      "sha256": "72ba4f35b5993872d3cad052a9008e1e6d75f5d688ba795ef3568688f55b8b9b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_learned_s-1.0_p2.npz",
+      "bytes": 10415,
+      "sha256": "269c6089f00abc1f4a114760aa2123f29f85e63b89957b63faef59d67c8e15db"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_learned_s-1.0_p3.npz",
+      "bytes": 10395,
+      "sha256": "ef33680890e74c919bff567d00d733d9e38cd4ed4b2160cdf06cc91168e405e6"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_learned_s1.0_p0.npz",
+      "bytes": 10409,
+      "sha256": "abed24d4b5c7ef4c143b272ae42ff9e47e53cccdfa9a103ee5105ada29c9c7a1"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_learned_s1.0_p1.npz",
+      "bytes": 10417,
+      "sha256": "09c343d1319aa09eed70e33d5d4f50f4a546d37b0b60876b943856ec2d4ca5ea"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_learned_s1.0_p2.npz",
+      "bytes": 10418,
+      "sha256": "1470f0f614e2d07775283a3001d59617438a5a5c6bd3c50894f4115963ae1e9f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g0_learned_s1.0_p3.npz",
+      "bytes": 10408,
+      "sha256": "b86bf4cd0293042e20b4e2e9abc2adef52cef8d8240a32f1a2a0aa2a33f949ed"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_frozen_central.npz",
+      "bytes": 10077,
+      "sha256": "8c7a0408203c99b42fdea542bcc3571bc1c805c27197f6e01a70a5ab4b3c9999"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_frozen_s-1.0_p0.npz",
+      "bytes": 10398,
+      "sha256": "17c431789e343ba87fe9fd657882a740d23dcc53d023b67343e77bcda9bece87"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_frozen_s-1.0_p1.npz",
+      "bytes": 10408,
+      "sha256": "10fe47312122b375557e97b80a8375142a387f8301465937dfcf146ff6770c5d"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_frozen_s-1.0_p2.npz",
+      "bytes": 10434,
+      "sha256": "253e454e995a63a83402d242b57cbaf49113e96ceb37266aae418052a068493a"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_frozen_s-1.0_p3.npz",
+      "bytes": 10402,
+      "sha256": "cebff9f18e963894cee86f0bd452c91578cf8511095a6ce12bbbebe2a7b7d40e"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_frozen_s1.0_p0.npz",
+      "bytes": 10398,
+      "sha256": "c1c77ef1d78c607078b3bdc12b9d89f1f94859fe1e8d70db91b74e65e7d3d94b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_frozen_s1.0_p1.npz",
+      "bytes": 10413,
+      "sha256": "fa329a4e252d65ef213f4b09b064c2085901cf8767f59e783e9f1dc9bc3ec8f8"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_frozen_s1.0_p2.npz",
+      "bytes": 10443,
+      "sha256": "24cc92035ff286fd8282623adf6596921845084c6c0226722c4781ba9b0bd2f0"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_frozen_s1.0_p3.npz",
+      "bytes": 10406,
+      "sha256": "b061d04074952af23610b20b770ab66bd59e4b88782fa00cf5bcd43cc3b718ac"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_learned_central.npz",
+      "bytes": 10386,
+      "sha256": "3b1ccfdf2435866c5044a4581708864ae1ad1c041bbaeeae280b8b59c60860ba"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_learned_factor1.0.npz",
+      "bytes": 10386,
+      "sha256": "3b1ccfdf2435866c5044a4581708864ae1ad1c041bbaeeae280b8b59c60860ba"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_learned_s-1.0_p0.npz",
+      "bytes": 10395,
+      "sha256": "5f83060806ee4d2d3af0947880e406d676a15ce1670b842762eb20cdeec5b31c"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_learned_s-1.0_p1.npz",
+      "bytes": 10409,
+      "sha256": "6d328fa524dce3c6caa806d0c9186100bb6ad50d7b3ce60d3c4c3237ec0b716d"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_learned_s-1.0_p2.npz",
+      "bytes": 10434,
+      "sha256": "3ed6a3f0f502f3d1add92e498be18121d68727d084ca07f3ec396a945a8bf9e2"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_learned_s-1.0_p3.npz",
+      "bytes": 10397,
+      "sha256": "ea0738bbb70fdf6bdf611da8b7d8cf6c5446cbf1ea7944054c4d8535d6264f07"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_learned_s1.0_p0.npz",
+      "bytes": 10412,
+      "sha256": "dd2122bacea404c060b912ef57f02347bbc1d0715e9ce79813b628e79563d644"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_learned_s1.0_p1.npz",
+      "bytes": 10410,
+      "sha256": "b18b12f4e3bd9c66d38c805e204a65035a0d3a3265d2ce6e5a9179bb7f80b83e"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_learned_s1.0_p2.npz",
+      "bytes": 10445,
+      "sha256": "00706f4dd4b38ba95a4d2bea09a3280b54e705245d2e16045c58f3f63d3a0a65"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g1_learned_s1.0_p3.npz",
+      "bytes": 10421,
+      "sha256": "edd4c754897f0e4f0efac22bfbc3ef5f3bb297cfb9148eaf288210ce8b23c36e"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_frozen_central.npz",
+      "bytes": 10077,
+      "sha256": "8c7a0408203c99b42fdea542bcc3571bc1c805c27197f6e01a70a5ab4b3c9999"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_frozen_s-1.0_p0.npz",
+      "bytes": 10397,
+      "sha256": "7520fd36197a2371a467389c5ad541e16e777b0c3fa3d5ece398a29006e2a31b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_frozen_s-1.0_p1.npz",
+      "bytes": 10422,
+      "sha256": "b23d96e1eb419b6450b6192db664fa0cf1e840beb963e95f7e4e9c32c3faccee"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_frozen_s-1.0_p2.npz",
+      "bytes": 10402,
+      "sha256": "fcb84ab95a49174cbdc79989968379cd1e0b6cc3d765457885006fc83856bf28"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_frozen_s-1.0_p3.npz",
+      "bytes": 10408,
+      "sha256": "616213671a80966c5cce63b2d8aa8c75e2aa33e833d460c44737777542cef705"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_frozen_s1.0_p0.npz",
+      "bytes": 10408,
+      "sha256": "e190d2a7da92fceaa8e961f17ff09b1cc07e31a101e65c825056065af7fb622c"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_frozen_s1.0_p1.npz",
+      "bytes": 10409,
+      "sha256": "76e08dfd3f47d5b486be9180eb805fd39d963c81a65407a6629e707bd81667bf"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_frozen_s1.0_p2.npz",
+      "bytes": 10407,
+      "sha256": "c98dcc87ef5a446eed7d431ee7fb03cd9eeb60c7c1fefd1c26d4f0c33f7be83a"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_frozen_s1.0_p3.npz",
+      "bytes": 10403,
+      "sha256": "7f4f2712049a11abe91107a60441b764d573619c100d71804897ef839dcb4f74"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_learned_central.npz",
+      "bytes": 10380,
+      "sha256": "ae6a16d579b879103a4a1b3c2fb04b42abe68ec7955330e2f71f10bea0d7a56f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_learned_factor1.0.npz",
+      "bytes": 10380,
+      "sha256": "ae6a16d579b879103a4a1b3c2fb04b42abe68ec7955330e2f71f10bea0d7a56f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_learned_s-1.0_p0.npz",
+      "bytes": 10407,
+      "sha256": "d675d50a82a1c52277e5305fc06397a989e9f3a330f0b6ab1224007b463ecc5e"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_learned_s-1.0_p1.npz",
+      "bytes": 10410,
+      "sha256": "d00d6d58c1fe4fd436a54be8b9d8f502a4fed42ae083b394092a46666e1d5932"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_learned_s-1.0_p2.npz",
+      "bytes": 10395,
+      "sha256": "ad59c9f8115a4b415c625fac4057e82917de97ae57003e89cc54dee5b38437af"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_learned_s-1.0_p3.npz",
+      "bytes": 10412,
+      "sha256": "831f8e72a32e97d2b0c978f4318049692faf75bf6b6a03d8e7fa85061c263ac7"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_learned_s1.0_p0.npz",
+      "bytes": 10396,
+      "sha256": "23468287eb8a9ba17e2bc54fe6ccf1009898696ab2a548dd7662d502f84d1709"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_learned_s1.0_p1.npz",
+      "bytes": 10421,
+      "sha256": "6610ec5f2b847e2d2272a15c5c3ec84f8debb786d73a9a4a3dc3d8d8fce91f8c"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_learned_s1.0_p2.npz",
+      "bytes": 10401,
+      "sha256": "9264afa1027b8f1795c26920c1eed623678c1a48ed76a7e2d6ebade0abe4e2f9"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g2_learned_s1.0_p3.npz",
+      "bytes": 10400,
+      "sha256": "fd73703b75b0f3a07d18a457a4047ff5391ed03b0bc2123b37cb6bc434c56e8d"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_frozen_central.npz",
+      "bytes": 10077,
+      "sha256": "8c7a0408203c99b42fdea542bcc3571bc1c805c27197f6e01a70a5ab4b3c9999"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_frozen_s-1.0_p0.npz",
+      "bytes": 10415,
+      "sha256": "5636d66997e79c603f976d039e86f52291c4b683f97b115c70885b410aaca720"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_frozen_s-1.0_p1.npz",
+      "bytes": 10423,
+      "sha256": "86fbe1ad7d0a5d99e036274c067299e732f6b03887ae2e079c6515fe79e7e667"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_frozen_s-1.0_p2.npz",
+      "bytes": 10390,
+      "sha256": "15123f390263b45aa2b25798cd036c2d8fb7b49dbe1fd628fdbca5fb1c955b8a"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_frozen_s-1.0_p3.npz",
+      "bytes": 10399,
+      "sha256": "c5e0f732378c79bd17025295b7c04b618cc1ce439b6edc8eb3d575be21f5574e"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_frozen_s1.0_p0.npz",
+      "bytes": 10418,
+      "sha256": "da044461b9a8b150e3a0b1337b76b48c6152987bf97531fb58a66ea176b6a6e2"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_frozen_s1.0_p1.npz",
+      "bytes": 10409,
+      "sha256": "d5eb12f5195e9b7a10ee79caa45efb8d1a01bf752065307735c71a5d6153b7d0"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_frozen_s1.0_p2.npz",
+      "bytes": 10395,
+      "sha256": "d7f60aa62ad289166b051414b267badcce2cf62d62e8750d399835c6fdb6a89c"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_frozen_s1.0_p3.npz",
+      "bytes": 10406,
+      "sha256": "dfb5422d5a6c69fd3b20f58796760401adfa0290d084868541e37bde8a81dfbe"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_learned_central.npz",
+      "bytes": 10393,
+      "sha256": "37272f7c51aa6452486420043a7e04c20354931c0d4e88150cf6e7c6be5ff3cf"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_learned_factor1.0.npz",
+      "bytes": 10393,
+      "sha256": "37272f7c51aa6452486420043a7e04c20354931c0d4e88150cf6e7c6be5ff3cf"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_learned_s-1.0_p0.npz",
+      "bytes": 10410,
+      "sha256": "a48a43ccaded892d35049bcbc07ddb71561cda4e32ee2968750e5df4be93faf1"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_learned_s-1.0_p1.npz",
+      "bytes": 10417,
+      "sha256": "b67801b936cc197ae3f55af2527063d6e129708689513fbed6ff8dc74534ad05"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_learned_s-1.0_p2.npz",
+      "bytes": 10396,
+      "sha256": "7c90761d65ae07d7dcc95cf4604e86832c85338d319b48e6f2b5a7213d05d78b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_learned_s-1.0_p3.npz",
+      "bytes": 10404,
+      "sha256": "5d269ab4fdc0b0a9396d71c2f4f630d18dd4addee3b864410825fb890be684a2"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_learned_s1.0_p0.npz",
+      "bytes": 10417,
+      "sha256": "021d08a13504b8d9f2ff2d6d279fbdc2914e13931dcbfca1abacb820981ceaf9"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_learned_s1.0_p1.npz",
+      "bytes": 10410,
+      "sha256": "0eafe8cb7cacc6c1687fea8552de3350a72efd0e69b4adc3f0e03f0600290d02"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_learned_s1.0_p2.npz",
+      "bytes": 10394,
+      "sha256": "22382004db129cd3dd53aa6d9da203bf6287004536b61659b151463e2956f50e"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g3_learned_s1.0_p3.npz",
+      "bytes": 10406,
+      "sha256": "100de46500eb73e07e71d7d55be3089dc6c2b4b37f5dbeca157f200b671c2b3f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_frozen_central.npz",
+      "bytes": 10077,
+      "sha256": "8c7a0408203c99b42fdea542bcc3571bc1c805c27197f6e01a70a5ab4b3c9999"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_frozen_s-1.0_p0.npz",
+      "bytes": 10389,
+      "sha256": "fc1e7a909aeaac9e6c0729cab1cf99d16bd1c757c39904fc81b5bfb2c51f48de"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_frozen_s-1.0_p1.npz",
+      "bytes": 10405,
+      "sha256": "587c4edb5810a0bf448e50efdc6074832e642253b0762233ba9cc8e3f625e8bd"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_frozen_s-1.0_p2.npz",
+      "bytes": 10409,
+      "sha256": "5ddc4324da72960d8ce35dc8580381e61a6672c78674057480a01994b23bdf00"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_frozen_s-1.0_p3.npz",
+      "bytes": 10407,
+      "sha256": "b6c21b51890ef68d654cd211bbbe232837bdf623fdb8ad139475f2205dae5434"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_frozen_s1.0_p0.npz",
+      "bytes": 10398,
+      "sha256": "3b9e7f6bfd4a50721b6f6efc4ce0eeceafcf029e3aa5f0106283430be78b359d"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_frozen_s1.0_p1.npz",
+      "bytes": 10402,
+      "sha256": "49baae03e507409e2257c60c4ac122c70662e7c3ca20a0f96429157cfcb57547"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_frozen_s1.0_p2.npz",
+      "bytes": 10411,
+      "sha256": "775cfb57d8b78048b5246026c32dc8ee018258d62e090aea69e563b3834044fe"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_frozen_s1.0_p3.npz",
+      "bytes": 10408,
+      "sha256": "b19615be26613a9aa87a0807cf872ce58ecc86c95a2220fbd74349a254b65384"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_learned_central.npz",
+      "bytes": 10392,
+      "sha256": "d5556af459d6a6e4648a634d2b3ff95180eef110c529462f9967e4a507391f7f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_learned_factor1.0.npz",
+      "bytes": 10392,
+      "sha256": "d5556af459d6a6e4648a634d2b3ff95180eef110c529462f9967e4a507391f7f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_learned_s-1.0_p0.npz",
+      "bytes": 10390,
+      "sha256": "cb2bf0e738cadbfe38546939de7333e7f4ef5cf38796d5fe46a2e66a2b69fcc8"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_learned_s-1.0_p1.npz",
+      "bytes": 10398,
+      "sha256": "e4ab2a47cc2a935fd858aee8f7f8d76a1907c63d75e64a63d9975ae00f962a65"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_learned_s-1.0_p2.npz",
+      "bytes": 10410,
+      "sha256": "ba5e65e0cdb159b2e0186f3411b8f3396d99bc76885a3048643dd99c7556a313"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_learned_s-1.0_p3.npz",
+      "bytes": 10405,
+      "sha256": "d103999a1351d5020c3d2f4417065cfe6d4749b89e2a460eb9886221582c475a"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_learned_s1.0_p0.npz",
+      "bytes": 10393,
+      "sha256": "ce427a63b80a85a0d6085a261790df3cc30c9445dd8d85cc99ce8373697c70b6"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_learned_s1.0_p1.npz",
+      "bytes": 10394,
+      "sha256": "16c3c0e6dcd7f279ce3649fb189218bad1512990da1f3c996811c9d14345d4b4"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_learned_s1.0_p2.npz",
+      "bytes": 10411,
+      "sha256": "32b622e1686c7619859d81c6bdbbf6c058ba039dee77122c95b8a7dfd96c4841"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g4_learned_s1.0_p3.npz",
+      "bytes": 10395,
+      "sha256": "2c7d962c00755a61f7e1ac596fdcac657e31d1e8c241005d426b118e0416ef0f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_frozen_central.npz",
+      "bytes": 10077,
+      "sha256": "8c7a0408203c99b42fdea542bcc3571bc1c805c27197f6e01a70a5ab4b3c9999"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_frozen_s-1.0_p0.npz",
+      "bytes": 10401,
+      "sha256": "cb13a1979e6b364f0898c490143c55a76c4f8bb2ad604b28f140ce39fb9a16b4"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_frozen_s-1.0_p1.npz",
+      "bytes": 10415,
+      "sha256": "f6abb85681238902c3e538615c3563b5ab0f96ceb2bfc0a434bdbb63185d161b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_frozen_s-1.0_p2.npz",
+      "bytes": 10417,
+      "sha256": "567f2fddc84d024e73d2f99f62f678afc3d649115e84bc5197e96f8490c44a00"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_frozen_s-1.0_p3.npz",
+      "bytes": 10411,
+      "sha256": "05a7424470262bccda6d142bd9700de05f92a5dbda5f239ab52137c8173fa6bf"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_frozen_s1.0_p0.npz",
+      "bytes": 10401,
+      "sha256": "d855f23517c05b9caded6fdd3c939ec15f7a89494dabb63c30d6d24027d04bea"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_frozen_s1.0_p1.npz",
+      "bytes": 10404,
+      "sha256": "52908cabbce7720e6ac3df0d0a3407a0b42f8139374834110c66f76407648b0a"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_frozen_s1.0_p2.npz",
+      "bytes": 10416,
+      "sha256": "b23701bd87d058772706f9945ba25d819e4fc27860f7441c9dd1764e8dba8e03"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_frozen_s1.0_p3.npz",
+      "bytes": 10414,
+      "sha256": "f957a9ca76a86cd9b7c3f056918b6c2e7e641e8a908a7db39d7349f486be07a5"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_learned_central.npz",
+      "bytes": 10381,
+      "sha256": "41b96e462e70a90f989be110f33eb771b4e6242554a0852cfff04c6952519ff7"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_learned_factor1.0.npz",
+      "bytes": 10381,
+      "sha256": "41b96e462e70a90f989be110f33eb771b4e6242554a0852cfff04c6952519ff7"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_learned_s-1.0_p0.npz",
+      "bytes": 10400,
+      "sha256": "ade5bd16e7fb25931b820f10a87f69a0837fd8b1b4e59406a1f4716b41d73d00"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_learned_s-1.0_p1.npz",
+      "bytes": 10401,
+      "sha256": "6834a3c35331d8f7328f212af65d5397ce60813cbd96a2a1498728d7cc21dea1"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_learned_s-1.0_p2.npz",
+      "bytes": 10420,
+      "sha256": "e0acf91566f9ea2ce3da36f7a99c70ef35e119b6e685c4262a2fdd45d1629c73"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_learned_s-1.0_p3.npz",
+      "bytes": 10409,
+      "sha256": "cfc5ab2bc547121a7e727e034f294b69ea6936c9e4681eec1e5b18024a7cfb59"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_learned_s1.0_p0.npz",
+      "bytes": 10393,
+      "sha256": "b79b34993d7aa9c4dc25c72ab2fc962001d93890e8ce838eca6be775d7cb5ec9"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_learned_s1.0_p1.npz",
+      "bytes": 10406,
+      "sha256": "71e3b9b2e77f5a12a5f7985c71ea76660b22cfea1d8b6e61f21728abdf9c1037"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_learned_s1.0_p2.npz",
+      "bytes": 10419,
+      "sha256": "f869a88c58f34d1c40a69a79c6139f4e8fdf04a87cc4647c84eea674385bc81e"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g5_learned_s1.0_p3.npz",
+      "bytes": 10414,
+      "sha256": "0db69159a579455b2019338229e283fc5ff88b502561333ff8acfc77bb0c900a"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_frozen_central.npz",
+      "bytes": 10077,
+      "sha256": "8c7a0408203c99b42fdea542bcc3571bc1c805c27197f6e01a70a5ab4b3c9999"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_frozen_s-1.0_p0.npz",
+      "bytes": 10403,
+      "sha256": "dce1fb4de04dc7ff83f68d5b1680d0f7aaa3b7abe05198485cb7b0fc8df07345"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_frozen_s-1.0_p1.npz",
+      "bytes": 10398,
+      "sha256": "5e515fc1091db18c7df4cc3582beea2f9d076234cd96dc41ccd4871bbbf2e159"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_frozen_s-1.0_p2.npz",
+      "bytes": 10393,
+      "sha256": "7114638815e3da4b719ac02e526eeb718141ac03809ac83790eab318a18f6c15"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_frozen_s-1.0_p3.npz",
+      "bytes": 10400,
+      "sha256": "542feeecbce0b53a1d9c27f4b7b3964c856bddee3db4794fffbaf994a82bf5cf"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_frozen_s1.0_p0.npz",
+      "bytes": 10404,
+      "sha256": "6404483238bc40028ec912f8d46e7527b5d978e6585380297c1aaa60aa696aac"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_frozen_s1.0_p1.npz",
+      "bytes": 10404,
+      "sha256": "55f07a347a668ee789e072079f146369fca217f63d6e91475ab3dc1e50e55595"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_frozen_s1.0_p2.npz",
+      "bytes": 10385,
+      "sha256": "8e4d7f04a03eff472b6ab96d542792109910cfb02eabba9d933c46547507b1fd"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_frozen_s1.0_p3.npz",
+      "bytes": 10399,
+      "sha256": "b8dcff196ea338a6ed9462d2f86eabab78ff87933a132cf003b866e71bffacdc"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_learned_central.npz",
+      "bytes": 10392,
+      "sha256": "63655c3da18d962aac6ca615edf84a2a0e0ba05231821b2822e474eb337cfe24"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_learned_factor1.0.npz",
+      "bytes": 10392,
+      "sha256": "63655c3da18d962aac6ca615edf84a2a0e0ba05231821b2822e474eb337cfe24"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_learned_s-1.0_p0.npz",
+      "bytes": 10391,
+      "sha256": "6c7cd5e2bf4938897646e70ddbe2270dfe689403e64c1eec279bc5a64bbf0a47"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_learned_s-1.0_p1.npz",
+      "bytes": 10418,
+      "sha256": "cb42976aae328a4b5d4ce3f6cbea9a901023514314c0f7107320761c45daa60b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_learned_s-1.0_p2.npz",
+      "bytes": 10403,
+      "sha256": "0e0ffc064953d4a72cdb62a3ea1ad8d8d078ab106c4fd8b937d7786a1ceeb33d"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_learned_s-1.0_p3.npz",
+      "bytes": 10392,
+      "sha256": "ec9316cb452f4c7b90261f68c89c3b89be437fcf0f835c6e51b7ac8e31fc585a"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_learned_s1.0_p0.npz",
+      "bytes": 10394,
+      "sha256": "95b6d654d21efac0df7f96b689b6f0986ae53abd601055b06e83c0e334e9ffe7"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_learned_s1.0_p1.npz",
+      "bytes": 10399,
+      "sha256": "391a4ac68c089d9e7f01d625b34e382c9b4501195b8e4a52fd11ea452d0a9ca7"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_learned_s1.0_p2.npz",
+      "bytes": 10400,
+      "sha256": "b0279bd3060696190fe778d9a9054c22c0621cabbb449304cda4de12278a4669"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g6_learned_s1.0_p3.npz",
+      "bytes": 10410,
+      "sha256": "5f081fbebd8b228f0acf31acb0933041f24d0826ffffa0487926382a6d692cfc"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_frozen_central.npz",
+      "bytes": 10077,
+      "sha256": "8c7a0408203c99b42fdea542bcc3571bc1c805c27197f6e01a70a5ab4b3c9999"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_frozen_s-1.0_p0.npz",
+      "bytes": 10410,
+      "sha256": "84593d1971a2f7a40a124583c72aaac5c93b0216c57c551828a6ea451ae2e70b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_frozen_s-1.0_p1.npz",
+      "bytes": 10406,
+      "sha256": "11ce1a88c97d08b294bc32e8eb00a8f382a1419ec8ff6e2e119ee077187f7cd7"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_frozen_s-1.0_p2.npz",
+      "bytes": 10399,
+      "sha256": "48963cb3ce218cc88647f69e995113dc60fb822123c0df0a7e8e08673f58f0d1"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_frozen_s-1.0_p3.npz",
+      "bytes": 10403,
+      "sha256": "029abe6d876bcffa85f2bc5b2214c6f6e8d0cb6a0bcd1fd12629d379eac16cd2"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_frozen_s1.0_p0.npz",
+      "bytes": 10404,
+      "sha256": "8f9a4a65b236e02f43aff46448e8cc8382629aa32e3d8bb51ea2c5d7864af773"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_frozen_s1.0_p1.npz",
+      "bytes": 10405,
+      "sha256": "a1b59d5b904823f378299c2dae2c424160ef40080d2f4450ba3bb389d74fc8ed"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_frozen_s1.0_p2.npz",
+      "bytes": 10402,
+      "sha256": "1ad60fd40a176dd6d2a766388344f0566916aa807307aeabef95e12634644004"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_frozen_s1.0_p3.npz",
+      "bytes": 10407,
+      "sha256": "45eecc01526b23234b74647dc013c4d2b84e2006b0bfb839709f9ae17728c288"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_learned_central.npz",
+      "bytes": 10390,
+      "sha256": "5f64d33bc1437192f0335ff7e08f030a9144a7f3eb28ed58e86f727768b69d56"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_learned_factor1.0.npz",
+      "bytes": 10390,
+      "sha256": "5f64d33bc1437192f0335ff7e08f030a9144a7f3eb28ed58e86f727768b69d56"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_learned_s-1.0_p0.npz",
+      "bytes": 10404,
+      "sha256": "fac15d78960703cd8ff52c2af1dfb664b65222bb2fb6d8be69fbbb0c59ed1a3d"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_learned_s-1.0_p1.npz",
+      "bytes": 10405,
+      "sha256": "a74769fdf131e6bb7b478ebb691a99619dcabff3c7f88f79ea51f66e0b0d568c"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_learned_s-1.0_p2.npz",
+      "bytes": 10402,
+      "sha256": "7abdf0e15b06744bbe893d37097c02c8540bc4757cd10a533ece6130ee96d2d7"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_learned_s-1.0_p3.npz",
+      "bytes": 10398,
+      "sha256": "7618eaf1af674ea3a3e125a4c566cedc692a326f0e5e40943ca01ac8ac7e0c19"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_learned_s1.0_p0.npz",
+      "bytes": 10396,
+      "sha256": "d73b09b120b0bd103e7c8d87b30b26de495d15eb5596d37007b691d6c472c763"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_learned_s1.0_p1.npz",
+      "bytes": 10397,
+      "sha256": "80cdc89438d95daf0e2e38a243b5adddd60c4bc3808a7db27393ac9cfc2a2dd4"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_learned_s1.0_p2.npz",
+      "bytes": 10400,
+      "sha256": "982955675e1c1487fbbecd5180e177053fad622f7856385d2d3e85ce4674a29f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/g7_learned_s1.0_p3.npz",
+      "bytes": 10397,
+      "sha256": "ed31b4a21c41db7a6465c10adef68b21b12273e28bb784eb0f43c51b787b92a4"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/learned_final_eval.npz",
+      "bytes": 10390,
+      "sha256": "5f64d33bc1437192f0335ff7e08f030a9144a7f3eb28ed58e86f727768b69d56"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/heads/parent.npz",
+      "bytes": 10077,
+      "sha256": "8c7a0408203c99b42fdea542bcc3571bc1c805c27197f6e01a70a5ab4b3c9999"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/launch.json",
+      "bytes": 235,
+      "sha256": "7011be3925605014833d75da0fb1140dfc307b329d45644440757508be58a2af"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/learned_final.pt",
+      "bytes": 2301800,
+      "sha256": "366cc482d215dfdeba78fcb0c8fd10cfe9cd712c0810000ed9bcc896aa6ab3ce"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/metrics.json",
+      "bytes": 4852,
+      "sha256": "e8a61a125734e12b6e14e1966dc138c3e9928c37c7aecd341349a121ee41a1dd"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/frozen_final_old6.npz",
+      "bytes": 109380,
+      "sha256": "12e069111c4939402110c168829c9cb93b06b0ed9ea9e73a73b38a1c7c1a8431"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_frozen_central_LEFT.npz",
+      "bytes": 109380,
+      "sha256": "12e069111c4939402110c168829c9cb93b06b0ed9ea9e73a73b38a1c7c1a8431"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_frozen_s-1.0_p0.npz",
+      "bytes": 72752,
+      "sha256": "cdf1d37240f1124d8d1ef820a3edffa4613a9b97f1738b06f3465827378df4f7"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_frozen_s-1.0_p1.npz",
+      "bytes": 70741,
+      "sha256": "f9e811de667d0b192a80984f3b225595a3ac2650354a7264d6afed919c433f20"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_frozen_s-1.0_p2.npz",
+      "bytes": 80198,
+      "sha256": "d40e58d76599649b24b876cbbe01bacc796f73a5574b03bc3a09ed53773c0afe"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_frozen_s-1.0_p3.npz",
+      "bytes": 70285,
+      "sha256": "d6b8217b330285f8b83b6efc7b9df32b31f3b55fe041bc355b15ca56348c2e52"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_frozen_s1.0_p0.npz",
+      "bytes": 68641,
+      "sha256": "fef94f1bfd53c5dce22ca1ca4c1ac22621e178a0343e1dce070d2de1b88e2346"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_frozen_s1.0_p1.npz",
+      "bytes": 85308,
+      "sha256": "ba45bb6bb35a047644d2042eea5b7f9a976cf1f5a6951a3120491f363eb780ad"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_frozen_s1.0_p2.npz",
+      "bytes": 70213,
+      "sha256": "7940e4dbf677f9b58ca93e42b02347928bfda3ea8fdf135725894ecac2b62b84"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_frozen_s1.0_p3.npz",
+      "bytes": 78000,
+      "sha256": "3a650bc2bc869e13879c2d77666b90f0c013bd397774fbd777b7a48d784160cf"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_learned_central_LEFT.npz",
+      "bytes": 101989,
+      "sha256": "cc18f2b580cfb262fc8e126e82b26d811293020906424e67f03965be44c8ccd8"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_learned_s-1.0_p0.npz",
+      "bytes": 72752,
+      "sha256": "cdf1d37240f1124d8d1ef820a3edffa4613a9b97f1738b06f3465827378df4f7"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_learned_s-1.0_p1.npz",
+      "bytes": 70741,
+      "sha256": "f9e811de667d0b192a80984f3b225595a3ac2650354a7264d6afed919c433f20"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_learned_s-1.0_p2.npz",
+      "bytes": 80198,
+      "sha256": "d40e58d76599649b24b876cbbe01bacc796f73a5574b03bc3a09ed53773c0afe"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_learned_s-1.0_p3.npz",
+      "bytes": 70285,
+      "sha256": "d6b8217b330285f8b83b6efc7b9df32b31f3b55fe041bc355b15ca56348c2e52"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_learned_s1.0_p0.npz",
+      "bytes": 68641,
+      "sha256": "fef94f1bfd53c5dce22ca1ca4c1ac22621e178a0343e1dce070d2de1b88e2346"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_learned_s1.0_p1.npz",
+      "bytes": 85308,
+      "sha256": "ba45bb6bb35a047644d2042eea5b7f9a976cf1f5a6951a3120491f363eb780ad"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_learned_s1.0_p2.npz",
+      "bytes": 70213,
+      "sha256": "7940e4dbf677f9b58ca93e42b02347928bfda3ea8fdf135725894ecac2b62b84"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g0_learned_s1.0_p3.npz",
+      "bytes": 78000,
+      "sha256": "3a650bc2bc869e13879c2d77666b90f0c013bd397774fbd777b7a48d784160cf"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_frozen_central_LEFT.npz",
+      "bytes": 109380,
+      "sha256": "12e069111c4939402110c168829c9cb93b06b0ed9ea9e73a73b38a1c7c1a8431"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_frozen_s-1.0_p0.npz",
+      "bytes": 76786,
+      "sha256": "94f2b782f0c8058d06b2b1e0db160c9b8cb1ad35da7c7a0f133299a33adc01a7"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_frozen_s-1.0_p1.npz",
+      "bytes": 106436,
+      "sha256": "b118171f8fbbd5a74a1dcb04587adc61c630b49802f8ecb9d53a3bb4333a9e22"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_frozen_s-1.0_p2.npz",
+      "bytes": 70248,
+      "sha256": "aeae74c817d12f58bdea0414e9dbf7c720dc5c345e24de82329a6fd046a04672"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_frozen_s-1.0_p3.npz",
+      "bytes": 83184,
+      "sha256": "e2fd43b7df96a9a1478741e9856e76592cf54fe851cc34738f9028227155b473"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_frozen_s1.0_p0.npz",
+      "bytes": 60507,
+      "sha256": "52edb754a3c63eb2af54c70654a4c315a1c82cd57c8a1d8f0a5db27d0374c0f8"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_frozen_s1.0_p1.npz",
+      "bytes": 169148,
+      "sha256": "8fc41d49d1a3c40ecce78f2bb924db588bc4c52cb18220b3cc0399cc720c548f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_frozen_s1.0_p2.npz",
+      "bytes": 74977,
+      "sha256": "6ce93f2c0f17a335c5f083831dea1a76b2f2cc5fa617a056719b8049e9ad3fb4"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_frozen_s1.0_p3.npz",
+      "bytes": 63850,
+      "sha256": "864683dce819c52b09852bf2a9a60315b1cdba2830d3bdbc6eca450f7f42acf7"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_learned_central_LEFT.npz",
+      "bytes": 109382,
+      "sha256": "a45b6e08990b694ef8921bff2ebac65c26331043a44f7a4767f45cd50201a213"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_learned_s-1.0_p0.npz",
+      "bytes": 74095,
+      "sha256": "a0fe3182422e93ffcf5a2ce8ba279d196676c4a86b9cf44710ce30ec117167b5"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_learned_s-1.0_p1.npz",
+      "bytes": 77249,
+      "sha256": "9d91359cc9b25fc29478fbb365c0a9a0326f5d660880faf65f88eb8a5732a537"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_learned_s-1.0_p2.npz",
+      "bytes": 72750,
+      "sha256": "e6b9ca0a9b7d2d2be689dd6330a0b515b07dea5792a8498f683155edcc0e4b3f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_learned_s-1.0_p3.npz",
+      "bytes": 77285,
+      "sha256": "40e995b53053728c42def5dac3e0b53e1fe458b66e04108caba46c0722d63b94"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_learned_s1.0_p0.npz",
+      "bytes": 63896,
+      "sha256": "731cd9b08eba945086beeb4c48684fc96d6427f6adb10a83873b3cec944dfece"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_learned_s1.0_p1.npz",
+      "bytes": 169354,
+      "sha256": "6df41cfd7fff58de08e47a550b6b2fca0af2eb52114e96b5c0fc0603a1554610"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_learned_s1.0_p2.npz",
+      "bytes": 72310,
+      "sha256": "522be3bcf5750e1ed26d80917443036d9d6f63f5278570818a2fc039ca413978"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g1_learned_s1.0_p3.npz",
+      "bytes": 65713,
+      "sha256": "1bbc8a703b1462e0b52177019b49d8299c533a63a605ce75e0c65f2664e0f1d4"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_frozen_central_LEFT.npz",
+      "bytes": 109380,
+      "sha256": "12e069111c4939402110c168829c9cb93b06b0ed9ea9e73a73b38a1c7c1a8431"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_frozen_s-1.0_p0.npz",
+      "bytes": 154967,
+      "sha256": "a787d64467f8281781bab60393ad4a9ec6f939ef97b93f4a90d73e75add4fa40"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_frozen_s-1.0_p1.npz",
+      "bytes": 108929,
+      "sha256": "89eb3801d0ad8dfed9f1afb73e9ad3ee53ab0b14fe09ee913e22e8b2992d1e58"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_frozen_s-1.0_p2.npz",
+      "bytes": 124995,
+      "sha256": "e999a669b870fa9fce650635f2c06831c92b680e0bcf5aa1e153b601ade91782"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_frozen_s-1.0_p3.npz",
+      "bytes": 92373,
+      "sha256": "2e226c6e6c7e328ac495feb530fa2fa416482df17d9f2391a693da8b5569eded"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_frozen_s1.0_p0.npz",
+      "bytes": 94223,
+      "sha256": "0690e554fe0b2f93ffac70e8aa12d3841244bf574c1767900051cd48e480bcbd"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_frozen_s1.0_p1.npz",
+      "bytes": 111870,
+      "sha256": "bb222dfe142f8c23a95696bf4d7788cbe926568fb23d2e3246734ed65d9095a6"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_frozen_s1.0_p2.npz",
+      "bytes": 101284,
+      "sha256": "dbbc0c1e615c4807f995eaf6c15faf06ea8013f71eaf1e7e003cda2f600e7fcd"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_frozen_s1.0_p3.npz",
+      "bytes": 78944,
+      "sha256": "07eb35650f9a81a6b1914ea7ffa1ab4f0b35e4fc4d6a3ff06f98588a322ded69"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_learned_central_LEFT.npz",
+      "bytes": 116248,
+      "sha256": "1a1b47e74b37eb86fc70b4db7b0a6af0ef1559f0e7dc454488dcb43a8b3d1116"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_learned_s-1.0_p0.npz",
+      "bytes": 125191,
+      "sha256": "a9cf0cf6b3672502a3f247cdec0442f2eb02e3c09505d57eceb458ba9c27b27a"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_learned_s-1.0_p1.npz",
+      "bytes": 110654,
+      "sha256": "7941bcbd336c952649bf0ec6352820ec4fe6042e69a98a1281930b78a9bee9a3"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_learned_s-1.0_p2.npz",
+      "bytes": 121139,
+      "sha256": "ebb370493448f5be865facc2f8c1f9f3f1ad1e63dcad2993537d251a1b784037"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_learned_s-1.0_p3.npz",
+      "bytes": 59087,
+      "sha256": "d986e742e4f55b134398f14a99a241d416cdd30706d4d64ac6c44ce8d83a3342"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_learned_s1.0_p0.npz",
+      "bytes": 98599,
+      "sha256": "edada3f6bb33759bec5ad33c42b289dec380f7a030f18fba8b27e933d0878536"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_learned_s1.0_p1.npz",
+      "bytes": 114365,
+      "sha256": "883800e28530219a25650e5577de08ec27404177ea934a7258b66ae435e817dd"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_learned_s1.0_p2.npz",
+      "bytes": 101088,
+      "sha256": "03cf1be8fc96f97fa0b98d43f1fe7269c8be7a23a3a9c80e9ff87935b03e1ef0"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g2_learned_s1.0_p3.npz",
+      "bytes": 96892,
+      "sha256": "c509cd0ca59ca112b618c4feb2fe3b0c99806f310b7afa6269c205178504bc6e"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_frozen_central_LEFT.npz",
+      "bytes": 109380,
+      "sha256": "12e069111c4939402110c168829c9cb93b06b0ed9ea9e73a73b38a1c7c1a8431"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_frozen_s-1.0_p0.npz",
+      "bytes": 117093,
+      "sha256": "9959f30d2e2b4596f3dde2826b0002cd9107b8ad31e021005e3a0d43effcbc95"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_frozen_s-1.0_p1.npz",
+      "bytes": 73934,
+      "sha256": "ef88516548dabff1612eb6d109cee72ca4f2a36d898925061766b0f9481a466f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_frozen_s-1.0_p2.npz",
+      "bytes": 103559,
+      "sha256": "ceded656258a269e7f1088f724e47135787dc7dfdcf33f7a1e000f91d8e6936f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_frozen_s-1.0_p3.npz",
+      "bytes": 82442,
+      "sha256": "87d949ac0e2d631fb73a844292c301d9009c3e343b50bbdbb6880cf7ba633f85"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_frozen_s1.0_p0.npz",
+      "bytes": 114275,
+      "sha256": "a42aa4511fd1c2ba725a823891e7dc83fea46102d5df223f6082361db685f7b9"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_frozen_s1.0_p1.npz",
+      "bytes": 64000,
+      "sha256": "a7f41ba07e1d4df40d8b14f664dbeea6775d05ab24fb18ca60ad886a40c2bb10"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_frozen_s1.0_p2.npz",
+      "bytes": 102732,
+      "sha256": "34f9d1c39a8da635074930bf7b1f7030da492a4ddf1c5537b9cd90312fc46055"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_frozen_s1.0_p3.npz",
+      "bytes": 116427,
+      "sha256": "7313aad9174f53590ad58d8763ae64895a4a5ababf907af2ec65c3c466639890"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_learned_central_LEFT.npz",
+      "bytes": 143937,
+      "sha256": "4b4e0fe7da85d4d6cfd9555bd5f2031faef58aa1c8fff2177c1b643efc3f81c4"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_learned_s-1.0_p0.npz",
+      "bytes": 112847,
+      "sha256": "22e461b100686dd27a37365ae89ad126ef04e6dd28618e43e52b44f96821496e"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_learned_s-1.0_p1.npz",
+      "bytes": 76391,
+      "sha256": "076f1392ef21f234b3ff6e2c349384e38ac5ea05171612c2d0eec690554ae2c0"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_learned_s-1.0_p2.npz",
+      "bytes": 155694,
+      "sha256": "bfbf5935f8c847e1453d0aa2f30593b1836d0c10cfa085ae17c6e3fbbd54d2a4"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_learned_s-1.0_p3.npz",
+      "bytes": 116670,
+      "sha256": "9622f7a6b4cfcdda4a764dd73c2f94d5ec0095609c3167785dc02edb1d8a1079"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_learned_s1.0_p0.npz",
+      "bytes": 121813,
+      "sha256": "2e3e1d02e8ef293ca95d47d9b49e66877c8862ebeca318e8d26fa7890f2da51a"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_learned_s1.0_p1.npz",
+      "bytes": 69543,
+      "sha256": "ea04ba3fa51aa066bf829ff4294995ab072426845d0c0f91aa262940acf5c0b0"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_learned_s1.0_p2.npz",
+      "bytes": 99830,
+      "sha256": "7b29bbf80f7f639003e0ca0195cb4360579011448c09c2fc262b9dfe60eaba8b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g3_learned_s1.0_p3.npz",
+      "bytes": 84063,
+      "sha256": "24c13ca6a1447425c3555e52a43eccbf9e1a4254c42dbba32fb4754f2d73190b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_frozen_central_LEFT.npz",
+      "bytes": 109380,
+      "sha256": "12e069111c4939402110c168829c9cb93b06b0ed9ea9e73a73b38a1c7c1a8431"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_frozen_s-1.0_p0.npz",
+      "bytes": 54111,
+      "sha256": "51a993d0b59ae55a7709024eb4f0155f8717a4152f4cc0466ef3a3c3a1eeb83f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_frozen_s-1.0_p1.npz",
+      "bytes": 118111,
+      "sha256": "a3e04dce342c6b1f373bf0de913516562644d95118382d9bfb1e3e2c8c2e3940"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_frozen_s-1.0_p2.npz",
+      "bytes": 72811,
+      "sha256": "e7b830d07aec149fbb5aa8a054b3fc5d1a9409d045a37d3ada5949b1db53e78a"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_frozen_s-1.0_p3.npz",
+      "bytes": 51971,
+      "sha256": "00c43095f4c2ae75dd9d1927dec41791853385c0c4a7e3859491d6d729a3698d"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_frozen_s1.0_p0.npz",
+      "bytes": 78679,
+      "sha256": "b787155e79cf99d63d4b97dfba518699e1620952d227364475fa2dbdd627af15"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_frozen_s1.0_p1.npz",
+      "bytes": 119691,
+      "sha256": "48ade987fc12289bbba97961f3f9d4ce8126480f95e2d53467ab72bbd9bec481"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_frozen_s1.0_p2.npz",
+      "bytes": 66264,
+      "sha256": "10ad54f3b660641d6e3b93c4b194815e54b9d3345d07e796054bd53df99b58ac"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_frozen_s1.0_p3.npz",
+      "bytes": 75779,
+      "sha256": "ffc4a4bfa6fbf734e5a2cfff6fff2b003180f362d54dd28520b67a560839f208"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_learned_central_LEFT.npz",
+      "bytes": 133018,
+      "sha256": "1c5304eec6b4930312792582bc02b62797d4676975a70d3ca489e7a575a36f0d"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_learned_s-1.0_p0.npz",
+      "bytes": 59577,
+      "sha256": "8a573d9a70cb07e5b45465659b75d843873fbe4d45eb196c85924bf9de312698"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_learned_s-1.0_p1.npz",
+      "bytes": 118179,
+      "sha256": "8495116b1038d0560918d60b560558d4f8b31180cc67282686b45da635b92002"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_learned_s-1.0_p2.npz",
+      "bytes": 72890,
+      "sha256": "eb62e46a28915f7d4a24c2f8a0ebd6c21e0f4ff850bcd3d8b32b91ac639c9af5"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_learned_s-1.0_p3.npz",
+      "bytes": 56809,
+      "sha256": "c194f87b0fe931c7fe427eaff2dcd79580bc7091f7b6c0e9f00f4e360d54e879"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_learned_s1.0_p0.npz",
+      "bytes": 96021,
+      "sha256": "f057bb88bac88cd201790bdb14118c98a412a7a8fa3bb56d2078c93f74020b30"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_learned_s1.0_p1.npz",
+      "bytes": 137477,
+      "sha256": "1afe521ab31a4aaf81ce7d96bd668a45ce7d4d09c2b73a0314bfcdfe52fd41bd"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_learned_s1.0_p2.npz",
+      "bytes": 68269,
+      "sha256": "2c4b4cd6963e43fde64d87cda4007b47d6d6abfee1739c4894e6e1965c1979cd"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g4_learned_s1.0_p3.npz",
+      "bytes": 74135,
+      "sha256": "d503c385d2c5b1fd5edffb0ae3bbec6864164307181a382889ff27560868b267"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_frozen_central_LEFT.npz",
+      "bytes": 109380,
+      "sha256": "12e069111c4939402110c168829c9cb93b06b0ed9ea9e73a73b38a1c7c1a8431"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_frozen_s-1.0_p0.npz",
+      "bytes": 73413,
+      "sha256": "0cd140f7757850e106581b7a5f9ae26b6f8564cf0af51bc6460736f048079aaa"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_frozen_s-1.0_p1.npz",
+      "bytes": 55504,
+      "sha256": "3bfbcfb2765802e3eaa0091be23ef36365d7206688f3b27f25fc2a3759cb9f5d"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_frozen_s-1.0_p2.npz",
+      "bytes": 139412,
+      "sha256": "e4797798b0ac5b29eea758f333212303b33783b4c2ff9099f0ad6e4a396b6261"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_frozen_s-1.0_p3.npz",
+      "bytes": 73539,
+      "sha256": "971fa9bc5bb5d6995d9488157e46d8edd7b2fcc6e11e52672291b1b1b04b2cb6"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_frozen_s1.0_p0.npz",
+      "bytes": 58338,
+      "sha256": "20e6f2983eda99c5b580fe3ede06c0135c2fe7703686f161aa8b6891f5701735"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_frozen_s1.0_p1.npz",
+      "bytes": 83670,
+      "sha256": "7bed358ac7cf4588131846d61655f5aeb9c30aea069e6e3909edfaf15185da71"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_frozen_s1.0_p2.npz",
+      "bytes": 77042,
+      "sha256": "9e90d4211a987e4b2769928f12a70680acd356e7e5a1658dbfdc53e8715f8d25"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_frozen_s1.0_p3.npz",
+      "bytes": 72295,
+      "sha256": "4be1c176f8c8cacca1adc6a579a8319a6e68fbc2ebc14f223c33a6f8ed0e917e"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_learned_central_LEFT.npz",
+      "bytes": 143535,
+      "sha256": "4dd07fbce1d6bda4178939148d6abf20fd05a9457edbf1cafff19d9b89dd8d3f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_learned_s-1.0_p0.npz",
+      "bytes": 73569,
+      "sha256": "6f43963ba747909e5e1bb7240d34195976489abab3f8483174f33605f4716f37"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_learned_s-1.0_p1.npz",
+      "bytes": 55946,
+      "sha256": "c4c3798f3ea4361ac95e88290de2ce6e55be087160c480ab2db434529f752289"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_learned_s-1.0_p2.npz",
+      "bytes": 168878,
+      "sha256": "5125a98105143174be7f8ad01cbbe65694b5e0723c26fe89f534fe31d662605f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_learned_s-1.0_p3.npz",
+      "bytes": 73446,
+      "sha256": "b6976d1505e3902b9894c35ece61733153e427c4b5b9d1c359286a5cdd0fe45b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_learned_s1.0_p0.npz",
+      "bytes": 66020,
+      "sha256": "aff3205cb60f644a8ab1c1a320648a77dde52461f8c803ba62662da577ce7ffa"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_learned_s1.0_p1.npz",
+      "bytes": 85274,
+      "sha256": "ef3dc9ad4532ff8d8754a2613ff920a4a8102895b45dc3abad7fa56341e7893b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_learned_s1.0_p2.npz",
+      "bytes": 76288,
+      "sha256": "d7ebced5118e1e4712a6e857c43d57e90ff0925cb3479d4ff14d2cd94f0d143c"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g5_learned_s1.0_p3.npz",
+      "bytes": 75719,
+      "sha256": "14f0eb2f761f04f6d4987191d79b559c62561c32e5415d98121f1ff94d1d6759"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_frozen_central_LEFT.npz",
+      "bytes": 109380,
+      "sha256": "12e069111c4939402110c168829c9cb93b06b0ed9ea9e73a73b38a1c7c1a8431"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_frozen_s-1.0_p0.npz",
+      "bytes": 80285,
+      "sha256": "f1838dfb3a80477edc7cfaffa71438023a17aa0935008f0ae4802878116b4850"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_frozen_s-1.0_p1.npz",
+      "bytes": 99217,
+      "sha256": "f6285846c1c1ed17bbb21f6896e3fc6475bc973b121f3c239732c9e3e27b4280"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_frozen_s-1.0_p2.npz",
+      "bytes": 103673,
+      "sha256": "af05ae39e55e62306398312f7407e8acedf0c77252ba64247f406b458d8320a2"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_frozen_s-1.0_p3.npz",
+      "bytes": 86612,
+      "sha256": "2817759856c505f9623f4ca26c10d7de0c6bac7b43b6aeb4f79e38db7a07d3bd"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_frozen_s1.0_p0.npz",
+      "bytes": 143052,
+      "sha256": "8c12b552fad312b8a5f06bfe498efd2b9679d1e3af21ed6936285cb479638b26"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_frozen_s1.0_p1.npz",
+      "bytes": 115339,
+      "sha256": "7c829145fa17ed742c9b188a83ea5e86232fc6faa94e4eee77e4cf86290341f5"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_frozen_s1.0_p2.npz",
+      "bytes": 137557,
+      "sha256": "c327cab6146e22c8b16a453ba8b49bd65931f03bb35f4db7c6eeb89854f04511"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_frozen_s1.0_p3.npz",
+      "bytes": 53116,
+      "sha256": "686636efc5f053555e8fb1ddf94a94225ab232ab45075e57838dd700c8a7458c"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_learned_central_LEFT.npz",
+      "bytes": 168306,
+      "sha256": "900b13c449939a670f36a6f2669f07faaaff1906713093c54270c4826ad557f4"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_learned_s-1.0_p0.npz",
+      "bytes": 78180,
+      "sha256": "73a66878c201ac5a98e73b7a02304e83f44a004a6f9dc0e304177e29323aee9d"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_learned_s-1.0_p1.npz",
+      "bytes": 103389,
+      "sha256": "71ac1f87e4cf6ad03b3d340d6c4a3dff7bb2ed1c73b3f36b6810a5366549c666"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_learned_s-1.0_p2.npz",
+      "bytes": 102398,
+      "sha256": "6da034e8cc9b3de9bc1aad40509dd5b66fadc0392553784331976226da8263a2"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_learned_s-1.0_p3.npz",
+      "bytes": 94005,
+      "sha256": "8f01ed590bbd47674784014f41ce00d702308cae32df57d4bbf183ef5bba8be8"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_learned_s1.0_p0.npz",
+      "bytes": 169874,
+      "sha256": "db8fc830ba1ada97f49e1db709a0db7ae847d88f50aabf59ec7e2a1ad780e127"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_learned_s1.0_p1.npz",
+      "bytes": 124326,
+      "sha256": "acf9e43fe40d28b303e3813e0d29682dc6c064f90b32de01e16e7f1d5f7f3ae3"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_learned_s1.0_p2.npz",
+      "bytes": 158038,
+      "sha256": "a3d5b331b630bb8da1872093ab89da506aedddb81bcc8e33b6d9829f24f03f42"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g6_learned_s1.0_p3.npz",
+      "bytes": 98036,
+      "sha256": "15ab861ee3952a30873016ad8a7dc8d575ba73298123ee4b74788df40e83183f"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_frozen_central_LEFT.npz",
+      "bytes": 109380,
+      "sha256": "12e069111c4939402110c168829c9cb93b06b0ed9ea9e73a73b38a1c7c1a8431"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_frozen_s-1.0_p0.npz",
+      "bytes": 118723,
+      "sha256": "a459bdf0b3708e0d702fb91cbb61cee5c563e160211586ea84995246674344bc"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_frozen_s-1.0_p1.npz",
+      "bytes": 75832,
+      "sha256": "a154c21e0b73cd1b64c5f4cfcc697aa04c7aae220a50f7e45ccfaac8d1652a61"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_frozen_s-1.0_p2.npz",
+      "bytes": 59015,
+      "sha256": "8c9e664d1da8710d8f4f5bd4ade4b88f8fe148571a09513607125469ed62186b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_frozen_s-1.0_p3.npz",
+      "bytes": 96525,
+      "sha256": "62a00873aa96a323a37b41ca46424e7feea9155039cfbb9b0e403a7c76e200b0"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_frozen_s1.0_p0.npz",
+      "bytes": 84914,
+      "sha256": "6c45788421a8e071faf13f7840ecfd8dfcf6c544b4c8c0adaddb19e1fd4e6eb7"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_frozen_s1.0_p1.npz",
+      "bytes": 63363,
+      "sha256": "16d977de24ed229b3925172e1e7ba98f9c9c01568c1863862e49ac889b0cf132"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_frozen_s1.0_p2.npz",
+      "bytes": 74331,
+      "sha256": "0be5eddca4adcdc7efc18e31fd77e303d610e1fe9bf6371be43c8e4815f3eba4"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_frozen_s1.0_p3.npz",
+      "bytes": 123882,
+      "sha256": "745e259db401d1b5db725fbb6e691353cf748ef207c1cc34d69a5ad78f878f6c"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_learned_central_LEFT.npz",
+      "bytes": 170498,
+      "sha256": "274e9c92565d9b56ac51543153134a01f7024423d3377488f67f6b1d412f6df1"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_learned_s-1.0_p0.npz",
+      "bytes": 165893,
+      "sha256": "a305c9adf4ec894fb0a9143d52a394957220cbcf0a59899f8a6cbeae34ea60e8"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_learned_s-1.0_p1.npz",
+      "bytes": 77540,
+      "sha256": "11641a3dfbb015fc58de3566007d07d8f2ff4b9252a24a810d81e22e5d120321"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_learned_s-1.0_p2.npz",
+      "bytes": 66712,
+      "sha256": "e25808c7c0d2dc9db3b8e3462f7989cc0c63f487defd1ba4937f097f1d1c45da"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_learned_s-1.0_p3.npz",
+      "bytes": 111290,
+      "sha256": "02887810aadebf70ee164b39a9abb1d05c6d5bc36dd430c96bbf8494c49bfa8b"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_learned_s1.0_p0.npz",
+      "bytes": 102663,
+      "sha256": "1a1928ec06d5f7ae32b6978a1c5160b2f3ad0993c1c0299a114c4d5b51aabfbe"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_learned_s1.0_p1.npz",
+      "bytes": 65538,
+      "sha256": "f86831b502cab699e4218172be055e8a9e6256464d4da86263ff876da09d7924"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_learned_s1.0_p2.npz",
+      "bytes": 74998,
+      "sha256": "9997f0c9f766388a5ec5790b0321d08be49894fa757c68358f8ba616acdfc5fc"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/g7_learned_s1.0_p3.npz",
+      "bytes": 135751,
+      "sha256": "6bfc5c5c7484adf2444d69007629bf9a2933772ec11156ba2573ba8faba405c4"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/learned_final_old6.npz",
+      "bytes": 170498,
+      "sha256": "274e9c92565d9b56ac51543153134a01f7024423d3377488f67f6b1d412f6df1"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/pending/parent_6.npz",
+      "bytes": 109380,
+      "sha256": "12e069111c4939402110c168829c9cb93b06b0ed9ea9e73a73b38a1c7c1a8431"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/progress.png",
+      "bytes": 115679,
+      "sha256": "d2bad44ebb08b46a1227b3ef5ee2d172a30d42793f72bd03aec0d8537766f855"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/protocol.json",
+      "bytes": 8480,
+      "sha256": "33631d5afe20f8d0cb998a12720a69eebd4669f717be3e004a8a9eb5957f0c72"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/rollouts.jsonl",
+      "bytes": 336706,
+      "sha256": "a4f24ed022a54ec1e605e3d71b27ab362c64c3f93ab6b6bbc61878a20cba4668"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/status.json",
+      "bytes": 29327,
+      "sha256": "2414ab8470d5e82844f408df011b4a552d3a967ea02204695b809cbfa1d0dafa"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/summary.json",
+      "bytes": 29327,
+      "sha256": "2414ab8470d5e82844f408df011b4a552d3a967ea02204695b809cbfa1d0dafa"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "bytes": 2539,
+      "sha256": "00296a456f2dd035d10ffe9df34d4961a416a032226b6c8b789f502a4a057cec"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "bytes": 2503,
+      "sha256": "ba4dbae9277fae6f81ebe9106758f04afbec42956ca44d3be786a5bb8236e093"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "bytes": 2508,
+      "sha256": "4da2af524f55170cfb74cde770fbba3641c2fe8119f830341bf7f9d4381d5bb1"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "bytes": 2546,
+      "sha256": "fad7bdf9ab6382e085d4340920a524a49aeeb21094d5c1a59a950d10a34358b0"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "bytes": 2566,
+      "sha256": "868fb81ad5ef30744abdac3cfbfb1067c04d057f05ac5e4edec842f00b8949fa"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "bytes": 2532,
+      "sha256": "767365cbaf7948a2084bb49e55587cfe428a484b161dfd2a7f289a1f55d9ed4d"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "bytes": 2535,
+      "sha256": "f120ea666a45905881074d0a2d47c512d08a8032b953739514d5867a1dbf1f1c"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "bytes": 2543,
+      "sha256": "e58812dad4ab96e64fe0f9aa92ee94d6d79717506c360eae38e2bfe1f04312be"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/tasks.jsonl",
+      "bytes": 5420,
+      "sha256": "c3f28deeaa031901f7e16e3a5dfd7159b8fb11874f868e2b7f742fbbec5fb4d9"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/train.log",
+      "bytes": 13436,
+      "sha256": "9ecd05e8077f9cd7fd56f5d42ef93b60e977a67cd0ebde590d461e7dfac48bf1"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/workers/0/worker.log",
+      "bytes": 71408,
+      "sha256": "38ba4136cc5bf27ab6102afcc92a29f2ff5918eacfc909c62cbe6f44d92e68ad"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/workers/1/worker.log",
+      "bytes": 51723,
+      "sha256": "9f811ef592ac89045e47d8c9c9007e0c5c6c795b64179e61a39665e3e7ada2b5"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/workers/2/worker.log",
+      "bytes": 44151,
+      "sha256": "eeaa80021d59fb19174ea4ef7b16cb843e906353e13cd0f897f1163cae891831"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/workers/3/worker.log",
+      "bytes": 37362,
+      "sha256": "fcafdf06f93fc4d612bfeaa481ab6f9dafb90d48354306527d4152b46d478bda"
+    },
+    {
+      "path": "stage/runs/t207_parameter_pg/workers.json",
+      "bytes": 90,
+      "sha256": "6ad88e57cff13c8b7f194d2d739509cd86ecdf81310672e2c6d542e1e019e2e0"
+    }
+  ]
+}

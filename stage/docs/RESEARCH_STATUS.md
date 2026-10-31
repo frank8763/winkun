@@ -1,5 +1,7 @@
 # Stage当前状态（2026-10-31）
 
+**最新复核：T207结束，两组原始LEFT采样各0/64，最终old8各7/8。** learned中心从接触转为46.668s无接触超时，仍剩1.55034m；回报提高不能当5m突破。T205/T206/T207的原始数据/失败/模型均Release服务器SHA256/大小核验，临时包已删。下一T208只有终止空间进度单因素草案（next_protocol.md），未注册/未启动，不自动扩大训练。T159/T194保留；Stage/Phase隔离、全局1GiB。
+
 **T207已完成，全部训练/模拟器进程退出。** 停止GENERATION_BUDGET_COMPLETE，参数更新尝试8次，稳定5m门槛=False。先读results_20261031_parameter_pg/findings.md；T159/T194保留，无自动晋升、续训或长距离。以下为历史记录。
 
 **T207已唯一启动（PID464495），contracts通过，运行中。** 在既有深度Actor三条特征方向×两个动作上做参数探索策略梯度，frozen/learned同epsilon对照，最多8代/405全部回合/9.5M全部物理步/900秒，末180秒预留最终验收，最终32MiB峰值40MiB/global1GiB。查stage/runs/t207_parameter_pg的launch/status/train.log。不是从零DRL或全骨干反传，不把随机命中当梯度收益；单网络闭环，无地图/规划器/路点。协议说明results_20261031_parameter_pg/protocol_notes.md。T205/T206已完成不重复。
@@ -128,3 +130,5 @@ T169–T171使用新稀疏目标、终止一致势函数塑形、60s物理折扣
 T165–T172阶段的327个原始输出已在[前一阶段Release](https://github.com/frank8763/winkun/releases/tag/stage-progress-2026-10-30)备份，逐文件本地哈希与远端附件SHA256/大小核验通过；该阶段结束时本地输出约474.23MiB。见results_20261030/release_receipt.json及stage/manifests/progress_20261030_files.json，最新增量与总占用见最新场景与探索报告。
 
 T203/T204原始数据/失败/模型已Release核验备份：https://github.com/frank8763/winkun/releases/tag/stage-native-course-2026-10-31；本地逐成员哈希与远端附件SHA256/字节数相符，未完整读回远端二进制。临时包核验后删除；剩余全部runs 1000635409字节。
+
+T207已Release核验备份：https://github.com/frank8763/winkun/releases/tag/stage-parameter-pg-2026-10-31；本地逐成员哈希/远端SHA256及大小一致，未完整读回远端二进制；临时包已删除。
