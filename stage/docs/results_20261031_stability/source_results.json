@@ -1,0 +1,117 @@
+{
+  "t225_paired_coverage": {
+    "state": "COMPLETE",
+    "stop_reason": "BUDGET_COMPLETE",
+    "scores": {
+      "parent_LEFT_06": {
+        "n": 6,
+        "safeGOAL": 0,
+        "CONTACT": 6
+      },
+      "parent_LEFT_21": {
+        "n": 6,
+        "safeGOAL": 0,
+        "CONTACT": 6
+      },
+      "candidate_LEFT_06": {
+        "n": 6,
+        "safeGOAL": 0,
+        "CONTACT": 5
+      },
+      "candidate_LEFT_21": {
+        "n": 6,
+        "safeGOAL": 0,
+        "CONTACT": 5
+      }
+    },
+    "success_source_gate": false,
+    "episodes": 28,
+    "replays": 28,
+    "physics_steps": 855220,
+    "commands": 56,
+    "navigation_updates": 0,
+    "recipe_reconstruction_updates": 3000,
+    "export": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t225_paired_coverage/T221_reconstructed_Actor.pt.gz",
+      "sha256": "efec5f2f0e9206c8527911ee49c520d0db5a60acbc7ab4f5b21af73ecdd5743d",
+      "bytes": 2115561,
+      "content_sha256": "516aae1fa7e2d3aae36a3f21fe8e0667310a49bcdfb802d9dd46a6f74c1f090e"
+    },
+    "all_workers_stopped": true,
+    "automatic_promotion": false,
+    "stable_5m": false,
+    "elapsed_s": 176.81138318300145,
+    "own_bytes": 5218695,
+    "runs_MiB": 1017.5475912094116
+  },
+  "t226_local_exploration": {
+    "state": "FAILED",
+    "stop_reason": "FAILED",
+    "scores": {
+      "LEFT_06": {
+        "n": 0,
+        "safeGOAL": 0,
+        "CONTACT": 0,
+        "paired_high_sigma_n": 6,
+        "paired_high_sigma_safeGOAL": 0
+      },
+      "LEFT_21": {
+        "n": 0,
+        "safeGOAL": 0,
+        "CONTACT": 0,
+        "paired_high_sigma_n": 6,
+        "paired_high_sigma_safeGOAL": 0
+      }
+    },
+    "success_source_gate": false,
+    "episodes": 0,
+    "replays": 0,
+    "physics_steps": 78268,
+    "commands": 4,
+    "navigation_updates": 0,
+    "recipe_reconstruction_updates": 0,
+    "export": null,
+    "all_workers_stopped": true,
+    "automatic_promotion": false,
+    "stable_5m": false,
+    "elapsed_s": 20.425676546999966,
+    "own_bytes": 190835,
+    "runs_MiB": 1017.732442855835
+  },
+  "t227_small_noise_recovery": {
+    "state": "COMPLETE",
+    "stop_reason": "BUDGET_COMPLETE",
+    "scores": {
+      "LEFT_06": {
+        "n": 6,
+        "safeGOAL": 2,
+        "CONTACT": 3,
+        "paired_high_sigma_n": 6,
+        "paired_high_sigma_safeGOAL": 0
+      },
+      "LEFT_21": {
+        "n": 6,
+        "safeGOAL": 3,
+        "CONTACT": 2,
+        "paired_high_sigma_n": 6,
+        "paired_high_sigma_safeGOAL": 0
+      }
+    },
+    "success_source_gate": true,
+    "episodes": 12,
+    "replays": 12,
+    "physics_steps": 442812,
+    "commands": 24,
+    "navigation_updates": 0,
+    "prior_failed_commands": 4,
+    "prior_failed_physics": 78268,
+    "recipe_reconstruction_updates": 0,
+    "export": null,
+    "all_workers_stopped": true,
+    "automatic_promotion": false,
+    "stable_5m": false,
+    "elapsed_s": 87.68245069800105,
+    "own_bytes": 971712,
+    "runs_MiB": 1018.6611251831055
+  }
+}

@@ -83,7 +83,10 @@ def compact():
     assert sum(p.stat().st_size for p in (ROOT/'stage/runs').rglob('*') if p.is_file())<1024**3
     print(json.dumps(final),flush=True)
 def restore(name):
-    records=json.loads((DOC/'cold_storage_receipt.json').read_text())['records'];r=next(r for r in records if r['original_path']==name);dest=ROOT/name
+    records=[]
+    for ledger in ('cold_storage_receipt.json','closed_resume_storage_receipt.json'):
+        if (DOC/ledger).exists():records+=json.loads((DOC/ledger).read_text())['records']
+    r=next(r for r in records if r['original_path']==name);dest=ROOT/name
     assert not dest.exists();z=ROOT/r['compressed_path'];assert sha(z.read_bytes())==r['compressed_sha256'];b=gzip.decompress(z.read_bytes());assert sha(b)==r['original_sha256']
     size=sum(p.stat().st_size for p in (ROOT/'stage/runs').rglob('*') if p.is_file());assert size+len(b)<1024**3,'Restore reserve would exceed1GiB; no write'
     dest.write_bytes(b);assert sha(dest.read_bytes())==r['original_sha256'];print('RESTORED_VERIFIED',name)
