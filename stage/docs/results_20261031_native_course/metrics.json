@@ -1,0 +1,83 @@
+{
+  "state": "COMPLETE",
+  "stop_reason": "REPLAY_CENSORED_BY_WALL",
+  "physics": {
+    "diagnostic": 7845642,
+    "training": 3196099,
+    "replay": 4789634
+  },
+  "stats": {
+    "training_physics": 3196099,
+    "diagnostic_physics": 7845642,
+    "replay_physics": 4789634,
+    "training_episodes": 384,
+    "diagnostic_episodes": 790,
+    "partial_episodes": 0,
+    "actor_updates": 1132,
+    "rounds_completed": 31
+  },
+  "rounds_completed": 31,
+  "arms": {
+    "keep10": {
+      "training_episodes": 192,
+      "wall_censored_training_episodes": 0,
+      "training_safe_GOAL": 104,
+      "training_CONTACT": 66,
+      "training_TIMEOUT": 22,
+      "original_LEFT_training_episodes": 24,
+      "original_LEFT_training_safe_GOAL": 0,
+      "final_old8_safe_GOAL": 0,
+      "final_old8": [],
+      "novel_success_tasks": [],
+      "behavior_coverage": {
+        "decisions": 16291,
+        "native_mean_at_or_above_upper_bound": 13170,
+        "clip_throttle_below_0_9_fraction": 0.7059225512528474,
+        "throttle_quantiles": [
+          -0.9456658959388733,
+          0.3799605667591095,
+          0.7819679975509644,
+          0.9601626992225647,
+          0.9999826550483704
+        ]
+      }
+    },
+    "tolerance10": {
+      "training_episodes": 192,
+      "wall_censored_training_episodes": 0,
+      "training_safe_GOAL": 105,
+      "training_CONTACT": 67,
+      "training_TIMEOUT": 20,
+      "original_LEFT_training_episodes": 24,
+      "original_LEFT_training_safe_GOAL": 0,
+      "final_old8_safe_GOAL": 0,
+      "final_old8": [],
+      "novel_success_tasks": [
+        "r22_s1_a0"
+      ],
+      "behavior_coverage": {
+        "decisions": 15875,
+        "native_mean_at_or_above_upper_bound": 13112,
+        "clip_throttle_below_0_9_fraction": 0.6968425869432581,
+        "throttle_quantiles": [
+          -0.9287015199661255,
+          0.3947210550308228,
+          0.7906025052070618,
+          0.9619337677955627,
+          0.9999833106994629
+        ]
+      }
+    }
+  },
+  "unique_new_capability_tasks": 1,
+  "source_reset_gap_m": 4.645468288486047,
+  "final_pool_gap_m": 3.4233268272471444,
+  "original_LEFT_passed": false,
+  "stable_5m_gate_passed": false,
+  "robustness_completed": 0,
+  "robustness_safe_GOAL": 0,
+  "all_replay_checks_verified": false,
+  "replay_checks": 595,
+  "elapsed_s": 3528.4050936698914,
+  "limitations": "One paired seed, shared adaptive curriculum, fixed map and development tasks. Head-only adaptation; deployed network is end-to-end. No independent generalization or innovation claim."
+}

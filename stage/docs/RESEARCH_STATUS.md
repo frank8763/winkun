@@ -1,5 +1,7 @@
 # Stage当前状态（2026-10-31）
 
+**T203/T204全部完成，所有训练与模拟器工作进程已停止。** T204停止原因REPLAY_CENSORED_BY_WALL，31轮/384训练回合；原始LEFT冻结通过=False，稳定5m验收=False。先读[结果与限制](results_20261031_native_course/findings.md)。T159/T194保留；不重复、不自动追加训练或进入长距离。以下为历史记录。
+
 **当前：T203预检完成并通过；T204白天有界训练已唯一启动（PID420284），contracts通过。** 用户已取消通宵安排，改为白天推进原始5m稳定性。T204目录stage/runs/t204_native_course；launch记录协议cf1241f5、运行源码commit f55466c；初始旧六项+RIGHT全部通过，LEFT仍在原接触处失败，已确认初始基线一致。最多48轮/576训练回合/13.440384M训练物理步/128M全部物理步/3600秒，截止时间以protocol.json为准。先查launch/status/train.log，禁止重复/无限追加。T159和T194保留；LEFT尚未通过。
 
 T203在相邻源起点三种行为各5/5安全GOAL，实际原生命令探索的clip状态油门<.9占73%（旧latent高斯0%），但这些邻域父策略本来也会，不能算新增能力。已修正未启动草案中4.65m起点间距与最多1.92m课程推进不匹配的问题。T204使用5/10/20cm共享reset扩展、无Critic新鲜MC策略梯度，仅保持损失形式不同；原LEFT通过后以保存重载old8与左右各27小扰动验收。方法范围见[协议说明](results_20261031_native_course/protocol_notes.md)。全部runs当前938.46MiB，本组最终32MiB/峰值64MiB，累计硬上限1GiB、空闲盘至少40GiB。以下旧记录均为历史状态，以本段和实时文件为准。
