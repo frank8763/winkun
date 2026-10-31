@@ -69,3 +69,5 @@
 - 2026-10-31用户改为白天继续。T203已完成且门槛通过（16回合/65389诊断物理步/零更新），T204旧夜间草案从未启动。T204现已独立注册于stage/experiments/t204_native_course，contracts通过；总576训练回合/13.440384M训练物理步/128M全部物理步/3600秒/最终32MiB峰值64MiB，先查launch/status/train.log，禁止重复。共享课程5/10/20cm，原LEFT通过后须保存重载old8+左右54小扰动门槛才能报告本轮稳定通过。全局1GiB/free40GiB，T159/T194不覆盖。
 
 - T204已完成，停止REPLAY_CENSORED_BY_WALL，原始LEFT通过=False，稳定5m门槛=False；不重复/不续跑。读results_20261031_native_course/findings.md。后处理只有汇总与备份，零训练/物理步，无自动晋升。
+
+- 2026-10-31 12时复核决定停止原T204配置。原始LEFT两组0/48训练成功，最后保存同权重old7各7/7但LEFT碰撞。空final列表原误报0/8已在文档修正为未执行；594完整重放+1时限删失。零步离线审计stage/runs/t204_progress_review/review.json，原T204输出不变。后续须新有界协议，不直接续跑；见最新findings.md。

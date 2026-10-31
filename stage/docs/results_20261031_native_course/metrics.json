@@ -26,7 +26,7 @@
       "training_TIMEOUT": 22,
       "original_LEFT_training_episodes": 24,
       "original_LEFT_training_safe_GOAL": 0,
-      "final_old8_safe_GOAL": 0,
+      "final_old8_safe_GOAL": null,
       "final_old8": [],
       "novel_success_tasks": [],
       "behavior_coverage": {
@@ -40,7 +40,8 @@
           0.9601626992225647,
           0.9999826550483704
         ]
-      }
+      },
+      "final_old8_completed": 0
     },
     "tolerance10": {
       "training_episodes": 192,
@@ -50,7 +51,7 @@
       "training_TIMEOUT": 20,
       "original_LEFT_training_episodes": 24,
       "original_LEFT_training_safe_GOAL": 0,
-      "final_old8_safe_GOAL": 0,
+      "final_old8_safe_GOAL": null,
       "final_old8": [],
       "novel_success_tasks": [
         "r22_s1_a0"
@@ -66,7 +67,8 @@
           0.9619337677955627,
           0.9999833106994629
         ]
-      }
+      },
+      "final_old8_completed": 0
     }
   },
   "unique_new_capability_tasks": 1,
@@ -79,5 +81,9 @@
   "all_replay_checks_verified": false,
   "replay_checks": 595,
   "elapsed_s": 3528.4050936698914,
-  "limitations": "One paired seed, shared adaptive curriculum, fixed map and development tasks. Head-only adaptation; deployed network is end-to-end. No independent generalization or innovation claim."
+  "limitations": "One paired seed, shared adaptive curriculum, fixed map and development tasks. Head-only adaptation; deployed network is end-to-end. No independent generalization or innovation claim.",
+  "replay_verified_count": 594,
+  "replay_wall_censored_count": 1,
+  "replay_observed_mismatches": 0,
+  "reporting_correction": "2026-10-31 review: no separately named final battery ran. Empty final_old8 previously rendered0/8; corrected to null with completed0. Original archived run outputs unchanged; last-round same-weight evidence is in progress_review.json. One replay was wall-censored with observed errors0, not a state mismatch."
 }

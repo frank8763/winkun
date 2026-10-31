@@ -67,7 +67,8 @@ def main():
     metrics = json.loads((DOCS / 'metrics.json').read_text())
     rows = []
     for arm, value in metrics['arms'].items():
-        rows.append(f"| {arm} | {value['training_safe_GOAL']}/{value['training_episodes']} | {value['original_LEFT_training_safe_GOAL']}/{value['original_LEFT_training_episodes']} | {value['final_old8_safe_GOAL']}/8 | {len(value['novel_success_tasks'])} |")
+        final_score = f"{value['final_old8_safe_GOAL']}/{value['final_old8_completed']}" if value['final_old8_completed'] else '未执行'
+        rows.append(f"| {arm} | {value['training_safe_GOAL']}/{value['training_episodes']} | {value['original_LEFT_training_safe_GOAL']}/{value['original_LEFT_training_episodes']} | {final_score} | {len(value['novel_success_tasks'])} |")
     lines = [
         '# T203–T204结果（2026-10-31）', '',
         f"T204按协议停止：{metrics['stop_reason']}；完成{metrics['rounds_completed']}轮，{metrics['stats']['training_episodes']}训练回合，{metrics['stats']['actor_updates']}次Actor头部更新。原始LEFT冻结通过={metrics['original_LEFT_passed']}，左右稳定5m门槛通过={metrics['stable_5m_gate_passed']}。T159/T194保留。", '',

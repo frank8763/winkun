@@ -1,0 +1,93 @@
+{
+  "state": "COMPLETE",
+  "decision": "STOP_UNCHANGED_T204_TRAINING",
+  "physics_steps": 0,
+  "optimizer_updates": 0,
+  "training_already_stopped": true,
+  "T204_stop_reason": "REPLAY_CENSORED_BY_WALL",
+  "full_round_boundaries": 31,
+  "training_rounds_collected": 32,
+  "training_episodes": 384,
+  "actor_updates": 1132,
+  "arms": {
+    "keep10": {
+      "saved_weights_match_last_accepted_heads": true,
+      "saved_backbone_and_other_parameters_match_parent": true,
+      "last_same_weight_old7_completed": 7,
+      "last_same_weight_old7_safe_GOAL": 7,
+      "last_same_weight_LEFT_safe_GOAL": false,
+      "last_same_weight_LEFT_collision": true,
+      "last_same_weight_LEFT_remaining_m": 1.4720603804782404,
+      "original_LEFT_training": 24,
+      "original_LEFT_training_safe_GOAL": 0,
+      "original_LEFT_training_CONTACT": 24,
+      "original_LEFT_deterministic_cases": 16,
+      "original_LEFT_deterministic_safe_GOAL": 0,
+      "completed_round_interpolation_counts": {
+        "1.0": 29,
+        "0.5": 2
+      },
+      "evidence_scope": "Previously recorded final-round trajectories use exactly the saved full model weights. Separate final/reload battery not executed; no new rollout."
+    },
+    "tolerance10": {
+      "saved_weights_match_last_accepted_heads": true,
+      "saved_backbone_and_other_parameters_match_parent": true,
+      "last_same_weight_old7_completed": 7,
+      "last_same_weight_old7_safe_GOAL": 7,
+      "last_same_weight_LEFT_safe_GOAL": false,
+      "last_same_weight_LEFT_collision": true,
+      "last_same_weight_LEFT_remaining_m": 1.4730748674265055,
+      "original_LEFT_training": 24,
+      "original_LEFT_training_safe_GOAL": 0,
+      "original_LEFT_training_CONTACT": 24,
+      "original_LEFT_deterministic_cases": 16,
+      "original_LEFT_deterministic_safe_GOAL": 0,
+      "completed_round_interpolation_counts": {
+        "1.0": 30,
+        "0.5": 1
+      },
+      "evidence_scope": "Previously recorded final-round trajectories use exactly the saved full model weights. Separate final/reload battery not executed; no new rollout."
+    }
+  },
+  "original_LEFT_training_safe_GOAL_total": 0,
+  "original_LEFT_training_total": 48,
+  "separate_final_old8_battery_completed": 0,
+  "robustness_completed": 0,
+  "replay_verified": 594,
+  "replay_wall_censored": 1,
+  "replay_mismatches": [],
+  "unique_new_capability_tasks": 1,
+  "new_capability_details": [
+    {
+      "task": "r22_s1_a0",
+      "round": 22,
+      "arm": "tolerance10",
+      "initial_goal_distance_m": 1.1734901883159898,
+      "parent_nearest_m": 0.2058040394640879,
+      "candidate_nearest_m": 0.19997684078740854,
+      "parent_miss_above_radius_m": 0.00580403946408789,
+      "final_candidate_retention_not_tested": true
+    }
+  ],
+  "source_reset_gap_m": 4.645468288486047,
+  "best_ever_pool_reset_gap_m": 3.4233268272471444,
+  "pool_is_union_of_historical_success_not_revalidated_final_pool": true,
+  "training_fraction_of_total_physics": 0.2018838540556332,
+  "next_step": "Keep official T159 and T194. Before any new training, target the unbridged LEFT failure frontier and measure sequence-level exploration and learning signal there; use a separate bounded protocol and reserve final evaluation time. Do not automatically resume T204 or start long-distance.",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t204_native_course/review.py": "5f1116a95d4933bad03741a65bd0dbae80bc764eae92ae282f36287d380817f0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt": "4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t204_native_course/candidates/keep10_r31_accepted.npz": "b971221ee637659e06562136f0435060b1a10725011d616d9ea9a170c48d458b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t204_native_course/candidates/keep10_r31_f1.0.npz": "b971221ee637659e06562136f0435060b1a10725011d616d9ea9a170c48d458b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t204_native_course/candidates/tolerance10_r31_accepted.npz": "f968a358bdce6970b1f6bbe9e5b9b37fd0257955ecc8b98972f6b41a2234edb4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t204_native_course/candidates/tolerance10_r31_f1.0.npz": "f968a358bdce6970b1f6bbe9e5b9b37fd0257955ecc8b98972f6b41a2234edb4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t204_native_course/exports/keep10_final.pt": "595b060bb69e4542a6aebb3edd108b5654d00eea9ec75c64b46928150832397d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t204_native_course/exports/tolerance10_final.pt": "52c5f39b64f8ae3113bb4d6f7c4319ef918ec61b34b31b74118fb80daddcce2a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t204_native_course/new_capability.jsonl": "493da0d9c9fa5fcea59f742559b73d253f69ade1eaf4d04f18da172d856d6bdd",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t204_native_course/protocol.json": "cf1241f5f708dbc16f7a2208d1055051d8cb0c22319a1feeeb29b5ee0df66e06",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t204_native_course/replay_checks.jsonl": "2994843eb3f00bfb8256c711ef639b05fe2f0ab34711dcf5498ac5283bb7667c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t204_native_course/rollouts.jsonl": "a0801568e0fe02bad2c4b0cb4f8d23dfe926c638b8bb1cfa8a4ca4185e1a6d36",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t204_native_course/rounds.jsonl": "9ea19cadcd6f9dfc26ca4cd8f54a9f0bbd35f4f0ed1b3a22c7c0d2acc39e78bc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t204_native_course/summary.json": "44d7cb31198d0548e265ff795b69fb4ab5e9ab6e37aba58bd5f0706392409695"
+  }
+}
