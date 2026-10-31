@@ -1,0 +1,173 @@
+{
+  "state": "COMPLETE",
+  "stop_reason": "GENERATION_BUDGET_COMPLETE",
+  "parameter_update_attempts": 8,
+  "completed_generation_records": 8,
+  "physics_steps": 2925591,
+  "training_physics_steps": 841861,
+  "training_episodes": 64,
+  "decision_count": 29376,
+  "arms": {
+    "frozen": {
+      "sampled_episodes": 64,
+      "sampled_safe_GOAL": 0,
+      "sampled_CONTACT": 63,
+      "sampled_TIMEOUT": 1,
+      "sampled_partial": 0,
+      "final_old8_completed": 8,
+      "final_old8_safe_GOAL": 7,
+      "final_old8": [
+        {
+          "case": "2029653601_LEFT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19975754278968844
+        },
+        {
+          "case": "2029653602_RIGHT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19972827104626592
+        },
+        {
+          "case": "2029654801_LEFT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19977156796997086
+        },
+        {
+          "case": "2029654802_RIGHT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19996418179244907
+        },
+        {
+          "case": "4m_2029653601_LEFT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19999877423370233
+        },
+        {
+          "case": "4m_2029654802_RIGHT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19981250227063285
+        },
+        {
+          "case": "5m_2029653601_LEFT",
+          "safe_GOAL": false,
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 1.4766742181226913
+        },
+        {
+          "case": "5m_2029654802_RIGHT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19994760488346855
+        }
+      ],
+      "final_coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "learned": {
+      "sampled_episodes": 64,
+      "sampled_safe_GOAL": 0,
+      "sampled_CONTACT": 59,
+      "sampled_TIMEOUT": 5,
+      "sampled_partial": 0,
+      "final_old8_completed": 8,
+      "final_old8_safe_GOAL": 7,
+      "final_old8": [
+        {
+          "case": "2029653601_LEFT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19973034269411283
+        },
+        {
+          "case": "2029653602_RIGHT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19994296844160894
+        },
+        {
+          "case": "2029654801_LEFT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19999739928493637
+        },
+        {
+          "case": "2029654802_RIGHT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19980032964675565
+        },
+        {
+          "case": "4m_2029653601_LEFT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19999445805134775
+        },
+        {
+          "case": "4m_2029654802_RIGHT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19971996541088904
+        },
+        {
+          "case": "5m_2029653601_LEFT",
+          "safe_GOAL": false,
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 1.5503375345167958
+        },
+        {
+          "case": "5m_2029654802_RIGHT",
+          "safe_GOAL": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.1999087836398361
+        }
+      ],
+      "final_coefficients": [
+        -0.4029217650188393,
+        -0.1510659604318481,
+        -0.2839288341161247,
+        -0.22342571860148353,
+        0.3421286955232621,
+        -0.07690894920404291
+      ]
+    }
+  },
+  "witness": null,
+  "selection": null,
+  "stable_5m_gate_passed": false,
+  "saved_reload_completed": 0,
+  "robustness_completed": 0,
+  "robustness_safe_GOAL": 0,
+  "own_bytes": 21002821,
+  "elapsed_s": 712.1402134439559,
+  "collision_MC_closedform_maxerror": 1.2212453270876722e-15,
+  "collision_MC_progress_term_is_initial_state_constant": true,
+  "scope": "Paired one-seed low-dimensional PGPE-style fine-tuning of a pre-trained deep neural policy; frozen feature backbone, six parameter-distribution means. Sampled success and learned central success are different evidence. Not novel algorithm/from-scratch DRL or independent generalization."
+}

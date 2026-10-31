@@ -79,3 +79,5 @@
 - T205/T206均已完成，无进程。T206父old7通过、12神经方向候选LEFT均碰撞，279185诊断物理步/零更新；不重复固定网格，不晋升。见results_20261031_frontier/findings.md；一个方向失败不代表整个网络不可学。下一参数探索式策略梯度若另行注册，必须明确与SAC/PPO/从零端到端训练的范围区别及全局1GiB预算。
 
 - T207参数探索策略梯度已独立注册、contracts通过；rank3×2头部系数，frozen/learned配对对照，最多8代/405全部回合/9.5M全部物理步/900秒，末180秒留验收，最终32MiB峰值40MiB/global1GiB。先查stage/runs/t207_parameter_pg/launch/status，不重复。这是低维神经策略微调，不能称全骨干DRL训练或算法创新；样本成功与learned中心策略通过分别报告，不自动晋升/续训。
+
+- T207已完成并停止：GENERATION_BUDGET_COMPLETE，稳定5m门槛=False，参数更新尝试8；不重启、不续训、不自动晋升。读results_20261031_parameter_pg/findings.md。后处理只汇总与备份，零新增交互。
