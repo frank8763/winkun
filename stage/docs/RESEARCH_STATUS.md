@@ -1,5 +1,9 @@
 # Stage当前状态（2026-10-31）
 
+**T207已唯一启动（PID464495），contracts通过，运行中。** 在既有深度Actor三条特征方向×两个动作上做参数探索策略梯度，frozen/learned同epsilon对照，最多8代/405全部回合/9.5M全部物理步/900秒，末180秒预留最终验收，最终32MiB峰值40MiB/global1GiB。查stage/runs/t207_parameter_pg的launch/status/train.log。不是从零DRL或全骨干反传，不把随机命中当梯度收益；单网络闭环，无地图/规划器/路点。协议说明results_20261031_parameter_pg/protocol_notes.md。T205/T206已完成不重复。
+
+**T205/T206已结束，无工作进程。** T20536动作干预全部接触circle9；T20612固定神经特征方向候选全部LEFT碰撞，父old7正常。新增总449268诊断物理步、零训练/优化器，T159/T194保留。不得重复网格或把更接近当通过。最新报告results_20261031_frontier/findings.md。下面为历史状态。
+
 **T205完成，T206已注册准备唯一启动。** T20536固定时窗动作干预均碰撞circle9，170083物理步，零训练更新；状态与后缀复现精确。T206使用旧七项锚点约束下的固定神经特征方向，12参数候选原始LEFT，后续old7/保存重载old8/54扰动门槛；最多166回合/4M全部物理步/600秒/最终20MiB峰值24MiB，不自动增加预算，不把参数敏感性当新DRL训练。查stage/runs/t206_feature_direction的launch/status；报告stage/docs/results_20261031_frontier/findings.md。
 
 **T205已注册，准备唯一启动：冻结T194、原始LEFT完整状态下的动作持续性因果诊断。** 20s/25s时刻，单次0.2s与持续4s干预，对照原生转向残差与油门上限，固定36分支+2无干预对照；先严格复现原始轨迹与完整状态后缀。650000诊断物理步/360秒/最终16MiB峰值20MiB，零训练/更新。查stage/runs/t205_temporal_intervention的launch/status。此为诊断，不能将脚本干预成功当神经Actor的5m成功，不自动继续训练。

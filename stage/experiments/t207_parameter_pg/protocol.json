@@ -1,0 +1,156 @@
+{
+  "experiment": "T207",
+  "seed": 2026103707,
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt",
+  "retention_targets": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz",
+  "failure_trace": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/left_baseline_trace.npz",
+  "primary_cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "arms": [
+    "frozen",
+    "learned"
+  ],
+  "rank": 3,
+  "failure_step_window": [
+    6000,
+    14000
+  ],
+  "ridge_multiplier": 0.001,
+  "sigma": [
+    [
+      0.35,
+      0.35,
+      0.35
+    ],
+    [
+      0.9,
+      0.9,
+      0.9
+    ]
+  ],
+  "max_generations": 8,
+  "pairs_per_generation": 4,
+  "max_parameter_updates": 8,
+  "mean_box": 2.5,
+  "whitened_step_norm": 0.4,
+  "max_mean_KL": 0.08,
+  "interpolation_factors": [
+    1.0,
+    0.5,
+    0.25
+  ],
+  "retention_weight": 10.0,
+  "workers": 4,
+  "wall_seconds": 900,
+  "final_reserve_seconds": 180,
+  "max_episodes": 405,
+  "max_physics": 9500000,
+  "final_bytes": 33554432,
+  "peak_bytes": 41943040,
+  "pending_bytes": 2097152,
+  "export_reserve_bytes": 8388608,
+  "robustness_xy": [
+    -0.03,
+    0.0,
+    0.03
+  ],
+  "robustness_yaw": [
+    -2.0,
+    0.0,
+    2.0
+  ],
+  "method_contract": "Top3 frozen feature generalized directions asT206, eachnormalized failureRMS1, no runtime extra input. Six coefficients(2nativecommands*3modes) maplinearly into existing direct600to2 affinehead. Every behaviorpolicy is one deterministic113to2 neuralActor forentireepisode. Featurebackbone and otherheads frozen. Episodicparameter eta=mu+sigma*epsilon;4iid Gaussian epsilon andmirroredpartners eachgeneration, pairedsameepsilon acrosslearned/frozen arms. Gaussianuntruncated in parameter space, actuator actionclip asparent. Frozenarmmu0always. Learnedarm objective E_eta[actual60sdiscounted environmentreturn minus10*old7balanced deterministicactionMSE]. No relabeling, learnedCritic, actionnoise, teacher or newreward shaping.",
+  "gradient_contract": "g=(1/(2K))*sum[(Fplus-Fminus)*epsilon/sigma], exactmirrored Gaussian score estimator forsmoothed episodic objective. Compute whitenedmean gradient sigma*g; directionnormalized to.4whitenedunits ifnonzero, meanclipped +/-2.5, maxmeanGaussianKL.08. Normalizing update direction givesstochasticnormalizedgradient heuristic, not unbiased finalupdate claim. No ranktransform or returnnormalization. Baselinepair cancelsconstant. Afterproposal old7hardgate via1/.5/.25interpolation; acceptlargestpassing or rollbackmu. Eachgeneration freshbehavior, no staleonpolicy recycling. Allgradients,returns,mu,epsilon,headshashes retained. Max8parameterdistributiongradientupdateattempts; not fullnetworkbackprop or SAC/PPOtraining.",
+  "evaluation_contract": "Parentoriginalold8gatefirst, old7pass/LEFTcollision expected. Atmost8generations:eacharm8explorationepisodes plus1centralLEFT+7centralold7(learned maytry2extra7gates). The frozencontrolgate needsrunonce only whilemu0; skippedlaterfixedduplicateslogged. Any sampledLEFTsafeGOAL triggersstopafter currentpairedgeneration; earliestgeneration, thenfixedarmorder[frozen,learned], thenjobindex selectsone witness forold7, nevertryanotherfailedwitnessautomatically. Oncandidateold7pass exportfullsinglepolicy, exactreloadallweights, replaynewLEFTtrace, originalold8+54resetgrid; stablegate8/8and54/54,invalidorpartialfails. Sampledpolicy success is parameterexploration evidence; reportseparately fromlearnedcentralpolicy and causalgradientbenefit. Ifno witness bybudget, finallearnedmean/frozenfullmodels andexplicitold8evaluationwithinreserve. No bestmidpointselection.",
+  "accounting_contract": "Max8parent+128exploration+16centralLEFT+168learnedold7backtracking+16finalold8+7witnessold7+8savedreload+54grid=405episodes. Frozenmu0old7alreadycoveredbyparentgate, not rerun. Hard9.5Mphysicsincludesreplays. Individual rollout/gate/replayphysics logged separately. Per-generation beforelaunch reserve maximumcasecaps. Traininginteraction countonlylearnedarm exploration; frozenarmdiagnostic. Parameterupdates not confusedwithdeepActoroptimizer minibatches. Policyoutput remainsend-to-end but featurelearningfrozen; pilot is not independentgeneralization, novelalgorithmorfromscratchDRLproof.",
+  "stop_contract": "900smaxfromlaunch; stopnewlearning180sbeforedeadline, exportfinalmeanmodels andold8evaluation first. Also405episode/9.5Mtotalphysics/32MiBfinal40MiBpeak/globalnewruns1GiB/free40GiB. Pending2MiB+export8MiBreserve beforebatches. Keepallrawfailures andbehaviors, no observationcompaction. Allsuccesses sameoriginalgoal/scene/.20radius/caps. Stoponfirstsuccessbatch or anyerror/guard, no duplicate/resume/extension/automaticlongdistance. ModelincumbentsT159/T194unchanged.",
+  "references": [
+    "https://archive.air.in.tum.de/Main/Publications/Sehnke2010a.pdf",
+    "https://arxiv.org/abs/1703.03864",
+    "https://arxiv.org/abs/1706.01905"
+  ],
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt": "4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz": "5e4f037f39b34fa7cbd070270f7a0147048a4c887478890c31137a7b8ec6e8ba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/left_baseline_trace.npz": "5e2f0dcfa230140f1fd2d3dafa127a2dd8cc61d7199eda463864629734c1b30b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t206_feature_direction/summary.json": "22eb2bbd4c5b290f5fb93aa4117d9199e0d5bda578c7a93dc243b04788969370",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t203_native_exploration/runtime.py": "3f7f6ef5d5be39ab38b67c04f0b19711cba30d99b7389ae7ab96b1b9adac4032",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t200_residual_placement/common.py": "a213ec43cb4a8e54cf6abb780a122d2e117d28a41d69e4d6430477868aab0552",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t207_parameter_pg/prepare.py": "3d70c88cc0bfd1a518c3058297b305e3ab05c2929e56cf3839b32d852b36b9bd",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t207_parameter_pg/train.py": "a7bfbbd37db375d90ac391258551e9c02d54709fde3ffc7772159695b710b902",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t207_parameter_pg/contracts.py": "1aef1e8ca62b76aa0dd2ffb602433cec3135ee583163a4b843c4f5183b8cead7",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t207_parameter_pg/support.py": "ca119b5eb26187c535205f838d7cbbc835727873e282efc4087a645cdb19b2b9"
+  }
+}
