@@ -1,0 +1,49 @@
+{
+  "state": "LOSSLESS_LOCAL_COMPACTION_COMPLETE",
+  "records": [
+    {
+      "original_path": "stage/runs/t174_critic_alignment/terminal_balanced/critic_alignment.pt",
+      "original_bytes": 22949781,
+      "original_sha256": "a7a9c54f88ab3a94e51f0cb88f2dee3cb7dc27e6827b8a382edf19123defd51b",
+      "compressed_path": "stage/runs/t174_critic_alignment/terminal_balanced/critic_alignment.pt.gz",
+      "compressed_bytes": 19999409,
+      "compressed_sha256": "801990528c2689ef9d19ba20ed06f92e5d5b4e3f564c2e0b0f9fc40fe201e7dc",
+      "remote_original_asset": "https://github.com/frank8763/winkun/releases/download/untagged-61f661e5103fa4a24118/stage-critic-audit-20261030-9fd891cf6463.tar.zst",
+      "reason": "Nonselected failed Stage diagnostic critic; full original payload retained losslessly in local gzip and independently verified remote original archive. T174 selected terminal_balanced_mc and all current retained policies untouched."
+    },
+    {
+      "original_path": "stage/runs/t174_critic_alignment/uniform/critic_alignment.pt",
+      "original_bytes": 22949781,
+      "original_sha256": "692deeac8ee8a328fa48e66c46976a25ac282624341ad6b01f9358f86bfb3775",
+      "compressed_path": "stage/runs/t174_critic_alignment/uniform/critic_alignment.pt.gz",
+      "compressed_bytes": 19945445,
+      "compressed_sha256": "77eec7ae9c81095b66e3c4fd7a13d2b9b07110f21800cc1848baded1f6d0e5b0",
+      "remote_original_asset": "https://github.com/frank8763/winkun/releases/download/untagged-61f661e5103fa4a24118/stage-critic-audit-20261030-9fd891cf6463.tar.zst",
+      "reason": "Nonselected failed Stage diagnostic critic; full original payload retained losslessly in local gzip and independently verified remote original archive. T174 selected terminal_balanced_mc and all current retained policies untouched."
+    },
+    {
+      "original_path": "stage/runs/t175_paired_advantage/mc_only/critic_alignment.pt",
+      "original_bytes": 22949781,
+      "original_sha256": "ec5e3daee3842311f7d1d3961dbc694e7fe3a1b1b679225f3555fee7ffd6ef80",
+      "compressed_path": "stage/runs/t175_paired_advantage/mc_only/critic_alignment.pt.gz",
+      "compressed_bytes": 20006396,
+      "compressed_sha256": "1275b101929fc0494ab1f7a277d72deb2d8fec2a13fb22eeac18cd5b8f540ba5",
+      "remote_original_asset": "https://github.com/frank8763/winkun/releases/download/untagged-61f661e5103fa4a24118/stage-critic-audit-20261030-9fd891cf6463.tar.zst",
+      "reason": "Nonselected failed Stage diagnostic critic; full original payload retained losslessly in local gzip and independently verified remote original archive. T174 selected terminal_balanced_mc and all current retained policies untouched."
+    },
+    {
+      "original_path": "stage/runs/t175_paired_advantage/mc_plus_paired/critic_alignment.pt",
+      "original_bytes": 22949781,
+      "original_sha256": "6cda4faa6db06dc7de8f4d66d553e0bca6c01212682e8429f952ecb9e0696eeb",
+      "compressed_path": "stage/runs/t175_paired_advantage/mc_plus_paired/critic_alignment.pt.gz",
+      "compressed_bytes": 19991471,
+      "compressed_sha256": "b76cfe11b2f8cd1a1a3302c636f93335017610b3d9789209bff3297bd58b1e7d",
+      "remote_original_asset": "https://github.com/frank8763/winkun/releases/download/untagged-61f661e5103fa4a24118/stage-critic-audit-20261030-9fd891cf6463.tar.zst",
+      "reason": "Nonselected failed Stage diagnostic critic; full original payload retained losslessly in local gzip and independently verified remote original archive. T174 selected terminal_balanced_mc and all current retained policies untouched."
+    }
+  ],
+  "full_remote_original_archive_verified": true,
+  "restore": "archive.py restore PATH; budget checked before restoring original path, no training restart",
+  "logical_bytes_freed": 11856403,
+  "original_payloads_preserved_locally_and_remotely": true
+}
