@@ -1,0 +1,158 @@
+{
+  "experiment": "T204",
+  "seed": 2026103504,
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt",
+  "near_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/LEFT_fullstate.npz",
+  "primary_cases": [
+    {
+      "id": "2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029653602_RIGHT",
+      "seed": 2029653602,
+      "angle_deg": 13.6,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654801_LEFT",
+      "seed": 2029654801,
+      "angle_deg": -12.5,
+      "side": "LEFT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "group": "old_3m_4m_retention",
+      "distance_m": 3.0,
+      "step_cap": 14000
+    },
+    {
+      "id": "4m_2029653601_LEFT",
+      "seed": 2029653601,
+      "side": "LEFT",
+      "angle_deg": -17.3,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "4m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "side": "RIGHT",
+      "angle_deg": 18.8,
+      "distance_m": 4.0,
+      "step_cap": 18667,
+      "group": "old_3m_4m_retention"
+    },
+    {
+      "id": "5m_2029653601_LEFT",
+      "seed": 2029653601,
+      "angle_deg": -17.3,
+      "side": "LEFT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    },
+    {
+      "id": "5m_2029654802_RIGHT",
+      "seed": 2029654802,
+      "angle_deg": 18.8,
+      "side": "RIGHT",
+      "distance_m": 5.0,
+      "step_cap": 23334,
+      "group": "original_5m_primary"
+    }
+  ],
+  "retention_targets": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz",
+  "arms": [
+    "keep10",
+    "tolerance10"
+  ],
+  "retention_tolerance_rmse": 0.01,
+  "sigma_native": [
+    0.35,
+    0.3
+  ],
+  "max_rounds": 48,
+  "deadline_unix": 1793414438.3776295,
+  "deadline_local": "2026-10-31T10:40:38.377630+08:00",
+  "max_wall_seconds": 3600,
+  "max_training_episodes": 576,
+  "max_training_physics": 13440384,
+  "max_total_physics": 128000000,
+  "pending_round_physics": 3000000,
+  "max_actor_updates": 4224,
+  "max_bytes": 33554432,
+  "peak_bytes": 67108864,
+  "pending_round_bytes": 4194304,
+  "export_reserve_bytes": 10485760,
+  "course_radii_m": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "advance_streak_for_expansion": 2,
+  "max_reset_yaw_step_deg": 5.0,
+  "robustness_delta_xy_m": [
+    -0.03,
+    0.0,
+    0.03
+  ],
+  "robustness_delta_yaw_deg": [
+    -2.0,
+    0.0,
+    2.0
+  ],
+  "epochs": 4,
+  "minibatch": 128,
+  "head_lr": 0.0001,
+  "ppo_clip": 0.15,
+  "max_KL": 0.02,
+  "minimum_advantage_scale": 0.1,
+  "retention_weight": 10.0,
+  "interpolation_factors": [
+    1.0,
+    0.5,
+    0.25
+  ],
+  "stall_rounds": 8,
+  "controlled_difference": "Same fixed native-domain stochastic law, parent, data-reset stream, paired seeds, head-only PPO-style MC learning, hard seven-task gate and interpolation rules. keep10 uses MSE BC, tolerance10 uses group-MSE excess over.01^2 with sameweight10. Shared curriculum uses union of accepted policies; it is influenced by both arms, not independent train-seed or generalization evidence.",
+  "policy_contract": "113to2 single native-command Actor. Freeze learned113to800to600 feature backbone, adapt original600to2 output, native2to2 and direct600to2 readouts (2410 parameters). All behavior heads retained, immutable backbone identified bySHA. Deterministic forward remains exact parent function at initialization. Native truncatedGaussian mean is raw native head, identityinside[-1,1], smoothly bounded tails\u00b11.75; sigmafixed(.35,.30). Deterministic readout is existing clipped neuralmean, matching distributionmode to1e-6. No learnedCritic, oldQ gradients, entropybonus or HER.",
+  "RL_contract": "Eachround2common initialtasks, eacharm1deterministic control+3fresh onpolicy stochastic rollouts/task. Only6stochastic episodes/arm enter learning; MCcomplete discounted environment return and same-initial leave-one-out baseline. Sharedinitial potential cancels; alltimeweights already inside fullreturn. Advantages divided bymax(.1,batchstd), eachdecision surrogate scaled by fixed1/(episodes*234), not extra gamma. PPO clippedratio.15,4epochs/minibatch128, empiricalKLstop.02, headAdam1e-4,gradclip.5. Data are never recycled in later rounds; no stale behavior replay for PG.",
+  "course_contract": "Onlyreset-time pose changes from verified nearLEFT fullstate; finalgoal/scene/.20mradius/cap fixed. Source is4.645468m from originalreset. Up to2tasks/round: slot1 toward originalreset with.8radius longitudinal and+/-.5radius transverse; slot2 uniformdirection radius(.5to1) from a random top8 successful reset. Radiuslevels.05/.10/.20m; expand after2 consecutive rounds with>=3of4 postupdate successes and bothsevengates, shrinkonelevel after0success. Yawstep<=5deg. Max4collisionchecked zerophysics proposals/slot; fallback slot1 direction rotated+/\u221275deg aftertwoinvalid proposals. Every4thround slot2 is unchanged originalLEFTfactory task. Sharedpool accepts only frozen postupdate safeGOAL; parent paired on same task distinguishes preexisting capability. No runtime path, action plan, waypoint or teacher.",
+  "retention_contract": "Afterupdates old6+RIGHT are hard gates. Try declared neuralparameter interpolation factors1,.5,.25 toward previousacceptedheads, choose largest passingall7. Reset Adam state eachround. If nonepasses retain previousheads. Separate postupdate task evaluation populates curriculum. Every4rounds evaluate originalLEFT, fixedfinal old8; never pick best intermediate by LEFT. If originalLEFT safeGOAL+sevenpass, stoptraining and verify savedcandidate with savedfullpolicy reload equality+closedloop old8 plus27fresh resetperturbations eachLEFTandRIGHT. Official T159/T194 never overwritten/promoted.",
+  "storage_contract": "Allresults inside stage/runs/t204. Final32MiB/peak64MiB/globalnewruns1GiB/free40GiB. Beforeeachround reserve4MiB pending+10MiB exports and3Mphysics. Storeeverybehavior/candidatehead, initialcompletephysics snapshots, actions, rewards, density, poses, flags andhashes. Fullobservations temporarily recorded and onlyremoved after every corresponding action replay matches ALL state/nextstate+finalintegration hashes exactly, with compaction receipts. Frozen successful regression cases keep summaries/hashes; failure/final/newcapability traces retained/replayed. No unique evidence or parentmodel deletion.",
+  "stop_contract": "Atmost48rounds/576trainingepisodes/13.440384Mtrainingphysics/128Mtotalphysics/4224headupdates/3600s wall, whicheverfirst. Earlierstop on originalLEFTsuccess,8rounds without>=2.5cm curriculumadvance, storage/physics pendingreserve refusal, failedprechecks or native/hash error. Wallcensored partialepisodes are not failures and neverenterPG. No duplicate/resume/automaticextension. If LEFTsuccess then stable5mgate requires savedpolicy old8 and all54 valid resetgrid cases safeGOAL. Invalid/incompletecase failsgate. End exportfinalmodels and complete report; no automaticlongdistance.",
+  "references": [
+    "https://arxiv.org/abs/1707.06347",
+    "https://proceedings.mlr.press/v78/florensa17a.html"
+  ],
+  "summary_reserve_bytes": 1048576,
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t194_drive_sensitivity/selected_policy.pt": "4848d7bcb38a140eda227975d7c338b5eb8ad655e5ce64bea3f84ac3c89e7656",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t186_anchor_robustness/LEFT_fullstate.npz": "821ee9028a6f138e7ba6cdeae24ecf1ca732ad9e05f19c22f3414e1aa4a1eb69",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t196_left_exploration/retention_targets.npz": "5e4f037f39b34fa7cbd070270f7a0147048a4c887478890c31137a7b8ec6e8ba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t203_native_exploration/summary.json": "800e4121118a30fc1f64f4820578a40af9a107a0390d78c52989ac99399d8847",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t204_native_course/prepare.py": "865534f66a382260ee4580949c6d63b9319be27188393dcf98c1eddaa260e627",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t204_native_course/train.py": "c760ba541a2e277d2aa84b3b81bdd60d4f0e7f5e00929319173ea7145bd3190d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t204_native_course/contracts.py": "05c3da60ca3dc7383c1de105dedc8f49409661ba0780287f27ae413a60c00c1c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t203_native_exploration/prepare.py": "1d8cf74ff5f8780beea77562f259a0bfabb0f796463926dd682f3ada8d47e347",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t203_native_exploration/runtime.py": "3f7f6ef5d5be39ab38b67c04f0b19711cba30d99b7389ae7ab96b1b9adac4032",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t203_native_exploration/preflight.py": "5505d78072370d3ca3f37ab0053c7df4579467147bce49b7e56d4c3ecc3a8b28",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t200_residual_placement/common.py": "a213ec43cb4a8e54cf6abb780a122d2e117d28a41d69e4d6430477868aab0552"
+  }
+}

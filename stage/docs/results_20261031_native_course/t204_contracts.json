@@ -1,0 +1,37 @@
+{
+  "state": "PASS",
+  "trainable_parameters": 2410,
+  "initial_retention_max_action_error": 0.0,
+  "analytic_score_checks": [
+    {
+      "mean": -1.74,
+      "gradient": 12.847456476891402,
+      "analytic": 12.8474564768914
+    },
+    {
+      "mean": -1.2,
+      "gradient": 12.099524760228899,
+      "analytic": 12.099524760228899
+    },
+    {
+      "mean": 0.0,
+      "gradient": 5.714285714285714,
+      "analytic": 5.714285714285714
+    },
+    {
+      "mean": 1.2,
+      "gradient": -0.6709533316574705,
+      "analytic": -0.6709533316574721
+    },
+    {
+      "mean": 1.74,
+      "gradient": -1.4188850483199742,
+      "analytic": -1.418885048319976
+    }
+  ],
+  "clipped_state_count": 2414,
+  "clipped_native_score_head_gradient_norm": 14.209221839904785,
+  "optimizer_updates": 0,
+  "physics_steps": 0,
+  "scope": "Native truncated Gaussian is normalized/differentiable; exact initial deterministic function, nonzero head score gradients on clipped states, and frozen backbone. Does not establish navigation improvement or full training."
+}

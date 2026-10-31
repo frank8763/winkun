@@ -1,0 +1,86 @@
+{
+  "state": "COMPLETE",
+  "training_gate_passed": true,
+  "episodes": 16,
+  "counts": {
+    "deterministic": {
+      "n": 5,
+      "GOAL": 5,
+      "CONTACT": 0,
+      "TIMEOUT": 0
+    },
+    "legacy_gaussian": {
+      "n": 5,
+      "GOAL": 5,
+      "CONTACT": 0,
+      "TIMEOUT": 0
+    },
+    "physical_gaussian": {
+      "n": 5,
+      "GOAL": 5,
+      "CONTACT": 0,
+      "TIMEOUT": 0
+    }
+  },
+  "coverage": {
+    "deterministic": {
+      "decisions": 180,
+      "clip_decisions": 180,
+      "clip_throttle_below_0_9_fraction": 0.0,
+      "throttle_quantiles": [
+        0.9999989867210388,
+        0.9999989867210388,
+        0.9999989867210388,
+        0.9999989867210388,
+        0.9999989867210388
+      ]
+    },
+    "legacy_gaussian": {
+      "decisions": 167,
+      "clip_decisions": 162,
+      "clip_throttle_below_0_9_fraction": 0.0,
+      "throttle_quantiles": [
+        0.9298432469367981,
+        0.9999961018562317,
+        0.999998927116394,
+        0.999999725818634,
+        0.9999998807907104
+      ]
+    },
+    "physical_gaussian": {
+      "decisions": 200,
+      "clip_decisions": 200,
+      "clip_throttle_below_0_9_fraction": 0.73,
+      "throttle_quantiles": [
+        0.0544610470533371,
+        0.4496285647153855,
+        0.7862572073936462,
+        0.9674637913703918,
+        0.998794674873352
+      ]
+    }
+  },
+  "replay_checks": [
+    {
+      "id": "1_legacy_gaussian",
+      "verified": true,
+      "physics_steps": 3446,
+      "pose_error": 0.0,
+      "action_error": 0.0,
+      "logp_error": 0.0
+    },
+    {
+      "id": "1_physical_gaussian",
+      "verified": true,
+      "physics_steps": 4060,
+      "pose_error": 0.0,
+      "action_error": 0.0,
+      "logp_error": 0.0
+    }
+  ],
+  "physics_steps": 65389,
+  "training_physics_steps": 0,
+  "optimizer_updates": 0,
+  "automatic_promotion": false,
+  "scope": "One deterministic source gate, then5small-reset-neighbors each deterministic/legacy tanhGaussian(.5latent)/native truncatedGaussian(.35,.30),16episodes maximum. Two replay witnesses count separately inside total373344physics cap. Source failure stops. Original goal/scene/.20radius/cap unchanged; histories refilled consistently for all curriculum resets. Zero training and no planner/waypoints/runtime teacher. This is a distribution/amplitude engineering preflight, not an isolated coordinate-only algorithm comparison."
+}
