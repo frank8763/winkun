@@ -114,3 +114,5 @@ T169–T171使用新稀疏目标、终止一致势函数塑形、60s物理折扣
 新增运行目录上限1GiB，最少40GiB可用盘。检查点只轮换latest/previous；每轮冻结评估后保留最终点，删除本轮旧滚动点并记录哈希。原始归档、T145/T146只读。代码/协议/汇总进入Git；模型、数据、原始轨迹以核验过的Release附件保存。
 
 T165–T172阶段的327个原始输出已在[前一阶段Release](https://github.com/frank8763/winkun/releases/tag/stage-progress-2026-10-30)备份，逐文件本地哈希与远端附件SHA256/大小核验通过；该阶段结束时本地输出约474.23MiB。见results_20261030/release_receipt.json及stage/manifests/progress_20261030_files.json，最新增量与总占用见最新场景与探索报告。
+
+T203/T204原始数据/失败/模型已Release核验备份：https://github.com/frank8763/winkun/releases/tag/stage-native-course-2026-10-31；本地逐成员哈希与远端附件SHA256/字节数相符，未完整读回远端二进制。临时包核验后删除；剩余全部runs 1000635409字节。
