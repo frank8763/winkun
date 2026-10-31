@@ -1,0 +1,573 @@
+{
+  "experiments": {
+    "t245_multitask_pcgrad": {
+      "state": "COMPLETE",
+      "stop_reason": "FIXED_RL_BUDGET_COMPLETE",
+      "scores": {
+        "task0": {
+          "n": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task1": {
+          "n": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task2": {
+          "n": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task3": {
+          "n": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task4": {
+          "n": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task5": {
+          "n": 22,
+          "safeGOAL": 22,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task6": {
+          "n": 27,
+          "safeGOAL": 25,
+          "CONTACT": 2,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task7": {
+          "n": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        }
+      },
+      "unique_training_episodes": 64,
+      "exact_replays": 64,
+      "RL_accepted_updates": 15,
+      "shadow_accepted_updates": 15,
+      "rounds": 4,
+      "development_n": 211,
+      "development_safeGOAL": 209,
+      "known_invalid_initial_states": 5,
+      "heldout_n": 0,
+      "heldout_safe": 0,
+      "stable_valid_local_3m_4m_5m_gate": false,
+      "export": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t245_multitask_pcgrad/final_Actor.pt.gz",
+        "sha256": "e9066923d8e7c4a30692562d9873ffde2fcb581d8e619325622532083f1a65ff",
+        "bytes": 2112379,
+        "content_sha256": "199fa6b93c7d9d9df49f0ca1fe2854ca14082e22a3745ee4955db3a16d9403a4"
+      },
+      "physics_steps": 6054211,
+      "commands": 391,
+      "all_workers_stopped": true,
+      "automatic_promotion": false,
+      "elapsed_s": 1044.8016275430018,
+      "own_bytes": 7413725,
+      "runs_MiB": 1013.9954442977905
+    },
+    "t247_recovery_branches": {
+      "state": "COMPLETE",
+      "physics_steps": 136612,
+      "commands": 14,
+      "optimizer_calls": 0,
+      "recovery_source_gate": false,
+      "recovery_results": [
+        {
+          "id": "recovery_2000_first",
+          "start_step": 2000,
+          "complete": true,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "physics_steps": 14033,
+          "absolute_end_step": 16033,
+          "remaining_m": 1.4805695542993393,
+          "array_hashes": {
+            "states": "35964244f4a6327e45923d3e0c7911bcff5e4c713597060b74ee0553d9896713",
+            "actions": "ae1e48ced8123b0564152dd623a79d57137e3459669a28d5838bef0e5af8683f",
+            "means": "616eae9ffa53c9e77af547aacc06f24088e91c061b8807dca213a44ffae2d5f1",
+            "logp": "ae69b7fbb17043af617aa26501577be0dd928638286d13e8b3953e3ae84f58dc",
+            "native_counts": "d19c87b3528165cc4b404fd6dcc81f6af905e58ad2d7888943b0497ffb6a35f5",
+            "next_states": "7f2b7762de3bd65dcc4ae064b76b20e25393df239820607e5ed79f851009f556",
+            "poses": "6cbdd44427ab183451d6f50ae73f582417675c54c93f8dad4dc0051ec514731c",
+            "next_poses": "1904711c2991a380ece178858ec2e2c981b87d23111a9f05e90b98c472855910",
+            "end_flags": "86725fa8f55ea592749ded1465f9413f67ab1a0e36f62612b8c6f46e43b3ae36",
+            "rewards": "cf6a0d2bb4eb456f32575f8bffc3337629c8aa6889ddc9f1930e6262effbaefd"
+          },
+          "integration_sha256": "2de7a96ea8bea046af53d11431b02a5d8a21a2ef0dd75f3f76bf4d79d333f8f5",
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t247_recovery_branches/recovery_2000.npz",
+          "sha256": "f2bdf58d2d01f82ec125e42f234aef2f8a1dbd6ef0b47b2aa88dbf12dc4e9fb8"
+        },
+        {
+          "id": "recovery_2000_second",
+          "start_step": 2000,
+          "complete": true,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "physics_steps": 14033,
+          "absolute_end_step": 16033,
+          "remaining_m": 1.4805695542993393,
+          "array_hashes": {
+            "states": "35964244f4a6327e45923d3e0c7911bcff5e4c713597060b74ee0553d9896713",
+            "actions": "ae1e48ced8123b0564152dd623a79d57137e3459669a28d5838bef0e5af8683f",
+            "means": "616eae9ffa53c9e77af547aacc06f24088e91c061b8807dca213a44ffae2d5f1",
+            "logp": "ae69b7fbb17043af617aa26501577be0dd928638286d13e8b3953e3ae84f58dc",
+            "native_counts": "d19c87b3528165cc4b404fd6dcc81f6af905e58ad2d7888943b0497ffb6a35f5",
+            "next_states": "7f2b7762de3bd65dcc4ae064b76b20e25393df239820607e5ed79f851009f556",
+            "poses": "6cbdd44427ab183451d6f50ae73f582417675c54c93f8dad4dc0051ec514731c",
+            "next_poses": "1904711c2991a380ece178858ec2e2c981b87d23111a9f05e90b98c472855910",
+            "end_flags": "86725fa8f55ea592749ded1465f9413f67ab1a0e36f62612b8c6f46e43b3ae36",
+            "rewards": "cf6a0d2bb4eb456f32575f8bffc3337629c8aa6889ddc9f1930e6262effbaefd"
+          },
+          "integration_sha256": "2de7a96ea8bea046af53d11431b02a5d8a21a2ef0dd75f3f76bf4d79d333f8f5"
+        },
+        {
+          "id": "recovery_5000_first",
+          "start_step": 5000,
+          "complete": true,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "physics_steps": 11021,
+          "absolute_end_step": 16021,
+          "remaining_m": 1.481378609762771,
+          "array_hashes": {
+            "states": "8b91d3a57b328ba9bc0676417ebaa73710b3da8ed27dbd520c8dc5c59ad41eec",
+            "actions": "976c0810b314a8c8f9c952df78c19696b5576c2875bc4c3744b26c4f26621032",
+            "means": "506efd9f416f7dc9be159afe872a713a1347be76a1d5ae19d274035b75ab3f44",
+            "logp": "0d0833b2d74fa5b7ba158b701d0b29448e2529dda7fc95c69f75e2273c126c09",
+            "native_counts": "d4178fd52b2b2d8d2bcabcbb2b51301ac66f969689f596070efa34489c061dce",
+            "next_states": "107d9a4d01fe5265440de3b8aaf824ee75f8cfe2f16fc04d5c57e148953d5fc9",
+            "poses": "0df5f9bc86748d57b5c4cd046f8d63899c9fd5611d7d73d56b2e3ff5f50a06b7",
+            "next_poses": "0140ea6ab6a3a2783d75d626b9465407132a71fec1d222f1899863b457e9fc79",
+            "end_flags": "2314e9bff3b386eea62c7de1fa54417e8e043fb5a12dbc44138d5f543180b093",
+            "rewards": "09e49515b3975a5b6d95112dfdac60aac4bff73af94538752289e273f52aa187"
+          },
+          "integration_sha256": "048b4045ef4c24a6e89ad2874ca70c98486f747daaae98044ebe8cbb95bc51b2",
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t247_recovery_branches/recovery_5000.npz",
+          "sha256": "091762cf30b4bf19b870f3f79be5ed1b166cbb8487c293f36ecfcadd672a9643"
+        },
+        {
+          "id": "recovery_5000_second",
+          "start_step": 5000,
+          "complete": true,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "physics_steps": 11021,
+          "absolute_end_step": 16021,
+          "remaining_m": 1.481378609762771,
+          "array_hashes": {
+            "states": "8b91d3a57b328ba9bc0676417ebaa73710b3da8ed27dbd520c8dc5c59ad41eec",
+            "actions": "976c0810b314a8c8f9c952df78c19696b5576c2875bc4c3744b26c4f26621032",
+            "means": "506efd9f416f7dc9be159afe872a713a1347be76a1d5ae19d274035b75ab3f44",
+            "logp": "0d0833b2d74fa5b7ba158b701d0b29448e2529dda7fc95c69f75e2273c126c09",
+            "native_counts": "d4178fd52b2b2d8d2bcabcbb2b51301ac66f969689f596070efa34489c061dce",
+            "next_states": "107d9a4d01fe5265440de3b8aaf824ee75f8cfe2f16fc04d5c57e148953d5fc9",
+            "poses": "0df5f9bc86748d57b5c4cd046f8d63899c9fd5611d7d73d56b2e3ff5f50a06b7",
+            "next_poses": "0140ea6ab6a3a2783d75d626b9465407132a71fec1d222f1899863b457e9fc79",
+            "end_flags": "2314e9bff3b386eea62c7de1fa54417e8e043fb5a12dbc44138d5f543180b093",
+            "rewards": "09e49515b3975a5b6d95112dfdac60aac4bff73af94538752289e273f52aa187"
+          },
+          "integration_sha256": "048b4045ef4c24a6e89ad2874ca70c98486f747daaae98044ebe8cbb95bc51b2"
+        },
+        {
+          "id": "recovery_9000_first",
+          "start_step": 9000,
+          "complete": true,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "physics_steps": 7020,
+          "absolute_end_step": 16020,
+          "remaining_m": 1.482484609086148,
+          "array_hashes": {
+            "states": "6668a871469b8810dda262d1bda6085c58cf17aa42dc9ec2a6b2097663319e22",
+            "actions": "4728cbb76600213b7bb99c735d30ac99aeb33df89dab054e38058cd24a64a915",
+            "means": "3ec4fa44d80eac3b3db1b85988c9cf652ca64a5c8fa79c5305c06c8e27157948",
+            "logp": "b0538a8f7b7b66bbe500cb4c37d5e4af82792d682309dfc59c02a889c02038a1",
+            "native_counts": "5f5eb47ac0730ac9c83476e8b0e21ad426d00ef75ee3a84842f9419014a52ab5",
+            "next_states": "e908982f6e171e9012174d734ab3b4bc647fb70391d155bf6a89c7f36dc245c1",
+            "poses": "8865e7b6a55c84a3a192405e8bb4476579afa59778f80565830741fff540a556",
+            "next_poses": "6ca0ac0c5ebecc1894525ee4fbef220494163d14ffe78db819b78df78c0e85ee",
+            "end_flags": "cb2a8a842a7d6a362e9213bb4881435464f816076e19e2a022fb017770230269",
+            "rewards": "967c9de0e8c6dd3501994f50973a263e38e90f54d41547a5a499b1defb43747b"
+          },
+          "integration_sha256": "53eeec099d9bdeaf63e2cb9fb215d91ad93a07c44e5d541402f41113b29cf42e",
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t247_recovery_branches/recovery_9000.npz",
+          "sha256": "c00417ecac8de2f11618109ac1262c20258c743c4a1e4043532e8f1bc05777bd"
+        },
+        {
+          "id": "recovery_9000_second",
+          "start_step": 9000,
+          "complete": true,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "physics_steps": 7020,
+          "absolute_end_step": 16020,
+          "remaining_m": 1.482484609086148,
+          "array_hashes": {
+            "states": "6668a871469b8810dda262d1bda6085c58cf17aa42dc9ec2a6b2097663319e22",
+            "actions": "4728cbb76600213b7bb99c735d30ac99aeb33df89dab054e38058cd24a64a915",
+            "means": "3ec4fa44d80eac3b3db1b85988c9cf652ca64a5c8fa79c5305c06c8e27157948",
+            "logp": "b0538a8f7b7b66bbe500cb4c37d5e4af82792d682309dfc59c02a889c02038a1",
+            "native_counts": "5f5eb47ac0730ac9c83476e8b0e21ad426d00ef75ee3a84842f9419014a52ab5",
+            "next_states": "e908982f6e171e9012174d734ab3b4bc647fb70391d155bf6a89c7f36dc245c1",
+            "poses": "8865e7b6a55c84a3a192405e8bb4476579afa59778f80565830741fff540a556",
+            "next_poses": "6ca0ac0c5ebecc1894525ee4fbef220494163d14ffe78db819b78df78c0e85ee",
+            "end_flags": "cb2a8a842a7d6a362e9213bb4881435464f816076e19e2a022fb017770230269",
+            "rewards": "967c9de0e8c6dd3501994f50973a263e38e90f54d41547a5a499b1defb43747b"
+          },
+          "integration_sha256": "53eeec099d9bdeaf63e2cb9fb215d91ad93a07c44e5d541402f41113b29cf42e"
+        },
+        {
+          "id": "recovery_12000_first",
+          "start_step": 12000,
+          "complete": true,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "physics_steps": 3654,
+          "absolute_end_step": 15654,
+          "remaining_m": 1.4819350647134273,
+          "array_hashes": {
+            "states": "6d581ca12bf3dbb3427d3dd4b499fc82315fe01940c12e734782f1da40bb1c90",
+            "actions": "4adba6260b0ed581c4a0a5fb03d4492e26e1549f016ff7970342ad7b9ee38a2e",
+            "means": "42ba55c45f4e61ce3552b99740906adf735255e6ed74b9b30562b10a0a568e79",
+            "logp": "2c991fc858bf3bde62a8ae46271af062cba02da0ac0571dbd969d86bfb3187dd",
+            "native_counts": "5829ea4826ff84eb9a8d32859ebb394ecbde6911fb25c8ca3ca817cbd4b32f0e",
+            "next_states": "0b1b4db11f129fab3c26b0f727b44657b204b4d6c6572905beab5d9612fb56bc",
+            "poses": "38f92faad917b62bf81de0443e7aa1618970ffe90c6c0285dc488c23fd1df292",
+            "next_poses": "a46ecdde7dd8a6403f7d5251020b0fd995c9d46d8243ddd9d6c247797efded30",
+            "end_flags": "3e34bcfbc8b8eaf9ee9c68628406d2b1d82f76169e030a399f54b96a5965fe5a",
+            "rewards": "83d1d8e146084a426f0ed76b76d8f394c70d19bb00d74b53fbe1b6b1cc9a9b4b"
+          },
+          "integration_sha256": "0ec52ac908837605e7b2e5f590f0da21cd09da35aa5fa210001c7ece49ae616e",
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t247_recovery_branches/recovery_12000.npz",
+          "sha256": "a1ab085cd3c1a4edb2e7833d16085f5420e98fa45b14a49bf24941930562e4ef"
+        },
+        {
+          "id": "recovery_12000_second",
+          "start_step": 12000,
+          "complete": true,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "physics_steps": 3654,
+          "absolute_end_step": 15654,
+          "remaining_m": 1.4819350647134273,
+          "array_hashes": {
+            "states": "6d581ca12bf3dbb3427d3dd4b499fc82315fe01940c12e734782f1da40bb1c90",
+            "actions": "4adba6260b0ed581c4a0a5fb03d4492e26e1549f016ff7970342ad7b9ee38a2e",
+            "means": "42ba55c45f4e61ce3552b99740906adf735255e6ed74b9b30562b10a0a568e79",
+            "logp": "2c991fc858bf3bde62a8ae46271af062cba02da0ac0571dbd969d86bfb3187dd",
+            "native_counts": "5829ea4826ff84eb9a8d32859ebb394ecbde6911fb25c8ca3ca817cbd4b32f0e",
+            "next_states": "0b1b4db11f129fab3c26b0f727b44657b204b4d6c6572905beab5d9612fb56bc",
+            "poses": "38f92faad917b62bf81de0443e7aa1618970ffe90c6c0285dc488c23fd1df292",
+            "next_poses": "a46ecdde7dd8a6403f7d5251020b0fd995c9d46d8243ddd9d6c247797efded30",
+            "end_flags": "3e34bcfbc8b8eaf9ee9c68628406d2b1d82f76169e030a399f54b96a5965fe5a",
+            "rewards": "83d1d8e146084a426f0ed76b76d8f394c70d19bb00d74b53fbe1b6b1cc9a9b4b"
+          },
+          "integration_sha256": "0ec52ac908837605e7b2e5f590f0da21cd09da35aa5fa210001c7ece49ae616e"
+        }
+      ],
+      "all_native_envs_closed": true,
+      "all_workers_stopped": true,
+      "end_to_end_deployment_success_claim": false,
+      "elapsed_s": 166.53006386099878,
+      "own_bytes": 306983,
+      "runs_MiB": 1014.2932691574097
+    },
+    "t248_control_frequency": {
+      "state": "COMPLETE",
+      "stop_reason": "FREQUENCY_SCREEN_FAILED_NO_FULL_DEVELOPMENT_OR_HELDOUT",
+      "control100_exact": true,
+      "screen50_n": 12,
+      "screen50_safe": 11,
+      "screen50_failures": [
+        "dev_task6_24"
+      ],
+      "screen_independent_replay_exact": true,
+      "development_n": 0,
+      "development_safe": 0,
+      "heldout_n": 0,
+      "heldout_safe": 0,
+      "known_invalid_starts": 5,
+      "stable_valid_local_3m_4m_5m_gate": false,
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t239_ar_policy_gradient/final_Actor.pt.gz",
+      "policy_hash": "8a2328d7c4b8b0101fb36b0ba1ef49540156c9ff3cb0335ccab9b295e163878a",
+      "hold_steps": 50,
+      "physics_steps": 439777,
+      "commands": 28,
+      "optimizer_calls": 0,
+      "all_workers_stopped": true,
+      "elapsed_s": 83.2038132389971,
+      "own_bytes": 766975,
+      "runs_MiB": 1015.0560340881348
+    },
+    "t249_actuator_observation": {
+      "state": "FAILED",
+      "cases": 0,
+      "dataset": null,
+      "physics_steps": 0,
+      "commands": 0,
+      "optimizer_calls": 0,
+      "all_workers_stopped": true,
+      "navigation_learning_claim": false,
+      "new_independent_tests": 0,
+      "elapsed_s": 0.8266577670001425,
+      "own_bytes": 702101,
+      "runs_MiB": 1000.3088808059692
+    },
+    "t250_actuator_policy_gradient": {
+      "state": "COMPLETE",
+      "stop_reason": "FIXED_RL_BUDGET_COMPLETE",
+      "scores": {
+        "task0": {
+          "n": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task1": {
+          "n": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task2": {
+          "n": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task3": {
+          "n": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task4": {
+          "n": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task5": {
+          "n": 22,
+          "safeGOAL": 22,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task6": {
+          "n": 27,
+          "safeGOAL": 26,
+          "CONTACT": 1,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        },
+        "task7": {
+          "n": 27,
+          "safeGOAL": 27,
+          "CONTACT": 0,
+          "heldout_n": 0,
+          "heldout_safe": 0
+        }
+      },
+      "unique_training_episodes": 64,
+      "exact_replays": 64,
+      "RL_accepted_updates": 16,
+      "shadow_accepted_updates": 16,
+      "rounds": 4,
+      "development_n": 211,
+      "development_safeGOAL": 210,
+      "known_invalid_initial_states": 5,
+      "initial16_reconstructed_historical_control": true,
+      "additional_independent_policy_induced_episodes": 48,
+      "measured_steering_inputs": 4,
+      "total_policy_inputs": 117,
+      "heldout_n": 0,
+      "heldout_safe": 0,
+      "stable_valid_local_3m_4m_5m_gate": false,
+      "export": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t250_actuator_policy_gradient/final_Actor.pt.gz",
+        "sha256": "8b1ace57fe03ed95479825d6d8d40f50423785e19d392d292e8a1bd11def7a35",
+        "bytes": 2127454,
+        "content_sha256": "3d8dd93dc64a78894cafc9917300d0d1666755364af4e9c9793aade699c3fa3c"
+      },
+      "physics_steps": 6086979,
+      "commands": 391,
+      "all_workers_stopped": true,
+      "automatic_promotion": false,
+      "elapsed_s": 1081.2242490449971,
+      "own_bytes": 7655213,
+      "runs_MiB": 1008.939245223999
+    },
+    "t251_actuator_recovery": {
+      "state": "PREFLIGHT_PASS",
+      "cases": 211,
+      "dataset": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t251_actuator_recovery/actual_steering_context.npz",
+        "sha256": "cb11be2fc2677fd649e5e286a4690e8be3d13fe0e06989c21405f11c10f203c6",
+        "bytes": 435094,
+        "rows": 28588,
+        "cases": 211,
+        "encoder_abs_max": [
+          0.8126044869422913,
+          0.7420655488967896,
+          0.21332497894763947,
+          0.3098178505897522
+        ],
+        "base_states_sha256": "db28d24af1c54069f195905da0ab0510ff87fcaddd90fbfc3aa2222ee5dae676"
+      },
+      "physics_steps": 2847838,
+      "commands": 211,
+      "optimizer_calls": 0,
+      "all_workers_stopped": true,
+      "navigation_learning_claim": false,
+      "new_independent_tests": 0,
+      "elapsed_s": 465.7173863850003,
+      "own_bytes": 1390882,
+      "runs_MiB": 1001.6363611221313
+    },
+    "t253_zero_latent_readout": {
+      "state": "COMPLETE",
+      "stop_reason": "ZERO_LATENT_SCREEN_FAILED_NO_FULL_DEVELOPMENT_OR_HELDOUT",
+      "clipped_mode_control_exact": true,
+      "zero_latent_screen_n": 12,
+      "zero_latent_screen_safe": 10,
+      "zero_latent_screen_failures": [
+        "dev_task6_00",
+        "dev_task6_24"
+      ],
+      "screen_independent_replay_exact": true,
+      "development_n": 0,
+      "development_safe": 0,
+      "heldout_n": 0,
+      "heldout_safe": 0,
+      "known_invalid_starts": 5,
+      "stable_valid_local_3m_4m_5m_gate": false,
+      "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t239_ar_policy_gradient/final_Actor.pt.gz",
+      "policy_hash": "8a2328d7c4b8b0101fb36b0ba1ef49540156c9ff3cb0335ccab9b295e163878a",
+      "hold_steps": 100,
+      "readout": "zero_latent",
+      "physics_steps": 429267,
+      "commands": 28,
+      "optimizer_calls": 0,
+      "all_workers_stopped": true,
+      "elapsed_s": 85.15835227299976,
+      "own_bytes": 553683,
+      "runs_MiB": 1009.4728479385376
+    }
+  },
+  "retained_research_candidates": {
+    "T239": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t239_ar_policy_gradient/final_Actor.pt.gz",
+      "sha256": "a8fc975f0555708ebf55e8b04eafb0bbb2d9cc3edcbb8576c973a7f3f9d617ed",
+      "bytes": 2115446,
+      "content_sha256": "09f88de076f4479ce888385190ad2aa309e1fbee68a052987fd212abe612466e"
+    },
+    "T250": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t250_actuator_policy_gradient/final_Actor.pt.gz",
+      "sha256": "8b1ace57fe03ed95479825d6d8d40f50423785e19d392d292e8a1bd11def7a35",
+      "bytes": 2127454,
+      "content_sha256": "3d8dd93dc64a78894cafc9917300d0d1666755364af4e9c9793aade699c3fa3c"
+    }
+  },
+  "best_complete_valid_development": {
+    "n": 211,
+    "safeGOAL": 210,
+    "old8_centers_n": 8,
+    "old8_centers_safe": 8,
+    "known_invalid_starts": 5,
+    "remaining_failed_reset": "dev_task6_24"
+  },
+  "heldout_navigation_status": "NOT_RUN_GATE_FAILED",
+  "heldout_navigation_n": 0,
+  "stable_local_5m": false,
+  "new_MuJoCo_preview_started": false,
+  "longer_distance_started": false,
+  "all_registered_jobs_ended": true,
+  "Stage_only": true,
+  "logical_new_runs_MiB": 1009.4754905700684,
+  "hard_new_runs_cap_bytes": 1073741824,
+  "verified_raw_releases": {
+    "induced_repair_release_receipt.json": {
+      "state": "PUBLISHED_FULL_REMOTE_BINARY_AND_MEMBER_READBACK_VERIFIED",
+      "url": "https://github.com/frank8763/winkun/releases/tag/stage-induced-repair-2026-10-31",
+      "asset_id": 695482072,
+      "asset_url": "https://github.com/frank8763/winkun/releases/download/stage-induced-repair-2026-10-31/stage-induced-repair-2e2ed9fa9364.tar.gz",
+      "bytes": 15721076,
+      "sha256": "2e2ed9fa93649c3835cbc822f417f4dbe3e2ae56bc4a24022de96222a1583e2f",
+      "members": 376,
+      "source_roots": [
+        "t242_induced_state_recovery",
+        "t243_induced_retention_repair",
+        "t245_multitask_pcgrad"
+      ],
+      "temporary_disk_archive_bytes": 0,
+      "local_raw_evidence_deleted": 0
+    },
+    "actuator_state_release_receipt.json": {
+      "state": "PUBLISHED_FULL_REMOTE_BINARY_AND_MEMBER_READBACK_VERIFIED",
+      "url": "https://github.com/frank8763/winkun/releases/tag/stage-actuator-state-2026-10-31",
+      "asset_id": 695572789,
+      "asset_url": "https://github.com/frank8763/winkun/releases/download/stage-actuator-state-2026-10-31/stage-actuator-state-619e7ee55fb9.tar.gz",
+      "bytes": 7544703,
+      "sha256": "619e7ee55fb98e534b81a9ec29d77084b85a08aca2288886550878990293edaa",
+      "members": 425,
+      "source_roots": [
+        "t247_recovery_branches",
+        "t248_control_frequency",
+        "t249_actuator_observation",
+        "t250_actuator_policy_gradient",
+        "t251_actuator_recovery"
+      ],
+      "temporary_disk_archive_bytes": 0,
+      "local_raw_evidence_deleted": 0
+    },
+    "readout_release_receipt.json": {
+      "state": "PUBLISHED_FULL_REMOTE_BINARY_AND_MEMBER_READBACK_VERIFIED",
+      "url": "https://github.com/frank8763/winkun/releases/tag/stage-readout-check-2026-10-31",
+      "asset_id": 695580382,
+      "asset_url": "https://github.com/frank8763/winkun/releases/download/stage-readout-check-2026-10-31/stage-readout-check-14214d8244b1.tar.gz",
+      "bytes": 319674,
+      "sha256": "14214d8244b16215b13ebe2340d38cb4c924b6cf775d1d6b52fabd8cba9e2a92",
+      "members": 42,
+      "source_roots": [
+        "t253_zero_latent_readout"
+      ],
+      "temporary_disk_archive_bytes": 0,
+      "local_raw_evidence_deleted": 0
+    }
+  }
+}
