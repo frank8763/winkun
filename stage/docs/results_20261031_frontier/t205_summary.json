@@ -1,0 +1,33 @@
+{
+  "state": "COMPLETE",
+  "stop_reason": "COMPLETE_FIXED_GRID",
+  "physics_steps": 170083,
+  "training_physics_steps": 0,
+  "optimizer_updates": 0,
+  "cases": 38,
+  "groups": [
+    {
+      "hold_steps": 100,
+      "n": 18,
+      "safe_GOAL": 0,
+      "CONTACT": 18,
+      "TIMEOUT": 0,
+      "partial": 0
+    },
+    {
+      "hold_steps": 2000,
+      "n": 18,
+      "safe_GOAL": 0,
+      "CONTACT": 18,
+      "TIMEOUT": 0,
+      "partial": 0
+    }
+  ],
+  "intervention_successes": [],
+  "all_workers_stopped": true,
+  "elapsed_s": 46.73306564101949,
+  "own_bytes": 1684923,
+  "new_runs_bytes": 1002327530,
+  "automatic_training_or_promotion": false,
+  "scope": "Frozen T194 original LEFT scene/goal/radius. Reproduce original full episode exactly and capture true full integration/environment/history at20s,25s. Two unchanged suffix baselines must match original suffix states/actions/poses/final integration exactly. Thirtysix preregistered paired branches compare1decision(.2s) vs20decisions(4s) native steering residuals[-.6,-.3,0,.3,.6], with native throttle cap0 or unchanged. Zeroeffect duplicates excluded. After the window frozen neural policy continues. Same absolute remaining-time input and original remaining horizon; no resettime budget extension. No map/geometry consulted to choose an action, no sequence optimization or adaptive probe selection, no planner/waypoints. Intervention episodes are causal actuator diagnostics, never end-to-end neural navigation success or onpolicy training samples."
+}

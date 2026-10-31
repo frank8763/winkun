@@ -1,0 +1,22 @@
+"""Register fixed feature-space policy perturbations; no gradient training."""
+from pathlib import Path
+import json,hashlib,shutil
+ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent;OUT=ROOT/'stage/runs/t206_feature_direction'
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def main():
+ assert not OUT.exists(),'No duplicate T206'
+ t205=json.loads((ROOT/'stage/runs/t205_temporal_intervention/summary.json').read_text());assert t205['state']=='COMPLETE' and t205['all_workers_stopped']
+ old=json.loads((ROOT/'stage/experiments/t204_native_course/protocol.json').read_text())
+ grid=[{'id':f'k{i}_v{j}','steer':s,'throttle':t} for i,s in enumerate([-.4,.4,-.8,.8,-1.2,1.2]) for j,t in enumerate([0.,-.4])]
+ plan={'experiment':'T206','checkpoint':old['checkpoint'],'primary_cases':old['primary_cases'],'retention_targets':old['retention_targets'],'failure_trace':str(ROOT/'stage/runs/t196_left_exploration/left_baseline_trace.npz'),'failure_step_window':[6000,14000],'ridge_multiplier':.001,'direction_rank':1,'grid':grid,'max_offline_old7_RMSE':.05,'workers':4,'max_episodes':166,'max_physics':4000000,'wall_seconds':600,'final_reserve_seconds':120,'final_bytes':20*1024**2,'peak_bytes':24*1024**2,'pending_bytes':2*1024**2,'robustness_xy':[-.03,0.,.03],'robustness_yaw':[-2.,0.,2.],
+ 'direction_contract':'FreezeT194113to800to600 learnedfeatures. Appendbias1. FormA=mean failurefeature outerproduct on absolute6000to14000 steps; B=uniform7task oldfeature outerproduct. Ridge=.001*trace(B)/601. Topgeneralized eigenvector ofA v=lambda(B+ridgeI)v, oriented mean failurefeature dotv>=0 and normalized RMS=1on failurewindow. Modify existing direct600to2 affinehead rows by fixedcoefficients*v, allotherweightsunchanged. No added feature, router, runtime gate, timer, waypoint, geometryinput or planner. The original policy still clips native action asbefore. No optimizer/learnedcritic/gradient training in thisdiagnostic.',
+ 'rollout_contract':'Parentold8 first, old7 safeGOAL and LEFTcollision required. Twelvepreregistered frozenneuralcandidates on originalLEFT; offline old7 actionRMSE>.05 skipscandidate and logs rejection, noreplacement. EveryLEFTsafeGOAL candidate tested on old7. Choosepassing candidate with smallest abssteer+absthrottle thenabssteer thenid, no trajectorydistance-basedselection. At most8parent+12LEFT+84old7+8savedreload+54perturb=166episodes. Allcounts andphysicsspends includeinitialgates and invalidreset cases. Goal/scene/.20radius/originalcaps unchanged.',
+ 'acceptance_contract':'No5mclaimfromofflineRMSE. If candidatepasses LEFTandold7, exportfullsingle neuralmodel; reloadallparametersequal, evaloriginalold8 and27reset perturbations eachLEFT/RIGHT. Stablegate requires8/8and54/54safeGOAL, allvalid/complete. Perturbations refillreset histories symmetrically; original factory reset separate. Exactsuccess traceaction/nextstate/finalintegration replay requiredfornewprimaryLEFT. TimedT205interventionsneverusedasdeployment ortrainingdata. T206 is development-task neuralparameter sensitivity search, not newDRLoptimizerupdates, independentgeneralizationoralgorithmnovelty.',
+ 'stop_contract':'On source/hash/worker mismatchabort; no duplicate/resume/extension.600swall,4Mphysics,20MiBfinal24MiBpeak,globalnewruns1GiB/free40GiB. Beforecandidate selection batches reserve120swallforfinal. Reserveeachbatch maxcasecaps and2MiBpending. Storefull tracesforfailuresandnewLEFT; successful oldregression cases summaries/hashes. No compaction or deletionofraw evidence. Ifnonepasses stop, no automatic additionaltraining.',
+ 'references':['https://arxiv.org/abs/1706.01905','https://proceedings.mlr.press/v78/florensa17a.html']}
+ files=[Path(plan[k]) for k in ['checkpoint','retention_targets','failure_trace']]+[ROOT/'stage/runs/t205_temporal_intervention/summary.json',ROOT/'stage/experiments/t203_native_exploration/runtime.py',ROOT/'stage/experiments/t200_residual_placement/common.py']+list(HERE.glob('*.py'))
+ plan['input_hashes']={str(p):sha(p) for p in files};used=sum(p.stat().st_size for p in (ROOT/'stage/runs').rglob('*') if p.is_file());assert used+plan['peak_bytes']<1024**3 and shutil.disk_usage(ROOT).free>40*1024**3
+ OUT.mkdir()
+ for p in [HERE/'protocol.json',OUT/'protocol.json']:p.write_text(json.dumps(plan,indent=2)+'\n')
+ print(json.dumps({'state':'REGISTERED','protocol_sha256':sha(HERE/'protocol.json'),'candidates':12,'max_episodes':166,'max_physics':4000000,'wall_seconds':600}))
+if __name__=='__main__':main()
