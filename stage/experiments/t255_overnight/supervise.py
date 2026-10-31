@@ -30,4 +30,9 @@ def main():
         (ROOT/'stage/docs/overnight_20261031/MORNING_REPORT.md').write_text('# Stage 今夜未完整结束\n\n监督器已停止本轮进程组。不能声称5米通过或8米已运行。详情见t255_overnight/supervisor_failure.json及pipeline.log。\n')
     result['archive']=run_bounded('backup.py',min(time.time()+900,plan['hard_deadline_epoch']),'backup') if time.time()+60<plan['hard_deadline_epoch'] else dict(state='SKIPPED_NO_TIME')
     result['finished_epoch']=time.time();(OUT/'supervisor_summary.json').write_text(json.dumps(result,indent=2)+'\n')
+    # Keep the reversible sleep inhibitor until the scheduled 08:30 report can run.
+    # No simulation, optimization or new work during this bounded idle interval.
+    until=plan['hard_deadline_epoch']+15*60
+    while time.time()<until:time.sleep(min(15,until-time.time()))
+    (OUT/'power_window_complete.json').write_text(json.dumps(dict(epoch=time.time(),simulation_and_training_already_stopped=True))+'\n')
 if __name__=='__main__':main()

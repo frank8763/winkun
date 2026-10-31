@@ -37,7 +37,7 @@ T255 是新协议，**没有续训/重启任何已结束实验**。从 T250 的�
 
 总预算3300命令、80,000,000全部真实物理步（含重生、验收、视频）、新增逻辑150MiB、全局newruns仍1GiB、可用物理盘至少40GiB。训练额外预留40MiB给最终完整Actor+Adam，不删旧失败/具名模型、不自动放宽额度。达到任一界限就停止并报告，不保证耗尽全部计划。原始trace紧凑保存，states由已核验因果物理重生恢复，不把缺测写成0次交互。
 
-运行入口 `stage/experiments/t255_overnight/supervise.py`，PID/预算/当前状态在 `stage/runs/t255_overnight/`。独立监督器从不重试训练，异常只停止它自己的进程组。运行时申请 `systemd-inhibit sleep:idle`，若系统不支持则必须明确记录；不改变系统全局电源配置。机器需接电、开机和Codex运行。
+运行入口 `stage/experiments/t255_overnight/supervise.py`，PID/预算/当前状态在 `stage/runs/t255_overnight/`。独立监督器从不重试训练，异常只停止它自己的进程组。运行时申请 `systemd-inhibit sleep:idle`，若系统不支持则必须明确记录；不改变系统全局电源配置。计算结束后仅以空闲看护保持该临时休眠抑制至08:35，让08:30的汇总有机会执行；该空闲窗口不延长实验预算，不启动仿真/优化。机器需接电、开机和Codex运行。
 
 结束后生成 `MORNING_REPORT.md` 与JSON摘要，原始所有成功/失败/模型/Adam用RAM归档上传GitHub Release，完整远端读回、逐成员SHA核验后才记备份成功；网络失败保留本地证据并如实报告，不删除唯一数据。备份限15分钟/08:20最早截止。
 
