@@ -1,0 +1,171 @@
+{
+  "state": "INTERIM_FIXED_FIRST64_VERIFIED",
+  "captured_at": "2026-11-01T13:25:23.008288+08:00",
+  "physics_steps_added": 0,
+  "optimizer_updates_added": 0,
+  "protocol_sha256": "13788704a5a0b5955044082bb8942d9c41697de031314ee1cf24ef69c1c55aaa",
+  "all_input_hashes_unchanged": true,
+  "training_prefix_sha256": "5490078e7f82837265ca5cab28d7f6a2c95c9dbbc5680e55343d0a1f3695d412",
+  "updates_prefix_sha256": "ab0721883e42014cb540bbba75a76146b6a0cadc75213aa046e281df4e34e018",
+  "full120_state_nextstate_and_all_arrays_payloads_verified": 64,
+  "replay_record_hashes_matched": 64,
+  "historical_overlap": 16,
+  "groups": [
+    {
+      "round": "r0",
+      "distance_m": 5.25,
+      "side": "LEFT",
+      "episodes": 8,
+      "safe": 6,
+      "contact": 1,
+      "timeout": 1
+    },
+    {
+      "round": "r0",
+      "distance_m": 5.25,
+      "side": "RIGHT",
+      "episodes": 8,
+      "safe": 7,
+      "contact": 0,
+      "timeout": 1
+    },
+    {
+      "round": "r1",
+      "distance_m": 5.5,
+      "side": "LEFT",
+      "episodes": 8,
+      "safe": 0,
+      "contact": 7,
+      "timeout": 1
+    },
+    {
+      "round": "r1",
+      "distance_m": 5.5,
+      "side": "RIGHT",
+      "episodes": 8,
+      "safe": 2,
+      "contact": 0,
+      "timeout": 6
+    },
+    {
+      "round": "r2",
+      "distance_m": 5.5,
+      "side": "LEFT",
+      "episodes": 8,
+      "safe": 0,
+      "contact": 7,
+      "timeout": 1
+    },
+    {
+      "round": "r2",
+      "distance_m": 5.75,
+      "side": "RIGHT",
+      "episodes": 8,
+      "safe": 2,
+      "contact": 0,
+      "timeout": 6
+    },
+    {
+      "round": "r3",
+      "distance_m": 5.5,
+      "side": "LEFT",
+      "episodes": 8,
+      "safe": 2,
+      "contact": 5,
+      "timeout": 1
+    },
+    {
+      "round": "r3",
+      "distance_m": 5.75,
+      "side": "RIGHT",
+      "episodes": 8,
+      "safe": 4,
+      "contact": 2,
+      "timeout": 2
+    }
+  ],
+  "first3_completed_rounds": [
+    {
+      "round": 0,
+      "retained": 2,
+      "shadow_exact": true,
+      "density": {
+        "recorded_error": 0.0,
+        "sequence_mean_error": 0.0,
+        "sequence_logp_error": 0.0,
+        "same_parameter_ratio_error": 0.0,
+        "causal_time_baseline": true,
+        "original_estimator_RMS_scale": 0.5609569891802618,
+        "constant_weight_coefficient_max_error": 1.1102230246251565e-16
+      }
+    },
+    {
+      "round": 1,
+      "retained": 4,
+      "shadow_exact": true,
+      "density": {
+        "recorded_error": 0.0,
+        "sequence_mean_error": 0.0,
+        "sequence_logp_error": 0.0,
+        "same_parameter_ratio_error": 0.0,
+        "causal_time_baseline": true,
+        "original_estimator_RMS_scale": 0.4077862497377228,
+        "constant_weight_coefficient_max_error": 5.551115123125783e-17
+      }
+    },
+    {
+      "round": 2,
+      "retained": 0,
+      "shadow_exact": true,
+      "density": {
+        "recorded_error": 0.0,
+        "sequence_mean_error": 0.0,
+        "sequence_logp_error": 0.0,
+        "same_parameter_ratio_error": 0.0,
+        "causal_time_baseline": true,
+        "original_estimator_RMS_scale": 0.45863182894956694,
+        "constant_weight_coefficient_max_error": 1.1102230246251565e-16
+      }
+    }
+  ],
+  "attempts_first3": {
+    "total": 41,
+    "accepted": 6,
+    "rejected_before_native": 11,
+    "rejected_native": 24,
+    "failed_known_case_counts": {
+      "dev_task6_24": 19,
+      "dev_task6_00": 5,
+      "hold_task6_04": 1,
+      "hold_task6_06": 8
+    }
+  },
+  "current_status_snapshot": {
+    "state": "round_centers.jsonl",
+    "pid": 210008,
+    "primary_distance_m": 6,
+    "physics_steps": 17686083,
+    "commands": 1146,
+    "unique_training_episodes": 64,
+    "exact_replays": 64,
+    "accepted_RL_updates": 10,
+    "shadow_accepted_updates": 10,
+    "rounds": 4,
+    "old_regression_n": 0,
+    "new_development_n": 0,
+    "new_heldout_n": 0,
+    "gate": false,
+    "updated_epoch": 1793510714.3928745,
+    "elapsed_s": 3579.8520374298096
+  },
+  "own_logical_bytes": 25502544,
+  "global_newruns_bytes": 1054135637,
+  "free_bytes": 229731082240,
+  "limitations": [
+    "Not a final audit or active-file backup; only the immutable first64 payloads and first3 update rows are verified here.",
+    "Temporary live proposals are not retained navigation updates before shadow completes.",
+    "Exploration rates at different rounds/policies are not isolated curriculum or baseline causal effects.",
+    "Known20 acceptance is not full275 regression, heldout generalization, or safety certification.",
+    "Conditional old275/new54/fresh16/reload78 gates remain unchanged."
+  ]
+}
