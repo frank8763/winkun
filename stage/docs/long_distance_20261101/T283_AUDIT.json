@@ -1,0 +1,53 @@
+{
+  "state": "POSTRUN_EVIDENCE_RECONCILED",
+  "physics_added": 0,
+  "navigation_Actor_updates_added": 0,
+  "disposable_optimizer_reconstruction_calls": 4,
+  "all_processes_absent": true,
+  "all_original_sources_models_and_payload_SHA_verified": true,
+  "total_physics_from_raw": 8550756,
+  "total_commands_from_raw": 497,
+  "full120_training_payloads": 32,
+  "complete_exact_replays": 32,
+  "retained_Actor_Adam_rounds_reconstructed": [
+    {
+      "arm": "capped_task_balance",
+      "round": 0,
+      "accepted": 0
+    },
+    {
+      "arm": "capped_task_balance",
+      "round": 1,
+      "accepted": 0
+    }
+  ],
+  "all_final_Actor_Adam_state_hashes_reconstructed_exact": true,
+  "safe_T255_unchanged": true,
+  "arms": {
+    "capped_task_balance": {
+      "accepted_RL_updates": 0,
+      "completed_rounds": 2,
+      "training_n": 32,
+      "training_safe": 0,
+      "old_n": 275,
+      "old_safe": 275,
+      "six_m_n": 54,
+      "six_m_safe": 0,
+      "heldout_n": 0,
+      "independent_reload_n": 0,
+      "gate": false,
+      "export": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t283_capped_task_balance/capped_task_balance_final_checkpoint.pt.gz",
+        "sha256": "9f6621ecfc229ee584c2a3acdeaa9a99c8e2323b5757b4e37672570d11cb3429",
+        "bytes": 2191927,
+        "policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54",
+        "optimizer_hash": "881489e608a38e54726d0751cd52ed648891a06e8603b81357fc9935f73c3d76"
+      }
+    }
+  },
+  "own_bytes": 10819269,
+  "global_bytes": 1046122031,
+  "summary_sha256": "730299627daafc4f6a7cea18e4d6d3cbd7859d74a0957f897e4265b3160958bc",
+  "audit_epoch": 1793534382.2009087,
+  "attribution": "Taskweighting candidate against explicitlyhistorical consumed T280boundedcost control; not independent concurrent replication, no novelty/multiseed/othermap claim."
+}

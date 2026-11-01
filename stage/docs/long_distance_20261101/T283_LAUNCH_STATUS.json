@@ -1,0 +1,81 @@
+{
+  "state": "STOPPED_FIXED_BUDGET_COMPLETE_GATE_FAILED",
+  "actual_launch": {
+    "pid": 297631,
+    "launch_epoch": 1793532469.725971,
+    "single_launch": true,
+    "wall_seconds": 4800,
+    "source_commit": "8f7609dc50c683043ca8159c5bdc577efcdb7cb5",
+    "remote_commit": "fd027dc621778aaebbdd373c72be03573fb04e05",
+    "max_commands": 800,
+    "max_physics": 22400000,
+    "own_bytes": 36700160
+  },
+  "workers": {
+    "parent": 297634,
+    "workers": [
+      297640,
+      297643,
+      297659,
+      297661
+    ],
+    "ready": [
+      {
+        "ready": true,
+        "pid": 297640,
+        "CPU_affinity": [
+          1
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 297643,
+        "CPU_affinity": [
+          2
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 297659,
+        "CPU_affinity": [
+          3
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 297661,
+        "CPU_affinity": [
+          4
+        ]
+      }
+    ],
+    "source_commit": "8f7609dc50c683043ca8159c5bdc577efcdb7cb5"
+  },
+  "main_beijing": "2026-11-01T19:27:50.646483+08:00",
+  "learning_deadline_beijing": "2026-11-01T20:27:50.646483+08:00",
+  "absolute_deadline_beijing": "2026-11-01T20:47:50.646483+08:00",
+  "protocol_sha256": "91d92e7d0a9373a864720539299d8965b9bf5ebf38662b13d8047901fb8d7a48",
+  "T280_full_remote_backup_verified": true,
+  "exact_source_tree_verified_before_launch": true,
+  "latest_complete_navigation": "T280: both arms old275/275, six1/54; new candidate not accepted or promoted",
+  "single_launch": true,
+  "automatic_extension": false,
+  "seven_or_eight_started": false,
+  "postlaunch_document_pending_postrun_source_sync": true,
+  "first16_full12_arrays_and_integration_exact_historical_T280": true,
+  "first_batch_failure_sorting_signal_passed": true,
+  "first16_is_historical_reconstruction_not_independent_data": true,
+  "first_screen_checked_epoch": 1793532643.9290366,
+  "final_summary": "stage/runs/t283_capped_task_balance/summary.json",
+  "final_old_safe": 275,
+  "final_six_safe": 0,
+  "final_training_safe": 0,
+  "accepted_RL_updates": 0,
+  "final_policy_equals_frozen_T255": true,
+  "all_processes_absent_independently_verified": true,
+  "postrun_evidence_audit": "T283_AUDIT.json",
+  "postrun_disposable_clone_optimizer_calls": 4,
+  "T283_full_remote_backup_verified": true,
+  "T283_full_remote_backup_receipt": "release_receipt_T283.json",
+  "T283_backup_members": 492
+}
