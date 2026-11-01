@@ -28,6 +28,7 @@ GROUPS = {
     'T259': ['t259_closed_loop_recovery'],
     'T261': ['t261_distance_credit_audit'],
     'T262': ['t262_event_contract'],
+    'T263': ['t263_adaptive_goal_course'],
 }
 
 

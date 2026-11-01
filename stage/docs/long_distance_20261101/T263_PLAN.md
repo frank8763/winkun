@@ -17,3 +17,5 @@ T259已完成并独立核账：旧274/275、新六米1/54；不晋升、不续�
 首次正式预检因继承的局部optimizer变量io遮蔽io.BytesIO而拒绝，发生在任何原生仿真/导航优化器和克隆优化步之前。源/旧协议/错误收据位于preflight_failed_001保留，修复只重命名测试optimizer变量，科学设置/预算不变，重新锁源码hash后合同通过。T263此前无launch/status，没有重启已结束训练目录。
 
 canonical source：stage/experiments/t263_adaptive_goal_course/protocol.json；输出：stage/runs/t263_adaptive_goal_course。以实际launch/status为启动证据。论文路线和尚未验证的事件价值候选在research_20261101_horizon；当前仍只推进六米。
+
+实际启动：2026-11-01 11:29:05.552（main），总截止12:59:05.552，训练保留验收截止12:42:25.552。launch源commit5c5375b183f3557c142b69d64d93b3f955f7021d，远端注册源commit1dba608d252230362b3c165f2626008135637d3e。150真实零物理几何检查与初态受控断言已全部通过。首16个5.25m真实探索+16精确重生完成，LEFT6/8、RIGHT7/8安全，历史重合0；16份full120states/nextstates与所有数组hash逐一读回通过。它们是原冻结父模型的5.25m探索能力，不是训练收益或六米稳定。实际更新/课程推进以updates.jsonl/curriculum.jsonl为准，不把临时未shadow提案算保留更新。
