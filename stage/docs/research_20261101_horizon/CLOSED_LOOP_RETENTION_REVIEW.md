@@ -43,3 +43,9 @@ T284 只恢复一个已拒绝候选并精确分解两类差异，先检验这个
 - 部署：保持120因果输入单 Actor，无地图/规划器/路点/运行时教师/路由；历史兼容组件与真实RL/辅助监督明确标注。若最终主要靠模仿修补，不能写成纯新端到端DRL算法。
 - 理论/解释：限定假设的误差传播或更新保持分析，直接检验其适用条件；不把缓存、逐位重建、有限病例零碰撞写成安全证书。
 - 验收后才生成新的 MuJoCo 展示；不拿旧五米视频、探索偶然成功冒充长距离稳定。上述清单不是自动启动多seed/多地图的授权协议。
+
+## 补充检索：实际 Adam 更新投影也不是新概念
+
+[Adam-NSCL, CVPR 2021](https://openaccess.thecvf.com/content/CVPR2021/html/Wang_Training_Networks_in_Null_Space_of_Feature_Covariance_for_Continual_CVPR_2021_paper.html)明确将 Adam 生成的参数更新投影到历史层输入特征协方差的近似零空间；[作者仓库](https://github.com/ShipengWang/Adam-NSCL)提供实现。本轮核对论文摘要/方法首页及作者 README，未执行外部代码。其视觉分类结果不直接证明 Stage 闭环效果，但足以排除“Adam 后投影本身原创”的叙事。
+
+[Fisher-Orthogonal Projected Natural Gradient, 2026预印本](https://arxiv.org/abs/2601.12816)也提出 Fisher 几何下的保持约束；本轮仅核对摘要，不能声称实现/理论已验证。新的候选必须围绕闭环数据如何选择约束、适应能力与保持之间的实测权衡建立独立证据，不能只是换一个投影度量。

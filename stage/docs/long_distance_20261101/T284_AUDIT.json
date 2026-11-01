@@ -1,0 +1,48 @@
+{
+  "state": "PASS",
+  "physics_added": 0,
+  "optimizer_calls_added": 0,
+  "all_processes_absent": true,
+  "full12_arrays_and_integration_historical_exact": true,
+  "decomposition_model_readback_and_arrays_exact": true,
+  "source_model_payload_SHA_verified": true,
+  "total_commands": 4,
+  "total_physics": 70230,
+  "analysis": {
+    "common_decision_starts": 153,
+    "initial120_exact": true,
+    "recorded_actions_exact": true,
+    "both_order_decomposition_identity_max_error": 0.0,
+    "parent_state_parameter_change_max": 0.00048108238179071403,
+    "candidate_state_parameter_change_max": 0.00049761599077641,
+    "total_action_delta_max": 1.2958497367251973,
+    "feedback_to_parameter_energy_sqrt_ratio_on_parent": 1541.3999819369285,
+    "feedback_to_parameter_energy_sqrt_ratio_on_candidate": 1529.034749586809,
+    "xy_error_max_m": 0.3736965985710606,
+    "yaw_error_max_rad": 0.25240971984124405,
+    "first_xy_threshold_crossings": {
+      "0.001": {
+        "index": 2,
+        "time_s": 0.4,
+        "xy_m": 0.0011067785327098973
+      },
+      "0.01": {
+        "index": 8,
+        "time_s": 1.6,
+        "xy_m": 0.011490867569219132
+      },
+      "0.05": {
+        "index": 27,
+        "time_s": 5.4,
+        "xy_m": 0.060681759313852696
+      },
+      "0.1": {
+        "index": 31,
+        "time_s": 6.2,
+        "xy_m": 0.1023810447643973
+      }
+    },
+    "limitation": "One selected historical rejected pair. Algebraic same-state parameter/state-feedback decomposition is order-dependent, not a dynamics Jacobian, Lyapunov certificate or causal intervention. No new success or training benefit."
+  },
+  "summary_sha256": "a3fdce53708d29d6de2271c0556fa3c3b3f8dfe1d052638dc57ec5fd5e3b370b"
+}
