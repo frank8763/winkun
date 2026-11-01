@@ -32,6 +32,7 @@ GROUPS = {
     'T267': ['t267_causal_credit_course'],
     'T268': ['t268_storage_and_frozen_gate'],
     'T269': ['t269_same_state_controls'],
+    'T271': ['t271_frozen_feature_exploration'],
 }
 
 

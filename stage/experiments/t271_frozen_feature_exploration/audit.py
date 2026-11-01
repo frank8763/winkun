@@ -1,6 +1,7 @@
 """Stopped-run evidence audit; zero simulator/optimizer calls."""
 from pathlib import Path
 import json
+import gzip
 import os
 import shutil
 import sys
@@ -69,10 +70,24 @@ def main():
     assert own<p['final_bytes'] and used<p['global_bytes'] and shutil.disk_usage(ROOT).free>=p['min_free_bytes']
     # Hash equality means reuse/repetition, never another independent sample.
     unique=len({(r['integration_sha256'],tuple(sorted(r['array_hashes'].items()))) for r in ee})
+    core=['states','actions','means','logp','native_counts','next_states','poses','next_poses','end_flags','rewards']
+    signature=lambda r:(r.get('integration_sha256'),tuple(r.get('array_hashes',{}).get(k) for k in core))
+    history={}
+    for directory in ['t257_distance_policy_gradient','t259_closed_loop_recovery','t263_adaptive_goal_course',
+                      't267_causal_credit_course','t268_storage_and_frozen_gate','t269_same_state_controls']:
+        folder=ROOT/'stage/runs'/directory
+        for f in sorted([*folder.glob('*.jsonl'),*folder.glob('*.jsonl.gz')]):
+            content=gzip.decompress(f.read_bytes()).decode() if f.suffix=='.gz' else f.read_text()
+            for line in content.splitlines():
+                r=json.loads(line)
+                if r.get('integration_sha256') and all(k in r.get('array_hashes',{}) for k in core):
+                    history.setdefault(signature(r),[]).append(dict(file=str(f.relative_to(ROOT)),id=r.get('id')))
+    overlaps=[dict(id=r['id'],matches=history[signature(r)]) for r in ee if signature(r) in history]
     result=dict(state='POSTRUN_EVIDENCE_RECONCILED',all_processes_absent=True,physics_steps_added=0,
         optimizer_calls_added=0,total_physics_from_raw=s['physics_steps'],commands=s['commands'],
         four_zero_physics_geometry_valid=True,four_deterministic_controls_exact_T268=True,
         exact_full_array_and_integration_replays=32,matched_pairs=16,unique_exploration_hash_sets=unique,
+        historical_exact10array_and_integration_overlaps=overlaps,
         feature_rows_actor_mean_feature_latent_action_rebuilt=feature_rows,conditional_density_max_error=max_density_error,
         all36_saved_payload_sha_verified=True,source_and_frozen_checkpoint_sha_verified=True,
         original_summary_sha256=C.sha(OUT/'summary.json'),protocol_sha256=C.sha(OUT/'protocol.json'),
