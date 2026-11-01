@@ -26,6 +26,7 @@ GROUPS = {
     'T256-T258': ['t256_distance_frontier', 't257_distance_policy_gradient',
                   't258_closed_loop_retention'],
     'T259': ['t259_closed_loop_recovery'],
+    'T261': ['t261_distance_credit_audit'],
 }
 
 
