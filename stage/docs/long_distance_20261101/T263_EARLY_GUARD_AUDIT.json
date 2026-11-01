@@ -1,0 +1,36 @@
+{
+  "state": "EARLY_FIXED20_GUARD_COUNTEREXAMPLE",
+  "physics_steps_added_by_analysis": 0,
+  "optimizer_updates_added_by_analysis": 0,
+  "observed_policy_hashes": [
+    "088312fbeacd9e0470aba1cc7f6937e8a774001ee686d9728941639f73ca0914"
+  ],
+  "observed_results": [
+    {
+      "policy_hash": "088312fbeacd9e0470aba1cc7f6937e8a774001ee686d9728941639f73ca0914",
+      "cases": 20,
+      "safe": 19,
+      "all_safe": false,
+      "failed_ids": [
+        "hold_task6_06"
+      ]
+    }
+  ],
+  "original12_task_ids": [
+    "dev_task0_13",
+    "dev_task1_13",
+    "dev_task2_13",
+    "dev_task3_13",
+    "dev_task4_00",
+    "dev_task4_13",
+    "dev_task5_13",
+    "dev_task6_00",
+    "dev_task6_13",
+    "dev_task6_24",
+    "dev_task7_13",
+    "dev_task7_26"
+  ],
+  "old06_outside_original12": true,
+  "interpretation": "These numerically eligible candidate policies passed original12 as partof20, but solefailure was knownold06; expanded nativeguard rejectedthem. This demonstrates coverage of this observed counterexample, notall275 safety, learning benefit, curriculum causality or sixmetre stability.",
+  "captured_epoch": 1793504259.0332043
+}
