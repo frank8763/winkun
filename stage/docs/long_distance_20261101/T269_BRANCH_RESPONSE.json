@@ -1,0 +1,76 @@
+{
+  "state": "READ_ONLY_FIXED4_BRANCH_DESCRIPTION",
+  "physics_steps_added": 0,
+  "optimizer_calls_added": 0,
+  "records": [
+    {
+      "id": "branch_12000_minus",
+      "first_hold_delivered_delta": -0.03,
+      "first_hold_measured_steering_angle_difference_rad": [
+        -0.011100322008132935,
+        -0.013623364269733429
+      ],
+      "position_deviation_at_elapsed_s": {
+        "0.2": 0.0002085663889511414,
+        "1": 0.00031121971514089805,
+        "2": 0.0003171671358697458,
+        "5": 0.00034887677627466285,
+        "8": 0.0007318944559686482
+      },
+      "maximum_position_deviation_m": 0.028573184463329473,
+      "terminal_time_delta_s": -0.06
+    },
+    {
+      "id": "branch_12000_plus",
+      "first_hold_delivered_delta": 0.03,
+      "first_hold_measured_steering_angle_difference_rad": [
+        0.011208534240722656,
+        0.013484567403793335
+      ],
+      "position_deviation_at_elapsed_s": {
+        "0.2": 0.0002669449915654418,
+        "1": 0.009757917517246613,
+        "2": 0.007541388357175958,
+        "5": 0.003331261577572256,
+        "8": 0.003111952701176829
+      },
+      "maximum_position_deviation_m": 0.026977201445089416,
+      "terminal_time_delta_s": -0.154
+    },
+    {
+      "id": "branch_18000_minus",
+      "first_hold_delivered_delta": -0.03,
+      "first_hold_measured_steering_angle_difference_rad": [
+        -0.0018729418516159058,
+        0.00011072366032749414
+      ],
+      "position_deviation_at_elapsed_s": {
+        "0.2": 0.00035104245090327373,
+        "1": 0.00037699233985795253,
+        "2": 0.00024322267316325606,
+        "5": 0.0001851337265572995,
+        "8": 0.0014768865203205494
+      },
+      "maximum_position_deviation_m": 0.016913604221043686,
+      "terminal_time_delta_s": -0.076
+    },
+    {
+      "id": "branch_18000_plus",
+      "first_hold_delivered_delta": 0.03,
+      "first_hold_measured_steering_angle_difference_rad": [
+        -0.00025415292475372553,
+        0.0013731145299971104
+      ],
+      "position_deviation_at_elapsed_s": {
+        "0.2": 0.0007270706702216057,
+        "1": 0.0010311733877930594,
+        "2": 0.0013705248551654638,
+        "5": 0.003958260935375977,
+        "8": 0.006833629961903158
+      },
+      "maximum_position_deviation_m": 0.022321941795549402,
+      "terminal_time_delta_s": -0.07
+    }
+  ],
+  "limitations": "Finite first-hold interventions only; small deviations or identical terminal event do not prove global attractor, no alternative route, or ineffective sustained/state-dependent exploration."
+}

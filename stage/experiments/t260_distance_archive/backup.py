@@ -31,6 +31,7 @@ GROUPS = {
     'T263': ['t263_adaptive_goal_course'],
     'T267': ['t267_causal_credit_course'],
     'T268': ['t268_storage_and_frozen_gate'],
+    'T269': ['t269_same_state_controls'],
 }
 
 
