@@ -35,6 +35,7 @@ GROUPS = {
     'T271': ['t271_frozen_feature_exploration'],
     'T272': ['t272_event_value_pilot'],
     'T273': ['t273_value_direction_probe'],
+    'T274': ['t274_action_identifiability'],
 }
 
 
