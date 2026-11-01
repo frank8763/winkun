@@ -1,0 +1,65 @@
+{
+  "state": "POSTRUN_EVIDENCE_RECONCILED",
+  "physics_steps_added": 0,
+  "optimizer_calls_added": 0,
+  "all_processes_absent": true,
+  "original_summary_sha256": "a8086551ae58f24576b7f6945a8191cc901fbf3d6e67338ae475cbc5d0cf42f6",
+  "protocol_sha256": "13788704a5a0b5955044082bb8942d9c41697de031314ee1cf24ef69c1c55aaa",
+  "physics_from_raw": 22185693,
+  "commands_from_raw": 1446,
+  "geometry_commands": 150,
+  "inflight_physics_upper_bound": 0,
+  "training_records": 80,
+  "exact_replays": 80,
+  "historical_overlap": 16,
+  "retained_updates": 10,
+  "rounds": 4,
+  "full120_payloads_and_all_array_hashes_verified": 80,
+  "all_saved_payload_hashes_verified": 1216,
+  "results": {
+    "old_regression.jsonl": {
+      "recorded": 224,
+      "complete": 224,
+      "safe": 224,
+      "contact": 0,
+      "timeout": 0,
+      "censored": 0
+    },
+    "development.jsonl": {
+      "recorded": 0,
+      "complete": 0,
+      "safe": 0,
+      "contact": 0,
+      "timeout": 0,
+      "censored": 0
+    },
+    "heldout.jsonl": {
+      "recorded": 0,
+      "complete": 0,
+      "safe": 0,
+      "contact": 0,
+      "timeout": 0,
+      "censored": 0
+    }
+  },
+  "unexecuted_expected": {
+    "old_regression.jsonl": 51,
+    "development.jsonl": 54,
+    "heldout.jsonl": 16,
+    "verification.jsonl": 78
+  },
+  "rolled_back_partial_rounds": 1,
+  "export": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t267_causal_credit_course/final_checkpoint.pt.gz",
+    "sha256": "22e7b48b37a7c763069eccdfbc7e0209b525a1f764a5d26385e11a12e87ce213",
+    "bytes": 5394879,
+    "policy_hash": "80eb853e3f1f1a51c6b7d486d5f15f6fafec64ebd7727701f34ead7d1da85456",
+    "optimizer_hash": "97a14e938454d965288a7bd4709419d70090318998ce27b109de8286fbd0a13c"
+  },
+  "six_m_gate": false,
+  "seven_m_tests": 0,
+  "own_bytes": 37266442,
+  "global_newruns_bytes": 1065899535,
+  "audit_epoch": 1793512056.7595716,
+  "interpretation": "Missing/censored items separated; incomplete regression does not imply a measured failure rate."
+}
