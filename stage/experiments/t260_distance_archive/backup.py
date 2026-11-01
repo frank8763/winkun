@@ -41,6 +41,7 @@ GROUPS = {
     'T277': ['t277_physical_hindsight'],
     'T278': ['t278_fixed_goal_starts'],
     'T280': ['t280_local_cost'],
+    'T283': ['t283_capped_task_balance'],
 }
 
 

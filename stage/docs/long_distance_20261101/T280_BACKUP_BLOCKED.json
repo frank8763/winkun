@@ -1,0 +1,19 @@
+{
+  "state": "RESOLVED_FULL_BACKUP_VERIFIED",
+  "group": "T280",
+  "failed_action": "backup.py T280: authenticated GET releases/tags/stage-distance-2026-11-01 returned HTTP401",
+  "independent_auth_checks": {
+    "https://api.github.com/user": 401,
+    "https://api.github.com/repos/frank8763/winkun": 401
+  },
+  "new_remote_backup_verified": true,
+  "local_original_files_retained": true,
+  "local_manifest_members": 1064,
+  "local_model_and_optimizer_retained": true,
+  "files_deleted": 0,
+  "navigation_or_training_restarted": false,
+  "next_action": "Restore GitHub login, inspect remote assets, then rerun only completed-run backup T280 and full binary/member readback. Do not restart experiment or use expired device codes.",
+  "historical_auth_errors_preserved": true,
+  "resolution": "Authenticated /user now frank8763; backup.py T280 uploaded and fully read back1064members",
+  "resolution_receipt": "release_receipt_T280.json"
+}

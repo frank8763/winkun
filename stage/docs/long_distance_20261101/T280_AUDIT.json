@@ -1,0 +1,83 @@
+{
+  "state": "POSTRUN_EVIDENCE_RECONCILED",
+  "physics_added": 0,
+  "navigation_Actor_updates_added": 0,
+  "disposable_optimizer_reconstruction_calls": 12,
+  "all_processes_absent": true,
+  "all_original_sources_models_and_payload_SHA_verified": true,
+  "total_physics_from_raw": 18469543,
+  "total_commands_from_raw": 1074,
+  "full120_training_payloads": 64,
+  "complete_exact_replays": 64,
+  "retained_Actor_Adam_rounds_reconstructed": [
+    {
+      "arm": "original_MC",
+      "round": 0,
+      "accepted": 2
+    },
+    {
+      "arm": "original_MC",
+      "round": 1,
+      "accepted": 0
+    },
+    {
+      "arm": "bounded_endpoint_cost",
+      "round": 0,
+      "accepted": 0
+    },
+    {
+      "arm": "bounded_endpoint_cost",
+      "round": 1,
+      "accepted": 1
+    }
+  ],
+  "all_final_Actor_Adam_state_hashes_reconstructed_exact": true,
+  "safe_T255_unchanged": true,
+  "arms": {
+    "original_MC": {
+      "accepted_RL_updates": 2,
+      "completed_rounds": 2,
+      "training_n": 32,
+      "training_safe": 0,
+      "old_n": 275,
+      "old_safe": 275,
+      "six_m_n": 54,
+      "six_m_safe": 1,
+      "heldout_n": 0,
+      "independent_reload_n": 0,
+      "gate": false,
+      "export": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t280_local_cost/original_MC_final_checkpoint.pt.gz",
+        "sha256": "498075c85ecbee9e28e0e80fc414159a62866cc7fc511d15bea22ae2212b1d07",
+        "bytes": 5312577,
+        "policy_hash": "34ba0c975e1d049db7534c9175c522ff87e78ce2a96c7d372c743e04680a5b31",
+        "optimizer_hash": "73cdde8bc9ef2715bae15eff5a499de03a0e57c984592d41a45c470d17c243ac"
+      }
+    },
+    "bounded_endpoint_cost": {
+      "accepted_RL_updates": 1,
+      "completed_rounds": 2,
+      "training_n": 32,
+      "training_safe": 0,
+      "old_n": 275,
+      "old_safe": 275,
+      "six_m_n": 54,
+      "six_m_safe": 1,
+      "heldout_n": 0,
+      "independent_reload_n": 0,
+      "gate": false,
+      "export": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t280_local_cost/bounded_endpoint_cost_final_checkpoint.pt.gz",
+        "sha256": "8519cf7266e89b6701fc26b05a9641a129b6f0f2e0d8342dbe906dd4a532be34",
+        "bytes": 5125058,
+        "policy_hash": "58d55b6c3b4829d0523f0af2257dc911660c151ee0ca6751e1001ab958f11d51",
+        "optimizer_hash": "ae16b6c47f27f78d204ac71e75b1b71c6edfb0cbe684667d405ac5c56c3fb3b8"
+      }
+    }
+  },
+  "own_bytes": 28954343,
+  "global_bytes": 1035100225,
+  "summary_sha256": "3f11ce15fb4ef45157e716cd9c461f32a795c3a27ad874ccc23864a8c4d9596b",
+  "audit_epoch": 1793529947.9615688,
+  "attribution": "Reward-only within this matched pilot; not matched against T267 and not a novelty/multiseed/other-map claim."
+}

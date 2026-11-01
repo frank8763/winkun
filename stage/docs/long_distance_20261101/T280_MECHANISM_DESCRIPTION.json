@@ -1,0 +1,374 @@
+{
+  "state": "READ_ONLY_COMPLETED",
+  "physics_added": 0,
+  "optimizer_calls_added": 0,
+  "navigation_Actor_updates_added": 0,
+  "arms": {
+    "original_MC": {
+      "groups": {
+        "training": {
+          "n": 32,
+          "outcomes": {
+            "TIMEOUT": 24,
+            "CONTACT": 8
+          }
+        },
+        "old_regression": {
+          "n": 275,
+          "outcomes": {
+            "GOAL": 275
+          }
+        },
+        "development": {
+          "n": 54,
+          "outcomes": {
+            "CONTACT": 27,
+            "TIMEOUT": 26,
+            "GOAL": 1
+          }
+        },
+        "six_m_LEFT": {
+          "n": 27,
+          "outcomes": {
+            "CONTACT": 27
+          },
+          "remaining_min_m": 1.6921978184469495,
+          "remaining_max_m": 2.3711501276146345
+        },
+        "six_m_RIGHT": {
+          "n": 27,
+          "outcomes": {
+            "TIMEOUT": 26,
+            "GOAL": 1
+          },
+          "remaining_min_m": 0.19977981405640766,
+          "remaining_max_m": 0.8493332562143787
+        },
+        "success_ids": [
+          "dev6_RIGHT_18"
+        ]
+      },
+      "live_trials": 8,
+      "numerical_or_surrogate_rejected_before_native": 2,
+      "native_accepted": 2,
+      "native_rejected": 4,
+      "old_failure_ids": {
+        "hold_task6_06": 1,
+        "dev_task6_24": 3
+      }
+    },
+    "bounded_endpoint_cost": {
+      "groups": {
+        "training": {
+          "n": 32,
+          "outcomes": {
+            "TIMEOUT": 24,
+            "CONTACT": 8
+          }
+        },
+        "old_regression": {
+          "n": 275,
+          "outcomes": {
+            "GOAL": 275
+          }
+        },
+        "development": {
+          "n": 54,
+          "outcomes": {
+            "CONTACT": 27,
+            "TIMEOUT": 26,
+            "GOAL": 1
+          }
+        },
+        "six_m_LEFT": {
+          "n": 27,
+          "outcomes": {
+            "CONTACT": 27
+          },
+          "remaining_min_m": 1.6771928594355539,
+          "remaining_max_m": 2.4764647643108098
+        },
+        "six_m_RIGHT": {
+          "n": 27,
+          "outcomes": {
+            "TIMEOUT": 26,
+            "GOAL": 1
+          },
+          "remaining_min_m": 0.19979238839486432,
+          "remaining_max_m": 0.851085780979432
+        },
+        "success_ids": [
+          "dev6_RIGHT_18"
+        ]
+      },
+      "live_trials": 9,
+      "numerical_or_surrogate_rejected_before_native": 3,
+      "native_accepted": 1,
+      "native_rejected": 5,
+      "old_failure_ids": {
+        "dev_task6_24": 5,
+        "dev_task6_00": 1
+      }
+    }
+  },
+  "first_batch_credit_and_deployment_description": {
+    "original_MC": [
+      {
+        "reset": "dev6_LEFT_13",
+        "trajectory_G0": [
+          -0.05303307806611147,
+          -0.302328440746485,
+          -0.35672971896773187,
+          -0.3230945577692199
+        ],
+        "weighted_LOO_coefficient": [
+          0.27435116109503416,
+          -0.05804265581213061,
+          -0.13057769344045975,
+          -0.0857308118424438
+        ],
+        "common_old_estimator_RMS_scale": 0.2075402829564888,
+        "normalized_weighted_coefficient_RMS": 0.7733318931679091,
+        "sampled_command_std": [
+          0.2030009925365448,
+          0.3167162835597992
+        ],
+        "deterministic_mode_saturated_fraction": [
+          0.0,
+          0.0
+        ],
+        "raw_output_abs_gt1_fraction": [
+          0.0,
+          0.0
+        ],
+        "limitation": "Saturation/credit scale describe frozen first-batch states only, not proof of zero likelihood gradient or unique causal root."
+      },
+      {
+        "reset": "dev6_RIGHT_13",
+        "trajectory_G0": [
+          -0.05303307806611113,
+          -0.05303307806611119,
+          -0.05303307806611166,
+          -0.053033078066111204
+        ],
+        "weighted_LOO_coefficient": [
+          2.220446049250313e-16,
+          1.3877787807814457e-16,
+          -4.85722573273506e-16,
+          1.1796119636642288e-16
+        ],
+        "common_old_estimator_RMS_scale": 0.2075402829564888,
+        "normalized_weighted_coefficient_RMS": 1.3594308094696558e-15,
+        "sampled_command_std": [
+          0.32630643248558044,
+          0.426634281873703
+        ],
+        "deterministic_mode_saturated_fraction": [
+          0.23392857142857143,
+          0.008035714285714285
+        ],
+        "raw_output_abs_gt1_fraction": [
+          0.23392857142857143,
+          0.008035714285714285
+        ],
+        "limitation": "Saturation/credit scale describe frozen first-batch states only, not proof of zero likelihood gradient or unique causal root."
+      },
+      {
+        "reset": "local1m_LEFT",
+        "trajectory_G0": [
+          -0.20303307806611254,
+          -0.20303307806611237,
+          -0.20303307806611218,
+          -0.20303307806611223
+        ],
+        "weighted_LOO_coefficient": [
+          -2.7755575615628914e-16,
+          -2.7755575615628914e-17,
+          1.942890293094024e-16,
+          1.3877787807814457e-16
+        ],
+        "common_old_estimator_RMS_scale": 0.2075402829564888,
+        "normalized_weighted_coefficient_RMS": 8.845794841404141e-16,
+        "sampled_command_std": [
+          0.008501997217535973,
+          0.3714820444583893
+        ],
+        "deterministic_mode_saturated_fraction": [
+          1.0,
+          0.015178571428571428
+        ],
+        "raw_output_abs_gt1_fraction": [
+          1.0,
+          0.015178571428571428
+        ],
+        "limitation": "Saturation/credit scale describe frozen first-batch states only, not proof of zero likelihood gradient or unique causal root."
+      },
+      {
+        "reset": "local1m_RIGHT",
+        "trajectory_G0": [
+          -0.20303307806611226,
+          -0.20303307806611237,
+          -0.203033078066112,
+          -0.2030330780661124
+        ],
+        "weighted_LOO_coefficient": [
+          0.0,
+          -1.3877787807814457e-16,
+          3.3306690738754696e-16,
+          -1.6653345369377348e-16
+        ],
+        "common_old_estimator_RMS_scale": 0.2075402829564888,
+        "normalized_weighted_coefficient_RMS": 9.574029665752328e-16,
+        "sampled_command_std": [
+          0.14937414228916168,
+          0.09764930605888367
+        ],
+        "deterministic_mode_saturated_fraction": [
+          0.1455357142857143,
+          0.0
+        ],
+        "raw_output_abs_gt1_fraction": [
+          0.1455357142857143,
+          0.0
+        ],
+        "limitation": "Saturation/credit scale describe frozen first-batch states only, not proof of zero likelihood gradient or unique causal root."
+      }
+    ],
+    "bounded_endpoint_cost": [
+      {
+        "reset": "dev6_LEFT_13",
+        "trajectory_G0": [
+          -0.12194076782715071,
+          -0.37172312871591956,
+          -0.4174034306534935,
+          -0.38809297653037506
+        ],
+        "weighted_LOO_coefficient": [
+          0.27046574413944535,
+          -0.06257740371224646,
+          -0.12348447296234505,
+          -0.08440386746485379
+        ],
+        "common_old_estimator_RMS_scale": 0.17660684432995602,
+        "normalized_weighted_coefficient_RMS": 0.89277742951839,
+        "sampled_command_std": [
+          0.2030009925365448,
+          0.3167162835597992
+        ],
+        "deterministic_mode_saturated_fraction": [
+          0.0,
+          0.0
+        ],
+        "raw_output_abs_gt1_fraction": [
+          0.0,
+          0.0
+        ],
+        "limitation": "Saturation/credit scale describe frozen first-batch states only, not proof of zero likelihood gradient or unique causal root."
+      },
+      {
+        "reset": "dev6_RIGHT_13",
+        "trajectory_G0": [
+          -0.12347024493387984,
+          -0.12607499521250756,
+          -0.12160860917159201,
+          -0.12293518340540885
+        ],
+        "weighted_LOO_coefficient": [
+          6.935099595629934e-05,
+          -0.003403649375547338,
+          0.0025515320123400687,
+          0.000782766367250956
+        ],
+        "common_old_estimator_RMS_scale": 0.17660684432995602,
+        "normalized_weighted_coefficient_RMS": 0.01224702034956374,
+        "sampled_command_std": [
+          0.32630643248558044,
+          0.426634281873703
+        ],
+        "deterministic_mode_saturated_fraction": [
+          0.23392857142857143,
+          0.008035714285714285
+        ],
+        "raw_output_abs_gt1_fraction": [
+          0.23392857142857143,
+          0.008035714285714285
+        ],
+        "limitation": "Saturation/credit scale describe frozen first-batch states only, not proof of zero likelihood gradient or unique causal root."
+      },
+      {
+        "reset": "local1m_LEFT",
+        "trajectory_G0": [
+          -0.2866717484419991,
+          -0.2874099801100003,
+          -0.28562113857935995,
+          -0.2856804407072051
+        ],
+        "weighted_LOO_coefficient": [
+          -0.0004345619764773434,
+          -0.001418870867145594,
+          0.0009662511737082435,
+          0.0008871816699146939
+        ],
+        "common_old_estimator_RMS_scale": 0.17660684432995602,
+        "normalized_weighted_coefficient_RMS": 0.005607366829131966,
+        "sampled_command_std": [
+          0.008501997217535973,
+          0.3714820444583893
+        ],
+        "deterministic_mode_saturated_fraction": [
+          1.0,
+          0.015178571428571428
+        ],
+        "raw_output_abs_gt1_fraction": [
+          1.0,
+          0.015178571428571428
+        ],
+        "limitation": "Saturation/credit scale describe frozen first-batch states only, not proof of zero likelihood gradient or unique causal root."
+      },
+      {
+        "reset": "local1m_RIGHT",
+        "trajectory_G0": [
+          -0.28404765703062157,
+          -0.2834576382032132,
+          -0.2845067608958982,
+          -0.2834121460296994
+        ],
+        "weighted_LOO_coefficient": [
+          -0.00025547532101793946,
+          0.0005312164488598947,
+          -0.0008676138080535023,
+          0.0005918726802116026
+        ],
+        "common_old_estimator_RMS_scale": 0.17660684432995602,
+        "normalized_weighted_coefficient_RMS": 0.0034097706213926356,
+        "sampled_command_std": [
+          0.14937414228916168,
+          0.09764930605888367
+        ],
+        "deterministic_mode_saturated_fraction": [
+          0.1455357142857143,
+          0.0
+        ],
+        "raw_output_abs_gt1_fraction": [
+          0.1455357142857143,
+          0.0
+        ],
+        "limitation": "Saturation/credit scale describe frozen first-batch states only, not proof of zero likelihood gradient or unique causal root."
+      }
+    ]
+  },
+  "historical_six_m_success_ids": {
+    "T257": [
+      "dev6_RIGHT_18"
+    ],
+    "T259": [
+      "dev6_RIGHT_18"
+    ]
+  },
+  "current_success_is_historically_known_RIGHT18": true,
+  "all_raw_complete": true,
+  "missing_fresh16_and_reload78": "Not executed by gate, not failures",
+  "summary_sha256": "3f11ce15fb4ef45157e716cd9c461f32a795c3a27ad874ccc23864a8c4d9596b",
+  "created_epoch": 1793529923.8674245,
+  "conclusion": "New objective creates distinguishable failure returns but did not expand final success set in this pilot. Retention rejections and absent training successes coexist; no proof that either alone is sufficient."
+}
