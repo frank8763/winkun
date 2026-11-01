@@ -1,0 +1,44 @@
+{
+  "experiment": "T265",
+  "scope": "FIXED48_CAUSAL_BASELINE_COEFFICIENT_AND_ENUMERATION_CONTRACT_ONLY",
+  "wall_seconds": 30,
+  "max_output_bytes": 262144,
+  "max_physics_steps": 0,
+  "max_optimizer_calls": 0,
+  "max_models": 0,
+  "training_log": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t263_adaptive_goal_course/training.jsonl",
+  "prefix_sha256": "30109198fd8072632dfc0cb4e08477b309aa328a99f2c31877e2bdcd1244e3d6",
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t265_causal_baseline_contract/contract.py": "8bd34fc189e4f4027d6ab9b4746f5cb77cdc83725a99864039897d6a37129890",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t264_offline_gradient_audit/summary.json": "ca15ed4404a3b6c626c338030bae53b83755e848ad8eea439b0e9282eaf342b4"
+  },
+  "preflight": {
+    "state": "PASS",
+    "trajectory_count": 4,
+    "conditional_logits_depend_on_history_and_both_parameters": true,
+    "expected_true_gradient": [
+      0.26090304032877637,
+      0.3002326777223739
+    ],
+    "expected_current_estimator": [
+      0.26090304032877637,
+      0.30023267772237394
+    ],
+    "expected_candidate_estimator": [
+      0.26090304032877637,
+      0.3002326777223739
+    ],
+    "same_cap_constant_outcome_current_second_moment": 0.003140750511399712,
+    "same_cap_constant_outcome_candidate_second_moment": 0.0,
+    "note": "Exact finite toy, unnormalized likelihood-ratio gradients only; no general variance guarantee."
+  },
+  "references": [
+    "https://www.jmlr.org/papers/v5/greensmith04a.html",
+    "https://people.eecs.berkeley.edu/~russell/papers/icml99-shaping.pdf"
+  ],
+  "capacity_preflight": {
+    "global_used_bytes": 1028624826,
+    "full_T263_T264_T265_reserved_global_bytes": 1068915778,
+    "global_limit_bytes": 1073741824
+  }
+}

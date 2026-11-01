@@ -1,0 +1,90 @@
+{
+  "state": "PASS",
+  "real_first16_canonical_density": {
+    "recorded_error": 0.0,
+    "sequence_mean_error": 0.0,
+    "sequence_logp_error": 0.0,
+    "same_parameter_ratio_error": 0.0,
+    "causal_time_baseline": true,
+    "original_estimator_RMS_scale": 0.5609569891802618,
+    "constant_weight_coefficient_max_error": 1.1102230246251565e-16
+  },
+  "real_full_batch_gradient_norm": 14.652898984964336,
+  "real_full_batch_forward_backward_seconds": 7.202660184993874,
+  "causal_baseline_contract": true,
+  "curriculum_contract": {
+    "advance_requires_actual_update_center_and_two_successes": true,
+    "deterministic_declared_fallback": true,
+    "source_jobs_unchanged": true,
+    "episode_goal_fixed": true,
+    "navigation_steps": 0
+  },
+  "full_training_states_storage_contract": true,
+  "entrypoint_all_nested_global_names_resolve": true,
+  "protocol_sha256": "13788704a5a0b5955044082bb8942d9c41697de031314ee1cf24ef69c1c55aaa",
+  "physics_steps": 0,
+  "navigation_RL_updates": 0,
+  "disposable_synthetic_optimizer_proposals": 5,
+  "failed_native_guard_rollback_exact": true,
+  "interrupted_round_rollback_exact": true,
+  "native_guard_is_synthetic_here": true,
+  "initial_policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54",
+  "retention_states": 28629,
+  "initial_full_retention_MSE": 0,
+  "initial_full_retention_max": 0,
+  "density": {
+    "recorded_error": 0.0,
+    "sequence_mean_error": 0.0,
+    "sequence_logp_error": 0.0,
+    "same_parameter_ratio_error": 0.0,
+    "causal_time_baseline": true,
+    "original_estimator_RMS_scale": 1.2715751442166947,
+    "constant_weight_coefficient_max_error": 0.0
+  },
+  "synthetic_proposals_shadow_exact": true,
+  "synthetic_report": [
+    {
+      "accepted": true,
+      "factor": 0.5,
+      "attempts": [
+        {
+          "factor": 1.0,
+          "accept": false,
+          "objective": -0.00022282028623583005,
+          "surrogate": 0.001828950633698085,
+          "improvement": -0.00022282028623583005,
+          "conditional_k3": 0.015468494786470333,
+          "max_abs_log_ratio": 1.3852614369756715,
+          "balanced_anchor_MSE": 2.0426761693670414e-05,
+          "anchor_max": 0.01311233639717102,
+          "would_pass_T257_function_bounds": false,
+          "native_old_task_guard": null
+        },
+        {
+          "factor": 0.5,
+          "accept": true,
+          "objective": 0.0009896996594290972,
+          "surrogate": 0.0015031308098953009,
+          "improvement": 0.0009896996594290972,
+          "conditional_k3": 0.003885629158990519,
+          "max_abs_log_ratio": 0.629909579507717,
+          "balanced_anchor_MSE": 5.111050086270552e-06,
+          "anchor_max": 0.006550967693328857,
+          "would_pass_T257_function_bounds": false,
+          "native_old_task_guard": {
+            "all_safe": true,
+            "cases": 20,
+            "synthetic_only": true,
+            "policy_hash": "2decb224df89b6a6eef5a36758a2bcf1a6aea462dedb018b2054aa9d0d089ffc"
+          }
+        }
+      ],
+      "step": 0,
+      "gradient_norm": 6.028484344482422,
+      "pcgrad_conflicts": 4,
+      "policy_hash": "2decb224df89b6a6eef5a36758a2bcf1a6aea462dedb018b2054aa9d0d089ffc",
+      "optimizer_hash": "792bd08d62f4ada8464337367ac6ba27004b29ad65703d1b58931a8b1419336f"
+    }
+  ],
+  "old_models_unchanged": true
+}
