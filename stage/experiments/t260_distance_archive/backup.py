@@ -42,6 +42,7 @@ GROUPS = {
     'T278': ['t278_fixed_goal_starts'],
     'T280': ['t280_local_cost'],
     'T283': ['t283_capped_task_balance'],
+    'T284': ['t284_feedback_drift'],
 }
 
 
