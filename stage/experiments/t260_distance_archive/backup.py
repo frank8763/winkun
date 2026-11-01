@@ -27,6 +27,7 @@ GROUPS = {
                   't258_closed_loop_retention'],
     'T259': ['t259_closed_loop_recovery'],
     'T261': ['t261_distance_credit_audit'],
+    'T262': ['t262_event_contract'],
 }
 
 

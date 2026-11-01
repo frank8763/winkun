@@ -1,0 +1,118 @@
+{
+  "retrieved_date": "2026-11-01",
+  "scope": "Primary proceedings, author original manuscripts/project pages/institutional report. Not exhaustive web search; not every paper read in full; no datasets/cloned repos/dependencies downloaded.",
+  "sources": [
+    {
+      "id": "P01",
+      "title": "Automatic Goal Generation for Reinforcement Learning Agents",
+      "venue": "ICML 2018",
+      "url": "https://proceedings.mlr.press/v80/florensa18a.html",
+      "read_scope": "摘要、PDF问题/假设/目标难度章节",
+      "decision": "按能力选择目标，适合更细课程；不声称复现GAN或独创课程"
+    },
+    {
+      "id": "P02",
+      "title": "Horizon Generalization in Reinforcement Learning",
+      "venue": "ICLR 2025 / 作者项目页",
+      "url": "https://horizon-generalization.github.io/",
+      "read_scope": "项目页定义/定理概述",
+      "decision": "近距离能力不自动推出远距离能力；理论有假设，不引入路点规划"
+    },
+    {
+      "id": "P03",
+      "title": "Contrastive Learning as Goal-Conditioned Reinforcement Learning",
+      "venue": "NeurIPS 2022",
+      "url": "https://papers.neurips.cc/paper_files/paper/2022/hash/e7663e974c4ee7a2b475a4775201ce1f-Abstract-Conference.html",
+      "read_scope": "正式摘要",
+      "decision": "表征内积可表达目标条件价值；需要合适轨迹/目标标签与独立Critic验证"
+    },
+    {
+      "id": "P04",
+      "title": "Distributional Distance Classifiers for Goal-Conditioned Reinforcement Learning",
+      "venue": "ICML 2023 workshop / CMU硕士报告",
+      "url": "https://publications.ri.cmu.edu/distributional-distance-classifiers-for-goal-conditioned-reinforcement-learning",
+      "read_scope": "机构摘要、workshop PDF可读检索片段",
+      "decision": "到达时间与到达概率必须区分；不能把成功样本时长当所有策略的可达距离"
+    },
+    {
+      "id": "P05",
+      "title": "Scaling Goal-conditioned Reinforcement Learning with Multistep Quasimetric Distances",
+      "venue": "ICLR 2026",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/eddc0fab5a42f8d8de6eb5566cd9f1d3-Abstract-Conference.html",
+      "read_scope": "正式摘要",
+      "decision": "多步MC拟合准度量；暂不复制价值梯度，更不引入图搜索"
+    },
+    {
+      "id": "P06",
+      "title": "Dual Goal Representations",
+      "venue": "ICLR 2026",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/f8cd7eb180deb5c6ec876de2b442fa72-Abstract-Conference.html",
+      "read_scope": "正式摘要",
+      "decision": "时间关系表示属于已有研究；新增goal encoder不是原创性证明"
+    },
+    {
+      "id": "P07",
+      "title": "SVL: Goal-Conditioned Reinforcement Learning as Survival Learning",
+      "venue": "ICML 2026；arXiv v2",
+      "url": "https://arxiv.org/html/2604.17551v2",
+      "read_scope": "摘要、方法/删失/层次actor目录与开篇",
+      "decision": "hazard/到达时间/删失已存在；借鉴标签契约，原层次Actor不照搬"
+    },
+    {
+      "id": "P08",
+      "title": "Survival Reinforcement Learning: Toward Scalable Self-Supervised RL",
+      "venue": "arXiv 2026 v2，未据此声称正式录用",
+      "url": "https://arxiv.org/abs/2605.31273",
+      "read_scope": "原稿摘要",
+      "decision": "目标驻留与一次到达不同；本项目不静默改变terminate-on-GOAL目标"
+    },
+    {
+      "id": "P09",
+      "title": "Arrive and Survive: Scaling Safe Goal-Conditioned Policy Learning from One-Bit Failure Signals",
+      "venue": "arXiv 2026 v1，未据此声称正式录用",
+      "url": "https://arxiv.org/html/2608.26571v1",
+      "read_scope": "摘要、方法/实现/失败vs删失技术条件目录与开篇",
+      "decision": "失败质量校正是强近邻；碰撞不能当普通时间截断，失败预测头本身非新"
+    },
+    {
+      "id": "P10",
+      "title": "SafeAdapt: Provably Safe Policy Updates in Deep Reinforcement Learning",
+      "venue": "arXiv 2026 v1",
+      "url": "https://arxiv.org/html/2604.09452v1",
+      "read_scope": "摘要、相关工作、方法/假设/安全规格节目录与开篇",
+      "decision": "已研究安全保持和参数投影；有限/离散及unsafe标签等假设不能搬成连续车保证"
+    },
+    {
+      "id": "P11",
+      "title": "Stochastic Minimum-Cost Reach-Avoid Reinforcement Learning",
+      "venue": "ICML 2026（作者稿标注）",
+      "url": "https://arxiv.org/abs/2605.11975",
+      "read_scope": "作者原稿摘要",
+      "decision": "概率reach-avoid与成本共同优化已有理论；当前原生回归不是该证书"
+    },
+    {
+      "id": "P12",
+      "title": "Safe Multi-Agent Navigation guided by Goal-Conditioned Safe Reinforcement Learning",
+      "venue": "ICRA 2025",
+      "url": "https://arxiv.org/abs/2502.17813",
+      "read_scope": "作者摘要、作者仓库README",
+      "decision": "联合距离/安全价值有先例；其图和路点执行与Stage契约冲突，不采用"
+    },
+    {
+      "id": "P13",
+      "title": "Offline Goal-Conditioned Reinforcement Learning for Safety-Critical Tasks with Recovery Policy",
+      "venue": "ICRA 2024",
+      "url": "https://arxiv.org/abs/2403.01734",
+      "read_scope": "作者原稿摘要",
+      "decision": "安全GCRL已有研究；恢复策略方案不作为单Actor运行时控制器"
+    },
+    {
+      "id": "P14",
+      "title": "Success-Conditioning as Policy Improvement: The Optimization Problem Solved by Imitating Success",
+      "venue": "ICML 2026",
+      "url": "https://proceedings.mlr.press/v306/russo26a.html",
+      "read_scope": "正式摘要",
+      "decision": "精确success-conditioning的理论不等于有限神经BC；T231/T243等失败不能被理论抹去"
+    }
+  ]
+}

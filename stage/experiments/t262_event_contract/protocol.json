@@ -1,0 +1,27 @@
+{
+  "experiment": "T262",
+  "kind": "zero-simulation first-event label/probability contract",
+  "episodes": 48,
+  "source_rows": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t259_closed_loop_recovery/training.jsonl",
+  "source_prefix_sha256": "0ef225c48471c9a02c2588db57acc915bfb69ebe830e72382d3d7bc31612a2cb",
+  "source_sha256": "264a3787dc6e500f8de833eb4eae6aa0979b45016076920a9bb9b3107b9f3aff",
+  "horizons_seconds": [
+    5,
+    10,
+    20,
+    40,
+    56
+  ],
+  "horizons_physics_steps": [
+    2500,
+    5000,
+    10000,
+    20000,
+    28000
+  ],
+  "wall_seconds": 120,
+  "max_output_bytes": 1048576,
+  "physics_steps": 0,
+  "optimizer_updates": 0,
+  "contract": "Fixed original first48 T259 episodes also inspected by T261; not new independent samples. No policy/critic construction, learned parameters, rollouts, simulator or change to active protocol. Exact native2ms first goal/contact labels compete; true timeout is observed no event through original cap, wall/admin censoring has unknown suffix, queries beyond original remaining cap masked. Standard survival mass algebra checked synthetically, no novelty/safety certificate claim. Compact episodes lack120D states: explicitly not critic-training-ready; further state recovery/goalhistory relabeling requires own bounded protocol. All outputs canonical stage/runs, global1GiB/free40GiB. Stage only, Phase isolated."
+}
