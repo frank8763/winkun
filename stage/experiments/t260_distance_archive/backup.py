@@ -33,6 +33,8 @@ GROUPS = {
     'T268': ['t268_storage_and_frozen_gate'],
     'T269': ['t269_same_state_controls'],
     'T271': ['t271_frozen_feature_exploration'],
+    'T272': ['t272_event_value_pilot'],
+    'T273': ['t273_value_direction_probe'],
 }
 
 
