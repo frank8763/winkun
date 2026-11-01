@@ -39,6 +39,7 @@ GROUPS = {
     'T275': ['t275_future_target_contract'],
     'T276': ['t276_future_time_pilot'],
     'T277': ['t277_physical_hindsight'],
+    'T278': ['t278_fixed_goal_starts'],
 }
 
 
