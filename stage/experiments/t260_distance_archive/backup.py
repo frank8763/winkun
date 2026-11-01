@@ -29,6 +29,7 @@ GROUPS = {
     'T261': ['t261_distance_credit_audit'],
     'T262': ['t262_event_contract'],
     'T263': ['t263_adaptive_goal_course'],
+    'T267': ['t267_causal_credit_course'],
 }
 
 
