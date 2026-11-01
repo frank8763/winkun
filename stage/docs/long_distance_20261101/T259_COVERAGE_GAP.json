@@ -1,0 +1,38 @@
+{
+  "state": "OBSERVED_NATIVE_GUARD_COVERAGE_GAP",
+  "physics_steps_added": 0,
+  "optimizer_updates_added": 0,
+  "source_reset_id": "hold_task6_06",
+  "failed_case_outside_fixed12": true,
+  "guard12_ids": [
+    "dev_task0_13",
+    "dev_task1_13",
+    "dev_task2_13",
+    "dev_task3_13",
+    "dev_task4_00",
+    "dev_task4_13",
+    "dev_task5_13",
+    "dev_task6_00",
+    "dev_task6_13",
+    "dev_task6_24",
+    "dev_task7_13",
+    "dev_task7_26"
+  ],
+  "same_case_fields": true,
+  "frozen_parent_sha256": "fe49343378946497b163eb73074cdd01db1f86f7128b758d60a76b2f9306b9c2",
+  "failed_candidate_sha256": "e7237b589080f09bc70508361aa2a93fee9ea0fb2e4b11f1899c6a648dc4dc63",
+  "trajectory_comparison": {
+    "parent_GOAL_s": 39.160000000000004,
+    "candidate_CONTACT_s": 30.036,
+    "first_recorded_pose_delta_gt1cm_s": 1.4000000000000001,
+    "max_position_delta_m": 0.40374928084324885,
+    "initial_pose_exact": true,
+    "first_action_abs_difference": [
+      0.003556191921234131,
+      0.0017594099044799805
+    ]
+  },
+  "failed_family_old64_count": 8,
+  "frozen_parent_family_safe": 8,
+  "interpretation": "Counterexample lies at+1.5cm/+1.5cm/-1deg inside old coarse±3cm/±2deg domain. Full211grid passed but old64onecase failed. Twelve native checks do not cover all275. This locates missing acceptance coverage, not a complete causal explanation of learned steering or six-metre failure. Freeze-safe5m parent retained; failedT259 notpromoted. Any combined family-guard expansion pluscurriculum must be declared compound and cannot isolate curriculum efficacy."
+}

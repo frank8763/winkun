@@ -17,11 +17,24 @@ def main():
     prior = ROOT/'stage/runs/t259_closed_loop_recovery'
     summary = json.loads((prior/'summary.json').read_text())
     assert summary['state'] == 'COMPLETE' and summary['all_workers_stopped']
-    assert summary['old_regression_n'] == summary['old_regression_safe'] == 275
+    doc = ROOT/'stage/docs/long_distance_20261101'
+    audit = json.loads((doc/'T259_AUDIT.json').read_text())
+    backup = json.loads((doc/'release_receipt_T259.json').read_text())
+    assert audit['all_processes_absent'] and audit['original_summary_sha256'] == hashlib.sha256((prior/'summary.json').read_bytes()).hexdigest()
+    assert backup['state'] == 'FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED'
+    assert summary['old_regression_n'] == 275 and summary['old_regression_safe'] == 274
+    oldrows = list(map(json.loads, (prior/'old_regression.jsonl').read_text().splitlines()))
+    failed = [r for r in oldrows if not (r['complete'] and r['success'] and not r['collision'])]
+    assert [r['source_reset_id'] for r in failed] == ['hold_task6_06']
     assert summary['new_development_n'] == 54 and not summary['new_distance_gate']
     assert summary['heldout_n'] == 0, 'Do not reuse consumed final six-metre holdout'
     contracts()
     plan = copy.deepcopy(json.loads((ROOT/'stage/experiments/t259_closed_loop_recovery/protocol.json').read_text()))
+    family = [j for j in plan['old_regression64'] if j['group'] == 'task6']
+    parents = list(map(json.loads, (ROOT/'stage/runs/t255_overnight/heldout.jsonl').read_text().splitlines()))
+    assert len(family) == 8 and all(any(r['source_reset_id'] == j['id'] and r['success'] and not r['collision'] and r['job']['policy_hash'] == plan['policy_hash'] for r in parents) for j in family)
+    plan['acceptance_guard_jobs'] += copy.deepcopy(family)
+    assert len(plan['acceptance_guard_jobs']) == len({j['id'] for j in plan['acceptance_guard_jobs']}) == 20
     for key in ['engineering_recovery_of', 'combined_original_deadline_epoch',
                 'failed_T258_output_bytes', 'prelaunch_budget_enforcement',
                 'bridge_cases', 'bridge_rounds', 'bridge_distance_m', 'historical_training_rows']:
@@ -45,12 +58,14 @@ def main():
         training_episode_bytes=384*1024, save_full_training_states=True,
         historical_training_logs=[str(ROOT/'stage/runs/t257_distance_policy_gradient/training.jsonl'),
                                   str(prior/'training.jsonl')],
-        contract='New controlled training-goal curriculum hypothesis, not resumed T259. '
-        'Requires T259 complete/all workers stopped/old275all safe/new54notallpass/heldout16unconsumed. '
+        contract='New COMPOUND ENGINEERING hypothesis: counterexample-family native retention plus adaptive episode-goal course, not resumed T259 and not isolated curriculum ablation. '
+        'Requires T259 complete/all workers stopped/old274of275 with solehold_task6_06failure/new54notallpass/heldout16unconsumed. '
+        'Verified frozen T255 parent safe on all8sameleft5mold64family; failedT259modelNOTpromoted. '
         'Fresh SAME T255 accepted5m function and fresh Adam; SAME120D hidden-reset singleActor, '
         'seed2026110101, six rounds x four tasks x four draws=96max, independent exact regeneration, '
         'four Actor attempts/shadow, conditional AR, PCGrad, learningrates/reward/softretention100, '
-        'same fixed12 native old-task acceptance and trustbounds. Only training-goal schedule changes: '
+        'same trustbounds but native acceptance expanded fromfixed12 tofixed20 BEFORElaunch: addentire8caseleft5mold64family, allknownregression notnewholdout. '
+        'The other scientific change is training-goal schedule: '
         'LEFT and RIGHT begin5.25; fixed levels5.25/5.5/5.75/6. After each completed update round, '
         'advance one level only with >=2/8safe exploratory draws on that side, actual retained update, '
         'and current-goal deterministic center safe; zero-safe plus failed center retreats one level. '
@@ -69,7 +84,7 @@ def main():
         'No new Critic/BC/feature/memory/reward/noise/Phase. Global1GiB/free40GiB, no deleting evidence or oldrunrestart.',
         references=plan['references']+['https://proceedings.mlr.press/v80/florensa18a.html',
                                       'https://arxiv.org/abs/1910.07224'])
-    paths = list(HERE.glob('*.py')) + [prior/'summary.json', prior/'training.jsonl']
+    paths = list(HERE.glob('*.py')) + [prior/'summary.json', prior/'training.jsonl', prior/'old_regression.jsonl', ROOT/'stage/runs/t255_overnight/heldout.jsonl', doc/'T259_COVERAGE_GAP.json', doc/'T259_AUDIT.json', doc/'release_receipt_T259.json']
     plan['input_hashes'].update({str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths})
     for path, expected in plan['input_hashes'].items():
         assert hashlib.sha256(Path(path).read_bytes()).hexdigest() == expected, path

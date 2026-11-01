@@ -32,21 +32,21 @@ def main():
             reward=np.zeros(24);reward[-1]=1 if k%2 else -1;items.append(dict(row=dict(source_reset_id=str(task)),arrays=dict(states=xx,means=torch.stack(means).numpy(),actions=torch.stack(acts).numpy(),logp=np.asarray(logps),native_counts=np.full(24,100,dtype=np.uint8),rewards=reward)))
     buf=io.BytesIO();np.savez_compressed(buf,**items[0]['arrays']);assert len(buf.getvalue())<plan['training_episode_bytes']
     with np.load(io.BytesIO(buf.getvalue())) as stored:assert 'states' in stored.files and all(np.array_equal(stored[k],v) for k,v in items[0]['arrays'].items())
-    data=L.training_batch(items,p);q=copy.deepcopy(p);opt=L.optimizer(p,plan);qo=L.optimizer(q,plan);testplan=dict(plan,actor_attempts_per_round=1);live,audit=paired_update(p,opt,q,qo,data,x,y,offset,testplan,0,lambda:None,lambda actor:dict(all_safe=True,cases=12,synthetic_only=True,policy_hash=S.digest(actor.state_dict())),lambda phase,event:None);assert live==audit and S.digest(p.state_dict())==S.digest(q.state_dict()) and S.digest(opt.state_dict())==S.digest(qo.state_dict())
+    data=L.training_batch(items,p);q=copy.deepcopy(p);opt=L.optimizer(p,plan);qo=L.optimizer(q,plan);testplan=dict(plan,actor_attempts_per_round=1);live,audit=paired_update(p,opt,q,qo,data,x,y,offset,testplan,0,lambda:None,lambda actor:dict(all_safe=True,cases=len(plan['acceptance_guard_jobs']),synthetic_only=True,policy_hash=S.digest(actor.state_dict())),lambda phase,event:None);assert live==audit and S.digest(p.state_dict())==S.digest(q.state_dict()) and S.digest(opt.state_dict())==S.digest(qo.state_dict())
     # A failed native guard must roll back Actor and Adam in both copies.
     rejected=policy(plan);ro=L.optimizer(rejected,plan);rq=copy.deepcopy(rejected);rqo=L.optimizer(rq,plan);rh=S.digest(rejected.state_dict());oh=S.digest(ro.state_dict());calls=[]
-    def deny(actor):calls.append(True);return dict(all_safe=False,cases=12,synthetic_only=True,policy_hash=S.digest(actor.state_dict()))
+    def deny(actor):calls.append(True);return dict(all_safe=False,cases=len(plan['acceptance_guard_jobs']),synthetic_only=True,policy_hash=S.digest(actor.state_dict()))
     rr,aa=paired_update(rejected,ro,rq,rqo,data,x,y,offset,dict(testplan,step_factors=[.015625]),0,lambda:None,deny,lambda phase,event:None)
     assert calls and not any(r['accepted'] for r in rr) and S.digest(rejected.state_dict())==rh and S.digest(ro.state_dict())==oh
     # An interruption after a live step rolls back the entire unaudited round.
-    interrupted=policy(plan);io=L.optimizer(interrupted,plan);iq=copy.deepcopy(interrupted);iqo=L.optimizer(iq,plan);ih=S.digest(interrupted.state_dict());ioh=S.digest(io.state_dict());ledger=[]
+    interrupted=policy(plan);interrupted_opt=L.optimizer(interrupted,plan);iq=copy.deepcopy(interrupted);iqo=L.optimizer(iq,plan);ih=S.digest(interrupted.state_dict());ioh=S.digest(interrupted_opt.state_dict());ledger=[]
     def interrupt(phase,event):
         ledger.append(dict(phase=phase,**event))
         if phase=='live':raise RuntimeError('synthetic interruption after recorded live proposal')
-    try:paired_update(interrupted,io,iq,iqo,data,x,y,offset,dict(testplan,step_factors=[.015625]),0,lambda:None,lambda actor:dict(all_safe=True,cases=12,synthetic_only=True,policy_hash=S.digest(actor.state_dict())),interrupt)
+    try:paired_update(interrupted,interrupted_opt,iq,iqo,data,x,y,offset,dict(testplan,step_factors=[.015625]),0,lambda:None,lambda actor:dict(all_safe=True,cases=len(plan['acceptance_guard_jobs']),synthetic_only=True,policy_hash=S.digest(actor.state_dict())),interrupt)
     except RuntimeError:pass
     else:raise AssertionError('Interruption was not propagated')
-    assert S.digest(interrupted.state_dict())==ih and S.digest(io.state_dict())==ioh and ledger[-1]['phase']=='rollback'
+    assert S.digest(interrupted.state_dict())==ih and S.digest(interrupted_opt.state_dict())==ioh and ledger[-1]['phase']=='rollback'
     result=dict(state='PASS',curriculum_contract=curriculum_contract,full_training_states_storage_contract=True,entrypoint_all_nested_global_names_resolve=True,protocol_sha256=C.sha(HERE/'protocol.json'),physics_steps=0,navigation_RL_updates=0,disposable_synthetic_optimizer_proposals=len(live)+len(audit)+len(rr)+len(aa)+sum(e['phase']=='live' for e in ledger),failed_native_guard_rollback_exact=True,interrupted_round_rollback_exact=True,native_guard_is_synthetic_here=True,initial_policy_hash=original,retention_states=len(x),initial_full_retention_MSE=0,initial_full_retention_max=0,density=data['density'],synthetic_proposals_shadow_exact=True,synthetic_report=live,old_models_unchanged=True)
     C.save(OUT/'contracts.json',result);print(json.dumps(dict(state='PASS',retention_states=len(x),shadow_exact=True,density=data['density'])),flush=True)
 if __name__=='__main__':main()

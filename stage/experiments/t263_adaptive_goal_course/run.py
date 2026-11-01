@@ -64,14 +64,14 @@ def main():
         ph=S.digest(actor.state_dict());native_queries+=1
         if ph in native_cache:native_cache_hits+=1;return native_cache[ph]
         prefix='nativeguard'+str(len(native_cache));items=roll(jobs_for(plan['acceptance_guard_jobs'],prefix),actor,'candidate_guards.jsonl');rr=[i['row'] for i in items]
-        result=dict(policy_hash=ph,cases=len(rr),safe=sum(safe(r) for r in rr),all_safe=len(rr)==12 and all(safe(r) for r in rr),failed_ids=[r['source_reset_id'] for r in rr if not safe(r)])
+        result=dict(policy_hash=ph,cases=len(rr),safe=sum(safe(r) for r in rr),all_safe=len(rr)==len(plan['acceptance_guard_jobs']) and all(safe(r) for r in rr),failed_ids=[r['source_reset_id'] for r in rr if not safe(r)])
         native_cache[ph]=result;C.save(OUT/'native_guard_cache_index.json',dict(queries=native_queries,cache_hits=native_cache_hits,cache=native_cache));return result
     def save_model(name):
         payload=dict(policy=p.state_dict(),optimizer=opt.state_dict(),protocol_sha256=C.sha(HERE/'protocol.json'),accepted_RL_updates=accepted,source_checkpoint=plan['checkpoint'],source_policy_hash=plan['policy_hash'],memory_on=False,seed=plan['seed'],updates=updates);buf=io.BytesIO();torch.save(payload,buf);data=gzip.compress(buf.getvalue(),compresslevel=6,mtime=0);guard(pending=len(data),check_time=False);path=OUT/name;assert not path.exists();path.write_bytes(data);loaded=L.read(path);assert S.digest(loaded)==S.digest(payload);q=policy(plan);q.load_state_dict(loaded['policy']);q.eval().requires_grad_(False);return q,dict(path=str(path),sha256=C.sha(path),bytes=len(data),policy_hash=S.digest(q.state_dict()),optimizer_hash=S.digest(loaded['optimizer']))
     try:
         for f,h in plan['input_hashes'].items():assert C.sha(f)==h,f
         contracts=json.loads((OUT/'contracts.json').read_text());assert contracts['state']=='PASS' and contracts['protocol_sha256']==C.sha(HERE/'protocol.json')
-        torch.set_num_threads(1);torch.use_deterministic_algorithms(True);p=policy(plan);frozen=copy.deepcopy(p).eval().requires_grad_(False);opt=L.optimizer(p,plan);ax,ay,offset=anchors(plan,frozen);C.save(OUT/'retention_contract.json',dict(states=len(ax),episodes=211,state_hash=S.digest(ax),target_hash=S.digest(ay),source='T256actualaccepted5m120states',unused_old64_labels=True))
+        torch.set_num_threads(1);torch.use_deterministic_algorithms(True);p=policy(plan);frozen=copy.deepcopy(p).eval().requires_grad_(False);opt=L.optimizer(p,plan);ax,ay,offset=anchors(plan,frozen);C.save(OUT/'retention_contract.json',dict(states=len(ax),episodes=211,state_hash=S.digest(ax),target_hash=S.digest(ay),source='T256actualaccepted5m120states',old64_gradient_labels_unused=True,old64_native_acceptance_cases=8))
         ctx=mp.get_context('spawn')
         for i in range(4):
             a,b=ctx.Pipe();os.environ['STAGE_PROCESS_CPU']=str(i+1);w=ctx.Process(target=worker,args=(b,i,str(OUT),plan,wall));w.start();b.close();workers.append(w);pipes.append(a)
