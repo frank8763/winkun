@@ -1,0 +1,19 @@
+{
+  "state": "ZERO_PHYSICS_POSTRUN_RUNTIME_COST_DESCRIPTION",
+  "physics_added": 0,
+  "optimizer_added": 0,
+  "scan_source_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t219_rnd_runtime/support.py",
+  "scan_source_sha256": "22a4b244fcd4bd7802569f8b33abca6b954eb75d27ebcaf855e1febed6a26101",
+  "scan_source_function": "def used(p):return sum(f.stat().st_size for f in p.rglob('*') if f.is_file())\n",
+  "measured_sequential_global_scan_seconds": [
+    0.1952960819908185,
+    0.1914242360071512,
+    0.19290244799049105
+  ],
+  "benchmark_native_environments_created": 0,
+  "reconstructed_hold_count_from_complete_sources_plus_reported_inflight": 795,
+  "source_implied_full_scan_calls_in_successful_guards": 799,
+  "scan_time_estimate_seconds": 154.3728633415934,
+  "limitation": "Postrun3-call microbenchmark, not instrumented runtime profiler. Supports substantial scan overhead, not exact attribution of every elapsed second or proof native physics would complete within300s.",
+  "no_protocol_restart_or_extension": true
+}
