@@ -36,6 +36,8 @@ GROUPS = {
     'T272': ['t272_event_value_pilot'],
     'T273': ['t273_value_direction_probe'],
     'T274': ['t274_action_identifiability'],
+    'T275': ['t275_future_target_contract'],
+    'T276': ['t276_future_time_pilot'],
 }
 
 
