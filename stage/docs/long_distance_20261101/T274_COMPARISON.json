@@ -1,0 +1,608 @@
+{
+  "state": "MATCHED_CURRENT_ACTION_INPUT_ABLATION",
+  "physics_added": 0,
+  "optimizer_added": 0,
+  "identical_data_splits_initial_parameter_values_normalization_update_count_and_draw_schedule": true,
+  "changed_factor": "Only current query action coordinates masked at model input. Previous action in causal120 remains.",
+  "train_episodes": 80,
+  "test_episodes": 16,
+  "action_input_test": {
+    "Brier_per_horizon_class": [
+      [
+        0.005642720160481597,
+        0.003115547983775758,
+        0.008670836922471
+      ],
+      [
+        0.009299890202391761,
+        0.0033844897650972703,
+        0.012211067168236608
+      ],
+      [
+        0.013359556037739652,
+        0.0068516405566086186,
+        0.019275172748061023
+      ],
+      [
+        0.024641506014616104,
+        0.02096295477599282,
+        0.03854643007997139
+      ],
+      [
+        0.03575168426259891,
+        0.06915173572715463,
+        0.055520174633730726
+      ],
+      [
+        0.0738692387678188,
+        0.14056775578393446,
+        0.11054033188245926
+      ]
+    ],
+    "mean_Brier_total": 0.10856045557885674,
+    "mean_Brier_goal": 0.02709409924094114,
+    "mean_Brier_contact": 0.0406723540987606,
+    "NLL_per_horizon": [
+      0.032404217115705514,
+      0.04799044560374062,
+      0.07251471598843852,
+      0.15073947885218456,
+      0.26417156187672647,
+      0.5588433481228493
+    ],
+    "mean_NLL": 0.18777729459327416,
+    "five_bin_goal_contact_ECE": [
+      0.02058904551607382,
+      0.051585151471367136
+    ],
+    "support": [
+      {
+        "valid_decisions": 3821,
+        "valid_episodes": 16,
+        "goal_decisions": 30,
+        "contact_decisions": 20
+      },
+      {
+        "valid_decisions": 3780,
+        "valid_episodes": 16,
+        "goal_decisions": 49,
+        "contact_decisions": 40
+      },
+      {
+        "valid_decisions": 3690,
+        "valid_episodes": 16,
+        "goal_decisions": 79,
+        "contact_decisions": 80
+      },
+      {
+        "valid_decisions": 3482,
+        "valid_episodes": 16,
+        "goal_decisions": 111,
+        "contact_decisions": 160
+      },
+      {
+        "valid_decisions": 2933,
+        "valid_episodes": 16,
+        "goal_decisions": 111,
+        "contact_decisions": 251
+      },
+      {
+        "valid_decisions": 1656,
+        "valid_episodes": 16,
+        "goal_decisions": 111,
+        "contact_decisions": 254
+      }
+    ]
+  },
+  "blind_test": {
+    "Brier_per_horizon_class": [
+      [
+        0.005413889153663494,
+        0.0029108655133288953,
+        0.00820773143605983
+      ],
+      [
+        0.009164162935083469,
+        0.0032055861707546546,
+        0.011814346064190361
+      ],
+      [
+        0.01292760375676014,
+        0.007033093983458091,
+        0.01892014469500429
+      ],
+      [
+        0.024178308378215167,
+        0.021754938712074602,
+        0.038297844399918506
+      ],
+      [
+        0.035894869607376666,
+        0.0714189496014555,
+        0.0565648566364475
+      ],
+      [
+        0.07324880575997995,
+        0.138773649286176,
+        0.10938632423976644
+      ]
+    ],
+    "mean_Brier_total": 0.10818599505495226,
+    "mean_Brier_goal": 0.026804606598513147,
+    "mean_Brier_contact": 0.040849513877874624,
+    "NLL_per_horizon": [
+      0.030948905497730165,
+      0.046786989701088355,
+      0.07168585631395148,
+      0.1496329083589769,
+      0.2700463409519259,
+      0.5478295058527949
+    ],
+    "mean_NLL": 0.18615508444607795,
+    "five_bin_goal_contact_ECE": [
+      0.020246048693009767,
+      0.05140173977146353
+    ],
+    "support": [
+      {
+        "valid_decisions": 3821,
+        "valid_episodes": 16,
+        "goal_decisions": 30,
+        "contact_decisions": 20
+      },
+      {
+        "valid_decisions": 3780,
+        "valid_episodes": 16,
+        "goal_decisions": 49,
+        "contact_decisions": 40
+      },
+      {
+        "valid_decisions": 3690,
+        "valid_episodes": 16,
+        "goal_decisions": 79,
+        "contact_decisions": 80
+      },
+      {
+        "valid_decisions": 3482,
+        "valid_episodes": 16,
+        "goal_decisions": 111,
+        "contact_decisions": 160
+      },
+      {
+        "valid_decisions": 2933,
+        "valid_episodes": 16,
+        "goal_decisions": 111,
+        "contact_decisions": 251
+      },
+      {
+        "valid_decisions": 1656,
+        "valid_episodes": 16,
+        "goal_decisions": 111,
+        "contact_decisions": 254
+      }
+    ]
+  },
+  "action_input_train": {
+    "Brier_per_horizon_class": [
+      [
+        0.003508781486307171,
+        0.0072256761765870856,
+        0.010762149964999818
+      ],
+      [
+        0.005560329568630988,
+        0.010571580324826378,
+        0.015808144048661918
+      ],
+      [
+        0.006903270175462617,
+        0.017554506657485494,
+        0.02341102336324955
+      ],
+      [
+        0.010022341161070293,
+        0.025370089765117936,
+        0.03312796773648728
+      ],
+      [
+        0.012282644021821294,
+        0.040209139143853975,
+        0.04196486383840409
+      ],
+      [
+        0.023189399091914666,
+        0.08158047086880525,
+        0.08347485839952531
+      ]
+    ],
+    "mean_Brier_total": 0.07542120596553518,
+    "mean_Brier_goal": 0.010244460917534505,
+    "mean_Brier_contact": 0.03041857715611269,
+    "NLL_per_horizon": [
+      0.04113783188546228,
+      0.05962339682765396,
+      0.08619272103650889,
+      0.1251685365455025,
+      0.16635159715157624,
+      0.3298775271760814
+    ],
+    "mean_NLL": 0.13472526843713087,
+    "five_bin_goal_contact_ECE": [
+      0.0016128537081883574,
+      0.006527487675864547
+    ],
+    "support": [
+      {
+        "valid_decisions": 18474,
+        "valid_episodes": 80,
+        "goal_decisions": 89,
+        "contact_decisions": 170
+      },
+      {
+        "valid_decisions": 18305,
+        "valid_episodes": 80,
+        "goal_decisions": 150,
+        "contact_decisions": 340
+      },
+      {
+        "valid_decisions": 17888,
+        "valid_episodes": 80,
+        "goal_decisions": 195,
+        "contact_decisions": 678
+      },
+      {
+        "valid_decisions": 16925,
+        "valid_episodes": 80,
+        "goal_decisions": 200,
+        "contact_decisions": 1310
+      },
+      {
+        "valid_decisions": 14611,
+        "valid_episodes": 80,
+        "goal_decisions": 200,
+        "contact_decisions": 2196
+      },
+      {
+        "valid_decisions": 8248,
+        "valid_episodes": 80,
+        "goal_decisions": 200,
+        "contact_decisions": 2233
+      }
+    ]
+  },
+  "blind_train": {
+    "Brier_per_horizon_class": [
+      [
+        0.0033333801936109653,
+        0.0071287634851450055,
+        0.010445627200249679
+      ],
+      [
+        0.005381913139566791,
+        0.010300277837626609,
+        0.015278386358211958
+      ],
+      [
+        0.0066837296517468945,
+        0.017244195364275117,
+        0.02284502494450279
+      ],
+      [
+        0.009894120857665724,
+        0.025632384147716052,
+        0.033235245102405275
+      ],
+      [
+        0.012231085216390788,
+        0.04074908608677552,
+        0.04227103600820408
+      ],
+      [
+        0.023035625685306975,
+        0.08212512285722495,
+        0.08366577106808948
+      ]
+    ],
+    "mean_Brier_total": 0.07524679586745245,
+    "mean_Brier_goal": 0.010093309124048024,
+    "mean_Brier_contact": 0.030529971629793876,
+    "NLL_per_horizon": [
+      0.03983927310551406,
+      0.057927501225222645,
+      0.084068665926229,
+      0.12479335166180892,
+      0.16735788374516225,
+      0.33010994351693
+    ],
+    "mean_NLL": 0.13401610319681115,
+    "five_bin_goal_contact_ECE": [
+      0.0017561861493366486,
+      0.006153893880216932
+    ],
+    "support": [
+      {
+        "valid_decisions": 18474,
+        "valid_episodes": 80,
+        "goal_decisions": 89,
+        "contact_decisions": 170
+      },
+      {
+        "valid_decisions": 18305,
+        "valid_episodes": 80,
+        "goal_decisions": 150,
+        "contact_decisions": 340
+      },
+      {
+        "valid_decisions": 17888,
+        "valid_episodes": 80,
+        "goal_decisions": 195,
+        "contact_decisions": 678
+      },
+      {
+        "valid_decisions": 16925,
+        "valid_episodes": 80,
+        "goal_decisions": 200,
+        "contact_decisions": 1310
+      },
+      {
+        "valid_decisions": 14611,
+        "valid_episodes": 80,
+        "goal_decisions": 200,
+        "contact_decisions": 2196
+      },
+      {
+        "valid_decisions": 8248,
+        "valid_episodes": 80,
+        "goal_decisions": 200,
+        "contact_decisions": 2233
+      }
+    ]
+  },
+  "per_test_episode": [
+    {
+      "id": "r0_course5.25_dev6_LEFT_01_s0",
+      "side": "LEFT",
+      "distance_m": 5.25,
+      "action_input_Brier": 0.27028164590048265,
+      "blind_Brier": 0.27617347970775247
+    },
+    {
+      "id": "r0_course5.25_dev6_LEFT_01_s1",
+      "side": "LEFT",
+      "distance_m": 5.25,
+      "action_input_Brier": 0.3110835821234786,
+      "blind_Brier": 0.3064557770198905
+    },
+    {
+      "id": "r0_course5.25_dev6_LEFT_01_s2",
+      "side": "LEFT",
+      "distance_m": 5.25,
+      "action_input_Brier": 0.32470535812640383,
+      "blind_Brier": 0.3245884555883942
+    },
+    {
+      "id": "r0_course5.25_dev6_LEFT_01_s3",
+      "side": "LEFT",
+      "distance_m": 5.25,
+      "action_input_Brier": 0.33580339939102427,
+      "blind_Brier": 0.3351237836256662
+    },
+    {
+      "id": "r0_course5.25_dev6_RIGHT_01_s0",
+      "side": "RIGHT",
+      "distance_m": 5.25,
+      "action_input_Brier": 0.05985187780352352,
+      "blind_Brier": 0.05925388878918172
+    },
+    {
+      "id": "r0_course5.25_dev6_RIGHT_01_s1",
+      "side": "RIGHT",
+      "distance_m": 5.25,
+      "action_input_Brier": 0.0005668473768385252,
+      "blind_Brier": 0.0005544082804757043
+    },
+    {
+      "id": "r0_course5.25_dev6_RIGHT_01_s2",
+      "side": "RIGHT",
+      "distance_m": 5.25,
+      "action_input_Brier": 0.06358736539194242,
+      "blind_Brier": 0.06312070504602242
+    },
+    {
+      "id": "r0_course5.25_dev6_RIGHT_01_s3",
+      "side": "RIGHT",
+      "distance_m": 5.25,
+      "action_input_Brier": 0.04655236851858516,
+      "blind_Brier": 0.04621886004148453
+    },
+    {
+      "id": "feature_copula_dev6_LEFT_01_0",
+      "side": "LEFT",
+      "distance_m": 6.0,
+      "action_input_Brier": 0.10662326041399188,
+      "blind_Brier": 0.10394097467801637
+    },
+    {
+      "id": "feature_copula_dev6_LEFT_01_1",
+      "side": "LEFT",
+      "distance_m": 6.0,
+      "action_input_Brier": 0.05399117166531816,
+      "blind_Brier": 0.053137534256634054
+    },
+    {
+      "id": "feature_copula_dev6_LEFT_01_2",
+      "side": "LEFT",
+      "distance_m": 6.0,
+      "action_input_Brier": 0.051842330710760574,
+      "blind_Brier": 0.052254857041010794
+    },
+    {
+      "id": "feature_copula_dev6_LEFT_01_3",
+      "side": "LEFT",
+      "distance_m": 6.0,
+      "action_input_Brier": 0.10279032019132402,
+      "blind_Brier": 0.10139567091796331
+    },
+    {
+      "id": "feature_copula_dev6_RIGHT_01_0",
+      "side": "RIGHT",
+      "distance_m": 6.0,
+      "action_input_Brier": 0.0022922165807612097,
+      "blind_Brier": 0.002151993854209788
+    },
+    {
+      "id": "feature_copula_dev6_RIGHT_01_1",
+      "side": "RIGHT",
+      "distance_m": 6.0,
+      "action_input_Brier": 0.002334656799552895,
+      "blind_Brier": 0.002167943168146414
+    },
+    {
+      "id": "feature_copula_dev6_RIGHT_01_2",
+      "side": "RIGHT",
+      "distance_m": 6.0,
+      "action_input_Brier": 0.0017451297181206521,
+      "blind_Brier": 0.0016389680876317803
+    },
+    {
+      "id": "feature_copula_dev6_RIGHT_01_3",
+      "side": "RIGHT",
+      "distance_m": 6.0,
+      "action_input_Brier": 0.002915758549602601,
+      "blind_Brier": 0.002798620776759516
+    }
+  ],
+  "strata": [
+    {
+      "distance_m": 5.25,
+      "side": "LEFT",
+      "episodes": 4,
+      "action_input_Brier": 0.31046849638534807,
+      "blind_Brier": 0.31058537398542657
+    },
+    {
+      "distance_m": 5.25,
+      "side": "RIGHT",
+      "episodes": 4,
+      "action_input_Brier": 0.042639614772722656,
+      "blind_Brier": 0.042286965539291343
+    },
+    {
+      "distance_m": 6.0,
+      "side": "LEFT",
+      "episodes": 4,
+      "action_input_Brier": 0.07881177074534801,
+      "blind_Brier": 0.07768225922340552
+    },
+    {
+      "distance_m": 6.0,
+      "side": "RIGHT",
+      "episodes": 4,
+      "action_input_Brier": 0.0023219404120093223,
+      "blind_Brier": 0.0021893814716868586
+    }
+  ],
+  "blind_better_episode_count": 14,
+  "action_shuffled_full_head_test": {
+    "Brier_per_horizon_class": [
+      [
+        0.005605774267059731,
+        0.0030434784354675588,
+        0.008550314045121285
+      ],
+      [
+        0.009398000111352611,
+        0.003104678479035815,
+        0.011986520126530674
+      ],
+      [
+        0.013478413843402051,
+        0.00675795314650176,
+        0.01928141457729736
+      ],
+      [
+        0.024713741395959107,
+        0.02157641419330433,
+        0.03926638519563003
+      ],
+      [
+        0.03581955129028129,
+        0.07110940368573239,
+        0.056821366927165266
+      ],
+      [
+        0.07363521905652759,
+        0.13956194363411814,
+        0.10957122654087693
+      ]
+    ],
+    "mean_Brier_total": 0.10888029982522733,
+    "mean_Brier_goal": 0.02710844999409706,
+    "mean_Brier_contact": 0.04085897859569333,
+    "NLL_per_horizon": [
+      0.0319642719573078,
+      0.047565341818232784,
+      0.07289879352282753,
+      0.15232903437585354,
+      0.2703379791599905,
+      0.5550997270646949
+    ],
+    "mean_NLL": 0.18836585798315117,
+    "five_bin_goal_contact_ECE": [
+      0.020521142357505268,
+      0.05140743975304154
+    ],
+    "support": [
+      {
+        "valid_decisions": 3821,
+        "valid_episodes": 16,
+        "goal_decisions": 30,
+        "contact_decisions": 20
+      },
+      {
+        "valid_decisions": 3780,
+        "valid_episodes": 16,
+        "goal_decisions": 49,
+        "contact_decisions": 40
+      },
+      {
+        "valid_decisions": 3690,
+        "valid_episodes": 16,
+        "goal_decisions": 79,
+        "contact_decisions": 80
+      },
+      {
+        "valid_decisions": 3482,
+        "valid_episodes": 16,
+        "goal_decisions": 111,
+        "contact_decisions": 160
+      },
+      {
+        "valid_decisions": 2933,
+        "valid_episodes": 16,
+        "goal_decisions": 111,
+        "contact_decisions": 251
+      },
+      {
+        "valid_decisions": 1656,
+        "valid_episodes": 16,
+        "goal_decisions": 111,
+        "contact_decisions": 254
+      }
+    ]
+  },
+  "action_shuffling_OOD_not_causal_evidence": true,
+  "blind_action_invariance_all_rows_exact": true,
+  "blind_current_action_weight_columns_exact_initial": true,
+  "full_checkpoint_sha256": "1e1c4c50a418737c5b3c4c4223d8df372330db5132c7567dc55128f8dde85fb8",
+  "blind_checkpoint_sha256": "ae665cf04bbe3200719972f32000736c18005ea9764927eeada252575661fc7f",
+  "action_ranking_gate": false,
+  "six_m_navigation_gate": false,
+  "automatic_Actor_coupling": false,
+  "limitations": [
+    "One trained initialization and previously consumed map/family; no population superiority claim.",
+    "Removing current action does not make physical control irrelevant; state already carries previous controls and motion.",
+    "Observational prediction of a logged continuation does not identify gradients for a different policy.",
+    "No per-action repeated stochastic native outcomes or new safe6m positives were created."
+  ]
+}
