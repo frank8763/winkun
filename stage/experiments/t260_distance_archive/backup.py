@@ -44,6 +44,7 @@ GROUPS = {
     'T283': ['t283_capped_task_balance'],
     'T284': ['t284_feedback_drift'],
     'T285': ['t285_trajectory_constraints'],
+    'T287': ['t287_time_aligned_credit'],
 }
 
 

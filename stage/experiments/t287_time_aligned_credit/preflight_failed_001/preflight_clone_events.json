@@ -1,0 +1,135 @@
+{
+  "events": [
+    {
+      "phase": "live",
+      "accepted": true,
+      "factor": 0.25,
+      "attempts": [
+        {
+          "factor": 1.0,
+          "accept": false,
+          "objective": -0.015539291567479548,
+          "surrogate": -0.01527051248362596,
+          "improvement": 0.005523827205505724,
+          "conditional_k3": 0.0022360417202415377,
+          "max_abs_log_ratio": 1.006883604305786,
+          "balanced_anchor_MSE": 2.5327367438876536e-06,
+          "anchor_max": 0.0088418647646904,
+          "would_pass_T257_function_bounds": true,
+          "native_old_task_guard": null
+        },
+        {
+          "factor": 0.25,
+          "accept": true,
+          "objective": -0.01910987067799767,
+          "surrogate": -0.01909308482368403,
+          "improvement": 0.0019532480949876023,
+          "conditional_k3": 0.00013854721828971824,
+          "max_abs_log_ratio": 0.2294095737049595,
+          "balanced_anchor_MSE": 1.5816181075933855e-07,
+          "anchor_max": 0.0022119879722595215,
+          "would_pass_T257_function_bounds": true,
+          "native_old_task_guard": {
+            "policy_hash": "9dedf148ce070f0d29d17ecd0c787e6463787fc035f0b417aec1024c7e3f5498",
+            "cases": 20,
+            "safe": 20,
+            "all_safe": true,
+            "failed_ids": []
+          }
+        }
+      ],
+      "step": 0,
+      "gradient_norm": 10.261988639831543,
+      "pcgrad_conflicts": 10,
+      "policy_hash": "9dedf148ce070f0d29d17ecd0c787e6463787fc035f0b417aec1024c7e3f5498",
+      "optimizer_hash": "ff992c8c47089e1e77e5e3f774c54055adcfd5bfec822e8e2a2217f99683758d",
+      "fixed_round_balance": {
+        "task_gradient_norms": [
+          41.19388363084275,
+          0.7100998019984153,
+          0.12810320258493896,
+          0.32661834232838693
+        ],
+        "noise_floor": 4.119388363084275e-07,
+        "factors": [
+          1.0,
+          32.0,
+          32.0,
+          32.0
+        ],
+        "common_scale": 0.816154922129816,
+        "original_PCGrad_norm": 10.262011617976821,
+        "unscaled_weighted_PCGrad_norm": 12.573607460697964,
+        "rescaled_weighted_PCGrad_norm": 10.262011302670478,
+        "weights_frozen_within_round": true,
+        "missing_or_roundoff_signal_not_amplified": true
+      }
+    },
+    {
+      "phase": "shadow",
+      "accepted": true,
+      "factor": 0.25,
+      "attempts": [
+        {
+          "factor": 1.0,
+          "accept": false,
+          "objective": -0.015539291567479548,
+          "surrogate": -0.01527051248362596,
+          "improvement": 0.005523827205505724,
+          "conditional_k3": 0.0022360417202415377,
+          "max_abs_log_ratio": 1.006883604305786,
+          "balanced_anchor_MSE": 2.5327367438876536e-06,
+          "anchor_max": 0.0088418647646904,
+          "would_pass_T257_function_bounds": true,
+          "native_old_task_guard": null
+        },
+        {
+          "factor": 0.25,
+          "accept": true,
+          "objective": -0.01910987067799767,
+          "surrogate": -0.01909308482368403,
+          "improvement": 0.0019532480949876023,
+          "conditional_k3": 0.00013854721828971824,
+          "max_abs_log_ratio": 0.2294095737049595,
+          "balanced_anchor_MSE": 1.5816181075933855e-07,
+          "anchor_max": 0.0022119879722595215,
+          "would_pass_T257_function_bounds": true,
+          "native_old_task_guard": {
+            "policy_hash": "9dedf148ce070f0d29d17ecd0c787e6463787fc035f0b417aec1024c7e3f5498",
+            "cases": 20,
+            "safe": 20,
+            "all_safe": true,
+            "failed_ids": []
+          }
+        }
+      ],
+      "step": 0,
+      "gradient_norm": 10.261988639831543,
+      "pcgrad_conflicts": 10,
+      "policy_hash": "9dedf148ce070f0d29d17ecd0c787e6463787fc035f0b417aec1024c7e3f5498",
+      "optimizer_hash": "ff992c8c47089e1e77e5e3f774c54055adcfd5bfec822e8e2a2217f99683758d",
+      "fixed_round_balance": {
+        "task_gradient_norms": [
+          41.19388363084275,
+          0.7100998019984153,
+          0.12810320258493896,
+          0.32661834232838693
+        ],
+        "noise_floor": 4.119388363084275e-07,
+        "factors": [
+          1.0,
+          32.0,
+          32.0,
+          32.0
+        ],
+        "common_scale": 0.816154922129816,
+        "original_PCGrad_norm": 10.262011617976821,
+        "unscaled_weighted_PCGrad_norm": 12.573607460697964,
+        "rescaled_weighted_PCGrad_norm": 10.262011302670478,
+        "weights_frozen_within_round": true,
+        "missing_or_roundoff_signal_not_amplified": true
+      }
+    }
+  ],
+  "synthetic_acceptance_not_native20": true
+}

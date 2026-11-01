@@ -35,7 +35,7 @@ def main():
         protected.update(p['input_hashes']);protected.update(p.get('historical_training_logs',[]))
     records=[];compressed={};manifest=[]
     for directory in sorted((ROOT/'stage/runs').iterdir()):
-        if not directory.is_dir() or not directory.name[1:4].isdigit() or not 174<=int(directory.name[1:4])<=216 and not directory.name.startswith('t194_'):continue
+        if not directory.is_dir() or not directory.name[1:4].isdigit() or not 174<=int(directory.name[1:4])<=216 or directory.name.startswith('t194_'):continue
         for f in sorted(directory.rglob('*')):
             if not f.is_file() or f.suffix!='.pt' or f.stat().st_size<2*1024**2 or str(f) in protected:continue
             dest=f.with_suffix(f.suffix+'.gz')
@@ -49,6 +49,10 @@ def main():
                 encoded_path=str(dest.relative_to(ROOT)),encoded_bytes=len(z),encoded_sha256=sha(z)))
     assert len(records)==43 and sum(r['original_bytes'] for r in records)==224224131
     assert min(before+r['encoded_bytes'] for r in records)<1024**3
+    if sys.argv[1:]==['--preflight']:
+        write(DOC/'T286_ZERO_STEP_PREFLIGHT.json',dict(state='PASS',members=len(records),original_bytes=sum(r['original_bytes'] for r in records),encoded_bytes=sum(r['encoded_bytes'] for r in records),physics_steps=0,optimizer_calls=0,remote_uploads=0,files_encoded=0,all_T285_inputs_excluded=True,T194_excluded=True))
+        fcntl.flock(lock,fcntl.LOCK_UN);lock.close();print('T286 selection preflight PASS zero mutations',flush=True);return
+    assert not sys.argv[1:]
     mp=DOC/'source_manifest_T286.json';write(mp,dict(scope='Ended Stage T174–T216 cold checkpoints excluding T194/current inputs; full originals before reversible gzip, no Phase',files=manifest))
     release=api('GET','releases/tags/stage-distance-2026-11-01')
     assets=[]

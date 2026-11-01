@@ -49,3 +49,9 @@ T284 只恢复一个已拒绝候选并精确分解两类差异，先检验这个
 [Adam-NSCL, CVPR 2021](https://openaccess.thecvf.com/content/CVPR2021/html/Wang_Training_Networks_in_Null_Space_of_Feature_Covariance_for_Continual_CVPR_2021_paper.html)明确将 Adam 生成的参数更新投影到历史层输入特征协方差的近似零空间；[作者仓库](https://github.com/ShipengWang/Adam-NSCL)提供实现。本轮核对论文摘要/方法首页及作者 README，未执行外部代码。其视觉分类结果不直接证明 Stage 闭环效果，但足以排除“Adam 后投影本身原创”的叙事。
 
 [Fisher-Orthogonal Projected Natural Gradient, 2026预印本](https://arxiv.org/abs/2601.12816)也提出 Fisher 几何下的保持约束；本轮仅核对摘要，不能声称实现/理论已验证。新的候选必须围绕闭环数据如何选择约束、适应能力与保持之间的实测权衡建立独立证据，不能只是换一个投影度量。
+
+## T285负结果与时间信用候选
+
+T285两个18名义行约束（有效秩18/17）将选中状态误差降至5.2e−7/6.8e−7，但关键旧五米仍接触；0新Actor/Adam训练。不得把闭环证据选择已经有效作为论文主张，也不加锚点/秩网格。下一T287独立检验时间对齐reward-to-go的同行LOO基线，保持现有真实RL架构/接受门槛，四轮64上限与历史T283两轮32不同，只有前两轮可作阶段描述，不能夸大为完整匹配单因素试验。
+
+[Back to Basics: Revisiting REINFORCE Style Optimization, 2024](https://arxiv.org/abs/2402.14740)为RLOO已有近邻，本文任务是LLM反馈优化，不能直接当作导航有效性证据；[Munos: Policy Gradient in Continuous Time, JMLR 2006](https://www.jmlr.org/papers/v7/munos06b.html)表明物理时间梯度研究已有长期基础。本轮仅核对两者论文页/摘要，不声称复现。物理时间对齐、reward-to-go或独立baseline本身均不能包装原创。T287完整算法还含批次依赖RMS、PPO剪裁、PCGrad和接受门槛，不以未归一化基线的零期望score恒等式宣称整体无偏或普遍降方差。
