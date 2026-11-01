@@ -1,3 +1,5 @@
+2026-11-01 10:34：T259唯一六米管线已实际运行，前2轮完成4真实保留+4shadow精确，固定12旧任务接受检查通过、原8中心保持；新6m最终54/16fresh/独立复验尚未执行，未进7m。初16精确重建T257非新独立数据，6m探索1条到达不可称确定性稳定。原绝对截止11:37:59/末1000s验收与合并3100命令90M步64MiB/global1GiB/free40GiB不变，不改训练协议不重复启动。GitHub本机授权已恢复，源树f1e325f已同步远端3691f129e7ffb7a303c19fb6b60d79441d2709e3并完整root-tree核验；T256–T258已结束证据归档正在核验，T259不备份活动文件。详见long_distance_20261101/INTERIM_1034.md。
+
 # MK-mini Stage 工作仓库
 
 - T258启动入口缺time/os/traceback，time处在任何Actor/worker/仿真/导航更新前NameError退出；原源码/日志/0物理0导航优化器收据保留，不重启T258。T259独立工程恢复已注册，显式stdlib导入及主函数/嵌套全局名称预检PASS，合成native拒绝Actor+Adam回退/中断整轮回退/密度shadow一致PASS；合成guard不是实际12旧任务验收。相同科学方法/父模型/seed/2轮5.5+4轮6m/MC条件AR/PCGrad/学习率/软保持/原生12旧任务候选接受；首16须精确复现T257并标非独立，最终仍275旧回归+54六米开发+16fresh留出/精确复验，未通过不进7m训练。T258+T259合并3100命令/90M物理/原T258启动+5400秒绝对截止/64MiB（扣T258279025B，T25963.7339MiB）；global1GiB/free40GiB不变。准备唯一启动T259，先查t259_closed_loop_recovery launch/status，旧目录不重启；模型/失败保留，Stage与Phase隔离，无规划器/路点/运行时老师或路由。T257最终六米1/54旧275/275；CLI401/连接器UnknownTool，源本地提交和证据留存、增量远端未同步。详见long_distance_20261101/T259_ENTRY_RECOVERY.md。
