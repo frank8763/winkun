@@ -1,0 +1,15 @@
+{
+  "scope": "Posthoc read-only data membership check, not new training or native experiment",
+  "retention_cases": 211,
+  "retention_rows": 28629,
+  "dev24_in_retention": true,
+  "dev24_rows": 199,
+  "dev24_state_chain_exact_T284": true,
+  "dev24_task_rows": 5419,
+  "per_step_expected_dev24_rows_under4_task_sampling": 0.14689057021590698,
+  "hold06_in_retention": false,
+  "native_steps": 0,
+  "optimizer_calls": 0,
+  "retention_file_sha256": "b5f050bee72164f883a9a3c76624e50fa0755ab6ff53bbd7a0631470787e5df0",
+  "caveat": "Do not falsely claim the critical dev24 was absent from replay: all211 development states are present. Sampling is task-balanced32rows, not dedicated equal-case or worstcase protection. Membership/proportion does not prove the unique root cause; hold06 was guard-consumed but is not a retention case."
+}
