@@ -64,6 +64,7 @@ GROUPS = {
     'T305R': ['t305_goal_contract_recovery'],
     'T306': ['t306_reversible_cold_codec'],
     'T307': ['t307_iid_goal_contract'],
+    'T308': ['t308_iid_native_goal_value'],
 }
 
 

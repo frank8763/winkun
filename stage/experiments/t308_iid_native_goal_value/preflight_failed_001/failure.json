@@ -1,0 +1,10 @@
+{
+  "state": "FAILED_BEFORE_TORCH_IMPORT_COMPLETED",
+  "exit_code": 134,
+  "native_steps": 0,
+  "optimizer_calls": 0,
+  "Actor_updates": 0,
+  "message": "c10::ApproximateClockToUnixTimeConverter measurePair: fast_1 >= fast_0 getCount is non-monotonic during torch library import",
+  "source": "Observed full C++ traceback in preflight process 43531 output, not a navigation failure",
+  "recovery": "Pin CPU0 before Python/torch import with taskset. Preserve source/protocol. No science or tolerance change."
+}
