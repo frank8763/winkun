@@ -52,6 +52,7 @@ GROUPS = {
     'T292': ['t292_crossfit_value'],
     'T293': ['t293_contrastive_action'],
     'T294': ['t294_paired_action_value'],
+    'T295': ['t295_hindsight_support'],
 }
 
 
