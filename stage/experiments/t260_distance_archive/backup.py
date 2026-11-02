@@ -58,6 +58,7 @@ GROUPS = {
     'T299': ['t299_conditional_goal_likelihood'],
     'T301': ['t301_right_success_recovery'],
     'T302': ['t302_balanced_bridge_learning'],
+    'T303': ['t303_feedback_differentials'],
 }
 
 
