@@ -1,0 +1,43 @@
+{
+  "state": "POSTRUN_EVIDENCE_RECONCILED",
+  "physics_added": 0,
+  "navigation_Actor_updates_added": 0,
+  "disposable_optimizer_reconstruction_calls": 1000,
+  "all_processes_absent": true,
+  "all_original_sources_models_and_payload_SHA_verified": true,
+  "total_physics_from_raw": 5364680,
+  "total_commands_from_raw": 351,
+  "full120_training_payloads": 0,
+  "complete_exact_replays": 0,
+  "retained_Actor_Adam_rounds_reconstructed": [],
+  "all_final_Actor_Adam_state_hashes_reconstructed_exact": true,
+  "supervised_500_live500_shadow_reconstructed_exact": true,
+  "safe_T255_unchanged": true,
+  "arms": {
+    "self_goal_transfer": {
+      "accepted_RL_updates": 0,
+      "completed_rounds": 0,
+      "training_n": 0,
+      "training_safe": 0,
+      "old_n": 275,
+      "old_safe": 267,
+      "six_m_n": 54,
+      "six_m_safe": 2,
+      "heldout_n": 0,
+      "independent_reload_n": 0,
+      "gate": false,
+      "export": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t298_self_goal_transfer/self_goal_transfer_final_checkpoint.pt.gz",
+        "sha256": "6e332f6c65a980fe738f66bfb21a3f2b0e930b93e7808350374c8b2eae49ab95",
+        "bytes": 2192786,
+        "policy_hash": "f7af27af0a92c57e5b17e44dd89a8ceb54b171a1bbbb819470d3193b5296676e",
+        "optimizer_hash": "881489e608a38e54726d0751cd52ed648891a06e8603b81357fc9935f73c3d76"
+      }
+    }
+  },
+  "own_bytes": 4589034,
+  "global_bytes": 1059946989,
+  "summary_sha256": "de73276893a6f492564d5f850237760f4fcfd882a68f5419749314a25ea9ae33",
+  "audit_epoch": 1793596762.760523,
+  "attribution": "T298 independently bounded composite engineering pilot, not novel GCSL/HPG or pureRL. FromsafeT255 fullActor120hiddenreset; fixed8 T295 ownbehavior successful prefixes under2fixedauxiliarygoals, complete13goalhistory/107nongoal/firsthit true data verified.500supervised live+500matchedshadow Adam, equal8wholetrajectory sampling8rows each plus old8tasks4anchors each; loss auxiliary modeactionMSE+100oldmodeMSE, original baseLR3e-6/residual1e-4/gradclip1. Supervised Adam discarded, freshRLAdam; no importanceweight truncation/offpolicy PPO. Explicit supervisor fitMSE<=half baseline AND true old20 allsafe AND twoauxiliarycenter autonomoussafeGOAL before any newRL; failure stopsacquisition, still exportcandidate/fullold275six54. OneRLround atmost16new onpolicy conditionalAR episodes+16twelvearraynativeexactreplays,1live+1shadowRLAdam proposals/actualold20hardguard/numerictrust/PCGrad32/soft100/timealignedRLOO/originaleta.1 rewards/LR/factors unchanged. Single policy deploy no auxgoalrouting/waypoints/maps/planner/teacher/Phase; auxiliarygoals are separate training and diagnostic tasks, never runtime finalgoal switching. First16 aftersupervision newpolicydata, historical same seed doesnot makeoldpolicy behavior onpolicy; logp/mu recomputed batch1 and acceptedsourceSHA. Original nearestcandidatecontrol T287consumed historical notmatched concurrentcausal proof; supervised+RLeffects confoundedpilot. Finalold275 and6m54 regardlesspretrain gate unlessphysical/adminfailure, missing/censored/invalidseparate; allsafe then16fresh78independentnative reload, no7/8trainingorpromotioninthispilot. Fixed500supervised/1RLround/1proposal/no seed/noise/lossweight/model/round grids. 600allcommands16.8Mallphysical3600s learning2200s/final1400,own17MiB/global1GiB/free40GiB;16fullstatechain192KiB+524compact10KiB(fivearrays,rewards exactlyderivedenv-eta*aux)+7.25MiBActorAdam+1.5625MiBmetadata. StoreonlyfinalActorAdamwithsupervisedhashhistory, duplicate supervised model fullyreconstructedpostrun, up to1002disposableauditcalls. Zero-nativepreflight8disposableoptimizermax/shadow/rollback/codec/globalnames/resources; registersourcefullrootremote beforeuniquelaunch, nativeexclusive noexternalrunswrites/sourcesync. Endallprocessesabsent auditallraw/partial/counts/source/ActorAdam and exact500supervisedpair+2RLpair reconstruction, fullRAMbinaryremotememberSHA, sourcesync. SafeT255/HDvideos/originalfailureskept; all supervisedupdates reportedseparatelyfromRL. No safetycertificate/originalalgorithmclaim or auxiliaries/centers replacing6m stability."
+}

@@ -1,0 +1,362 @@
+{
+  "scope": "Posthoc T298 diagnostic, no preregistered screen changed, no extra native or optimizer, no new model training; clipping is one supervision optimization defect, not sufficient explanation of all6m failures.",
+  "native_steps": 0,
+  "optimizer_calls": 0,
+  "Actor_updates": 0,
+  "input_protocol_sha256": "b5a00309f312917592d3865c0ec80acf352d1c8bf1d4f7f76a1dc62fac731919",
+  "input_final_checkpoint_sha256": "6e332f6c65a980fe738f66bfb21a3f2b0e930b93e7808350374c8b2eae49ab95",
+  "source_sha256": "e54b7f9b0c98ba79030998b4e97cbb00d0bc45fe02e53b48bc5ea355df95132e",
+  "reports": [
+    {
+      "policy": "safeT255",
+      "policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54",
+      "rows": [
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s0",
+          "clipped_fraction_by_drive_steer": [
+            0.9922480583190918,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.24807000160217285,
+            0.025721309706568718
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.9060296416282654,
+          "mode_output_gradient_norm": 3.6435952186584473,
+          "raw_output_gradient_norm": 15.603025436401367,
+          "conditional_AR_NLL_output_gradient_norm": 30834.3125,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 128,
+          "total_mode_clipped_coordinates": 128,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": 0.6677318811416626,
+          "raw_drive_max": 1.216213345527649,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s1",
+          "clipped_fraction_by_drive_steer": [
+            0.9932432174682617,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.3148769736289978,
+            0.012105915695428848
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.9628481864929199,
+          "mode_output_gradient_norm": 2.6817190647125244,
+          "raw_output_gradient_norm": 17.867897033691406,
+          "conditional_AR_NLL_output_gradient_norm": 35157.65625,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 147,
+          "total_mode_clipped_coordinates": 147,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": 0.6677318811416626,
+          "raw_drive_max": 1.206109642982483,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s2",
+          "clipped_fraction_by_drive_steer": [
+            0.991525411605835,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.18526263535022736,
+            0.023572703823447227
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.8871142268180847,
+          "mode_output_gradient_norm": 3.335742712020874,
+          "raw_output_gradient_norm": 13.526741027832031,
+          "conditional_AR_NLL_output_gradient_norm": 31668.279296875,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 117,
+          "total_mode_clipped_coordinates": 117,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": 0.6677318811416626,
+          "raw_drive_max": 1.2155652046203613,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s3",
+          "clipped_fraction_by_drive_steer": [
+            0.9918032884597778,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.2346939593553543,
+            0.04339812323451042
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.8435468673706055,
+          "mode_output_gradient_norm": 4.607828617095947,
+          "raw_output_gradient_norm": 15.164562225341797,
+          "conditional_AR_NLL_output_gradient_norm": 35368.23828125,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 121,
+          "total_mode_clipped_coordinates": 121,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": 0.6677318811416626,
+          "raw_drive_max": 1.212599754333496,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s0",
+          "clipped_fraction_by_drive_steer": [
+            0.6229507923126221,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.37604761123657227,
+            0.30294254422187805
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.2417275607585907,
+          "mode_output_gradient_norm": 15.850915908813477,
+          "raw_output_gradient_norm": 18.785558700561523,
+          "conditional_AR_NLL_output_gradient_norm": 63375.73828125,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 76,
+          "total_mode_clipped_coordinates": 76,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": -0.0981554239988327,
+          "raw_drive_max": 1.2053663730621338,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s1",
+          "clipped_fraction_by_drive_steer": [
+            0.5923076868057251,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.45499512553215027,
+            0.3400591313838959
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.22020691633224487,
+          "mode_output_gradient_norm": 17.955181121826172,
+          "raw_output_gradient_norm": 20.877723693847656,
+          "conditional_AR_NLL_output_gradient_norm": 64278.1796875,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 77,
+          "total_mode_clipped_coordinates": 77,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": -0.0981554239988327,
+          "raw_drive_max": 1.2061376571655273,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s2",
+          "clipped_fraction_by_drive_steer": [
+            0.6206896305084229,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.35405784845352173,
+            0.3021399676799774
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.2196160852909088,
+          "mode_output_gradient_norm": 15.414539337158203,
+          "raw_output_gradient_norm": 17.950687408447266,
+          "conditional_AR_NLL_output_gradient_norm": 68946.75,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 72,
+          "total_mode_clipped_coordinates": 72,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": -0.0981554239988327,
+          "raw_drive_max": 1.183006763458252,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s3",
+          "clipped_fraction_by_drive_steer": [
+            0.5967742204666138,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.4200911223888397,
+            0.306518018245697
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.21798281371593475,
+          "mode_output_gradient_norm": 16.788015365600586,
+          "raw_output_gradient_norm": 19.47791290283203,
+          "conditional_AR_NLL_output_gradient_norm": 64717.953125,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 74,
+          "total_mode_clipped_coordinates": 74,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": -0.0981554239988327,
+          "raw_drive_max": 1.174622654914856,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        }
+      ]
+    },
+    {
+      "policy": "T298_final",
+      "policy_hash": "f7af27af0a92c57e5b17e44dd89a8ceb54b171a1bbbb819470d3193b5296676e",
+      "rows": [
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s0",
+          "clipped_fraction_by_drive_steer": [
+            0.9224806427955627,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.24557948112487793,
+            0.02352745831012726
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.8247486352920532,
+          "mode_output_gradient_norm": 4.933074951171875,
+          "raw_output_gradient_norm": 13.433174133300781,
+          "conditional_AR_NLL_output_gradient_norm": 33278.73828125,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 119,
+          "total_mode_clipped_coordinates": 119,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": 0.6171962022781372,
+          "raw_drive_max": 1.1574687957763672,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s1",
+          "clipped_fraction_by_drive_steer": [
+            0.9189189076423645,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.3122006356716156,
+            0.010114035569131374
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.8931688666343689,
+          "mode_output_gradient_norm": 4.514915943145752,
+          "raw_output_gradient_norm": 15.263350486755371,
+          "conditional_AR_NLL_output_gradient_norm": 37246.76171875,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 136,
+          "total_mode_clipped_coordinates": 136,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": 0.6171962022781372,
+          "raw_drive_max": 1.1305171251296997,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s2",
+          "clipped_fraction_by_drive_steer": [
+            0.9745762944221497,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.18519534170627594,
+            0.02363049052655697
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.8623302578926086,
+          "mode_output_gradient_norm": 3.683685064315796,
+          "raw_output_gradient_norm": 11.771240234375,
+          "conditional_AR_NLL_output_gradient_norm": 34834.98046875,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 115,
+          "total_mode_clipped_coordinates": 115,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": 0.6171962022781372,
+          "raw_drive_max": 1.1610325574874878,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s3",
+          "clipped_fraction_by_drive_steer": [
+            0.9508196711540222,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.2327413111925125,
+            0.040477558970451355
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.8182333707809448,
+          "mode_output_gradient_norm": 4.922914505004883,
+          "raw_output_gradient_norm": 13.25222110748291,
+          "conditional_AR_NLL_output_gradient_norm": 37106.05859375,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 116,
+          "total_mode_clipped_coordinates": 116,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": 0.6171962022781372,
+          "raw_drive_max": 1.1555169820785522,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s0",
+          "clipped_fraction_by_drive_steer": [
+            0.06557376682758331,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.1347307562828064,
+            0.08806536346673965
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.018037859350442886,
+          "mode_output_gradient_norm": 10.332634925842285,
+          "raw_output_gradient_norm": 10.447295188903809,
+          "conditional_AR_NLL_output_gradient_norm": 64129.421875,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 8,
+          "total_mode_clipped_coordinates": 8,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": -0.09656556695699692,
+          "raw_drive_max": 1.0498539209365845,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s1",
+          "clipped_fraction_by_drive_steer": [
+            0.05384615436196327,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.1511899083852768,
+            0.09414481371641159
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.013681524433195591,
+          "mode_output_gradient_norm": 11.217336654663086,
+          "raw_output_gradient_norm": 11.308241844177246,
+          "conditional_AR_NLL_output_gradient_norm": 65509.83984375,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 7,
+          "total_mode_clipped_coordinates": 7,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": -0.09656556695699692,
+          "raw_drive_max": 1.0413284301757812,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s2",
+          "clipped_fraction_by_drive_steer": [
+            0.07758620381355286,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.126556858420372,
+            0.0916019156575203
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.013917705044150352,
+          "mode_output_gradient_norm": 9.990839004516602,
+          "raw_output_gradient_norm": 10.081820487976074,
+          "conditional_AR_NLL_output_gradient_norm": 71918.8671875,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 9,
+          "total_mode_clipped_coordinates": 9,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": -0.09656556695699692,
+          "raw_drive_max": 1.0760953426361084,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s3",
+          "clipped_fraction_by_drive_steer": [
+            0.07258064299821854,
+            0.0
+          ],
+          "MSE_by_drive_steer": [
+            0.14194901287555695,
+            0.08241839706897736
+          ],
+          "fraction_regression_squared_error_at_zero_output_gradient": 0.010985552333295345,
+          "mode_output_gradient_norm": 10.491124153137207,
+          "raw_output_gradient_norm": 10.57544231414795,
+          "conditional_AR_NLL_output_gradient_norm": 67328.0390625,
+          "mode_clipped_coordinates_with_nonzero_conditional_AR_NLL_gradient": 9,
+          "total_mode_clipped_coordinates": 9,
+          "conditional_AR_NLL_finite": true,
+          "raw_drive_min": -0.09656556695699692,
+          "raw_drive_max": 1.0765050649642944,
+          "scope": "Derivative with respect to network raw outputs, not full parameter gradient or causal navigation attribution. ConditionalAR loglikelihood includes previous-mean derivative, not HPG or an IS estimator. It demonstrates available gradients, not a trained remedy."
+        }
+      ]
+    }
+  ],
+  "synthetic_mode_autograd": 0.0,
+  "synthetic_mode_finite_difference": 0.0,
+  "synthetic_raw_finite_difference": 1.6000000000127022
+}

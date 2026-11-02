@@ -1,0 +1,143 @@
+{
+  "state": "RAW_COUNTS_RECONCILED",
+  "counts": [
+    {
+      "role": "old20_guard",
+      "executed": 20,
+      "valid_complete": 20,
+      "safe_goal": 18,
+      "contact": 2,
+      "timeout": 0,
+      "censored": 0,
+      "invalid": 0,
+      "not_executed": 0
+    },
+    {
+      "role": "auxiliary_centers",
+      "executed": 2,
+      "valid_complete": 2,
+      "safe_goal": 1,
+      "contact": 1,
+      "timeout": 0,
+      "censored": 0,
+      "invalid": 0,
+      "not_executed": 0
+    },
+    {
+      "role": "old_regression",
+      "executed": 275,
+      "valid_complete": 275,
+      "safe_goal": 267,
+      "contact": 5,
+      "timeout": 3,
+      "censored": 0,
+      "invalid": 0,
+      "not_executed": 0
+    },
+    {
+      "role": "development",
+      "executed": 54,
+      "valid_complete": 54,
+      "safe_goal": 2,
+      "contact": 27,
+      "timeout": 25,
+      "censored": 0,
+      "invalid": 0,
+      "not_executed": 0
+    },
+    {
+      "role": "heldout",
+      "executed": 0,
+      "valid_complete": 0,
+      "safe_goal": 0,
+      "contact": 0,
+      "timeout": 0,
+      "censored": 0,
+      "invalid": 0,
+      "not_executed": 16
+    },
+    {
+      "role": "independent_reload",
+      "executed": 0,
+      "valid_complete": 0,
+      "safe_goal": 0,
+      "contact": 0,
+      "timeout": 0,
+      "censored": 0,
+      "invalid": 0,
+      "not_executed": 78
+    }
+  ],
+  "successful_six_ids": [
+    "dev6_RIGHT_18",
+    "dev6_RIGHT_21"
+  ],
+  "RIGHT21_historical_matching_native_records": [
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t283_capped_task_balance/cases.jsonl.gz",
+      "record_id": "capped_task_balance_dev_dev6_RIGHT_21",
+      "safe": false
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t287_time_aligned_credit/cases.jsonl.gz",
+      "record_id": "time_aligned_credit_dev_dev6_RIGHT_21",
+      "safe": false
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t280_local_cost/cases.jsonl.gz",
+      "record_id": "original_MC_dev_dev6_RIGHT_21",
+      "safe": false
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t280_local_cost/cases.jsonl.gz",
+      "record_id": "bounded_endpoint_cost_dev_dev6_RIGHT_21",
+      "safe": false
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t268_storage_and_frozen_gate/development.jsonl.gz",
+      "record_id": "dev6_dev6_RIGHT_21",
+      "safe": false
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t259_closed_loop_recovery/development.jsonl.gz",
+      "record_id": "newdev_dev6_RIGHT_21",
+      "safe": false
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t291_hard_guard_ablation/cases.jsonl.gz",
+      "record_id": "time_aligned_credit_dev_dev6_RIGHT_21",
+      "safe": false
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t257_distance_policy_gradient/development.jsonl.gz",
+      "record_id": "newdev_dev6_RIGHT_21",
+      "safe": false
+    }
+  ],
+  "historical_scan_scope": "Only Stage T256-T296 native JSONL records with explicit dev6_RIGHT_21/source_reset_id.8 prior matches0safe. Not a search of all original chats or differently named posefamilies.",
+  "supervised_MSE_relative_reduction": 0.49699667336651465,
+  "safe_T255_and_HD_video_original_SHA_verified": {
+    "stage/runs/t255_overnight/s2_reset_final_checkpoint.pt.gz": "63e63e2b444867b26622a2ab0f0c4227bc38d48a7cd2b5a3b378d9b0266006df",
+    "stage/runs/t288_five_metre_presentation/stage_5m_left_1080p.mp4": "eb57d8825106a14baa37812fcbe0d230813643c7911293d8549bf4ced960772c",
+    "stage/runs/t288_five_metre_presentation/stage_5m_right_1080p.mp4": "fc7fe3ae7b58fedfda179ff7db918625404f61aa8dbf7bafa4ef607cda2d0a68"
+  },
+  "all_native_parent_workers_watchdog_inhibitor_absent": [
+    426491,
+    426617,
+    426618,
+    426619,
+    426621,
+    426487
+  ],
+  "global_logical_bytes": 1059946989,
+  "global_MiB": 1010.844220161438,
+  "free_GiB": 209.53914260864258,
+  "new_nav_training_samples": 0,
+  "new_RL_optimizer_calls": 0,
+  "supervised_live": 500,
+  "supervised_shadow": 500,
+  "postrun_disposable_reconstruction_calls": 1000,
+  "preflight_disposable_calls": 8,
+  "full_275_54_done": true,
+  "fresh16_reload78_NOT_EXECUTED": true
+}
