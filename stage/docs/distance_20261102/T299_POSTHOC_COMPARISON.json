@@ -1,0 +1,1024 @@
+{
+  "scope": "Posthoc fixed8 consumed auxiliary-data comparison, no new optimizer/native, independent exact gradient-scale recomputation. Conditional/marginal/MSE changes descriptive, not pre-registered new selection criteria or navigation causality.",
+  "native_steps": 0,
+  "optimizer_calls": 0,
+  "navigation_updates": 0,
+  "gradient_scale_recomputed_exact": {
+    "rule": "Frozen safeT255 full8trajectory-equal mean-gradient norm ratio: norm(clipped_mode_MSE)/norm(conditional_AR_NLL). Fixed once, not fit to native outcome; no clipping or adaptive rescale.",
+    "factor": 0.0019520158667963997,
+    "objectives": [
+      {
+        "objective": "clipped_mode_MSE",
+        "gradient_norm": 6.633949636255763,
+        "gradient_sha256": "d15c267b13bb30e0e5ab095095b7ff5c2c5d1c37c3b05d1132aa4a152436a4b9"
+      },
+      {
+        "objective": "conditional_AR_NLL",
+        "gradient_norm": 3398.512147927997,
+        "gradient_sha256": "e2d57f101d385a2bfacbe7c751353132c527bd89e5929296fd94f5469ad943aa"
+      }
+    ],
+    "native_steps": 0,
+    "optimizer_calls": 0,
+    "source_policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54"
+  },
+  "source_model_SHA": {
+    "T298": "6e332f6c65a980fe738f66bfb21a3f2b0e930b93e7808350374c8b2eae49ab95",
+    "T299": "b15cddbbf5914ef5187ce221082c0e6cdbe3608b0f8a1ff1177f8fefa95f5751"
+  },
+  "metrics": [
+    {
+      "policy": "safeT255",
+      "policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54",
+      "trajectory_equal_MSE": 0.24653456173837185,
+      "trajectory_equal_conditional_NLL": 239.12883421949775,
+      "trajectory_equal_marginal_NLL": 259.7960094431217,
+      "rows": [
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s0",
+          "MSE": 0.13689564168453217,
+          "MSE_drive_steer": [
+            0.24807000160217285,
+            0.025721309706568718
+          ],
+          "conditional_NLL": 96.3076262036017,
+          "marginal_NLL": 174.867527108785,
+          "clipped_drive_steer_fraction": [
+            0.9922480583190918,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.4811873435974121,
+            0.12945212423801422
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s1",
+          "MSE": 0.16349145770072937,
+          "MSE_drive_steer": [
+            0.3148769736289978,
+            0.012105915695428848
+          ],
+          "conditional_NLL": 98.06072065227497,
+          "marginal_NLL": 201.38099734940016,
+          "clipped_drive_steer_fraction": [
+            0.9932432174682617,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.5454769730567932,
+            0.08629544824361801
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s2",
+          "MSE": 0.10441766679286957,
+          "MSE_drive_steer": [
+            0.18526263535022736,
+            0.023572703823447227
+          ],
+          "conditional_NLL": 111.89310790539247,
+          "marginal_NLL": 139.85136541253064,
+          "clipped_drive_steer_fraction": [
+            0.991525411605835,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.41278672218322754,
+            0.12255924940109253
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s3",
+          "MSE": 0.1390460580587387,
+          "MSE_drive_steer": [
+            0.2346939593553543,
+            0.04339812323451042
+          ],
+          "conditional_NLL": 122.86702327159395,
+          "marginal_NLL": 177.00412128845375,
+          "clipped_drive_steer_fraction": [
+            0.9918032884597778,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.4606378972530365,
+            0.15009160339832306
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s0",
+          "MSE": 0.33949509263038635,
+          "MSE_drive_steer": [
+            0.37604761123657227,
+            0.30294254422187805
+          ],
+          "conditional_NLL": 354.83107313615875,
+          "marginal_NLL": 331.638572812986,
+          "clipped_drive_steer_fraction": [
+            0.6229507923126221,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.5682914853096008,
+            0.4575790762901306
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s1",
+          "MSE": 0.39752712845802307,
+          "MSE_drive_steer": [
+            0.45499512553215027,
+            0.3400591313838959
+          ],
+          "conditional_NLL": 345.7855549892418,
+          "marginal_NLL": 384.23260646607014,
+          "clipped_drive_steer_fraction": [
+            0.5923076868057251,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.6198914647102356,
+            0.4972430169582367
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s2",
+          "MSE": 0.3280988931655884,
+          "MSE_drive_steer": [
+            0.35405784845352173,
+            0.3021399676799774
+          ],
+          "conditional_NLL": 426.5258434596898,
+          "marginal_NLL": 319.92075126550395,
+          "clipped_drive_steer_fraction": [
+            0.6206896305084229,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.5377660989761353,
+            0.4663343131542206
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s3",
+          "MSE": 0.3633045554161072,
+          "MSE_drive_steer": [
+            0.4200911223888397,
+            0.306518018245697
+          ],
+          "conditional_NLL": 356.75972413802856,
+          "marginal_NLL": 349.47213384124404,
+          "clipped_drive_steer_fraction": [
+            0.5967742204666138,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.583102285861969,
+            0.46514013409614563
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "T298",
+      "policy_hash": "f7af27af0a92c57e5b17e44dd89a8ceb54b171a1bbbb819470d3193b5296676e",
+      "trajectory_equal_MSE": 0.12400771025568247,
+      "trajectory_equal_conditional_NLL": 218.5172868595697,
+      "trajectory_equal_marginal_NLL": 118.57285321408533,
+      "rows": [
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s0",
+          "MSE": 0.134553462266922,
+          "MSE_drive_steer": [
+            0.24557948112487793,
+            0.02352745831012726
+          ],
+          "conditional_NLL": 95.74622478317852,
+          "marginal_NLL": 136.1092928839033,
+          "clipped_drive_steer_fraction": [
+            0.9224806427955627,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.4790978729724884,
+            0.1216321662068367
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s1",
+          "MSE": 0.16115733981132507,
+          "MSE_drive_steer": [
+            0.3122006356716156,
+            0.010114035569131374
+          ],
+          "conditional_NLL": 96.81117252029827,
+          "marginal_NLL": 153.36510429734852,
+          "clipped_drive_steer_fraction": [
+            0.9189189076423645,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.5429505109786987,
+            0.0810619667172432
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s2",
+          "MSE": 0.10441291332244873,
+          "MSE_drive_steer": [
+            0.18519534170627594,
+            0.02363049052655697
+          ],
+          "conditional_NLL": 112.84633456295123,
+          "marginal_NLL": 112.0894726328849,
+          "clipped_drive_steer_fraction": [
+            0.9745762944221497,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.41289928555488586,
+            0.12652628123760223
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s3",
+          "MSE": 0.13660944998264313,
+          "MSE_drive_steer": [
+            0.2327413111925125,
+            0.040477558970451355
+          ],
+          "conditional_NLL": 117.92157395863642,
+          "marginal_NLL": 142.08152378598925,
+          "clipped_drive_steer_fraction": [
+            0.9508196711540222,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.45852699875831604,
+            0.15490779280662537
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s0",
+          "MSE": 0.11139806360006332,
+          "MSE_drive_steer": [
+            0.1347307562828064,
+            0.08806536346673965
+          ],
+          "conditional_NLL": 312.1834965490746,
+          "marginal_NLL": 99.11958986796311,
+          "clipped_drive_steer_fraction": [
+            0.06557376682758331,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.3441581428050995,
+            0.23907417058944702
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s1",
+          "MSE": 0.12266736477613449,
+          "MSE_drive_steer": [
+            0.1511899083852768,
+            0.09414481371641159
+          ],
+          "conditional_NLL": 304.1638432028991,
+          "marginal_NLL": 109.12380666416112,
+          "clipped_drive_steer_fraction": [
+            0.05384615436196327,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.3659413754940033,
+            0.2553832530975342
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s2",
+          "MSE": 0.10907938331365585,
+          "MSE_drive_steer": [
+            0.126556858420372,
+            0.0916019156575203
+          ],
+          "conditional_NLL": 385.4022856116028,
+          "marginal_NLL": 97.71811492635403,
+          "clipped_drive_steer_fraction": [
+            0.07758620381355286,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.3290902078151703,
+            0.25260162353515625
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s3",
+          "MSE": 0.11218370497226715,
+          "MSE_drive_steer": [
+            0.14194901287555695,
+            0.08241839706897736
+          ],
+          "conditional_NLL": 323.0633636879165,
+          "marginal_NLL": 98.97592065407834,
+          "clipped_drive_steer_fraction": [
+            0.07258064299821854,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.34685125946998596,
+            0.23457010090351105
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "T299",
+      "policy_hash": "d104ea9dc4aaeef6fbdc65947392ce05f3334101c6393e18194ad9eb03ffebb0",
+      "trajectory_equal_MSE": 0.20645743142813444,
+      "trajectory_equal_conditional_NLL": 62.015737834472716,
+      "trajectory_equal_marginal_NLL": 197.76144172698966,
+      "rows": [
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s0",
+          "MSE": 0.13802514970302582,
+          "MSE_drive_steer": [
+            0.24865610897541046,
+            0.027394186705350876
+          ],
+          "conditional_NLL": 37.74912208698352,
+          "marginal_NLL": 137.06857181880486,
+          "clipped_drive_steer_fraction": [
+            0.9844961166381836,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.4834573566913605,
+            0.13387137651443481
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s1",
+          "MSE": 0.16216795146465302,
+          "MSE_drive_steer": [
+            0.31533128023147583,
+            0.00900461059063673
+          ],
+          "conditional_NLL": 41.75281933937111,
+          "marginal_NLL": 155.4741806526211,
+          "clipped_drive_steer_fraction": [
+            0.9864864945411682,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.5472491383552551,
+            0.07276662439107895
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s2",
+          "MSE": 0.10682708770036697,
+          "MSE_drive_steer": [
+            0.1862809956073761,
+            0.02737320400774479
+          ],
+          "conditional_NLL": 46.02665836766513,
+          "marginal_NLL": 110.14894421097257,
+          "clipped_drive_steer_fraction": [
+            1.0,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.41560253500938416,
+            0.13524378836154938
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_LEFT_13_s3",
+          "MSE": 0.1404559165239334,
+          "MSE_drive_steer": [
+            0.23520401120185852,
+            0.04570777714252472
+          ],
+          "conditional_NLL": 48.84282154439533,
+          "marginal_NLL": 141.79422285259034,
+          "clipped_drive_steer_fraction": [
+            0.9836065769195557,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.4624879062175751,
+            0.1601557582616806
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s0",
+          "MSE": 0.2634775638580322,
+          "MSE_drive_steer": [
+            0.28434479236602783,
+            0.24261035025119781
+          ],
+          "conditional_NLL": 71.75952630379508,
+          "marginal_NLL": 248.8968939333317,
+          "clipped_drive_steer_fraction": [
+            0.22131147980690002,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.49414050579071045,
+            0.40225180983543396
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s1",
+          "MSE": 0.314005047082901,
+          "MSE_drive_steer": [
+            0.3515716791152954,
+            0.2764383852481842
+          ],
+          "conditional_NLL": 73.5207919416435,
+          "marginal_NLL": 295.09161677259186,
+          "clipped_drive_steer_fraction": [
+            0.2153846174478531,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.5449709296226501,
+            0.44142788648605347
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s2",
+          "MSE": 0.2449561357498169,
+          "MSE_drive_steer": [
+            0.2635054886341095,
+            0.2264067530632019
+          ],
+          "conditional_NLL": 101.59986239956316,
+          "marginal_NLL": 230.70966950801596,
+          "clipped_drive_steer_fraction": [
+            0.24137930572032928,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.46389079093933105,
+            0.3978191614151001
+          ]
+        },
+        {
+          "id": "time_aligned_credit_r0_dev6_RIGHT_13_s3",
+          "MSE": 0.2817445993423462,
+          "MSE_drive_steer": [
+            0.3218587040901184,
+            0.24163049459457397
+          ],
+          "conditional_NLL": 74.87430069236488,
+          "marginal_NLL": 262.90743406698886,
+          "clipped_drive_steer_fraction": [
+            0.2177419364452362,
+            0.0
+          ],
+          "mean_absolute_mode_action_difference": [
+            0.5093032121658325,
+            0.41423097252845764
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": [
+    {
+      "role": "parent_auxiliary_centers",
+      "executed": 2,
+      "expected": 2,
+      "safe": 1,
+      "contact": 1,
+      "timeout": 0,
+      "censored": 0,
+      "error": 0,
+      "not_executed": 0
+    },
+    {
+      "role": "auxiliary_centers",
+      "executed": 2,
+      "expected": 2,
+      "safe": 1,
+      "contact": 1,
+      "timeout": 0,
+      "censored": 0,
+      "error": 0,
+      "not_executed": 0
+    },
+    {
+      "role": "old20_guard",
+      "executed": 20,
+      "expected": 20,
+      "safe": 19,
+      "contact": 1,
+      "timeout": 0,
+      "censored": 0,
+      "error": 0,
+      "not_executed": 0
+    },
+    {
+      "role": "old_regression",
+      "executed": 275,
+      "expected": 275,
+      "safe": 274,
+      "contact": 1,
+      "timeout": 0,
+      "censored": 0,
+      "error": 0,
+      "not_executed": 0
+    },
+    {
+      "role": "development",
+      "executed": 54,
+      "expected": 54,
+      "safe": 10,
+      "contact": 27,
+      "timeout": 17,
+      "censored": 0,
+      "error": 0,
+      "not_executed": 0
+    },
+    {
+      "role": "heldout",
+      "executed": 0,
+      "expected": 16,
+      "safe": 0,
+      "contact": 0,
+      "timeout": 0,
+      "censored": 0,
+      "error": 0,
+      "not_executed": 16
+    },
+    {
+      "role": "independent_reload",
+      "executed": 0,
+      "expected": 78,
+      "safe": 0,
+      "contact": 0,
+      "timeout": 0,
+      "censored": 0,
+      "error": 0,
+      "not_executed": 78
+    }
+  ],
+  "old_failure_ids": [
+    {
+      "id": "dev_task6_24",
+      "contact": true,
+      "timeout": false
+    }
+  ],
+  "six_rows": [
+    {
+      "id": "dev6_LEFT_00",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 19478,
+      "remaining_m": 2.471836111369639
+    },
+    {
+      "id": "dev6_LEFT_01",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 19050,
+      "remaining_m": 2.3626914889346655
+    },
+    {
+      "id": "dev6_LEFT_02",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 20851,
+      "remaining_m": 2.264379467386569
+    },
+    {
+      "id": "dev6_LEFT_03",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 20873,
+      "remaining_m": 2.3336668436626584
+    },
+    {
+      "id": "dev6_LEFT_04",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 21648,
+      "remaining_m": 2.3016614157827515
+    },
+    {
+      "id": "dev6_LEFT_05",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 20905,
+      "remaining_m": 2.3098031156676155
+    },
+    {
+      "id": "dev6_LEFT_06",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 21286,
+      "remaining_m": 2.322000789024419
+    },
+    {
+      "id": "dev6_LEFT_07",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 19593,
+      "remaining_m": 2.320487092336524
+    },
+    {
+      "id": "dev6_LEFT_08",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 20977,
+      "remaining_m": 2.31536407967231
+    },
+    {
+      "id": "dev6_LEFT_09",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 20648,
+      "remaining_m": 2.336501658698572
+    },
+    {
+      "id": "dev6_LEFT_10",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 20586,
+      "remaining_m": 2.3267628511220675
+    },
+    {
+      "id": "dev6_LEFT_11",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 20366,
+      "remaining_m": 2.3177722625672112
+    },
+    {
+      "id": "dev6_LEFT_12",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 20031,
+      "remaining_m": 2.3301555490246932
+    },
+    {
+      "id": "dev6_LEFT_13",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 21814,
+      "remaining_m": 2.325456823643474
+    },
+    {
+      "id": "dev6_LEFT_14",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 18655,
+      "remaining_m": 2.3377207205843757
+    },
+    {
+      "id": "dev6_LEFT_15",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 19900,
+      "remaining_m": 2.323542642863736
+    },
+    {
+      "id": "dev6_LEFT_16",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 20127,
+      "remaining_m": 2.34031819898545
+    },
+    {
+      "id": "dev6_LEFT_17",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 19447,
+      "remaining_m": 2.301637520793909
+    },
+    {
+      "id": "dev6_LEFT_18",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 19139,
+      "remaining_m": 2.3440893742161357
+    },
+    {
+      "id": "dev6_LEFT_19",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 21214,
+      "remaining_m": 2.3354738259524135
+    },
+    {
+      "id": "dev6_LEFT_20",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 19768,
+      "remaining_m": 2.338715663868131
+    },
+    {
+      "id": "dev6_LEFT_21",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 18933,
+      "remaining_m": 2.345203891455964
+    },
+    {
+      "id": "dev6_LEFT_22",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 20161,
+      "remaining_m": 2.323873424899089
+    },
+    {
+      "id": "dev6_LEFT_23",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 19292,
+      "remaining_m": 2.319356970625666
+    },
+    {
+      "id": "dev6_LEFT_24",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 19912,
+      "remaining_m": 2.323118205413145
+    },
+    {
+      "id": "dev6_LEFT_25",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 16982,
+      "remaining_m": 2.855800004392061
+    },
+    {
+      "id": "dev6_LEFT_26",
+      "success": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 21093,
+      "remaining_m": 2.296592176525605
+    },
+    {
+      "id": "dev6_RIGHT_00",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.26234847488421265
+    },
+    {
+      "id": "dev6_RIGHT_01",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.42899314195612637
+    },
+    {
+      "id": "dev6_RIGHT_02",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.5188970738641423
+    },
+    {
+      "id": "dev6_RIGHT_03",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "physics_steps": 27896,
+      "remaining_m": 0.1997909720375484
+    },
+    {
+      "id": "dev6_RIGHT_04",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.4953470105167003
+    },
+    {
+      "id": "dev6_RIGHT_05",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.49265795072639207
+    },
+    {
+      "id": "dev6_RIGHT_06",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.2552769587738006
+    },
+    {
+      "id": "dev6_RIGHT_07",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.42060790841271684
+    },
+    {
+      "id": "dev6_RIGHT_08",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.47890308264041415
+    },
+    {
+      "id": "dev6_RIGHT_09",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "physics_steps": 27532,
+      "remaining_m": 0.1996948748976136
+    },
+    {
+      "id": "dev6_RIGHT_10",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.30526209374653207
+    },
+    {
+      "id": "dev6_RIGHT_11",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.43383342152257837
+    },
+    {
+      "id": "dev6_RIGHT_12",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "physics_steps": 27530,
+      "remaining_m": 0.1998936761877533
+    },
+    {
+      "id": "dev6_RIGHT_13",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "physics_steps": 27775,
+      "remaining_m": 0.1999158568496826
+    },
+    {
+      "id": "dev6_RIGHT_14",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.34606330210705727
+    },
+    {
+      "id": "dev6_RIGHT_15",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "physics_steps": 27546,
+      "remaining_m": 0.19971437971150233
+    },
+    {
+      "id": "dev6_RIGHT_16",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.20803394332938574
+    },
+    {
+      "id": "dev6_RIGHT_17",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.2859220724760723
+    },
+    {
+      "id": "dev6_RIGHT_18",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "physics_steps": 27017,
+      "remaining_m": 0.19994689074423047
+    },
+    {
+      "id": "dev6_RIGHT_19",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "physics_steps": 27772,
+      "remaining_m": 0.1997671387935176
+    },
+    {
+      "id": "dev6_RIGHT_20",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.32551542343767476
+    },
+    {
+      "id": "dev6_RIGHT_21",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "physics_steps": 27228,
+      "remaining_m": 0.19977823619457497
+    },
+    {
+      "id": "dev6_RIGHT_22",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "physics_steps": 27621,
+      "remaining_m": 0.19977495570578563
+    },
+    {
+      "id": "dev6_RIGHT_23",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.4224661829713408
+    },
+    {
+      "id": "dev6_RIGHT_24",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "physics_steps": 27816,
+      "remaining_m": 0.19983772310189482
+    },
+    {
+      "id": "dev6_RIGHT_25",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.29607054979292596
+    },
+    {
+      "id": "dev6_RIGHT_26",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 0.5562743970489907
+    }
+  ],
+  "parent_and_candidate_auxiliary_initial120_exact": true,
+  "AR_latent_likelihood_illustration": {
+    "rho": 0.98,
+    "decisions": 128,
+    "latent_shift": 2.0,
+    "constant_shift_joint_NLL_increase": 4.565656565656564,
+    "constant_shift_independent_marginal_NLL_increase": 256.0,
+    "decaying_shift_joint_NLL_increase": 2.0,
+    "scope": "Gaussian latent-space identity with unchanged Jacobians. It illustrates weighting of shared versus innovation errors under correct correlated density; not a replacement for native causal evidence or a proposed change of sampler/rho."
+  },
+  "source_sha256": "9838990f4fa678fbf39b56e1241db7e69f8422ae3cb4deddc4ff19d144ce1029",
+  "input_protocol_sha256": "c5a03c17cf43f4b36b8bb68a36130d5f19c30f8de1c3ade0ca915af12976adb7",
+  "global_bytes": 1064571760,
+  "free_GiB": 209.31777954101562
+}

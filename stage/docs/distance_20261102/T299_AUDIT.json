@@ -1,0 +1,43 @@
+{
+  "state": "POSTRUN_EVIDENCE_RECONCILED",
+  "physics_added": 0,
+  "navigation_Actor_updates_added": 0,
+  "disposable_optimizer_reconstruction_calls": 1000,
+  "all_processes_absent": true,
+  "all_original_sources_models_and_payload_SHA_verified": true,
+  "total_physics_from_raw": 5410948,
+  "total_commands_from_raw": 353,
+  "full120_training_payloads": 0,
+  "complete_exact_replays": 0,
+  "retained_Actor_Adam_rounds_reconstructed": [],
+  "all_final_Actor_Adam_state_hashes_reconstructed_exact": true,
+  "supervised_500_live500_shadow_reconstructed_exact": true,
+  "safe_T255_unchanged": true,
+  "arms": {
+    "conditional_goal_likelihood": {
+      "accepted_RL_updates": 0,
+      "completed_rounds": 0,
+      "training_n": 0,
+      "training_safe": 0,
+      "old_n": 275,
+      "old_safe": 274,
+      "six_m_n": 54,
+      "six_m_safe": 10,
+      "heldout_n": 0,
+      "independent_reload_n": 0,
+      "gate": false,
+      "export": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t299_conditional_goal_likelihood/conditional_goal_likelihood_final_checkpoint.pt.gz",
+        "sha256": "b15cddbbf5914ef5187ce221082c0e6cdbe3608b0f8a1ff1177f8fefa95f5751",
+        "bytes": 2193249,
+        "policy_hash": "d104ea9dc4aaeef6fbdc65947392ce05f3334101c6393e18194ad9eb03ffebb0",
+        "optimizer_hash": "881489e608a38e54726d0751cd52ed648891a06e8603b81357fc9935f73c3d76"
+      }
+    }
+  },
+  "own_bytes": 4624772,
+  "global_bytes": 1064571760,
+  "summary_sha256": "aa0d292465f286674a6ebe5c3acbee51266d76e4b8385e0d083fa56189c0ebbd",
+  "audit_epoch": 1793601670.724219,
+  "attribution": "T299 independently bounded auxiliary-loss correction pilot fromsafeT255, NOT restart/continuationT298 or pureRL/newalgorithm. Same8T295 ownbehaviorprefix/2fixedgoals/complete120goalhistory/firsthit, same500supervisedlive+500shadow/seed/minibatch8rowsx8traj/old8tasks4anchorrows/soft100/LRs/gradclip1/Actor120hiddenreset/native deployment. Replace auxiliary clippedmodeMSE with conditionalAR NLL of sameboundedGaussianrho.98sigma(.035,.03), truepreviousaction/mean differentiable and firstreset, stableT296logtails, canonicalbatch1currentprevious; no ISweights/newCritic/sampler/teacher/map/planner/waypoint/router/Phase. Onefrozen fulltrajectory-equal parent gradientnorm ratio matches auxiliaryinitialnormtoT298MSE; fixedscale no adaptiveclamp/grid. Initialscale/gradients0native0optimizer recordedbeforelaunch, strict original density/finite difference/saturated gradient/shadow/rollback/source/resourcepreflight4disposableoptimizer. Same500effort measuredagainstconsumedT298singleMSEpilot, changedlosspluscanonicalnumericalpath engineeringcomparison notrandomizedindependentcausalproof. This protocol ZEROnewRLupdates/collection; no changing threshold/seed/goals/noise/steps tocontinue oldrun. Aftertrain run2safeparentauxnativecontrols and2candidateaux, old20trueguard; regardlessfailure finalold275+6m54 all measured. Parentcontrols actualnewgoalswithsameinitialhistory; no autonomyclaimfromrecordedactions. Allold+6m safe then16fresh78independentnative reload; no7/8training/modelpromotion. 460commands12.88Mphysical3600s(1800supervised/1800eval),own10MiB/global1GiB/free40GiB;451compact10KiB+2.5MiBfinalActor/fresh-emptyAdam+1.5MiBmeta, source8full120inputsunchanged reusedhash; no newfulltrainingarrays needed.500supervisedAdamstate intermediate/finalSHA+fullsource independent1000clonepostrunreconstruction ratherthanduplicatecheckpoint; finalActor+emptyfreshAdamfile readbackexact. Originalfailures/partials/allrawpreserved; nativeexclusive nooutside runswrites/sourcesync whileactive, exactsourcefullrootremote beforeunique launch; endedallparentworkersinhibitortimeoutgone, independentallcounts/source/payloads/500pairSHAaudit, RAMfullremotememberSHAbackup/sourcesync. Failureendsnoextraepochs/lossweightseedgrid; futuresixRLrequiresnewboundedprotocolwithfullcapacityandoldgate. Auxiliarygoalsnever runtime intermediategoals."
+}
