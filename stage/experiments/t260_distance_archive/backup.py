@@ -49,6 +49,7 @@ GROUPS = {
     'T289': ['t289_rejected_candidates'],
     'T290': ['t290_exact_duplicate_store'],
     'T291': ['t291_hard_guard_ablation'],
+    'T292': ['t292_crossfit_value'],
 }
 
 
