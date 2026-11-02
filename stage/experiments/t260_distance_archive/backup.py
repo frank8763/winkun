@@ -61,6 +61,7 @@ GROUPS = {
     'T303': ['t303_feedback_differentials'],
     'T304': ['t304_native_chunk_value'],
     'T305': ['t305_goal_conditioned_contract'],
+    'T305R': ['t305_goal_contract_recovery'],
 }
 
 
