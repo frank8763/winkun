@@ -1,0 +1,5 @@
+# T290：已核验重复NPZ的可逆字节存储
+
+仅T280/T283/T287已停止且全部远端逐成员SHA读回的episodes/*.npz，按完整原文件字节SHA固定去重。1940文件中409组纯字节重复，保留各组最早实验一个原NPZ，另外523个副本原总12042742B以.ref.json引用同字节本地canonical。不是按近似数组/轨迹相似性丢数据；所有独特数据、模型、快照、用户高清MP4不动。各副本原字节已在原Release且本地canonical可直接还原。原cases/protocol/summary不修改，历史路径读取必须通过store.resolve或容量受控的store.restore；不伪称旧裸路径仍直接存在。
+
+300秒、0物理/优化器、metadata1MiB、global逻辑1GiB/free40GiB，逐一写ref并核验原副本与canonical完全相同后才删除冗余副本。单写入锁，运行前所有父worker消失；保留整个原路径/bytes/SHA/canonical账本。结束逐523全字节审计，再RAM归档当前存储账本完整远端逐成员读回；原归档保持不变。恢复单个旧路径前先核算global和free，不能一键全恢复突破上限。精确源码提交/同步后仅运行一次，不接导航Actor，不影响Stage/Phase隔离。
