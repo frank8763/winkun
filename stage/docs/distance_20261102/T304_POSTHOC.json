@@ -1,0 +1,575 @@
+{
+  "scope": "Stopped read-only posthoc; original protocol/metrics/failed screen untouched, no new fit/Actor/optimizer/native",
+  "native_steps": 0,
+  "optimizer_calls": 0,
+  "Actor_updates": 0,
+  "original_screen": {
+    "checks": {
+      "test_MSE_at_most_half_blind": false,
+      "each_heldout_family_MSE_not_over102pct": false,
+      "both_heldout_families_informative": true,
+      "all_informative_pair_signs_correct": false,
+      "both_top_choices_correct": false
+    },
+    "passed": false,
+    "automatic_Actor_update": false,
+    "limitation": "Two already-consumed reset-family holdouts only; no global Q calibration or navigation stability claim."
+  },
+  "raw_action_test_MSE_over_blind": 12.42450986150164,
+  "initial_normalized_training_losses": [
+    0.9317813515663147,
+    0.9377584457397461
+  ],
+  "final_normalized_training_losses": [
+    0.10210556536912918,
+    0.7521343231201172
+  ],
+  "posthoc_same_state_centering": {
+    "action": {
+      "centered_test_MSE": 8.741013664777473e-07,
+      "details": [
+        {
+          "family": "dev6_LEFT_24",
+          "predictions_center_removed": [
+            -0.0007494880040232227,
+            0.0,
+            0.0005956304935603447
+          ],
+          "true_advantages": [
+            0.0012424110579388747,
+            0.0,
+            0.00035337105801003243
+          ],
+          "posthoc_centered_MSE": 1.3421171690528798e-06,
+          "maximizer_count": 1,
+          "tie_aware_top_choice_credit": 0.0
+        },
+        {
+          "family": "dev6_RIGHT_24",
+          "predictions_center_removed": [
+            -0.0012257535106680005,
+            0.0,
+            0.0015867656861646776
+          ],
+          "true_advantages": [
+            -0.00012680737193970781,
+            0.0,
+            0.0014839353604721994
+          ],
+          "posthoc_centered_MSE": 4.0608556390261504e-07,
+          "maximizer_count": 1,
+          "tie_aware_top_choice_credit": 1.0
+        }
+      ]
+    },
+    "blind": {
+      "centered_test_MSE": 6.477667675276559e-07,
+      "details": [
+        {
+          "family": "dev6_LEFT_24",
+          "predictions_center_removed": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "true_advantages": [
+            0.0012424110579388747,
+            0.0,
+            0.00035337105801003243
+          ],
+          "posthoc_centered_MSE": 5.561521138426412e-07,
+          "maximizer_count": 3,
+          "tie_aware_top_choice_credit": 0.3333333333333333
+        },
+        {
+          "family": "dev6_RIGHT_24",
+          "predictions_center_removed": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "true_advantages": [
+            -0.00012680737193970781,
+            0.0,
+            0.0014839353604721994
+          ],
+          "posthoc_centered_MSE": 7.393814212126705e-07,
+          "maximizer_count": 3,
+          "tie_aware_top_choice_credit": 0.3333333333333333
+        }
+      ]
+    }
+  },
+  "centering_caveat": "Advantage regression has nonzero prediction for a=center on new states. Subtracting predicted center is a posthoc check only: it removes additive bias but not wrong pairwise ranking. Centered aggregate action MSE still exceeds centered blind. Original failed gate is not redefined.",
+  "tie_caveat": "Original top_choice_correct uses deterministic argmax (first in array). Blind gives exact ties for all3 actions; its apparent LEFT top success is only first-index tie breaking. Tie-aware credit is1/3 on each family; do not call blind an actionable winning policy.",
+  "families": [
+    {
+      "id": "dev6_LEFT_03",
+      "split": "train",
+      "rows": [
+        {
+          "arm": "minus",
+          "safe": false,
+          "contact": true,
+          "timeout": false,
+          "whole_episode_time_s": 41.724000000000004,
+          "remaining_physics_from_branch": 10562,
+          "remaining_m": 2.326909816134005,
+          "environment_G_at_branch": -0.5902955190449102,
+          "discounted_endpoint_cost": 0.2861507111190132,
+          "eta01_G_at_branch": -0.6189105901568115,
+          "analytic_environment_G_native": -0.5902955190449108,
+          "float32_goal_field_formula_error": 1.9280134155863493e-09,
+          "environment_advantage": -0.00024234496083719304,
+          "cost_advantage_contribution": -1.6738996916043638e-05,
+          "eta01_advantage": -0.00025908395775320336
+        },
+        {
+          "arm": "center",
+          "safe": false,
+          "contact": true,
+          "timeout": false,
+          "whole_episode_time_s": 41.746,
+          "remaining_physics_from_branch": 10573,
+          "remaining_m": 2.3336668436626584,
+          "environment_G_at_branch": -0.590053174084073,
+          "discounted_endpoint_cost": 0.28598332114985275,
+          "eta01_G_at_branch": -0.6186515061990583,
+          "analytic_environment_G_native": -0.5900531740840742,
+          "float32_goal_field_formula_error": 1.928012860474837e-09,
+          "environment_advantage": 0.0,
+          "cost_advantage_contribution": -0.0,
+          "eta01_advantage": 0.0
+        },
+        {
+          "arm": "plus",
+          "safe": false,
+          "contact": true,
+          "timeout": false,
+          "whole_episode_time_s": 41.728,
+          "remaining_physics_from_branch": 10564,
+          "remaining_m": 2.3265430063696466,
+          "environment_G_at_branch": -0.5902514497150931,
+          "discounted_endpoint_cost": 0.2855577994268006,
+          "eta01_G_at_branch": -0.6188072296577732,
+          "analytic_environment_G_native": -0.5902514497150937,
+          "float32_goal_field_formula_error": 1.9280134155863493e-09,
+          "environment_advantage": -0.00019827563102015056,
+          "cost_advantage_contribution": 4.25521723052158e-05,
+          "eta01_advantage": -0.0001557234587149514
+        }
+      ],
+      "outcome_type_changes_vs_center": 0
+    },
+    {
+      "id": "dev6_LEFT_09",
+      "split": "train",
+      "rows": [
+        {
+          "arm": "minus",
+          "safe": false,
+          "contact": true,
+          "timeout": false,
+          "whole_episode_time_s": 41.488,
+          "remaining_physics_from_branch": 10544,
+          "remaining_m": 2.3377744034934973,
+          "environment_G_at_branch": -0.591152084802286,
+          "discounted_endpoint_cost": 0.28456141544909436,
+          "eta01_G_at_branch": -0.6196082263471954,
+          "analytic_environment_G_native": -0.5911520848022869,
+          "float32_goal_field_formula_error": 4.241766049517537e-09,
+          "environment_advantage": 0.0021200582468680063,
+          "cost_advantage_contribution": -7.479382500175658e-05,
+          "eta01_advantage": 0.0020452644218662552
+        },
+        {
+          "arm": "center",
+          "safe": false,
+          "contact": true,
+          "timeout": false,
+          "whole_episode_time_s": 41.296,
+          "remaining_physics_from_branch": 10448,
+          "remaining_m": 2.336501658698572,
+          "environment_G_at_branch": -0.593272143049154,
+          "discounted_endpoint_cost": 0.2838134771990768,
+          "eta01_G_at_branch": -0.6216534907690616,
+          "analytic_environment_G_native": -0.5932721430491548,
+          "float32_goal_field_formula_error": 4.241765827472932e-09,
+          "environment_advantage": 0.0,
+          "cost_advantage_contribution": -0.0,
+          "eta01_advantage": 0.0
+        },
+        {
+          "arm": "plus",
+          "safe": false,
+          "contact": true,
+          "timeout": false,
+          "whole_episode_time_s": 41.322,
+          "remaining_physics_from_branch": 10461,
+          "remaining_m": 2.3350076731729636,
+          "environment_G_at_branch": -0.5929846545309638,
+          "discounted_endpoint_cost": 0.2839888264641345,
+          "eta01_G_at_branch": -0.6213835371773773,
+          "analytic_environment_G_native": -0.5929846545309643,
+          "float32_goal_field_formula_error": 4.241765605428327e-09,
+          "environment_advantage": 0.00028748851819015986,
+          "cost_advantage_contribution": -1.7534926505768934e-05,
+          "eta01_advantage": 0.0002699535916843576
+        }
+      ],
+      "outcome_type_changes_vs_center": 0
+    },
+    {
+      "id": "dev6_LEFT_18",
+      "split": "train",
+      "rows": [
+        {
+          "arm": "minus",
+          "safe": false,
+          "contact": true,
+          "timeout": false,
+          "whole_episode_time_s": 37.852000000000004,
+          "remaining_physics_from_branch": 9526,
+          "remaining_m": 2.3387911200599114,
+          "environment_G_at_branch": -0.615380259902955,
+          "discounted_endpoint_cost": 0.25866075504188984,
+          "eta01_G_at_branch": -0.6412463354071439,
+          "analytic_environment_G_native": -0.6153802599029564,
+          "float32_goal_field_formula_error": 2.353401362675811e-09,
+          "environment_advantage": -0.004841248028262246,
+          "cost_advantage_contribution": 0.0005256124511213045,
+          "eta01_advantage": -0.004315635577140875
+        },
+        {
+          "arm": "center",
+          "safe": false,
+          "contact": true,
+          "timeout": false,
+          "whole_episode_time_s": 38.278,
+          "remaining_physics_from_branch": 9739,
+          "remaining_m": 2.3440893742161357,
+          "environment_G_at_branch": -0.6105390118746927,
+          "discounted_endpoint_cost": 0.2639168795531029,
+          "eta01_G_at_branch": -0.636930699830003,
+          "analytic_environment_G_native": -0.6105390118746938,
+          "float32_goal_field_formula_error": 2.3534010296089036e-09,
+          "environment_advantage": 0.0,
+          "cost_advantage_contribution": -0.0,
+          "eta01_advantage": 0.0
+        },
+        {
+          "arm": "plus",
+          "safe": false,
+          "contact": true,
+          "timeout": false,
+          "whole_episode_time_s": 37.956,
+          "remaining_physics_from_branch": 9578,
+          "remaining_m": 2.278780727714142,
+          "environment_G_at_branch": -0.6141951856236949,
+          "discounted_endpoint_cost": 0.25921923982794814,
+          "eta01_G_at_branch": -0.6401171096064897,
+          "analytic_environment_G_native": -0.6141951856236959,
+          "float32_goal_field_formula_error": 2.3534010296089036e-09,
+          "environment_advantage": -0.0036561737490021784,
+          "cost_advantage_contribution": 0.00046976397251547456,
+          "eta01_advantage": -0.003186409776486654
+        }
+      ],
+      "outcome_type_changes_vs_center": 0
+    },
+    {
+      "id": "dev6_LEFT_24",
+      "split": "test",
+      "rows": [
+        {
+          "arm": "minus",
+          "safe": false,
+          "contact": true,
+          "timeout": false,
+          "whole_episode_time_s": 39.946,
+          "remaining_physics_from_branch": 10173,
+          "remaining_m": 2.323866560827088,
+          "environment_G_at_branch": -0.5987602123768384,
+          "discounted_endpoint_cost": 0.27394678495787034,
+          "eta01_G_at_branch": -0.6261548908726254,
+          "analytic_environment_G_native": -0.5987602123768396,
+          "float32_goal_field_formula_error": 8.117401195661955e-10,
+          "environment_advantage": 0.0013630874558436812,
+          "cost_advantage_contribution": -0.00012067639790508956,
+          "eta01_advantage": 0.0012424110579386527
+        },
+        {
+          "arm": "center",
+          "safe": false,
+          "contact": true,
+          "timeout": false,
+          "whole_episode_time_s": 39.824,
+          "remaining_physics_from_branch": 10112,
+          "remaining_m": 2.323118205413145,
+          "environment_G_at_branch": -0.6001232998326821,
+          "discounted_endpoint_cost": 0.27274002097881944,
+          "eta01_G_at_branch": -0.6273973019305641,
+          "analytic_environment_G_native": -0.6001232998326835,
+          "float32_goal_field_formula_error": 8.117397864992881e-10,
+          "environment_advantage": 0.0,
+          "cost_advantage_contribution": -0.0,
+          "eta01_advantage": 0.0
+        },
+        {
+          "arm": "plus",
+          "safe": false,
+          "contact": true,
+          "timeout": false,
+          "whole_episode_time_s": 39.848,
+          "remaining_physics_from_branch": 10124,
+          "remaining_m": 2.3266763031163005,
+          "environment_G_at_branch": -0.5998549324478897,
+          "discounted_endpoint_cost": 0.27188998424664557,
+          "eta01_G_at_branch": -0.6270439308725543,
+          "analytic_environment_G_native": -0.5998549324478911,
+          "float32_goal_field_formula_error": 8.117397864992881e-10,
+          "environment_advantage": 0.00026836738479241173,
+          "cost_advantage_contribution": 8.500367321738756e-05,
+          "eta01_advantage": 0.0003533710580098104
+        }
+      ],
+      "outcome_type_changes_vs_center": 0
+    },
+    {
+      "id": "dev6_RIGHT_03",
+      "split": "train",
+      "rows": [
+        {
+          "arm": "minus",
+          "safe": true,
+          "contact": false,
+          "timeout": false,
+          "whole_episode_time_s": 55.872,
+          "remaining_physics_from_branch": 14136,
+          "remaining_m": 0.1997784497569637,
+          "environment_G_at_branch": 0.7157940492491208,
+          "discounted_endpoint_cost": 0.24609296928726215,
+          "eta01_G_at_branch": 0.6911847523203946,
+          "analytic_environment_G_native": 0.7157940492491209,
+          "float32_goal_field_formula_error": 2.5264788039436326e-09,
+          "environment_advantage": -0.0008828942137860674,
+          "cost_advantage_contribution": -9.022613001890557e-05,
+          "eta01_advantage": -0.000973120343805034
+        },
+        {
+          "arm": "center",
+          "safe": true,
+          "contact": false,
+          "timeout": false,
+          "whole_episode_time_s": 55.792,
+          "remaining_physics_from_branch": 14096,
+          "remaining_m": 0.1997909720375484,
+          "environment_G_at_branch": 0.7166769434629069,
+          "discounted_endpoint_cost": 0.2451907079870731,
+          "eta01_G_at_branch": 0.6921578726641996,
+          "analytic_environment_G_native": 0.7166769434629073,
+          "float32_goal_field_formula_error": 2.5264785818990276e-09,
+          "environment_advantage": 0.0,
+          "cost_advantage_contribution": -0.0,
+          "eta01_advantage": 0.0
+        },
+        {
+          "arm": "plus",
+          "safe": true,
+          "contact": false,
+          "timeout": false,
+          "whole_episode_time_s": 55.92,
+          "remaining_physics_from_branch": 14160,
+          "remaining_m": 0.19975404692085946,
+          "environment_G_at_branch": 0.7152648774969788,
+          "discounted_endpoint_cost": 0.24617538463739663,
+          "eta01_G_at_branch": 0.690647339033239,
+          "analytic_environment_G_native": 0.7152648774969786,
+          "float32_goal_field_formula_error": 2.52647913701054e-09,
+          "environment_advantage": -0.0014120659659281332,
+          "cost_advantage_contribution": -9.846766503235349e-05,
+          "eta01_advantage": -0.0015105336309605422
+        }
+      ],
+      "outcome_type_changes_vs_center": 0
+    },
+    {
+      "id": "dev6_RIGHT_09",
+      "split": "train",
+      "rows": [
+        {
+          "arm": "minus",
+          "safe": true,
+          "contact": false,
+          "timeout": false,
+          "whole_episode_time_s": 55.934000000000005,
+          "remaining_physics_from_branch": 14367,
+          "remaining_m": 0.1998544204684814,
+          "environment_G_at_branch": 0.709156854181797,
+          "discounted_endpoint_cost": 0.25318019140149123,
+          "eta01_G_at_branch": 0.6838388350416479,
+          "analytic_environment_G_native": 0.709156854181797,
+          "float32_goal_field_formula_error": 2.4622992533807064e-10,
+          "environment_advantage": -0.009590842221174456,
+          "cost_advantage_contribution": -0.0012608817654147344,
+          "eta01_advantage": -0.010851723986589179
+        },
+        {
+          "arm": "center",
+          "safe": true,
+          "contact": false,
+          "timeout": false,
+          "whole_episode_time_s": 55.064,
+          "remaining_physics_from_branch": 13932,
+          "remaining_m": 0.1996948748976136,
+          "environment_G_at_branch": 0.7187476964029714,
+          "discounted_endpoint_cost": 0.2405713737473439,
+          "eta01_G_at_branch": 0.6946905590282371,
+          "analytic_environment_G_native": 0.7187476964029716,
+          "float32_goal_field_formula_error": 2.462297032934657e-10,
+          "environment_advantage": 0.0,
+          "cost_advantage_contribution": -0.0,
+          "eta01_advantage": 0.0
+        },
+        {
+          "arm": "plus",
+          "safe": true,
+          "contact": false,
+          "timeout": false,
+          "whole_episode_time_s": 54.7,
+          "remaining_physics_from_branch": 13750,
+          "remaining_m": 0.19992192752467955,
+          "environment_G_at_branch": 0.722801864332461,
+          "discounted_endpoint_cost": 0.23781239230588738,
+          "eta01_G_at_branch": 0.6990206251018722,
+          "analytic_environment_G_native": 0.7228018643324621,
+          "float32_goal_field_formula_error": 2.46228815115046e-10,
+          "environment_advantage": 0.004054167929489538,
+          "cost_advantage_contribution": 0.0002758981441456504,
+          "eta01_advantage": 0.004330066073635175
+        }
+      ],
+      "outcome_type_changes_vs_center": 0
+    },
+    {
+      "id": "dev6_RIGHT_18",
+      "split": "train",
+      "rows": [
+        {
+          "arm": "minus",
+          "safe": true,
+          "contact": false,
+          "timeout": false,
+          "whole_episode_time_s": 54.206,
+          "remaining_physics_from_branch": 13703,
+          "remaining_m": 0.19999403889455178,
+          "environment_G_at_branch": 0.7233588876141727,
+          "discounted_endpoint_cost": 0.23691670374946708,
+          "eta01_G_at_branch": 0.699667217239226,
+          "analytic_environment_G_native": 0.7233588876141726,
+          "float32_goal_field_formula_error": 2.034102886128153e-10,
+          "environment_advantage": -0.0019272964576414475,
+          "cost_advantage_contribution": -0.00014170041977647208,
+          "eta01_advantage": -0.0020689968774179057
+        },
+        {
+          "arm": "center",
+          "safe": true,
+          "contact": false,
+          "timeout": false,
+          "whole_episode_time_s": 54.034,
+          "remaining_physics_from_branch": 13617,
+          "remaining_m": 0.19994689074423047,
+          "environment_G_at_branch": 0.7252861840718141,
+          "discounted_endpoint_cost": 0.23549969955170236,
+          "eta01_G_at_branch": 0.7017362141166439,
+          "analytic_environment_G_native": 0.7252861840718144,
+          "float32_goal_field_formula_error": 2.034108437243276e-10,
+          "environment_advantage": 0.0,
+          "cost_advantage_contribution": -0.0,
+          "eta01_advantage": 0.0
+        },
+        {
+          "arm": "plus",
+          "safe": true,
+          "contact": false,
+          "timeout": false,
+          "whole_episode_time_s": 54.314,
+          "remaining_physics_from_branch": 13757,
+          "remaining_m": 0.19983076330043764,
+          "environment_G_at_branch": 0.7221515453942194,
+          "discounted_endpoint_cost": 0.2380759961990567,
+          "eta01_G_at_branch": 0.6983439457743138,
+          "analytic_environment_G_native": 0.7221515453942197,
+          "float32_goal_field_formula_error": 2.0341073270202514e-10,
+          "environment_advantage": -0.00313463867759467,
+          "cost_advantage_contribution": -0.0002576296647354343,
+          "eta01_advantage": -0.003392268342330085
+        }
+      ],
+      "outcome_type_changes_vs_center": 0
+    },
+    {
+      "id": "dev6_RIGHT_24",
+      "split": "test",
+      "rows": [
+        {
+          "arm": "minus",
+          "safe": true,
+          "contact": false,
+          "timeout": false,
+          "whole_episode_time_s": 55.642,
+          "remaining_physics_from_branch": 14021,
+          "remaining_m": 0.19973983701039671,
+          "environment_G_at_branch": 0.7168008312152035,
+          "discounted_endpoint_cost": 0.24507922793624096,
+          "eta01_G_at_branch": 0.6922929084215794,
+          "analytic_environment_G_native": 0.7168008312152039,
+          "float32_goal_field_formula_error": 1.0548939499699372e-10,
+          "environment_advantage": -0.00011072102790365967,
+          "cost_advantage_contribution": -1.6086344034790814e-05,
+          "eta01_advantage": -0.00012680737193848657
+        },
+        {
+          "arm": "center",
+          "safe": true,
+          "contact": false,
+          "timeout": false,
+          "whole_episode_time_s": 55.632,
+          "remaining_physics_from_branch": 14016,
+          "remaining_m": 0.19983772310189482,
+          "environment_G_at_branch": 0.7169115522431072,
+          "discounted_endpoint_cost": 0.24491836449589305,
+          "eta01_G_at_branch": 0.6924197157935179,
+          "analytic_environment_G_native": 0.7169115522431081,
+          "float32_goal_field_formula_error": 1.0548995010850604e-10,
+          "environment_advantage": 0.0,
+          "cost_advantage_contribution": -0.0,
+          "eta01_advantage": 0.0
+        },
+        {
+          "arm": "plus",
+          "safe": true,
+          "contact": false,
+          "timeout": false,
+          "whole_episode_time_s": 55.504,
+          "remaining_physics_from_branch": 13952,
+          "remaining_m": 0.19970230735996655,
+          "environment_G_at_branch": 0.7183304124187314,
+          "discounted_endpoint_cost": 0.24426761264740524,
+          "eta01_G_at_branch": 0.6939036511539909,
+          "analytic_environment_G_native": 0.7183304124187317,
+          "float32_goal_field_formula_error": 1.0548939499699372e-10,
+          "environment_advantage": 0.0014188601756242036,
+          "cost_advantage_contribution": 6.507518484878128e-05,
+          "eta01_advantage": 0.0014839353604729766
+        }
+      ],
+      "outcome_type_changes_vs_center": 0
+    }
+  ],
+  "environment_return_telescope_max_error": 1.4432899320127035e-15,
+  "reward_caveat": "Within a fixed branch state and identical terminal event, original potential-shaped environment return depends only on remaining time to that event; left perturbations all end in CONTACT, so a higher return can partly mean a delayed collision. eta.1 endpoint cost is retained, not new shaping. This is an objective property, not a new reward implementation bug or proof allRL cannot learn.",
+  "source_sha256": "3a24a199c0e777850ffc651b273dfe6c5f1ccc9eb465653a6f9d23f18e0fc1fd",
+  "summary_sha256": "089d28b6ab5aa01fb7e3d18b12aa6bf1c88276c1ed7ffe24cad9beb9baa19d23"
+}
