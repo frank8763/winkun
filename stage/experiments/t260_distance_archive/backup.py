@@ -67,6 +67,22 @@ def require_stopped(directory):
     assert summary['state'] in ('COMPLETE', 'FAILED', 'FAILED_ZERO_STEP_ENTRYPOINT')
     if summary['state'] == 'FAILED_ZERO_STEP_ENTRYPOINT':
         assert summary['physics_steps'] == summary['optimizer_calls'] == summary['workers_spawned'] == 0
+    elif directory.name == 't296_log_tail_support' and 'all_workers_stopped' not in summary:
+        # T296 is a zero-native scalar producer with no workers.json. Preserve its
+        # original summary; require the independent audit AND both real PIDs.
+        plan = json.loads((directory / 'protocol.json').read_text())
+        audit = json.loads((ROOT / 'stage/docs/distance_20261102/T296_AUDIT.json').read_text())
+        assert plan['max_physics'] == plan['max_commands'] == summary['native_steps'] == 0
+        assert summary['optimizer_calls'] == summary['Actor_updates'] == 0
+        assert audit['state'] == 'PASS' and audit['all_original_processes_absent'] is True
+        assert audit['summary_sha256'] == sha((directory / 'summary.json').read_bytes())
+        launch = json.loads((directory / 'launch.json').read_text())
+        for pid in (summary['pid'], launch['pid']):
+            try:
+                os.kill(pid, 0)
+            except ProcessLookupError:
+                continue
+            raise AssertionError(f'Refuse live or reused zero-native producer id {pid}')
     else:
         assert summary['all_workers_stopped'] is True
     if (directory / 'workers.json').exists():
