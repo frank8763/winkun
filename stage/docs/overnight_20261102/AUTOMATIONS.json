@@ -1,7 +1,7 @@
 {
   "heartbeat_id": "stage-11-2",
   "morning_id": "stage-11-3-08-30",
-  "state": "ACTIVE_UPDATED_FOR_T308",
+  "state": "MONITOR_DELETED_CLOSURE_COMPLETE_MORNING_ACTIVE",
   "heartbeat_every_minutes": 20,
   "heartbeat_until_beijing": "2026-11-03 08:20",
   "morning_beijing": "2026-11-03 08:30",
@@ -9,6 +9,18 @@
   "morning_schedule_note": "Scheduler rejected BYHOUR8 with UTC until; accepted BYHOUR0 BYMINUTE30 for00:30UTC=08:30AsiaShanghai",
   "host_app_and_machine_need_running": true,
   "current_registered_experiment": "T308",
-  "main_training_launched": false,
-  "scope": "T308 value/control only; Actor0, next Actor requires separate registration"
+  "main_training_launched": true,
+  "scope": "T308 value/control only; Actor0, next Actor requires separate registration",
+  "actual_scope": "T308 native collection and value-head training only; Actor updates0",
+  "actual_parent": 522565,
+  "launch_source_remote": "94c32992dc6af4981fce6cc6ab806af7093c3d3d",
+  "absolute_deadline_beijing": "2026-11-03T00:06:41.283516+08:00",
+  "T308_completed": true,
+  "scientific_gate": false,
+  "current_native_job": null,
+  "Actor_updates": 0,
+  "morning_summary_retained": true,
+  "heartbeat_deleted": true,
+  "heartbeat_deleted_epoch": 1793632022.005121,
+  "reason": "T308 scientific value/control gates failed, all native stopped and full audit/remote backup complete; no conditional Actor launch allowed"
 }

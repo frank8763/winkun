@@ -1,0 +1,163 @@
+{
+  "state": "COMPLETE_SCIENTIFIC_GATE_FAILED_AUDIT_AND_FULL_REMOTE_BACKUP_PASS",
+  "producer": {
+    "state": "COMPLETE",
+    "pid": 522565,
+    "commands": 64,
+    "physics_steps": 1563224,
+    "raw_record_physics": 1563224,
+    "unique_cases": 32,
+    "exact_replays": 32,
+    "head_optimizer_calls": 3000,
+    "Actor_updates": 0,
+    "models": {
+      "action": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t308_iid_native_goal_value/action_critic.pt.gz",
+        "sha256": "12d659fb1027fa578a2289c5bd5d7786375d7231012b031dd9012b44de589c53",
+        "model_hash": "42ce93a095c6621431c02dad6da24a172ca98c9c63bd22733d4421161c015e07",
+        "optimizer_hash": "4048124a0bf06ce6e355fed87236a2aa05b18129c3eb316884d8f88289b5a5e8"
+      },
+      "blind": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t308_iid_native_goal_value/blind_critic.pt.gz",
+        "sha256": "75515a3789373efed94214b7e9047ee40478634d0d03262ef532440f2f3429b4",
+        "model_hash": "6fc23946b9a169508f7fb00176ce38ac8bd2c80e03f1db580477aa253be6a936",
+        "optimizer_hash": "262804d03890ace54d1a1d284200d14e61ff35519e40ad8c661f17334b407877"
+      }
+    },
+    "all_workers_stopped": true,
+    "inflight": [],
+    "main_epoch": 1793630201.2835162,
+    "absolute_deadline_epoch": 1793635601.2835162,
+    "native_deadline_epoch": 1793634701.2835162,
+    "elapsed_s": 242.57043766975403,
+    "own_bytes": 4935774,
+    "global_bytes": 1049331907,
+    "combined_value_control_gate": false,
+    "six_metre_navigation_gate_evaluated": false,
+    "fresh16_executed": false,
+    "reload78_executed": false,
+    "seven_eight_entered": false,
+    "automatic_next_training": false
+  },
+  "audit_sha256": "3909805a10ebbbb6e72e92385e0618a86df361f06cfcb05497c908960a171ed6",
+  "raw_summary_sha256": "b6cda828f07eab15600d07139118c3ae156ada9235877fba68c2df21caef10f1",
+  "all_processes_absent": {
+    "522561": true,
+    "522564": true,
+    "522565": true,
+    "522577": true,
+    "522578": true,
+    "522579": true,
+    "522582": true
+  },
+  "raw_groups": [
+    {
+      "side": "LEFT",
+      "split": "train",
+      "arm": "center",
+      "valid": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    {
+      "side": "LEFT",
+      "split": "test",
+      "arm": "center",
+      "valid": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    {
+      "side": "LEFT",
+      "split": "test",
+      "arm": "minus",
+      "valid": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    {
+      "side": "LEFT",
+      "split": "test",
+      "arm": "plus",
+      "valid": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    {
+      "side": "RIGHT",
+      "split": "train",
+      "arm": "center",
+      "valid": 4,
+      "safe_GOAL": 0,
+      "contact": 0,
+      "timeout": 4,
+      "invalid": 0,
+      "censored": 0
+    },
+    {
+      "side": "RIGHT",
+      "split": "test",
+      "arm": "center",
+      "valid": 4,
+      "safe_GOAL": 0,
+      "contact": 0,
+      "timeout": 4,
+      "invalid": 0,
+      "censored": 0
+    },
+    {
+      "side": "RIGHT",
+      "split": "test",
+      "arm": "minus",
+      "valid": 4,
+      "safe_GOAL": 0,
+      "contact": 0,
+      "timeout": 4,
+      "invalid": 0,
+      "censored": 0
+    },
+    {
+      "side": "RIGHT",
+      "split": "test",
+      "arm": "plus",
+      "valid": 4,
+      "safe_GOAL": 0,
+      "contact": 0,
+      "timeout": 4,
+      "invalid": 0,
+      "censored": 0
+    }
+  ],
+  "native_commands": 64,
+  "native_physics": 1563224,
+  "navigation_wall_seconds": 242.57043766975403,
+  "head_Adam_live": 3000,
+  "head_Adam_independent_reconstruction": 3000,
+  "Actor_Adam": 0,
+  "old275": "NOT_EXECUTED",
+  "six54": "NOT_EXECUTED",
+  "fresh16": "NOT_EXECUTED",
+  "reload78": "NOT_EXECUTED",
+  "seven_eight": "NOT_ENTERED",
+  "new_qualified_video": null,
+  "complete_release_receipt_sha256": "359cc8d9b993be43fff8f0b4ef3fec64729cbeac5d2e63831f77d71fc6d741c6",
+  "archive_sha256": "ac6ff77390c8163dbf459aea637ffc2a5f8d72a8ff5fe098c64fafd3e864b3e9",
+  "archive_members": 54,
+  "archive_segments": 9,
+  "runs_logical_bytes": 1049336058,
+  "disk_free_bytes": 222428377088,
+  "registered_source_remote": "94c32992dc6af4981fce6cc6ab806af7093c3d3d",
+  "verified_epoch": 1793631969.2649107
+}
