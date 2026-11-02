@@ -1,0 +1,26 @@
+{
+  "state": "POSTHOC_DIAGNOSTIC_NO_NEW_TRAINING",
+  "native_steps": 0,
+  "optimizer_calls": 0,
+  "current_previous_goal_history_error_fixed": true,
+  "previous_recovered_latent_min": -26.0394565456389,
+  "previous_recovered_latent_max": 29.230576008558273,
+  "conditional_versus_iid_32_context_checks": {
+    "0.98": {
+      "latent_min": -25.294465666750536,
+      "latent_max": 28.980309328711975,
+      "invalid_inverse_CDF_components": 2,
+      "invalid_context_rows": 2
+    },
+    "0.0": {
+      "latent_min": -2.749552990590275,
+      "latent_max": 2.367393677333675,
+      "invalid_inverse_CDF_components": 0,
+      "invalid_context_rows": 0,
+      "float64_native_bounds_pass": true,
+      "float32_native_bounds_pass": true
+    }
+  },
+  "interpretation": "ChanginggoalwhilekeepingactualoldpreviousactioncanimplyextremeconditionalARlatent; originalcanonicalsamplerrejectsinverseCDF0or1. NoCDFclip/thresholdrelaxation/logpreplacement. iidnumbersareengineeringonly, not new scientificallytrainedcontrol orproofiidwillnavigatebetter. Anyiidbaseline mustbe separatelyregistered asadistributionchange andneveruseoldARlogponpolicy.",
+  "source_protocol_sha256": "f6dc564f073ccbb3857e3dff47b8ad91d39f2152808b65bc751ae36fcb9d983c"
+}

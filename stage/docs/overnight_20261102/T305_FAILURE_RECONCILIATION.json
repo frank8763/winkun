@@ -1,0 +1,27 @@
+{
+  "state": "FAILED_PRODUCERS_PRESERVED_AND_ZERO_UPDATE_RECONCILED",
+  "records": [
+    {
+      "run": "t305_goal_conditioned_contract",
+      "main_state": "FAILED",
+      "native_steps": 0,
+      "optimizer_calls": 0,
+      "all_input_SHA_unchanged": true,
+      "all_processes_absent": true,
+      "elapsed_s": 8.193702697753906,
+      "failure": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t305_goal_conditioned_contract/experiment.py\", line 155, in run\n    verify(p);r,a=calculate(p,guard);C.save(OUT/'contracts.json',r)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t305_goal_conditioned_contract/experiment.py\", line 69, in calculate\n    assert identity<=2e-6 and len(sample)==32\nAssertionError\n"
+    },
+    {
+      "run": "t305_goal_contract_recovery",
+      "main_state": "FAILED",
+      "native_steps": 0,
+      "optimizer_calls": 0,
+      "all_input_SHA_unchanged": true,
+      "all_processes_absent": true,
+      "elapsed_s": 10.905005693435669,
+      "failure": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t305_goal_contract_recovery/experiment.py\", line 161, in run\n    verify(p);r,a=calculate(p,guard);C.save(OUT/'contracts.json',r)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t305_goal_contract_recovery/experiment.py\", line 121, in calculate\n    objective,new_action=proposed_actor_objective(q,critic,bh,qs,ps,pas,torch.zeros(32,dtype=torch.bool),innovation,bg)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t305_goal_conditioned_contract/gc_contract.py\", line 107, in proposed_actor_objective\n    action,prev_latent=conditional_action(mean,previous_mean,previous_action,reset,innovation)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t305_goal_conditioned_contract/gc_contract.py\", line 94, in conditional_action\n    return T.L.AR.sample(mean,latent,native=False),previous\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t238_ar_density_recovery/copula.py\", line 30, in sample\n    assert bool(((q>0)&(q<1)).all())\nAssertionError\n"
+    }
+  ],
+  "engineering_PASS_claimed": false,
+  "scientific_control_gate": false
+}
