@@ -1,0 +1,43 @@
+{
+  "state": "POSTRUN_EVIDENCE_RECONCILED",
+  "physics_added": 0,
+  "navigation_Actor_updates_added": 0,
+  "disposable_optimizer_reconstruction_calls": 100,
+  "all_processes_absent": true,
+  "all_original_sources_models_and_payload_SHA_verified": true,
+  "total_physics_from_raw": 5875219,
+  "total_commands_from_raw": 375,
+  "full120_training_payloads": 0,
+  "complete_exact_replays": 0,
+  "retained_Actor_Adam_rounds_reconstructed": [],
+  "all_final_Actor_Adam_state_hashes_reconstructed_exact": true,
+  "all_attempted_accepted_rejected_supervised_blocks_ActorAdam_reconstructed_exact": true,
+  "safe_T255_unchanged": true,
+  "arms": {
+    "balanced_bridge": {
+      "accepted_RL_updates": 0,
+      "completed_rounds": 0,
+      "training_n": 0,
+      "training_safe": 0,
+      "old_n": 275,
+      "old_safe": 275,
+      "six_m_n": 54,
+      "six_m_safe": 0,
+      "heldout_n": 0,
+      "independent_reload_n": 0,
+      "gate": false,
+      "export": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t302_balanced_bridge_learning/balanced_bridge_final_checkpoint.pt.gz",
+        "sha256": "69cea764bcb44e2fbfa815997a6f9550ddc6c8e4346321b85f15d4f81b9784d1",
+        "bytes": 2193288,
+        "policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54",
+        "optimizer_hash": "881489e608a38e54726d0751cd52ed648891a06e8603b81357fc9935f73c3d76"
+      }
+    }
+  },
+  "own_bytes": 4688996,
+  "global_bytes": 1065368681,
+  "summary_sha256": "6eb5a15adbbaf4698ea200eb347b6fb2a77ffe5bba13557261c24c0ecbf9b888",
+  "audit_epoch": 1793605556.8824387,
+  "attribution": "T302 independently bounded NEW DATA+CLOSEDLOOPGUARD engineering pilot, not additionalT299epochs/lossgrid or pureRL/novelalgorithm. Reset fromsafeT255+freshAdam, same120hiddenresetActor no newcapacity/map/planner/waypoint/teacher/router/Phase. Own5distinctcompletedLEFT5.5m stochastic safetytrajectories full120verified historicalT263/T267 plus10RIGHT6m deterministic successes exactfull12arrays/integrationrecoveredT301. Alreadyconsumeddevelopment, mixedbehavior selfsupervision notonpolicy/HPG/IS. Sideequal .5LEFT/.5RIGHT,trajectoryequalwithin5or10,4rowspertrajectory60total+old8tasks4anchors; sameconditionalAR NLL/previousmeangradient/logtails/soft100/LRs/gradclip1; onefullparentsidebalancedgradientnormscale beforeoptimization fixed. Atmost10blocks50supervisedlive+50shadoweach. SnapshotwholeActorAdam beforeblock, exactshadow afterblock then actualfixedold20all-safeaccept, elsecompleteActorAdamrollbackandstoponfirstreject; noextraepochs/factors/seed/noise/weight/modelgrid. Allactualcalls/rejections/shadowcounted and records preservefailedproposalhash+exactreconstruction. Fixed3LEFT5.5m nativeparentcontrols thenfinalcandidate3bridgecenters; finalold275andoriginal6m54 always evaluated,all-safe then16fresh78independentnative reload. Original6mgoal never switcheswithin navigation;5.5m onlywholetrainingtask goal, notsubgoalrouter. Thisprotocol0NEW_NAVIGATION_RLcollection/updates, supervisedAdam discardedafterrecordedSHA and independentlyreconstructed, finalActor+emptyfreshAdam reference saved; nextoriginal6mRL requires separatefullbudget/source/gate. Earlier data/losscontrolT299consumed notrandomized causalevidence; dataandguardbothchanged so noisolatedloss/noveltyclaim. 650commands18.2Mphysics5400s learn3600/final1800,own11MiB/global1GiB/free40GiB.640compact10KiBfivearraysderivedreward+2.5MiBfinalActorEmptyAdam+1.75MiBmeta; source15full120reusedhashes andno newfullRLarrays. Maxcompact200blockoldchecks+3parentbridge+3finalbridge+275old+54six+16fresh+78reload+4partial=633<=640; fallbackbaselinecheck afterfirstreject fits200becauseonly40thenstop. Preflight4disposablecalls validates2syntheticblocksteps live/shadow plusrejectcase exactrollback;0native. Endactualallprocessesstop independentatmost1000disposableexactblockreconstruction inclnativecache/rollback/finalActorEmptyAdam/source/raw/partial counts, fullRAMremotememberreadback thenexactroot sync. Sixgate notpassed no7or8; userauthorizesprepare7then8onlyafterstrictfullgate, notfromfewcenters."
+}

@@ -1,0 +1,1933 @@
+{
+  "scope": "Posthoc0native0optimizer bookkeeping. Native failures of rejected proposal are OLD20 outcomes only; proposal6m/LEFTbridge not evaluated, cannot claim it improves or fails6m. Final unchangedsafe policy evaluation is distinct from T299research10/54.",
+  "native_steps": 0,
+  "optimizer_calls": 0,
+  "navigation_updates": 0,
+  "counts": [
+    {
+      "role": "parent_bridge_centers",
+      "executed": 3,
+      "expected": 3,
+      "safe": 1,
+      "contact": 1,
+      "timeout": 1,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 0
+    },
+    {
+      "role": "old20_guard",
+      "executed": 40,
+      "expected": null,
+      "safe": 38,
+      "contact": 2,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": null
+    },
+    {
+      "role": "auxiliary_centers",
+      "executed": 3,
+      "expected": 3,
+      "safe": 1,
+      "contact": 1,
+      "timeout": 1,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 0
+    },
+    {
+      "role": "old_regression",
+      "executed": 275,
+      "expected": 275,
+      "safe": 275,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 0
+    },
+    {
+      "role": "development",
+      "executed": 54,
+      "expected": 54,
+      "safe": 0,
+      "contact": 27,
+      "timeout": 27,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 0
+    },
+    {
+      "role": "heldout",
+      "executed": 0,
+      "expected": 16,
+      "safe": 0,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 16
+    },
+    {
+      "role": "independent_reload",
+      "executed": 0,
+      "expected": 78,
+      "safe": 0,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 78
+    }
+  ],
+  "attempted_supervised_steps": 50,
+  "retained_supervised_steps": 0,
+  "initial_metrics": {
+    "side_equal_MSE": 0.0009280912869144231,
+    "side_equal_conditional_NLL": -5.793227144678194,
+    "LEFT_MSE": 0.0007017336669377982,
+    "RIGHT_MSE": 0.001154448906891048,
+    "per_trajectory_MSE": [
+      0.0005885077989660203,
+      0.0005676547298207879,
+      0.0007851466070860624,
+      0.000784199801273644,
+      0.0007831593975424767,
+      0.0013150618178769946,
+      0.0012863086303696036,
+      0.001281825127080083,
+      0.0012787884334102273,
+      0.0012257660273462534,
+      0.0010597326327115297,
+      0.000944980070926249,
+      0.0011298093013465405,
+      0.0009218268096446991,
+      0.0011003902181982994
+    ],
+    "per_trajectory_NLL": [
+      -7.139411780985614,
+      -7.140663973169778,
+      -7.248671997470568,
+      -7.253165165677973,
+      -7.248656509426397,
+      -5.1567456020688605,
+      -5.334242352957813,
+      -4.8458021556464725,
+      -0.09071748914586414,
+      -5.742767521143295,
+      -4.454600609209155,
+      -5.394007071517548,
+      -3.745555056812881,
+      -4.841130914061808,
+      -4.197835267539516
+    ],
+    "old_balanced_MSE": 0.0,
+    "old_max_error": 0.0
+  },
+  "final_metrics": {
+    "side_equal_MSE": 0.0009280912869144231,
+    "side_equal_conditional_NLL": -5.793227144678194,
+    "LEFT_MSE": 0.0007017336669377982,
+    "RIGHT_MSE": 0.001154448906891048,
+    "per_trajectory_MSE": [
+      0.0005885077989660203,
+      0.0005676547298207879,
+      0.0007851466070860624,
+      0.000784199801273644,
+      0.0007831593975424767,
+      0.0013150618178769946,
+      0.0012863086303696036,
+      0.001281825127080083,
+      0.0012787884334102273,
+      0.0012257660273462534,
+      0.0010597326327115297,
+      0.000944980070926249,
+      0.0011298093013465405,
+      0.0009218268096446991,
+      0.0011003902181982994
+    ],
+    "per_trajectory_NLL": [
+      -7.139411780985614,
+      -7.140663973169778,
+      -7.248671997470568,
+      -7.253165165677973,
+      -7.248656509426397,
+      -5.1567456020688605,
+      -5.334242352957813,
+      -4.8458021556464725,
+      -0.09071748914586414,
+      -5.742767521143295,
+      -4.454600609209155,
+      -5.394007071517548,
+      -3.745555056812881,
+      -4.841130914061808,
+      -4.197835267539516
+    ],
+    "old_balanced_MSE": 0.0,
+    "old_max_error": 0.0
+  },
+  "rejected_blocks": [
+    {
+      "block": 0,
+      "steps_attempted": 50,
+      "accepted": false,
+      "proposal_policy_hash": "c05274b93ae4e715b76f640b7305af7912ab6565cf561506bd7c4776377d36de",
+      "proposal_optimizer_hash": "5a3c3c174a544468fcd1d9490a55e61c8ceb4c058a3fe137095386230ea86f41",
+      "retained_policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54",
+      "retained_optimizer_hash": "881489e608a38e54726d0751cd52ed648891a06e8603b81357fc9935f73c3d76",
+      "native_old20": {
+        "policy_hash": "c05274b93ae4e715b76f640b7305af7912ab6565cf561506bd7c4776377d36de",
+        "cases": 20,
+        "safe": 18,
+        "all_safe": false,
+        "failed_ids": [
+          "dev_task6_24",
+          "hold_task6_06"
+        ]
+      },
+      "last_step": {
+        "step": 49,
+        "objective": -0.004344924342355691,
+        "conditional_NLL": -5.360105373229306,
+        "old_weighted_MSE": 0.0005097036482766271,
+        "gradient_norm": 5.789478778839111
+      }
+    }
+  ],
+  "old_guard_failures": [
+    {
+      "id": "dev_task6_24",
+      "policy_hash": "c05274b93ae4e715b76f640b7305af7912ab6565cf561506bd7c4776377d36de",
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 16306
+    },
+    {
+      "id": "hold_task6_06",
+      "policy_hash": "c05274b93ae4e715b76f640b7305af7912ab6565cf561506bd7c4776377d36de",
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 14722
+    }
+  ],
+  "final_policy_exact_safeT255": true,
+  "final_policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54",
+  "historical_overlap": [
+    {
+      "role": "old_regression",
+      "id": "dev_task0_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_08",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_09",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_10",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_11",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_12",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_13",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_14",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_15",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_16",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_17",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_18",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_19",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_20",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_21",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_22",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_23",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_24",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_25",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task0_26",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_08",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_09",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_10",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_11",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_12",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_13",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_14",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_15",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_16",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_17",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_18",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_19",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_20",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_21",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_22",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_23",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_24",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_25",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task1_26",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_08",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_09",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_10",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_11",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_12",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_13",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_14",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_15",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_16",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_17",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_18",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_19",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_20",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_21",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_22",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_23",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_24",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_25",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task2_26",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_08",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_09",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_10",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_11",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_12",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_13",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_14",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_15",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_16",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_17",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_18",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_19",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_20",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_21",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_22",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_23",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_24",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_25",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task3_26",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_08",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_09",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_10",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_11",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_12",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_13",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_14",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_15",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_16",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_17",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_18",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_19",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_20",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_21",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_22",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_23",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_24",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_25",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task4_26",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_09",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_10",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_11",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_12",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_13",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_14",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_15",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_16",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_18",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_19",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_20",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_21",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_22",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_23",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_24",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_25",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task5_26",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_08",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_09",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_10",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_11",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_12",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_13",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_14",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_15",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_16",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_17",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_18",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_19",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_20",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_21",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_22",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_23",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_24",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_25",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task6_26",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_08",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_09",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_10",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_11",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_12",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_13",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_14",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_15",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_16",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_17",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_18",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_19",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_20",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_21",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_22",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_23",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_24",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_25",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "dev_task7_26",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task0_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task0_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task0_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task0_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task0_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task0_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task0_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task0_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task1_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task1_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task1_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task1_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task1_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task1_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task1_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task1_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task2_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task2_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task2_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task2_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task2_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task2_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task2_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task2_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task3_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task3_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task3_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task3_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task3_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task3_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task3_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task3_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task4_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task4_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task4_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task4_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task4_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task4_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task4_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task4_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task5_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task5_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task5_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task5_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task5_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task5_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task5_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task5_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task6_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task6_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task6_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task6_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task6_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task6_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task6_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task6_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task7_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task7_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task7_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task7_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task7_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task7_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task7_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "old_regression",
+      "id": "hold_task7_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_08",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_09",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_10",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_11",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_12",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_13",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_14",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_15",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_16",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_17",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_18",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_19",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_20",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_21",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_22",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_23",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_24",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_25",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_LEFT_26",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_00",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_01",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_02",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_03",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_04",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_05",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_06",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_07",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_08",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_09",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_10",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_11",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_12",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_13",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_14",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_15",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_16",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_17",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_18",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_19",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_20",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_21",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_22",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_23",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_24",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_25",
+      "all12arrays_and_integration_exact": true
+    },
+    {
+      "role": "development",
+      "id": "dev6_RIGHT_26",
+      "all12arrays_and_integration_exact": true
+    }
+  ],
+  "historical_exact_case_count": 329,
+  "parent_candidate_bridge_rows": [
+    {
+      "role": "parent_bridge_centers",
+      "id": "course5.50_dev6_LEFT_13",
+      "safe": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 25667,
+      "policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54"
+    },
+    {
+      "role": "parent_bridge_centers",
+      "id": "course5.50_dev6_LEFT_04",
+      "safe": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 20945,
+      "policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54"
+    },
+    {
+      "role": "parent_bridge_centers",
+      "id": "course5.50_dev6_LEFT_10",
+      "safe": true,
+      "contact": false,
+      "timeout": false,
+      "physics_steps": 24199,
+      "policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54"
+    },
+    {
+      "role": "auxiliary_centers",
+      "id": "course5.50_dev6_LEFT_13",
+      "safe": false,
+      "contact": false,
+      "timeout": true,
+      "physics_steps": 25667,
+      "policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54"
+    },
+    {
+      "role": "auxiliary_centers",
+      "id": "course5.50_dev6_LEFT_04",
+      "safe": false,
+      "contact": true,
+      "timeout": false,
+      "physics_steps": 20945,
+      "policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54"
+    },
+    {
+      "role": "auxiliary_centers",
+      "id": "course5.50_dev6_LEFT_10",
+      "safe": true,
+      "contact": false,
+      "timeout": false,
+      "physics_steps": 24199,
+      "policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54"
+    }
+  ],
+  "all_native_pids_absent": [
+    458838,
+    458843,
+    458844,
+    458854,
+    458858,
+    458834
+  ],
+  "global_logical_bytes": 1065368681,
+  "free_GiB": 208.7530860900879,
+  "source_sha256": "a159bd078f3e6e4ff30cb19133df34d677d2f5daeb5f35d52d4568ee904b7fb2",
+  "input_protocol_sha256": "0215b06cd747c743feab9cc8c5e8a76a8345e347ce4a5c5e7fe5e7ab61fd36dc"
+}
