@@ -45,6 +45,7 @@ GROUPS = {
     'T284': ['t284_feedback_drift'],
     'T285': ['t285_trajectory_constraints'],
     'T287': ['t287_time_aligned_credit'],
+    'T288': ['t288_five_metre_presentation'],
 }
 
 
