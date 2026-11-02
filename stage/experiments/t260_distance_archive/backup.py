@@ -56,6 +56,7 @@ GROUPS = {
     'T296': ['t296_log_tail_support'],
     'T298': ['t298_self_goal_transfer'],
     'T299': ['t299_conditional_goal_likelihood'],
+    'T301': ['t301_right_success_recovery'],
 }
 
 
