@@ -12,3 +12,7 @@
 
 - [T292状态基线与真实全参数梯度诊断](T292_FINDINGS.md)：整体改善掩盖末段方差增大，独立复核/原失败和全远端证据保留。
 - [下一目标条件机制合同](NEXT_GOAL_CONDITIONED_MECHANISM.md)：未注册/启动；[本次一手文献检索](LITERATURE_AND_T292_DECISION.md)。
+
+- [T293对比未来预测与动作盲对照](T293_FINDINGS.md)：固定两500步新头筛选失败，0Actor。
+- [T294同状态原生首动作/固定续行值](T294_FINDINGS.md)：8unique均超时、448k物理/16命令/精确重生，动作有效但未到达。
+- [下一HPG可用性合同草案](NEXT_AFTER_T294.md)：尚未注册/启动，先验完整120重标记及AR密度支持；不再盲加预测头。

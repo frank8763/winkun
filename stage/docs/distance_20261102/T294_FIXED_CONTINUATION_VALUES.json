@@ -1,0 +1,150 @@
+{
+  "rows": [
+    {
+      "task": "local1m_LEFT",
+      "arm": "parent",
+      "first_action": [
+        0.9999989867210388,
+        -0.009556309320032597
+      ],
+      "safe": false,
+      "collision": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 3.933550538777569,
+      "environment_G0": -0.20303307806611193,
+      "bounded_endpoint_cost": 0.8330171895781319,
+      "eta01_G0": -0.2863347970239251
+    },
+    {
+      "task": "local1m_LEFT",
+      "arm": "minus",
+      "first_action": [
+        0.9952389597892761,
+        -0.03955630958080292
+      ],
+      "safe": false,
+      "collision": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 3.9403396642626745,
+      "environment_G0": -0.20303307806611232,
+      "bounded_endpoint_cost": 0.8280753865405698,
+      "eta01_G0": -0.2858406167201693
+    },
+    {
+      "task": "local1m_LEFT",
+      "arm": "zero",
+      "first_action": [
+        0.9952389597892761,
+        -0.009556309320032597
+      ],
+      "safe": false,
+      "collision": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 3.934011954227526,
+      "environment_G0": -0.2030330780661125,
+      "bounded_endpoint_cost": 0.831879457903498,
+      "eta01_G0": -0.2862210238564623
+    },
+    {
+      "task": "local1m_LEFT",
+      "arm": "plus",
+      "first_action": [
+        0.9952389597892761,
+        0.020443690940737724
+      ],
+      "safe": false,
+      "collision": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 3.940103118252819,
+      "environment_G0": -0.20303307806611184,
+      "bounded_endpoint_cost": 0.8340486514136921,
+      "eta01_G0": -0.28643794320748106
+    },
+    {
+      "task": "local1m_RIGHT",
+      "arm": "parent",
+      "first_action": [
+        0.9999989867210388,
+        -0.017598677426576614
+      ],
+      "safe": false,
+      "collision": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 3.2692522535852837,
+      "environment_G0": -0.20303307806611226,
+      "bounded_endpoint_cost": 0.8009903952848444,
+      "eta01_G0": -0.2831321175945967
+    },
+    {
+      "task": "local1m_RIGHT",
+      "arm": "minus",
+      "first_action": [
+        0.9947141408920288,
+        -0.04759867861866951
+      ],
+      "safe": false,
+      "collision": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 3.2758270802966356,
+      "environment_G0": -0.20303307806611223,
+      "bounded_endpoint_cost": 0.8004540992763928,
+      "eta01_G0": -0.2830784879937515
+    },
+    {
+      "task": "local1m_RIGHT",
+      "arm": "zero",
+      "first_action": [
+        0.9947141408920288,
+        -0.017598677426576614
+      ],
+      "safe": false,
+      "collision": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 3.237712156825386,
+      "environment_G0": -0.2030330780661128,
+      "bounded_endpoint_cost": 0.8010432271527993,
+      "eta01_G0": -0.2831374007813927
+    },
+    {
+      "task": "local1m_RIGHT",
+      "arm": "plus",
+      "first_action": [
+        0.9947141408920288,
+        0.012401322834193707
+      ],
+      "safe": false,
+      "collision": false,
+      "timeout": true,
+      "physics_steps": 28000,
+      "remaining_m": 3.2446946813176294,
+      "environment_G0": -0.20303307806611254,
+      "bounded_endpoint_cost": 0.8017313858984034,
+      "eta01_G0": -0.2832062166559529
+    }
+  ],
+  "contrasts": [
+    {
+      "task": "local1m_LEFT",
+      "plus_minus_G0_difference": -0.0005973264873117556,
+      "plus_minus_steer_difference": 0.06000000052154064,
+      "finite_difference_eta01_return_per_native_steer": -0.009955441368659806,
+      "all_three_quantiles_safe": false
+    },
+    {
+      "task": "local1m_RIGHT",
+      "plus_minus_G0_difference": -0.00012772866220139845,
+      "plus_minus_steer_difference": 0.060000001452863216,
+      "finite_difference_eta01_return_per_native_steer": -0.002128810985142121,
+      "all_three_quantiles_safe": false
+    }
+  ],
+  "exact_deterministic_interventions_only": true,
+  "no_model_or_policy_update": true
+}
