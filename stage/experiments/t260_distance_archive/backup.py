@@ -59,6 +59,7 @@ GROUPS = {
     'T301': ['t301_right_success_recovery'],
     'T302': ['t302_balanced_bridge_learning'],
     'T303': ['t303_feedback_differentials'],
+    'T304': ['t304_native_chunk_value'],
 }
 
 
