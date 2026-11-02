@@ -1,0 +1,3 @@
+# T300 transport continuation
+
+Original manifest remains fixed229 files/28021734B. First2 parts full remote readback succeeded, third upload urllib send timeout;0local encodings. Continue only original manifest under its creation epoch+600s originaldeadline, no new scientific computation/budget/selection. Original source/failed transport retained. First2parts fully re-read; pending parts at most2uploads/part with45s or remainingdeadline timeout; starter assets never accepted. All raw bytes remain until every package SHA readback passes. Source-only transport adapter added after stopped failure, not a navigation resume.
