@@ -1,0 +1,174 @@
+{
+  "state": "FINAL_RAW_DESCRIPTION_INDEPENDENT_AUDIT_PASS",
+  "summary_sha256": "6b06c1d3daed8c014f378a190876acca52c1b3546f9512934db2f6812377f1c4",
+  "roles": {
+    "development": {
+      "recorded": 54,
+      "valid_complete": 54,
+      "safe": 1,
+      "contact": 27,
+      "timeout": 26,
+      "censored": 0,
+      "errors": 0
+    },
+    "old20_guard": {
+      "recorded": 80,
+      "valid_complete": 80,
+      "safe": 77,
+      "contact": 3,
+      "timeout": 0,
+      "censored": 0,
+      "errors": 0
+    },
+    "old_regression": {
+      "recorded": 275,
+      "valid_complete": 275,
+      "safe": 274,
+      "contact": 1,
+      "timeout": 0,
+      "censored": 0,
+      "errors": 0
+    },
+    "round_centers": {
+      "recorded": 24,
+      "valid_complete": 24,
+      "safe": 16,
+      "contact": 2,
+      "timeout": 6,
+      "censored": 0,
+      "errors": 0
+    },
+    "training": {
+      "recorded": 32,
+      "valid_complete": 32,
+      "safe": 0,
+      "contact": 8,
+      "timeout": 24,
+      "censored": 0,
+      "errors": 0
+    }
+  },
+  "training_overlap": [
+    {
+      "round": 0,
+      "training": 16,
+      "exact_historical_T287_reuse": 16,
+      "new_policy_trajectories": 0,
+      "safe": 0
+    },
+    {
+      "round": 1,
+      "training": 16,
+      "exact_historical_T287_reuse": 0,
+      "new_policy_trajectories": 16,
+      "safe": 0
+    }
+  ],
+  "live_trials": [
+    {
+      "round": 0,
+      "step": 0,
+      "factor": 1.0,
+      "accepted": false,
+      "numeric_pass": false,
+      "old20": null
+    },
+    {
+      "round": 0,
+      "step": 0,
+      "factor": 0.25,
+      "accepted": true,
+      "numeric_pass": true,
+      "old20": {
+        "policy_hash": "9dedf148ce070f0d29d17ecd0c787e6463787fc035f0b417aec1024c7e3f5498",
+        "cases": 20,
+        "safe": 19,
+        "all_safe": false,
+        "failed_ids": [
+          "dev_task6_24"
+        ]
+      }
+    },
+    {
+      "round": 0,
+      "step": 1,
+      "factor": 1.0,
+      "accepted": false,
+      "numeric_pass": false,
+      "old20": null
+    },
+    {
+      "round": 0,
+      "step": 1,
+      "factor": 0.25,
+      "accepted": true,
+      "numeric_pass": true,
+      "old20": {
+        "policy_hash": "9872d2eae81a40c9cc1ec53bd00ab46d98d9b4e4f1aa00c3d122e67291acc669",
+        "cases": 20,
+        "safe": 20,
+        "all_safe": true,
+        "failed_ids": []
+      }
+    },
+    {
+      "round": 1,
+      "step": 0,
+      "factor": 1.0,
+      "accepted": false,
+      "numeric_pass": false,
+      "old20": null
+    },
+    {
+      "round": 1,
+      "step": 0,
+      "factor": 0.25,
+      "accepted": true,
+      "numeric_pass": true,
+      "old20": {
+        "policy_hash": "03f294361ceb8c2626c6a869053b382ad91983542e50ee7368f6049d165a43e9",
+        "cases": 20,
+        "safe": 19,
+        "all_safe": false,
+        "failed_ids": [
+          "dev_task6_24"
+        ]
+      }
+    },
+    {
+      "round": 1,
+      "step": 1,
+      "factor": 1.0,
+      "accepted": false,
+      "numeric_pass": false,
+      "old20": null
+    },
+    {
+      "round": 1,
+      "step": 1,
+      "factor": 0.25,
+      "accepted": true,
+      "numeric_pass": true,
+      "old20": {
+        "policy_hash": "de2cb4fb247c070336025b48571611696dd7e13a1a498891c8edc60b98557398",
+        "cases": 20,
+        "safe": 19,
+        "all_safe": false,
+        "failed_ids": [
+          "dev_task6_24"
+        ]
+      }
+    }
+  ],
+  "six_success_ids": [
+    "dev6_RIGHT_18"
+  ],
+  "old_failed_ids": [
+    "dev_task6_24"
+  ],
+  "heldout16_unexecuted": 16,
+  "reload78_unexecuted": 78,
+  "seven_or_eight_entered": false,
+  "attribution": "Single consumed-development ablation, not independent randomized replication. Hard old20 removal allowed4updates, oldloss1 and same historically known6mRIGHT18 recovered; no expanded knownsuccesscoverage or fullsixstability. Softretention andoldcenterstop still present. No sceneimpossibility/unique rootcause claim.",
+  "audit_sha256": "ec15c696d78e1edbb9bacc4a7f279fe570d25564387fee3443f5437c2dc1e8b3"
+}
