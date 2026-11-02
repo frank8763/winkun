@@ -57,6 +57,7 @@ GROUPS = {
     'T298': ['t298_self_goal_transfer'],
     'T299': ['t299_conditional_goal_likelihood'],
     'T301': ['t301_right_success_recovery'],
+    'T302': ['t302_balanced_bridge_learning'],
 }
 
 

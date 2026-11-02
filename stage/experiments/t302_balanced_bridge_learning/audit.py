@@ -61,10 +61,11 @@ def main():
     for arm in p['arms']:
         q=policy(p);frozen=copy.deepcopy(q).eval().requires_grad_(False);ax,ay,offset=anchors(p,frozen)
         super_shadow=copy.deepcopy(q);su=L.optimizer(q,p);ss=L.optimizer(super_shadow,p);count(su);count(ss);events=[]
-        super_report=supervised_pair(q,super_shadow,su,ss,auxiliary(p),ax,ay,offset,p,lambda:None,events.append)
-        assert super_report==s['supervised']==json.loads((OUT/'supervised_summary.json').read_text());assert events==rows('supervised_updates.jsonl')
+        super_report=supervised_blocks(q,super_shadow,su,ss,auxiliary(p),ax,ay,offset,p,lambda:None,lambda actor:cache[S.digest(actor.state_dict())],events.append)
+        assert super_report==s['supervised']==json.loads((OUT/'supervised_summary.json').read_text());assert events==rows('supervised_blocks.jsonl')
         del su,ss,super_shadow
         opt=L.optimizer(q,p);count(opt)
+        assert not committed and not full and s['optimizer_calls_live']==s['optimizer_calls_shadow']==0
         for record in [r for r in committed if r['arm']==arm]:
             rnd=record['round'];items=[full[r['id']] for r in rr if r['arm']==arm and r['role']=='training' and r['id'].startswith(f'{arm}_r{rnd}_')]
             assert len(items)==16 and all(i['row']['complete'] for i in items)
@@ -82,7 +83,7 @@ def main():
         disposable_optimizer_reconstruction_calls=clone_calls,all_processes_absent=True,all_original_sources_models_and_payload_SHA_verified=True,
         total_physics_from_raw=s['physics_steps'],total_commands_from_raw=s['commands'],full120_training_payloads=len(full),
         complete_exact_replays=len(replays),retained_Actor_Adam_rounds_reconstructed=reconstructed,
-        all_final_Actor_Adam_state_hashes_reconstructed_exact=True,supervised_500_live500_shadow_reconstructed_exact=True,safe_T255_unchanged=True,
+        all_final_Actor_Adam_state_hashes_reconstructed_exact=True,all_attempted_accepted_rejected_supervised_blocks_ActorAdam_reconstructed_exact=True,safe_T255_unchanged=True,
         arms=s['arms'],own_bytes=S.used(OUT),global_bytes=S.used(ROOT/'stage/runs'),summary_sha256=C.sha(OUT/'summary.json'),audit_epoch=time.time(),
         attribution=p['contract']))
     print(json.dumps(dict(state='PASS',clone_reconstruction_calls=clone_calls,arms=s['arms'])),flush=True)

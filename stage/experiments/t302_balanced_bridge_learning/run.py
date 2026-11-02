@@ -108,7 +108,7 @@ def main():
         meter=Budget(ROOT,OUT,plan,start_epoch=start);torch.set_num_threads(1);torch.use_deterministic_algorithms(True)
         frozen=policy(plan).eval().requires_grad_(False);ax,ay,offset=anchors(plan,frozen)
         for arm in plan['arms']:
-            models[arm]=policy(plan)
+            models[arm]=policy(plan);opts[arm]=L.optimizer(models[arm],plan)
         active=next(iter(plan['arms']));training=True;guard()
         ctx=mp.get_context('spawn');counts=ctx.Array('q',4)
         for index in range(4):
@@ -132,28 +132,8 @@ def main():
         auxcheck=roll(jobs_for(plan['auxiliary_centers'],'auxiliary_centers'),models[active],'auxiliary_centers')
         C.save(OUT/'pretraining_native_gate.json',dict(old20=oldcheck,auxiliary=[r['row'] for r in auxcheck],metrics_pass=supervised['metrics_pass']))
         if not oldcheck['all_safe']:raise Stop('SUPERVISED_OLD20_GUARD_FAILED')
-        if not all(safe(i['row']) for i in auxcheck):raise Stop('SUPERVISED_AUXILIARY_CENTRES_FAILED')
-        for rnd in range(plan['rounds']):
-            batches={}
-            for arm,eta in plan['arms'].items():
-                active=arm;guard();jobs=jobs_for(plan['training_jobs'],f'{arm}_r{rnd}',eta,'conditional_AR')
-                jobs=[dict(j,id=j['id']+f'_s{k}',seed=plan['seed']+100*rnd+k) for j in jobs for k in range(4)]
-                batches[arm]=roll(jobs,models[arm],'training',True)
-            for arm in plan['arms']:
-                active=arm;p=models[arm];opt=opts[arm];data=L.training_batch(batches[arm],p)
-                append('density.jsonl',dict(arm=arm,round=rnd,**data['density']))
-                shadow=copy.deepcopy(p);shadow_opt=L.optimizer(shadow,plan);shadow_opt.load_state_dict(copy.deepcopy(opt.state_dict()))
-                count_optimizer(shadow_opt,arm,'shadow')
-                live,audit=paired_update(p,opt,shadow,shadow_opt,data,ax,ay,offset,plan,rnd,guard,native_gate,
-                    lambda phase,event:append('proposal_events.jsonl',dict(arm=arm,round=rnd,phase=phase,**event),32768))
-                assert live==audit and S.digest(p.state_dict())==S.digest(shadow.state_dict()) and S.digest(opt.state_dict())==S.digest(shadow_opt.state_dict())
-                n=sum(r['accepted'] for r in live);accepted[arm]+=n;rounds[arm]+=1;updates[arm].append(live)
-                append('round_updates.jsonl',dict(arm=arm,round=rnd,updates=live,policy_hash=S.digest(p.state_dict()),optimizer_hash=S.digest(opt.state_dict())),32768)
-                rr=[i['row'] for i in roll(jobs_for(plan['old_centers']+plan['centers']+plan['local_centers'],f'{arm}_centers{rnd}'),p,'round_centers')]
-                if not all(safe(r) for r in rr[:8]):raise Stop('OLD_CENTER_LOSS')
-                status('RL_ROUND_COMPLETE',True)
-                zero_accept_rounds=zero_accept_rounds+1 if n==0 else 0
-                if zero_accept_rounds>=2:raise Stop('TWO_CONSECUTIVE_ZERO_ACCEPT_ROUNDS')
+        if not all(safe(i['row']) for i in auxcheck):raise Stop('LEFT5P5_BRIDGE_CENTRES_NOT_ALL_SAFE')
+        reason='FIXED_BRIDGE_BLOCKS_COMPLETE_NO_RL_REGISTERED'
     except Stop as e:reason=str(e)
     except BaseException:
         reason='FAILED';C.save(OUT/'failure.json',dict(traceback=traceback.format_exc(),inflight_jobs=[j['id'] for j in inflight],inflight_physics_upper_bound=sum(j['case']['step_cap'] for j in inflight)))

@@ -1,6 +1,6 @@
-# Unregistered mechanism draft
+# Side-balanced bridge-learning pilot
 
-This directory is an incomplete next-mechanism implementation. No protocol,
-preflight, launch, training, or output directory has been created. Do not run it.
-Finish bounded resource/scientific contracts and exact source sync before use.
-Current actual job is the independently registered T301 data recovery.
+Finite protocol registered and zero-native preflight passed. Source sync and
+unique launch must still be checked in stage/runs/t302_balanced_bridge_learning.
+T301 data recovery is complete, audited and fully read back from its remote
+backup. See stage/docs/distance_20261102/T302_PLAN.md for actual limits/gates.

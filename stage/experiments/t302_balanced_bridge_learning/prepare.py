@@ -1,0 +1,30 @@
+from t302_learning import *
+import json,gzip,shutil,ast
+HERE=Path(__file__).resolve().parent;OUT=ROOT/'stage/runs/t302_balanced_bridge_learning'
+
+def main():
+    assert not OUT.exists();p=json.loads((ROOT/'stage/runs/t299_conditional_goal_likelihood/protocol.json').read_text());inputs=dict(p['input_hashes']);manifest=json.loads((ROOT/'stage/docs/distance_20261102/T299_NEXT_DATA_MANIFEST_DRAFT.json').read_text());aux=[];centers=[];seen=set()
+    for source in manifest['LEFT_sources']:
+        folder=Path(source['path']).parents[1];records=list(map(json.loads,gzip.decompress((folder/'training.jsonl.gz').read_bytes()).decode().splitlines()));row=next(r for r in records if r['id']==source['id']);assert row['success'] and not row['collision'] and C.sha(source['path'])==source['sha256']
+        aux.append(dict(id=row['id'],path=source['path'],sha256=source['sha256'],side='LEFT',goal_distance_m=5.5,source_policy_hash=source['source_policy_hash']))
+        job=dict(row['job']);sid=job['source_reset_id']
+        if sid not in seen:
+            with np.load(source['path']) as z:expected=S.digest(z['states'][0])
+            job.update(id=sid,source_reset_id=sid,mode='deterministic',seed=0,expected_initial120_sha256=expected);centers.append(job);seen.add(sid)
+        inputs[source['path']]=source['sha256'];inputs[str(folder/'training.jsonl.gz')]=C.sha(folder/'training.jsonl.gz');inputs[job['exact_snapshot']]=C.sha(job['exact_snapshot'])
+    recovered=ROOT/'stage/runs/t301_right_success_recovery';assert json.loads((recovered/'summary.json').read_text())['state']=='COMPLETE'
+    for row in json.loads((recovered/'cases.json').read_text()):
+        assert row['success'] and not row['collision'];aux.append(dict(id=row['source_id'],path=row['path'],sha256=row['sha256'],side='RIGHT',goal_distance_m=6.,source_policy_hash=row['policy_hash']));inputs[row['path']]=row['sha256']
+    for f in [ROOT/'stage/docs/distance_20261102/T301_AUDIT.json',ROOT/'stage/docs/long_distance_20261101/release_receipt_T301.json',recovered/'protocol.json',recovered/'summary.json',recovered/'cases.json',ROOT/'stage/docs/distance_20261102/T300_AUDIT.json',ROOT/'stage/experiments/t280_local_cost/t280_worker.py',*HERE.glob('*.py')]:inputs[str(f)]=C.sha(f)
+    p.pop('auxiliary_NLL_scale',None);p.pop('initial_gradient_scale_sha256',None)
+    p.update(experiment='T302',arms={'balanced_bridge':.1},auxiliary_sources=aux,auxiliary_centers=centers,rounds=0,actor_attempts_per_round=0,supervised_blocks=10,supervised_block_steps=50,supervised_steps=500,supervised_seed=2026110208,preflight_clone_optimizer_max_calls=4,postrun_clone_optimizer_max_calls=1000,max_commands=650,max_physics=18200000,max_training_payloads=0,max_compact_payloads=640,compact_episode_bytes=10*1024,model_bytes=int(2.5*1024**2),metadata_bytes=int(1.75*1024**2),payload_bytes=640*10*1024+int(2.5*1024**2),final_bytes=11*1024**2,wall_seconds=5400,final_reserve_seconds=1800,external_group_watchdog_seconds=5400,input_hashes=inputs,
+        contract='T302 independently bounded NEW DATA+CLOSEDLOOPGUARD engineering pilot, not additionalT299epochs/lossgrid or pureRL/novelalgorithm. Reset fromsafeT255+freshAdam, same120hiddenresetActor no newcapacity/map/planner/waypoint/teacher/router/Phase. Own5distinctcompletedLEFT5.5m stochastic safetytrajectories full120verified historicalT263/T267 plus10RIGHT6m deterministic successes exactfull12arrays/integrationrecoveredT301. Alreadyconsumeddevelopment, mixedbehavior selfsupervision notonpolicy/HPG/IS. Sideequal .5LEFT/.5RIGHT,trajectoryequalwithin5or10,4rowspertrajectory60total+old8tasks4anchors; sameconditionalAR NLL/previousmeangradient/logtails/soft100/LRs/gradclip1; onefullparentsidebalancedgradientnormscale beforeoptimization fixed. Atmost10blocks50supervisedlive+50shadoweach. SnapshotwholeActorAdam beforeblock, exactshadow afterblock then actualfixedold20all-safeaccept, elsecompleteActorAdamrollbackandstoponfirstreject; noextraepochs/factors/seed/noise/weight/modelgrid. Allactualcalls/rejections/shadowcounted and records preservefailedproposalhash+exactreconstruction. Fixed3LEFT5.5m nativeparentcontrols thenfinalcandidate3bridgecenters; finalold275andoriginal6m54 always evaluated,all-safe then16fresh78independentnative reload. Original6mgoal never switcheswithin navigation;5.5m onlywholetrainingtask goal, notsubgoalrouter. Thisprotocol0NEW_NAVIGATION_RLcollection/updates, supervisedAdam discardedafterrecordedSHA and independentlyreconstructed, finalActor+emptyfreshAdam reference saved; nextoriginal6mRL requires separatefullbudget/source/gate. Earlier data/losscontrolT299consumed notrandomized causalevidence; dataandguardbothchanged so noisolatedloss/noveltyclaim. 650commands18.2Mphysics5400s learn3600/final1800,own11MiB/global1GiB/free40GiB.640compact10KiBfivearraysderivedreward+2.5MiBfinalActorEmptyAdam+1.75MiBmeta; source15full120reusedhashes andno newfullRLarrays. Maxcompact200blockoldchecks+3parentbridge+3finalbridge+275old+54six+16fresh+78reload+4partial=633<=640; fallbackbaselinecheck afterfirstreject fits200becauseonly40thenstop. Preflight4disposablecalls validates2syntheticblocksteps live/shadow plusrejectcase exactrollback;0native. Endactualallprocessesstop independentatmost1000disposableexactblockreconstruction inclnativecache/rollback/finalActorEmptyAdam/source/raw/partial counts, fullRAMremotememberreadback thenexactroot sync. Sixgate notpassed no7or8; userauthorizesprepare7then8onlyafterstrictfullgate, notfromfewcenters.')
+    assert len(aux)==15 and len(centers)==3 and p['payload_bytes']+p['metadata_bytes']<p['final_bytes']
+    for f,h in inputs.items():assert C.sha(f)==h,f
+    assert S.used(ROOT/'stage/runs')+p['final_bytes']<p['global_bytes'] and shutil.disk_usage(ROOT).free>=p['min_free_bytes']
+    for f in HERE.glob('*.py'):ast.parse(f.read_text())
+    OUT.mkdir();(OUT/'episodes').mkdir()
+    for f in [HERE/'protocol.json',OUT/'protocol.json']:f.write_text(json.dumps(p,separators=(',',':'))+'\n')
+    print('T302 registered, sidebalanced5LEFT/10RIGHT+nativeblockguard,0native0optimizer')
+
+if __name__=='__main__':main()
