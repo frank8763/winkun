@@ -54,6 +54,7 @@ GROUPS = {
     'T294': ['t294_paired_action_value'],
     'T295': ['t295_hindsight_support'],
     'T296': ['t296_log_tail_support'],
+    'T298': ['t298_self_goal_transfer'],
 }
 
 
