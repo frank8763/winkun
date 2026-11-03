@@ -1,0 +1,5 @@
+# T312注册说明
+
+正式预检6合成丢弃Adam/0native已PASS。随后仅清理contract中两处编辑草稿文字：48完整score梯度（16轨迹×3），以及256行Actor minibatch（16轨迹×16行），数值字段/学习/主程序/worker/audit字节未改变。初协议/预检在T312_INITIAL_REGISTRATION.json完整保存，prepare源更新SHA后重锁protocol，finalize复用原6次而无新增optimizer。
+
+入口只读symtable初检查将__main__下声明的args/parser误报为导入时未绑定；它们只在__main__使用。修正只读检查将模块已声明赋值符号纳入，四模块所有函数global已核对；0native/optimizer。没有修改主程序或忽略真正缺失名称。
