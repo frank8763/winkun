@@ -82,6 +82,7 @@ GROUPS = {
     'T322': ['t322_full_network_steering'],
     'T323': ['t323_human_state_completion'],
     'T324': ['t324_cause_audit'],
+    'T325': ['t325_human_ui'],
 }
 
 
