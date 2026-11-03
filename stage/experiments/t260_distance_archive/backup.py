@@ -93,6 +93,7 @@ GROUPS = {
     'T333': ['t333_remaining_aggregation'],
     'T334': ['t334_trained_takeover'],
     'T335': ['t335_failure_review'],
+    'T336': ['t336_reverse_online'],
 }
 
 
