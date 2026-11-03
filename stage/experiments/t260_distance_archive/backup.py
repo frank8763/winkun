@@ -89,6 +89,7 @@ GROUPS = {
     'T329': ['t329_success_residual'],
     'T330': ['t330_policy_prefix_recovery'],
     'T331': ['t331_policy_prefix_retry'],
+    'T332': ['t332_recovery_aggregation'],
 }
 
 
