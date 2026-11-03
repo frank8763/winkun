@@ -86,6 +86,7 @@ GROUPS = {
     'T326': ['t326_gap_geometry'],
     'T327': ['t327_wide_gap_human'],
     'T328': ['t328_wide_gap_80s'],
+    'T329': ['t329_success_residual'],
 }
 
 
