@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "state": "COMPLETE",
+    "pid": 639289,
+    "main_epoch": 1793699217.3590932,
+    "elapsed_s": 44.03306722640991,
+    "deadline_epoch": 1793699517.3590932,
+    "commands": 4,
+    "physics_steps": 66748,
+    "derived_trajectories": 2,
+    "exact_replays": 2,
+    "counts": {
+      "success": 0,
+      "collision": 2,
+      "timeout": 0
+    },
+    "all_workers_stopped": true,
+    "workers_spawned": 0,
+    "Actor_updates": 0,
+    "Adam_calls": 0,
+    "gradient_calls": 0,
+    "autonomous_six_metre_pass": false,
+    "automatic_training": false,
+    "own_bytes": 344061,
+    "global_bytes": 1071873678
+  },
+  "derived_outcomes": [
+    {
+      "id": "augmentation_01",
+      "behavior_source": "HUMAN_DERIVED_OPEN_LOOP_THROTTLE_AUGMENTATION",
+      "success": false,
+      "collision": true,
+      "timeout": false,
+      "physics_steps": 17281,
+      "remaining_m": 2.353886935130335
+    },
+    {
+      "id": "augmentation_02",
+      "behavior_source": "HUMAN_DERIVED_OPEN_LOOP_THROTTLE_AUGMENTATION",
+      "success": false,
+      "collision": true,
+      "timeout": false,
+      "physics_steps": 16093,
+      "remaining_m": 2.9332122808703103
+    }
+  ],
+  "audit": "PASS",
+  "archive_sha256": "bf5e331a68fcf19f78bd2a34d681b40265b3d7748b1e062c626c24eace2f938e",
+  "archive_members": 12,
+  "global_logical_bytes": 1071875009,
+  "remaining_logical_bytes": 1866815,
+  "free_bytes": 220666318848,
+  "not_human_or_autonomous_Actor_success": true
+}
