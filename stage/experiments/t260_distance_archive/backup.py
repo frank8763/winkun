@@ -80,6 +80,7 @@ GROUPS = {
     'T320': ['t320_human_throttle_augmentation'],
     'T321': ['t321_cold_checkpoint_reserve'],
     'T322': ['t322_full_network_steering'],
+    'T323': ['t323_human_state_completion'],
 }
 
 
