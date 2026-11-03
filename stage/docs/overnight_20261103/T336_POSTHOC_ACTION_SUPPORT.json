@@ -1,0 +1,92 @@
+{
+  "scope": "POSTHOC_READ_ONLY_NO_NATIVE_OR_OPTIMIZER",
+  "numpy_version": "2.2.6",
+  "axis_order": [
+    "drive",
+    "steer"
+  ],
+  "arms": {
+    "fixed": {
+      "n_decisions": 674,
+      "inputs": [
+        {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t336_reverse_online/episodes/fixed_training_r0_n0.npz",
+          "sha256": "2565e73fa05565f06842564b2fc6ea83b0032ec366ead13d9d6a83b06b740a29"
+        },
+        {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t336_reverse_online/episodes/fixed_training_r0_n1.npz",
+          "sha256": "9de86699385f557a374835134c754d40961b0e5941f21da7f95ff8c47dd96c93"
+        },
+        {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t336_reverse_online/episodes/fixed_training_r0_n2.npz",
+          "sha256": "a5980c2d97a8f26c7b9b1b8fe854ea94b5172982dea87d26613f131b207909af"
+        },
+        {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t336_reverse_online/episodes/fixed_training_r0_n3.npz",
+          "sha256": "57c2b8bd04595db4db108d3a95113e3e3dadac4465a10bec8278ea28169b3b27"
+        }
+      ],
+      "mode_above_999_fraction": [
+        0.4050445103857567,
+        0.12314540059347182
+      ],
+      "abs_sample_minus_mode_median": [
+        0.005117475986480713,
+        0.03879949077963829
+      ],
+      "abs_sample_minus_mode_p95": [
+        0.10970015823841095,
+        0.15146440267562866
+      ],
+      "actual_action_std_across_recorded_rows": [
+        0.283447265625,
+        0.5110951662063599
+      ]
+    },
+    "reverse": {
+      "n_decisions": 152,
+      "inputs": [
+        {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t336_reverse_online/episodes/reverse_training_r0_n0.npz",
+          "sha256": "a02ab78429e35079c7faef0429191b07501a8df67b3354726d9068c2a89d7360"
+        },
+        {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t336_reverse_online/episodes/reverse_training_r0_n1.npz",
+          "sha256": "5f71deecbf39fb285dcb6d5b48c3bc2803eeba804ab3974a8ef9935a8fe889b4"
+        },
+        {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t336_reverse_online/episodes/reverse_training_r0_n2.npz",
+          "sha256": "0014a46ad23eb909ed6394443bfdca4d37651165f80570a0320097b662ecd5a4"
+        },
+        {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t336_reverse_online/episodes/reverse_training_r0_n3.npz",
+          "sha256": "19e67c8258734db06963898b87a4b3dd670a1bafc4a2cc3d614ea60da0b94e51"
+        }
+      ],
+      "mode_above_999_fraction": [
+        1.0,
+        1.0
+      ],
+      "abs_sample_minus_mode_median": [
+        1.1920928955078125e-07,
+        1.1920928955078125e-07
+      ],
+      "abs_sample_minus_mode_p95": [
+        4.172325134277344e-07,
+        3.5762786865234375e-07
+      ],
+      "actual_action_std_across_recorded_rows": [
+        7.676020459257415e-07,
+        7.415519576170482e-07
+      ]
+    }
+  },
+  "limitations": [
+    "One sampled innovation per visited state, not a conditional variance estimate.",
+    "Across-recorded-row standard deviation includes state variation.",
+    "Reverse first frontier success is not original-start success or isolated RL benefit.",
+    "No causal claim that boundary concentration is the sole failure mechanism.",
+    "Original actor and raw arrays remain unchanged."
+  ],
+  "method": "select first round each arm; mode=np.tanh(latent_means); summarize abs(actions-mode), abs(mode)>.999, actions.std(axis=0)"
+}
