@@ -74,6 +74,7 @@ GROUPS = {
     'T314': ['t314_directional_audit'],
     'T315': ['t315_full_trajectory_gradient'],
     'T316': ['t316_frozen_native_validation'],
+    'T317': ['t317_human_demonstration'],
 }
 
 

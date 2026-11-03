@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Stage 六米人工示范</title>
+<style>body{font:16px system-ui;background:#101a28;color:#eef4ff;max-width:1080px;margin:20px auto;padding:0 14px}h1{font-size:24px}img{width:100%;max-width:960px;border-radius:10px;background:#192538}button{padding:12px 18px;margin:5px;border:0;border-radius:7px;font-size:16px;cursor:pointer}button.main{background:#65dfb0}button.stop{background:#ffb0a7}input{width:320px;max-width:65vw}label{display:block;margin:16px 0}.status{white-space:pre-wrap;background:#1b2c40;padding:12px;border-radius:8px}small{color:#b4c6db}.controls{display:flex;flex-wrap:wrap;gap:10px}#run{touch-action:none;user-select:none}</style>
+<h1>Stage · 原左侧六米人工示范</h1><p>绿色球是目标，白色箭头显示车头朝向。这里记录人工控制，<b>不是自动导航成绩</b>。</p>
+<img id="view" src="/frame.jpg" alt="当前MuJoCo场景"><div class="status" id="status">连接中…</div>
+<label>前进力度 <input id="drive" type="range" min="-0.999" max="0.999" step="0.01" value="0.6"> <output id="dv">0.60</output><br><small>左端接近停止，右端最快；车辆只能前进。</small></label>
+<label>转向 <input id="steer" type="range" min="-0.999" max="0.999" step="0.01" value="0"> <output id="sv">0.00</output><br><small>正值向左转，负值向右转；可用 A / D 微调，S 回正。</small></label>
+<div class="controls"><button id="start" class="main">开始一次示范</button><button id="once">前进 0.2 仿真秒</button><button id="run" class="main">按住连续前进（空格）</button><button id="abort" class="stop">中止本次并保存</button><button id="finish">结束采集并保存</button></div>
+<p><small>只有按下推进才走物理步，松开连续按钮即暂停。原任务仍须在56仿真秒内、无碰撞进入0.20m目标圈。最多3次尝试；等待也计入页面显示的总截止时间。每次结束会自动精确重放核验，请稍等。所有失败/中止保留。</small></p><p id="error" role="alert"></p>
+<script>
+const $=id=>document.getElementById(id);let active=false,busy=false,running=false,timer=null,closed=false;
+function display(s){active=!!s.active;closed=s.attempt>=3&&!active;$('status').textContent=`状态：${s.state}\n尝试 ${s.attempt}/${s.max_attempts} · 仿真 ${s.sim_time_s.toFixed(3)} / 56 秒 · 剩余距离 ${s.remaining_m===null?'—':s.remaining_m.toFixed(3)+'m'}\n人工成功 ${s.human_successes} 次（不计自主成绩） · 总截止 ${new Date(s.deadline_epoch*1000).toLocaleTimeString()}`;$('start').disabled=active||closed;$('once').disabled=!active;$('run').disabled=!active;$('view').src='/frame.jpg?t='+Date.now();}
+async function post(path,payload={}){if(busy)return;busy=true;$('error').textContent='';try{const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json','X-Stage-Control':'human-ui'},body:JSON.stringify(payload)});const s=await r.json();if(!r.ok)throw Error(s.error||'请求失败');display(s);if(!s.active)running=false;}catch(e){running=false;$('error').textContent=e.message;}finally{busy=false;}}
+async function step(){if(!active)return;await post('/step',{action:[Number($('drive').value),Number($('steer').value)]});}
+async function loop(){if(!running||!active)return;await step();if(running&&active)timer=setTimeout(loop,200);}
+function beginRun(e){e?.preventDefault();if(!running&&active){running=true;loop();}}
+function stopRun(){running=false;clearTimeout(timer);}
+$('start').onclick=()=>post('/start');$('once').onclick=step;$('abort').onclick=()=>{stopRun();post('/abort')};$('finish').onclick=()=>{stopRun();post('/finish')};$('run').onpointerdown=beginRun;window.addEventListener('pointerup',stopRun);window.addEventListener('blur',stopRun);document.addEventListener('visibilitychange',()=>{if(document.hidden)stopRun()});
+for(const name of ['drive','steer'])$(name).oninput=()=>{$(name==='drive'?'dv':'sv').textContent=Number($(name).value).toFixed(2)};
+window.onkeydown=e=>{if(e.target.tagName==='INPUT')return;if(e.code==='Space'){if(!e.repeat)beginRun(e);else e.preventDefault();}else if(['KeyA','KeyD','KeyS'].includes(e.code)){e.preventDefault();$('steer').value=e.code==='KeyS'?0:Math.max(-.999,Math.min(.999,Number($('steer').value)+(e.code==='KeyA'?.05:-.05)));$('steer').oninput();}};window.onkeyup=e=>{if(e.code==='Space')stopRun()};
+fetch('/status').then(r=>r.json()).then(display).catch(e=>$('error').textContent=e.message);
+</script></html>
