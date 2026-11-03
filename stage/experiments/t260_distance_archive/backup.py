@@ -66,7 +66,7 @@ GROUPS = {
     'T307': ['t307_iid_goal_contract'],
     'T308': ['t308_iid_native_goal_value'],
     'T309': ['t309_sequence_goal_value'],
-    'T310': ['t310_initial_history_control'],
+    'T310': ['t310_initial_history_control', 't310_initial_history_recovery'],
 }
 
 
