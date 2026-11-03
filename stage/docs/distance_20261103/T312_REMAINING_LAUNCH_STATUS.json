@@ -1,0 +1,75 @@
+{
+  "state": "HISTORICAL_LAUNCH_COMPLETED_2026_11_03_12_36_02",
+  "launch": {
+    "pid": 590597,
+    "launch_epoch": 1793678617.7615087,
+    "source_commit": "a72bf3fd643480e6209de789f476e122bb09b1a1",
+    "remote_commit": "3ed24df29e9a2f628d4ae023211e77d9a62ff99f",
+    "single_launch": true,
+    "wall_seconds": 7200
+  },
+  "initial_observed_status": {
+    "state": "round_centers",
+    "pid": 590601,
+    "main_epoch": 1793678618.5924652,
+    "updated_epoch": 1793678658.8060632,
+    "absolute_deadline_epoch": 1793681757.691733,
+    "training_deadline_epoch": 1793679957.691733,
+    "commands": 10,
+    "physics_steps": 145265,
+    "training_episodes": 0,
+    "exact_replays": 0,
+    "optimizer_calls": 4,
+    "round_blocks": 2,
+    "inflight": [
+      "mc_r0_centers_dev6_LEFT_13",
+      "mc_r0_centers_dev6_RIGHT_13"
+    ]
+  },
+  "workers": {
+    "parent": 590601,
+    "workers": [
+      590607,
+      590608,
+      590609,
+      590622
+    ],
+    "ready": [
+      {
+        "ready": true,
+        "pid": 590607,
+        "CPU_affinity": [
+          1
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 590608,
+        "CPU_affinity": [
+          2
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 590609,
+        "CPU_affinity": [
+          3
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 590622,
+        "CPU_affinity": [
+          4
+        ]
+      }
+    ]
+  },
+  "original_learning_deadline_beijing": "2026-11-03T12:25:57.691733+08:00",
+  "original_total_deadline_beijing": "2026-11-03T12:55:57.691733+08:00",
+  "first_two_blocks_accepted": false,
+  "not_six_metre_pass": true,
+  "final_summary": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t312_remaining_recovery/summary.json",
+  "all_recorded_processes_absent": true,
+  "final_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/distance_20261103/T312_REMAINING_FINDINGS.md"
+}

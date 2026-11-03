@@ -1,0 +1,238 @@
+{
+  "state": "PRODUCER_COMPLETE_INDEPENDENT_AUDIT_PASS_FULL_REMOTE_RAW_BACKUP_VERIFIED",
+  "original_producer_state": "FAILED",
+  "recovery_producer_state": "COMPLETE",
+  "counts": [
+    {
+      "arm": "mc",
+      "role": "old_regression",
+      "planned": 275,
+      "executed": 275,
+      "safe": 275,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 0
+    },
+    {
+      "arm": "mc",
+      "role": "six_development",
+      "planned": 54,
+      "executed": 54,
+      "safe": 0,
+      "contact": 27,
+      "timeout": 27,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 0
+    },
+    {
+      "arm": "mc",
+      "role": "heldout",
+      "planned": 16,
+      "executed": 0,
+      "safe": 0,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 16
+    },
+    {
+      "arm": "mc",
+      "role": "independent_reload",
+      "planned": 78,
+      "executed": 0,
+      "safe": 0,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 78
+    },
+    {
+      "arm": "gae",
+      "role": "old_regression",
+      "planned": 275,
+      "executed": 275,
+      "safe": 275,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 0
+    },
+    {
+      "arm": "gae",
+      "role": "six_development",
+      "planned": 54,
+      "executed": 54,
+      "safe": 0,
+      "contact": 27,
+      "timeout": 27,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 0
+    },
+    {
+      "arm": "gae",
+      "role": "heldout",
+      "planned": 16,
+      "executed": 0,
+      "safe": 0,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 16
+    },
+    {
+      "arm": "gae",
+      "role": "independent_reload",
+      "planned": 78,
+      "executed": 0,
+      "safe": 0,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0,
+      "not_executed": 78
+    }
+  ],
+  "all_native_processes_absent": [
+    590597,
+    590600,
+    590601,
+    590607,
+    590608,
+    590609,
+    590622
+  ],
+  "original_main_beijing": "2026-11-03T10:55:57.691733+08:00",
+  "recovery_main_beijing": "2026-11-03T12:03:38.592465+08:00",
+  "recovery_end_beijing": "2026-11-03T12:36:02.813875+08:00",
+  "unchanged_learning_deadline_beijing": "2026-11-03T12:25:57.691733+08:00",
+  "unchanged_total_deadline_beijing": "2026-11-03T12:55:57.691733+08:00",
+  "stopped_before_original_deadline": true,
+  "original_plus_recovery_active_wall_seconds": 2144.218060016632,
+  "original_window_elapsed_seconds": 6005.122142314911,
+  "aggregate_commands": 904,
+  "aggregate_physics": 12566170,
+  "max_commands": 1172,
+  "max_physics": 32816000,
+  "original_geometry_commands": 78,
+  "new_geometry_commands": 0,
+  "training_physical_episodes": 64,
+  "training_distinct_complete_array_and_integration_histories": 32,
+  "training_pairs": [
+    {
+      "role": "training",
+      "exact_array_and_integration_matched_pairs": 32,
+      "independent_training_seeds": false
+    },
+    {
+      "role": "old_regression",
+      "exact_array_and_integration_matched_pairs": 275,
+      "independent_training_seeds": false
+    },
+    {
+      "role": "six_development",
+      "exact_array_and_integration_matched_pairs": 54,
+      "independent_training_seeds": false
+    }
+  ],
+  "exact_native_replays": 64,
+  "live_V_calls": 4000,
+  "shadow_V_calls": 4000,
+  "live_Actor_calls": 4,
+  "shadow_Actor_calls": 4,
+  "accepted_blocks": 0,
+  "candidate_old20_checks_executed": 0,
+  "candidate_rejection_reason": "All4blocks failed original sampled_k3/maxabslogratio before nativeguard, not old20 navigation failure",
+  "original_directory_bytes": 8521016,
+  "recovery_directory_bytes": 12446103,
+  "combined_own_limit_bytes": 45088768,
+  "global_bytes": 1048813570,
+  "global_limit_bytes": 1073741824,
+  "free_bytes": 221464903680,
+  "models": {
+    "mc": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t312_remaining_recovery/mc_final_checkpoint.pt.gz",
+      "sha256": "5a6dac76d0246715ab5eda91abb959da4acdc2b8b552c79377bcd4f46760b664",
+      "policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54",
+      "optimizer_hash": "881489e608a38e54726d0751cd52ed648891a06e8603b81357fc9935f73c3d76",
+      "bytes": 2455499
+    },
+    "gae": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t312_remaining_recovery/gae_final_checkpoint.pt.gz",
+      "sha256": "fa18041d5315224e92565837cc1c45fde233d2742ab8af57d2240acb0b6f9469",
+      "policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54",
+      "optimizer_hash": "881489e608a38e54726d0751cd52ed648891a06e8603b81357fc9935f73c3d76",
+      "bytes": 2455494
+    }
+  },
+  "protected": {
+    "safeT255": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t255_overnight/s2_reset_final_checkpoint.pt.gz",
+      "sha256": "63e63e2b444867b26622a2ab0f0c4227bc38d48a7cd2b5a3b378d9b0266006df",
+      "unchanged": true
+    },
+    "T299_research": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t299_conditional_goal_likelihood/conditional_goal_likelihood_final_checkpoint.pt.gz",
+      "sha256": "b15cddbbf5914ef5187ce221082c0e6cdbe3608b0f8a1ff1177f8fefa95f5751",
+      "unchanged": true
+    },
+    "left_HD": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t288_five_metre_presentation/stage_5m_left_1080p.mp4",
+      "sha256": "eb57d8825106a14baa37812fcbe0d230813643c7911293d8549bf4ced960772c",
+      "unchanged": true
+    },
+    "right_HD": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t288_five_metre_presentation/stage_5m_right_1080p.mp4",
+      "sha256": "fc7fe3ae7b58fedfda179ff7db918625404f61aa8dbf7bafa4ef607cda2d0a68",
+      "unchanged": true
+    }
+  },
+  "summary_sha256": "39ccf60579d33cb0c1921f4f36af0bbecfecf6a6b7f0a47ffa01b3c7e90f6738",
+  "protocol_sha256": "79f747c812e2de2d9a8fcec93f1e3d0267c07534fe02859bad498206f8472416",
+  "six_metre_stable": false,
+  "seven_eight_entered": false,
+  "new_qualified_six_video": false,
+  "independent_audit_sha256": "d06e7c73c1e62c7bda43f5d94cdbddc9a8d7c138285531df01d736013f39c175",
+  "disposable_new_historical_optimizer_reconstruction_calls": 4008,
+  "original8_centers_rounds": [
+    {
+      "arm": "mc",
+      "round": 0,
+      "safe": 8,
+      "executed": 8
+    },
+    {
+      "arm": "mc",
+      "round": 1,
+      "safe": 8,
+      "executed": 8
+    },
+    {
+      "arm": "gae",
+      "round": 0,
+      "safe": 8,
+      "executed": 8
+    },
+    {
+      "arm": "gae",
+      "round": 1,
+      "safe": 8,
+      "executed": 8
+    }
+  ],
+  "backup": {
+    "receipt": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/long_distance_20261101/release_receipt_T312R.json",
+    "receipt_sha256": "44291b5b3db3bfa5b73ed062647e9af1109a7d4f483dc4a0c72d5740af843289",
+    "archive_sha256": "dd2986575a5bcc2ded589b17c4a82741ac83798a940f01d4b6b3be20c3f8b3ce",
+    "members": 754,
+    "segments": 19,
+    "url": "https://github.com/frank8763/winkun/releases/tag/stage-distance-2026-11-01"
+  }
+}
