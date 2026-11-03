@@ -1,0 +1,107 @@
+{
+  "state": "POSTHOC_READ_ONLY_DESCRIPTORS",
+  "posthoc": true,
+  "native_commands": 0,
+  "physics_steps": 0,
+  "policy_queries": 0,
+  "gradient_calls": 0,
+  "optimizer_calls": 0,
+  "Actor_updates": 0,
+  "old_retention": {
+    "episodes": 211,
+    "rows": 28629,
+    "current_distance_column": 48,
+    "max_recorded_goal_distance_m": 5.040525436401367,
+    "by_task": [
+      {
+        "task": 0,
+        "episodes": 27,
+        "max_recorded_goal_distance_m": 3.0405354499816895
+      },
+      {
+        "task": 1,
+        "episodes": 27,
+        "max_recorded_goal_distance_m": 3.0412511825561523
+      },
+      {
+        "task": 2,
+        "episodes": 27,
+        "max_recorded_goal_distance_m": 3.0414364337921143
+      },
+      {
+        "task": 3,
+        "episodes": 27,
+        "max_recorded_goal_distance_m": 3.040191173553467
+      },
+      {
+        "task": 4,
+        "episodes": 27,
+        "max_recorded_goal_distance_m": 4.040529251098633
+      },
+      {
+        "task": 5,
+        "episodes": 22,
+        "max_recorded_goal_distance_m": 4.026941776275635
+      },
+      {
+        "task": 6,
+        "episodes": 27,
+        "max_recorded_goal_distance_m": 5.040525436401367
+      },
+      {
+        "task": 7,
+        "episodes": 27,
+        "max_recorded_goal_distance_m": 5.0401787757873535
+      }
+    ],
+    "limitation": "This is the fixed old211 successful retention set, not every historical RL training state or every task in the world."
+  },
+  "human_history": [
+    {
+      "id": "01",
+      "rows": 281,
+      "span_seconds_at_40s": 0.006000000000007333,
+      "timestamps_at_40s": [
+        39.99400000000291,
+        39.996000000002915,
+        39.99800000000292,
+        40.00000000000292
+      ],
+      "history_span_min": 0.0,
+      "history_span_max": 0.006000000000007333,
+      "frame_step_median": 0.002000000000000668,
+      "decision_native_steps": 100,
+      "decision_seconds": 0.2
+    },
+    {
+      "id": "02",
+      "rows": 281,
+      "span_seconds_at_40s": 0.006000000000007333,
+      "timestamps_at_40s": [
+        39.99400000000291,
+        39.996000000002915,
+        39.99800000000292,
+        40.00000000000292
+      ],
+      "history_span_min": 0.0,
+      "history_span_max": 0.006000000000007333,
+      "frame_step_median": 0.002000000000000668,
+      "decision_native_steps": 100,
+      "decision_seconds": 0.2
+    }
+  ],
+  "straight_line_required_net_radial_speed": {
+    "five_m_per_s": 0.10285420416559526,
+    "six_m_per_s": 0.10357142857142856,
+    "relative_increase_percent": 0.697321428571418,
+    "limitation": "Arithmetic lower bound only; ignores detours/dynamics, does not establish physical feasibility or justify time/threshold changes."
+  },
+  "input_sha256": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/stable_5m_current_states.npz": "b5f050bee72164f883a9a3c76624e50fa0755ab6ff53bbd7a0631470787e5df0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t324_cause_audit/supplement.py": "9adf7d8093c891fd0cb96ff99e1db1dc3975f6746ff9a42c1774a7679be65fc9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t317_human_demonstration/attempt_01.npz": "cd1e67f05cc435524ece4b9935d305bfa13e89c1df4e7fb5bce834ecf581b06f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t317_human_demonstration/attempt_02.npz": "15b7c2603cb11ed2c24a05dbdeb67366261721320ee5a450b8349db4275a460b"
+  },
+  "all_inputs_unchanged": true,
+  "elapsed_seconds": 0.056728970957919955
+}
