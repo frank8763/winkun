@@ -84,6 +84,7 @@ GROUPS = {
     'T324': ['t324_cause_audit'],
     'T325': ['t325_human_ui'],
     'T326': ['t326_gap_geometry'],
+    'T327': ['t327_wide_gap_human'],
 }
 
 
