@@ -78,6 +78,7 @@ GROUPS = {
     'T318': ['t318_remaining_human'],
     'T319': ['t319_imperfect_demo_head'],
     'T320': ['t320_human_throttle_augmentation'],
+    'T321': ['t321_cold_checkpoint_reserve'],
 }
 
 
