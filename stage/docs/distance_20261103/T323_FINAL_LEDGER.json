@@ -1,0 +1,59 @@
+{
+  "state": "COMPLETE_SCIENTIFIC_DIAGNOSTIC_NEGATIVE",
+  "summary": {
+    "state": "COMPLETE",
+    "pid": 657251,
+    "main_epoch": 1793702013.6436608,
+    "elapsed_s": 58.61565852165222,
+    "deadline_epoch": 1793702313.6436608,
+    "commands": 4,
+    "physics_steps": 87934,
+    "derived_trajectories": 2,
+    "exact_replays": 2,
+    "counts": {
+      "success": 0,
+      "collision": 2,
+      "timeout": 0
+    },
+    "all_workers_stopped": true,
+    "workers_spawned": 0,
+    "Actor_updates": 0,
+    "Adam_calls": 0,
+    "gradient_calls": 0,
+    "autonomous_six_metre_pass": false,
+    "automatic_training": false,
+    "own_bytes": 329225,
+    "global_bytes": 1044286694
+  },
+  "cases": [
+    {
+      "id": "completion_01",
+      "source_sha256": "cd1e67f05cc435524ece4b9935d305bfa13e89c1df4e7fb5bce834ecf581b06f",
+      "raw_sha256": "fdeb6b17b9b20a3d0e998bf285f1ba4c6ab3918f3468f7802297d10bd3babf14",
+      "prefix_human_steps": 20000,
+      "suffix_actor_steps": 1725,
+      "outcome": "CONTACT",
+      "remaining_m": 1.7237254660795809
+    },
+    {
+      "id": "completion_02",
+      "source_sha256": "15b7c2603cb11ed2c24a05dbdeb67366261721320ee5a450b8349db4275a460b",
+      "raw_sha256": "b4a024c787aec7de03c7f3eb1f310e73e410fef56b303fc33b749f166094ce1d",
+      "prefix_human_steps": 20000,
+      "suffix_actor_steps": 2242,
+      "outcome": "CONTACT",
+      "remaining_m": 1.7269233139841804
+    }
+  ],
+  "navigation_acceptance": {
+    "old275": "NOT_EXECUTED",
+    "six54": "NOT_EXECUTED",
+    "fresh16": "NOT_EXECUTED",
+    "reload78": "NOT_EXECUTED"
+  },
+  "independent_samples": 2,
+  "exact_replays": 2,
+  "backup_receipt_sha256": "6bf52f648f5104f9abad893aa791a6704af3c5e1d5d1275809c77e34176b2f59",
+  "audit_sha256": "5c018f3bbe4348099962ad9a025237fa67518d2a7ce5b7255c005648df4bf995",
+  "Phase_access": false
+}
