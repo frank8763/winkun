@@ -69,6 +69,7 @@ GROUPS = {
     'T310': ['t310_initial_history_control', 't310_initial_history_recovery'],
     'T311': ['t311_reversible_training_reserve'],
     'T312': ['t312_online_goal_ppo'],
+    'T312R': ['t312_remaining_recovery'],
 }
 
 
