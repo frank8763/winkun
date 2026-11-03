@@ -1,0 +1,77 @@
+{
+  "state": "HISTORICAL_LAUNCH_COMPLETE_2026_11_03_13_45_16",
+  "launch": {
+    "pid": 610176,
+    "launch_epoch": 1793683637.9955292,
+    "source_commit": "3c585c67d343857a55e3540f188f14d294fdb82b",
+    "remote_commit": "3fb3b07b2e72d01f1022a33af9d94acb9f1cacfb",
+    "single_launch": true
+  },
+  "first_observed_status": {
+    "state": "old_guard",
+    "pid": 610180,
+    "main_epoch": 1793683638.8332644,
+    "deadline_epoch": 1793686038.8332644,
+    "updated_epoch": 1793683665.0709774,
+    "commands": 86,
+    "physics_steps": 98976,
+    "completed_cases": 8,
+    "inflight": [
+      "mc_adam_old_guard_dev_task6_13",
+      "mc_adam_old_guard_dev_task6_24",
+      "mc_adam_old_guard_dev_task7_13",
+      "mc_adam_old_guard_dev_task7_26"
+    ],
+    "candidate": "mc_adam",
+    "Adam_calls": 0
+  },
+  "workers": {
+    "parent": 610180,
+    "workers": [
+      610184,
+      610185,
+      610186,
+      610189
+    ],
+    "ready": [
+      {
+        "ready": true,
+        "pid": 610184,
+        "CPU_affinity": [
+          1
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 610185,
+        "CPU_affinity": [
+          2
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 610186,
+        "CPU_affinity": [
+          3
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 610189,
+        "CPU_affinity": [
+          4
+        ]
+      }
+    ]
+  },
+  "main_beijing": "2026-11-03T13:27:18.833264+08:00",
+  "native_cutoff_beijing": "2026-11-03T14:05:48.833264+08:00",
+  "total_cutoff_beijing": "2026-11-03T14:07:18.833264+08:00",
+  "inhibitor_pid": 610176,
+  "timeout_pid": 610179,
+  "parent_pid": 610180,
+  "not_six_metre_gate_pass": true,
+  "final_summary": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t316_frozen_native_validation/summary.json",
+  "final_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/distance_20261103/T316_FINDINGS.md",
+  "all_recorded_processes_absent": true
+}

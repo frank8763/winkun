@@ -1,0 +1,273 @@
+{
+  "state": "POSTHOC_RAW_RECORDS_ONLY_NO_NEW_NATIVE_OPTIMIZATION",
+  "physics_steps_added": 0,
+  "Adam_calls": 0,
+  "gradient_calls": 0,
+  "source_cases_sha256": "8dd97840eceaefeafcd89431544cee504257b42cac6fdb67867184e3dd780ea8",
+  "parent_cases_sha256": "d93046532466e5e23903b9bd24c97c797eb5c1433154bdb8cf833c18f394fd6a",
+  "T299_cases_gzip_sha256": "a294bf1936a25e6594a1f55119b07a3db2fa12141fd9a4853bd936fedcd81fdc",
+  "T299_six_historical_success_ids": [
+    "dev6_RIGHT_03",
+    "dev6_RIGHT_09",
+    "dev6_RIGHT_12",
+    "dev6_RIGHT_13",
+    "dev6_RIGHT_15",
+    "dev6_RIGHT_18",
+    "dev6_RIGHT_19",
+    "dev6_RIGHT_21",
+    "dev6_RIGHT_22",
+    "dev6_RIGHT_24"
+  ],
+  "parent_initial120_scene_goal_matches_all296": true,
+  "scope": "Descriptive paired terminal measurements. Later contact or smaller distance is not safety or causal intervention evidence; timeout remains failure.",
+  "results": [
+    {
+      "candidate": "mc_adam",
+      "old20_safe": 20,
+      "old20_failed_ids": [],
+      "six_safe": 1,
+      "six_n": 54,
+      "six_success_percent": 1.8518518518518519,
+      "six_success_ids": [
+        "dev6_RIGHT_18"
+      ],
+      "success_ids_already_in_T299": [
+        "dev6_RIGHT_18"
+      ],
+      "new_task_success_ids_beyond_T299": [],
+      "exact_full12array_and_terminal_integration_overlap_with_safeparent": 0,
+      "side": [
+        {
+          "group": "6m_LEFT",
+          "n": 27,
+          "GOAL": 0,
+          "CONTACT": 27,
+          "TIMEOUT": 0,
+          "terminal_time_s_min_mean_max": [
+            39.218,
+            43.05459259259259,
+            46.042
+          ],
+          "parent_terminal_time_s_min_mean_max": [
+            40.068,
+            42.825629629629624,
+            46.034
+          ],
+          "mean_paired_terminal_time_difference_s": 0.22896296296296278,
+          "timeout_remaining_m_min_mean_max": null
+        },
+        {
+          "group": "6m_RIGHT",
+          "n": 27,
+          "GOAL": 1,
+          "CONTACT": 0,
+          "TIMEOUT": 26,
+          "terminal_time_s_min_mean_max": [
+            55.876,
+            55.995407407407406,
+            56.0
+          ],
+          "parent_terminal_time_s_min_mean_max": [
+            56.0,
+            56.0,
+            56.0
+          ],
+          "mean_paired_terminal_time_difference_s": -0.004592592592592679,
+          "timeout_remaining_m_min_mean_max": [
+            0.23857122250129664,
+            0.597842645152978,
+            0.8901232652671976
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": "mc_empirical_fisher",
+      "old20_safe": 19,
+      "old20_failed_ids": [
+        "hold_task6_06"
+      ],
+      "six_safe": 2,
+      "six_n": 54,
+      "six_success_percent": 3.7037037037037037,
+      "six_success_ids": [
+        "dev6_RIGHT_18",
+        "dev6_RIGHT_21"
+      ],
+      "success_ids_already_in_T299": [
+        "dev6_RIGHT_18",
+        "dev6_RIGHT_21"
+      ],
+      "new_task_success_ids_beyond_T299": [],
+      "exact_full12array_and_terminal_integration_overlap_with_safeparent": 0,
+      "side": [
+        {
+          "group": "6m_LEFT",
+          "n": 27,
+          "GOAL": 0,
+          "CONTACT": 27,
+          "TIMEOUT": 0,
+          "terminal_time_s_min_mean_max": [
+            39.998,
+            43.24066666666667,
+            46.818
+          ],
+          "parent_terminal_time_s_min_mean_max": [
+            40.068,
+            42.825629629629624,
+            46.034
+          ],
+          "mean_paired_terminal_time_difference_s": 0.41503703703703637,
+          "timeout_remaining_m_min_mean_max": null
+        },
+        {
+          "group": "6m_RIGHT",
+          "n": 27,
+          "GOAL": 2,
+          "CONTACT": 0,
+          "TIMEOUT": 25,
+          "terminal_time_s_min_mean_max": [
+            55.362,
+            55.96844444444445,
+            56.0
+          ],
+          "parent_terminal_time_s_min_mean_max": [
+            56.0,
+            56.0,
+            56.0
+          ],
+          "mean_paired_terminal_time_difference_s": -0.031555555555555434,
+          "timeout_remaining_m_min_mean_max": [
+            0.3608663718769425,
+            0.6185952274471533,
+            0.8192112756005007
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": "gae_adam",
+      "old20_safe": 19,
+      "old20_failed_ids": [
+        "hold_task6_06"
+      ],
+      "six_safe": 1,
+      "six_n": 54,
+      "six_success_percent": 1.8518518518518519,
+      "six_success_ids": [
+        "dev6_RIGHT_18"
+      ],
+      "success_ids_already_in_T299": [
+        "dev6_RIGHT_18"
+      ],
+      "new_task_success_ids_beyond_T299": [],
+      "exact_full12array_and_terminal_integration_overlap_with_safeparent": 0,
+      "side": [
+        {
+          "group": "6m_LEFT",
+          "n": 27,
+          "GOAL": 0,
+          "CONTACT": 27,
+          "TIMEOUT": 0,
+          "terminal_time_s_min_mean_max": [
+            39.206,
+            43.40192592592592,
+            46.098
+          ],
+          "parent_terminal_time_s_min_mean_max": [
+            40.068,
+            42.825629629629624,
+            46.034
+          ],
+          "mean_paired_terminal_time_difference_s": 0.5762962962962959,
+          "timeout_remaining_m_min_mean_max": null
+        },
+        {
+          "group": "6m_RIGHT",
+          "n": 27,
+          "GOAL": 1,
+          "CONTACT": 0,
+          "TIMEOUT": 26,
+          "terminal_time_s_min_mean_max": [
+            55.574,
+            55.98422222222222,
+            56.0
+          ],
+          "parent_terminal_time_s_min_mean_max": [
+            56.0,
+            56.0,
+            56.0
+          ],
+          "mean_paired_terminal_time_difference_s": -0.01577777777777785,
+          "timeout_remaining_m_min_mean_max": [
+            0.3692390141274542,
+            0.6236366418579244,
+            0.8595424969098459
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": "gae_empirical_fisher",
+      "old20_safe": 19,
+      "old20_failed_ids": [
+        "hold_task6_06"
+      ],
+      "six_safe": 1,
+      "six_n": 54,
+      "six_success_percent": 1.8518518518518519,
+      "six_success_ids": [
+        "dev6_RIGHT_18"
+      ],
+      "success_ids_already_in_T299": [
+        "dev6_RIGHT_18"
+      ],
+      "new_task_success_ids_beyond_T299": [],
+      "exact_full12array_and_terminal_integration_overlap_with_safeparent": 0,
+      "side": [
+        {
+          "group": "6m_LEFT",
+          "n": 27,
+          "GOAL": 0,
+          "CONTACT": 27,
+          "TIMEOUT": 0,
+          "terminal_time_s_min_mean_max": [
+            40.462,
+            43.21688888888889,
+            46.706
+          ],
+          "parent_terminal_time_s_min_mean_max": [
+            40.068,
+            42.825629629629624,
+            46.034
+          ],
+          "mean_paired_terminal_time_difference_s": 0.3912592592592585,
+          "timeout_remaining_m_min_mean_max": null
+        },
+        {
+          "group": "6m_RIGHT",
+          "n": 27,
+          "GOAL": 1,
+          "CONTACT": 0,
+          "TIMEOUT": 26,
+          "terminal_time_s_min_mean_max": [
+            55.702,
+            55.988962962962965,
+            56.0
+          ],
+          "parent_terminal_time_s_min_mean_max": [
+            56.0,
+            56.0,
+            56.0
+          ],
+          "mean_paired_terminal_time_difference_s": -0.011037037037037104,
+          "timeout_remaining_m_min_mean_max": [
+            0.28582488217894997,
+            0.600321496721008,
+            0.8232936638384158
+          ]
+        }
+      ]
+    }
+  ]
+}
