@@ -90,6 +90,7 @@ GROUPS = {
     'T330': ['t330_policy_prefix_recovery'],
     'T331': ['t331_policy_prefix_retry'],
     'T332': ['t332_recovery_aggregation'],
+    'T333': ['t333_remaining_aggregation'],
 }
 
 
