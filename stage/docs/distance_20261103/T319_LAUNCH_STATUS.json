@@ -1,0 +1,74 @@
+{
+  "state": "ACTUALLY_LAUNCHED",
+  "parent_pid": 637106,
+  "inhibitor_pid": 637102,
+  "main_epoch": 1793698331.2206383,
+  "absolute_deadline": 1793699531.2206383,
+  "launch": {
+    "pid": 637102,
+    "launch_epoch": 1793698330.3945324,
+    "source_commit": "155375dc729b6452c7b5eff3f109a234f9b5e455",
+    "remote_commit": "b730bc6e9291317007bea13ab87571244a77255f",
+    "single_launch": true
+  },
+  "workers": {
+    "parent": 637106,
+    "workers": [
+      637110,
+      637111,
+      637113,
+      637115
+    ],
+    "ready": [
+      {
+        "ready": true,
+        "pid": 637110,
+        "CPU_affinity": [
+          1
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 637111,
+        "CPU_affinity": [
+          2
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 637113,
+        "CPU_affinity": [
+          3
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 637115,
+        "CPU_affinity": [
+          4
+        ]
+      }
+    ]
+  },
+  "observed_status": {
+    "state": "old_guard",
+    "pid": 637106,
+    "main_epoch": 1793698331.2206383,
+    "updated_epoch": 1793698376.1007977,
+    "deadline_epoch": 1793699531.2206383,
+    "commands": 20,
+    "physics_steps": 199290,
+    "cases": 8,
+    "replays": 8,
+    "inflight": [
+      "old_guard_dev_task6_13",
+      "old_guard_dev_task6_24",
+      "old_guard_dev_task7_13",
+      "old_guard_dev_task7_26"
+    ],
+    "Adam_calls": 0,
+    "RL_updates": 0
+  },
+  "recorded_epoch": 1793698379.1014955,
+  "not_navigation_pass": true
+}
