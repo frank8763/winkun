@@ -76,6 +76,7 @@ GROUPS = {
     'T316': ['t316_frozen_native_validation'],
     'T317': ['t317_human_demonstration'],
     'T318': ['t318_remaining_human'],
+    'T319': ['t319_imperfect_demo_head'],
 }
 
 
