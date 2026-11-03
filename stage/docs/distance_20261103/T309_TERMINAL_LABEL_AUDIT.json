@@ -1,0 +1,124 @@
+{
+  "state": "READ_ONLY_DATA_AUDIT",
+  "native_steps": 0,
+  "optimizer_calls": 0,
+  "Actor_updates": 0,
+  "train_centers": 32,
+  "per_task": {
+    "LEFT_0.75": {
+      "n": 4,
+      "safe": 4,
+      "contact": 0,
+      "timeout": 0,
+      "terminal_category_mass": [
+        0.9633384573950985,
+        0.966249364369182,
+        0.9647202325529959,
+        0.9672335615465939
+      ],
+      "mean_terminal_category_mass": 0.9653854039659675,
+      "empirical_outcome_entropy_nats": -0.0
+    },
+    "LEFT_1.5": {
+      "n": 4,
+      "safe": 4,
+      "contact": 0,
+      "timeout": 0,
+      "terminal_category_mass": [
+        0.9208534660036591,
+        0.9214982890916119,
+        0.9220432582528553,
+        0.9220820895253267
+      ],
+      "mean_terminal_category_mass": 0.9216192757183633,
+      "empirical_outcome_entropy_nats": -0.0
+    },
+    "LEFT_3.5": {
+      "n": 4,
+      "safe": 0,
+      "contact": 4,
+      "timeout": 0,
+      "terminal_category_mass": [
+        0.8226461485422604,
+        0.8226461485422604,
+        0.8213660972606924,
+        0.8265028409013634
+      ],
+      "mean_terminal_category_mass": 0.8232903088116441,
+      "empirical_outcome_entropy_nats": -0.0
+    },
+    "LEFT_6.0": {
+      "n": 4,
+      "safe": 0,
+      "contact": 4,
+      "timeout": 0,
+      "terminal_category_mass": [
+        0.718750437111165,
+        0.7145231642504821,
+        0.7155766757666912,
+        0.7155766757666912
+      ],
+      "mean_terminal_category_mass": 0.7161067382237574,
+      "empirical_outcome_entropy_nats": -0.0
+    },
+    "RIGHT_0.75": {
+      "n": 4,
+      "safe": 2,
+      "contact": 2,
+      "timeout": 0,
+      "terminal_category_mass": [
+        0.7393202830743224,
+        0.9547979156425077,
+        0.7393202830743224,
+        0.9550843979874036
+      ],
+      "mean_terminal_category_mass": 0.8471307199446391,
+      "empirical_outcome_entropy_nats": 0.6931471805599453
+    },
+    "RIGHT_1.5": {
+      "n": 4,
+      "safe": 0,
+      "contact": 4,
+      "timeout": 0,
+      "terminal_category_mass": [
+        0.7890289926571855,
+        0.7902398058740421,
+        0.7842114395774138,
+        0.7854119853873107
+      ],
+      "mean_terminal_category_mass": 0.787223055873988,
+      "empirical_outcome_entropy_nats": -0.0
+    },
+    "RIGHT_3.5": {
+      "n": 4,
+      "safe": 4,
+      "contact": 0,
+      "timeout": 0,
+      "terminal_category_mass": [
+        0.7987740568264967,
+        0.8078651847166207,
+        0.8048923230712972,
+        0.8020445298265415
+      ],
+      "mean_terminal_category_mass": 0.803394023610239,
+      "empirical_outcome_entropy_nats": -0.0
+    },
+    "RIGHT_6.0": {
+      "n": 4,
+      "safe": 0,
+      "contact": 0,
+      "timeout": 4,
+      "terminal_category_mass": [
+        0.6465271400063642,
+        0.6465271400063642,
+        0.6465271400063642,
+        0.6465271400063642
+      ],
+      "mean_terminal_category_mass": 0.6465271400063642,
+      "empirical_outcome_entropy_nats": -0.0
+    }
+  },
+  "objective_episode_anchor_equal_terminal_category_mass": 0.8138345832693703,
+  "scientific_control_gate_not_evaluated": true,
+  "scope": "Mass includes legitimate safe-goal absorption coordinate and collision/timeout tokens. A large terminal-label share is NOT a code bug. Factual goal can predict shared outcomes without distinguishing actions; finite-data coverage/objective weighting is only a hypothesis, not a causal root-cause proof. Four innovation draws per task are not four independent training seeds. No target or frozen protocol changed."
+}

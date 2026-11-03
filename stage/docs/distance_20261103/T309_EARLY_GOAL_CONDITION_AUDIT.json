@@ -1,0 +1,169 @@
+{
+  "state": "READ_ONLY_INTERIM_INPUT_AUDIT",
+  "native_steps": 0,
+  "optimizer_calls": 0,
+  "Actor_updates": 0,
+  "data": [
+    {
+      "side": "LEFT",
+      "initial_native_integration_identical": true,
+      "all_nongoal107_bit_exact": true,
+      "all_cap56s": true,
+      "records": [
+        {
+          "distance_band": 0.75,
+          "initial120_sha": "9442e429d07f3fd48a18829df71b923c21e1b5fbfbc13a4bccfbddb72ed118c2",
+          "nongoal107_max_difference": 0.0,
+          "initial_distribution_mean": [
+            1.0343235731124878,
+            0.22325628995895386
+          ],
+          "fixed_task_goal": [
+            -0.2469890213147842,
+            0.2075367191445741
+          ],
+          "outcome": {
+            "safe": true,
+            "contact": false,
+            "timeout": false
+          }
+        },
+        {
+          "distance_band": 1.5,
+          "initial120_sha": "67ea41a2cb0415386892cf73434f9728f3cb89cb8013a493d74c127eee83fbf5",
+          "nongoal107_max_difference": 0.0,
+          "initial_distribution_mean": [
+            0.8990606069564819,
+            0.13680115342140198
+          ],
+          "fixed_task_goal": [
+            0.1710668223747554,
+            -0.42491387899806543
+          ],
+          "outcome": {
+            "safe": true,
+            "contact": false,
+            "timeout": false
+          }
+        },
+        {
+          "distance_band": 3.5,
+          "initial120_sha": "1d75817061a94d94517be61b91f93f92ec079e3c5833a81834eed5a0ee2dac76",
+          "nongoal107_max_difference": 0.0,
+          "initial_distribution_mean": [
+            0.2983936667442322,
+            -0.11594890058040619
+          ],
+          "fixed_task_goal": [
+            1.0743737094330386,
+            -2.224864173818117
+          ],
+          "outcome": {
+            "safe": false,
+            "contact": true,
+            "timeout": false
+          }
+        },
+        {
+          "distance_band": 6.0,
+          "initial120_sha": "256ee695cc7353a22c2763f9a2242df1074fec530736d9b2704c719fe6b89a65",
+          "nongoal107_max_difference": 0.0,
+          "initial_distribution_mean": [
+            0.031134799122810364,
+            -0.38880106806755066
+          ],
+          "fixed_task_goal": [
+            2.0400222782342903,
+            -4.561852378121623
+          ],
+          "outcome": {
+            "safe": false,
+            "contact": true,
+            "timeout": false
+          }
+        }
+      ]
+    },
+    {
+      "side": "RIGHT",
+      "initial_native_integration_identical": true,
+      "all_nongoal107_bit_exact": true,
+      "all_cap56s": true,
+      "records": [
+        {
+          "distance_band": 0.75,
+          "initial120_sha": "6a1b9a059cb4267169c2b421980df891518a8a086f0aeaeb05a8707941d6ebb6",
+          "nongoal107_max_difference": 0.0,
+          "initial_distribution_mean": [
+            0.052017029374837875,
+            -0.37151381373405457
+          ],
+          "fixed_task_goal": [
+            1.6125351427943138,
+            1.8185722649860496
+          ],
+          "outcome": {
+            "safe": false,
+            "contact": true,
+            "timeout": false
+          }
+        },
+        {
+          "distance_band": 1.5,
+          "initial120_sha": "f365183c11a08cab931ed9b5115723abe837c325f8d214f2892c455ce098949e",
+          "nongoal107_max_difference": 0.0,
+          "initial_distribution_mean": [
+            -0.03957664221525192,
+            -0.36456286907196045
+          ],
+          "fixed_task_goal": [
+            2.224981235255257,
+            1.388400847783195
+          ],
+          "outcome": {
+            "safe": false,
+            "contact": true,
+            "timeout": false
+          }
+        },
+        {
+          "distance_band": 3.5,
+          "initial120_sha": "696ec2a3c00bf7359efcf718e897b861ebd039194c929917e98bf71b8e8f2813",
+          "nongoal107_max_difference": 0.0,
+          "initial_distribution_mean": [
+            -0.19460688531398773,
+            0.23162555694580078
+          ],
+          "fixed_task_goal": [
+            4.120484771170223,
+            0.6897008666681986
+          ],
+          "outcome": {
+            "safe": true,
+            "contact": false,
+            "timeout": false
+          }
+        },
+        {
+          "distance_band": 6.0,
+          "initial120_sha": "449d2ca97e9eab2685b8f311d71aed320b5e72775b3c0ac126b7b4b3e569f778",
+          "nongoal107_max_difference": 0.0,
+          "initial_distribution_mean": [
+            -0.26183295249938965,
+            0.7020821571350098
+          ],
+          "fixed_task_goal": [
+            6.384033848651391,
+            -0.3980520230116502
+          ],
+          "outcome": {
+            "safe": false,
+            "contact": false,
+            "timeout": true
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "Same frozenActor/same complete nativeinitialstate/same56s horizon and107nongoal features, only13goal features differ. Goal coordinates change both distance and bearing, not a distance-only causal claim; no learning benefit or navigation gate conclusion."
+}

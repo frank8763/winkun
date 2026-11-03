@@ -1,0 +1,345 @@
+{
+  "state": "COMPLETE_VALUE_AND_CONTROL_GATES_FAILED_AUDIT_BACKUP_PASS",
+  "summary": {
+    "state": "COMPLETE",
+    "pid": 561192,
+    "commands": 272,
+    "physics_steps": 3588734,
+    "raw_record_physics": 3588734,
+    "unique_cases": 128,
+    "exact_replays": 128,
+    "head_optimizer_calls": 6000,
+    "Actor_updates": 0,
+    "models": {
+      "sequence": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t309_sequence_goal_value/sequence_critic.pt.gz",
+        "sha256": "e5634546f68bcb13ad166e87d16b53318a40bea16c53abf77a98ab3954819cb5",
+        "model_hash": "a5eb0217ecf45e82ac9c47bdac99abc78bb0a6214d894d3a1d7565c9861a5278",
+        "optimizer_hash": "1b6ba4d071b77e671e45ffb9807075b1e0364bdae5cf95229abb74200b0564c5"
+      },
+      "single": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t309_sequence_goal_value/single_critic.pt.gz",
+        "sha256": "7ca8b2ed037c4ead9ffc0514a1207783c1184724ea5c975a26a24c02e494918f",
+        "model_hash": "3865f9b4faf5d53a5bf6777773a4f6e70d531f1cbeb3b9dcaccd2fcc14f97f82",
+        "optimizer_hash": "9331c4308a44b5b41cce702fadca93d98a6d5c358f85c723dde87cf04ed1e57f"
+      },
+      "blind": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t309_sequence_goal_value/blind_critic.pt.gz",
+        "sha256": "1be04710b3aa5219052658e10bda769875bd6858daff644183d232dcb7a083a5",
+        "model_hash": "f761e566f0de3277dcbef2a9f78daada693cdf737b93174a22e8b6aaccf56a64",
+        "optimizer_hash": "a0e3aabbb3f93914a14a5684a53e93ba47f0ee9221b70afe369e4ff818838af7"
+      },
+      "distilled": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t309_sequence_goal_value/distilled_critic.pt.gz",
+        "sha256": "a94f2884754abff660309b89daea572228ab7aa3ed5f7840976c1a22e62e4eb6",
+        "model_hash": "685568ae5de549f756417298e40f6435ba6cd9b730c037f3de301581d83343f8",
+        "optimizer_hash": "e7022f1ee3378616a00912b0d1ffa03099081a0208447aff83b8a0c5f6773ea7"
+      }
+    },
+    "all_workers_stopped": true,
+    "inflight": [],
+    "main_epoch": 1793669136.1927893,
+    "absolute_deadline_epoch": 1793676336.1927893,
+    "native_deadline_epoch": 1793675136.1927893,
+    "elapsed_s": 584.777156829834,
+    "own_bytes": 7739743,
+    "global_bytes": 1057075801,
+    "combined_value_control_gate": false,
+    "six_metre_navigation_gate_evaluated": false,
+    "fresh16_executed": false,
+    "reload78_executed": false,
+    "seven_eight_entered": false,
+    "automatic_next_training": false
+  },
+  "all_original_processes_absent": {
+    "561188": true,
+    "561192": true,
+    "561196": true,
+    "561198": true,
+    "561199": true,
+    "561201": true
+  },
+  "raw_groups": {
+    "LEFT|0.75|train|center": {
+      "n": 4,
+      "safe_GOAL": 4,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|0.75|test|center": {
+      "n": 4,
+      "safe_GOAL": 4,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|0.75|test|minus": {
+      "n": 4,
+      "safe_GOAL": 4,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|0.75|test|plus": {
+      "n": 4,
+      "safe_GOAL": 4,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|1.5|train|center": {
+      "n": 4,
+      "safe_GOAL": 4,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|1.5|test|center": {
+      "n": 4,
+      "safe_GOAL": 4,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|1.5|test|minus": {
+      "n": 4,
+      "safe_GOAL": 4,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|1.5|test|plus": {
+      "n": 4,
+      "safe_GOAL": 4,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|3.5|train|center": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|3.5|test|center": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|3.5|test|minus": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|3.5|test|plus": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|6.0|train|center": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|6.0|test|center": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|6.0|test|minus": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT|6.0|test|plus": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|0.75|train|center": {
+      "n": 4,
+      "safe_GOAL": 2,
+      "contact": 2,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|0.75|test|center": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|0.75|test|minus": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|0.75|test|plus": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|1.5|train|center": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|1.5|test|center": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|1.5|test|minus": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|1.5|test|plus": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 4,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|3.5|train|center": {
+      "n": 4,
+      "safe_GOAL": 4,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|3.5|test|center": {
+      "n": 4,
+      "safe_GOAL": 4,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|3.5|test|minus": {
+      "n": 4,
+      "safe_GOAL": 4,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|3.5|test|plus": {
+      "n": 4,
+      "safe_GOAL": 4,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|6.0|train|center": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 0,
+      "timeout": 4,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|6.0|test|center": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 0,
+      "timeout": 4,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|6.0|test|minus": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 0,
+      "timeout": 4,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT|6.0|test|plus": {
+      "n": 4,
+      "safe_GOAL": 0,
+      "contact": 0,
+      "timeout": 4,
+      "invalid": 0,
+      "censored": 0
+    }
+  },
+  "audit_sha256": "7231b1a3cb39fe4333d7c5e4b53ce425149cc078773871abf93514bca8f7c146",
+  "raw_summary_sha256": "998933aceebb9c8eb1dfccc8b6cb9e3655a6368bee8750f422b2d7fc4a9df23b",
+  "release_receipt_sha256": "64c1d7cb4abac51943f68612d0de94f4d1b18700993bb1af5eae502acaa9634b",
+  "archive_sha256": "1522d724dfd8fced3ed955a5f8ef67c4580d6b3739c042eee018b4adbf01b357",
+  "archive_members": 154,
+  "archive_parts": 12,
+  "native_main_commands": 256,
+  "zero_step_geometry_commands": 16,
+  "total_commands": 272,
+  "physics": 3588734,
+  "head_live_Adam": 6000,
+  "head_independent_reconstruction_Adam": 6000,
+  "Actor_updates": 0,
+  "main_wall_seconds": 584.777156829834,
+  "old275": "NOT_EXECUTED",
+  "six54": "NOT_EXECUTED",
+  "fresh16": "NOT_EXECUTED",
+  "reload78": "NOT_EXECUTED",
+  "seven_eight": "NOT_ENTERED",
+  "new_qualified_six_metre_video": null,
+  "all_registered_inputs_and_safe_models_videos_SHA_unchanged": true,
+  "logical_runs_bytes": 1057082392,
+  "free_disk_bytes": 222191280128,
+  "registration_source_remote": "86ac4c73dcebc39e4f5ffd2ae849b233266752bc",
+  "verified_epoch": 1793670140.0609438
+}
