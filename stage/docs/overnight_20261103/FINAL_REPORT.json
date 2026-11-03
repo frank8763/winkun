@@ -1,0 +1,107 @@
+{
+  "producer": {
+    "state": "COMPLETE",
+    "pid": 722311,
+    "main_epoch": 1793714879.1420121,
+    "elapsed_s": 1894.7833669185638,
+    "deadline_epoch": 1793747700.0,
+    "commands": 594,
+    "physics_steps": 10555201,
+    "cases": 565,
+    "training_episodes": 28,
+    "exact_replays": 28,
+    "updates": {
+      "live_actor": 7000,
+      "live_critic": 9000,
+      "shadow_actor": 7000,
+      "shadow_critic": 9000
+    },
+    "arms": {
+      "fixed": {
+        "accepted_blocks": 0,
+        "stop_reason": "TWO_CONSECUTIVE_OLD20_REJECTIONS",
+        "final_prefix": 0,
+        "wide5": {
+          "success": 0,
+          "collision": 5,
+          "timeout": 0
+        },
+        "original2": {
+          "success": 0,
+          "collision": 1,
+          "timeout": 1
+        }
+      },
+      "reverse": {
+        "accepted_blocks": 2,
+        "stop_reason": "TWO_CONSECUTIVE_OLD20_REJECTIONS",
+        "final_prefix": 240,
+        "wide5": {
+          "success": 0,
+          "collision": 5,
+          "timeout": 0
+        },
+        "original2": {
+          "success": 0,
+          "collision": 1,
+          "timeout": 1
+        }
+      }
+    },
+    "models": {
+      "fixed": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t336_reverse_online/fixed_final.pt.gz",
+        "sha256": "5e47d0b2a3c1b6a966ca809655062ccc20c05c9f114faddeecb6032731954d81",
+        "hashes": {
+          "actor": "9435efc9a8934fe47ae24c1617c33f0245dea8c2654f385366ff552f0aba674e",
+          "q": "376ea94f26c564255b6b529e712798da0cd30afd22471753b1a3a03ad2c54d54",
+          "target": "8e8c45a822d5253349c5d41cb757941276ac5801d25c917047a5768e4fef1ce1",
+          "actor_optimizer": "60cc9eda6dcba6547c1aacc254e511a69b4033db4960591834f7063184bf9ee2",
+          "critic_optimizer": "c5b04119c58c5f774b273c62bc1777db432d629fe0967abfc5f939fc23c7588d"
+        },
+        "bytes": 996834
+      },
+      "reverse": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t336_reverse_online/reverse_final.pt.gz",
+        "sha256": "41997435d19973f26a8721e4b90ee82ef2ff798983b43fdf52ed7c38863fd432",
+        "hashes": {
+          "actor": "8ef4da4e047718969a47248d388497738ce0b52941532e9a8d7d6c2586961203",
+          "q": "ff66a4df231522fcc6109a6e8d3b8d63ca8158d3099f92058361f5f14b5a18dc",
+          "target": "63038862fb4e3d4851915515ee82771f0a5be2e7e9350952f3b15f25db72d9b2",
+          "actor_optimizer": "6edd1a06a2c7ca7d1f95d407bbb4af3e2f41e702beeb58e869b0eddd3c62feab",
+          "critic_optimizer": "ea98fd3e5fa14d4e5bf2a575c1132378a3f285dc005e28faf3ea0c976c288f40"
+        },
+        "bytes": 1054247
+      }
+    },
+    "all_workers_stopped": true,
+    "gate": {
+      "chosen": "reverse",
+      "old275": {
+        "success": 274,
+        "collision": 1,
+        "timeout": 0
+      },
+      "six54": {
+        "success": 1,
+        "collision": 27,
+        "timeout": 26
+      },
+      "fresh16": null,
+      "reload78": null,
+      "stable": false
+    },
+    "original_7m_8m_entered": false,
+    "own_bytes": 6516609,
+    "global_bytes": 1056425163
+  },
+  "audit_returncode": 0,
+  "backup_returncode": 0,
+  "full_raw_remote_readback": true,
+  "audit_pass": true,
+  "no_7m_8m_training": true,
+  "night_physics": 10555201,
+  "night_commands": 594,
+  "summary": "\u771f\u5b9e\u6700\u7ec8\u8bc1\u636e\uff1b\u8bfe\u7a0b/\u4e2d\u5fc3\u4e0d\u79f0\u516d\u7c73\u7a33\u5b9a\uff1b\u672a\u6267\u884c\u5355\u5217\u3002",
+  "elapsed_s": 2198.022131919861
+}
