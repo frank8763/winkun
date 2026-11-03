@@ -1,0 +1,80 @@
+{
+  "state": "HISTORICAL_LAUNCH_OBSERVATION_ORIGINAL_RUN_NOW_FAILED",
+  "launch": {
+    "pid": 580172,
+    "launch_epoch": 1793674556.8577561,
+    "source_commit": "b487d5105b6b5a1bcf1888e521bcd911717f6ed8",
+    "remote_commit": "16f378da671531d5c19cfa7bf4de1943dc836de6",
+    "single_launch": true,
+    "wall_seconds": 7200
+  },
+  "last_observed_status": {
+    "state": "training",
+    "pid": 580176,
+    "main_epoch": 1793674557.691733,
+    "updated_epoch": 1793674617.1865194,
+    "absolute_deadline_epoch": 1793681757.691733,
+    "training_deadline_epoch": 1793679957.691733,
+    "commands": 102,
+    "physics_steps": 224096,
+    "training_episodes": 12,
+    "exact_replays": 8,
+    "optimizer_calls": 0,
+    "round_blocks": 0,
+    "inflight": [
+      "mc_r0_g4_draw0",
+      "mc_r0_g4_draw1",
+      "mc_r0_g5_draw0",
+      "mc_r0_g5_draw1"
+    ]
+  },
+  "times_Beijing": {
+    "main_epoch": "2026-11-03T10:55:57.691733+08:00",
+    "training_deadline_epoch": "2026-11-03T12:25:57.691733+08:00",
+    "absolute_deadline_epoch": "2026-11-03T12:55:57.691733+08:00"
+  },
+  "workers": {
+    "parent": 580176,
+    "workers": [
+      580180,
+      580181,
+      580190,
+      580192
+    ],
+    "ready": [
+      {
+        "ready": true,
+        "pid": 580180,
+        "CPU_affinity": [
+          1
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 580181,
+        "CPU_affinity": [
+          2
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 580190,
+        "CPU_affinity": [
+          3
+        ]
+      },
+      {
+        "ready": true,
+        "pid": 580192,
+        "CPU_affinity": [
+          4
+        ]
+      }
+    ]
+  },
+  "registered_source_commit": "16f378da671531d5c19cfa7bf4de1943dc836de6",
+  "source_sync_deferred_until_all_processes_stop": true,
+  "actual_stop_Beijing": "2026-11-03T10:59:17.688383+08:00",
+  "all_original_processes_now_absent": true,
+  "current_summary": "stage/runs/t312_online_goal_ppo/summary.json"
+}
