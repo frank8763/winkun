@@ -1,0 +1,211 @@
+{
+  "state": "COMPLETE_AUDIT_PASS_FULL_REMOTE_RAW_VERIFIED",
+  "main_beijing": "2026-11-03T12:51:48.281586+08:00",
+  "end_beijing": "2026-11-03T12:52:21.706145+08:00",
+  "deadline_beijing": "2026-11-03T13:21:48.281586+08:00",
+  "elapsed_s": 33.42455840110779,
+  "commands": 0,
+  "physics_steps": 0,
+  "historical_Adam_reconstructions": 2,
+  "offline_parameter_proposals": 30,
+  "max_offline_parameter_proposals": 32,
+  "new_value_fits": 0,
+  "new_navigation_updates": 0,
+  "deployed_Actor_changed": false,
+  "results": [
+    {
+      "arm": "mc",
+      "method": "adam",
+      "accepted": false,
+      "trials": 8,
+      "last": {
+        "trial": 7,
+        "factor": 0.0078125,
+        "initial_metric_scale": 0.4390237573588205,
+        "policy_hash": "1efa0e6c64d8af24f7bbb370a859800c54a765ece8020be7a2b1121c77048ac6",
+        "predicted_damped_score_quadratic": 1.2207031250000002e-06,
+        "value": {
+          "k3": 1.0370302190951712e-06,
+          "max_abs_logratio": 0.006278004379727697,
+          "objective": 0.0003604361993438245,
+          "weighted_retention": 7.511257393844062e-08,
+          "per_goal_surrogate": {
+            "LEFT_d0.75_train": 0.002952840141496522,
+            "LEFT_d1.5_train": 0.016273233497451377,
+            "LEFT_d3.5_train": -0.020528396814384973,
+            "LEFT_d6_train": -0.005640588806210764,
+            "RIGHT_d0.75_train": 0.011274166978281163,
+            "RIGHT_d1.5_train": -0.004233702499986191,
+            "RIGHT_d3.5_train": 0.005668484449978701,
+            "RIGHT_d6_train": -0.0028819464512837303
+          }
+        },
+        "improvement": -1.9675895816410665e-07,
+        "six_goal_surrogate_changes": {
+          "LEFT_d6_train": -2.612587026164584e-06,
+          "RIGHT_d6_train": 3.454390704189878e-06
+        },
+        "numeric_pass": true,
+        "accepted": false
+      }
+    },
+    {
+      "arm": "mc",
+      "method": "empirical_fisher",
+      "accepted": false,
+      "trials": 8,
+      "last": {
+        "trial": 7,
+        "factor": 0.0078125,
+        "initial_metric_scale": 15.49690976414272,
+        "policy_hash": "3b478a708b471ba3d4431cc80e26d3f1d9bdd6e603d3afe354c3ce756bad8528",
+        "predicted_damped_score_quadratic": 1.220703125e-06,
+        "value": {
+          "k3": 7.348192764499153e-06,
+          "max_abs_logratio": 0.04744501312551064,
+          "objective": 0.00036024469649369065,
+          "weighted_retention": 4.988384603166196e-07,
+          "per_goal_surrogate": {
+            "LEFT_d0.75_train": 0.002961877048411103,
+            "LEFT_d1.5_train": 0.01629493265603031,
+            "LEFT_d3.5_train": -0.02051822187478655,
+            "LEFT_d6_train": -0.005632282559953313,
+            "RIGHT_d0.75_train": 0.01127250193877046,
+            "RIGHT_d1.5_train": -0.004255240093436565,
+            "RIGHT_d3.5_train": 0.0056462376564311734,
+            "RIGHT_d6_train": -0.0028838564918345676
+          }
+        },
+        "improvement": -3.88261808297952e-07,
+        "six_goal_surrogate_changes": {
+          "LEFT_d6_train": 5.693659231286938e-06,
+          "RIGHT_d6_train": 1.544350153352518e-06
+        },
+        "numeric_pass": true,
+        "accepted": false
+      }
+    },
+    {
+      "arm": "gae",
+      "method": "adam",
+      "accepted": false,
+      "trials": 8,
+      "last": {
+        "trial": 7,
+        "factor": 0.0078125,
+        "initial_metric_scale": 0.38221359559531004,
+        "policy_hash": "6fb1b153d23d1b779858775e43b6abfdb739c78fff2ec2be446395e92ca77280",
+        "predicted_damped_score_quadratic": 1.220703125e-06,
+        "value": {
+          "k3": 9.421558257272603e-07,
+          "max_abs_logratio": 0.0052251352274943486,
+          "objective": 0.0010372912259288796,
+          "weighted_retention": 6.192340862298806e-08,
+          "per_goal_surrogate": {
+            "LEFT_d0.75_train": 0.0029732041858571215,
+            "LEFT_d1.5_train": 0.008627329410366001,
+            "LEFT_d3.5_train": -0.0034323854902046725,
+            "LEFT_d6_train": 0.0019009333437081846,
+            "RIGHT_d0.75_train": 0.0010980746336946632,
+            "RIGHT_d1.5_train": -0.005288035215711357,
+            "RIGHT_d3.5_train": 0.005287999320164465,
+            "RIGHT_d6_train": -0.002868294993174386
+          }
+        },
+        "improvement": -9.041655383362161e-07,
+        "six_goal_surrogate_changes": {
+          "LEFT_d6_train": -1.1945384391289383e-06,
+          "RIGHT_d6_train": 1.1106357203681874e-06
+        },
+        "numeric_pass": true,
+        "accepted": false
+      }
+    },
+    {
+      "arm": "gae",
+      "method": "empirical_fisher",
+      "accepted": true,
+      "trials": 6,
+      "last": {
+        "trial": 5,
+        "factor": 0.03125,
+        "initial_metric_scale": 16.688173383573233,
+        "policy_hash": "2a68b0c601c50539593aead97dd36e0b662802d03b101d9f7f5fa9092594b829",
+        "predicted_damped_score_quadratic": 1.9531249999999997e-05,
+        "value": {
+          "k3": 0.00010241130654333445,
+          "max_abs_logratio": 0.16297177437169363,
+          "objective": 0.0010384521625654323,
+          "weighted_retention": 6.558308086823672e-06,
+          "per_goal_surrogate": {
+            "LEFT_d0.75_train": 0.003001313713836649,
+            "LEFT_d1.5_train": 0.008706656835728327,
+            "LEFT_d3.5_train": -0.003342584042030533,
+            "LEFT_d6_train": 0.0019286486961546322,
+            "RIGHT_d0.75_train": 0.0010622010653688122,
+            "RIGHT_d1.5_train": -0.005357725024061996,
+            "RIGHT_d3.5_train": 0.005230247144106753,
+            "RIGHT_d6_train": -0.0028686746238845958
+          }
+        },
+        "improvement": 2.567710982164396e-07,
+        "six_goal_surrogate_changes": {
+          "LEFT_d6_train": 2.6520814007318727e-05,
+          "RIGHT_d6_train": 7.310050101584295e-07
+        },
+        "numeric_pass": true,
+        "accepted": true
+      }
+    }
+  ],
+  "empirical_fisher_joint_gate_pass": false,
+  "old275_originalsix54_fresh16_reload78": "NOT_EXECUTED_NOT_ZERO_SUCCESS_RATE",
+  "seven_eight_entered": false,
+  "all_producer_pids_absent": [
+    597946,
+    597949,
+    597950
+  ],
+  "models": {
+    "mc_adam": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t313_fisher_feasibility/mc_adam_offline_policy.pt.gz",
+      "sha256": "23ba29fba319cd36a26b84e7f4b1e6a72f973d51b0b0da737396fed4c6b827fb",
+      "policy_hash": "1efa0e6c64d8af24f7bbb370a859800c54a765ece8020be7a2b1121c77048ac6",
+      "bytes": 2191927
+    },
+    "mc_empirical_fisher": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t313_fisher_feasibility/mc_empirical_fisher_offline_policy.pt.gz",
+      "sha256": "fd0ebda7525e1e65617cd57f8cde99577b733fdb332d6bb53c89dd69445f83c6",
+      "policy_hash": "3b478a708b471ba3d4431cc80e26d3f1d9bdd6e603d3afe354c3ce756bad8528",
+      "bytes": 2191837
+    },
+    "gae_adam": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t313_fisher_feasibility/gae_adam_offline_policy.pt.gz",
+      "sha256": "6ddc156320440047ef2863f9edcd0cad9d8b541bca6c571cbe3e54627cd17449",
+      "policy_hash": "6fb1b153d23d1b779858775e43b6abfdb739c78fff2ec2be446395e92ca77280",
+      "bytes": 2191840
+    },
+    "gae_empirical_fisher": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t313_fisher_feasibility/gae_empirical_fisher_offline_policy.pt.gz",
+      "sha256": "eeb12ba082977dd8f9e420374990a2e909bda105581934f83b33b55466fc6778",
+      "policy_hash": "2a68b0c601c50539593aead97dd36e0b662802d03b101d9f7f5fa9092594b829",
+      "bytes": 2192001
+    }
+  },
+  "global_bytes": 1058068863,
+  "own_bytes": 9255293,
+  "own_limit_bytes": 14680064,
+  "global_limit_bytes": 1073741824,
+  "free_bytes": 221396541440,
+  "summary_sha256": "c518eae421eda1ebc37f47525bb51df26eb076cb4c84a1a84f1c1a1c3c28a17c",
+  "metrics_sha256": "eea905d4f2dab995090320c76fdaf1b27e08c9c849709d60eefa5880f7b51b6d",
+  "audit_sha256": "9bd52dcd0c6967d722d4d5602be41c3a446e449c87a44c496d793228ffe68a14",
+  "independent_disposable_historical_Adam_calls": 2,
+  "independent_parameter_proposals_reconstructed": 30,
+  "backup": {
+    "members": 12,
+    "segments": 17,
+    "archive_sha256": "b42e8515fca1cd7a12b56f3db2654863a10f3e36b5a7702a535899715803bda6",
+    "url": "https://github.com/frank8763/winkun/releases/tag/stage-distance-2026-11-01"
+  }
+}

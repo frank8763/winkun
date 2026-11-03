@@ -71,6 +71,7 @@ GROUPS = {
     'T312': ['t312_online_goal_ppo'],
     'T312R': ['t312_remaining_recovery'],
     'T313': ['t313_fisher_feasibility'],
+    'T314': ['t314_directional_audit'],
 }
 
 

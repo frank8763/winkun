@@ -1,0 +1,427 @@
+{
+  "state": "POSTHOC_STORED_METRICS_ONLY_NO_OPTIMIZATION",
+  "native_steps": 0,
+  "Adam_calls": 0,
+  "offline_parameter_proposals": 0,
+  "source_metrics_sha256": "eea905d4f2dab995090320c76fdaf1b27e08c9c849709d60eefa5880f7b51b6d",
+  "decomposition": [
+    {
+      "arm": "mc",
+      "method": "adam",
+      "proxy_accepted": false,
+      "trials": [
+        {
+          "trial": 0,
+          "factor": 1.0,
+          "numeric_pass": true,
+          "objective_change": -0.0017884562218220392,
+          "weighted_retention_change": 0.0012743705883622059,
+          "unpenalized_clipped_surrogate_change": -0.0005140856334598333,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -0.00037213904009766267,
+            "RIGHT_d6_train": -3.173782675117056e-05
+          },
+          "accepted": false
+        },
+        {
+          "trial": 1,
+          "factor": 0.5,
+          "numeric_pass": true,
+          "objective_change": -0.0003681720026292758,
+          "weighted_retention_change": 0.00031839273287913577,
+          "unpenalized_clipped_surrogate_change": -4.9779269750140044e-05,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -0.00015983359126896246,
+            "RIGHT_d6_train": 0.00019522694707704543
+          },
+          "accepted": false
+        },
+        {
+          "trial": 2,
+          "factor": 0.25,
+          "numeric_pass": true,
+          "objective_change": -8.361412508910067e-05,
+          "weighted_retention_change": 7.937527698230746e-05,
+          "unpenalized_clipped_surrogate_change": -4.238848106793218e-06,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -8.177215289772392e-05,
+            "RIGHT_d6_train": 0.00011594007189912265
+          },
+          "accepted": false
+        },
+        {
+          "trial": 3,
+          "factor": 0.125,
+          "numeric_pass": true,
+          "objective_change": -2.1730352207867333e-05,
+          "weighted_retention_change": 1.981292371054927e-05,
+          "unpenalized_clipped_surrogate_change": -1.9174284973180642e-06,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -4.1387405988199157e-05,
+            "RIGHT_d6_train": 5.693454442300735e-05
+          },
+          "accepted": false
+        },
+        {
+          "trial": 4,
+          "factor": 0.0625,
+          "numeric_pass": true,
+          "objective_change": -5.884810264547406e-06,
+          "weighted_retention_change": 4.95549329569961e-06,
+          "unpenalized_clipped_surrogate_change": -9.293169688477956e-07,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -2.080095000877441e-05,
+            "RIGHT_d6_train": 2.8232588178502428e-05
+          },
+          "accepted": false
+        },
+        {
+          "trial": 5,
+          "factor": 0.03125,
+          "numeric_pass": true,
+          "objective_change": -1.7348987443207534e-06,
+          "weighted_retention_change": 1.2877254675802158e-06,
+          "unpenalized_clipped_surrogate_change": -4.471732767405376e-07,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -1.063814245571594e-05,
+            "RIGHT_d6_train": 1.4342003835478897e-05
+          },
+          "accepted": false
+        },
+        {
+          "trial": 6,
+          "factor": 0.015625,
+          "numeric_pass": true,
+          "objective_change": -5.738714435939585e-07,
+          "weighted_retention_change": 3.355891635580827e-07,
+          "unpenalized_clipped_surrogate_change": -2.3828228003587587e-07,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -5.447841879031336e-06,
+            "RIGHT_d6_train": 7.303488933107713e-06
+          },
+          "accepted": false
+        },
+        {
+          "trial": 7,
+          "factor": 0.0078125,
+          "numeric_pass": true,
+          "objective_change": -1.9675895816410665e-07,
+          "weighted_retention_change": 7.511257392728457e-08,
+          "unpenalized_clipped_surrogate_change": -1.216463842368221e-07,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -2.612587026164584e-06,
+            "RIGHT_d6_train": 3.454390704189878e-06
+          },
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "arm": "mc",
+      "method": "empirical_fisher",
+      "proxy_accepted": false,
+      "trials": [
+        {
+          "trial": 0,
+          "factor": 1.0,
+          "numeric_pass": false,
+          "objective_change": -0.013384735674589289,
+          "weighted_retention_change": 0.008260070346295823,
+          "unpenalized_clipped_surrogate_change": -0.005124665328293466,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -0.001141716086949897,
+            "RIGHT_d6_train": -0.0013879804791186211
+          },
+          "accepted": false
+        },
+        {
+          "trial": 1,
+          "factor": 0.5,
+          "numeric_pass": false,
+          "objective_change": -0.003488461093989763,
+          "weighted_retention_change": 0.0020608231425285227,
+          "unpenalized_clipped_surrogate_change": -0.0014276379514612404,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -0.00019136915414949465,
+            "RIGHT_d6_train": -0.0004734780523293486
+          },
+          "accepted": false
+        },
+        {
+          "trial": 2,
+          "factor": 0.25,
+          "numeric_pass": false,
+          "objective_change": -0.0008702321953512523,
+          "weighted_retention_change": 0.0005130143836140521,
+          "unpenalized_clipped_surrogate_change": -0.0003572178117372002,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": 0.00011615778631119886,
+            "RIGHT_d6_train": -2.5437690609067445e-05
+          },
+          "accepted": false
+        },
+        {
+          "trial": 3,
+          "factor": 0.125,
+          "numeric_pass": true,
+          "objective_change": -0.00020111706792663166,
+          "weighted_retention_change": 0.0001278961135540046,
+          "unpenalized_clipped_surrogate_change": -7.322095437262708e-05,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": 9.648932429196042e-05,
+            "RIGHT_d6_train": 6.713505820705318e-05
+          },
+          "accepted": false
+        },
+        {
+          "trial": 4,
+          "factor": 0.0625,
+          "numeric_pass": true,
+          "objective_change": -4.168635815838466e-05,
+          "weighted_retention_change": 3.194981763953159e-05,
+          "unpenalized_clipped_surrogate_change": -9.736540518853068e-06,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": 4.6970305713783626e-05,
+            "RIGHT_d6_train": 2.5089341469467993e-05
+          },
+          "accepted": false
+        },
+        {
+          "trial": 5,
+          "factor": 0.03125,
+          "numeric_pass": true,
+          "objective_change": -8.147908124308786e-06,
+          "weighted_retention_change": 7.984218427725622e-06,
+          "unpenalized_clipped_surrogate_change": -1.6368969658316325e-07,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": 2.3268343307871614e-05,
+            "RIGHT_d6_train": 9.285181984623487e-06
+          },
+          "accepted": false
+        },
+        {
+          "trial": 6,
+          "factor": 0.015625,
+          "numeric_pass": true,
+          "objective_change": -1.8855213935407822e-06,
+          "weighted_retention_change": 1.9945171061296915e-06,
+          "unpenalized_clipped_surrogate_change": 1.0899571258890923e-07,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": 1.1505758798020273e-05,
+            "RIGHT_d6_train": 3.607301365471296e-06
+          },
+          "accepted": false
+        },
+        {
+          "trial": 7,
+          "factor": 0.0078125,
+          "numeric_pass": true,
+          "objective_change": -3.88261808297952e-07,
+          "weighted_retention_change": 4.988384603054635e-07,
+          "unpenalized_clipped_surrogate_change": 1.1057665200751155e-07,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": 5.693659231286938e-06,
+            "RIGHT_d6_train": 1.544350153352518e-06
+          },
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "arm": "gae",
+      "method": "adam",
+      "proxy_accepted": false,
+      "trials": [
+        {
+          "trial": 0,
+          "factor": 1.0,
+          "numeric_pass": true,
+          "objective_change": -0.001656186326782205,
+          "weighted_retention_change": 0.0011666169157251605,
+          "unpenalized_clipped_surrogate_change": -0.0004895694110570446,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -0.0002309781160260893,
+            "RIGHT_d6_train": -0.0001934707015319912
+          },
+          "accepted": false
+        },
+        {
+          "trial": 1,
+          "factor": 0.5,
+          "numeric_pass": true,
+          "objective_change": -0.0003702960593209444,
+          "weighted_retention_change": 0.0002915865625254698,
+          "unpenalized_clipped_surrogate_change": -7.87094967954746e-05,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -7.42678355784435e-05,
+            "RIGHT_d6_train": 6.773441982405558e-05
+          },
+          "accepted": false
+        },
+        {
+          "trial": 2,
+          "factor": 0.25,
+          "numeric_pass": true,
+          "objective_change": -0.0001022831915301625,
+          "weighted_retention_change": 7.332953100557255e-05,
+          "unpenalized_clipped_surrogate_change": -2.8953660524589945e-05,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -3.902716583238522e-05,
+            "RIGHT_d6_train": 4.132825112336666e-05
+          },
+          "accepted": false
+        },
+        {
+          "trial": 3,
+          "factor": 0.125,
+          "numeric_pass": true,
+          "objective_change": -3.219801258796278e-05,
+          "weighted_retention_change": 1.8016604371939805e-05,
+          "unpenalized_clipped_surrogate_change": -1.4181408216022978e-05,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -1.983058474688956e-05,
+            "RIGHT_d6_train": 1.9541915037382326e-05
+          },
+          "accepted": false
+        },
+        {
+          "trial": 4,
+          "factor": 0.0625,
+          "numeric_pass": true,
+          "objective_change": -1.1682097355603669e-05,
+          "weighted_retention_change": 4.581303528527982e-06,
+          "unpenalized_clipped_surrogate_change": -7.100793827075687e-06,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -1.0129142560922049e-05,
+            "RIGHT_d6_train": 9.67136592476851e-06
+          },
+          "accepted": false
+        },
+        {
+          "trial": 5,
+          "factor": 0.03125,
+          "numeric_pass": true,
+          "objective_change": -4.764366199605345e-06,
+          "weighted_retention_change": 1.1713312915050972e-06,
+          "unpenalized_clipped_surrogate_change": -3.593034908100248e-06,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -5.157810046948564e-06,
+            "RIGHT_d6_train": 4.835218099818496e-06
+          },
+          "accepted": false
+        },
+        {
+          "trial": 6,
+          "factor": 0.015625,
+          "numeric_pass": true,
+          "objective_change": -2.0076970286900253e-06,
+          "weighted_retention_change": 2.736991575491027e-07,
+          "unpenalized_clipped_surrogate_change": -1.7339978711409226e-06,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -2.4904540949052985e-06,
+            "RIGHT_d6_train": 2.335721606982512e-06
+          },
+          "accepted": false
+        },
+        {
+          "trial": 7,
+          "factor": 0.0078125,
+          "numeric_pass": true,
+          "objective_change": -9.041655383362161e-07,
+          "weighted_retention_change": 6.192340861183202e-08,
+          "unpenalized_clipped_surrogate_change": -8.422421297243841e-07,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -1.1945384391289383e-06,
+            "RIGHT_d6_train": 1.1106357203681874e-06
+          },
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "arm": "gae",
+      "method": "empirical_fisher",
+      "proxy_accepted": true,
+      "trials": [
+        {
+          "trial": 0,
+          "factor": 1.0,
+          "numeric_pass": false,
+          "objective_change": -0.010047386624547315,
+          "weighted_retention_change": 0.006758909672498692,
+          "unpenalized_clipped_surrogate_change": -0.0032884769520486233,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -0.0007974126355260373,
+            "RIGHT_d6_train": -0.0019223737981939612
+          },
+          "accepted": false
+        },
+        {
+          "trial": 1,
+          "factor": 0.5,
+          "numeric_pass": false,
+          "objective_change": -0.0026402033320398195,
+          "weighted_retention_change": 0.001686591305769969,
+          "unpenalized_clipped_surrogate_change": -0.0009536120262698506,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": -0.00010220425321258138,
+            "RIGHT_d6_train": -0.000589236309277263
+          },
+          "accepted": false
+        },
+        {
+          "trial": 2,
+          "factor": 0.25,
+          "numeric_pass": false,
+          "objective_change": -0.0006278364594621622,
+          "weighted_retention_change": 0.0004205696168355532,
+          "unpenalized_clipped_surrogate_change": -0.000207266842626609,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": 0.00011114162569620572,
+            "RIGHT_d6_train": -5.783649370978434e-05
+          },
+          "accepted": false
+        },
+        {
+          "trial": 3,
+          "factor": 0.125,
+          "numeric_pass": true,
+          "objective_change": -0.00012637500656822944,
+          "weighted_retention_change": 0.00010499386553418639,
+          "unpenalized_clipped_surrogate_change": -2.138114103404305e-05,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": 0.00010156914763328464,
+            "RIGHT_d6_train": 1.6845352432132664e-05
+          },
+          "accepted": false
+        },
+        {
+          "trial": 4,
+          "factor": 0.0625,
+          "numeric_pass": true,
+          "objective_change": -1.8625324202885436e-05,
+          "weighted_retention_change": 2.624172157082988e-05,
+          "unpenalized_clipped_surrogate_change": 7.616397367944443e-06,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": 5.299570191381452e-05,
+            "RIGHT_d6_train": 4.627491666213054e-06
+          },
+          "accepted": false
+        },
+        {
+          "trial": 5,
+          "factor": 0.03125,
+          "numeric_pass": true,
+          "objective_change": 2.567710982164396e-07,
+          "weighted_retention_change": 6.558308086812516e-06,
+          "unpenalized_clipped_surrogate_change": 6.815079185028955e-06,
+          "six_goal_surrogate_changes": {
+            "LEFT_d6_train": 2.6520814007318727e-05,
+            "RIGHT_d6_train": 7.310050101584295e-07
+          },
+          "accepted": true
+        }
+      ]
+    }
+  ]
+}
