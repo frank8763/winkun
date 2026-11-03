@@ -73,6 +73,7 @@ GROUPS = {
     'T313': ['t313_fisher_feasibility'],
     'T314': ['t314_directional_audit'],
     'T315': ['t315_full_trajectory_gradient'],
+    'T316': ['t316_frozen_native_validation'],
 }
 
 
