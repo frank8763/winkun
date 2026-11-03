@@ -1,0 +1,1 @@
+T321 COMPLETE：21个已结束冷检查点通过XOR/byteplane/XZ无损编码，释放34256322B原payload。原gzip完整字节与raw ZIP/Actor/Adam全部可逐位恢复，未删任何唯一资料；safeT255/T299/当前数据/人工/视频保护SHA不变。26.401309秒，0物理/0Actor/0Adam。独立21原字节审计PASS，7原文件RAM全远端逐成员SHA完成，账本T321_ENCODING_LEDGER.json另经源码备份。旧裸路径用t321 codec.load_original或有容量的restore，不假称历史旧脚本直接可重跑。本步骤不是导航成功。

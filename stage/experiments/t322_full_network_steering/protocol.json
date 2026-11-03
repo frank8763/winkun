@@ -1,0 +1,3862 @@
+{
+  "checkpoint": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t255_overnight/s2_reset_final_checkpoint.pt.gz",
+  "checkpoint_sha256": "63e63e2b444867b26622a2ab0f0c4227bc38d48a7cd2b5a3b378d9b0266006df",
+  "initial_base": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t250_actuator_policy_gradient/final_Actor.pt.gz",
+  "retention_states": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/stable_5m_current_states.npz",
+  "retention_states_sha256": "b5f050bee72164f883a9a3c76624e50fa0755ab6ff53bbd7a0631470787e5df0",
+  "policy_protocol": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t267_causal_credit_course/protocol.json",
+  "policy_hash": "31b694d1ecf92dbcf7909f6ba6e73a808bc9725aeeacfb7584d0aab8fb162d54",
+  "global_bytes": 1073741824,
+  "min_free_bytes": 42949672960,
+  "acceptance_guard_jobs": [
+    {
+      "id": "dev_task0_13",
+      "group": "task0",
+      "case": {
+        "id": "2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task1_13",
+      "group": "task1",
+      "case": {
+        "id": "2029653602_RIGHT",
+        "seed": 2029653602,
+        "angle_deg": 13.6,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task2_13",
+      "group": "task2",
+      "case": {
+        "id": "2029654801_LEFT",
+        "seed": 2029654801,
+        "angle_deg": -12.5,
+        "side": "LEFT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task3_13",
+      "group": "task3",
+      "case": {
+        "id": "2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "group": "old_3m_4m_retention",
+        "distance_m": 3.0,
+        "step_cap": 14000
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task4_00",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task4_13",
+      "group": "task4",
+      "case": {
+        "id": "4m_2029653601_LEFT",
+        "seed": 2029653601,
+        "side": "LEFT",
+        "angle_deg": -17.3,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task5_13",
+      "group": "task5",
+      "case": {
+        "id": "4m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "side": "RIGHT",
+        "angle_deg": 18.8,
+        "distance_m": 4.0,
+        "step_cap": 18667,
+        "group": "old_3m_4m_retention"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task6_00",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task6_13",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task6_24",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0
+    },
+    {
+      "id": "dev_task7_13",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0
+    },
+    {
+      "id": "dev_task7_26",
+      "group": "task7",
+      "case": {
+        "id": "5m_2029654802_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz",
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0
+    },
+    {
+      "id": "hold_task6_00",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task6_01",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task6_02",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task6_03",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task6_04",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task6_05",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": -0.015,
+      "delta_yaw_deg": 1.0
+    },
+    {
+      "id": "hold_task6_06",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": -1.0
+    },
+    {
+      "id": "hold_task6_07",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.015,
+      "delta_y_m": 0.015,
+      "delta_yaw_deg": 1.0
+    }
+  ],
+  "train_demo": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t317_human_demonstration/attempt_01.npz",
+  "validation_demo": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t317_human_demonstration/attempt_02.npz",
+  "anchor_rows_each": 32,
+  "retention_weight": 100,
+  "experiment": "T322_FULL_NETWORK_STEERING_INITIALIZATION",
+  "development_jobs": [
+    {
+      "id": "dev6_LEFT_00",
+      "source_reset_id": "dev6_LEFT_00",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_01",
+      "source_reset_id": "dev6_LEFT_01",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_02",
+      "source_reset_id": "dev6_LEFT_02",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_03",
+      "source_reset_id": "dev6_LEFT_03",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": 0,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_04",
+      "source_reset_id": "dev6_LEFT_04",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": 0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_05",
+      "source_reset_id": "dev6_LEFT_05",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": 0,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_06",
+      "source_reset_id": "dev6_LEFT_06",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_07",
+      "source_reset_id": "dev6_LEFT_07",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_08",
+      "source_reset_id": "dev6_LEFT_08",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_09",
+      "source_reset_id": "dev6_LEFT_09",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_10",
+      "source_reset_id": "dev6_LEFT_10",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_11",
+      "source_reset_id": "dev6_LEFT_11",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_12",
+      "source_reset_id": "dev6_LEFT_12",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": 0,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_13",
+      "source_reset_id": "dev6_LEFT_13",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": 0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": "a5ecea6b2fa18d0b9566faa1f10c9e1aba9d5a1fe3b67b45bc6560d8cb4f92f2"
+    },
+    {
+      "id": "dev6_LEFT_14",
+      "source_reset_id": "dev6_LEFT_14",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": 0,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_15",
+      "source_reset_id": "dev6_LEFT_15",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_16",
+      "source_reset_id": "dev6_LEFT_16",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_17",
+      "source_reset_id": "dev6_LEFT_17",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_18",
+      "source_reset_id": "dev6_LEFT_18",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_19",
+      "source_reset_id": "dev6_LEFT_19",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_20",
+      "source_reset_id": "dev6_LEFT_20",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_21",
+      "source_reset_id": "dev6_LEFT_21",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": 0,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_22",
+      "source_reset_id": "dev6_LEFT_22",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": 0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_23",
+      "source_reset_id": "dev6_LEFT_23",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": 0,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_24",
+      "source_reset_id": "dev6_LEFT_24",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_25",
+      "source_reset_id": "dev6_LEFT_25",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_LEFT_26",
+      "source_reset_id": "dev6_LEFT_26",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_00",
+      "source_reset_id": "dev6_RIGHT_00",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_01",
+      "source_reset_id": "dev6_RIGHT_01",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_02",
+      "source_reset_id": "dev6_RIGHT_02",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_03",
+      "source_reset_id": "dev6_RIGHT_03",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": 0,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_04",
+      "source_reset_id": "dev6_RIGHT_04",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": 0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_05",
+      "source_reset_id": "dev6_RIGHT_05",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": 0,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_06",
+      "source_reset_id": "dev6_RIGHT_06",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_07",
+      "source_reset_id": "dev6_RIGHT_07",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_08",
+      "source_reset_id": "dev6_RIGHT_08",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": -0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_09",
+      "source_reset_id": "dev6_RIGHT_09",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_10",
+      "source_reset_id": "dev6_RIGHT_10",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_11",
+      "source_reset_id": "dev6_RIGHT_11",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_12",
+      "source_reset_id": "dev6_RIGHT_12",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": 0,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_13",
+      "source_reset_id": "dev6_RIGHT_13",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": 0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz",
+      "expected_initial120_sha256": "74b892e6e64d6c5d35e12ea99e3e1a18df3b2a57e44fe6d3a5d0d591c6def67a"
+    },
+    {
+      "id": "dev6_RIGHT_14",
+      "source_reset_id": "dev6_RIGHT_14",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": 0,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_15",
+      "source_reset_id": "dev6_RIGHT_15",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_16",
+      "source_reset_id": "dev6_RIGHT_16",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_17",
+      "source_reset_id": "dev6_RIGHT_17",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_18",
+      "source_reset_id": "dev6_RIGHT_18",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_19",
+      "source_reset_id": "dev6_RIGHT_19",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_20",
+      "source_reset_id": "dev6_RIGHT_20",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": -0.03,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_21",
+      "source_reset_id": "dev6_RIGHT_21",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": 0,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_22",
+      "source_reset_id": "dev6_RIGHT_22",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": 0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_23",
+      "source_reset_id": "dev6_RIGHT_23",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": 0,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_24",
+      "source_reset_id": "dev6_RIGHT_24",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_25",
+      "source_reset_id": "dev6_RIGHT_25",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    },
+    {
+      "id": "dev6_RIGHT_26",
+      "source_reset_id": "dev6_RIGHT_26",
+      "group": "6m_RIGHT",
+      "case": {
+        "id": "6m_RIGHT",
+        "seed": 2029654802,
+        "angle_deg": 18.8,
+        "side": "RIGHT",
+        "distance_m": 6.0,
+        "step_cap": 28000,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.03,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": 2.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz"
+    }
+  ],
+  "reference_geometry": [
+    {
+      "id": "dev_task0_13",
+      "initial120_sha256": "055372868481a9d87d1fad92f070e4e87a95d8c2f8f881b42604bef346dcbddf",
+      "integration_sha256": "f76de3e4654e18cdf215e999adf94a8e47ab99137395488651859ea40a4334d2",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        0.6450111391171451,
+        -1.9059261890608115
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.9999989867210388,
+          -0.07062482088804245
+        ],
+        "mc_empirical_fisher": [
+          0.9999989867210388,
+          -0.06966550648212433
+        ],
+        "gae_adam": [
+          0.9999989867210388,
+          -0.07124317437410355
+        ],
+        "gae_empirical_fisher": [
+          0.9999989867210388,
+          -0.06953751295804977
+        ]
+      }
+    },
+    {
+      "id": "dev_task1_13",
+      "initial120_sha256": "62ace658dd1d60ab3a2949cd52b4c78f0c77770f06fe7677dc225daccc4beaf3",
+      "integration_sha256": "78798dd6ca6b5cd227bd38dd83caf345e79eae65b29b7a8274542c9881671b80",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        4.31093776207436,
+        -5.56256128800811
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.9999989867210388,
+          0.19627603888511658
+        ],
+        "mc_empirical_fisher": [
+          0.9999989867210388,
+          0.19580039381980896
+        ],
+        "gae_adam": [
+          0.9999989867210388,
+          0.1955907791852951
+        ],
+        "gae_empirical_fisher": [
+          0.9999989867210388,
+          0.19601793587207794
+        ]
+      }
+    },
+    {
+      "id": "dev_task2_13",
+      "initial120_sha256": "ff3904298b6aad5512a6c03b00a3f46006b0391ca560e8447f5d700a28cc605f",
+      "integration_sha256": "78798dd6ca6b5cd227bd38dd83caf345e79eae65b29b7a8274542c9881671b80",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        3.3623608142541768,
+        -6.529879958546968
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.9999989867210388,
+          -0.5705836415290833
+        ],
+        "mc_empirical_fisher": [
+          0.9999989867210388,
+          -0.571243405342102
+        ],
+        "gae_adam": [
+          0.9999989867210388,
+          -0.5711105465888977
+        ],
+        "gae_empirical_fisher": [
+          0.9999989867210388,
+          -0.5709462761878967
+        ]
+      }
+    },
+    {
+      "id": "dev_task3_13",
+      "initial120_sha256": "ffde78253d80bb57bcb959c190e0b601c88e7b0b38c212df761271f7f70f705a",
+      "integration_sha256": "9d57bc38f544884a5091d4c493ae996fa161d8a44f8b355710ad2252d22e8e79",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        3.6920169243256953,
+        0.9259739884941749
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.8163362145423889,
+          -0.35615983605384827
+        ],
+        "mc_empirical_fisher": [
+          0.8146911263465881,
+          -0.3577840328216553
+        ],
+        "gae_adam": [
+          0.8162805438041687,
+          -0.35669293999671936
+        ],
+        "gae_empirical_fisher": [
+          0.8148761987686157,
+          -0.35689032077789307
+        ]
+      }
+    },
+    {
+      "id": "dev_task4_00",
+      "initial120_sha256": "c11154d3b9d610bb30f00616670d0542a70024360f3c19fa1d0afa3ac7fc4ba3",
+      "integration_sha256": "210b0327dcd6b87fc5197527c9c229e9f3de13cc9bfd99fdbb6724f75607c436",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        0.8600148521561934,
+        -2.2912349187477488
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.9999989867210388,
+          -0.7291129231452942
+        ],
+        "mc_empirical_fisher": [
+          0.9999989867210388,
+          -0.7304881811141968
+        ],
+        "gae_adam": [
+          0.9999989867210388,
+          -0.729490339756012
+        ],
+        "gae_empirical_fisher": [
+          0.9999989867210388,
+          -0.730583131313324
+        ]
+      }
+    },
+    {
+      "id": "dev_task4_13",
+      "initial120_sha256": "e7b564ea614bcc6b6e59e5138af15cbb86f54e96890e3709a8a6cbe5dce0de6a",
+      "integration_sha256": "c6b069d9f05fa42f79eda48df9e806e55f341a7a4c1b5dd68814750e84c747e9",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        0.8600148521561934,
+        -2.2912349187477488
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.987598180770874,
+          -0.870591938495636
+        ],
+        "mc_empirical_fisher": [
+          0.9878530502319336,
+          -0.8712630271911621
+        ],
+        "gae_adam": [
+          0.9873993992805481,
+          -0.8707497119903564
+        ],
+        "gae_empirical_fisher": [
+          0.9877710938453674,
+          -0.8710907697677612
+        ]
+      }
+    },
+    {
+      "id": "dev_task5_13",
+      "initial120_sha256": "c05eef22473cf449d38ab686b9eb57b65ba3894c4305161923f4791544e40ad4",
+      "integration_sha256": "a1fbefc47313715b3401fdd14ed3468d8ba0d02e58e85ba5a33739ddd1a0fda1",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        4.8393558991009265,
+        -5.5153680153411
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.9999989867210388,
+          0.1028013750910759
+        ],
+        "mc_empirical_fisher": [
+          0.9999989867210388,
+          0.10150068998336792
+        ],
+        "gae_adam": [
+          0.9999989867210388,
+          0.10228818655014038
+        ],
+        "gae_empirical_fisher": [
+          0.9999989867210388,
+          0.10192105919122696
+        ]
+      }
+    },
+    {
+      "id": "dev_task6_00",
+      "initial120_sha256": "6a42d5de725cc5300a494b29de1dcbbf479a238992b8fa34e5f590dcd3cd19f4",
+      "integration_sha256": "fbe2c621879fef81b4c96c5e0a47fd4599e8a4d5a43b2f26337d1af7899d1ba2",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.44339025020599365,
+          -0.2008589655160904
+        ],
+        "mc_empirical_fisher": [
+          0.44561704993247986,
+          -0.1999662071466446
+        ],
+        "gae_adam": [
+          0.44284510612487793,
+          -0.20181812345981598
+        ],
+        "gae_empirical_fisher": [
+          0.4454844892024994,
+          -0.20026101171970367
+        ]
+      }
+    },
+    {
+      "id": "dev_task6_13",
+      "initial120_sha256": "792ef3b00061661474839d3fd6d7a2fd989bc242a02fef8dd8f06641f19cab98",
+      "integration_sha256": "f76de3e4654e18cdf215e999adf94a8e47ab99137395488651859ea40a4334d2",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.7337585687637329,
+          -0.09775659441947937
+        ],
+        "mc_empirical_fisher": [
+          0.7386677861213684,
+          -0.09728053212165833
+        ],
+        "gae_adam": [
+          0.7331241369247437,
+          -0.09834503382444382
+        ],
+        "gae_empirical_fisher": [
+          0.7381587028503418,
+          -0.09709905833005905
+        ]
+      }
+    },
+    {
+      "id": "dev_task6_24",
+      "initial120_sha256": "60b85634575731e59a27f3c407fb2383d0326ad34c6b4f85031b1f9903a96cc6",
+      "integration_sha256": "16a566083d0f60d97ec99fdf6fcfd883acd08af4dd077853583d419cbdca09ae",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.5092982053756714,
+          0.038267023861408234
+        ],
+        "mc_empirical_fisher": [
+          0.5115749835968018,
+          0.03710010275244713
+        ],
+        "gae_adam": [
+          0.5086823105812073,
+          0.03737065941095352
+        ],
+        "gae_empirical_fisher": [
+          0.5111426711082458,
+          0.03743492811918259
+        ]
+      }
+    },
+    {
+      "id": "dev_task7_13",
+      "initial120_sha256": "94654c3e986509de9311fa216ddf377612fbec8f558a60d146ea136723362869",
+      "integration_sha256": "9d57bc38f544884a5091d4c493ae996fa161d8a44f8b355710ad2252d22e8e79",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        5.486694873876159,
+        0.043289980823624674
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.6790931820869446,
+          -0.18959014117717743
+        ],
+        "mc_empirical_fisher": [
+          0.6774627566337585,
+          -0.19122733175754547
+        ],
+        "gae_adam": [
+          0.6789395809173584,
+          -0.1902068555355072
+        ],
+        "gae_empirical_fisher": [
+          0.6776699423789978,
+          -0.19016370177268982
+        ]
+      }
+    },
+    {
+      "id": "dev_task7_26",
+      "initial120_sha256": "c47085b81d69cf5e633461cf06822736ee4724d671f92b13f0d306d5e17f41ed",
+      "integration_sha256": "ab7bd294ce5f0e3a72fbd66d333384466d3a5a4c98cecb702ae97ca6d12c58af",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        5.486694873876159,
+        0.043289980823624674
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.7096323370933533,
+          0.4646490812301636
+        ],
+        "mc_empirical_fisher": [
+          0.7072839140892029,
+          0.4651978313922882
+        ],
+        "gae_adam": [
+          0.7093507647514343,
+          0.46366414427757263
+        ],
+        "gae_empirical_fisher": [
+          0.707626461982727,
+          0.46620097756385803
+        ]
+      }
+    },
+    {
+      "id": "hold_task6_00",
+      "initial120_sha256": "3fe21f1e72487a37d053d57e63b3414284e988dafe4ab83b40fffa8d1f815d3f",
+      "integration_sha256": "c19dccd37f26ae1dc3bf9bca6d9dc784ca7e67a61014fbb98037776664fd74f4",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.510026216506958,
+          -0.15045954287052155
+        ],
+        "mc_empirical_fisher": [
+          0.5126054286956787,
+          -0.15087279677391052
+        ],
+        "gae_adam": [
+          0.5094332098960876,
+          -0.15133774280548096
+        ],
+        "gae_empirical_fisher": [
+          0.512263834476471,
+          -0.15065202116966248
+        ]
+      }
+    },
+    {
+      "id": "hold_task6_01",
+      "initial120_sha256": "3e377b1c362ffd420c9d85d40718913b3ea8b7e55d830d4cd62026e672b4cc6e",
+      "integration_sha256": "47115bf57c33c1602ff3be5fc45001f2562b71e2ccda0fec22a7cd0ed3040894",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.6116630434989929,
+          -0.2120470106601715
+        ],
+        "mc_empirical_fisher": [
+          0.6151899099349976,
+          -0.21227110922336578
+        ],
+        "gae_adam": [
+          0.6109394431114197,
+          -0.21291483938694
+        ],
+        "gae_empirical_fisher": [
+          0.6146140694618225,
+          -0.21175841987133026
+        ]
+      }
+    },
+    {
+      "id": "hold_task6_02",
+      "initial120_sha256": "677ee322bdd83cf35517b07870f4f63b5e0939b2bb1598c2c258824b8c56a527",
+      "integration_sha256": "3b2026d6e74e8a107e11bcd38e2efaefb6040d36338e7e5d39c42fd4f4534ef9",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.5605624914169312,
+          -0.1584080457687378
+        ],
+        "mc_empirical_fisher": [
+          0.5633756518363953,
+          -0.1588546633720398
+        ],
+        "gae_adam": [
+          0.5599286556243896,
+          -0.15928331017494202
+        ],
+        "gae_empirical_fisher": [
+          0.563015341758728,
+          -0.15856598317623138
+        ]
+      }
+    },
+    {
+      "id": "hold_task6_03",
+      "initial120_sha256": "19321142daecf1259bf7d6508c5ea98cc5f2f2226996fbfea79415fbef4c0077",
+      "integration_sha256": "3ea55307d54121333af300c7f9c5d66e8a6e91532bc4428ecd8f102ebee8c858",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.6192315220832825,
+          -0.23282617330551147
+        ],
+        "mc_empirical_fisher": [
+          0.6226716637611389,
+          -0.2330540418624878
+        ],
+        "gae_adam": [
+          0.6185116767883301,
+          -0.2336921989917755
+        ],
+        "gae_empirical_fisher": [
+          0.6220914125442505,
+          -0.23253591358661652
+        ]
+      }
+    },
+    {
+      "id": "hold_task6_04",
+      "initial120_sha256": "bbb907b98368b6eb942015ba404961d5dea5f6c264d755262ccec8caf2a58f9d",
+      "integration_sha256": "086fa2cd2245db248b2447e99ee0f8a2efcc9edf1154dd997d9f035036405c43",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.49689993262290955,
+          -0.12172038853168488
+        ],
+        "mc_empirical_fisher": [
+          0.4996998906135559,
+          -0.12249046564102173
+        ],
+        "gae_adam": [
+          0.4962461292743683,
+          -0.1226678267121315
+        ],
+        "gae_empirical_fisher": [
+          0.49930185079574585,
+          -0.12241212278604507
+        ]
+      }
+    },
+    {
+      "id": "hold_task6_05",
+      "initial120_sha256": "60cc455e598da5e6626fdd965f2c9d3c1df3e60a7343f0f310b35e88a1204c31",
+      "integration_sha256": "fc51f8c6d4400f95a12e22f2ef616b2ae92c6d990aeedd2015cb3b8a8450da6c",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.6967672109603882,
+          -0.1164003536105156
+        ],
+        "mc_empirical_fisher": [
+          0.6993697881698608,
+          -0.11642644554376602
+        ],
+        "gae_adam": [
+          0.696134090423584,
+          -0.11737506091594696
+        ],
+        "gae_empirical_fisher": [
+          0.6987931728363037,
+          -0.11583677679300308
+        ]
+      }
+    },
+    {
+      "id": "hold_task6_06",
+      "initial120_sha256": "dfe3dda294e054a0d6b013b2de37896541d6c830a4dedd69af5f766d3cb286f0",
+      "integration_sha256": "25c666e8ac75d3783f3a203202574f9aa0568933df8f877596e90e241fc88121",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.5581495761871338,
+          -0.14267101883888245
+        ],
+        "mc_empirical_fisher": [
+          0.5609890818595886,
+          -0.1429532915353775
+        ],
+        "gae_adam": [
+          0.5575146675109863,
+          -0.14355133473873138
+        ],
+        "gae_empirical_fisher": [
+          0.5606229901313782,
+          -0.14275938272476196
+        ]
+      }
+    },
+    {
+      "id": "hold_task6_07",
+      "initial120_sha256": "7ea1cc8980fb3c96b57be5024c1b02bf9fb1e3035c92c43d7b4c492f1b47a399",
+      "integration_sha256": "00617a8967d73dcfb482ffa4b9f28b7a1e43d9583e2eb8cc09e75d1cc65ac256",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        1.5750185651952417,
+        -3.676543648434686
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.7001938223838806,
+          -0.1356772482395172
+        ],
+        "mc_empirical_fisher": [
+          0.7028160095214844,
+          -0.13600397109985352
+        ],
+        "gae_adam": [
+          0.6995579600334167,
+          -0.13663433492183685
+        ],
+        "gae_empirical_fisher": [
+          0.7022547721862793,
+          -0.1355147510766983
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_00",
+      "initial120_sha256": "dc2dfe4179231bc8340cc3012a11c3bde332eca0eb9790bd29881a0af942a133",
+      "integration_sha256": "fbe2c621879fef81b4c96c5e0a47fd4599e8a4d5a43b2f26337d1af7899d1ba2",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.21896423399448395,
+          -0.22360911965370178
+        ],
+        "mc_empirical_fisher": [
+          0.22013552486896515,
+          -0.22317737340927124
+        ],
+        "gae_adam": [
+          0.2186569720506668,
+          -0.22455516457557678
+        ],
+        "gae_empirical_fisher": [
+          0.21999816596508026,
+          -0.2234843671321869
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_01",
+      "initial120_sha256": "c92b200217e013c9b809ad08f92f1c3f26bcc428042c70c9b2bffb62b011511a",
+      "integration_sha256": "c59078023ba486efa9181f96c70b69dcf178c6b4dadcacd0630db39fc5dfa975",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.29483088850975037,
+          -0.18513180315494537
+        ],
+        "mc_empirical_fisher": [
+          0.2966943681240082,
+          -0.1856117993593216
+        ],
+        "gae_adam": [
+          0.29441744089126587,
+          -0.18599776923656464
+        ],
+        "gae_empirical_fisher": [
+          0.2964184582233429,
+          -0.1854550540447235
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_02",
+      "initial120_sha256": "826f58adbc42b645412f11629dbf74aa77685f0f8d419d0b4e026017bf57744d",
+      "integration_sha256": "03c501ae8e4aa3a3104d4a00356a9ff37d3d5ebc4d14fdba10fcb6bdef86839e",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.399460107088089,
+          -0.2814579904079437
+        ],
+        "mc_empirical_fisher": [
+          0.4019653797149658,
+          -0.2818504869937897
+        ],
+        "gae_adam": [
+          0.39888861775398254,
+          -0.28240904211997986
+        ],
+        "gae_empirical_fisher": [
+          0.40147632360458374,
+          -0.28133586049079895
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_03",
+      "initial120_sha256": "6a98779892c114afa5decb0c6f540c4ff2c57b54b7e9b9c481a7fa17af7212ea",
+      "integration_sha256": "3475acfa02d1c3ec106d6df3e32a84e681666ac01bb3eef64acfde8a9b6bf02b",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.19677254557609558,
+          -0.20391683280467987
+        ],
+        "mc_empirical_fisher": [
+          0.19771966338157654,
+          -0.2035788595676422
+        ],
+        "gae_adam": [
+          0.19649218022823334,
+          -0.20479251444339752
+        ],
+        "gae_empirical_fisher": [
+          0.1976114809513092,
+          -0.20390571653842926
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_04",
+      "initial120_sha256": "ff4a448320b7287ebaab228b113c3cbcf1dc8959f88b5b0b6cbce4efad0322ca",
+      "integration_sha256": "1a870a684d2f2e2dd0f70fd3f17a470bd6308c7188b0b0aad273bdc96f594810",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.3354448676109314,
+          -0.23419170081615448
+        ],
+        "mc_empirical_fisher": [
+          0.33742982149124146,
+          -0.23428423702716827
+        ],
+        "gae_adam": [
+          0.3349774181842804,
+          -0.23509106040000916
+        ],
+        "gae_empirical_fisher": [
+          0.33714133501052856,
+          -0.23413708806037903
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_05",
+      "initial120_sha256": "e8f36780cf4925f5aed7e4adfa8670f6c68ef101fdc37d4700c8df3ce3461b58",
+      "integration_sha256": "955e0561a901c649d8af5c9708d5901cde5debf6ea39596995b1388428d7d8ec",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.40107637643814087,
+          -0.3051363229751587
+        ],
+        "mc_empirical_fisher": [
+          0.40363165736198425,
+          -0.3053869307041168
+        ],
+        "gae_adam": [
+          0.40050292015075684,
+          -0.30607491731643677
+        ],
+        "gae_empirical_fisher": [
+          0.40313470363616943,
+          -0.3049408793449402
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_06",
+      "initial120_sha256": "6d67d1eaa028dea574e72cd9a0cee846b46a031537f2d4f98c5540c1773dd583",
+      "integration_sha256": "37489dde8f7d0375b946ee69191d501520ee9103820fde0db0a236b136b95d09",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.21772858500480652,
+          -0.1663135290145874
+        ],
+        "mc_empirical_fisher": [
+          0.2187168300151825,
+          -0.16593198478221893
+        ],
+        "gae_adam": [
+          0.2174149602651596,
+          -0.1671896129846573
+        ],
+        "gae_empirical_fisher": [
+          0.21857674419879913,
+          -0.1662391573190689
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_07",
+      "initial120_sha256": "0b9a1f72c79c8928edce23d57374b9f3e204bcc865bb1fc1768f2c2927658de9",
+      "integration_sha256": "5ae0a08b44a3df3237002f7b383c9fae77d9773ba1ef859dc66888a43e8f430d",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.349982887506485,
+          -0.22788862884044647
+        ],
+        "mc_empirical_fisher": [
+          0.35248205065727234,
+          -0.2282642424106598
+        ],
+        "gae_adam": [
+          0.34944412112236023,
+          -0.22875884175300598
+        ],
+        "gae_empirical_fisher": [
+          0.35204026103019714,
+          -0.22785267233848572
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_08",
+      "initial120_sha256": "c425ed4637eb0f598fc6ddec76b83615a5b0a7bc775e33c4298b496800b0a467",
+      "integration_sha256": "218661aea6aeeef1a534f08a7a21564571d113005c086fd0daef8286d1cdbec4",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.373386949300766,
+          -0.37965622544288635
+        ],
+        "mc_empirical_fisher": [
+          0.3754534125328064,
+          -0.3803281784057617
+        ],
+        "gae_adam": [
+          0.3729007840156555,
+          -0.38056501746177673
+        ],
+        "gae_empirical_fisher": [
+          0.3750535249710083,
+          -0.37979862093925476
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_09",
+      "initial120_sha256": "4e51586c54bd1bd251a89a25323a55a44da099ec0fc08acac902080811b14bbe",
+      "integration_sha256": "7d348ddfc62374547d150ac943e56d6c2dd9f5952972dee14f9b74a526ffdd91",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.2653757929801941,
+          -0.22205500304698944
+        ],
+        "mc_empirical_fisher": [
+          0.2673168182373047,
+          -0.22340263426303864
+        ],
+        "gae_adam": [
+          0.2649608552455902,
+          -0.2229561060667038
+        ],
+        "gae_empirical_fisher": [
+          0.26702994108200073,
+          -0.2231169044971466
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_10",
+      "initial120_sha256": "77e3e63c6f9788aabecdcf472f5256fecf44f00b4d047184f97319e772f03832",
+      "integration_sha256": "90e7738e3d51a91ceed8c3bbb471aedaa51caab4a9c313c9c459c65f24ab0f4e",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.33263373374938965,
+          -0.16458353400230408
+        ],
+        "mc_empirical_fisher": [
+          0.33500149846076965,
+          -0.164566308259964
+        ],
+        "gae_adam": [
+          0.3321303427219391,
+          -0.16547806560993195
+        ],
+        "gae_empirical_fisher": [
+          0.33456751704216003,
+          -0.16406023502349854
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_11",
+      "initial120_sha256": "c4e2637b83d9e702cf904f05c65fe53ac0fd85aecd5aefd5b9bc99855a5586b1",
+      "integration_sha256": "57e7096563ca1e7cc5ef80e4bf548f68aaa4071ce9c164afa8ce8abc0647903a",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.38089340925216675,
+          -0.2867404818534851
+        ],
+        "mc_empirical_fisher": [
+          0.38307616114616394,
+          -0.28703635931015015
+        ],
+        "gae_adam": [
+          0.38038086891174316,
+          -0.2876873314380646
+        ],
+        "gae_empirical_fisher": [
+          0.3825778067111969,
+          -0.2865615785121918
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_12",
+      "initial120_sha256": "a91513f954eaac456a5b2d1ada439b274a50aa884d91947f84f2e7e0a009d4ce",
+      "integration_sha256": "df0af44ea0538c6b239398579f277576e679edcf9d2fe62caa93a04b469722f6",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.26364365220069885,
+          0.02918318472802639
+        ],
+        "mc_empirical_fisher": [
+          0.26512765884399414,
+          0.02805054374039173
+        ],
+        "gae_adam": [
+          0.26327118277549744,
+          0.028269195929169655
+        ],
+        "gae_empirical_fisher": [
+          0.26483890414237976,
+          0.028428880497813225
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_13",
+      "initial120_sha256": "a5ecea6b2fa18d0b9566faa1f10c9e1aba9d5a1fe3b67b45bc6560d8cb4f92f2",
+      "integration_sha256": "f76de3e4654e18cdf215e999adf94a8e47ab99137395488651859ea40a4334d2",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.5974212884902954,
+          -0.12970151007175446
+        ],
+        "mc_empirical_fisher": [
+          0.602625846862793,
+          -0.12930159270763397
+        ],
+        "gae_adam": [
+          0.5967826247215271,
+          -0.13031944632530212
+        ],
+        "gae_empirical_fisher": [
+          0.6019348502159119,
+          -0.12910571694374084
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_14",
+      "initial120_sha256": "6b45df7cf6225c35e4d874f475fadd04cedadce303a9c481c74751314ca0db63",
+      "integration_sha256": "90f55eef163bc669328e22c030fc4f08db26d46320cc6d5298dfbc2cde06bf5a",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.3823154866695404,
+          -0.31164830923080444
+        ],
+        "mc_empirical_fisher": [
+          0.38447755575180054,
+          -0.31178992986679077
+        ],
+        "gae_adam": [
+          0.3818032741546631,
+          -0.31256282329559326
+        ],
+        "gae_empirical_fisher": [
+          0.3839770555496216,
+          -0.31134122610092163
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_15",
+      "initial120_sha256": "7a4ba5ff0c7205f0190873628a9d72dad47e1968b0178436ccbd358c055673d9",
+      "integration_sha256": "070b27a695ce49cb0f334733654d4a5bcffea98bd615b9ee489eaa89d13e856e",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.2786199152469635,
+          -0.17233958840370178
+        ],
+        "mc_empirical_fisher": [
+          0.2802395820617676,
+          -0.17235279083251953
+        ],
+        "gae_adam": [
+          0.27824637293815613,
+          -0.17322541773319244
+        ],
+        "gae_empirical_fisher": [
+          0.27999594807624817,
+          -0.17245298624038696
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_16",
+      "initial120_sha256": "d4da4f27615421bd09d0f3cfabdc64ed311729396eab35eeb4710707c553ba75",
+      "integration_sha256": "85c7989c90547ba8d9c754197f14578db517fa8e7adc918456750ac7e507c124",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.3609594404697418,
+          -0.22225797176361084
+        ],
+        "mc_empirical_fisher": [
+          0.3635791540145874,
+          -0.22276099026203156
+        ],
+        "gae_adam": [
+          0.3604046702384949,
+          -0.2230919599533081
+        ],
+        "gae_empirical_fisher": [
+          0.3631313741207123,
+          -0.22235116362571716
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_17",
+      "initial120_sha256": "b55ffd70c90f0fff773e027f2eafb3c69c9ad1d6708c416c5c8fae552216c364",
+      "integration_sha256": "b9cdfabd0b574208b5252bde18be5636384764b64618e6c9389564fe51e49894",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.38360172510147095,
+          -0.3728874921798706
+        ],
+        "mc_empirical_fisher": [
+          0.38560694456100464,
+          -0.3730027973651886
+        ],
+        "gae_adam": [
+          0.3831251561641693,
+          -0.3737969696521759
+        ],
+        "gae_empirical_fisher": [
+          0.38519516587257385,
+          -0.37262365221977234
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_18",
+      "initial120_sha256": "fca5a474407051cf879be0b032f8175e721029849b73dd279d8dc5666a0a3b1b",
+      "integration_sha256": "6f49ea214a4393ac58a1bfef744f8364d9f9d53b21fd4dc0e097080544469533",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.2652193605899811,
+          -0.2105439007282257
+        ],
+        "mc_empirical_fisher": [
+          0.26702386140823364,
+          -0.21163628995418549
+        ],
+        "gae_adam": [
+          0.2648146450519562,
+          -0.21142910420894623
+        ],
+        "gae_empirical_fisher": [
+          0.2667548656463623,
+          -0.21139146387577057
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_19",
+      "initial120_sha256": "67451933ce5d077a6b03ca479864ffced5dd82af1be16ec4d0afa9d6adf45e2e",
+      "integration_sha256": "3edc6bbb5cd94da4151ae048be55587f4934d59841d831cf62c0a0b8955c81bf",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.32371634244918823,
+          -0.12677229940891266
+        ],
+        "mc_empirical_fisher": [
+          0.3257523477077484,
+          -0.12739260494709015
+        ],
+        "gae_adam": [
+          0.32325175404548645,
+          -0.1277564913034439
+        ],
+        "gae_empirical_fisher": [
+          0.3254271447658539,
+          -0.1273258775472641
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_20",
+      "initial120_sha256": "413fdcaaa857cb74f1cf3ff28705ff59f5e04fe60a052246fc35bd0fffe2a864",
+      "integration_sha256": "8d4a8fa13c9dadba5ba219bdae5c04d9ef1892be74a47b5b033da4e5966133d5",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.37801113724708557,
+          -0.26255691051483154
+        ],
+        "mc_empirical_fisher": [
+          0.3797435164451599,
+          -0.26245108246803284
+        ],
+        "gae_adam": [
+          0.37752076983451843,
+          -0.26349034905433655
+        ],
+        "gae_empirical_fisher": [
+          0.3793426752090454,
+          -0.2621263861656189
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_21",
+      "initial120_sha256": "1e3fc9f7bc6d159e354bc3e98f7ceebca6bab4adebfffc17fbb9f7c833190933",
+      "integration_sha256": "e2a170a7720bc27580f5585695d17c33a61777ea49767074d5d4ecb7ec1edc7b",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.26453518867492676,
+          -0.13846765458583832
+        ],
+        "mc_empirical_fisher": [
+          0.2663434147834778,
+          -0.13967368006706238
+        ],
+        "gae_adam": [
+          0.2641410529613495,
+          -0.13937504589557648
+        ],
+        "gae_empirical_fisher": [
+          0.2661578357219696,
+          -0.13956718146800995
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_22",
+      "initial120_sha256": "e66e0534fee3df3c49ee9f56f75cb1bba7d976d362c836afa953523db8b70988",
+      "integration_sha256": "25a60fd46158ad48fe1bec88a9e7af217a5c8f61ad0bb7380eff88d471b66f5e",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.3321770131587982,
+          -0.14522746205329895
+        ],
+        "mc_empirical_fisher": [
+          0.33423733711242676,
+          -0.14592021703720093
+        ],
+        "gae_adam": [
+          0.3317073583602905,
+          -0.1461913287639618
+        ],
+        "gae_empirical_fisher": [
+          0.3339093029499054,
+          -0.14585313200950623
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_23",
+      "initial120_sha256": "2ca84d29d4c39a711c7b9afa368ba84363521db2f3b40e4312af2aa6f5d15957",
+      "integration_sha256": "1e09f570782f2ab84ff9fe0dd616046ba03e7918bcb3db5269232f78adc93bc5",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.35648834705352783,
+          -0.2772692143917084
+        ],
+        "mc_empirical_fisher": [
+          0.35851725935935974,
+          -0.27725717425346375
+        ],
+        "gae_adam": [
+          0.35601678490638733,
+          -0.27815577387809753
+        ],
+        "gae_empirical_fisher": [
+          0.35810333490371704,
+          -0.2768653333187103
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_24",
+      "initial120_sha256": "1a0035c9079743223f7f14830798b56b39b08c54eaebdd27fab05108c7c8b171",
+      "integration_sha256": "16a566083d0f60d97ec99fdf6fcfd883acd08af4dd077853583d419cbdca09ae",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.2571153938770294,
+          0.03742280974984169
+        ],
+        "mc_empirical_fisher": [
+          0.258624404668808,
+          0.03633638098835945
+        ],
+        "gae_adam": [
+          0.25674673914909363,
+          0.03650800138711929
+        ],
+        "gae_empirical_fisher": [
+          0.2583394944667816,
+          0.03664597496390343
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_25",
+      "initial120_sha256": "c05244100f4452bafc90c8001b38f81e733916f79a674295ea57054e6d3542bc",
+      "integration_sha256": "c9e48ee7d10aa958b503a0ce3ecba03c4c8f6a6c852f0c3e6b0f7cf55032da33",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.4337661564350128,
+          -0.16980639100074768
+        ],
+        "mc_empirical_fisher": [
+          0.43584904074668884,
+          -0.16996189951896667
+        ],
+        "gae_adam": [
+          0.433237224817276,
+          -0.1707652360200882
+        ],
+        "gae_empirical_fisher": [
+          0.43549561500549316,
+          -0.16949044167995453
+        ]
+      }
+    },
+    {
+      "id": "dev6_LEFT_26",
+      "initial120_sha256": "8af62c13d22a97ef178e4de3345de29ac2212d9ce5bc2e2fe7b3b09addbb8608",
+      "integration_sha256": "8c8721d1e28e54226fc8cc3f1bc75b421b8d7f21438dfaa048f72402dc704a57",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        2.0400222782342903,
+        -4.561852378121623
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.37783411145210266,
+          -0.29530495405197144
+        ],
+        "mc_empirical_fisher": [
+          0.37981876730918884,
+          -0.29559460282325745
+        ],
+        "gae_adam": [
+          0.3773687481880188,
+          -0.2962166368961334
+        ],
+        "gae_empirical_fisher": [
+          0.37940719723701477,
+          -0.29519176483154297
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_00",
+      "initial120_sha256": "37b4a69d80eafcbbe6759f5e3bf5994b6b217ca070b0cc6d2efc600e5f100c8c",
+      "integration_sha256": "c4fcccb414b02d70b177f5cde27072332ee870f15971f7de28fce347aa149dc7",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.6126412749290466,
+          0.849959671497345
+        ],
+        "mc_empirical_fisher": [
+          0.6115602254867554,
+          0.8495057225227356
+        ],
+        "gae_adam": [
+          0.6122780442237854,
+          0.8492993712425232
+        ],
+        "gae_empirical_fisher": [
+          0.6113452911376953,
+          0.8502441048622131
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_01",
+      "initial120_sha256": "a38a4f9ed4ed2bcc4a34aab95368c84a621a8d589ccec9e0af5b772de46573ab",
+      "integration_sha256": "a9a1457b0b41d01e03a39057db9a5b6b4a36380296a911a7dc01f22de14cc56e",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.35625019669532776,
+          0.8029783964157104
+        ],
+        "mc_empirical_fisher": [
+          0.35518506169319153,
+          0.8026272058486938
+        ],
+        "gae_adam": [
+          0.3558586835861206,
+          0.8022293448448181
+        ],
+        "gae_empirical_fisher": [
+          0.3551236689090729,
+          0.8034136295318604
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_02",
+      "initial120_sha256": "06285b53663dbba2ff98c7eb8fecb315b820241d6bf23496bd6cfa559d36c972",
+      "integration_sha256": "a3ce4a6248ae8761fc1c4fc60378ed9bd52725455264432be08af2d252cb562d",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.3975234031677246,
+          0.46789124608039856
+        ],
+        "mc_empirical_fisher": [
+          0.3964240849018097,
+          0.46750882267951965
+        ],
+        "gae_adam": [
+          0.39711713790893555,
+          0.46691203117370605
+        ],
+        "gae_empirical_fisher": [
+          0.39642441272735596,
+          0.46886634826660156
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_03",
+      "initial120_sha256": "e4d8d8adea73c4ef33ec5eadd62a79a5b6f3b6f662f915ed43f276cc4f4e7892",
+      "integration_sha256": "98b9e4831ac03952a3572fd5a5aa3ad2da523bf72bef0a7eae290dee65e568a2",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.6113950610160828,
+          0.8423005938529968
+        ],
+        "mc_empirical_fisher": [
+          0.6103134155273438,
+          0.8418474197387695
+        ],
+        "gae_adam": [
+          0.6110260486602783,
+          0.8416255116462708
+        ],
+        "gae_empirical_fisher": [
+          0.6101083159446716,
+          0.8426352739334106
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_04",
+      "initial120_sha256": "959ec6e6eb9c3668dd4aeccd94003866a10b38d948562017f3f9172ee2753602",
+      "integration_sha256": "6ce54c176a2ced66b4353a5812eaa31a382b6d12f69c32542320aa99a8aac738",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.3650510609149933,
+          0.9137290120124817
+        ],
+        "mc_empirical_fisher": [
+          0.36306414008140564,
+          0.9137532114982605
+        ],
+        "gae_adam": [
+          0.3647255301475525,
+          0.9130706787109375
+        ],
+        "gae_empirical_fisher": [
+          0.36284852027893066,
+          0.9149198532104492
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_05",
+      "initial120_sha256": "3ed0e16635c8848ee64369ea4a72b8ebaaa410d7ac032f6e4ec847d7567cc7b1",
+      "integration_sha256": "cdae5d8502366c4f1487c95eb49f45af4614549a888f91a1ad7e504f2d4ebddf",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.4043196439743042,
+          0.4513729214668274
+        ],
+        "mc_empirical_fisher": [
+          0.40320447087287903,
+          0.4509751796722412
+        ],
+        "gae_adam": [
+          0.40390244126319885,
+          0.4503847062587738
+        ],
+        "gae_empirical_fisher": [
+          0.4032227396965027,
+          0.45234954357147217
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_06",
+      "initial120_sha256": "025a9c93432beced02440162197afdb42266a4e634cd17f61247e848a5ac35ac",
+      "integration_sha256": "e83d1f011c6053e7a43800fd061f02e1dcfaec79d21dc8d95cc4790d04f553df",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.5613613128662109,
+          0.8957039713859558
+        ],
+        "mc_empirical_fisher": [
+          0.5594887733459473,
+          0.8953602313995361
+        ],
+        "gae_adam": [
+          0.5610248446464539,
+          0.8949953317642212
+        ],
+        "gae_empirical_fisher": [
+          0.5592851042747498,
+          0.8962743282318115
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_07",
+      "initial120_sha256": "4a3580ccf5ab0b5332d8c985cd5614cc379dd9f92ef3915dfb517fc52102bf41",
+      "integration_sha256": "9f64995c096716e50486d36571aec1cb46a5cdc9341402578b11574894da4902",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.36716732382774353,
+          0.9037094116210938
+        ],
+        "mc_empirical_fisher": [
+          0.3651774525642395,
+          0.9039166569709778
+        ],
+        "gae_adam": [
+          0.3668445348739624,
+          0.9030447006225586
+        ],
+        "gae_empirical_fisher": [
+          0.36491912603378296,
+          0.9050723910331726
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_08",
+      "initial120_sha256": "e57035d3b7052baece62c921ea4676465efdbdfc35fc7fc8854ae0ca9a008c20",
+      "integration_sha256": "bec47acc64df658818957d81b4f433fef52e07ab597ca89ce58b1188aecd0b29",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.34208667278289795,
+          0.5974915027618408
+        ],
+        "mc_empirical_fisher": [
+          0.3406062722206116,
+          0.5971927642822266
+        ],
+        "gae_adam": [
+          0.34174251556396484,
+          0.5965918302536011
+        ],
+        "gae_empirical_fisher": [
+          0.34047821164131165,
+          0.5986553430557251
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_09",
+      "initial120_sha256": "0c978c5f06e4b3139723b2aa979e61f11c2f0c23ffbbdb8532b13f81e4ee4ef8",
+      "integration_sha256": "8d185e46f4aebc4c5d85c474fcb08f9867501d3ffbd6560ac5c5ce37b2076d7f",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.44811320304870605,
+          0.7610978484153748
+        ],
+        "mc_empirical_fisher": [
+          0.4466281533241272,
+          0.7595893740653992
+        ],
+        "gae_adam": [
+          0.44777825474739075,
+          0.760418176651001
+        ],
+        "gae_empirical_fisher": [
+          0.446199893951416,
+          0.7606200575828552
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_10",
+      "initial120_sha256": "ae4b2af2756407813d35da02d0d1f52ac9039d08cfa664dd632affa5e07b7935",
+      "integration_sha256": "88b0ab0cbfbcbaab3f93afca1cd6793a3909ebdc533bfb392e5a0d6c03831bd1",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.3738965094089508,
+          0.7919840812683105
+        ],
+        "mc_empirical_fisher": [
+          0.3727748990058899,
+          0.7918875217437744
+        ],
+        "gae_adam": [
+          0.3735041618347168,
+          0.7912123799324036
+        ],
+        "gae_empirical_fisher": [
+          0.37272390723228455,
+          0.7925747036933899
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_11",
+      "initial120_sha256": "f6530cff21d9fd25e80e0ffc527e1497652a58c86e0879b2791e3c9cec42555c",
+      "integration_sha256": "0f24c0dfd44ade191b6de9a962215cc98f3a611c46f70ae50a98013be6b923e6",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.4605787694454193,
+          0.7688286304473877
+        ],
+        "mc_empirical_fisher": [
+          0.45897895097732544,
+          0.7688003182411194
+        ],
+        "gae_adam": [
+          0.4601901173591614,
+          0.768006443977356
+        ],
+        "gae_empirical_fisher": [
+          0.4590719938278198,
+          0.7697474360466003
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_12",
+      "initial120_sha256": "8664f1b67814a0001c6a8915ba9805b34860f97eb46db39c54dc208bc6722b1a",
+      "integration_sha256": "10bbce260086beeb72f2c7ab3e61514e20bcc147b9e654d313eb36fea02be48a",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.45394694805145264,
+          0.753679096698761
+        ],
+        "mc_empirical_fisher": [
+          0.45265957713127136,
+          0.7521771192550659
+        ],
+        "gae_adam": [
+          0.45359671115875244,
+          0.7529952526092529
+        ],
+        "gae_empirical_fisher": [
+          0.4522308111190796,
+          0.7532126903533936
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_13",
+      "initial120_sha256": "74b892e6e64d6c5d35e12ea99e3e1a18df3b2a57e44fe6d3a5d0d591c6def67a",
+      "integration_sha256": "9d57bc38f544884a5091d4c493ae996fa161d8a44f8b355710ad2252d22e8e79",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.6061528921127319,
+          -0.08671591430902481
+        ],
+        "mc_empirical_fisher": [
+          0.6044251322746277,
+          -0.08832401037216187
+        ],
+        "gae_adam": [
+          0.6059542894363403,
+          -0.0873384103178978
+        ],
+        "gae_empirical_fisher": [
+          0.6046056151390076,
+          -0.08732340484857559
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_14",
+      "initial120_sha256": "153e45bea87628f3bbfa31e3e91488660f25ed627ede0fd6f304e6695680ccc1",
+      "integration_sha256": "13543a64a9bac268458a38c04a0c759202065218fa1c8c771cb761e76ed6749a",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.47311142086982727,
+          0.7488607168197632
+        ],
+        "mc_empirical_fisher": [
+          0.47135138511657715,
+          0.7488978505134583
+        ],
+        "gae_adam": [
+          0.47272989153862,
+          0.74802166223526
+        ],
+        "gae_empirical_fisher": [
+          0.47149941325187683,
+          0.7498458027839661
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_15",
+      "initial120_sha256": "eb0fc30ed9886fdce30a9f098cdf13cfe03d112f21216af34bc7ba85a3c35752",
+      "integration_sha256": "1d30fb489d8b67d6cd34ff206c53fe58c88570daaf401bfb3e3f0b025b522c4d",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.4306766092777252,
+          0.8349146842956543
+        ],
+        "mc_empirical_fisher": [
+          0.4300267696380615,
+          0.8331137895584106
+        ],
+        "gae_adam": [
+          0.4303222894668579,
+          0.834201455116272
+        ],
+        "gae_empirical_fisher": [
+          0.4295179843902588,
+          0.8345935940742493
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_16",
+      "initial120_sha256": "bb9d1bff7dfacc1829169bd5f58b13a2119c1a21c51de5b81346090c9f9dc479",
+      "integration_sha256": "7937d6454c4cf6f3053af9ed5cb596f49372b6cd2585afce5c08e8ac1a4fc443",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.3891308903694153,
+          0.8953115940093994
+        ],
+        "mc_empirical_fisher": [
+          0.38708996772766113,
+          0.8956437706947327
+        ],
+        "gae_adam": [
+          0.3888086974620819,
+          0.8946205973625183
+        ],
+        "gae_empirical_fisher": [
+          0.3868357241153717,
+          0.8968426585197449
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_17",
+      "initial120_sha256": "f12422a70482b170700736be9a1e59788240fe4b859c8c5b9b9dff81d06cb920",
+      "integration_sha256": "44496a6c739afccaa9e39369fdd12707272e8e980dfa2ccb5b9296115ce76d3f",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.34763428568840027,
+          0.5847187638282776
+        ],
+        "mc_empirical_fisher": [
+          0.346146821975708,
+          0.5843987464904785
+        ],
+        "gae_adam": [
+          0.34728845953941345,
+          0.5838119387626648
+        ],
+        "gae_empirical_fisher": [
+          0.3460216224193573,
+          0.5858786106109619
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_18",
+      "initial120_sha256": "1dfb8b11bbc195c9df12bbfc3af5107ff8c25324a9b4b81dddaae17667408e25",
+      "integration_sha256": "3c678795b060f6aa03f14f1180d7632ee1c7106f8ecb437f7d863d04dfdb39f4",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.44192492961883545,
+          0.8334366679191589
+        ],
+        "mc_empirical_fisher": [
+          0.44071030616760254,
+          0.8319252133369446
+        ],
+        "gae_adam": [
+          0.4416031539440155,
+          0.832811713218689
+        ],
+        "gae_empirical_fisher": [
+          0.44037237763404846,
+          0.8327401280403137
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_19",
+      "initial120_sha256": "1d98415248d5ad0af66b174b851253b9a8131ced65a3c7fe7fa2e8fb84e0fbd4",
+      "integration_sha256": "8be1b69c40df0d18e0e2fd1aa27761f4ff2ecb9794bbe68c77ab368a6559ad25",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.39191555976867676,
+          0.7814531326293945
+        ],
+        "mc_empirical_fisher": [
+          0.3907601237297058,
+          0.7815767526626587
+        ],
+        "gae_adam": [
+          0.39152252674102783,
+          0.7806344032287598
+        ],
+        "gae_empirical_fisher": [
+          0.3907172977924347,
+          0.7822670340538025
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_20",
+      "initial120_sha256": "2021c8120a2e88b8ebae06bb4bb6eaf4d26efa73726ef2c2e1461911d7ecdc71",
+      "integration_sha256": "fd985f14acad7b9ca45a590b713d1591fd37b2fd4bd7cc531682fbeb3b44d5f6",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.342647522687912,
+          0.6998112797737122
+        ],
+        "mc_empirical_fisher": [
+          0.34016039967536926,
+          0.6991077065467834
+        ],
+        "gae_adam": [
+          0.34228453040122986,
+          0.6989922523498535
+        ],
+        "gae_empirical_fisher": [
+          0.34064534306526184,
+          0.7003760933876038
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_21",
+      "initial120_sha256": "cd7fa160d30fd55523dd15ff3d585c991562e4c27fda2025dfa8136eb137e33d",
+      "integration_sha256": "a99680374251ef97eb4ce26732231d4de42715bdeca8a0676701cadc44f3f3fd",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.4727143347263336,
+          0.743755578994751
+        ],
+        "mc_empirical_fisher": [
+          0.4718110263347626,
+          0.7426531910896301
+        ],
+        "gae_adam": [
+          0.47234299778938293,
+          0.7430716753005981
+        ],
+        "gae_empirical_fisher": [
+          0.47139501571655273,
+          0.7435791492462158
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_22",
+      "initial120_sha256": "414636d45078f0c9c1da3a99fb695b83f340e4e2af37c7d99cc921b5b2b64f6c",
+      "integration_sha256": "f1eb66a2dc69b660d9fd00c1522ac4961750481161a9903d5fe8dff51aeaa7af",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.40960589051246643,
+          0.8963095545768738
+        ],
+        "mc_empirical_fisher": [
+          0.4075566232204437,
+          0.8966019153594971
+        ],
+        "gae_adam": [
+          0.40928298234939575,
+          0.8956189155578613
+        ],
+        "gae_empirical_fisher": [
+          0.40730535984039307,
+          0.8978241086006165
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_23",
+      "initial120_sha256": "636a5a230535482d4ba21596be3bc2e7e5e03582049f1ecf1f9d2beb1d30c779",
+      "integration_sha256": "23da15c1adcf093ae72413646beb392c3d3025867b78d5565d023b2239028a05",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.34873053431510925,
+          0.6731634736061096
+        ],
+        "mc_empirical_fisher": [
+          0.346086710691452,
+          0.6725355982780457
+        ],
+        "gae_adam": [
+          0.34837019443511963,
+          0.6723251342773438
+        ],
+        "gae_empirical_fisher": [
+          0.3466190695762634,
+          0.673809289932251
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_24",
+      "initial120_sha256": "6a6c391e04c286893c999d0d1c59a466b69a5121b067d775dfff9546aa7ea2ed",
+      "integration_sha256": "c4ef2748c0c49a65f82d852b5bd4fee0e49a80b93cf9357c94d965df0e593608",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.36909157037734985,
+          0.8486157059669495
+        ],
+        "mc_empirical_fisher": [
+          0.36754873394966125,
+          0.8478490114212036
+        ],
+        "gae_adam": [
+          0.36875778436660767,
+          0.8479509949684143
+        ],
+        "gae_empirical_fisher": [
+          0.3672180473804474,
+          0.8492404222488403
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_25",
+      "initial120_sha256": "e0f8b50b06c10a5c5e916ba253a9ef200aab1b1db5646e0f3d273c63c5ee0050",
+      "integration_sha256": "a4267d83675d1fa213df39b4419ecc797f9c786a29e8a314dee0ff986c0b66aa",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.41183534264564514,
+          0.8886145353317261
+        ],
+        "mc_empirical_fisher": [
+          0.4097847044467926,
+          0.8889040350914001
+        ],
+        "gae_adam": [
+          0.4115103483200073,
+          0.887919008731842
+        ],
+        "gae_empirical_fisher": [
+          0.409548282623291,
+          0.8901281356811523
+        ]
+      }
+    },
+    {
+      "id": "dev6_RIGHT_26",
+      "initial120_sha256": "6f14671ee2445e00d6408a8bffb0376a1e0e85528e9d58e4fcb7dd3373a0cf9f",
+      "integration_sha256": "ab7bd294ce5f0e3a72fbd66d333384466d3a5a4c98cecb702ae97ca6d12c58af",
+      "scene_sha256": "906bd0fa2dc6f331baabdc3e6e9f6c3866cb2a6adc15c4fbb5cf43cbe095ab4d",
+      "goal_xy": [
+        6.384033848651391,
+        -0.3980520230116502
+      ],
+      "valid": true,
+      "physics_steps": 0,
+      "first_actions": {
+        "mc_adam": [
+          0.3552459180355072,
+          0.6468530893325806
+        ],
+        "mc_empirical_fisher": [
+          0.35264870524406433,
+          0.6462313532829285
+        ],
+        "gae_adam": [
+          0.35488247871398926,
+          0.6460008025169373
+        ],
+        "gae_empirical_fisher": [
+          0.3531610667705536,
+          0.6475226283073425
+        ]
+      }
+    }
+  ],
+  "seed": 2026110322,
+  "base_lr": 3e-06,
+  "memory_lr": 0.0001,
+  "initialization_steps": 200,
+  "demo_drive_retention": 1.0,
+  "max_commands": 148,
+  "max_physics": 3854686,
+  "wall_seconds": 1800,
+  "fit_seconds": 600,
+  "final_reserve_seconds": 60,
+  "audit_seconds": 900,
+  "final_bytes": 14680064,
+  "payload_bytes": 11534336,
+  "metadata_bytes": 2097152,
+  "compact_bytes": 8192,
+  "case_row_bytes": 6144,
+  "model_bytes": 8388608,
+  "input_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t307_iid_goal_contract/experiment.py": "6342d3be90a2a6bfd4c4816d85f0a020cef50e4a0d5c141f3ac9655ab03412e3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t295_hindsight_support/t295_contract.py": "73dec9a98023a4c8a49436c52f16dbb5a0064cc96a54f86a0f16f052c28b95df",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t296_log_tail_support/stable_density.py": "2fa8c7c89c80a4357c625833566e3464fd9c690629c7359dd2550d61bd7d151d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t238_ar_density_recovery/copula.py": "6deef8030335f1cedc8e4f08e368c101106a108c2bda8fcb33ecbddbba0e4edc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t239_ar_policy_gradient/prepare.py": "ba28c389d86fd0db8bdda807244353f335bb73f3fad44a6ccecef65662036cd8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t239_ar_policy_gradient/train.py": "dde13a5937519aa93e0e64118f1c2a9c719925985b7dcbed85e91f2f618aa296",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t239_ar_policy_gradient/contracts.py": "d81ae8d8a6f6b836d0c030757569862c9e219d74aed9a9ba98674cc5e2c8c2ac",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t239_ar_policy_gradient/ar_support.py": "91b503f0461ff7af477aedcab4a3c531f3bbb57f80834c22aab5a2c54b024b25",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t229_valid_start_acceptance/valid_support.py": "c65ab4285e456ce9c5e9a61a70371bdd3ee3c4196829e30a5c13b32872fb7b8b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t223_coverage_repair/repair_support.py": "884777e4c1abf19d99916459997feb01302d34fce7c307c1e6dc4e9c60c6d191",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t219_rnd_runtime/support.py": "22a4b244fcd4bd7802569f8b33abca6b954eb75d27ebcaf855e1febed6a26101",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t219_rnd_runtime/native_compat/g5b.py": "d218726bf0b08c19d0fbfee0e09821f62b6c0f95fb3575dfa0d45855880bb5f6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/native_update_guard.py": "8c1f0720347bd8b1f9c816976502f0cbb36dc21fd2640282d4ac2bcc9e7bb5a2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t250_actuator_policy_gradient/prepare.py": "bbf9bc2442725fc5b4909f08cffc74dc9cc1dac9fe389b6332cfdb7f436dc492",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t250_actuator_policy_gradient/train.py": "b326fdfc9eeb612070fab977c1fbb46f258842a11f6c4c83c2948bff57392227",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t250_actuator_policy_gradient/contracts.py": "06b726259e67c134a269b95444ec5a0837b120d5ec04ded750e2ed8b05a273c9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t250_actuator_policy_gradient/steering_pg_support.py": "923f2f034abc3d096449253e01b073e9df5e6add00d586fb657072ce085496da",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t251_actuator_recovery/actuator_support.py": "557613f9ce5c61b727a6c9bed1459e3d57feb378dfff0de4b5e360e477893ca3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t255_overnight/video.py": "c38766f19fd4e50c7e2f91e8f368b640171f5dd2ef61e1964c1a4c1cdcaab731",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t255_overnight/prepare.py": "1d21d755ed0b4350072e9a4efe200c61853e7667cfee622144b0b46d70aec9ef",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t255_overnight/mem_actor.py": "f756d3b50ef4627e907e20c6ef2ff4a3aeb1a14290cc99793f687b19f60cb7d9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t255_overnight/supervise.py": "add894a2a26b8c16b5e32657d921ff07db2cd004b3bf1c0f1ec6b6e076951538",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t255_overnight/mem_runtime.py": "4d9524c201abdd053c282191894f406c64942350b9949c5db1073d6e2092efdb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t255_overnight/run.py": "0d072fd66fe80a825ee015816104c72d87d0a651b79b44f5877ff5fb46d3922d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t255_overnight/contracts.py": "0900f0715e821f4e30cf3d80185c78491d8f5a295fba38a9a796dbd551c5a623",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t255_overnight/learning.py": "f76c8b96184501f2c32efac4fbc4f65b3bb8c58b02c97085a7fede087d8ff376",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t255_overnight/backup.py": "36d5b048f9e4152f802e5a644687cda6909ba0373dafcd155cb08bcbd0708b7b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t256_distance_frontier/prepare.py": "f304813c358228805b4c5bb73be4254cee0ba9329b639948f94c70894793af7b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t256_distance_frontier/run.py": "c3694d458de6c356431addaefe8a99c4e11f099f1deac5f9d6ac63c4885c4129",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t256_distance_frontier/frontier_runtime.py": "fb328471c9b0ec95fdd44649da76eb874465bd42d199574bb232655bf7517d8f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t257_distance_policy_gradient/prepare.py": "a103c585894c005f5b823851fe923bc6f88358e36deb1e329814c356f64680bd",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t257_distance_policy_gradient/run.py": "3574593caf48f028cd11ef7a88832c916da2146cae2e8d40ac0f23a9578d0e25",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t257_distance_policy_gradient/contracts.py": "eeb0e35e25493a3037f01a0a4a68d8c1d550932d97d6fe2ad64334461ec5fd24",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t257_distance_policy_gradient/distance_worker.py": "1d7e8ac98001b96aa818ac0e950e8ee563308f1f5dad893b39d5ac76b6b23f0c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t257_distance_policy_gradient/distance_learning.py": "2d288922be7bb30e656146790aa62b5b6bd2412dc42664fcbf71b70eb85ac955",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t259_closed_loop_recovery/closed_loop_learning.py": "9721731cc65bf5c545e353d130e0a03415ca3c9bff609379300a993f45499b7f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t259_closed_loop_recovery/prepare.py": "8bc3e028b8a5ec8e8cc0d46c375c77dd4da9bf95b934aaa1f8b4b632dae8a4ab",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t259_closed_loop_recovery/run.py": "b67a6e70d7e7832ed805ddce17d45fe934293055bd1754c52000844c917b776a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t259_closed_loop_recovery/contracts.py": "91f9ede9639d524d345a2715e08ccb9ba38f4073b5f16ffcddf8e41d4f1ae123",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t263_adaptive_goal_course/prepare.py": "9c0e9001c396f417a7b1803123a0dcb0388969c097a7859d775faf1ec0775abb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t263_adaptive_goal_course/run.py": "516ac42dcab93f3c560ad98b59f670ab3dbc95902ffafe2232d0371e8ef581ec",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t263_adaptive_goal_course/contracts.py": "4035a64cbb0036de6933fa512778d9254a2df7ff4c362ed04fe6f293762f92e2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t263_adaptive_goal_course/course.py": "1949c8e2373f09535f07131b83461d9363112bce7aa166071733a7f77fa9f6e2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t263_adaptive_goal_course/course_worker.py": "ae4f6ac04d05147ad8df748a2c65ce81d7bd821886deffc72129880617d06e7e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t267_causal_credit_course/run.py": "123041c8ca7b257d6b5d2af032a4d4a5bdfec222c12966c3a1a4ec21aa64ecfd",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t267_causal_credit_course/contracts.py": "bdd538a6ec767d79eedc7764e27afcc29723dc3034722614abb650c1c61989e5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t267_causal_credit_course/t267_learning.py": "3080669f367a36d877a881abac9fd5a6a42a0b1bc239a34f5e769f08782a3deb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t278_fixed_goal_starts/t278_guard.py": "593bd2967ec7b4347c1d6b1c9736c919fb38cbd0302bbbc1654723be22a57b54",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t280_local_cost/prepare.py": "4235ad6b39bb2a1f4889062b6e18046bdaf25d02d0856ada19108fb52a3ed9f0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t280_local_cost/launch.py": "88b4bb652227cf332bc5743e8d8c91dd043f9ba608c6551c2331ffad5d0c5520",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t280_local_cost/run.py": "7465d700de29d8c8fe97a300d0cd5d5644b8cd1886350d2fa427c0b823861a56",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t280_local_cost/t280_worker.py": "0051f9fbf460a60f22bc26643c5981de5471300dd184bb0c927b195ea73f8267",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t280_local_cost/preflight.py": "22834d50bb9777a5747586a3f49ef04701be4ab0f0c152084c45e2cfa8495f1c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t280_local_cost/t280_core.py": "bbf78e178abb7ac5590737db4f348884d8d10fb118c5c4c49a10eeb55d0dd794",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t280_local_cost/audit.py": "7cd241096ca6618fba51d45a0df60055e566b8a3cd0c56183986aa30a1755469",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t280_local_cost/relock_capacity.py": "0a686f18b9bc008bb26d7037f1721487421ec6fa7c6734c89bd1eb6ed8299dfb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t280_local_cost/finalize_preflight.py": "bb4f242bc8d6cf6939246dbe16a9f1874b93332153ddccef487eb523e2a83ee8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t282_capped_balance/balanced_learning.py": "460e99d647d2dd64b73bd1d22a9a3de39e9c6d2757a4935371040a70a4ac85be",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t283_capped_task_balance/prepare.py": "a7a7c465a2830f1737521e54f828720a5c09aa8ba9b24214ee6d9d5e1d262256",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t283_capped_task_balance/launch.py": "f23454ee5292f0114bb00039b0f698442a0a91735bace7123986a8b9c4e66cb0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t283_capped_task_balance/run.py": "658e4752e0dad653f04d8d9856756c345291ee59d688d5ca55e19348b826c613",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t283_capped_task_balance/preflight.py": "083f422e4c04409903f0551a9770d6a2bee05dcfb81986c88e223940afb151b4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t283_capped_task_balance/audit.py": "fdd72106d4239efa2ded76a76e3c2d6209435ce0ea6b107244506ff565679714",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t287_time_aligned_credit/prepare.py": "c77bf153701db77a0b54a7bea90f398fc113ab8e185b3fc007964ea85b0149ba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t287_time_aligned_credit/launch.py": "dff5b552de6d7e46e195b56d6f878f7820e92e2ab7c5ed281f261e75f966eb06",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t287_time_aligned_credit/run.py": "86fb75db513f0aa798b0e3bde4c31f5c22bf0aa4bd168824fe5791f973d8f160",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t287_time_aligned_credit/preflight.py": "379acd3bdc350f39fce97c3e9f2838ff5eaa784f11ab58e382a0d7840d114e95",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t287_time_aligned_credit/t287_credit.py": "60e6861510d8c57da653e0ca60609a5947eebea757c240425d689361a701d073",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t287_time_aligned_credit/audit.py": "65ab1685205359debffff99faed5944c08814f14e3bcdb9996dfe367193e077e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t287_time_aligned_credit/finalize.py": "b63681d7887ae896115d4eb58fd366ff94987f186639e573c83d00535fc6a889",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t287_time_aligned_credit/preflight_failed_001/prepare.py": "c77bf153701db77a0b54a7bea90f398fc113ab8e185b3fc007964ea85b0149ba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t287_time_aligned_credit/preflight_failed_001/launch.py": "dff5b552de6d7e46e195b56d6f878f7820e92e2ab7c5ed281f261e75f966eb06",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t287_time_aligned_credit/preflight_failed_001/run.py": "86fb75db513f0aa798b0e3bde4c31f5c22bf0aa4bd168824fe5791f973d8f160",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t287_time_aligned_credit/preflight_failed_001/preflight.py": "379acd3bdc350f39fce97c3e9f2838ff5eaa784f11ab58e382a0d7840d114e95",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t287_time_aligned_credit/preflight_failed_001/t287_credit.py": "60e6861510d8c57da653e0ca60609a5947eebea757c240425d689361a701d073",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t287_time_aligned_credit/preflight_failed_001/audit.py": "65ab1685205359debffff99faed5944c08814f14e3bcdb9996dfe367193e077e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t291_hard_guard_ablation/prepare.py": "e4eb161425d4b1b7bbaea87721977c95d7b6c26e705ecfb251e69fee2e349db4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t291_hard_guard_ablation/launch.py": "527ff94e7d39089b7a0b4f96277f9e7451e5b72c477234612b02131b761518bb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t291_hard_guard_ablation/run.py": "e5e62fd1a085027d9a5fc53e3c82b69a57638fb701d1948c384d5ad4026a0b98",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t291_hard_guard_ablation/t291_learning.py": "44a0d7ca08f0316ba578219d5f200096e27f79c139aa1a3e694b28285b04bd7d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t291_hard_guard_ablation/t291_codec.py": "b38880b6d6160d5cccc74f85159201042e24d3fdfecda3fc60e94d02f4b98251",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t291_hard_guard_ablation/preflight.py": "69d1a63ac279500bc9f027e0c64b7e99b5a096016bdfde77636dd7de59c60fef",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t291_hard_guard_ablation/audit.py": "f6711100ad79822badaa7254f256bd85ab387981e4744877122581191b8c6228",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t290_exact_duplicate_store/store.py": "54ba037c5534aec584323d4628d61ca48b45e713c2d94db53258f72ea30efffb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t295_hindsight_support/run.py": "132e1f4b7f7766b8496af5746974bf3c4fa62e04b163f41a4e861586d932ac1a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t298_self_goal_transfer/prepare.py": "336a61eb9b40475f41370c7f5fb407862adc215c606f332b722aac321b6a6c73",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t298_self_goal_transfer/launch.py": "26c82d392154a73be6b4223829a461ecaeeb28b2cc20fafae2b23115b1455a59",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t298_self_goal_transfer/t298_learning.py": "7db1603c0ca69d180ee4a3ecca2448cf6d807443e3a2ab1703070ba52bdd55e3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t298_self_goal_transfer/t298_worker.py": "80359a35895d9336d07069fb940b433450ce70672268a74a1de8929984fb0677",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t298_self_goal_transfer/run.py": "bf3a41b4e323dd0f3130fdcbca8807cbecc06f48bbf403a92c853816d76513df",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t298_self_goal_transfer/preflight.py": "39c02ae76233659c0ecfb530bfcdf28863d21887da9354f9f5a78955815d144f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t298_self_goal_transfer/audit.py": "476d00d644320832724184f3dede2864d3b62297993d16dffe1de33966f41ca4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t298_self_goal_transfer/finalize_preflight.py": "f3cb62bae04d7fae0e9b7e6a9e3ee75ced26f940127b4c4ec1b35c05fbcc5c96",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t299_conditional_goal_likelihood/prepare.py": "0ab07178f55ad45693863f654b56357673472262a2882ba898d8cac5f6ebda64",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t299_conditional_goal_likelihood/launch.py": "a37f4455e68341043d912ba4f672e635def487addc4182e2886e4b3c0b8b0dbc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t299_conditional_goal_likelihood/run.py": "2530ae1baa50ca70f20f27a079f920e5fe237f2fb3baa110d2ff3d04c4f85aad",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t299_conditional_goal_likelihood/t299_learning.py": "acd5134c2cd46ea8cee0217af3b8886563f9b4197286651c8c95913b9b225ab0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t299_conditional_goal_likelihood/preflight.py": "e4bb9e68debf0d29403a5b3deb65dea81047d0c5b6a7f209b91115344d2e0366",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t299_conditional_goal_likelihood/audit.py": "fb44b4ee7cb2a446133a17a3de3f7ea2e7fe6b4d811a0369f5224074ae8709a8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t305_goal_conditioned_contract/gc_contract.py": "fef79a03d7fad761b5e2f270061688f600b6ce38d899e9d1a6736b2ffdbf1f65",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t305_goal_contract_recovery/experiment.py": "953f558daaa5c49dc70d9138e31283d1b43e3552489d1c8864c9369610af2995",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t308_iid_native_goal_value/t308_core.py": "0bffe4bad77f6d323ad7dd4830df791aad6b11771e41e605a1f8a70203840283",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t308_iid_native_goal_value/prepare.py": "6409b19682965710ef5c4f90128546eea3b2e481694396dbf24c0bf9bbe7c009",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t308_iid_native_goal_value/launch.py": "be9ca945ceb5e56fceb716be33ecc55912cd82eacb37aa3677930f808650e3f2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t308_iid_native_goal_value/run.py": "8a57fde507c580b973815540d7cb57b38b7a706a3ef0295bc498491f5a727cea",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t308_iid_native_goal_value/preflight_failed_001/t308_core.py": "0bffe4bad77f6d323ad7dd4830df791aad6b11771e41e605a1f8a70203840283",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t308_iid_native_goal_value/preflight_failed_001/prepare.py": "6409b19682965710ef5c4f90128546eea3b2e481694396dbf24c0bf9bbe7c009",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t308_iid_native_goal_value/preflight_failed_001/launch.py": "7ca00710c0c8145d07e7b0ea478519fbdc62f2c51f90fe65941f884ca6c9bdd4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t308_iid_native_goal_value/preflight_failed_001/run.py": "8a57fde507c580b973815540d7cb57b38b7a706a3ef0295bc498491f5a727cea",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t309_sequence_goal_value/prepare.py": "54f7c085b89cf9d96442210b598e81e474d0aa8036be02c85c97412c8215701c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t309_sequence_goal_value/launch.py": "224c6ee7184970be533458dd4c236ef6e1c317ee1fbce31afaadae97f829b108",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t309_sequence_goal_value/sequence_value.py": "88e112546717552c50c89a1eeb8f5cd494ab93814da8c4583036500fa245fea1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t309_sequence_goal_value/run.py": "1aa0b129a704409878c5e5dceb5e3b92a4ed09ea2978353a45e6763b3bb9a8d8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t309_sequence_goal_value/audit.py": "ff0ec84febad0f63775b754c42ca444adeb4614076cdac7fe38fbfe2c82aef2d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t310_initial_history_control/prepare.py": "4394c606ed30386900bba404fe7c14c896e8ce31368a88ce2ae4a4f69903b2db",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t310_initial_history_control/launch.py": "e483ed20f518213fc9b817e2fea9a2cfe7b23058e98bf69c981fbddd372b030c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t310_initial_history_control/run.py": "94d0834fd2ed9c4381f77581228f9a1e0cacb0bd5b9a0fe1dece8e0a4f569bbd",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t310_initial_history_control/audit.py": "65761673cb01f624ef8582b4ec9e9c74ee1e50c750334a256a8a2d25b88e0327",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t310_initial_history_recovery/launch.py": "97eb1ab9b2aa67ef7d4c32679379ea9850e77606d61151d516f7d0d8eaba286a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t310_initial_history_recovery/run.py": "4ef93802966050bdef1ec5e830ae12b92c0ec9fdab37028c023db9060da24c42",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t310_initial_history_recovery/audit.py": "99e2bce44c3737530191fe1e4975f97f644ffed92c4cf8d8c1618f5529540892",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t312_online_goal_ppo/prepare.py": "e25e28eee8d6f73373947cd21737951235472f5b7b7e2c10ccdf5116cb2729a8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t312_online_goal_ppo/launch.py": "1a38b6f30bdea0b81e0361eaf897685cb405232a4f657a2ac58dfe3c038d32c2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t312_online_goal_ppo/ppo_learning.py": "43476c6dd5dfb269c02b647c187d548391a552006cc387f4c083e00da911ed28",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t312_online_goal_ppo/run.py": "88402aaa01a45efeca56c8cfda5bbd0c7af76889f48be744856e75b65ca37821",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t312_online_goal_ppo/ppo_worker.py": "75ea9d06cde5ea409e28206d0e76b07bb8be159f7865a8e40ade8a66c742d968",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t312_online_goal_ppo/audit.py": "ff886bd95c7c825c08a3d929ba6205472465aa278f8e3cb5cc492ffdbffb4742",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/goal_conditioned_ppo/advantage.py": "6e39407eca626faeb4bc6fb89c13e0ee6f0f2b5f91850c3975a83e8d8bb69ab1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t312_remaining_recovery/prepare.py": "e0861855a17ffd09bf912d36e03e2889884e9d8948c8a59bca23244a803a7d7d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t312_remaining_recovery/launch.py": "08b8a18b30185f077af635a90d24b398f20e27d3d35d56cf596426544a42a7f9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t312_remaining_recovery/adapter.py": "5d547c6385640efc0886b97fa4f790ffc5ce09ac04246986279623a13f700086",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t312_remaining_recovery/recovery_worker.py": "e2095e3e41d7b0847612a41b6fd7a7a9a0a1ffab2ec6390626fd91e2eb4f83a2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t312_remaining_recovery/recover.py": "9e6b201770db2d27cec5fcb16565bd93721bb65aecfce50db45d60020184ae88",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t312_remaining_recovery/audit.py": "f1a6fa1a19cd995aac5ad276d6faf4dbf7856f82f28767b77feed1a107a6a203",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t312_event_contract/event_contract.py": "e84c46ef981c41856e98c1ea7056780a75eca38570f967168e8d937bdcd34623",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t313_fisher_feasibility/prepare.py": "fa32eb59d098e7429a6edd0cb5b1c3587752f111184dbef9bf74095824100ed5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t313_fisher_feasibility/launch.py": "a2f0174d794c6009e41b8c139ec31826b9fca5d6b14bf6c0de93d64d08245887",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t313_fisher_feasibility/run.py": "39d07b053dcc81f159f4384ddb3b8b619f0b6d4b708b98b671da3724d5178f0e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t313_fisher_feasibility/t313_core.py": "891f4e622c830d45038a5a31defb39d0fd6b491d03f83fb418ba01674db47f0e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t315_full_trajectory_gradient/prepare.py": "6ece5471fdf14bbbfa1cb207ee3fae31db653eb675d3cf122fb6f3758df6bba3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t315_full_trajectory_gradient/launch.py": "752d401f4a9e74921365d9f276b73a0a9ce668c1bd355ec7e5ccbf06db3d6dd9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t315_full_trajectory_gradient/run.py": "8f7d53df5e5c4c97024b23289777916e44967277b3f9c2f7e8f58fddc6dfb10b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t315_full_trajectory_gradient/t315_core.py": "e121e14647336ab9ea294b924744485073abafdd1abbb10d397dc208f7496a03",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t316_frozen_native_validation/prepare.py": "8b921d50e384a6650525a15f9a82cde996c1f7902b8a3834fc700d35c149b5ed",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t316_frozen_native_validation/t316_core.py": "53641fd2c4f6df03f9fc613c4a6895823d6b4a34497f3b1cef7456ea38b4cb0e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t316_frozen_native_validation/launch.py": "e884bdae5d5687d2c320627471310a2dd484ba1b11946c2fb29d65283342ec24",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t316_frozen_native_validation/run.py": "dcdfba9a0b4344f26d4e9c47e8ce2363b94a3654214ff6eb350e15bf11bbda0e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t317_human_demonstration/prepare.py": "53f2919c507c70e9eb826271d821a9674ae0f702249df3d1dbe92ab791d195a5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t317_human_demonstration/launch.py": "4fc155971fd3c319925ac4095de81644cb8e2df5cbb1f892acbe2888c0b0641f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t317_human_demonstration/recorder.py": "dedd98357c63f0a0b0571a69d68e40fb9b92a39fe5df6a529795ea6d275bd6f3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t288_five_metre_presentation/run.py": "d21351fe7dd8423bc1cf2debd0612c1b878f16de885c1e505d53d7ada53de377",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t317_human_demonstration/finalize_preflight.py": "9c9a5991d8b4391cb9f45b3aa5e58ca3621af0b83004e312e9c0b994f1f3a1e4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t317_human_demonstration/http_contract.py": "e83c7d3fc812c6802855c72104653f5b1fad677c49236d139fc2a5102a6747b4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t319_imperfect_demo_head/t319_core.py": "b4ee00809d2a6b35ba0f92f05f407fea640382a8ddf7a8a7152ceb13c083d7b0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t319_imperfect_demo_head/run.py": "1d4d13b428eafe11a8e49d3e7b8cc9133a95a930328f1de42a0cfac64618b0a0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t319_imperfect_demo_head/launch.py": "8cff16e2b79c863082984287df92531b21b48bf8106f08a01d1181b17b746a1d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t255_overnight/s2_reset_final_checkpoint.pt.gz": "63e63e2b444867b26622a2ab0f0c4227bc38d48a7cd2b5a3b378d9b0266006df",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t250_actuator_policy_gradient/final_Actor.pt.gz": "8b1ace57fe03ed95479825d6d8d40f50423785e19d392d292e8a1bd11def7a35",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/stable_5m_current_states.npz": "b5f050bee72164f883a9a3c76624e50fa0755ab6ff53bbd7a0631470787e5df0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t267_causal_credit_course/protocol.json": "13788704a5a0b5955044082bb8942d9c41697de031314ee1cf24ef69c1c55aaa",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t317_human_demonstration/attempt_01.npz": "cd1e67f05cc435524ece4b9935d305bfa13e89c1df4e7fb5bce834ecf581b06f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t317_human_demonstration/attempt_02.npz": "15b7c2603cb11ed2c24a05dbdeb67366261721320ee5a450b8349db4275a460b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653601_LEFT.npz": "00296a456f2dd035d10ffe9df34d4961a416a032226b6c8b789f502a4a057cec",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029653602_RIGHT.npz": "ba4dbae9277fae6f81ebe9106758f04afbec42956ca44d3be786a5bb8236e093",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654801_LEFT.npz": "4da2af524f55170cfb74cde770fbba3641c2fe8119f830341bf7f9d4381d5bb1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_2029654802_RIGHT.npz": "fad7bdf9ab6382e085d4340920a524a49aeeb21094d5c1a59a950d10a34358b0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029653601_LEFT.npz": "868fb81ad5ef30744abdac3cfbfb1067c04d057f05ac5e4edec842f00b8949fa",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_4m_2029654802_RIGHT.npz": "767365cbaf7948a2084bb49e55587cfe428a484b161dfd2a7f289a1f55d9ed4d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz": "f120ea666a45905881074d0a2d47c512d08a8032b953739514d5867a1dbf1f1c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029654802_RIGHT.npz": "e58812dad4ab96e64fe0f9aa92ee94d6d79717506c360eae38e2bfe1f04312be",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz": "9ac3746838aff84857e17389d57d253b96c41cd3af5c44f480707cc81ee64603",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz": "c38abb0265a6b7ffb99e58a27c515acd071c1eb0d1367f338247854c7b6d8fa0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t322_full_network_steering/launch.py": "af992f5ea4452bcdb9cc541031f6f073b2704d7bfae2d72759eb60b31909933a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t322_full_network_steering/run.py": "42adcab93891d61b51ad45140ab4025acbe130d17eb1854b5667ea68af4768b2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t322_full_network_steering/t322_learning.py": "917fb1c873470ffcd04c20d613550a0b2a4f500b5316dfa146b37195cb8d361b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/distance_20261103/T322_PLAN_AND_LITERATURE.md": "8163d8db8f7427795f253e1028a59e2bab554d34f1676dcb8f0bbf47c5542edd",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t316_frozen_native_validation/geometry.json": "0fc4b568af486e3385c148f14a61359e6c4ef9238b525180337ee665a1245254",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/distance_20261103/T321_AUDIT.json": "1395a77df29b396907b98b918670f01a06af7d2ecf4733efd7d348081e313050",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/long_distance_20261101/release_receipt_T321.json": "3ad79921c990ef9e9b608a001ed4c57e57a424555ca8a9c86a683a8a93cd64f5"
+  }
+}
