@@ -1,0 +1,120 @@
+{
+  "state": "COMPLETE_INDEPENDENT_AUDIT_PASS_FULL_REMOTE_RAW_VERIFIED",
+  "main_beijing": "2026-11-03T13:15:41.638952+08:00",
+  "end_beijing": "2026-11-03T13:16:07.875916+08:00",
+  "deadline_beijing": "2026-11-03T13:45:41.638952+08:00",
+  "elapsed_s": 26.236963510513306,
+  "commands": 0,
+  "physics_steps": 0,
+  "new_full_gradient_Adam_calls": 2,
+  "historical_Adam_calls": 0,
+  "new_V_fits": 0,
+  "backtracking_parameter_proposals": 15,
+  "total_candidate_parameter_updates": 17,
+  "max_total_candidate_parameter_updates": 34,
+  "main_full_gradient_autograd_calls": 34,
+  "preflight_autograd_calls": 19,
+  "score_rows": 128,
+  "distinct_score_selections": 126,
+  "source_score_matrix_sha256": "e090dbfe89889a5aced163b06202bc319f36666f73158ed05d587ad85f7e0d01",
+  "empirical_fisher_joint_proxy_gate": true,
+  "Adam_joint_proxy_gate": true,
+  "fisher_linear_system_convergence": "Both ten-iteration approximations did not attain registered residual tolerance; finite approximate directions accepted only by empirical line-search gates, not exact natural gradients",
+  "cg": [
+    {
+      "arm": "mc",
+      "iterations": 10,
+      "last": {
+        "iteration": 9,
+        "residual_squared": 4.355947420243172,
+        "relative_residual_squared": 7.637318541383483
+      }
+    },
+    {
+      "arm": "gae",
+      "iterations": 10,
+      "last": {
+        "iteration": 9,
+        "residual_squared": 2.3691698312061926,
+        "relative_residual_squared": 3.2151863623847188
+      }
+    }
+  ],
+  "all_processes_absent": true,
+  "models": {
+    "mc_adam": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t315_full_trajectory_gradient/mc_adam_offline_policy.pt.gz",
+      "sha256": "74549bd71002f4a00934cce0f42dec2b09b94a3d4314373f980f1d7298d67b3b",
+      "policy_hash": "3dbb94c5c5f00a3de809062c5e8845e84bb81ce51fbfa22be8a4ae831214e2a3",
+      "bytes": 2191983
+    },
+    "mc_empirical_fisher": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t315_full_trajectory_gradient/mc_empirical_fisher_offline_policy.pt.gz",
+      "sha256": "bd95b858ae2017b56a30a552a4c50950cbec12a0bf1b21530db9530b9b421d1d",
+      "policy_hash": "d105d217ee4341829fea919fb32c9b2e7c248971c00c91d6ac745c680a64b720",
+      "bytes": 2191930
+    },
+    "gae_adam": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t315_full_trajectory_gradient/gae_adam_offline_policy.pt.gz",
+      "sha256": "45d90cefc04fc193e768fb18e3a875eb0f33bab16232f8320e708a7b8723af11",
+      "policy_hash": "1f234edd59d43ce6ec9c4b0ff3542676c54b61c504fb05755423af4eb7cb84a5",
+      "bytes": 2191934
+    },
+    "gae_empirical_fisher": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t315_full_trajectory_gradient/gae_empirical_fisher_offline_policy.pt.gz",
+      "sha256": "a3e487acd996eb3b7b24fa4bab237d6ceae951c86a468085151c01327c81936f",
+      "policy_hash": "09cd7740d38dd1a0b03fe1e621320110a49c27717810606a4315fc56cc1a4de0",
+      "bytes": 2191909
+    }
+  },
+  "deployed_Actor_changed": false,
+  "raw_Adam_state_preservation": "Exact deterministic full-gradient/Adam recipe+per-arm policy/Adam SHA, independently reconstruct; normalized policies not resumable Adam checkpoints",
+  "old275_originalsix54_fresh16_reload78": "NOT_EXECUTED_NOT_ZERO_SUCCESS_RATE",
+  "six_metre_stable": false,
+  "seven_eight_entered": false,
+  "own_bytes": 9229370,
+  "own_limit_bytes": 14680064,
+  "global_bytes": 1067699465,
+  "global_limit_bytes": 1073741824,
+  "free_bytes": 221279064064,
+  "protected_models_and_HD_unchanged": {
+    "safeT255": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t255_overnight/s2_reset_final_checkpoint.pt.gz",
+      "sha256": "63e63e2b444867b26622a2ab0f0c4227bc38d48a7cd2b5a3b378d9b0266006df",
+      "unchanged": true
+    },
+    "T299_research": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t299_conditional_goal_likelihood/conditional_goal_likelihood_final_checkpoint.pt.gz",
+      "sha256": "b15cddbbf5914ef5187ce221082c0e6cdbe3608b0f8a1ff1177f8fefa95f5751",
+      "unchanged": true
+    },
+    "left_HD": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t288_five_metre_presentation/stage_5m_left_1080p.mp4",
+      "sha256": "eb57d8825106a14baa37812fcbe0d230813643c7911293d8549bf4ced960772c",
+      "unchanged": true
+    },
+    "right_HD": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t288_five_metre_presentation/stage_5m_right_1080p.mp4",
+      "sha256": "fc7fe3ae7b58fedfda179ff7db918625404f61aa8dbf7bafa4ef607cda2d0a68",
+      "unchanged": true
+    }
+  },
+  "summary_sha256": "55d6aa27ff4eddafe841156fb35727f9d8185c19952a09e710c3244f3c0d6805",
+  "metrics_sha256": "54835d6ff87f31670008968d31b631e99f9a866a63f6d450be3dc7dd902f26bd",
+  "protocol_sha256": "4d4c2d543ba6a50d5ba2af450d117cb7888b33a30ce8c57420cad994f6320a01",
+  "independent_reconstruction_Adam_calls": 2,
+  "independent_backtracking_proposals_reconstructed": 15,
+  "independent_audit_sha256": "10be2579c415b6717890678f96ed4358195e81fcf847359cf5631deffb37075e",
+  "all_recorded_processes_absent": [
+    601660,
+    601663,
+    601664
+  ],
+  "backup": {
+    "members": 12,
+    "segments": 17,
+    "archive_sha256": "3c26fe9c7d92220923b79203b8a0cc1b7a1e96d385a40bbcfd7891056bc08fce",
+    "url": "https://github.com/frank8763/winkun/releases/tag/stage-distance-2026-11-01",
+    "receipt_sha256": "38f0bc86e65ec07192a3b470ab550289a2724fd0ad90a22b15b58800378a3b06"
+  }
+}
