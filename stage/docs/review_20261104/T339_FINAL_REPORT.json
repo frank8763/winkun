@@ -1,0 +1,128 @@
+{
+  "producer": {
+    "state": "COMPLETE",
+    "pid": 30804,
+    "main_epoch": 1793779632.0685658,
+    "elapsed_s": 201.94571590423584,
+    "deadline_epoch": 1793781430.6271183,
+    "commands": 40,
+    "physics_steps": 951889,
+    "cases": 34,
+    "exact_replays": 5,
+    "new_training_collection": 0,
+    "cached_training_unique": 4,
+    "cached_trajectories_native_reverified": true,
+    "updates": {
+      "live_actor": 8,
+      "shadow_actor": 8
+    },
+    "result": {
+      "cached_complete_native_exact": true,
+      "before": [
+        {
+          "prefix": 240,
+          "success": false,
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 2.5986770632524316
+        },
+        {
+          "prefix": 280,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.19988593900759286
+        },
+        {
+          "prefix": 200,
+          "success": false,
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 2.972339079630215
+        },
+        {
+          "prefix": 150,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 2.268498845187819
+        },
+        {
+          "prefix": 0,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 2.2541135268101806
+        }
+      ],
+      "after": [
+        {
+          "prefix": 240,
+          "success": false,
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 2.734952780811379
+        },
+        {
+          "prefix": 280,
+          "success": true,
+          "collision": false,
+          "timeout": false,
+          "remaining_m": 0.1999984619043416
+        },
+        {
+          "prefix": 200,
+          "success": false,
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 2.9677953338910372
+        },
+        {
+          "prefix": 150,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 2.2666961204658285
+        },
+        {
+          "prefix": 0,
+          "success": false,
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 2.2543755358678346
+        }
+      ],
+      "old20": {
+        "success": 19,
+        "collision": 0,
+        "timeout": 1
+      },
+      "learned48_diagnostic": false
+    },
+    "models": {
+      "capg": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t339_success_to_control/updated_final.pt.gz",
+        "bytes": 86604,
+        "sha256": "c797bfa7ff4de03a50883c6ab44fe6d3f2e09e59f764b100aa0d82a8c049af93",
+        "hashes": {
+          "actor": "1257b2c20306f0f1bf768f6ce7cc29a04128396e11930c4516287bdfb39bba55",
+          "optimizer": "660aaaab1dc5899138e1ded4b0c2068485cb451ca5c400f71be685604e9cec9a"
+        }
+      }
+    },
+    "all_workers_stopped": true,
+    "stable_six": false,
+    "full_old275_six54_fresh16_reload78": "NOT_EXECUTED",
+    "original_7m_8m_entered": false,
+    "own_bytes": 800333,
+    "global_bytes": 1059661589
+  },
+  "audit_pass": true,
+  "audit_returncode": 0,
+  "backup_returncode": 0,
+  "full_raw_remote_readback": true,
+  "no_7m_8m_training": true,
+  "no_full_six_acceptance": true,
+  "learned48_diagnostic": false,
+  "elapsed_s": 239.86070013046265
+}
