@@ -1,0 +1,22 @@
+{
+  "state": "ORIGINAL_INDEPENDENT_AUDIT_FAILED_PRESERVED",
+  "error": "AssertionError at audit.py:29 b[input_hashes]==obj.hashes(), entering second block; first block independently reconstructed and trace/output/calls matched",
+  "original_historical_Adam_completed": 8,
+  "new_native": 0,
+  "original_audit_sha256": "41bb1a835bb0ee1e308cf39b36ebb6d5c1fc7ca9627d5cac8a4e8ce8da22acdd",
+  "raw_blocks_sha256": "a243e69b3d6c6f0f9936e27bf63f2356b1e8ac74dd85530e919ec7897bfe9368",
+  "second_block_recorded_input": {
+    "actor": "93a866962923ee9ad32d687622c26d5e5d125a3489bdfa5922f4043eb8963855",
+    "optimizer": "e7ae35c4d9d7d7cb9fe816ae565696f9ac195e0df928de6b482783b12b4ac3a1"
+  },
+  "preceding_actual_output": {
+    "actor": "93a866962923ee9ad32d687622c26d5e5d125a3489bdfa5922f4043eb8963855",
+    "optimizer": "973bd3d8d04456039b2f659ac9995d0d7b8e4593454fc04b4e8460e6fc140859"
+  },
+  "second_block_output": {
+    "actor": "cde1fdc2bace65ddbf707dee73798e297c2dc30e44f6b99ac26664ec30d12917",
+    "optimizer": "e7ae35c4d9d7d7cb9fe816ae565696f9ac195e0df928de6b482783b12b4ac3a1"
+  },
+  "suspected_cause": "load_state_dict on optimizer shares state tensor storage with provided snapshot; shadow update mutates saved before.optimizer; input hash computed after update. No registered block interrupted in this run.",
+  "recorded_epoch": 1793789639.5039105
+}
