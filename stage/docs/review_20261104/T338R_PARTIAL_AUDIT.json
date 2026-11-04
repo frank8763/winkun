@@ -1,0 +1,123 @@
+{
+  "state": "COMPLETE",
+  "audit_state": "PASS_PARTIAL_ONLY_PRODUCER_FAILED",
+  "pid": 27629,
+  "all_workers_stopped": true,
+  "no_workers_spawned": true,
+  "all_producer_processes_absent": true,
+  "new_native": 0,
+  "new_optimizer_calls": 0,
+  "producer_commands": 9,
+  "producer_physics": 270334,
+  "combined_commands": 297,
+  "combined_physics": 4449310,
+  "complete_first_executions": [
+    {
+      "id": "capg_training_r0_n0",
+      "success": false,
+      "collision": false,
+      "timeout": true,
+      "episode_elapsed_seconds": 80.0,
+      "suffix_elapsed_seconds": 32.0,
+      "remaining_m": 2.4043797640662645
+    },
+    {
+      "id": "capg_training_r0_n1",
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "episode_elapsed_seconds": 63.152,
+      "suffix_elapsed_seconds": 15.152,
+      "remaining_m": 0.19995873850194548
+    },
+    {
+      "id": "capg_training_r0_n2",
+      "success": false,
+      "collision": false,
+      "timeout": true,
+      "episode_elapsed_seconds": 80.0,
+      "suffix_elapsed_seconds": 32.0,
+      "remaining_m": 2.6168680615772506
+    },
+    {
+      "id": "capg_training_r0_n3",
+      "success": false,
+      "collision": false,
+      "timeout": true,
+      "episode_elapsed_seconds": 80.0,
+      "suffix_elapsed_seconds": 32.0,
+      "remaining_m": 2.707363528062377
+    }
+  ],
+  "complete_success": 1,
+  "complete_contact": 0,
+  "complete_timeout": 3,
+  "independently_completed_replays": 0,
+  "censored_replays": [
+    {
+      "worker": 0,
+      "charged_physics": 29400,
+      "exact_saved_suffix_decisions": 54,
+      "exact_saved_suffix_physics": 5400,
+      "unrecorded_native_tail_steps": 0,
+      "administratively_censored": true,
+      "full_replay_pass": false,
+      "final_history_frame_not_compared_if_partial_hold": false,
+      "final_integration_sha256": "40f4cab10324b23122118313f7b5cd9123b8cf78e8f41cbf9f14e373e245820f"
+    },
+    {
+      "worker": 1,
+      "charged_physics": 30190,
+      "exact_saved_suffix_decisions": 61,
+      "exact_saved_suffix_physics": 6100,
+      "unrecorded_native_tail_steps": 90,
+      "administratively_censored": true,
+      "full_replay_pass": false,
+      "final_history_frame_not_compared_if_partial_hold": true,
+      "final_integration_sha256": "2bbc37f4243de2b8a634c2c628b4f10ce793594db53775f988494cf0792baed4"
+    },
+    {
+      "worker": 2,
+      "charged_physics": 29703,
+      "exact_saved_suffix_decisions": 57,
+      "exact_saved_suffix_physics": 5700,
+      "unrecorded_native_tail_steps": 3,
+      "administratively_censored": true,
+      "full_replay_pass": false,
+      "final_history_frame_not_compared_if_partial_hold": true,
+      "final_integration_sha256": "fe4e393a07ed02a6bd20b409130c445f4e28e3214bab5f8e1bf2d519d1203546"
+    },
+    {
+      "worker": 3,
+      "charged_physics": 29465,
+      "exact_saved_suffix_decisions": 54,
+      "exact_saved_suffix_physics": 5400,
+      "unrecorded_native_tail_steps": 65,
+      "administratively_censored": true,
+      "full_replay_pass": false,
+      "final_history_frame_not_compared_if_partial_hold": true,
+      "final_integration_sha256": "0a1649cdf1e0d25ec734967a4f66f2367d9abcecec538e913bff0450ea9f405a"
+    }
+  ],
+  "unrecorded_native_tail_steps": 158,
+  "complete_actual_draws_exact": 556,
+  "complete_first_execution_physics": 151576,
+  "new_policy_suffix_physics": 55576,
+  "live_Adam": 0,
+  "shadow_Adam": 0,
+  "discarded_preflight_Adam": 4,
+  "combined_discarded_preflight_Adam": 8,
+  "initial_policy_and_empty_Adam_exact": true,
+  "cached_tanh_data_available_but_not_optimized": true,
+  "original_six_gate_not_executed": true,
+  "stable_six": false,
+  "source_inputs_and_original_summary_unchanged": true,
+  "producer_summary_sha256": "3da47e9d0022dcbc2f2d7f52596d9d640dc5bb968a5760bede8cf127db80bf67",
+  "elapsed_s": 5.251685857772827,
+  "limitations": [
+    "One sampled success is not learned policy gain or reliable advantage.",
+    "No full exact native replay completed; only recorded replay prefixes match.",
+    "CAPG and tanh share four fixed noise seeds and frozen deterministic parent; distributions differ.",
+    "Training stopped at original cutoff; no next runtime restart."
+  ]
+}

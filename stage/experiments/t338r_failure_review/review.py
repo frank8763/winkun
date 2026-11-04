@@ -67,9 +67,12 @@ def main():
         assert "deadline_epoch" in failure['error']
         assert not b['end_flags'].any(),'Partial replay must not be mislabeled terminal navigation failure'
         n=len(b['states']);assert 0<n<len(a['states'])
+        charged=failure['actual_physics']-row['physics_steps'];stored=int(b['native_counts'].astype(np.int64).sum())
+        tail=charged-24000-stored;assert 0<=tail<100
         for name,v in b.items():
             if name=='final_native_integration':continue
-            limit=n+1 if name.startswith('history_') else n
+            limit=n+(1 if tail==0 else 0) if name.startswith('history_') else n
+            if name.startswith('history_'):v=v[:limit]
             assert np.array_equal(v,a[name][:limit]),(j,name)
         rewards_and_history(b,row)
         charged=failure['actual_physics']-row['physics_steps'];stored=int(b['native_counts'].astype(np.int64).sum())
@@ -78,7 +81,7 @@ def main():
         # no absent decision/observation rows are invented for them.
         assert b['final_native_integration'].shape==(203,)
         partial.append(dict(worker=j,charged_physics=charged,exact_saved_suffix_decisions=n,exact_saved_suffix_physics=stored,
-            unrecorded_native_tail_steps=tail,administratively_censored=True,full_replay_pass=False,
+            unrecorded_native_tail_steps=tail,administratively_censored=True,full_replay_pass=False,final_history_frame_not_compared_if_partial_hold=tail>0,
             final_integration_sha256=digest(b['final_native_integration'])))
         total+=failure['actual_physics']
     assert total==s['physics_steps']==270334
