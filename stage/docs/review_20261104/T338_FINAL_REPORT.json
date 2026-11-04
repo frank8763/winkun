@@ -1,0 +1,61 @@
+{
+  "producer": {
+    "state": "FAILED",
+    "pid": 13986,
+    "main_epoch": 1793774608.0735457,
+    "elapsed_s": 697.8225982189178,
+    "deadline_epoch": 1793780006.350992,
+    "commands": 288,
+    "physics_steps": 4178976,
+    "cases": 281,
+    "training_episodes": 4,
+    "exact_replays": 6,
+    "updates": {
+      "live_actor": 0,
+      "shadow_actor": 0
+    },
+    "arms": {},
+    "baseline": {
+      "old275": {
+        "success": 274,
+        "collision": 0,
+        "timeout": 1
+      },
+      "recovery48": {
+        "success": 0,
+        "collision": 0,
+        "timeout": 1
+      },
+      "control56": {
+        "success": 1,
+        "collision": 0,
+        "timeout": 0
+      },
+      "shared_initial_behavior_preflight": true
+    },
+    "models": {
+      "tanh": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t338_capg_recovery/tanh_interrupted.pt.gz",
+        "bytes": 31088,
+        "sha256": "6d88b8f121d6823102bf51d42a89ca8cffce4a8c164cd9788a375b8f7ba8d48f",
+        "hashes": {
+          "actor": "788593db8ee00f8c15ecaf84fd11ee700cf6ec90f3f225ff5ad05167f74259d6",
+          "optimizer": "06460c959cff942222deed9ba49fcdc49553a76839caed890100067ababb1684"
+        }
+      }
+    },
+    "all_workers_stopped": true,
+    "full_old275_final_six54_fresh16_reload78": "NOT_EXECUTED_BY_THIS_PILOT",
+    "stable_six": false,
+    "original_7m_8m_entered": false,
+    "own_bytes": 1533681,
+    "global_bytes": 1058002312
+  },
+  "audit_pass": false,
+  "audit_returncode": 1,
+  "backup_returncode": 0,
+  "full_raw_remote_readback": true,
+  "no_7m_8m_training": true,
+  "no_full_six_acceptance": true,
+  "elapsed_s": 747.6751282215118
+}
