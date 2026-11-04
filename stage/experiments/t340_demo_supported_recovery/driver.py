@@ -1,0 +1,62 @@
+"""One launch, then bounded audit, complete raw backup and exact source sync."""
+from t340_core import *
+import subprocess
+
+def source_sync():
+    sys.path.insert(0,str(ROOT/'stage/experiments/t224_archive'));import archive,sync_source
+    def request(method,url,payload=None,headers=None):
+        assert url.startswith('https://api.github.com/repos/frank8763/winkun/')
+        cmd=[str(archive.GH),'api','--method',method,url.removeprefix('https://api.github.com/')]
+        if payload is not None:return subprocess.check_output([*cmd,'--input','-'],input=json.dumps(payload).encode(),timeout=60)
+        return subprocess.check_output(cmd,timeout=60)
+    archive.req=request;sync_source.main()
+
+def main():
+    p=read(HERE/'protocol.json');verify(p);assert not (OUT/'launch.json').exists()
+    began=time.time();end=began+p['all_work_seconds'];native_end=began+p['wall_seconds']
+    src=read(ROOT/'stage/runs/t224_archive/latest_source_sync_receipt.json')
+    def status(phase,**extra):save(DOC/'T340_DRIVER.json',dict(phase=phase,pid=os.getpid(),updated_epoch=time.time(),all_work_deadline_epoch=end,**extra))
+    def child(script,args,seconds,log):
+        seconds=min(seconds,int(end-time.time())-180);assert seconds>10
+        with Path(log).open('w') as f:
+            return subprocess.run(['/usr/bin/timeout','--signal=TERM','--kill-after=2s',str(seconds)+'s','/usr/bin/taskset','-c','0',str(ROOT/'run_stage.sh'),str(script),*args],cwd=ROOT,stdout=f,stderr=subprocess.STDOUT).returncode
+    status('LAUNCHING_NATIVE')
+    with (OUT/'run.log').open('xb') as f:
+        proc=subprocess.Popen(['systemd-inhibit','--what=sleep','--mode=block','--why=Stage bounded CAPG recovery pilot',
+            '/usr/bin/timeout','--signal=TERM','--kill-after=2s',str(p['wall_seconds'])+'s',
+            '/usr/bin/taskset','-c','0',str(ROOT/'run_stage.sh'),str(HERE/'run.py')],cwd=ROOT,stdout=f,stderr=subprocess.STDOUT)
+    save(OUT/'launch.json',dict(pid=proc.pid,launch_epoch=began,source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
+        remote_commit=src['remote_commit'],single_launch=True,native_deadline_epoch=native_end,training_deadline_epoch=native_end-p['final_reserve_seconds'],orchestrator_pid=os.getpid()))
+    status('NATIVE_ACTIVE',native_wrapper_pid=proc.pid);code=proc.wait();status('NATIVE_EXITED',native_returncode=code)
+    assert (OUT/'summary.json').exists(),'No summary; preserve all raw, no restart'
+    s=read(OUT/'summary.json');assert s['all_workers_stopped'] and not Path('/proc/'+str(s['pid'])).exists()
+    status('INDEPENDENT_AUDIT')
+    audit_rc=child(HERE/'audit.py',[],p['audit_seconds'],DOC/'T340_audit.log')
+    status('FULL_RAW_REMOTE_BACKUP',audit_returncode=audit_rc)
+    receipt=ROOT/'stage/docs/long_distance_20261101/release_receipt_T340.json';backup_rc=0
+    if not receipt.exists():backup_rc=child(ROOT/'stage/experiments/t260_distance_archive/small_parts.py',['T340'],900,DOC/'T340_backup.log')
+    backed=receipt.exists() and read(receipt)['state']=='FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED'
+    passed=(DOC/'T340_AUDIT.json').exists() and read(DOC/'T340_AUDIT.json')['state']=='PASS'
+    report=dict(producer=s,audit_pass=passed,audit_returncode=audit_rc,backup_returncode=backup_rc,full_raw_remote_readback=backed,
+        no_7m_8m_training=True,full_gate_executed=s.get('result',{}).get('old275') is not None,stable_six=s.get('stable_six',False),elapsed_s=time.time()-began)
+    save(DOC/'T340_FINAL_REPORT.json',report)
+    (DOC/'T340_FINAL_REPORT.md').write_text('# T340实际结果\n\n'+
+        '示范辅助CAPG恢复课程pilot，原窄场景全门槛仅条件执行。主运行：'+s['state']+'。\n\n'+
+        '示范预训练后控制：\n\n```json\n'+json.dumps(s.get('result',{}).get('warm'),ensure_ascii=False,indent=2)+'\n```\n\n'+
+        '真实课程与终末验收结果：\n\n```json\n'+json.dumps(s.get('result',{}),ensure_ascii=False,indent=2)+'\n```\n\n'+
+        '物理步 '+str(s['physics_steps'])+'；命令 '+str(s['commands'])+'；live/shadow Adam '+json.dumps(s['updates'])+'。\n\n'+
+        '独立审计 '+str(passed)+'；全部原件远端逐SHA读回 '+str(backed)+'。完整old275/six54/fresh16/reload78以result中的实际记录为准（null为未执行），不将缺测当失败率，不晋升/不进7或8。CAPG/PPO已有方法，不称原创或保证成功。\n')
+    research=ROOT/'stage/docs/RESEARCH_STATUS.md';research.write_text('2026-11-04 T340结束，producer='+s['state']+'，'+str(s['commands'])+'命令/'+str(s['physics_steps'])+'物理，独立audit='+str(passed)+'/全原件远端逐SHA='+str(backed)+'。完整原六米门槛='+str(s.get('stable_six',False))+'；固定48秒宽80课程恢复与原起点分列；旧275/原six54/fresh16/reload78以原result为准，不能用课程代替完整门槛，不晋升7/8，不重启扩预算。详见review_20261104/T340_FINAL_REPORT和原始summary/rounds。Stage/Phase隔离。\n\n'+research.read_text())
+    status('EVIDENCE_FINISHED_SOURCE_SYNC_NEXT',audit_pass=passed,full_raw_remote_readback=backed)
+    assert not subprocess.check_output(['git','diff','--cached','--name-only'],cwd=ROOT,text=True).strip()
+    paths=['stage/docs/RESEARCH_STATUS.md']
+    for folder in [DOC,ROOT/'stage/docs/long_distance_20261101']:
+        paths += [str(f.relative_to(ROOT)) for f in folder.glob('*T340*') if f.is_file() and f.suffix in ('.md','.json')]
+    subprocess.run(['git','add','--',*paths],cwd=ROOT,check=True)
+    if subprocess.check_output(['git','diff','--cached','--name-only'],cwd=ROOT,text=True).strip():subprocess.run(['git','commit','-m','Record bounded Stage CAPG recovery results and evidence'],cwd=ROOT,check=True)
+    source_sync()
+
+if __name__=='__main__':
+    try:main()
+    except BaseException:
+        save(DOC/'T340_DRIVER_ERROR.json',dict(state='ORCHESTRATION_FAILED_NO_RESTART',pid=os.getpid(),error=traceback.format_exc(),epoch=time.time()));raise

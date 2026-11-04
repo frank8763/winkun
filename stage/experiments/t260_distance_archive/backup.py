@@ -98,6 +98,7 @@ GROUPS = {
     'T338': ['t338_capg_recovery'],
     'T338R': ['t338_remaining_recovery'],
     'T339': ['t339_success_to_control'],
+    'T340': ['t340_demo_supported_recovery'],
     'T338R-REVIEW': ['t338r_failure_review'],
     'T338-REVIEW': ['t338_failure_review'],
 }
