@@ -1,0 +1,44 @@
+{
+  "state": "PASS_ZERO_NATIVE_BUDGET_CHECK",
+  "phases": [
+    {
+      "phase": "initial",
+      "commands": 282,
+      "physics": 5062735
+    },
+    {
+      "phase": "known_support_replay",
+      "commands": 2,
+      "physics": 80000
+    },
+    {
+      "phase": "training_and_replay",
+      "commands": 16,
+      "physics": 640000
+    },
+    {
+      "phase": "candidate_acceptance",
+      "commands": 54,
+      "physics": 1342686
+    },
+    {
+      "phase": "final_and_model_readback",
+      "commands": 54,
+      "physics": 1342686
+    },
+    {
+      "phase": "conditional_full_release",
+      "commands": 423,
+      "physics": 8866737
+    }
+  ],
+  "geometry_zero_physics_commands": 7,
+  "total_worst_commands": 838,
+  "total_worst_physics": 17334844,
+  "compact_primary_max": 686,
+  "full_primary_max": 30,
+  "global_worst_bytes": 1073010458,
+  "global_limit_bytes": 1073741824,
+  "native_added": 0,
+  "optimizer_added": 0
+}
