@@ -1,0 +1,65 @@
+{
+  "producer": {
+    "state": "FAILED",
+    "pid": 22281,
+    "main_epoch": 1793778157.47733,
+    "elapsed_s": 49.826672077178955,
+    "deadline_epoch": 1793780006.350992,
+    "commands": 9,
+    "physics_steps": 270334,
+    "cases": 4,
+    "training_episodes": 4,
+    "exact_replays": 0,
+    "updates": {
+      "live_actor": 0,
+      "shadow_actor": 0
+    },
+    "arms": {},
+    "baseline": {
+      "old275": {
+        "success": 274,
+        "collision": 0,
+        "timeout": 1
+      },
+      "recovery48": {
+        "success": 0,
+        "collision": 0,
+        "timeout": 1
+      },
+      "control56": {
+        "success": 1,
+        "collision": 0,
+        "timeout": 0
+      },
+      "shared_initial_behavior_preflight": true
+    },
+    "models": {
+      "capg": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t338_remaining_recovery/capg_interrupted.pt.gz",
+        "bytes": 31102,
+        "sha256": "9e15d84e16b14523336ee2146845c0871e0f066e0fb4c06d51ce7e4e4d4b00be",
+        "hashes": {
+          "actor": "83f141fba9351adceb6172fe4638901a0b4cd1a516434ea6160d1d90a9bd54fe",
+          "optimizer": "06460c959cff942222deed9ba49fcdc49553a76839caed890100067ababb1684"
+        }
+      }
+    },
+    "all_workers_stopped": true,
+    "full_old275_final_six54_fresh16_reload78": "NOT_EXECUTED_BY_THIS_PILOT",
+    "stable_six": false,
+    "original_7m_8m_entered": false,
+    "cached_training_unique": 4,
+    "cached_replays_reused": 4,
+    "combined_commands": 297,
+    "combined_physics": 4449310,
+    "own_bytes": 670157,
+    "global_bytes": 1058795778
+  },
+  "audit_pass": false,
+  "audit_returncode": 1,
+  "backup_returncode": 0,
+  "full_raw_remote_readback": true,
+  "no_7m_8m_training": true,
+  "no_full_six_acceptance": true,
+  "elapsed_s": 76.74408602714539
+}
