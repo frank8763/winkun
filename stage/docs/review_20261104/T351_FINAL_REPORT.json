@@ -1,0 +1,109 @@
+{
+  "state": "COMPLETE",
+  "pid": 96210,
+  "overnight_started": false,
+  "entered7or8": false,
+  "summary": {
+    "state": "COMPLETE",
+    "pid": 96226,
+    "main_epoch": 1793799936.5250957,
+    "elapsed_s": 1944.62797665596,
+    "commands": 415,
+    "physics_steps": 6121459,
+    "updates": {
+      "live": 8,
+      "shadow": 8
+    },
+    "models": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t351_recurrent_recovery/final_checkpoint.pt.gz",
+      "sha256": "6ca01901232ac3ce865accdcb5fe593004271f88b6046174d60146b2ab2e50b5",
+      "hashes": {
+        "learned": "7173dcfc18f902cfb9e67d9fcc2204f392118fdf581e43b8f4b88e828f650aef",
+        "optimizer": "e874cfb0703daaaf3b1e65a2ff1123173a0a9740599f9fce0738a965b2f4402f"
+      },
+      "policy_hash": "5104b12a27951687a52ba0668cb63232f10d4488f0615f64ecb381f54bea7b7f"
+    },
+    "result": {
+      "initial": {
+        "old275": {
+          "success": 240,
+          "collision": 35,
+          "timeout": 0
+        },
+        "old20": {
+          "success": 9,
+          "collision": 11,
+          "timeout": 0
+        },
+        "wide5": {
+          "success": 2,
+          "collision": 2,
+          "timeout": 1
+        },
+        "original2": {
+          "success": 0,
+          "collision": 2,
+          "timeout": 0
+        }
+      },
+      "final": {
+        "old20": {
+          "success": 9,
+          "collision": 11,
+          "timeout": 0
+        },
+        "wide5": {
+          "success": 2,
+          "collision": 2,
+          "timeout": 1
+        },
+        "original2": {
+          "success": 0,
+          "collision": 2,
+          "timeout": 0
+        },
+        "old_success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_00",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "dev_task7_26"
+        ],
+        "wide_success_ids": [
+          "wide_dev_2",
+          "wide_dev_4"
+        ]
+      },
+      "old275": null,
+      "six54": null,
+      "fresh16": null,
+      "reload78": null,
+      "stable_six": false
+    },
+    "primary_cases": 371,
+    "replays": 37,
+    "blocks": 2,
+    "all_workers_stopped": true,
+    "stable_six": false,
+    "entered7or8": false,
+    "overnight_started": false,
+    "new_training_native_collection": 8,
+    "quota_checks": {
+      "outside_files": 20293,
+      "reserved_other_bytes": 1055708955,
+      "own_limit": 17301504,
+      "global_limit": 1073741824,
+      "full_outside_checks": 171,
+      "exact_own_checks": 755
+    }
+  },
+  "audit_pass": true,
+  "all_raw_remote_readback_pass": true,
+  "stable_six": false,
+  "night_gate_pass": false,
+  "finished_epoch": 1793801981.9403439
+}

@@ -1,0 +1,9 @@
+# T352：断网通宵的固定旧检查点可逆预留
+
+0native/0Adam，仅固定T286已完整远端逐成员SHA的剩余>1MB旧gzip检查点，排除当前T351全部输入和T255/T299/T194/所有视频及T340/T342/T347/T348/T349/T351原件。使用已审计T321的ZIP对应payload异或+byteplane4+XZ1，保留每个原始gzip/rawZIP字节。gzip依据T286原编码收据精确匹配，raw依据T286完整远端manifest核验；旧原始raw远端、原gzip本地可精确恢复。
+
+首次预检以safeT255作字节参考仅省4817919B，未达到16MiB，0文件修改/0native/0Adam退出；原源/错误保留preflight_failed_001。旧Actor归档的ZIP参数排列与较新安全模型不同，工程修正改固定同旧族T211 original_round0作压缩字节参考，保留该参考原件不编码；不训练/改选科学模型，不因空间不足放宽额度或抹掉失败。原始gzip/rawZIP恢复仍逐字节验证。
+
+预检RAM编码与原字节解码全部精确，固定codec不省则保留，要求至少16MiB空间收益，否则零修改停止。main600秒/audit300秒/全1800秒，metadata512KiB/global1GiB/free40GiB。完整journal/改名/较小编码在原inode写入/fsync，任何中断保留错误，依既有已完整远端raw恢复，不能称partial已核验；不触碰唯一未备份原件。读取用本模块load_original/容量守卫restore，不重启旧任务或读取不存在gzip裸路径。
+
+新夜间用户已授权断网本地推进：源码/协议在能联网时先精确同步；若已断网，只允许本地干净预注册commit+源SHA/输入SHA/预检通过后执行，远端标pending，联网再同步。原始字节的旧远端核验前提不放松。独立audit重建全部原gzip/rawZIP/current inputs SHA；新metadata本地清单和后续远端备份分列，0导航收益。Phase完全隔离。
