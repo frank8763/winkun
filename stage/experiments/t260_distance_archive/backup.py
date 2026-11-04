@@ -107,6 +107,28 @@ def used():
 
 def require_stopped(directory):
     summary = json.loads((directory / 'summary.json').read_text())
+    if directory.name == 't338_failure_review':
+        # A stopped read-only review has its own explicit partial-evidence
+        # state. Preserve it; do not relabel the FAILED navigation producer.
+        assert summary['state'] == 'PASS_PARTIAL_EVIDENCE_ONLY_ORIGINAL_RUN_REMAINS_FAILED'
+        plan = json.loads((directory / 'protocol.json').read_text())
+        assert plan['geometry_commands'] == plan['physics_steps'] == plan['optimizer_calls'] == 0
+        assert summary['new_geometry'] == summary['new_physics'] == summary['new_optimizer_calls'] == 0
+        assert summary['no_training_restart'] and summary['all_original_pids_absent']
+        original = ROOT / 'stage/runs/t338_capg_recovery'
+        assert summary['original_summary_sha256'] == sha((original / 'summary.json').read_bytes())
+        require_stopped(original)
+        known = [v['numerical_process_pid'] for v in summary['untrained_canonical_prototype_checks']]
+        known += [json.loads((original / 'summary.json').read_text())['pid'],
+                  json.loads((original / 'launch.json').read_text())['pid'],
+                  json.loads((original / 'launch.json').read_text())['orchestrator_pid']]
+        for pid in known:
+            try:
+                os.kill(pid, 0)
+            except ProcessLookupError:
+                continue
+            raise AssertionError(f'Refuse live or reused review process id {pid}')
+        return
     assert summary['state'] in ('COMPLETE', 'FAILED', 'FAILED_ZERO_STEP_ENTRYPOINT')
     if summary['state'] == 'FAILED_ZERO_STEP_ENTRYPOINT':
         assert summary['physics_steps'] == summary['optimizer_calls'] == summary['workers_spawned'] == 0

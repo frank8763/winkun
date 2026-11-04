@@ -1,0 +1,161 @@
+{
+  "state": "PASS_PARTIAL_EVIDENCE_ONLY_ORIGINAL_RUN_REMAINS_FAILED",
+  "scope": "FAILED_T338_READONLY_PARTIAL_EVIDENCE_AND_UNTRAINED_NUMERIC_PROTOTYPE",
+  "original_commands": 288,
+  "original_physics": 4178976,
+  "original_training_unique": 4,
+  "original_training_replays": 4,
+  "original_all_replays": 6,
+  "original_live_Adam": 0,
+  "original_shadow_Adam": 0,
+  "original_preflight_discarded_Adam": 4,
+  "retained_initial_Actor_and_empty_Adam_exact": true,
+  "all_original_pids_absent": true,
+  "full_training_arrays_reward_history_density_exact_canonical": true,
+  "failure": "Preflight compared batch16 against batch16; runtime worker batch1 vs learner batch160 was not covered. Original strict exactness check correctly stopped before first Adam.",
+  "diagnostics": [
+    {
+      "id": "tanh_training_r0_n0",
+      "original_batch_errors": {
+        "actions": {
+          "max_abs": 2.9802322387695312e-08,
+          "unequal_values": 2
+        },
+        "raw_actions": {
+          "max_abs": 3.7136060615505784e-08,
+          "unequal_values": 31
+        },
+        "atom": {
+          "max_abs": 0.0,
+          "unequal_values": 0
+        },
+        "locations": {
+          "max_abs": 3.7136060615505784e-08,
+          "unequal_values": 31
+        },
+        "sigmas": {
+          "max_abs": 0.0,
+          "unequal_values": 0
+        },
+        "logp": {
+          "max_abs": 3.259367886698783e-08,
+          "unequal_values": 6
+        }
+      },
+      "canonical_draw_all_fields_exact": true
+    },
+    {
+      "id": "tanh_training_r0_n1",
+      "original_batch_errors": {
+        "actions": {
+          "max_abs": 0.0,
+          "unequal_values": 0
+        },
+        "raw_actions": {
+          "max_abs": 1.8632196896462005e-09,
+          "unequal_values": 23
+        },
+        "atom": {
+          "max_abs": 0.0,
+          "unequal_values": 0
+        },
+        "locations": {
+          "max_abs": 1.8632196965850945e-09,
+          "unequal_values": 27
+        },
+        "sigmas": {
+          "max_abs": 0.0,
+          "unequal_values": 0
+        },
+        "logp": {
+          "max_abs": 7.482920949541949e-10,
+          "unequal_values": 6
+        }
+      },
+      "canonical_draw_all_fields_exact": true
+    },
+    {
+      "id": "tanh_training_r0_n2",
+      "original_batch_errors": {
+        "actions": {
+          "max_abs": 2.9802322387695312e-08,
+          "unequal_values": 3
+        },
+        "raw_actions": {
+          "max_abs": 3.952821092667591e-08,
+          "unequal_values": 26
+        },
+        "atom": {
+          "max_abs": 0.0,
+          "unequal_values": 0
+        },
+        "locations": {
+          "max_abs": 3.952821092667591e-08,
+          "unequal_values": 29
+        },
+        "sigmas": {
+          "max_abs": 0.0,
+          "unequal_values": 0
+        },
+        "logp": {
+          "max_abs": 3.6284514948192736e-08,
+          "unequal_values": 12
+        }
+      },
+      "canonical_draw_all_fields_exact": true
+    },
+    {
+      "id": "tanh_training_r0_n3",
+      "original_batch_errors": {
+        "actions": {
+          "max_abs": 2.9802322387695312e-08,
+          "unequal_values": 1
+        },
+        "raw_actions": {
+          "max_abs": 3.3020579159881436e-08,
+          "unequal_values": 23
+        },
+        "atom": {
+          "max_abs": 0.0,
+          "unequal_values": 0
+        },
+        "locations": {
+          "max_abs": 3.302057921539259e-08,
+          "unequal_values": 26
+        },
+        "sigmas": {
+          "max_abs": 0.0,
+          "unequal_values": 0
+        },
+        "logp": {
+          "max_abs": 1.8667392964744067e-08,
+          "unequal_values": 11
+        }
+      },
+      "canonical_draw_all_fields_exact": true
+    }
+  ],
+  "untrained_canonical_prototype_checks": [
+    {
+      "arm": "tanh",
+      "numerical_process_pid": 19581,
+      "all_fields_and_learner_logp_exact": true,
+      "native_added": 0,
+      "optimizer_calls": 0
+    },
+    {
+      "arm": "capg",
+      "numerical_process_pid": 19582,
+      "all_fields_and_learner_logp_exact": true,
+      "native_added": 0,
+      "optimizer_calls": 0
+    }
+  ],
+  "no_CAPG_native_or_scientific_comparison_completed": true,
+  "new_geometry": 0,
+  "new_physics": 0,
+  "new_optimizer_calls": 0,
+  "no_training_restart": true,
+  "original_summary_sha256": "38cb01f80bad878d296b79fde0823845c14058f58e7bb4a44201a1600b909fc9",
+  "elapsed_s": 6.906387090682983
+}

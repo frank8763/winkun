@@ -1,0 +1,22 @@
+# T338检查：实现合同中断，尚不能评价CAPG效果
+
+2026-11-04。T338原producer为FAILED，697.822598秒、288命令/4178976物理，所有父worker/timeout/inhibitor/driver均已退出，原目录不重启、原源和summary不覆盖。
+
+- 初始研究父模型完整old275为274安全到达/1超时/0接触；唯一dev_task3_09余.277037m超时，发生在任何RL更新之前。因此不能把该旧缺口归因本轮训练遗忘。冻结safeT255独立保留且完整SHA不变。
+- 48秒真实前缀起态的初始确定性恢复超时；56秒正控制安全到达。这是父模型能力，非训练收益，更不是原起点自主六米通过。
+- 只完成tanh对照臂首4条新训练采集，全部超时无接触，并逐数组/积分精确重生。另两个控制精确重生，总6次重复，不是6个新独立样本。
+- 第一次optimize在Actor/Adam更新前触发原严格概率检查；live/shadow真实RL更新均0。CAPG臂、全部后续轮次及最终验收未执行，不能填0%成功率或据此判定CAPG失败。
+
+## 已定位的实现问题
+
+原预检让worker和学习端都计算batch16，因此漏掉实际runtime逐条batch1与学习端batch160的路径差异。即使残差网络已逐条计算，分布的atanh/tanh/概率等运算仍可能随batch形状出现舍入差。四条原轨迹640决策的逐条重算全部actions/raw/locations/sigmas/logp逐位匹配；原整批路径的logp最大差为3.62845149482e-08。严格断言正确停止了更新，但预检没有覆盖真实工作路径，这是实现检查不足，不能归咎场景或RL算法本身。
+
+独立CanonicalActor原型将cache/stats/logp/draw的全部分布运算逐条规范化。640个保存状态与原runtime全部字段完全一致；tanh和CAPG两臂分别在独立CPU1数值子进程与CPU0学习端逐项一致，old/new logp恒等。此项为0新几何/物理/优化器、无训练重启的数值修正原型；尚未声称新的原生训练、梯度shadow或六米收益。
+
+## 审计与收尾
+
+原完整科学audit因producer FAILED拒绝PASS，原错误保留。另行只读PARTIAL审计已核对281原案例、6重放、全部命令/物理、4条完整120维训练数组/历史/奖励/创新流、初始Actor及空Adam。状态为PASS_PARTIAL_EVIDENCE_ONLY_ORIGINAL_RUN_REMAINS_FAILED，与完整训练审计通过有明确区别。
+
+原T338的299文件、779897B RAM归档已完整远端逐成员SHA读回，archive7babd2e04e0471fffb44101f26ba9977fe9686cea45090c29c4da0569faad2b2。补充审计/数值原型原始JSON及原收尾log可逆包已作T338-REVIEW备份，3文件全部远端逐成员SHA读回通过，归档SHA为a0168d870cc9e74c5f29c1954bd7504eba2702c647a9499e3a0ec51dfd045fd3。Git仅代码/协议/汇总/manifest/收据；原driver把ignored .log加入git add造成收尾同步失败，原错误保留，本次改用明确文件清单完成收尾，不改写已注册driver。
+
+下一次正式执行前须将CanonicalActor接入实际worker/learner并用真实逐条轨迹检查，再锁定Actor/Adam shadow与有界恢复协议；本检查不恢复旧T338、不扩预算、不训练7/8。原六米仍未稳定，历史最好T29910/54且旧274不晋升。全部Stage与Phase隔离。
