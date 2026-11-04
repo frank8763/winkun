@@ -23,6 +23,7 @@ sys.path.insert(0, str(ROOT / 'stage/experiments/t224_archive'))
 from archive import OPENER, SLUG, api, req, sha, token, verify_tar, write
 
 GROUPS = {
+    'T341': ['t341_wheel_speed_transfer'],
     'T256-T258': ['t256_distance_frontier', 't257_distance_policy_gradient',
                   't258_closed_loop_retention'],
     'T259': ['t259_closed_loop_recovery'],
