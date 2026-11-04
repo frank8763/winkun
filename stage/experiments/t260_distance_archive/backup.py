@@ -95,6 +95,7 @@ GROUPS = {
     'T335': ['t335_failure_review'],
     'T336': ['t336_reverse_online'],
     'T337': ['t337_action_support'],
+    'T338': ['t338_capg_recovery'],
 }
 
 
