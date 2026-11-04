@@ -109,7 +109,7 @@ def reward_to_go(a):
 
 def optimize(p,obj,items,refs,rnd,guard,event):
     assert len(items)==4
-    g=[reward_to_go(i['arrays']) for i in items];table=np.zeros((4,max(map(len,g))))
+    g=[reward_to_go(i['arrays']) for i in items];start_g0=[float(v[0]) for v in g];table=np.zeros((4,max(map(len,g))))
     for j,v in enumerate(g):table[j,:len(v)]=v
     blocks=[]
     for j,item in enumerate(items):
@@ -138,7 +138,7 @@ def optimize(p,obj,items,refs,rnd,guard,event):
         event(dict(phase='BEFORE',step=k));obj.opt.step();obj.calls+=1;event(dict(phase='AFTER',step=k))
         assert all(v.grad is None for v in obj.actor.base.parameters())
         trace.append(dict(step=k,pg=pg,auxiliary=aux,gradient_norm=norm,max_abs_logratio=maxlr))
-    return dict(trace=trace,start_returns=[float(v[0]) for v in g])
+    return dict(trace=trace,start_returns=start_g0)
 
 
 def export(p,obj,path):
