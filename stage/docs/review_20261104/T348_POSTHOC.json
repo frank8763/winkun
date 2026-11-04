@@ -1,0 +1,297 @@
+{
+  "scope": "Posthoc consumed-data analysis,not independent evaluation or causal ablation",
+  "native_added": 0,
+  "optimizer_added": 0,
+  "arms": {
+    "reset": {
+      "real_human_visited_states_action_MSE": 0.007644955534487963,
+      "steer_RMSE": 0.11560671776533127,
+      "drive_RMSE": 0.043874792754650116,
+      "first_action_prediction": [
+        0.6502267122268677,
+        -0.14572064578533173
+      ],
+      "closed_loop_matched_start_success": false,
+      "path_deviations": [
+        {
+          "decision": 0,
+          "time_s": 0.0,
+          "XY_deviation_m": 0.0,
+          "yaw_deviation_deg": 0.0,
+          "actual_Actor_action": [
+            0.6502267122268677,
+            -0.14572064578533173
+          ],
+          "human_action": [
+            0.9990000128746033,
+            0.0
+          ]
+        },
+        {
+          "decision": 25,
+          "time_s": 5.0,
+          "XY_deviation_m": 0.10499923416770753,
+          "yaw_deviation_deg": 1.314995218743119,
+          "actual_Actor_action": [
+            0.6040406823158264,
+            0.13645803928375244
+          ],
+          "human_action": [
+            0.9990000128746033,
+            0.0
+          ]
+        },
+        {
+          "decision": 50,
+          "time_s": 10.0,
+          "XY_deviation_m": 0.026747479522434437,
+          "yaw_deviation_deg": 1.4884668586644674,
+          "actual_Actor_action": [
+            1.0,
+            -0.8602566719055176
+          ],
+          "human_action": [
+            0.9990000128746033,
+            0.0
+          ]
+        },
+        {
+          "decision": 76,
+          "time_s": 15.200000000000001,
+          "XY_deviation_m": 0.04971277481693459,
+          "yaw_deviation_deg": 2.8357547727886256,
+          "actual_Actor_action": [
+            0.5892261862754822,
+            -0.7889449596405029
+          ],
+          "human_action": [
+            0.9990000128746033,
+            0.0
+          ]
+        },
+        {
+          "decision": 100,
+          "time_s": 20.0,
+          "XY_deviation_m": 0.15905853617266405,
+          "yaw_deviation_deg": 9.55153422031499,
+          "actual_Actor_action": [
+            -0.14660002291202545,
+            -0.9518546462059021
+          ],
+          "human_action": [
+            0.9990000128746033,
+            -0.6499999761581421
+          ]
+        },
+        {
+          "decision": 150,
+          "time_s": 30.0,
+          "XY_deviation_m": 0.8760609356563539,
+          "yaw_deviation_deg": -6.66477078069941,
+          "actual_Actor_action": [
+            -0.2791963517665863,
+            -0.7756496071815491
+          ],
+          "human_action": [
+            0.9990000128746033,
+            -0.05000000074505806
+          ]
+        }
+      ],
+      "old8_centers": {
+        "success": 7,
+        "collision": 1,
+        "timeout": 0
+      },
+      "training_loss_not_validation": {
+        "old_loss": 0.00028993697782761366,
+        "new_loss": 0.0021138416627834115
+      }
+    },
+    "memory": {
+      "real_human_visited_states_action_MSE": 0.008633274585008621,
+      "steer_RMSE": 0.12187852710485458,
+      "drive_RMSE": 0.049113862216472626,
+      "first_action_prediction": [
+        0.5685195326805115,
+        -0.24654877185821533
+      ],
+      "closed_loop_matched_start_success": false,
+      "path_deviations": [
+        {
+          "decision": 0,
+          "time_s": 0.0,
+          "XY_deviation_m": 0.0,
+          "yaw_deviation_deg": 0.0,
+          "actual_Actor_action": [
+            0.5685195326805115,
+            -0.24654877185821533
+          ],
+          "human_action": [
+            0.9990000128746033,
+            0.0
+          ]
+        },
+        {
+          "decision": 25,
+          "time_s": 5.0,
+          "XY_deviation_m": 0.13098757132639666,
+          "yaw_deviation_deg": 1.387320737041676,
+          "actual_Actor_action": [
+            0.38647058606147766,
+            0.005446514114737511
+          ],
+          "human_action": [
+            0.9990000128746033,
+            0.0
+          ]
+        },
+        {
+          "decision": 50,
+          "time_s": 10.0,
+          "XY_deviation_m": 0.03887259738232226,
+          "yaw_deviation_deg": -3.7104020962148363,
+          "actual_Actor_action": [
+            0.9689431190490723,
+            -0.19813482463359833
+          ],
+          "human_action": [
+            0.9990000128746033,
+            0.0
+          ]
+        },
+        {
+          "decision": 76,
+          "time_s": 15.200000000000001,
+          "XY_deviation_m": 0.04069769057368791,
+          "yaw_deviation_deg": -1.5104753714937262,
+          "actual_Actor_action": [
+            1.0,
+            -0.22496004402637482
+          ],
+          "human_action": [
+            0.9990000128746033,
+            0.0
+          ]
+        },
+        {
+          "decision": 100,
+          "time_s": 20.0,
+          "XY_deviation_m": 0.20864969038272746,
+          "yaw_deviation_deg": 4.9844393286557,
+          "actual_Actor_action": [
+            1.0,
+            -1.0
+          ],
+          "human_action": [
+            0.9990000128746033,
+            -0.6499999761581421
+          ]
+        },
+        {
+          "decision": 150,
+          "time_s": 30.0,
+          "XY_deviation_m": 0.29501152330317437,
+          "yaw_deviation_deg": 8.450026584366361,
+          "actual_Actor_action": [
+            1.0,
+            0.050353847444057465
+          ],
+          "human_action": [
+            0.9990000128746033,
+            -0.05000000074505806
+          ]
+        }
+      ],
+      "old8_centers": {
+        "success": 8,
+        "collision": 0,
+        "timeout": 0
+      },
+      "training_loss_not_validation": {
+        "old_loss": 0.00038150074801263935,
+        "new_loss": 0.00290498433643123
+      }
+    }
+  },
+  "exact_initial_label_conflicts": [
+    {
+      "sources": [
+        "human_T347_matched_start",
+        "self_T342_matched_start"
+      ],
+      "identical_initial120": true,
+      "first_actions": [
+        [
+          0.9990000128746033,
+          0.0
+        ],
+        [
+          0.40259599685668945,
+          -0.30324095487594604
+        ]
+      ],
+      "max_action_difference": 0.5964040160179138,
+      "equal_weight_two_row_MSE_lower_bound": 0.055956603379546443,
+      "same_zero_initial_hidden": true,
+      "no_single_deterministic_action_can_exactly_fit_both": true,
+      "does_not_prove_average_action_caused_failure": true
+    },
+    {
+      "sources": [
+        "human_T328_center",
+        "self_T340_center"
+      ],
+      "identical_initial120": true,
+      "first_actions": [
+        [
+          0.9990000128746033,
+          0.0
+        ],
+        [
+          0.9994648098945618,
+          0.043721966445446014
+        ]
+      ],
+      "max_action_difference": 0.043721966445446014,
+      "equal_weight_two_row_MSE_lower_bound": 0.00023897829826580869,
+      "same_zero_initial_hidden": true,
+      "no_single_deterministic_action_can_exactly_fit_both": true,
+      "does_not_prove_average_action_caused_failure": true
+    }
+  ],
+  "memory_not_disproven_globally": true,
+  "right_center_was_historical_known_T299_success": {
+    "id": "conditional_goal_likelihood_dev_dev6_RIGHT_13",
+    "source_reset_id": "dev6_RIGHT_13",
+    "success": true,
+    "physics_steps": 27775
+  },
+  "quota_traversal_timing": [
+    {
+      "seconds": 0.18277380900326534,
+      "logical_bytes": 1070204718
+    },
+    {
+      "seconds": 0.22781155899792793,
+      "logical_bytes": 1070204718
+    },
+    {
+      "seconds": 0.17314932199951727,
+      "logical_bytes": 1070204718
+    }
+  ],
+  "quota_retiming_does_not_change_or_repeat_original_run": true,
+  "input_sha256": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t348_causal_sequence_warmstart/episodes/reset_final27_wide_dev_1.npz": "cc90193c6a8d513e579356e26c72ca6f83594b50887e5b4a628380ccd30529fc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t348_causal_sequence_warmstart/reset_final.pt.gz": "e5ffb8fb46e14dc4a52ec38e326132df78d4dff47ff47e9fe3d0dee0a46ee3fa",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t348_causal_sequence_warmstart/episodes/memory_final27_wide_dev_1.npz": "0fda01a37efe9ced113af6c72851aa595680b86ad81313073e15022cfed825c2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t348_causal_sequence_warmstart/memory_final.pt.gz": "a1d8bdfd5de0ff4b06406544c5ba84464579759253d44a20554452a2e6719e69",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t347_original_start_human/attempt_01.npz": "a1465aa4b814ed8faf3e50609175d1e95330a7c0860e5df46c9ea0c0954b05e4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t328_wide_gap_80s/attempt_01.npz": "ccf9d568e4a3e592af88916734e80fe4ad935821b1910b316f3de487ba9b2dc6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t331_policy_prefix_retry/attempt_01.npz": "e332fbc2858899e9f560b0fb11da6c92f7b087a4d3d2aff55bacf506e282291a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t341_wheel_speed_transfer/episodes/navigation_x1_primary.npz": "7472fbaed7ddbd7fe4a5994e36d76ffe847063f8800fd7258e5c491c152991ac",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t344_neighbour_recovery/episodes/support_regeneration_known_T342_wide_dev1.npz": "5591db76ff5e2bc59867e32b9c7a1b29c22738f373361f6a9cdd22d181a57832",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t299_conditional_goal_likelihood/cases.jsonl.gz": "a294bf1936a25e6594a1f55119b07a3db2fa12141fd9a4853bd936fedcd81fdc"
+  }
+}

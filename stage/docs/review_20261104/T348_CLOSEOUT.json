@@ -1,0 +1,101 @@
+{
+  "state": "COMPLETE_AUDIT_AND_FULL_REMOTE_READBACK_VERIFIED",
+  "checked_epoch": 1793796263.654405,
+  "commands": 120,
+  "physics_steps": 2057555,
+  "main_elapsed_s": 1573.8756771087646,
+  "live_supervised_Adam": 1200,
+  "shadow_supervised_Adam": 1200,
+  "preflight_discarded_Adam": 8,
+  "audit_historical_discarded_Adam": 1200,
+  "new_navigation_RL_updates": 0,
+  "new_training_native_collection": 0,
+  "primary_cases": 59,
+  "model_native_readbacks": 54,
+  "full_gate_executed": false,
+  "stable_original_six": false,
+  "entered_seven_eight": false,
+  "results": {
+    "shared_initial_wide5": {
+      "success": 0,
+      "collision": 5,
+      "timeout": 0
+    },
+    "reset": {
+      "old20": {
+        "success": 9,
+        "collision": 9,
+        "timeout": 2
+      },
+      "wide5": {
+        "success": 0,
+        "collision": 1,
+        "timeout": 4
+      },
+      "original2": {
+        "success": 1,
+        "collision": 1,
+        "timeout": 0
+      },
+      "model_readback27_exact": true,
+      "old275": null,
+      "six54": null,
+      "fresh16": null,
+      "reload78": null,
+      "stable_six": false
+    },
+    "memory": {
+      "old20": {
+        "success": 10,
+        "collision": 10,
+        "timeout": 0
+      },
+      "wide5": {
+        "success": 0,
+        "collision": 5,
+        "timeout": 0
+      },
+      "original2": {
+        "success": 0,
+        "collision": 2,
+        "timeout": 0
+      },
+      "model_readback27_exact": true,
+      "old275": null,
+      "six54": null,
+      "fresh16": null,
+      "reload78": null,
+      "stable_six": false
+    }
+  },
+  "posthoc_zero_native_optimizer": true,
+  "original_native_wrapper_workers_absent": true,
+  "raw_files": 85,
+  "archive_sha256": "fb4616b023e72a59cf99a968f7039b6e1dd94dd23a8fb93275573d9f3c39ed2c",
+  "safeT255_sha256": "63e63e2b444867b26622a2ab0f0c4227bc38d48a7cd2b5a3b378d9b0266006df",
+  "models": {
+    "reset": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t348_causal_sequence_warmstart/reset_final.pt.gz",
+      "sha256": "e5ffb8fb46e14dc4a52ec38e326132df78d4dff47ff47e9fe3d0dee0a46ee3fa",
+      "bytes": 130430,
+      "hashes": {
+        "learned": "2fd4103a7da992bd2ce74551ef2800d3121066b4f6687ce572dc2dcbc6eb4e46",
+        "optimizer": "cbfc504cf8386982f5d039ffb5baad6bf345a1185e379c43a3c8d5bebb352fc8"
+      },
+      "policy_hash": "f4a34541177a492b15af3014cde53d5c2c2e6ef47a4303c3a43498b36c023825"
+    },
+    "memory": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t348_causal_sequence_warmstart/memory_final.pt.gz",
+      "sha256": "a1d8bdfd5de0ff4b06406544c5ba84464579759253d44a20554452a2e6719e69",
+      "bytes": 144743,
+      "hashes": {
+        "learned": "62b09771cef787652a3660fa74f4fb3837c0f346f7ddd90242331f6b154ef370",
+        "optimizer": "14658dd834a4fab17450729cb78b46cbfbbd1ebfe0231100a1132ab11cd3382a"
+      },
+      "policy_hash": "f05f49964ad4ae81661158a6b849765d8ca251adc3c8d5934cd25e24f662b0c9"
+    }
+  },
+  "global_newruns_bytes": 1070204718,
+  "free_disk_bytes": 207101153280,
+  "files_deleted": 0
+}
