@@ -1,0 +1,62 @@
+{
+  "state": "POSTHOC_READ_ONLY_NOT_NEW_CONTROL_OR_FIT",
+  "native": 0,
+  "Actor": 0,
+  "optimizer": 0,
+  "parent_mode8": [
+    0.800740122795105,
+    1.0
+  ],
+  "human_same_time_action8": [
+    0.9990000128746033,
+    -0.10000000149011612
+  ],
+  "same_time_human_is_not_expert_label_for_actual_learner_state": true,
+  "parent_human_position_gap8_m": 0.1279500021824905,
+  "parent_human_yaw_gap8_deg": 8.187580640115494,
+  "candidates": 33,
+  "predicted_contact": 33,
+  "predicted_GOAL": 0,
+  "predicted_horizon_nonterminal": 0,
+  "candidate_first_action_steer_min_max": [
+    0.09699776768684387,
+    1.0
+  ],
+  "candidate_first_action_negative_steer_count": 0,
+  "candidate_executed_steer_min": 0.08119466155767441,
+  "candidate_executed_negative_steer_fraction": 0.0,
+  "candidate_executed_steer_p05_p50_p95": [
+    0.3382236361503601,
+    1.0,
+    1.0
+  ],
+  "candidate_executed_drive_p05_p50_p95": [
+    0.48037493228912354,
+    0.8048365712165833,
+    1.0
+  ],
+  "candidate_time_after8_range_seconds": [
+    7.796,
+    11.478
+  ],
+  "cost_min_max": [
+    1045.5428646269393,
+    1046.5125291146005
+  ],
+  "common_CONTACT1000_cancels_in_softmax_exactly_as_common_offset": true,
+  "collision_is_not_a_bug_or_omitted_penalty": true,
+  "effective_weight_samples": 30.740808344887107,
+  "max_weight": 0.05107347086422457,
+  "weighted_initial_action": [
+    0.814168393611908,
+    0.794152557849884
+  ],
+  "output_actual_collision_time_seconds": 16.742,
+  "not_an_independent_probability_or_six_success_rate": true,
+  "limitations": [
+    "Posthoc directional coverage evidence, not proof of unique causal mechanism",
+    "Human same-time action differs in state and cannot label learner recovery",
+    "No route feasibility claim from33 failed samples",
+    "12s open-loop is MPPI-style pilot, not full receding-horizon MPPI reproduction"
+  ]
+}
