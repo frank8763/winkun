@@ -1,0 +1,452 @@
+# Network-independent Stage night result
+
+State: COMPLETE_PREPROGRAMMED_SEQUENCE. Local result/audit retained; remote backup pending. No seven/eight metre training executed.
+
+## T353: COMPLETE_LOCAL_AUDIT_PASS_REMOTE_PENDING
+
+```json
+{
+  "state": "COMPLETE",
+  "pid": 114218,
+  "main_epoch": 1793803640.3284624,
+  "elapsed_s": 1829.7449262142181,
+  "commands": 302,
+  "physics_steps": 5784968,
+  "updates": {
+    "live": 16,
+    "shadow": 16
+  },
+  "models": {
+    "iid": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t353_temporal_exploration/iid_final.pt.gz",
+      "sha256": "0b15d36ef504e419b36a299b81fef2aaf80553d8c1b3668c80345a6228417a23",
+      "policy_hash": "da6212f7f0ac915f2134f98ca3b8e3c74cb1d1f9ff2e6cca05b0e3db051a93b8",
+      "hashes": {
+        "learned": "e4bad4fcbca7ebee2bc2f6b37de46f3e78b3458e88980da293dbaa49013ffad0",
+        "optimizer": "f056536701e201d4487383b3ad29eb721430cb62f35746ed375b68b3a27bcf21"
+      },
+      "rho": 0.0
+    },
+    "ar": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t353_temporal_exploration/ar_final.pt.gz",
+      "sha256": "ea7296c884697a81e0b7e28ae487be2635d1bf8bcd2487f653053149724f7c88",
+      "policy_hash": "7140df7bfe7d210d95dc3cb41eea09535f2c7fdbe68ee76fd22ce63f551f4a18",
+      "hashes": {
+        "learned": "9575cf475368eeeb0efdcbd1249cdf445768b04f0f3bf6c9dd0bd5f36767556f",
+        "optimizer": "44bb40a1675e2132a5ce315ec76390c241324438c2d1369fc86ee3486aba9277"
+      },
+      "rho": 0.8187307530779818
+    }
+  },
+  "result": {
+    "iid": {
+      "initial": {
+        "old20": {
+          "success": 9,
+          "collision": 11,
+          "timeout": 0
+        },
+        "wide5": {
+          "success": 2,
+          "collision": 2,
+          "timeout": 1
+        },
+        "original2": {
+          "success": 0,
+          "collision": 2,
+          "timeout": 0
+        },
+        "old_success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_00",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "dev_task7_26"
+        ],
+        "wide_success_ids": [
+          "wide_dev_2",
+          "wide_dev_4"
+        ]
+      },
+      "final": {
+        "old20": {
+          "success": 10,
+          "collision": 9,
+          "timeout": 1
+        },
+        "wide5": {
+          "success": 5,
+          "collision": 0,
+          "timeout": 0
+        },
+        "original2": {
+          "success": 0,
+          "collision": 1,
+          "timeout": 1
+        },
+        "old_success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_00",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "dev_task7_26",
+          "hold_task6_03"
+        ],
+        "wide_success_ids": [
+          "wide_dev_0",
+          "wide_dev_1",
+          "wide_dev_2",
+          "wide_dev_3",
+          "wide_dev_4"
+        ]
+      },
+      "old275": null,
+      "six54": null,
+      "fresh16": null,
+      "reload78": null,
+      "stable_six": false,
+      "initial_old275_not_retested": true,
+      "old275_T351_reference": {
+        "success": 240,
+        "collision": 35,
+        "timeout": 0
+      }
+    },
+    "ar": {
+      "initial": {
+        "old20": {
+          "success": 9,
+          "collision": 11,
+          "timeout": 0
+        },
+        "wide5": {
+          "success": 2,
+          "collision": 2,
+          "timeout": 1
+        },
+        "original2": {
+          "success": 0,
+          "collision": 2,
+          "timeout": 0
+        },
+        "old_success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_00",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "dev_task7_26"
+        ],
+        "wide_success_ids": [
+          "wide_dev_2",
+          "wide_dev_4"
+        ]
+      },
+      "final": {
+        "old20": {
+          "success": 9,
+          "collision": 11,
+          "timeout": 0
+        },
+        "wide5": {
+          "success": 5,
+          "collision": 0,
+          "timeout": 0
+        },
+        "original2": {
+          "success": 0,
+          "collision": 1,
+          "timeout": 1
+        },
+        "old_success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_00",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "dev_task7_26"
+        ],
+        "wide_success_ids": [
+          "wide_dev_0",
+          "wide_dev_1",
+          "wide_dev_2",
+          "wide_dev_3",
+          "wide_dev_4"
+        ]
+      },
+      "old275": null,
+      "six54": null,
+      "fresh16": null,
+      "reload78": null,
+      "stable_six": false,
+      "initial_old275_not_retested": true,
+      "old275_T351_reference": {
+        "success": 240,
+        "collision": 35,
+        "timeout": 0
+      }
+    }
+  },
+  "blocks": 4,
+  "primary_cases": 232,
+  "replays": 70,
+  "selected": "iid",
+  "all_workers_stopped": true,
+  "stable_six": false,
+  "entered7or8": false
+}
+```
+
+## T354: COMPLETE_LOCAL_AUDIT_PASS_REMOTE_PENDING
+
+```json
+{
+  "state": "COMPLETE",
+  "pid": 116484,
+  "main_epoch": 1793805493.2441583,
+  "elapsed_s": 950.099648475647,
+  "commands": 151,
+  "physics_steps": 2965901,
+  "updates": {
+    "live": 8,
+    "shadow": 8
+  },
+  "models": {
+    "rtg": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t354_causal_sequence_credit/rtg_final.pt.gz",
+      "sha256": "07f970868e6e4ad5b7bbb6ae6231b29c236228c04e9c0947dbe1468cf6832498",
+      "policy_hash": "0c96e07a5fdc05b4b66b0ab517de67b1e90ddc07e19c346f85ef66d4c51e3189",
+      "hashes": {
+        "learned": "e4bad4fcbca7ebee2bc2f6b37de46f3e78b3458e88980da293dbaa49013ffad0",
+        "optimizer": "e874cfb0703daaaf3b1e65a2ff1123173a0a9740599f9fce0738a965b2f4402f"
+      },
+      "rho": 0.8187307530779818
+    }
+  },
+  "result": {
+    "rtg": {
+      "initial": {
+        "old20": {
+          "success": 10,
+          "collision": 9,
+          "timeout": 1
+        },
+        "wide5": {
+          "success": 5,
+          "collision": 0,
+          "timeout": 0
+        },
+        "original2": {
+          "success": 0,
+          "collision": 1,
+          "timeout": 1
+        },
+        "old_success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_00",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "dev_task7_26",
+          "hold_task6_03"
+        ],
+        "wide_success_ids": [
+          "wide_dev_0",
+          "wide_dev_1",
+          "wide_dev_2",
+          "wide_dev_3",
+          "wide_dev_4"
+        ]
+      },
+      "final": {
+        "old20": {
+          "success": 10,
+          "collision": 9,
+          "timeout": 1
+        },
+        "wide5": {
+          "success": 5,
+          "collision": 0,
+          "timeout": 0
+        },
+        "original2": {
+          "success": 0,
+          "collision": 1,
+          "timeout": 1
+        },
+        "old_success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_00",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "dev_task7_26",
+          "hold_task6_03"
+        ],
+        "wide_success_ids": [
+          "wide_dev_0",
+          "wide_dev_1",
+          "wide_dev_2",
+          "wide_dev_3",
+          "wide_dev_4"
+        ]
+      },
+      "old275": null,
+      "six54": null,
+      "fresh16": null,
+      "reload78": null,
+      "stable_six": false,
+      "initial_old275_not_retested": true,
+      "old275_T351_reference": null
+    }
+  },
+  "blocks": 2,
+  "primary_cases": 116,
+  "replays": 35,
+  "selected": "rtg",
+  "all_workers_stopped": true,
+  "stable_six": false,
+  "entered7or8": false
+}
+```
+
+## T355: COMPLETE_LOCAL_AUDIT_PASS_REMOTE_PENDING
+
+```json
+{
+  "state": "COMPLETE",
+  "pid": 116993,
+  "main_epoch": 1793806458.3113806,
+  "elapsed_s": 974.0470881462097,
+  "commands": 153,
+  "physics_steps": 3016809,
+  "updates": {
+    "live": 8,
+    "shadow": 8
+  },
+  "models": {
+    "course": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t355_gap_curriculum/course_final.pt.gz",
+      "sha256": "07f970868e6e4ad5b7bbb6ae6231b29c236228c04e9c0947dbe1468cf6832498",
+      "policy_hash": "0c96e07a5fdc05b4b66b0ab517de67b1e90ddc07e19c346f85ef66d4c51e3189",
+      "hashes": {
+        "learned": "e4bad4fcbca7ebee2bc2f6b37de46f3e78b3458e88980da293dbaa49013ffad0",
+        "optimizer": "e874cfb0703daaaf3b1e65a2ff1123173a0a9740599f9fce0738a965b2f4402f"
+      },
+      "rho": 0.8187307530779818
+    }
+  },
+  "result": {
+    "course": {
+      "initial": {
+        "old20": {
+          "success": 10,
+          "collision": 9,
+          "timeout": 1
+        },
+        "wide5": {
+          "success": 5,
+          "collision": 0,
+          "timeout": 0
+        },
+        "original2": {
+          "success": 0,
+          "collision": 1,
+          "timeout": 1
+        },
+        "old_success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_00",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "dev_task7_26",
+          "hold_task6_03"
+        ],
+        "wide_success_ids": [
+          "wide_dev_0",
+          "wide_dev_1",
+          "wide_dev_2",
+          "wide_dev_3",
+          "wide_dev_4"
+        ]
+      },
+      "final": {
+        "old20": {
+          "success": 10,
+          "collision": 9,
+          "timeout": 1
+        },
+        "wide5": {
+          "success": 5,
+          "collision": 0,
+          "timeout": 0
+        },
+        "original2": {
+          "success": 0,
+          "collision": 1,
+          "timeout": 1
+        },
+        "old_success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_00",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "dev_task7_26",
+          "hold_task6_03"
+        ],
+        "wide_success_ids": [
+          "wide_dev_0",
+          "wide_dev_1",
+          "wide_dev_2",
+          "wide_dev_3",
+          "wide_dev_4"
+        ]
+      },
+      "old275": null,
+      "six54": null,
+      "fresh16": null,
+      "reload78": null,
+      "stable_six": false,
+      "initial_old275_not_retested": true,
+      "old275_T351_reference": null
+    }
+  },
+  "blocks": 2,
+  "primary_cases": 118,
+  "replays": 35,
+  "selected": "course",
+  "all_workers_stopped": true,
+  "stable_six": false,
+  "entered7or8": false
+}
+```
+
+All original failures/partial/model bytes retained. No claim of stable original six metres without full275/54/fresh16/78 gate.

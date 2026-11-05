@@ -23,6 +23,8 @@ sys.path.insert(0, str(ROOT / 'stage/experiments/t224_archive'))
 from archive import OPENER, SLUG, api, req, sha, token, verify_tar, write
 
 GROUPS = {
+    'T352': ['t352_cold_delta_reserve'],
+    'T353-T355': ['t353_offline_night_chain', 't353_temporal_exploration', 't354_causal_sequence_credit', 't355_gap_curriculum'],
     'T351': ['t351_recurrent_recovery'],
     'T350': ['t350_cold_reserve'],
     'T349': ['t349_consistent_demo'],

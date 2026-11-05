@@ -1,0 +1,106 @@
+{
+  "state": "MORNING_REVIEW_RAW_EXISTING_AUDIT_AND_REMOTE_BACKUP_VERIFIED",
+  "review_epoch": 1793839975.6158078,
+  "new_native_steps": 0,
+  "new_optimizer_calls": 0,
+  "independent_audits_not_repeated": true,
+  "all_owned_processes_absent": true,
+  "night_launch": {
+    "pid": 114212,
+    "epoch": 1793803637.5823333,
+    "source_local_commit": "2a42e3b7c8da9e8e3027a58ddacaac2a8f1dac8b",
+    "source_root_tree": "cbfe9ca2b15c46aaa19326592c29e49624765a59",
+    "source_remote_commit": "950151f0b8efdda4c37774bafeba8c28f5203020",
+    "protocol_sha256": "d94bd88626628317c5f15b19e574b347dd448e43b518506ef744ce2702f8fb03",
+    "absolute_stop_epoch": 1793836800.0,
+    "network_required": false,
+    "offline_remote_pending": false
+  },
+  "night_start_epoch": 1793803638.7029467,
+  "night_finished_epoch": 1793807445.6270561,
+  "ran_until_morning": false,
+  "stop_reason": "All3preprogrammed mechanisms exhausted;T354/T355each2consecutive rejectedupdates;notnetworkfailure",
+  "night_actual_including_T351": {
+    "physics": 17889137,
+    "commands": 1027,
+    "main_wall_s": 5698.519639492035
+  },
+  "independent_existing_audits": {
+    "t353_temporal_exploration": {
+      "sha256": "1731a9b02ddee72718727822bedd5391b624b310386d9f2b1519c0e03892e055",
+      "state": "PASS",
+      "historical_Adam": 16
+    },
+    "t354_causal_sequence_credit": {
+      "sha256": "89bf87bfa1f85c817d5e99aafb08e108047d1f67568ff6ebe6d435c7e88063e3",
+      "state": "PASS",
+      "historical_Adam": 8
+    },
+    "t355_gap_curriculum": {
+      "sha256": "e14115cdd9b52ae83f18aeac0736edb572c7438020f25d2752b75a57eb19aa03",
+      "state": "PASS",
+      "historical_Adam": 8
+    }
+  },
+  "existing_local_manifest_verified_members": 512,
+  "raw_remote_readback_members": 527,
+  "raw_archive_sha256": "f413af08c20b6f4af865dbfbc699f85ea75ba169b9ee803dd7482c500fa3dd05",
+  "raw_receipt_sha256": "c1499154cd66fab49d93736d9a3118eb3933ebad2053e5fcdc937dbf804873eb",
+  "new_night_train_physical_collections": 32,
+  "distinct_full_array_integration_train_trajectories": 24,
+  "T355_exact_T354_training_duplicates": 8,
+  "selected_model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t353_temporal_exploration/iid_final.pt.gz",
+    "sha256": "0b15d36ef504e419b36a299b81fef2aaf80553d8c1b3668c80345a6228417a23",
+    "policy_hash": "da6212f7f0ac915f2134f98ca3b8e3c74cb1d1f9ff2e6cca05b0e3db051a93b8",
+    "hashes": {
+      "learned": "e4bad4fcbca7ebee2bc2f6b37de46f3e78b3458e88980da293dbaa49013ffad0",
+      "optimizer": "f056536701e201d4487383b3ad29eb721430cb62f35746ed375b68b3a27bcf21"
+    },
+    "rho": 0.0
+  },
+  "selected_fixed_consumed_dev_result": {
+    "old20": {
+      "success": 10,
+      "collision": 9,
+      "timeout": 1
+    },
+    "wide5": {
+      "success": 5,
+      "collision": 0,
+      "timeout": 0
+    },
+    "original2": {
+      "success": 0,
+      "collision": 1,
+      "timeout": 1
+    },
+    "old_success_ids": [
+      "dev_task0_13",
+      "dev_task1_13",
+      "dev_task2_13",
+      "dev_task3_13",
+      "dev_task4_00",
+      "dev_task4_13",
+      "dev_task5_13",
+      "dev_task7_13",
+      "dev_task7_26",
+      "hold_task6_03"
+    ],
+    "wide_success_ids": [
+      "wide_dev_0",
+      "wide_dev_1",
+      "wide_dev_2",
+      "wide_dev_3",
+      "wide_dev_4"
+    ]
+  },
+  "all_full_six_gate_sets_unexecuted": true,
+  "original_six_stable": false,
+  "entered_seven_eight": false,
+  "models_preserved": true,
+  "safeT255_sha256": "63e63e2b444867b26622a2ab0f0c4227bc38d48a7cd2b5a3b378d9b0266006df",
+  "global_runs_bytes": 1043140477,
+  "global_limit_bytes": 1073741824,
+  "free_bytes": 201312411648
+}
