@@ -1,0 +1,82 @@
+{
+  "id": "T384_T386_OFFLINE_NIGHT_CHAIN",
+  "source_protocol": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json",
+  "inputs": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/long_distance_20261101/release_receipt_T382.json": "a93283018135d16a63a831235b37c2501d73f3b62bb5e1097ca57ec50635d7f4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/overnight_20261105/METHODS_AND_LIMITS.md": "8226988e48782e4428e183e5c7ee984b3c36aae86c60746c356406726d5c7001",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/overnight_20261105/PLAN.md": "8b03ac7c8dddf195daef6f4090d980f91a82f35be3f287c7b997a6d5953eab73",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/overnight_20261105/STORAGE_AUDIT.json": "2775ed7ae3b09b4fd74ce37675ffdd72f5a4dd70f55738d54ac30e62f41059c5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t381_native_mppi_teacher/run.py": "cbef7ad373d874de2c5e77f77350c971667974671914a6f0392d80f2a7bcc409",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t382_receding_human_teacher/run.py": "91ab3d7e8de9c42fd9069e09a7071e156f1b75fdf40a456485e95236c7fece05",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t384_offline_elite_chain/driver.py": "82ad8d23f087c6a22b877582fc81d24c365929ac3ac31f9117bdcb8cad673a2a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t384_offline_elite_chain/night_common.py": "1c6896a5970df3f18f34e08686e69f719c70e1fa9271510edb2088a2073d48ef",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t384_offline_elite_chain/prepare.py": "c58dbf348f236370da1eba11a8b9020099b3a86da3c618ecf92621c204fe0646",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t384_offline_elite_chain/student.py": "88081d72e87f46621932f234269cd93eaeb7e1e70829a7e3f42875dcb21e99de",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t384_offline_elite_chain/teacher.py": "b5345cd28475195fcacaacb8da8b68e128957c46079831704a6b675bc26caab3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json": "99073e210f7d964c18e6306f448ac528d461dbd7426bac4ffaf26f474897493c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t382_receding_human_teacher/audit.json": "b6b2c77992f6a6220d5a444d744d01e7fd33e35ed38e3b8e06182b8a63b8f23d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t382_receding_human_teacher/mixed.npz": "596516e1f042557c5cddd0cf13a9001b39eca56fab74b044fc78070ca37fcd0f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t382_receding_human_teacher/predictions.npz": "7e98e75ba745a8a565f03f17c034e6711bc1759ae00c38b99a92eadb6995aa57",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t382_receding_human_teacher/summary.json": "dd80a35a625bcccca1fcedf389740d9d068ff4ff020cff1db29e36654d8bc708",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t384_offline_elite_chain/finalize_preflight.py": "90f31ccdcc0adf1dd8cd6633f719bf219f709480bb5953af32f79bf68ea83379"
+  },
+  "learning_deadline": 1793919600.0,
+  "native_deadline": 1793923200.0,
+  "all_deadline": 1793925000.0,
+  "limits": {
+    "physics": 46000000,
+    "commands": 9500,
+    "live_Adam": 1000,
+    "shadow_Adam": 1000,
+    "audit_discarded_Adam": 1000,
+    "global_bytes": 1073741824,
+    "min_free_bytes": 42949672960
+  },
+  "root_bytes": 262144,
+  "teacher_specs": [
+    {
+      "id": "T384A",
+      "folder": "teacher_A",
+      "mechanism": "SHIFT_SELECTED"
+    },
+    {
+      "id": "T385B",
+      "folder": "teacher_B",
+      "mechanism": "HUMAN_ANCHOR"
+    }
+  ],
+  "teacher": {
+    "source_protocol": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json",
+    "seed": 20261105382,
+    "noise_sigma": [
+      0.2,
+      0.4
+    ],
+    "max_replans": 306,
+    "final_bytes": 2621440,
+    "main_seconds": 10000,
+    "audit_seconds": 300,
+    "max_physics": 8000000,
+    "max_commands": 4300,
+    "full_bytes": 524288,
+    "prediction_bytes": 1835008
+  },
+  "student": {
+    "source_protocol": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json",
+    "final_bytes": 12582912,
+    "main_seconds": 5400,
+    "audit_seconds": 900,
+    "max_physics": 30000000,
+    "max_commands": 900,
+    "live_steps": 1000,
+    "shadow_steps": 1000,
+    "audit_steps": 1000,
+    "lr": 0.0001,
+    "fit": "teacher.5+human361.25+human364.25+cyclicold211.1",
+    "trainable": "encoder/core/head/adapter6864; frozenbase/futurehead"
+  },
+  "offline_runtime": true,
+  "remote_upload": "PENDING_UNTIL_RECONNECTED",
+  "seven_eight_implemented": false,
+  "rules": "A complete nonGOAL permits B once; any numerical/source/evidence/restore failure stops entire chain; teacherGOAL+exactaudit+manifest before one student; noseedgrid or retries"
+}
