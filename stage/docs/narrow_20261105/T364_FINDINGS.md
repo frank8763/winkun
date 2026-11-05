@@ -1,0 +1,7 @@
+# T364: verified real-human recovery after the learner's early deviation
+
+The user's explicitly requested single retry reached native safe GOAL at59.202s, remaining0.1999383916m, with no collision, timeout or administrative censor.297 decisions: the first20/4s exactly reproduce the T362 learner; the remaining277 are real unique human requests. The complete history/clock/actuators were preserved at handoff. This is recovery data in the new0.70m/80s scene, not autonomous six-metre navigation, original0.57m/56s acceptance, or proof of passing the designated wall–circle throat.
+
+One collection plus one exact twelve-array/native integration regeneration:3commands including1zero-native geometry,59,202 total physical steps,193.037964s main wall, zero Actor/Adam. Independent audit PASS. All21 raw members fully read back from GitHub and checked against every SHA; archive434b637e38c9388481d51efa03fdc9f130094a9ce7739f0f0f4fa21878109a1b. NPZ a1c268e3bafb1f97be7af71f117a29060632ad3c1fdebc4d626c7c814b652f2d. T363 failed correction and all prior originals remain unchanged.
+
+Next: a single bounded aggregation of T361 human success and this learner-state correction. Mask the first20 T364 action targets while unrolling its entire factual observation history; do not promote policy-prefix actions to human labels. Closed-loop autonomous tests decide whether the data help. This is a finite human-correction pilot related to established DAgger, not a novelty or success guarantee.
