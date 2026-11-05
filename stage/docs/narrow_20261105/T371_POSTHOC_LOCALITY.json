@@ -1,0 +1,131 @@
+{
+  "state": "READONLY_POSTHOC_COMPLETE",
+  "new_native": 0,
+  "optimizer": 0,
+  "gradient_calls": 0,
+  "elapsed_s": 0.9035506248474121,
+  "source_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t371_terminal_head_repair/protocol.json": "2299d739426d1d98b8a98e103da625744c703c4c152e85a269c446bf50cd88de",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t371_terminal_head_repair/summary.json": "2a102bd2717dc18273552edf6f255bc981c17184d08ec6ff27e9c91f35913d3f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t371_terminal_head_repair/audit.json": "31aa6136b2c75cdf91cf1b5a56b0dcbb84b4eeab238c3ed51bf8fd3d91be9766",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t369_future_action_supervision/future_candidate.pt.gz": "19f428f8221967bf8e5823cd309652be3a4b7dfd522208cccd987cd91c4b79fb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t371_terminal_head_repair/candidate.pt.gz": "67f76acc9eb283ccb7253ec9840192ee321ca68b96a3ce75752f6ac838056fe0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t370_terminal_causal/episodes/zero.npz": "20db3d9562fd66db815fc956902af31072cb1a941528117a9f55045d19da781a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t371_terminal_head_repair/cases.json": "03cfd509ecae40f257a1f68ef5591cc11ddd7caf11555d1024cea6d9c1a07846",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t371_terminal_head_repair/episodes/initial_narrow070_dev_0.npz": "c24663f9f0a52541bae3c77fda8e8fd3ddab1e82d3cb34e2d072ce7880119614",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t371_terminal_head_repair/episodes/final_narrow070_dev_0.npz": "53afb539123e444e051db9600ca0f69b7340c5b64f28a62297155f73179bdf23"
+  },
+  "repair": {
+    "initial_patch_rmse": 0.43444852819106966,
+    "final_patch_rmse": 0.06147393084393442,
+    "nonpatch_steer_change_rmse": 0.06553639153825208,
+    "drive_on_identical_histories_exact": true,
+    "windows": [
+      {
+        "decisions": [
+          0,
+          20
+        ],
+        "steer_delta_rmse": 0.028471609434182796,
+        "steer_delta_max": 0.06281495462622626
+      },
+      {
+        "decisions": [
+          20,
+          100
+        ],
+        "steer_delta_rmse": 0.02800326041865104,
+        "steer_delta_max": 0.07003630215670026
+      },
+      {
+        "decisions": [
+          100,
+          200
+        ],
+        "steer_delta_rmse": 0.04184498090662474,
+        "steer_delta_max": 0.10789183485273246
+      },
+      {
+        "decisions": [
+          200,
+          248
+        ],
+        "steer_delta_rmse": 0.09397682067228293,
+        "steer_delta_max": 0.3909233967102399
+      },
+      {
+        "decisions": [
+          248,
+          253
+        ],
+        "steer_delta_rmse": 0.3949316358920106,
+        "steer_delta_max": 0.4084813810940242
+      },
+      {
+        "decisions": [
+          253,
+          278
+        ],
+        "steer_delta_rmse": 0.1406518717235204,
+        "steer_delta_max": 0.40527428918302477
+      }
+    ]
+  },
+  "centre": {
+    "initial_end_seconds": 80.0,
+    "final_end_seconds": 33.826,
+    "initial_outcome": "timeout",
+    "final_outcome": "contact",
+    "initial_distance": 2.2363754558579103,
+    "final_distance": 2.3455994628920833,
+    "first_initial_action": [
+      0.9598013162612915,
+      0.09532361477613449
+    ],
+    "first_final_action": [
+      0.9598013162612915,
+      0.15813857316970825
+    ],
+    "divergences": {
+      "action_any": {
+        "decision": 0,
+        "time_s": 0.0
+      },
+      "action_0_01": {
+        "decision": 0,
+        "time_s": 0.0
+      },
+      "action_0_05": {
+        "decision": 0,
+        "time_s": 0.0
+      },
+      "position_0_05m": {
+        "decision": 16,
+        "time_s": 3.2
+      },
+      "position_0_1m": {
+        "decision": 30,
+        "time_s": 6.0
+      }
+    },
+    "repair_label_start_seconds": 49.6,
+    "final_terminated_before_repair_state": true,
+    "identical_history_drive_error": 0.0
+  },
+  "retention": {
+    "lost_ids": [
+      "dev6_RIGHT_13",
+      "dev_task6_13",
+      "wide_dev_1",
+      "wide_dev_3",
+      "wide_dev_4"
+    ],
+    "gained_ids": [
+      "dev_task6_00",
+      "hold_task6_00",
+      "narrow070_dev_2",
+      "narrow070_dev_4"
+    ]
+  },
+  "scope": "Descriptive fixed evidence, no counterfactual new native test; not unique causal attribution or proof of required architecture."
+}

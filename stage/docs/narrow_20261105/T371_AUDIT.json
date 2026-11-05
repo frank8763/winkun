@@ -1,0 +1,109 @@
+{
+  "state": "PASS",
+  "new_native": 0,
+  "historical_discarded_Adam": 300,
+  "source_model_data_SHA_exact": true,
+  "live_shadow_complete_reconstruction": true,
+  "nonhuman_intervention_labels_not_onpolicy": true,
+  "steer_only_repair_contract": {
+    "state": "PASS",
+    "effective_steering_parameters": 17,
+    "allocated_head_parameters": 34,
+    "drive_grad_exact_zero": true,
+    "body_future_head_frozen": true,
+    "initial_preservation_losses_below_1e_minus10": true,
+    "initial_patch_loss": 0.18874552364738664,
+    "five_explicit_nonhuman_intervention_labels": true,
+    "not_onpolicy_or_human": true,
+    "native": 0,
+    "Adam": 0
+  },
+  "full_current_history_reward_native_model_readback_exact": true,
+  "commands": 97,
+  "physics_steps": 1866642,
+  "result": {
+    "initial": {
+      "old20": {
+        "success": 10,
+        "collision": 7,
+        "timeout": 3
+      },
+      "wide5": {
+        "success": 3,
+        "collision": 2,
+        "timeout": 0
+      },
+      "original2": {
+        "success": 1,
+        "collision": 1,
+        "timeout": 0
+      },
+      "new0705": {
+        "success": 0,
+        "collision": 4,
+        "timeout": 1
+      }
+    },
+    "fit_error": {
+      "patch_steer_rmse": 0.06147393084393442,
+      "route_hold_steer_rmse": 0.06553639153825207,
+      "not_closed_loop_navigation": true
+    },
+    "final": {
+      "old20": {
+        "success": 11,
+        "collision": 9,
+        "timeout": 0
+      },
+      "wide5": {
+        "success": 0,
+        "collision": 1,
+        "timeout": 4
+      },
+      "original2": {
+        "success": 0,
+        "collision": 2,
+        "timeout": 0
+      },
+      "new0705": {
+        "success": 2,
+        "collision": 3,
+        "timeout": 0
+      }
+    },
+    "retention_pass": false,
+    "research_only_rejected": true,
+    "initial_success_ids": [
+      "dev6_RIGHT_13",
+      "dev_task0_13",
+      "dev_task1_13",
+      "dev_task2_13",
+      "dev_task3_13",
+      "dev_task4_00",
+      "dev_task4_13",
+      "dev_task5_13",
+      "dev_task6_13",
+      "dev_task7_13",
+      "dev_task7_26",
+      "wide_dev_1",
+      "wide_dev_3",
+      "wide_dev_4"
+    ],
+    "final_success_ids": [
+      "dev_task0_13",
+      "dev_task1_13",
+      "dev_task2_13",
+      "dev_task3_13",
+      "dev_task4_00",
+      "dev_task4_13",
+      "dev_task5_13",
+      "dev_task6_00",
+      "dev_task7_13",
+      "dev_task7_26",
+      "hold_task6_00",
+      "narrow070_dev_2",
+      "narrow070_dev_4"
+    ]
+  },
+  "stable_original_six": false
+}
