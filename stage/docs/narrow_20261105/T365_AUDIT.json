@@ -1,0 +1,97 @@
+{
+  "state": "PASS",
+  "new_native": 0,
+  "historical_discarded_Adam": 600,
+  "source_model_data_SHA_exact": true,
+  "live_shadow_complete_reconstruction": true,
+  "human_labels_not_onpolicy": true,
+  "masked_prefix_contract": {
+    "state": "PASS",
+    "mutated_prefix_targets_loss_and_grad_exact": true,
+    "prefix_action_labels": 0,
+    "correction_human_labels": 277,
+    "prior_human_labels": 295,
+    "full297_history_unrolled": true,
+    "prefix_observation_gradient_max": 0.0014829735737293959,
+    "sequence_step_max_error": 2.7755575615628914e-16,
+    "new_native": 0,
+    "new_Adam": 0
+  },
+  "full_current_history_reward_native_model_readback_exact": true,
+  "commands": 97,
+  "physics_steps": 1759083,
+  "result": {
+    "initial": {
+      "old20": {
+        "success": 10,
+        "collision": 9,
+        "timeout": 1
+      },
+      "wide5": {
+        "success": 5,
+        "collision": 0,
+        "timeout": 0
+      },
+      "original2": {
+        "success": 0,
+        "collision": 1,
+        "timeout": 1
+      },
+      "new0705": {
+        "success": 0,
+        "collision": 5,
+        "timeout": 0
+      }
+    },
+    "fit_error": {
+      "prior_human": {
+        "raw_location_rmse": [
+          0.04827658315341571,
+          0.11556732759253249
+        ],
+        "clipped_action_rmse": [
+          0.031163929919172877,
+          0.11407281506478302
+        ],
+        "labeled_decisions": 295,
+        "masked_prefix": 0
+      },
+      "learner_state_correction": {
+        "raw_location_rmse": [
+          0.05482777129913164,
+          0.09868551751957765
+        ],
+        "clipped_action_rmse": [
+          0.03920512975115043,
+          0.09695505506220951
+        ],
+        "labeled_decisions": 277,
+        "masked_prefix": 20
+      },
+      "not_closed_loop_navigation": true
+    },
+    "final": {
+      "old20": {
+        "success": 9,
+        "collision": 11,
+        "timeout": 0
+      },
+      "wide5": {
+        "success": 0,
+        "collision": 3,
+        "timeout": 2
+      },
+      "original2": {
+        "success": 0,
+        "collision": 1,
+        "timeout": 1
+      },
+      "new0705": {
+        "success": 2,
+        "collision": 3,
+        "timeout": 0
+      }
+    }
+  },
+  "stable_original_six": false
+}
