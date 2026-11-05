@@ -1,0 +1,13 @@
+# T362: successful demonstration fitting does not establish closed-loop success
+
+The one registered 600-step supervised fit completed, with600 live+600 exact shadow Adam. Independent audit reconstructed600 additional historical discarded Adam calls and passed. Main629.950339s /97commands /1,805,063native, including32 initial checks,32 final checks and32 exact saved-model native readbacks. All original processes ended. No new RL update, on-policy collection, extra fit/seed or model selection.
+
+Initial → final: old20 10/20 →8/20 (final12 collisions); wide1.17m80s 5/5 →1/5 (three collisions,one timeout); new0.70m80s 0/5 →0/5 (all collisions); original0.57m56s LEFT collision /RIGHT timeout unchanged as outcomes. No completeold275/six54/fresh16/release78; unexecuted null, no promotion or seven/eight metres. SafeT255 and T353 retained models remain untouched; candidate is only a research sampler.
+
+On demonstrated observations, final raw action-location RMSE is drive0.040637 /steer0.076585; clipped executed-action RMSE0.026372 /0.073543. Human MSE drops from0.166542 to0.003791 near the last training step. On its own actual observations the learner behaves differently: at4s drive0.44419 while the same learner evaluated on the human4s observation outputs0.98960 (human label0.999). Centre trajectory first exceeds10cm same-time positional discrepancy at9.4s and ultimately collides at44.970s, remaining2.429054m. Temporal alignment includes speed lag and is not a controlled causal proof of a single cause.
+
+This is evidence consistent with induced-state distribution shift and accumulated imitation errors, alongside regression of old/wide tasks. It is not evidence that human demonstration is false, that 0.70m scene is impassable, that fitting loss measures navigation, or that increasing epochs will fix the problem.
+
+Primary methodological neighbour: [Ross, Gordon & Bagnell, AISTATS2011](https://proceedings.mlr.press/v15/ross11a.html), DAgger. Sequential learner-induced states motivate collecting real expert actions on states actually visited by the learner. We propose a single early real-human correction, not a full implementation or theorem claim. Action chunking /temporal ensemble is another established neighbour ([Zhao et al., RSS2023](https://roboticsproceedings.org/rss19/p016.html)); it is not selected or launched as an additional simultaneous grid.
+
+All90 original files fully backed up in two RAM segments, complete remote binary/member-SHA readback. ArchiveSHA256 `32056e7b2cb81bec064ca13ae45baaf7cbf1e935ff58c6eb71696a173d1d043f`. Candidate gzipSHA `1ba6be1af00708c300d898622a21495d44984f68542841f1ae0a4b293d50d5c5`. Do not restartT362 or append training budget.
