@@ -23,6 +23,8 @@ sys.path.insert(0, str(ROOT / 'stage/experiments/t224_archive'))
 from archive import OPENER, SLUG, api, req, sha, token, verify_tar, write
 
 GROUPS = {
+    'T376': ['t376_cold_trace_reserve'],
+    'T377': ['t377_full_human_observation_transfer'],
     'T375': ['t375_observation_residual'],
     'T374': ['t374_factual_worst_state_repair'],
     'T373': ['t373_factual_parent_support'],
