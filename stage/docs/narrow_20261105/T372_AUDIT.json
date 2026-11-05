@@ -1,0 +1,115 @@
+{
+  "state": "PASS",
+  "new_native": 0,
+  "historical_discarded_Adam": 300,
+  "source_model_data_SHA_exact": true,
+  "live_shadow_complete_reconstruction": true,
+  "nonhuman_intervention_labels_not_onpolicy": true,
+  "nonlinear_repair_contract": {
+    "state": "PASS",
+    "trainable_parameters": 73,
+    "zero_output_initial_parent_all_fixed_histories_exact": true,
+    "frozen_parent_SHA_exact": true,
+    "initial_feature_gradient_zero_as_expected": true,
+    "initial_output_gradient_nonzero": true,
+    "sequence_step_max_error": 7.771561172376096e-16,
+    "initial_patch_loss": 0.18874552364738664,
+    "initial_preservation_max_error": 0.0,
+    "explicit_nonhuman_intervention_labels": 5,
+    "native": 0,
+    "Adam": 0
+  },
+  "full_current_history_reward_native_model_readback_exact": true,
+  "commands": 66,
+  "physics_steps": 1272408,
+  "result": {
+    "initial": {
+      "old20": {
+        "success": 10,
+        "collision": 7,
+        "timeout": 3
+      },
+      "wide5": {
+        "success": 3,
+        "collision": 2,
+        "timeout": 0
+      },
+      "original2": {
+        "success": 1,
+        "collision": 1,
+        "timeout": 0
+      },
+      "new0705": {
+        "success": 0,
+        "collision": 4,
+        "timeout": 1
+      }
+    },
+    "initial_baseline_is_historical": true,
+    "historical_initial_cases": 32,
+    "fresh_initial_cases": 1,
+    "fit_error": {
+      "patch_steer_rmse": 0.06256573740427002,
+      "route_hold_steer_rmse": 0.07081523094139207,
+      "not_closed_loop_navigation": true
+    },
+    "final": {
+      "old20": {
+        "success": 12,
+        "collision": 8,
+        "timeout": 0
+      },
+      "wide5": {
+        "success": 0,
+        "collision": 2,
+        "timeout": 3
+      },
+      "original2": {
+        "success": 1,
+        "collision": 1,
+        "timeout": 0
+      },
+      "new0705": {
+        "success": 1,
+        "collision": 4,
+        "timeout": 0
+      }
+    },
+    "retention_pass": false,
+    "required_recovery_pass": false,
+    "research_only_rejected": true,
+    "initial_success_ids": [
+      "dev6_RIGHT_13",
+      "dev_task0_13",
+      "dev_task1_13",
+      "dev_task2_13",
+      "dev_task3_13",
+      "dev_task4_00",
+      "dev_task4_13",
+      "dev_task5_13",
+      "dev_task6_13",
+      "dev_task7_13",
+      "dev_task7_26",
+      "wide_dev_1",
+      "wide_dev_3",
+      "wide_dev_4"
+    ],
+    "final_success_ids": [
+      "dev6_RIGHT_13",
+      "dev_task0_13",
+      "dev_task1_13",
+      "dev_task2_13",
+      "dev_task3_13",
+      "dev_task4_00",
+      "dev_task4_13",
+      "dev_task5_13",
+      "dev_task6_00",
+      "dev_task7_13",
+      "dev_task7_26",
+      "hold_task6_04",
+      "hold_task6_05",
+      "narrow070_dev_2"
+    ]
+  },
+  "stable_original_six": false
+}

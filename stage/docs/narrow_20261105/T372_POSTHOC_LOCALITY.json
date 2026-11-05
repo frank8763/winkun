@@ -1,0 +1,137 @@
+{
+  "state": "READONLY_POSTHOC_COMPLETE",
+  "new_native": 0,
+  "optimizer": 0,
+  "gradient_calls": 0,
+  "elapsed_s": 0.9300041198730469,
+  "source_hashes": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t372_nonlinear_terminal_repair/protocol.json": "2ba179f01184c1091fbe64f35c7115f7535089eacc4a482e8f73be6080d3ac49",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t372_nonlinear_terminal_repair/summary.json": "2041285454360f614dc718712ccce47c3b1f29e607dca1864d7f557088d0e01a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t372_nonlinear_terminal_repair/audit.json": "c586e3b2aac2971b449f57263b925fece9360c6b5aa3c1823f4c9e73de0cde25",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t369_future_action_supervision/future_candidate.pt.gz": "19f428f8221967bf8e5823cd309652be3a4b7dfd522208cccd987cd91c4b79fb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t372_nonlinear_terminal_repair/candidate.pt.gz": "817c798a0ee09582c02d09802727d5f4707c4e151f9c194bea41455623fb3672",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t370_terminal_causal/episodes/zero.npz": "20db3d9562fd66db815fc956902af31072cb1a941528117a9f55045d19da781a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t372_nonlinear_terminal_repair/cases.json": "3bf6b301e147e086b19c3ac3b995e21100efb80d568b2be60a4d9188d8d4d8ed",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t372_nonlinear_terminal_repair/episodes/initial_narrow070_dev_0.npz": "c24663f9f0a52541bae3c77fda8e8fd3ddab1e82d3cb34e2d072ce7880119614",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t372_nonlinear_terminal_repair/episodes/final_narrow070_dev_0.npz": "2772f086f8f2e8336f0669342fb5152c5237a399fa15fee025c43385e194b4f5"
+  },
+  "repair": {
+    "initial_patch_rmse": 0.43444852819106966,
+    "final_patch_rmse": 0.06256573740427002,
+    "nonpatch_steer_change_rmse": 0.07081523094139207,
+    "drive_on_identical_histories_exact": true,
+    "windows": [
+      {
+        "decisions": [
+          0,
+          20
+        ],
+        "steer_delta_rmse": 0.036551451932142626,
+        "steer_delta_max": 0.057312252629919735
+      },
+      {
+        "decisions": [
+          20,
+          100
+        ],
+        "steer_delta_rmse": 0.026308849750303766,
+        "steer_delta_max": 0.05586140133298528
+      },
+      {
+        "decisions": [
+          100,
+          200
+        ],
+        "steer_delta_rmse": 0.02366831031762407,
+        "steer_delta_max": 0.10780992156776015
+      },
+      {
+        "decisions": [
+          200,
+          248
+        ],
+        "steer_delta_rmse": 0.08523029076816711,
+        "steer_delta_max": 0.334809056764524
+      },
+      {
+        "decisions": [
+          248,
+          253
+        ],
+        "steer_delta_rmse": 0.39359697430642404,
+        "steer_delta_max": 0.4270250133954728
+      },
+      {
+        "decisions": [
+          253,
+          278
+        ],
+        "steer_delta_rmse": 0.18785593782288576,
+        "steer_delta_max": 0.4288909671918819
+      }
+    ]
+  },
+  "adapter": {
+    "constant_logit_bias": -0.0028701071900464887,
+    "nonlinear_logit_rms": 0.08457183534643986,
+    "prefix_total_logit_rms": 0.05836915652209185,
+    "patch_total_logit_rms": 0.3307316776435035,
+    "bias_alone_not_a_causal_ablation": true
+  },
+  "centre": {
+    "initial_end_seconds": 80.0,
+    "final_end_seconds": 40.410000000000004,
+    "initial_outcome": "timeout",
+    "final_outcome": "contact",
+    "initial_distance": 2.2363754558579103,
+    "final_distance": 2.454491454472487,
+    "first_initial_action": [
+      0.9598013162612915,
+      0.09532361477613449
+    ],
+    "first_final_action": [
+      0.9598013162612915,
+      0.13529856503009796
+    ],
+    "divergences": {
+      "action_any": {
+        "decision": 0,
+        "time_s": 0.0
+      },
+      "action_0_01": {
+        "decision": 0,
+        "time_s": 0.0
+      },
+      "action_0_05": {
+        "decision": 3,
+        "time_s": 0.6
+      },
+      "position_0_05m": {
+        "decision": 16,
+        "time_s": 3.2
+      },
+      "position_0_1m": {
+        "decision": 25,
+        "time_s": 5.0
+      }
+    },
+    "repair_label_start_seconds": 49.6,
+    "final_terminated_before_repair_state": true,
+    "identical_history_drive_error": 0.0
+  },
+  "retention": {
+    "lost_ids": [
+      "dev_task6_13",
+      "wide_dev_1",
+      "wide_dev_3",
+      "wide_dev_4"
+    ],
+    "gained_ids": [
+      "dev_task6_00",
+      "hold_task6_04",
+      "hold_task6_05",
+      "narrow070_dev_2"
+    ]
+  },
+  "scope": "Descriptive fixed evidence, no counterfactual new native test; not unique causal attribution or proof of required architecture."
+}
