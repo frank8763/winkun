@@ -1,0 +1,189 @@
+{
+  "scope": "Fixed existing T365 model and saved human/centre histories; no new native/optimizer; descriptive not causal",
+  "model_sha256": "55fa36cf4c7137a5a5be3390ee4d023b1857b5b14590ae10e1271f4864468152",
+  "native": 0,
+  "optimizer": 0,
+  "sequences": [
+    {
+      "name": "T361_human",
+      "file_sha256": "9c97206fa1782d41f53013adb4007c888098bee7738e08449cffefa7a1dae54c",
+      "n": 295,
+      "human_labels": 295,
+      "rmse": [
+        0.031163929919172877,
+        0.11407281506478298
+      ],
+      "turn_labels": 182,
+      "turn_rmse": [
+        0.03510169851718911,
+        0.09024964634560202
+      ],
+      "drive_mean_on_human_states": 0.9844608995854476,
+      "human_drive_mean": 0.999000072479248,
+      "samples": [
+        {
+          "t_s": 0.0,
+          "model_drive": 0.9764451239278451,
+          "model_steer": 0.0627993668728495,
+          "recorded_drive": 0.9990000128746033,
+          "recorded_steer": 0.0,
+          "measured_steer_L_rad": 0.0,
+          "measured_steer_R_rad": 0.0
+        },
+        {
+          "t_s": 4.0,
+          "model_drive": 0.9629334853969951,
+          "model_steer": 0.054608727986582006,
+          "recorded_drive": 0.9990000128746033,
+          "recorded_steer": 0.0,
+          "measured_steer_L_rad": 0.0003188081318512559,
+          "measured_steer_R_rad": -0.00016589845472481102
+        },
+        {
+          "t_s": 8.0,
+          "model_drive": 1.0,
+          "model_steer": -0.007599673801284375,
+          "recorded_drive": 0.9990000128746033,
+          "recorded_steer": -0.10000000149011612,
+          "measured_steer_L_rad": 0.0002796640037558973,
+          "measured_steer_R_rad": -0.0013764756731688976
+        },
+        {
+          "t_s": 12.0,
+          "model_drive": 0.8935862469144455,
+          "model_steer": -0.7519074436794524,
+          "recorded_drive": 0.9990000128746033,
+          "recorded_steer": -0.9990000128746033,
+          "measured_steer_L_rad": -0.28737661242485046,
+          "measured_steer_R_rad": -0.43745946884155273
+        },
+        {
+          "t_s": 16.0,
+          "model_drive": 1.0,
+          "model_steer": -0.6686894156955809,
+          "recorded_drive": 0.9990000128746033,
+          "recorded_steer": -0.6499999761581421,
+          "measured_steer_L_rad": -0.17415446043014526,
+          "measured_steer_R_rad": -0.21543839573860168
+        }
+      ]
+    },
+    {
+      "name": "T364_correction",
+      "file_sha256": "a1c268e3bafb1f97be7af71f117a29060632ad3c1fdebc4d626c7c814b652f2d",
+      "n": 297,
+      "human_labels": 277,
+      "rmse": [
+        0.039205129751150425,
+        0.09695505506220951
+      ],
+      "turn_labels": 185,
+      "turn_rmse": [
+        0.028418391880758145,
+        0.07430929387786056
+      ],
+      "drive_mean_on_human_states": 0.9829488398486892,
+      "human_drive_mean": 0.999000072479248,
+      "samples": [
+        {
+          "t_s": 0.0,
+          "model_drive": 0.9764451239278451,
+          "model_steer": 0.0627993668728495,
+          "recorded_drive": 0.9681882858276367,
+          "recorded_steer": 0.01813451014459133,
+          "measured_steer_L_rad": 0.0,
+          "measured_steer_R_rad": 0.0
+        },
+        {
+          "t_s": 4.0,
+          "model_drive": 0.6623950095008739,
+          "model_steer": 0.07792741168350736,
+          "recorded_drive": 0.9990000128746033,
+          "recorded_steer": 0.0,
+          "measured_steer_L_rad": 0.0021152878180146217,
+          "measured_steer_R_rad": 0.001727213035337627
+        },
+        {
+          "t_s": 8.0,
+          "model_drive": 1.0,
+          "model_steer": 0.053367027097759534,
+          "recorded_drive": 0.9990000128746033,
+          "recorded_steer": 0.0,
+          "measured_steer_L_rad": 0.0007712335791438818,
+          "measured_steer_R_rad": -0.00015300302766263485
+        },
+        {
+          "t_s": 12.0,
+          "model_drive": 0.9775318635761115,
+          "model_steer": -1.0,
+          "recorded_drive": 0.9990000128746033,
+          "recorded_steer": -0.9990000128746033,
+          "measured_steer_L_rad": -0.2873765230178833,
+          "measured_steer_R_rad": -0.4374617338180542
+        },
+        {
+          "t_s": 16.0,
+          "model_drive": 0.9933634118897972,
+          "model_steer": 0.058784791492391755,
+          "recorded_drive": 0.9990000128746033,
+          "recorded_steer": 0.0,
+          "measured_steer_L_rad": 0.0001035366949508898,
+          "measured_steer_R_rad": -7.946479308884591e-05
+        }
+      ]
+    },
+    {
+      "name": "T365_actual_centre",
+      "file_sha256": "4e9127252e001a85fd0d93276282eceb39a2cab35903ff2179b7d194e1667ddd",
+      "n": 164,
+      "own_actions_exact": true,
+      "samples": [
+        {
+          "t_s": 0.0,
+          "model_drive": 0.9764451239278451,
+          "model_steer": 0.0627993668728495,
+          "recorded_drive": 0.9764451384544373,
+          "recorded_steer": 0.0627993643283844,
+          "measured_steer_L_rad": 0.0,
+          "measured_steer_R_rad": 0.0
+        },
+        {
+          "t_s": 4.0,
+          "model_drive": 0.31351850921695706,
+          "model_steer": 0.2736278336574298,
+          "recorded_drive": 0.3135184943675995,
+          "recorded_steer": 0.2736278474330902,
+          "measured_steer_L_rad": 0.09459223598241806,
+          "measured_steer_R_rad": 0.08316712081432343
+        },
+        {
+          "t_s": 8.0,
+          "model_drive": 0.764869572789104,
+          "model_steer": -0.09244789640959916,
+          "recorded_drive": 0.7648695707321167,
+          "recorded_steer": -0.09244789928197861,
+          "measured_steer_L_rad": 0.06727469712495804,
+          "measured_steer_R_rad": 0.06107399985194206
+        },
+        {
+          "t_s": 12.0,
+          "model_drive": 0.8956713795278592,
+          "model_steer": -0.08798057397977156,
+          "recorded_drive": 0.8956713676452637,
+          "recorded_steer": -0.08798057585954666,
+          "measured_steer_L_rad": -4.839008761337027e-05,
+          "measured_steer_R_rad": 0.00034396740375086665
+        },
+        {
+          "t_s": 16.0,
+          "model_drive": 1.0,
+          "model_steer": -1.0,
+          "recorded_drive": 1.0,
+          "recorded_steer": -1.0,
+          "measured_steer_L_rad": -0.2876719534397125,
+          "measured_steer_R_rad": -0.43746182322502136
+        }
+      ]
+    }
+  ]
+}
