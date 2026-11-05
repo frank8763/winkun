@@ -23,6 +23,7 @@ sys.path.insert(0, str(ROOT / 'stage/experiments/t224_archive'))
 from archive import OPENER, SLUG, api, req, sha, token, verify_tar, write
 
 GROUPS = {
+    'T371': ['t371_terminal_head_repair'],
     'T370': ['t370_terminal_causal'],
     'T369': ['t369_future_action_supervision'],
     'T368': ['t368_driving_steer_correlation'],
@@ -180,6 +181,26 @@ def require_stopped(directory):
             except ProcessLookupError:
                 continue
             raise AssertionError(f'Refuse live or reused zero-native producer id {pid}')
+    elif directory.name == 't370_terminal_causal' and 'all_workers_stopped' not in summary:
+        # T370 spawned no workers. Preserve its original summary and require
+        # independently audited session closure plus every actual process gone.
+        adapter = json.loads((ROOT / 'stage/docs/narrow_20261105/T370_ARCHIVE_ADAPTER.json').read_text())
+        assert adapter['state'] == 'PASS_STOPPED_ZERO_WORKER_NATIVE_PRODUCER'
+        assert adapter['summary_sha256'] == sha((directory / 'summary.json').read_bytes())
+        assert adapter['protocol_sha256'] == sha((directory / 'protocol.json').read_bytes())
+        assert adapter['audit_sha256'] == sha((directory / 'audit.json').read_bytes())
+        assert json.loads((directory / 'audit.json').read_text())['state'] == 'PASS'
+        assert summary['state'] == 'COMPLETE' and summary['workers_spawned'] == 0
+        assert summary['all_native_sessions_closed'] is True and not (directory / 'workers.json').exists()
+        launch = json.loads((directory / 'launch.json').read_text())
+        driver = json.loads((ROOT / 'stage/docs/narrow_20261105/T370_DRIVER.json').read_text())
+        assert adapter['pids'] == [summary['pid'], driver['pid'], launch['pid']]
+        for pid in adapter['pids']:
+            try:
+                os.kill(pid, 0)
+            except ProcessLookupError:
+                continue
+            raise AssertionError(f'Refuse live or reused T370 process id {pid}')
     else:
         assert summary['all_workers_stopped'] is True
     if (directory / 'workers.json').exists():

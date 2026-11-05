@@ -1,0 +1,18 @@
+{
+  "state": "PASS_STOPPED_ZERO_WORKER_NATIVE_PRODUCER",
+  "summary_sha256": "d50d6c0c161b937e6ccec7eb94c6b1ca537137539c985297529eaa6cd0f1120c",
+  "audit_sha256": "62d2b1146bc8a7f2edcc4ea0b4dd9905c59281807d442f91f2dd0bdc0369841e",
+  "protocol_sha256": "985141bfb76eb014e86d8baa05c3ae701b4077f3ffc06c5a1d35bbeb9fd26150",
+  "pids": [
+    183749,
+    183744,
+    183741
+  ],
+  "all_native_sessions_closed": true,
+  "workers_spawned": 0,
+  "original_summary_unchanged": true,
+  "original_failure_preserved": "T370_DRIVER_ERROR.json",
+  "new_native": 0,
+  "new_optimizer": 0,
+  "reason": "Original producer accurately declares no child workers but uses all_native_sessions_closed instead of archive all_workers_stopped; require exact independent audit and every actual main/driver/inhibitor PID absent."
+}
