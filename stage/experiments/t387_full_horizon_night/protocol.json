@@ -1,0 +1,93 @@
+{
+  "id": "T387_FULL_TASK_CEM_OFFLINE_REVISION",
+  "source_protocol": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json",
+  "inputs": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/long_distance_20261101/release_receipt_T384-NIGHT.json": "8d12022f83995e4da9d985e8d9cc8e3f620a1e6a4af641f1774bc7fba805eaed",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/overnight_20261105/FINAL_REPORT.json": "f01b26fc518039d3dccd0a48f6a222c42b6801e4895ad7ed22f69e06d134521d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/overnight_20261105_revision/FULL_HORIZON_METHODS.md": "0e5ff99d9dbfabb055052d246517aa469651946a04b9e4a81d1bda1f7a881ad8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/overnight_20261105_revision/PLAN.md": "32a56d68d23bcc4f7a3ebc649bbef0b2cbc72cfedbf868d0920ffbf19680d8a2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t381_native_mppi_teacher/run.py": "cbef7ad373d874de2c5e77f77350c971667974671914a6f0392d80f2a7bcc409",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t382_receding_human_teacher/run.py": "91ab3d7e8de9c42fd9069e09a7071e156f1b75fdf40a456485e95236c7fece05",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t387_full_horizon_night/driver.py": "9bdb8428ff4cffdafdae8a40036d33e9f3dcff19dd003b64f1a1b9a9a07db801",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t387_full_horizon_night/night_common.py": "e95eefef67e12221df2a5ee023e36d9f67af5fc887386264a9ef9ba9fd96455f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t387_full_horizon_night/prepare.py": "eb94931c37f015c98396c818d890050a1e54c5877d09df068b9e523c7858f40c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t387_full_horizon_night/search.py": "dfdc7c1e740b7f4776662cb20239a794fb85c55877d11ccfd45ff387d4fa5ff2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t387_full_horizon_night/student.py": "94cf862556943c2a5944030db482239b696b74eb5000f40c209b8407ed8820f3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json": "99073e210f7d964c18e6306f448ac528d461dbd7426bac4ffaf26f474897493c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t379_human_only_control/candidate.pt.gz": "65689ef474c6a27a5a2f8e4192993a3cc224ffc36460ee43cb567c65295adcc0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t379_human_only_control/centre.npz": "94a8bf048d02c853a29da6d5001355f5ec2cfa113f7c4f96f175642bf8801998"
+  },
+  "learning_deadline": 1793919600.0,
+  "native_deadline": 1793923200.0,
+  "all_deadline": 1793925000.0,
+  "limits": {
+    "physics": 46000000,
+    "commands": 9500
+  },
+  "prior_actual": {
+    "physics": 297670,
+    "commands": 166
+  },
+  "root_bytes": 262144,
+  "search_specs": [
+    {
+      "id": "T387C",
+      "folder": "action_residual",
+      "representation": "ACTION_RESIDUAL",
+      "initial_sd": [
+        0.12,
+        0.35
+      ],
+      "minimum_sd": [
+        0.03,
+        0.08
+      ]
+    },
+    {
+      "id": "T388D",
+      "folder": "phase_warp",
+      "representation": "PHASE_WARP",
+      "initial_sd": [
+        0.12,
+        1.0
+      ],
+      "minimum_sd": [
+        0.03,
+        0.2
+      ]
+    }
+  ],
+  "search": {
+    "source_protocol": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json",
+    "seed": 20261105387,
+    "iterations": 6,
+    "candidates": 12,
+    "elite": 3,
+    "alpha": 0.5,
+    "knots": 16,
+    "prefix_holds": 20,
+    "remaining_holds": 380,
+    "final_bytes": 3670016,
+    "main_seconds": 9000,
+    "audit_seconds": 300,
+    "max_physics": 6000000,
+    "max_commands": 160
+  },
+  "student": {
+    "source_protocol": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json",
+    "final_bytes": 12582912,
+    "main_seconds": 5400,
+    "audit_seconds": 900,
+    "max_physics": 30000000,
+    "max_commands": 900,
+    "live_steps": 1000,
+    "shadow_steps": 1000,
+    "audit_steps": 1000,
+    "lr": 0.0001,
+    "source_rule": "Successful native teacher\u2192.5teacher+.25eachhuman+.1cyclicold; otherwise two verified human groups .5/.5 and NO old target, full currentbody6864, not failureteacherlabels"
+  },
+  "offline": true,
+  "remote": "PENDING_UNTIL_RECONNECTED",
+  "new_RL_updates": 0,
+  "seven_eight_implemented": false
+}
