@@ -1,0 +1,87 @@
+{
+  "state": "READONLY_POSTHOC_COMPLETE",
+  "new_native": 0,
+  "gradient_calls": 0,
+  "optimizer": 0,
+  "elapsed_s": 0.017770051956176758,
+  "source_native_sha256": "30a8f72a725411eba1b86d1b129e625f031b284a6c4a3053ad6e27ca84a0bb3d",
+  "source_human_sha256": "9c97206fa1782d41f53013adb4007c888098bee7738e08449cffefa7a1dae54c",
+  "whole_route_fit_changes": [
+    {
+      "id": "T361",
+      "initial_RMSE": [
+        0.044902583761837644,
+        0.10383582669404749
+      ],
+      "final_RMSE": [
+        0.04362246400897158,
+        0.1023631569581174
+      ],
+      "relative_reduction_percent": [
+        2.8508821667274087,
+        1.4182674543241403
+      ]
+    },
+    {
+      "id": "T364",
+      "initial_RMSE": [
+        0.05110415136272819,
+        0.09082701139906502
+      ],
+      "final_RMSE": [
+        0.049465288760177625,
+        0.08929279684953803
+      ],
+      "relative_reduction_percent": [
+        3.206906990624314,
+        1.6891611051542132
+      ]
+    }
+  ],
+  "native_first_action": [
+    0.9626715779304504,
+    0.09075671434402466
+  ],
+  "human_first_action": [
+    0.9990000128746033,
+    0.0
+  ],
+  "native_vs_human_same_time_position_divergence": {
+    "0.01": {
+      "decision": 7,
+      "time_s": 1.4000000000000001
+    },
+    "0.05": {
+      "decision": 23,
+      "time_s": 4.6000000000000005
+    },
+    "0.1": {
+      "decision": 31,
+      "time_s": 6.2
+    }
+  },
+  "native_end_seconds": 38.652,
+  "native_end_remaining_m": 2.184814102896579,
+  "initial_goal_raw_columns48_to52": [
+    0.6000000238418579,
+    -0.2973748743534088,
+    0.9547607898712158,
+    0.5728564858436584,
+    -0.1784249246120453
+  ],
+  "initial_goal_preclip_normalized": [
+    2.104560557078085,
+    -1.1009990766034998,
+    0.205927893365761,
+    2.104921909992261,
+    -1.8319420294630944
+  ],
+  "goal_column_clip_fraction": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "scope": "Same-time paths are different states, not interchangeable expert labels or a unique-cause test. Clip statistics do not prove information sufficiency. No new parameter fit or native rollout."
+}
