@@ -51,8 +51,12 @@ def preflight():
     for i in range(4):
         aa=copy.deepcopy(a);aa['rewards'][-1]+=.1*i;synthetic.append(aa)
     refs=groups(q,p,[REFERENCE]);shadow,so=learner(base,p);before=state(q,opt);short=dict(p,epochs=2)
-    live=fit(q,opt,synthetic,first,short,refs,lambda:None,lambda *_:None)
-    other=fit(shadow,so,synthetic,first,short,refs,lambda:None,lambda *_:None)
+    def event(which):
+        def emit(where,k):
+            with (OUT/'preflight_optimizer_calls.jsonl').open('a') as f:f.write(json.dumps([which,where,k])+'\n')
+        return emit
+    live=fit(q,opt,synthetic,first,short,refs,lambda:None,event('live'))
+    other=fit(shadow,so,synthetic,first,short,refs,lambda:None,event('shadow'))
     assert live==other and statehash(q,opt)==statehash(shadow,so)
     load(q,opt,before);assert digest(state(q,opt))==digest(before)
     # Score ignores forced prefix likelihoods, yet suffix recurrent gradient
@@ -121,4 +125,10 @@ def preflight():
         cancel_before_first_physics=cancellation_probe,actual_process_SIGTERM_caught=signal_probe,teacher_actions_not_onpolicy=True))
     print('T396_PREFLIGHT_PASS_ZERO_NATIVE_4_CLONE_ADAM')
 
-if __name__=='__main__':globals()[sys.argv[1]]()
+if __name__=='__main__':
+    try:globals()[sys.argv[1]]()
+    except BaseException:
+        if OUT.exists():
+            f=OUT/'preflight_optimizer_calls.jsonl';events=[json.loads(v) for v in f.read_text().splitlines()] if f.exists() else []
+            save(OUT/'entry_failure.json',dict(mode=sys.argv[1],error=traceback.format_exc(),native=0,completed_preflight_discarded_Adam=sum(v[1]=='AFTER' for v in events)))
+        raise
