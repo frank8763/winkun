@@ -1,0 +1,840 @@
+{
+  "state": "READONLY_POSTHOC_RAW_ARITHMETIC",
+  "native": 0,
+  "optimizer": 0,
+  "backward": 0,
+  "new_samples": 0,
+  "train_new": 24,
+  "train_exact_repeats": 24,
+  "train_safe": 10,
+  "train_contact": 0,
+  "train_timeout": 14,
+  "new_train_forced_prefix_physics": 648000,
+  "new_train_random_suffix_physics": 209598,
+  "all_physics": 2679450,
+  "main_commands": 89,
+  "preflight_zero_physics_commands": 15,
+  "all_commands": 104,
+  "live_Adam": 48,
+  "shadow_Adam": 48,
+  "independent_discarded_historical_Adam": 48,
+  "preflight_discarded_Adam": 4,
+  "rounds": [
+    {
+      "round": 1,
+      "prefix_seconds": 56.0,
+      "safe": 4,
+      "count": 4,
+      "numeric_accepted": true,
+      "mode_safe": true,
+      "return_spread": 0.009335698262420755,
+      "max_abs_LOO": 0.006626817759756709,
+      "pg_norm_range": [
+        0.0013411668274492317,
+        0.0015575177001536016
+      ],
+      "demo_increment_norm_range": [
+        0.13855662778800185,
+        0.14086699545550269
+      ]
+    },
+    {
+      "round": 2,
+      "prefix_seconds": 55.0,
+      "safe": 2,
+      "count": 4,
+      "numeric_accepted": true,
+      "mode_safe": true,
+      "return_spread": 1.2711914315879413,
+      "max_abs_LOO": 0.8500127476877594,
+      "pg_norm_range": [
+        0.06032515799437292,
+        0.17269036135841054
+      ],
+      "demo_increment_norm_range": [
+        0.1411629232442423,
+        0.1420871969005102
+      ]
+    },
+    {
+      "round": 3,
+      "prefix_seconds": 54.0,
+      "safe": 4,
+      "count": 4,
+      "numeric_accepted": true,
+      "mode_safe": true,
+      "return_spread": 0.01172478028075441,
+      "max_abs_LOO": 0.0097416629800946,
+      "pg_norm_range": [
+        0.0004227444000006152,
+        0.0004796745526519911
+      ],
+      "demo_increment_norm_range": [
+        0.14220772069225576,
+        0.1431658821860449
+      ]
+    },
+    {
+      "round": 4,
+      "prefix_seconds": 53.0,
+      "safe": 0,
+      "count": 4,
+      "numeric_accepted": true,
+      "mode_safe": false,
+      "return_spread": 5.551115123125783e-17,
+      "max_abs_LOO": 1.1102230246251565e-16,
+      "pg_norm_range": [
+        1.3582815821049934e-17,
+        1.6849165951281324e-17
+      ],
+      "demo_increment_norm_range": [
+        0.1433057061393769,
+        0.1442063117638894
+      ]
+    },
+    {
+      "round": 5,
+      "prefix_seconds": 53.0,
+      "safe": 0,
+      "count": 4,
+      "numeric_accepted": true,
+      "mode_safe": false,
+      "return_spread": 4.440892098500626e-16,
+      "max_abs_LOO": 3.885780586188048e-16,
+      "pg_norm_range": [
+        8.753998412967667e-17,
+        8.825755297762997e-17
+      ],
+      "demo_increment_norm_range": [
+        0.14431844269059166,
+        0.14496296675866202
+      ]
+    },
+    {
+      "round": 6,
+      "prefix_seconds": 53.0,
+      "safe": 0,
+      "count": 4,
+      "numeric_accepted": true,
+      "mode_safe": false,
+      "return_spread": 4.440892098500626e-16,
+      "max_abs_LOO": 2.7755575615628914e-16,
+      "pg_norm_range": [
+        4.2321383520830897e-17,
+        4.2361668696506875e-17
+      ],
+      "demo_increment_norm_range": [
+        0.14503361455434272,
+        0.1453523180990254
+      ]
+    }
+  ],
+  "trajectories": [
+    {
+      "role": "train_r0_0",
+      "prefix_seconds": 56.0,
+      "safe": true,
+      "timeout": false,
+      "first_pose": [
+        2.116552414937174,
+        -3.9691136010127837,
+        -1.353902661248047
+      ],
+      "takeover_remaining_m": 0.5976588656685721,
+      "first_mode_action": [
+        0.995075848744218,
+        -0.5521313642898098
+      ],
+      "first_sampled_action": [
+        1.0,
+        -0.3729064464569092
+      ],
+      "reference_same_state_action": [
+        0.9444266557693481,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.19995998305564341,
+      "best_recorded_endpoint_clock_s": 59.416,
+      "end_m": 0.19995998305564341,
+      "suffix_physics": 1708
+    },
+    {
+      "role": "train_r0_1",
+      "prefix_seconds": 56.0,
+      "safe": true,
+      "timeout": false,
+      "first_pose": [
+        2.116552414937174,
+        -3.9691136010127837,
+        -1.353902661248047
+      ],
+      "takeover_remaining_m": 0.5976588656685721,
+      "first_mode_action": [
+        0.995075848744218,
+        -0.5521313642898098
+      ],
+      "first_sampled_action": [
+        1.0,
+        -0.4138023555278778
+      ],
+      "reference_same_state_action": [
+        0.9444266557693481,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.19986797118685176,
+      "best_recorded_endpoint_clock_s": 59.908,
+      "end_m": 0.19986797118685176,
+      "suffix_physics": 1954
+    },
+    {
+      "role": "train_r0_2",
+      "prefix_seconds": 56.0,
+      "safe": true,
+      "timeout": false,
+      "first_pose": [
+        2.116552414937174,
+        -3.9691136010127837,
+        -1.353902661248047
+      ],
+      "takeover_remaining_m": 0.5976588656685721,
+      "first_mode_action": [
+        0.995075848744218,
+        -0.5521313642898098
+      ],
+      "first_sampled_action": [
+        0.8724575042724609,
+        -0.35552939772605896
+      ],
+      "reference_same_state_action": [
+        0.9444266557693481,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.19999135309029256,
+      "best_recorded_endpoint_clock_s": 59.558,
+      "end_m": 0.19999135309029256,
+      "suffix_physics": 1779
+    },
+    {
+      "role": "train_r0_3",
+      "prefix_seconds": 56.0,
+      "safe": true,
+      "timeout": false,
+      "first_pose": [
+        2.116552414937174,
+        -3.9691136010127837,
+        -1.353902661248047
+      ],
+      "takeover_remaining_m": 0.5976588656685721,
+      "first_mode_action": [
+        0.995075848744218,
+        -0.5521313642898098
+      ],
+      "first_sampled_action": [
+        0.9383231401443481,
+        -0.1107361689209938
+      ],
+      "reference_same_state_action": [
+        0.9444266557693481,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.19997230070583263,
+      "best_recorded_endpoint_clock_s": 59.978,
+      "end_m": 0.19997230070583263,
+      "suffix_physics": 1989
+    },
+    {
+      "role": "train_r1_0",
+      "prefix_seconds": 55.0,
+      "safe": true,
+      "timeout": false,
+      "first_pose": [
+        2.0964624722328042,
+        -3.855355216677422,
+        -1.321288214981979
+      ],
+      "takeover_remaining_m": 0.708748005025272,
+      "first_mode_action": [
+        0.9730841148556169,
+        -0.17758369938539115
+      ],
+      "first_sampled_action": [
+        0.7067506313323975,
+        -0.31513363122940063
+      ],
+      "reference_same_state_action": [
+        0.9383650422096252,
+        -0.038052648305892944
+      ],
+      "best_recorded_endpoint_m": 0.19999507045517181,
+      "best_recorded_endpoint_clock_s": 60.112,
+      "end_m": 0.19999507045517184,
+      "suffix_physics": 2556
+    },
+    {
+      "role": "train_r1_1",
+      "prefix_seconds": 55.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0964624722328042,
+        -3.855355216677422,
+        -1.321288214981979
+      ],
+      "takeover_remaining_m": 0.708748005025272,
+      "first_mode_action": [
+        0.9730841148556169,
+        -0.17758369938539115
+      ],
+      "first_sampled_action": [
+        1.0,
+        0.14759185910224915
+      ],
+      "reference_same_state_action": [
+        0.9383650422096252,
+        -0.038052648305892944
+      ],
+      "best_recorded_endpoint_m": 0.2008077076650069,
+      "best_recorded_endpoint_clock_s": 60.0,
+      "end_m": 2.130959153330594,
+      "suffix_physics": 12500
+    },
+    {
+      "role": "train_r1_2",
+      "prefix_seconds": 55.0,
+      "safe": true,
+      "timeout": false,
+      "first_pose": [
+        2.0964624722328042,
+        -3.855355216677422,
+        -1.321288214981979
+      ],
+      "takeover_remaining_m": 0.708748005025272,
+      "first_mode_action": [
+        0.9730841148556169,
+        -0.17758369938539115
+      ],
+      "first_sampled_action": [
+        0.7020367383956909,
+        -0.022523917257785797
+      ],
+      "reference_same_state_action": [
+        0.9383650422096252,
+        -0.038052648305892944
+      ],
+      "best_recorded_endpoint_m": 0.19999020072514911,
+      "best_recorded_endpoint_clock_s": 59.642,
+      "end_m": 0.19999020072514911,
+      "suffix_physics": 2321
+    },
+    {
+      "role": "train_r1_3",
+      "prefix_seconds": 55.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0964624722328042,
+        -3.855355216677422,
+        -1.321288214981979
+      ],
+      "takeover_remaining_m": 0.708748005025272,
+      "first_mode_action": [
+        0.9730841148556169,
+        -0.17758369938539115
+      ],
+      "first_sampled_action": [
+        0.7735804915428162,
+        -0.08350908011198044
+      ],
+      "reference_same_state_action": [
+        0.9383650422096252,
+        -0.038052648305892944
+      ],
+      "best_recorded_endpoint_m": 0.21057819296202404,
+      "best_recorded_endpoint_clock_s": 60.4,
+      "end_m": 2.078922959567077,
+      "suffix_physics": 12500
+    },
+    {
+      "role": "train_r2_0",
+      "prefix_seconds": 54.0,
+      "safe": true,
+      "timeout": false,
+      "first_pose": [
+        2.073361910200715,
+        -3.759101429296546,
+        -1.3162028423888419
+      ],
+      "takeover_remaining_m": 0.8034429767564203,
+      "first_mode_action": [
+        0.9706526143609016,
+        -0.2158594122637788
+      ],
+      "first_sampled_action": [
+        0.9403944611549377,
+        -0.15969067811965942
+      ],
+      "reference_same_state_action": [
+        0.9251745939254761,
+        0.0
+      ],
+      "best_recorded_endpoint_m": 0.199918582539769,
+      "best_recorded_endpoint_clock_s": 59.248,
+      "end_m": 0.19991858253976902,
+      "suffix_physics": 2624
+    },
+    {
+      "role": "train_r2_1",
+      "prefix_seconds": 54.0,
+      "safe": true,
+      "timeout": false,
+      "first_pose": [
+        2.073361910200715,
+        -3.759101429296546,
+        -1.3162028423888419
+      ],
+      "takeover_remaining_m": 0.8034429767564203,
+      "first_mode_action": [
+        0.9706526143609016,
+        -0.2158594122637788
+      ],
+      "first_sampled_action": [
+        0.8457532525062561,
+        -0.35125428438186646
+      ],
+      "reference_same_state_action": [
+        0.9251745939254761,
+        0.0
+      ],
+      "best_recorded_endpoint_m": 0.1998884582751247,
+      "best_recorded_endpoint_clock_s": 59.418,
+      "end_m": 0.1998884582751247,
+      "suffix_physics": 2709
+    },
+    {
+      "role": "train_r2_2",
+      "prefix_seconds": 54.0,
+      "safe": true,
+      "timeout": false,
+      "first_pose": [
+        2.073361910200715,
+        -3.759101429296546,
+        -1.3162028423888419
+      ],
+      "takeover_remaining_m": 0.8034429767564203,
+      "first_mode_action": [
+        0.9706526143609016,
+        -0.2158594122637788
+      ],
+      "first_sampled_action": [
+        1.0,
+        0.03326432779431343
+      ],
+      "reference_same_state_action": [
+        0.9251745939254761,
+        0.0
+      ],
+      "best_recorded_endpoint_m": 0.19996614636048424,
+      "best_recorded_endpoint_clock_s": 59.22,
+      "end_m": 0.1999661463604842,
+      "suffix_physics": 2610
+    },
+    {
+      "role": "train_r2_3",
+      "prefix_seconds": 54.0,
+      "safe": true,
+      "timeout": false,
+      "first_pose": [
+        2.073361910200715,
+        -3.759101429296546,
+        -1.3162028423888419
+      ],
+      "takeover_remaining_m": 0.8034429767564203,
+      "first_mode_action": [
+        0.9706526143609016,
+        -0.2158594122637788
+      ],
+      "first_sampled_action": [
+        0.8528149724006653,
+        0.11955353617668152
+      ],
+      "reference_same_state_action": [
+        0.9251745939254761,
+        0.0
+      ],
+      "best_recorded_endpoint_m": 0.19987574280124196,
+      "best_recorded_endpoint_clock_s": 58.696,
+      "end_m": 0.19987574280124196,
+      "suffix_physics": 2348
+    },
+    {
+      "role": "train_r3_0",
+      "prefix_seconds": 53.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0537275283534626,
+        -3.6515700095102295,
+        -1.2677256096342306
+      ],
+      "takeover_remaining_m": 0.9103855361799186,
+      "first_mode_action": [
+        0.9106268319999401,
+        -0.39374122914259946
+      ],
+      "first_sampled_action": [
+        0.6242445707321167,
+        -0.3947662115097046
+      ],
+      "reference_same_state_action": [
+        0.9057465195655823,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.2846868669272669,
+      "best_recorded_endpoint_clock_s": 59.8,
+      "end_m": 2.126872010291293,
+      "suffix_physics": 13500
+    },
+    {
+      "role": "train_r3_1",
+      "prefix_seconds": 53.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0537275283534626,
+        -3.6515700095102295,
+        -1.2677256096342306
+      ],
+      "takeover_remaining_m": 0.9103855361799186,
+      "first_mode_action": [
+        0.9106268319999401,
+        -0.39374122914259946
+      ],
+      "first_sampled_action": [
+        1.0,
+        -0.4829810857772827
+      ],
+      "reference_same_state_action": [
+        0.9057465195655823,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.22380579742017792,
+      "best_recorded_endpoint_clock_s": 59.6,
+      "end_m": 2.076261763977884,
+      "suffix_physics": 13500
+    },
+    {
+      "role": "train_r3_2",
+      "prefix_seconds": 53.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0537275283534626,
+        -3.6515700095102295,
+        -1.2677256096342306
+      ],
+      "takeover_remaining_m": 0.9103855361799186,
+      "first_mode_action": [
+        0.9106268319999401,
+        -0.39374122914259946
+      ],
+      "first_sampled_action": [
+        1.0,
+        -0.5354479551315308
+      ],
+      "reference_same_state_action": [
+        0.9057465195655823,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.2306615994194516,
+      "best_recorded_endpoint_clock_s": 59.6,
+      "end_m": 2.1818870423431966,
+      "suffix_physics": 13500
+    },
+    {
+      "role": "train_r3_3",
+      "prefix_seconds": 53.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0537275283534626,
+        -3.6515700095102295,
+        -1.2677256096342306
+      ],
+      "takeover_remaining_m": 0.9103855361799186,
+      "first_mode_action": [
+        0.9106268319999401,
+        -0.39374122914259946
+      ],
+      "first_sampled_action": [
+        0.516291618347168,
+        -0.25269588828086853
+      ],
+      "reference_same_state_action": [
+        0.9057465195655823,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.21599057211953257,
+      "best_recorded_endpoint_clock_s": 59.4,
+      "end_m": 2.183470996182828,
+      "suffix_physics": 13500
+    },
+    {
+      "role": "train_r4_0",
+      "prefix_seconds": 53.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0537275283534626,
+        -3.6515700095102295,
+        -1.2677256096342306
+      ],
+      "takeover_remaining_m": 0.9103855361799186,
+      "first_mode_action": [
+        0.9106396141972257,
+        -0.4070341164483971
+      ],
+      "first_sampled_action": [
+        1.0,
+        -0.17244777083396912
+      ],
+      "reference_same_state_action": [
+        0.9057465195655823,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.21429517681874344,
+      "best_recorded_endpoint_clock_s": 59.6,
+      "end_m": 2.117117602593307,
+      "suffix_physics": 13500
+    },
+    {
+      "role": "train_r4_1",
+      "prefix_seconds": 53.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0537275283534626,
+        -3.6515700095102295,
+        -1.2677256096342306
+      ],
+      "takeover_remaining_m": 0.9103855361799186,
+      "first_mode_action": [
+        0.9106396141972257,
+        -0.4070341164483971
+      ],
+      "first_sampled_action": [
+        0.7456004619598389,
+        -0.3610572814941406
+      ],
+      "reference_same_state_action": [
+        0.9057465195655823,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.23861322354912357,
+      "best_recorded_endpoint_clock_s": 60.0,
+      "end_m": 2.0714499482911766,
+      "suffix_physics": 13500
+    },
+    {
+      "role": "train_r4_2",
+      "prefix_seconds": 53.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0537275283534626,
+        -3.6515700095102295,
+        -1.2677256096342306
+      ],
+      "takeover_remaining_m": 0.9103855361799186,
+      "first_mode_action": [
+        0.9106396141972257,
+        -0.4070341164483971
+      ],
+      "first_sampled_action": [
+        0.608248233795166,
+        -0.45101019740104675
+      ],
+      "reference_same_state_action": [
+        0.9057465195655823,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.22526755646220112,
+      "best_recorded_endpoint_clock_s": 59.4,
+      "end_m": 2.2192902702591195,
+      "suffix_physics": 13500
+    },
+    {
+      "role": "train_r4_3",
+      "prefix_seconds": 53.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0537275283534626,
+        -3.6515700095102295,
+        -1.2677256096342306
+      ],
+      "takeover_remaining_m": 0.9103855361799186,
+      "first_mode_action": [
+        0.9106396141972257,
+        -0.4070341164483971
+      ],
+      "first_sampled_action": [
+        0.6911487579345703,
+        -0.22751981019973755
+      ],
+      "reference_same_state_action": [
+        0.9057465195655823,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.23965032128070002,
+      "best_recorded_endpoint_clock_s": 60.0,
+      "end_m": 2.096269592432213,
+      "suffix_physics": 13500
+    },
+    {
+      "role": "train_r5_0",
+      "prefix_seconds": 53.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0537275283534626,
+        -3.6515700095102295,
+        -1.2677256096342306
+      ],
+      "takeover_remaining_m": 0.9103855361799186,
+      "first_mode_action": [
+        0.9100561576555075,
+        -0.41943838776955555
+      ],
+      "first_sampled_action": [
+        0.9119354486465454,
+        -0.8539697527885437
+      ],
+      "reference_same_state_action": [
+        0.9057465195655823,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.21977308206966323,
+      "best_recorded_endpoint_clock_s": 59.6,
+      "end_m": 2.191292805134138,
+      "suffix_physics": 13500
+    },
+    {
+      "role": "train_r5_1",
+      "prefix_seconds": 53.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0537275283534626,
+        -3.6515700095102295,
+        -1.2677256096342306
+      ],
+      "takeover_remaining_m": 0.9103855361799186,
+      "first_mode_action": [
+        0.9100561576555075,
+        -0.41943838776955555
+      ],
+      "first_sampled_action": [
+        1.0,
+        -0.280499666929245
+      ],
+      "reference_same_state_action": [
+        0.9057465195655823,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.26789852185749546,
+      "best_recorded_endpoint_clock_s": 59.6,
+      "end_m": 2.133531516685925,
+      "suffix_physics": 13500
+    },
+    {
+      "role": "train_r5_2",
+      "prefix_seconds": 53.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0537275283534626,
+        -3.6515700095102295,
+        -1.2677256096342306
+      ],
+      "takeover_remaining_m": 0.9103855361799186,
+      "first_mode_action": [
+        0.9100561576555075,
+        -0.41943838776955555
+      ],
+      "first_sampled_action": [
+        1.0,
+        -0.20555955171585083
+      ],
+      "reference_same_state_action": [
+        0.9057465195655823,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.23696901414736957,
+      "best_recorded_endpoint_clock_s": 59.8,
+      "end_m": 2.15152156209605,
+      "suffix_physics": 13500
+    },
+    {
+      "role": "train_r5_3",
+      "prefix_seconds": 53.0,
+      "safe": false,
+      "timeout": true,
+      "first_pose": [
+        2.0537275283534626,
+        -3.6515700095102295,
+        -1.2677256096342306
+      ],
+      "takeover_remaining_m": 0.9103855361799186,
+      "first_mode_action": [
+        0.9100561576555075,
+        -0.41943838776955555
+      ],
+      "first_sampled_action": [
+        0.8663692474365234,
+        -0.10502973943948746
+      ],
+      "reference_same_state_action": [
+        0.9057465195655823,
+        -0.9990000128746033
+      ],
+      "best_recorded_endpoint_m": 0.22975499093323792,
+      "best_recorded_endpoint_clock_s": 59.6,
+      "end_m": 2.1510431844941875,
+      "suffix_physics": 13500
+    }
+  ],
+  "initial_old8": {
+    "valid": 8,
+    "success": 8,
+    "contact": 0,
+    "timeout": 0,
+    "invalid": 0,
+    "censored": 0
+  },
+  "final_old8": {
+    "valid": 8,
+    "success": 7,
+    "contact": 1,
+    "timeout": 0,
+    "invalid": 0,
+    "censored": 0
+  },
+  "model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t395_frontier_recovery/candidate.pt.gz",
+    "sha256": "fd929714453aa0f426f1e3ec1508602c28607aa6474f1bdc7f08e3a1bc599749",
+    "hashes": {
+      "learned": "b5728a046a860e8da728ca583059f2513d4e5acfc6977d7c07629d9a670e214c",
+      "optimizer": "21565ac4ac610f6501a0e407f08ae43a7a3c88a13b2ba3f5d188898e2b09e96a"
+    },
+    "policy_hash": "bb6df5e124c291f69065a516694b609329c31cbe4916b6ce7e663d9afbee8f1b"
+  },
+  "original_raw_unmodified": true,
+  "limitation": "First mode/reference comparison is at the same physical successful-prefix state and observed history, but is not an isolated steering causal test. Subsequent sampled pose endpoint minima are not continuous-native minima. Raw component gradient norms precede clipping/Adam and are not Adam causal contributions; tiny norms make cosine interpretation uninformative. No BC-only or PG-only counterfactual update ran.",
+  "hashes": {
+    "summary.json": "e08fea77ece1f4d1c8e749f67f07202625b9ef44f21c5c5fecba1244bea3e9f3",
+    "audit.json": "194b5f7d241cda6dc0dfe18a7570b3fd31ea32b4321b0cc7c8605af54cea712a",
+    "protocol.json": "958a9ba22e24486075bd3f495ede6b45cfd15667c0e50a692aefe6155fde8144",
+    "candidate.pt.gz": "fd929714453aa0f426f1e3ec1508602c28607aa6474f1bdc7f08e3a1bc599749",
+    "local_manifest.json": "3c9d5beed651136b81fda7caf5572d92cab9830957ae1f01c6d2c5ffcb7c7d2d"
+  }
+}
