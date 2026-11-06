@@ -1,0 +1,12 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_LIVE_ENTRY_FAILURE_REVIEW",
+  "native": 0,
+  "live_optimizer": 0,
+  "prior_preflight_discarded_Adam": 12,
+  "prior_preflight_zero_physics_commands": 8,
+  "original_source_preserved": true,
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t402_offline_night/run.py\", line 144, in <module>\n    if __name__=='__main__':main()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t402_offline_night/run.py\", line 9, in main\n    lock=(ROOT/'stage/runs/.stage_writer.lock').open('a+b');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)\nNameError: name 'fcntl' is not defined. Did you mean: 'final'?\n",
+  "only_change": "explicit fcntl import before actual lock initializer",
+  "no_scientific_or_budget_change": true,
+  "absolute_all_stop": 1794011400.0
+}
