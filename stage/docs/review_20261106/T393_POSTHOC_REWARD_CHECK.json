@@ -1,0 +1,87 @@
+{
+  "state": "POSTHOC_READONLY_RAW_ARITHMETIC",
+  "native": 0,
+  "optimizer": 0,
+  "backward": 0,
+  "new_samples": 0,
+  "total_physics": 2469907,
+  "main_commands": 71,
+  "all_commands_including_preflight": 154,
+  "actual_new_stochastic_suffix_physics": 360000,
+  "actual_new_forced_prefix_physics": 600000,
+  "train_new": 24,
+  "train_exact_native_repeats": 24,
+  "new_stochastic_decisions": 3600,
+  "live_Adam": 48,
+  "shadow_Adam": 48,
+  "independent_discarded_historical_Adam": 48,
+  "preflight_discarded_Adam": 4,
+  "return_differentiation": [
+    {
+      "round": 0,
+      "min_return": -0.2910252468813702,
+      "max_return": -0.2910252468813697,
+      "spread": 4.996003610813204e-16,
+      "max_abs_LOO_advantage": 3.885780586188048e-16,
+      "max_abs_PG_loss": 1.042924523109738e-17
+    },
+    {
+      "round": 1,
+      "min_return": -0.2910252468813701,
+      "max_return": -0.29102524688136966,
+      "spread": 4.440892098500626e-16,
+      "max_abs_LOO_advantage": 2.7755575615628914e-16,
+      "max_abs_PG_loss": 1.5673415084019103e-17
+    },
+    {
+      "round": 2,
+      "min_return": -0.29102524688137,
+      "max_return": -0.2910252468813693,
+      "spread": 6.661338147750939e-16,
+      "max_abs_LOO_advantage": 6.106226635438361e-16,
+      "max_abs_PG_loss": 2.61045516094928e-17
+    },
+    {
+      "round": 3,
+      "min_return": -0.2910252468813702,
+      "max_return": -0.29102524688136977,
+      "spread": 4.440892098500626e-16,
+      "max_abs_LOO_advantage": 3.885780586188048e-16,
+      "max_abs_PG_loss": 5.2041704279304274e-18
+    },
+    {
+      "round": 4,
+      "min_return": -0.2910252468813701,
+      "max_return": -0.29102524688136977,
+      "spread": 3.3306690738754696e-16,
+      "max_abs_LOO_advantage": 2.7755575615628914e-16,
+      "max_abs_PG_loss": 1.0443871935884507e-17
+    },
+    {
+      "round": 5,
+      "min_return": -0.29102524688137016,
+      "max_return": -0.29102524688136977,
+      "spread": 3.885780586188048e-16,
+      "max_abs_LOO_advantage": 2.7755575615628914e-16,
+      "max_abs_PG_loss": 5.22352634701634e-18
+    }
+  ],
+  "best_sampled_recorded_endpoint": {
+    "role": "train_r5_1",
+    "best_recorded_endpoint_m": 0.4572937088021629,
+    "takeover_m": 1.195291529218337,
+    "end_m": 2.218547410224918
+  },
+  "limitation": "Sampled pose endpoints are not continuous-native minima. Reward-level evidence does not prove PG-only and BC-only updates identical; no new counterfactual optimization was run.",
+  "model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/candidate.pt.gz",
+    "sha256": "f3a30d6a071124bb2998f167d9fcc4e3b3eb1c88b53a84e16db6e177e930f359",
+    "hashes": {
+      "learned": "f44f5524d291e22285c0066139b1520b4c3d65cb445e977d85760967e7abbf9f",
+      "optimizer": "f8001433a5c2ba640ac024ea57ab56838136c6834de82506fd164dbdb154eaad"
+    },
+    "policy_hash": "5c43ac025862bc607178cbd90b4f17231e1b8976feec88a99168d2b772ce4ae6"
+  },
+  "raw_manifest_sha256": "65f34dec63833f4d4eb043512a7615201f487b2d7d022a60ee7b529189906e82",
+  "remote_receipt_sha256": "f2185b8d46a4246922578b88094b87abe2f88a79eeb878f15c2c88b7786d6934"
+}

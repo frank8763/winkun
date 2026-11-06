@@ -1,0 +1,750 @@
+{
+  "state": "COMPLETE_AUDITED_REMOTE_VERIFIED",
+  "actual": {
+    "state": "COMPLETE",
+    "pid": 329274,
+    "elapsed_s": 2580.746924638748,
+    "physics": 2469907,
+    "commands": 71,
+    "rounds": [
+      {
+        "round": 0,
+        "prefix_holds": 250,
+        "policy_before": "0473a964bd1266176287c6e1ffaf487ffe5473f92e04e1f9c00b967ca9b84e22",
+        "sampling_safe": 0,
+        "sampling_count": 4,
+        "proposal": {
+          "trace": [
+            [
+              -1.0408340855860836e-17,
+              0.028622986282736164,
+              0.10080344133482536,
+              8.881784197001252e-16
+            ],
+            [
+              -1.0410824232009315e-17,
+              0.0285760404987054,
+              0.1006403910693187,
+              0.011025640954686278
+            ],
+            [
+              -1.0413422595017346e-17,
+              0.02852817614786108,
+              0.1013295434785408,
+              0.022221188660887403
+            ],
+            [
+              -1.0416181113505381e-17,
+              0.028479195613917173,
+              0.10212634374815131,
+              0.033626619481760045
+            ],
+            [
+              -1.0419126892669716e-17,
+              0.028429027757411747,
+              0.10298120993769282,
+              0.04525777772379902
+            ],
+            [
+              -1.0422276007219005e-17,
+              0.028377621197671274,
+              0.1038777837272506,
+              0.05712447680867294
+            ],
+            [
+              -1.0425647105339236e-17,
+              0.028324933829532026,
+              0.10480760869109973,
+              0.06923393302530778
+            ],
+            [
+              -1.042924523109738e-17,
+              0.028270929579584055,
+              0.10576573765082517,
+              0.08174674006125837
+            ]
+          ],
+          "returns": [
+            -0.2910252468813702,
+            -0.29102524688136977,
+            -0.29102524688137,
+            -0.2910252468813697
+          ],
+          "density_errors": [
+            [
+              2.220446049250313e-16,
+              8.881784197001252e-16
+            ],
+            [
+              2.220446049250313e-16,
+              6.661338147750939e-16
+            ],
+            [
+              2.220446049250313e-16,
+              2.220446049250313e-16
+            ],
+            [
+              2.220446049250313e-16,
+              8.881784197001252e-16
+            ]
+          ],
+          "post_max_abs_logratio": 0.0948392484378957,
+          "numeric_accept": true
+        },
+        "proposed_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/blocks/0/proposed.pt.gz",
+          "sha256": "79b32699fa0136887bdc94e7a10adf9e5819aa06519affc44ac1b274e4f44b26",
+          "hashes": {
+            "learned": "c105b08871d144a13a8bab5f3dd4c373d7b3e1c9364e3ab4f3b03d57ef93a18e",
+            "optimizer": "6912c956b6b339ae2b120d72f0e6dca264d9967ad2ca5d4d5c3a5d059d38f720"
+          },
+          "policy_hash": "ada561a14698cc4c3eb0d536b324bd46cb71e36c622af47868e6c07bf284658b"
+        },
+        "accepted": true,
+        "course_centre": {
+          "role": "course_centre",
+          "job_id": "course_centre",
+          "physics_steps": 40000,
+          "success": false,
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 2.307541443656158,
+          "array_digest": "f72731036d74546b76a84a8715d703bea8ac4c0a7e464ab17f7e4bb3d3fde0a1",
+          "integration_sha256": "2f488ddfac67af38e693339a0ceecbcffb5fe3b10e16aea0e26c82b04c59aa71",
+          "policy_hash": "ada561a14698cc4c3eb0d536b324bd46cb71e36c622af47868e6c07bf284658b",
+          "complete": true,
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/episodes/0014.npz",
+          "sha256": "917def46d8e766999b9fa6d71e9d84c15b7a38ed66682ef186b0ac1cb4784851"
+        },
+        "promote": false,
+        "level_before": 0,
+        "level_after": 0
+      },
+      {
+        "round": 1,
+        "prefix_holds": 250,
+        "policy_before": "c105b08871d144a13a8bab5f3dd4c373d7b3e1c9364e3ab4f3b03d57ef93a18e",
+        "sampling_safe": 0,
+        "sampling_count": 4,
+        "proposal": {
+          "trace": [
+            [
+              1.5612511283791267e-17,
+              0.028215581090048417,
+              0.10674787664604,
+              2.220446049250313e-15
+            ],
+            [
+              1.5621318966395823e-17,
+              0.028158876180420348,
+              0.10774928079488366,
+              0.013624718404360525
+            ],
+            [
+              1.5630077593902716e-17,
+              0.028100806438743176,
+              0.10876528935278616,
+              0.02752173506503519
+            ],
+            [
+              1.5638818414280573e-17,
+              0.02804136638786388,
+              0.10979162767475165,
+              0.04168132733018792
+            ],
+            [
+              1.5647552317309468e-17,
+              0.027980565692727454,
+              0.11082386955341852,
+              0.056091229465292436
+            ],
+            [
+              1.5656283045459582e-17,
+              0.027918420509301253,
+              0.1118575980811471,
+              0.07073688945482237
+            ],
+            [
+              1.5664929258545732e-17,
+              0.027854950229876184,
+              0.11288813688709236,
+              0.08560349905203779
+            ],
+            [
+              1.5673415084019103e-17,
+              0.02779018249187766,
+              0.11391079168433775,
+              0.1006762494572695
+            ]
+          ],
+          "returns": [
+            -0.29102524688137,
+            -0.2910252468813699,
+            -0.2910252468813701,
+            -0.29102524688136966
+          ],
+          "density_errors": [
+            [
+              2.220446049250313e-16,
+              1.3322676295501878e-15
+            ],
+            [
+              2.220446049250313e-16,
+              2.220446049250313e-15
+            ],
+            [
+              2.220446049250313e-16,
+              1.5543122344752192e-15
+            ],
+            [
+              2.220446049250313e-16,
+              1.7763568394002505e-15
+            ]
+          ],
+          "post_max_abs_logratio": 0.1159347388910783,
+          "numeric_accept": true
+        },
+        "proposed_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/blocks/1/proposed.pt.gz",
+          "sha256": "126dda4a0e405209d41d0e277835d7c906c57d1c4b03301cf0229873af67377c",
+          "hashes": {
+            "learned": "1a2e540c1ec1d73c467b54facd16ab59d73f048406efd3ee2151226ae31c6eff",
+            "optimizer": "0f9e7e236418ac1f6eeeac77b311d7046743240af4dd9f4507f56c5c85e8d5ff"
+          },
+          "policy_hash": "ffc32ff21ca01755240da8ab891ebeb931a59aafe02a154a726154f7f56288a1"
+        },
+        "accepted": true,
+        "course_centre": {
+          "role": "course_centre",
+          "job_id": "course_centre",
+          "physics_steps": 40000,
+          "success": false,
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 2.294976303632985,
+          "array_digest": "48498c8440a59fca66d598f2c7bb6431e5f0df7a784310ccbcd750bb5bda58f2",
+          "integration_sha256": "c3c2b6d6d32e5a2fd6dc5228ea3b58d728a06dc83c6fb62d0192a3cfdeda6a4d",
+          "policy_hash": "ffc32ff21ca01755240da8ab891ebeb931a59aafe02a154a726154f7f56288a1",
+          "complete": true,
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/episodes/0019.npz",
+          "sha256": "65544cf523a3bbdfbcc9e08b3e4b28ee57049433fa14767f8f3bd7a96f95f9c2"
+        },
+        "promote": false,
+        "level_before": 0,
+        "level_after": 0
+      },
+      {
+        "round": 2,
+        "prefix_holds": 250,
+        "policy_before": "1a2e540c1ec1d73c467b54facd16ab59d73f048406efd3ee2151226ae31c6eff",
+        "sampling_safe": 0,
+        "sampling_count": 4,
+        "proposal": {
+          "trace": [
+            [
+              -2.602085213965211e-17,
+              0.027724148399326055,
+              0.11492125913661952,
+              1.7763568394002505e-15
+            ],
+            [
+              -2.603349725782009e-17,
+              0.027656882869252712,
+              0.1159155990533529,
+              0.01522612716936056
+            ],
+            [
+              -2.604585515140175e-17,
+              0.02758841885407084,
+              0.11689062588857092,
+              0.03068503846795667
+            ],
+            [
+              -2.6058012462971675e-17,
+              0.027518789026815066,
+              0.11784439899078034,
+              0.04636038465361647
+            ],
+            [
+              -2.6070109696150892e-17,
+              0.027448011810152547,
+              0.11877629044487344,
+              0.06223799879509029
+            ],
+            [
+              -2.6082067619132545e-17,
+              0.02737610448424882,
+              0.11968653416832335,
+              0.07830675701413536
+            ],
+            [
+              -2.6093733142418553e-17,
+              0.027303069479255662,
+              0.1205760196751861,
+              0.09455914370690643
+            ],
+            [
+              -2.61045516094928e-17,
+              0.02722890211207845,
+              0.12144612413101438,
+              0.11098843576188622
+            ]
+          ],
+          "returns": [
+            -0.2910252468813693,
+            -0.2910252468813697,
+            -0.2910252468813699,
+            -0.29102524688137
+          ],
+          "density_errors": [
+            [
+              2.220446049250313e-16,
+              1.7763568394002505e-15
+            ],
+            [
+              2.220446049250313e-16,
+              1.3322676295501878e-15
+            ],
+            [
+              2.220446049250313e-16,
+              1.1102230246251565e-15
+            ],
+            [
+              2.220446049250313e-16,
+              1.1102230246251565e-15
+            ]
+          ],
+          "post_max_abs_logratio": 0.12754281675785206,
+          "numeric_accept": true
+        },
+        "proposed_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/blocks/2/proposed.pt.gz",
+          "sha256": "eb4c8ad80889f26ad53fb6a6f5c06aceb7af49a7b4769e22f1fc5dff37fb2440",
+          "hashes": {
+            "learned": "cfba69b8fba2447b77ec640237e35555c7bd322e7af3c536a8254d19713b17c9",
+            "optimizer": "63309b4e364ba4a20f80779a6ddc8fbb8f7c912cf3c6f05ebb4329b05a148c48"
+          },
+          "policy_hash": "0bef43a4db079c232f5cecd384a8975be4a433c07897e211173b0728c254582d"
+        },
+        "accepted": true,
+        "course_centre": {
+          "role": "course_centre",
+          "job_id": "course_centre",
+          "physics_steps": 40000,
+          "success": false,
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 2.262082147535403,
+          "array_digest": "518d822e29bbf4ee833f96c26a9579a80ac75ada359c2641150aa943cdc5696e",
+          "integration_sha256": "2886c39389b259088ae5ff665ebd742d979a809cf3a29c3e7094b5d78c0171e8",
+          "policy_hash": "0bef43a4db079c232f5cecd384a8975be4a433c07897e211173b0728c254582d",
+          "complete": true,
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/episodes/0024.npz",
+          "sha256": "a4a3fe349a2cac95c3621ee5b892d6ec86853b53d598498424d56ec155108219"
+        },
+        "promote": false,
+        "level_before": 0,
+        "level_after": 0
+      },
+      {
+        "round": 3,
+        "prefix_holds": 250,
+        "policy_before": "cfba69b8fba2447b77ec640237e35555c7bd322e7af3c536a8254d19713b17c9",
+        "sampling_safe": 0,
+        "sampling_count": 4,
+        "proposal": {
+          "trace": [
+            [
+              5.2041704279304274e-18,
+              0.02715360601935066,
+              0.12229810746457734,
+              1.7763568394002505e-15
+            ],
+            [
+              5.199184354995969e-18,
+              0.027077188695379173,
+              0.12313299944018348,
+              0.018519600073809706
+            ],
+            [
+              5.194255097342164e-18,
+              0.026999652375074682,
+              0.12395189903787796,
+              0.037031857053620776
+            ],
+            [
+              5.18936933603939e-18,
+              0.026920998484926274,
+              0.1247556923308916,
+              0.055533336615455564
+            ],
+            [
+              5.1845467038787144e-18,
+              0.026841230079229818,
+              0.12554510113559858,
+              0.0740210303564246
+            ],
+            [
+              5.179756978536201e-18,
+              0.026760348449393734,
+              0.12632078311531222,
+              0.09249135790040075
+            ],
+            [
+              5.175001872787034e-18,
+              0.02667836596874327,
+              0.12708302048686526,
+              0.11094232255003789
+            ],
+            [
+              5.17071852697801e-18,
+              0.02659529396319542,
+              0.1278320520937737,
+              0.12937168020344458
+            ]
+          ],
+          "returns": [
+            -0.2910252468813702,
+            -0.29102524688136977,
+            -0.2910252468813698,
+            -0.29102524688136994
+          ],
+          "density_errors": [
+            [
+              2.220446049250313e-16,
+              1.7763568394002505e-15
+            ],
+            [
+              2.220446049250313e-16,
+              8.881784197001252e-16
+            ],
+            [
+              2.220446049250313e-16,
+              1.1102230246251565e-15
+            ],
+            [
+              2.220446049250313e-16,
+              1.5543122344752192e-15
+            ]
+          ],
+          "post_max_abs_logratio": 0.14777542609664263,
+          "numeric_accept": true
+        },
+        "proposed_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/blocks/3/proposed.pt.gz",
+          "sha256": "e38cffbc201c5ef30e765c871baaa3a3c0a6249cb99cdf714e72f53bee7b3eac",
+          "hashes": {
+            "learned": "667a7e8cfc10c1f5a8d8dca767708e48721e4fe038f69d6a8850a3ca921a5bde",
+            "optimizer": "a1bf7af1618716713f7870409f9098a7b60087032b41651beb98d3c02dbddebc"
+          },
+          "policy_hash": "993269e03129f1414ebaa1f03684ad9e61e5b3639220d54f96f637fbded338a8"
+        },
+        "accepted": true,
+        "course_centre": {
+          "role": "course_centre",
+          "job_id": "course_centre",
+          "physics_steps": 40000,
+          "success": false,
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 2.233320966916343,
+          "array_digest": "3d1484582cd989e147f3c2677ffe9dd508458350b778807e12ff3c6521066572",
+          "integration_sha256": "74f9515d5fd7f32aaad1d66bfda9269b449ceb4f2abd584cf1c16128e4e727d8",
+          "policy_hash": "993269e03129f1414ebaa1f03684ad9e61e5b3639220d54f96f637fbded338a8",
+          "complete": true,
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/episodes/0029.npz",
+          "sha256": "5f13c5c592d8add899b02057754d375bcd88a266f624ff94366193a60a8f02bf"
+        },
+        "promote": false,
+        "level_before": 0,
+        "level_after": 0
+      },
+      {
+        "round": 4,
+        "prefix_holds": 250,
+        "policy_before": "667a7e8cfc10c1f5a8d8dca767708e48721e4fe038f69d6a8850a3ca921a5bde",
+        "sampling_safe": 0,
+        "sampling_count": 4,
+        "proposal": {
+          "trace": [
+            [
+              -1.0408340855860846e-17,
+              0.026511155157909083,
+              0.12856793623671678,
+              2.6645352591003757e-15
+            ],
+            [
+              -1.0413483983055335e-17,
+              0.0264259485701571,
+              0.1292911558071238,
+              0.014514210060490917
+            ],
+            [
+              -1.0418605816819131e-17,
+              0.026339670112332673,
+              0.13000168158639783,
+              0.029068586406315378
+            ],
+            [
+              -1.0423772583254069e-17,
+              0.026252337623539117,
+              0.13069951905694885,
+              0.043660767730480776
+            ],
+            [
+              -1.0428892855508726e-17,
+              0.026163961639553125,
+              0.13138457179084082,
+              0.058287766169273114
+            ],
+            [
+              -1.0433961359059625e-17,
+              0.02607453684893636,
+              0.13205679505502418,
+              0.07294870943872511
+            ],
+            [
+              -1.0438953005278883e-17,
+              0.025984103788722242,
+              0.13271591777493377,
+              0.08764078875821224
+            ],
+            [
+              -1.0443871935884507e-17,
+              0.02589268636749857,
+              0.13336145929213777,
+              0.10236062284220937
+            ]
+          ],
+          "returns": [
+            -0.29102524688136977,
+            -0.2910252468813701,
+            -0.2910252468813698,
+            -0.29102524688136977
+          ],
+          "density_errors": [
+            [
+              2.220446049250313e-16,
+              1.3322676295501878e-15
+            ],
+            [
+              2.220446049250313e-16,
+              1.1102230246251565e-15
+            ],
+            [
+              2.220446049250313e-16,
+              2.6645352591003757e-15
+            ],
+            [
+              2.220446049250313e-16,
+              1.7763568394002505e-15
+            ]
+          ],
+          "post_max_abs_logratio": 0.11710694437381064,
+          "numeric_accept": true
+        },
+        "proposed_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/blocks/4/proposed.pt.gz",
+          "sha256": "b3a3e9faacde287434d4b3538e2aaad4471ca8e05462e9f30258a317cbab75d4",
+          "hashes": {
+            "learned": "d720f3c4bcd97118845bb8e9184ecbb7bcf3c42bdf0b0d61c7dadfadfcee7b80",
+            "optimizer": "6e4eab31a45f6fb829d6ecf583ba9fafb2e5bc8d924fc614acfc8a0de134bf6b"
+          },
+          "policy_hash": "0cb540c91bebb37777ecd2e031b4767414f54ba23be929eb2dcdcc2e63ba6d7c"
+        },
+        "accepted": true,
+        "course_centre": {
+          "role": "course_centre",
+          "job_id": "course_centre",
+          "physics_steps": 40000,
+          "success": false,
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 2.261624441015822,
+          "array_digest": "4ad3d4c59f47c3a3c2227b34e20071a414e79e90032827ea03367e4b30d0b43d",
+          "integration_sha256": "094915e5b3e4d9f79d91d0e143a3a3a850d5bb0e94ff378ba1a89710318eb013",
+          "policy_hash": "0cb540c91bebb37777ecd2e031b4767414f54ba23be929eb2dcdcc2e63ba6d7c",
+          "complete": true,
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/episodes/0034.npz",
+          "sha256": "b29a564e23298df8a44f6b01ca440b6a5f698c3c0fb505a22dc7c8634aecdac0"
+        },
+        "promote": false,
+        "level_before": 0,
+        "level_after": 0
+      },
+      {
+        "round": 5,
+        "prefix_holds": 250,
+        "policy_before": "d720f3c4bcd97118845bb8e9184ecbb7bcf3c42bdf0b0d61c7dadfadfcee7b80",
+        "sampling_safe": 0,
+        "sampling_count": 4,
+        "proposal": {
+          "trace": [
+            [
+              5.204170427930424e-18,
+              0.025800298474418604,
+              0.13399372224713088,
+              1.7763568394002505e-15
+            ],
+            [
+              5.20644588251398e-18,
+              0.025706947314891482,
+              0.13461210977452664,
+              0.01577972398854932
+            ],
+            [
+              5.208871472015413e-18,
+              0.02561268442274716,
+              0.1352165402064944,
+              0.03147174095541683
+            ],
+            [
+              5.211448419327223e-18,
+              0.02551748578617816,
+              0.1358074621795582,
+              0.04707428836654426
+            ],
+            [
+              5.214138242867772e-18,
+              0.02542135719318498,
+              0.13638461646136657,
+              0.0625923848420804
+            ],
+            [
+              5.2170234136704854e-18,
+              0.025324310294433515,
+              0.13694821513228309,
+              0.0780278241210981
+            ],
+            [
+              5.2200140563959165e-18,
+              0.025226356508942775,
+              0.13749822837879322,
+              0.09338151301298891
+            ],
+            [
+              5.22352634701634e-18,
+              0.025127525665778087,
+              0.1380343482299295,
+              0.10865474019781418
+            ]
+          ],
+          "returns": [
+            -0.29102524688137016,
+            -0.29102524688137016,
+            -0.29102524688136977,
+            -0.29102524688136994
+          ],
+          "density_errors": [
+            [
+              2.220446049250313e-16,
+              1.7763568394002505e-15
+            ],
+            [
+              2.220446049250313e-16,
+              1.5543122344752192e-15
+            ],
+            [
+              2.220446049250313e-16,
+              1.3322676295501878e-15
+            ],
+            [
+              2.220446049250313e-16,
+              1.7763568394002505e-15
+            ]
+          ],
+          "post_max_abs_logratio": 0.12384601819756602,
+          "numeric_accept": true
+        },
+        "proposed_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/blocks/5/proposed.pt.gz",
+          "sha256": "f3a30d6a071124bb2998f167d9fcc4e3b3eb1c88b53a84e16db6e177e930f359",
+          "hashes": {
+            "learned": "f44f5524d291e22285c0066139b1520b4c3d65cb445e977d85760967e7abbf9f",
+            "optimizer": "f8001433a5c2ba640ac024ea57ab56838136c6834de82506fd164dbdb154eaad"
+          },
+          "policy_hash": "5c43ac025862bc607178cbd90b4f17231e1b8976feec88a99168d2b772ce4ae6"
+        },
+        "accepted": true,
+        "course_centre": {
+          "role": "course_centre",
+          "job_id": "course_centre",
+          "physics_steps": 40000,
+          "success": false,
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 2.2163073020510344,
+          "array_digest": "2e4ae2982c36ea821f21f6a7cca37c0cedfadeb8b26027a0151b5119c2f20537",
+          "integration_sha256": "db21974888aaf89b175afc84d87f329b9cb3ae0a2f87258c77fb662b531b61e0",
+          "policy_hash": "5c43ac025862bc607178cbd90b4f17231e1b8976feec88a99168d2b772ce4ae6",
+          "complete": true,
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/episodes/0039.npz",
+          "sha256": "6a91b794ae1288a3c84403dd16f8d336a0f37540e9ad636ac29a9521188a3a04"
+        },
+        "promote": false,
+        "level_before": 0,
+        "level_after": 0
+      }
+    ],
+    "updates": {
+      "live": 48,
+      "shadow": 48
+    },
+    "result": {
+      "initial_old8": {
+        "valid": 8,
+        "success": 8,
+        "contact": 0,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "initial_old275": null,
+      "initial_main_centres": {
+        "valid": 2,
+        "success": 1,
+        "contact": 1,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/candidate.pt.gz",
+        "sha256": "f3a30d6a071124bb2998f167d9fcc4e3b3eb1c88b53a84e16db6e177e930f359",
+        "hashes": {
+          "learned": "f44f5524d291e22285c0066139b1520b4c3d65cb445e977d85760967e7abbf9f",
+          "optimizer": "f8001433a5c2ba640ac024ea57ab56838136c6834de82506fd164dbdb154eaad"
+        },
+        "policy_hash": "5c43ac025862bc607178cbd90b4f17231e1b8976feec88a99168d2b772ce4ae6"
+      },
+      "old275": null,
+      "main54": null,
+      "fresh16": null,
+      "reload78": null,
+      "stable_new070_80": false,
+      "original_control": {
+        "valid": 2,
+        "success": 1,
+        "contact": 1,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "main_centres": {
+        "valid": 2,
+        "success": 1,
+        "contact": 1,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      }
+    },
+    "native_setup_commands": 1,
+    "all_workers_stopped": true,
+    "all_native_sessions_closed": true,
+    "seven_eight_entered": false
+  },
+  "elapsed_s": 2628.3592717647552,
+  "commands_including_zero_native_geometry": 154,
+  "receipt": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/long_distance_20261101/release_receipt_T393.json"
+}
