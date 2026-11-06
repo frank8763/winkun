@@ -1,0 +1,65 @@
+{
+  "state": "READONLY_POSTHOC_ARITHMETIC",
+  "native": 0,
+  "optimizer": 0,
+  "backward": 0,
+  "pose_at_takeover": [
+    {
+      "prefix_seconds": 52.0,
+      "xy": [
+        2.0318931473438804,
+        -3.5552442267052973
+      ],
+      "yaw_degrees": -69.88157967318264,
+      "goal_bearing_error_degrees": -19.655723133817695,
+      "remaining_m": 1.0066409753565697,
+      "success_total_clock_seconds": [],
+      "mode_success": null
+    },
+    {
+      "prefix_seconds": 56.0,
+      "xy": [
+        2.116552414937174,
+        -3.9691136010127837
+      ],
+      "yaw_degrees": -77.57290836104349,
+      "goal_bearing_error_degrees": -19.784007574324917,
+      "remaining_m": 0.5976588656685721,
+      "success_total_clock_seconds": [
+        59.416,
+        59.58,
+        59.216,
+        59.804
+      ],
+      "mode_success": null
+    },
+    {
+      "prefix_seconds": 60.0,
+      "xy": [
+        2.1746550912306386,
+        -4.370968842085999
+      ],
+      "yaw_degrees": -80.53653948689113,
+      "goal_bearing_error_degrees": -44.659309633512436,
+      "remaining_m": 0.23358621248860806,
+      "success_total_clock_seconds": [
+        60.472,
+        60.486,
+        60.388,
+        60.512
+      ],
+      "mode_success": null
+    }
+  ],
+  "actual_unique": 12,
+  "exact_repeats": 12,
+  "total_physics": 799874,
+  "all_commands": 27,
+  "unique_forced_prefix_physics": 336000,
+  "unique_random_suffix_physics": 63937,
+  "manifest_members_rechecked": 25,
+  "parent_model_SHA": "f3a30d6a071124bb2998f167d9fcc4e3b3eb1c88b53a84e16db6e177e930f359",
+  "receipt_SHA": "320bce4a97c21e2d1cbab2bfea7200ccaf4d119d25af14246dc616798419836c",
+  "raw_manifest_SHA": "c8e211e970fd62853e8a9b178cd05d2208be2d7efeb33801f6dfe7095f73eb5a",
+  "limitation": "12 trajectories share one frozen model and map; angle and remaining distance differences are descriptive, not isolated causes. No deterministic-mode rollout or new training."
+}
