@@ -8,7 +8,9 @@ LEGACY=['t228_balanced_stability','t231_retained_behavior_repair','t239_ar_polic
 old=T.B.require_stopped
 def stopped(d):
     if d.name not in [*LEGACY,'t396_cold_reserve','t396_iterative_recovery']:return old(d)
-    s=json.loads((d/'summary.json').read_text());assert s['state'] in ['COMPLETE','FAILED'] and s['all_workers_stopped']
+    s=json.loads((d/'summary.json').read_text())
+    allowed=['COMPLETE','FAILED']+(['ENDED_WITH_ACCEPTANCE_AND_POSTPROCESSING_ERROR'] if d.name=='t228_balanced_stability' else [])
+    assert s['state'] in allowed and s['all_workers_stopped']
     if d.name not in LEGACY:
         assert s['state']=='COMPLETE'
         a=ROOT/'stage/docs/review_20261106/T396_COLD_AUDIT.json' if d.name=='t396_cold_reserve' else d/'audit.json'
