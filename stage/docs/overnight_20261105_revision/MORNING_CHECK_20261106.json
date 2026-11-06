@@ -1,0 +1,103 @@
+{
+  "state": "PASS_READ_ONLY_MORNING_REVIEW_NOT_NEW_TRAINING",
+  "checked_at": "2026-11-06T08:55:54.214658+08:00",
+  "new_native": 0,
+  "new_optimizer": 0,
+  "original_final_report_sha256": "2f588b92cb54b0f233cf3ed951b398d020fc581e6241df1e18d47d65a0cfe17b",
+  "manifests": [
+    {
+      "path": "stage/runs/t387_full_horizon_night/local_manifest.json",
+      "entries": 373,
+      "all_exact": true,
+      "manifest_sha256": "3b1858948936a5447e40fc7fd07a7d6852bb4451cc3de2f8ac26763387b6d357"
+    },
+    {
+      "path": "stage/runs/t387_full_horizon_night/action_residual/local_manifest.json",
+      "entries": 11,
+      "all_exact": true,
+      "manifest_sha256": "ee1df2e084b410f8e884c2e46a6ab886b196eb3e82099da2b9b3063d684bed76"
+    },
+    {
+      "path": "stage/runs/t387_full_horizon_night/phase_warp/local_manifest.json",
+      "entries": 11,
+      "all_exact": true,
+      "manifest_sha256": "a7f683c750db1264327f4561049259cbd0999dcc78fcf46d4ede363de41632ec"
+    },
+    {
+      "path": "stage/runs/t387_full_horizon_night/student/local_manifest.json",
+      "entries": 346,
+      "all_exact": true,
+      "manifest_sha256": "b0632f96876da824f68178e962c7e0f053583980e343e67bff85619e2f34b86c"
+    }
+  ],
+  "locked_inputs": 14,
+  "locked_inputs_exact": true,
+  "original_recorded_pids": [
+    271063,
+    271066,
+    271067,
+    271072,
+    276986,
+    277207,
+    277212,
+    277224,
+    279135
+  ],
+  "all_recorded_pids_absent": true,
+  "student_raw_cases": {
+    "initial_old275": {
+      "valid": 275,
+      "success": 0,
+      "collision": 133,
+      "timeout": 142,
+      "invalid": 0,
+      "censored": 0,
+      "physics": 3813586
+    },
+    "initial_dev": {
+      "valid": 27,
+      "success": 0,
+      "collision": 21,
+      "timeout": 6,
+      "invalid": 0,
+      "censored": 0,
+      "physics": 372161
+    },
+    "final_new070": {
+      "valid": 5,
+      "success": 0,
+      "collision": 5,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0,
+      "physics": 78078
+    },
+    "final_old20": {
+      "valid": 20,
+      "success": 1,
+      "collision": 9,
+      "timeout": 10,
+      "invalid": 0,
+      "censored": 0,
+      "physics": 337026
+    },
+    "final_original2": {
+      "valid": 2,
+      "success": 0,
+      "collision": 1,
+      "timeout": 1,
+      "invalid": 0,
+      "censored": 0,
+      "physics": 45208
+    }
+  },
+  "student_exact_replays": 1,
+  "raw_physics": 4661624,
+  "raw_commands": 330,
+  "original_six_stable": false,
+  "new070_teacher_success_one_trajectory_plus_exact_repeat": true,
+  "seven_eight_entered": false,
+  "global_newruns_bytes": 1055816628,
+  "free_bytes": 153561321472,
+  "inherited_inputs_exact": 485
+}
