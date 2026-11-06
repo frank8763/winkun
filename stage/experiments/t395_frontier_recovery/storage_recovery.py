@@ -43,4 +43,6 @@ def main():
 
 def audit():S.audit()
 
+def load_original(path):return S.load_original(path)
+
 if __name__=='__main__':globals()[sys.argv[1]]()

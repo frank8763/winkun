@@ -10,17 +10,19 @@ def version(job):
 
 def prepare():
     assert not OUT.exists()
-    storage=ROOT/'stage/runs/t395_storage_reserve'
+    storage=ROOT/'stage/runs/t395_storage_entry_recovery'
     assert read(storage/'summary.json')['state']=='COMPLETE' and read(storage/'audit.json')['state']=='PASS'
     prior=ROOT/'stage/runs/t394_takeover_diagnostic';assert read(prior/'audit.json')['state']=='PASS'
     for folder in [PRIOR,prior,storage]:
         assert not Path('/proc',str(read(folder/'summary.json')['pid'])).exists()
     receipt=ROOT/'stage/docs/long_distance_20261101/release_receipt_T394.json'
+    storage_receipt=ROOT/'stage/docs/long_distance_20261101/release_receipt_T395-STORAGE.json'
     assert read(receipt)['state']=='FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED'
+    assert read(storage_receipt)['state']=='FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED'
     source=ROOT/'stage/runs/t377_full_human_observation_transfer/protocol.json';base=read(source)
     centres=[version(j) for j in base['original_jobs']];left=copy.deepcopy(base['narrow_jobs'][0]);left['id']='new070_80_course_LEFT'
     paths=[*HERE.glob('*.py'),source,PARENT,REFERENCE,RECOVERY,PRIOR/'summary.json',PRIOR/'audit.json',prior/'summary.json',prior/'audit.json',receipt,
-        storage/'summary.json',storage/'audit.json',DOC/'T395_PLAN.md',DOC/'T395_FRONTIER_METHODS.md',DOC/'T392_PRIMARY_METHODS.md',
+        storage/'summary.json',storage/'audit.json',storage_receipt,DOC/'T395_PLAN.md',DOC/'T395_FRONTIER_METHODS.md',DOC/'T392_PRIMARY_METHODS.md',
         ROOT/'stage/experiments/t392_demo_closed_loop/t392_learning.py',ROOT/'stage/experiments/t393_safe_demo_pg/t393_learning.py',
         ROOT/'stage/experiments/t387_full_horizon_night/night_common.py',ROOT/'stage/experiments/t381_native_mppi_teacher/run.py']
     for f in HERE.glob('*.py'):ast.parse(f.read_text())
