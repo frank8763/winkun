@@ -1,0 +1,50 @@
+{
+  "id": "T390_COHERENT_SUCCESS_TRANSFER",
+  "source_protocol": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json",
+  "inputs": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/research_20261106_complex_navigation/CLOSED_LOOP_TRANSFER_METHODS.md": "4aa9531acecdfea6f1bfcac8acd2ed25f8d9811f7950013714de0dd0af791670",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/review_20261106/T390_PLAN.md": "c7136979fe50c5473983cc958a2291c8d78f2b9176382f5fc2b1500d12399569",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t387_full_horizon_night/night_common.py": "e95eefef67e12221df2a5ee023e36d9f67af5fc887386264a9ef9ba9fd96455f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t390_coherent_success_transfer/driver.py": "528440dbe9764befdc686aa0d1b57549b1570276ad5de8ac7eb92226d1570279",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t390_coherent_success_transfer/run.py": "df68461df045f59e92c9321d787993e27dd9df40b4d0e1ff9384159b8b461008",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t390_coherent_success_transfer/transport.py": "5bdad081ec3be94c5e38d33dfabc93b76ad762e91e059982f385251a69c5d824",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json": "99073e210f7d964c18e6306f448ac528d461dbd7426bac4ffaf26f474897493c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t387_full_horizon_night/phase_warp/audit.json": "61d0223a418e502f2a9ba4f4a6e02ad53bc535e74d5b6710bc7af4b22d39c937",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t387_full_horizon_night/phase_warp/mixed.npz": "a9c11817ea3f3cef25603821587b5bf53954536821193083bb62a8dde37fb01d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t387_full_horizon_night/student/initial.pt.gz": "70e0b80dfd13dc65724bcd6aa930d49ac1098a426bfacadb5a31f5e3b1e5427f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t387_full_horizon_night/student/summary.json": "021d97592ef529f03e1936ea29ea115177cd7535ecc97926b00b5c64e1b0ff61",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t389_transfer_contract/summary.json": "799a21eab51d672ec778738a84bb45629160814efa085a4d141221729b30df35"
+  },
+  "arms": [
+    "prefix_complete",
+    "coherent_teacher_only"
+  ],
+  "live_steps": 1000,
+  "shadow_steps": 1000,
+  "audit_steps_per_arm": 1000,
+  "lr": 0.0001,
+  "trainable_parameters": 6864,
+  "main_seconds": 3600,
+  "learning_seconds": 2400,
+  "audit_seconds": 600,
+  "backup_seconds": 600,
+  "all_seconds": 4800,
+  "max_commands": 1000,
+  "max_physics": 30000000,
+  "final_bytes": 12582912,
+  "worst_commands": 904,
+  "worst_physics": 19156160,
+  "worst_bytes": 11237888,
+  "cached_initial_policy": "5408fc0acd8f29b0ae3bf7e6c72263582fac968b840bcbcddba4b5551872dbd0",
+  "initial_old275_historical": {
+    "success": 0,
+    "collision": 133,
+    "timeout": 142,
+    "valid": 275,
+    "invalid": 0,
+    "censored": 0
+  },
+  "deployment": "Single causal120 recurrent Actor; no maps, planner, waypoints, teacher, route, mask or phase input",
+  "new_RL_updates": 0,
+  "first_failed_centre_stops_that_arm_native_evaluation": true
+}
