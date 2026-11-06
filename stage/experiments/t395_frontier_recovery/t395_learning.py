@@ -25,6 +25,7 @@ def verify(p):
 
 def check_stop():C.check_stop()
 def install_stop_handlers():return C.install_stop_handlers()
+def clear_stop():C.STOP_REQUESTED=None
 
 def fit(q,opt,items,first,p,refs,guard,event):
     batch,returns,errors=blocks(q,items,first,p);trace=[];components=[]

@@ -115,7 +115,7 @@ def preflight():
             os.kill(os.getpid(),signal.SIGTERM)
             try:check_stop();raise AssertionError('Pending signal not raised by guard')
             except StageStop:signal_probe=True
-            LOCAL.STOP_REQUESTED=None
+            LOCAL.clear_stop()
         finally:ss.close()
     finally:w.close()
     # Max-shape incompressible payload check, preserving all120 observations,
@@ -134,7 +134,7 @@ def preflight():
     # Its bytes are within the metadata reserve, not a deployed candidate.
     save(OUT/'geometry.json',geom)
     save(OUT/'preflight.json',dict(state='PASS',native=0,geometry=len(geom)+1,native_setup_commands=1,discarded_Adam=4,
-        deterministic_safeT255_commands_exact=True,density_errors=errors,executed_p95_abs_change=spread.tolist(),
+        deterministic_parent_T393_commands_hidden_exact=True,density_errors=errors,executed_p95_abs_change=spread.tolist(),
         raw_innovation_sigma_exact=True,full400_incompressible=full,synthetic_PG_and_Adam_shadow_rollback=True,
         initial_T393_policy_command_hidden_exact=True,
         prefix_history_gradient_after_readout_update=True,future_causality=True,
