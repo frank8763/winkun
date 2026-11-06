@@ -1,0 +1,76 @@
+{
+  "id": "T391_ACTUAL_STUDENT_RECOVERY",
+  "source_protocol": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json",
+  "inputs": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/long_distance_20261101/release_receipt_T389-T390R.json": "2dd06c8ccf87f2316dd310cd88dbab2220ad2b6bbf41fae2305e445f8f3ee741",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/research_20261106_complex_navigation/CLOSED_LOOP_TRANSFER_METHODS.md": "4aa9531acecdfea6f1bfcac8acd2ed25f8d9811f7950013714de0dd0af791670",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/review_20261106/T391_PLAN.md": "7d7afa4394c18aa27480e7cf3bb1557e8607ae634591f05ea6d1cca9de858170",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t381_native_mppi_teacher/run.py": "cbef7ad373d874de2c5e77f77350c971667974671914a6f0392d80f2a7bcc409",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t387_full_horizon_night/night_common.py": "e95eefef67e12221df2a5ee023e36d9f67af5fc887386264a9ef9ba9fd96455f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t390r_worker_entry_recovery/run.py": "96ff640946f9889a64d4b9968ac66f216740eb96abad2acbddc473594e6f8700",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t391_actual_student_recovery/driver.py": "eccdae3d34ec9ebc710a938549845c7d64ac6500177041dbc094eb3f87caf707",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t391_actual_student_recovery/prepare.py": "db56bd35115b73c0fea223e803d35aecbf683f586bd8ccbf49abbe6507b29174",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t391_actual_student_recovery/recovery_common.py": "69abded2a2f53c6723b21b63e7c4261cb4389da0b9ed59afd7f50c0309a0a684",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t391_actual_student_recovery/student.py": "9f73f6b253e6a7e87d957ad1fc5a6c20e031bc37615470b0333590d03808a638",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t391_actual_student_recovery/teacher.py": "401f5bd6988edae306c7097a54747e6d19488c99d543a828810b861295efc579",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t391_actual_student_recovery/transport.py": "d3acdea67322d193f5b63e5a9fa4690ee6904622fd0c3a8af003ecb59ef6502d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json": "99073e210f7d964c18e6306f448ac528d461dbd7426bac4ffaf26f474897493c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t387_full_horizon_night/phase_warp/mixed.npz": "a9c11817ea3f3cef25603821587b5bf53954536821193083bb62a8dde37fb01d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t390r_worker_entry_recovery/audit.json": "30d6dd1938b9b3c7cced07266ced82b79c6a5062271ee621d5605d72ee95caa4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t390r_worker_entry_recovery/coherent_teacher_only/candidate.pt.gz": "81e71d75aaff77a7828c306d3d6f6260fb86aa7c86302eb2148844178d8b03fb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t390r_worker_entry_recovery/coherent_teacher_only/centre.npz": "8c06cc5e39c88e5aad57233810fb59e2abb7b1571afffa7c4a8df966411c8681",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t390r_worker_entry_recovery/summary.json": "44993ed58fd517c01ed7bb585eee33ac103415e6793f362407bd2959e05f422a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/review_20261106/T391_FRESH_ADMISSION.json": "f309dd70fe6867b14c6433533d32faa73ab7311bf0d66a1d5bbeaa36a9dc1035"
+  },
+  "user_answer": "Training-only automatic simulation teacher; verify recovery success before learning",
+  "prefix_holds": 12,
+  "remaining_holds": 388,
+  "trigger": {
+    "first_position_over_m": 0.05,
+    "or_yaw_over_degrees": 5.0,
+    "actual_position_m": 0.05879383689582868,
+    "actual_yaw_degrees": 3.4775551579448836,
+    "actual_clock_s": 2.4000000000000004
+  },
+  "teacher": {
+    "seed": 20261106391,
+    "initial_sd": [
+      0.12,
+      1.0
+    ],
+    "minimum_sd": [
+      0.03,
+      0.2
+    ],
+    "iterations": 3,
+    "candidates": 12,
+    "elite": 3,
+    "alpha": 0.5,
+    "main_seconds": 3000,
+    "audit_seconds": 180,
+    "max_physics": 3000000,
+    "max_commands": 80,
+    "final_bytes": 3145728
+  },
+  "student": {
+    "live_steps": 1000,
+    "shadow_steps": 1000,
+    "audit_steps": 1000,
+    "lr": 0.0001,
+    "main_seconds": 1800,
+    "learning_seconds": 900,
+    "audit_seconds": 300,
+    "max_physics": 10000000,
+    "max_commands": 460,
+    "final_bytes": 9961472
+  },
+  "all_seconds": 6000,
+  "backup_seconds": 600,
+  "root_bytes": 524288,
+  "final_bytes": 13631488,
+  "combined_max_physics": 13000000,
+  "combined_max_commands": 550,
+  "new_RL_updates": 0,
+  "source_parent_policy_hash": "f5fa813855da0b564dc2aaa2bb518fbb1a30c903fc0f1a7b30577d68196cfdab",
+  "deployment": "Single causal120 recurrent Actor without maps/planner/waypoints/teacher/route/mask/phase input"
+}
