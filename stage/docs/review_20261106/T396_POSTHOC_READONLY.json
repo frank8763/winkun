@@ -1,0 +1,75 @@
+{
+  "state": "READONLY_EXISTING_ARRAY_ARITHMETIC",
+  "native": 0,
+  "optimizer": 0,
+  "backward": 0,
+  "new_samples": 0,
+  "teacher_trajectories": [
+    {
+      "name": "teacher_full",
+      "sha256": "f749383621d608bde64bd6a9e60931d530f59134865ad40959a1cebb51feb27e",
+      "total_clock_s": 60.496,
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "remaining_m": 0.19992318045108365,
+      "teacher_start_s": 53.4,
+      "teacher_start_pose": [
+        2.0695716595281706,
+        -3.711070733280559,
+        -1.2784446800101306
+      ],
+      "teacher_start_remaining_m": 0.8512946453099054,
+      "handoff_s": 54.4,
+      "handoff_pose": [
+        2.093548992218025,
+        -3.8242907499853254,
+        -1.3102290434848247
+      ],
+      "best_recorded_endpoint_m": 0.19992318045108365,
+      "best_recorded_endpoint_clock_s": 60.496,
+      "ownership_counts": {
+        "0": 2,
+        "1": 301
+      },
+      "student_random_actions": 0
+    },
+    {
+      "name": "bridge",
+      "sha256": "8890ceccfbca3da4688359500c6e0e46e74af5a8342235723d96db453acee57e",
+      "total_clock_s": 80.0,
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "remaining_m": 2.1491617364228564,
+      "teacher_start_s": 53.4,
+      "teacher_start_pose": [
+        2.0695716595281706,
+        -3.711070733280559,
+        -1.2784446800101306
+      ],
+      "teacher_start_remaining_m": 0.8512946453099054,
+      "handoff_s": 54.4,
+      "handoff_pose": [
+        2.093548992218025,
+        -3.8242907499853254,
+        -1.3102290434848247
+      ],
+      "best_recorded_endpoint_m": 0.20715907052063134,
+      "best_recorded_endpoint_clock_s": 59.8,
+      "ownership_counts": {
+        "0": 130,
+        "1": 270
+      },
+      "student_random_actions": 0
+    }
+  ],
+  "first_full_vs_bridge_shared272_exact": true,
+  "all_commands": 34,
+  "all_physics": 586721,
+  "no_student_training": true,
+  "learned_weights_unchanged_from_T393": true,
+  "source_protocol_sha": "bef28fa64c91027a92f38d1e267f1b2c9a08ce4cb34e7fb93a7820374cf2e70a",
+  "summary_sha": "e183d0a84c11052b56d945f6824854595c405b9c9bf0b75fb4ed6ef673df693b",
+  "limitation": "Endpoint minima are sampled, not continuous-native minima. Full teacher versus one-second teacher intervention has one shared snapshot and exact matching prefix, but does not identify the minimal necessary handoff duration or prove that other one-second controls cannot work."
+}
