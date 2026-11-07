@@ -1,0 +1,291 @@
+{
+  "id": "T411_ACTUAL_STUDENT_HISTORY_CLOSED_LOOP_EXPERT",
+  "source_protocol": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json",
+  "raw_sigma": [
+    0.2,
+    0.2
+  ],
+  "lr": 0.0001,
+  "initial_model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/lateral/candidate.pt.gz",
+  "student_policy_hash": "065aabd2b4b997f02c03dd89f88e5939d1b024dc5247920256640f74ef99731f",
+  "student_history_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t405_wide_admission/episodes/1.npz",
+  "teacher_model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t406_wide_full_route/candidate.pt.gz",
+  "teacher_policy_hash": "631103faeff6d840b94c43e6b10fb2464e537e38edd84f8c8d02f0784710278d",
+  "cases": [
+    {
+      "id": "source0",
+      "job": {
+        "id": "wide_dev_0",
+        "source_reset_id": "wide_dev_0",
+        "group": "6m_LEFT",
+        "case": {
+          "id": "6m_LEFT",
+          "seed": 2029653601,
+          "angle_deg": -17.3,
+          "side": "LEFT",
+          "distance_m": 6.0,
+          "step_cap": 40000,
+          "group": "original_5m_primary"
+        },
+        "delta_x_m": 0,
+        "delta_y_m": 0,
+        "delta_yaw_deg": 0.0,
+        "seed": 0,
+        "mode": "deterministic",
+        "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+        "expected_initial120_sha256": null,
+        "wide_course": true,
+        "circle_shift_x_m": 0.6
+      },
+      "first": 0,
+      "source_control": true
+    },
+    {
+      "id": "recover2s",
+      "job": {
+        "id": "wide_dev_0",
+        "source_reset_id": "wide_dev_0",
+        "group": "6m_LEFT",
+        "case": {
+          "id": "6m_LEFT",
+          "seed": 2029653601,
+          "angle_deg": -17.3,
+          "side": "LEFT",
+          "distance_m": 6.0,
+          "step_cap": 40000,
+          "group": "original_5m_primary"
+        },
+        "delta_x_m": 0,
+        "delta_y_m": 0,
+        "delta_yaw_deg": 0.0,
+        "seed": 0,
+        "mode": "deterministic",
+        "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+        "expected_initial120_sha256": null,
+        "wide_course": true,
+        "circle_shift_x_m": 0.6
+      },
+      "first": 10,
+      "source_control": false
+    },
+    {
+      "id": "recover4s_0",
+      "job": {
+        "id": "wide_dev_0",
+        "source_reset_id": "wide_dev_0",
+        "group": "6m_LEFT",
+        "case": {
+          "id": "6m_LEFT",
+          "seed": 2029653601,
+          "angle_deg": -17.3,
+          "side": "LEFT",
+          "distance_m": 6.0,
+          "step_cap": 40000,
+          "group": "original_5m_primary"
+        },
+        "delta_x_m": 0,
+        "delta_y_m": 0,
+        "delta_yaw_deg": 0.0,
+        "seed": 0,
+        "mode": "deterministic",
+        "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+        "expected_initial120_sha256": null,
+        "wide_course": true,
+        "circle_shift_x_m": 0.6
+      },
+      "first": 20,
+      "source_control": false
+    },
+    {
+      "id": "recover4s_1",
+      "job": {
+        "id": "wide_dev_1",
+        "source_reset_id": "wide_dev_1",
+        "group": "6m_LEFT",
+        "case": {
+          "id": "6m_LEFT",
+          "seed": 2029653601,
+          "angle_deg": -17.3,
+          "side": "LEFT",
+          "distance_m": 6.0,
+          "step_cap": 40000,
+          "group": "original_5m_primary"
+        },
+        "delta_x_m": -0.03,
+        "delta_y_m": 0,
+        "delta_yaw_deg": 0.0,
+        "seed": 0,
+        "mode": "deterministic",
+        "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+        "expected_initial120_sha256": null,
+        "wide_course": true,
+        "circle_shift_x_m": 0.6
+      },
+      "first": 20,
+      "source_control": false
+    },
+    {
+      "id": "recover4s_2",
+      "job": {
+        "id": "wide_dev_2",
+        "source_reset_id": "wide_dev_2",
+        "group": "6m_LEFT",
+        "case": {
+          "id": "6m_LEFT",
+          "seed": 2029653601,
+          "angle_deg": -17.3,
+          "side": "LEFT",
+          "distance_m": 6.0,
+          "step_cap": 40000,
+          "group": "original_5m_primary"
+        },
+        "delta_x_m": 0.03,
+        "delta_y_m": 0,
+        "delta_yaw_deg": 0.0,
+        "seed": 0,
+        "mode": "deterministic",
+        "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+        "expected_initial120_sha256": null,
+        "wide_course": true,
+        "circle_shift_x_m": 0.6
+      },
+      "first": 20,
+      "source_control": false
+    },
+    {
+      "id": "recover4s_3",
+      "job": {
+        "id": "wide_dev_3",
+        "source_reset_id": "wide_dev_3",
+        "group": "6m_LEFT",
+        "case": {
+          "id": "6m_LEFT",
+          "seed": 2029653601,
+          "angle_deg": -17.3,
+          "side": "LEFT",
+          "distance_m": 6.0,
+          "step_cap": 40000,
+          "group": "original_5m_primary"
+        },
+        "delta_x_m": 0,
+        "delta_y_m": -0.03,
+        "delta_yaw_deg": 0.0,
+        "seed": 0,
+        "mode": "deterministic",
+        "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+        "expected_initial120_sha256": null,
+        "wide_course": true,
+        "circle_shift_x_m": 0.6
+      },
+      "first": 20,
+      "source_control": false
+    },
+    {
+      "id": "recover4s_4",
+      "job": {
+        "id": "wide_dev_4",
+        "source_reset_id": "wide_dev_4",
+        "group": "6m_LEFT",
+        "case": {
+          "id": "6m_LEFT",
+          "seed": 2029653601,
+          "angle_deg": -17.3,
+          "side": "LEFT",
+          "distance_m": 6.0,
+          "step_cap": 40000,
+          "group": "original_5m_primary"
+        },
+        "delta_x_m": 0,
+        "delta_y_m": 0.03,
+        "delta_yaw_deg": 0.0,
+        "seed": 0,
+        "mode": "deterministic",
+        "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+        "expected_initial120_sha256": null,
+        "wide_course": true,
+        "circle_shift_x_m": 0.6
+      },
+      "first": 20,
+      "source_control": false
+    }
+  ],
+  "source_control_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t366_factual_history/episodes/wide_dev_0.npz",
+  "source_control_shared_keys": [
+    "states",
+    "next_states",
+    "actions",
+    "native_counts",
+    "end_flags",
+    "poses",
+    "next_poses",
+    "rewards",
+    "history_poses",
+    "history_goals",
+    "history_times",
+    "initial_native_integration",
+    "final_native_integration"
+  ],
+  "inputs": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261107/T411_PLAN.md": "3d5c955b1c4469f621b27a2823418641cd8ba480b98f9d84309f399e03fe4efa",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/long_distance_20261101/release_receipt_T410.json": "f8f3f20cef82febf6fb33b900c6500126c51aea64abf8406d95302e02b1ca236",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t348_causal_sequence_warmstart/t348_core.py": "ebcb95538516c339aa0bae7291688f7d6b007ccc4e426374ef8d8b2afbc08a21",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t392_demo_closed_loop/t392_learning.py": "2778e593a6468dd7eaeabcff69de12c70c754a7a35a81edeb3b4efbf64b3d884",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t393_safe_demo_pg/t393_learning.py": "b7719e6a95d2be316ebe0dbd704ba030227ccb473805aadc91d4f1ded2c210ba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t398_warm_recovery_rl/t398_learning.py": "6dcb3a11c7e02c89854b737578644cf59434ae4e616633e9bb34088e99a63fe4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t404_last_narrow/t404_core.py": "db4b98197cee21afe8d642cb38233cd1337e3dd3aadee1ef7f9e1d88527d30e1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t406_wide_full_route/t406_core.py": "9702bdc0a2c5c36c700f5854b3e2ae2c1a2b46b2353c8c729e739a2e0d079d2b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t408_joint_wide/audit.py": "cf886acc756fa0c294eed6df19fb3ee88baabd0492b28f8910365fa76a8deafb",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t408_joint_wide/night.py": "e3063407732f8770a2e3c9fe85ea7dfcb3f2d71cc93063f52000ea7517214d31",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t408_joint_wide/prepare.py": "3a8bb6dc0ff062120a26f2073def4f9666bdb359389fe111f04923214cd00a3a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t408_joint_wide/run.py": "41053c1dcbc8451fe0860c0260b93944e325d38f662590ee837a1e72e643a560",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t408_joint_wide/t408_core.py": "581587a7d7c4c2313c36b84e0fa7147bcd3bc8d580e2be60c08b8b6147a93fc2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t408_joint_wide/transport.py": "105833de68060ab50b201c79c7299324c5651629254383cad7cab17a14860cc2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t410_day_offline_chain/day_core.py": "cd2aa0aa5ac3ad608b2cebaee690cc92cda099c5472d394a204d264a30470068",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t411_closed_teacher_recovery/audit.py": "4d8b049fa604e54faa5560567fbf4363738f2af7363c03afc8816ce2440f0ffc",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t411_closed_teacher_recovery/driver.py": "b89f8b269fa0e98a7123d715e20d9ec885d17697eefbaee65d6742a43a0e0d88",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t411_closed_teacher_recovery/prepare.py": "95f639cce80b33ec66342f5566d9f4f46cc0281acf150af4ae15b1afd93dc2d2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t411_closed_teacher_recovery/run.py": "f5e1e297c953d629745042449dec0916ad2b79adc3e70e532b56162559f265b4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t411_closed_teacher_recovery/t411_core.py": "1db3776f11193bab386e7c8793e4d408380ea0780b4df339a9b520d5b2b187a7",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t411_closed_teacher_recovery/transport.py": "579323733449767a654bc37cdf937ff45b29987fa5f437d3ba213f9ec4a7e43c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t353_temporal_exploration/iid_final.pt.gz": "0b15d36ef504e419b36a299b81fef2aaf80553d8c1b3668c80345a6228417a23",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t366_factual_history/episodes/wide_dev_0.npz": "ba8103a64f705c53f88028b08d1aa7bd49a6fb8b9de2a16b2703c094cd7b9bd5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t377_full_human_observation_transfer/protocol.json": "99073e210f7d964c18e6306f448ac528d461dbd7426bac4ffaf26f474897493c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t393_safe_demo_pg/candidate.pt.gz": "f3a30d6a071124bb2998f167d9fcc4e3b3eb1c88b53a84e16db6e177e930f359",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t402r_offline_night/candidate.pt.gz": "d94cfaef591f707376678b6da1d4fe61102e1c491949337949aea825f08e0c87",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t404_last_narrow/candidate.pt.gz": "35d4bbaed63dcaf241953defe509a9fd0911e514b71ecd53f565ea927745ffcf",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t405_wide_admission/episodes/1.npz": "bc43aaa9f5e0e6119fff3c6155546924f648bd522ef3a2d3ceb36b325058093b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t406_wide_full_route/candidate.pt.gz": "6d4f70269233b3ee4974ab3213f8fdb6d4afae91376f668da05cf3cab2bd8bcd",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/day_ledger.json": "96dad2b0521bcd1f6ac6547006576ece7fa09625794a2daf157bb471c313c603",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/lateral/audit.json": "eeec4f1e426c89773a61f31d45d65ee8820b9e3b51523d7a00f3e641aef8c32d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/lateral/candidate.pt.gz": "01ca9791005f4ac65b7f23de4c31b4a17a095a34b74927c19802e1f65e10d2b9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/validation/audit.json": "0ba49e7fd09389ec93565a1506679dd1a36e82c88c7e8218ffb28626aa2d9a10"
+  },
+  "final_bytes": 6291456,
+  "full_bytes": 557056,
+  "max_commands": 24,
+  "max_physics": 560000,
+  "main_seconds": 900,
+  "audit_seconds": 300,
+  "backup_seconds": 120,
+  "source_seconds": 120,
+  "all_seconds": 1440,
+  "Actor_updates": 0,
+  "Adam": 0,
+  "native_stop_absolute": 1794051000.0,
+  "all_stop_absolute": 1794052800.0,
+  "prior_day_actual": {
+    "physics": 9040429,
+    "commands": 685,
+    "main_wall_s": 3130.4473810195923
+  },
+  "day_limits": {
+    "physics": 50000000,
+    "commands": 2600,
+    "main_wall_s": 20000
+  },
+  "scientific_scope": "Frozen data-admission diagnostic; actualhistoryexpert hiddenadvancedfromt0, no teacherroute atdeployment, no autonomousstudent6mclaim",
+  "ownership": "0 student applied prefix,1 teacher appliedsuffix; teacher queryactions saved onallactualstates includingunexecutedprefixlabels",
+  "original_clock_goal_plant_unchanged": true,
+  "no_restart_or_grid": true,
+  "narrow_paused": true
+}
