@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t415_iql_value/runner.py", line 94, in <module>
+    if __name__=='__main__':globals()[sys.argv[1]]()
+  File "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t415_iql_value/runner.py", line 37, in prepare
+    d,checks=data(p);assert len(d['train']['episodes'])==14 and len(d['validation']['episodes'])==8
+  File "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t415_iql_value/core.py", line 31, in data
+    d0=np.linalg.norm(a['poses'][:,:2]-a['task_goal_xy'],axis=1)
+KeyError: 'task_goal_xy'
