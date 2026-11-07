@@ -8398,7 +8398,7 @@
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t412_closed_expert_likelihood/workers/1/worker.log": "b7d715537a1bde28535609c8c7e49bfed9132999bc239f241f7337bfe1e632ca",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t412_closed_expert_likelihood/workers/0/worker.log": "b7d715537a1bde28535609c8c7e49bfed9132999bc239f241f7337bfe1e632ca"
   },
-  "source_sha256": "ec4af3c9267b75ab18728a35adf69453449fa5088987187ab5e1d589ee99323f",
+  "source_sha256": "a6f08a57ddcc73f38e7de338d03d75eb5586f985cc9683693d9046a13a0af18f",
   "max_seconds": 3600,
   "unique_bytes_removed_without_remote_copy": 0,
   "local_model_eviction_bytes": 8411963509,
@@ -8409,5 +8409,6 @@
   "remote_tag": "stage-archive-2026-10-30",
   "source_manifest_sha256": "4b09cd2f4dee6beda3d1fa79aa263e3e0eb99c4ecc8d4618921ea89ed6a6dacd",
   "zero_data_change_finalization": "Before any eviction: fsync restore mapping, verify HTTP200 compressed SHA, bounded range retry",
-  "transport_recovery": "First 64MiB range curl timeout28, zero archives verified/zero evictions; preserve failure; use8MiB range and bounded transport retries only"
+  "transport_recovery": "First 64MiB range curl timeout28, zero archives verified/zero evictions; preserve failure; use8MiB range and bounded transport retries only",
+  "transport_parallelization": "Transport-only four independent8MiB byte ranges, assembled inorder/fullSHA unchanged; prior sequential downloader stopped before any full asset/eviction"
 }

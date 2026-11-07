@@ -67,16 +67,20 @@ def asset_bytes(T,asset):
         assert len(data)==asset['bytes'] and hashlib.sha256(data).hexdigest()==asset['sha256'];return data
     assert code==302;url=headers['location'];assert T.urllib.parse.urlparse(url).hostname in ['release-assets.githubusercontent.com','objects.githubusercontent.com']
     out=io.BytesIO();h=hashlib.sha256();size=asset['bytes'];step=8*2**20
-    for begin in range(0,size,step):
+    from concurrent.futures import ThreadPoolExecutor
+    def fetch(begin):
         end=min(size-1,begin+step-1)
         for attempt in range(3):
             try:code,head,part=T.response('GET',url,headers={'Range':f'bytes={begin}-{end}','User-Agent':'Stage-byte-proof'})
             except T.urllib.error.URLError:
                 if attempt==2:raise
                 continue
-            if code==206 and head.get('content-range','').startswith(f'bytes {begin}-{end}/') and len(part)==end-begin+1:break
-        else:raise RuntimeError(('Remote byte range did not verify',asset['name'],begin,code))
-        h.update(part);out.write(part);print('READBACK_CHUNK',asset['name'],end+1,size,flush=True)
+            if code==206 and head.get('content-range','').startswith(f'bytes {begin}-{end}/') and len(part)==end-begin+1:return part
+        raise RuntimeError(('Remote byte range did not verify',asset['name'],begin,code))
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        for part in pool.map(fetch,range(0,size,step)):
+            h.update(part);out.write(part)
+            if out.tell()%(64*2**20)==0 or out.tell()==size:print('READBACK_CHUNK',asset['name'],out.tell(),size,flush=True)
     assert h.hexdigest()==asset['sha256'];return out.getvalue()
 def members(data,wanted=None):
     proc=subprocess.Popen(['zstd','-dc'],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE);errors=[]
