@@ -1,0 +1,570 @@
+{
+  "state": "COMPLETE_AUDITED_REMOTE_VERIFIED",
+  "elapsed_s": 3377.8818113803864,
+  "finished_epoch": 1794022245.220275,
+  "result": {
+    "state": "COMPLETE",
+    "pid": 450015,
+    "elapsed_s": 3338.8964233398438,
+    "physics": 11687694,
+    "commands": 733,
+    "updates": {
+      "live": 16,
+      "shadow": 16
+    },
+    "rounds": [
+      {
+        "round": 0,
+        "job": {
+          "id": "wide117_80_dev6_LEFT_00",
+          "source_reset_id": "dev6_LEFT_00",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 6.0,
+            "step_cap": 40000,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": -0.03,
+          "delta_y_m": -0.03,
+          "delta_yaw_deg": -2.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "expected_initial120_sha256": null
+        },
+        "sampling": {
+          "valid": 4,
+          "success": 1,
+          "contact": 2,
+          "timeout": 1,
+          "invalid": 0,
+          "censored": 0
+        },
+        "proposal": {
+          "returns": [
+            -0.3662645211816886,
+            0.5227403859101454,
+            0.0036379660642321208,
+            -0.3392209939250422
+          ],
+          "density_errors": [
+            [
+              3.3306690738754696e-16,
+              3.774758283725532e-15
+            ],
+            [
+              5.551115123125783e-16,
+              3.774758283725532e-15
+            ],
+            [
+              4.440892098500626e-16,
+              2.6645352591003757e-15
+            ],
+            [
+              4.440892098500626e-16,
+              3.1086244689504383e-15
+            ]
+          ],
+          "trace": [
+            [
+              -0.047715735549228575,
+              0.00047101100930520463,
+              1.0247545106340398e-32,
+              0.4249789730693114
+            ],
+            [
+              -0.048963221234378816,
+              0.00013390720956271083,
+              2.3123446080296198e-05,
+              0.19970247308852923
+            ],
+            [
+              -0.04922181805293091,
+              0.0002639144018072478,
+              6.682950509900206e-05,
+              0.2900504324440251
+            ],
+            [
+              -0.04951759340205546,
+              0.0010219064853874583,
+              2.731059261252381e-05,
+              0.28368475296889334
+            ],
+            [
+              -0.04990813466132134,
+              0.0007804803014999993,
+              5.0170883088617954e-05,
+              0.2592729689409946
+            ],
+            [
+              -0.05023842493033112,
+              0.00019873866107728144,
+              4.5247869203836025e-05,
+              0.21861885237251164
+            ],
+            [
+              -0.05052080926744841,
+              0.00173689825095556,
+              5.313147603805406e-05,
+              0.22028720825416065
+            ],
+            [
+              -0.05066811555062095,
+              0.0006838947406085006,
+              6.204240907286263e-05,
+              0.12173503353602728
+            ]
+          ],
+          "gradient_components": [
+            {
+              "pg_norm": 0.41731955052748937,
+              "old_plus_wide_increment_norm": 0.031109555530656915,
+              "cosine": 0.2111944057704189,
+              "old_task": 0,
+              "old_group": "old_0",
+              "wide_group": "wide_dev_0"
+            },
+            {
+              "pg_norm": 0.20943789847730226,
+              "old_plus_wide_increment_norm": 0.026913477293510867,
+              "cosine": -0.41757491494943044,
+              "old_task": 1,
+              "old_group": "old_27",
+              "wide_group": "wide_dev_1"
+            },
+            {
+              "pg_norm": 0.24932797678515245,
+              "old_plus_wide_increment_norm": 0.07078630968634815,
+              "cosine": 0.4803134632697108,
+              "old_task": 2,
+              "old_group": "old_54",
+              "wide_group": "wide_dev_2"
+            },
+            {
+              "pg_norm": 0.27547470806155916,
+              "old_plus_wide_increment_norm": 0.05621025701170562,
+              "cosine": 0.04621172493241519,
+              "old_task": 3,
+              "old_group": "old_81",
+              "wide_group": "wide_dev_3"
+            },
+            {
+              "pg_norm": 0.2378664865054618,
+              "old_plus_wide_increment_norm": 0.05673617751437632,
+              "cosine": 0.27501533163773534,
+              "old_task": 4,
+              "old_group": "old_108",
+              "wide_group": "wide_dev_4"
+            },
+            {
+              "pg_norm": 0.2067694564107661,
+              "old_plus_wide_increment_norm": 0.022529579866835237,
+              "cosine": 0.4865387619503588,
+              "old_task": 5,
+              "old_group": "old_135",
+              "wide_group": "wide_dev_0"
+            },
+            {
+              "pg_norm": 0.1935239738762091,
+              "old_plus_wide_increment_norm": 0.06538273688227449,
+              "cosine": 0.26870920282263566,
+              "old_task": 6,
+              "old_group": "old_157",
+              "wide_group": "wide_dev_1"
+            },
+            {
+              "pg_norm": 0.12022189873811288,
+              "old_plus_wide_increment_norm": 0.056866938705127955,
+              "cosine": -0.20973244930191512,
+              "old_task": 7,
+              "old_group": "old_184",
+              "wide_group": "wide_dev_2"
+            }
+          ],
+          "post_max_abs_logratio": 0.30795227450763507,
+          "numeric_accept": true
+        },
+        "proposed_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t406_wide_full_route/blocks/0/proposed.pt.gz",
+          "sha256": "3e7f3eb661132d01f225c54f3abcf44109cb6c569cf06b670dc91c2744727a63",
+          "hashes": {
+            "learned": "b3a33393525dde4af8d478c0826872266c3d3e953366ef99a55f83097bfe2cb2",
+            "optimizer": "20e1404ee6ba775369bf6c494bc3447646d1206aff6b32a49949f468dc44dc72"
+          },
+          "policy_hash": "169cd465ed18603f4931d23d6f6d72cb8020f0140c08fd0a3fe710f67772b037"
+        },
+        "old20": {
+          "valid": 20,
+          "success": 8,
+          "contact": 12,
+          "timeout": 0,
+          "invalid": 0,
+          "censored": 0
+        },
+        "wide5": {
+          "valid": 5,
+          "success": 5,
+          "contact": 0,
+          "timeout": 0,
+          "invalid": 0,
+          "censored": 0
+        },
+        "accepted": false,
+        "old_success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_00",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "dev_task7_26",
+          "hold_task6_03"
+        ],
+        "wide_success_ids": [
+          "wide_dev_0",
+          "wide_dev_1",
+          "wide_dev_2",
+          "wide_dev_3",
+          "wide_dev_4"
+        ],
+        "retained_hashes": {
+          "learned": "495112420d17d93b80a8ffa06e69d25e56734399a748645077577926c1bcf64b",
+          "optimizer": "4521f66f1197bff17213c39199075c34cf30cae0319f9217f84c3b855bca6594"
+        }
+      },
+      {
+        "round": 1,
+        "job": {
+          "id": "wide117_80_dev6_LEFT_14",
+          "source_reset_id": "dev6_LEFT_14",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 6.0,
+            "step_cap": 40000,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0,
+          "delta_y_m": 0,
+          "delta_yaw_deg": 2.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "expected_initial120_sha256": null
+        },
+        "sampling": {
+          "valid": 4,
+          "success": 1,
+          "contact": 2,
+          "timeout": 1,
+          "invalid": 0,
+          "censored": 0
+        },
+        "proposal": {
+          "returns": [
+            0.5477565559551708,
+            -0.36060690298812703,
+            -0.3736777442335469,
+            0.00401212946324055
+          ],
+          "density_errors": [
+            [
+              3.3306690738754696e-16,
+              3.552713678800501e-15
+            ],
+            [
+              3.3306690738754696e-16,
+              2.6645352591003757e-15
+            ],
+            [
+              4.440892098500626e-16,
+              2.886579864025407e-15
+            ],
+            [
+              4.996003610813204e-16,
+              3.552713678800501e-15
+            ]
+          ],
+          "trace": [
+            [
+              -0.045486421306725026,
+              0.0006216128473309192,
+              8.580483853038133e-33,
+              0.3540745982803029
+            ],
+            [
+              -0.04667872217021961,
+              0.00017304128836981457,
+              2.7856672633576352e-05,
+              0.24100862055444494
+            ],
+            [
+              -0.0470933680017489,
+              0.0002577050006695407,
+              6.32498145896304e-05,
+              0.24415430718282513
+            ],
+            [
+              -0.0472324297832474,
+              0.00048103877198194466,
+              9.994927628504754e-05,
+              0.23214217503279955
+            ],
+            [
+              -0.04736907092976465,
+              0.0006266786962235788,
+              0.00010683195778143338,
+              0.22120179524945335
+            ],
+            [
+              -0.047584728717460965,
+              0.00019382387224170302,
+              6.174835145097793e-05,
+              0.2402123563026167
+            ],
+            [
+              -0.04789025946571247,
+              0.0014431334640204378,
+              8.404200478452046e-05,
+              0.18848424169410194
+            ],
+            [
+              -0.048174172880286234,
+              0.0006702971681600643,
+              6.998600664055534e-05,
+              0.17153443102186022
+            ]
+          ],
+          "gradient_components": [
+            {
+              "pg_norm": 0.34920094593423195,
+              "old_plus_wide_increment_norm": 0.04763401762566872,
+              "cosine": 0.03482420749799331,
+              "old_task": 0,
+              "old_group": "old_1",
+              "wide_group": "wide_dev_3"
+            },
+            {
+              "pg_norm": 0.23704559719475954,
+              "old_plus_wide_increment_norm": 0.0205798184267484,
+              "cosine": 0.15076916300502438,
+              "old_task": 1,
+              "old_group": "old_28",
+              "wide_group": "wide_dev_4"
+            },
+            {
+              "pg_norm": 0.20196217057983998,
+              "old_plus_wide_increment_norm": 0.06706474276777001,
+              "cosine": 0.5288081607290933,
+              "old_task": 2,
+              "old_group": "old_55",
+              "wide_group": "wide_dev_0"
+            },
+            {
+              "pg_norm": 0.18943681072767166,
+              "old_plus_wide_increment_norm": 0.06294013856822266,
+              "cosine": 0.5888623742612148,
+              "old_task": 3,
+              "old_group": "old_82",
+              "wide_group": "wide_dev_1"
+            },
+            {
+              "pg_norm": 0.20233353737469703,
+              "old_plus_wide_increment_norm": 0.03396105435071443,
+              "cosine": 0.4975667764871418,
+              "old_task": 4,
+              "old_group": "old_109",
+              "wide_group": "wide_dev_2"
+            },
+            {
+              "pg_norm": 0.2284954135082121,
+              "old_plus_wide_increment_norm": 0.02818010854471511,
+              "cosine": 0.3647837369736724,
+              "old_task": 5,
+              "old_group": "old_136",
+              "wide_group": "wide_dev_3"
+            },
+            {
+              "pg_norm": 0.18576253148515728,
+              "old_plus_wide_increment_norm": 0.050293385464939555,
+              "cosine": -0.0808569914454604,
+              "old_task": 6,
+              "old_group": "old_158",
+              "wide_group": "wide_dev_4"
+            },
+            {
+              "pg_norm": 0.16865105857883175,
+              "old_plus_wide_increment_norm": 0.0626381940727793,
+              "cosine": -0.1392778550077531,
+              "old_task": 7,
+              "old_group": "old_185",
+              "wide_group": "wide_dev_0"
+            }
+          ],
+          "post_max_abs_logratio": 0.2398697706041455,
+          "numeric_accept": true
+        },
+        "proposed_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t406_wide_full_route/blocks/1/proposed.pt.gz",
+          "sha256": "f5dfd293e6ba8be7402e9dd678c67350ab957e546906c96febf09ee8bf892836",
+          "hashes": {
+            "learned": "0ba61e554834c5bb46205de36371042b7bdbb42045dd12e3ae47c4455e009393",
+            "optimizer": "0f4e132a499c2dd3f3b82cc9403b68d19789e62cfd2688b6882b2c99ef3fafdb"
+          },
+          "policy_hash": "6fc82f4b58d2e63dcef96b40777d286b1cee2f17431e7523c478d34a8e6768de"
+        },
+        "old20": {
+          "valid": 20,
+          "success": 10,
+          "contact": 10,
+          "timeout": 0,
+          "invalid": 0,
+          "censored": 0
+        },
+        "wide5": {
+          "valid": 5,
+          "success": 5,
+          "contact": 0,
+          "timeout": 0,
+          "invalid": 0,
+          "censored": 0
+        },
+        "accepted": false,
+        "old_success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_00",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "dev_task7_26",
+          "hold_task6_03"
+        ],
+        "wide_success_ids": [
+          "wide_dev_0",
+          "wide_dev_1",
+          "wide_dev_2",
+          "wide_dev_3",
+          "wide_dev_4"
+        ],
+        "retained_hashes": {
+          "learned": "495112420d17d93b80a8ffa06e69d25e56734399a748645077577926c1bcf64b",
+          "optimizer": "4521f66f1197bff17213c39199075c34cf30cae0319f9217f84c3b855bca6594"
+        }
+      }
+    ],
+    "result": {
+      "initial": {
+        "main54": {
+          "valid": 54,
+          "success": 22,
+          "contact": 29,
+          "timeout": 3,
+          "invalid": 0,
+          "censored": 0
+        },
+        "old275": {
+          "valid": 275,
+          "success": 245,
+          "contact": 29,
+          "timeout": 1,
+          "invalid": 0,
+          "censored": 0
+        },
+        "wide5": {
+          "valid": 5,
+          "success": 5,
+          "contact": 0,
+          "timeout": 0,
+          "invalid": 0,
+          "censored": 0
+        }
+      },
+      "training_target_order": [
+        "wide117_80_dev6_LEFT_00",
+        "wide117_80_dev6_LEFT_14",
+        "wide117_80_dev6_LEFT_15",
+        "wide117_80_dev6_LEFT_19",
+        "wide117_80_dev6_LEFT_23",
+        "wide117_80_dev6_RIGHT_00",
+        "wide117_80_dev6_RIGHT_01",
+        "wide117_80_dev6_RIGHT_02",
+        "wide117_80_dev6_RIGHT_03",
+        "wide117_80_dev6_RIGHT_04",
+        "wide117_80_dev6_RIGHT_05",
+        "wide117_80_dev6_RIGHT_06",
+        "wide117_80_dev6_RIGHT_07",
+        "wide117_80_dev6_RIGHT_08",
+        "wide117_80_dev6_RIGHT_09",
+        "wide117_80_dev6_RIGHT_10",
+        "wide117_80_dev6_RIGHT_11",
+        "wide117_80_dev6_RIGHT_12",
+        "wide117_80_dev6_RIGHT_13",
+        "wide117_80_dev6_RIGHT_14",
+        "wide117_80_dev6_RIGHT_15",
+        "wide117_80_dev6_RIGHT_16",
+        "wide117_80_dev6_RIGHT_17",
+        "wide117_80_dev6_RIGHT_18",
+        "wide117_80_dev6_RIGHT_19",
+        "wide117_80_dev6_RIGHT_20",
+        "wide117_80_dev6_RIGHT_21",
+        "wide117_80_dev6_RIGHT_22",
+        "wide117_80_dev6_RIGHT_23",
+        "wide117_80_dev6_RIGHT_24",
+        "wide117_80_dev6_RIGHT_25",
+        "wide117_80_dev6_RIGHT_26"
+      ],
+      "reason": "TWO_CONSECUTIVE_REJECTIONS",
+      "model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t406_wide_full_route/candidate.pt.gz",
+        "sha256": "6d4f70269233b3ee4974ab3213f8fdb6d4afae91376f668da05cf3cab2bd8bcd",
+        "hashes": {
+          "learned": "495112420d17d93b80a8ffa06e69d25e56734399a748645077577926c1bcf64b",
+          "optimizer": "4521f66f1197bff17213c39199075c34cf30cae0319f9217f84c3b855bca6594"
+        },
+        "policy_hash": "631103faeff6d840b94c43e6b10fb2464e537e38edd84f8c8d02f0784710278d"
+      },
+      "main54": {
+        "valid": 54,
+        "success": 22,
+        "contact": 29,
+        "timeout": 3,
+        "invalid": 0,
+        "censored": 0
+      },
+      "old275": {
+        "valid": 275,
+        "success": 245,
+        "contact": 29,
+        "timeout": 1,
+        "invalid": 0,
+        "censored": 0
+      },
+      "fresh16": null,
+      "reload78": null,
+      "stable_wide_six": false
+    },
+    "all_workers_stopped": true,
+    "all_native_sessions_closed": true,
+    "narrow_scene_paused": true,
+    "seven_eight_entered": false
+  },
+  "all_owned_children_stopped": true,
+  "narrow_paused": true,
+  "seven_eight_not_started": true
+}
