@@ -1,0 +1,370 @@
+{
+  "state": "COMPLETE_AUDITED_REMOTE_VERIFIED",
+  "native": 0,
+  "Actor_updates": 0,
+  "main_seconds": 21.792210340499878,
+  "all_seconds": 44.348986864089966,
+  "live": {
+    "Q": 3000,
+    "V": 3000
+  },
+  "audit": {
+    "state": "PASS",
+    "elapsed_s": 10.864271879196167,
+    "new_native": 0,
+    "new_Actor": 0,
+    "historical_discarded_Q_Adam": 3000,
+    "historical_discarded_V_Adam": 3000,
+    "all_values_target_Adam_metrics_and_event_order_exact": true,
+    "all_consumed_input_SHA_and_physical_reward_time_contract": true,
+    "no_six_stability_claim": true
+  },
+  "model_sha256": "3ee92948b6878ca8512e46ef2dfb1dfb6e236249f7b4453e90dd76c516b5029c",
+  "previous_single_step": {
+    "train": {
+      "decisions": 3231,
+      "behavior_MC_MSE": 0.3839954733848572,
+      "bellman_MSE": 0.0001876805763458833,
+      "weights": {
+        "min": 0.8578089475631714,
+        "max": 1.0690029859542847,
+        "mean": 0.9934085011482239,
+        "std": 0.019401276484131813,
+        "ESS_fraction": 0.9996188879013062,
+        "cap_fraction": 0.0
+      },
+      "episodes": [
+        {
+          "uid": "b88fe4333ac5881a6ed88093f6e96429e635f11cffeceab1512c3cc3d93bba10",
+          "GOAL": true,
+          "Q0": 0.018662460148334503,
+          "MC_G0": 0.5368059873580933
+        },
+        {
+          "uid": "e127abdc5138603ce4eee8024c94dc0cf1665733ee62f5922b41e967122bfa68",
+          "GOAL": true,
+          "Q0": 0.018799476325511932,
+          "MC_G0": 0.49958935379981995
+        },
+        {
+          "uid": "394747c437e949ca950be60ab2c7c6cb3658c62bfa4f84bdb68bbd78afd4fe96",
+          "GOAL": true,
+          "Q0": 0.01885545253753662,
+          "MC_G0": 0.511646032333374
+        },
+        {
+          "uid": "d095b33794ed4e070bb4702e10a29d90443306ca7a31e52fe3145fedba8792cc",
+          "GOAL": true,
+          "Q0": -0.14146894216537476,
+          "MC_G0": 0.5421332120895386
+        },
+        {
+          "uid": "50a59b46b4997be26bc35185de881b7aedff451e49be258acca0070fa3dddc7f",
+          "GOAL": true,
+          "Q0": 0.01871330291032791,
+          "MC_G0": 0.4962124228477478
+        },
+        {
+          "uid": "79272a1f630247597d0aedcb99517e6a605ddb900c571df3eb26a6c4dde540e7",
+          "GOAL": true,
+          "Q0": 0.02015625685453415,
+          "MC_G0": 0.4859935939311981
+        },
+        {
+          "uid": "04a07e375740b45f3ca45240509edcde08686a94f04a688314ff7ad86d652733",
+          "GOAL": false,
+          "Q0": 0.01815468817949295,
+          "MC_G0": -0.3900028169155121
+        },
+        {
+          "uid": "c645b0b55f8a2bbfa0ccfe67a8493df0b2e7cd69be6556f5407f35c9573d4e23",
+          "GOAL": false,
+          "Q0": 0.018747054040431976,
+          "MC_G0": -0.3976069688796997
+        },
+        {
+          "uid": "71ea2544d2b9ab7cbeecebabb5116b0ead6cc35aaffd5b72cc070e51d5507a72",
+          "GOAL": false,
+          "Q0": 0.01856115460395813,
+          "MC_G0": -0.42543452978134155
+        },
+        {
+          "uid": "0b0f400cc4a8f88e01da444065598d5c8b182916acdb8d7161aeb9c8aca49979",
+          "GOAL": false,
+          "Q0": 0.01881725713610649,
+          "MC_G0": -0.3915862739086151
+        },
+        {
+          "uid": "d97fd4a23c1fe1ddf6e24ed8619a160eed65f06c2e1c0bba675fe98e9c4d6b6c",
+          "GOAL": false,
+          "Q0": 0.018084466457366943,
+          "MC_G0": -0.39153510332107544
+        },
+        {
+          "uid": "50c8676c3dc4431e3c9ba4c518416218b100f3a9c001a9fdbf7c120961570fdf",
+          "GOAL": false,
+          "Q0": 0.018196269869804382,
+          "MC_G0": -0.38523125648498535
+        },
+        {
+          "uid": "c73e9425d72eccd094fb1c4e5583c929781d06a34da95732bf0fb34ba05cd89f",
+          "GOAL": false,
+          "Q0": 0.018702320754528046,
+          "MC_G0": -0.40732452273368835
+        },
+        {
+          "uid": "3490d2da6027ba974198eef7f8366eccb17427070cc6298e06af18b2fd51f36a",
+          "GOAL": false,
+          "Q0": 0.018594495952129364,
+          "MC_G0": -0.39621132612228394
+        }
+      ],
+      "limitation": "Q is IQL implicit-policy value; behavior MC and in-dataset Bellman errors are diagnostics, not action-ranking, causal gain or deployment safety certificates."
+    },
+    "validation": {
+      "decisions": 1963,
+      "behavior_MC_MSE": 0.3899247646331787,
+      "bellman_MSE": 0.0005056994268670678,
+      "weights": {
+        "min": 0.7085142135620117,
+        "max": 1.1852694749832153,
+        "mean": 0.9846615791320801,
+        "std": 0.037133295089006424,
+        "ESS_fraction": 0.9985799789428711,
+        "cap_fraction": 0.0
+      },
+      "episodes": [
+        {
+          "uid": "86fa36feb2fdc8ea556b99e8e174a6dc9eb7312cfd0c9ba233ae30aaefc6ee7e",
+          "GOAL": true,
+          "Q0": 0.0007395967841148376,
+          "MC_G0": 0.4825323522090912
+        },
+        {
+          "uid": "a68eb9682e266b222d5b2ca46b9e36ebc56f1605f7dff557995a70f22c6f9d1f",
+          "GOAL": true,
+          "Q0": 0.004756376147270203,
+          "MC_G0": 0.5384901165962219
+        },
+        {
+          "uid": "2d4c1fbb3c3c1c1449115f44e4436ecbe7225c81984b9dba4166e8311448cb53",
+          "GOAL": true,
+          "Q0": -0.0007451698184013367,
+          "MC_G0": 0.48160412907600403
+        },
+        {
+          "uid": "2df401110947f0c456b4cdb3c9d5725f047706d261a95db2ef70060e8a4acc78",
+          "GOAL": true,
+          "Q0": 0.004334203898906708,
+          "MC_G0": 0.48048388957977295
+        },
+        {
+          "uid": "5e256e3cab3f5025bd71d838112e8887f7e57dbc17722aa661b4b5c6bebc4051",
+          "GOAL": false,
+          "Q0": 0.018095627427101135,
+          "MC_G0": -0.38482722640037537
+        },
+        {
+          "uid": "d930a47b195053eab18333e83b9120ca6042f3a31d285e082d01166a862b24f4",
+          "GOAL": false,
+          "Q0": 0.018841460347175598,
+          "MC_G0": -0.4118436276912689
+        },
+        {
+          "uid": "faff8072f195517c29326249b495050d362bc14f8f7f27b3f90895c46715ac21",
+          "GOAL": false,
+          "Q0": 0.018669292330741882,
+          "MC_G0": -0.4092792570590973
+        },
+        {
+          "uid": "614fecdc70c9fdfa5610ac10fc766663b3ea8d2c69dbed8fbd2744ebe4131735",
+          "GOAL": false,
+          "Q0": 0.018500588834285736,
+          "MC_G0": -0.3907002806663513
+        }
+      ],
+      "limitation": "Q is IQL implicit-policy value; behavior MC and in-dataset Bellman errors are diagnostics, not action-ranking, causal gain or deployment safety certificates."
+    }
+  },
+  "fixed20hold": {
+    "train": {
+      "decisions": 3231,
+      "behavior_MC_MSE": 0.010603578761219978,
+      "bellman_MSE": 0.002721104770898819,
+      "weights": {
+        "min": 0.43253734707832336,
+        "max": 2.4861366748809814,
+        "mean": 0.9760609269142151,
+        "std": 0.08400142937898636,
+        "ESS_fraction": 0.9926478266716003,
+        "cap_fraction": 0.0
+      },
+      "episodes": [
+        {
+          "uid": "b88fe4333ac5881a6ed88093f6e96429e635f11cffeceab1512c3cc3d93bba10",
+          "GOAL": true,
+          "Q0": -0.23164671659469604,
+          "MC_G0": 0.5368059873580933
+        },
+        {
+          "uid": "e127abdc5138603ce4eee8024c94dc0cf1665733ee62f5922b41e967122bfa68",
+          "GOAL": true,
+          "Q0": 0.1859024614095688,
+          "MC_G0": 0.49958935379981995
+        },
+        {
+          "uid": "394747c437e949ca950be60ab2c7c6cb3658c62bfa4f84bdb68bbd78afd4fe96",
+          "GOAL": true,
+          "Q0": 0.20721924304962158,
+          "MC_G0": 0.511646032333374
+        },
+        {
+          "uid": "d095b33794ed4e070bb4702e10a29d90443306ca7a31e52fe3145fedba8792cc",
+          "GOAL": true,
+          "Q0": 0.31612464785575867,
+          "MC_G0": 0.5421332120895386
+        },
+        {
+          "uid": "50a59b46b4997be26bc35185de881b7aedff451e49be258acca0070fa3dddc7f",
+          "GOAL": true,
+          "Q0": -0.2275354564189911,
+          "MC_G0": 0.4962124228477478
+        },
+        {
+          "uid": "79272a1f630247597d0aedcb99517e6a605ddb900c571df3eb26a6c4dde540e7",
+          "GOAL": true,
+          "Q0": 0.18774457275867462,
+          "MC_G0": 0.4859935939311981
+        },
+        {
+          "uid": "04a07e375740b45f3ca45240509edcde08686a94f04a688314ff7ad86d652733",
+          "GOAL": false,
+          "Q0": -0.24822528660297394,
+          "MC_G0": -0.3900028169155121
+        },
+        {
+          "uid": "c645b0b55f8a2bbfa0ccfe67a8493df0b2e7cd69be6556f5407f35c9573d4e23",
+          "GOAL": false,
+          "Q0": -0.23034870624542236,
+          "MC_G0": -0.3976069688796997
+        },
+        {
+          "uid": "71ea2544d2b9ab7cbeecebabb5116b0ead6cc35aaffd5b72cc070e51d5507a72",
+          "GOAL": false,
+          "Q0": -0.23502221703529358,
+          "MC_G0": -0.42543452978134155
+        },
+        {
+          "uid": "0b0f400cc4a8f88e01da444065598d5c8b182916acdb8d7161aeb9c8aca49979",
+          "GOAL": false,
+          "Q0": -0.233686164021492,
+          "MC_G0": -0.3915862739086151
+        },
+        {
+          "uid": "d97fd4a23c1fe1ddf6e24ed8619a160eed65f06c2e1c0bba675fe98e9c4d6b6c",
+          "GOAL": false,
+          "Q0": -0.2125377357006073,
+          "MC_G0": -0.39153510332107544
+        },
+        {
+          "uid": "50c8676c3dc4431e3c9ba4c518416218b100f3a9c001a9fdbf7c120961570fdf",
+          "GOAL": false,
+          "Q0": -0.2137371301651001,
+          "MC_G0": -0.38523125648498535
+        },
+        {
+          "uid": "c73e9425d72eccd094fb1c4e5583c929781d06a34da95732bf0fb34ba05cd89f",
+          "GOAL": false,
+          "Q0": -0.22953668236732483,
+          "MC_G0": -0.40732452273368835
+        },
+        {
+          "uid": "3490d2da6027ba974198eef7f8366eccb17427070cc6298e06af18b2fd51f36a",
+          "GOAL": false,
+          "Q0": -0.23391452431678772,
+          "MC_G0": -0.39621132612228394
+        }
+      ],
+      "limitation": "Q is IQL implicit-policy value; behavior MC and in-dataset Bellman errors are diagnostics, not action-ranking, causal gain or deployment safety certificates."
+    },
+    "validation": {
+      "decisions": 1963,
+      "behavior_MC_MSE": 0.056004077196121216,
+      "bellman_MSE": 0.03980324789881706,
+      "weights": {
+        "min": 0.222331702709198,
+        "max": 2.3909287452697754,
+        "mean": 0.9451980590820312,
+        "std": 0.1691237986087799,
+        "ESS_fraction": 0.9689775109291077,
+        "cap_fraction": 0.0
+      },
+      "episodes": [
+        {
+          "uid": "86fa36feb2fdc8ea556b99e8e174a6dc9eb7312cfd0c9ba233ae30aaefc6ee7e",
+          "GOAL": true,
+          "Q0": 0.1995772123336792,
+          "MC_G0": 0.4825323522090912
+        },
+        {
+          "uid": "a68eb9682e266b222d5b2ca46b9e36ebc56f1605f7dff557995a70f22c6f9d1f",
+          "GOAL": true,
+          "Q0": 0.15546491742134094,
+          "MC_G0": 0.5384901165962219
+        },
+        {
+          "uid": "2d4c1fbb3c3c1c1449115f44e4436ecbe7225c81984b9dba4166e8311448cb53",
+          "GOAL": true,
+          "Q0": 0.20603713393211365,
+          "MC_G0": 0.48160412907600403
+        },
+        {
+          "uid": "2df401110947f0c456b4cdb3c9d5725f047706d261a95db2ef70060e8a4acc78",
+          "GOAL": true,
+          "Q0": 0.15971307456493378,
+          "MC_G0": 0.48048388957977295
+        },
+        {
+          "uid": "5e256e3cab3f5025bd71d838112e8887f7e57dbc17722aa661b4b5c6bebc4051",
+          "GOAL": false,
+          "Q0": -0.21265730261802673,
+          "MC_G0": -0.38482722640037537
+        },
+        {
+          "uid": "d930a47b195053eab18333e83b9120ca6042f3a31d285e082d01166a862b24f4",
+          "GOAL": false,
+          "Q0": -0.23243491351604462,
+          "MC_G0": -0.4118436276912689
+        },
+        {
+          "uid": "faff8072f195517c29326249b495050d362bc14f8f7f27b3f90895c46715ac21",
+          "GOAL": false,
+          "Q0": -0.23141616582870483,
+          "MC_G0": -0.4092792570590973
+        },
+        {
+          "uid": "614fecdc70c9fdfa5610ac10fc766663b3ea8d2c69dbed8fbd2744ebe4131735",
+          "GOAL": false,
+          "Q0": -0.22148072719573975,
+          "MC_G0": -0.3907002806663513
+        }
+      ],
+      "limitation": "Q is IQL implicit-policy value; behavior MC and in-dataset Bellman errors are diagnostics, not action-ranking, causal gain or deployment safety certificates."
+    }
+  },
+  "old275": null,
+  "wide6_54": null,
+  "fresh16": null,
+  "reload78": null,
+  "seven_eight_entered": false,
+  "exited_pids": [
+    547111,
+    547114,
+    547117
+  ],
+  "receipt_sha256": "68c0e7b335fff120354c43dc3a8226271675799b3def3ed70a7c9274d0efc767",
+  "limitation": "Fixed20hold actualbehavior continuation without IS; biased offpolicy operator, not originalIQL or unbiasedoptimalQ. Raw metrics inherited IQL label applies only to prior single-step pilot; leave original evidence unchanged.",
+  "archive_sha256": "6b665285506743143313c352a16fdae4e25986bc6e0594c63da74153bdfa74a4",
+  "free_bytes": 246024073216,
+  "feature_clarification": "Verified GRU batch_first=False; N x1 x32 is Ntimesteps batch1 and reconstructs episodecarry features. Earlier shape-only zero-init explanation is retracted. Nonzero-readout sequence/step error3.33e-16. No original source or training changed; no Markov sufficiency/actionranking guarantee."
+}

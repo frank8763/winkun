@@ -1,0 +1,8 @@
+{
+  "state": "FAILED_SYNTHETIC_DTYPE_BEFORE_ANY_ADAM",
+  "native": 0,
+  "Adam": 0,
+  "exception": "RuntimeError: mat1 and mat2 must have the same dtype, but got Double and Float",
+  "location": "prepare.py preflight first student.base_actions(x), before first synthetic Adam",
+  "resolution": "Synthetic input changed to actual recorded float32; model and scientific updates unchanged"
+}
