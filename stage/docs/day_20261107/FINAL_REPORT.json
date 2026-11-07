@@ -1,0 +1,226 @@
+{
+  "state": "COMPLETE_PREPROGRAMMED_SEQUENCE",
+  "pid": 478630,
+  "start_epoch": 1794024871.6344287,
+  "deadlines": {
+    "learning": 1794048300.0,
+    "native": 1794051000.0,
+    "all": 1794052800.0
+  },
+  "network_required": false,
+  "remote_backups_pending": true,
+  "limits": {
+    "physics": 50000000,
+    "commands": 2600,
+    "main_wall_s": 20000
+  },
+  "actual": {
+    "physics": 9040429,
+    "commands": 685,
+    "main_wall_s": 3130.4473810195923
+  },
+  "completed": [
+    {
+      "id": "A",
+      "folder": "lateral",
+      "kind": "lateral",
+      "state": "COMPLETE_LOCAL_AUDIT_PASS_REMOTE_PENDING",
+      "directory": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/lateral",
+      "summary_sha256": "21cd1216ed2c94044ddee7b1c4be84a81656e84146c339820c27ac342848a4fa",
+      "audit_sha256": "eeec4f1e426c89773a61f31d45d65ee8820b9e3b51523d7a00f3e641aef8c32d",
+      "manifest": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/lateral/driver_manifest.json",
+        "sha256": "da31ad2607f256dc53b69605c875d8e279b01d8f2347fb68265da5c5fcec444c",
+        "members": 64,
+        "bytes": 2058534
+      },
+      "physics": 711412,
+      "commands": 46,
+      "elapsed_s": 202.674711227417,
+      "selection": {
+        "model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/lateral/candidate.pt.gz",
+          "sha256": "01ca9791005f4ac65b7f23de4c31b4a17a095a34b74927c19802e1f65e10d2b9",
+          "hashes": {
+            "learned": "e3963011774a001811194db46f1677c754d11bf49e8716505ef1218b6492c9dd",
+            "optimizer": "d30b7db8279544d4a151b19674134e9d9b257bbd546c7e3c7d1f326df1d4bad9"
+          },
+          "policy_hash": "065aabd2b4b997f02c03dd89f88e5939d1b024dc5247920256640f74ef99731f"
+        },
+        "success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task6_13",
+          "dev_task7_13",
+          "wide117_80_dev6_RIGHT_13"
+        ],
+        "score": [
+          0,
+          8,
+          1
+        ],
+        "joint_all": false
+      },
+      "initial_model_source": "FIXED_REGISTERED_PARENT",
+      "stable_six": false
+    },
+    {
+      "id": "B",
+      "folder": "projected",
+      "kind": "projected",
+      "state": "COMPLETE_LOCAL_AUDIT_PASS_REMOTE_PENDING",
+      "directory": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/projected",
+      "summary_sha256": "d335c81a7d03a9e824186ab825e2a35ed6dbff8f8e0c1c9838707f6718f22546",
+      "audit_sha256": "42ac87067bdfba745b6a9f7e4ea945fd156e5c7e604906f874268684b8e6e653",
+      "manifest": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/projected/driver_manifest.json",
+        "sha256": "bd8c85a85b50788f6e4b0a7bfac99283ab13a3bdead53b0d70a94b0f9a531957",
+        "members": 64,
+        "bytes": 2053885
+      },
+      "physics": 707586,
+      "commands": 46,
+      "elapsed_s": 268.93831491470337,
+      "selection": {
+        "model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/projected/candidate.pt.gz",
+          "sha256": "01ca9791005f4ac65b7f23de4c31b4a17a095a34b74927c19802e1f65e10d2b9",
+          "hashes": {
+            "learned": "e3963011774a001811194db46f1677c754d11bf49e8716505ef1218b6492c9dd",
+            "optimizer": "d30b7db8279544d4a151b19674134e9d9b257bbd546c7e3c7d1f326df1d4bad9"
+          },
+          "policy_hash": "065aabd2b4b997f02c03dd89f88e5939d1b024dc5247920256640f74ef99731f"
+        },
+        "success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task6_13",
+          "dev_task7_13",
+          "wide117_80_dev6_RIGHT_13"
+        ],
+        "score": [
+          0,
+          8,
+          1
+        ],
+        "joint_all": false
+      },
+      "initial_model_source": "FIXED_REGISTERED_PARENT",
+      "stable_six": false
+    },
+    {
+      "id": "C",
+      "folder": "recovery",
+      "kind": "recovery",
+      "state": "COMPLETE_LOCAL_AUDIT_PASS_REMOTE_PENDING",
+      "directory": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/recovery",
+      "summary_sha256": "261d5fd352877f78565fce5926d4287b24e263c2f775814bac583eece1aca5de",
+      "audit_sha256": "b09d43daf0af36afa7be3136d10abbfdca824ba03de85cf5fa3d48b2427dc218",
+      "manifest": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/recovery/driver_manifest.json",
+        "sha256": "d4f6d58d156122105acc8bbb732c600d650421abd610a3a42ea14597f59eda37",
+        "members": 115,
+        "bytes": 3022426
+      },
+      "physics": 1697049,
+      "commands": 104,
+      "elapsed_s": 698.27632188797,
+      "selection": {
+        "model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/recovery/candidate.pt.gz",
+          "sha256": "c1329191c6d4adffc7711657e1d29905b1162d098ff45bada32ac07025e594eb",
+          "hashes": {
+            "learned": "2c652a2dd2b33fa294d8c8d3e4e1e03fd4bd36927f49cc2030c2154eed843d66",
+            "optimizer": "65f48474132d3ef18885a64b35a6d33d17f8679bc311e9518a273256669e9d81"
+          },
+          "policy_hash": "f22afddc35093d25f3c1d38fbfe8db14ae09cfa2d6efad9e8eb283540eb1b250"
+        },
+        "success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task6_13",
+          "dev_task7_13",
+          "wide117_80_dev6_RIGHT_13"
+        ],
+        "score": [
+          0,
+          8,
+          1
+        ],
+        "joint_all": false
+      },
+      "initial_model_source": "A",
+      "stable_six": false
+    },
+    {
+      "id": "V",
+      "folder": "validation",
+      "kind": "validation",
+      "state": "COMPLETE_LOCAL_AUDIT_PASS_REMOTE_PENDING",
+      "directory": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/validation",
+      "summary_sha256": "fed670fe4e1c902be01bc636dac7de2b2d5189b09c7745705d97a7967f5dfc08",
+      "audit_sha256": "0ba49e7fd09389ec93565a1506679dd1a36e82c88c7e8218ffb28626aa2d9a10",
+      "manifest": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/validation/driver_manifest.json",
+        "sha256": "f5f5c13e74e4c60d43940a213d258d25204f723bbc574b2503d459018000c4c3",
+        "members": 375,
+        "bytes": 1516656
+      },
+      "physics": 5285079,
+      "commands": 361,
+      "elapsed_s": 1754.8405606746674,
+      "selection": {
+        "model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t410_day_offline_chain/validation/candidate.pt.gz",
+          "sha256": "01ca9791005f4ac65b7f23de4c31b4a17a095a34b74927c19802e1f65e10d2b9",
+          "hashes": {
+            "learned": "e3963011774a001811194db46f1677c754d11bf49e8716505ef1218b6492c9dd",
+            "optimizer": "d30b7db8279544d4a151b19674134e9d9b257bbd546c7e3c7d1f326df1d4bad9"
+          },
+          "policy_hash": "065aabd2b4b997f02c03dd89f88e5939d1b024dc5247920256640f74ef99731f"
+        },
+        "success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task6_13",
+          "dev_task7_13",
+          "wide117_80_dev6_RIGHT_13"
+        ],
+        "score": [
+          0,
+          8,
+          1
+        ],
+        "joint_all": false
+      },
+      "initial_model_source": "A",
+      "stable_six": false
+    }
+  ],
+  "current": null,
+  "seven_eight_entered": false,
+  "updated_epoch": 1794027931.5676944,
+  "finished_epoch": 1794027931.1145434,
+  "all_owned_children_stopped": true,
+  "global_runs_bytes": 1037133168,
+  "root_bytes": 9163708,
+  "free_bytes": 49515048960,
+  "finite_sequence_completed": true,
+  "early_finish_reason": "All finite registered mechanisms completed or explicit admission gates stopped them; no infinite repetition to fill clock"
+}
