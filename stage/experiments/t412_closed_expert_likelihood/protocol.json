@@ -3882,7 +3882,8 @@
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t411_closed_teacher_recovery/episodes/recover4s_2.npz": "02832833ae9a06c7604d82956bd0049cc9033b0c8f3c4a7129750d649f3d433a",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t411_closed_teacher_recovery/protocol.json": "c434537224bd5e45f23f9a60ebb1a2944daec21910245502e53e0bec9d6bd25f",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t411_closed_teacher_recovery/summary.json": "0ff0abb265354ca2c386fe36ae45eef9ad849aa41f84a8be4cf22aa7e00cd390",
-    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t288_five_metre_presentation/right_full120.npz": "d8660871e76f12fcfc51d6493466a70e575e3d893c73615a464a5d0c5f8bae3d"
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t288_five_metre_presentation/right_full120.npz": "d8660871e76f12fcfc51d6493466a70e575e3d893c73615a464a5d0c5f8bae3d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t412_closed_expert_likelihood/disk_admission.py": "850e5e3a6f485ba7d9509981a4269a38df551b1ef60a2a941e5c78f5a73841b5"
   },
   "initialization": "zero head andoldadapterfinal andextraoutput; freezealloriginal; 4450extraonly; executedcommands equalT255",
   "old_support_loss": "same-sigma latent Gaussian KL all8currentactualhistories average eachstep plusbalanced211; zero atsafeinitial, no trajectorycertificate",
@@ -3913,5 +3914,13 @@
     "global_max_bytes_unchanged": 1073741824,
     "scientific_configuration_unchanged": true,
     "reply": "\u4ec5\u672c\u8f6e\u5141\u8bb839GiB\u5e76\u542f\u52a8\uff08\u5efa\u8bae\uff09"
+  },
+  "disk_admission": {
+    "no_training_below_user39GiB": true,
+    "require_full_own_remaining_bytes_in_addition": true,
+    "stable_samples": 3,
+    "poll_seconds": 10,
+    "no_automatic_prelaunch_retry": true,
+    "latest_launch_epoch": 1794044700.0
   }
 }
