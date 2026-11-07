@@ -1,0 +1,208 @@
+{
+  "state": "COMPLETE_AUDITED_REMOTE_VERIFIED",
+  "main_seconds": 60.31485414505005,
+  "all_seconds": 76.51651883125305,
+  "physics": 80000,
+  "main_commands": 6,
+  "preflight_commands": 8,
+  "all_commands": 14,
+  "Actor_updates": 0,
+  "optimizer_steps": 0,
+  "unique_mixed_trajectories": 1,
+  "exact_native_replays": 1,
+  "new_valid_recovery_labels": 0,
+  "result": {
+    "complete": true,
+    "collision": false,
+    "success": false,
+    "timeout": true,
+    "administrative_censor": false,
+    "physics_steps": 40000,
+    "remaining_m": 2.532227065124343,
+    "policy_hash": "3de39102905debc0bb3430cdb9f39043a360425460b5aabbf7f0c632423b7755",
+    "physics": 40000,
+    "array_digest": "8177b12e62697777b6ad591340d954ad218290ece608e3768ba9848dc07aa490",
+    "integration_sha256": "e60711e698c65b2b917140a6b68a9cc3a6c909999ca5fc55ff42ee7086ef02b0",
+    "cpu": 0,
+    "pid": 587476,
+    "teacher": true,
+    "teacher_policy_hash": "631103faeff6d840b94c43e6b10fb2464e537e38edd84f8c8d02f0784710278d",
+    "first": 17,
+    "student_policy_hash": "3de39102905debc0bb3430cdb9f39043a360425460b5aabbf7f0c632423b7755",
+    "case_id": "fixed_left_handoff17",
+    "no_native_reset_at_handoff": true,
+    "teacher_hidden_reconstructed_from_actual_episode_history": true,
+    "teacher_kind": "left_carry",
+    "teacher_has_carried_hidden": true,
+    "source_control": false,
+    "role": "handoff17",
+    "job_id": "wide_dev_3",
+    "loaded_model_sha256": "4aca0f6bd03daec526e689a6a4af17f52ddc7c0be80e664a8ba779133b1eeadb",
+    "seed": null,
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t420_fixed_early_recovery/mixed.npz",
+    "sha256": "8be5e2da990a0dff5c3021fb8f8482e00193f97029d31d0789b03a6367e91f39"
+  },
+  "audit": {
+    "state": "PASS",
+    "elapsed_s": 1.4232995510101318,
+    "native": 0,
+    "optimizer_steps": 0,
+    "Actor_updates": 0,
+    "all_source_and_data_SHA": true,
+    "full_student_and_teacher_actual_history_hidden_actions_rewards_exact": true,
+    "original_goal_clock_and_handoff_prefix": {
+      "state": "PARENT_PREFIX17_ALL_RECORDED_ARRAYS_EXACT",
+      "keys": [
+        "states",
+        "next_states",
+        "poses",
+        "next_poses",
+        "history_poses",
+        "history_goals",
+        "actions",
+        "raw_actions",
+        "locations",
+        "native_counts",
+        "rewards",
+        "end_flags",
+        "hidden_before",
+        "ownership",
+        "stochastic",
+        "innovations",
+        "atom",
+        "logp",
+        "hold_sha256",
+        "future_locations"
+      ],
+      "holds": 17,
+      "native": 1700,
+      "seconds": 3.4,
+      "no_clock_goal_history_reset": true,
+      "teacher_query_hidden_through_handoff_matches_existing_actual_prefix": true
+    },
+    "all_live_and_exact_physics_commands_charged": true,
+    "physics": 80000,
+    "all_commands": 14,
+    "valid_recovery_label": false,
+    "no_six_metre_acceptance": true
+  },
+  "posthoc_progress": {
+    "state": "POSTHOC_READONLY_EXISTING_TRAJECTORY_DESCRIPTION",
+    "native": 0,
+    "Adam": 0,
+    "mixed_sha256": "8be5e2da990a0dff5c3021fb8f8482e00193f97029d31d0789b03a6367e91f39",
+    "bins_seconds": {
+      "0_20": {
+        "decisions": 100,
+        "distance_start": 5.973457027326195,
+        "distance_end": 5.039657328044689,
+        "path_m": 0.9814970059407362,
+        "net_displacement_m": 0.9812407575238973,
+        "mean_action": [
+          0.25405362248420715,
+          -0.033308759331703186
+        ],
+        "min_action": [
+          -0.040885671973228455,
+          -0.5380921959877014
+        ],
+        "max_action": [
+          0.7823545932769775,
+          0.37901797890663147
+        ]
+      },
+      "20_40": {
+        "decisions": 100,
+        "distance_start": 5.039657328044689,
+        "distance_end": 2.826736670757011,
+        "path_m": 2.2919593045909505,
+        "net_displacement_m": 2.2354799368434355,
+        "mean_action": [
+          0.976655125617981,
+          -0.6576113104820251
+        ],
+        "min_action": [
+          0.7057137489318848,
+          -1.0
+        ],
+        "max_action": [
+          1.0,
+          0.3873399496078491
+        ]
+      },
+      "40_60": {
+        "decisions": 100,
+        "distance_start": 2.826736670757011,
+        "distance_end": 0.8952585573590475,
+        "path_m": 2.659167834030675,
+        "net_displacement_m": 2.631191576645309,
+        "mean_action": [
+          0.9897120594978333,
+          0.3164096772670746
+        ],
+        "min_action": [
+          0.8816236257553101,
+          -0.7861743569374084
+        ],
+        "max_action": [
+          1.0,
+          0.9684748649597168
+        ]
+      },
+      "60_80": {
+        "decisions": 100,
+        "distance_start": 0.8952585573590475,
+        "distance_end": 2.532227065124343,
+        "path_m": 2.9623181365918425,
+        "net_displacement_m": 2.949895065038098,
+        "mean_action": [
+          0.9905133843421936,
+          0.15441741049289703
+        ],
+        "min_action": [
+          0.9307143092155457,
+          -0.718768298625946
+        ],
+        "max_action": [
+          1.0,
+          0.7065955996513367
+        ]
+      }
+    },
+    "no_new_success_labels": true,
+    "not_causal_mechanism_proof": true,
+    "nearest_recorded_endpoint": {
+      "index": 315,
+      "seconds": 63.0,
+      "distance_m": 0.8080096469298544,
+      "native_continuous_minimum_not_recomputed": true
+    },
+    "registered_goal_radius_m": 0.2,
+    "proposed_interpretation": "Approach then depart with high drive commands, not vehicle stationary or80s consumed in transit only; descriptive, not unique cause."
+  },
+  "source_remote": "f46196db7cd0a284ffd2212a0963a9e32bfe0b7d",
+  "archive_sha256": "b13c9977744648a455f4446608581b19da0ff73c47beeb94f10fbda270b5394b",
+  "raw_members": 23,
+  "raw_archive_bytes": 411197,
+  "all_owned_processes_absent": [
+    587458,
+    587460,
+    587461,
+    587472,
+    587476,
+    587477,
+    587478,
+    587493
+  ],
+  "safe_T255_promoted": false,
+  "old275": null,
+  "wide54": null,
+  "fresh16": null,
+  "reload78": null,
+  "seven_eight_entered": false,
+  "day_cumulative_physics": 16799960,
+  "day_cumulative_commands": 1124,
+  "day_main_wall_seconds": 6240.352018594742,
+  "global_bytes": 889775416,
+  "free_bytes": 245541429248
+}
