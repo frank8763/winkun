@@ -1,0 +1,162 @@
+{
+  "state": "COMPLETE_AUDITED_REMOTE_VERIFIED",
+  "main_seconds": 418.91889119148254,
+  "all_seconds": 526.7008979320526,
+  "all_physics": 890654,
+  "all_commands": 50,
+  "live_BC": 400,
+  "shadow_BC": 400,
+  "independent_discarded_history_Adam": 400,
+  "preflight_discarded_Adam": 8,
+  "PPO": 0,
+  "new_teacher_rollouts": 0,
+  "historical_A": {
+    "old8": {
+      "valid": 8,
+      "success": 6,
+      "contact": 2,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "left5": {
+      "valid": 5,
+      "success": 2,
+      "contact": 2,
+      "timeout": 1,
+      "invalid": 0,
+      "censored": 0
+    },
+    "right1": {
+      "valid": 1,
+      "success": 1,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "policy_hash": "c8a94df5dbeeb0af3bc3a050d4e07e34909c6de1a03e61d2b02797b647e9a2b4",
+    "success_ids": [
+      "dev_task0_13",
+      "dev_task1_13",
+      "dev_task2_13",
+      "dev_task3_13",
+      "dev_task5_13",
+      "dev_task7_13",
+      "wide117_80_dev6_RIGHT_13",
+      "wide_dev_0",
+      "wide_dev_4"
+    ],
+    "all14": false
+  },
+  "new_B": {
+    "old8": {
+      "valid": 8,
+      "success": 7,
+      "contact": 1,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "left5": {
+      "valid": 5,
+      "success": 4,
+      "contact": 1,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "right1": {
+      "valid": 1,
+      "success": 1,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "policy_hash": "3de39102905debc0bb3430cdb9f39043a360425460b5aabbf7f0c632423b7755",
+    "success_ids": [
+      "dev_task0_13",
+      "dev_task1_13",
+      "dev_task2_13",
+      "dev_task3_13",
+      "dev_task4_13",
+      "dev_task5_13",
+      "dev_task7_13",
+      "wide117_80_dev6_RIGHT_13",
+      "wide_dev_0",
+      "wide_dev_1",
+      "wide_dev_2",
+      "wide_dev_4"
+    ],
+    "all14": false
+  },
+  "accepted": false,
+  "retained": {
+    "old8": {
+      "valid": 8,
+      "success": 8,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "left5": {
+      "valid": 5,
+      "success": 0,
+      "contact": 5,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "right1": {
+      "valid": 1,
+      "success": 1,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "policy_hash": "8182a08428acebd871fc1d42d4dcd52a3b995400207e75e5c84f5ec206b1d930",
+    "success_ids": [
+      "dev_task0_13",
+      "dev_task1_13",
+      "dev_task2_13",
+      "dev_task3_13",
+      "dev_task4_13",
+      "dev_task5_13",
+      "dev_task6_13",
+      "dev_task7_13",
+      "wide117_80_dev6_RIGHT_13"
+    ],
+    "all14": false
+  },
+  "final_model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t417_representation_adaptation/candidate.pt.gz",
+    "sha256": "d758e68d139fc43c50619835bcfe4e335a25f5431e5d1161e1a5a4f5d91ebbd1",
+    "hashes": {
+      "learned": "f8ed4138c39af0db3388d7bdff1c06916d10bb986c4d7deb09bae935d85fba0a",
+      "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+    },
+    "policy_hash": "8182a08428acebd871fc1d42d4dcd52a3b995400207e75e5c84f5ec206b1d930"
+  },
+  "rejected_B_model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t417_representation_adaptation/blocks/0/bc_proposed.pt.gz",
+    "sha256": "4aca0f6bd03daec526e689a6a4af17f52ddc7c0be80e664a8ba779133b1eeadb",
+    "hashes": {
+      "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+      "optimizer": "cee401d18b882c85f3f28b990305ceec4f6a49bfa47b924d44b14031062d9c84"
+    },
+    "policy_hash": "3de39102905debc0bb3430cdb9f39043a360425460b5aabbf7f0c632423b7755"
+  },
+  "old275": null,
+  "wide6_54": null,
+  "fresh16": null,
+  "reload78": null,
+  "stable_wide_six": false,
+  "archive_sha256": "6da2ef9a057517f5fbb8f4cd3449d2b4e129e72bfc010e4ba42f0351f50c95ec",
+  "raw_members": 68,
+  "archive_bytes": 1431782,
+  "narrow_paused": true,
+  "seven_eight_entered": false
+}

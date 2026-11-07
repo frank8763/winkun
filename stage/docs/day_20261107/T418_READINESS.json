@@ -1,0 +1,166 @@
+{
+  "state": "PREFLIGHT_PASS_NOT_LAUNCHED",
+  "protocol_sha256": "0e3618b85c9eb96fe8b33132ec7a33e7757b1eff34ee090ea91bf04dde1d752e",
+  "preflight": {
+    "state": "PASS",
+    "native": 0,
+    "discarded_Adam": 8,
+    "zero_physics_commands": 8,
+    "phase_trainability": [
+      {
+        "phase": "repair",
+        "parameters": 4450,
+        "exact_clones": true,
+        "carry": {
+          "location_error": 2.220446049250313e-16,
+          "hidden_error": 6.661338147750939e-16,
+          "batch_first": false
+        }
+      },
+      {
+        "phase": "protect",
+        "parameters": 10722,
+        "exact_clones": true,
+        "carry": {
+          "location_error": 2.220446049250313e-16,
+          "hidden_error": 4.996003610813204e-16,
+          "batch_first": false
+        }
+      }
+    ],
+    "all_consumed_input_SHA": true,
+    "recursive_actual_entry_globals": true,
+    "nonzero_readout_sequence_step_hidden_carry": true,
+    "synthetic_anchor_loss_initial_zero": true,
+    "synthetic_anchors_not_new_actual_rollout_evidence": true,
+    "clones_and_mature_Adam_rejection_interruption_rollback_exact": true,
+    "iid_float32_atom_density_exact": true,
+    "actual_four_native_worker_cancel_and_exit": true,
+    "workers": [
+      561119,
+      561121,
+      561123,
+      561128
+    ]
+  },
+  "preflight_optimizer_events": [
+    [
+      "repair",
+      0,
+      "BEFORE",
+      0
+    ],
+    [
+      "repair",
+      0,
+      "AFTER",
+      0
+    ],
+    [
+      "repair",
+      0,
+      "BEFORE",
+      1
+    ],
+    [
+      "repair",
+      0,
+      "AFTER",
+      1
+    ],
+    [
+      "repair",
+      1,
+      "BEFORE",
+      0
+    ],
+    [
+      "repair",
+      1,
+      "AFTER",
+      0
+    ],
+    [
+      "repair",
+      1,
+      "BEFORE",
+      1
+    ],
+    [
+      "repair",
+      1,
+      "AFTER",
+      1
+    ],
+    [
+      "protect",
+      0,
+      "BEFORE",
+      0
+    ],
+    [
+      "protect",
+      0,
+      "AFTER",
+      0
+    ],
+    [
+      "protect",
+      0,
+      "BEFORE",
+      1
+    ],
+    [
+      "protect",
+      0,
+      "AFTER",
+      1
+    ],
+    [
+      "protect",
+      1,
+      "BEFORE",
+      0
+    ],
+    [
+      "protect",
+      1,
+      "AFTER",
+      0
+    ],
+    [
+      "protect",
+      1,
+      "BEFORE",
+      1
+    ],
+    [
+      "protect",
+      1,
+      "AFTER",
+      1
+    ]
+  ],
+  "payload_reserve": {
+    "state": "PASS",
+    "native": 0,
+    "Adam": 0,
+    "synthetic_random400hold_ordinary_bytes": 311980,
+    "ordinary_limit": 393216,
+    "teacher_random400hold_bytes": 423682,
+    "teacher_limit": 557056,
+    "no_training_data_generated": true
+  },
+  "registered_input_count": 176,
+  "source_files": {
+    "stage/experiments/t418_evening_repair_chain/driver.py": "1fbd6adbfdf51fd73dd31c48fa66f98dcad71b9d5425c1f7de8580526164ee6d",
+    "stage/experiments/t418_evening_repair_chain/prepare.py": "5352cd944fa2d802f4e7babca4795cfdffd57465fa27e1f369452048937af8ff",
+    "stage/experiments/t418_evening_repair_chain/repair_core.py": "e10c962fefb012ca0b1534e10629b9a97d84c67263809ae63c56daaca35859b9",
+    "stage/experiments/t418_evening_repair_chain/run.py": "f790d103aef6cc31aa4361a5f9862b9db5c7b63cab15da7495a903687f5f5e18",
+    "stage/experiments/t418_evening_repair_chain/preflight.py": "f994d5dfa4990fce87906a9698b6a947d9939971bb96809b6aa33d45738f00c9",
+    "stage/experiments/t418_evening_repair_chain/transport.py": "a70b5cea059153f1b0be6a23aa3c89eae009c519b880c0e38e49083450e2cd6e",
+    "stage/experiments/t418_evening_repair_chain/audit.py": "06f41c7df96235ddf6992416e657dee7002d899443f50fc7d7fceb14759a6e92"
+  },
+  "root_pref_all_workers_absent": true,
+  "free_bytes": 245549862912
+}

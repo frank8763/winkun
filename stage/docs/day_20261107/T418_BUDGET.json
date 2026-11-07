@@ -1,0 +1,69 @@
+{
+  "state": "FIXED_MECHANISMS_CONDITIONAL_ACTUAL_REMAINDER_ADMISSION",
+  "prior_day_actual": {
+    "physics": 12013040,
+    "commands": 874,
+    "main_wall_s": 4439.741424798965
+  },
+  "phase_budgets": {
+    "repair": {
+      "phase": "repair",
+      "max_rounds": 2,
+      "worst_physics": 14006753,
+      "worst_main_commands": 543,
+      "worst_own_bytes": 20845568,
+      "full_source_count": 28,
+      "exact_native_count_max": 94,
+      "compact_source_count_max": 417,
+      "model_count_max": 8,
+      "model_bytes": 524288,
+      "metadata_bytes": 786432,
+      "partial_reserve_bytes": 1736704
+    },
+    "protect": {
+      "phase": "protect",
+      "max_rounds": 2,
+      "worst_physics": 14006753,
+      "worst_main_commands": 543,
+      "worst_own_bytes": 20845568,
+      "full_source_count": 28,
+      "exact_native_count_max": 94,
+      "compact_source_count_max": 417,
+      "model_count_max": 8,
+      "model_bytes": 524288,
+      "metadata_bytes": 786432,
+      "partial_reserve_bytes": 1736704
+    },
+    "rl": {
+      "phase": "rl",
+      "max_rounds": 4,
+      "worst_physics": 14266749,
+      "worst_main_commands": 547,
+      "worst_own_bytes": 19436544,
+      "full_source_count": 30,
+      "exact_native_count_max": 96,
+      "compact_source_count_max": 417,
+      "model_count_max": 6,
+      "model_bytes": 524288,
+      "metadata_bytes": 786432,
+      "partial_reserve_bytes": 1572864
+    }
+  },
+  "per_phase_caps": {
+    "physics": 16000000,
+    "commands": 600,
+    "own_bytes": 20971520,
+    "main_s": 1800,
+    "audit_s": 600
+  },
+  "root_metadata_bytes": 2097152,
+  "global_reserved": 937726949,
+  "all_phases_not_guaranteed": true,
+  "preflight_discarded_Adam": 8,
+  "preflight_zero_physics_commands": 8,
+  "deadlines": {
+    "learning_stop_absolute": 1794052800.0,
+    "native_stop_absolute": 1794054000.0,
+    "all_stop_absolute": 1794056400.0
+  }
+}
