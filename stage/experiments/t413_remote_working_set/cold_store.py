@@ -66,11 +66,14 @@ def asset_bytes(T,asset):
     if code==200:
         assert len(data)==asset['bytes'] and hashlib.sha256(data).hexdigest()==asset['sha256'];return data
     assert code==302;url=headers['location'];assert T.urllib.parse.urlparse(url).hostname in ['release-assets.githubusercontent.com','objects.githubusercontent.com']
-    out=io.BytesIO();h=hashlib.sha256();size=asset['bytes'];step=64*2**20
+    out=io.BytesIO();h=hashlib.sha256();size=asset['bytes'];step=8*2**20
     for begin in range(0,size,step):
         end=min(size-1,begin+step-1)
         for attempt in range(3):
-            code,head,part=T.response('GET',url,headers={'Range':f'bytes={begin}-{end}','User-Agent':'Stage-byte-proof'})
+            try:code,head,part=T.response('GET',url,headers={'Range':f'bytes={begin}-{end}','User-Agent':'Stage-byte-proof'})
+            except T.urllib.error.URLError:
+                if attempt==2:raise
+                continue
             if code==206 and head.get('content-range','').startswith(f'bytes {begin}-{end}/') and len(part)==end-begin+1:break
         else:raise RuntimeError(('Remote byte range did not verify',asset['name'],begin,code))
         h.update(part);out.write(part);print('READBACK_CHUNK',asset['name'],end+1,size,flush=True)
