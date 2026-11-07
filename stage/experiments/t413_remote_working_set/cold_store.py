@@ -110,10 +110,26 @@ def run():
     p=read(OUT/'protocol.json');assert p['source_sha256']==sha(__file__) and (HERE/'protocol.json').read_bytes()==(OUT/'protocol.json').read_bytes();assert not (OUT/'summary.json').exists()
     for f in [Path(__file__),HERE/'protocol.json']:assert subprocess.check_output(['git','show','HEAD:'+str(f.relative_to(ROOT))],cwd=ROOT)==f.read_bytes()
     tree=subprocess.check_output(['git','rev-parse','HEAD^{tree}'],cwd=ROOT,text=True).strip();assert read(ROOT/'stage/runs/t224_archive/latest_source_sync_receipt.json')['root_tree']==tree
-    check_protected(p);lock=(ROOT/'stage/runs/.stage_writer.lock').open('a+b');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);start=time.time();before=shutil.disk_usage(ROOT).free;T=transport();completed=[];receipts=[]
-    index=dict(schema=1,state='COLD_EVICTION_IN_PROGRESS',records=completed,assets=receipts,archive_source_sha256=p['source_manifest_sha256'],local_code_preserved=True,Phase_untouched=True)
+    check_protected(p);lock=(ROOT/'stage/runs/.stage_writer.lock').open('a+b');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);start=time.time();before=shutil.disk_usage(ROOT).free;T=transport()
+    if INDEX.exists():
+        index=read(INDEX);assert index['state']=='COLD_EVICTION_IN_PROGRESS' and index['archive_source_sha256']==p['source_manifest_sha256']
+        completed=index['records'];receipts=index['assets']
+        for r in completed:
+            original=next(x for x in p['records'] if x['id']==r['id'])
+            assert all(r[k]==original[k] for k in ['sha256','bytes','aliases','rows'])
+            assert r['remote_member_sha256']==r['sha256'] and r['asset']['state']=='FULL_REMOTE_ARCHIVE_AND_MEMBER_SHA_VERIFIED'
+            # The durable receipt can precede unlink; finish only verified aliases.
+            for alias in r['aliases']:
+                local=Path(alias)
+                if local.exists():
+                    assert local.stat().st_ino==r['inode'] and sha(local)==r['sha256'] and str(local.resolve()) not in p['protected_hashes'];local.unlink()
+        save(OUT/'interrupted_cleanup_recovery.json',dict(state='RESUME_VERIFIED_STORAGE_ONLY_NOT_TRAINING',prior_completed=len(completed),prior_index_sha256=sha(INDEX),epoch=start,native=0,Adam=0))
+    else:
+        completed=[];receipts=[];index=dict(schema=1,state='COLD_EVICTION_IN_PROGRESS',records=completed,assets=receipts,archive_source_sha256=p['source_manifest_sha256'],local_code_preserved=True,Phase_untouched=True)
     for name,stored in sorted(p['assets'].items()):
         assert time.time()-start<p['max_seconds'];asset=T.B.api('GET',f'releases/assets/{stored["id"]}');assert asset['name']==name and asset['size']==stored['bytes'] and asset['digest']=='sha256:'+stored['sha256'];asset=dict(asset,name=name,bytes=stored['bytes'],sha256=stored['sha256'])
+        if any(r['asset_name']==name and r['asset_sha256']==asset['sha256'] and r['state']=='FULL_REMOTE_ARCHIVE_AND_MEMBER_SHA_VERIFIED' for r in receipts):
+            print('PRIOR_COMPLETE_ASSET_PROOF_REUSED',name,flush=True);continue
         print('FULL_ASSET_READBACK_BEGIN',name,asset['bytes'],flush=True);data=asset_bytes(T,asset);assert len(data)==asset['bytes'] and hashlib.sha256(data).hexdigest()==asset['sha256'];proof,_=members(data)
         receipt=dict(asset_name=name,asset_id=asset['id'],asset_url=asset['browser_download_url'],asset_bytes=asset['bytes'],asset_sha256=asset['sha256'],state='FULL_REMOTE_ARCHIVE_AND_MEMBER_SHA_VERIFIED',members=len(proof));receipts.append(receipt);save(OUT/('readback_'+name+'.json'),receipt);check_protected(p)
         sha_index={(v['bytes'],v['sha256']):member for member,v in proof.items()}
