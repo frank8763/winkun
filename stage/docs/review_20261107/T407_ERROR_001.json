@@ -1,0 +1,10 @@
+{
+  "command": "audit",
+  "error": "FileNotFoundError(2, 'No such file or directory')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t407_cold_exact_reserve/cold.py\", line 357, in <module>\n    globals()[command]()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t407_cold_exact_reserve/cold.py\", line 331, in audit\n    p, summary = read(OUT / 'protocol.json'), read(OUT / 'summary.json')\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t407_cold_exact_reserve/cold.py\", line 43, in read\n    return json.loads(Path(path).read_text())\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1134, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t407_cold_exact_reserve/summary.json'\n",
+  "native": 0,
+  "Adam": 0,
+  "original_mutations": "see durable ledger",
+  "protocol_preserved": true,
+  "no_automatic_expansion": true
+}

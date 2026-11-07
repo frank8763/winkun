@@ -1,0 +1,5 @@
+# T407可逆重复存储完成
+
+固定60个纯字节重复NPZ改显式T290引用，8405032B重复payload释放，13114B引用保留；所有唯一字节仍本地canonical，101原始/对应canonical全远端RAM完整二进制读回逐SHA。独立字节audit PASS，0native/0Adam/0唯一字节删除，模型/真人/视频不动。6项新metadata也完整远端逐成员SHA，receipt_T407。
+
+第一次audit调用早于异步run进程结束，读取尚未落盘summary即退出；0优化器/0原始修改/0科学审计结果，原T407_ERROR_001保留。确认run结束后独立字节审计通过；不是重启编码/重跑导航。旧被替代裸路径须T290 resolve或容量守卫restore。
