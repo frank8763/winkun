@@ -1,0 +1,39 @@
+{
+  "state": "POSTHOC_READONLY_SOURCE_AUDIT_NOT_NEW_NAVIGATION",
+  "native": 0,
+  "optimizer_steps": 0,
+  "Stage_compatibility_dependencies_only": true,
+  "files": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runtime/mk-mini/training/e2e_phase10_lidar_v7_curriculum/phase10_strict_mujoco_env.py": "9f2b202ac3cf35e4d1aeebc7f8788c493c823b20b658af58f32596b797851173",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runtime/mk-mini/training/e2e_phase10_lidar_v7_curriculum/stage9_runtime_fullplant_fix_v5_2.py": "64fac9df30f88c2a3257b985deb24c3a490cd297eb7877d94fc768fcfbcaf585",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runtime/mk-mini/training/e2e_phase10_lidar_v1/phase10_scene_e2e_env.py": "b01165f5d03b760a3ac770ed31e84df0544c36764e625aaa4c2fea5970aedf91",
+    "/home/linghu/stage_daad_g4h_multibranch_night_v1/runner/native_env.py": "fbee3e41ae52a851152aab08398a49d673297a4b4dd562db7e48aae89411de37"
+  },
+  "mapping": {
+    "drive": "wheel=max_wheel*((drive+1)/2)^2; nonnegative for boundeddrive",
+    "steer": "action1*max_steer; max_steer25deg in saved task",
+    "negative_drive_does_not_mean_reverse": true
+  },
+  "actual_plant": {
+    "WHEELBASE_M": 0.6,
+    "TRACK_M": 0.54,
+    "ackermann_and_rear_differential_actual_native": true,
+    "legacy_bicycle_wheelbase_m": 0.42,
+    "legacy_command_v_w_logging_only": true,
+    "measured_actual_min_turn_radius": null
+  },
+  "selected_index18": {
+    "drive": [
+      0.59210664,
+      -0.62251019,
+      -0.37951112
+    ],
+    "wheel_command_approx_rad_s": [
+      3.1685,
+      0.17812,
+      0.48126
+    ],
+    "second_and_third_segments_forward_slow_not_reverse": true
+  },
+  "interpretation": "The target is near lateral at t60. Slowing improves final distance but fixed CEM found no GOAL. Actual minimum-turn radius/reachability still require a separately registered native diagnosis; legacy .42/tan25 geometry is not an actual plant measurement."
+}

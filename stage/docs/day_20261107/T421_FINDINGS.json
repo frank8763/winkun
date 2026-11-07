@@ -1,0 +1,123 @@
+{
+  "state": "COMPLETE_AUDITED_REMOTE_VERIFIED_NO_RECOVERY_FOUND",
+  "science_state": "FIXED_24_PROPOSAL_SEARCH_FAILED_TO_FIND_REAL_GOAL",
+  "new_user_request_after_old_evening_deadline": true,
+  "source_remote_commit": "f58b4f7889747e04d7ce22af0d3a004388157b1c",
+  "protocol_sha256": "2e6c9c684e70a6e4dd5febbc082b114bb5ca9511b2445359eef83ebe671c72a3",
+  "all_owned_process_ids_absent": [
+    600596,
+    600598,
+    600599,
+    600629
+  ],
+  "main_seconds": 366.99807238578796,
+  "all_driver_seconds": 382.5570113658905,
+  "physics": 600000,
+  "main_commands": 54,
+  "preflight_zero_commands": 2,
+  "all_commands": 56,
+  "unique_control_proposals": {
+    "valid": 24,
+    "safe_GOAL": 0,
+    "contact": 0,
+    "timeout": 24,
+    "invalid": 0,
+    "censored": 0,
+    "missing": 0,
+    "not_independent_training_seeds": true
+  },
+  "repeats": {
+    "original_suffix_native_runs": 2,
+    "candidate_native_runs": 48,
+    "candidate_distinct_controls": 24,
+    "selected_complete_origin_native_replay": 1,
+    "duplicate_physics_included": true
+  },
+  "baseline_remaining_m": 2.532227065124343,
+  "selected_index": 18,
+  "selected_theta": [
+    0.5921066213132751,
+    -0.6225101778795205,
+    -0.37951111547054395,
+    1.0799132814561248,
+    0.339042930964998,
+    0.6642621649966867
+  ],
+  "selected_final_remaining_m": 0.774327448170446,
+  "geometry": {
+    "prefix_time_s": 60,
+    "remaining_original_time_s": 20,
+    "pose": [
+      1.1531293893252563,
+      -4.683954336038729,
+      -1.1319841057741982
+    ],
+    "goal": [
+      2.0400222782342903,
+      -4.561852378121623
+    ],
+    "goal_body_forward_left_m": [
+      0.26627567577941763,
+      0.8547427384966879
+    ],
+    "bearing_deg": 72.69676401996189,
+    "start_distance_m": 0.8952585573590475,
+    "selected_suffix_path_m": 0.51342265153681,
+    "closest_recorded_endpoint_m": 0.7734794546004534,
+    "closest_recorded_endpoint_time_s": 78.0,
+    "continuous_native_minimum_not_claimed": true
+  },
+  "Actor_updates": 0,
+  "Actor_Adam_steps": 0,
+  "retained_new_policies": 0,
+  "valid_success_labels": 0,
+  "old275": null,
+  "wide_six54": null,
+  "fresh16": null,
+  "independent_model_native_reload78": null,
+  "stable_six": false,
+  "seven_eight_or_global_entered": false,
+  "student_policy_hash": "3de39102905debc0bb3430cdb9f39043a360425460b5aabbf7f0c632423b7755",
+  "student_start_model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t417_representation_adaptation/blocks/0/bc_proposed.pt.gz",
+  "student_start_sha256": "4aca0f6bd03daec526e689a6a4af17f52ddc7c0be80e664a8ba779133b1eeadb",
+  "selected_mixed_sha256": "29dcca9b42391aa4ec003fa7aee3159672b81c4c4bc6c92a10e7ec19b6e49251",
+  "safeT255_not_replaced": true,
+  "narrow_paused": true,
+  "audit_state": "PASS",
+  "audit_zero_native": true,
+  "backup_receipt": {
+    "state": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+    "group": "T421",
+    "url": "https://github.com/frank8763/winkun/releases/tag/stage-distance-2026-11-01",
+    "asset_url": "https://github.com/frank8763/winkun/releases/download/stage-distance-2026-11-01/stage-distance-t421-c2cc14b6df81.tar.gz",
+    "asset_id": 720785237,
+    "bytes": 578803,
+    "sha256": "c2cc14b6df81944dd899071d059eedd50be428f5abf5cd52208fe0a465f85733",
+    "members": 17,
+    "manifest_sha256": "eb188219bd1d5922059325d309726df085dabfd30e0bbc563775c28900761b18",
+    "temporary_disk_archive_bytes": 0,
+    "files_deleted": 0,
+    "physics_steps": 0,
+    "optimizer_updates": 0,
+    "newruns_logical_bytes_before": 890651113,
+    "newruns_logical_bytes_after": 890651113,
+    "local_source_commit": "ecce057393636f857d09e6130ac71588bf31880c",
+    "verified_epoch": 1794058049.1981845
+  },
+  "local_storage": {
+    "global_logical_bytes": 890651113,
+    "own_logical_bytes": 875697,
+    "free_bytes": 245147193344
+  },
+  "day_cumulative_physics": 17399960,
+  "day_cumulative_commands": 1180,
+  "day_main_wall_seconds": 6607.35009098053,
+  "limitations": [
+    "0/24 refers to privileged same-state control proposals, not full six-metre navigation evaluation or independent training seeds.",
+    "The fixed six-dimensional CEM did not find a solution; this is not a proof of physical unreachability or that a general controller cannot solve it.",
+    "Selected safe timeout reduces final distance mainly by slowing; it is not a successful recovery label and cannot be relabeled as GOAL.",
+    "Rejected full120 arrays were producer-compared in RAM across two real native passes; persistent compact data and per-array SHA do not reconstruct all rejected full observations.",
+    "Legacy bicycle_wheelbase and actual FULLPLANT Ackermann geometry differ; no numerical actual minimum turn radius is claimed without native measurement."
+  ],
+  "next_step": "DRAFT_ONLY: establish an earlier feasible goal-approach state and training-only recovery feedback with actual plant constraints, retaining original clock/goal/safety; do not extend T421 grid or train on failed controls. No next experiment registered or started."
+}
