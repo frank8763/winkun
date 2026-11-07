@@ -1,0 +1,33 @@
+{
+  "id": "T403_FIXED3_DUPLICATES_ONLY",
+  "records": [
+    {
+      "original": "stage/runs/t200_residual_placement/native/behavior_batch_0.npz",
+      "canonical": "stage/runs/t200_residual_placement/latent/behavior_batch_0.npz",
+      "bytes": 2111394,
+      "sha256": "3acc353a2c30149c0dccd4a348661ee5d12b1af8756f5e7799e04d1ef8975d5c",
+      "encoding": "exact-byte-alias-v1"
+    },
+    {
+      "original": "stage/runs/t196_left_exploration/action_noise/behavior_batch_0.npz",
+      "canonical": "stage/runs/t196_left_exploration/parameter_noise/behavior_batch_0.npz",
+      "bytes": 2110946,
+      "sha256": "43e640f944df3348bf200fb300132c01df660aacf4f04cf3f7353e200301286f",
+      "encoding": "exact-byte-alias-v1"
+    },
+    {
+      "original": "stage/runs/t197_timeout_progress/timeout_distance/behavior_batch_0.npz",
+      "canonical": "stage/runs/t197_timeout_progress/no_timeout_distance/behavior_batch_0.npz",
+      "bytes": 2110690,
+      "sha256": "8212e6c25e2009fc128270cf8b18a667c19b16e343282f5bc6956afe1111130a",
+      "encoding": "exact-byte-alias-v1"
+    }
+  ],
+  "source_sha256": "b7fef73f0ef85e5b6aa7aebb403fd6069b86fa149641e6219bd32aebe59926bf",
+  "max_seconds": 120,
+  "native": 0,
+  "Adam": 0,
+  "unique_bytes_removed": 0,
+  "expected_duplicate_bytes": 6333030,
+  "resolver": "stage/experiments/t290_exact_duplicate_store/store.py resolve or restore"
+}
