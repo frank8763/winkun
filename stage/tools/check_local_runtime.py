@@ -20,5 +20,12 @@ for row in m['files']:
  with path.open('rb') as f:
   for block in iter(lambda:f.read(8*1024*1024),b''):h.update(block)
  if path.stat().st_size!=row['bytes'] or h.hexdigest()!=row['sha256']:bad.append([row['archive_path'],'HASH_MISMATCH'])
-print(json.dumps({'state':('READY_WITH_REMOTE_HISTORY' if cold_count else 'READY_PAUSED') if not bad else 'FILES_NEED_ATTENTION','repository':str(root),'python':sys.executable,'torch':torch.__version__,'numpy':numpy.__version__,'mujoco':mujoco.__version__,'manifest_files_checked':len(m['files']),'verified_remote_only_history_files':cold_count,'historical_restore_command':'python stage/tools/restore_cold.py <repo-relative-path>','failures':bad,'simulation_steps':0,'training_updates':0,'automatic_resume':False},indent=2))
+working_file=root/'stage/manifests/current_working_set_20261107.json'
+transitive_count=0
+if working_file.is_file():
+ working=json.loads(working_file.read_text())
+ for name,digest in {**working['transitive_hashes'],**working['restored_runtime_aliases']}.items():
+  item=Path(name);transitive_count+=1
+  if not item.is_file() or hashlib.sha256(item.read_bytes()).hexdigest()!=digest:bad.append([name,'CURRENT_TRANSITIVE_INPUT_MISSING_OR_CHANGED'])
+print(json.dumps({'state':('READY_WITH_REMOTE_HISTORY' if cold_count else 'READY_PAUSED') if not bad else 'FILES_NEED_ATTENTION','repository':str(root),'python':sys.executable,'torch':torch.__version__,'numpy':numpy.__version__,'mujoco':mujoco.__version__,'manifest_files_checked':len(m['files']),'verified_remote_only_history_files':cold_count,'historical_restore_command':'python stage/tools/restore_cold.py <repo-relative-path>','transitive_inputs_checked':transitive_count,'failures':bad,'simulation_steps':0,'training_updates':0,'automatic_resume':False},indent=2))
 sys.exit(bool(bad))

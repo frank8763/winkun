@@ -6,7 +6,8 @@ sys.path.insert(0,str(ROOT/'stage/experiments/t412_closed_expert_likelihood'))
 import t412_learning as E
 
 def main():
-    out=ROOT/'stage/runs/t413_remote_working_set/runtime_probe'
+    out=ROOT/('stage/runs/t413_remote_working_set/runtime_probe' if len(sys.argv)==1 else 'stage/runs/t413_remote_working_set/runtime_probe_after_dependency_restore')
+    if len(sys.argv)>1:assert sys.argv[1:]==['--after-transitive-restore']
     assert not out.exists(),'Run this one zero-step post-cleanup probe once'
     out.mkdir();p=E.read(ROOT/'stage/runs/t412_closed_expert_likelihood/protocol.json')
     for f,h in p['inputs'].items():assert E.sha(f)==h,f

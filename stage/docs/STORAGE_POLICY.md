@@ -6,7 +6,7 @@
 
 本机只保留当前实验的完整依赖、必要基线/当前候选、有效人工/专家示范、高清视频和小型研究索引。结束实验先独立审计并完整远端读回逐成员SHA，再依据当前工作集清单将不再需要的历史载荷转为远端冷存储。未验证远端原件的唯一有效资料不得删除。T145/T146仍只读；Phase聊天、模型、研究、结果及自动化完全隔离。
 
-冷存储索引为stage/manifests/remote_only_20261107.json，记录原路径、大小、SHA、Release资产和成员名。未缓存的历史模型不是丢失或当前训练失败；按需单文件恢复，不自动下载整个历史包：
+旧模型冷存储索引为stage/manifests/remote_only_20261107.json；已完整备份的历史训练载荷使用stage/manifests/run_payloads_remote_20261107.json及其分片。两类文件都通过同一单文件恢复入口。索引记录原路径、大小、SHA、Release资产和成员名。未缓存的历史模型不是丢失或当前训练失败；按需单文件恢复，不自动下载整个历史包：
 
 ```bash
 python stage/tools/restore_cold.py stage/legacy/具体目录/具体模型.pt
@@ -15,3 +15,5 @@ python stage/tools/restore_cold.py stage/legacy/具体目录/具体模型.pt
 恢复操作先核验完整远端资产和成员SHA，保留全局逻辑额度与磁盘余量；只恢复明确请求的路径，避免重新铺满旧模型。
 
 当前新runs总逻辑上限1GiB；已注册T412最多20MiB，用户仅对该轮批准最低空闲39GiB，其余协议按各自原门槛。GitHub保存代码和归档，本机或另外配置的远程计算设备执行仿真。尚未配置GitHub上的GPU/仿真训练，不声称仅有仓库就能远程执行所有实验或零本地占用。
+
+当前工作集的间接依赖见stage/manifests/current_working_set_20261107.json。清理前除了科学协议显式inputs，还必须收集原生入口的legacy.EXPECTED／实际加载依赖；清理后实际加载Actor和原生factory，在任何mj_step／优化器前取消复核。仅元数据清单检查通过，不能替代实际入口检查。本次原模拟器114MB校验依赖已按原字节恢复并加入保护，原缺项检查日志保留。

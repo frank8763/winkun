@@ -6,6 +6,10 @@
 
 后续在本仓库根目录开发和运行代码。执行 `./run_stage.sh` 只检查依赖和文件哈希；获准继续研究后，新代码放 `stage/experiments/`，结果放 `stage/runs/`，通过 `./run_stage.sh stage/experiments/实验脚本.py` 执行。GitHub 保存版本与模型附件，实际计算由本机或另行配置的计算设备承担。用户已检查迁移并授权继续；当前研究状态见[RESEARCH_STATUS](stage/docs/RESEARCH_STATUS.md)，按有界协议运行。
 
+## GitHub归档与本机缓存
+
+按2026-11-07用户要求，已核验归档的旧模型转为远端冷存储，不重复上传；本机保留当前工作集。详见[存储规则](stage/docs/STORAGE_POLICY.md)与[本次清理记录](stage/docs/storage_20261107/CLEANUP_REPORT.md)。历史模型按恢复索引单文件取回，禁止例行下载全部历史。下方早期能力段为迁移时快照，最新结果以 RESEARCH_STATUS 为准。
+
 ## 入口
 
 - [最新实验状态](stage/docs/RESEARCH_STATUS.md)

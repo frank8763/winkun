@@ -1,0 +1,6 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t413_remote_working_set/cold_store.py\", line 134, in <module>\n    else:assert sys.argv[1] in ['prepare','run'];globals()[sys.argv[1]]()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t413_remote_working_set/cold_store.py\", line 110, in run\n    print('FULL_ASSET_READBACK_BEGIN',name,asset['bytes'],flush=True);data=asset_bytes(T,asset);assert len(data)==asset['bytes'] and hashlib.sha256(data).hexdigest()==asset['sha256'];proof,_=members(data)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t413_remote_working_set/cold_store.py\", line 73, in asset_bytes\n    code,head,part=T.response('GET',url,headers={'Range':f'bytes={begin}-{end}','User-Agent':'Stage-byte-proof'})\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t377_full_human_observation_transfer/transport.py\", line 23, in response\n    if result.returncode:raise urllib.error.URLError('curl transport exit '+str(result.returncode))\nurllib.error.URLError: <urlopen error curl transport exit 28>\n",
+  "native": 0,
+  "Adam": 0,
+  "restore_index": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/manifests/remote_only_20261107.json"
+}
