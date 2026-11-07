@@ -1,0 +1,215 @@
+{
+  "state": "COMPLETE_NOT_SCIENTIFICALLY_PASSED",
+  "native_physics": 1389668,
+  "commands": 72,
+  "main_wall_s": 524.1558532714844,
+  "live_Adam": 800,
+  "shadow_Adam": 800,
+  "independent_discarded_reconstruction": 800,
+  "new_PPO_steps": 0,
+  "retained_learning_updates": 0,
+  "rounds": [
+    {
+      "round": 0,
+      "teacher_queries": 2,
+      "teacher_safe": 2,
+      "BC_steps": 400,
+      "accepted": false,
+      "checks": {
+        "old8": {
+          "valid": 8,
+          "success": 6,
+          "contact": 2,
+          "timeout": 0,
+          "invalid": 0,
+          "censored": 0
+        },
+        "left5": {
+          "valid": 5,
+          "success": 2,
+          "contact": 2,
+          "timeout": 1,
+          "invalid": 0,
+          "censored": 0
+        },
+        "right1": {
+          "valid": 1,
+          "success": 1,
+          "contact": 0,
+          "timeout": 0,
+          "invalid": 0,
+          "censored": 0
+        },
+        "policy_hash": "c8a94df5dbeeb0af3bc3a050d4e07e34909c6de1a03e61d2b02797b647e9a2b4",
+        "success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "wide117_80_dev6_RIGHT_13",
+          "wide_dev_0",
+          "wide_dev_4"
+        ],
+        "all14": false
+      },
+      "initial_losses": [
+        7.469870543131081e-34,
+        7.910720770624653e-34,
+        1.7870663856443467,
+        -0.27707301003833157,
+        6.297757062632318
+      ],
+      "final_losses": [
+        0.040473370641203744,
+        0.029166780843581992,
+        -0.11445746790212179,
+        -0.302402604731848,
+        -0.5124898687132886
+      ],
+      "RL_executed": false
+    },
+    {
+      "round": 1,
+      "teacher_queries": 2,
+      "teacher_safe": 2,
+      "BC_steps": 400,
+      "accepted": false,
+      "checks": {
+        "old8": {
+          "valid": 8,
+          "success": 6,
+          "contact": 2,
+          "timeout": 0,
+          "invalid": 0,
+          "censored": 0
+        },
+        "left5": {
+          "valid": 5,
+          "success": 0,
+          "contact": 5,
+          "timeout": 0,
+          "invalid": 0,
+          "censored": 0
+        },
+        "right1": {
+          "valid": 1,
+          "success": 1,
+          "contact": 0,
+          "timeout": 0,
+          "invalid": 0,
+          "censored": 0
+        },
+        "policy_hash": "b6c8615416c09ee33ccce07bb38f55a931130d73127864fdc27725fb3b2770d4",
+        "success_ids": [
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "wide117_80_dev6_RIGHT_13"
+        ],
+        "all14": false
+      },
+      "initial_losses": [
+        7.469870543131081e-34,
+        7.910720770624653e-34,
+        1.7870663856443467,
+        -0.27707301003833157,
+        6.505466129104915
+      ],
+      "final_losses": [
+        0.04498960064746716,
+        0.03153896587994653,
+        -0.12017551015160303,
+        -0.3008868362718191,
+        -0.4965407415763676
+      ],
+      "RL_executed": false
+    }
+  ],
+  "final_joint": {
+    "old8": {
+      "valid": 8,
+      "success": 8,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "left5": {
+      "valid": 5,
+      "success": 0,
+      "contact": 5,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "right1": {
+      "valid": 1,
+      "success": 1,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "policy_hash": "8182a08428acebd871fc1d42d4dcd52a3b995400207e75e5c84f5ec206b1d930",
+    "success_ids": [
+      "dev_task0_13",
+      "dev_task1_13",
+      "dev_task2_13",
+      "dev_task3_13",
+      "dev_task4_13",
+      "dev_task5_13",
+      "dev_task6_13",
+      "dev_task7_13",
+      "wide117_80_dev6_RIGHT_13"
+    ],
+    "all14": false
+  },
+  "main54": null,
+  "old275": null,
+  "fresh16": null,
+  "reload78": null,
+  "stable_six": false,
+  "seven_eight_entered": false,
+  "all_pids_exited": true,
+  "combined_T412_T414": {
+    "physics": 1642941,
+    "commands": 106,
+    "own_bytes": 5313775,
+    "initial14_repeated_not_independent": true
+  },
+  "model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t414_dependency_recovery/candidate.pt.gz",
+    "sha256": "c4dbd26247633890e4dac78f1522c17c0a040161998eb3f5dd9f6b40ce7b8c91",
+    "hashes": {
+      "learned": "f8ed4138c39af0db3388d7bdff1c06916d10bb986c4d7deb09bae935d85fba0a",
+      "optimizer": "d30b7db8279544d4a151b19674134e9d9b257bbd546c7e3c7d1f326df1d4bad9"
+    },
+    "policy_hash": "8182a08428acebd871fc1d42d4dcd52a3b995400207e75e5c84f5ec206b1d930"
+  },
+  "raw_release": {
+    "state": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+    "group": "T414",
+    "url": "https://github.com/frank8763/winkun/releases/tag/stage-distance-2026-11-01",
+    "asset_url": "https://github.com/frank8763/winkun/releases/download/stage-distance-2026-11-01/stage-distance-t414-d3d7df2adc1e.tar.gz",
+    "asset_id": 720147349,
+    "bytes": 2778564,
+    "sha256": "d3d7df2adc1ec88af0f273612886ee3efcbae616ef1f7d23c0e2a850e9030f3e",
+    "members": 88,
+    "manifest_sha256": "da7e49fb6b980ad5c7111388f237288fb45a39f6a62d7fa9446c0eb753efd160",
+    "temporary_disk_archive_bytes": 0,
+    "files_deleted": 0,
+    "physics_steps": 0,
+    "optimizer_updates": 0,
+    "newruns_logical_bytes_before": 866419615,
+    "newruns_logical_bytes_after": 866419615,
+    "local_source_commit": "9868a847328246b1e04db2a0c2f1b141df1fb9db",
+    "verified_epoch": 1794041395.6416104
+  },
+  "free_bytes": 244741767168,
+  "newruns_bytes": 866419615
+}
