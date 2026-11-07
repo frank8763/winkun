@@ -36,7 +36,7 @@ def verify(p):
     N.capacity(OUT,own_limit)
     used=lambda directory:sum(path.stat().st_size for path in Path(directory).rglob('*') if path.is_file())
     assert used(ROOT/'stage/runs')-used(OUT)+own_limit<=2**30
-    assert shutil.disk_usage(ROOT).free>=40*2**30
+    assert shutil.disk_usage(ROOT).free>=p['minimum_free_bytes']
 
 def native_stopped():
     pids=set()

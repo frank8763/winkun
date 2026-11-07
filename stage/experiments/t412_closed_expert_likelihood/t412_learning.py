@@ -16,6 +16,17 @@ OUT=ROOT/'stage/runs/t412_closed_expert_likelihood'
 DOC=ROOT/'stage/docs/day_20261107'
 TEACHER_KEYS=['teacher_actions','teacher_locations','teacher_hidden_before','teacher_hidden_after']
 
+def capacity(out,limit):
+    # User approval on2026-11-07 applies only inside this T412 process. Shared
+    # historical source files and other experiment protocols are unchanged.
+    administrative=read(HERE/'protocol.json')
+    assert administrative['minimum_free_bytes']==39*2**30
+    assert administrative['disk_exception']['user_approved_for']=='T412_ONLY'
+    assert N.K.S.used(out)<=limit and N.K.S.used(ROOT/'stage/runs')<=2**30
+    assert shutil.disk_usage(ROOT).free>=administrative['minimum_free_bytes']
+
+N.capacity=capacity
+
 def set_out(out):
     global OUT
     OUT=Path(out);N.configure(OUT)
