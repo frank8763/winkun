@@ -1,0 +1,17 @@
+T431_CLONE_WRITTEN A discarded_Adam 3
+Traceback (most recent call last):
+  File "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t431_actual_recovery/t431_contract.py", line 284, in <module>
+    probe(sys.argv[2])
+  File "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t431_actual_recovery/t431_contract.py", line 77, in probe
+    C.verify(p)
+  File "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t431_actual_recovery/t431_core.py", line 18, in verify
+    for f,h in p['inputs'].items():assert sha(f)==h,f
+AssertionError: /home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t431_actual_recovery/audit.py
+Traceback (most recent call last):
+  File "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t431_actual_recovery/runner.py", line 159, in <module>
+    globals()[sys.argv[1]]()
+  File "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t431_actual_recovery/runner.py", line 96, in preflight
+    subprocess.run(['taskset','-c','0',str(ROOT/'run_stage.sh'),str(HERE/'t431_contract.py'),'probe',label],cwd=ROOT,check=True,timeout=240)
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['taskset', '-c', '0', '/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/run_stage.sh', '/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t431_actual_recovery/t431_contract.py', 'probe', 'B']' returned non-zero exit status 1.

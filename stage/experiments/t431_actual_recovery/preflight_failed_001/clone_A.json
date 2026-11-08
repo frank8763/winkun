@@ -1,0 +1,348 @@
+{
+  "state": "THREE_DISCARDED_ADAM_CONTRACT_COMPLETE",
+  "label": "A",
+  "pid": 138518,
+  "elapsed_s": 15.072466611862183,
+  "contract": {
+    "protocol_sha256": "982188a9fc7d8772c6514667f48a83bb84129ef59ea663621001f1fb4a3f233e",
+    "source_files": {
+      "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t431_actual_recovery/t431_contract.py": "baf536bce0b7807a9bb6ee991b5341d8c1ccffcb229b8c1c77a17f7b551b09da",
+      "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t431_actual_recovery/t431_learning.py": "6ddac74191aef89fe500ba448cdf884c46a72422e3509aa3cec779d0a39e2a09",
+      "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t431_actual_recovery/t431_core.py": "667853c66ede2811b4b912a0e9e07e7a40f19bb3d29b3f0cde137012bb68bf90",
+      "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t427_fixed_representation/t427_learning.py": "41086f8a585846feda9222c2e5b3b3a765419a88acf2d11657e33c9fcc446794"
+    },
+    "starting_model_sha256": "2f180aa7d79ea367daa1a3e2f6e6307ea91faacaf2f6e9a19a033bd3b8bb874a",
+    "starting_policy_hash": "909acd4f3d8aef1d71f76a80cb8a72820712125050b773b35a158e09b0c8784a",
+    "recovery_support_index_sha256": "a8079bfaef81b5d72cc34786053cc5f9029532a5a116ebea41b3ebecba656b84",
+    "fixture_sources": [
+      {
+        "kind": "authenticated_current_policy_success_anchor",
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t427_fixed_representation/learn/episodes/0067.npz",
+        "sha256": "9b9be0acaea1d6dfbc00fca8472e98d2dfade1875671cb8c26f666accb0eb28e",
+        "id": "dev_task0_13",
+        "policy_hash": "909acd4f3d8aef1d71f76a80cb8a72820712125050b773b35a158e09b0c8784a",
+        "array_digest": "2a44f3af2bcf2510510ed700e66edc804a3ae0aa697323c3598276f6da4a4d75"
+      },
+      {
+        "kind": "authenticated_current_policy_success_anchor",
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t427_fixed_representation/learn/episodes/0000.npz",
+        "sha256": "6d05e521e055fc950258b9a5e6c8b10d7f795c781d63cfdc6b539b98d7e008f1",
+        "id": "wide117_80_dev6_LEFT_00",
+        "policy_hash": "909acd4f3d8aef1d71f76a80cb8a72820712125050b773b35a158e09b0c8784a",
+        "array_digest": "19280bbd9eb92bd078b39439e5eb5083cd65946efaa6a338aeac53248b43f892"
+      },
+      {
+        "kind": "authenticated_actual_current_state_feedback_recovery",
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t429_feedback_recovery/native/episodes/0000.npz",
+        "sha256": "e1d4eea562e7603ef7da3341abeef4ba0d1609c667a2638b4be9a511c9540d0f",
+        "id": "wide117_80_dev6_LEFT_07",
+        "policy_hash": "909acd4f3d8aef1d71f76a80cb8a72820712125050b773b35a158e09b0c8784a",
+        "array_digest": "7dd8348191c284a22bb8b4b08d1a3ef0cdee3b3127297faa01408f08e1b64852",
+        "first": 116,
+        "source_audit_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t429_feedback_recovery/native/audit.json",
+        "source_audit_sha256": "ec6ee25e53251254c414232cfd065a49cd25c8ade2601f7b3c601207b587b068",
+        "not_onpolicy": true
+      }
+    ],
+    "fixtures_are_existing_current_policy_evidence": true,
+    "no_new_native_successes_claimed": true,
+    "full_student_mean_history_density_replay_passed": true,
+    "ordered_parameter_mapping": [
+      {
+        "index": 0,
+        "name": "extra.2.weight",
+        "shape": [
+          2,
+          32
+        ],
+        "dtype": "torch.float64"
+      },
+      {
+        "index": 1,
+        "name": "extra.2.bias",
+        "shape": [
+          2
+        ],
+        "dtype": "torch.float64"
+      }
+    ],
+    "optimizer_defaults": {
+      "lr": 0.0001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0,
+      "amsgrad": false,
+      "maximize": false,
+      "foreach": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": false,
+      "decoupled_weight_decay": false
+    },
+    "param_groups": [
+      {
+        "lr": 0.0001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0,
+        "amsgrad": false,
+        "maximize": false,
+        "foreach": false,
+        "capturable": false,
+        "differentiable": false,
+        "fused": false,
+        "decoupled_weight_decay": false,
+        "params": [
+          0,
+          1
+        ]
+      }
+    ],
+    "runtime_before": {
+      "python": "3.10.20",
+      "torch": "2.11.0+cu128",
+      "numpy": "2.2.6",
+      "default_dtype": "torch.float32",
+      "intraop_threads": 1,
+      "interop_threads": 16,
+      "deterministic_algorithms": true,
+      "matmul_precision": "highest",
+      "cpu_autocast": false,
+      "grad_enabled": true,
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "runtime_after": {
+      "python": "3.10.20",
+      "torch": "2.11.0+cu128",
+      "numpy": "2.2.6",
+      "default_dtype": "torch.float32",
+      "intraop_threads": 1,
+      "interop_threads": 16,
+      "deterministic_algorithms": true,
+      "matmul_precision": "highest",
+      "cpu_autocast": false,
+      "grad_enabled": true,
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "before_hashes": {
+      "learned": "55c5d7c01ece2dc9e6ef3a60f1ad66e7849b2aaac90313ec5b9d8655ce711f67",
+      "optimizer": "dd2e7b5701a2c40bd30fe8686fe1bd2a7f22a2ddd998d55d65c30cb5e1bed583"
+    },
+    "mature_before_hashes": {
+      "learned": "9a086e85403bd2aa7fb181a3e87c740c4a0b4744695710c131f63d9c1b38735b",
+      "optimizer": "84d5707f3841dbe2316455270a21d5fd9d1767d8f15b2516a7b7deffce23022f"
+    },
+    "mature_after_hashes": {
+      "learned": "9746eccfedd59b7a90414cc1ea56d9786f51843a685c12f98b3c8dfebefc963c",
+      "optimizer": "d9a95c29f7a8244fba76922389b6f771c9965efb5750932d886bd14314389219"
+    },
+    "shadow_after_hashes": {
+      "learned": "9746eccfedd59b7a90414cc1ea56d9786f51843a685c12f98b3c8dfebefc963c",
+      "optimizer": "d9a95c29f7a8244fba76922389b6f771c9965efb5750932d886bd14314389219"
+    },
+    "rejection_restored_hashes": {
+      "learned": "9a086e85403bd2aa7fb181a3e87c740c4a0b4744695710c131f63d9c1b38735b",
+      "optimizer": "84d5707f3841dbe2316455270a21d5fd9d1767d8f15b2516a7b7deffce23022f"
+    },
+    "interruption_restored_hashes": {
+      "learned": "9a086e85403bd2aa7fb181a3e87c740c4a0b4744695710c131f63d9c1b38735b",
+      "optimizer": "84d5707f3841dbe2316455270a21d5fd9d1767d8f15b2516a7b7deffce23022f"
+    },
+    "mature_Actor_Adam_rejection_and_interruption_restore_exact": true,
+    "clipped_gradients_and_states": [
+      {
+        "which": "fresh",
+        "where": "BEFORE",
+        "k": 0,
+        "hashes": {
+          "learned": "55c5d7c01ece2dc9e6ef3a60f1ad66e7849b2aaac90313ec5b9d8655ce711f67",
+          "optimizer": "dd2e7b5701a2c40bd30fe8686fe1bd2a7f22a2ddd998d55d65c30cb5e1bed583"
+        },
+        "gradient_sha256": "8fabbedf94602e22812bc0a6347356829fa43b2c43bbb2b68f619ceaf82f49d1",
+        "gradient_dtypes": {
+          "extra.2.weight": "torch.float64",
+          "extra.2.bias": "torch.float64"
+        }
+      },
+      {
+        "which": "fresh",
+        "where": "AFTER",
+        "k": 0,
+        "hashes": {
+          "learned": "9a086e85403bd2aa7fb181a3e87c740c4a0b4744695710c131f63d9c1b38735b",
+          "optimizer": "84d5707f3841dbe2316455270a21d5fd9d1767d8f15b2516a7b7deffce23022f"
+        },
+        "gradient_sha256": "8fabbedf94602e22812bc0a6347356829fa43b2c43bbb2b68f619ceaf82f49d1",
+        "gradient_dtypes": {
+          "extra.2.weight": "torch.float64",
+          "extra.2.bias": "torch.float64"
+        }
+      },
+      {
+        "which": "mature_live",
+        "where": "BEFORE",
+        "k": 0,
+        "hashes": {
+          "learned": "9a086e85403bd2aa7fb181a3e87c740c4a0b4744695710c131f63d9c1b38735b",
+          "optimizer": "84d5707f3841dbe2316455270a21d5fd9d1767d8f15b2516a7b7deffce23022f"
+        },
+        "gradient_sha256": "380801d23898fb826170287d4721b5128c773513b84131b0536c01755cb9db79",
+        "gradient_dtypes": {
+          "extra.2.weight": "torch.float64",
+          "extra.2.bias": "torch.float64"
+        }
+      },
+      {
+        "which": "mature_live",
+        "where": "AFTER",
+        "k": 0,
+        "hashes": {
+          "learned": "9746eccfedd59b7a90414cc1ea56d9786f51843a685c12f98b3c8dfebefc963c",
+          "optimizer": "d9a95c29f7a8244fba76922389b6f771c9965efb5750932d886bd14314389219"
+        },
+        "gradient_sha256": "380801d23898fb826170287d4721b5128c773513b84131b0536c01755cb9db79",
+        "gradient_dtypes": {
+          "extra.2.weight": "torch.float64",
+          "extra.2.bias": "torch.float64"
+        }
+      },
+      {
+        "which": "mature_shadow",
+        "where": "BEFORE",
+        "k": 0,
+        "hashes": {
+          "learned": "9a086e85403bd2aa7fb181a3e87c740c4a0b4744695710c131f63d9c1b38735b",
+          "optimizer": "84d5707f3841dbe2316455270a21d5fd9d1767d8f15b2516a7b7deffce23022f"
+        },
+        "gradient_sha256": "380801d23898fb826170287d4721b5128c773513b84131b0536c01755cb9db79",
+        "gradient_dtypes": {
+          "extra.2.weight": "torch.float64",
+          "extra.2.bias": "torch.float64"
+        }
+      },
+      {
+        "which": "mature_shadow",
+        "where": "AFTER",
+        "k": 0,
+        "hashes": {
+          "learned": "9746eccfedd59b7a90414cc1ea56d9786f51843a685c12f98b3c8dfebefc963c",
+          "optimizer": "d9a95c29f7a8244fba76922389b6f771c9965efb5750932d886bd14314389219"
+        },
+        "gradient_sha256": "380801d23898fb826170287d4721b5128c773513b84131b0536c01755cb9db79",
+        "gradient_dtypes": {
+          "extra.2.weight": "torch.float64",
+          "extra.2.bias": "torch.float64"
+        }
+      }
+    ],
+    "fresh_fit": {
+      "trace": [
+        [
+          1.884440813082173e-32,
+          1.3227456351886202e-31,
+          0.0,
+          0.006399479364931434,
+          0.09890921869107591
+        ]
+      ],
+      "steps": 1,
+      "new_RL": 0,
+      "trainable_parameters": 66,
+      "trainable_names": [
+        "extra.2.weight",
+        "extra.2.bias"
+      ],
+      "fixed_state_hash": "c7407cb2ee9c1b8cb536f3120a3850b7edf453391308f1f567886f60ef581968",
+      "frozen_encoder_core_and_all_other_tensors": true,
+      "unchanged_deployed_architecture": true,
+      "current_old_anchor_count": 1,
+      "six_anchor_count": 1,
+      "recovery_count": 1,
+      "old_211_starting_student_self_distillation": true,
+      "full_actual_history_before_teacher_suffix_mask": true,
+      "actual_executed_controls_only_no_teacher_latent": true,
+      "no_teacher_data_in_onpolicy_ratios": true,
+      "projection_is_local_soft_rule_not_closed_loop_guarantee": true
+    },
+    "mature_live_fit": {
+      "trace": [
+        [
+          9.505616300683486e-07,
+          2.024827046389858e-05,
+          8.163296470061887e-07,
+          0.0063409100365083675,
+          0.11225778390501824
+        ]
+      ],
+      "steps": 1,
+      "new_RL": 0,
+      "trainable_parameters": 66,
+      "trainable_names": [
+        "extra.2.weight",
+        "extra.2.bias"
+      ],
+      "fixed_state_hash": "c7407cb2ee9c1b8cb536f3120a3850b7edf453391308f1f567886f60ef581968",
+      "frozen_encoder_core_and_all_other_tensors": true,
+      "unchanged_deployed_architecture": true,
+      "current_old_anchor_count": 1,
+      "six_anchor_count": 1,
+      "recovery_count": 1,
+      "old_211_starting_student_self_distillation": true,
+      "full_actual_history_before_teacher_suffix_mask": true,
+      "actual_executed_controls_only_no_teacher_latent": true,
+      "no_teacher_data_in_onpolicy_ratios": true,
+      "projection_is_local_soft_rule_not_closed_loop_guarantee": true
+    },
+    "mature_shadow_fit": {
+      "trace": [
+        [
+          9.505616300683486e-07,
+          2.024827046389858e-05,
+          8.163296470061887e-07,
+          0.0063409100365083675,
+          0.11225778390501824
+        ]
+      ],
+      "steps": 1,
+      "new_RL": 0,
+      "trainable_parameters": 66,
+      "trainable_names": [
+        "extra.2.weight",
+        "extra.2.bias"
+      ],
+      "fixed_state_hash": "c7407cb2ee9c1b8cb536f3120a3850b7edf453391308f1f567886f60ef581968",
+      "frozen_encoder_core_and_all_other_tensors": true,
+      "unchanged_deployed_architecture": true,
+      "current_old_anchor_count": 1,
+      "six_anchor_count": 1,
+      "recovery_count": 1,
+      "old_211_starting_student_self_distillation": true,
+      "full_actual_history_before_teacher_suffix_mask": true,
+      "actual_executed_controls_only_no_teacher_latent": true,
+      "no_teacher_data_in_onpolicy_ratios": true,
+      "projection_is_local_soft_rule_not_closed_loop_guarantee": true
+    },
+    "mature_live_shadow_gradients_and_states_exact": true,
+    "frozen_original_before": "c7407cb2ee9c1b8cb536f3120a3850b7edf453391308f1f567886f60ef581968",
+    "frozen_original_after": "c7407cb2ee9c1b8cb536f3120a3850b7edf453391308f1f567886f60ef581968",
+    "native": 0,
+    "new_navigation_training": 0,
+    "retained_Actor": 0,
+    "discarded_fresh_Adam": 1,
+    "discarded_mature_live_Adam": 1,
+    "discarded_mature_shadow_Adam": 1,
+    "discarded_Adam_total": 3,
+    "no_model_export": true,
+    "old_T422_training_audit_not_repaired": true
+  }
+}
