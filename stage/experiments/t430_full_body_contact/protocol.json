@@ -1,0 +1,68 @@
+{
+  "id": "T430_ZERO_STEP_FULL_BODY_CONTACT_RECONSTRUCTION",
+  "model_path": "/home/linghu/mkmini_stage_daad_g2e_overnight_gate_v1/run/models/reference.mjb",
+  "xml_path": "/home/linghu/mkmini_stage_daad_native_layout_recovery_v4_2/run/reference.xml",
+  "geometry_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t326_gap_geometry/geometry.json",
+  "model_sha256": "5faeeb1db0d212f97f855f4e17e9f33e6f9cdcdcfce80281674dfa87ee76ad76",
+  "snapshots": [
+    {
+      "label": "student_original",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t428_early_recovery/native/episodes/0002.npz",
+      "sha256": "ac5913966298faee46f4459f2b17b6a1b548e3f8ad8509ce9c2c2232f486f0e5",
+      "expected_original_collision": true
+    },
+    {
+      "label": "neural_teacher_recovery",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t428_early_recovery/native/episodes/0016.npz",
+      "sha256": "65a43294eaa08021661af46f6a1c740638a7ede4fdf599b35c7aa3218f77834b",
+      "expected_original_collision": true
+    },
+    {
+      "label": "fixed_feedback_recovery",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t429_feedback_recovery/native/episodes/0003.npz",
+      "sha256": "c6d988f556fd4b00addfa6829108dabcde2ce7c2063f87130f0c0058891460d8",
+      "expected_original_collision": true
+    },
+    {
+      "label": "successful_reference",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t428_early_recovery/native/episodes/0009.npz",
+      "sha256": "8c29040c082ea3b6a786538f21ebcafbc0f1372a9f2245dc849e9bba8d275c4f",
+      "expected_original_collision": false
+    }
+  ],
+  "inputs": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/contact_20261108/PLAN.md": "04a220d98bc39518bc89cca486dd0009b034be2536cbe67a207eafba404202ae",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/contact_20261108/PRIMARY_SOURCES.md": "587d743a583c9a26b1d92274c5924616e314276ad74f46e23cd08d6816a69f9f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t430_full_body_contact/audit.py": "c6e9def24ee06ccea38f28fe21a900e071c1301527c314ff64a9f183bc201813",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t430_full_body_contact/driver.py": "def5d03ca2352b97fae485ed0fec971abbc1e60254cbf621fd195922537eb582",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t430_full_body_contact/run.py": "9db094dbca589d9a71f4cb0574a73db39139d6a678e55a980478b8746939ade3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t430_full_body_contact/transport.py": "01265f014aa7a6e4954289db4b4faac981235003f5d7ec384c9de48a4d4f391b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t326_gap_geometry/geometry.json": "097b1c6e8ec3b3ef5fdac3d427525ae906b5bd1ee7589fee18b523bde3299729",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t428_early_recovery/native/episodes/0002.npz": "ac5913966298faee46f4459f2b17b6a1b548e3f8ad8509ce9c2c2232f486f0e5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t428_early_recovery/native/episodes/0009.npz": "8c29040c082ea3b6a786538f21ebcafbc0f1372a9f2245dc849e9bba8d275c4f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t428_early_recovery/native/episodes/0016.npz": "65a43294eaa08021661af46f6a1c740638a7ede4fdf599b35c7aa3218f77834b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t429_feedback_recovery/native/audit.json": "ec6ee25e53251254c414232cfd065a49cd25c8ade2601f7b3c601207b587b068",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t429_feedback_recovery/native/cases.jsonl": "58740158e841b62436e5142235a6f53849aa07a6388af7eb9b18628b2a01c996",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t429_feedback_recovery/native/episodes/0003.npz": "c6d988f556fd4b00addfa6829108dabcde2ce7c2063f87130f0c0058891460d8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t429_feedback_recovery/protocol.json": "6cc2a64f4f67d647cc41ddb351ff9b9b7dbc69ce50fe07f1245786550575ac12",
+    "/home/linghu/mkmini_stage_daad_g2c_exact_factory_entry_v1/run/report.json": "ff1cd8ca8d4d9a9d42ffd457930e8172558f7a4fb9af3dfea303dba5a17e90e0",
+    "/home/linghu/mkmini_stage_daad_g2e_overnight_gate_v1/run/models/reference.mjb": "5faeeb1db0d212f97f855f4e17e9f33e6f9cdcdcfce80281674dfa87ee76ad76",
+    "/home/linghu/mkmini_stage_daad_native_layout_recovery_v4_2/run/reference.xml": "a7eec29e9fa5c4db88e3b41f93fb9e37e936ddd4532fdfd4b29e16eb6c8f7acf",
+    "/home/linghu/stage_daad_g4h_multibranch_night_v1/runner/native_env.py": "fbee3e41ae52a851152aab08398a49d673297a4b4dd562db7e48aae89411de37"
+  },
+  "max_physics": 0,
+  "max_optimizer_calls": 0,
+  "max_bytes": 4194304,
+  "main_seconds": 120,
+  "audit_seconds": 120,
+  "backup_seconds": 180,
+  "source_seconds": 120,
+  "deadline_all": 1794142800.0,
+  "geometry_json_tolerance": 1e-12,
+  "metadata_tolerance_scope": "Old JSON coordinate rounding only; not a physics/contact tolerance.",
+  "collision_distance_threshold_m": 0.002,
+  "native_steps_prohibited": true,
+  "no_Actor": true,
+  "hypothesis": "Static endpoint contact may involve protruding wheel geoms despite positive chassis-only gap.",
+  "no_native_navigation_or_recovery_attempt": true
+}

@@ -1,0 +1,13 @@
+# T430：完整碰撞体静态终态核查，零物理、零训练
+
+用户要求继续解决失败。T429 已结束并封存：固定反馈在真实当前状态恢复4/5，唯一dev_task6_21仍接触。已有纯数组统计表明其朝向误差收敛而约6–7cm横偏未消除；底盘矩形在失败终点仍可能有正间隙，因此轮胎/外伸几何是应验证的解释。
+
+本项不启动新导航或控制器、不步进模拟器、不改变原实验。只直接读取已验证Stage factory使用的 reference.mjb，避免环境构造或reset；封禁mj_step/mj_step1/mj_step2。四条已有轨迹的完整203维final_native_integration经mj_setState、mj_forward作静态接触查询，再恢复原积分/热启动并逐位验证。输入是学生原失败、T428神经教师恢复失败、T429反馈恢复失败及同任务成功教师参考终态，均原SHA锁定。完整碰撞体及地面筛选必须覆盖轮胎等外伸部件，不以底盘外框替代。
+
+当前MJB必须与T326的53个geom名称/type/body/局部position/size/碰撞mask全部核对；旧JSON坐标舍入比较容许1e-12，仅用于序列化元数据，绝不改变.002m碰撞判据或任务门槛。原旧assets MJB已在注册前只读检查中拒绝（障碍mask与裁剪墙几何不同，0物理/未setState），不能用它替代当前factory模型。采用current factory MJB SHA 5faeeb1db0d212f97f855f4e17e9f33e6f9cdcdcfce80281674dfa87ee76ad76，注册XML SHA a7eec29e9fa5c4db88e3b41f93fb9e37e936ddd4532fdfd4b29e16eb6c8f7acf。若当前模型核验失败即保留失败并停止，不手工改几何凑结果。
+
+MuJoCo的静态终态contact不是原生上一次积分时刻的contact历史，本项不能冒充原生导航精确重放；仅核查终态几何接触来源。动态增益/阻尼不用于几何判定，不声称全运行时模型字节完全相同。独立audit重建同四个静态终态，复核原SHA、几何、所有contact、原始积分恢复及零步进记录。成功终态与失败终态对照是诊断，不是新的导航成功率或恢复性证明。
+
+预算0物理积分/0优化器/0Actor，最多main1+audit1模型、8次静态终态查询；preflight仅4个既有数组检查及3个合成禁止步进守卫调用。own4MiB/global newruns1GiB/free40GiB。main120s/audit120s/RAM备份180s/source120s共540s，绝对21:00停止，20:30后仍禁止任何原生积分。不重启旧目录、不追加网格。源/协议/输入锁定、零物理预检、源码精确远端核验后才唯一启动。
+
+结束保存独立结果及所有失败，RAM完整远端二进制读回逐成员SHA后再称备份通过；普通Git只保存代码/协议/小汇总/收据。Stage/Phase完全隔离。部署继续单120因果真carry Actor，无地图/规划器/路点/运行时教师或路由。Stanley/pure pursuit/DAgger一手依据及适用限制见PRIMARY_SOURCES.md；新控制器仍只是草案，不直接将物理轮角公式塞入归一化动作，不声称算法原创或安全证明。
