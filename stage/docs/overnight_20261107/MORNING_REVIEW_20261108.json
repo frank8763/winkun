@@ -1,0 +1,448 @@
+{
+  "state": "INTERRUPTED_BY_SYSTEM_POWEROFF_PARTIAL_EVIDENCE",
+  "original_search_state": "COMPLETE_INDEPENDENT_AUDIT_PASS",
+  "original_learning_summary_missing": true,
+  "original_driver_final_missing": true,
+  "original_files_unchanged": true,
+  "posthoc_new_native": 0,
+  "posthoc_new_navigation_training": 0,
+  "system_shutdown_beijing": "2026-11-07 22:54:53",
+  "system_poweroff_complete_beijing": "2026-11-07 22:55:04",
+  "current_boot": "2026-11-08 09:48:12",
+  "shutdown_request_initiator_not_known": true,
+  "interruption_is_not_network_failure": true,
+  "search_results": [
+    {
+      "mode": "time",
+      "proposals": 36,
+      "safe_GOAL": 34,
+      "contact": 0,
+      "timeout": 2,
+      "independent_train_seeds": false
+    },
+    {
+      "mode": "progress",
+      "proposals": 36,
+      "safe_GOAL": 35,
+      "contact": 0,
+      "timeout": 1,
+      "independent_train_seeds": false
+    }
+  ],
+  "selected_teacher": {
+    "mode": "progress",
+    "proposal": 27,
+    "success": true,
+    "native": 26312,
+    "seconds": 52.624,
+    "selected_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t422_feedback_recovery_night/search/selected.npz",
+    "selected_sha256": "4250430bd55148550c20b6ae251862d016c8601a5cbd4d17ffb3f2611ae93107",
+    "exact_native_passes_and_complete_origin_replay_verified": true
+  },
+  "complete_rounds": [
+    {
+      "round": 0,
+      "feedback_success": true,
+      "bc": {
+        "accepted": true,
+        "checks": {
+          "old8": {
+            "valid": 8,
+            "success": 7,
+            "contact": 0,
+            "timeout": 1,
+            "invalid": 0,
+            "censored": 0
+          },
+          "left5": {
+            "valid": 5,
+            "success": 5,
+            "contact": 0,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "right1": {
+            "valid": 1,
+            "success": 1,
+            "contact": 0,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "success_ids": [
+            "dev_task0_13",
+            "dev_task1_13",
+            "dev_task2_13",
+            "dev_task3_13",
+            "dev_task4_13",
+            "dev_task5_13",
+            "dev_task7_13",
+            "wide117_80_dev6_RIGHT_13",
+            "wide_dev_0",
+            "wide_dev_1",
+            "wide_dev_2",
+            "wide_dev_3",
+            "wide_dev_4"
+          ],
+          "all14": false,
+          "policy_hash": "39535bb8e91f9e4081e6a27187bd078829ea90d69566b503c13bf02a3263178f"
+        },
+        "proposed_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t422_feedback_recovery_night/learning/blocks/0/bc_proposed.pt.gz",
+          "sha256": "eb559b4c5155b7e2c20737416828b7e09a86b287280fd00fa72117b7d00e0ce9",
+          "hashes": {
+            "learned": "8dec3af811e03c99d01a870161c74f7e8df50d76331d84bb7f9dc4c1c557d4d4",
+            "optimizer": "eb2be5fc7914b598c9dbc35cdae5c1e4d76d3c3984cb3f8c52206e70eea7dd75"
+          },
+          "policy_hash": "39535bb8e91f9e4081e6a27187bd078829ea90d69566b503c13bf02a3263178f"
+        },
+        "retained_hashes": {
+          "learned": "8dec3af811e03c99d01a870161c74f7e8df50d76331d84bb7f9dc4c1c557d4d4",
+          "optimizer": "eb2be5fc7914b598c9dbc35cdae5c1e4d76d3c3984cb3f8c52206e70eea7dd75"
+        },
+        "fit_steps": 200,
+        "fresh_rollouts": []
+      },
+      "rl": null
+    },
+    {
+      "round": 1,
+      "feedback_success": true,
+      "bc": {
+        "accepted": false,
+        "checks": {
+          "old8": {
+            "valid": 8,
+            "success": 7,
+            "contact": 0,
+            "timeout": 1,
+            "invalid": 0,
+            "censored": 0
+          },
+          "left5": {
+            "valid": 5,
+            "success": 5,
+            "contact": 0,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "right1": {
+            "valid": 1,
+            "success": 1,
+            "contact": 0,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "success_ids": [
+            "dev_task0_13",
+            "dev_task1_13",
+            "dev_task2_13",
+            "dev_task3_13",
+            "dev_task4_13",
+            "dev_task5_13",
+            "dev_task7_13",
+            "wide117_80_dev6_RIGHT_13",
+            "wide_dev_0",
+            "wide_dev_1",
+            "wide_dev_2",
+            "wide_dev_3",
+            "wide_dev_4"
+          ],
+          "all14": false,
+          "policy_hash": "e06567cb244f6b789dace2bc64c83fe98a13c3e77d985b37874502a2a8de265d"
+        },
+        "proposed_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t422_feedback_recovery_night/learning/blocks/1/bc_proposed.pt.gz",
+          "sha256": "8170e9430f30165d7ca9cf4cf57ee2f1feee8fad2afd2bf4f88654e8c1b83dad",
+          "hashes": {
+            "learned": "ea376eb3d7fb3c28dca1fa5471a67f6104d84e30a15c3e17b6b26e8585870370",
+            "optimizer": "c92f2e68b82b665ed3580f54e602d9d9963e25a41d1e5515deb042318ea8fc5b"
+          },
+          "policy_hash": "e06567cb244f6b789dace2bc64c83fe98a13c3e77d985b37874502a2a8de265d"
+        },
+        "retained_hashes": {
+          "learned": "8dec3af811e03c99d01a870161c74f7e8df50d76331d84bb7f9dc4c1c557d4d4",
+          "optimizer": "eb2be5fc7914b598c9dbc35cdae5c1e4d76d3c3984cb3f8c52206e70eea7dd75"
+        },
+        "fit_steps": 200,
+        "fresh_rollouts": []
+      },
+      "rl": null
+    },
+    {
+      "round": 2,
+      "feedback_success": true,
+      "bc": {
+        "accepted": true,
+        "checks": {
+          "old8": {
+            "valid": 8,
+            "success": 8,
+            "contact": 0,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "left5": {
+            "valid": 5,
+            "success": 5,
+            "contact": 0,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "right1": {
+            "valid": 1,
+            "success": 1,
+            "contact": 0,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "success_ids": [
+            "dev_task0_13",
+            "dev_task1_13",
+            "dev_task2_13",
+            "dev_task3_13",
+            "dev_task4_13",
+            "dev_task5_13",
+            "dev_task6_13",
+            "dev_task7_13",
+            "wide117_80_dev6_RIGHT_13",
+            "wide_dev_0",
+            "wide_dev_1",
+            "wide_dev_2",
+            "wide_dev_3",
+            "wide_dev_4"
+          ],
+          "all14": true,
+          "policy_hash": "6ad474ec960d9f8c61a62abefe958b7b8e9bb057a2a23631916c53db06c31051"
+        },
+        "proposed_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t422_feedback_recovery_night/learning/blocks/2/bc_proposed.pt.gz",
+          "sha256": "477ca8d0710d20695975a7b80cfe0739feadf4b33322f54fb28872b4af6a812b",
+          "hashes": {
+            "learned": "eabe00a91c7d3c6e650314c83a1e9b0f44128860ff8f645ad12feb5d45bfe048",
+            "optimizer": "aa5cad558d36cfc5540460edba2a7a27bf3e426620c24f71a305fa88db2c7a49"
+          },
+          "policy_hash": "6ad474ec960d9f8c61a62abefe958b7b8e9bb057a2a23631916c53db06c31051"
+        },
+        "retained_hashes": {
+          "learned": "eabe00a91c7d3c6e650314c83a1e9b0f44128860ff8f645ad12feb5d45bfe048",
+          "optimizer": "aa5cad558d36cfc5540460edba2a7a27bf3e426620c24f71a305fa88db2c7a49"
+        },
+        "fit_steps": 200,
+        "fresh_rollouts": []
+      },
+      "rl": {
+        "accepted": false,
+        "checks": {
+          "old8": {
+            "valid": 8,
+            "success": 7,
+            "contact": 0,
+            "timeout": 1,
+            "invalid": 0,
+            "censored": 0
+          },
+          "left5": {
+            "valid": 5,
+            "success": 5,
+            "contact": 0,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "right1": {
+            "valid": 1,
+            "success": 1,
+            "contact": 0,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "success_ids": [
+            "dev_task0_13",
+            "dev_task1_13",
+            "dev_task2_13",
+            "dev_task3_13",
+            "dev_task4_13",
+            "dev_task5_13",
+            "dev_task7_13",
+            "wide117_80_dev6_RIGHT_13",
+            "wide_dev_0",
+            "wide_dev_1",
+            "wide_dev_2",
+            "wide_dev_3",
+            "wide_dev_4"
+          ],
+          "all14": false,
+          "policy_hash": "a998b693452a98ea4f4013232b467a5f9b31ae39d4f86e7a2485c8ee5e342c6c"
+        },
+        "proposed_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t422_feedback_recovery_night/learning/blocks/2/rl_proposed.pt.gz",
+          "sha256": "5d48a7b88a97a13ccc91e7259ad1eef9fbff29c1abc4e9e0eb55692becf1697c",
+          "hashes": {
+            "learned": "253a6d9ea1ab65e5ccac9093957f4c9528199326dcac63ede6209298c69ef3df",
+            "optimizer": "0ddfa3337a40610bba37d86e3be7daf87542bb12006df30b611c68e15478df08"
+          },
+          "policy_hash": "a998b693452a98ea4f4013232b467a5f9b31ae39d4f86e7a2485c8ee5e342c6c"
+        },
+        "retained_hashes": {
+          "learned": "eabe00a91c7d3c6e650314c83a1e9b0f44128860ff8f645ad12feb5d45bfe048",
+          "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+        },
+        "fit_steps": 8,
+        "fresh_rollouts": [
+          {
+            "success": true,
+            "contact": false,
+            "timeout": false
+          },
+          {
+            "success": false,
+            "contact": true,
+            "timeout": false
+          },
+          {
+            "success": true,
+            "contact": false,
+            "timeout": false
+          },
+          {
+            "success": false,
+            "contact": true,
+            "timeout": false
+          }
+        ]
+      }
+    }
+  ],
+  "partial_round": {
+    "round": 3,
+    "live_BC_steps": 200,
+    "shadow_BC_steps": 151,
+    "last_shadow_step_index": 150,
+    "proposed_model_saved": false,
+    "accepted": null,
+    "autonomous_checks": null,
+    "not_completed": true
+  },
+  "all_completed_optimizer_events": {
+    "live": 808,
+    "shadow": 759,
+    "total": 1567,
+    "preflight_discarded": 8,
+    "separate_historical_reconstruction_pending": false,
+    "independent_reconstruction_failed_first_step": true
+  },
+  "last_complete_retained_model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t422_feedback_recovery_night/learning/blocks/3/before.pt.gz",
+    "sha256": "73490bd3d6d7c73c9a351f30979010f90ef48be012c9508403068ae9d05dc38f",
+    "same_bytes_as": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t422_feedback_recovery_night/learning/blocks/2/rl_before.pt.gz",
+    "policy_hash": "6ad474ec960d9f8c61a62abefe958b7b8e9bb057a2a23631916c53db06c31051",
+    "learned_hash": "eabe00a91c7d3c6e650314c83a1e9b0f44128860ff8f645ad12feb5d45bfe048",
+    "Adam": "fresh after accepted BC and rejected PPO rollback",
+    "same_actor_as_accepted_BC2": true
+  },
+  "best_autonomous_development": {
+    "old8": {
+      "valid": 8,
+      "success": 8,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "LEFT5": {
+      "valid": 5,
+      "success": 5,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "RIGHT1": {
+      "valid": 1,
+      "success": 1,
+      "contact": 0,
+      "timeout": 0,
+      "invalid": 0,
+      "censored": 0
+    },
+    "total_valid": 14,
+    "total_success": 14,
+    "conditional_known_development_rate": 1.0,
+    "not_global_six_metre_success_rate": true,
+    "teacher_at_deployment": false
+  },
+  "old275": null,
+  "wide54": null,
+  "fresh16": null,
+  "reload78": null,
+  "stable_six": false,
+  "seven_eight_or_global_entered": false,
+  "new_qualified_six_video": null,
+  "physical_ledger": {
+    "search": 3832370,
+    "learning": 1828963,
+    "total": 5661333,
+    "unrecorded_extra_native_not_assumed": true
+  },
+  "command_ledger": {
+    "search": 150,
+    "learning": 89,
+    "preflight_zero": 10,
+    "total": 249
+  },
+  "all_original_native_pids_absent": [
+    618270,
+    618272,
+    618273,
+    618280,
+    623138,
+    623148,
+    623149,
+    623150,
+    623155
+  ],
+  "storage": {
+    "global_bytes": 900550628,
+    "own_bytes": 9899514,
+    "free_bytes": 245794164736
+  },
+  "backup": {
+    "state": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+    "group": "T422-INTERRUPTED",
+    "members": 204,
+    "segments": 16,
+    "archive_sha256": "68cdd21e98f4cf921d2a98a282bee7ba8dc89e6313f20052d8d4084eea5bf615",
+    "receipt": "stage/docs/long_distance_20261101/release_receipt_T422-INTERRUPTED.json",
+    "url": "https://github.com/frank8763/winkun/releases/tag/stage-distance-2026-11-01"
+  },
+  "limitations": [
+    "Search69/72 success is privileged feedback on one actual recovery condition with chosen gains, not an independent navigation generalization rate.",
+    "14/14 is a known development set and has no unseen-navigation holdout support yet.",
+    "RL update damaged an old task and was rejected; no retained PPO gain claimed.",
+    "Fourth incomplete candidate was neither validated nor saved; do not use sampling.pt.gz because it contains the rejected RL candidate.",
+    "Machine shutdown prevented final native acceptance, independent learning audit and finalizer; no original summary is manufactured."
+  ],
+  "next_action_draft": "Evaluate the preserved accepted Actor under an independently registered frozen full regression/54-dev/conditional-holdout/readback protocol before any7/8. No training restart or new native execution in this morning review.",
+  "independent_learning_audit": {
+    "state": "FAIL_RECONSTRUCTION_CAUSE_UNRESOLVED",
+    "recorded_before0_matches": true,
+    "recorded_after0_mismatch": true,
+    "historical_discarded_steps_attempted": 1,
+    "no_original_files_modified": true,
+    "error_file": "stage/docs/overnight_20261107/T422_PARTIAL_OPTIMIZER_AUDIT_ERROR.json",
+    "no_full_learning_audit_PASS_claim": true,
+    "diagnostic_new_Adam": 0,
+    "losses_and_gradient_norm_match_recorded_first_step": true,
+    "four_zero_Adam_gradient_paths_exact": true,
+    "full_Actor_Adam_AFTER0_hash_mismatch_unresolved": true,
+    "no_recovery_audit_run": true
+  }
+}

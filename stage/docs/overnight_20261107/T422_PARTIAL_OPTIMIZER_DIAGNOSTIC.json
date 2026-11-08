@@ -1,0 +1,122 @@
+{
+  "state": "FAIL_RECONSTRUCTION_CAUSE_UNRESOLVED",
+  "scope": "Post-shutdown independent reconstruction, not a resumed T422 navigation or training experiment",
+  "attempt": {
+    "stopped_at": {
+      "tag": "BC0",
+      "which": "live",
+      "where": "AFTER",
+      "k": 0,
+      "event_index": 1
+    },
+    "matching_before_event": true,
+    "complete_recorded_optimizer_hash_after_first_step_did_not_match": true,
+    "discarded_historical_Adam_steps": 1,
+    "native": 0,
+    "new_navigation_training": 0,
+    "new_retained_policy": 0,
+    "recovery_reconstruction_not_started": true
+  },
+  "diagnostic": {
+    "zero_Adam_paths": [
+      {
+        "path": "fresh",
+        "initial_hashes": {
+          "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+          "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+        },
+        "losses": [
+          5.644862321503177e-32,
+          0.013110401619057152,
+          -0.1191921532573074,
+          -0.3076048687560743,
+          -0.599324888718486
+        ],
+        "gradient_clip_input_norm": 1.2721585229790247,
+        "complete_clipped_parameter_gradient_sha256": "8c1aac908b6ac3a543254560d43a03a595e43596915e2ba9af3e0a23a859e531",
+        "native": 0,
+        "Adam_steps": 0
+      },
+      {
+        "path": "history",
+        "initial_hashes": {
+          "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+          "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+        },
+        "losses": [
+          5.644862321503177e-32,
+          0.013110401619057152,
+          -0.1191921532573074,
+          -0.3076048687560743,
+          -0.599324888718486
+        ],
+        "gradient_clip_input_norm": 1.2721585229790247,
+        "complete_clipped_parameter_gradient_sha256": "8c1aac908b6ac3a543254560d43a03a595e43596915e2ba9af3e0a23a859e531",
+        "native": 0,
+        "Adam_steps": 0
+      },
+      {
+        "path": "load",
+        "initial_hashes": {
+          "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+          "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+        },
+        "losses": [
+          5.644862321503177e-32,
+          0.013110401619057152,
+          -0.1191921532573074,
+          -0.3076048687560743,
+          -0.599324888718486
+        ],
+        "gradient_clip_input_norm": 1.2721585229790247,
+        "complete_clipped_parameter_gradient_sha256": "8c1aac908b6ac3a543254560d43a03a595e43596915e2ba9af3e0a23a859e531",
+        "native": 0,
+        "Adam_steps": 0
+      },
+      {
+        "path": "historyload",
+        "initial_hashes": {
+          "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+          "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+        },
+        "losses": [
+          5.644862321503177e-32,
+          0.013110401619057152,
+          -0.1191921532573074,
+          -0.3076048687560743,
+          -0.599324888718486
+        ],
+        "gradient_clip_input_norm": 1.2721585229790247,
+        "complete_clipped_parameter_gradient_sha256": "8c1aac908b6ac3a543254560d43a03a595e43596915e2ba9af3e0a23a859e531",
+        "native": 0,
+        "Adam_steps": 0
+      }
+    ],
+    "all_five_loss_values_bitwise_equal_original_trace0": true,
+    "gradient_norm_bitwise_equal_original_trace0": true,
+    "all_four_paths_clipped_gradient_SHA_identical": true,
+    "phase": "protect",
+    "trainable_parameters": 10722,
+    "default_dtype": "torch.float32",
+    "original_serialized_Adam_step_dtype": "torch.float32",
+    "original_serialized_Adam_exp_avg_dtype": "torch.float64",
+    "adapter_cause_proven": false,
+    "original_training_bug_proven": false,
+    "threshold_not_relaxed": true
+  },
+  "original_evidence": {
+    "files": 204,
+    "complete_original_file_set_and_bytes_SHA_unchanged": true,
+    "manifest_path": "stage/docs/overnight_20261107/T422_INTERRUPTION_RAW_MANIFEST.json",
+    "manifest_sha256": "bf24663fda1df375bb932c6b1f2e6023dcc5928f774f9ab6e1a58007d6bd3af0"
+  },
+  "original_error_preserved": true,
+  "script_sha256": "48f096800e352f9f390a0cb3e61afb6a8a40e35ae84d20b04ef5c8a4f5134c22",
+  "no_original_T422_summary_or_audit_fabricated": true,
+  "no_complete_learning_audit_PASS": true,
+  "old275": null,
+  "wide54": null,
+  "fresh16": null,
+  "reload78": null,
+  "limits": "One failed first historical Adam reconstruction was performed, then all further diagnostics used zero optimizer steps. The cause of the complete AFTER hash mismatch is unresolved. Matching loss and gradient norm do not substitute for complete Actor+Adam state verification; no PASS is issued and no remaining or missing historical update is computed."
+}
