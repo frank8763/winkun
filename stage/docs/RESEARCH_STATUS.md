@@ -1,3 +1,5 @@
+2026-11-08 T430已完成零物理完整碰撞体静态终态核查/独立auditPASS，0ActorAdam/0新导航，原始contact_results与报告见contact_20261108；不是原生contact历史重放/可恢复性或六米验收证明。研究Actor未变、six完整门未过/8未开始；safeT255保持/窄暂停/Phase隔离。
+
 2026-11-08用户继续解决剩余失败，T430完整碰撞体静态终态核查已注册/零步预检PASS，尚无launch：只直接加载当前Stage factory MJB，53geom与T326核对/203维原积分静态forward后精确恢复，四已有终态main+独立audit；禁止mj_step/1/2、无env/Actor/Torch/优化器/新导航。原assets MJB因mask/墙几何不符已注册前只读拒绝，不能混用。0physics/own4MiB/global1GiB/free40/21:00all截止，20:30后无新原生积分；源精确远端后唯一执行，失败保原件不补造。Stanley/pure pursuit/DAgger一手源与实际动作→25deg中心角/车轮外伸限制见contact_20261108；新控制器未注册运行，safeT255不变/窄暂停/Phase隔离。
 
 2026-11-08 T429已COMPLETE/独立auditPASS/34原件2RAM包远端完整读回逐成员SHA，全部原生/driver退出；5个T428实际失败状态固定反馈4GOAL1contact，5原生exact，214044物理/14native+8零物理命令/73.283694秒，0ActorAdam。结合T428共6/7真实恢复支持，索引feedback_20261108/RECOVERY_SUPPORT仅成功后缀且非onpolicy；学生未更新，T427提案仍six51/54旧271/275拒绝，不冒充新六米验收。唯一dev_task6_21交接22s位置差.065085m/yaw4.428deg，40反馈步横偏未收敛、29.830s碰撞，非持续动作饱和；posthoc零native/Adam逐反馈代数exact，净空/物理可恢复性未证明。完整FINDINGS/FAILED_CLEARANCE_POSTHOC与下一学习草案已落盘，20:00后未训练；无329/fresh16/reload78/8m。safeT255不动/窄暂停/Phase隔离，保留所有失败原件。
