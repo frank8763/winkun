@@ -1,3 +1,5 @@
+2026-11-08 T430完整碰撞体静态核查/独立auditPASS/原始10文件5382B远端逐成员SHA全过，0physics/ActorAdam，全部科学/driver退出：原学生与神经恢复终态circle9-底盘，固定反馈终态circle9-geom27右前轮(-.0927mm)，成功参考终态无障碍contact。静态endpoint非原生contact历史重放，53geometry核对差0/203积分恢复exact。真实轴距.60/前轴+.30/25deg中心命令，不能用旧.42近似；横偏未消除导致外轮廓擦碰已有支持。科学结束后新增next_feedback.py未注册提案：前轴横偏→低速航向修正/显式角度映射，纯符号/单位/边界合同PASS、40旧观测仅反事实不新标签，未原生测试/未训练/不宣称Stanley原版或创新安全证书。six联合门未过/8未起；20:30后仅零物理分析/21:00all不延，详contact_20261108/FINDINGS与NEXT_EXPERIMENT_DRAFT。Stage/Phase隔离/safeT255保留/窄暂停。
+
 2026-11-08 T430已完成零物理完整碰撞体静态终态核查/独立auditPASS，0ActorAdam/0新导航，原始contact_results与报告见contact_20261108；不是原生contact历史重放/可恢复性或六米验收证明。研究Actor未变、six完整门未过/8未开始；safeT255保持/窄暂停/Phase隔离。
 
 2026-11-08用户继续解决剩余失败，T430完整碰撞体静态终态核查已注册/零步预检PASS，尚无launch：只直接加载当前Stage factory MJB，53geom与T326核对/203维原积分静态forward后精确恢复，四已有终态main+独立audit；禁止mj_step/1/2、无env/Actor/Torch/优化器/新导航。原assets MJB因mask/墙几何不符已注册前只读拒绝，不能混用。0physics/own4MiB/global1GiB/free40/21:00all截止，20:30后无新原生积分；源精确远端后唯一执行，失败保原件不补造。Stanley/pure pursuit/DAgger一手源与实际动作→25deg中心角/车轮外伸限制见contact_20261108；新控制器未注册运行，safeT255不变/窄暂停/Phase隔离。
