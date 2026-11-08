@@ -1,3 +1,5 @@
+2026-11-08 T429离线有限链结束，state=COMPLETE_AUDITED_LOCAL；six_gate=False，用户明确跳过7m，eight_started=False。全部科学退出=True；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。真实各支线/预算/缺测见feedback_20261108/FINAL_REPORT.json，不复跑结束目录、不晋升safeT255、窄暂停、Stage/Phase隔离。
+
 2026-11-08用户要求解决当前失败，T428真实早期接管已COMPLETE/独立auditPASS/全部源模型原始远端逐SHA，7t0教师全GOAL但真实15.2–23.2s学生prefix后仅2six恢复，1six超时4old碰撞，原Actor不等于偏离恢复专家。源/所有进程退出核验，0Actor/Adam/新RL。现另T429固定误差反馈机制只5个剩余失败，同原studentprefix/clock/history/执行器，在T428相同first接管，参考该任务已有完整t0安全teacher轨迹，固定同一T422bestgains/state56真实速度/局部progress；一组无搜索/0参数更新/不部署参考轨迹。5次反馈+5exact全结果保存，独立逐反馈代数/prefix/原始hash审计；360k/40cmd/10MiB/global1GiB/free40，20:30native21:00all停。已0native0Adam预检PASS、尚无launch，先source精确远端再唯一启动；不跑329/fresh/reload/8，不把训练期恢复成功叫6m自主解决。T42751/54旧271/275的提案拒绝/原件保留，safeT255不晋升，窄暂停，Stage/Phase完全隔离，详feedback_20261108/PLAN/BUDGET/READINESS。
 
 2026-11-08 T428离线有限链结束，state=COMPLETE_AUDITED_LOCAL；six_gate=False，用户明确跳过7m，eight_started=False。全部科学退出=True；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。真实各支线/预算/缺测见recovery_20261108/FINAL_REPORT.json，不复跑结束目录、不晋升safeT255、窄暂停、Stage/Phase隔离。
