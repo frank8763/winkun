@@ -1,4 +1,4 @@
-"""Frozen-representation66-parameter repair, one candidate and strict joint gate."""
+"""Two fixed existing-MLP proposals; strict joint navigation acceptance."""
 from t432_core import *
 class Runtime:
     def __init__(self,name,p):

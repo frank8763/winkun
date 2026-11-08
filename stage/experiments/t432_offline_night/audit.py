@@ -424,6 +424,7 @@ def main(name):
             assert [entry for entry in actual if entry[0] == role] == [entry for entry in expected if entry[0] == role]
         assert sum(r['physics'] for r in commands) == summary['physics'] <= budget['max_physics']
         assert summary['elapsed_s'] <= budget['main_seconds']
+        assert C.E.N.K.S.used(out) <= budget['max_bytes']
         guard()
         C.verify(p)
         C.save(out / 'audit.json', dict(state='PASS', stage=name, native=0,
