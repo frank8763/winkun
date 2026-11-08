@@ -1,0 +1,566 @@
+{
+  "state": "POSTHOC_NUMERICAL_EVIDENCE_NOT_A_NEW_INTERVENTION",
+  "new_native_steps": 0,
+  "new_optimizer_calls": 0,
+  "source_sha256": "6bb49b236ff2ef6c528cbee634ff12c7b82574213ca17bbe4bb59843365d49d5",
+  "inputs": [
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t429_feedback_recovery/native/episodes/0003.npz",
+      "sha256": "c6d988f556fd4b00addfa6829108dabcde2ce7c2063f87130f0c0058891460d8"
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t428_early_recovery/native/episodes/0009.npz",
+      "sha256": "8c29040c082ea3b6a786538f21ebcafbc0f1372a9f2245dc849e9bba8d275c4f"
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t428_early_recovery/native/episodes/0016.npz",
+      "sha256": "65a43294eaa08021661af46f6a1c740638a7ede4fdf599b35c7aa3218f77834b"
+    }
+  ],
+  "handoff_seconds": 22.0,
+  "same_clock_handoff_position_error_m": 0.06508531487382516,
+  "same_clock_handoff_yaw_error_deg": 4.428284448673127,
+  "handoff_actual_speed_mps": 0.11569313704967499,
+  "handoff_reference_speed_mps": 0.15697267651557922,
+  "contact_time_s": 29.830000000000002,
+  "previous_neural_teacher_contact_time_s": 29.23,
+  "suffix_decisions": 40,
+  "positive_drive_saturation_fraction": 0.05,
+  "positive_steer_saturation_fraction": 0.1,
+  "negative_steer_saturation_fraction": 0.0,
+  "speed_min_median_max_mps": [
+    0.08137398958206177,
+    0.11892092600464821,
+    0.18003647029399872
+  ],
+  "coordinate_definition": "poses=[world x,world y,yaw radians]; positive left error in actual vehicle frame",
+  "samples": [
+    {
+      "time_s": 22.0,
+      "reference_time_s": 22.0,
+      "forward_error_m": 0.0273913548576953,
+      "left_error_m": 0.05904076465701286,
+      "yaw_error_deg": 4.428284448673127,
+      "speed_mps": 0.11569313704967499,
+      "reference_speed_mps": 0.15697267651557922,
+      "executed": [
+        0.9008238911628723,
+        0.9085873365402222
+      ]
+    },
+    {
+      "time_s": 22.2,
+      "reference_time_s": 22.0,
+      "forward_error_m": 0.0013751524126668462,
+      "left_error_m": 0.057517532940522545,
+      "yaw_error_deg": 4.010050658132994,
+      "speed_mps": 0.13291004300117493,
+      "reference_speed_mps": 0.15697267651557922,
+      "executed": [
+        0.8520711660385132,
+        0.8966391682624817
+      ]
+    },
+    {
+      "time_s": 22.400000000000002,
+      "reference_time_s": 22.0,
+      "forward_error_m": -0.018892480221028882,
+      "left_error_m": 0.0553636194960686,
+      "yaw_error_deg": 3.3823916766525075,
+      "speed_mps": 0.1030765101313591,
+      "reference_speed_mps": 0.15697267651557922,
+      "executed": [
+        0.8459919095039368,
+        0.8789139986038208
+      ]
+    },
+    {
+      "time_s": 22.6,
+      "reference_time_s": 22.2,
+      "forward_error_m": -0.014777348580140535,
+      "left_error_m": 0.05660988027748793,
+      "yaw_error_deg": 3.2348668375978353,
+      "speed_mps": 0.11511178314685822,
+      "reference_speed_mps": 0.11975105106830597,
+      "executed": [
+        0.9267681837081909,
+        0.5945985317230225
+      ]
+    },
+    {
+      "time_s": 22.8,
+      "reference_time_s": 22.400000000000002,
+      "forward_error_m": -0.012388707374199576,
+      "left_error_m": 0.05795856900649156,
+      "yaw_error_deg": 3.112246958333527,
+      "speed_mps": 0.1662878841161728,
+      "reference_speed_mps": 0.1705809384584427,
+      "executed": [
+        0.9690755605697632,
+        0.3525528311729431
+      ]
+    },
+    {
+      "time_s": 23.0,
+      "reference_time_s": 22.6,
+      "forward_error_m": -0.011904491776577916,
+      "left_error_m": 0.05904931396553967,
+      "yaw_error_deg": 2.9171190583177897,
+      "speed_mps": 0.16759516298770905,
+      "reference_speed_mps": 0.16746369004249573,
+      "executed": [
+        0.9269602298736572,
+        0.43923094868659973
+      ]
+    },
+    {
+      "time_s": 23.2,
+      "reference_time_s": 22.8,
+      "forward_error_m": -0.011347416871865787,
+      "left_error_m": 0.05998371387610696,
+      "yaw_error_deg": 2.7336312642547465,
+      "speed_mps": 0.1612572968006134,
+      "reference_speed_mps": 0.16192986071109772,
+      "executed": [
+        0.9204093217849731,
+        0.4984225332736969
+      ]
+    },
+    {
+      "time_s": 23.400000000000002,
+      "reference_time_s": 23.0,
+      "forward_error_m": -0.009888172870635311,
+      "left_error_m": 0.06091383874937682,
+      "yaw_error_deg": 2.5551609820460683,
+      "speed_mps": 0.1558838188648224,
+      "reference_speed_mps": 0.1616278737783432,
+      "executed": [
+        0.9300989508628845,
+        0.5365519523620605
+      ]
+    },
+    {
+      "time_s": 23.6,
+      "reference_time_s": 23.2,
+      "forward_error_m": -0.006732881143108323,
+      "left_error_m": 0.061956951589726944,
+      "yaw_error_deg": 2.3937060073251244,
+      "speed_mps": 0.15438133478164673,
+      "reference_speed_mps": 0.16296890377998352,
+      "executed": [
+        0.926757276058197,
+        0.5009339451789856
+      ]
+    },
+    {
+      "time_s": 23.8,
+      "reference_time_s": 23.400000000000002,
+      "forward_error_m": -0.005048794581354092,
+      "left_error_m": 0.06271617167257036,
+      "yaw_error_deg": 2.222279311458991,
+      "speed_mps": 0.15422241389751434,
+      "reference_speed_mps": 0.16044165194034576,
+      "executed": [
+        0.9311139583587646,
+        0.6732980012893677
+      ]
+    },
+    {
+      "time_s": 24.0,
+      "reference_time_s": 23.6,
+      "forward_error_m": -0.0018787431182016139,
+      "left_error_m": 0.06357115247480039,
+      "yaw_error_deg": 2.175559503735781,
+      "speed_mps": 0.1292952448129654,
+      "reference_speed_mps": 0.1426541805267334,
+      "executed": [
+        0.9613844156265259,
+        0.7543039917945862
+      ]
+    },
+    {
+      "time_s": 24.2,
+      "reference_time_s": 23.8,
+      "forward_error_m": 0.0052061423493405985,
+      "left_error_m": 0.06510865493004571,
+      "yaw_error_deg": 2.3646429891405365,
+      "speed_mps": 0.10920576751232147,
+      "reference_speed_mps": 0.14236602187156677,
+      "executed": [
+        0.9897162318229675,
+        0.7881373763084412
+      ]
+    },
+    {
+      "time_s": 24.400000000000002,
+      "reference_time_s": 23.8,
+      "forward_error_m": -0.015688810038263234,
+      "left_error_m": 0.06353039437260023,
+      "yaw_error_deg": 1.9449209682981894,
+      "speed_mps": 0.10514435917139053,
+      "reference_speed_mps": 0.14236602187156677,
+      "executed": [
+        0.9637565612792969,
+        0.7760694026947021
+      ]
+    },
+    {
+      "time_s": 24.6,
+      "reference_time_s": 24.0,
+      "forward_error_m": -0.007029690687789247,
+      "left_error_m": 0.06539368352458162,
+      "yaw_error_deg": 2.1411923282492733,
+      "speed_mps": 0.10724470019340515,
+      "reference_speed_mps": 0.15836268663406372,
+      "executed": [
+        0.9581895470619202,
+        1.0
+      ]
+    },
+    {
+      "time_s": 24.8,
+      "reference_time_s": 24.2,
+      "forward_error_m": -0.0046091738631799,
+      "left_error_m": 0.06637842768064006,
+      "yaw_error_deg": 2.137189544660217,
+      "speed_mps": 0.09616231173276901,
+      "reference_speed_mps": 0.09329995512962341,
+      "executed": [
+        0.9489983320236206,
+        1.0
+      ]
+    },
+    {
+      "time_s": 25.0,
+      "reference_time_s": 24.400000000000002,
+      "forward_error_m": -0.002371539498478799,
+      "left_error_m": 0.06739429475842768,
+      "yaw_error_deg": 2.149426461552898,
+      "speed_mps": 0.09599627554416656,
+      "reference_speed_mps": 0.10439465939998627,
+      "executed": [
+        0.950895369052887,
+        1.0
+      ]
+    },
+    {
+      "time_s": 25.2,
+      "reference_time_s": 24.400000000000002,
+      "forward_error_m": -0.02090694800058255,
+      "left_error_m": 0.06565809615030388,
+      "yaw_error_deg": 1.6217652757670247,
+      "speed_mps": 0.09505411237478256,
+      "reference_speed_mps": 0.10439465939998627,
+      "executed": [
+        0.9259045720100403,
+        1.0
+      ]
+    },
+    {
+      "time_s": 25.400000000000002,
+      "reference_time_s": 24.6,
+      "forward_error_m": -0.01619524712930984,
+      "left_error_m": 0.0671550503005125,
+      "yaw_error_deg": 1.7015144862642706,
+      "speed_mps": 0.09544897824525833,
+      "reference_speed_mps": 0.11727175861597061,
+      "executed": [
+        0.9599375128746033,
+        0.9200999140739441
+      ]
+    },
+    {
+      "time_s": 25.6,
+      "reference_time_s": 24.8,
+      "forward_error_m": -0.012247296901342065,
+      "left_error_m": 0.0682009726232234,
+      "yaw_error_deg": 1.7247816201695827,
+      "speed_mps": 0.11316931992769241,
+      "reference_speed_mps": 0.12339293956756592,
+      "executed": [
+        0.9651806950569153,
+        0.877734363079071
+      ]
+    },
+    {
+      "time_s": 25.8,
+      "reference_time_s": 25.0,
+      "forward_error_m": -0.009743586689734428,
+      "left_error_m": 0.06877063468109476,
+      "yaw_error_deg": 1.7107276760894092,
+      "speed_mps": 0.13181361556053162,
+      "reference_speed_mps": 0.1423865407705307,
+      "executed": [
+        0.9672160148620605,
+        0.8929635882377625
+      ]
+    },
+    {
+      "time_s": 26.0,
+      "reference_time_s": 25.2,
+      "forward_error_m": -0.006976854951676031,
+      "left_error_m": 0.0693629793951836,
+      "yaw_error_deg": 1.687566029216566,
+      "speed_mps": 0.12259067595005035,
+      "reference_speed_mps": 0.12989628314971924,
+      "executed": [
+        0.9527965784072876,
+        0.9807406067848206
+      ]
+    },
+    {
+      "time_s": 26.2,
+      "reference_time_s": 25.400000000000002,
+      "forward_error_m": -0.006112037415887887,
+      "left_error_m": 0.06957533488755183,
+      "yaw_error_deg": 1.6103808736270022,
+      "speed_mps": 0.09354206919670105,
+      "reference_speed_mps": 0.09408746659755707,
+      "executed": [
+        0.970828115940094,
+        0.9906153082847595
+      ]
+    },
+    {
+      "time_s": 26.400000000000002,
+      "reference_time_s": 25.6,
+      "forward_error_m": -0.005370676913430857,
+      "left_error_m": 0.0697298764562543,
+      "yaw_error_deg": 1.5282322100255499,
+      "speed_mps": 0.09709170460700989,
+      "reference_speed_mps": 0.0982476994395256,
+      "executed": [
+        0.9736376404762268,
+        0.9797486662864685
+      ]
+    },
+    {
+      "time_s": 26.6,
+      "reference_time_s": 25.8,
+      "forward_error_m": -0.0046263754914545145,
+      "left_error_m": 0.06985288786969673,
+      "yaw_error_deg": 1.4463781469117953,
+      "speed_mps": 0.09761971980333328,
+      "reference_speed_mps": 0.09825063496828079,
+      "executed": [
+        0.9489471912384033,
+        0.6989266276359558
+      ]
+    },
+    {
+      "time_s": 26.8,
+      "reference_time_s": 26.0,
+      "forward_error_m": 0.0005721433832436458,
+      "left_error_m": 0.07065450700428617,
+      "yaw_error_deg": 1.424428875448201,
+      "speed_mps": 0.14301788806915283,
+      "reference_speed_mps": 0.16986031830310822,
+      "executed": [
+        0.9605786204338074,
+        0.5244654417037964
+      ]
+    },
+    {
+      "time_s": 27.0,
+      "reference_time_s": 26.2,
+      "forward_error_m": 0.0026322900262442973,
+      "left_error_m": 0.07091290352289867,
+      "yaw_error_deg": 1.3007041396767107,
+      "speed_mps": 0.1616176962852478,
+      "reference_speed_mps": 0.16137979924678802,
+      "executed": [
+        0.9772269129753113,
+        0.5450968742370605
+      ]
+    },
+    {
+      "time_s": 27.2,
+      "reference_time_s": 26.400000000000002,
+      "forward_error_m": 0.005690102007969371,
+      "left_error_m": 0.07117085496901006,
+      "yaw_error_deg": 1.1574552873770507,
+      "speed_mps": 0.151233971118927,
+      "reference_speed_mps": 0.16753681004047394,
+      "executed": [
+        0.9944897294044495,
+        0.5330738425254822
+      ]
+    },
+    {
+      "time_s": 27.400000000000002,
+      "reference_time_s": 26.6,
+      "forward_error_m": 0.00803641009655471,
+      "left_error_m": 0.07123979633587785,
+      "yaw_error_deg": 1.0284604190568616,
+      "speed_mps": 0.15904566645622253,
+      "reference_speed_mps": 0.16654114425182343,
+      "executed": [
+        0.9994893670082092,
+        0.7209571003913879
+      ]
+    },
+    {
+      "time_s": 27.6,
+      "reference_time_s": 26.6,
+      "forward_error_m": -0.01794927265343138,
+      "left_error_m": 0.06919546368476939,
+      "yaw_error_deg": 0.5094175487163711,
+      "speed_mps": 0.12214871495962143,
+      "reference_speed_mps": 0.16654114425182343,
+      "executed": [
+        0.9906966686248779,
+        0.705889105796814
+      ]
+    },
+    {
+      "time_s": 27.8,
+      "reference_time_s": 26.8,
+      "forward_error_m": -0.012328137414100153,
+      "left_error_m": 0.06961178322841577,
+      "yaw_error_deg": 0.4981249968199391,
+      "speed_mps": 0.13610142469406128,
+      "reference_speed_mps": 0.14849424362182617,
+      "executed": [
+        0.9603797197341919,
+        0.5720848441123962
+      ]
+    },
+    {
+      "time_s": 28.0,
+      "reference_time_s": 27.0,
+      "forward_error_m": -0.009592064414869289,
+      "left_error_m": 0.06961098222348032,
+      "yaw_error_deg": 0.40213653545266415,
+      "speed_mps": 0.15930332243442535,
+      "reference_speed_mps": 0.16716976463794708,
+      "executed": [
+        0.9631181955337524,
+        0.5188992023468018
+      ]
+    },
+    {
+      "time_s": 28.2,
+      "reference_time_s": 27.2,
+      "forward_error_m": -0.00799379330226423,
+      "left_error_m": 0.06940039826993596,
+      "yaw_error_deg": 0.2865405517523368,
+      "speed_mps": 0.16332553327083588,
+      "reference_speed_mps": 0.1659070998430252,
+      "executed": [
+        0.9416979551315308,
+        0.2416830062866211
+      ]
+    },
+    {
+      "time_s": 28.400000000000002,
+      "reference_time_s": 27.400000000000002,
+      "forward_error_m": -0.007478937755544302,
+      "left_error_m": 0.06899258515417889,
+      "yaw_error_deg": 0.15014673470292347,
+      "speed_mps": 0.16280335187911987,
+      "reference_speed_mps": 0.16271378099918365,
+      "executed": [
+        0.9381519556045532,
+        0.07693154364824295
+      ]
+    },
+    {
+      "time_s": 28.6,
+      "reference_time_s": 27.8,
+      "forward_error_m": 0.006338215039264246,
+      "left_error_m": 0.06886114689988752,
+      "yaw_error_deg": 0.04473464466274949,
+      "speed_mps": 0.08137398958206177,
+      "reference_speed_mps": 0.08843448758125305,
+      "executed": [
+        0.9260692596435547,
+        -0.03618110343813896
+      ]
+    },
+    {
+      "time_s": 28.8,
+      "reference_time_s": 28.0,
+      "forward_error_m": 0.006903092455557612,
+      "left_error_m": 0.06899752572627298,
+      "yaw_error_deg": 0.020970641062161406,
+      "speed_mps": 0.09020671248435974,
+      "reference_speed_mps": 0.0887044221162796,
+      "executed": [
+        0.922731339931488,
+        -0.045121196657419205
+      ]
+    },
+    {
+      "time_s": 29.0,
+      "reference_time_s": 28.2,
+      "forward_error_m": 0.006336413827636379,
+      "left_error_m": 0.06910874689086619,
+      "yaw_error_deg": -0.0017623760972784843,
+      "speed_mps": 0.09161349385976791,
+      "reference_speed_mps": 0.09636348485946655,
+      "executed": [
+        0.9051120281219482,
+        -0.12921760976314545
+      ]
+    },
+    {
+      "time_s": 29.2,
+      "reference_time_s": 28.2,
+      "forward_error_m": -0.01120200290567808,
+      "left_error_m": 0.06905780571469392,
+      "yaw_error_deg": 0.04063781159244028,
+      "speed_mps": 0.08672051131725311,
+      "reference_speed_mps": 0.09636348485946655,
+      "executed": [
+        0.8844171762466431,
+        -0.128326416015625
+      ]
+    },
+    {
+      "time_s": 29.400000000000002,
+      "reference_time_s": 28.400000000000002,
+      "forward_error_m": 0.0008137021952534032,
+      "left_error_m": 0.0684348931763607,
+      "yaw_error_deg": -0.07038383853811113,
+      "speed_mps": 0.08540582656860352,
+      "reference_speed_mps": 0.1605672985315323,
+      "executed": [
+        1.0,
+        -0.14857059717178345
+      ]
+    },
+    {
+      "time_s": 29.6,
+      "reference_time_s": 28.6,
+      "forward_error_m": 0.014340200163597955,
+      "left_error_m": 0.06743216804759128,
+      "yaw_error_deg": -0.3220015032317424,
+      "speed_mps": 0.10019306093454361,
+      "reference_speed_mps": 0.16299904882907867,
+      "executed": [
+        1.0,
+        -0.18278251588344574
+      ]
+    },
+    {
+      "time_s": 29.8,
+      "reference_time_s": 28.8,
+      "forward_error_m": 0.016606152475747718,
+      "left_error_m": 0.06659498766684283,
+      "yaw_error_deg": -0.4889083466465965,
+      "speed_mps": 0.18003647029399872,
+      "reference_speed_mps": 0.16658702492713928,
+      "executed": [
+        0.9649866223335266,
+        -0.23428595066070557
+      ]
+    }
+  ],
+  "all_suffix_feedback_actions_recomputed_exact": true,
+  "limitations": [
+    "No vehicle clearance or physical recoverability proof.",
+    "Same-clock handoff error differs from progress-matched feedback error.",
+    "Later collision time alone does not establish improvement.",
+    "No new actor, recovery attempt, or navigation acceptance."
+  ]
+}
