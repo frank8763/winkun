@@ -1,0 +1,561 @@
+{
+  "state": "FAIL_CAUSE_UNRESOLVED_NO_THRESHOLD_RELAXATION",
+  "elapsed_s": 67.17854237556458,
+  "wall_limit_s": 600,
+  "step_limit": 8,
+  "discarded_historical_Adam": 5,
+  "native": 0,
+  "new_navigation_training": 0,
+  "new_retained_policy": 0,
+  "original_shadow_AFTER0_matches_live": true,
+  "probes": [
+    {
+      "name": "default",
+      "flush_denormal": null,
+      "foreach": null,
+      "initial_hashes": {
+        "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+        "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+      },
+      "after_hashes": {
+        "learned": "0977c270bbe8c09c80d4b5c3d2d42c739e18d952794766b2d7708ef62d96ad36",
+        "optimizer": "39e82b69fd7d358667716b378f8ae071d69143e1a66770de54434054317376b0"
+      },
+      "expected_original_AFTER0": {
+        "learned": "061a1479d36a0a83f5a52ea8129746595408bf0fab9ce80e4564b4d5abed0298",
+        "optimizer": "64a6fc0684b621d80f39a4ece031eb7a0268b24b3643ea1624e334a1a8d55477"
+      },
+      "exact_learned": false,
+      "exact_Adam": false,
+      "complete_exact": false,
+      "events": [
+        {
+          "where": "BEFORE",
+          "k": 0,
+          "hashes": {
+            "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+            "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+          }
+        },
+        {
+          "where": "AFTER",
+          "k": 0,
+          "hashes": {
+            "learned": "0977c270bbe8c09c80d4b5c3d2d42c739e18d952794766b2d7708ef62d96ad36",
+            "optimizer": "39e82b69fd7d358667716b378f8ae071d69143e1a66770de54434054317376b0"
+          }
+        }
+      ],
+      "trace0": [
+        5.644862321503177e-32,
+        0.013110401619057152,
+        -0.1191921532573074,
+        -0.3076048687560743,
+        -0.599324888718486,
+        1.2721585229790247
+      ],
+      "original_trace0": [
+        5.644862321503177e-32,
+        0.013110401619057152,
+        -0.1191921532573074,
+        -0.3076048687560743,
+        -0.599324888718486,
+        1.2721585229790247
+      ],
+      "trace_exact": true,
+      "clipped_gradient_sha256": "8c1aac908b6ac3a543254560d43a03a595e43596915e2ba9af3e0a23a859e531",
+      "learned_differences_from_default": [],
+      "param_groups": [
+        {
+          "lr": 0.0001,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "eps": 1e-08,
+          "weight_decay": 0,
+          "amsgrad": false,
+          "maximize": false,
+          "foreach": null,
+          "capturable": false,
+          "differentiable": false,
+          "fused": null,
+          "decoupled_weight_decay": false,
+          "params": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "step_dtype": {
+        "0": "torch.float32",
+        "1": "torch.float32",
+        "2": "torch.float32",
+        "3": "torch.float32",
+        "4": "torch.float32",
+        "5": "torch.float32",
+        "6": "torch.float32",
+        "7": "torch.float32",
+        "8": "torch.float32",
+        "9": "torch.float32"
+      },
+      "original_pre_hash": {
+        "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+        "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+      }
+    },
+    {
+      "name": "flush_denormal_true",
+      "flush_denormal": true,
+      "foreach": null,
+      "initial_hashes": {
+        "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+        "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+      },
+      "after_hashes": {
+        "learned": "0977c270bbe8c09c80d4b5c3d2d42c739e18d952794766b2d7708ef62d96ad36",
+        "optimizer": "39e82b69fd7d358667716b378f8ae071d69143e1a66770de54434054317376b0"
+      },
+      "expected_original_AFTER0": {
+        "learned": "061a1479d36a0a83f5a52ea8129746595408bf0fab9ce80e4564b4d5abed0298",
+        "optimizer": "64a6fc0684b621d80f39a4ece031eb7a0268b24b3643ea1624e334a1a8d55477"
+      },
+      "exact_learned": false,
+      "exact_Adam": false,
+      "complete_exact": false,
+      "events": [
+        {
+          "where": "BEFORE",
+          "k": 0,
+          "hashes": {
+            "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+            "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+          }
+        },
+        {
+          "where": "AFTER",
+          "k": 0,
+          "hashes": {
+            "learned": "0977c270bbe8c09c80d4b5c3d2d42c739e18d952794766b2d7708ef62d96ad36",
+            "optimizer": "39e82b69fd7d358667716b378f8ae071d69143e1a66770de54434054317376b0"
+          }
+        }
+      ],
+      "trace0": [
+        5.644862321503177e-32,
+        0.013110401619057152,
+        -0.1191921532573074,
+        -0.3076048687560743,
+        -0.599324888718486,
+        1.2721585229790247
+      ],
+      "original_trace0": [
+        5.644862321503177e-32,
+        0.013110401619057152,
+        -0.1191921532573074,
+        -0.3076048687560743,
+        -0.599324888718486,
+        1.2721585229790247
+      ],
+      "trace_exact": true,
+      "clipped_gradient_sha256": "8c1aac908b6ac3a543254560d43a03a595e43596915e2ba9af3e0a23a859e531",
+      "learned_differences_from_default": [],
+      "param_groups": [
+        {
+          "lr": 0.0001,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "eps": 1e-08,
+          "weight_decay": 0,
+          "amsgrad": false,
+          "maximize": false,
+          "foreach": null,
+          "capturable": false,
+          "differentiable": false,
+          "fused": null,
+          "decoupled_weight_decay": false,
+          "params": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "step_dtype": {
+        "0": "torch.float32",
+        "1": "torch.float32",
+        "2": "torch.float32",
+        "3": "torch.float32",
+        "4": "torch.float32",
+        "5": "torch.float32",
+        "6": "torch.float32",
+        "7": "torch.float32",
+        "8": "torch.float32",
+        "9": "torch.float32"
+      },
+      "original_pre_hash": {
+        "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+        "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+      }
+    },
+    {
+      "name": "flush_denormal_false",
+      "flush_denormal": false,
+      "foreach": null,
+      "initial_hashes": {
+        "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+        "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+      },
+      "after_hashes": {
+        "learned": "0977c270bbe8c09c80d4b5c3d2d42c739e18d952794766b2d7708ef62d96ad36",
+        "optimizer": "39e82b69fd7d358667716b378f8ae071d69143e1a66770de54434054317376b0"
+      },
+      "expected_original_AFTER0": {
+        "learned": "061a1479d36a0a83f5a52ea8129746595408bf0fab9ce80e4564b4d5abed0298",
+        "optimizer": "64a6fc0684b621d80f39a4ece031eb7a0268b24b3643ea1624e334a1a8d55477"
+      },
+      "exact_learned": false,
+      "exact_Adam": false,
+      "complete_exact": false,
+      "events": [
+        {
+          "where": "BEFORE",
+          "k": 0,
+          "hashes": {
+            "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+            "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+          }
+        },
+        {
+          "where": "AFTER",
+          "k": 0,
+          "hashes": {
+            "learned": "0977c270bbe8c09c80d4b5c3d2d42c739e18d952794766b2d7708ef62d96ad36",
+            "optimizer": "39e82b69fd7d358667716b378f8ae071d69143e1a66770de54434054317376b0"
+          }
+        }
+      ],
+      "trace0": [
+        5.644862321503177e-32,
+        0.013110401619057152,
+        -0.1191921532573074,
+        -0.3076048687560743,
+        -0.599324888718486,
+        1.2721585229790247
+      ],
+      "original_trace0": [
+        5.644862321503177e-32,
+        0.013110401619057152,
+        -0.1191921532573074,
+        -0.3076048687560743,
+        -0.599324888718486,
+        1.2721585229790247
+      ],
+      "trace_exact": true,
+      "clipped_gradient_sha256": "8c1aac908b6ac3a543254560d43a03a595e43596915e2ba9af3e0a23a859e531",
+      "learned_differences_from_default": [],
+      "param_groups": [
+        {
+          "lr": 0.0001,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "eps": 1e-08,
+          "weight_decay": 0,
+          "amsgrad": false,
+          "maximize": false,
+          "foreach": null,
+          "capturable": false,
+          "differentiable": false,
+          "fused": null,
+          "decoupled_weight_decay": false,
+          "params": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "step_dtype": {
+        "0": "torch.float32",
+        "1": "torch.float32",
+        "2": "torch.float32",
+        "3": "torch.float32",
+        "4": "torch.float32",
+        "5": "torch.float32",
+        "6": "torch.float32",
+        "7": "torch.float32",
+        "8": "torch.float32",
+        "9": "torch.float32"
+      },
+      "original_pre_hash": {
+        "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+        "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+      }
+    },
+    {
+      "name": "scalar_no_foreach",
+      "flush_denormal": false,
+      "foreach": false,
+      "initial_hashes": {
+        "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+        "optimizer": "16ff8530fcd0bbd68b1fe0dc4ca608932d6e5c0825588ddd619c33900c44756f"
+      },
+      "after_hashes": {
+        "learned": "0977c270bbe8c09c80d4b5c3d2d42c739e18d952794766b2d7708ef62d96ad36",
+        "optimizer": "3141140ec8bd7df35227ec4fceeaa9c93bb59219e781d627a518f68a82a19be6"
+      },
+      "expected_original_AFTER0": {
+        "learned": "061a1479d36a0a83f5a52ea8129746595408bf0fab9ce80e4564b4d5abed0298",
+        "optimizer": "64a6fc0684b621d80f39a4ece031eb7a0268b24b3643ea1624e334a1a8d55477"
+      },
+      "exact_learned": false,
+      "exact_Adam": false,
+      "complete_exact": false,
+      "events": [
+        {
+          "where": "BEFORE",
+          "k": 0,
+          "hashes": {
+            "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+            "optimizer": "16ff8530fcd0bbd68b1fe0dc4ca608932d6e5c0825588ddd619c33900c44756f"
+          }
+        },
+        {
+          "where": "AFTER",
+          "k": 0,
+          "hashes": {
+            "learned": "0977c270bbe8c09c80d4b5c3d2d42c739e18d952794766b2d7708ef62d96ad36",
+            "optimizer": "3141140ec8bd7df35227ec4fceeaa9c93bb59219e781d627a518f68a82a19be6"
+          }
+        }
+      ],
+      "trace0": [
+        5.644862321503177e-32,
+        0.013110401619057152,
+        -0.1191921532573074,
+        -0.3076048687560743,
+        -0.599324888718486,
+        1.2721585229790247
+      ],
+      "original_trace0": [
+        5.644862321503177e-32,
+        0.013110401619057152,
+        -0.1191921532573074,
+        -0.3076048687560743,
+        -0.599324888718486,
+        1.2721585229790247
+      ],
+      "trace_exact": true,
+      "clipped_gradient_sha256": "8c1aac908b6ac3a543254560d43a03a595e43596915e2ba9af3e0a23a859e531",
+      "learned_differences_from_default": [],
+      "param_groups": [
+        {
+          "lr": 0.0001,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "eps": 1e-08,
+          "weight_decay": 0,
+          "amsgrad": false,
+          "maximize": false,
+          "foreach": false,
+          "capturable": false,
+          "differentiable": false,
+          "fused": null,
+          "decoupled_weight_decay": false,
+          "params": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "step_dtype": {
+        "0": "torch.float32",
+        "1": "torch.float32",
+        "2": "torch.float32",
+        "3": "torch.float32",
+        "4": "torch.float32",
+        "5": "torch.float32",
+        "6": "torch.float32",
+        "7": "torch.float32",
+        "8": "torch.float32",
+        "9": "torch.float32"
+      },
+      "original_pre_hash": {
+        "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+        "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+      }
+    },
+    {
+      "name": "explicit_foreach",
+      "flush_denormal": false,
+      "foreach": true,
+      "initial_hashes": {
+        "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+        "optimizer": "992cf5819dc8028235382348debc0199b1dedab8767e5f1e5d6b46212e0340f1"
+      },
+      "after_hashes": {
+        "learned": "0977c270bbe8c09c80d4b5c3d2d42c739e18d952794766b2d7708ef62d96ad36",
+        "optimizer": "cd503888cdf397d81e40b9fff0093727dcdd7be70d3c65e0ce57b1382b34e6a5"
+      },
+      "expected_original_AFTER0": {
+        "learned": "061a1479d36a0a83f5a52ea8129746595408bf0fab9ce80e4564b4d5abed0298",
+        "optimizer": "64a6fc0684b621d80f39a4ece031eb7a0268b24b3643ea1624e334a1a8d55477"
+      },
+      "exact_learned": false,
+      "exact_Adam": false,
+      "complete_exact": false,
+      "events": [
+        {
+          "where": "BEFORE",
+          "k": 0,
+          "hashes": {
+            "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+            "optimizer": "992cf5819dc8028235382348debc0199b1dedab8767e5f1e5d6b46212e0340f1"
+          }
+        },
+        {
+          "where": "AFTER",
+          "k": 0,
+          "hashes": {
+            "learned": "0977c270bbe8c09c80d4b5c3d2d42c739e18d952794766b2d7708ef62d96ad36",
+            "optimizer": "cd503888cdf397d81e40b9fff0093727dcdd7be70d3c65e0ce57b1382b34e6a5"
+          }
+        }
+      ],
+      "trace0": [
+        5.644862321503177e-32,
+        0.013110401619057152,
+        -0.1191921532573074,
+        -0.3076048687560743,
+        -0.599324888718486,
+        1.2721585229790247
+      ],
+      "original_trace0": [
+        5.644862321503177e-32,
+        0.013110401619057152,
+        -0.1191921532573074,
+        -0.3076048687560743,
+        -0.599324888718486,
+        1.2721585229790247
+      ],
+      "trace_exact": true,
+      "clipped_gradient_sha256": "8c1aac908b6ac3a543254560d43a03a595e43596915e2ba9af3e0a23a859e531",
+      "learned_differences_from_default": [],
+      "param_groups": [
+        {
+          "lr": 0.0001,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "eps": 1e-08,
+          "weight_decay": 0,
+          "amsgrad": false,
+          "maximize": false,
+          "foreach": true,
+          "capturable": false,
+          "differentiable": false,
+          "fused": null,
+          "decoupled_weight_decay": false,
+          "params": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "step_dtype": {
+        "0": "torch.float32",
+        "1": "torch.float32",
+        "2": "torch.float32",
+        "3": "torch.float32",
+        "4": "torch.float32",
+        "5": "torch.float32",
+        "6": "torch.float32",
+        "7": "torch.float32",
+        "8": "torch.float32",
+        "9": "torch.float32"
+      },
+      "original_pre_hash": {
+        "learned": "d085e643f614ebd3cc290873b9acf9f46b6f1904b06b0dec93597ceb898d9ac5",
+        "optimizer": "893d93df1b6a8b7fedeb8eb61ded205288c847e42fff8573764116b1db865b80"
+      }
+    }
+  ],
+  "confirmation_hashes": null,
+  "all_original_T422_files_SHA_unchanged": true,
+  "original_file_count": 204,
+  "no_old_failure_overwritten": true,
+  "old_full_training_audit_not_claimed_PASS": true,
+  "hypotheses": [
+    {
+      "id": "FTZ_DAZ",
+      "prediction": "Changing denormal handling changes Actor hash toward original.",
+      "result": "Not supported: true/false/default Actor hashes identical."
+    },
+    {
+      "id": "Adam_execution_path",
+      "prediction": "Scalar vs foreach Adam changes Actor hash toward original.",
+      "result": "Not supported: Actor hashes identical; optimizer metadata hashes differ because explicit foreach option is part of state_dict."
+    },
+    {
+      "id": "parameter_state_mapping",
+      "prediction": "Same serialized before hash hides original parameter-index mapping differences.",
+      "result": "Unresolved: original parameter-name-to-optimizer-index and full first-step gradients were not persisted; current probes use canonical E.params order."
+    },
+    {
+      "id": "serialization_pseudo_difference",
+      "prediction": "Only optimizer or nonnumeric metadata differs.",
+      "result": "Not supported as sole cause: learned Actor hash also differs; complete current numeric learned arrays identical across all probe methods."
+    }
+  ],
+  "independent_loop_command": "taskset -c 0 ./run_stage.sh stage/experiments/t425_offline_day_chain/provenance.py",
+  "original_failure_report_preserved": "stage/docs/overnight_20261107/T422_PARTIAL_OPTIMIZER_DIAGNOSTIC.json",
+  "old_original_training_bug_not_proven": true,
+  "no_more_optimizer_probes_without_new_evidence": true,
+  "script_sha256": "e5bcab0d12b1890a3701f2821cbd27568bd18e3a65fbd6ecab0f9d3d1a743374",
+  "next_gate_recommendation": "For any independent new training pilot persist ordered named parameter -> Adam index, clipped per-parameter gradient digests, exact Adam options/step dtype and forward/loss trace, then require same source+fixture fresh-process short-live/shadow/reconstruction exact before navigation learning. This does not repair T422 provenance."
+}
