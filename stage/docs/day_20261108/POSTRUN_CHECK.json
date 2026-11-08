@@ -1,0 +1,237 @@
+{
+  "state": "READONLY_POSTRUN_CHECK_NO_TRAINING",
+  "checked_beijing": "2026-11-08T17:35:31.837191+08:00",
+  "six_full_gate": false,
+  "eight_started": false,
+  "pure_student_supervised_candidate_54of54": true,
+  "new_successful_candidate_NOT_promoted": true,
+  "retained_policy_hash": "6ad474ec960d9f8c61a62abefe958b7b8e9bb057a2a23631916c53db06c31051",
+  "baseline_wide54": 50,
+  "baseline_old275": 260,
+  "candidates": [
+    {
+      "branch": "a",
+      "round": 0,
+      "accepted": false,
+      "wide54": {
+        "valid": 54,
+        "success": 54,
+        "contact": 0,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "old275": {
+        "valid": 275,
+        "success": 264,
+        "contact": 5,
+        "timeout": 6,
+        "invalid": 0,
+        "censored": 0
+      },
+      "LEFT": 27,
+      "RIGHT": 27,
+      "gained": [
+        "dev_task4_03",
+        "dev_task6_01",
+        "dev_task6_06",
+        "dev_task6_07",
+        "dev_task6_11",
+        "dev_task6_17",
+        "dev_task6_18",
+        "hold_task6_00",
+        "hold_task6_02",
+        "hold_task6_03",
+        "hold_task6_05",
+        "wide117_80_dev6_LEFT_02",
+        "wide117_80_dev6_LEFT_06",
+        "wide117_80_dev6_LEFT_15",
+        "wide117_80_dev6_LEFT_19"
+      ],
+      "lost": [
+        "dev_task6_03",
+        "dev_task6_04",
+        "dev_task6_05",
+        "dev_task6_10",
+        "dev_task6_13",
+        "dev_task6_19",
+        "hold_task6_06"
+      ],
+      "candidate_model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t425_offline_day_chain/a/blocks/0/proposed.pt.gz",
+        "sha256": "1ba96aa117ccef9c7a2d92158192e3cf5a392b25b38d486b7b6d2228d0177b62",
+        "hashes": {
+          "learned": "4641a9beecf0bf851822debbe7f1f700925a3f485a5a12feefa21aaa26bf0d93",
+          "optimizer": "8a7e2279be34613f295710e6a0889a04d1e780a4c0a4ddfa036ff541cba4d847"
+        },
+        "policy_hash": "952f6b42fea9dc92ef1c362c3d5d368aa214ce8844a9ee86625f0876f2c32953"
+      },
+      "source_model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t425_offline_day_chain/a/blocks/0/before.pt.gz",
+        "sha256": "c8e60bab7aaaa47fefbbfb7c25ecb903e2308395ca7748edec67e2937145b2da",
+        "hashes": {
+          "learned": "eabe00a91c7d3c6e650314c83a1e9b0f44128860ff8f645ad12feb5d45bfe048",
+          "optimizer": "6f5908883548c2c7c1467e00cdc3e0a2f7ed02a2d22f22bbd408928571f74e4e"
+        },
+        "policy_hash": "6ad474ec960d9f8c61a62abefe958b7b8e9bb057a2a23631916c53db06c31051"
+      }
+    },
+    {
+      "branch": "b",
+      "round": 0,
+      "accepted": false,
+      "wide54": {
+        "valid": 54,
+        "success": 51,
+        "contact": 2,
+        "timeout": 1,
+        "invalid": 0,
+        "censored": 0
+      },
+      "old275": {
+        "valid": 275,
+        "success": 257,
+        "contact": 7,
+        "timeout": 11,
+        "invalid": 0,
+        "censored": 0
+      },
+      "LEFT": 24,
+      "RIGHT": 27,
+      "gained": [
+        "dev_task6_06",
+        "dev_task6_11",
+        "dev_task6_17",
+        "dev_task6_24",
+        "hold_task6_00",
+        "hold_task6_03",
+        "wide117_80_dev6_LEFT_02",
+        "wide117_80_dev6_LEFT_06",
+        "wide117_80_dev6_LEFT_19"
+      ],
+      "lost": [
+        "dev_task6_03",
+        "dev_task6_05",
+        "dev_task6_08",
+        "dev_task6_09",
+        "dev_task6_10",
+        "dev_task6_12",
+        "dev_task6_15",
+        "dev_task6_19",
+        "hold_task6_01",
+        "wide117_80_dev6_LEFT_03",
+        "wide117_80_dev6_LEFT_18"
+      ],
+      "candidate_model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t425_offline_day_chain/b/blocks/0/proposed.pt.gz",
+        "sha256": "bc1e74e05d7bcd794d4066f07d29d074d7ad89bfe5330a42f2ae46bbda57f6fc",
+        "hashes": {
+          "learned": "ea46e8bb44b32e719606c3d75b03699da62654252cedc17d9f6ee5683b4482be",
+          "optimizer": "382b341f40447bad5660929e0a335c6af9b5feea10dbe8daa89d04791df97eae"
+        },
+        "policy_hash": "d85bdd39c19aab21921d13732702bc4728b1ea77917b36cae7d6acc43f12c2e7"
+      },
+      "source_model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t425_offline_day_chain/b/blocks/0/before.pt.gz",
+        "sha256": "c8e60bab7aaaa47fefbbfb7c25ecb903e2308395ca7748edec67e2937145b2da",
+        "hashes": {
+          "learned": "eabe00a91c7d3c6e650314c83a1e9b0f44128860ff8f645ad12feb5d45bfe048",
+          "optimizer": "6f5908883548c2c7c1467e00cdc3e0a2f7ed02a2d22f22bbd408928571f74e4e"
+        },
+        "policy_hash": "6ad474ec960d9f8c61a62abefe958b7b8e9bb057a2a23631916c53db06c31051"
+      }
+    },
+    {
+      "branch": "b",
+      "round": 1,
+      "accepted": false,
+      "wide54": {
+        "valid": 54,
+        "success": 49,
+        "contact": 2,
+        "timeout": 3,
+        "invalid": 0,
+        "censored": 0
+      },
+      "old275": {
+        "valid": 275,
+        "success": 263,
+        "contact": 10,
+        "timeout": 2,
+        "invalid": 0,
+        "censored": 0
+      },
+      "LEFT": 22,
+      "RIGHT": 27,
+      "gained": [
+        "dev_task6_01",
+        "dev_task6_06",
+        "dev_task6_11",
+        "dev_task6_17",
+        "hold_task6_00",
+        "hold_task6_02",
+        "hold_task6_03",
+        "hold_task6_05",
+        "wide117_80_dev6_LEFT_02",
+        "wide117_80_dev6_LEFT_06",
+        "wide117_80_dev6_LEFT_15",
+        "wide117_80_dev6_LEFT_19"
+      ],
+      "lost": [
+        "dev_task6_03",
+        "dev_task6_04",
+        "dev_task6_12",
+        "dev_task6_26",
+        "hold_task6_04",
+        "wide117_80_dev6_LEFT_07",
+        "wide117_80_dev6_LEFT_16",
+        "wide117_80_dev6_LEFT_20",
+        "wide117_80_dev6_LEFT_22",
+        "wide117_80_dev6_LEFT_26"
+      ],
+      "candidate_model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t425_offline_day_chain/b/blocks/1/proposed.pt.gz",
+        "sha256": "b8e9dc15636c4dede6ba7cdf150bd96298ed22a731cd006092fff470e68d4d17",
+        "hashes": {
+          "learned": "ad5e42f493dd689395310d7674a76c11b5b6c03b4f99abc087029bb43e2c67e9",
+          "optimizer": "382452fb6c785392b3d3981f41550f1db432ae2d279817cc4e1409f39870d363"
+        },
+        "policy_hash": "70cda054081d2566641f8a3a89cf7348ed7f5680d06f4bda3e1d263c369bb3d0"
+      },
+      "source_model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t425_offline_day_chain/b/blocks/1/before.pt.gz",
+        "sha256": "c8e60bab7aaaa47fefbbfb7c25ecb903e2308395ca7748edec67e2937145b2da",
+        "hashes": {
+          "learned": "eabe00a91c7d3c6e650314c83a1e9b0f44128860ff8f645ad12feb5d45bfe048",
+          "optimizer": "6f5908883548c2c7c1467e00cdc3e0a2f7ed02a2d22f22bbd408928571f74e4e"
+        },
+        "policy_hash": "6ad474ec960d9f8c61a62abefe958b7b8e9bb057a2a23631916c53db06c31051"
+      }
+    }
+  ],
+  "all_independent_audits_PASS": true,
+  "old_T422_history_FAIL_not_repaired": true,
+  "new_native": 0,
+  "new_Adam": 0,
+  "processes_all_stopped": true,
+  "followup": "DRAFT_ONLY: freeze A54/54 research candidate, reconstruct full54 current successful causal histories under new bounded protocol, collect verified recovery labels for new lost7 and remaining4 old failures, then protected joint learning and full329/fresh16/reload78. No new experiment launched.",
+  "remote": {
+    "state": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+    "receipt_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/long_distance_20261101/release_receipt_T425.json",
+    "members": 1129,
+    "parts": 34,
+    "archive_sha256": "dd6242f72d7141a2a1f45cbcfa587d8f83d4e31faaeb32a6fe2d371f7d667728",
+    "verified_epoch": 1794130711.8223662,
+    "source": "CHECK_LATEST_EXACT_SOURCE_RECEIPT"
+  },
+  "anchored_old_centre_failure": {
+    "id": "dev_task6_13",
+    "already_in_initial_58_anchors": true,
+    "timeout_s": 46.668,
+    "remaining_m": 0.3874305087143198,
+    "threshold_m": 0.2,
+    "fixed_anchor_average_loss_start": 6.723477180591558e-32,
+    "fixed_anchor_average_loss_last": 0.0005970394988751678,
+    "scope": "Read directly from A candidate full development row and fixed-anchor trace; not unique-cause proof"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "state": "PASS_LOSSLESS_METADATA_ENCODING",
+  "records": [
+    {
+      "path": "stage/docs/day_20261108/DAY_LEDGER.json",
+      "original_sha256": "650e310445191386fa149471b47bc1ee76a11bc9a1b5653f7013d4a2a7430768",
+      "original_bytes": 6252908,
+      "compact_sha256": "1965689699e690ded90c9a00c067ce23413de10b773486e329df1bfb05c96bc1",
+      "compact_bytes": 3877,
+      "exact_reconstruction_test": true,
+      "references": [
+        {
+          "sha256": "42e1e85db30c65b901f8644998675529e75cfbba55bac14d7ed00e34dfe54f6b",
+          "$exact_T425_summary_reference": "stage/runs/t425_offline_day_chain/data/summary.json"
+        },
+        {
+          "sha256": "61ef7db976528e3e4418454f2529ff65f030c1aa3a2d5f5e70fa00494d06af33",
+          "$exact_T425_summary_reference": "stage/runs/t425_offline_day_chain/a/summary.json"
+        },
+        {
+          "sha256": "bece82300a6ba3cbecba6951d07f5ece614573d5794878ff4b3559a41e72fea0",
+          "$exact_T425_summary_reference": "stage/runs/t425_offline_day_chain/b/summary.json"
+        }
+      ]
+    },
+    {
+      "path": "stage/docs/day_20261108/FINAL_REPORT.json",
+      "original_sha256": "5ff80e4dcdc333a08ab778d305d21a774a3aa1864a7f8fc3e131e517af3a7e4b",
+      "original_bytes": 6254001,
+      "compact_sha256": "eb30ebb14d1316441c841ead55f8d642b2b6fee32fb79185d12f2a95c9a3c0cc",
+      "compact_bytes": 4972,
+      "exact_reconstruction_test": true,
+      "references": [
+        {
+          "sha256": "42e1e85db30c65b901f8644998675529e75cfbba55bac14d7ed00e34dfe54f6b",
+          "$exact_T425_summary_reference": "stage/runs/t425_offline_day_chain/data/summary.json"
+        },
+        {
+          "sha256": "61ef7db976528e3e4418454f2529ff65f030c1aa3a2d5f5e70fa00494d06af33",
+          "$exact_T425_summary_reference": "stage/runs/t425_offline_day_chain/a/summary.json"
+        },
+        {
+          "sha256": "bece82300a6ba3cbecba6951d07f5ece614573d5794878ff4b3559a41e72fea0",
+          "$exact_T425_summary_reference": "stage/runs/t425_offline_day_chain/b/summary.json"
+        }
+      ]
+    }
+  ],
+  "saved_working_tree_bytes": 12498060,
+  "raw_files_changed": 0,
+  "new_physics": 0,
+  "new_Adam": 0,
+  "restore": "python stage/experiments/t425_report_encoding/codec.py verify; restore_bytes(read(report)) returns exact original bytes without overwriting files"
+}
