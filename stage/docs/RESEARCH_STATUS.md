@@ -1,3 +1,5 @@
+2026-11-09 T446只读复核完成：plain学生宽53/54旧254/275，总307/329，相对T443修3丢17；失败集中旧LEFT5仅14/35、其余旧240/240，宽LEFT26/27RIGHT27/27。1500BClive+1500shadow完成，但LEFT5动作RMSE.052706/首10max.242766未过原.03/.10，PPO实际0轮，不能称RL已失败；完整329已测，无超时/无效删失。auditPASS、378原文件9RAM段全部远端读回SHA/模型及原字节复核过、全进程停；safeT255/T443保持，fresh16/reload78/8未执行。下一现有成功history分段拟合/梯度诊断仅草案未注册，不续T446/放宽门槛，Phase隔离，详research_rescue_20261109/T446_FINDINGS_AND_NEXT及POSTCHECK。
+
 2026-11-09 T446干净单Actor联合迁移试验已结束/独立auditPASS，BC1500live+同shadow，PPO完成0轮，physics5630395/commands385，完整结果见research_rescue_20261109/T446_FINAL_REPORT；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，fresh16/reload78未准入/six_gateFalse/8未起，模型研究不晋升，Phase隔离，不重启或扩大预算。
 
 2026-11-09 T446启动就绪/尚无launch：141旧文本无损编码释放6956711B、独立原字节auditPASS，原字节本地gzip/旧完整远端保留，旧裸路径须t446_plain_joint/run.Z.load_original。正式4丢弃BC+8Actor/8V合成PPO预检PASS，8原生worker首物理前取消退出，真实hidden64逐步/序列误差6.94e-18、成熟Adamshadow及RAM读回精确；工程另1丢弃Adam单列。量测1500BC live+shadow约265秒，按最大400步长度线性放大预算核验通过，非耗时保证；own18MiB/global1GiB不扩。标准plainActor/BC/PPO非创新，源精确远端后唯一launch，safeT255冻结/Phase隔离。详research_rescue_20261109/T446_READINESS。
