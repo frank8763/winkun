@@ -1,3 +1,7 @@
+2026-11-09用户解释负迁移后明确继续，新T439配对可训表示控制已注册/独立预检PASS，尚无launch：同T437初始化/数据/原奖励/mean保持/前4轮焦点和噪声，只开放现有encoder/core/extra共10722参数（原4450），无新容量/观测/教师/路由。4轮16采集16exact/32live32shadow，面板研究+条件完整329，fresh16/reload78/8不安排。13M物理550命令/root21MiB/global完整1071882578B<1GiB/free40；main3600audit900/64历史丢弃重构，学16:39:11/native17:09:11/all17:45:31北京时间更严截止，不重启T437/不加旧轮数。显式producer导入已预检防run遮蔽，先精确源同步再唯一launch；详review_20261109/T439_PLAN/BUDGET。Stage/Phase隔离，safeT255不晋升。
+
+2026-11-09 T437科学已完整结束：32新探索11GOAL19contact2timeout/32exact、64live64shadow，1研究轮保留但最终宽52/54旧271/275、修5丢4拒绝，整ActorAdam字节回退。新增4退化均面板外，无fresh16/reload78/8。原自动audit在0历史Adam前同名run导入失败/driver中断；T438仅显式导入恢复，原审计128历史丢弃Adam与全部规则PASS、0新物理训练，原run所有字节/错误保留。全部664原文件17RAM包远端每成员SHA通过；全进程停止，不重启/扩旧预算，safeT255不晋升，详review_20261109/T437_FINDINGS及FINAL_REPORT。Stage/Phase隔离。
+
 2026-11-09 T436已COMPLETE/独立auditPASS/20原文件2RAM包远端每成员SHA通过：201048物理14命令102.292秒、5历史重建5exact、0Adam/RL。四项第0秒动作已变，>1cm位置漂移2.6/3.2/8.6/13秒；仅定位非因果。safeT255不变/C拒绝不晋升。T437新注册固定8轮最多32新训练32exact/64live64shadow，现有4450参数、同恢复/保持辅助+真实onpolicyPPO；独立预检进行中，尚无launch不称训练中。根30MiB/global1GiB/free40，22M/758cmd/main5400audit1800/独立相对截止，见review_20261109/T437_PLAN和BUDGET。无fresh16/reload78/8，不延旧通宵/不重启旧目录。Stage/Phase隔离。
 
 2026-11-09用户重新明确授权完整复盘、文献检索及有界推进（取代今晨仅复盘暂停）。新T436冻结失败轨迹诊断已注册/0native0Actorforward0Adam静态输入合同PASS，尚无launch：T427原研究与T432C拒绝提案仅诊断四任务，5历史轨迹补全+5exact，300004物理/14命令/3MiB/main600audit300/注册起1500秒all。无新RL/教师，不跑329/fresh16/reload78/8m；拒绝模型不晋升，safeT255不动。全局1GiB/free40保持，先精确源码远端再唯一launch。详review_20261109/T436_PLAN.md。Stage/Phase完全隔离。
