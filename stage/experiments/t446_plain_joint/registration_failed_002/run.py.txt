@@ -1,0 +1,301 @@
+"""Finite new plain-network transfer and conditional on-policy integration."""
+from pathlib import Path
+import ast,contextlib,copy,gzip,importlib.util,io,json,os,shutil,subprocess,sys,time,traceback
+import t446_learning as P
+L,E,C,torch,np=P.L,P.E,P.L.C,P.torch,P.np
+ROOT=P.ROOT;HERE=Path(__file__).resolve().parent;DOC=ROOT/'stage/docs/research_rescue_20261109';OUT=ROOT/'stage/runs/t446_plain_joint'
+spec=importlib.util.spec_from_file_location('stage446_pinned441',ROOT/'stage/experiments/t441_joint_actor_critic/run.py');M=importlib.util.module_from_spec(spec);spec.loader.exec_module(M)
+spec=importlib.util.spec_from_file_location('stage446_reversible_text',ROOT/'stage/experiments/t443_sampling_control/reserve.py');Z=importlib.util.module_from_spec(spec);spec.loader.exec_module(Z);Z.OUT=OUT
+read,save,sha,digest=P.read,P.save,P.sha,P.digest
+
+def verify(p,full=False):
+    assert (HERE/'protocol.json').read_bytes()==(OUT/'protocol.json').read_bytes()
+    assert Z.used(OUT)<=p['max_bytes'] and Z.used()-Z.used(OUT)+p['max_bytes']<=2**30
+    assert shutil.disk_usage(ROOT).free>=40*2**30
+    for f,h in (p['inputs'] if full else p['protected_files']).items():assert sha(f)==h,f
+
+def prepare():
+    assert not OUT.exists(),'Never restart ended directories'
+    old=ROOT/'stage/runs/t443_sampling_control';base=read(old/'protocol.json')
+    p={k:copy.deepcopy(base[k]) for k in ['source_protocol','initial_model','student_start_model','student_start_sha256','raw_sigma','phase','relay_stage',
+        'old8_jobs','old275_jobs','main_jobs','centre_jobs','gamma_native','lambda_native','value_lr','ppo_clip','epochs','target_kl']}
+    p.update(id='T446_PLAIN_SINGLE_ACTOR_JOINT_TRANSFER_THEN_OWN_PPO',out=str(OUT),actor_seed=20261109446,value_seed=20261109447,seed=202611094460,
+        bc_steps=1500,bc_lr=3e-4,actor_lr=3e-5,epochs=4,rounds=2,
+        old_states=str(ROOT/'stage/runs/t256_distance_frontier/stable_5m_current_states.npz'),
+        old_rows=str(ROOT/'stage/runs/t255_overnight/s2_reset_development.jsonl.gz'),
+        max_bytes=19*2**20,full_bytes=448*1024,compact_bytes=6*1024,model_bytes=2*2**20,
+        max_physics=14000000,max_commands=600,main_seconds=5400,learning_seconds=3600,audit_seconds=1800,backup_seconds=600,all_seconds=8400,
+        fresh16=None,reload78=None,six_gate=False,eight_started=False,
+        architecture='plain input120 encoder128Tanh GRU64 head2 1.25tanh; ALL Actor weights trainable; NO frozen legacybase/residual/teacher/router',
+        training='1500jointBC+1500exactshadow; if per-groupRMSE<=.03 and oldLEFT5first10max<=.10 then2rounds4freshownPPO, max8Actor+8V plus same shadow; fixed last model final329',
+        maximum_new_training_episodes=8,maximum_exact_training_replays=8,maximum_teacher_trajectories=8,maximum_teacher_exact_replays=8,
+        maximum_bc_live_Adam=1500,maximum_bc_shadow_Adam=1500,maximum_ppo_live_Actor_Adam=8,maximum_ppo_live_V_Adam=8,
+        maximum_audit_discarded_Adam=1516,pre_registration_engineering_discarded_Actor_Adam=1,
+        preflight_discarded_bc_Adam=4,preflight_discarded_ppo_Actor_Adam=8,preflight_discarded_ppo_V_Adam=8,
+        preflight_zero_native_commands=24,training_only_dual_sources_NOT_runtime_hybrid=True,
+        cannot_attribute_to_capacity_alone=True,original_T444_T445_geometry_audit_FAIL_not_fixed=True,
+        navigation_safety_uses_original_native_GOAL_contact_NOT_auxiliary_clearance=True,
+        user_authorization='Nov9 explicitly start next plain singleActor joint-learning experiment after reviewed T445; independent finite new algorithm/architecture pilot, not previous budget restart.')
+    p['teacher_model']=read(old/'left_coverage/development.json')['model']
+    reference=[json.loads(x) for x in (old/'left_coverage/cases.jsonl').read_text().splitlines() if json.loads(x)['role']=='FINAL329']
+    p['teacher_jobs']=[next(j for j in p['main_jobs'] if j['id']==f'wide117_80_dev6_{side}_{i:02d}') for side in ['LEFT','RIGHT'] for i in [0,7,14,21]]
+    p['teacher_reference']={r['job_id']:r for r in reference if r['job_id'] in {j['id'] for j in p['teacher_jobs']}}
+    assert len(p['teacher_reference'])==8 and all(r['success'] and not r['collision'] for r in p['teacher_reference'].values())
+    mean=read(ROOT/'stage/experiments/t348_causal_sequence_warmstart/protocol.json');p['input_mean']=mean['input_mean'];p['input_scale']=mean['input_scale']
+    byid={j['id']:j for j in p['old275_jobs']+p['main_jobs']}
+    p['training_jobs']=[[byid[a] for a in ids] for ids in [
+        ['dev_task6_00','dev_task0_00','wide117_80_dev6_LEFT_03','wide117_80_dev6_RIGHT_03'],
+        ['dev_task6_06','dev_task7_20','wide117_80_dev6_LEFT_24','wide117_80_dev6_RIGHT_24']]]
+    olddata=P.old_data(p);assert len(olddata)==211
+    p['dataset_summary']=dict(old_episodes=211,old_states=sum(len(g['x']) for g in olddata),wide_episodes=8,offpolicy_labels_NOT_in_PPO_ratios=True)
+    protected=set(base['inputs'])|set(base['constructor_reads'])|{p['old_states'],p['old_rows'],p['teacher_model']['path']}
+    oldrows=[json.loads(x) for x in gzip.decompress(Path(p['old_rows']).read_bytes()).decode().splitlines()];protected|={r['path'] for r in oldrows}
+    required=max(1,Z.used()+p['max_bytes']+512*1024-2**30);cold,saving=Z.candidates(protected,required);p['cold_storage']=cold;p['constructor_reads']=sorted(protected)
+    p['protected_files']={**base['protected_files'],p['teacher_model']['path']:p['teacher_model']['sha256']}
+    files=set(base['inputs'])|{str(f) for f in HERE.glob('*.py')}|{p['old_states'],p['old_rows'],p['teacher_model']['path'],str(DOC/'T446_PLAN.md'),str(DOC/'T446_PRIMARY_SOURCES.md')}
+    files|={r['path'] for r in oldrows}
+    for r in cold:files|={str(ROOT/r['receipt']),str(ROOT/r['manifest'])}
+    assert not {str(ROOT/r['original']) for r in cold}&files
+    p['inputs']={f:sha(f) for f in sorted(files)}
+    p['worst_physics']=2*sum(j['case']['step_cap'] for j in p['teacher_jobs'])+2*sum(j['case']['step_cap'] for js in p['training_jobs'] for j in js)+sum(j['case']['step_cap'] for j in p['main_jobs']+p['old275_jobs'])
+    assert p['worst_physics']<=p['max_physics'] and Z.used()-saving+p['max_bytes']<2**30
+    OUT.mkdir();save(HERE/'protocol.json',p);save(OUT/'protocol.json',p)
+    save(DOC/'T446_BUDGET.json',dict(state='REGISTERED_COLD_ENCODING_PENDING_NOT_LAUNCHED',global_before=Z.used()-Z.used(OUT),planned_saving=saving,
+        cold_files=len(cold),global_full_after_cold=Z.used()-Z.used(OUT)-saving+p['max_bytes'],max_bytes=p['max_bytes'],worst_physics=p['worst_physics'],max_physics=p['max_physics'],
+        maximum_all_commands=409,max_commands=600,storage=dict(full17=17*p['full_bytes'],models3=3*p['model_bytes'],compact400=400*p['compact_bytes'],metadata=3*2**20),
+        max_bc_live=1500,max_bc_shadow=1500,max_ppo_Actor_live=8,max_ppo_V_live=8,max_audit_discarded_Adam=1516,main_seconds=5400,audit_seconds=1800,all_seconds=8400,
+        fresh16_reload78_NOT_reserved=True))
+    assert 17*p['full_bytes']+3*p['model_bytes']+400*p['compact_bytes']+3*2**20<=p['max_bytes']
+    print('T446_REGISTERED',len(cold),saving,p['worst_physics'],flush=True)
+
+def encode():
+    p=read(OUT/'protocol.json');Z.encode(p);print('T446_COLD_BYTES_VERIFIED',flush=True)
+def storage_audit():
+    p=read(OUT/'protocol.json');Z.audit(p);verify(p,True);print('T446_STORAGE_AUDIT_PASS',flush=True)
+
+def actor(p,path,teacher):return C.frozen(p,path).requires_grad_(False) if teacher else P.frozen(p,path)
+
+def worker(pipe,index,p,counts):
+    E.N.offline();C.ban_learning();os.sched_setaffinity(0,{index});torch.set_num_threads(1);torch.use_deterministic_algorithms(True);E.set_out(p['out'])
+    folder=Path(p['out'])/'workers'/str(index);folder.mkdir(parents=True,exist_ok=True);log=(folder/'console.log').open('w');stdout,stderr=sys.stdout,sys.stderr;s=w=None
+    def guard(physical=False):E.L.check_stop();assert time.time()<p['native_stop_epoch']-5 and sum(counts)<p['max_physics']
+    def charge():counts[index+1]+=1;assert sum(counts)<=p['max_physics']
+    try:
+        with contextlib.redirect_stdout(log),contextlib.redirect_stderr(log):
+            module,native,create,w,_=E.N.S.P.C.B.setup(folder/'native',E.N.science(p));original=copy.deepcopy(module.ACTIVE);E.L.install_stop_handlers();pipe.send(dict(state='READY',pid=os.getpid(),cpu=index))
+            while True:
+                req=pipe.recv()
+                if req is None:break
+                teacher=req.get('teacher',False);q=actor(p,req['model'],teacher);q.sample=req.get('seed') is not None;q.rng=None if req.get('seed') is None else np.random.default_rng(np.random.SeedSequence(req['seed']))
+                j=req['job'];module.ACTIVE=copy.deepcopy(original);module.ACTIVE['circle_shift_x_m']=j.get('circle_shift_x_m',original['circle_shift_x_m'])
+                before=counts[index+1];s=E.L.Session(j,native,create,w,guard,charge,q);E.L.install_stop_handlers()
+                if not teacher:s.hidden=torch.zeros((1,1,64),dtype=torch.float64)
+                if req.get('cancel_probe'):
+                    def cancel(physical=False):
+                        if physical:raise E.L.StageStop('T446 zero-native cancellation')
+                    s.guard=cancel
+                    try:s.step();raise AssertionError('Cancellation missing')
+                    except E.L.StageStop:pass
+                    assert not s.rows and s.steps==0;s.close();s=None;pipe.send(dict(state='CANCEL_PASS',physics=0));continue
+                while not s.done():s.step(owner=0)
+                a=E.payload(s);r=s.result();r.update(policy_hash=q.phash(),physics=counts[index+1]-before,array_digest=digest(a),array_hashes={k:digest(v) for k,v in a.items()},
+                    integration_sha256=digest(a['final_native_integration']),pid=os.getpid(),cpu=index,teacher=teacher,mode='frozen_teacher_reconstruction' if teacher else 'student')
+                if req.get('full_path'):
+                    path=Path(req['full_path']);path.parent.mkdir(parents=True,exist_ok=True);blob=E.N.R.blob(E.N.S.packed(a));assert len(blob)<=p['full_bytes']
+                    if path.exists():assert path.read_bytes()==blob
+                    else:path.write_bytes(blob)
+                s.close();s=None;pipe.send((a,r))
+    except BaseException:
+        save(folder/'failure.json',dict(error=traceback.format_exc(),physics=counts[index+1]))
+        if s is not None and s.rows:
+            try:E.N.write_npz(folder/'partial.npz',E.N.S.packed(E.payload(s)),p['full_bytes'])
+            except BaseException:save(folder/'partial_save_error.json',dict(error=traceback.format_exc()))
+        try:pipe.send(dict(state='FAILED',error=traceback.format_exc()))
+        except BaseException:pass
+        raise
+    finally:
+        if s:s.close()
+        if w:w.close()
+        sys.stdout,sys.stderr=stdout,stderr;log.close();pipe.close()
+
+class Pool(M.Pool):
+    def __init__(self,p,counts,guard):
+        self.guard=guard;self.children=[];self.pipes=[];ctx=M.mp.get_context('spawn')
+        try:
+            for i in range(8):
+                a,b=ctx.Pipe();c=ctx.Process(target=worker,args=(b,i,p,counts));c.start();b.close();self.children.append(c);self.pipes.append(a)
+            save(Path(p['out'])/'workers.json',dict(parent=os.getpid(),workers=[c.pid for c in self.children]));self.ready=[self.receive(i) for i in range(8)];assert all(v['state']=='READY' for v in self.ready)
+        except BaseException:self.close();raise
+
+def synthetic(obj,p):
+    q=obj[0];rng=np.random.default_rng(p['seed']);arrays=[]
+    for i in range(4):
+        x=(np.asarray(p['input_mean'])[None]+rng.normal(size=(9,120))*.01).astype(np.float32)
+        with torch.no_grad():loc=q.sequence(torch.tensor(x,device=next(q.parameters()).device));raw=loc+loc.new_tensor(rng.normal(size=(9,2)))*.2;atom=torch.where(raw>=L.EDGE,1,torch.where(raw<=-L.EDGE,-1,0)).to(torch.int8);lp=L.density(loc,raw,atom,p['raw_sigma'])
+        flags=np.zeros((9,3),np.uint8);flags[-1,1]=1
+        arrays.append(dict(states=x,next_states=np.concatenate([x[1:],x[-1:]]),locations=loc.cpu().numpy(),raw_actions=raw.cpu().numpy(),atom=atom.cpu().numpy(),logp=lp.cpu().numpy(),
+            rewards=rng.normal(size=9)*.01,native_counts=np.full(9,100,np.uint8),end_flags=flags,ownership=np.zeros(9,np.uint8),stochastic=np.ones(9,np.uint8)))
+    return arrays
+
+def preflight():
+    p=read(OUT/'protocol.json');verify(p,True);assert read(OUT/'storage_audit.json')['state']=='PASS' and not (OUT/'preflight.json').exists()
+    for f in HERE.glob('*.py'):ast.parse(f.read_text())
+    assert torch.cuda.is_available();a=P.make(p);b=P.make(p);before=P.state(*a);assert digest(before)==digest(P.state(*b))
+    old=P.old_data(p);engineering=old+[dict(old[0],task=8),dict(old[-1],task=9)]
+    groups=P.packs(engineering,'cuda');indices=P.schedule(engineering,1)[0];start=time.monotonic()
+    ra=[];rb=[]
+    for _ in range(2):ra.append(P.bc_step(a,groups,indices));rb.append(P.bc_step(b,groups,indices))
+    torch.cuda.synchronize();bc_two_shadow_seconds=time.monotonic()-start;assert ra==rb and digest(P.state(*a))==digest(P.state(*b))
+    mature=P.state(*a);P.load(a,before);assert digest(P.state(*a))==digest(before);P.load(a,mature)
+    data=synthetic(a,p);P.load(b,P.state(*a));live=P.ppo(a,data,p,lambda:None,lambda *_:None);other=P.ppo(b,data,p,lambda:None,lambda *_:None);assert live==other and digest(P.state(*a))==digest(P.state(*b))
+    saved=P.state(*a);mem=io.BytesIO();torch.save(saved,mem);restore=torch.load(io.BytesIO(mem.getvalue()),weights_only=False,map_location='cpu');assert digest(saved)==digest(restore)
+    q=P.Actor(p).eval();q.load_state_dict(saved['actor']);xx=torch.tensor(old[0]['x'][:9]);h=None;loc=[]
+    with torch.no_grad():
+        for row in xx:
+            _,mu,h,_=q.step(row[None],h);loc.append(mu[0])
+        error=float((torch.stack(loc)-q.sequence(xx)).abs().max());assert error<1e-10
+    # A compact plain model is used only for zero-native worker cancellation.
+    probe=P.export(P.make(p,'cpu'),OUT/'preflight_model.pt.gz',p['model_bytes']);del a,b,groups;torch.cuda.empty_cache()
+    folder=OUT/'preflight_native';folder.mkdir();counts=M.mp.get_context('spawn').RawArray('q',9);pool=Pool(dict(p,out=str(folder),native_stop_epoch=time.time()+180,max_physics=1),counts,lambda:None)
+    try:responses=pool.request([dict(model=probe['path'],job=j,seed=None,cancel_probe=True) for j in p['old8_jobs']]);assert all(x['state']=='CANCEL_PASS' for x in responses) and sum(counts)==0
+    finally:pool.close()
+    # Budget includes the worst64? 1500 sequential live+shadow batches and
+    # independent1500 reconstruction. Timing is a measured engineering estimate.
+    estimate=bc_two_shadow_seconds/2*p['bc_steps'];assert estimate<2400,('BC live+shadow estimate exceeds learning reserve',estimate)
+    save(OUT/'preflight.json',dict(state='PASS',native=0,bc_discarded_Adam=4,ppo_discarded_Actor_Adam=live['Actor_Adam']+other['Actor_Adam'],
+        ppo_discarded_V_Adam=live['V_Adam']+other['V_Adam'],commands=24,plain_actor_parameters=sum(v.numel() for v in q.parameters()),
+        CPU_step_sequence_error=error,GPU_BC_and_PPO_Adam_shadow_exact=True,mature_restore_and_RAM_readback_exact=True,
+        two_BC_live_plus_shadow_seconds=bc_two_shadow_seconds,estimated1500_BC_live_shadow_seconds=estimate,eight_plain_workers_cancelled_and_stopped=True,
+        synthetic_ppo_not_navigation_gain=True,BC_timing_uses_old_real_sequences_with_two_group8_9_engineering_duplicates_NOT_wide_training_data=True))
+    print('T446_PREFLIGHT_PASS',estimate,flush=True)
+
+class Runtime(M.Runtime):
+    def __init__(self,p):
+        M.OUT=OUT;M.verify=verify;super().__init__(p)
+    def request(self,jobs,model,role,seeds=None,full=False,references=None,teacher=False):
+        self.role=role;result=[]
+        for offset in range(0,len(jobs),8):
+            js=jobs[offset:offset+8];self.guard();assert sum(self.counts)+sum(j['case']['step_cap'] for j in js)<=self.p['max_physics'];self.commands+=len(js)
+            req=[]
+            for i,j in enumerate(js):
+                path=(references[offset+i]['path'] if references is not None else str(OUT/'episodes'/f'{len(self.rows)+i:04d}.npz')) if full else None
+                req.append(dict(model=model['path'],job=j,seed=None if seeds is None else seeds[offset+i],teacher=teacher,full_path=path))
+            for (a,r),j,request in zip(self.pool.request(req),js,req):
+                r.update(job_id=j['id'],role=role,seed=request['seed'],request=request,loaded_model_sha256=sha(model['path']))
+                assert r['policy_hash']==model['policy_hash'] and int(a['native_counts'].sum())==r['physics']
+                if references is not None:
+                    previous=references[offset+len(result)%8];assert r['array_digest']==previous['array_digest'] and r['integration_sha256']==previous['integration_sha256'];r.update(reference_path=previous['path'],exact=True,independent_new_sample=False);self.replays.append(r);log='replays.jsonl'
+                else:
+                    path=Path(request['full_path']) if full else OUT/'episodes'/f'{len(self.rows):04d}.npz';path.parent.mkdir(exist_ok=True)
+                    if full:assert path.exists() and digest(E.N.S.arrays(path))==r['array_digest']
+                    else:E.N.write_npz(path,{k:a[k] for k in ['actions','native_counts','end_flags']},self.p['compact_bytes'])
+                    r.update(path=str(path),sha256=sha(path),full=full);self.rows.append(r);log='cases.jsonl'
+                with (OUT/log).open('a') as f:f.write(json.dumps(r)+'\n')
+                result.append((a,r))
+        return result
+
+def main():
+    p=read(OUT/'protocol.json');verify(p,True);assert read(OUT/'preflight.json')['state']=='PASS' and not (OUT/'summary.json').exists()
+    E.N.offline();E.L.install_stop_handlers();rt=Runtime(p);state='FAILED';error=None;rounds=[];development=None;assessment=None;bc_completed=0;bc_model=None
+    try:
+        rt.pool=Pool(dict(p,native_stop_epoch=rt.deadline),rt.counts,rt.guard)
+        teacher=rt.request(p['teacher_jobs'],p['teacher_model'],'TEACHER_RECONSTRUCT',full=True,teacher=True)
+        for a,r in teacher:
+            prior=p['teacher_reference'][r['job_id']];assert r['success'] and r['array_digest']==prior['array_digest'] and r['integration_sha256']==prior['integration_sha256']
+        rt.request(p['teacher_jobs'],p['teacher_model'],'TEACHER_EXACT',full=True,references=[r for a,r in teacher],teacher=True)
+        data=P.dataset(p,[r for a,r in teacher]);obj=P.make(p);shadow=P.make(p);groups=P.packs(data,'cuda');order=P.schedule(data,p['bc_steps']);trace=[]
+        def event(stage,which,where,k):
+            with (OUT/'optimizer_calls.jsonl').open('a') as f:f.write(json.dumps([stage,which,where,k])+'\n')
+        rt.role='JOINT_BC'
+        for k,indices in enumerate(order):
+            rt.guard(True);event('BC','live','BEFORE',k);a=P.bc_step(obj,groups,indices);event('BC','live','AFTER',k)
+            event('BC','shadow','BEFORE',k);b=P.bc_step(shadow,groups,indices);event('BC','shadow','AFTER',k);assert a==b
+            bc_completed+=1;trace.append(a)
+            if k%50==0:assert digest(P.state(*obj))==digest(P.state(*shadow));save(OUT/'bc_progress.json',dict(complete_steps=bc_completed,latest=a,epoch=time.time()))
+        assert digest(P.state(*obj))==digest(P.state(*shadow));save(OUT/'bc_trace.json',trace);del shadow,groups;torch.cuda.empty_cache()
+        assessment=P.assess(obj[0],data);save(OUT/'transfer_fit.json',assessment)
+        bc_model=P.export(obj,OUT/'bc.pt.gz',p['model_bytes']);model=bc_model
+        eligible=all(v['episode_mean_RMSE']<=.03 for v in assessment.values()) and assessment['6']['maximum_first10_action_error']<=.10
+        save(OUT/'ppo_admission.json',dict(eligible=eligible,fit_thresholds_only_NOT_navigation_gate=True))
+        if eligible:
+            for group in obj[2].param_groups:group['lr']=p['actor_lr']
+            for rnd,jobs in enumerate(p['training_jobs']):
+                rt.guard(True);before=P.state(*obj);seeds=[p['seed']+rnd*4+i for i in range(4)]
+                items=rt.request(jobs,model,f'TRAIN_{rnd}',seeds,True);rt.request(jobs,model,f'EXACT_{rnd}',seeds,True,[r for a,r in items]);arrays=[a for a,r in items]
+                other=P.make(p);P.load(other,before)
+                try:
+                    live=P.ppo(obj,arrays,p,lambda:rt.guard(True),lambda w,k:event(f'PPO{rnd}','live',w,k));mirror=P.ppo(other,arrays,p,lambda:rt.guard(True),lambda w,k:event(f'PPO{rnd}','shadow',w,k))
+                    assert live==mirror and digest(P.state(*obj))==digest(P.state(*other))
+                except BaseException:
+                    P.load(obj,before);save(OUT/f'interrupted_round{rnd}.json',dict(full_Actor_V_and_both_Adam_rollback=True));raise
+                del other;torch.cuda.empty_cache();model=P.export(obj,OUT/f'round{rnd}.pt.gz',p['model_bytes']);rounds.append(dict(round=rnd,fit=live,training_paths=[r['path'] for a,r in items],model=model));save(OUT/'rounds.json',rounds)
+        final=rt.request(p['main_jobs']+p['old275_jobs'],model,'FINAL329')
+        development=dict(wide54=M.tally([r for a,r in final[:54]]),old275=M.tally([r for a,r in final[54:]]),model=model,
+            all329_safe=all(r['success'] and not r['collision'] for a,r in final),success_ids=sorted(r['job_id'] for a,r in final if r['success'] and not r['collision']))
+        save(OUT/'development.json',development);state='COMPLETE'
+    except BaseException:
+        error=traceback.format_exc();save(OUT/'failure.json',dict(error=error,physics=sum(rt.counts),commands=rt.commands,role=rt.role,bc_steps_completed=bc_completed))
+    finally:
+        if rt.pool:rt.pool.close();rt.commands+=8
+        summary=dict(state=state,pid=os.getpid(),elapsed_s=time.time()-rt.start,physics=sum(rt.counts),commands=rt.commands+24,preflight_commands=24,
+            BC_live_Adam=bc_completed,BC_shadow_Adam=bc_completed,rounds=rounds,development=development,transfer_fit=assessment,bc_model=bc_model,
+            error=error,all_native_workers_stopped=True,fresh16=None,reload78=None,six_gate=False,eight_started=False)
+        save(OUT/'summary.json',summary);save(OUT/'status.json',dict(state=state,epoch=time.time()));M.fcntl.flock(rt.lock,M.fcntl.LOCK_UN);rt.lock.close()
+    assert state=='COMPLETE',error
+    print('T446_MAIN_COMPLETE',flush=True)
+
+def audit_array(q,a,p,seed,teacher=False):
+    if teacher:E.NATIVE_AUDIT.audit_array(q,a,p,seed=None);return
+    q.reset_noise();q.rng=None if seed is None else np.random.default_rng(np.random.SeedSequence(seed));h=None
+    with torch.no_grad():
+        for i,x in enumerate(a['states']):
+            q.sample=bool(a['stochastic'][i]);hb=np.zeros(64) if h is None else h[0,0].numpy().copy();cmd,loc,h,_=q.step(torch.tensor(x[None]),h)
+            assert np.array_equal(hb,a['hidden_before'][i]) and np.array_equal(cmd[0].numpy(),a['actions'][i])
+            for k,v in q.tape[-1].items():assert np.array_equal(v,a[k][i]),(i,k)
+            assert np.abs(E.N.K.H.rebuild(x,a['poses'][i],a['history_poses'][i],a['task_goal_xy'],a['history_goals'][i])-x).max()<=2e-6
+            n=int(a['native_counts'][i]);z=E.N.K.R.GAMMA**n;f=a['end_flags'][i];d0=np.linalg.norm(a['poses'][i,:2]-a['task_goal_xy']);d1=np.linalg.norm(a['next_poses'][i,:2]-a['task_goal_xy'])
+            reward=-.000002*(1-z)/(1-E.N.K.R.GAMMA)+.03*d0-z*.03*d1*(not f.any())
+            if f.any():reward+=E.N.K.R.GAMMA**(n-1)*(float(f[1])-float(f[0])-.5*float(f[2]))
+            assert abs(reward-a['rewards'][i])<1e-12
+    assert np.array_equal(h[0,0].numpy(),a['last_hidden_after'])
+
+def audit():
+    p=read(OUT/'protocol.json');verify(p,True);s=read(OUT/'summary.json');assert s['state']=='COMPLETE' and not (OUT/'audit.json').exists()
+    ids=[s['pid']]+read(OUT/'workers.json')['workers'];assert all(not Path('/proc',str(pid)).exists() for pid in ids)
+    E.N.offline();obj=P.make(p);rows=[json.loads(x) for x in (OUT/'cases.jsonl').read_text().splitlines()];replays=[json.loads(x) for x in (OUT/'replays.jsonl').read_text().splitlines()]
+    teachers=[]
+    for r in rows:
+        assert sha(r['path'])==r['sha256'];a=E.N.S.arrays(r['path']);assert int(a['native_counts'].sum())==r['physics']
+        if r['full']:
+            assert digest(a)==r['array_digest'];audit_array(actor(p,r['request']['model'],r['teacher']),a,p,r['seed'],r['teacher'])
+        if r['role']=='TEACHER_RECONSTRUCT':teachers.append(r)
+    data=P.dataset(p,teachers);groups=P.packs(data,'cuda');trace=[]
+    for k,indices in enumerate(P.schedule(data,p['bc_steps'])):trace.append(P.bc_step(obj,groups,indices))
+    assert trace==read(OUT/'bc_trace.json') and digest(P.state(*obj))==s['bc_model']['joint_hash'];del groups;torch.cuda.empty_cache()
+    assert P.assess(obj[0],data)==s['transfer_fit'];calls=p['bc_steps']
+    for group in obj[2].param_groups:group['lr']=p['actor_lr']
+    for rd in s['rounds']:
+        arrays=[E.N.S.arrays(f) for f in rd['training_paths']];fit=P.ppo(obj,arrays,p,lambda:None,lambda *_:None);assert fit==rd['fit'] and digest(P.state(*obj))==rd['model']['joint_hash'];calls+=fit['Actor_Adam']+fit['V_Adam']
+    for r in replays:
+        ref=next(x for x in rows if x['path']==r['reference_path']);assert r['array_digest']==ref['array_digest'] and r['integration_sha256']==ref['integration_sha256']
+    assert s['physics']==sum(r['physics'] for r in rows+replays);assert s['commands']==16+24+len(rows)+len(replays)<=p['max_commands']
+    ev=[json.loads(x) for x in (OUT/'optimizer_calls.jsonl').read_text().splitlines()]
+    for which in ['live','shadow']:
+        assert [v[2:] for v in ev if v[:2]==['BC',which]]==[[w,k] for k in range(p['bc_steps']) for w in ['BEFORE','AFTER']]
+        for rd in s['rounds']:assert [v[2:] for v in ev if v[:2]==[f'PPO{rd["round"]}',which]]==[[w,k] for k in range(rd['fit']['Actor_Adam']) for w in ['BEFORE','AFTER']]
+    save(OUT/'audit.json',dict(state='PASS',pid=os.getpid(),new_native=0,discarded_historical_Adam=calls,
+        full120_history_hidden64_actions_density_rewards_and_both_Adam_reconstructed=True,all_original_hashes_preserved=True,
+        compact_final329_does_not_reconstruct_missing_full_states=True,physics=s['physics'],commands=s['commands'],six_gate=False,fresh16=None,reload78=None))
+    print('T446_AUDIT_PASS',flush=True)
+
+def launch():
+    p=read(OUT/'protocol.json');verify(p,True);assert read(OUT/'preflight.json')['state']=='PASS' and not (OUT/'launch.json').exists()
+    r=read(ROOT/'stage/runs/t224_archive/latest_source_sync_receipt.json');assert r['root_tree']==subprocess.check_output(['git','rev-parse','HEAD^{tree}'],text=True).strip()
+    assert not subprocess.check_output(['git','status','--porcelain'],text=True).strip();now=time.time()
+    with (OUT/'driver_console.log').open('xb') as log:
+        c=subprocess.Popen(['systemd-inhibit','--what=sleep:idle','--mode=block','--who=Stage-T446','--why=Plain singleActor joint transfer and own PPO',
+            'timeout','--signal=TERM','--kill-after=2',str(p['all_seconds']),'taskset','-c','0',str(ROOT/'run_stage.sh'),str(HERE/'driver.py')],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
+    save(OUT/'launch.json',dict(pid=c.pid,epoch=now,all_stop=now+p['all_seconds'],native_stop=now+p['main_seconds'],learning_stop=now+p['learning_seconds'],source_remote=r['remote_commit'],root_tree=r['root_tree'],protocol_sha256=sha(OUT/'protocol.json')))
+    print('T446_ACTUALLY_LAUNCHED',c.pid,flush=True)
+
+if __name__=='__main__':globals()[sys.argv[1]]()
