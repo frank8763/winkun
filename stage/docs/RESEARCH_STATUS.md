@@ -1,3 +1,5 @@
+2026-11-09 T436已COMPLETE/独立auditPASS/20原文件2RAM包远端每成员SHA通过：201048物理14命令102.292秒、5历史重建5exact、0Adam/RL。四项第0秒动作已变，>1cm位置漂移2.6/3.2/8.6/13秒；仅定位非因果。safeT255不变/C拒绝不晋升。T437新注册固定8轮最多32新训练32exact/64live64shadow，现有4450参数、同恢复/保持辅助+真实onpolicyPPO；独立预检进行中，尚无launch不称训练中。根30MiB/global1GiB/free40，22M/758cmd/main5400audit1800/独立相对截止，见review_20261109/T437_PLAN和BUDGET。无fresh16/reload78/8，不延旧通宵/不重启旧目录。Stage/Phase隔离。
+
 2026-11-09用户重新明确授权完整复盘、文献检索及有界推进（取代今晨仅复盘暂停）。新T436冻结失败轨迹诊断已注册/0native0Actorforward0Adam静态输入合同PASS，尚无launch：T427原研究与T432C拒绝提案仅诊断四任务，5历史轨迹补全+5exact，300004物理/14命令/3MiB/main600audit300/注册起1500秒all。无新RL/教师，不跑329/fresh16/reload78/8m；拒绝模型不晋升，safeT255不动。全局1GiB/free40保持，先精确源码远端再唯一launch。详review_20261109/T436_PLAN.md。Stage/Phase完全隔离。
 
 2026-11-09用户明确选择“先复盘，不启动”。已完成stdlib只读逐任务复核：T432 C修4丢5，其中2个丢失项已在保持集合；C旧6失败为2原有未解+4新增退化，不能全称本轮遗忘。B/C均new_RL=0、保留更新0；主流程32.64分钟，接力T434未注册/预检/launch，T435未编码。新物理/Actor前向/优化器均0。复盘与仅建议4任务零训练诊断草案(5新生成+5exact、上限300004物理/14命令/3MiB)见review_20261109/REVIEW.md及JSON；该草案未注册未启动，需要另有明确授权，当前保持停止。safeT255/所有原始模型失败不动，Phase隔离。
