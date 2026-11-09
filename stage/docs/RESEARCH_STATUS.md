@@ -1,3 +1,5 @@
+2026-11-09用户最后尝试T440未完成，现按明确止损条件停止Stage实验线，不再自动新实验/通宵/追加分支；只有必要备份交付。T440离线前置重算被外部120秒TERM/KILL(exit137)，0候选/0native/0内层Adam/0新在线RL，方法有效性未测，所有验收null，不能称算法已否定。完整3300秒准入被拒后更严分阶段执行未覆盖预处理，属于执行预算失败。所有进程退出、原输入与模型SHA/194冷原字节收尾核验PASS（非科学audit），5嵌套原JSON已精确恢复，safeT255/失败全保留，Phase隔离。详review_20261109/T440_FINAL_REPORT.md及HANDOFF；原始14文件/存储账本2RAM包全远端逐成员SHA通过，未经用户新明确授权不得恢复研究。
+
 2026-11-09 T440最后一次候选预检PASS/尚无launch。实际完整历史feature→输出公式误差<1e-10、0native0Adam，原两个存储依赖缺失预检拒绝均0native0Adam保留；T435已194旧JSON无损编码/auditPASS，后为真实嵌套初始化恢复5原JSON共1079658B、SHA与原字节精确，cold也保留，模型轨迹不动。原存储guard源同步未完成拒绝发生0修改。全局实际40MiB完整预留仍<1GiB，17:45:31all；只一个功能界.02候选，缓存4真实onpolicy PG+7恢复，64内层+64shadow非64新RL；不通过完整门就停线。Stage/Phase隔离。
 
 2026-11-09用户最后授权：下一次仍不行就放弃Stage线。T440唯一功能约束策略提案注册准备中/尚无run或launch：273历史每时刻实际均值变化上限.02、7真实恢复辅助+缓存首批4真实onpolicy PG、66输出层、64位移内层Adam+64shadow，非新增在线RL。先离线恢复loss下降1%且PG代理<0，再一次329→条件16fresh/78原生全数组重载/audit；未完整通过则停止线，无自动分支。root40MiB/global1GiB/free40，需先已备份旧JSON T435无损编码释放28MiB，源同步后才执行。14M/520cmd、main2400audit300、仍17:45:31all截止，不扩旧作业。详review_20261109/T440_PLAN/BUDGET；safeT255不动，Phase隔离。
