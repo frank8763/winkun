@@ -1,0 +1,94 @@
+{
+  "state": "PREFLIGHT_PASS_NOT_LAUNCHED",
+  "epoch": 1794226121.7922652,
+  "registered_protocol": "stage/runs/t444_paired_retention/protocol.json",
+  "preflight": {
+    "state": "PASS",
+    "native": 0,
+    "Actor_Adam": 0,
+    "V_Adam": 0,
+    "commands": 24,
+    "independent_safe_T255_hidden_reset_commands_bit_exact": true,
+    "student_step_sequence_max_error": 1.1102230246251565e-16,
+    "hidden_padding_for_safe_trace_NOT_carried_memory": true,
+    "eight_workers_cancelled_and_stopped": true,
+    "geometry": [
+      {
+        "state": "CANCEL_PASS",
+        "physics": 0,
+        "geometry_pairs": 546,
+        "qpos_size": 20
+      },
+      {
+        "state": "CANCEL_PASS",
+        "physics": 0,
+        "geometry_pairs": 546,
+        "qpos_size": 20
+      },
+      {
+        "state": "CANCEL_PASS",
+        "physics": 0,
+        "geometry_pairs": 546,
+        "qpos_size": 20
+      },
+      {
+        "state": "CANCEL_PASS",
+        "physics": 0,
+        "geometry_pairs": 546,
+        "qpos_size": 20
+      },
+      {
+        "state": "CANCEL_PASS",
+        "physics": 0,
+        "geometry_pairs": 546,
+        "qpos_size": 20
+      },
+      {
+        "state": "CANCEL_PASS",
+        "physics": 0,
+        "geometry_pairs": 546,
+        "qpos_size": 20
+      },
+      {
+        "state": "CANCEL_PASS",
+        "physics": 0,
+        "geometry_pairs": 546,
+        "qpos_size": 20
+      },
+      {
+        "state": "CANCEL_PASS",
+        "physics": 0,
+        "geometry_pairs": 546,
+        "qpos_size": 20
+      }
+    ]
+  },
+  "budget": {
+    "state": "REGISTERED_NOT_LAUNCHED",
+    "global_before": 1053812737,
+    "global_full_reserved": 1064298497,
+    "max_bytes": 10485760,
+    "max_physics": 800000,
+    "worst_physics": 746688,
+    "max_commands": 80,
+    "maximum_commands": 72,
+    "storage": {
+      "full16": 7340032,
+      "metadata_models_logs": 3145728
+    },
+    "main_seconds": 1200,
+    "audit_seconds": 300,
+    "all_seconds": 2400,
+    "new_Actor_Adam": 0,
+    "new_V_Adam": 0
+  },
+  "known_red_feedback": {
+    "command": "taskset -c 0 ./run_stage.sh stage/experiments/t444_paired_retention/run.py feedback",
+    "exit_code": 1,
+    "verified_failure_ids": "dev_task6_00 and 7 other registered oldLEFT5 cases",
+    "new_native": 0,
+    "new_optimizer": 0,
+    "expected_assertion_not_preflight_failure": true
+  },
+  "no_extra_training_authorized_within_this_protocol": true
+}

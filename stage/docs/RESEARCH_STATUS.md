@@ -1,3 +1,5 @@
+2026-11-09用户下一步授权T444冻结配对定位，已注册/8worker零物理取消与geometry预检PASS，尚未launch。冻结safeT255真实hidden-reset与T443困难臂54/54研究Actor，8旧左5m失败同起态各两遍16原始+16exact，历史对应共享动作/pose/积分必须精确；2x2同完整history各自h0重建，safe hidden16仅padding，代数分解非纯参数/唯一因果。0Actor/V/Adam，.8M物理80全部命令/10MiBown/global1GiB/free40；最坏746688/72，main1200audit300/all2400秒独立窗口。fresh16/reload78/8均未安排，不晋升不重启旧作业/Phase隔离。见research_rescue_20261109/T444_PLAN/PRIMARY_SOURCES/BUDGET/READINESS，先source精确远端后唯一启动。
+
 2026-11-09 T443收尾补传已完整核验：833原文件/29RAM分段远端读回逐成员SHA全部通过，原上传/source TLS错误保留。只读复核困难采样臂宽54/54、旧267/275（8碰撞全旧左5m），标准臂宽53/54旧264/275；困难臂相对T441修5丢5，总321/329未净增，不能称联合稳定。fresh16/reload78本轮未执行、8米未进入；所有科学进程停止，原始模型/失败保留，safeT255不改/Phase隔离，不重启或扩预算。见research_rescue_20261109/T443_FINDINGS_AND_NEXT及POSTCHECK，原REMOTE_PENDING段为补传前历史。
 
 2026-11-09 T443困难起态分配对照已结束/独立历史Actor+V Adam重构PASS，physics=13990576 commands=858，两固定最终模型完整329见research_rescue_20261109/T443_FINAL_REPORT.json；跨臂相同轨迹8明确物理重复非独立。fresh16/reload78未准入/six_gate=False/8未起，研究副本不晋升，remote=PENDING。无损冷存原字节本地gzip/旧完整远端保留，用t443_sampling_control/reserve.py load_original解码，不能读取已编码旧裸路径。Phase隔离/safeT255不改，不重启或扩大旧预算。
