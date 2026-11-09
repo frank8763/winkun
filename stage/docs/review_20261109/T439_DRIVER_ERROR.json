@@ -1,0 +1,6 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t439_representation_rl_control/driver.py\", line 14, in main\n    s=read(OUT/'fresh_rl/summary.json');a=read(OUT/'fresh_rl/audit.json');assert a['state']=='PASS'\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t439_representation_rl_control/driver.py\", line 5, in read\n    def read(f):return json.loads(Path(f).read_text())\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1134, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t439_representation_rl_control/fresh_rl/summary.json'\n",
+  "epoch": 1794212261.0032916,
+  "no_training_restart": true,
+  "raw_preserved": true
+}
