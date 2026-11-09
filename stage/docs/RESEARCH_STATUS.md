@@ -1,3 +1,5 @@
+2026-11-09 T444冻结诊断工程FAILED已停：9,939,998B MJB含渲染素材漏算，own短时10,664,335B>10MiB触发硬停，全局仍<1GiB。155059物理/48命令、0保存primary/exact，0Actor/V/Adam；缺测不计0%成功。原summary/error/source不改，所有进程退出；MJB gzip无损逐字节核验释放5255718B，原字节保留，FORENSIC_ONLY非科学audit，详T444_FAILURE_REPORT。T445在原总.8M/80cmd/10MiB及原绝对deadline内缩小为两个代表例的工程恢复，尚无launch，不恢复T444、不追加预算/训练，原T44354/54旧267/275不变，Phase隔离。
+
 2026-11-09用户下一步授权T444冻结配对定位，已注册/8worker零物理取消与geometry预检PASS，尚未launch。冻结safeT255真实hidden-reset与T443困难臂54/54研究Actor，8旧左5m失败同起态各两遍16原始+16exact，历史对应共享动作/pose/积分必须精确；2x2同完整history各自h0重建，safe hidden16仅padding，代数分解非纯参数/唯一因果。0Actor/V/Adam，.8M物理80全部命令/10MiBown/global1GiB/free40；最坏746688/72，main1200audit300/all2400秒独立窗口。fresh16/reload78/8均未安排，不晋升不重启旧作业/Phase隔离。见research_rescue_20261109/T444_PLAN/PRIMARY_SOURCES/BUDGET/READINESS，先source精确远端后唯一启动。
 
 2026-11-09 T443收尾补传已完整核验：833原文件/29RAM分段远端读回逐成员SHA全部通过，原上传/source TLS错误保留。只读复核困难采样臂宽54/54、旧267/275（8碰撞全旧左5m），标准臂宽53/54旧264/275；困难臂相对T441修5丢5，总321/329未净增，不能称联合稳定。fresh16/reload78本轮未执行、8米未进入；所有科学进程停止，原始模型/失败保留，safeT255不改/Phase隔离，不重启或扩预算。见research_rescue_20261109/T443_FINDINGS_AND_NEXT及POSTCHECK，原REMOTE_PENDING段为补传前历史。
