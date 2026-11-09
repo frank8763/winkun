@@ -1,3 +1,5 @@
+2026-11-09 T448固定全数据梯度vs循环小批量对照已结束/独立128历史Adam重构PASS，live128+shadow128，0PPO/V，10399413物理/698全部命令；两末模型各完整329，结果见research_rescue_20261109/T448_FINAL_REPORT。remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；每步数据/计算量不同，不作效率/纯噪声因果或创新声称，fresh16/reload78未执行/six_gateFalse/8未进，safeT255不改/Phase隔离，不重启或追加预算。
+
 2026-11-09 T447诊断及独立复算/全原件远端读回已完成：LEFT5 cos联合+.2367、成熟Adam局部Δ负，未支持完全被压；时段误差跨first2s/2–20s/末段，不据此加PCGrad/首段权重。新T448已注册/预检修复PASS尚未launch：原循环10historyvs完整219经验梯度，均同父Actor/V/成熟Adam、原权重/LR64live+64shadow、末模型各329，0PPO/V；全量每步呈现和计算更多不称等计算或创新。4原合成丢弃Adam在0native入口pickle失败前断言通过，原源/protocol/error保留；改脚本top-level入口后finalize0新增Adam+一完整梯度/8worker零物理取消PASS。own11MiB/global完整1072871922B<1GiB/free40，13.93347Mworst/14M、698cmd/720，main3600学2100audit1200all6000独立截止；fresh16/reload78未预留/six_gateFalse/8未起。源精确远端后唯一launch，不重启T446/447，safeT255冻结/Phase隔离。详research_rescue_20261109/T447_FINDINGS_AND_NEXT及T448_PLAN/BUDGET/READINESS。
 
 2026-11-09 T447冻结219成功history误差/10任务梯度审计完成，0native0Adam/独立10梯度及分段误差重构PASS；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，仅局部一阶诊断非有限更新/闭环收益，详research_rescue_20261109/T447_FINAL_REPORT。没有新策略/未过six门/8未进，safeT255及原失败不改，Phase隔离，不自动续旧训练。
