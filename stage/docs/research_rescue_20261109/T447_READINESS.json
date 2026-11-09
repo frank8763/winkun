@@ -1,0 +1,28 @@
+{
+  "state": "PASS_NOT_LAUNCHED",
+  "preflight": {
+    "state": "PASS",
+    "native": 0,
+    "Adam": 0,
+    "one_partial_history_gradient_only_engineering": true,
+    "model_Actor_V_Adam_unchanged": true
+  },
+  "budget": {
+    "state": "REGISTERED_NOT_LAUNCHED",
+    "max_bytes": 1048576,
+    "global_before": 1061083854,
+    "global_full": 1062132430,
+    "main_seconds": 900,
+    "audit_seconds": 900,
+    "all_seconds": 2400,
+    "max_native": 0,
+    "max_Adam": 0,
+    "gradients_per_execution": 10,
+    "original_model_frozen": true
+  },
+  "feedback_command": "taskset -c 0 ./run_stage.sh stage/experiments/t447_fixed_credit_audit/run.py feedback",
+  "feedback_exit_code": 1,
+  "feedback_expected_known_native_regression": true,
+  "models_optimizer_and_native_unchanged": true,
+  "epoch": 1794231461.9764426
+}

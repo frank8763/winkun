@@ -1,3 +1,5 @@
+2026-11-09下一步T447已注册/零更新预检PASS，尚未launch：冻结T446末模型及成熟Adam，既有219成功history按first2s/2–20s/末段分解drive/steer误差并10任务梯度Gram，原权重及LEFT5×4解析方向、成熟Adam含clip方向，仅一阶预测不作有限更新或闭环因果。0native/0Adam/own1MiB/global1GiB/free40，main900audit900all2400独立窗口；新轨迹/模型0，首12决策工程梯度另1，独立再10梯度，source精确同步后唯一launch。原T4461500BC结果不改/PPO未执行，不恢复旧作业/自动追加轮数，safeT255和Phase隔离保持，详research_rescue_20261109/T447_PLAN/READINESS/PRIMARY_SOURCES。
+
 2026-11-09 T446只读复核完成：plain学生宽53/54旧254/275，总307/329，相对T443修3丢17；失败集中旧LEFT5仅14/35、其余旧240/240，宽LEFT26/27RIGHT27/27。1500BClive+1500shadow完成，但LEFT5动作RMSE.052706/首10max.242766未过原.03/.10，PPO实际0轮，不能称RL已失败；完整329已测，无超时/无效删失。auditPASS、378原文件9RAM段全部远端读回SHA/模型及原字节复核过、全进程停；safeT255/T443保持，fresh16/reload78/8未执行。下一现有成功history分段拟合/梯度诊断仅草案未注册，不续T446/放宽门槛，Phase隔离，详research_rescue_20261109/T446_FINDINGS_AND_NEXT及POSTCHECK。
 
 2026-11-09 T446干净单Actor联合迁移试验已结束/独立auditPASS，BC1500live+同shadow，PPO完成0轮，physics5630395/commands385，完整结果见research_rescue_20261109/T446_FINAL_REPORT；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，fresh16/reload78未准入/six_gateFalse/8未起，模型研究不晋升，Phase隔离，不重启或扩大预算。
