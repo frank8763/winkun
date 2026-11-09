@@ -1,0 +1,489 @@
+{
+  "state": "READ_ONLY_REVIEW_COMPLETE_NO_NEW_EXPERIMENT",
+  "new_native_physics": 0,
+  "new_optimizer_updates": 0,
+  "new_Actor_forwards": 0,
+  "initial_six": {
+    "valid": 54,
+    "success": 51,
+    "contact": 0,
+    "timeout": 3,
+    "censored": 0
+  },
+  "initial_old": {
+    "valid": 275,
+    "success": 271,
+    "contact": 4,
+    "timeout": 0,
+    "censored": 0
+  },
+  "source_success_ids": 322,
+  "initial_failed_ids": [
+    "dev_task6_00",
+    "dev_task6_03",
+    "dev_task6_21",
+    "hold_task6_06",
+    "wide117_80_dev6_LEFT_07",
+    "wide117_80_dev6_LEFT_10",
+    "wide117_80_dev6_LEFT_13"
+  ],
+  "arms": {
+    "b": {
+      "six": {
+        "valid": 54,
+        "success": 50,
+        "contact": 2,
+        "timeout": 2,
+        "invalid": 0,
+        "censored": 0
+      },
+      "old": {
+        "valid": 275,
+        "success": 269,
+        "contact": 5,
+        "timeout": 1,
+        "invalid": 0,
+        "censored": 0
+      },
+      "left": {
+        "valid": 27,
+        "success": 23,
+        "contact": 2,
+        "timeout": 2,
+        "censored": 0
+      },
+      "right": {
+        "valid": 27,
+        "success": 27,
+        "contact": 0,
+        "timeout": 0,
+        "censored": 0
+      },
+      "accepted": false,
+      "lost_ids": [
+        "dev_task4_03",
+        "dev_task6_09",
+        "dev_task6_13",
+        "dev_task6_15",
+        "wide117_80_dev6_LEFT_06",
+        "wide117_80_dev6_LEFT_15",
+        "wide117_80_dev6_LEFT_18",
+        "wide117_80_dev6_LEFT_21"
+      ],
+      "gained_ids": [
+        "dev_task6_21",
+        "hold_task6_06",
+        "wide117_80_dev6_LEFT_07",
+        "wide117_80_dev6_LEFT_10",
+        "wide117_80_dev6_LEFT_13"
+      ],
+      "lost_ids_present_in_preservation": [
+        "dev_task6_13",
+        "wide117_80_dev6_LEFT_06",
+        "wide117_80_dev6_LEFT_15",
+        "wide117_80_dev6_LEFT_18",
+        "wide117_80_dev6_LEFT_21"
+      ],
+      "lost_ids_outside_preservation": [
+        "dev_task4_03",
+        "dev_task6_09",
+        "dev_task6_15"
+      ],
+      "remaining_original_failures": [
+        "dev_task6_00",
+        "dev_task6_03"
+      ],
+      "initial_corrective_loss": 0.012083319724504068,
+      "final_corrective_loss": 0.009878819388267724,
+      "corrective_loss_relative_reduction": 0.1824416126112911,
+      "preservation_losses_first": [
+        3.0913288646763054e-32,
+        7.712804249510901e-32,
+        0.0
+      ],
+      "preservation_losses_last": [
+        9.396823378101315e-05,
+        5.788013035531506e-05,
+        3.7613476410503584e-05
+      ],
+      "live_Adam": 120,
+      "shadow_Adam": 120,
+      "retained_updates": 0,
+      "new_RL": 0,
+      "training_array_evidence": "Full source anchors/recoveries saved; full new autonomous329 state arrays absent.",
+      "failures": [
+        {
+          "id": "wide117_80_dev6_LEFT_06",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 2.225742691238901,
+          "duration_s": 42.5,
+          "in_anchor": true,
+          "already_failed_at_initializer": false
+        },
+        {
+          "id": "wide117_80_dev6_LEFT_15",
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 1.3946562889277374,
+          "duration_s": 80.0,
+          "in_anchor": true,
+          "already_failed_at_initializer": false
+        },
+        {
+          "id": "wide117_80_dev6_LEFT_18",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 2.222604357914877,
+          "duration_s": 40.4,
+          "in_anchor": true,
+          "already_failed_at_initializer": false
+        },
+        {
+          "id": "wide117_80_dev6_LEFT_21",
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 1.4960419536051703,
+          "duration_s": 80.0,
+          "in_anchor": true,
+          "already_failed_at_initializer": false
+        },
+        {
+          "id": "dev_task4_03",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 1.2558061079718175,
+          "duration_s": 18.812,
+          "in_anchor": false,
+          "already_failed_at_initializer": false
+        },
+        {
+          "id": "dev_task6_00",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 1.4851002719945947,
+          "duration_s": 28.352,
+          "in_anchor": false,
+          "already_failed_at_initializer": true
+        },
+        {
+          "id": "dev_task6_03",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 1.4821357154605295,
+          "duration_s": 28.34,
+          "in_anchor": false,
+          "already_failed_at_initializer": true
+        },
+        {
+          "id": "dev_task6_09",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 0.7002671709613847,
+          "duration_s": 31.27,
+          "in_anchor": false,
+          "already_failed_at_initializer": false
+        },
+        {
+          "id": "dev_task6_13",
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 0.3139174383293281,
+          "duration_s": 46.668,
+          "in_anchor": true,
+          "already_failed_at_initializer": false
+        },
+        {
+          "id": "dev_task6_15",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 1.4846460304259517,
+          "duration_s": 29.75,
+          "in_anchor": false,
+          "already_failed_at_initializer": false
+        }
+      ]
+    },
+    "c": {
+      "six": {
+        "valid": 54,
+        "success": 52,
+        "contact": 2,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "old": {
+        "valid": 275,
+        "success": 269,
+        "contact": 5,
+        "timeout": 1,
+        "invalid": 0,
+        "censored": 0
+      },
+      "left": {
+        "valid": 27,
+        "success": 25,
+        "contact": 2,
+        "timeout": 0,
+        "censored": 0
+      },
+      "right": {
+        "valid": 27,
+        "success": 27,
+        "contact": 0,
+        "timeout": 0,
+        "censored": 0
+      },
+      "accepted": false,
+      "lost_ids": [
+        "dev_task4_06",
+        "dev_task6_09",
+        "dev_task6_15",
+        "dev_task6_24",
+        "wide117_80_dev6_LEFT_00"
+      ],
+      "gained_ids": [
+        "dev_task6_21",
+        "hold_task6_06",
+        "wide117_80_dev6_LEFT_10",
+        "wide117_80_dev6_LEFT_13"
+      ],
+      "lost_ids_present_in_preservation": [
+        "dev_task6_09",
+        "wide117_80_dev6_LEFT_00"
+      ],
+      "lost_ids_outside_preservation": [
+        "dev_task4_06",
+        "dev_task6_15",
+        "dev_task6_24"
+      ],
+      "remaining_original_failures": [
+        "dev_task6_00",
+        "dev_task6_03",
+        "wide117_80_dev6_LEFT_07"
+      ],
+      "initial_corrective_loss": 0.012083319724504068,
+      "final_corrective_loss": 0.010318481477566172,
+      "corrective_loss_relative_reduction": 0.14605574355190953,
+      "preservation_losses_first": [
+        5.784054457781611e-32,
+        1.4694946606729574e-31,
+        0.0
+      ],
+      "preservation_losses_last": [
+        0.00011914518566152242,
+        6.323252320328807e-05,
+        4.374981471790504e-05
+      ],
+      "live_Adam": 120,
+      "shadow_Adam": 120,
+      "retained_updates": 0,
+      "new_RL": 0,
+      "training_array_evidence": "Full source anchors/recoveries saved; full new autonomous329 state arrays absent.",
+      "failures": [
+        {
+          "id": "wide117_80_dev6_LEFT_00",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 2.2026308227705798,
+          "duration_s": 42.084,
+          "in_anchor": true,
+          "already_failed_at_initializer": false
+        },
+        {
+          "id": "wide117_80_dev6_LEFT_07",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 2.1367869632991043,
+          "duration_s": 44.546,
+          "in_anchor": false,
+          "already_failed_at_initializer": true
+        },
+        {
+          "id": "dev_task4_06",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 1.4457698549113362,
+          "duration_s": 17.984,
+          "in_anchor": false,
+          "already_failed_at_initializer": false
+        },
+        {
+          "id": "dev_task6_00",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 0.7225496254276328,
+          "duration_s": 32.572,
+          "in_anchor": false,
+          "already_failed_at_initializer": true
+        },
+        {
+          "id": "dev_task6_03",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 1.4857302321744572,
+          "duration_s": 27.876,
+          "in_anchor": false,
+          "already_failed_at_initializer": true
+        },
+        {
+          "id": "dev_task6_09",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 1.4806875998603692,
+          "duration_s": 28.246000000000002,
+          "in_anchor": true,
+          "already_failed_at_initializer": false
+        },
+        {
+          "id": "dev_task6_15",
+          "collision": true,
+          "timeout": false,
+          "remaining_m": 1.4842019102193538,
+          "duration_s": 29.546,
+          "in_anchor": false,
+          "already_failed_at_initializer": false
+        },
+        {
+          "id": "dev_task6_24",
+          "collision": false,
+          "timeout": true,
+          "remaining_m": 0.23868931667855503,
+          "duration_s": 46.668,
+          "in_anchor": false,
+          "already_failed_at_initializer": false
+        }
+      ]
+    }
+  },
+  "night_actual": {
+    "physics": 10706363,
+    "commands": 684,
+    "main_wall_s": 1958.4267523288727
+  },
+  "approved_physics": 40000000,
+  "approved_commands": 2000,
+  "approved_main_wall_s": 18000,
+  "physics_budget_fraction_used": 0.267659075,
+  "main_budget_fraction_used": 0.10880148624049292,
+  "launched_beijing": "2026-11-08T21:50:39.281828+08:00",
+  "finished_beijing": "2026-11-08T22:27:47.842260+08:00",
+  "deadline_beijing": "2026-11-09T08:30:00+08:00",
+  "main_minutes": 32.64044587214788,
+  "elapsed_minutes": 37.11983284552892,
+  "unused_wall_after_finite_chain_s": 36132.15774035454,
+  "relay_files_present": {
+    "protocol.json": false,
+    "preflight.json": false,
+    "launch.json": false,
+    "driver_started.json": false
+  },
+  "relay_executed": false,
+  "relay_missing_required_docs": [
+    "stage/docs/overnight_20261108_relay/PLAN.md",
+    "stage/docs/overnight_20261108_relay/METHOD_SOURCES.md"
+  ],
+  "encoding_executed": false,
+  "remote_receipt": {
+    "path": "stage/docs/long_distance_20261101/release_receipt_T432.json",
+    "state": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+    "archive_sha256": "7719509340312b12328de29f04f8eb130fd894e9f3cae1cfc8ec2608ade79d2d",
+    "manifest_sha256": "a39e0f146bac011d595bce2421dcd8bd1d3f79061ec0e4459e7f615c9c6e1ef4",
+    "members": 737
+  },
+  "aggregate_gradient_counterexample": {
+    "reference": [
+      1.0,
+      1.0
+    ],
+    "raw_gradient": [
+      2.0,
+      -1.0
+    ],
+    "raw_dot": 1.0,
+    "preconditioned_gradient": [
+      0.2,
+      -1.0
+    ],
+    "preconditioned_dot": -0.8,
+    "synthetic_only": true,
+    "not_actual_Adam_evidence": true
+  },
+  "proposed_next_diagnostic": {
+    "state": "DRAFT_NOT_REGISTERED_NOT_STARTED",
+    "frozen_task_ids": [
+      "wide117_80_dev6_LEFT_00",
+      "wide117_80_dev6_LEFT_07",
+      "dev_task6_09",
+      "dev_task6_24"
+    ],
+    "source_full_existing_references": [
+      {
+        "job_id": "wide117_80_dev6_LEFT_00",
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t427_fixed_representation/learn/episodes/0000.npz",
+        "sha256": "6d05e521e055fc950258b9a5e6c8b10d7f795c781d63cfdc6b539b98d7e008f1"
+      },
+      {
+        "job_id": "wide117_80_dev6_LEFT_07",
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t427_fixed_representation/learn/episodes/0007.npz",
+        "sha256": "0c61584bd55ce3a1e5c8464f0d02e4a6b25be4d5265463a6ba3e1c37a7044f35"
+      },
+      {
+        "job_id": "dev_task6_09",
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t432_offline_night/data/episodes/0001.npz",
+        "sha256": "1e76d4f730a8f5490bb4090f4422edca52843740b90c867d482e2b0aad68f368"
+      }
+    ],
+    "new_native_rollouts_needed": [
+      {
+        "job_id": "wide117_80_dev6_LEFT_00",
+        "policy": "C_proposed_rejected_diagnostic_only",
+        "step_cap": 40000
+      },
+      {
+        "job_id": "wide117_80_dev6_LEFT_07",
+        "policy": "C_proposed_rejected_diagnostic_only",
+        "step_cap": 40000
+      },
+      {
+        "job_id": "dev_task6_09",
+        "policy": "C_proposed_rejected_diagnostic_only",
+        "step_cap": 23334
+      },
+      {
+        "job_id": "dev_task6_24",
+        "policy": "C_proposed_rejected_diagnostic_only",
+        "step_cap": 23334
+      },
+      {
+        "job_id": "dev_task6_24",
+        "policy": "T427_source",
+        "step_cap": 23334
+      }
+    ],
+    "exact_replays": 5,
+    "all_native_command_ceiling": 14,
+    "all_physical_step_ceiling": 300004,
+    "optimizer_updates": 0,
+    "full_files": 5,
+    "full_file_byte_ceiling": 393216,
+    "output_ceiling_bytes": 3145728,
+    "main_seconds_ceiling": 600,
+    "audit_seconds_ceiling": 300,
+    "scope": "Locate first actual history/action/vehicle-clearance drift; do not relax goal/collision/time or train a rejected model.",
+    "requires_new_authorized_window": true
+  },
+  "inputs_sha256": {
+    "stage/runs/t432_offline_night/data/summary.json": "5b745bf15a4151513cabf331f8788a3cfecaf0623a778a68330332c5baec002e",
+    "stage/runs/t432_offline_night/data/audit.json": "088036b1cf80d19bb35da7dd8add6c47bdc9f6887224cc001124f7fc1fff3c98",
+    "stage/runs/t432_offline_night/data/commands.jsonl": "155b4f1d21ee57eeb0527977135a377c7f3693921b0218fb58306742a9ce8a75",
+    "stage/runs/t432_offline_night/b/summary.json": "b4c8c3d4f38210432440ab260cc269e38ef61441915c9eb55cae586900fe5336",
+    "stage/runs/t432_offline_night/b/audit.json": "110c8994bfd8c0f1f1330761ac1ab095d45345a7d60553272fe6c44e67bf4da6",
+    "stage/runs/t432_offline_night/b/commands.jsonl": "29c040508b18b24c9e57f09d67b9e76308235de97c48824432a1f9b78f2b6c20",
+    "stage/runs/t432_offline_night/c/summary.json": "c1b330cef94645cb8e0504f859345f82a56b802e65d4f44756ccf73d98a1b8e8",
+    "stage/runs/t432_offline_night/c/audit.json": "a69812f3073d9c90050966ea009307a8bcb19fa4ebfb09572f663be77ae0b943",
+    "stage/runs/t432_offline_night/c/commands.jsonl": "2ed69ad0791a66c99e63206145ddf2b03b07a658f487181fc281372f6d55e928"
+  },
+  "safety": "No existing evidence/models/protocols modified. Only read-only analysis docs may be written."
+}
