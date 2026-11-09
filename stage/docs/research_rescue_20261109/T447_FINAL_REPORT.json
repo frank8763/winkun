@@ -1,0 +1,5752 @@
+{
+  "state": "COMPLETE_AUDITED_LOCAL",
+  "summary": {
+    "state": "COMPLETE",
+    "pid": 345826,
+    "elapsed_s": 10.478050231933594,
+    "native": 0,
+    "optimizer": 0,
+    "gradients": 10,
+    "model_hash": "51945c1e8927ab8b76f2fed1d51f573afe2a31d8ebce8538f7ec6b94f25cc32e"
+  },
+  "diagnosis": {
+    "state": "COMPLETE_ZERO_UPDATE_DIAGNOSIS",
+    "task_stats": [
+      {
+        "task": 0,
+        "episodes": 27,
+        "mean_surrogate_loss": 0.0015097159416056728,
+        "gradient_norm": 0.020407942534972304,
+        "phases": {
+          "first2s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.027704363278510818,
+              0.04429287925375995
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.015250223654287832,
+              -0.0016050688011024176
+            ],
+            "maximum_error_drive_steer": [
+              0.11681848764419556,
+              0.1224423348903656
+            ],
+            "decisions": 270
+          },
+          "2to20s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.011396162026089418,
+              0.05301513082445991
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.0058814385088671985,
+              0.0033033415444433693
+            ],
+            "maximum_error_drive_steer": [
+              0.049076199531555176,
+              0.2732987591298297
+            ],
+            "decisions": 2355
+          },
+          "after20s": {
+            "episodes": 7,
+            "mean_episode_RMSE_drive_steer": [
+              0.0014811922686373527,
+              0.034557912435849596
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.0003962176186697824,
+              0.018417667065347944
+            ],
+            "maximum_error_drive_steer": [
+              0.007287800312042236,
+              0.14359229803085327
+            ],
+            "decisions": 17
+          }
+        },
+        "episodes_detail": [
+          {
+            "id": "dev_task0_00",
+            "decisions": 99,
+            "mse_drive_steer": [
+              0.00024395378822228308,
+              0.003977931494173973
+            ],
+            "first10_bias_drive_steer": [
+              -0.01687554121017456,
+              0.012571200355887413
+            ],
+            "first10_max_drive_steer": [
+              0.10347205400466919,
+              0.08983354084193707
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              61
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.31313131313131315
+          },
+          {
+            "id": "dev_task0_01",
+            "decisions": 99,
+            "mse_drive_steer": [
+              0.0001789058529172853,
+              0.0035808498066705855
+            ],
+            "first10_bias_drive_steer": [
+              -0.00877280831336975,
+              -0.021469971537590025
+            ],
+            "first10_max_drive_steer": [
+              0.08773720264434814,
+              0.07635083049535751
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              74
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.29292929292929293
+          },
+          {
+            "id": "dev_task0_02",
+            "decisions": 94,
+            "mse_drive_steer": [
+              0.00026290352218450125,
+              0.0028365777728802497
+            ],
+            "first10_bias_drive_steer": [
+              -0.012961792945861816,
+              -0.024476508051156996
+            ],
+            "first10_max_drive_steer": [
+              0.04036587476730347,
+              0.11807436496019363
+            ],
+            "peak_error_index_drive_steer": [
+              41,
+              64
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.23936170212765956
+          },
+          {
+            "id": "dev_task0_03",
+            "decisions": 97,
+            "mse_drive_steer": [
+              0.0001925177780430753,
+              0.003417813854297418
+            ],
+            "first10_bias_drive_steer": [
+              -0.014228630065917968,
+              0.022942524157406295
+            ],
+            "first10_max_drive_steer": [
+              0.08886075019836426,
+              0.08562567830085754
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              80
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3247422680412371
+          },
+          {
+            "id": "dev_task0_04",
+            "decisions": 104,
+            "mse_drive_steer": [
+              0.00022283788369413207,
+              0.0024906869431419293
+            ],
+            "first10_bias_drive_steer": [
+              -0.007666844129562378,
+              -0.015560193732380868
+            ],
+            "first10_max_drive_steer": [
+              0.07667756080627441,
+              0.06332660466432571
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              94
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.21153846153846156
+          },
+          {
+            "id": "dev_task0_05",
+            "decisions": 96,
+            "mse_drive_steer": [
+              0.00022518142628202842,
+              0.0028345424771151987
+            ],
+            "first10_bias_drive_steer": [
+              -0.019424402713775636,
+              -0.03357687145471573
+            ],
+            "first10_max_drive_steer": [
+              0.041532933712005615,
+              0.12078091502189636
+            ],
+            "peak_error_index_drive_steer": [
+              13,
+              85
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.1875
+          },
+          {
+            "id": "dev_task0_06",
+            "decisions": 99,
+            "mse_drive_steer": [
+              0.00022114094329939496,
+              0.0037367632261959814
+            ],
+            "first10_bias_drive_steer": [
+              -0.0138680100440979,
+              0.026384107768535614
+            ],
+            "first10_max_drive_steer": [
+              0.09848213195800781,
+              0.0782114565372467
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              83
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3080808080808081
+          },
+          {
+            "id": "dev_task0_07",
+            "decisions": 104,
+            "mse_drive_steer": [
+              0.00016259526787204976,
+              0.0024990416900735426
+            ],
+            "first10_bias_drive_steer": [
+              -0.007130831480026245,
+              -0.01892616613768041
+            ],
+            "first10_max_drive_steer": [
+              0.061481356620788574,
+              0.0595659576356411
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              82
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.21634615384615385
+          },
+          {
+            "id": "dev_task0_08",
+            "decisions": 94,
+            "mse_drive_steer": [
+              0.00020844176344161027,
+              0.0025014288652989727
+            ],
+            "first10_bias_drive_steer": [
+              -0.019775348901748657,
+              -0.023872269690036772
+            ],
+            "first10_max_drive_steer": [
+              0.060920655727386475,
+              0.11903928220272064
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              81
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.24468085106382978
+          },
+          {
+            "id": "dev_task0_09",
+            "decisions": 95,
+            "mse_drive_steer": [
+              0.00024082110133164,
+              0.003384768641578478
+            ],
+            "first10_bias_drive_steer": [
+              -0.018216043710708618,
+              0.012453627749346196
+            ],
+            "first10_max_drive_steer": [
+              0.11380338668823242,
+              0.08020038157701492
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              79
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.29473684210526313
+          },
+          {
+            "id": "dev_task0_10",
+            "decisions": 101,
+            "mse_drive_steer": [
+              0.00021833664418191787,
+              0.0020279405980554058
+            ],
+            "first10_bias_drive_steer": [
+              -0.0071675717830657956,
+              -0.005661516450345516
+            ],
+            "first10_max_drive_steer": [
+              0.06026351451873779,
+              0.043943729251623154
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              89
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.23267326732673269
+          },
+          {
+            "id": "dev_task0_11",
+            "decisions": 94,
+            "mse_drive_steer": [
+              0.00022883207058273147,
+              0.0025944274295590045
+            ],
+            "first10_bias_drive_steer": [
+              -0.022464674711227418,
+              -0.015291618555784226
+            ],
+            "first10_max_drive_steer": [
+              0.043667376041412354,
+              0.06448627263307571
+            ],
+            "peak_error_index_drive_steer": [
+              12,
+              66
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.20212765957446807
+          },
+          {
+            "id": "dev_task0_12",
+            "decisions": 99,
+            "mse_drive_steer": [
+              0.00022917994495499832,
+              0.0030846784097576987
+            ],
+            "first10_bias_drive_steer": [
+              -0.014436739683151244,
+              0.023052039742469787
+            ],
+            "first10_max_drive_steer": [
+              0.09383291006088257,
+              0.0849999189376831
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              82
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2828282828282829
+          },
+          {
+            "id": "dev_task0_13",
+            "decisions": 101,
+            "mse_drive_steer": [
+              0.00010321280165083697,
+              0.0019849071622191294
+            ],
+            "first10_bias_drive_steer": [
+              -0.003374040126800537,
+              0.01003263541351771
+            ],
+            "first10_max_drive_steer": [
+              0.033749520778656006,
+              0.07479803077876568
+            ],
+            "peak_error_index_drive_steer": [
+              90,
+              62
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3217821782178218
+          },
+          {
+            "id": "dev_task0_14",
+            "decisions": 92,
+            "mse_drive_steer": [
+              0.00020198300479908843,
+              0.0023659386655016227
+            ],
+            "first10_bias_drive_steer": [
+              -0.025235837697982787,
+              -0.012759408354759217
+            ],
+            "first10_max_drive_steer": [
+              0.044898033142089844,
+              0.09669464826583862
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              53
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.22826086956521738
+          },
+          {
+            "id": "dev_task0_15",
+            "decisions": 100,
+            "mse_drive_steer": [
+              0.00016798284203989767,
+              0.0024643928129610628
+            ],
+            "first10_bias_drive_steer": [
+              -0.014932894706726074,
+              0.01792980879545212
+            ],
+            "first10_max_drive_steer": [
+              0.08676362037658691,
+              0.07668350636959076
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              85
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.315
+          },
+          {
+            "id": "dev_task0_16",
+            "decisions": 102,
+            "mse_drive_steer": [
+              0.0001365457087893822,
+              0.0019464366568637684
+            ],
+            "first10_bias_drive_steer": [
+              -0.008660858869552613,
+              -0.024332221725489944
+            ],
+            "first10_max_drive_steer": [
+              0.06244426965713501,
+              0.051303548738360405
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              81
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.24509803921568626
+          },
+          {
+            "id": "dev_task0_17",
+            "decisions": 97,
+            "mse_drive_steer": [
+              0.0001995744400272096,
+              0.0026178263419694313
+            ],
+            "first10_bias_drive_steer": [
+              -0.02278425693511963,
+              -0.011762005090713502
+            ],
+            "first10_max_drive_steer": [
+              0.07524353265762329,
+              0.1224423348903656
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              84
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.25257731958762886
+          },
+          {
+            "id": "dev_task0_18",
+            "decisions": 98,
+            "mse_drive_steer": [
+              0.0002682824356619176,
+              0.0021105402784276847
+            ],
+            "first10_bias_drive_steer": [
+              -0.01786026358604431,
+              0.01033990979194641
+            ],
+            "first10_max_drive_steer": [
+              0.11681848764419556,
+              0.08839600533246994
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              82
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2755102040816326
+          },
+          {
+            "id": "dev_task0_19",
+            "decisions": 100,
+            "mse_drive_steer": [
+              0.00027596956293646,
+              0.00220440328188768
+            ],
+            "first10_bias_drive_steer": [
+              -0.011894035339355468,
+              0.0030692313055624256
+            ],
+            "first10_max_drive_steer": [
+              0.08421152830123901,
+              0.07103306613862514
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              73
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.16
+          },
+          {
+            "id": "dev_task0_20",
+            "decisions": 91,
+            "mse_drive_steer": [
+              0.00017496554112625987,
+              0.002388378660878347
+            ],
+            "first10_bias_drive_steer": [
+              -0.026692527532577514,
+              0.00014521405100822448
+            ],
+            "first10_max_drive_steer": [
+              0.05343973636627197,
+              0.06527498364448547
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              52
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.23076923076923078
+          },
+          {
+            "id": "dev_task0_21",
+            "decisions": 95,
+            "mse_drive_steer": [
+              0.00014853987636959985,
+              0.0038167488992201138
+            ],
+            "first10_bias_drive_steer": [
+              -0.017487674951553345,
+              0.027607426047325134
+            ],
+            "first10_max_drive_steer": [
+              0.10536861419677734,
+              0.088499516248703
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              65
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.39473684210526316
+          },
+          {
+            "id": "dev_task0_22",
+            "decisions": 101,
+            "mse_drive_steer": [
+              0.0001925678087916491,
+              0.0023197054340874743
+            ],
+            "first10_bias_drive_steer": [
+              -0.01554519534111023,
+              -0.003719762316904962
+            ],
+            "first10_max_drive_steer": [
+              0.08640116453170776,
+              0.06687647104263306
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              72
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.22277227722772278
+          },
+          {
+            "id": "dev_task0_23",
+            "decisions": 99,
+            "mse_drive_steer": [
+              0.00011804008756449994,
+              0.002279835231786135
+            ],
+            "first10_bias_drive_steer": [
+              -0.01152527928352356,
+              -0.012513597309589387
+            ],
+            "first10_max_drive_steer": [
+              0.05221116542816162,
+              0.056728534400463104
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              86
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.23232323232323235
+          },
+          {
+            "id": "dev_task0_24",
+            "decisions": 97,
+            "mse_drive_steer": [
+              0.0001284825196075731,
+              0.002860838988708142
+            ],
+            "first10_bias_drive_steer": [
+              -0.014930331707000732,
+              0.02352617123397067
+            ],
+            "first10_max_drive_steer": [
+              0.09602916240692139,
+              0.12109250575304031
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              72
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.38144329896907214
+          },
+          {
+            "id": "dev_task0_25",
+            "decisions": 104,
+            "mse_drive_steer": [
+              0.00012411983204522277,
+              0.002339951887952504
+            ],
+            "first10_bias_drive_steer": [
+              -0.007241851091384888,
+              -0.005384402244817466
+            ],
+            "first10_max_drive_steer": [
+              0.04529625177383423,
+              0.060229467228055
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              89
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.22596153846153846
+          },
+          {
+            "id": "dev_task0_26",
+            "decisions": 90,
+            "mse_drive_steer": [
+              0.00018645530976905256,
+              0.0027712826366576514
+            ],
+            "first10_bias_drive_steer": [
+              -0.030601751804351807,
+              -0.004084241390228271
+            ],
+            "first10_max_drive_steer": [
+              0.06387937068939209,
+              0.07047772407531738
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              60
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.35555555555555557
+          }
+        ]
+      },
+      {
+        "task": 1,
+        "episodes": 27,
+        "mean_surrogate_loss": 0.00016716437186452127,
+        "gradient_norm": 0.029609191305722878,
+        "phases": {
+          "first2s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.0014614183269668513,
+              0.019706686203222253
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.00012726055251227486,
+              -0.0037614853845702283
+            ],
+            "maximum_error_drive_steer": [
+              0.023159563541412354,
+              0.0817146897315979
+            ],
+            "decisions": 270
+          },
+          "2to20s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.004442826190875218,
+              0.01582354855384417
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.002465460775845232,
+              -0.003943063123698569
+            ],
+            "maximum_error_drive_steer": [
+              0.020326554775238037,
+              0.059733957052230835
+            ],
+            "decisions": 1978
+          }
+        },
+        "episodes_detail": [
+          {
+            "id": "dev_task1_00",
+            "decisions": 84,
+            "mse_drive_steer": [
+              9.635805081673187e-06,
+              0.00024813538028224604
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              0.0003183245658874512
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.032150089740753174
+            ],
+            "peak_error_index_drive_steer": [
+              83,
+              57
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3333333333333333
+          },
+          {
+            "id": "dev_task1_01",
+            "decisions": 84,
+            "mse_drive_steer": [
+              1.3492425925853979e-05,
+              0.0002902783047863849
+            ],
+            "first10_bias_drive_steer": [
+              -0.00043195486068725586,
+              -0.015606570243835449
+            ],
+            "first10_max_drive_steer": [
+              0.003390491008758545,
+              0.0817146897315979
+            ],
+            "peak_error_index_drive_steer": [
+              83,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3333333333333333
+          },
+          {
+            "id": "dev_task1_02",
+            "decisions": 83,
+            "mse_drive_steer": [
+              1.5047642025360212e-05,
+              0.0002703066167249943
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.00011928975582122802
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.036567240953445435
+            ],
+            "peak_error_index_drive_steer": [
+              81,
+              56
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3433734939759036
+          },
+          {
+            "id": "dev_task1_03",
+            "decisions": 84,
+            "mse_drive_steer": [
+              1.567573961260732e-05,
+              0.00021247441850731565
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.004092800617218018
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.035924047231674194
+            ],
+            "peak_error_index_drive_steer": [
+              83,
+              15
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.27976190476190477
+          },
+          {
+            "id": "dev_task1_04",
+            "decisions": 84,
+            "mse_drive_steer": [
+              1.3216711846392435e-05,
+              0.00020321518676486282
+            ],
+            "first10_bias_drive_steer": [
+              -2.7108192443847657e-05,
+              -0.007259628176689148
+            ],
+            "first10_max_drive_steer": [
+              0.00028020143508911133,
+              0.016345739364624023
+            ],
+            "peak_error_index_drive_steer": [
+              82,
+              55
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3273809523809524
+          },
+          {
+            "id": "dev_task1_05",
+            "decisions": 84,
+            "mse_drive_steer": [
+              1.618219085693558e-05,
+              0.00029879516650193114
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              0.003162814676761627
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.03918448090553284
+            ],
+            "peak_error_index_drive_steer": [
+              82,
+              55
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2857142857142857
+          },
+          {
+            "id": "dev_task1_06",
+            "decisions": 85,
+            "mse_drive_steer": [
+              2.4394101847407763e-05,
+              0.0002468025221854402
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.004923248291015625
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.039945751428604126
+            ],
+            "peak_error_index_drive_steer": [
+              83,
+              16
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2647058823529412
+          },
+          {
+            "id": "dev_task1_07",
+            "decisions": 84,
+            "mse_drive_steer": [
+              1.306645298123262e-05,
+              0.00022892565854471235
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              0.0004024893045425415
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.01965084671974182
+            ],
+            "peak_error_index_drive_steer": [
+              82,
+              28
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3333333333333333
+          },
+          {
+            "id": "dev_task1_08",
+            "decisions": 84,
+            "mse_drive_steer": [
+              1.9248673689292994e-05,
+              0.0002912904460931065
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              0.006275913119316101
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.0349138081073761
+            ],
+            "peak_error_index_drive_steer": [
+              82,
+              64
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.27976190476190477
+          },
+          {
+            "id": "dev_task1_09",
+            "decisions": 83,
+            "mse_drive_steer": [
+              1.488833288515122e-05,
+              0.00026077885841633365
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.000900876522064209
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.035195738077163696
+            ],
+            "peak_error_index_drive_steer": [
+              82,
+              14
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.30120481927710846
+          },
+          {
+            "id": "dev_task1_10",
+            "decisions": 83,
+            "mse_drive_steer": [
+              1.1692857300321991e-05,
+              0.00022935074725219818
+            ],
+            "first10_bias_drive_steer": [
+              -0.0001954793930053711,
+              -0.012932893633842469
+            ],
+            "first10_max_drive_steer": [
+              0.0019639134407043457,
+              0.042209625244140625
+            ],
+            "peak_error_index_drive_steer": [
+              81,
+              54
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3373493975903615
+          },
+          {
+            "id": "dev_task1_11",
+            "decisions": 83,
+            "mse_drive_steer": [
+              1.3336157849752348e-05,
+              0.00029010708837290134
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              0.0004176497459411621
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.0304487943649292
+            ],
+            "peak_error_index_drive_steer": [
+              81,
+              54
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3373493975903615
+          },
+          {
+            "id": "dev_task1_12",
+            "decisions": 83,
+            "mse_drive_steer": [
+              2.1609123093247854e-05,
+              0.00023954389726608876
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.0026294946670532226
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.03917360305786133
+            ],
+            "peak_error_index_drive_steer": [
+              14,
+              15
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.27710843373493976
+          },
+          {
+            "id": "dev_task1_13",
+            "decisions": 83,
+            "mse_drive_steer": [
+              1.5265018723292577e-05,
+              0.0002810459457329637
+            ],
+            "first10_bias_drive_steer": [
+              -0.002315044403076172,
+              -0.015369020402431488
+            ],
+            "first10_max_drive_steer": [
+              0.023159563541412354,
+              0.06690508127212524
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3253012048192771
+          },
+          {
+            "id": "dev_task1_14",
+            "decisions": 83,
+            "mse_drive_steer": [
+              1.667344328989928e-05,
+              0.00030228218859480017
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              0.0016823664307594299
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.042953670024871826
+            ],
+            "peak_error_index_drive_steer": [
+              81,
+              63
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.28313253012048195
+          },
+          {
+            "id": "dev_task1_15",
+            "decisions": 84,
+            "mse_drive_steer": [
+              3.0874012344493994e-05,
+              0.00026112257771892286
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.0035122573375701905
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.04332321882247925
+            ],
+            "peak_error_index_drive_steer": [
+              15,
+              16
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.26190476190476186
+          },
+          {
+            "id": "dev_task1_16",
+            "decisions": 84,
+            "mse_drive_steer": [
+              1.696179570804495e-05,
+              0.00021875836482041077
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.004675291478633881
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.019794732332229614
+            ],
+            "peak_error_index_drive_steer": [
+              81,
+              35
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2976190476190476
+          },
+          {
+            "id": "dev_task1_17",
+            "decisions": 84,
+            "mse_drive_steer": [
+              1.9881783523227153e-05,
+              0.00033612049054429694
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.00357431024312973
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.04564203321933746
+            ],
+            "peak_error_index_drive_steer": [
+              30,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2738095238095238
+          },
+          {
+            "id": "dev_task1_18",
+            "decisions": 82,
+            "mse_drive_steer": [
+              2.309736574069285e-05,
+              0.0002501489678518476
+            ],
+            "first10_bias_drive_steer": [
+              -0.0004887402057647706,
+              0.004598590731620789
+            ],
+            "first10_max_drive_steer": [
+              0.00489652156829834,
+              0.0387931764125824
+            ],
+            "peak_error_index_drive_steer": [
+              13,
+              14
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.29268292682926833
+          },
+          {
+            "id": "dev_task1_19",
+            "decisions": 82,
+            "mse_drive_steer": [
+              1.2045167787113295e-05,
+              0.0003076460007081356
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.019321164488792418
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.06718848645687103
+            ],
+            "peak_error_index_drive_steer": [
+              80,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3048780487804878
+          },
+          {
+            "id": "dev_task1_20",
+            "decisions": 82,
+            "mse_drive_steer": [
+              1.0254108936787288e-05,
+              0.00028392075827946207
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.0014100149273872375
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.03216147422790527
+            ],
+            "peak_error_index_drive_steer": [
+              79,
+              62
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3170731707317073
+          },
+          {
+            "id": "dev_task1_21",
+            "decisions": 83,
+            "mse_drive_steer": [
+              2.7386864560816572e-05,
+              0.0002532117463262694
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.00022481679916381837
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.04282945394515991
+            ],
+            "peak_error_index_drive_steer": [
+              14,
+              15
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.28313253012048195
+          },
+          {
+            "id": "dev_task1_22",
+            "decisions": 82,
+            "mse_drive_steer": [
+              1.1175112490967884e-05,
+              0.00025564932867997895
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.010349458456039429
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.04291456937789917
+            ],
+            "peak_error_index_drive_steer": [
+              80,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3048780487804878
+          },
+          {
+            "id": "dev_task1_23",
+            "decisions": 82,
+            "mse_drive_steer": [
+              1.4911264123939088e-05,
+              0.0003113311450383926
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              1.7890334129333495e-05
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.034792110323905945
+            ],
+            "peak_error_index_drive_steer": [
+              27,
+              35
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2804878048780488
+          },
+          {
+            "id": "dev_task1_24",
+            "decisions": 83,
+            "mse_drive_steer": [
+              3.945407457283821e-05,
+              0.0002614398333650489
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.005544629693031311
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.04681780934333801
+            ],
+            "peak_error_index_drive_steer": [
+              15,
+              16
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.27108433734939763
+          },
+          {
+            "id": "dev_task1_25",
+            "decisions": 83,
+            "mse_drive_steer": [
+              1.5364299586897767e-05,
+              0.00025371565176563116
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.0023888036608695983
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.0448150634765625
+            ],
+            "peak_error_index_drive_steer": [
+              80,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.28915662650602414
+          },
+          {
+            "id": "dev_task1_26",
+            "decisions": 83,
+            "mse_drive_steer": [
+              2.1086505006160195e-05,
+              0.00032316055879954317
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              -0.0036015748977661134
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.03738865256309509
+            ],
+            "peak_error_index_drive_steer": [
+              28,
+              62
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.26506024096385544
+          }
+        ]
+      },
+      {
+        "task": 2,
+        "episodes": 27,
+        "mean_surrogate_loss": 0.00019971596508206086,
+        "gradient_norm": 0.003246365116118509,
+        "phases": {
+          "first2s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.003989502133605562,
+              0.0296884219533004
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.0017581308329546895,
+              -0.0018602271598798256
+            ],
+            "maximum_error_drive_steer": [
+              0.03803586959838867,
+              0.3212771415710449
+            ],
+            "decisions": 270
+          },
+          "2to20s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.0050865996308431536,
+              0.01715952563747684
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.002797255902266938,
+              0.00012941493761107388
+            ],
+            "maximum_error_drive_steer": [
+              0.019542694091796875,
+              0.08020825684070587
+            ],
+            "decisions": 2403
+          },
+          "after20s": {
+            "episodes": 3,
+            "mean_episode_RMSE_drive_steer": [
+              0.013676282459591009,
+              0.004493027568153117
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.01116629441579183,
+              -0.0016308128833770752
+            ],
+            "maximum_error_drive_steer": [
+              0.016766846179962158,
+              0.004820466041564941
+            ],
+            "decisions": 3
+          }
+        },
+        "episodes_detail": [
+          {
+            "id": "dev_task2_00",
+            "decisions": 99,
+            "mse_drive_steer": [
+              1.46665305050797e-05,
+              0.0002895994653974502
+            ],
+            "first10_bias_drive_steer": [
+              -0.0014058172702789307,
+              -0.006849165260791779
+            ],
+            "first10_max_drive_steer": [
+              0.004971861839294434,
+              0.023006081581115723
+            ],
+            "peak_error_index_drive_steer": [
+              77,
+              80
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3080808080808081
+          },
+          {
+            "id": "dev_task2_01",
+            "decisions": 98,
+            "mse_drive_steer": [
+              1.4683325199598005e-05,
+              0.0002690425983972802
+            ],
+            "first10_bias_drive_steer": [
+              -0.0007962107658386231,
+              -0.0022877052426338194
+            ],
+            "first10_max_drive_steer": [
+              0.004049241542816162,
+              0.048484668135643005
+            ],
+            "peak_error_index_drive_steer": [
+              77,
+              78
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.33163265306122447
+          },
+          {
+            "id": "dev_task2_02",
+            "decisions": 98,
+            "mse_drive_steer": [
+              1.733817764414822e-05,
+              0.0003416074884054183
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              0.006433272361755371
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.034164220094680786
+            ],
+            "peak_error_index_drive_steer": [
+              16,
+              24
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.34183673469387754
+          },
+          {
+            "id": "dev_task2_03",
+            "decisions": 100,
+            "mse_drive_steer": [
+              1.7487851373019224e-05,
+              0.0003689150939168728
+            ],
+            "first10_bias_drive_steer": [
+              -0.0025744915008544924,
+              -0.01379093825817108
+            ],
+            "first10_max_drive_steer": [
+              0.0068662166595458984,
+              0.10122226178646088
+            ],
+            "peak_error_index_drive_steer": [
+              73,
+              5
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.26
+          },
+          {
+            "id": "dev_task2_04",
+            "decisions": 98,
+            "mse_drive_steer": [
+              1.7681718797804273e-05,
+              0.0002571164977632414
+            ],
+            "first10_bias_drive_steer": [
+              -0.00012527704238891603,
+              0.004071386158466339
+            ],
+            "first10_max_drive_steer": [
+              0.001261889934539795,
+              0.06662262976169586
+            ],
+            "peak_error_index_drive_steer": [
+              69,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.33163265306122447
+          },
+          {
+            "id": "dev_task2_05",
+            "decisions": 100,
+            "mse_drive_steer": [
+              3.3804749885391064e-05,
+              0.0003530087088278386
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              0.0029225230216979982
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.03761383891105652
+            ],
+            "peak_error_index_drive_steer": [
+              77,
+              78
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.25
+          },
+          {
+            "id": "dev_task2_06",
+            "decisions": 101,
+            "mse_drive_steer": [
+              3.2218945362826774e-05,
+              0.00033335002434754844
+            ],
+            "first10_bias_drive_steer": [
+              -0.005279821157455444,
+              -0.01593109741806984
+            ],
+            "first10_max_drive_steer": [
+              0.008902132511138916,
+              0.06933969259262085
+            ],
+            "peak_error_index_drive_steer": [
+              80,
+              6
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.1782178217821782
+          },
+          {
+            "id": "dev_task2_07",
+            "decisions": 100,
+            "mse_drive_steer": [
+              2.0543391506997465e-05,
+              0.0003716061210649953
+            ],
+            "first10_bias_drive_steer": [
+              -9.43005084991455e-05,
+              0.00800582319498062
+            ],
+            "first10_max_drive_steer": [
+              0.0009521245956420898,
+              0.09327194094657898
+            ],
+            "peak_error_index_drive_steer": [
+              77,
+              1
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.27
+          },
+          {
+            "id": "dev_task2_08",
+            "decisions": 100,
+            "mse_drive_steer": [
+              3.068157572638342e-05,
+              0.00034892469647314963
+            ],
+            "first10_bias_drive_steer": [
+              1.0132789611816406e-06,
+              0.011623823642730713
+            ],
+            "first10_max_drive_steer": [
+              1.0132789611816406e-06,
+              0.07144489884376526
+            ],
+            "peak_error_index_drive_steer": [
+              74,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.29
+          },
+          {
+            "id": "dev_task2_09",
+            "decisions": 99,
+            "mse_drive_steer": [
+              1.690305969661823e-05,
+              0.00028997085417000455
+            ],
+            "first10_bias_drive_steer": [
+              -0.002193385362625122,
+              -0.010363496840000153
+            ],
+            "first10_max_drive_steer": [
+              0.00649869441986084,
+              0.036258116364479065
+            ],
+            "peak_error_index_drive_steer": [
+              78,
+              79
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.25252525252525254
+          },
+          {
+            "id": "dev_task2_10",
+            "decisions": 97,
+            "mse_drive_steer": [
+              2.082923767658516e-05,
+              0.00021515192063011816
+            ],
+            "first10_bias_drive_steer": [
+              -0.000932377576828003,
+              -0.006597694754600525
+            ],
+            "first10_max_drive_steer": [
+              0.006046175956726074,
+              0.021162837743759155
+            ],
+            "peak_error_index_drive_steer": [
+              74,
+              77
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.30927835051546393
+          },
+          {
+            "id": "dev_task2_11",
+            "decisions": 98,
+            "mse_drive_steer": [
+              2.3882483635380058e-05,
+              0.00036608719966069224
+            ],
+            "first10_bias_drive_steer": [
+              -0.00011870861053466796,
+              0.00447118729352951
+            ],
+            "first10_max_drive_steer": [
+              0.0011962056159973145,
+              0.029368728399276733
+            ],
+            "peak_error_index_drive_steer": [
+              15,
+              23
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3112244897959183
+          },
+          {
+            "id": "dev_task2_12",
+            "decisions": 99,
+            "mse_drive_steer": [
+              1.2994493642336502e-05,
+              0.0002510155372798886
+            ],
+            "first10_bias_drive_steer": [
+              -0.0030372023582458498,
+              -0.010278940945863724
+            ],
+            "first10_max_drive_steer": [
+              0.007586002349853516,
+              0.02576903998851776
+            ],
+            "peak_error_index_drive_steer": [
+              10,
+              12
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2676767676767677
+          },
+          {
+            "id": "dev_task2_13",
+            "decisions": 98,
+            "mse_drive_steer": [
+              1.9977929220695674e-05,
+              0.0012980110004443008
+            ],
+            "first10_bias_drive_steer": [
+              -0.003802675008773804,
+              0.029936407506465913
+            ],
+            "first10_max_drive_steer": [
+              0.03803586959838867,
+              0.3212771415710449
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.4387755102040816
+          },
+          {
+            "id": "dev_task2_14",
+            "decisions": 99,
+            "mse_drive_steer": [
+              2.6867522595202246e-05,
+              0.0002885672818598783
+            ],
+            "first10_bias_drive_steer": [
+              -0.00018748044967651368,
+              -0.0008921101689338684
+            ],
+            "first10_max_drive_steer": [
+              0.0018839240074157715,
+              0.026165366172790527
+            ],
+            "peak_error_index_drive_steer": [
+              16,
+              24
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.297979797979798
+          },
+          {
+            "id": "dev_task2_15",
+            "decisions": 100,
+            "mse_drive_steer": [
+              3.26459536581325e-05,
+              0.0003501430963876986
+            ],
+            "first10_bias_drive_steer": [
+              -0.005584830045700073,
+              -0.014717800170183181
+            ],
+            "first10_max_drive_steer": [
+              0.010133564472198486,
+              0.07190845906734467
+            ],
+            "peak_error_index_drive_steer": [
+              79,
+              6
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.185
+          },
+          {
+            "id": "dev_task2_16",
+            "decisions": 99,
+            "mse_drive_steer": [
+              2.042354960456169e-05,
+              0.0003153344202233315
+            ],
+            "first10_bias_drive_steer": [
+              -0.0002959311008453369,
+              0.0066826194524765015
+            ],
+            "first10_max_drive_steer": [
+              0.002968430519104004,
+              0.06838592886924744
+            ],
+            "peak_error_index_drive_steer": [
+              76,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2878787878787879
+          },
+          {
+            "id": "dev_task2_17",
+            "decisions": 101,
+            "mse_drive_steer": [
+              4.559178715486873e-05,
+              0.00030349898141030873
+            ],
+            "first10_bias_drive_steer": [
+              -0.0006261765956878662,
+              0.0009652957320213318
+            ],
+            "first10_max_drive_steer": [
+              0.004342794418334961,
+              0.040615856647491455
+            ],
+            "peak_error_index_drive_steer": [
+              16,
+              77
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.19306930693069307
+          },
+          {
+            "id": "dev_task2_18",
+            "decisions": 99,
+            "mse_drive_steer": [
+              1.3993423991504667e-05,
+              0.00031199551978639814
+            ],
+            "first10_bias_drive_steer": [
+              -0.002480572462081909,
+              -0.005623430758714676
+            ],
+            "first10_max_drive_steer": [
+              0.006914019584655762,
+              0.024934500455856323
+            ],
+            "peak_error_index_drive_steer": [
+              75,
+              78
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.30303030303030304
+          },
+          {
+            "id": "dev_task2_19",
+            "decisions": 97,
+            "mse_drive_steer": [
+              2.2103240910948242e-05,
+              0.0002409238765211317
+            ],
+            "first10_bias_drive_steer": [
+              -0.0032891809940338137,
+              -0.012982635200023651
+            ],
+            "first10_max_drive_steer": [
+              0.010797321796417236,
+              0.037376001477241516
+            ],
+            "peak_error_index_drive_steer": [
+              11,
+              75
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.26804123711340205
+          },
+          {
+            "id": "dev_task2_20",
+            "decisions": 99,
+            "mse_drive_steer": [
+              3.0896357227090455e-05,
+              0.00036859681327796733
+            ],
+            "first10_bias_drive_steer": [
+              -0.0003401815891265869,
+              0.004886661469936371
+            ],
+            "first10_max_drive_steer": [
+              0.0033603310585021973,
+              0.0370575487613678
+            ],
+            "peak_error_index_drive_steer": [
+              98,
+              23
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.29292929292929293
+          },
+          {
+            "id": "dev_task2_21",
+            "decisions": 99,
+            "mse_drive_steer": [
+              2.3283756128334672e-05,
+              0.00025696209057100936
+            ],
+            "first10_bias_drive_steer": [
+              -0.003568321466445923,
+              -0.00670507475733757
+            ],
+            "first10_max_drive_steer": [
+              0.008588910102844238,
+              0.024650558829307556
+            ],
+            "peak_error_index_drive_steer": [
+              76,
+              78
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.24242424242424243
+          },
+          {
+            "id": "dev_task2_22",
+            "decisions": 98,
+            "mse_drive_steer": [
+              1.4157279878299578e-05,
+              0.0002453853244904501
+            ],
+            "first10_bias_drive_steer": [
+              -0.0007978260517120361,
+              -0.004455690830945968
+            ],
+            "first10_max_drive_steer": [
+              0.004514336585998535,
+              0.03587586432695389
+            ],
+            "peak_error_index_drive_steer": [
+              75,
+              96
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3112244897959183
+          },
+          {
+            "id": "dev_task2_23",
+            "decisions": 100,
+            "mse_drive_steer": [
+              3.801508522727204e-05,
+              0.00036316661032145494
+            ],
+            "first10_bias_drive_steer": [
+              -0.0009368598461151123,
+              -0.002718953788280487
+            ],
+            "first10_max_drive_steer": [
+              0.005506157875061035,
+              0.04297938942909241
+            ],
+            "peak_error_index_drive_steer": [
+              99,
+              95
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.255
+          },
+          {
+            "id": "dev_task2_24",
+            "decisions": 100,
+            "mse_drive_steer": [
+              3.2679799236348114e-05,
+              0.00046396822645433053
+            ],
+            "first10_bias_drive_steer": [
+              -0.007317012548446656,
+              -0.01270969957113266
+            ],
+            "first10_max_drive_steer": [
+              0.012852191925048828,
+              0.0885574221611023
+            ],
+            "peak_error_index_drive_steer": [
+              42,
+              6
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.225
+          },
+          {
+            "id": "dev_task2_25",
+            "decisions": 99,
+            "mse_drive_steer": [
+              2.5017729850023646e-05,
+              0.0003515838594914884
+            ],
+            "first10_bias_drive_steer": [
+              -0.0006443977355957032,
+              -0.0037747807800769806
+            ],
+            "first10_max_drive_steer": [
+              0.00500565767288208,
+              0.04130119830369949
+            ],
+            "peak_error_index_drive_steer": [
+              42,
+              76
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.25252525252525254
+          },
+          {
+            "id": "dev_task2_26",
+            "decisions": 101,
+            "mse_drive_steer": [
+              5.65193044754533e-05,
+              0.00033516065251623775
+            ],
+            "first10_bias_drive_steer": [
+              -0.0010435342788696288,
+              0.00045408159494400027
+            ],
+            "first10_max_drive_steer": [
+              0.007110953330993652,
+              0.04783141613006592
+            ],
+            "peak_error_index_drive_steer": [
+              14,
+              76
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.15841584158415842
+          }
+        ]
+      },
+      {
+        "task": 3,
+        "episodes": 27,
+        "mean_surrogate_loss": 0.00153544527303721,
+        "gradient_norm": 0.011323552579585935,
+        "phases": {
+          "first2s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.03556873181534786,
+              0.056272837108978756
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.01965503582247981,
+              -0.0035035247009040575
+            ],
+            "maximum_error_drive_steer": [
+              0.11029082536697388,
+              0.16517629474401474
+            ],
+            "decisions": 270
+          },
+          "2to20s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.04100269280096599,
+              0.03682188706650718
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.003321566699463644,
+              -0.00036740729813389733
+            ],
+            "maximum_error_drive_steer": [
+              0.3629193603992462,
+              0.18764382600784302
+            ],
+            "decisions": 2430
+          },
+          "after20s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.030275927309992814,
+              0.03776961264637465
+            ],
+            "mean_episode_bias_drive_steer": [
+              0.0009486070332947458,
+              -0.0032560601674214494
+            ],
+            "maximum_error_drive_steer": [
+              0.12212473154067993,
+              0.18784764781594276
+            ],
+            "decisions": 634
+          }
+        },
+        "episodes_detail": [
+          {
+            "id": "dev_task3_00",
+            "decisions": 136,
+            "mse_drive_steer": [
+              0.001502965824306933,
+              0.0015524362663793543
+            ],
+            "first10_bias_drive_steer": [
+              -0.010970389842987061,
+              -0.005635359627194703
+            ],
+            "first10_max_drive_steer": [
+              0.0595821738243103,
+              0.13936655223369598
+            ],
+            "peak_error_index_drive_steer": [
+              78,
+              134
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.09926470588235294
+          },
+          {
+            "id": "dev_task3_01",
+            "decisions": 127,
+            "mse_drive_steer": [
+              0.001237981885529164,
+              0.0011019650572140207
+            ],
+            "first10_bias_drive_steer": [
+              -0.020828908681869505,
+              -0.01908343881368637
+            ],
+            "first10_max_drive_steer": [
+              0.04749023914337158,
+              0.09016555547714233
+            ],
+            "peak_error_index_drive_steer": [
+              77,
+              33
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.07874015748031496
+          },
+          {
+            "id": "dev_task3_02",
+            "decisions": 121,
+            "mse_drive_steer": [
+              0.0012957195925764756,
+              0.0012138465856249955
+            ],
+            "first10_bias_drive_steer": [
+              -0.028148484230041505,
+              -0.005320143327116967
+            ],
+            "first10_max_drive_steer": [
+              0.08290910720825195,
+              0.1258796900510788
+            ],
+            "peak_error_index_drive_steer": [
+              10,
+              1
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.06611570247933884
+          },
+          {
+            "id": "dev_task3_03",
+            "decisions": 133,
+            "mse_drive_steer": [
+              0.0017208251752134412,
+              0.0011068098780372521
+            ],
+            "first10_bias_drive_steer": [
+              -0.012708663940429688,
+              0.0006744328886270524
+            ],
+            "first10_max_drive_steer": [
+              0.058239758014678955,
+              0.14887113869190216
+            ],
+            "peak_error_index_drive_steer": [
+              76,
+              7
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.09022556390977443
+          },
+          {
+            "id": "dev_task3_04",
+            "decisions": 118,
+            "mse_drive_steer": [
+              0.0017001748582703763,
+              0.0010355320958080486
+            ],
+            "first10_bias_drive_steer": [
+              -0.02715013027191162,
+              -0.02700341269373894
+            ],
+            "first10_max_drive_steer": [
+              0.05748546123504639,
+              0.08200521767139435
+            ],
+            "peak_error_index_drive_steer": [
+              72,
+              20
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.06779661016949153
+          },
+          {
+            "id": "dev_task3_05",
+            "decisions": 121,
+            "mse_drive_steer": [
+              0.00184865818631496,
+              0.0019094091330924706
+            ],
+            "first10_bias_drive_steer": [
+              -0.011381375789642333,
+              -0.0029006180819123985
+            ],
+            "first10_max_drive_steer": [
+              0.08147311210632324,
+              0.12173405289649963
+            ],
+            "peak_error_index_drive_steer": [
+              73,
+              120
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.05371900826446281
+          },
+          {
+            "id": "dev_task3_06",
+            "decisions": 127,
+            "mse_drive_steer": [
+              0.001176254355240243,
+              0.0017457316175271656
+            ],
+            "first10_bias_drive_steer": [
+              -0.014694076776504517,
+              0.001736246794462204
+            ],
+            "first10_max_drive_steer": [
+              0.059599995613098145,
+              0.1648537665605545
+            ],
+            "peak_error_index_drive_steer": [
+              76,
+              1
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.09448818897637795
+          },
+          {
+            "id": "dev_task3_07",
+            "decisions": 120,
+            "mse_drive_steer": [
+              0.0019340811317355507,
+              0.001211922066076677
+            ],
+            "first10_bias_drive_steer": [
+              -0.022533953189849854,
+              -0.02951119691133499
+            ],
+            "first10_max_drive_steer": [
+              0.05626082420349121,
+              0.13056893646717072
+            ],
+            "peak_error_index_drive_steer": [
+              71,
+              2
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.06666666666666667
+          },
+          {
+            "id": "dev_task3_08",
+            "decisions": 129,
+            "mse_drive_steer": [
+              0.0013378866666895902,
+              0.0016273901010711998
+            ],
+            "first10_bias_drive_steer": [
+              -0.011084502935409546,
+              0.003620561771094799
+            ],
+            "first10_max_drive_steer": [
+              0.08374035358428955,
+              0.15728309378027916
+            ],
+            "peak_error_index_drive_steer": [
+              13,
+              36
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.08139534883720931
+          },
+          {
+            "id": "dev_task3_09",
+            "decisions": 134,
+            "mse_drive_steer": [
+              0.0017560584079523134,
+              0.0011714730469818526
+            ],
+            "first10_bias_drive_steer": [
+              -0.00975906252861023,
+              0.02348462815862149
+            ],
+            "first10_max_drive_steer": [
+              0.07602983713150024,
+              0.08384515345096588
+            ],
+            "peak_error_index_drive_steer": [
+              77,
+              21
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.09701492537313433
+          },
+          {
+            "id": "dev_task3_10",
+            "decisions": 124,
+            "mse_drive_steer": [
+              0.0018958580390695105,
+              0.0009857038706863246
+            ],
+            "first10_bias_drive_steer": [
+              -0.024900346994400024,
+              -0.018975189328193663
+            ],
+            "first10_max_drive_steer": [
+              0.05807387828826904,
+              0.09120945632457733
+            ],
+            "peak_error_index_drive_steer": [
+              72,
+              4
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.07258064516129031
+          },
+          {
+            "id": "dev_task3_11",
+            "decisions": 113,
+            "mse_drive_steer": [
+              0.0016558450551218131,
+              0.0022769699677060366
+            ],
+            "first10_bias_drive_steer": [
+              -0.020743894577026366,
+              -0.006910661794245243
+            ],
+            "first10_max_drive_steer": [
+              0.07913714647293091,
+              0.08132278919219971
+            ],
+            "peak_error_index_drive_steer": [
+              72,
+              24
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.061946902654867256
+          },
+          {
+            "id": "dev_task3_12",
+            "decisions": 130,
+            "mse_drive_steer": [
+              0.0011983679905913577,
+              0.001491595255015437
+            ],
+            "first10_bias_drive_steer": [
+              -0.01104162335395813,
+              0.008230738528072833
+            ],
+            "first10_max_drive_steer": [
+              0.07704430818557739,
+              0.13451659679412842
+            ],
+            "peak_error_index_drive_steer": [
+              77,
+              20
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.1
+          },
+          {
+            "id": "dev_task3_13",
+            "decisions": 121,
+            "mse_drive_steer": [
+              0.0014413991523603193,
+              0.0011485365807618801
+            ],
+            "first10_bias_drive_steer": [
+              0.0016279816627502441,
+              -0.00556725412607193
+            ],
+            "first10_max_drive_steer": [
+              0.1027258038520813,
+              0.12298393994569778
+            ],
+            "peak_error_index_drive_steer": [
+              72,
+              1
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.08677685950413223
+          },
+          {
+            "id": "dev_task3_14",
+            "decisions": 121,
+            "mse_drive_steer": [
+              0.0013514746231494171,
+              0.0023883996541847335
+            ],
+            "first10_bias_drive_steer": [
+              -0.0324160635471344,
+              -0.015662532579153777
+            ],
+            "first10_max_drive_steer": [
+              0.08827149868011475,
+              0.07486984133720398
+            ],
+            "peak_error_index_drive_steer": [
+              71,
+              25
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.08264462809917356
+          },
+          {
+            "id": "dev_task3_15",
+            "decisions": 126,
+            "mse_drive_steer": [
+              0.0009342938600560957,
+              0.0013687126653398624
+            ],
+            "first10_bias_drive_steer": [
+              -0.012336170673370362,
+              0.014692995976656676
+            ],
+            "first10_max_drive_steer": [
+              0.059771180152893066,
+              0.13422434031963348
+            ],
+            "peak_error_index_drive_steer": [
+              76,
+              19
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0992063492063492
+          },
+          {
+            "id": "dev_task3_16",
+            "decisions": 121,
+            "mse_drive_steer": [
+              0.00108336987259567,
+              0.001315598859357103
+            ],
+            "first10_bias_drive_steer": [
+              -0.025758540630340575,
+              -0.02278362587094307
+            ],
+            "first10_max_drive_steer": [
+              0.06373065710067749,
+              0.13222062587738037
+            ],
+            "peak_error_index_drive_steer": [
+              69,
+              2
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0743801652892562
+          },
+          {
+            "id": "dev_task3_17",
+            "decisions": 125,
+            "mse_drive_steer": [
+              0.0013163589757829186,
+              0.0013833142054939902
+            ],
+            "first10_bias_drive_steer": [
+              -0.015746140480041505,
+              0.005934352951589972
+            ],
+            "first10_max_drive_steer": [
+              0.08006531000137329,
+              0.16517629474401474
+            ],
+            "peak_error_index_drive_steer": [
+              74,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.06
+          },
+          {
+            "id": "dev_task3_18",
+            "decisions": 129,
+            "mse_drive_steer": [
+              0.001738074802156345,
+              0.0011628943585514813
+            ],
+            "first10_bias_drive_steer": [
+              -0.00789346694946289,
+              0.014042993681505323
+            ],
+            "first10_max_drive_steer": [
+              0.07894378900527954,
+              0.0985776036977768
+            ],
+            "peak_error_index_drive_steer": [
+              75,
+              19
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.11627906976744186
+          },
+          {
+            "id": "dev_task3_19",
+            "decisions": 119,
+            "mse_drive_steer": [
+              0.001913044967306063,
+              0.0010383652955207067
+            ],
+            "first10_bias_drive_steer": [
+              -0.02623799443244934,
+              -0.021532563865184783
+            ],
+            "first10_max_drive_steer": [
+              0.056715309619903564,
+              0.08643633127212524
+            ],
+            "peak_error_index_drive_steer": [
+              71,
+              19
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.07142857142857142
+          },
+          {
+            "id": "dev_task3_20",
+            "decisions": 118,
+            "mse_drive_steer": [
+              0.0018293534917237734,
+              0.0010137946684418725
+            ],
+            "first10_bias_drive_steer": [
+              -0.04596806168556213,
+              -0.005665034800767898
+            ],
+            "first10_max_drive_steer": [
+              0.11029082536697388,
+              0.046903401613235474
+            ],
+            "peak_error_index_drive_steer": [
+              71,
+              18
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.06779661016949153
+          },
+          {
+            "id": "dev_task3_21",
+            "decisions": 124,
+            "mse_drive_steer": [
+              0.001139918604257966,
+              0.0012709939338031073
+            ],
+            "first10_bias_drive_steer": [
+              -0.009079313278198243,
+              0.011281301185954362
+            ],
+            "first10_max_drive_steer": [
+              0.07934355735778809,
+              0.09121502190828323
+            ],
+            "peak_error_index_drive_steer": [
+              75,
+              19
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0967741935483871
+          },
+          {
+            "id": "dev_task3_22",
+            "decisions": 120,
+            "mse_drive_steer": [
+              0.0011536408287898074,
+              0.0009559448128571694
+            ],
+            "first10_bias_drive_steer": [
+              -0.024400806427001952,
+              -0.008950868993997574
+            ],
+            "first10_max_drive_steer": [
+              0.05269688367843628,
+              0.07393704354763031
+            ],
+            "peak_error_index_drive_steer": [
+              69,
+              13
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.07916666666666666
+          },
+          {
+            "id": "dev_task3_23",
+            "decisions": 111,
+            "mse_drive_steer": [
+              0.0018635800914944334,
+              0.0015654186900723138
+            ],
+            "first10_bias_drive_steer": [
+              -0.04372209906578064,
+              -0.014257817715406417
+            ],
+            "first10_max_drive_steer": [
+              0.10942357778549194,
+              0.05225653946399689
+            ],
+            "peak_error_index_drive_steer": [
+              69,
+              33
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.08558558558558559
+          },
+          {
+            "id": "dev_task3_24",
+            "decisions": 126,
+            "mse_drive_steer": [
+              0.0011019961200433334,
+              0.0018689251903496952
+            ],
+            "first10_bias_drive_steer": [
+              -0.005299562215805053,
+              0.04920693188905716
+            ],
+            "first10_max_drive_steer": [
+              0.05185741186141968,
+              0.15813931822776794
+            ],
+            "peak_error_index_drive_steer": [
+              76,
+              20
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.10317460317460317
+          },
+          {
+            "id": "dev_task3_25",
+            "decisions": 120,
+            "mse_drive_steer": [
+              0.0013734330331547733,
+              0.001679206590342093
+            ],
+            "first10_bias_drive_steer": [
+              -0.023661816120147706,
+              -0.009391524642705918
+            ],
+            "first10_max_drive_steer": [
+              0.05660611391067505,
+              0.10571146756410599
+            ],
+            "peak_error_index_drive_steer": [
+              69,
+              68
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.09166666666666666
+          },
+          {
+            "id": "dev_task3_26",
+            "decisions": 120,
+            "mse_drive_steer": [
+              0.0020474578427092105,
+              0.003756800423010578
+            ],
+            "first10_bias_drive_steer": [
+              -0.03384850025177002,
+              -0.008349107578396797
+            ],
+            "first10_max_drive_steer": [
+              0.10865360498428345,
+              0.07746702432632446
+            ],
+            "peak_error_index_drive_steer": [
+              77,
+              117
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.08333333333333333
+          }
+        ]
+      },
+      {
+        "task": 4,
+        "episodes": 27,
+        "mean_surrogate_loss": 0.0023572612325936304,
+        "gradient_norm": 0.023981757737871357,
+        "phases": {
+          "first2s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.013782010122207193,
+              0.05705989323911752
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.005230846228422941,
+              0.004478199448850421
+            ],
+            "maximum_error_drive_steer": [
+              0.06636941432952881,
+              0.3105764389038086
+            ],
+            "decisions": 270
+          },
+          "2to20s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.021014872231437852,
+              0.05293291591660229
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.00615447031127082,
+              -0.003686806379153367
+            ],
+            "maximum_error_drive_steer": [
+              0.3114672899246216,
+              0.28978677466511726
+            ],
+            "decisions": 2430
+          },
+          "after20s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.05360622165007425,
+              0.06772466907055176
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.004622592087008536,
+              0.009350897235111004
+            ],
+            "maximum_error_drive_steer": [
+              0.4182083457708359,
+              0.3214651495218277
+            ],
+            "decisions": 1203
+          }
+        },
+        "episodes_detail": [
+          {
+            "id": "dev_task4_00",
+            "decisions": 138,
+            "mse_drive_steer": [
+              0.000649397750277881,
+              0.0031546466501734577
+            ],
+            "first10_bias_drive_steer": [
+              -0.004414987564086914,
+              0.016780561208724974
+            ],
+            "first10_max_drive_steer": [
+              0.03664904832839966,
+              0.08460822701454163
+            ],
+            "peak_error_index_drive_steer": [
+              130,
+              35
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.34420289855072467
+          },
+          {
+            "id": "dev_task4_01",
+            "decisions": 141,
+            "mse_drive_steer": [
+              0.0011509174359549475,
+              0.003613554016543002
+            ],
+            "first10_bias_drive_steer": [
+              -0.010184729099273681,
+              0.011956042051315308
+            ],
+            "first10_max_drive_steer": [
+              0.06636941432952881,
+              0.08013367652893066
+            ],
+            "peak_error_index_drive_steer": [
+              140,
+              116
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.25886524822695034
+          },
+          {
+            "id": "dev_task4_02",
+            "decisions": 137,
+            "mse_drive_steer": [
+              0.00024196207855788147,
+              0.0032977557621014396
+            ],
+            "first10_bias_drive_steer": [
+              -0.0035000622272491457,
+              -0.0014164268970489502
+            ],
+            "first10_max_drive_steer": [
+              0.03164041042327881,
+              0.09891742467880249
+            ],
+            "peak_error_index_drive_steer": [
+              136,
+              128
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2773722627737226
+          },
+          {
+            "id": "dev_task4_03",
+            "decisions": 141,
+            "mse_drive_steer": [
+              0.0008692997742385506,
+              0.004023731455962264
+            ],
+            "first10_bias_drive_steer": [
+              -0.003973639011383057,
+              0.0026035547256469727
+            ],
+            "first10_max_drive_steer": [
+              0.037529170513153076,
+              0.07800900936126709
+            ],
+            "peak_error_index_drive_steer": [
+              133,
+              31
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3226950354609929
+          },
+          {
+            "id": "dev_task4_04",
+            "decisions": 140,
+            "mse_drive_steer": [
+              0.0006389831956336118,
+              0.003988380250057869
+            ],
+            "first10_bias_drive_steer": [
+              -0.01072697639465332,
+              0.01478637456893921
+            ],
+            "first10_max_drive_steer": [
+              0.0471765398979187,
+              0.10827380418777466
+            ],
+            "peak_error_index_drive_steer": [
+              137,
+              13
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.25357142857142856
+          },
+          {
+            "id": "dev_task4_05",
+            "decisions": 139,
+            "mse_drive_steer": [
+              0.0005855846055038049,
+              0.003428910577854571
+            ],
+            "first10_bias_drive_steer": [
+              -0.002965068817138672,
+              -0.01052895188331604
+            ],
+            "first10_max_drive_steer": [
+              0.026819944381713867,
+              0.1738414168357849
+            ],
+            "peak_error_index_drive_steer": [
+              135,
+              125
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2733812949640288
+          },
+          {
+            "id": "dev_task4_06",
+            "decisions": 142,
+            "mse_drive_steer": [
+              0.000640290809609802,
+              0.003958125309403486
+            ],
+            "first10_bias_drive_steer": [
+              -0.001906353235244751,
+              0.0056997150182724
+            ],
+            "first10_max_drive_steer": [
+              0.015770554542541504,
+              0.09826192259788513
+            ],
+            "peak_error_index_drive_steer": [
+              132,
+              88
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.33098591549295775
+          },
+          {
+            "id": "dev_task4_07",
+            "decisions": 153,
+            "mse_drive_steer": [
+              0.0018407856354939517,
+              0.0034661267982317927
+            ],
+            "first10_bias_drive_steer": [
+              -0.0012547135353088378,
+              0.02033317685127258
+            ],
+            "first10_max_drive_steer": [
+              0.023694515228271484,
+              0.12358689308166504
+            ],
+            "peak_error_index_drive_steer": [
+              144,
+              144
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.21241830065359477
+          },
+          {
+            "id": "dev_task4_08",
+            "decisions": 145,
+            "mse_drive_steer": [
+              0.0010309438067552632,
+              0.0033297175727020345
+            ],
+            "first10_bias_drive_steer": [
+              -0.004659807682037354,
+              -0.01753733158111572
+            ],
+            "first10_max_drive_steer": [
+              0.028078317642211914,
+              0.14804857969284058
+            ],
+            "peak_error_index_drive_steer": [
+              140,
+              91
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.1793103448275862
+          },
+          {
+            "id": "dev_task4_09",
+            "decisions": 138,
+            "mse_drive_steer": [
+              0.0009978206756848988,
+              0.00272366663980312
+            ],
+            "first10_bias_drive_steer": [
+              -0.007073551416397095,
+              0.018321126699447632
+            ],
+            "first10_max_drive_steer": [
+              0.05526214838027954,
+              0.09103521704673767
+            ],
+            "peak_error_index_drive_steer": [
+              131,
+              116
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.34420289855072467
+          },
+          {
+            "id": "dev_task4_10",
+            "decisions": 139,
+            "mse_drive_steer": [
+              0.00033866275409353576,
+              0.002950913319932577
+            ],
+            "first10_bias_drive_steer": [
+              -0.00902361273765564,
+              0.00820251703262329
+            ],
+            "first10_max_drive_steer": [
+              0.06138718128204346,
+              0.04762601852416992
+            ],
+            "peak_error_index_drive_steer": [
+              137,
+              115
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2517985611510791
+          },
+          {
+            "id": "dev_task4_11",
+            "decisions": 149,
+            "mse_drive_steer": [
+              0.0015895950235566697,
+              0.002811926103770659
+            ],
+            "first10_bias_drive_steer": [
+              -0.0026299178600311278,
+              0.0054335355758666996
+            ],
+            "first10_max_drive_steer": [
+              0.0216677188873291,
+              0.0849376916885376
+            ],
+            "peak_error_index_drive_steer": [
+              146,
+              103
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.24161073825503354
+          },
+          {
+            "id": "dev_task4_12",
+            "decisions": 136,
+            "mse_drive_steer": [
+              0.0011364816091939645,
+              0.0032153601446171408
+            ],
+            "first10_bias_drive_steer": [
+              -0.004156053066253662,
+              0.012937700748443604
+            ],
+            "first10_max_drive_steer": [
+              0.03898853063583374,
+              0.1024262011051178
+            ],
+            "peak_error_index_drive_steer": [
+              129,
+              114
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3272058823529412
+          },
+          {
+            "id": "dev_task4_13",
+            "decisions": 141,
+            "mse_drive_steer": [
+              0.0010969551895645554,
+              0.00342440497280845
+            ],
+            "first10_bias_drive_steer": [
+              -0.0039032816886901854,
+              0.04872641265392304
+            ],
+            "first10_max_drive_steer": [
+              0.029289186000823975,
+              0.3105764389038086
+            ],
+            "peak_error_index_drive_steer": [
+              134,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.21985815602836878
+          },
+          {
+            "id": "dev_task4_14",
+            "decisions": 149,
+            "mse_drive_steer": [
+              0.0010159796676145914,
+              0.002846833488241037
+            ],
+            "first10_bias_drive_steer": [
+              -0.0026399195194244385,
+              -0.004183995723724365
+            ],
+            "first10_max_drive_steer": [
+              0.02640831470489502,
+              0.07618576288223267
+            ],
+            "peak_error_index_drive_steer": [
+              144,
+              104
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.16778523489932887
+          },
+          {
+            "id": "dev_task4_15",
+            "decisions": 143,
+            "mse_drive_steer": [
+              0.00131726155004785,
+              0.005231312564407551
+            ],
+            "first10_bias_drive_steer": [
+              -0.007363563776016236,
+              -0.01744917929172516
+            ],
+            "first10_max_drive_steer": [
+              0.0655553936958313,
+              0.10103991627693176
+            ],
+            "peak_error_index_drive_steer": [
+              132,
+              142
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3181818181818182
+          },
+          {
+            "id": "dev_task4_16",
+            "decisions": 147,
+            "mse_drive_steer": [
+              0.0011376057336135183,
+              0.0035180585516690014
+            ],
+            "first10_bias_drive_steer": [
+              -0.008330261707305909,
+              0.012847220897674561
+            ],
+            "first10_max_drive_steer": [
+              0.037981390953063965,
+              0.13348782062530518
+            ],
+            "peak_error_index_drive_steer": [
+              141,
+              105
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.16326530612244897
+          },
+          {
+            "id": "dev_task4_17",
+            "decisions": 152,
+            "mse_drive_steer": [
+              0.002042256744071909,
+              0.003921946291687964
+            ],
+            "first10_bias_drive_steer": [
+              -0.00476759672164917,
+              -0.0074566066265106205
+            ],
+            "first10_max_drive_steer": [
+              0.02701735496520996,
+              0.12370997667312622
+            ],
+            "peak_error_index_drive_steer": [
+              148,
+              104
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.14144736842105263
+          },
+          {
+            "id": "dev_task4_18",
+            "decisions": 141,
+            "mse_drive_steer": [
+              0.0010243455519660708,
+              0.003306262672082966
+            ],
+            "first10_bias_drive_steer": [
+              -0.005888223648071289,
+              0.0017685994505882263
+            ],
+            "first10_max_drive_steer": [
+              0.046083807945251465,
+              0.1399681121110916
+            ],
+            "peak_error_index_drive_steer": [
+              135,
+              122
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.23758865248226949
+          },
+          {
+            "id": "dev_task4_19",
+            "decisions": 146,
+            "mse_drive_steer": [
+              0.0019003061759921766,
+              0.0025799659790401346
+            ],
+            "first10_bias_drive_steer": [
+              -0.009333425760269165,
+              -0.0005196273326873779
+            ],
+            "first10_max_drive_steer": [
+              0.06066471338272095,
+              0.0633668303489685
+            ],
+            "peak_error_index_drive_steer": [
+              90,
+              130
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.18493150684931506
+          },
+          {
+            "id": "dev_task4_20",
+            "decisions": 151,
+            "mse_drive_steer": [
+              0.0011925890065220455,
+              0.0029250011890968627
+            ],
+            "first10_bias_drive_steer": [
+              -0.006246942281723023,
+              0.016322138905525207
+            ],
+            "first10_max_drive_steer": [
+              0.05158299207687378,
+              0.09137660264968872
+            ],
+            "peak_error_index_drive_steer": [
+              147,
+              98
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.17880794701986755
+          },
+          {
+            "id": "dev_task4_21",
+            "decisions": 145,
+            "mse_drive_steer": [
+              0.0011020644877485504,
+              0.003087795548249576
+            ],
+            "first10_bias_drive_steer": [
+              -0.00018555521965026855,
+              -0.005052414536476135
+            ],
+            "first10_max_drive_steer": [
+              0.017013370990753174,
+              0.14504465460777283
+            ],
+            "peak_error_index_drive_steer": [
+              139,
+              98
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2103448275862069
+          },
+          {
+            "id": "dev_task4_22",
+            "decisions": 147,
+            "mse_drive_steer": [
+              0.0011443197497274036,
+              0.003211757872443482
+            ],
+            "first10_bias_drive_steer": [
+              -0.011778658628463745,
+              -0.0090837299823761
+            ],
+            "first10_max_drive_steer": [
+              0.06160205602645874,
+              0.19287294149398804
+            ],
+            "peak_error_index_drive_steer": [
+              141,
+              12
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.13945578231292516
+          },
+          {
+            "id": "dev_task4_23",
+            "decisions": 156,
+            "mse_drive_steer": [
+              0.002416095597577127,
+              0.0037829435025722104
+            ],
+            "first10_bias_drive_steer": [
+              -0.0012196540832519532,
+              0.0009824037551879883
+            ],
+            "first10_max_drive_steer": [
+              0.006727039813995361,
+              0.06141304969787598
+            ],
+            "peak_error_index_drive_steer": [
+              95,
+              106
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.16346153846153846
+          },
+          {
+            "id": "dev_task4_24",
+            "decisions": 147,
+            "mse_drive_steer": [
+              0.0010015147922265877,
+              0.003417386185986694
+            ],
+            "first10_bias_drive_steer": [
+              -0.004353904724121093,
+              -0.0012988150119781494
+            ],
+            "first10_max_drive_steer": [
+              0.03542470932006836,
+              0.0839923620223999
+            ],
+            "peak_error_index_drive_steer": [
+              141,
+              101
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2312925170068027
+          },
+          {
+            "id": "dev_task4_25",
+            "decisions": 144,
+            "mse_drive_steer": [
+              0.0011162270465315384,
+              0.003455160358406723
+            ],
+            "first10_bias_drive_steer": [
+              -0.006935113668441772,
+              0.00551331639289856
+            ],
+            "first10_max_drive_steer": [
+              0.03736317157745361,
+              0.13797533512115479
+            ],
+            "peak_error_index_drive_steer": [
+              139,
+              130
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.15625
+          },
+          {
+            "id": "dev_task4_26",
+            "decisions": 156,
+            "mse_drive_steer": [
+              0.0023706027641565938,
+              0.0029127651092340687
+            ],
+            "first10_bias_drive_steer": [
+              -0.0018172740936279296,
+              -0.007775932550430298
+            ],
+            "first10_max_drive_steer": [
+              0.01818186044692993,
+              0.13496142625808716
+            ],
+            "peak_error_index_drive_steer": [
+              93,
+              101
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.16346153846153846
+          }
+        ]
+      },
+      {
+        "task": 5,
+        "episodes": 22,
+        "mean_surrogate_loss": 0.00014537917494766807,
+        "gradient_norm": 0.0047088278266247405,
+        "phases": {
+          "first2s": {
+            "episodes": 22,
+            "mean_episode_RMSE_drive_steer": [
+              0.01734129626807853,
+              0.030997247264549686
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.012061402743512934,
+              -0.0029777293178168216
+            ],
+            "maximum_error_drive_steer": [
+              0.08549100160598755,
+              0.2968963533639908
+            ],
+            "decisions": 220
+          },
+          "2to20s": {
+            "episodes": 22,
+            "mean_episode_RMSE_drive_steer": [
+              0.004411951651300077,
+              0.013481256177850157
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.0023159236317933205,
+              -0.0001977537579909719
+            ],
+            "maximum_error_drive_steer": [
+              0.017830729484558105,
+              0.06578731536865234
+            ],
+            "decisions": 1980
+          },
+          "after20s": {
+            "episodes": 22,
+            "mean_episode_RMSE_drive_steer": [
+              0.0020746394636735497,
+              0.0066079791289365515
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.0010171322833685886,
+              0.0017802785044331926
+            ],
+            "maximum_error_drive_steer": [
+              0.006803393363952637,
+              0.017118897289037704
+            ],
+            "decisions": 293
+          }
+        },
+        "episodes_detail": [
+          {
+            "id": "dev_task5_00",
+            "decisions": 114,
+            "mse_drive_steer": [
+              6.011675219565753e-05,
+              0.00014371510461638613
+            ],
+            "first10_bias_drive_steer": [
+              -0.019034409523010255,
+              0.002405819296836853
+            ],
+            "first10_max_drive_steer": [
+              0.041001200675964355,
+              0.030914127826690674
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              50
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.293859649122807
+          },
+          {
+            "id": "dev_task5_01",
+            "decisions": 114,
+            "mse_drive_steer": [
+              2.4822753831836502e-05,
+              0.0001599263768602889
+            ],
+            "first10_bias_drive_steer": [
+              -0.007122159004211426,
+              0.000887945294380188
+            ],
+            "first10_max_drive_steer": [
+              0.025476396083831787,
+              0.027326464653015137
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              22
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2675438596491228
+          },
+          {
+            "id": "dev_task5_02",
+            "decisions": 114,
+            "mse_drive_steer": [
+              2.6239253952996084e-05,
+              0.00025534438259160744
+            ],
+            "first10_bias_drive_steer": [
+              -0.004238390922546386,
+              0.0004949674010276794
+            ],
+            "first10_max_drive_steer": [
+              0.02721095085144043,
+              0.05774718523025513
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.24561403508771928
+          },
+          {
+            "id": "dev_task5_03",
+            "decisions": 115,
+            "mse_drive_steer": [
+              7.21271150816612e-05,
+              0.0001294867231933177
+            ],
+            "first10_bias_drive_steer": [
+              -0.021337586641311645,
+              0.002780759334564209
+            ],
+            "first10_max_drive_steer": [
+              0.04090118408203125,
+              0.02772393822669983
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              24
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3
+          },
+          {
+            "id": "dev_task5_04",
+            "decisions": 114,
+            "mse_drive_steer": [
+              2.9044604726386413e-05,
+              0.00018466873651157485
+            ],
+            "first10_bias_drive_steer": [
+              -0.009050017595291138,
+              -0.0028259962797164916
+            ],
+            "first10_max_drive_steer": [
+              0.025321364402770996,
+              0.060788750648498535
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              5
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.24561403508771928
+          },
+          {
+            "id": "dev_task5_09",
+            "decisions": 113,
+            "mse_drive_steer": [
+              5.627023130893548e-05,
+              0.00011449369000835348
+            ],
+            "first10_bias_drive_steer": [
+              -0.018620359897613525,
+              0.0033763855695724486
+            ],
+            "first10_max_drive_steer": [
+              0.039753854274749756,
+              0.029001355171203613
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              92
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3141592920353982
+          },
+          {
+            "id": "dev_task5_10",
+            "decisions": 113,
+            "mse_drive_steer": [
+              2.9483734847142096e-05,
+              0.00014596928987551443
+            ],
+            "first10_bias_drive_steer": [
+              -0.010984563827514648,
+              -0.0011060088872909546
+            ],
+            "first10_max_drive_steer": [
+              0.029604673385620117,
+              0.02787354588508606
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              22
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2920353982300885
+          },
+          {
+            "id": "dev_task5_11",
+            "decisions": 113,
+            "mse_drive_steer": [
+              1.8703321420187863e-05,
+              0.0002671780335564297
+            ],
+            "first10_bias_drive_steer": [
+              -0.0027230381965637207,
+              -0.0036443442106246947
+            ],
+            "first10_max_drive_steer": [
+              0.009941399097442627,
+              0.057650357484817505
+            ],
+            "peak_error_index_drive_steer": [
+              74,
+              16
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.24778761061946902
+          },
+          {
+            "id": "dev_task5_12",
+            "decisions": 114,
+            "mse_drive_steer": [
+              6.50914991425485e-05,
+              0.00013321897906179095
+            ],
+            "first10_bias_drive_steer": [
+              -0.020514482259750368,
+              0.0020637959241867065
+            ],
+            "first10_max_drive_steer": [
+              0.03966182470321655,
+              0.029734909534454346
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              23
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3157894736842105
+          },
+          {
+            "id": "dev_task5_13",
+            "decisions": 114,
+            "mse_drive_steer": [
+              9.074493302251627e-05,
+              0.0011184846567123838
+            ],
+            "first10_bias_drive_steer": [
+              -0.018827545642852783,
+              -0.04422777444124222
+            ],
+            "first10_max_drive_steer": [
+              0.08549100160598755,
+              0.2968963533639908
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2543859649122807
+          },
+          {
+            "id": "dev_task5_14",
+            "decisions": 113,
+            "mse_drive_steer": [
+              2.6429469239281536e-05,
+              0.00025479868785273005
+            ],
+            "first10_bias_drive_steer": [
+              -0.0043029248714447025,
+              0.0059955745935440065
+            ],
+            "first10_max_drive_steer": [
+              0.02660268545150757,
+              0.051264405250549316
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              10
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.252212389380531
+          },
+          {
+            "id": "dev_task5_15",
+            "decisions": 114,
+            "mse_drive_steer": [
+              6.51863875214961e-05,
+              0.00015347464854485567
+            ],
+            "first10_bias_drive_steer": [
+              -0.020019030570983885,
+              -0.0033337533473968505
+            ],
+            "first10_max_drive_steer": [
+              0.039602577686309814,
+              0.029300272464752197
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              27
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.25
+          },
+          {
+            "id": "dev_task5_16",
+            "decisions": 114,
+            "mse_drive_steer": [
+              3.1764749231256385e-05,
+              0.00022029321532733887
+            ],
+            "first10_bias_drive_steer": [
+              -0.009371620416641236,
+              -0.00642613023519516
+            ],
+            "first10_max_drive_steer": [
+              0.02452671527862549,
+              0.0851462185382843
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              7
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.22807017543859648
+          },
+          {
+            "id": "dev_task5_18",
+            "decisions": 113,
+            "mse_drive_steer": [
+              4.98026413187611e-05,
+              0.0001270758945004286
+            ],
+            "first10_bias_drive_steer": [
+              -0.015985602140426637,
+              0.0008596271276473999
+            ],
+            "first10_max_drive_steer": [
+              0.0385395884513855,
+              0.03084033727645874
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              77
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.33628318584070793
+          },
+          {
+            "id": "dev_task5_19",
+            "decisions": 112,
+            "mse_drive_steer": [
+              2.7451906189071957e-05,
+              0.00019289663555349519
+            ],
+            "first10_bias_drive_steer": [
+              -0.010515612363815308,
+              -0.007434353232383728
+            ],
+            "first10_max_drive_steer": [
+              0.0346074104309082,
+              0.0747326910495758
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              2
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.26339285714285715
+          },
+          {
+            "id": "dev_task5_20",
+            "decisions": 112,
+            "mse_drive_steer": [
+              1.766647038785913e-05,
+              0.0002913184320815087
+            ],
+            "first10_bias_drive_steer": [
+              -0.003425443172454834,
+              -0.00766916424036026
+            ],
+            "first10_max_drive_steer": [
+              0.009950220584869385,
+              0.06439466774463654
+            ],
+            "peak_error_index_drive_steer": [
+              73,
+              8
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.26339285714285715
+          },
+          {
+            "id": "dev_task5_21",
+            "decisions": 113,
+            "mse_drive_steer": [
+              4.9070296666253144e-05,
+              0.00014123775815282525
+            ],
+            "first10_bias_drive_steer": [
+              -0.0164185106754303,
+              -0.003698974847793579
+            ],
+            "first10_max_drive_steer": [
+              0.0384560227394104,
+              0.030612677335739136
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              23
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.3185840707964602
+          },
+          {
+            "id": "dev_task5_22",
+            "decisions": 113,
+            "mse_drive_steer": [
+              3.368208600990222e-05,
+              0.00022506982102819142
+            ],
+            "first10_bias_drive_steer": [
+              -0.012135559320449829,
+              -0.007401411235332489
+            ],
+            "first10_max_drive_steer": [
+              0.03456979990005493,
+              0.08209669589996338
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              4
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.2345132743362832
+          },
+          {
+            "id": "dev_task5_23",
+            "decisions": 112,
+            "mse_drive_steer": [
+              2.900145671547172e-05,
+              0.00025625632480540166
+            ],
+            "first10_bias_drive_steer": [
+              -0.005185973644256592,
+              0.004180678725242614
+            ],
+            "first10_max_drive_steer": [
+              0.025930285453796387,
+              0.04886701703071594
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              10
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.24107142857142855
+          },
+          {
+            "id": "dev_task5_24",
+            "decisions": 113,
+            "mse_drive_steer": [
+              6.202844076502783e-05,
+              0.00018322899154197132
+            ],
+            "first10_bias_drive_steer": [
+              -0.019124191999435425,
+              -0.0019057601690292358
+            ],
+            "first10_max_drive_steer": [
+              0.03840535879135132,
+              0.026855885982513428
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              27
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.25663716814159293
+          },
+          {
+            "id": "dev_task5_25",
+            "decisions": 113,
+            "mse_drive_steer": [
+              3.357384992713518e-05,
+              0.00019197196524393514
+            ],
+            "first10_bias_drive_steer": [
+              -0.01162940263748169,
+              -0.004336996376514435
+            ],
+            "first10_max_drive_steer": [
+              0.023889541625976562,
+              0.037345245480537415
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              30
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.22566371681415928
+          },
+          {
+            "id": "dev_task5_26",
+            "decisions": 113,
+            "mse_drive_steer": [
+              3.511298319804547e-05,
+              0.00026205496774249715
+            ],
+            "first10_bias_drive_steer": [
+              -0.004784435033798218,
+              0.0054550692439079285
+            ],
+            "first10_max_drive_steer": [
+              0.026106595993041992,
+              0.046633392572402954
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              11
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.21238938053097345
+          }
+        ]
+      },
+      {
+        "task": 6,
+        "episodes": 27,
+        "mean_surrogate_loss": 0.0027799064279765127,
+        "gradient_norm": 0.025529403770478604,
+        "phases": {
+          "first2s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.0595800000178336,
+              0.04304953287294555
+            ],
+            "mean_episode_bias_drive_steer": [
+              0.016611698821738914,
+              -0.008987830486579763
+            ],
+            "maximum_error_drive_steer": [
+              0.24276584386825562,
+              0.2048625685274601
+            ],
+            "decisions": 270
+          },
+          "2to20s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.05872983393337036,
+              0.057019423308650355
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.0005149148619224014,
+              -0.00177709575209931
+            ],
+            "maximum_error_drive_steer": [
+              0.2645264267921448,
+              0.21207693964242935
+            ],
+            "decisions": 2430
+          },
+          "after20s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.04212856552532786,
+              0.05248915616834017
+            ],
+            "mean_episode_bias_drive_steer": [
+              0.007921277783193367,
+              -0.0037782597330124168
+            ],
+            "maximum_error_drive_steer": [
+              0.20439398288726807,
+              0.1916456576291239
+            ],
+            "decisions": 2719
+          }
+        },
+        "episodes_detail": [
+          {
+            "id": "dev_task6_00",
+            "decisions": 195,
+            "mse_drive_steer": [
+              0.0028033707782793744,
+              0.0030592898343182284
+            ],
+            "first10_bias_drive_steer": [
+              -0.008288395404815675,
+              0.011946198716759681
+            ],
+            "first10_max_drive_steer": [
+              0.2053992748260498,
+              0.05134546756744385
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              73
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.005128205128205128
+          },
+          {
+            "id": "dev_task6_01",
+            "decisions": 202,
+            "mse_drive_steer": [
+              0.003366309573700254,
+              0.0034721665757832176
+            ],
+            "first10_bias_drive_steer": [
+              0.05546930730342865,
+              -0.006134617328643799
+            ],
+            "first10_max_drive_steer": [
+              0.13157105445861816,
+              0.11272630095481873
+            ],
+            "peak_error_index_drive_steer": [
+              100,
+              65
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0024752475247524753
+          },
+          {
+            "id": "dev_task6_02",
+            "decisions": 207,
+            "mse_drive_steer": [
+              0.0034205704766705953,
+              0.003738608219209245
+            ],
+            "first10_bias_drive_steer": [
+              0.0456279456615448,
+              -0.026304788887500763
+            ],
+            "first10_max_drive_steer": [
+              0.08353817462921143,
+              0.07271675765514374
+            ],
+            "peak_error_index_drive_steer": [
+              98,
+              65
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0024154589371980675
+          },
+          {
+            "id": "dev_task6_03",
+            "decisions": 195,
+            "mse_drive_steer": [
+              0.0026334409915597834,
+              0.0032735419177350377
+            ],
+            "first10_bias_drive_steer": [
+              -8.169710636138917e-05,
+              0.02249476909637451
+            ],
+            "first10_max_drive_steer": [
+              0.24276584386825562,
+              0.09735465049743652
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              73
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.005128205128205128
+          },
+          {
+            "id": "dev_task6_04",
+            "decisions": 200,
+            "mse_drive_steer": [
+              0.0024906826027777697,
+              0.0026363080087493775
+            ],
+            "first10_bias_drive_steer": [
+              0.05465739369392395,
+              -0.0033912897109985352
+            ],
+            "first10_max_drive_steer": [
+              0.10325294733047485,
+              0.06622475385665894
+            ],
+            "peak_error_index_drive_steer": [
+              96,
+              74
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0025
+          },
+          {
+            "id": "dev_task6_05",
+            "decisions": 208,
+            "mse_drive_steer": [
+              0.002569345848743196,
+              0.002672505092758568
+            ],
+            "first10_bias_drive_steer": [
+              0.03560319840908051,
+              -0.02432793900370598
+            ],
+            "first10_max_drive_steer": [
+              0.08530369400978088,
+              0.07045505940914154
+            ],
+            "peak_error_index_drive_steer": [
+              51,
+              85
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0
+          },
+          {
+            "id": "dev_task6_06",
+            "decisions": 195,
+            "mse_drive_steer": [
+              0.002707874531138716,
+              0.0028420542490275105
+            ],
+            "first10_bias_drive_steer": [
+              -0.023674294352531433,
+              -0.004777106083929538
+            ],
+            "first10_max_drive_steer": [
+              0.23164188861846924,
+              0.10030805692076683
+            ],
+            "peak_error_index_drive_steer": [
+              0,
+              124
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.005128205128205128
+          },
+          {
+            "id": "dev_task6_07",
+            "decisions": 210,
+            "mse_drive_steer": [
+              0.0026716111799405693,
+              0.002748675841811497
+            ],
+            "first10_bias_drive_steer": [
+              0.04160329103469849,
+              0.011449375050142407
+            ],
+            "first10_max_drive_steer": [
+              0.0782809853553772,
+              0.0626946222037077
+            ],
+            "peak_error_index_drive_steer": [
+              102,
+              84
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.004761904761904762
+          },
+          {
+            "id": "dev_task6_08",
+            "decisions": 202,
+            "mse_drive_steer": [
+              0.0023919590764455035,
+              0.0031236169678285543
+            ],
+            "first10_bias_drive_steer": [
+              0.029379993677139282,
+              -0.012184375524520874
+            ],
+            "first10_max_drive_steer": [
+              0.06304925680160522,
+              0.07104399800300598
+            ],
+            "peak_error_index_drive_steer": [
+              90,
+              143
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0024752475247524753
+          },
+          {
+            "id": "dev_task6_09",
+            "decisions": 192,
+            "mse_drive_steer": [
+              0.0026430651618854586,
+              0.002795976009660412
+            ],
+            "first10_bias_drive_steer": [
+              -0.0015551626682281494,
+              -0.01937298234552145
+            ],
+            "first10_max_drive_steer": [
+              0.12032264471054077,
+              0.0672550555318594
+            ],
+            "peak_error_index_drive_steer": [
+              90,
+              111
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.005208333333333333
+          },
+          {
+            "id": "dev_task6_10",
+            "decisions": 222,
+            "mse_drive_steer": [
+              0.003204962058780523,
+              0.0023222585888330134
+            ],
+            "first10_bias_drive_steer": [
+              0.05775641202926636,
+              0.004183583660051227
+            ],
+            "first10_max_drive_steer": [
+              0.12227010726928711,
+              0.05053300969302654
+            ],
+            "peak_error_index_drive_steer": [
+              58,
+              102
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0
+          },
+          {
+            "id": "dev_task6_11",
+            "decisions": 204,
+            "mse_drive_steer": [
+              0.002681093783650844,
+              0.003272909102644217
+            ],
+            "first10_bias_drive_steer": [
+              0.014802771806716918,
+              -0.03007177673280239
+            ],
+            "first10_max_drive_steer": [
+              0.08281075954437256,
+              0.05656374618411064
+            ],
+            "peak_error_index_drive_steer": [
+              49,
+              156
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0024509803921568627
+          },
+          {
+            "id": "dev_task6_12",
+            "decisions": 192,
+            "mse_drive_steer": [
+              0.002376280298459895,
+              0.002519111161510152
+            ],
+            "first10_bias_drive_steer": [
+              0.007695835828781128,
+              -0.01033430565148592
+            ],
+            "first10_max_drive_steer": [
+              0.14173096418380737,
+              0.1412209663540125
+            ],
+            "peak_error_index_drive_steer": [
+              30,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0078125
+          },
+          {
+            "id": "dev_task6_13",
+            "decisions": 223,
+            "mse_drive_steer": [
+              0.0032851818215833034,
+              0.0033105608777808395
+            ],
+            "first10_bias_drive_steer": [
+              0.1096538245677948,
+              0.02856892691925168
+            ],
+            "first10_max_drive_steer": [
+              0.1996634602546692,
+              0.10020268335938454
+            ],
+            "peak_error_index_drive_steer": [
+              94,
+              136
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0
+          },
+          {
+            "id": "dev_task6_14",
+            "decisions": 197,
+            "mse_drive_steer": [
+              0.0028017986385472705,
+              0.0026978177329215784
+            ],
+            "first10_bias_drive_steer": [
+              0.009924954175949097,
+              -0.029380450211465358
+            ],
+            "first10_max_drive_steer": [
+              0.09675347805023193,
+              0.0953953918069601
+            ],
+            "peak_error_index_drive_steer": [
+              176,
+              55
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.005076142131979695
+          },
+          {
+            "id": "dev_task6_15",
+            "decisions": 193,
+            "mse_drive_steer": [
+              0.0023042045731499674,
+              0.003076330822515891
+            ],
+            "first10_bias_drive_steer": [
+              -0.0023775726556777956,
+              -0.025766418408602478
+            ],
+            "first10_max_drive_steer": [
+              0.18177184462547302,
+              0.2048625685274601
+            ],
+            "peak_error_index_drive_steer": [
+              32,
+              1
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0051813471502590676
+          },
+          {
+            "id": "dev_task6_16",
+            "decisions": 201,
+            "mse_drive_steer": [
+              0.002140746962713373,
+              0.002871829290842442
+            ],
+            "first10_bias_drive_steer": [
+              0.02002772092819214,
+              0.004180830297991633
+            ],
+            "first10_max_drive_steer": [
+              0.07081717252731323,
+              0.030827082693576813
+            ],
+            "peak_error_index_drive_steer": [
+              84,
+              143
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0
+          },
+          {
+            "id": "dev_task6_17",
+            "decisions": 202,
+            "mse_drive_steer": [
+              0.0020584602259829557,
+              0.0033748721526545224
+            ],
+            "first10_bias_drive_steer": [
+              0.0005102455615997314,
+              -0.0219520203769207
+            ],
+            "first10_max_drive_steer": [
+              0.10900312662124634,
+              0.08883635699748993
+            ],
+            "peak_error_index_drive_steer": [
+              68,
+              142
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0024752475247524753
+          },
+          {
+            "id": "dev_task6_18",
+            "decisions": 193,
+            "mse_drive_steer": [
+              0.00251446683096958,
+              0.002663464149495917
+            ],
+            "first10_bias_drive_steer": [
+              0.0010267972946166992,
+              -0.021115048509091138
+            ],
+            "first10_max_drive_steer": [
+              0.11713230609893799,
+              0.067469023168087
+            ],
+            "peak_error_index_drive_steer": [
+              27,
+              28
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0051813471502590676
+          },
+          {
+            "id": "dev_task6_19",
+            "decisions": 205,
+            "mse_drive_steer": [
+              0.0021210333616825737,
+              0.002773955472927498
+            ],
+            "first10_bias_drive_steer": [
+              0.028412026166915894,
+              0.01723915085894987
+            ],
+            "first10_max_drive_steer": [
+              0.08789533376693726,
+              0.0998347345739603
+            ],
+            "peak_error_index_drive_steer": [
+              84,
+              84
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0024390243902439024
+          },
+          {
+            "id": "dev_task6_20",
+            "decisions": 199,
+            "mse_drive_steer": [
+              0.002488239524435224,
+              0.003050944260040927
+            ],
+            "first10_bias_drive_steer": [
+              -0.01737086772918701,
+              -0.021633704006671906
+            ],
+            "first10_max_drive_steer": [
+              0.16322612762451172,
+              0.07194468379020691
+            ],
+            "peak_error_index_drive_steer": [
+              185,
+              68
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.002512562814070352
+          },
+          {
+            "id": "dev_task6_21",
+            "decisions": 192,
+            "mse_drive_steer": [
+              0.0026031275498557085,
+              0.002634361161204275
+            ],
+            "first10_bias_drive_steer": [
+              0.0031891167163848877,
+              -0.008607612177729606
+            ],
+            "first10_max_drive_steer": [
+              0.13729089498519897,
+              0.04444565623998642
+            ],
+            "peak_error_index_drive_steer": [
+              29,
+              120
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.005208333333333333
+          },
+          {
+            "id": "dev_task6_22",
+            "decisions": 198,
+            "mse_drive_steer": [
+              0.002398930914356957,
+              0.0025446922478099625
+            ],
+            "first10_bias_drive_steer": [
+              0.007735538482666016,
+              -7.622605189681054e-05
+            ],
+            "first10_max_drive_steer": [
+              0.11293494701385498,
+              0.08896055072546005
+            ],
+            "peak_error_index_drive_steer": [
+              184,
+              87
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0025252525252525255
+          },
+          {
+            "id": "dev_task6_23",
+            "decisions": 197,
+            "mse_drive_steer": [
+              0.0024421274460569723,
+              0.0028418828941642123
+            ],
+            "first10_bias_drive_steer": [
+              -0.013512939214706421,
+              -0.029112666845321655
+            ],
+            "first10_max_drive_steer": [
+              0.11756980419158936,
+              0.0774579644203186
+            ],
+            "peak_error_index_drive_steer": [
+              183,
+              81
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.005076142131979695
+          },
+          {
+            "id": "dev_task6_24",
+            "decisions": 199,
+            "mse_drive_steer": [
+              0.0030204556467754652,
+              0.0032039380796834126
+            ],
+            "first10_bias_drive_steer": [
+              0.005331000685691834,
+              -0.016732862778007986
+            ],
+            "first10_max_drive_steer": [
+              0.15209805965423584,
+              0.1407235898077488
+            ],
+            "peak_error_index_drive_steer": [
+              89,
+              127
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.005025125628140704
+          },
+          {
+            "id": "dev_task6_25",
+            "decisions": 205,
+            "mse_drive_steer": [
+              0.0021092391694252457,
+              0.0030467220079413377
+            ],
+            "first10_bias_drive_steer": [
+              0.009359407424926757,
+              0.002349551813676953
+            ],
+            "first10_max_drive_steer": [
+              0.04183673858642578,
+              0.06885188072919846
+            ],
+            "peak_error_index_drive_steer": [
+              85,
+              72
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0024390243902439024
+          },
+          {
+            "id": "dev_task6_26",
+            "decisions": 191,
+            "mse_drive_steer": [
+              0.002407526057914356,
+              0.0027855801908761363
+            ],
+            "first10_bias_drive_steer": [
+              -0.022389984130859374,
+              -0.0338076189160347
+            ],
+            "first10_max_drive_steer": [
+              0.12075251340866089,
+              0.055241674184799194
+            ],
+            "peak_error_index_drive_steer": [
+              12,
+              111
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.002617801047120419
+          }
+        ]
+      },
+      {
+        "task": 7,
+        "episodes": 27,
+        "mean_surrogate_loss": 0.003091398283369361,
+        "gradient_norm": 0.028197744474911492,
+        "phases": {
+          "first2s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.0865793886049589,
+              0.06306374729896695
+            ],
+            "mean_episode_bias_drive_steer": [
+              0.002525764219980273,
+              0.002954430160699067
+            ],
+            "maximum_error_drive_steer": [
+              0.31438741087913513,
+              0.22646933794021606
+            ],
+            "decisions": 270
+          },
+          "2to20s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.06803690349957188,
+              0.05913136176358503
+            ],
+            "mean_episode_bias_drive_steer": [
+              0.0042352940348013395,
+              0.0023818529169394973
+            ],
+            "maximum_error_drive_steer": [
+              0.2559851408004761,
+              0.24425936490297318
+            ],
+            "decisions": 2430
+          },
+          "after20s": {
+            "episodes": 27,
+            "mean_episode_RMSE_drive_steer": [
+              0.03251140246364236,
+              0.05513356050977145
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.0020157521366567866,
+              0.0022179203027444206
+            ],
+            "maximum_error_drive_steer": [
+              0.25572729110717773,
+              0.2751045189797878
+            ],
+            "decisions": 3214
+          }
+        },
+        "episodes_detail": [
+          {
+            "id": "dev_task7_00",
+            "decisions": 220,
+            "mse_drive_steer": [
+              0.0031558766111456187,
+              0.003918045712810379
+            ],
+            "first10_bias_drive_steer": [
+              -0.01942248046398163,
+              0.019827473163604736
+            ],
+            "first10_max_drive_steer": [
+              0.08689618110656738,
+              0.1287076473236084
+            ],
+            "peak_error_index_drive_steer": [
+              91,
+              101
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.07045454545454545
+          },
+          {
+            "id": "dev_task7_01",
+            "decisions": 226,
+            "mse_drive_steer": [
+              0.0030116742851769842,
+              0.0032148422868839093
+            ],
+            "first10_bias_drive_steer": [
+              0.03279144912958145,
+              -0.01824333369731903
+            ],
+            "first10_max_drive_steer": [
+              0.13430780172348022,
+              0.08528667688369751
+            ],
+            "peak_error_index_drive_steer": [
+              99,
+              56
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.05309734513274336
+          },
+          {
+            "id": "dev_task7_02",
+            "decisions": 231,
+            "mse_drive_steer": [
+              0.0031955600721264832,
+              0.0030646111655935056
+            ],
+            "first10_bias_drive_steer": [
+              0.03157710283994675,
+              0.0055151224136352536
+            ],
+            "first10_max_drive_steer": [
+              0.2560318261384964,
+              0.21711847186088562
+            ],
+            "peak_error_index_drive_steer": [
+              4,
+              202
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.05411255411255411
+          },
+          {
+            "id": "dev_task7_03",
+            "decisions": 222,
+            "mse_drive_steer": [
+              0.0026215277620752916,
+              0.0033974720822302355
+            ],
+            "first10_bias_drive_steer": [
+              -0.028219935297966004,
+              0.020466524362564086
+            ],
+            "first10_max_drive_steer": [
+              0.10803276300430298,
+              0.1517077088356018
+            ],
+            "peak_error_index_drive_steer": [
+              95,
+              50
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.06531531531531531
+          },
+          {
+            "id": "dev_task7_04",
+            "decisions": 221,
+            "mse_drive_steer": [
+              0.0028403846255888833,
+              0.003430874739241615
+            ],
+            "first10_bias_drive_steer": [
+              0.026443232595920563,
+              -0.007875633239746094
+            ],
+            "first10_max_drive_steer": [
+              0.2458977997303009,
+              0.09653615951538086
+            ],
+            "peak_error_index_drive_steer": [
+              6,
+              110
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.06334841628959277
+          },
+          {
+            "id": "dev_task7_05",
+            "decisions": 229,
+            "mse_drive_steer": [
+              0.002719216642884206,
+              0.0036170439613597834
+            ],
+            "first10_bias_drive_steer": [
+              0.02195688188076019,
+              0.01396055519580841
+            ],
+            "first10_max_drive_steer": [
+              0.1385122686624527,
+              0.22646933794021606
+            ],
+            "peak_error_index_drive_steer": [
+              104,
+              201
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.05021834061135371
+          },
+          {
+            "id": "dev_task7_06",
+            "decisions": 217,
+            "mse_drive_steer": [
+              0.0026702224689728353,
+              0.0033686992812354114
+            ],
+            "first10_bias_drive_steer": [
+              -0.016127067804336547,
+              -0.0156707227230072
+            ],
+            "first10_max_drive_steer": [
+              0.11253291368484497,
+              0.08822351694107056
+            ],
+            "peak_error_index_drive_steer": [
+              96,
+              189
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.07834101382488479
+          },
+          {
+            "id": "dev_task7_07",
+            "decisions": 223,
+            "mse_drive_steer": [
+              0.002635092049592225,
+              0.0026963723482407824
+            ],
+            "first10_bias_drive_steer": [
+              0.00631994754076004,
+              0.0027560651302337646
+            ],
+            "first10_max_drive_steer": [
+              0.134435772895813,
+              0.09561163187026978
+            ],
+            "peak_error_index_drive_steer": [
+              36,
+              106
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.06726457399103139
+          },
+          {
+            "id": "dev_task7_08",
+            "decisions": 226,
+            "mse_drive_steer": [
+              0.002728098249629498,
+              0.0032754798231877814
+            ],
+            "first10_bias_drive_steer": [
+              0.005998925864696502,
+              0.017690786719322206
+            ],
+            "first10_max_drive_steer": [
+              0.1344008594751358,
+              0.19976463913917542
+            ],
+            "peak_error_index_drive_steer": [
+              38,
+              0
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0663716814159292
+          },
+          {
+            "id": "dev_task7_09",
+            "decisions": 217,
+            "mse_drive_steer": [
+              0.0024691493046375395,
+              0.0035621502831137625
+            ],
+            "first10_bias_drive_steer": [
+              -0.025134119391441345,
+              0.03798733949661255
+            ],
+            "first10_max_drive_steer": [
+              0.10847115516662598,
+              0.08941680192947388
+            ],
+            "peak_error_index_drive_steer": [
+              90,
+              44
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.07142857142857142
+          },
+          {
+            "id": "dev_task7_10",
+            "decisions": 221,
+            "mse_drive_steer": [
+              0.003306793365877929,
+              0.003461263346089287
+            ],
+            "first10_bias_drive_steer": [
+              0.003118743747472763,
+              -0.02292701005935669
+            ],
+            "first10_max_drive_steer": [
+              0.2978092133998871,
+              0.08352750539779663
+            ],
+            "peak_error_index_drive_steer": [
+              9,
+              51
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.06561085972850679
+          },
+          {
+            "id": "dev_task7_11",
+            "decisions": 228,
+            "mse_drive_steer": [
+              0.002974607996443322,
+              0.0026995627452157662
+            ],
+            "first10_bias_drive_steer": [
+              0.03892294093966484,
+              -0.0017386198043823243
+            ],
+            "first10_max_drive_steer": [
+              0.10764248669147491,
+              0.08929458260536194
+            ],
+            "peak_error_index_drive_steer": [
+              102,
+              199
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.05263157894736842
+          },
+          {
+            "id": "dev_task7_12",
+            "decisions": 214,
+            "mse_drive_steer": [
+              0.003052627439324766,
+              0.003550898123823622
+            ],
+            "first10_bias_drive_steer": [
+              -0.015244656801223755,
+              0.0331192672252655
+            ],
+            "first10_max_drive_steer": [
+              0.12369269132614136,
+              0.08466106653213501
+            ],
+            "peak_error_index_drive_steer": [
+              135,
+              101
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.08644859813084112
+          },
+          {
+            "id": "dev_task7_13",
+            "decisions": 219,
+            "mse_drive_steer": [
+              0.0035373085117042014,
+              0.0037869055435931576
+            ],
+            "first10_bias_drive_steer": [
+              0.05423043444752693,
+              -0.05139209777116775
+            ],
+            "first10_max_drive_steer": [
+              0.2898718789219856,
+              0.18908262252807617
+            ],
+            "peak_error_index_drive_steer": [
+              6,
+              109
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.07077625570776255
+          },
+          {
+            "id": "dev_task7_14",
+            "decisions": 224,
+            "mse_drive_steer": [
+              0.0024605242572452338,
+              0.002897845122498116
+            ],
+            "first10_bias_drive_steer": [
+              0.017936599045060574,
+              0.0005417078733444214
+            ],
+            "first10_max_drive_steer": [
+              0.13106438517570496,
+              0.08336839079856873
+            ],
+            "peak_error_index_drive_steer": [
+              102,
+              56
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0625
+          },
+          {
+            "id": "dev_task7_15",
+            "decisions": 216,
+            "mse_drive_steer": [
+              0.002370271211634427,
+              0.0028951704054258937
+            ],
+            "first10_bias_drive_steer": [
+              -0.015582036972045899,
+              -0.003481370210647583
+            ],
+            "first10_max_drive_steer": [
+              0.20281970500946045,
+              0.07388532161712646
+            ],
+            "peak_error_index_drive_steer": [
+              94,
+              187
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.07638888888888888
+          },
+          {
+            "id": "dev_task7_16",
+            "decisions": 214,
+            "mse_drive_steer": [
+              0.0029899494055939885,
+              0.0028749482220315607
+            ],
+            "first10_bias_drive_steer": [
+              0.014105325937271119,
+              -0.0015563547611236572
+            ],
+            "first10_max_drive_steer": [
+              0.13069869577884674,
+              0.09706401824951172
+            ],
+            "peak_error_index_drive_steer": [
+              32,
+              100
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.08411214953271028
+          },
+          {
+            "id": "dev_task7_17",
+            "decisions": 218,
+            "mse_drive_steer": [
+              0.0024238644648911607,
+              0.0033193638428110103
+            ],
+            "first10_bias_drive_steer": [
+              -0.002361061656847596,
+              0.017427702248096467
+            ],
+            "first10_max_drive_steer": [
+              0.12039107084274292,
+              0.2221938967704773
+            ],
+            "peak_error_index_drive_steer": [
+              102,
+              2
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0779816513761468
+          },
+          {
+            "id": "dev_task7_18",
+            "decisions": 213,
+            "mse_drive_steer": [
+              0.0026793504865728346,
+              0.0034841423946056892
+            ],
+            "first10_bias_drive_steer": [
+              -0.036804494261741635,
+              0.03966546654701233
+            ],
+            "first10_max_drive_steer": [
+              0.21408957242965698,
+              0.11258620023727417
+            ],
+            "peak_error_index_drive_steer": [
+              88,
+              42
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0892018779342723
+          },
+          {
+            "id": "dev_task7_19",
+            "decisions": 215,
+            "mse_drive_steer": [
+              0.003584783650957756,
+              0.0037524814902638102
+            ],
+            "first10_bias_drive_steer": [
+              -0.026680140197277068,
+              -0.03077736496925354
+            ],
+            "first10_max_drive_steer": [
+              0.31438741087913513,
+              0.08601021766662598
+            ],
+            "peak_error_index_drive_steer": [
+              6,
+              102
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.07906976744186046
+          },
+          {
+            "id": "dev_task7_20",
+            "decisions": 220,
+            "mse_drive_steer": [
+              0.0026598937217922466,
+              0.003562643221218191
+            ],
+            "first10_bias_drive_steer": [
+              0.036418048199266195,
+              0.0016413629055023193
+            ],
+            "first10_max_drive_steer": [
+              0.11329087615013123,
+              0.08382523059844971
+            ],
+            "peak_error_index_drive_steer": [
+              98,
+              107
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.06818181818181818
+          },
+          {
+            "id": "dev_task7_21",
+            "decisions": 211,
+            "mse_drive_steer": [
+              0.0024375012980833266,
+              0.0032379947883092427
+            ],
+            "first10_bias_drive_steer": [
+              -0.024674564599990845,
+              0.03838260173797607
+            ],
+            "first10_max_drive_steer": [
+              0.16773048043251038,
+              0.09947264194488525
+            ],
+            "peak_error_index_drive_steer": [
+              89,
+              94
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.0995260663507109
+          },
+          {
+            "id": "dev_task7_22",
+            "decisions": 215,
+            "mse_drive_steer": [
+              0.0029449243570384416,
+              0.003293878617883048
+            ],
+            "first10_bias_drive_steer": [
+              -0.0005600348114967347,
+              -0.02261490523815155
+            ],
+            "first10_max_drive_steer": [
+              0.30046212673187256,
+              0.09356540441513062
+            ],
+            "peak_error_index_drive_steer": [
+              8,
+              178
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.08139534883720931
+          },
+          {
+            "id": "dev_task7_23",
+            "decisions": 218,
+            "mse_drive_steer": [
+              0.002536447733782608,
+              0.0027749267303781946
+            ],
+            "first10_bias_drive_steer": [
+              0.018259860575199127,
+              0.00031353235244750975
+            ],
+            "first10_max_drive_steer": [
+              0.12866629660129547,
+              0.0782884955406189
+            ],
+            "peak_error_index_drive_steer": [
+              98,
+              102
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.06880733944954129
+          },
+          {
+            "id": "dev_task7_24",
+            "decisions": 214,
+            "mse_drive_steer": [
+              0.0024863938124562762,
+              0.003237864079316662
+            ],
+            "first10_bias_drive_steer": [
+              0.0017225027084350586,
+              0.008275777101516724
+            ],
+            "first10_max_drive_steer": [
+              0.1480439305305481,
+              0.04781222343444824
+            ],
+            "peak_error_index_drive_steer": [
+              95,
+              30
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.08411214953271028
+          },
+          {
+            "id": "dev_task7_25",
+            "decisions": 211,
+            "mse_drive_steer": [
+              0.0032125430400893576,
+              0.003031390125668389
+            ],
+            "first10_bias_drive_steer": [
+              -0.010591454431414604,
+              -0.01405695378780365
+            ],
+            "first10_max_drive_steer": [
+              0.2221526801586151,
+              0.0901067852973938
+            ],
+            "peak_error_index_drive_steer": [
+              9,
+              181
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.08530805687203792
+          },
+          {
+            "id": "dev_task7_26",
+            "decisions": 211,
+            "mse_drive_steer": [
+              0.0025522639598666817,
+              0.0029490055198256038
+            ],
+            "first10_bias_drive_steer": [
+              -0.020204314822331072,
+              0.01253269612789154
+            ],
+            "first10_max_drive_steer": [
+              0.19161251187324524,
+              0.11274975538253784
+            ],
+            "peak_error_index_drive_steer": [
+              5,
+              181
+            ],
+            "boundary_label_fraction": 0.0,
+            "raw_outside_execution_fraction": 0.08767772511848342
+          }
+        ]
+      },
+      {
+        "task": 8,
+        "episodes": 4,
+        "mean_surrogate_loss": 0.0005936004777495721,
+        "gradient_norm": 0.01743314974149724,
+        "phases": {
+          "first2s": {
+            "episodes": 4,
+            "mean_episode_RMSE_drive_steer": [
+              0.02441394307899519,
+              0.023395418998843325
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.003152027726173401,
+              -0.0045141918584704396
+            ],
+            "maximum_error_drive_steer": [
+              0.0695444643497467,
+              0.053752586245536804
+            ],
+            "decisions": 40
+          },
+          "2to20s": {
+            "episodes": 4,
+            "mean_episode_RMSE_drive_steer": [
+              0.03268939622047024,
+              0.030069901393932393
+            ],
+            "mean_episode_bias_drive_steer": [
+              0.003653423536255692,
+              -0.005254211542342091
+            ],
+            "maximum_error_drive_steer": [
+              0.16740214824676514,
+              0.1469241976737976
+            ],
+            "decisions": 360
+          },
+          "after20s": {
+            "episodes": 4,
+            "mean_episode_RMSE_drive_steer": [
+              0.015378887203620777,
+              0.02480440816599751
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.00029866928090506716,
+              0.0018406000046913432
+            ],
+            "maximum_error_drive_steer": [
+              0.14302226901054382,
+              0.13281214237213135
+            ],
+            "decisions": 852
+          }
+        },
+        "episodes_detail": [
+          {
+            "id": "wide117_80_dev6_LEFT_00",
+            "decisions": 318,
+            "mse_drive_steer": [
+              0.0005450960213897297,
+              0.0008198209929065646
+            ],
+            "first10_bias_drive_steer": [
+              -0.010983194410800933,
+              -0.016770826280117036
+            ],
+            "first10_max_drive_steer": [
+              0.050980955362319946,
+              0.05200153589248657
+            ],
+            "peak_error_index_drive_steer": [
+              60,
+              201
+            ],
+            "boundary_label_fraction": 0.539308176100629,
+            "raw_outside_execution_fraction": 0.4261006289308176
+          },
+          {
+            "id": "wide117_80_dev6_LEFT_07",
+            "decisions": 319,
+            "mse_drive_steer": [
+              0.0005797105379542415,
+              0.0008102291478016758
+            ],
+            "first10_bias_drive_steer": [
+              0.009369702637195587,
+              0.004653757810592652
+            ],
+            "first10_max_drive_steer": [
+              0.04595327377319336,
+              0.038639068603515625
+            ],
+            "peak_error_index_drive_steer": [
+              72,
+              71
+            ],
+            "boundary_label_fraction": 0.4843260188087774,
+            "raw_outside_execution_fraction": 0.384012539184953
+          },
+          {
+            "id": "wide117_80_dev6_LEFT_14",
+            "decisions": 315,
+            "mse_drive_steer": [
+              0.00029226641486626456,
+              0.0005663394014685329
+            ],
+            "first10_bias_drive_steer": [
+              -0.0033198505640029906,
+              -0.001403847336769104
+            ],
+            "first10_max_drive_steer": [
+              0.034282565116882324,
+              0.053752586245536804
+            ],
+            "peak_error_index_drive_steer": [
+              202,
+              103
+            ],
+            "boundary_label_fraction": 0.5174603174603175,
+            "raw_outside_execution_fraction": 0.43333333333333335
+          },
+          {
+            "id": "wide117_80_dev6_LEFT_21",
+            "decisions": 300,
+            "mse_drive_steer": [
+              0.0005344248815440459,
+              0.0005891880610008626
+            ],
+            "first10_bias_drive_steer": [
+              -0.007674768567085266,
+              -0.004535851627588272
+            ],
+            "first10_max_drive_steer": [
+              0.0695444643497467,
+              0.0368119478225708
+            ],
+            "peak_error_index_drive_steer": [
+              37,
+              181
+            ],
+            "boundary_label_fraction": 0.5433333333333333,
+            "raw_outside_execution_fraction": 0.4716666666666667
+          }
+        ]
+      },
+      {
+        "task": 9,
+        "episodes": 4,
+        "mean_surrogate_loss": 0.000886819604650657,
+        "gradient_norm": 0.022973326947185575,
+        "phases": {
+          "first2s": {
+            "episodes": 4,
+            "mean_episode_RMSE_drive_steer": [
+              0.05755039971066619,
+              0.029552897334119733
+            ],
+            "mean_episode_bias_drive_steer": [
+              -0.00639579314738512,
+              -0.0059281811118125916
+            ],
+            "maximum_error_drive_steer": [
+              0.1250656098127365,
+              0.07578277587890625
+            ],
+            "decisions": 40
+          },
+          "2to20s": {
+            "episodes": 4,
+            "mean_episode_RMSE_drive_steer": [
+              0.041960698507081416,
+              0.029476024524571827
+            ],
+            "mean_episode_bias_drive_steer": [
+              0.0045908788012133704,
+              -0.003235102508915588
+            ],
+            "maximum_error_drive_steer": [
+              0.17105630040168762,
+              0.14046186208724976
+            ],
+            "decisions": 360
+          },
+          "after20s": {
+            "episodes": 4,
+            "mean_episode_RMSE_drive_steer": [
+              0.023350176732784913,
+              0.025559633680567614
+            ],
+            "mean_episode_bias_drive_steer": [
+              0.0007225520246373458,
+              0.0015546982426456618
+            ],
+            "maximum_error_drive_steer": [
+              0.19961082935333252,
+              0.18022292852401733
+            ],
+            "decisions": 708
+          }
+        },
+        "episodes_detail": [
+          {
+            "id": "wide117_80_dev6_RIGHT_00",
+            "decisions": 283,
+            "mse_drive_steer": [
+              0.0012549539148975755,
+              0.0007519554929480501
+            ],
+            "first10_bias_drive_steer": [
+              -0.010894352197647094,
+              -0.008731365203857422
+            ],
+            "first10_max_drive_steer": [
+              0.08080962300300598,
+              0.05197489261627197
+            ],
+            "peak_error_index_drive_steer": [
+              120,
+              225
+            ],
+            "boundary_label_fraction": 0.07420494699646643,
+            "raw_outside_execution_fraction": 0.03356890459363958
+          },
+          {
+            "id": "wide117_80_dev6_RIGHT_07",
+            "decisions": 282,
+            "mse_drive_steer": [
+              0.000876948526238316,
+              0.0007165501351467698
+            ],
+            "first10_bias_drive_steer": [
+              0.005761690437793732,
+              -0.0029150724411010744
+            ],
+            "first10_max_drive_steer": [
+              0.11008119583129883,
+              0.07578277587890625
+            ],
+            "peak_error_index_drive_steer": [
+              96,
+              214
+            ],
+            "boundary_label_fraction": 0.06560283687943262,
+            "raw_outside_execution_fraction": 0.026595744680851064
+          },
+          {
+            "id": "wide117_80_dev6_RIGHT_14",
+            "decisions": 279,
+            "mse_drive_steer": [
+              0.0008704235446569702,
+              0.0007694144195633623
+            ],
+            "first10_bias_drive_steer": [
+              -0.0108134888112545,
+              -0.008257371187210084
+            ],
+            "first10_max_drive_steer": [
+              0.1250656098127365,
+              0.04894739389419556
+            ],
+            "peak_error_index_drive_steer": [
+              5,
+              126
+            ],
+            "boundary_label_fraction": 0.06810035842293907,
+            "raw_outside_execution_fraction": 0.03942652329749104
+          },
+          {
+            "id": "wide117_80_dev6_RIGHT_21",
+            "decisions": 264,
+            "mse_drive_steer": [
+              0.0011619869793156046,
+              0.0006909909249118326
+            ],
+            "first10_bias_drive_steer": [
+              -0.009637022018432617,
+              -0.003808915615081787
+            ],
+            "first10_max_drive_steer": [
+              0.11921954154968262,
+              0.04163765907287598
+            ],
+            "peak_error_index_drive_steer": [
+              36,
+              70
+            ],
+            "boundary_label_fraction": 0.09659090909090909,
+            "raw_outside_execution_fraction": 0.054924242424242424
+          }
+        ]
+      }
+    ],
+    "group_grad_gram": [
+      [
+        0.00041648411851073183,
+        -0.00021146893034223394,
+        -1.5097620088474414e-06,
+        -0.00010721648640310013,
+        0.0002811721311291789,
+        -1.866330383356213e-05,
+        -0.00022697783822861955,
+        1.3558779025261281e-05,
+        4.1933106982484964e-05,
+        3.6970887633608054e-05
+      ],
+      [
+        -0.00021146893034223394,
+        0.0008767042097788955,
+        1.795569924727035e-05,
+        0.00012193596967240525,
+        7.627842480898319e-05,
+        1.2215002629402515e-05,
+        0.0003773203030913188,
+        -7.300776664776207e-05,
+        4.37882409674697e-05,
+        -0.00015687738782961994
+      ],
+      [
+        -1.5097620088474414e-06,
+        1.795569924727035e-05,
+        1.0538886467151144e-05,
+        6.708261689808384e-06,
+        1.582266567220334e-05,
+        -1.1610718796032822e-08,
+        7.726982091542447e-06,
+        -4.920638458126905e-06,
+        2.4887662854784413e-06,
+        -8.222041471215053e-06
+      ],
+      [
+        -0.00010721648640310013,
+        0.00012193596967240525,
+        6.708261689808384e-06,
+        0.00012822284302264732,
+        -7.23028133078215e-05,
+        1.0322835752284988e-05,
+        4.749982708971502e-05,
+        -0.00017136816548417102,
+        -1.606914535136411e-05,
+        -5.526004158236347e-05
+      ],
+      [
+        0.0002811721311291789,
+        7.627842480898319e-05,
+        1.582266567220334e-05,
+        -7.23028133078215e-05,
+        0.0005751247041979528,
+        -1.215391999887205e-05,
+        2.009794081819407e-05,
+        7.241290197061328e-05,
+        0.00016195424917454663,
+        -1.2956773755744878e-05
+      ],
+      [
+        -1.866330383356213e-05,
+        1.2215002629402515e-05,
+        -1.1610718796032822e-08,
+        1.0322835752284988e-05,
+        -1.215391999887205e-05,
+        2.217305950079547e-05,
+        4.100141458894515e-06,
+        3.1900480064319273e-06,
+        -4.3667629332777095e-06,
+        -3.7450739417090997e-06
+      ],
+      [
+        -0.00022697783822861955,
+        0.0003773203030913188,
+        7.726982091542447e-06,
+        4.749982708971502e-05,
+        2.009794081819407e-05,
+        4.100141458894515e-06,
+        0.0006517504568761276,
+        5.884850256888052e-05,
+        3.949192135343026e-05,
+        -3.822778126508674e-05
+      ],
+      [
+        1.3558779025261281e-05,
+        -7.300776664776207e-05,
+        -4.920638458126905e-06,
+        -0.00017136816548417102,
+        7.241290197061328e-05,
+        3.1900480064319273e-06,
+        5.884850256888052e-05,
+        0.0007951127934724017,
+        8.009989610295542e-06,
+        0.0002004048774356883
+      ],
+      [
+        4.1933106982484964e-05,
+        4.37882409674697e-05,
+        2.4887662854784413e-06,
+        -1.606914535136411e-05,
+        0.00016195424917454663,
+        -4.3667629332777095e-06,
+        3.949192135343026e-05,
+        8.009989610295542e-06,
+        0.0003039147099094653,
+        0.00016536620651984407
+      ],
+      [
+        3.6970887633608054e-05,
+        -0.00015687738782961994,
+        -8.222041471215053e-06,
+        -5.526004158236347e-05,
+        -1.2956773755744878e-05,
+        -3.7450739417090997e-06,
+        -3.822778126508674e-05,
+        0.0002004048774356883,
+        0.00016536620651984407,
+        0.000527773751022283
+      ]
+    ],
+    "group_grad_cosine": [
+      [
+        1.0,
+        -0.3499619274949484,
+        -0.022788298891202638,
+        -0.4639590463630389,
+        0.5745026528631628,
+        -0.19421219307227972,
+        -0.43565586046357613,
+        0.023561719934750626,
+        0.11786421250818975,
+        0.0788563664294402
+      ],
+      [
+        -0.3499619274949484,
+        1.0,
+        0.18680066308455848,
+        0.3636826553139593,
+        0.10742222873206762,
+        0.08761010636608657,
+        0.49916365550020364,
+        -0.08744362369686512,
+        0.0848310988912139,
+        -0.23062687267262624
+      ],
+      [
+        -0.022788298891202638,
+        0.18680066308455848,
+        1.0,
+        0.18248615981113545,
+        0.20323629879739485,
+        -0.0007595369961020485,
+        0.09323347478807135,
+        -0.05375386829869774,
+        0.04397551066164936,
+        -0.11024487431145154
+      ],
+      [
+        -0.4639590463630389,
+        0.3636826553139593,
+        0.18248615981113545,
+        0.9999999999999998,
+        -0.2662511446700225,
+        0.1935991762362892,
+        0.16431176301808192,
+        -0.5367018297046153,
+        -0.08140183921456817,
+        -0.21242450407395205
+      ],
+      [
+        0.5745026528631628,
+        0.10742222873206762,
+        0.20323629879739485,
+        -0.2662511446700225,
+        1.0,
+        -0.10762732608011456,
+        0.0328269005494355,
+        0.1070830099752943,
+        0.38737846600549874,
+        -0.02351754429212132
+      ],
+      [
+        -0.19421219307227972,
+        0.08761010636608657,
+        -0.0007595369961020485,
+        0.1935991762362892,
+        -0.10762732608011456,
+        1.0000000000000002,
+        0.034107144190097576,
+        0.024025367351976724,
+        -0.053195015950962266,
+        -0.034619731250786885
+      ],
+      [
+        -0.43565586046357613,
+        0.49916365550020364,
+        0.09323347478807135,
+        0.16431176301808192,
+        0.0328269005494355,
+        0.034107144190097576,
+        1.0,
+        0.08174860938025337,
+        0.08873434151012775,
+        -0.0651800256282968
+      ],
+      [
+        0.023561719934750626,
+        -0.08744362369686512,
+        -0.05375386829869774,
+        -0.5367018297046153,
+        0.1070830099752943,
+        0.024025367351976724,
+        0.08174860938025337,
+        1.0000000000000002,
+        0.016294525624052862,
+        0.30936417716231374
+      ],
+      [
+        0.11786421250818975,
+        0.0848310988912139,
+        0.04397551066164936,
+        -0.08140183921456817,
+        0.38737846600549874,
+        -0.053195015950962266,
+        0.08873434151012775,
+        0.016294525624052862,
+        1.0,
+        0.41290202233236983
+      ],
+      [
+        0.0788563664294402,
+        -0.23062687267262624,
+        -0.11024487431145154,
+        -0.21242450407395205,
+        -0.02351754429212132,
+        -0.034619731250786885,
+        -0.0651800256282968,
+        0.30936417716231374,
+        0.41290202233236983,
+        1.0
+      ]
+    ],
+    "group_gradient_SHA": "8fedc72bf68b616106dcc70b8f58a6b1873cf98187e7b25c9d271d6a0e2bf83a",
+    "weights": [
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.25,
+      0.25
+    ],
+    "first_order_predictions": [
+      {
+        "task": 0,
+        "old_weight": 0.0625,
+        "analytic_uniform_descent_dot": -2.8812167894573805e-05,
+        "analytic_left4x_descent_dot": 1.1575727809088315e-05,
+        "mature_Adam_one_step_linear_delta": -1.732708024007028e-05,
+        "gradient_cosine_to_joint": 0.14436136287484003
+      },
+      {
+        "task": 1,
+        "old_weight": 0.0625,
+        "analytic_uniform_descent_dot": -4.659852029935491e-05,
+        "analytic_left4x_descent_dot": -9.881774916124394e-05,
+        "mature_Adam_one_step_linear_delta": -2.3737372187646187e-06,
+        "gradient_cosine_to_joint": 0.1609236370594844
+      },
+      {
+        "task": 2,
+        "old_weight": 0.0625,
+        "analytic_uniform_descent_dot": -1.8360864524536764e-06,
+        "analytic_left4x_descent_dot": -2.766227869151903e-06,
+        "mature_Adam_one_step_linear_delta": -1.5366058774232463e-06,
+        "gradient_cosine_to_joint": 0.05783224112907048
+      },
+      {
+        "task": 3,
+        "old_weight": 0.0625,
+        "analytic_uniform_descent_dot": 2.0094654731446367e-05,
+        "analytic_left4x_descent_dot": 9.421841812315619e-06,
+        "mature_Adam_one_step_linear_delta": 5.076299647471898e-06,
+        "gradient_cosine_to_joint": -0.18145632326706226
+      },
+      {
+        "task": 4,
+        "old_weight": 0.0625,
+        "analytic_uniform_descent_dot": -9.702762106035239e-05,
+        "analytic_left4x_descent_dot": -8.488082944316949e-05,
+        "mature_Adam_one_step_linear_delta": -2.7186109228397787e-05,
+        "gradient_cosine_to_joint": 0.4137029629031215
+      },
+      {
+        "task": 5,
+        "old_weight": 0.0625,
+        "analytic_uniform_descent_dot": 7.046934189605015e-07,
+        "analytic_left4x_descent_dot": -5.3964719648185875e-08,
+        "mature_Adam_one_step_linear_delta": 1.2886771901228438e-06,
+        "gradient_cosine_to_joint": -0.01530247447724741
+      },
+      {
+        "task": 6,
+        "old_weight": 0.0625,
+        "analytic_uniform_descent_dot": -5.908892975746419e-05,
+        "analytic_left4x_descent_dot": -0.00015266706561830573,
+        "mature_Adam_one_step_linear_delta": -8.7230438690774e-06,
+        "gradient_cosine_to_joint": 0.23666809286054366
+      },
+      {
+        "task": 7,
+        "old_weight": 0.0625,
+        "analytic_uniform_descent_dot": -9.546787016484151e-05,
+        "analytic_left4x_descent_dot": -8.968586475495293e-05,
+        "mature_Adam_one_step_linear_delta": -1.6220194251630264e-05,
+        "gradient_cosine_to_joint": 0.34619207550154896
+      },
+      {
+        "task": 8,
+        "old_weight": 0.25,
+        "analytic_uniform_descent_dot": -0.00013464712698789383,
+        "analytic_left4x_descent_dot": -0.00011962262083508376,
+        "mature_Adam_one_step_linear_delta": -1.847451345297711e-05,
+        "gradient_cosine_to_joint": 0.7897606478764473
+      },
+      {
+        "task": 9,
+        "old_weight": 0.25,
+        "analytic_uniform_descent_dot": -0.00017091540596200414,
+        "analytic_left4x_descent_dot": -0.0001378927974524635,
+        "mature_Adam_one_step_linear_delta": -1.875128202915646e-05,
+        "gradient_cosine_to_joint": 0.7607318104121371
+      }
+    ],
+    "left_gradient_cosine_to_wide_left": 0.08873434151012775,
+    "left_gradient_cosine_to_wide_right": -0.0651800256282968,
+    "analytic_Adam_gradient_clip_coefficient": 1.0,
+    "no_finite_update_or_closed_loop_gain_measured": true,
+    "model_and_Actor_V_Adam_hash_unchanged": "51945c1e8927ab8b76f2fed1d51f573afe2a31d8ebce8538f7ec6b94f25cc32e",
+    "phases_use_decision_time_0_2sec_last_hold_only_may_be_shorter": true,
+    "original_models_unchanged": true,
+    "optimizer_updates": 0,
+    "native": 0,
+    "model_gradient_evaluations": 10
+  },
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "new_navigation_training": 0,
+  "six_gate": false,
+  "eight_started": false
+}
