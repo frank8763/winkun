@@ -1,0 +1,6 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t445_minimal_retention/driver.py\", line 27, in main\n    child('run.py','main',seconds=min(540,end-time.time()-900));child('run.py','audit',seconds=min(180,end-time.time()-640))\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t445_minimal_retention/driver.py\", line 13, in child\n    if c.returncode:raise RuntimeError(out.decode(errors='replace')[-6000:])\nRuntimeError: Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t445_minimal_retention/run.py\", line 180, in <module>\n    if __name__=='__main__':globals()[sys.argv[1]]()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t445_minimal_retention/run.py\", line 151, in audit\n    assert abs(distance-a['body_clearance_capped_m'][i])<1e-10 and np.array_equal(pair,a['body_geom_pair'][i])\nAssertionError\n\n",
+  "raw_preserved": true,
+  "no_restart": true,
+  "epoch": 1794227009.9393797
+}

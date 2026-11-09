@@ -1,0 +1,335 @@
+{
+  "state": "COMPLETE_NAVIGATION_DIAGNOSTIC_WITH_GEOMETRY_AUDIT_FAILURE",
+  "summary": {
+    "state": "COMPLETE",
+    "pid": 326371,
+    "elapsed_s": 50.031330585479736,
+    "physics": 139582,
+    "commands": 18,
+    "main_commands": 12,
+    "preflight_commands": 6,
+    "primary": 4,
+    "exact": 4,
+    "safe_success": 2,
+    "student_collisions": 2,
+    "error": null,
+    "all_native_workers_stopped": true,
+    "Actor_Adam": 0,
+    "V_Adam": 0,
+    "fresh16": null,
+    "reload78": null,
+    "six_gate": false,
+    "eight_started": false
+  },
+  "registered_full_audit": "FAIL_GEOMETRY_RECONSTRUCTION",
+  "scoped_reconstruction": {
+    "state": "PASS_SCOPED_ACTION_HISTORY_REWARD_AND_EXACT_REPLAY_ONLY",
+    "overall_registered_audit": "FAIL_GEOMETRY_RECONSTRUCTION",
+    "original_audit_failure_sha256": "bd7d17be23e3e382130e062c654af8b2ba427e4d27f096f4cdb724d51249bea7",
+    "geometry": [
+      {
+        "job_id": "dev_task6_00",
+        "kind": "safe_reset",
+        "first_mismatch_decision": 75,
+        "maximum_abs_reconstructed_distance_difference_m": 0.22406523513809606,
+        "pair_mismatches": 17,
+        "original_1e_10_threshold_not_relaxed": true,
+        "not_an_audit_PASS": true
+      },
+      {
+        "job_id": "dev_task6_06",
+        "kind": "safe_reset",
+        "first_mismatch_decision": 76,
+        "maximum_abs_reconstructed_distance_difference_m": 0.2381533397167697,
+        "pair_mismatches": 15,
+        "original_1e_10_threshold_not_relaxed": true,
+        "not_an_audit_PASS": true
+      },
+      {
+        "job_id": "dev_task6_00",
+        "kind": "student",
+        "first_mismatch_decision": 72,
+        "maximum_abs_reconstructed_distance_difference_m": 0.2689810058215435,
+        "pair_mismatches": 10,
+        "original_1e_10_threshold_not_relaxed": true,
+        "not_an_audit_PASS": true
+      },
+      {
+        "job_id": "dev_task6_06",
+        "kind": "student",
+        "first_mismatch_decision": 75,
+        "maximum_abs_reconstructed_distance_difference_m": 0.22147873507910645,
+        "pair_mismatches": 11,
+        "original_1e_10_threshold_not_relaxed": true,
+        "not_an_audit_PASS": true
+      }
+    ],
+    "geometry_distance_values_EXCLUDED_from_scientific_inference": true,
+    "physical_primary": 4,
+    "physical_exact_replays": 4,
+    "reported_physics": 139582,
+    "reported_all_commands": 18,
+    "historical_same_policy_trajectories_repeated_NOT_new_independent_samples": true,
+    "new_native": 0,
+    "native_step_function_attempts": 0,
+    "new_Actor_Adam": 0,
+    "new_V_Adam": 0,
+    "all_full120_history_hidden_tape_actions_rewards_and_comparisons_exact": true,
+    "missing_physical_geometry_cache_information_is_only_a_hypothesis": true,
+    "original_models_unchanged": true,
+    "pid": 326810,
+    "elapsed_s": 2.886235475540161
+  },
+  "comparisons": [
+    {
+      "job_id": "dev_task6_00",
+      "safe_success": true,
+      "student_collision": true,
+      "common_decisions": 146,
+      "common_last_decision_time_s": 29.0,
+      "first_action_difference_over_001_s": 0.0,
+      "first_xy_difference_over_1cm_s": 1.4000000000000001,
+      "first_yaw_difference_over_1deg_s": 6.0,
+      "maximum_xy_difference_m": 0.2862046733237414,
+      "maximum_yaw_difference_deg": 12.98647436635884,
+      "symmetric_policy_RMS_drive_steer": [
+        0.027643435352858806,
+        0.02352626030828805
+      ],
+      "symmetric_history_RMS_drive_steer": [
+        0.20853626344553763,
+        0.29810764002087276
+      ],
+      "decomposition_residual": 0.0,
+      "student_last10_decisions": {
+        "speed_m_s": [
+          0.09268011897802353,
+          0.09660850465297699,
+          0.11264173686504364,
+          0.10763420164585114,
+          0.15215656161308289,
+          0.13041439652442932,
+          0.1725497841835022,
+          0.16376672685146332,
+          0.15375661849975586,
+          0.15197740495204926
+        ],
+        "drive_steer": [
+          [
+            0.48511821031570435,
+            0.4694320261478424
+          ],
+          [
+            0.9794631004333496,
+            0.7999240159988403
+          ],
+          [
+            0.9951358437538147,
+            0.8008974194526672
+          ],
+          [
+            0.9968302249908447,
+            0.6818459630012512
+          ],
+          [
+            0.9881291389465332,
+            0.7064769268035889
+          ],
+          [
+            0.9751536846160889,
+            0.4233318865299225
+          ],
+          [
+            0.9542562365531921,
+            0.3855050504207611
+          ],
+          [
+            1.0,
+            0.5478550791740417
+          ],
+          [
+            1.0,
+            0.589242160320282
+          ],
+          [
+            0.9809238910675049,
+            0.7658325433731079
+          ]
+        ],
+        "clearance_capped_m": [
+          0.2645429927761316,
+          0.24398658390559538,
+          0.2185826463875495,
+          0.19513070136877395,
+          0.16423363588773623,
+          0.13552585746284407,
+          0.10139859666391413,
+          0.0,
+          0.03573323890167734,
+          0.005443768644784755
+        ],
+        "native_time_s": [
+          27.2,
+          27.400000000000002,
+          27.6,
+          27.8,
+          28.0,
+          28.2,
+          28.400000000000002,
+          28.6,
+          28.8,
+          29.0
+        ]
+      },
+      "terminal_obstacle_contacts": [
+        {
+          "geom1": 20,
+          "geom2": 23,
+          "distance_m": -0.0001560440652859572
+        },
+        {
+          "geom1": 20,
+          "geom2": 23,
+          "distance_m": -0.0001560440652859572
+        }
+      ],
+      "comparison_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t445_minimal_retention/comparisons/dev_task6_00.npz",
+      "comparison_sha256": "7acb6a43a23b7666cc69a3d7a15fc71214ccb06f6747998fff2fac4634df6bac",
+      "not_an_independent_physical_causal_intervention": true
+    },
+    {
+      "job_id": "dev_task6_06",
+      "safe_success": true,
+      "student_collision": true,
+      "common_decisions": 164,
+      "common_last_decision_time_s": 32.6,
+      "first_action_difference_over_001_s": 0.0,
+      "first_xy_difference_over_1cm_s": 1.2,
+      "first_yaw_difference_over_1deg_s": 8.2,
+      "maximum_xy_difference_m": 0.08232003900805321,
+      "maximum_yaw_difference_deg": 1.9811821544642192,
+      "symmetric_policy_RMS_drive_steer": [
+        0.02385197002027939,
+        0.025108894555252465
+      ],
+      "symmetric_history_RMS_drive_steer": [
+        0.04325578195069897,
+        0.10447755821237896
+      ],
+      "decomposition_residual": 0.0,
+      "student_last10_decisions": {
+        "speed_m_s": [
+          0.15034756064414978,
+          0.15187960863113403,
+          0.1533549576997757,
+          0.1478935182094574,
+          0.152466282248497,
+          0.15467694401741028,
+          0.1552903652191162,
+          0.15026628971099854,
+          0.14993424713611603,
+          0.14262880384922028
+        ],
+        "drive_steer": [
+          [
+            0.8690189719200134,
+            -0.4110029339790344
+          ],
+          [
+            0.8790739178657532,
+            -0.4091891348361969
+          ],
+          [
+            0.8527100086212158,
+            -0.36859315633773804
+          ],
+          [
+            0.8748692274093628,
+            -0.36496564745903015
+          ],
+          [
+            0.889391303062439,
+            -0.3761400580406189
+          ],
+          [
+            0.8898423314094543,
+            -0.42396536469459534
+          ],
+          [
+            0.9059986472129822,
+            -0.3344777524471283
+          ],
+          [
+            0.9177526235580444,
+            -0.3409618139266968
+          ],
+          [
+            0.9189019203186035,
+            -0.36010634899139404
+          ],
+          [
+            0.8470728397369385,
+            -0.3475753962993622
+          ]
+        ],
+        "clearance_capped_m": [
+          0.03942440085223308,
+          0.043373680290949256,
+          0.04198513405568053,
+          0.04031982076153584,
+          0.03885471621896429,
+          0.03749987253966171,
+          0.03287530961965556,
+          0.020420745532138133,
+          0.010600571058163075,
+          0.003565410879629365
+        ],
+        "native_time_s": [
+          30.8,
+          31.0,
+          31.2,
+          31.400000000000002,
+          31.6,
+          31.8,
+          32.0,
+          32.2,
+          32.4,
+          32.6
+        ]
+      },
+      "terminal_obstacle_contacts": [
+        {
+          "geom1": 20,
+          "geom2": 31,
+          "distance_m": -1.3093943265693515e-05
+        },
+        {
+          "geom1": 20,
+          "geom2": 31,
+          "distance_m": -1.3093943265693515e-05
+        },
+        {
+          "geom1": 20,
+          "geom2": 31,
+          "distance_m": -1.3093943265693515e-05
+        }
+      ],
+      "comparison_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t445_minimal_retention/comparisons/dev_task6_06.npz",
+      "comparison_sha256": "c614b627d37b57c560fda6776b12a2ce1ffa36984ee1c88e31208540337bbf0f",
+      "not_an_independent_physical_causal_intervention": true
+    }
+  ],
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "prior_T444_physics_reported_not_independently_trajectory_audited": 155059,
+  "combined_physics_reported": 294641,
+  "combined_commands": 66,
+  "combined_own_bytes": 7485387,
+  "Actor_Adam": 0,
+  "V_Adam": 0,
+  "six_gate": false,
+  "eight_started": false,
+  "original_T443_wide54_old267_results_unchanged": true,
+  "all_known_scientific_pids_stopped": true,
+  "remote_receipt": "stage/docs/long_distance_20261101/release_receipt_T445.json",
+  "next_training_uses_native_contact_and_GOAL_NOT_unvalidated_clearance": true
+}
