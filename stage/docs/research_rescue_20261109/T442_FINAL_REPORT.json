@@ -1,0 +1,157 @@
+{
+  "state": "COMPLETE_AUDITED_LOCAL",
+  "native_steps": 0,
+  "Actor_forwards": 0,
+  "Actor_updates": 0,
+  "live_V_Adam": 256,
+  "shadow_V_Adam": 256,
+  "audit_discarded_V_Adam": 256,
+  "preflight_discarded_V_Adam": 8,
+  "main_seconds": 17.230009078979492,
+  "audit_seconds": 7.871274948120117,
+  "screening": {
+    "all_pass": false,
+    "tests": {
+      "MC_overall_MSE_vs_GAE_75percent": false,
+      "MC_overall_MSE_vs_zero_75percent": true,
+      "MC_start_MSE_not_worse_GAE": false,
+      "MC_start_MSE_not_worse_zero": true,
+      "old_left5_MC_MSE_not_worse_GAE102percent": false,
+      "old_left5_MC_MSE_not_worse_zero": false,
+      "old_other_MC_MSE_not_worse_GAE102percent": false,
+      "old_other_MC_MSE_not_worse_zero": true,
+      "wide_left_MC_MSE_not_worse_GAE102percent": true,
+      "wide_left_MC_MSE_not_worse_zero": true,
+      "wide_right_MC_MSE_not_worse_GAE102percent": false,
+      "wide_right_MC_MSE_not_worse_zero": true
+    },
+    "navigation_success_NOT_measured": true,
+    "eligible_only_for_separate_future_online_test": false
+  },
+  "grouped_validation_metrics": {
+    "GAE": {
+      "old_left5": {
+        "episodes": 2,
+        "reset_groups": 1,
+        "mse": 0.47802903831712373,
+        "bias": 0.07616821818184227,
+        "start_squared_error": 0.37273128804624295
+      },
+      "old_other": {
+        "episodes": 8,
+        "reset_groups": 6,
+        "mse": 0.28490712403823787,
+        "bias": 0.12168015415434141,
+        "start_squared_error": 0.204056810141301
+      },
+      "wide_left": {
+        "episodes": 4,
+        "reset_groups": 4,
+        "mse": 0.3675783199938924,
+        "bias": 0.5674176705054652,
+        "start_squared_error": 0.22415868664236108
+      },
+      "wide_right": {
+        "episodes": 4,
+        "reset_groups": 4,
+        "mse": 0.013000443764366995,
+        "bias": -0.08152332080899581,
+        "start_squared_error": 0.02137351121812868
+      },
+      "category_equal_overall": {
+        "mse": 0.28587873152840526,
+        "bias": 0.17093568050816327,
+        "start_squared_error": 0.20558007401200842
+      }
+    },
+    "MC": {
+      "old_left5": {
+        "episodes": 2,
+        "reset_groups": 1,
+        "mse": 0.5919592196415026,
+        "bias": -0.25009190892492694,
+        "start_squared_error": 0.36151472305097077
+      },
+      "old_other": {
+        "episodes": 8,
+        "reset_groups": 6,
+        "mse": 0.32159154037807053,
+        "bias": 0.04501011566956292,
+        "start_squared_error": 0.21870813368012954
+      },
+      "wide_left": {
+        "episodes": 4,
+        "reset_groups": 4,
+        "mse": 0.1667352744044768,
+        "bias": 0.32523518074571206,
+        "start_squared_error": 0.2836746753841296
+      },
+      "wide_right": {
+        "episodes": 4,
+        "reset_groups": 4,
+        "mse": 0.022862999305307788,
+        "bias": -0.1333327120340935,
+        "start_squared_error": 0.09582117387991768
+      },
+      "category_equal_overall": {
+        "mse": 0.2757872584323394,
+        "bias": -0.0032948311359363644,
+        "start_squared_error": 0.23992967649878688
+      }
+    }
+  },
+  "zero_validation": {
+    "old_left5": {
+      "episodes": 2,
+      "reset_groups": 1,
+      "mse": 0.5643593694267767,
+      "bias": -0.039373011108111255,
+      "start_squared_error": 0.3027311853605279
+    },
+    "old_other": {
+      "episodes": 8,
+      "reset_groups": 6,
+      "mse": 0.7275105290456472,
+      "bias": -0.6553707008684251,
+      "start_squared_error": 0.5271180280374652
+    },
+    "wide_left": {
+      "episodes": 4,
+      "reset_groups": 4,
+      "mse": 0.38761813607835793,
+      "bias": 0.5958234907605366,
+      "start_squared_error": 0.10847752374248784
+    },
+    "wide_right": {
+      "episodes": 4,
+      "reset_groups": 4,
+      "mse": 0.5633080703725442,
+      "bias": -0.7390334203936425,
+      "start_squared_error": 0.29525129179852505
+    },
+    "category_equal_overall": {
+      "mse": 0.5606990262308315,
+      "bias": -0.20948841040241054,
+      "start_squared_error": 0.3083945072347515
+    }
+  },
+  "models": {
+    "GAE": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t442_value_warmup/GAE.pt.gz",
+      "sha256": "5795f142300c52d7515a0794a0adcc5dde122dbdd2a7183bf21ded66aabd891d",
+      "bytes": 389390,
+      "state_hash": "92a8b61e6220953da1a74e2c7dd935909e231b859315a0d5fd78b032fa674586"
+    },
+    "MC": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t442_value_warmup/MC.pt.gz",
+      "sha256": "c7f49a1f61303b46ba7dc168c024c47cdcb07a8cc8984b88877dc99f5089c59d",
+      "bytes": 389247,
+      "state_hash": "6996e29a6391e6886e86239026aaeb616d390c2987ae77d7575b3aa87faf44c3"
+    }
+  },
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "six_gate": false,
+  "eight_started": false,
+  "online_actor_followup_started": false,
+  "finished_epoch": 1794221824.108133
+}
