@@ -1,0 +1,128 @@
+{
+  "state": "NOT_EXECUTED_DEADLINE_EXPIRED",
+  "observed_epoch": 1794185080.8802435,
+  "observed_beijing": "2026-11-09 08:43 onward",
+  "deadline_beijing": "2026-11-09 08:30",
+  "T432_actual": {
+    "physics": 10706363,
+    "commands": 684,
+    "main_wall_s": 1958.4267523288727
+  },
+  "T432_results": {
+    "b": {
+      "wide54": {
+        "valid": 54,
+        "success": 50,
+        "contact": 2,
+        "timeout": 2,
+        "invalid": 0,
+        "censored": 0
+      },
+      "old275": {
+        "valid": 275,
+        "success": 269,
+        "contact": 5,
+        "timeout": 1,
+        "invalid": 0,
+        "censored": 0
+      },
+      "accepted": false,
+      "physics": 5305172,
+      "commands": 333,
+      "main_wall_s": 976.6444473266602,
+      "audit_state": "PASS"
+    },
+    "c": {
+      "wide54": {
+        "valid": 54,
+        "success": 52,
+        "contact": 2,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "old275": {
+        "valid": 275,
+        "success": 269,
+        "contact": 5,
+        "timeout": 1,
+        "invalid": 0,
+        "censored": 0
+      },
+      "accepted": false,
+      "physics": 5280751,
+      "commands": 333,
+      "main_wall_s": 948.5194439888,
+      "audit_state": "PASS"
+    }
+  },
+  "T432_six_gate": false,
+  "T432_eight_started": false,
+  "T432_remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "relay_protocol_exists": false,
+  "relay_preflight_exists": false,
+  "relay_launch_exists": false,
+  "relay_driver_started_exists": false,
+  "relay_native_commands": 0,
+  "relay_optimizer_calls": 0,
+  "relay_navigation_measurements": null,
+  "reason": "Preparation turn interrupted before registration/preflight/launch; no autonomous relay was launched. Hard deadline now expired. No restart or extension.",
+  "draft_AST_pass": true,
+  "draft_not_runtime_verified": true,
+  "draft_sources": [
+    {
+      "path": "stage/experiments/t434_night_relay/audit.py",
+      "bytes": 11049,
+      "sha256": "b1186c70c064d83a803be8473b99dca626f391e0ae7b28331a83d956f51b899d"
+    },
+    {
+      "path": "stage/experiments/t434_night_relay/contract.py",
+      "bytes": 18812,
+      "sha256": "7296ee2d4d3c74ec2081a2bd379ae8e7c26377813df8a0379980c65aca4c13e9"
+    },
+    {
+      "path": "stage/experiments/t434_night_relay/driver.py",
+      "bytes": 26156,
+      "sha256": "a095dbddefbb2dc4a7901f60281a0b1a05a9f8cdbb8779091ce15189ab16c324"
+    },
+    {
+      "path": "stage/experiments/t434_night_relay/run.py",
+      "bytes": 18526,
+      "sha256": "1d58783b13559f52446ac4d95d3e9689754dcd0949e34c12eb0ba545b5682888"
+    },
+    {
+      "path": "stage/experiments/t434_night_relay/runner.py",
+      "bytes": 10105,
+      "sha256": "4ff22f4695448925d1dcad2273160965ff07ff5158d099d9a63a5516b3aa1d55"
+    },
+    {
+      "path": "stage/experiments/t434_night_relay/t434_core.py",
+      "bytes": 7817,
+      "sha256": "26fe3fc63cb4bf977f37b3094c72d4efdb71119303095d597edfedfba77e5b49"
+    },
+    {
+      "path": "stage/experiments/t434_night_relay/t434_learning.py",
+      "bytes": 16270,
+      "sha256": "f184d60d8b78329c47d05a73c9984b9aeefe5b9032b059dd1a75f1d9c356613c"
+    },
+    {
+      "path": "stage/experiments/t434_night_relay/transport.py",
+      "bytes": 1523,
+      "sha256": "4fd550bfaadff9f7335809ccc3eb38591f93ea091dd81eeaa30699f23f6bb709"
+    }
+  ],
+  "reserve_encoding_executed": false,
+  "reserve_candidate_original_files_present": 194,
+  "reserve_candidate_count": 194,
+  "current_relevant_native_driver_processes": [],
+  "newruns_logical_bytes": 1034965474,
+  "newruns_max_bytes": 1073741824,
+  "free_disk_bytes": 243909496832,
+  "min_free_bytes": 42949672960,
+  "seven_skipped": true,
+  "eight_unexecuted": true,
+  "fresh16_unexecuted": true,
+  "reload78_unexecuted": true,
+  "no_unexecuted_group_failure_rate": true,
+  "no_old_raw_or_model_deleted_in_this_relay_preparation": true
+}
