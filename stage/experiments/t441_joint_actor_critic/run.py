@@ -141,7 +141,9 @@ def preflight():
 
 class Runtime:
     def __init__(self,p):
-        self.p=p;self.start=time.time();self.deadline=self.start+p['main_seconds'];self.learnstop=self.start+p['learning_seconds']
+        self.p=p;self.start=time.time();launch_epoch=read(OUT/'launch.json')['epoch']
+        self.deadline=min(self.start+p['main_seconds'],launch_epoch+p['main_seconds'])
+        self.learnstop=min(self.start+p['learning_seconds'],launch_epoch+p['learning_seconds'])
         self.counts=mp.get_context('spawn').RawArray('q',9);self.commands=8;self.rows=[];self.replays=[];self.last=0.;self.role='SETUP';self.pool=None
         self.lock=(ROOT/'stage/runs/.stage_writer.lock').open('a+b');fcntl.flock(self.lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
         save(OUT/'main_started.json',dict(pid=os.getpid(),epoch=self.start,native_stop=self.deadline,learning_stop=self.learnstop))
@@ -287,6 +289,7 @@ def audit():
 
 def launch():
     p=read(OUT/'protocol.json');verify(p,True);assert read(OUT/'preflight.json')['state']=='PASS'
+    assert read(OUT/'final_contract.json')['state']=='PASS'
     assert not (OUT/'launch.json').exists()
     receipt=read(ROOT/'stage/runs/t224_archive/latest_source_sync_receipt.json')
     assert receipt['root_tree']==subprocess.check_output(['git','rev-parse','HEAD^{tree}'],cwd=ROOT,text=True).strip()
