@@ -1,0 +1,165 @@
+"""T441 warm-start joint recurrent PPO/V integration; no import-time execution."""
+from pathlib import Path
+import copy, gzip, io, math, os, sys
+
+os.environ.setdefault('CUBLAS_WORKSPACE_CONFIG', ':4096:8')
+ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(ROOT/'stage/experiments/t437_joint_closed_loop_rl'))
+import t437_core as C
+sys.path.insert(0, str(ROOT/'stage/experiments/joint_recurrent_actor_critic'))
+from physical_gae import physical_gae
+E, torch, np = C.E, C.torch, C.np
+digest, read, save, sha = C.digest, C.read, C.save, C.sha
+EDGE = (1. + float(np.nextafter(np.float32(1), np.float32(0)))) / 2
+
+
+def cpu(value):
+    if torch.is_tensor(value): return value.detach().cpu().clone()
+    if isinstance(value, dict): return {k: cpu(v) for k, v in value.items()}
+    if isinstance(value, list): return [cpu(v) for v in value]
+    if isinstance(value, tuple): return tuple(cpu(v) for v in value)
+    return copy.deepcopy(value)
+
+
+def density(loc, raw, atom, sigma):
+    sd = loc.new_tensor(sigma)
+    interior = -.5*((raw.detach()-loc)/sd).square()-sd.log()-.5*math.log(2*math.pi)
+    return torch.where(atom < 0, torch.special.log_ndtr((-EDGE-loc)/sd),
+                       torch.where(atom > 0, torch.special.log_ndtr((loc-EDGE)/sd), interior)).sum(-1)
+
+
+class Value(torch.nn.Module):
+    """Independent causal recurrent V; observation112 already contains clock."""
+    def __init__(self, q, seed):
+        super().__init__()
+        self.register_buffer('mean', q.mean.detach().cpu().clone())
+        self.register_buffer('scale', q.scale.detach().cpu().clone())
+        with torch.random.fork_rng(devices=[]):
+            torch.manual_seed(seed)
+            self.encoder = torch.nn.Sequential(torch.nn.Linear(120,64), torch.nn.Tanh()).double()
+            self.core = torch.nn.GRU(64,32).double()
+            self.head = torch.nn.Linear(32,1).double()
+            torch.nn.init.zeros_(self.head.weight); torch.nn.init.zeros_(self.head.bias)
+
+    def forward(self, x):
+        s = ((x.double()-self.mean)/self.scale).clamp(-10,10)
+        h, _ = self.core(self.encoder(s)[:,None])
+        return self.head(h[:,0])[:,0]
+
+
+def make(p, device='cpu'):
+    torch.set_num_threads(1); torch.use_deterministic_algorithms(True)
+    q = E.safe_initial(E.N.science(p), p).eval()
+    q.requires_grad_(False)
+    for name, v in q.named_parameters():
+        v.requires_grad_(name.startswith(('encoder.','core.','extra.')))
+    params = [v for v in q.parameters() if v.requires_grad]
+    assert sum(v.numel() for v in params) == 10722
+    v = Value(q, p['value_seed']).eval()
+    q.to(device); q.base.cpu()  # frozen safe base features are evaluated on CPU
+    v.to(device)
+    ao = torch.optim.Adam(params, lr=p['actor_lr'], foreach=False, fused=False)
+    vo = torch.optim.Adam(v.parameters(), lr=p['value_lr'], foreach=False, fused=False)
+    return q, v, ao, vo
+
+
+def state(q, v, ao, vo):
+    return cpu(dict(actor=q.learned(), value=v.state_dict(), actor_opt=ao.state_dict(), value_opt=vo.state_dict()))
+
+
+def load(objects, saved):
+    q,v,ao,vo = objects
+    q.load_learned(saved['actor']); v.load_state_dict(saved['value'])
+    ao.load_state_dict(copy.deepcopy(saved['actor_opt'])); vo.load_state_dict(copy.deepcopy(saved['value_opt']))
+
+
+def export(objects, path, limit=1024**2):
+    q,v,ao,vo = objects; s = state(*objects)
+    # Historical native decoder consumes state.learned only; V never deployed.
+    item = dict(state=dict(learned=s['actor'], optimizer=s['actor_opt']), joint_state=s,
+                hashes=dict(learned=digest(s['actor']), optimizer=digest(s['actor_opt'])),
+                policy_hash=q.phash(), joint_hash=digest(s), memory_on=True,
+                architecture='T441_existing_recurrent_Actor_plus_training_only_independent_V',
+                deployed_actor_count=1, teacher_at_deployment=False)
+    b=io.BytesIO(); torch.save(item,b); data=gzip.compress(b.getvalue(),mtime=0)
+    assert len(data)<=limit,(len(data),limit)
+    Path(path).write_bytes(data)
+    return dict(path=str(path),sha256=sha(path),policy_hash=item['policy_hash'],joint_hash=item['joint_hash'],bytes=len(data))
+
+
+def read_state(path):
+    return torch.load(io.BytesIO(gzip.decompress(Path(path).read_bytes())),map_location='cpu',weights_only=False)['joint_state']
+
+
+def batches(objects, arrays, p):
+    q,v,ao,vo=objects; device=next(v.parameters()).device; result=[]; errors=[]
+    for a in arrays:
+        x=torch.as_tensor(a['states'],device=device)
+        with torch.no_grad():
+            b=q.base_actions(torch.as_tensor(a['states'])).to(device)
+            loc=q.sequence(x,b)
+            loc_error=float((loc-loc.new_tensor(a['locations'])).abs().max())
+            raw=loc.new_tensor(a['raw_actions']); atom=torch.as_tensor(a['atom'],device=device)
+            old=loc.new_tensor(a['logp']); lp_error=float((density(loc,raw,atom,p['raw_sigma'])-old).abs().max())
+            assert loc_error<1e-10 and lp_error<1e-9,(loc_error,lp_error)
+            assert not np.asarray(a['ownership']).any() and np.asarray(a['stochastic']).all()
+            assert np.array_equal(a['states'][1:],a['next_states'][:-1])
+            flags=np.asarray(a['end_flags']); assert flags[-1].sum()==1 and not flags[:-1].any()
+            extended=np.concatenate([a['states'],a['next_states'][-1:]],axis=0)
+            vv=v(torch.as_tensor(extended,device=device)).cpu().numpy()
+        bootstrap=np.ones((len(x),1),bool); bootstrap[-1]=False
+        trace=bootstrap.copy()
+        adv,target=physical_gae(np.asarray(a['rewards'])[:,None],vv[:-1,None],vv[1:,None],
+            np.asarray(a['native_counts'],dtype=np.int64)[:,None],bootstrap,trace,
+            gamma_native=p['gamma_native'],lambda_native=p['lambda_native'])
+        group=int(a['_group']); assert group in (0,1)
+        result.append(dict(x=x,b=b,raw=raw,atom=atom,old=old,oldloc=loc.detach(),
+                           advantage=adv[:,0],target=target[:,0],group=group,old_values=vv[:-1].copy()))
+        errors.append([loc_error,lp_error])
+    assert [r['group'] for r in result].count(0)==8 and [r['group'] for r in result].count(1)==8
+    for group in (0,1):
+        selected=[r for r in result if r['group']==group]
+        mean=np.mean([r['advantage'].mean() for r in selected])
+        second=np.mean([np.mean(r['advantage']**2) for r in selected])
+        sd=math.sqrt(max(0.,second-mean**2))+1e-8
+        for r in selected:
+            r['adv']=r['old'].new_tensor((r['advantage']-mean)/sd)
+            r['target_tensor']=r['old'].new_tensor(r['target'])
+    return result,errors
+
+
+def fit(objects, arrays, p, guard, event):
+    q,v,ao,vo=objects; batch,errors=batches(objects,arrays,p); trace=[]
+    frozen=digest({k:t for k,t in q.state_dict().items() if not k.startswith(('encoder.','core.','extra.'))})
+    for epoch in range(p['epochs']):
+        guard(); ao.zero_grad(set_to_none=True); vo.zero_grad(set_to_none=True)
+        pg=vl=0.
+        for r in batch:
+            ratio=(density(q.sequence(r['x'],r['b']),r['raw'],r['atom'],p['raw_sigma'])-r['old']).exp()
+            assert torch.isfinite(ratio).all()
+            loss=-torch.minimum(ratio*r['adv'],ratio.clamp(1-p['ppo_clip'],1+p['ppo_clip'])*r['adv']).mean()/16
+            loss.backward();pg+=float(loss.detach())
+            loss=.5*(v(r['x'])-r['target_tensor']).square().mean()/16
+            loss.backward();vl+=float(loss.detach())
+        an=float(torch.nn.utils.clip_grad_norm_([t for t in q.parameters() if t.requires_grad],1.,error_if_nonfinite=True))
+        vn=float(torch.nn.utils.clip_grad_norm_(v.parameters(),1.,error_if_nonfinite=True))
+        event('BEFORE',epoch); ao.step(); vo.step(); event('AFTER',epoch)
+        with torch.no_grad():
+            kl=0.; maxlr=0.
+            for r in batch:
+                logratio=density(q.sequence(r['x'],r['b']),r['raw'],r['atom'],p['raw_sigma'])-r['old']
+                kl+=float((logratio.exp()-1-logratio).mean())/16
+                maxlr=max(maxlr,float(logratio.abs().max()))
+        assert math.isfinite(kl+maxlr)
+        assert digest({k:t for k,t in q.state_dict().items() if not k.startswith(('encoder.','core.','extra.'))})==frozen
+        trace.append(dict(epoch=epoch,policy_loss=pg,value_loss=vl,actor_grad_norm=an,value_grad_norm=vn,
+                          approximate_forward_KL=kl,max_abs_logratio=maxlr))
+        if kl>p['target_kl']:break  # retain finite learning; no old-success rollback
+    diagnostics=[]
+    for r in batch:
+        variance=float(np.var(r['target']))
+        diagnostics.append(dict(group=r['group'],decisions=len(r['advantage']),
+            raw_advantage_mean=float(r['advantage'].mean()),raw_advantage_std=float(r['advantage'].std()),
+            old_V_MSE=float(np.mean((r['target']-r['old_values'])**2)),
+            old_V_explained_variance=None if variance<1e-15 else 1-float(np.var(r['target']-r['old_values']))/variance))
+    return dict(trace=trace,density_errors=errors,diagnostics=diagnostics,Actor_Adam=len(trace),V_Adam=len(trace))
