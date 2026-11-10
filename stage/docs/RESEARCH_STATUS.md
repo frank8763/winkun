@@ -1,3 +1,5 @@
+2026-11-10夜间T468有限离线纠正接力已结束，completed=['occupancy_0', 'duration_0']/reason=FINITE_FIXED_NIGHT_MECHANISMS_COMPLETE，physics=10560816/commands=716，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED/six_gate=False。实际占用与完整时长目标两机制各至多2轮，拒绝不传不重复同策略占用，8等待用户看后，本程序未启动8。所有raw/模型/失败保留，Phase隔离。详overnight_20261110/FINAL_REPORT。
+
 2026-11-10 T468离线夜间有限接力已注册，缓存完整远端读回/105旧日志无损编码与两独立存储审计通过，0native/4丢弃Adam和8worker取消预检PASS；尚待最终精确源码同步和唯一launch，不称已训练。起点T463PPO327，00/21两旧任务失守；occupancy与duration两机制各条件最多2轮/每轮128BC+shadow，完整329保全当前成功且新增才传递；40M/2000命令/14400main秒/root80MiB/global1GiB/free40不扩，明早11月11日07:15停学07:45停原生08:30全停。条件16fresh+78独立原生精确/audit/完整二进制SHA后才六米门，用户看后再8、本程序无8源码/不启动；Phase隔离。详overnight_20261110/PLAN/BUDGET/READINESS。
 
 2026-11-10 T467冻结327实际占用诊断结束，audit=True/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，physics=244496/commands=52；0optimizer/教师原生0，6自主full+6exact全历史精确旧policy/job，非新增独立数据；离线00T255reset/21T461carry真studenthistory标签及连续3转向误差阈值检测点，仅未来恢复候选未物理验证。夜间未由该诊断启动，六米门False/8未进/Phase隔离。详review_20261110/T467_FINAL_REPORT。
