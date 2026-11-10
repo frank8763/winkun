@@ -1,3 +1,5 @@
+2026-11-10 T467冻结327实际占用诊断结束，audit=True/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，physics=244496/commands=52；0optimizer/教师原生0，6自主full+6exact全历史精确旧policy/job，非新增独立数据；离线00T255reset/21T461carry真studenthistory标签及连续3转向误差阈值检测点，仅未来恢复候选未物理验证。夜间未由该诊断启动，六米门False/8未进/Phase隔离。详review_20261110/T467_FINAL_REPORT。
+
 2026-11-10 T466仅CPU事后标签拟合审计PASS：0native/optimizer/backward/CUDA，两成功恢复history上00后段转向RMSE.022643→.022652、>.05仍8决策；21teacherhistory小MSE反增而自主修复，不能以MSE充稳定/因果。首dtype适配错误0native/Adam原源文本与错误保留，仅实际float32包恢复。T465最终325/329：21修复、00仍接触，另损宽LEFT20/旧task2_24/6_03；原始364文件远端逐成员SHA及audit通过，原327研究副本未替换。当前所有仿真/训练退出，窗口累计21680914物理1474命令，剩126不足再完整329，本窗不追加导航/延20:00；下一占用覆盖/表示/Adam冲突机制仅草案未注册启动，用户看后才8，8未进，Phase隔离。详review_20261110/T465_FINDINGS_AND_NEXT、T466_FINDINGS/LABEL_AUDIT。
 
 2026-11-10 T465两失败当前偏离修复已结束：wide53/54old272/275，reason=DEVELOPMENT329_REMAINING_FAILURES，six_gate=False，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，physics=5285452/commands=347，累计原窗口21680914/1474不扩30M/1600。复用T464四own成功及一条T461成功21，新增同4sec前缀safeT255reset教师00及exact，门过才128BC，不称新RL。结果等待用户看后再考虑8，8未启动/Phase隔离。详review_20261110/T465_FINAL_REPORT。
