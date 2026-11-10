@@ -11005,7 +11005,7 @@
   "all_original_errors_models_and_failures_preserved": true,
   "eight_diagnostic_implemented": false,
   "remote_cache_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t463_evening_2000/cache_plan.json",
-  "remote_cache_sha256": "3f18286eda69bc7da711975730c92766592a2bd6ebace1092f77ff21de0eb032",
+  "remote_cache_sha256": "07c4ac255551a888bac17726305f4af6bef4bcee4a99fb279b87b532b9df2185",
   "cache_total_reserved_bytes": 91226112,
   "cache_hard_stop_epoch": 1794295689.3355675,
   "inputs": {
@@ -12502,8 +12502,8 @@
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t462_recurrent_parent_correction/driver.py": "2e5bd9360b6d0ef1b1760202b4e316b1b27f274137802acfc31237f63a9c20e2",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t462_recurrent_parent_correction/run.py": "40a2c0c03063d6c3dbb7e2a6f057478b99a8804c951339386db61ec5facf4af8",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t462_recurrent_parent_correction/transport.py": "4502e6fd02f92f164dbcf87983c614d66c1d5e939cc5a3b7096ec6d8b281cac4",
-    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t463_evening_2000/cache_plan.json": "3f18286eda69bc7da711975730c92766592a2bd6ebace1092f77ff21de0eb032",
-    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t463_evening_2000/driver.py": "e539c10c04db44a3b86ff3a6a237f406ffb5c0cd660597a8b9fe496a7b37dbb5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t463_evening_2000/cache_plan.json": "07c4ac255551a888bac17726305f4af6bef4bcee4a99fb279b87b532b9df2185",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t463_evening_2000/driver.py": "1a4831eaaf04d4312b53f5c24f13b312b498e6c66414411bf1a00dd5803934a8",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t463_evening_2000/run.py": "a8b956eab9568678294b5832988ad8550cf9cce1f6e659a4619adc4eef8174de",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t463_evening_2000/t463_cache.py": "32d53e097ad1214faf9867c807cd1970564b68b179eaadfd0f0c5d75d03f1f2b",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t463_evening_2000/t463_learning.py": "ec47a5d81b2d5bdf2558113ab79e532e98e1101c5d62eb844f4dd954faa5acd5",
@@ -15105,6 +15105,11 @@
   "registration_metadata_fix": {
     "reason": "Restore API now reads the registered external cache plan with exact SHA; no cache/native/optimizer executed before correction.",
     "old_protocol_sha256": "2cb1436e8956eba25e60e4607a8878ef720d1c50499a45b58dd4bbe9e902ba60",
+    "native": 0,
+    "optimizer": 0
+  },
+  "process_seal_prelaunch_fix": {
+    "reason": "Register every scientific subprocess and verify all process groups and worker generations stopped before root sealing or archive, including no-summary failure path.",
     "native": 0,
     "optimizer": 0
   }

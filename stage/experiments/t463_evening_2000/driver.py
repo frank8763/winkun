@@ -11,6 +11,9 @@ def sha(f):return hashlib.sha256(Path(f).read_bytes()).hexdigest()
 def call(*args,seconds):
     c=subprocess.Popen(['taskset','-c','0',str(ROOT/'run_stage.sh'),str(HERE/'run.py'),*args],cwd=ROOT,
         stdout=subprocess.PIPE,stderr=subprocess.STDOUT,start_new_session=True)
+    with (OUT/'subprocesses.jsonl').open('a') as registry:
+        registry.write(json.dumps(dict(pid=c.pid,pgid=c.pid,args=list(args),epoch=time.time()))+'\n')
+        registry.flush();os.fsync(registry.fileno())
     try:
         b,_=c.communicate(timeout=max(1,seconds))
         if c.returncode:raise RuntimeError(b.decode(errors='replace')[-8000:])
@@ -122,9 +125,25 @@ def main():
     # All science has exited. Freeze this entire run before binary backup.
     # After SEALED is written, finalizer writes only outside OUT.
     try:
-        ids=[]
+        registry=OUT/'subprocesses.jsonl'
+        processes=[json.loads(line) for line in registry.read_text().splitlines()] if registry.exists() else []
+        ids=[entry['pid'] for entry in processes]
         for name in completed:
-            if (OUT/name/'SEALED.json').exists():ids+=read(OUT/name/'SEALED.json')['scientific_pids']
+            folder=OUT/name
+            if (folder/'worker_generations.json').exists():
+                for generation in read(folder/'worker_generations.json'):
+                    ids+=[generation['parent']]+generation['workers']
+            if (folder/'SEALED.json').exists():ids+=read(folder/'SEALED.json')['scientific_pids']
+        groups={entry['pgid'] for entry in processes}
+        # Include workers killed before their generation receipt could be saved.
+        # Missing summary or failed cleanup must never authorize a live archive.
+        for stat in Path('/proc').glob('[0-9]*/stat'):
+            try:
+                tail=stat.read_text().rsplit(')',1)[1].split()
+                if int(tail[2]) in groups:ids.append(int(stat.parent.name))
+            except (FileNotFoundError,ProcessLookupError):pass
+        ids=sorted(set(ids))
+        assert all(not Path('/proc',str(pid)).exists() for pid in ids), 'Scientific process chain not fully stopped; no seal/archive'
         save(OUT/'summary.json',dict(state='SEALED_FINITE_ROOT',pid=os.getpid(),completed=completed,reason=reason,
             physics=physics,commands=commands,main_elapsed_s=elapsed,all_scientific_pids=ids))
         report=dict(state='COMPLETE_AUDITED_LOCAL' if all_audited else 'STOPPED_EVIDENCE_PRESERVED',
