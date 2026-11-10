@@ -1,3 +1,5 @@
+2026-11-10 T456冻结首PPO候选完整开发验收已结束，state=COMPLETE_AUDITED_LOCAL，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；宽54/54旧251/275，development_admitted=False；0新训练，physics=5367192 commands=369。开发面板事后选择研究检查点，不覆盖T455固定末模型失败；16fresh/78未预留未执行null，six_gateFalse/8未进，原328/safeT255保留/Phase隔离。详review_20261110/T456_FINAL_REPORT。
+
 2026-11-10 T456冻结首PPO模型完整329验收已注册/零原生零优化器预检PASS，尚待源码精确远端及唯一launch。T455最终245/329失败不改，首轮11中心全safe且00GOAL但从未完整329；本次事后开发候选冻结独立评价、0训练。原11面板历史全数组摘要/终态积分须精确复现，不充新独立样本；全部329同一源/模型SHA，紧凑证据audit不冒称120/hidden全复验。7M全部物理最坏6.966735M、400cmd最坏369、own8MiB/global1GiB/free40，main1800audit300backup600all3000秒预计7–15分钟非硬截止排满。fresh16/78未预留不执行null，329全过也只开发准入/six门未过不8。safeT255/原328保留，Phase隔离；详review_20261110/T456_PLAN/BUDGET/READINESS。
 
 2026-11-10 T455冻结表示动作头PPO已结束，state=COMPLETE_AUDITED_LOCAL，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；宽47/54旧198/275，development_admitted=False；BC=128，PPOActor=8/Value=8，physics=6292284 commands=422。16fresh/78未预留未执行null，six_gateFalse/8未进；原328研究父模型/safeT255保留，Phase隔离，不重启。详review_20261110/T455_FINAL_REPORT。
