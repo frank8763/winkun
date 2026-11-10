@@ -1,3 +1,5 @@
+2026-11-10 T474冻结控制独立复验＋联合修复夜间链已注册/0native4丢弃Adam/26零步命令正式预检PASS，尚待精确源码及唯一launch。T473FAILED原件不改，已有旧15成功控制只做两独立新原点重生/audit门，不重跑CEM；门过后joint与priority两固定128BC+shadow分支分别从原327初始化，原生raw15只监督执行后缀。全329过才16fresh/78独立精确/audit/全备份；用户看后再8，程序无8。root64MiB/global1GiB/free40不扩，本轮20M/900命令/7800main仍计原夜40M2000cmd14400main；明早11月11日07:15停学07:45原生08:30全停，断网本地自动执行/网络仅末备份，Phase隔离。详overnight_20261110/T474_PLAN/BUDGET/READINESS。
+
 2026-11-10 T473旧15完整余时域原生相位CEM教师已结束，audit=False/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，physics=78416/commands=10；0Actor/optimizer，实际训练教师是否safe见报告，不能充自主六米成功；原T470/T472均未启动，无8，Phase隔离。详overnight_20261110/T473_FINAL_REPORT。
 
 2026-11-10 T473旧15完整余时域原生相位CEM教师已注册/0native0optimizer正式预检PASS，尚待精确源码与唯一launch。T471固定T255reset旧03恢复safe/旧15仍接触，原T470/T472学习门失败保持未运行。新T473同A325实际4sec原prefix，23334原cap/剩214hold，fixedT255成功动作先验+16knots单调phasewarp/drive控制CEM，首safe可停/最多3x12，双pass全原生逐数组精确和实测selected。1.6M物理最坏1582716/79全部cmd/32MiB/global1GiB/free40不扩，3000main900audit5100all/明早11月11日08:30更早从严，仍计原夜40M2000cmd14400main。控制优化仅训练教师0Actor/Adam，不称六米通过；source所有失败保留/无8，Phase隔离。详overnight_20261110/T473_PLAN/BUDGET/READINESS。
