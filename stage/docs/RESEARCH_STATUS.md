@@ -1,3 +1,5 @@
+2026-11-10 T450新有界历史验证已COMPLETE，0native/0新导航，2540丢弃历史Adam/1111.380s；tail1024+recovery1500逐步和末Actor/V/成熟Adam全joint SHA精确，首PPO双克隆4Actor4V一致并复现1587237B原超限长度（原未保存hash不可比）。完整未压缩1704343B+64KiB<2MiB，重建PPO不部署/不作为下一初始化。T449原FAILED不改，已保存328/329研究候选可用于独立新T451，仅修00；0PPO/400BC及当前成功函数保持，源/预算/零步未完成前不称启动。详review_20261110/T450_FINDINGS/T450_PLAN，Phase隔离/safeT255冻结。
+
 2026-11-10 T449早间只读复核：tail宽54/54旧272/275、recovery宽54/54旧274/275（sole dev_task6_00在32.26秒接触），原始完整联合328/329研究候选，修19丢1触发原非退拒绝，不晋升；selected仍T448宽51旧259。1024+1500 BC及shadow完成；首PPO4Actor4V及shadow后gzip1587237>1572864B触发硬停，实际22:55已结束/33min，后续未跑，原FAILED不覆盖。原完整历史Adam审计未执行；新0native0梯度0Adam限定原始SHA/12full history/hidden/teacher/density/reward及658compact计数复核PASS，不能冒称完整audit。716原文件15RAM段全远端逐成员SHA已过，TLS旧错误保留。fresh16/reload78未执行null/8未进/safeT255保护SHA不变/Phase隔离。无新训练，详overnight_20261109/MORNING_FINDINGS_20261110及POSTCHECK_20261110；后续只建议先工程预算修复/历史重构，再从328研究副本定位唯一旧00，不重启T449或续旧预算。
 
 2026-11-10 T449离线有限三机制接力已收尾，state=STOPPED_EVIDENCE_PRESERVED_NOT_AUDIT_PASS，remote=PENDING，physics=11011790 commands=722；详overnight_20261109/FINAL_REPORT。six_gate=False，8未进入，safeT255冻结/Phase隔离，不重启或追加旧预算。
