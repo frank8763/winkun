@@ -1,3 +1,5 @@
+2026-11-10 T453早期学生状态纠正＋新鲜PPO已注册/零原生预检PASS，尚待精确源码远端后唯一launch。从328/329研究父模型，128BC+128shadow，前21学生诱导状态权重1/教师后缀.1，原218参考+10自身history函数保持；2轮各4纯学生+4exact、最多8Actor8Value及对应shadow，新4秒查询安全才入BC不阻断PPO。中间11面板仅报告，固定最后模型完整329，最终原328保持＋修00才开发准入；16fresh/78本轮未预留不执行null，不称six_gate/不8。20MiBown/global1GiB/free40，8.296751M最坏/9M、422cmd最坏/500，main5400学2700audit1200all7800。继承旧零PPO/400BC说明字段在0native0Adam前修正，原注册源/协议保留；正式预检成熟双Adam/历史密度/4BC+至多8Actor8Value丢弃及8worker取消通过，不重跑预检。safeT255保护/Phase隔离，详review_20261110/T453_PLAN/BUDGET/READINESS。
+
 2026-11-10 T452冻结中段恢复诊断已结束，state=COMPLETE_AUDITED_LOCAL，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；教师恢复验证时刻[4.0]秒，仅混合恢复非学生自主收益；physics=132220 commands=48，Actor/V/PPO/BC均0。完整329/fresh16/78未执行，原328研究模型不变，8未进/Phase隔离。不重启；详review_20261110/T452_FINAL_REPORT。
 
 2026-11-10 T452已独立注册/零物理零Adam预检PASS，尚待源码精确远端后唯一launch。冻结328/329研究父模型，仅旧00学生自主4/12/24秒后T255接管及原生exact，1基线+3混合+4重放；全部186672最坏物理/20万硬限、48全部命令/64硬限、own12MiB/global1GiB/free40，main900audit600all2400秒。预计2–5分钟短诊断非40分钟队列，模型原件不动，完整329/fresh16/78/8未安排。原T451不重启、Phase隔离，详review_20261110/T452_PLAN/BUDGET/READINESS。
