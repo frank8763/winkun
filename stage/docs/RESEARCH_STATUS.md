@@ -1,3 +1,7 @@
+2026-11-10 T476八米首批冻结评估因紧凑文件4401B>4096B在0导航更新后停止：106668物理/74全部命令，原失败和远端逐SHA保留；两响应未落原始数组/结果为缺测，不能冒称完整原始已保全或以重复数据充独立。新T477仅工程恢复同3科学支线，compact8KiB/full1MiB/49MiBroot，逐臂逐轮预留完整383与元数据，原3臂各4轮不保证全执行；T476+T477合计仍50M/1800，不借新编号追加旧预算，Nov11 09:00全部硬停。当前已注册待实际预检/源码同步/唯一launch，Phase隔离。详overnight_20261110/T477_PLAN/BUDGET。
+
+2026-11-10/11 T476宽八米有限离线接力结束，completed=[]/reason=EVIDENCE_OR_ENGINEERING_FAILURE_STOP/physics=106668/commands=74/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；旧唯一失败继承不冒称修复，fresh16/reload78未执行，六米完整门与八米稳定门未声明通过。详overnight_20261110/T476_FINAL_REPORT，Phase完全隔离。
+
 2026-11-10 用户最新明确改为最佳研究模型推进宽八米/跳过七米，多固定机制离线接力至11月11日09:00。新T476已注册且62零物理几何/2worker取消/12合成丢弃Actor+V Adam预检PASS，尚待源码精确同步和唯一launch，未称正在训练。冻结T449宽六54/54旧274/275，唯一旧00失败继承；新独立窗口50M物理1800命令32400主管线秒/50MiBown/global1GiB/free40，原夜预算封账不续旧作业。三独立PPO/距离课程/lambda1信用分支，每臂最多4轮2新采集2exact/16epochs及shadow/历史audit；完整383开发，fresh16和78原生模型重载未预留不执行，不能称八米稳定。Phase完全隔离，详overnight_20261110/T476_PLAN/BUDGET/PRIMARY_SOURCES。
 
 2026-11-10 T475最后一次Stage试验结束，wide54/54 old267/275/reason=FINAL_ATTEMPT_FAILED_STOP_STAGE/physics=5260014/commands=339/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED/six_gate=False。用户要求未通过即停止，本管线无后续新实验/不再自动重试；原327/safeT255/全部证据保留，无8，Phase隔离。详overnight_20261110/T475_FINAL_REPORT。

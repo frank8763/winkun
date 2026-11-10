@@ -1,0 +1,31 @@
+{
+  "state": "BOUNDED_QUEUE_STOPPED",
+  "reason": "EVIDENCE_OR_ENGINEERING_FAILURE_STOP",
+  "completed": [],
+  "summaries": {
+    "baseline": {
+      "state": "FAILED",
+      "pid": 577827,
+      "mode": "baseline",
+      "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t476_wide8_relay/t476_runtime.py\", line 101, in main\n    c,values=assess(rt,p,p['initial'],'FROZEN_WIDE8',False);candidate=c\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t476_wide8_relay/t476_runtime.py\", line 94, in assess\n    values=rt.request(jobs,model,role);return dict(success_ids=safe(values),counts=R.M.tally([r for a,r in values]),model=model),values\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t476_wide8_relay/t476_runtime.py\", line 75, in request\n    else:E.N.write_npz(path,{k:a[k] for k in ['actions','native_counts','end_flags']},self.p['compact_bytes'])\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t387_full_horizon_night/night_common.py\", line 22, in write_npz\n    def write_npz(f,a,limit):R.write_npz(f,a,limit)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t381_native_mppi_teacher/run.py\", line 36, in write_npz\n    b=blob(a);assert len(b)<=limit,(path,len(b),limit);Path(path).write_bytes(b)\nAssertionError: (PosixPath('/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t476_wide8_relay/baseline/episodes/0000.npz'), 4401, 4096)\n",
+      "physics": 106668,
+      "commands": 6,
+      "elapsed_s": 39.083282470703125,
+      "candidate": null,
+      "rounds": [],
+      "fresh": null,
+      "reload": null,
+      "full_stability_gate": false
+    }
+  },
+  "physics": 106668,
+  "commands": 74,
+  "main_seconds": 39.083282470703125,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "six_gate": false,
+  "eight_stability_gate": false,
+  "fresh16": null,
+  "reload78": null,
+  "inherited_old00_failure": true,
+  "all_scientific_processes_stopped": true
+}

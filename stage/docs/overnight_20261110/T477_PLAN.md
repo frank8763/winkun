@@ -1,0 +1,11 @@
+# T477 bounded engineering recovery of the registered wide8 relay
+
+Same latest user authorization and three scientific mechanisms as T476_PLAN. T476 preserved immutable FAILED: compact8mfirsttrajectory4401B exceeded4096B. No training/Adam executed. Two requests consumed106668physical/6maincommands, plus68zero-step preflightcommands=74. Parent failed before raw row persistence; those two outcomes/fullarrays are missing, not successes/failures. The old `all_raw_preserved` genericboolean only means savedfilespreserved and is insufficient: it does NOT establish those two lost in-memory responses were stored. Original error/protocol/remote archive remain, no restart/overwrite. New frozen54evaluation potentially repeatsfirst2deterministic tasks, repeatsfullycounted, not independentnewdata.
+
+This is one engineeringrecovery, no extra scientific seeds/epochs/branches or50M/1800wide8window enlargement. New allowance49,893,332physical/1726commands plusT476106668/74 ≤50M/1800. Existing oldsixrepairbudget separatelyclosed. Same Nov11 09:00 allstop/08:00learning/08:30native, per-arm earlierdeadlinefromstrictadmission.
+
+Differences only storage/evidence: compact8KiB, full1MiB. Max534decision adversarial random float32compact fixture must serialize below8KiB before launch. Ownroot49MiB, global≤1GiB/free≥40GiB; **not enough to guarantee worst-case4roundsof3arms**, so branch/round admission reservescomplete final383 pluslogs/partial/metadata beforeeachnewround. Actualcapacitystop may shortenqueue, never change science thresholds or delete uniqueevidence. No additional cleanup needed.
+
+Samefinite armcount3/max4rounds/2owntraining+2exact/16epochs; old8+six2+eight2 retention acceptance andfull383final, fresh/reloadnotallocatednull. Each independently starts T449bestActor/V withidenticalfreshoptimizers; wide6 54/54old274/275 inherited00failure. Direct8PPO,6.5/7/7.5/8finalgoalcourse,lambda1credit. No runtime planner/waypoint/teacher/router. Standardmethods, no originality/stabilityclaim. SeeT476_PRIMARY_SOURCES forprimarypapers.
+
+Independentauditand fullRAMremote per-memberSHA, scientificofflinequeue no network/API. Engineering/evidencefailure stopsfurtherbranches. Do not conceal observedfailures by reassigningexperimentIDs.
