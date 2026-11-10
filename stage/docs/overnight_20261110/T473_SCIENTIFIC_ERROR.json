@@ -1,0 +1,5 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t473_full_horizon_teacher/driver.py\", line 57, in main\n    call('main',seconds=min(3003,end-time.time()-1980));s=read(OUT/'summary.json');scientific_stopped(OUT);assert s['state']=='COMPLETE'\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t473_full_horizon_teacher/driver.py\", line 17, in call\n    if c.returncode:raise RuntimeError(b.decode(errors='replace')[-8000:])\nRuntimeError: Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t473_full_horizon_teacher/science.py\", line 656, in <module>\n    globals()[sys.argv[1]]()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t473_full_horizon_teacher/science.py\", line 463, in main\n    assert state == 'COMPLETE', 'T473 engineering failure; evidence preserved, no automatic restart'\nAssertionError: T473 engineering failure; evidence preserved, no automatic restart\n\n",
+  "raw_preserved": true,
+  "no_restart": true
+}

@@ -1,0 +1,625 @@
+{
+  "state": "INCOMPLETE_PRESERVED",
+  "summary": {
+    "state": "FAILED",
+    "pid": 552417,
+    "elapsed_s": 54.65904951095581,
+    "physics": 78416,
+    "main_commands": 8,
+    "preflight_commands": 2,
+    "commands": 10,
+    "optimizer": 0,
+    "optimizer_steps": 0,
+    "Actor_updates": 0,
+    "Actor_Adam": 0,
+    "Value_Adam": 0,
+    "backward": 0,
+    "learning_initial": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t468_offline_recovery_night/occupancy_0/proposal.pt.gz",
+      "sha256": "0e3fbb1c0c3b6255cfcb5d55596f4b7adbebd28992593747483d8302300ba969",
+      "policy_hash": "979d60909931e44ce0b685e4c7f97ff76f6a283ac94a939fe26bc3a7f1d1a5d3",
+      "joint_hash": "26575371fc808e5b585606713328a860f4cf1d032fde40a67cd545071ea675a7",
+      "bytes": 433962,
+      "uncompressed_bytes": 459029
+    },
+    "frozen_model_sha256": "0e3fbb1c0c3b6255cfcb5d55596f4b7adbebd28992593747483d8302300ba969",
+    "source_row": {
+      "complete": true,
+      "collision": true,
+      "success": false,
+      "timeout": false,
+      "administrative_censor": false,
+      "physics_steps": 14813,
+      "remaining_m": 1.470247816287637,
+      "policy_hash": "979d60909931e44ce0b685e4c7f97ff76f6a283ac94a939fe26bc3a7f1d1a5d3",
+      "physics": 14813,
+      "array_digest": "1ae158c7b8b5ba50ad67c11e2f6fbe66055337e925e85224683c4e570c55ad92",
+      "array_hashes": {
+        "states": "9a935e629ee8733ddb5f4591304835cea41a11ddb49c233d606d68e82ded8126",
+        "actions": "e188a68bd7e51394eedd4f382c6b18e244c59df8a53631058570fc61fe21403b",
+        "native_counts": "4917f720af1a916bd2f2a321103b872fcbfe877266bd226700fa2c28ad660ce9",
+        "next_states": "92e6825d415affb70da60a1cb0a86955a34555cf6bf850eaf4107b84c3ea8ebb",
+        "poses": "3c940b4ff2ec4a36b2bf6cac934051631b0ecd2d70edb8c3f3c048420c13ddf7",
+        "next_poses": "73c2d74302766cfedba835772ecec9704c050183a44023be42893ee45b732c89",
+        "end_flags": "b9e1c869a950fa46b5b34a2ab8f98f0e4ee586f10427c8028293fb5cecf54bb8",
+        "rewards": "391c9c941e7e0de67353844e6af0b7acd3ef63db59978742cbe6d8490bbeaee0",
+        "history_poses": "3b45afc2b77dc560f96b9234475ddda7fc4b343c9a934567fb499fade77fc597",
+        "history_goals": "28f7dfb7a627199d2c410c5d8c28ed00e9d8a8d8ba90fd8332759665adec26b8",
+        "history_times": "5ee4a7a87175328bc83a9bae462089076fed35014f9f38e64a2242fb3091f245",
+        "environment_rewards": "391c9c941e7e0de67353844e6af0b7acd3ef63db59978742cbe6d8490bbeaee0",
+        "initial_native_integration": "100efbdd3e0cddd2ef3e001c731f42aca3deca08b313bffd6cf8efe100fda60d",
+        "final_native_integration": "dcd9d62366c3caffa006344884b4e2e0dcc15de4dd233344b1968dd4d7a3c949",
+        "hidden_before": "a35e1f5d86a8d3307a05a201a5204ee0f54de135ab23674d1953911d1cf23856",
+        "last_hidden_after": "ae5d02124d39844c658c7ed3c2474d43392bef302e7a323e8b5db6a01d99b0ff",
+        "innovations": "b81742de005837b613c434bb93f1a7ef703a22c3317fb2efd9cb46e4d09f7f50",
+        "raw_actions": "02534074a8b51a797c26b8a592452f5e66b644659a8cc099f8800ae472f1b66d",
+        "atom": "32d3760c26be7b327356b07f7faff99202b8d7947794bc16a61eaebd79d155b1",
+        "locations": "02534074a8b51a797c26b8a592452f5e66b644659a8cc099f8800ae472f1b66d",
+        "logp": "b040aabcf7e81ef644b990b52dfa3860d73cc0224d04a6cc89613fb3683e2e5f",
+        "stochastic": "1f2c9c581d93ddf8f92fdfc01242ce5e806be3be1fcf4dae3a477cca51ada385",
+        "hold_sha256": "7919ce9675b13c06af7698ece6bd9a3e318f2042198da54c0c26d53a57234d19",
+        "ownership": "1f2c9c581d93ddf8f92fdfc01242ce5e806be3be1fcf4dae3a477cca51ada385",
+        "task_goal_xy": "bd683819ad4a7466713a6284033080da5b60c82059f72f2cfabef05c6e4d2849",
+        "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda"
+      },
+      "integration_sha256": "dcd9d62366c3caffa006344884b4e2e0dcc15de4dd233344b1968dd4d7a3c949",
+      "pid": 535453,
+      "cpu": 1,
+      "teacher": false,
+      "teacher_first": null,
+      "teacher_kind": null,
+      "teacher_source_SHA256": null,
+      "teacher_hidden_burns_actual_history_from_h0": false,
+      "job_id": "dev_task6_15",
+      "role": "STUDENT_FAILED4",
+      "seed": null,
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t468_offline_recovery_night/occupancy_0/proposal.pt.gz",
+        "job": {
+          "id": "dev_task6_15",
+          "group": "task6",
+          "case": {
+            "id": "5m_2029653601_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.0,
+            "step_cap": 23334,
+            "group": "original_5m_primary"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.03,
+          "delta_yaw_deg": -2.0
+        },
+        "seed": null,
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t469_counterexample_recovery/episodes/0001.npz",
+        "query": false
+      },
+      "loaded_model_sha256": "0e3fbb1c0c3b6255cfcb5d55596f4b7adbebd28992593747483d8302300ba969",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t469_counterexample_recovery/episodes/0001.npz",
+      "sha256": "167c1ac48c30e01566fa0705691c0408020ce6f4bdaf605d6c79e2747f6ee5fa",
+      "full": true
+    },
+    "prior_controls_sha256": "b5a7e31a3c58649037e72f90e45d2ee54511a1a5f1044bcc1ad046950b5112ee",
+    "nominal_array_digest": "ce0158d011d0c2492fe904a3df9078b808938deb175fb4e116d099ce0dc13ff6",
+    "passes": [
+      {
+        "pass_index": 0,
+        "iterations": [
+          {
+            "generation": 0,
+            "queries": [
+              0,
+              1,
+              2
+            ],
+            "elite": [
+              2,
+              0,
+              1
+            ],
+            "mean_before": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "sd_before": [
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ]
+            ],
+            "best_id": 2,
+            "best_score": [
+              0,
+              19205.0,
+              1.9110530788083913
+            ],
+            "safe_GOAL": true,
+            "mean_after": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "sd_after": [
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ],
+              [
+                0.12,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "queries": 3,
+        "selected_index": 2,
+        "selected_array_digest": "da95675617cdc7b4f693ca08aef521ee951e67e7bdb0cdeb874a9d72fcde3c83",
+        "safe_GOAL": true,
+        "snapshot_sha256": "1f58da1fdd4259d9846e1c01b6bdaf3aec7d19575732c6d64c1c1d2ff1bedac3",
+        "independent_search_pass": true
+      }
+    ],
+    "selected_rows": [
+      {
+        "complete": true,
+        "collision": false,
+        "success": true,
+        "timeout": false,
+        "administrative_censor": false,
+        "physics_steps": 21205,
+        "remaining_m": 0.19985276348160072,
+        "pass_index": 0,
+        "index": 2,
+        "kind": "selected",
+        "job_id": "dev_task6_15",
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t473_full_horizon_teacher/selected_pass0.npz",
+        "full": true,
+        "raw_teacher_control": true,
+        "teacher": true,
+        "teacher_first": 20,
+        "teacher_kind": "native_full_horizon_phasewarp_CEM",
+        "teacher_source_SHA256": "b5a7e31a3c58649037e72f90e45d2ee54511a1a5f1044bcc1ad046950b5112ee",
+        "teacher_hidden_burns_actual_history_from_h0": false,
+        "policy_hash": "979d60909931e44ce0b685e4c7f97ff76f6a283ac94a939fe26bc3a7f1d1a5d3",
+        "loaded_model_sha256": "0e3fbb1c0c3b6255cfcb5d55596f4b7adbebd28992593747483d8302300ba969",
+        "seed": null,
+        "request": {
+          "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t468_offline_recovery_night/occupancy_0/proposal.pt.gz",
+          "job": {
+            "id": "dev_task6_15",
+            "group": "task6",
+            "case": {
+              "id": "5m_2029653601_LEFT",
+              "seed": 2029653601,
+              "angle_deg": -17.3,
+              "side": "LEFT",
+              "distance_m": 5.0,
+              "step_cap": 23334,
+              "group": "original_5m_primary"
+            },
+            "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+            "delta_x_m": 0.0,
+            "delta_y_m": 0.03,
+            "delta_yaw_deg": -2.0
+          },
+          "seed": null
+        },
+        "physics": 21205,
+        "actual_charged_physics": 19205,
+        "length": 193,
+        "terminal_native": 21205,
+        "score": [
+          0,
+          19205.0,
+          1.9110530788083913
+        ],
+        "array_digest": "da95675617cdc7b4f693ca08aef521ee951e67e7bdb0cdeb874a9d72fcde3c83",
+        "array_hashes": {
+          "states": "bfe8c7a13c1d1c8d4e9e241d2991b7397c9a237780f55ec5dfda338fe4e388ef",
+          "actions": "cf2361f530ef006184026a807713ceca8f0aeaab93445824728837f6409b0461",
+          "native_counts": "93c4ff39ccbadb155df391ee16dd624dfc1169256ec38340b0c64b2ba2383037",
+          "next_states": "fc367f59ad2f891a5d62ee8118695547f1dc4567cbef41c48c26986bef79e8f2",
+          "poses": "85ebd0e780dc0c94e300bfb5a12c881ba37c3e512aac8d1aedeaf192d8e4023a",
+          "next_poses": "5ecd21cadf2ef3e2db683692b56031a75369ff94ef402b81a8cbd6149b1e8185",
+          "end_flags": "63054f07565f48beff5825c7be0f329e4cfc179908fc7b554699fe3d5e6a67cb",
+          "rewards": "8513bf26d40bc82a4340ef1738a4d7dc7c6c7c72fac3c00c063153a2617b44cd",
+          "history_poses": "f1b6fed8cbb4b3cc421442d8be334f49e5f3fdb2127926f06de2e0192f89bd9b",
+          "history_goals": "321ffff27445db704c7d64acbd6a2f559429554c7f84cb4156e7530297336628",
+          "history_times": "e23e4a5f153bdddc2d6be24cda154d4ca08ff1aa26517eba50c23c41845c3ef8",
+          "environment_rewards": "8513bf26d40bc82a4340ef1738a4d7dc7c6c7c72fac3c00c063153a2617b44cd",
+          "initial_native_integration": "100efbdd3e0cddd2ef3e001c731f42aca3deca08b313bffd6cf8efe100fda60d",
+          "final_native_integration": "de2c5c12162f30d3ac5b9f08a10343ea772077f52eeaa18b6f81f0fe5c2d79b2",
+          "hidden_before": "01beacb3ef40c6b801d021f8d938f5f981938e225a0f354de99a873ed0976cf8",
+          "last_hidden_after": "ebc15044f010ae32f5d71c34e0209c7b9b7b354e36781ea4ea105c0d27908f39",
+          "innovations": "8cf52b0a7af471cab5188dafa262e909bcd79d2ac17a78bf583760df4f74d78c",
+          "raw_actions": "b5c5fc3fd17190645f2ced3e0fdbc31893c52866cee5c9323409fab2b904a46e",
+          "atom": "923b8c81bf0f13481a1ec13044c770ad17d435aa688163436ec287b889be60d9",
+          "locations": "b5c5fc3fd17190645f2ced3e0fdbc31893c52866cee5c9323409fab2b904a46e",
+          "logp": "29e90e480d60a6a5ddb7d5695b24a27ad96b46e2b734a8e4f6749b52e933330c",
+          "stochastic": "d566a2c23cefd2adb8aad0ef1ec43613e54bc7f6a1eef2909900317d183324d6",
+          "hold_sha256": "a4620df8662baba32d998e36118e7cc4cf8a5a7669383198828e336344d37b65",
+          "ownership": "c7f32fdc8822378390768009593f189e2623b50452eef96b4db74a971c0b28d2",
+          "task_goal_xy": "bd683819ad4a7466713a6284033080da5b60c82059f72f2cfabef05c6e4d2849",
+          "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+          "teacher_actions": "cf2361f530ef006184026a807713ceca8f0aeaab93445824728837f6409b0461"
+        },
+        "integration_sha256": "de2c5c12162f30d3ac5b9f08a10343ea772077f52eeaa18b6f81f0fe5c2d79b2",
+        "end_flags": [
+          false,
+          true,
+          false
+        ],
+        "actual_controls_digest": "9e8f19d71a8886688902ddfd694a3fb3f1e44f39797895cc01dec6af5b2ffb8f",
+        "independent_new_sample": false,
+        "first_search_pass": true,
+        "new_native_control_query": false,
+        "not_autonomous_Actor_success": true,
+        "raw_labels_require_future_explicit_adapter": true,
+        "planned_controls_digest": "a936ab556da5f74403b05f5bf7debafcdb51b035ca1532d1a86e5d19ce74b6b5",
+        "sha256": "5b32db7280440812f5687656d077be84fea1277c1d77e259cf27d03a09eedafd"
+      }
+    ],
+    "result": {
+      "complete": true,
+      "collision": false,
+      "success": true,
+      "timeout": false,
+      "administrative_censor": false,
+      "physics_steps": 21205,
+      "remaining_m": 0.19985276348160072,
+      "pass_index": 0,
+      "index": 2,
+      "kind": "selected",
+      "job_id": "dev_task6_15",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t473_full_horizon_teacher/selected_pass0.npz",
+      "full": true,
+      "raw_teacher_control": true,
+      "teacher": true,
+      "teacher_first": 20,
+      "teacher_kind": "native_full_horizon_phasewarp_CEM",
+      "teacher_source_SHA256": "b5a7e31a3c58649037e72f90e45d2ee54511a1a5f1044bcc1ad046950b5112ee",
+      "teacher_hidden_burns_actual_history_from_h0": false,
+      "policy_hash": "979d60909931e44ce0b685e4c7f97ff76f6a283ac94a939fe26bc3a7f1d1a5d3",
+      "loaded_model_sha256": "0e3fbb1c0c3b6255cfcb5d55596f4b7adbebd28992593747483d8302300ba969",
+      "seed": null,
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t468_offline_recovery_night/occupancy_0/proposal.pt.gz",
+        "job": {
+          "id": "dev_task6_15",
+          "group": "task6",
+          "case": {
+            "id": "5m_2029653601_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.0,
+            "step_cap": 23334,
+            "group": "original_5m_primary"
+          },
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.03,
+          "delta_yaw_deg": -2.0
+        },
+        "seed": null
+      },
+      "physics": 21205,
+      "actual_charged_physics": 19205,
+      "length": 193,
+      "terminal_native": 21205,
+      "score": [
+        0,
+        19205.0,
+        1.9110530788083913
+      ],
+      "array_digest": "da95675617cdc7b4f693ca08aef521ee951e67e7bdb0cdeb874a9d72fcde3c83",
+      "array_hashes": {
+        "states": "bfe8c7a13c1d1c8d4e9e241d2991b7397c9a237780f55ec5dfda338fe4e388ef",
+        "actions": "cf2361f530ef006184026a807713ceca8f0aeaab93445824728837f6409b0461",
+        "native_counts": "93c4ff39ccbadb155df391ee16dd624dfc1169256ec38340b0c64b2ba2383037",
+        "next_states": "fc367f59ad2f891a5d62ee8118695547f1dc4567cbef41c48c26986bef79e8f2",
+        "poses": "85ebd0e780dc0c94e300bfb5a12c881ba37c3e512aac8d1aedeaf192d8e4023a",
+        "next_poses": "5ecd21cadf2ef3e2db683692b56031a75369ff94ef402b81a8cbd6149b1e8185",
+        "end_flags": "63054f07565f48beff5825c7be0f329e4cfc179908fc7b554699fe3d5e6a67cb",
+        "rewards": "8513bf26d40bc82a4340ef1738a4d7dc7c6c7c72fac3c00c063153a2617b44cd",
+        "history_poses": "f1b6fed8cbb4b3cc421442d8be334f49e5f3fdb2127926f06de2e0192f89bd9b",
+        "history_goals": "321ffff27445db704c7d64acbd6a2f559429554c7f84cb4156e7530297336628",
+        "history_times": "e23e4a5f153bdddc2d6be24cda154d4ca08ff1aa26517eba50c23c41845c3ef8",
+        "environment_rewards": "8513bf26d40bc82a4340ef1738a4d7dc7c6c7c72fac3c00c063153a2617b44cd",
+        "initial_native_integration": "100efbdd3e0cddd2ef3e001c731f42aca3deca08b313bffd6cf8efe100fda60d",
+        "final_native_integration": "de2c5c12162f30d3ac5b9f08a10343ea772077f52eeaa18b6f81f0fe5c2d79b2",
+        "hidden_before": "01beacb3ef40c6b801d021f8d938f5f981938e225a0f354de99a873ed0976cf8",
+        "last_hidden_after": "ebc15044f010ae32f5d71c34e0209c7b9b7b354e36781ea4ea105c0d27908f39",
+        "innovations": "8cf52b0a7af471cab5188dafa262e909bcd79d2ac17a78bf583760df4f74d78c",
+        "raw_actions": "b5c5fc3fd17190645f2ced3e0fdbc31893c52866cee5c9323409fab2b904a46e",
+        "atom": "923b8c81bf0f13481a1ec13044c770ad17d435aa688163436ec287b889be60d9",
+        "locations": "b5c5fc3fd17190645f2ced3e0fdbc31893c52866cee5c9323409fab2b904a46e",
+        "logp": "29e90e480d60a6a5ddb7d5695b24a27ad96b46e2b734a8e4f6749b52e933330c",
+        "stochastic": "d566a2c23cefd2adb8aad0ef1ec43613e54bc7f6a1eef2909900317d183324d6",
+        "hold_sha256": "a4620df8662baba32d998e36118e7cc4cf8a5a7669383198828e336344d37b65",
+        "ownership": "c7f32fdc8822378390768009593f189e2623b50452eef96b4db74a971c0b28d2",
+        "task_goal_xy": "bd683819ad4a7466713a6284033080da5b60c82059f72f2cfabef05c6e4d2849",
+        "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+        "teacher_actions": "cf2361f530ef006184026a807713ceca8f0aeaab93445824728837f6409b0461"
+      },
+      "integration_sha256": "de2c5c12162f30d3ac5b9f08a10343ea772077f52eeaa18b6f81f0fe5c2d79b2",
+      "end_flags": [
+        false,
+        true,
+        false
+      ],
+      "actual_controls_digest": "9e8f19d71a8886688902ddfd694a3fb3f1e44f39797895cc01dec6af5b2ffb8f",
+      "independent_new_sample": false,
+      "first_search_pass": true,
+      "new_native_control_query": false,
+      "not_autonomous_Actor_success": true,
+      "raw_labels_require_future_explicit_adapter": true,
+      "planned_controls_digest": "a936ab556da5f74403b05f5bf7debafcdb51b035ca1532d1a86e5d19ce74b6b5",
+      "sha256": "5b32db7280440812f5687656d077be84fea1277c1d77e259cf27d03a09eedafd"
+    },
+    "valid_recovery_label": false,
+    "all_safe": false,
+    "teacher_first": 20,
+    "control_search_only": true,
+    "raw_controls_NOT_neural_teacher_latent_labels": true,
+    "first_pass_executed_candidates": 3,
+    "first_pass_unique_planned_control_sequences": 2,
+    "duplicate_control_candidates_charged_not_independent": true,
+    "future_learning_requires_explicit_adapter": true,
+    "exact_replays_NOT_independent": true,
+    "reused_sources_NOT_new_independent_samples": true,
+    "all_sessions_closed": true,
+    "full_329": null,
+    "fresh16": null,
+    "reload78": null,
+    "six_gate": false,
+    "eight_started": false
+  },
+  "audit": null,
+  "diagnosis": null,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "no_training": true,
+  "six_gate": false,
+  "eight_started": false
+}
