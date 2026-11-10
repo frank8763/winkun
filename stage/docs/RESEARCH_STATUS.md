@@ -1,3 +1,5 @@
+2026-11-10 T474冻结控制复验与联合学习夜间接力结束，completed=['verified', 'joint', 'priority']/reason=FIXED_FINITE_MECHANISMS_COMPLETE/physics=10589577/commands=719/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED/six_gate=False；两固定分支/单Actor部署，T473失败原件保留；无8，用户看后再决定，Phase隔离。详overnight_20261110/T474_FINAL_REPORT。
+
 2026-11-10 T474冻结控制独立复验＋联合修复夜间链已注册/0native4丢弃Adam/26零步命令正式预检PASS，尚待精确源码及唯一launch。T473FAILED原件不改，已有旧15成功控制只做两独立新原点重生/audit门，不重跑CEM；门过后joint与priority两固定128BC+shadow分支分别从原327初始化，原生raw15只监督执行后缀。全329过才16fresh/78独立精确/audit/全备份；用户看后再8，程序无8。root64MiB/global1GiB/free40不扩，本轮20M/900命令/7800main仍计原夜40M2000cmd14400main；明早11月11日07:15停学07:45原生08:30全停，断网本地自动执行/网络仅末备份，Phase隔离。详overnight_20261110/T474_PLAN/BUDGET/READINESS。
 
 2026-11-10 T473旧15完整余时域原生相位CEM教师已结束，audit=False/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，physics=78416/commands=10；0Actor/optimizer，实际训练教师是否safe见报告，不能充自主六米成功；原T470/T472均未启动，无8，Phase隔离。详overnight_20261110/T473_FINAL_REPORT。
