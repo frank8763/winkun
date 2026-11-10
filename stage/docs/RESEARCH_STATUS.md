@@ -1,3 +1,5 @@
+2026-11-10 用户最新明确改为最佳研究模型推进宽八米/跳过七米，多固定机制离线接力至11月11日09:00。新T476已注册且62零物理几何/2worker取消/12合成丢弃Actor+V Adam预检PASS，尚待源码精确同步和唯一launch，未称正在训练。冻结T449宽六54/54旧274/275，唯一旧00失败继承；新独立窗口50M物理1800命令32400主管线秒/50MiBown/global1GiB/free40，原夜预算封账不续旧作业。三独立PPO/距离课程/lambda1信用分支，每臂最多4轮2新采集2exact/16epochs及shadow/历史audit；完整383开发，fresh16和78原生模型重载未预留不执行，不能称八米稳定。Phase完全隔离，详overnight_20261110/T476_PLAN/BUDGET/PRIMARY_SOURCES。
+
 2026-11-10 T475最后一次Stage试验结束，wide54/54 old267/275/reason=FINAL_ATTEMPT_FAILED_STOP_STAGE/physics=5260014/commands=339/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED/six_gate=False。用户要求未通过即停止，本管线无后续新实验/不再自动重试；原327/safeT255/全部证据保留，无8，Phase隔离。详overnight_20261110/T475_FINAL_REPORT。
 
 2026-11-10 T475最后一次有界Stage试验已注册/0native2丢弃新Adam/6零步命令预检PASS，尚待源码精确同步与唯一launch。冻结原327全部53940参数，新增现有120观测直达32Tanh2输出的3938参数零初始化支路，六actualhistory初始动作/hidden逐位保持；固定512监督live+shadow，2worker完整329，全过才16fresh/78独立原生精确/audit/全备份。一次最多441命令，夜累计最多1994<2000；11M全部物理/56MiB/global1GiB/free40不扩，11月11日08:30更早硬停。用户要求仍未通过即停止线，无自动后续/无8，Phase隔离。详overnight_20261110/T475_PLAN/BUDGET/READINESS。

@@ -1,0 +1,17 @@
+# T476: renewed wide8 finite offline relay
+
+2026-11-10 latest explicit user instruction supersedes prior Stage stop: use best model for wide8, multiple different branches, hard stop2026-11-11 09:00Beijing. Skip7. Stage only, Phase fully isolated.
+
+Best T449 recovery: samecandidate wide6 54/54, old274/275, sole olddev_task6_00 contact. Researchbest, NOT full6gate. Its Actor andV initialize all3independent arms; both optimizers fresh/identical, actorlr3e-5. Original models remain immutable.
+
+Same base6 exact initialpose and1.17m geometry. Radially extend the episode's sole finalgoal before firstobservation; allfour historygoals/currentgoal fields must agree. No mid-episode targetchange/planner/waypoint/teacher. Existing speedlimit unchanged. Allowedtime scales asceil40000*distance/6 native steps:8m53334=106.668s. This is a new distance-plus-time taskfamily, not the old80s sixm benchmark. Zero-step geometry only establishes start/contact/history consistency; does not prove globalreachability.
+
+Finite queue: frozen8m54 baseline; then direct8m recurrentPPO, goalcourse6.5→7→7.5→8, and direct8m lambda1 physicalcredit. Everyarm independently starts same model, max4rounds, onefresh own-policy full episode per side and exact native reproduction per episode, max16PPOepochs with KLearlystop; live/shadow Actor+V and historical audit recomputation separate. Common originalreward/gamma60s/σ.2; other arms originallambda exp(-.002/4); lambda1 completeepisode return credit. NoBC/newteacher. Currentpolicy iid clippedGaussian uses interiordensity+float32boundarytailprobabilities, not rawGaussian logp at clipped atoms.
+
+Preserve successful IDs on fixed old8+six2+eight2 panel; rejected proposal restores entireActor/V/Adam, two consecutive rejections stoparm. Goalcourse advances only acceptedupdate,≥1safe training and2/2deterministic coursecenters. Max4rounds, never addrounds/seeds/noisegrids. Finalcandidate always independently evaluates wide8dev54, wide6dev54, old275. Allfailures/previous models retained; reportmissing/null separately. No fresh16/reload78 allocated; this is developmentpilot, cannot claim full8stability or restoredfull6gate.
+
+New independent wide8window: ≤50M allnative,1800allcommands,32400mainseconds, own50MiB, globalStage runs≤1GiB/free≥40GiB. Previous sixrepairwindow closed at27,172,741physical/1892commands, not reused or silently enlarged. Max24fulltraining640KiB,12models1792KiB, compacteval4KiB each, remainingmetadata; exactreplays overwrite nothing. Native2workers. Deadline learning08:00/native08:30/all09:00; earlierbranchrelativebudget fromstrictadmissionapplies. Each branch needs completeworstremaining resource+audit+backup reservation before start. Fixedfinitearms may terminate earlier after hardconstraints or completion; no promise to fill wallclock with repeatedfailure.
+
+Offline localdriver launches subprocesses, checks actualexit, runsaudit andSHAmanifest, then nextarm. Scientific/evidence contractfailure stopsqueue preservingpartial; scientificnonimprovement still permits nextdistinct registeredarm. Nonetwork/API/LLM/install needed. Once allscientificwriters exit sealroot, tryRAM GitHubrelease/readbackallmemberSHA. Network unavailable→REMOTE_PENDING andallrawlocal. Onlysmallcode/protocol/report/receipt inGit; completeReleasebinaryreadbackrequired toclaimbackup.
+
+Methods are standardPPO/GAE/goalcurriculum, not originality or safetyproof. Primarypapers in T476_PRIMARY_SOURCES.md. No claim that scalingdistance will succeed; finalresults distinguish inheritedoldfailure and newregression.
