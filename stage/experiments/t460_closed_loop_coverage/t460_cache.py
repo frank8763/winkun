@@ -47,7 +47,7 @@ def candidates(protected, required):
         archive_sha256=d['sha256'], archive_bytes=d['bytes'])
 
 
-def archive(plan):
+def archive(plan, deadline=None, cli=False):
     receipt = ROOT/plan['receipt']
     mf = ROOT/plan['manifest']
     assert sha(receipt.read_bytes()) == plan['receipt_sha256']
@@ -57,10 +57,20 @@ def archive(plan):
     sys.path.insert(0, str(ROOT/'stage/experiments/t377_full_human_observation_transfer'))
     import transport as T
     T.install()
-    deadline = time.time()+540
+    deadline = deadline if deadline is not None else time.time()+540
     def fetch(part):
-        assert time.time() < deadline-125, 'Insufficient bounded readback time; no eviction'
-        b = T.readback({'id': part['asset_id']}, part['bytes'])
+        assert time.time() < deadline-(40 if cli else 125), 'Insufficient bounded readback time; no eviction'
+        if cli:
+            import subprocess
+            result = subprocess.run([str(T.A.GH), 'api', '--method', 'GET',
+                f'https://api.github.com/repos/{T.A.SLUG}/releases/assets/{part["asset_id"]}',
+                '--header', 'Accept: application/octet-stream'], stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                timeout=max(1, min(35, deadline-time.time()-3)))
+            assert result.returncode == 0, 'Existing GitHub CLI binary readback failed'
+            b = result.stdout
+        else:
+            b = T.readback({'id': part['asset_id']}, part['bytes'])
+        assert len(b) == part['bytes']
         assert sha(b) == part['sha256']
         return b
     parts = sorted(d['parts'], key=lambda x: x['order'])
@@ -99,10 +109,12 @@ def evict(p):
     assert src['root_tree'] == subprocess.check_output(['git', 'rev-parse', 'HEAD^{tree}'], cwd=ROOT, text=True).strip()
     assert not subprocess.check_output(['git', 'status', '--porcelain'], cwd=ROOT, text=True).strip()
     signal.signal(signal.SIGALRM, lambda *_: (_ for _ in ()).throw(TimeoutError('Fresh remote cache verification600s')))
-    signal.alarm(600)
+    end = p.get('cache_hard_stop_epoch', time.time()+600)
+    assert time.time() < end-50, 'Original cache budget exhausted; no restart'
+    signal.alarm(max(1, int(end-time.time())))
     plan = p['remote_cache']
     before, start = used(), time.time()
-    recovered, parts, members = archive(plan)  # zero file removal until full remote readback
+    recovered, parts, members = archive(plan, end-5, p.get('cache_cli_transport', False))
     completed = []
     for r in plan['rows']:
         f = ROOT/r['path']
