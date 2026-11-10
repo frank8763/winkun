@@ -1,3 +1,5 @@
+2026-11-10 T458冻结预热检查点完整329对照已结束，state=COMPLETE_AUDITED_LOCAL，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；宽54/54旧268/275，development_admitted=False；0新训练，physics=5230861 commands=369。逐ID区分预热已有失败和后续PPO新损伤/修复，全部已消费开发任务，不是新候选筛选/独立泛化。16fresh/78未预留未执行null，six_gateFalse/8未进，原328/safeT255保留/Phase隔离。详review_20261110/T458_FINAL_REPORT及stage_comparison。
+
 2026-11-10 T458冻结warmup完整329阶段对照已注册/零原生零优化器预检PASS，尚待精确源码远端和唯一launch。冻结T455/T457共同warmup，0新BC/PPO/教师，原54宽＋275旧各一次，11旧面板10safe/1contact须逐数组摘要积分精确；逐ID区分预热已有损失和各后续PPO新增损伤/恢复，不作联合模块因果或泛化。7M全部物理最坏6.966735M、400cmd最坏369、own8MiB/global1GiB/free40，main1800audit300backup600all3000秒，预计7–15分钟非硬截止排满。compact不冒称120/hidden全重建，16fresh/78未预留null，six门False/8未进，原328/safeT255保留/Phase隔离；详review_20261110/T458_PLAN/BUDGET/READINESS。
 
 2026-11-10 T457任务均衡单批PPO已结束，state=COMPLETE_AUDITED_LOCAL，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；宽48/54旧249/275，development_admitted=False；BC=0，PPOActor=4/Value=4，physics=5875070 commands=413。16fresh/78未预留未执行null，six_gateFalse/8未进；原328研究父模型/safeT255保留，Phase隔离，不重启。详review_20261110/T457_FINAL_REPORT。
