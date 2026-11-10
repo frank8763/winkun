@@ -1,3 +1,5 @@
+2026-11-10 T471相同4秒偏离前缀固定T255reset教师对照已注册/0native0optimizer预检PASS，尚待精确源码与唯一launch。只新old03/15两query+两exact，原327carry失败控制保留，T255旧275/275不代替本轮恢复检验。44实际命令/93336最坏物理/8MiB/global1GiB/free40不扩，600main300audit1800all秒更早从严，仍计夜间40M/2000/14400main，明早11月11日08:30全停。两恢复全safe/exact+audit/备份后才另注册新联合目标；原T470门失败保持未执行，T472仅惰性草案。无8，Phase隔离。详overnight_20261110/T471_PLAN/BUDGET/READINESS。
+
 2026-11-10 T469冻结反例恢复诊断结束，audit=True/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，physics=613636/commands=64；原327对拒绝A325新增4失败实际history的候选教师恢复，0optimizer，是否全safe见诊断，不以自身GOAL充恢复成功；T470尚未注册启动，8未进，Phase隔离。详overnight_20261110/T469_FINAL_REPORT。
 
 2026-11-10 T469冻结退化反例恢复诊断已注册/0native0optimizer正式预检PASS，尚待精确源码与唯一launch。拒绝A325只作独立冻结反例，不初始化/晋升；原327对旧03/15与宽LEFT15/17各实际history作候选恢复教师，4query须原生safe+exact，不以自身GOAL替代。24请求+16启停+24预检=64cmd，760008最坏物理/1M守卫/900main300audit1800all/18MiB/global1GiB/free40不扩，仍计原夜40M2000cmd14400main秒，11月11日08:30更早从严。4恢复/audit/备份都过才另注册T470，后者当前仅惰性草案未运行；8等用户看后/未进，Phase隔离。详overnight_20261110/T469_PLAN/BUDGET/READINESS。

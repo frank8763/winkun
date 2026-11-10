@@ -1,0 +1,41 @@
+{
+  "state": "PASS_READY_FOR_SOURCE_AND_SINGLE_LAUNCH",
+  "protocol_sha256": "a447daf2a0d3236b9abbdb756f45d6df3737864e7bb4206688fd6a27babeba0f",
+  "preflight": {
+    "state": "PASS",
+    "native": 0,
+    "commands": 24,
+    "optimizer": 0,
+    "Actor_Adam": 0,
+    "Value_Adam": 0,
+    "backward": 0,
+    "frozen_A325_hash_and_A328_base_exact": true,
+    "actual_source_first21_teacher_fixture": [
+      {
+        "job_id": "dev_task6_03",
+        "source_sha256": "f161d9330ba3559a5893df6f59a2bbf56bea18fc78840c5ed8e089cd65c3b6a5",
+        "decisions": 21,
+        "teacher_state_sha256": "a405a2e421728c820307cfe458cfc0abcffdd181fdd839c69cdcb93b2f39551c",
+        "labels_digest": "596656b0e26a6d920ccf886bc58ffed6fa541b68327fa0c1dd2f81fd7a94fd2e",
+        "float32_packet": true
+      },
+      {
+        "job_id": "dev_task6_15",
+        "source_sha256": "167c1ac48c30e01566fa0705691c0408020ce6f4bdaf605d6c79e2747f6ee5fa",
+        "decisions": 21,
+        "teacher_state_sha256": "a405a2e421728c820307cfe458cfc0abcffdd181fdd839c69cdcb93b2f39551c",
+        "labels_digest": "ccaee30de965d30167a1b5c7b875716c839ced43a490bf6ddb0704841c44509c",
+        "float32_packet": true
+      }
+    ],
+    "safeT255reset_CPU_batch1_doublepass_exact": true,
+    "eight_workers_cancelled_before_first_native": true,
+    "all_workers_stopped": true,
+    "new_recovery_NOT_executed_yet": true
+  },
+  "all_preflight_processes_stopped": true,
+  "native": 0,
+  "optimizer": 0,
+  "T472_is_inert_conditional_draft_not_registered_or_started": true,
+  "static_review": "Matched teacher replacement reuses pinned native worker; dtype float32 actualpacket, unchangedprefix/carry/clock/cap, source/control full SHA protected; no grid or training."
+}
