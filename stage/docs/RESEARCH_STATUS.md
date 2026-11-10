@@ -1,3 +1,5 @@
+2026-11-10 T473旧15完整余时域原生相位CEM教师已注册/0native0optimizer正式预检PASS，尚待精确源码与唯一launch。T471固定T255reset旧03恢复safe/旧15仍接触，原T470/T472学习门失败保持未运行。新T473同A325实际4sec原prefix，23334原cap/剩214hold，fixedT255成功动作先验+16knots单调phasewarp/drive控制CEM，首safe可停/最多3x12，双pass全原生逐数组精确和实测selected。1.6M物理最坏1582716/79全部cmd/32MiB/global1GiB/free40不扩，3000main900audit5100all/明早11月11日08:30更早从严，仍计原夜40M2000cmd14400main。控制优化仅训练教师0Actor/Adam，不称六米通过；source所有失败保留/无8，Phase隔离。详overnight_20261110/T473_PLAN/BUDGET/READINESS。
+
 2026-11-10 T471相同4秒偏离前缀固定T255reset教师对照结束，audit=True/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，physics=70282/commands=44；0optimizer，old03/15实际恢复是否safe见报告，原T469failed控制保留；T470未启动，8未进，Phase隔离。详overnight_20261110/T471_FINAL_REPORT。
 
 2026-11-10 T471相同4秒偏离前缀固定T255reset教师对照已注册/0native0optimizer预检PASS，尚待精确源码与唯一launch。只新old03/15两query+两exact，原327carry失败控制保留，T255旧275/275不代替本轮恢复检验。44实际命令/93336最坏物理/8MiB/global1GiB/free40不扩，600main300audit1800all秒更早从严，仍计夜间40M/2000/14400main，明早11月11日08:30全停。两恢复全safe/exact+audit/备份后才另注册新联合目标；原T470门失败保持未执行，T472仅惰性草案。无8，Phase隔离。详overnight_20261110/T471_PLAN/BUDGET/READINESS。
