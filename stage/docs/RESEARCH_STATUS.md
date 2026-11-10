@@ -1,3 +1,5 @@
+2026-11-10 T455冻结表示动作头PPO已结束，state=COMPLETE_AUDITED_LOCAL，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；宽47/54旧198/275，development_admitted=False；BC=128，PPOActor=8/Value=8，physics=6292284 commands=422。16fresh/78未预留未执行null，six_gateFalse/8未进；原328研究父模型/safeT255保留，Phase隔离，不重启。详review_20261110/T455_FINAL_REPORT。
+
 2026-11-10 T455冻结表示匹配PPO已注册/预检PASS，尚待精确源码远端和唯一launch。同T453父328/329/成熟Adam/128BC+两轮4freshPPO/seed权重任务/末329，仅Actor掩码改130head可训、52736encoder/GRU及对应成熟Adam逐哈希冻结。预检12Actor8Value合成丢弃/0native、双Adam回退/2MiB最坏/8worker取消通过。继承ALLtrainable说明字段在预检后launch前仅元数据纠正，原源/协议/preflight完整保留、全部学习函数AST精确、0新增Adam/native，不重做预检。own20MiB/global1GiB/free40；9M所有物理最坏8.296751M/422cmd最坏500硬限，main5400学2700audit1200all7800，预计10–25分钟非硬截止排满。fresh16/78未预留不消费/six门未过不8；原328/safeT255保留，T453上游原始本地完整但备份PENDING6/16，Phase隔离。详review_20261110/T455_PLAN/BUDGET/READINESS。
 
 2026-11-10 T454四冻结模型同history函数审计已结束，0native/0优化器，独立audit=PASS_FROZEN_DESCRIPTOR_ONLY，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；仅编码GRU/动作头双顺序代数分解，不是闭环因果/混合控制器。原328研究模型保留、T453仍未晋升/原备份PENDING，six门未过/8未进/Phase隔离。详review_20261110/T454_FINAL_REPORT及raw findings。
