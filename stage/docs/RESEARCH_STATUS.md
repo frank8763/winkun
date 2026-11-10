@@ -1,3 +1,5 @@
+2026-11-10 T452已独立注册/零物理零Adam预检PASS，尚待源码精确远端后唯一launch。冻结328/329研究父模型，仅旧00学生自主4/12/24秒后T255接管及原生exact，1基线+3混合+4重放；全部186672最坏物理/20万硬限、48全部命令/64硬限、own12MiB/global1GiB/free40，main900audit600all2400秒。预计2–5分钟短诊断非40分钟队列，模型原件不动，完整329/fresh16/78/8未安排。原T451不重启、Phase隔离，详review_20261110/T452_PLAN/BUDGET/READINESS。
+
 2026-11-10 T451核实已于09:48结束主管线（09:33启动/903.062s），09:51历史重构auditPASS/09:52远端378成员逐SHA收尾。400BC+400shadow完成，宽52/54旧270/275合322/329，00仍失败且额外丢6成功，不晋升，原328候选保留；16fresh/78未执行null。11:43仅硬截止，本轮单短提案未配置失败后接力，没有跑满窗口；与T449模型保存故障区分。恢复样本192决策只有5步学生自主（1秒/2.604%），是覆盖缺口线索非梯度或唯一因果证明。没有新训练/不重启T451。后续机制与执行规则仅草案，详review_20261110/T451_FINDINGS_AND_WINDOW_REVIEW及EXECUTION_WINDOW_RULES，Phase隔离/safeT255不变。
 
 2026-11-10 T451单例实际恢复修复已收尾，state=COMPLETE_AUDITED_LOCAL，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，physics=5676187 commands=393；详review_20261110/T451_FINAL_REPORT。six_gate=False，8未启动，safeT255冻结/Phase隔离，不重启或追加旧预算。
