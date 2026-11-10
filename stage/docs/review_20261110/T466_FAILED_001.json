@@ -1,0 +1,11 @@
+{
+  "state": "FAILED_POSTHOC_BEFORE_OUTPUT_NO_NATIVE_NO_OPTIMIZER",
+  "native": 0,
+  "optimizer": 0,
+  "backward": 0,
+  "error": "RuntimeError: mat1 and mat2 must have the same dtype, but got Double and Float",
+  "site": "safe.base_actions on forced double row; actual frozen T255 expects original float32 packet",
+  "original_source_sha256": "413888bdee38ac7fa0cef9135c031fc0fdee7ab956c41baf481655e7f380821b",
+  "correction": "Use original input packet dtype for T255 reset label audit only, matching unchanged actual worker; leave double learned Actor sequence path unchanged.",
+  "original_scientific_data_and_models_unchanged": true
+}

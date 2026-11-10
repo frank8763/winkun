@@ -1,0 +1,1551 @@
+{
+  "state": "PASS_POSTHOC_CPU_LABEL_AUDIT",
+  "native": 0,
+  "optimizer": 0,
+  "backward": 0,
+  "cuda": 0,
+  "source_rows": [
+    {
+      "job_id": "dev_task6_00",
+      "source_row_SHA256": "7a58621ae649b3e65ef83d869e7456db4f7b46a914941602870127a58f196d40",
+      "source_array_digest": "51b03edcd0acc5023ac71be57860c792d7949705e73c8be9d7192ae4438daa06",
+      "decisions": 194,
+      "labels_recomputed_exact": true,
+      "label_source": "safeT255 base_actions reset for every actual120 state; no recurrent teacher carry",
+      "regions": {
+        "prefix_first21": {
+          "input_PPO327": {
+            "decisions": 21,
+            "RMSE_per_axis": [
+              0.02181334093160353,
+              0.014572204062403551
+            ],
+            "max_abs_per_axis": [
+              0.04451170563697815,
+              0.04041261970996857
+            ],
+            "mean_abs_per_axis": [
+              0.017436366705667405,
+              0.011254020390056428
+            ],
+            "drive_error_gt_0.02": {
+              "count": 8,
+              "first_global_decision": 1,
+              "first_region_decision": 1,
+              "first_global_time_s": 0.2
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 4,
+              "first_global_decision": 1,
+              "first_region_decision": 1,
+              "first_global_time_s": 0.2
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "P_action_loss_on_raw_location_mean": 0.00034408547177039895,
+            "P_action_loss_on_clipped_float32_action_mean": 0.0003440854869173503,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "final_T465325": {
+            "decisions": 21,
+            "RMSE_per_axis": [
+              0.02092082676857469,
+              0.014016297607723832
+            ],
+            "max_abs_per_axis": [
+              0.04094454646110535,
+              0.03919936716556549
+            ],
+            "mean_abs_per_axis": [
+              0.016733884811401367,
+              0.0107337206247307
+            ],
+            "drive_error_gt_0.02": {
+              "count": 9,
+              "first_global_decision": 0,
+              "first_region_decision": 0,
+              "first_global_time_s": 0.0
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 4,
+              "first_global_decision": 1,
+              "first_region_decision": 1,
+              "first_global_time_s": 0.2
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "P_action_loss_on_raw_location_mean": 0.00031706885399634076,
+            "P_action_loss_on_clipped_float32_action_mean": 0.000317068795654498,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "teacher_T461_context": {
+            "decisions": 21,
+            "RMSE_per_axis": [
+              0.021884790911504515,
+              0.014594037829664388
+            ],
+            "max_abs_per_axis": [
+              0.04481920599937439,
+              0.040709175169467926
+            ],
+            "mean_abs_per_axis": [
+              0.01748305984905788,
+              0.011265446210191363
+            ],
+            "drive_error_gt_0.02": {
+              "count": 8,
+              "first_global_decision": 1,
+              "first_region_decision": 1,
+              "first_global_time_s": 0.2
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 4,
+              "first_global_decision": 1,
+              "first_region_decision": 1,
+              "first_global_time_s": 0.2
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "P_action_loss_on_raw_location_mean": 0.000345964997841256,
+            "P_action_loss_on_clipped_float32_action_mean": 0.0003459650067069729,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "final_minus_input_action": {
+            "decisions": 21,
+            "RMSE_per_axis": [
+              0.002455275373601158,
+              0.0009826949136592016
+            ],
+            "max_abs_per_axis": [
+              0.0037353932857513428,
+              0.0014289766550064087
+            ],
+            "mean_abs_per_axis": [
+              0.002327440750031244,
+              0.000848188464130674
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            }
+          },
+          "final_minus_input_location": {
+            "decisions": 21,
+            "RMSE_per_axis": [
+              0.0024552747664620816,
+              0.000982694756895565
+            ],
+            "max_abs_per_axis": [
+              0.0037353962789308803,
+              0.0014289769681627706
+            ],
+            "mean_abs_per_axis": [
+              0.0023274398755391964,
+              0.0008481885610803852
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            }
+          }
+        },
+        "suffix21onward": {
+          "input_PPO327": {
+            "decisions": 173,
+            "RMSE_per_axis": [
+              0.02665080609086987,
+              0.022643067091113755
+            ],
+            "max_abs_per_axis": [
+              0.11957377195358276,
+              0.08540043234825134
+            ],
+            "mean_abs_per_axis": [
+              0.018683016989272452,
+              0.01633612485602498
+            ],
+            "drive_error_gt_0.02": {
+              "count": 57,
+              "first_global_decision": 21,
+              "first_region_decision": 0,
+              "first_global_time_s": 4.2
+            },
+            "drive_error_gt_0.05": {
+              "count": 14,
+              "first_global_decision": 27,
+              "first_region_decision": 6,
+              "first_global_time_s": 5.4
+            },
+            "steering_error_gt_0.02": {
+              "count": 52,
+              "first_global_decision": 24,
+              "first_region_decision": 3,
+              "first_global_time_s": 4.800000000000001
+            },
+            "steering_error_gt_0.05": {
+              "count": 8,
+              "first_global_decision": 32,
+              "first_region_decision": 11,
+              "first_global_time_s": 6.4
+            },
+            "P_action_loss_on_raw_location_mean": 0.0006114868960868937,
+            "P_action_loss_on_clipped_float32_action_mean": 0.0006114869762929127,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "final_T465325": {
+            "decisions": 173,
+            "RMSE_per_axis": [
+              0.026551935862181266,
+              0.02265189069929635
+            ],
+            "max_abs_per_axis": [
+              0.11961185932159424,
+              0.08575177192687988
+            ],
+            "mean_abs_per_axis": [
+              0.018525434022693965,
+              0.01636727244695487
+            ],
+            "drive_error_gt_0.02": {
+              "count": 57,
+              "first_global_decision": 21,
+              "first_region_decision": 0,
+              "first_global_time_s": 4.2
+            },
+            "drive_error_gt_0.05": {
+              "count": 14,
+              "first_global_decision": 27,
+              "first_region_decision": 6,
+              "first_global_time_s": 5.4
+            },
+            "steering_error_gt_0.02": {
+              "count": 51,
+              "first_global_decision": 26,
+              "first_region_decision": 5,
+              "first_global_time_s": 5.2
+            },
+            "steering_error_gt_0.05": {
+              "count": 8,
+              "first_global_decision": 32,
+              "first_region_decision": 11,
+              "first_global_time_s": 6.4
+            },
+            "P_action_loss_on_raw_location_mean": 0.0006090567167683968,
+            "P_action_loss_on_clipped_float32_action_mean": 0.000609056725141128,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "teacher_T461_context": {
+            "decisions": 173,
+            "RMSE_per_axis": [
+              0.026605153967648412,
+              0.022708792524175708
+            ],
+            "max_abs_per_axis": [
+              0.11990857124328613,
+              0.08596426248550415
+            ],
+            "mean_abs_per_axis": [
+              0.018652369693524577,
+              0.016401841075057325
+            ],
+            "drive_error_gt_0.02": {
+              "count": 57,
+              "first_global_decision": 21,
+              "first_region_decision": 0,
+              "first_global_time_s": 4.2
+            },
+            "drive_error_gt_0.05": {
+              "count": 14,
+              "first_global_decision": 27,
+              "first_region_decision": 6,
+              "first_global_time_s": 5.4
+            },
+            "steering_error_gt_0.02": {
+              "count": 51,
+              "first_global_decision": 24,
+              "first_region_decision": 3,
+              "first_global_time_s": 4.800000000000001
+            },
+            "steering_error_gt_0.05": {
+              "count": 8,
+              "first_global_decision": 32,
+              "first_region_decision": 11,
+              "first_global_time_s": 6.4
+            },
+            "P_action_loss_on_raw_location_mean": 0.0006117617708176515,
+            "P_action_loss_on_clipped_float32_action_mean": 0.0006117617377741683,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "final_minus_input_action": {
+            "decisions": 173,
+            "RMSE_per_axis": [
+              0.0007577855422129902,
+              0.0005219809415051415
+            ],
+            "max_abs_per_axis": [
+              0.00243455171585083,
+              0.0013728570193052292
+            ],
+            "mean_abs_per_axis": [
+              0.0005712123275492233,
+              0.000386373551745463
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            }
+          },
+          "final_minus_input_location": {
+            "decisions": 173,
+            "RMSE_per_axis": [
+              0.0007577857857518382,
+              0.0005219809286727242
+            ],
+            "max_abs_per_axis": [
+              0.002434541159432091,
+              0.0013728570946758833
+            ],
+            "mean_abs_per_axis": [
+              0.0005712116226416359,
+              0.0003863729967746546
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            }
+          }
+        },
+        "all": {
+          "input_PPO327": {
+            "decisions": 194,
+            "RMSE_per_axis": [
+              0.02617035627141094,
+              0.021913360333860956
+            ],
+            "max_abs_per_axis": [
+              0.11957377195358276,
+              0.08540043234825134
+            ],
+            "mean_abs_per_axis": [
+              0.0185480703090884,
+              0.015786000145791273
+            ],
+            "drive_error_gt_0.02": {
+              "count": 65,
+              "first_global_decision": 1,
+              "first_region_decision": 1,
+              "first_global_time_s": 0.2
+            },
+            "drive_error_gt_0.05": {
+              "count": 14,
+              "first_global_decision": 27,
+              "first_region_decision": 27,
+              "first_global_time_s": 5.4
+            },
+            "steering_error_gt_0.02": {
+              "count": 56,
+              "first_global_decision": 1,
+              "first_region_decision": 1,
+              "first_global_time_s": 0.2
+            },
+            "steering_error_gt_0.05": {
+              "count": 8,
+              "first_global_decision": 32,
+              "first_region_decision": 32,
+              "first_global_time_s": 6.4
+            },
+            "P_action_loss_on_raw_location_mean": 0.0005825413810835618,
+            "P_action_loss_on_clipped_float32_action_mean": 0.0005825414542471043,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "final_T465325": {
+            "decisions": 194,
+            "RMSE_per_axis": [
+              0.026001310177673008,
+              0.021882217385019713
+            ],
+            "max_abs_per_axis": [
+              0.11961185932159424,
+              0.08575177192687988
+            ],
+            "mean_abs_per_axis": [
+              0.018331503437966416,
+              0.015757454981662564
+            ],
+            "drive_error_gt_0.02": {
+              "count": 66,
+              "first_global_decision": 0,
+              "first_region_decision": 0,
+              "first_global_time_s": 0.0
+            },
+            "drive_error_gt_0.05": {
+              "count": 14,
+              "first_global_decision": 27,
+              "first_region_decision": 27,
+              "first_global_time_s": 5.4
+            },
+            "steering_error_gt_0.02": {
+              "count": 55,
+              "first_global_decision": 1,
+              "first_region_decision": 1,
+              "first_global_time_s": 0.2
+            },
+            "steering_error_gt_0.05": {
+              "count": 8,
+              "first_global_decision": 32,
+              "first_region_decision": 32,
+              "first_global_time_s": 6.4
+            },
+            "P_action_loss_on_raw_location_mean": 0.0005774497831693596,
+            "P_action_loss_on_clipped_float32_action_mean": 0.0005774497843204103,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "teacher_T461_context": {
+            "decisions": 194,
+            "RMSE_per_axis": [
+              0.026135367788378515,
+              0.0219754955330868
+            ],
+            "max_abs_per_axis": [
+              0.11990857124328613,
+              0.08596426248550415
+            ],
+            "mean_abs_per_axis": [
+              0.018525794916546223,
+              0.01584583956906668
+            ],
+            "drive_error_gt_0.02": {
+              "count": 65,
+              "first_global_decision": 1,
+              "first_region_decision": 1,
+              "first_global_time_s": 0.2
+            },
+            "drive_error_gt_0.05": {
+              "count": 14,
+              "first_global_decision": 27,
+              "first_region_decision": 27,
+              "first_global_time_s": 5.4
+            },
+            "steering_error_gt_0.02": {
+              "count": 55,
+              "first_global_decision": 1,
+              "first_region_decision": 1,
+              "first_global_time_s": 0.2
+            },
+            "steering_error_gt_0.05": {
+              "count": 8,
+              "first_global_decision": 32,
+              "first_region_decision": 32,
+              "first_global_time_s": 6.4
+            },
+            "P_action_loss_on_raw_location_mean": 0.0005829899551861861,
+            "P_action_loss_on_clipped_float32_action_mean": 0.0005829899266792657,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "final_minus_input_action": {
+            "decisions": 194,
+            "RMSE_per_axis": [
+              0.0010791827160254754,
+              0.0005894946509114787
+            ],
+            "max_abs_per_axis": [
+              0.0037353932857513428,
+              0.0014289766550064087
+            ],
+            "mean_abs_per_axis": [
+              0.0007613195279209884,
+              0.00043636382576654254
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            }
+          },
+          "final_minus_input_location": {
+            "decisions": 194,
+            "RMSE_per_axis": [
+              0.0010791827189994261,
+              0.0005894946124907568
+            ],
+            "max_abs_per_axis": [
+              0.0037353962789308803,
+              0.0014289769681627706
+            ],
+            "mean_abs_per_axis": [
+              0.0007613188046563203,
+              0.0004363633413644501
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            }
+          }
+        }
+      },
+      "context_teacher_NOT_actual_label_source_for00": true
+    },
+    {
+      "job_id": "dev_task6_21",
+      "source_row_SHA256": "02f8f98be340357bc3beff8d2c2b71c0637edc3c8e0ae6d121ca1060b1e5fd4a",
+      "source_array_digest": "6d9e5e6abfda58f52ca6cd2d676837749f163fddb86056a88ada34911a5f7748",
+      "decisions": 191,
+      "labels_recomputed_exact": true,
+      "label_source": "T461 step complete actual teacher-occupancy history from h0; true recurrent carry",
+      "regions": {
+        "prefix_first21": {
+          "input_PPO327": {
+            "decisions": 21,
+            "RMSE_per_axis": [
+              0.00026352659088676767,
+              0.0004423247510466868
+            ],
+            "max_abs_per_axis": [
+              0.0003357529640197754,
+              0.0006498731672763824
+            ],
+            "mean_abs_per_axis": [
+              0.00026041269302368164,
+              0.0004228585444035984
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "P_action_loss_on_raw_location_mean": 1.325470242885934e-07,
+            "P_action_loss_on_clipped_float32_action_mean": 1.3254872474645764e-07,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "final_T465325": {
+            "decisions": 21,
+            "RMSE_per_axis": [
+              0.002434218768505268,
+              0.001192720618309265
+            ],
+            "max_abs_per_axis": [
+              0.0037608742713928223,
+              0.00212656706571579
+            ],
+            "mean_abs_per_axis": [
+              0.002141504060654413,
+              0.0010014851799323445
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "P_action_loss_on_raw_location_mean": 3.6740004876582937e-06,
+            "P_action_loss_on_clipped_float32_action_mean": 3.6740017431416688e-06,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "teacher_T461_context": {
+            "decisions": 21,
+            "RMSE_per_axis": [
+              0.0,
+              0.0
+            ],
+            "max_abs_per_axis": [
+              0.0,
+              0.0
+            ],
+            "mean_abs_per_axis": [
+              0.0,
+              0.0
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "P_action_loss_on_raw_location_mean": 1.611564409636629e-16,
+            "P_action_loss_on_clipped_float32_action_mean": 0.0,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "final_minus_input_action": {
+            "decisions": 21,
+            "RMSE_per_axis": [
+              0.002195960527357237,
+              0.0008214369131302083
+            ],
+            "max_abs_per_axis": [
+              0.003465116024017334,
+              0.001507401466369629
+            ],
+            "mean_abs_per_axis": [
+              0.0018810913676307315,
+              0.0006789632496379671
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            }
+          },
+          "final_minus_input_location": {
+            "decisions": 21,
+            "RMSE_per_axis": [
+              0.0021959625124922046,
+              0.0008214375340634819
+            ],
+            "max_abs_per_axis": [
+              0.003465124760661298,
+              0.0015074014726626644
+            ],
+            "mean_abs_per_axis": [
+              0.0018810963899965828,
+              0.0006789645585026152
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            }
+          }
+        },
+        "suffix21onward": {
+          "input_PPO327": {
+            "decisions": 170,
+            "RMSE_per_axis": [
+              0.00042993432882122343,
+              0.0005774638083709046
+            ],
+            "max_abs_per_axis": [
+              0.0011625885963439941,
+              0.0008308589458465576
+            ],
+            "mean_abs_per_axis": [
+              0.0003418123020845301,
+              0.0005570372511797091
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "P_action_loss_on_raw_location_mean": 2.5915411385672166e-07,
+            "P_action_loss_on_clipped_float32_action_mean": 2.591539885385923e-07,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "final_T465325": {
+            "decisions": 170,
+            "RMSE_per_axis": [
+              0.0009847939586346173,
+              0.0007696762735709004
+            ],
+            "max_abs_per_axis": [
+              0.00347137451171875,
+              0.0021328353323042393
+            ],
+            "mean_abs_per_axis": [
+              0.0006012203062281889,
+              0.0006709478247691603
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "P_action_loss_on_raw_location_mean": 7.811097002055811e-07,
+            "P_action_loss_on_clipped_float32_action_mean": 7.811103535306138e-07,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "teacher_T461_context": {
+            "decisions": 170,
+            "RMSE_per_axis": [
+              0.0,
+              0.0
+            ],
+            "max_abs_per_axis": [
+              0.0,
+              0.0
+            ],
+            "mean_abs_per_axis": [
+              0.0,
+              0.0
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "P_action_loss_on_raw_location_mean": 2.0949954134922074e-16,
+            "P_action_loss_on_clipped_float32_action_mean": 0.0,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "final_minus_input_action": {
+            "decisions": 170,
+            "RMSE_per_axis": [
+              0.0007615728230582222,
+              0.0005031052858378261
+            ],
+            "max_abs_per_axis": [
+              0.00231286883354187,
+              0.0013953945599496365
+            ],
+            "mean_abs_per_axis": [
+              0.0005959218039232141,
+              0.0003638063776580726
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            }
+          },
+          "final_minus_input_location": {
+            "decisions": 170,
+            "RMSE_per_axis": [
+              0.0007615728127478377,
+              0.0005031054095992276
+            ],
+            "max_abs_per_axis": [
+              0.0023128552940683833,
+              0.0013953946616289802
+            ],
+            "mean_abs_per_axis": [
+              0.000595921294676301,
+              0.00036380589270345345
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            }
+          }
+        },
+        "all": {
+          "input_PPO327": {
+            "decisions": 191,
+            "RMSE_per_axis": [
+              0.0004149167023766011,
+              0.0005641916396292372
+            ],
+            "max_abs_per_axis": [
+              0.0011625885963439941,
+              0.0008308589458465576
+            ],
+            "mean_abs_per_axis": [
+              0.0003328626068474735,
+              0.000542284618497519
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "P_action_loss_on_raw_location_mean": 2.452339626476604e-07,
+            "P_action_loss_on_clipped_float32_action_mean": 2.452340380693e-07,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "final_T465325": {
+            "decisions": 191,
+            "RMSE_per_axis": [
+              0.001230721695301442,
+              0.0008268482333086569
+            ],
+            "max_abs_per_axis": [
+              0.0037608742713928223,
+              0.0021328353323042393
+            ],
+            "mean_abs_per_axis": [
+              0.0007705708760865695,
+              0.0007072896282164214
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "P_action_loss_on_raw_location_mean": 1.0991762265747275e-06,
+            "P_action_loss_on_clipped_float32_action_mean": 1.0991769461056513e-06,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "teacher_T461_context": {
+            "decisions": 191,
+            "RMSE_per_axis": [
+              0.0,
+              0.0
+            ],
+            "max_abs_per_axis": [
+              0.0,
+              0.0
+            ],
+            "mean_abs_per_axis": [
+              0.0,
+              0.0
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "P_action_loss_on_raw_location_mean": 2.0418433135918558e-16,
+            "P_action_loss_on_clipped_float32_action_mean": 0.0,
+            "fraction_location_abs_ge1": 0.0,
+            "fraction_location_abs_ge1_per_axis": [
+              0.0,
+              0.0
+            ]
+          },
+          "final_minus_input_action": {
+            "decisions": 191,
+            "RMSE_per_axis": [
+              0.0010229459905276266,
+              0.0005472418634850558
+            ],
+            "max_abs_per_axis": [
+              0.003465116024017334,
+              0.001507401466369629
+            ],
+            "mean_abs_per_axis": [
+              0.0007372231695664491,
+              0.0003984571332160715
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            }
+          },
+          "final_minus_input_location": {
+            "decisions": 191,
+            "RMSE_per_axis": [
+              0.0010229464522369207,
+              0.0005472420672318082
+            ],
+            "max_abs_per_axis": [
+              0.003465124760661298,
+              0.0015074014726626644
+            ],
+            "mean_abs_per_axis": [
+              0.0007372232685073267,
+              0.0003984568454876545
+            ],
+            "drive_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "drive_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.02": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            },
+            "steering_error_gt_0.05": {
+              "count": 0,
+              "first_global_decision": null,
+              "first_region_decision": null,
+              "first_global_time_s": null
+            }
+          }
+        }
+      },
+      "context_teacher_NOT_actual_label_source_for00": true
+    }
+  ],
+  "original_fit_first_last": {
+    "student21": {
+      "first": 0.000172109009397344,
+      "last": 0.00016042727552171096,
+      "percent_change": -6.787404050803467,
+      "percent_reduction": 6.787404050803467
+    },
+    "teacher_suffix": {
+      "first": 0.0003058730251003757,
+      "last": 0.00030493883881196307,
+      "percent_change": -0.3054163694578966,
+      "percent_reduction": 0.3054163694578966
+    },
+    "reference218": {
+      "first": 3.445153091806334e-35,
+      "last": 9.090455457256019e-07,
+      "percent_change": 2.6386216272583076e+30,
+      "percent_reduction": -2.6386216272583076e+30
+    },
+    "own10": {
+      "first": 2.172592727765075e-35,
+      "last": 6.294101758806232e-07,
+      "percent_change": 2.89704631630656e+30,
+      "percent_reduction": -2.89704631630656e+30
+    }
+  },
+  "source_models": {
+    "input_PPO327": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t463_evening_2000/ppo/proposal.pt.gz",
+      "sha256": "4d640d0c617b27eaeb8d4fb9fb5cbd74532abe0def6a74edf1638a4b3c787289",
+      "policy_hash": "2dcf390d9976e092ba03e4eeb1d0860b0ba26bf56533eebe341037277bf95844",
+      "joint_hash": "7bc1c601e6213425a88fce9ba29c6ed9da06b26a63e3b1696332317d7b7a70c6",
+      "bytes": 822106,
+      "uncompressed_bytes": 882927
+    },
+    "final_T465325": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t465_matched_safe_recovery/proposal.pt.gz",
+      "sha256": "c0f66a44e7c7d3d74a428c85394ac80540a7f2470c3025328bb8b3757bba4397",
+      "policy_hash": "1ab4997234fbec70be2abba297ffefec0b01b034069f658c40fb7ed7bfe42a19",
+      "joint_hash": "a3d5db8c26fe0adc57ce9a2dcd7cca2bd7fe26355173a3f9877517d71893f190",
+      "bytes": 433969,
+      "uncompressed_bytes": 459029
+    },
+    "teacher_T461_context": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t461_validated_recovery_bundle/proposal.pt.gz",
+      "sha256": "ee00108aad9eb6ad2e596d3d8ec801caa4cef9e48dc6a08d1f9e02aab2014900",
+      "policy_hash": "b44286dda6b41f764fa6fc6f39135b3563849deb80c0b6c0cf3bd3ea60ce8252",
+      "joint_hash": "523484fdfcdbf5b5a5af4809014f293593ab5f1478f3eecc1200028e7ebfe989",
+      "bytes": 433957,
+      "uncompressed_bytes": 459029
+    }
+  },
+  "constructor_file_SHA256": {
+    "stage/experiments/t466_recovery_label_audit/run.py": "ca586cde868243dd2139a859f200bc25452d4b9685f3d1d978d4ac3f71316695",
+    "stage/experiments/t460_closed_loop_coverage/t460_cache.py": "9e3ef14346fc3c773e89417372296b0afae880d51d7a07e5defae62c6bbbbfba",
+    "stage/experiments/t200_residual_placement/common.py": "a213ec43cb4a8e54cf6abb780a122d2e117d28a41d69e4d6430477868aab0552",
+    "stage/experiments/t203_native_exploration/runtime.py": "3f7f6ef5d5be39ab38b67c04f0b19711cba30d99b7389ae7ab96b1b9adac4032",
+    "stage/experiments/t217_rnd_preflight/model.py": "a468fdee238395ff19a57cc35847f7190ec7bf5bdb9f6df4971b43f35d3f0627",
+    "stage/experiments/t219_rnd_runtime/support.py": "22a4b244fcd4bd7802569f8b33abca6b954eb75d27ebcaf855e1febed6a26101",
+    "stage/experiments/t220_temporal_noise/temporal_support.py": "5df1020dae97d7654e04fe6b93c1038515cad69e874fe32f4702d4cce09bc8ec",
+    "stage/experiments/t221_left_success/left_support.py": "492e199a70081a97412f50d5ecbb2dd2696c99987b36d96588dfc13088e5d61a",
+    "stage/experiments/t223_coverage_repair/repair_support.py": "884777e4c1abf19d99916459997feb01302d34fce7c307c1e6dc4e9c60c6d191",
+    "stage/experiments/t229_valid_start_acceptance/valid_support.py": "c65ab4285e456ce9c5e9a61a70371bdd3ee3c4196829e30a5c13b32872fb7b8b",
+    "stage/experiments/t251_actuator_recovery/actuator_support.py": "557613f9ce5c61b727a6c9bed1459e3d57feb378dfff0de4b5e360e477893ca3",
+    "stage/experiments/t255_overnight/mem_actor.py": "f756d3b50ef4627e907e20c6ef2ff4a3aeb1a14290cc99793f687b19f60cb7d9",
+    "stage/experiments/t238_ar_density_recovery/copula.py": "6deef8030335f1cedc8e4f08e368c101106a108c2bda8fcb33ecbddbba0e4edc",
+    "stage/experiments/t255_overnight/mem_runtime.py": "4d9524c201abdd053c282191894f406c64942350b9949c5db1073d6e2092efdb",
+    "stage/experiments/native_update_guard.py": "8c1f0720347bd8b1f9c816976502f0cbb36dc21fd2640282d4ac2bcc9e7bb5a2",
+    "stage/experiments/t255_overnight/learning.py": "f76c8b96184501f2c32efac4fbc4f65b3bb8c58b02c97085a7fede087d8ff376",
+    "stage/experiments/t257_distance_policy_gradient/distance_learning.py": "2d288922be7bb30e656146790aa62b5b6bd2412dc42664fcbf71b70eb85ac955",
+    "stage/experiments/t259_closed_loop_recovery/closed_loop_learning.py": "9721731cc65bf5c545e353d130e0a03415ca3c9bff609379300a993f45499b7f",
+    "stage/experiments/t267_causal_credit_course/t267_learning.py": "3080669f367a36d877a881abac9fd5a6a42a0b1bc239a34f5e769f08782a3deb",
+    "stage/experiments/t287_time_aligned_credit/t287_credit.py": "60e6861510d8c57da653e0ca60609a5947eebea757c240425d689361a701d073",
+    "stage/experiments/t290_exact_duplicate_store/store.py": "54ba037c5534aec584323d4628d61ca48b45e713c2d94db53258f72ea30efffb",
+    "stage/experiments/t295_hindsight_support/t295_contract.py": "73dec9a98023a4c8a49436c52f16dbb5a0064cc96a54f86a0f16f052c28b95df",
+    "stage/experiments/t296_log_tail_support/stable_density.py": "2fa8c7c89c80a4357c625833566e3464fd9c690629c7359dd2550d61bd7d151d",
+    "stage/experiments/t280_local_cost/t280_core.py": "bbf78e178abb7ac5590737db4f348884d8d10fb118c5c4c49a10eeb55d0dd794",
+    "stage/experiments/t282_capped_balance/balanced_learning.py": "460e99d647d2dd64b73bd1d22a9a3de39e9c6d2757a4935371040a70a4ac85be",
+    "stage/experiments/t298_self_goal_transfer/t298_learning.py": "7db1603c0ca69d180ee4a3ecca2448cf6d807443e3a2ab1703070ba52bdd55e3",
+    "stage/experiments/t299_conditional_goal_likelihood/t299_learning.py": "acd5134c2cd46ea8cee0217af3b8886563f9b4197286651c8c95913b9b225ab0",
+    "stage/experiments/t291_hard_guard_ablation/t291_codec.py": "b38880b6d6160d5cccc74f85159201042e24d3fdfecda3fc60e94d02f4b98251",
+    "stage/experiments/t302_balanced_bridge_learning/t302_learning.py": "2bd24dd7f42835d5c9670ee2587d30fb7306db4db31fcf8c500762b670f7626a",
+    "stage/experiments/t305_goal_conditioned_contract/gc_contract.py": "fef79a03d7fad761b5e2f270061688f600b6ce38d899e9d1a6736b2ffdbf1f65",
+    "stage/experiments/t278_fixed_goal_starts/t278_guard.py": "593bd2967ec7b4347c1d6b1c9736c919fb38cbd0302bbbc1654723be22a57b54",
+    "stage/experiments/t280_local_cost/t280_worker.py": "0051f9fbf460a60f22bc26643c5981de5471300dd184bb0c927b195ea73f8267",
+    "stage/experiments/t308_iid_native_goal_value/t308_core.py": "0bffe4bad77f6d323ad7dd4830df791aad6b11771e41e605a1f8a70203840283",
+    "stage/experiments/t309_sequence_goal_value/sequence_value.py": "88e112546717552c50c89a1eeb8f5cd494ab93814da8c4583036500fa245fea1",
+    "stage/experiments/goal_conditioned_ppo/advantage.py": "6e39407eca626faeb4bc6fb89c13e0ee6f0f2b5f91850c3975a83e8d8bb69ab1",
+    "stage/experiments/t312_online_goal_ppo/ppo_learning.py": "43476c6dd5dfb269c02b647c187d548391a552006cc387f4c083e00da911ed28",
+    "stage/experiments/t312_online_goal_ppo/ppo_worker.py": "75ea9d06cde5ea409e28206d0e76b07bb8be159f7865a8e40ade8a66c742d968",
+    "stage/experiments/t312_remaining_recovery/recovery_worker.py": "e2095e3e41d7b0847612a41b6fd7a7a9a0a1ffab2ec6390626fd91e2eb4f83a2",
+    "stage/experiments/t312_event_contract/event_contract.py": "e84c46ef981c41856e98c1ea7056780a75eca38570f967168e8d937bdcd34623",
+    "stage/experiments/t312_remaining_recovery/adapter.py": "5d547c6385640efc0886b97fa4f790ffc5ce09ac04246986279623a13f700086",
+    "stage/experiments/t312_remaining_recovery/recover.py": "9e6b201770db2d27cec5fcb16565bd93721bb65aecfce50db45d60020184ae88",
+    "stage/experiments/t315_full_trajectory_gradient/t315_core.py": "e121e14647336ab9ea294b924744485073abafdd1abbb10d397dc208f7496a03",
+    "stage/experiments/t316_frozen_native_validation/t316_core.py": "53641fd2c4f6df03f9fc613c4a6895823d6b4a34497f3b1cef7456ea38b4cb0e",
+    "stage/experiments/t319_imperfect_demo_head/t319_core.py": "b4ee00809d2a6b35ba0f92f05f407fea640382a8ddf7a8a7152ceb13c083d7b0",
+    "stage/experiments/frozen_base_residual/actor.py": "fafa906c0d52c6695a360bc121ecf92ed8ecafaa7ded062a4f82a2ce3f5ac8f7",
+    "stage/experiments/t333_remaining_aggregation/t333_learning.py": "ded29ea2e45c2bead1295d2eb04fb5e04bb7be89397644eaad48df1f0a1e4a46",
+    "stage/experiments/t336_reverse_online/t336_core.py": "40840d64720ae023a8f855dc1a95aa0b366579ae07f4dd2aeaf8c3b5c56d5431",
+    "stage/experiments/t338_capg_recovery/t338_core.py": "cdf7787e706299feb9ad35958abd503ed88a5afcd1b987b34669da4d65954c2a",
+    "stage/experiments/t338_failure_review/canonical.py": "2000d883cbc4bff63ba5afbf64ba3b51e5f52664f3f89b274aee2431069a0fd2",
+    "stage/experiments/t338_remaining_recovery/t338r_core.py": "683264c66cdfd771853187af709b663266373f2ca3e6e6e9ec2b833851ccebd6",
+    "stage/experiments/t339_success_to_control/t339_core.py": "31bfe6290a7c09a0501bf152ba554aa6fe11bd1bc578d688d3900f6b0d6c0192",
+    "stage/experiments/t340_demo_supported_recovery/t340_core.py": "056aa550c0ce2b4f7457bec76e20f4684ee9107593d508341cc95288f9d02ea8",
+    "stage/experiments/t344_neighbour_recovery/t344_core.py": "4fe5602c37413ab9ad48e5c3e73ecdb46208f9ec256172122480f10372ead148",
+    "stage/experiments/t348_causal_sequence_warmstart/t348_core.py": "ebcb95538516c339aa0bae7291688f7d6b007ccc4e426374ef8d8b2afbc08a21",
+    "stage/experiments/t349_consistent_demo/t349_core.py": "e23282b00b876b50a6865379a77d35b08cc10e2fb20f190e9a758c44a3b9f8a2",
+    "stage/experiments/t351_recurrent_recovery/t351_core.py": "c5eb711059cf73d53179a612b888aef002ed4d009f9fd79b5cd29e2f3df8d5ab",
+    "stage/experiments/t353_offline_night_chain/night_core.py": "5fb0170b9684f70c73c8a87bd33429b2f41783b645cbfa31185e3e230a337feb",
+    "stage/experiments/t358_direct_narrow/t358_core.py": "ae509c4ee37bd36b9b692092a5269e62427c9836ef38585f49b9be674588cf25",
+    "stage/experiments/t365_correction_aggregation/t365_core.py": "a9c48fa742a444257283acccfca52a21b44898a9c5a399d5ddef8beb27366721",
+    "stage/experiments/t369_future_action_supervision/t369_core.py": "290c4018567a7e0d3274b1a3d2f49650147f9029dbd96ccf833a6c73491ba2fc",
+    "stage/experiments/t371_terminal_head_repair/t371_core.py": "45c2f3ad88f6b3084f9d741daa828a1dd69ede980f7a05a0fcb718db74b9697f",
+    "stage/experiments/t372_nonlinear_terminal_repair/t372_core.py": "ab34954e9e7d13174e253b0a76ced5807110da874bce764b2712127d33929fde",
+    "stage/experiments/t374_factual_worst_state_repair/t374_core.py": "0d712f49437b6e22704dbc0c9593d49774f529dc7b113afbbe5ff5dcb74159d2",
+    "stage/experiments/t375_observation_residual/t375_core.py": "d2ab5dc1f98c061470a6da4512cfa86d929728db3f2a8f0d7fcb4d8b9c68d1f0",
+    "stage/experiments/t377_full_human_observation_transfer/t377_core.py": "cfded34a2c24b6f84a49c9a7bae8bc335dbf4c14f26b6065bf00489b39da8650",
+    "stage/experiments/t392_demo_closed_loop/t392_learning.py": "2778e593a6468dd7eaeabcff69de12c70c754a7a35a81edeb3b4efbf64b3d884",
+    "stage/experiments/t393_safe_demo_pg/t393_learning.py": "b7719e6a95d2be316ebe0dbd704ba030227ccb473805aadc91d4f1ded2c210ba",
+    "stage/experiments/t395_frontier_recovery/t395_learning.py": "bbe5266d28b8f6c7500edaa86bbe4597851fb634f8e5b1eee07cff7ae46f65f1",
+    "stage/experiments/t396_iterative_recovery/t396_learning.py": "49def1a890fefc5788c52ad777521c8fcbbc0ac81f1852baeafa449c5b519a7b",
+    "stage/experiments/t398_warm_recovery_rl/t398_learning.py": "6dcb3a11c7e02c89854b737578644cf59434ae4e616633e9bb34088e99a63fe4",
+    "stage/experiments/t404_last_narrow/t404_core.py": "db4b98197cee21afe8d642cb38233cd1337e3dd3aadee1ef7f9e1d88527d30e1",
+    "stage/experiments/t406_wide_full_route/t406_core.py": "9702bdc0a2c5c36c700f5854b3e2ae2c1a2b46b2353c8c729e739a2e0d079d2b",
+    "stage/experiments/t408_joint_wide/t408_core.py": "581587a7d7c4c2313c36b84e0fa7147bcd3bc8d580e2be60c08b8b6147a93fc2",
+    "stage/experiments/t410_day_offline_chain/day_core.py": "cd2aa0aa5ac3ad608b2cebaee690cc92cda099c5472d394a204d264a30470068",
+    "stage/experiments/t418_evening_repair_chain/repair_core.py": "e10c962fefb012ca0b1534e10629b9a97d84c67263809ae63c56daaca35859b9",
+    "stage/experiments/t422_feedback_recovery_night/reference.py": "7df5ee8a302fb03b120abc2bb3ed6bbacc1b07fdf72bdd4c4b753f9dde2fcc51",
+    "stage/experiments/t437_joint_closed_loop_rl/t437_learning.py": "a8a99dea54301c276efef6f7367a021025e427673911f9f787f6c9f63949102d",
+    "stage/experiments/t437_joint_closed_loop_rl/t437_core.py": "a93696363e187a884361875275c5f05d94e92624e91656d4ab11b90e5cf74ed7",
+    "stage/experiments/joint_recurrent_actor_critic/physical_gae.py": "9e1d41aeff4e033bcad81bf500bec4e54b79d7b08f33cc14755ac06f0d71a304",
+    "stage/experiments/t441_joint_actor_critic/t441_learning.py": "2a5e171beb105d8df351fa16c58e2aa7c98d92c0f89a48eca3bfcbe05f60ca95",
+    "stage/experiments/t446_plain_joint/t446_learning.py": "f709091a7248fad6b3ecae3e1660079bd520609d5b5e25cdf39746c0ba375d52",
+    "stage/experiments/t451_single_failure_recovery/t451_storage.py": "d547ac76541d94f6c86ea8af850787a127969c952f88869fc50434db2ea77475",
+    "stage/experiments/t463_evening_2000/t463_learning.py": "ec47a5d81b2d5bdf2558113ab79e532e98e1101c5d62eb844f4dd954faa5acd5",
+    "stage/experiments/t465_matched_safe_recovery/run.py": "7a9fd3563bfdbba0a5a749427b96527542aac62cf19f04486f7dfe56347ac43c",
+    "stage/experiments/t464_two_failure_recovery/t464_learning.py": "6ff37046d595f1dfb2d084096035be85ca08115827c123880ce028dc2cdaf495",
+    "stage/experiments/t463_evening_2000/run.py": "a8b956eab9568678294b5832988ad8550cf9cce1f6e659a4619adc4eef8174de",
+    "stage/experiments/t462_recurrent_parent_correction/run.py": "40a2c0c03063d6c3dbb7e2a6f057478b99a8804c951339386db61ec5facf4af8",
+    "stage/experiments/t459_nonlinear_residual_repair/run.py": "31e4dd6bd18752c0e8ab13bb7b87f7cd1463bf2edc8a647f8c946cec4d8d7581",
+    "stage/experiments/t449_offline_joint_recovery/run.py": "c633609bada17d115d574e70f9f59c31c52925bb1852a425d32b747af6d487d0",
+    "stage/experiments/t453_early_correction_ppo/run.py": "00f77d6f75dea1638cae5d458462afa22568e1d3b7c75e7fec6fa64a93d90199",
+    "stage/experiments/t451_single_failure_recovery/run.py": "e3018394b4d521d2f557543a01027606bcfef68c2af0011ed34fcd4356eaca10",
+    "stage/experiments/t446_plain_joint/run.py": "c6621d1b58f783dafe49f8e2162827248301a36c3909742d1878474c56d02049"
+  },
+  "input_source_SHA256": {
+    "stage/docs/long_distance_20261101/release_receipt_T465.json": "668222b9bc2a233dfadb6ecd866100266ef70130f8db2b907cef5b71d4814d6e",
+    "stage/experiments/t465_matched_safe_recovery/run.py": "7a9fd3563bfdbba0a5a749427b96527542aac62cf19f04486f7dfe56347ac43c",
+    "stage/experiments/t466_recovery_label_audit/run.py": "ca586cde868243dd2139a859f200bc25452d4b9685f3d1d978d4ac3f71316695",
+    "stage/runs/t461_validated_recovery_bundle/proposal.pt.gz": "ee00108aad9eb6ad2e596d3d8ec801caa4cef9e48dc6a08d1f9e02aab2014900",
+    "stage/runs/t463_evening_2000/ppo/proposal.pt.gz": "4d640d0c617b27eaeb8d4fb9fb5cbd74532abe0def6a74edf1638a4b3c787289",
+    "stage/runs/t464_two_failure_recovery/audit.json": "2be4b11aa1d388388cfe3d0d8c00412827a028120dc2d40fa15dd31da28c488e",
+    "stage/runs/t464_two_failure_recovery/episodes/0000.npz": "5d0c503dd8d414f9cf2063b7e629fc8fde945d24cfce154bc1f44ff77a2db8e2",
+    "stage/runs/t464_two_failure_recovery/episodes/0001.npz": "b8245b536027513fe7bdc04f1815038c8e0064da0fe75616860a9f14245a7c9e",
+    "stage/runs/t464_two_failure_recovery/episodes/0002.npz": "8b0a3610a44f5ab6dec4c39e53452a854a5693061cef351129151a890205ad05",
+    "stage/runs/t464_two_failure_recovery/episodes/0003.npz": "940d6f45b4986065496fe5d6fda66ba4183f9b8455fede8c8eac9b833cd41269",
+    "stage/runs/t464_two_failure_recovery/episodes/0005.npz": "02f8f98be340357bc3beff8d2c2b71c0637edc3c8e0ae6d121ca1060b1e5fd4a",
+    "stage/runs/t464_two_failure_recovery/protocol.json": "b5403c82b7a35ff9b1fd3a4a0019f7470dec036e9b47443eb714d4a83d64b0ff",
+    "stage/runs/t464_two_failure_recovery/summary.json": "d28e4c472bd5b2bac743db3ba6ec946b40df7e024b3fd9c51c099993acccce12",
+    "stage/runs/t465_matched_safe_recovery/SEALED.json": "694c6ab9e87eb4e2e25da26c791e34d576463da3d80d1fd7845efa68b81f886c",
+    "stage/runs/t465_matched_safe_recovery/audit.json": "2514f18204e6cab565b918a75442f223cc29459a749f7436adc6c10dd5f5666c",
+    "stage/runs/t465_matched_safe_recovery/coverage_rows.json": "ac0cbe880b5e640180cc43cf27528ae5f87509f96d9209541a9b5b131b8e0cd0",
+    "stage/runs/t465_matched_safe_recovery/driver_started.json": "e0c61ccbceb5ce3188c0649bfdfabf69094615cbccf0cdc4f23a4fe9d99fbf4b",
+    "stage/runs/t465_matched_safe_recovery/episodes/0000.npz": "7a58621ae649b3e65ef83d869e7456db4f7b46a914941602870127a58f196d40",
+    "stage/runs/t465_matched_safe_recovery/launch.json": "745b2c5cea4478f90767181ce57d9fc9dd2dadb0ddb88da5f47b1e3012fd6c06",
+    "stage/runs/t465_matched_safe_recovery/proposal.pt.gz": "c0f66a44e7c7d3d74a428c85394ac80540a7f2470c3025328bb8b3757bba4397",
+    "stage/runs/t465_matched_safe_recovery/protocol.json": "cc1b97251f29c277c27578a1947d9f334873689b806e5cb53fc866efe465320d",
+    "stage/runs/t465_matched_safe_recovery/repair_trace.json": "b917fc2ccd5b94d942bc4b7ad8370217006cfe0631bb1f09cb15fd5c60653e3b",
+    "stage/runs/t465_matched_safe_recovery/summary.json": "7c65bec39051d9a377dacc72b9ec9a201eb749a0fd124638dfd4396e17821d9e"
+  },
+  "registered_inputs_verified_count": 2076,
+  "registered_inputs_mapping_digest": "aec403bd2bab160ebc1f4f4ce02d5005373ccccfff6ff045822582c960c54775",
+  "own4_reused": true,
+  "own4_NOT_new_independent_physical_data": true,
+  "own4_source_paths": [
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t464_two_failure_recovery/episodes/0000.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t464_two_failure_recovery/episodes/0001.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t464_two_failure_recovery/episodes/0002.npz",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t464_two_failure_recovery/episodes/0003.npz"
+  ],
+  "fresh16": null,
+  "reload78": null,
+  "eight_started": false,
+  "T465_independent_audit_state": "PASS",
+  "T465_remote_state": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "prior_scientific_and_driver_processes_stopped": true,
+  "verified_stopped_pids": [
+    504300,
+    504305,
+    504306,
+    504317,
+    504321,
+    504323,
+    504329,
+    504332,
+    504341,
+    507106,
+    504295,
+    504292
+  ],
+  "elapsed_s": 1.6634066260012332,
+  "max_seconds": 180,
+  "original_failed_attempt_native0optimizer0": true,
+  "original_dtype_failure_preserved": true,
+  "axis_order": [
+    "drive",
+    "steering"
+  ],
+  "indexing": "zero_based global decisions; 5Hz control, decision0 time0",
+  "regions": "prefix includes decisions0..20 (20student executed plus first teacher decision); suffix starts21",
+  "meaning": "Posthoc fit on two mixed teacher-occupancy histories, not autonomous final-student states, unseen generalization, navigation effectiveness, or causal proof. T461 outputs are context only for00, whose actual labels are safeT255 reset."
+}
