@@ -1,3 +1,5 @@
+2026-11-10 T475最后一次有界Stage试验已注册/0native2丢弃新Adam/6零步命令预检PASS，尚待源码精确同步与唯一launch。冻结原327全部53940参数，新增现有120观测直达32Tanh2输出的3938参数零初始化支路，六actualhistory初始动作/hidden逐位保持；固定512监督live+shadow，2worker完整329，全过才16fresh/78独立原生精确/audit/全备份。一次最多441命令，夜累计最多1994<2000；11M全部物理/56MiB/global1GiB/free40不扩，11月11日08:30更早硬停。用户要求仍未通过即停止线，无自动后续/无8，Phase隔离。详overnight_20261110/T475_PLAN/BUDGET/READINESS。
+
 2026-11-10 T474冻结控制复验与联合学习夜间接力结束，completed=['verified', 'joint', 'priority']/reason=FIXED_FINITE_MECHANISMS_COMPLETE/physics=10589577/commands=719/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED/six_gate=False；两固定分支/单Actor部署，T473失败原件保留；无8，用户看后再决定，Phase隔离。详overnight_20261110/T474_FINAL_REPORT。
 
 2026-11-10 T474冻结控制独立复验＋联合修复夜间链已注册/0native4丢弃Adam/26零步命令正式预检PASS，尚待精确源码及唯一launch。T473FAILED原件不改，已有旧15成功控制只做两独立新原点重生/audit门，不重跑CEM；门过后joint与priority两固定128BC+shadow分支分别从原327初始化，原生raw15只监督执行后缀。全329过才16fresh/78独立精确/audit/全备份；用户看后再8，程序无8。root64MiB/global1GiB/free40不扩，本轮20M/900命令/7800main仍计原夜40M2000cmd14400main；明早11月11日07:15停学07:45原生08:30全停，断网本地自动执行/网络仅末备份，Phase隔离。详overnight_20261110/T474_PLAN/BUDGET/READINESS。
