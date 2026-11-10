@@ -1,3 +1,5 @@
+2026-11-10 T469冻结退化反例恢复诊断已注册/0native0optimizer正式预检PASS，尚待精确源码与唯一launch。拒绝A325只作独立冻结反例，不初始化/晋升；原327对旧03/15与宽LEFT15/17各实际history作候选恢复教师，4query须原生safe+exact，不以自身GOAL替代。24请求+16启停+24预检=64cmd，760008最坏物理/1M守卫/900main300audit1800all/18MiB/global1GiB/free40不扩，仍计原夜40M2000cmd14400main秒，11月11日08:30更早从严。4恢复/audit/备份都过才另注册T470，后者当前仅惰性草案未运行；8等用户看后/未进，Phase隔离。详overnight_20261110/T469_PLAN/BUDGET/READINESS。
+
 2026-11-10夜间T468有限离线纠正接力已结束，completed=['occupancy_0', 'duration_0']/reason=FINITE_FIXED_NIGHT_MECHANISMS_COMPLETE，physics=10560816/commands=716，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED/six_gate=False。实际占用与完整时长目标两机制各至多2轮，拒绝不传不重复同策略占用，8等待用户看后，本程序未启动8。所有raw/模型/失败保留，Phase隔离。详overnight_20261110/FINAL_REPORT。
 
 2026-11-10 T468离线夜间有限接力已注册，缓存完整远端读回/105旧日志无损编码与两独立存储审计通过，0native/4丢弃Adam和8worker取消预检PASS；尚待最终精确源码同步和唯一launch，不称已训练。起点T463PPO327，00/21两旧任务失守；occupancy与duration两机制各条件最多2轮/每轮128BC+shadow，完整329保全当前成功且新增才传递；40M/2000命令/14400main秒/root80MiB/global1GiB/free40不扩，明早11月11日07:15停学07:45停原生08:30全停。条件16fresh+78独立原生精确/audit/完整二进制SHA后才六米门，用户看后再8、本程序无8源码/不启动；Phase隔离。详overnight_20261110/PLAN/BUDGET/READINESS。
