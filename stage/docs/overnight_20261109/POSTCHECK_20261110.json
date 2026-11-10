@@ -1,0 +1,158 @@
+{
+  "state": "PASS_RAW_NAVIGATION_AND_FULL_HISTORY_SCOPE_ONLY",
+  "new_native": 0,
+  "new_gradients": 0,
+  "optimizer_steps": 0,
+  "historical_optimizer_reconstruction": 0,
+  "original_main_state": "FAILED",
+  "original_full_audit": "NOT_EXECUTED",
+  "all_recorded_processes_stopped": true,
+  "all_original_local_manifest_members_and_locked_inputs_SHA_verified": true,
+  "physics": 11011790,
+  "commands": 722,
+  "elapsed_main_seconds": 1978.1949245929718,
+  "raw_full_trajectories_rebuilt": 12,
+  "compact_records_hashed_and_terminal_counts_verified": 658,
+  "exact_native_replays": 12,
+  "compact_final658_full120_NOT_reconstructed": true,
+  "phase_models_Actor_V_and_mature_Adam_bytes_hash_verified_NOT_training_reconstructed": true,
+  "live_BC_Actor_Adam": 2524,
+  "shadow_BC_Actor_Adam": 2524,
+  "live_PPO_Actor_Adam": 4,
+  "live_PPO_V_Adam": 4,
+  "shadow_PPO_Actor_Adam": 4,
+  "shadow_PPO_V_Adam": 4,
+  "PPO_proposal_not_serialized_or_panel_evaluated": true,
+  "preflight_Adam_counts_separate": {
+    "state": "PASS",
+    "native": 0,
+    "commands": 24,
+    "BC_discarded_Adam": 8,
+    "PPO_discarded_Actor_Adam": 2,
+    "PPO_discarded_V_Adam": 2,
+    "mature_restore_and_shadow_exact": true,
+    "teacher_first10_original_actions_exact": true,
+    "CPU_history_error": 3.0531133177191805e-16,
+    "estimated_BC_live_shadow_seconds": 1150.1841693260358,
+    "mature_two_Adam_serialized_model_bytes": 1295303,
+    "synthetic_correction_NOT_navigation_data": true,
+    "all_workers_stopped": true
+  },
+  "results": [
+    {
+      "phase": "tail",
+      "wide54": {
+        "valid": 54,
+        "success": 54,
+        "contact": 0,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "old275": {
+        "valid": 275,
+        "success": 272,
+        "contact": 3,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "failed": [
+        "dev_task6_00",
+        "dev_task6_10",
+        "dev_task6_15"
+      ],
+      "repaired_vs_parent": [
+        "dev_task6_01",
+        "dev_task6_02",
+        "dev_task6_03",
+        "dev_task6_04",
+        "dev_task6_05",
+        "dev_task6_08",
+        "dev_task6_09",
+        "dev_task6_11",
+        "dev_task6_12",
+        "dev_task6_13",
+        "dev_task6_18",
+        "dev_task6_24",
+        "hold_task6_02",
+        "hold_task6_03",
+        "hold_task6_04",
+        "wide117_80_dev6_LEFT_02",
+        "wide117_80_dev6_LEFT_08",
+        "wide117_80_dev6_LEFT_11"
+      ],
+      "lost_vs_parent": [
+        "dev_task6_00",
+        "dev_task6_10"
+      ],
+      "accepted": false,
+      "model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t449_offline_joint_recovery/tail.pt.gz",
+        "sha256": "fa6623b42ec05b98963bfa71e3ce9f399dd3d4e888bf98fa5b709ac7b156be27",
+        "policy_hash": "e09bc7e5e45555ac77ac2846faee9c2785f6afafcf7bfe3e0817da898ed9ebfc",
+        "joint_hash": "5ac223600ef361e306957e1126155d496e3a19aaab6be89041e290c9a8428521",
+        "bytes": 1270234
+      }
+    },
+    {
+      "phase": "recovery",
+      "wide54": {
+        "valid": 54,
+        "success": 54,
+        "contact": 0,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "old275": {
+        "valid": 275,
+        "success": 274,
+        "contact": 1,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "failed": [
+        "dev_task6_00"
+      ],
+      "repaired_vs_parent": [
+        "dev_task6_01",
+        "dev_task6_02",
+        "dev_task6_03",
+        "dev_task6_04",
+        "dev_task6_05",
+        "dev_task6_08",
+        "dev_task6_09",
+        "dev_task6_11",
+        "dev_task6_12",
+        "dev_task6_13",
+        "dev_task6_15",
+        "dev_task6_18",
+        "dev_task6_24",
+        "hold_task6_02",
+        "hold_task6_03",
+        "hold_task6_04",
+        "wide117_80_dev6_LEFT_02",
+        "wide117_80_dev6_LEFT_08",
+        "wide117_80_dev6_LEFT_11"
+      ],
+      "lost_vs_parent": [
+        "dev_task6_00"
+      ],
+      "accepted": false,
+      "model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t449_offline_joint_recovery/recovery.pt.gz",
+        "sha256": "0e862a0738b9b24f58a37d1a2c7002811386f244c7ac7f7917ec017f82026204",
+        "policy_hash": "63fa96869a220b5e6fcc8fe25a592a78e58b3dc80c46c49a43632d2b7701755e",
+        "joint_hash": "3050c51c33cbb9167dc9dcf5d009fb90a7528d312bb1c913942cfee1a2cffb87",
+        "bytes": 1270203
+      }
+    }
+  ],
+  "true_unconsumed_fresh16": null,
+  "independent_reload78": null,
+  "six_gate": false,
+  "eight_started": false,
+  "elapsed_inspection_seconds": 2.8820910453796387
+}
