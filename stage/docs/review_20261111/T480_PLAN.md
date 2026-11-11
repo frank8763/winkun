@@ -39,7 +39,7 @@ capture主管线900秒/audit300；单候选主管线3600秒（学习至多1200�
 
 root20MiB，完整12文件每个≤800KiB、383compact≤8KiB、模型≤1792KiB、metadata5MiB，合计20045824B≤20971520B。满53334原生步对应最多534决策，现有packed26数组保留完整120及history/hidden，逐NPY数据和头部＋保守DEFLATE/ZIP上界757576B<819200B；正式预检/每条写入仍执行硬限，不靠平均压缩率。root协议和缓存计划分开SHA锁定，普通Git各文件<2MiB。
 
-global newruns≤1GiB/free≥40GiB不放宽。先对已结束完整远端SHA备份日志做本地可逆gzip（原字节本地和远端保留），再视需要按已验证受控helper重新读回完整旧归档每成员SHA后移除未用NPZ缓存，保留恢复标记。当前输入、模型、summary/audit/protocol/error/ledger/canonical均排除。原T479未结束时不做任何清理；不足不删除唯一数据或扩大容量。存储两阶段均独立审计，完整root预留只在两阶段结束后准入。
+global newruns≤1GiB/free≥40GiB不放宽。先对已结束完整远端SHA备份日志做本地可逆gzip（FAILED子目录只有整个root SEALED、全部进程退出且完整原始远端核验后才可选择；FAILED摘要和错误仍保持原件）（原字节本地和远端保留），再视需要按已验证受控helper重新读回完整旧归档每成员SHA后移除未用NPZ缓存，保留恢复标记。当前输入、模型、summary/audit/protocol/error/ledger/canonical均排除。原T479未结束时不做任何清理；不足不删除唯一数据或扩大容量。存储两阶段均独立审计，完整root预留只在两阶段结束后准入。
 
 ## 诚实结论边界
 

@@ -1,0 +1,14 @@
+{
+  "state": "ZERO_NATIVE_ZERO_ADAM_STORAGE_ADMISSION_REJECTION",
+  "epoch": 1794372530.8354871,
+  "new_run_created": false,
+  "native": 0,
+  "optimizer": 0,
+  "reason": "Previous local reversible encoder only selected COMPLETE child summaries and excluded T479 FAILED child, even though entire root sealed/stopped/fullremoteverified",
+  "observed_available_remote_cache_net": 671675,
+  "required_cache_net": 1296267,
+  "fix": "Allow reversible encoding of eligible raw logs under FAILED child only with independently stopped immutable root SEALED evidence plus original remote manifest hashes; preserve FAILED/error/summary/model/ledger unchanged",
+  "source_parent_commit": "840058a93ab5e063a0f523c49d0fbd91062db5c2",
+  "new_encoder_sha256": "2fd914cd252bec9d9fdf5dd314dd1c7806e28c74e1a7e10c3cca0158a28af7c2",
+  "no_budget_or_capacity_relaxation": true
+}

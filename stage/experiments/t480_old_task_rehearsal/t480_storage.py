@@ -47,7 +47,23 @@ def completed(f):
         s=folder/'summary.json';seal=folder/'SEALED.json'
         if not s.exists():continue
         d=read(s)
-        if d.get('state') not in ['COMPLETE','SEALED_FINITE_ROOT','COMPLETE_AUDITED_LOCAL']:return None
+        failed_seal=None
+        if d.get('state')=='FAILED':
+            # A failed scientific result can still have a completely stopped,
+            # sealed and fully backed raw archive. Preserve its FAILED summary
+            # and errors; only encode eligible raw logs reversibly.
+            for ancestor in [folder,*folder.parents]:
+                if ancestor==RUNS or not ancestor.is_relative_to(RUNS):break
+                q=ancestor/'SEALED.json'
+                if q.exists():
+                    z=read(q)
+                    root_ids=z.get('scientific_pids',[])
+                    for name in ['driver_started.json','launch.json']:
+                        if (ancestor/name).exists() and read(ancestor/name).get('pid'):root_ids.append(read(ancestor/name)['pid'])
+                    if not z.get('all_scientific_processes_stopped') or any(Path('/proc',str(v)).exists() for v in root_ids):return None
+                    failed_seal=q;break
+            if failed_seal is None:return None
+        elif d.get('state') not in ['COMPLETE','SEALED_FINITE_ROOT','COMPLETE_AUDITED_LOCAL']:return None
         ids=[]
         if d.get('pid'):ids.append(d['pid'])
         if seal.exists():
@@ -61,7 +77,7 @@ def completed(f):
         if g.exists():
             for z in read(g):ids+=[z['parent']]+z['workers']
         if any(Path('/proc',str(pid)).exists() for pid in ids):return None
-        evidence=[s]+([seal] if seal.exists() else [])
+        evidence=[s]+([seal] if seal.exists() else [])+([failed_seal] if failed_seal else [])
         return [dict(path=str(q.relative_to(ROOT)),sha256=sha(q.read_bytes())) for q in evidence]
     return None
 

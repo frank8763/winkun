@@ -16,9 +16,20 @@ def prepare():
     assert not OUT.exists();K._idle()
     previous=ROOT/'stage/runs/t479_balanced_success_sil'
     report=read(DOC/'T479_FINAL_REPORT.json')
-    assert report['state']=='COMPLETE_AUDITED_LOCAL' and report['remote']==K.COMPLETE
-    assert read(previous/'pair/audit.json')['state']=='PASS'
-    assert report['summaries']['pair']['result']['chosen_arm'] is None,'Successful previous proposal: stop this failed-both design'
+    assert report['remote']==K.COMPLETE
+    predecessor_audit=previous/'pair/audit.json'
+    if report['state']=='COMPLETE_AUDITED_LOCAL':
+        assert read(predecessor_audit)['state']=='PASS'
+        assert report['summaries']['pair']['result']['chosen_arm'] is None,'Successful previous proposal: stop this failed-both design'
+    else:
+        assert report['state']=='BOUNDED_QUEUE_STOPPED' and report['completed']==['capture']
+        predecessor_audit=DOC/'T479_PARTIAL_REVIEW.json'
+        review=read(predecessor_audit)
+        assert review['state']=='PASS_PARTIAL_ADMISSION_REVIEW_NOT_COMPLETE_T479_AUDIT'
+        assert review['new_policy_updates']==0 and review['historical_discarded_Adam']==64
+        assert review['selected']==report['selected']
+        assert all(c['already_lost_success_ids'] for c in review['candidates'].values())
+        assert read(previous/'capture/audit.json')['state']=='PASS'
     base=report['selected'];assert base['wide8']['success']==8 and base['wide6']['success']==53 and base['old275']['success']==274
     stop=datetime(2026,11,11,16,30,tzinfo=ZoneInfo('Asia/Shanghai')).timestamp()
     assert time.time()+7200<stop
@@ -51,7 +62,7 @@ def prepare():
     files=set(old['inputs'])|{str(f) for f in HERE.glob('*.py')}
     files|={r['path'] for r in retention+fixture}
     files|={str(previous/'protocol.json'),str(previous/'capture/summary.json'),
-            str(previous/'capture/audit.json'),str(previous/'pair/audit.json'),
+            str(previous/'capture/audit.json'),str(predecessor_audit),
             str(DOC/'T479_FINAL_REPORT.json'),str(DOC/'T480_PLAN.md'),
             str(ROOT/'stage/docs/long_distance_20261101/release_receipt_T479.json')}
     p['protected_files']=dict(old['protected_files']);files|=set(p['protected_files'])
