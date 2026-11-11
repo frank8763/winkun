@@ -14,14 +14,14 @@ def prepare():
     import t482_cache as K
     import t482_storage as S
     assert not OUT.exists();K._idle()
-    previous=ROOT/'stage/runs/t484_symbol_recovery'
-    report=read(DOC/'T484_FINAL_REPORT.json')
+    previous=ROOT/'stage/runs/t485_afternoon_recovery'
+    report=read(DOC/'T485_FINAL_REPORT.json')
     assert report['state']=='COMPLETE_AUDITED_LOCAL' and report['remote']==K.COMPLETE
     assert read(previous/'pair/audit.json')['state']=='PASS'
     assert report['summaries']['pair']['result']['chosen_arm'] is None,'Retained progress: stop failure relay'
     base=report['selected'];assert [base[k]['success'] for k in ['wide8','wide6','old275']]==[8,53,274]
     stop=datetime(2026,11,11,20,30,tzinfo=ZoneInfo('Asia/Shanghai')).timestamp()
-    assert time.time()+11400<stop,'Insufficient complete relay reservation'
+    assert time.time()+6600<stop,'Insufficient complete capture+one-candidate+audit+archive reservation'
     old=read(previous/'protocol.json');p=copy.deepcopy(old)
     cap=read(old['capture_summary_path'])['result'];fresh=cap['samples'];retention=old['retention_rows']
     assert len(fresh)==16 and all(r['full'] and r['policy_hash']==base['model']['policy_hash'] for r in fresh)
@@ -51,8 +51,8 @@ def prepare():
     files=set(old['inputs'])|{str(f) for f in HERE.glob('*.py')}
     files|={r['path'] for r in fresh+retention+p['replay_rows']}
     files|={str(previous/'protocol.json'),old['capture_summary_path'],old['capture_audit_path'],
-            str(previous/'pair/summary.json'),str(previous/'pair/audit.json'),str(DOC/'T484_FINAL_REPORT.json'),
-            str(DOC/'T482_PLAN.md'),str(ROOT/'stage/docs/long_distance_20261101/release_receipt_T484.json')}
+            str(previous/'pair/summary.json'),str(previous/'pair/audit.json'),str(DOC/'T485_FINAL_REPORT.json'),
+            str(DOC/'T482_PLAN.md'),str(ROOT/'stage/docs/long_distance_20261101/release_receipt_T485.json')}
     p['protected_files']=dict(old['protected_files']);files|=set(p['protected_files'])
     needed=max(1,M.used()+p['max_bytes']+2**20-2**30)
     enc=S.plan(files,needed);p['storage_rows']=enc['rows'];p['storage_expected_release']=enc['selected_net_release_bytes']
@@ -153,11 +153,11 @@ def launch():
     p=read(OUT/'protocol.json');T.verify(p,True);assert read(OUT/'preflight.json')['state']=='PASS' and not (OUT/'launch.json').exists()
     src=read(ROOT/'stage/runs/t224_archive/latest_source_sync_receipt.json');assert src['root_tree']==subprocess.check_output(['git','rev-parse','HEAD^{tree}'],text=True).strip()
     assert not subprocess.check_output(['git','status','--porcelain'],text=True).strip()
-    now=time.time();assert now+11400<p['absolute_all_stop']
+    now=time.time();duration=min(11400,int(p['absolute_all_stop']-now)-1);assert duration>=6600
     with (OUT/'driver_console.log').open('xb') as f:
         c=subprocess.Popen(['systemd-inhibit','--what=sleep:idle','--mode=block','--who=Stage-T482','--why=Bounded old-task recurrent RL rehearsal',
-            'timeout','--signal=TERM','--kill-after=2','11400','taskset','-c','0',str(ROOT/'run_stage.sh'),str(HERE/'driver.py')],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=f,stderr=subprocess.STDOUT,start_new_session=True)
-    save(OUT/'launch.json',dict(pid=c.pid,epoch=now,all_stop=now+11400,source_remote=src['remote_commit'],protocol_sha256=sha(OUT/'protocol.json'),
+            'timeout','--signal=TERM','--kill-after=2',str(duration),'taskset','-c','0',str(ROOT/'run_stage.sh'),str(HERE/'driver.py')],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=f,stderr=subprocess.STDOUT,start_new_session=True)
+    save(OUT/'launch.json',dict(pid=c.pid,epoch=now,all_stop=now+duration,source_remote=src['remote_commit'],protocol_sha256=sha(OUT/'protocol.json'),
         offline_no_LLM_network_install=True,single_pilot_NOT_matched_ablation=True,new_window_not_T481_extension=True))
     print('T482_ACTUALLY_LAUNCHED',c.pid,flush=True)
 
