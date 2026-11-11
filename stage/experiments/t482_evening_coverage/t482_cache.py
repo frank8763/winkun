@@ -310,36 +310,33 @@ def _fresh_inputs(p, cache):
 
 
 def _archive(group, cache, deadline):
+    """Same original archive verifier, HTTP1 transport, bounded per-call retry.
+
+    Failed Go CLI asset reads were directly observed as EOF. Changing only
+    binary transport never relaxes archive/member SHA or the original deadline.
+    """
     assert sha(READER.read_bytes()) == cache['reader_sha256']
-    spec = importlib.util.spec_from_file_location('_t479_frozen_t460_cache', READER)
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    # This reader only imports transport when called, and uses at most four
-    # existing gh CLI calls. Stderr/tokens are never emitted by this wrapper.
-    # One failed CLI request must not discard an otherwise verified archive.
-    # Keep the original member verifier unchanged; retry only failed binary
-    # transport, at most three calls and within the SAME absolute deadline.
-    original_run = subprocess.run
-    def bounded_run(args, *a, **kw):
-        binary = (isinstance(args, list) and 'Accept: application/octet-stream' in args
-                  and any('/releases/assets/' in str(v) for v in args))
-        if not binary:
-            return original_run(args, *a, **kw)
+    spec=importlib.util.spec_from_file_location('_t482_original_t460_cache',READER)
+    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+    sys.path.insert(0,str(ROOT/'stage/experiments/t377_full_human_observation_transfer'))
+    import transport as T
+    import urllib.error
+    original_run=T.subprocess.run
+    def http1(args,*a,**kw):
+        if isinstance(args,list) and args and args[0]=='curl':args=[args[0],'--http1.1',*args[1:]]
+        return original_run(args,*a,**kw)
+    T.subprocess.run=http1
+    original_response=T.response
+    def bounded_response(*a,**kw):
         for attempt in range(3):
-            assert time.time() < deadline - 40, 'Original cache deadline; no further transport attempt'
-            result = original_run(args, *a, **kw)
-            if result.returncode == 0:
-                return result
-            with (OUT / 'cache_transport_attempts.jsonl').open('a') as log:
-                log.write(json.dumps(dict(attempt=attempt, returncode=result.returncode,
-                    epoch=time.time(), stderr_sha256=sha(result.stderr),
-                    no_native_no_optimizer=True)) + '\n')
-        return result
-    subprocess.run = bounded_run
-    try:
-        return module.archive(group, deadline=deadline, cli=True)
+            assert time.time()<deadline-125
+            try:return original_response(*a,**kw)
+            except urllib.error.URLError:
+                if attempt==2:raise
+    T.response=bounded_response
+    try:return module.archive(group,deadline=deadline,cli=False)
     finally:
-        subprocess.run = original_run
+        T.subprocess.run=original_run;T.response=original_response
 
 
 def _reserve(p):
