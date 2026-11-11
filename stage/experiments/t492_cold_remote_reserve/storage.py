@@ -47,12 +47,15 @@ def verify(p):
     assert used()<=LIMIT and shutil.disk_usage(ROOT).free>=40*2**30
 def install():
     spec=importlib.util.spec_from_file_location('_stage492_transport_wrapper',HERE/'transport.py');mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod);mod.install();return mod.T
-def run():
-    idle();p=read(OUT/'protocol.json');verify(p);assert not (OUT/'started.json').exists()
+def run(recovery=False):
+    idle();p=read(OUT/'protocol.json');verify(p)
+    if recovery:
+        previous=read(OUT/'started.json');assert not Path('/proc',str(previous['pid'])).exists() and not (OUT/'remote_verified_before_unlink.json').exists() and not (OUT/'eviction_ledger.jsonl').exists()
+    else:assert not (OUT/'started.json').exists()
     src=read(ROOT/'stage/runs/t224_archive/latest_source_sync_receipt.json')
     assert src['root_tree']==subprocess.check_output(['git','rev-parse','HEAD^{tree}'],text=True,cwd=ROOT).strip()
     assert not subprocess.check_output(['git','status','--porcelain'],cwd=ROOT,text=True).strip()
-    start=time.time();end=start+p['max_seconds'];save(OUT/'started.json',dict(pid=os.getpid(),epoch=start,deadline=end,native=0,Adam=0));T=install()
+    start=time.time();end=previous['deadline'] if recovery else start+p['max_seconds'];assert time.time()<end-600;save(OUT/('transport_recovery_started.json' if recovery else 'started.json'),dict(pid=os.getpid(),epoch=start,deadline=end,native=0,Adam=0));T=install()
     try:release=T.B.api('GET','releases/tags/'+TAG)
     except urllib.error.HTTPError as e:
         if e.code!=404:raise
@@ -103,6 +106,8 @@ def run():
     verify(p);assert before-used()>=TARGET
     save(OUT/'summary.json',dict(state='COMPLETE',pid=os.getpid(),files=len(remote_files),released_net_bytes=before-used(),native=0,Adam=0,all_remote_verified_before_any_unlink=True,elapsed_s=time.time()-start))
     print('T492_COMPLETE',before-used(),flush=True)
+def recover():return run(True)
+
 def audit():
     idle();p=read(OUT/'protocol.json');verify(p);s=read(OUT/'summary.json');assert s['state']=='COMPLETE' and not Path('/proc',str(s['pid'])).exists()
     r=read(DOC/'release_receipt_T492.json');assert r['state']=='FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED'
