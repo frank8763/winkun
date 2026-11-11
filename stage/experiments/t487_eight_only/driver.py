@@ -59,7 +59,7 @@ def main():
             else:
                 spent=sum(read(f)['physics'] for f in OUT.glob('*/summary.json'))
                 pp.update(out=str(folder),mode=mode,anchor_mode=mode,max_physics=p['root_max_physics']-spent,max_commands=58,main_seconds=2400,learning_seconds=600)
-            save(folder/'protocol.json',pp);save(folder/'launch.json',dict(epoch=now,mode=mode,initial=p['initial']))
+            (folder/'protocol.json').write_text(json.dumps(pp,ensure_ascii=False,separators=(',',':'))+'\n');save(folder/'launch.json',dict(epoch=now,mode=mode,initial=p['initial']))
             save(OUT/'status.json',dict(state='RUNNING_'+mode,epoch=now,completed=completed,all_stop=end))
             try:
                 call('main',mode,min(pp['main_seconds']+3,p['absolute_native_stop']-time.time()-5))
