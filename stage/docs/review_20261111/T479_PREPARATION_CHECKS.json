@@ -1,0 +1,51 @@
+{
+  "state": "PREPARED_MATH_CONTRACT_PASS_NOT_REGISTERED_NOT_LAUNCHED",
+  "epoch": 1794364054.2182493,
+  "native": 0,
+  "optimizer": 0,
+  "real_Actor_updates": 0,
+  "synthetic_backward_calls_per_successful_check": 3,
+  "checks": [
+    "side-balanced5vs3unequalhistorylengths",
+    "physicalMCdiscounts/censorreject",
+    "SILpositivityboundarytail/Valuedetach",
+    "actual19of54candidatewith33lostIDsrejected"
+  ],
+  "syntax_compile_pass": true,
+  "formal_Actor_Adam_shadow_preflight": "NOT_EXECUTED",
+  "actual_full8_capture": "NOT_EXECUTED",
+  "cache_admission": {
+    "state": "PENDING_FINAL_T478_BACKUP_AND_RECOMPUTATION",
+    "current_active_T478_excluded": true,
+    "current_readonly_available_net_bytes": 18146907,
+    "current_required_net_bytes": 20394095,
+    "cache_unlinked": 0
+  },
+  "preparation_errors": [
+    {
+      "kind": "syntheticgradientexactfloatingequality",
+      "native": 0,
+      "optimizer": 0,
+      "fix": "syntheticexpectationatol1e-14;nochangesrealprotocolthresholds"
+    },
+    {
+      "kind": "standardlibraryqueueimportshadow",
+      "original_filename": "queue.py",
+      "preserved_source_sha256": "b08f8a7b227f3a7d9dc8eba3c46686049c0439ccaa0daaac4e08b63691fe775e",
+      "error": "ImportError: cannot import name Queue from queue (t479_balanced_success_sil/queue.py)",
+      "native": 0,
+      "optimizer": 0,
+      "fix": "renamed to unique t479_queue.py before registration"
+    }
+  ],
+  "source_sha256": {
+    "stage/experiments/t479_balanced_success_sil/check_contract.py": "76e6fb9bfe1db3c02fd8536c7d893611b60725208e04ead3ad40c392006144fc",
+    "stage/experiments/t479_balanced_success_sil/control.py": "0ad09e5c2e422eee7b76bb82f399bd35b901d5cf7785de890af3e106ef1afd06",
+    "stage/experiments/t479_balanced_success_sil/driver.py": "839d4f43bc2411bd63ee20a66ee32cd4aad6b47eb00b9c6cfed112c3c53791f1",
+    "stage/experiments/t479_balanced_success_sil/t479_cache.py": "ef6d5202fc94f150b7eb28ab666bec11270830ecf34f084f96c02710d753f606",
+    "stage/experiments/t479_balanced_success_sil/t479_learning.py": "01a3c936a2a29230884475dbe16fe7a93611bee81818d6dc2804141a87056a05",
+    "stage/experiments/t479_balanced_success_sil/t479_queue.py": "b08f8a7b227f3a7d9dc8eba3c46686049c0439ccaa0daaac4e08b63691fe775e",
+    "stage/experiments/t479_balanced_success_sil/t479_runtime.py": "cc656fe9264401782d989ebead38d80d3b617a1eeb8d4b2fb6697e1366a41a07",
+    "stage/experiments/t479_balanced_success_sil/transport.py": "4add075fa865788fcb6340b827366dcfe009ac59459dd28ce45071a70e17cc62"
+  }
+}
