@@ -1,0 +1,73 @@
+{
+  "state": "READ_ONLY_FAILURE_REVIEW_COMPLETE",
+  "native": 0,
+  "Adam": 0,
+  "candidate": {
+    "valid": 54,
+    "success": 18,
+    "contact": 0,
+    "timeout": 36,
+    "invalid": 0,
+    "censored": 0
+  },
+  "retained": {
+    "valid": 54,
+    "success": 39,
+    "contact": 1,
+    "timeout": 14,
+    "invalid": 0,
+    "censored": 0
+  },
+  "training_all_four_GOAL": true,
+  "PPO_epochs": 16,
+  "final_KL": 0.0031214218675288856,
+  "target_KL": 0.005,
+  "pooled_advantage": [
+    {
+      "group": 0,
+      "raw_mean": 0.22819120630182613,
+      "normalized_mean": -0.002281234944023074,
+      "shared_mean": 0.22851695407293074,
+      "shared_sd": 0.14279448592443142
+    },
+    {
+      "group": 0,
+      "raw_mean": 0.22884270184403535,
+      "normalized_mean": 0.0022812349440230464,
+      "shared_mean": 0.22851695407293074,
+      "shared_sd": 0.14279448592443142
+    },
+    {
+      "group": 1,
+      "raw_mean": 0.07045493765252747,
+      "normalized_mean": -0.039819273954848335,
+      "shared_mean": 0.07512339217014678,
+      "shared_sd": 0.11724107583962866
+    },
+    {
+      "group": 1,
+      "raw_mean": 0.0797918466877661,
+      "normalized_mean": 0.03981927395484822,
+      "shared_mean": 0.07512339217014678,
+      "shared_sd": 0.11724107583962866
+    }
+  ],
+  "initial_policy_hash": "6c028b651a42fefa80ea6e41131d04037b56ca992c6c01306cbba606e7b85a84",
+  "counterexample": "LEFT25 preservation anchor actual success became deterministic timeout; mean sampled-history KL<.005 did not preserve closed-loop success.",
+  "hypothesis": "Subtracting a group mean across all physical decision times in a batch of similarly successful episodes can change which successful actions are encouraged. It is a legal baseline/normalization choice, not a proved bug or unique cause.",
+  "test": "Reuse exactly four actual T490 trajectories, same initial39 Actor/Value/mature Adam, same anchors/16epoch/PPO/KL; change only advantage to signed raw finite-return G-V divided by side-balanced RMS, with no mean subtraction.",
+  "reuse_NOT_new_independent": true,
+  "novelty_claim": false,
+  "considered_primary_sources": [
+    {
+      "title": "Self-Imitation Learning",
+      "url": "https://arxiv.org/abs/1806.05635",
+      "decision": "Standard SIL previously used as auxiliary in T479; do not present as new. Not implemented in T491."
+    },
+    {
+      "title": "Advantage-Weighted Regression",
+      "url": "https://arxiv.org/abs/1910.00177",
+      "decision": "Alternative weighting method, not implemented in T491."
+    }
+  ]
+}
