@@ -84,7 +84,7 @@ def main():
     import control as C
     C.prepare()
     C.save(OUT / 'queue_owner.json', dict(pid=os.getpid(), role='sequential_non_native_orchestrator',
-           script_sha256=C.sha(HERE / 'queue.py'), epoch=time.time(),
+           script_sha256=C.sha(HERE / 't479_queue.py'), epoch=time.time(),
            previous_full_driver_exited=True, no_parallel_native=True))
     C.save(DOC / 'T479_READINESS.json', dict(state='REGISTERED_NOT_PREFLIGHTED_NOT_LAUNCHED',
            previous_audit_and_raw_remote_complete=True))

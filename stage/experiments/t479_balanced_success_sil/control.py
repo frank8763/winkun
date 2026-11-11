@@ -92,11 +92,10 @@ def prepare():
         for key in ('receipt', 'manifest'):
             f = str(ROOT / group[key])
             p['inputs'][f] = sha(f)
-    p['remote_cache'] = cache
     p['cache_total_reserved_bytes'] = p['max_bytes']
     p['cache_hard_stop_epoch'] = time.time() + 900
     p['remote_cache_path'] = str(HERE / 'cache_plan.json')
-    save(HERE / 'cache_plan.json', cache)
+    (HERE / 'cache_plan.json').write_text(json.dumps(cache, ensure_ascii=False, separators=(',', ':')) + '\n')
     p['remote_cache_sha256'] = sha(HERE / 'cache_plan.json')
     worst = (2 * sum(j['case']['step_cap'] for j in p['capture_jobs'])
              + 2 * sum(j['case']['step_cap'] for j in p['training_jobs'])
@@ -119,14 +118,20 @@ def prepare():
     print('T479_REGISTERED_NOT_LAUNCHED', flush=True)
 
 
+def cache_protocol():
+    p = read(OUT / 'protocol.json')
+    assert sha(p['remote_cache_path']) == p['remote_cache_sha256']
+    return dict(p, remote_cache=read(p['remote_cache_path']))
+
+
 def cache():
     import t479_cache as K
-    K.evict(read(OUT / 'protocol.json'))
+    K.evict(cache_protocol())
 
 
 def cache_audit():
     import t479_cache as K
-    K.cacheaudit(read(OUT / 'protocol.json'))
+    K.cacheaudit(cache_protocol())
 
 
 def preflight():
