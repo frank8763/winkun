@@ -1,3 +1,5 @@
+2026-11-11 T48116新鲜回合与旧任务Vtrace辅助单候选试验结束，completed=[]/reason=EVIDENCE_OR_ENGINEERING_FAILURE_STOP/physics=1464102/commands=42/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；选中8m8/54 six53/54 old274/275，fresh16/reload78未执行不称稳定。详review_20261111/T481_FINAL_REPORT，Phase隔离。
+
 2026-11-11 T480完整383结束：8m11/54、six51/54、old261/275，丢19旧成功ID，拒绝且整Actor/Value/成熟双Adam回退；独立audit及全部原始远端逐成员SHA通过。T481原队列在训练前远端缓存读取EOF/SSL35失败，0native0Adam0删除；原错误不改。改用新T483已远端核验旧日志本地无损gzip，78项释放12239687B、独立auditPASS、原字节local+旧remote全保留，T483新metadata远端PENDING。T481科学源/协议/初值/预算不变，正式0native8丢弃Adam预检PASS、22.5MiB完整准入，下一首次launch以实际launch与进程为准。用户另授权今天20:30allstop，T482定向8真实经验+条件最大历史保持接力仅准备，待T481完整失败/审计备份/全部进程退出才另注册，有进步则停失败后设计；Stage/Phase隔离。详review_20261111/T481_READINESS、T483_PLAN、T482_PLAN。
 
 2026-11-11 T480旧任务真实经验Vtrace辅助单候选试验结束，completed=['capture', 'pair']/reason=ONE_OLD_TASK_REHEARSAL_PILOT_COMPLETE/physics=8344046/commands=421/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；选中8m8/54 six53/54 old274/275，fresh16/reload78未执行不称稳定。详review_20261111/T480_FINAL_REPORT，Phase隔离。
