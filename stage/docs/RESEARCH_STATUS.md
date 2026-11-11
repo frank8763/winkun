@@ -1,3 +1,5 @@
+2026-11-11 T491仅宽八米PPO单候选结束，completed=['pair']/reason=ONE_EIGHT_ONLY_PPO_COMPLETE/physics=2777036/commands=64/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；保留八米39/54，旧275/六米本轮未运行null，不称联合能力或稳定八米。详review_20261111/T491_FINAL_REPORT，Phase隔离。
+
 2026-11-11 T490候选完整18/54（LEFT4 RIGHT14，0接触36超时）已拒绝整joint回退，仍保留T48939/54；四探索全GOAL不代表自主策略通过，T490两独立audit/全部原始远端逐SHA完成。新T491已注册尚未预检/launch：同一初始39/成熟双Adam、同一四实际T490轨迹和两实际成功history，唯一变化为signed物理有限优势G-V除每侧等回合RMS、不减时间均值；原PPO16/.005KL/奖励/速度/cap/半径/保持全部不变，不是SIL/AWR新算法。0新增训练采集，54新原生验收一次；3M/70cmd/1800main/180audit/3000all，完整余时准入，21:00学21:20native21:30all且相对更严。own5MiB/global1GiB/free40，先无损历史文本编码独立SHA后正式8合成Adam/0native预检。接收须完整54成功>39接触<=1且LEFT>=16 RIGHT>=23，否则joint回退。旧275/six/fresh16/reload78null，不称稳定或全图；单Actor120carry，Phase隔离。详review_20261111/T491_PLAN/BUDGET/FAILURE_ANALYSIS。
 
 2026-11-11 T490仅宽八米PPO单候选结束，completed=['capture', 'pair']/reason=ONE_EIGHT_ONLY_PPO_COMPLETE/physics=3448790/commands=80/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；保留八米39/54，旧275/六米本轮未运行null，不称联合能力或稳定八米。详review_20261111/T490_FINAL_REPORT，Phase隔离。
