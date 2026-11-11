@@ -1,0 +1,181 @@
+{
+  "state": "READ_ONLY_COMPLETE",
+  "native": 0,
+  "optimizer": 0,
+  "baseline_full54": 39,
+  "baseline_left": 16,
+  "baseline_right": 23,
+  "baseline_contact": 1,
+  "baseline_timeout": 14,
+  "actual_observations": [
+    {
+      "id": "wide117_8m_dev6_LEFT_01",
+      "measurements": [
+        {
+          "T": 487,
+          "success": false,
+          "contact": false,
+          "remaining_m": 0.48193316438874917,
+          "first30_native_weighted_drive": -0.18201414312856895
+        },
+        {
+          "T": 489,
+          "success": false,
+          "contact": false,
+          "remaining_m": 0.21857746514936852,
+          "first30_native_weighted_drive": -0.17371205354730293
+        }
+      ]
+    },
+    {
+      "id": "wide117_8m_dev6_LEFT_08",
+      "measurements": [
+        {
+          "T": 487,
+          "success": false,
+          "contact": false,
+          "remaining_m": 1.75558592754582,
+          "first30_native_weighted_drive": -0.24176338377098247
+        },
+        {
+          "T": 489,
+          "success": false,
+          "contact": false,
+          "remaining_m": 1.1579051460040193,
+          "first30_native_weighted_drive": -0.22673782142500087
+        }
+      ]
+    },
+    {
+      "id": "wide117_8m_dev6_LEFT_26",
+      "measurements": [
+        {
+          "T": 487,
+          "success": false,
+          "contact": true,
+          "remaining_m": 4.276727128772192,
+          "first30_native_weighted_drive": -0.2378654805695018
+        },
+        {
+          "T": 489,
+          "success": false,
+          "contact": true,
+          "remaining_m": 4.19557452367663,
+          "first30_native_weighted_drive": -0.2231069026545933
+        }
+      ]
+    },
+    {
+      "id": "wide117_8m_dev6_RIGHT_00",
+      "measurements": [
+        {
+          "T": 487,
+          "success": true,
+          "contact": false,
+          "remaining_m": 0.19989778512969164,
+          "first30_native_weighted_drive": 0.1414046278471748
+        },
+        {
+          "T": 489,
+          "success": true,
+          "contact": false,
+          "remaining_m": 0.19990011366345228,
+          "first30_native_weighted_drive": 0.1279084318876267
+        }
+      ]
+    },
+    {
+      "id": "wide117_8m_dev6_RIGHT_17",
+      "measurements": [
+        {
+          "T": 487,
+          "success": false,
+          "contact": false,
+          "remaining_m": 0.28600472069411037,
+          "first30_native_weighted_drive": -0.10888831874976557
+        },
+        {
+          "T": 489,
+          "success": false,
+          "contact": false,
+          "remaining_m": 0.3201732130173559,
+          "first30_native_weighted_drive": -0.10777846249441311
+        }
+      ]
+    },
+    {
+      "id": "wide117_8m_dev6_RIGHT_26",
+      "measurements": [
+        {
+          "T": 487,
+          "success": true,
+          "contact": false,
+          "remaining_m": 0.19996105755983704,
+          "first30_native_weighted_drive": -0.10457604079196854
+        },
+        {
+          "T": 489,
+          "success": false,
+          "contact": false,
+          "remaining_m": 0.3369081902088827,
+          "first30_native_weighted_drive": -0.10900756742805244
+        }
+      ]
+    }
+  ],
+  "previous_true_left_training": [
+    {
+      "id": "wide117_8m_dev6_LEFT_01",
+      "success": true,
+      "contact": false,
+      "remaining_m": 0.19985906124058625
+    },
+    {
+      "id": "wide117_8m_dev6_LEFT_19",
+      "success": true,
+      "contact": false,
+      "remaining_m": 0.19998189900701416
+    },
+    {
+      "id": "wide117_8m_dev6_LEFT_08",
+      "success": false,
+      "contact": true,
+      "remaining_m": 4.290606473725019
+    },
+    {
+      "id": "wide117_8m_dev6_LEFT_26",
+      "success": true,
+      "contact": false,
+      "remaining_m": 0.19990776368111743
+    }
+  ],
+  "hypotheses_ranked": [
+    {
+      "hypothesis": "Early low drive and wasted time contribute to timeouts",
+      "prediction": "Better early progress under unchanged cap can improve timeout cases",
+      "limitation": "Current compact evaluation has no pose; only prior frozen full histories measure actual speed. No proof for every timeout."
+    },
+    {
+      "hypothesis": "One-sided fresh learning causes asymmetric shared-parameter interference",
+      "prediction": "Balanced fresh left/right plus two current successful history anchors can improve total without reducing per-side counts",
+      "limitation": "One RIGHT regression is consistent with interference, not a causal forgetting proof; fixed-history keep is not closed-loop preservation guarantee."
+    },
+    {
+      "hypothesis": "LEFT26 insufficient local obstacle clearance and deterministic recovery",
+      "prediction": "Fresh actual LEFT26 exploration can expose successful and collision behavior for true PPO, but must improve deterministic full54 to count",
+      "limitation": "Old stochastic LEFT26 success did not become deterministic success; not proof of kinematic infeasibility or unobservable goal."
+    }
+  ],
+  "next_fixed_training_ids": [
+    "LEFT_01",
+    "LEFT_26",
+    "RIGHT_17",
+    "RIGHT_26"
+  ],
+  "next_actual_success_anchor_ids": [
+    "LEFT_25",
+    "RIGHT_00"
+  ],
+  "no_radius_cap_speed_reward_change": true,
+  "no_new_algorithm_novelty_or_causal_claim": true
+}
