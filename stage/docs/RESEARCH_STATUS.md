@@ -1,3 +1,7 @@
+2026-11-11 用户授权继续八米。T4771456原文件50分段已完整远端二进制逐成员SHA补齐（原sealed报告PENDING不改）。新T478已注册未启动：先6冻结当前失败/成功full+6exact并匹配历史，再最多2轮4新鲜+4exact/16PPO与shadow；分侧池化优势＋固定函数保持＋完整383保335成功且八米新增才接受，失败双模型双Adam全回退。原8/54six53/54old274/275未晋升。新上午预算24M/1000cmd/23MiB/global1GiB/free40，学习11:30原生12:00全部12:30更早相对预算从严；需旧已备份日志本地无损gzip及独立audit/预检/精确源码再唯一launch。原登记容量拒绝0native0Adam留registration_failed_001；fresh16/reload78未预留，Phase隔离。详review_20261111/T478_PLAN/BUDGET/PRELAUNCH_FINDINGS。
+
+2026-11-10/11 T477宽八米有限离线接力结束，completed=['baseline', 'direct', 'curriculum', 'longcredit']/reason=FINITE_THREE_MECHANISMS_COMPLETE/physics=31986681/commands=1485/remote=PENDING；旧唯一失败继承不冒称修复，fresh16/reload78未执行，六米完整门与八米稳定门未声明通过。详overnight_20261110/T477_FINAL_REPORT，Phase完全隔离。
+
 2026-11-10 T476八米首批冻结评估因紧凑文件4401B>4096B在0导航更新后停止：106668物理/74全部命令，原失败和远端逐SHA保留；两响应未落原始数组/结果为缺测，不能冒称完整原始已保全或以重复数据充独立。新T477仅工程恢复同3科学支线，compact8KiB/full1MiB/49MiBroot，逐臂逐轮预留完整383与元数据，原3臂各4轮不保证全执行；T476+T477合计仍50M/1800，不借新编号追加旧预算，Nov11 09:00全部硬停。当前已注册待实际预检/源码同步/唯一launch，Phase隔离。详overnight_20261110/T477_PLAN/BUDGET。
 
 2026-11-10/11 T476宽八米有限离线接力结束，completed=[]/reason=EVIDENCE_OR_ENGINEERING_FAILURE_STOP/physics=106668/commands=74/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；旧唯一失败继承不冒称修复，fresh16/reload78未执行，六米完整门与八米稳定门未声明通过。详overnight_20261110/T476_FINAL_REPORT，Phase完全隔离。
