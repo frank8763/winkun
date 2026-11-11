@@ -1,0 +1,2745 @@
+{
+  "completed": [
+    "capture",
+    "pair"
+  ],
+  "latest": {
+    "state": "COMPLETE",
+    "pid": 645424,
+    "mode": "pair",
+    "error": null,
+    "physics": 7754900,
+    "commands": 387,
+    "elapsed_s": 2692.789815425873,
+    "result": {
+      "update": {
+        "trace": [
+          {
+            "epoch": 0,
+            "policy_loss": 9.492190020110591e-17,
+            "value_loss": 0.18879333925117295,
+            "keep": 0.0,
+            "old211_keep": 0.0,
+            "actual_old8_keep": 0.0,
+            "own8_keep": 0.0,
+            "replay_actor": 0.051838891825840165,
+            "replay_value": 0.28556994192114044,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4,
+                "weight_mean": 0.9999999999999997,
+                "weight_min": 0.9999999999999956,
+                "advantage_mean": 0.9293201359239469,
+                "advantage_RMS": 0.9657103795237512
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.40566037735849053,
+                "weight_mean": 0.9999999999999997,
+                "weight_min": 0.9999999999999976,
+                "advantage_mean": 0.7061630425996319,
+                "advantage_RMS": 0.7085199613405183
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.46666666666666673,
+                "weight_mean": 0.9999999999999998,
+                "weight_min": 0.9999999999999971,
+                "advantage_mean": 0.5564509374493928,
+                "advantage_RMS": 0.5578159941756256
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4745762711864407,
+                "weight_mean": 0.9999999999999994,
+                "weight_min": 0.9999999999999947,
+                "advantage_mean": 0.8179064414185871,
+                "advantage_RMS": 0.8382675714743403
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5070422535211268,
+                "weight_mean": 0.9999999999999997,
+                "weight_min": 0.999999999999996,
+                "advantage_mean": 0.8116089171816443,
+                "advantage_RMS": 0.8703539912325815
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.40740740740740744,
+                "weight_mean": 0.9999999999999997,
+                "weight_min": 0.9999999999999953,
+                "advantage_mean": 0.6789440939693129,
+                "advantage_RMS": 0.6837082590193733
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4358974358974359,
+                "weight_mean": 0.9999999999999996,
+                "weight_min": 0.9999999999999947,
+                "advantage_mean": 0.7351141849206976,
+                "advantage_RMS": 0.7837045851450695
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5023923444976076,
+                "weight_mean": 0.9999999999999994,
+                "weight_min": 0.999999999999992,
+                "advantage_mean": 0.5150607401735334,
+                "advantage_RMS": 0.5305703185945737
+              }
+            ],
+            "actor_norm": 1.7158421039362755,
+            "value_norm": 1.6089994454389,
+            "KL": 9.912035921732368e-05
+          },
+          {
+            "epoch": 1,
+            "policy_loss": -0.0007358568379045344,
+            "value_loss": 0.20019544069810025,
+            "keep": 2.6914345551085277e-05,
+            "old211_keep": 1.7776015554023785e-05,
+            "actual_old8_keep": 1.888910295823407e-05,
+            "own8_keep": 3.5496131846041626e-05,
+            "replay_actor": 0.04491386088338895,
+            "replay_value": 0.2134795166470879,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5047619047619049,
+                "weight_mean": 0.9972070049286911,
+                "weight_min": 0.982877430457124,
+                "advantage_mean": 0.7968309878407904,
+                "advantage_RMS": 0.8656808263193414
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5471698113207547,
+                "weight_mean": 0.9968983114630222,
+                "weight_min": 0.9812428711553997,
+                "advantage_mean": 0.5957214230814609,
+                "advantage_RMS": 0.600875047055243
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5523809523809524,
+                "weight_mean": 0.9979931957460068,
+                "weight_min": 0.9787873806774339,
+                "advantage_mean": 0.4828624613783951,
+                "advantage_RMS": 0.4840269678778241
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6016949152542372,
+                "weight_mean": 0.9981491847665966,
+                "weight_min": 0.974650467684913,
+                "advantage_mean": 0.732932845143603,
+                "advantage_RMS": 0.753158543650137
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.45774647887323944,
+                "weight_mean": 0.9961745296465225,
+                "weight_min": 0.9670561732881814,
+                "advantage_mean": 0.6344191720854436,
+                "advantage_RMS": 0.7480845724120228
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.3703703703703704,
+                "weight_mean": 0.9971328801970875,
+                "weight_min": 0.9844052621251406,
+                "advantage_mean": 0.5523225608937047,
+                "advantage_RMS": 0.5600941499821059
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5230769230769231,
+                "weight_mean": 0.9959924348314005,
+                "weight_min": 0.9709519324183091,
+                "advantage_mean": 0.5709042123262187,
+                "advantage_RMS": 0.6723209051232303
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.47368421052631576,
+                "weight_mean": 0.997375897636976,
+                "weight_min": 0.9685721466480315,
+                "advantage_mean": 0.403415627025315,
+                "advantage_RMS": 0.42229950251670473
+              }
+            ],
+            "actor_norm": 1.5850509069771725,
+            "value_norm": 1.8294317527426678,
+            "KL": 0.00045061635285443175
+          },
+          {
+            "epoch": 2,
+            "policy_loss": -0.0017258412760509463,
+            "value_loss": 0.20828959733373573,
+            "keep": 0.00012458260310353451,
+            "old211_keep": 8.69103617380482e-05,
+            "actual_old8_keep": 9.293762595457415e-05,
+            "own8_keep": 0.00015924121236075785,
+            "replay_actor": 0.037039407749920164,
+            "replay_value": 0.15856785676296337,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5047619047619049,
+                "weight_mean": 0.994117160384955,
+                "weight_min": 0.9664092034036249,
+                "advantage_mean": 0.6679448773753088,
+                "advantage_RMS": 0.7728193895125863
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5283018867924528,
+                "weight_mean": 0.9935888266230569,
+                "weight_min": 0.9631842957480494,
+                "advantage_mean": 0.49861584783204377,
+                "advantage_RMS": 0.5090464336210503
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5714285714285715,
+                "weight_mean": 0.995958046756525,
+                "weight_min": 0.9580957932002654,
+                "advantage_mean": 0.4212774103251606,
+                "advantage_RMS": 0.4236708009499751
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.635593220338983,
+                "weight_mean": 0.9955820703967901,
+                "weight_min": 0.9427662098564947,
+                "advantage_mean": 0.634887462221905,
+                "advantage_RMS": 0.6542843735267194
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4507042253521127,
+                "weight_mean": 0.9918788614921411,
+                "weight_min": 0.923704169448658,
+                "advantage_mean": 0.47688426342792195,
+                "advantage_RMS": 0.6453835402114783
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.3851851851851852,
+                "weight_mean": 0.9939709721554405,
+                "weight_min": 0.968156765163818,
+                "advantage_mean": 0.44642462055011584,
+                "advantage_RMS": 0.4597494126371634
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.517948717948718,
+                "weight_mean": 0.9911702385515565,
+                "weight_min": 0.9379477214195115,
+                "advantage_mean": 0.4250123909697094,
+                "advantage_RMS": 0.575057599900839
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.47368421052631576,
+                "weight_mean": 0.9940643162049696,
+                "weight_min": 0.9259614345900529,
+                "advantage_mean": 0.311966280116761,
+                "advantage_RMS": 0.3384404810300046
+              }
+            ],
+            "actor_norm": 1.4246723333268363,
+            "value_norm": 1.9781828298572228,
+            "KL": 0.0011426020210793591
+          },
+          {
+            "epoch": 3,
+            "policy_loss": -0.0029025400931839166,
+            "value_loss": 0.21320071035964164,
+            "keep": 0.0003190231666826236,
+            "old211_keep": 0.00022732989371227207,
+            "actual_old8_keep": 0.00024673566790445943,
+            "own8_keep": 0.0004010135525568814,
+            "replay_actor": 0.029689504941954638,
+            "replay_value": 0.11946330079551841,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5047619047619049,
+                "weight_mean": 0.9907883415588483,
+                "weight_min": 0.9428720957201773,
+                "advantage_mean": 0.5524805803806935,
+                "advantage_RMS": 0.6915678991015894
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5471698113207547,
+                "weight_mean": 0.9901303191076024,
+                "weight_min": 0.9464449855145762,
+                "advantage_mean": 0.41725341181381265,
+                "advantage_RMS": 0.43372964351292226
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5523809523809524,
+                "weight_mean": 0.993923625881105,
+                "weight_min": 0.938761865440355,
+                "advantage_mean": 0.3716664122780799,
+                "advantage_RMS": 0.3764716455181912
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6440677966101694,
+                "weight_mean": 0.9924248981152087,
+                "weight_min": 0.9070687975914429,
+                "advantage_mean": 0.5385494414494146,
+                "advantage_RMS": 0.5583590241343573
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.45774647887323944,
+                "weight_mean": 0.987253188913492,
+                "weight_min": 0.8749850823991494,
+                "advantage_mean": 0.35257893360460135,
+                "advantage_RMS": 0.5654029131074337
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.3851851851851852,
+                "weight_mean": 0.9905767520231407,
+                "weight_min": 0.9519115891510763,
+                "advantage_mean": 0.36245984107825024,
+                "advantage_RMS": 0.3819146175737159
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5128205128205128,
+                "weight_mean": 0.9856952948581433,
+                "weight_min": 0.899899976413504,
+                "advantage_mean": 0.31651946415271287,
+                "advantage_RMS": 0.49679994675167644
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.46411483253588515,
+                "weight_mean": 0.9899404030963982,
+                "weight_min": 0.8768363369415851,
+                "advantage_mean": 0.24279423221457586,
+                "advantage_RMS": 0.2813896478691007
+              }
+            ],
+            "actor_norm": 1.1914676864247522,
+            "value_norm": 2.0619036610507484,
+            "KL": 0.0022183315822211194
+          },
+          {
+            "epoch": 4,
+            "policy_loss": -0.003926839462392862,
+            "value_loss": 0.21512825517472414,
+            "keep": 0.0006271644708230539,
+            "old211_keep": 0.00046640185286145824,
+            "actual_old8_keep": 0.0004976985792035475,
+            "own8_keep": 0.0007722787256136047,
+            "replay_actor": 0.0235180401563221,
+            "replay_value": 0.09216844999084123,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5142857142857143,
+                "weight_mean": 0.9873291926312315,
+                "weight_min": 0.9174399702712143,
+                "advantage_mean": 0.4566323313587421,
+                "advantage_RMS": 0.6234854398483842
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5471698113207547,
+                "weight_mean": 0.9866607187166367,
+                "weight_min": 0.9304191878190425,
+                "advantage_mean": 0.3527272560337605,
+                "advantage_RMS": 0.3749978966602335
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5523809523809524,
+                "weight_mean": 0.9919226314496437,
+                "weight_min": 0.9218984089437735,
+                "advantage_mean": 0.33159148153624163,
+                "advantage_RMS": 0.3395440238262877
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6271186440677966,
+                "weight_mean": 0.9887177637629434,
+                "weight_min": 0.8696673611822485,
+                "advantage_mean": 0.45024114936670895,
+                "advantage_RMS": 0.4724365407543946
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.45774647887323944,
+                "weight_mean": 0.9824713900447755,
+                "weight_min": 0.8246382827302747,
+                "advantage_mean": 0.2613363666418086,
+                "advantage_RMS": 0.503926476163441
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4,
+                "weight_mean": 0.9870084991001499,
+                "weight_min": 0.9364056073073455,
+                "advantage_mean": 0.2984589740486617,
+                "advantage_RMS": 0.32361311511148905
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.49743589743589745,
+                "weight_mean": 0.9798326670122447,
+                "weight_min": 0.8592186528660053,
+                "advantage_mean": 0.24230162462333776,
+                "advantage_RMS": 0.4331598405779259
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4784688995215311,
+                "weight_mean": 0.9852248517974624,
+                "weight_min": 0.8245845093188695,
+                "advantage_mean": 0.1943476587769093,
+                "advantage_RMS": 0.2460822329113647
+              }
+            ],
+            "actor_norm": 0.9981613655961886,
+            "value_norm": 2.0918543256786877,
+            "KL": 0.003467148613463922
+          },
+          {
+            "epoch": 5,
+            "policy_loss": -0.004777737380163538,
+            "value_loss": 0.21433545946384783,
+            "keep": 0.0010292623455474368,
+            "old211_keep": 0.0008342496641884681,
+            "actual_old8_keep": 0.0008404216003389741,
+            "own8_keep": 0.0012211890588311523,
+            "replay_actor": 0.018722644665593112,
+            "replay_value": 0.07356650154600329,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5047619047619049,
+                "weight_mean": 0.9840010488800034,
+                "weight_min": 0.8923739558110266,
+                "advantage_mean": 0.3836734867876816,
+                "advantage_RMS": 0.568376381921704
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5377358490566038,
+                "weight_mean": 0.9835006314759692,
+                "weight_min": 0.9169109741923239,
+                "advantage_mean": 0.3049132280244882,
+                "advantage_RMS": 0.3319616059372856
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5523809523809524,
+                "weight_mean": 0.9901413808601447,
+                "weight_min": 0.9090004798811444,
+                "advantage_mean": 0.3018156532053924,
+                "advantage_RMS": 0.3131534056476378
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6271186440677966,
+                "weight_mean": 0.9847057285600342,
+                "weight_min": 0.8333109148834813,
+                "advantage_mean": 0.37671231373691244,
+                "advantage_RMS": 0.4025640423274478
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4507042253521127,
+                "weight_mean": 0.9779259684574513,
+                "weight_min": 0.7768652725215017,
+                "advantage_mean": 0.1982230039620464,
+                "advantage_RMS": 0.4559359760412789
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.3925925925925926,
+                "weight_mean": 0.9836195930777607,
+                "weight_min": 0.9229944290142497,
+                "advantage_mean": 0.2532821390849963,
+                "advantage_RMS": 0.2828701063206705
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5025641025641026,
+                "weight_mean": 0.9741506952923977,
+                "weight_min": 0.8120346150795689,
+                "advantage_mean": 0.19288352032608258,
+                "advantage_RMS": 0.3813724660795036
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4880382775119617,
+                "weight_mean": 0.9802360090403381,
+                "weight_min": 0.7720246236986464,
+                "advantage_mean": 0.16157178162350774,
+                "advantage_RMS": 0.22439445752360251
+              }
+            ],
+            "actor_norm": 1.0901363981477914,
+            "value_norm": 2.076943625048377,
+            "KL": 0.004443642998479223
+          },
+          {
+            "epoch": 6,
+            "policy_loss": -0.005391909660347248,
+            "value_loss": 0.21113160407579837,
+            "keep": 0.0013943897817008883,
+            "old211_keep": 0.0011312992667938304,
+            "actual_old8_keep": 0.0012263757796813397,
+            "own8_keep": 0.0016099420401641915,
+            "replay_actor": 0.015251053144062807,
+            "replay_value": 0.061354304390702906,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5047619047619049,
+                "weight_mean": 0.9812491888725915,
+                "weight_min": 0.8713613165038339,
+                "advantage_mean": 0.33564593905717927,
+                "advantage_RMS": 0.5277942882207728
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5377358490566038,
+                "weight_mean": 0.9810915469234897,
+                "weight_min": 0.9073853001820079,
+                "advantage_mean": 0.2731230746586197,
+                "advantage_RMS": 0.3034570988657999
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5428571428571429,
+                "weight_mean": 0.9886598824684537,
+                "weight_min": 0.9021931271437083,
+                "advantage_mean": 0.28065894357105653,
+                "advantage_RMS": 0.295454820307442
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6186440677966102,
+                "weight_mean": 0.9806490223625475,
+                "weight_min": 0.8014596198574107,
+                "advantage_mean": 0.31901665694651116,
+                "advantage_RMS": 0.3484718294210398
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4507042253521127,
+                "weight_mean": 0.9742234696009785,
+                "weight_min": 0.7378053274008664,
+                "advantage_mean": 0.15806398281873463,
+                "advantage_RMS": 0.41858580472555856
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.3851851851851852,
+                "weight_mean": 0.9808103212260173,
+                "weight_min": 0.913565014442044,
+                "advantage_mean": 0.22395355036496087,
+                "advantage_RMS": 0.2563486581122507
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5025641025641026,
+                "weight_mean": 0.9695873037395013,
+                "weight_min": 0.7692460914339598,
+                "advantage_mean": 0.16057843000093797,
+                "advantage_RMS": 0.3414760711153749
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4784688995215311,
+                "weight_mean": 0.9754945226506311,
+                "weight_min": 0.7232382355950296,
+                "advantage_mean": 0.1409796965844692,
+                "advantage_RMS": 0.2115539278758248
+              }
+            ],
+            "actor_norm": 1.3801799854053167,
+            "value_norm": 2.026319118427452,
+            "KL": 0.004906757078854852
+          },
+          {
+            "epoch": 7,
+            "policy_loss": -0.006215525441800021,
+            "value_loss": 0.20585193687893621,
+            "keep": 0.001712021914725677,
+            "old211_keep": 0.0015396550310081223,
+            "actual_old8_keep": 0.0016011902615323467,
+            "own8_keep": 0.0018536211831811195,
+            "replay_actor": 0.012822941572999985,
+            "replay_value": 0.0533868164507603,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.49523809523809526,
+                "weight_mean": 0.9793034913349755,
+                "weight_min": 0.8556553480635877,
+                "advantage_mean": 0.3076142913234531,
+                "advantage_RMS": 0.4987280512816159
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5377358490566038,
+                "weight_mean": 0.9795616807803036,
+                "weight_min": 0.9027534588896088,
+                "advantage_mean": 0.25403225836681914,
+                "advantage_RMS": 0.28644025141432716
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5428571428571429,
+                "weight_mean": 0.9875861502945847,
+                "weight_min": 0.901069632098084,
+                "advantage_mean": 0.2676349753524461,
+                "advantage_RMS": 0.28572060639083857
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6101694915254238,
+                "weight_mean": 0.9768216117183732,
+                "weight_min": 0.7757390142287787,
+                "advantage_mean": 0.27585118268711406,
+                "advantage_RMS": 0.30771223738945863
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4366197183098592,
+                "weight_mean": 0.9716113738103764,
+                "weight_min": 0.7094100255334093,
+                "advantage_mean": 0.13341253298557543,
+                "advantage_RMS": 0.38866478383321856
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.41481481481481486,
+                "weight_mean": 0.9786070913350093,
+                "weight_min": 0.9084085632720557,
+                "advantage_mean": 0.20544931949887388,
+                "advantage_RMS": 0.2395145671148384
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5076923076923077,
+                "weight_mean": 0.9665016497434511,
+                "weight_min": 0.7338128624154311,
+                "advantage_mean": 0.13899575581588688,
+                "advantage_RMS": 0.31140179131145157
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.492822966507177,
+                "weight_mean": 0.9712684265928903,
+                "weight_min": 0.6807858950456769,
+                "advantage_mean": 0.128595302963796,
+                "advantage_RMS": 0.20418049075956513
+              }
+            ],
+            "actor_norm": 1.405227914037358,
+            "value_norm": 1.9450000942188075,
+            "KL": 0.004902732348354151
+          },
+          {
+            "epoch": 8,
+            "policy_loss": -0.007275812676807085,
+            "value_loss": 0.198839078291548,
+            "keep": 0.0019384832566597095,
+            "old211_keep": 0.0019153936410579455,
+            "actual_old8_keep": 0.0019268487985859932,
+            "own8_keep": 0.0019558452934974498,
+            "replay_actor": 0.011125232171337622,
+            "replay_value": 0.04827420986960945,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.49523809523809526,
+                "weight_mean": 0.9782010514093987,
+                "weight_min": 0.8453264876842764,
+                "advantage_mean": 0.2950946043339405,
+                "advantage_RMS": 0.47928875632543305
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5471698113207547,
+                "weight_mean": 0.9788887182616373,
+                "weight_min": 0.9028520717604543,
+                "advantage_mean": 0.24395768444897217,
+                "advantage_RMS": 0.2775014162528785
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5238095238095238,
+                "weight_mean": 0.9869483934703444,
+                "weight_min": 0.8858711619059512,
+                "advantage_mean": 0.26111675680351054,
+                "advantage_RMS": 0.2822934015855226
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6101694915254238,
+                "weight_mean": 0.9734854449607496,
+                "weight_min": 0.7481716580565821,
+                "advantage_mean": 0.24519852920935928,
+                "advantage_RMS": 0.277868335371093
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4507042253521127,
+                "weight_mean": 0.9700749323564021,
+                "weight_min": 0.6916803081711951,
+                "advantage_mean": 0.11946773820392888,
+                "advantage_RMS": 0.36468166232991545
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.42962962962962964,
+                "weight_mean": 0.9767178938115969,
+                "weight_min": 0.9058811290450338,
+                "advantage_mean": 0.19356417141771284,
+                "advantage_RMS": 0.2287990357498983
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5025641025641026,
+                "weight_mean": 0.9648822804675844,
+                "weight_min": 0.7062586250863837,
+                "advantage_mean": 0.12408205637308917,
+                "advantage_RMS": 0.2884733338030226
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.492822966507177,
+                "weight_mean": 0.9677005060603955,
+                "weight_min": 0.6459981288718486,
+                "advantage_mean": 0.1219977885501049,
+                "advantage_RMS": 0.20050849272678323
+              }
+            ],
+            "actor_norm": 1.2139452133719548,
+            "value_norm": 1.8372406353973543,
+            "KL": 0.004594034756882553
+          },
+          {
+            "epoch": 9,
+            "policy_loss": -0.008405447411726075,
+            "value_loss": 0.19043355014118177,
+            "keep": 0.002011840842406669,
+            "old211_keep": 0.001963998677820193,
+            "actual_old8_keep": 0.002175387065929085,
+            "own8_keep": 0.0019539888129386992,
+            "replay_actor": 0.00990701673362801,
+            "replay_value": 0.04512129311466587,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.49523809523809526,
+                "weight_mean": 0.9779263844610409,
+                "weight_min": 0.8403450351414313,
+                "advantage_mean": 0.2955274362004491,
+                "advantage_RMS": 0.468631167743191
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5283018867924528,
+                "weight_mean": 0.9790325426740315,
+                "weight_min": 0.8836786663193757,
+                "advantage_mean": 0.24092573229287734,
+                "advantage_RMS": 0.27475236769968225
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5047619047619049,
+                "weight_mean": 0.9863650490893185,
+                "weight_min": 0.8564940007637313,
+                "advantage_mean": 0.25710843686522095,
+                "advantage_RMS": 0.28213836284301214
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6101694915254238,
+                "weight_mean": 0.9708156383632213,
+                "weight_min": 0.7246428627610384,
+                "advantage_mean": 0.22432754921741704,
+                "advantage_RMS": 0.2563622866316546
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4507042253521127,
+                "weight_mean": 0.9695281973988936,
+                "weight_min": 0.6842026928018047,
+                "advantage_mean": 0.11368672772874318,
+                "advantage_RMS": 0.3459872249735912
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.45925925925925926,
+                "weight_mean": 0.9750376834316801,
+                "weight_min": 0.8882383182531742,
+                "advantage_mean": 0.1849739945339828,
+                "advantage_RMS": 0.22145936560814608
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.49743589743589745,
+                "weight_mean": 0.9645696177488601,
+                "weight_min": 0.6864876881678058,
+                "advantage_mean": 0.11375950560927812,
+                "advantage_RMS": 0.2708176502603931
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4784688995215311,
+                "weight_mean": 0.9647705330265294,
+                "weight_min": 0.619892780935709,
+                "advantage_mean": 0.11934021683792707,
+                "advantage_RMS": 0.19854311106137718
+              }
+            ],
+            "actor_norm": 0.9266868692266887,
+            "value_norm": 1.70854628214413,
+            "KL": 0.004199502890307164
+          },
+          {
+            "epoch": 10,
+            "policy_loss": -0.009468823151829921,
+            "value_loss": 0.18097149754631134,
+            "keep": 0.002066439247863928,
+            "old211_keep": 0.002115405906992193,
+            "actual_old8_keep": 0.002336326095844353,
+            "own8_keep": 0.0019070124943095829,
+            "replay_actor": 0.008912262476442038,
+            "replay_value": 0.04349314287088614,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5047619047619049,
+                "weight_mean": 0.9783737597717798,
+                "weight_min": 0.8401307531902689,
+                "advantage_mean": 0.3074065140743451,
+                "advantage_RMS": 0.4662865424543373
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5377358490566038,
+                "weight_mean": 0.9796426136394975,
+                "weight_min": 0.8607607729380764,
+                "advantage_mean": 0.24130878142282414,
+                "advantage_RMS": 0.2751831262018355
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5142857142857143,
+                "weight_mean": 0.9854434667946161,
+                "weight_min": 0.8261923407625192,
+                "advantage_mean": 0.2539683928700756,
+                "advantage_RMS": 0.2843525927756848
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6101694915254238,
+                "weight_mean": 0.9689832711342105,
+                "weight_min": 0.708505522085204,
+                "advantage_mean": 0.21154321897344366,
+                "advantage_RMS": 0.24182260771335165
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.47887323943661975,
+                "weight_mean": 0.9698528745785239,
+                "weight_min": 0.686294595225727,
+                "advantage_mean": 0.11455425981051531,
+                "advantage_RMS": 0.33222921881123363
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.45925925925925926,
+                "weight_mean": 0.9734370273727012,
+                "weight_min": 0.870191041670301,
+                "advantage_mean": 0.17881051036655937,
+                "advantage_RMS": 0.21672522792264134
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5230769230769231,
+                "weight_mean": 0.9652086369565839,
+                "weight_min": 0.6738338501692968,
+                "advantage_mean": 0.10695219320089604,
+                "advantage_RMS": 0.2576259653693079
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4832535885167464,
+                "weight_mean": 0.9627192647063995,
+                "weight_min": 0.6030859430739589,
+                "advantage_mean": 0.12035328080964192,
+                "advantage_RMS": 0.19922250478269574
+              }
+            ],
+            "actor_norm": 0.7725020405258395,
+            "value_norm": 1.562460717841869,
+            "KL": 0.0039269858700295215
+          },
+          {
+            "epoch": 11,
+            "policy_loss": -0.010440693672010087,
+            "value_loss": 0.1707850134273572,
+            "keep": 0.0021201588896621265,
+            "old211_keep": 0.0023059349691288084,
+            "actual_old8_keep": 0.0024306121903964707,
+            "own8_keep": 0.0018720441995616138,
+            "replay_actor": 0.007956156665214473,
+            "replay_value": 0.04284293695213112,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5142857142857143,
+                "weight_mean": 0.9792088996746534,
+                "weight_min": 0.8428686521111133,
+                "advantage_mean": 0.32695050611961063,
+                "advantage_RMS": 0.46988250768048173
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5471698113207547,
+                "weight_mean": 0.9802077162674739,
+                "weight_min": 0.8381573514059829,
+                "advantage_mean": 0.2413702516541241,
+                "advantage_RMS": 0.2757112225632139
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.48571428571428577,
+                "weight_mean": 0.9842302050040151,
+                "weight_min": 0.7971272281936388,
+                "advantage_mean": 0.25076936312360304,
+                "advantage_RMS": 0.2879695205859605
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6101694915254238,
+                "weight_mean": 0.967918442762346,
+                "weight_min": 0.6990568033868532,
+                "advantage_mean": 0.20434558974513303,
+                "advantage_RMS": 0.2323896133098006
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4859154929577465,
+                "weight_mean": 0.9706028634092069,
+                "weight_min": 0.6950969726040951,
+                "advantage_mean": 0.12053339502587983,
+                "advantage_RMS": 0.32247526463656867
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4444444444444445,
+                "weight_mean": 0.9719627102400001,
+                "weight_min": 0.8524041484301613,
+                "advantage_mean": 0.17438266387360563,
+                "advantage_RMS": 0.21402331947321493
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5435897435897435,
+                "weight_mean": 0.9658845249244573,
+                "weight_min": 0.6665418357334112,
+                "advantage_mean": 0.10375885254526189,
+                "advantage_RMS": 0.24734389167588205
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4832535885167464,
+                "weight_mean": 0.9616158765495192,
+                "weight_min": 0.594639809792012,
+                "advantage_mean": 0.1234404737148342,
+                "advantage_RMS": 0.20192594303799105
+              }
+            ],
+            "actor_norm": 0.8420207933542787,
+            "value_norm": 1.4024206842541544,
+            "KL": 0.003793770295919336
+          },
+          {
+            "epoch": 12,
+            "policy_loss": -0.011437790861418174,
+            "value_loss": 0.16020441297002497,
+            "keep": 0.002090362121966451,
+            "old211_keep": 0.00219964862918201,
+            "actual_old8_keep": 0.002474037925145811,
+            "own8_keep": 0.001843880966768991,
+            "replay_actor": 0.006847267218826303,
+            "replay_value": 0.04263601307999613,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5238095238095238,
+                "weight_mean": 0.9802610076727735,
+                "weight_min": 0.8477192266750226,
+                "advantage_mean": 0.3509469636432981,
+                "advantage_RMS": 0.4759056061771218
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5754716981132075,
+                "weight_mean": 0.9803869765015703,
+                "weight_min": 0.8165478012480757,
+                "advantage_mean": 0.23831838046936824,
+                "advantage_RMS": 0.2743251248597541
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5047619047619049,
+                "weight_mean": 0.9825504979063981,
+                "weight_min": 0.7702693038204859,
+                "advantage_mean": 0.24590383467586982,
+                "advantage_RMS": 0.2915491371356269
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6016949152542372,
+                "weight_mean": 0.9675690827598009,
+                "weight_min": 0.6957190209957967,
+                "advantage_mean": 0.20135910492105144,
+                "advantage_RMS": 0.22706959982946712
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.49295774647887325,
+                "weight_mean": 0.9716908870371654,
+                "weight_min": 0.7090702309279497,
+                "advantage_mean": 0.12982522647360226,
+                "advantage_RMS": 0.3153972896536506
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4444444444444445,
+                "weight_mean": 0.9702326382289193,
+                "weight_min": 0.8353519515986098,
+                "advantage_mean": 0.16978320059041338,
+                "advantage_RMS": 0.21180115397819574
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.558974358974359,
+                "weight_mean": 0.9665876404002308,
+                "weight_min": 0.66374121771866,
+                "advantage_mean": 0.10407878050647351,
+                "advantage_RMS": 0.23869100093402515
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4688995215311005,
+                "weight_mean": 0.9613852534203536,
+                "weight_min": 0.5937772618617673,
+                "advantage_mean": 0.12788958241735407,
+                "advantage_RMS": 0.20631459850022935
+              }
+            ],
+            "actor_norm": 0.8709937281080262,
+            "value_norm": 1.2333119400127497,
+            "KL": 0.003774537281651294
+          },
+          {
+            "epoch": 13,
+            "policy_loss": -0.01252231693864135,
+            "value_loss": 0.1495619927095518,
+            "keep": 0.002075882283682484,
+            "old211_keep": 0.0021717424670065983,
+            "actual_old8_keep": 0.0024906934455990993,
+            "own8_keep": 0.0018205466110621195,
+            "replay_actor": 0.005577561676887956,
+            "replay_value": 0.04264258535943184,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.46666666666666673,
+                "weight_mean": 0.9812070383181523,
+                "weight_min": 0.8539415053004367,
+                "advantage_mean": 0.3754577893192347,
+                "advantage_RMS": 0.4816743312556927
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6132075471698113,
+                "weight_mean": 0.979568221533224,
+                "weight_min": 0.7963402041779079,
+                "advantage_mean": 0.23103821040012779,
+                "advantage_RMS": 0.27119273814150396
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5047619047619049,
+                "weight_mean": 0.9806581635183267,
+                "weight_min": 0.7462073881858492,
+                "advantage_mean": 0.2421370241097234,
+                "advantage_RMS": 0.2968910435686328
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6101694915254238,
+                "weight_mean": 0.9677763883193169,
+                "weight_min": 0.6974816381607375,
+                "advantage_mean": 0.2010318056004681,
+                "advantage_RMS": 0.22463246559991334
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5,
+                "weight_mean": 0.9727686392309636,
+                "weight_min": 0.7267677389183894,
+                "advantage_mean": 0.1412109860883753,
+                "advantage_RMS": 0.30911570607123673
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4740740740740741,
+                "weight_mean": 0.9681860407441049,
+                "weight_min": 0.8192884574371136,
+                "advantage_mean": 0.16474629108403568,
+                "advantage_RMS": 0.21002529814560175
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5435897435897435,
+                "weight_mean": 0.9672697586380172,
+                "weight_min": 0.6645708021365107,
+                "advantage_mean": 0.10781513180642482,
+                "advantage_RMS": 0.23116018406347624
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.47368421052631576,
+                "weight_mean": 0.9619399115855548,
+                "weight_min": 0.5991470563349591,
+                "advantage_mean": 0.13360547590294364,
+                "advantage_RMS": 0.2121873947469735
+              }
+            ],
+            "actor_norm": 0.849700226504556,
+            "value_norm": 1.0567305306370516,
+            "KL": 0.0038418145042232767
+          },
+          {
+            "epoch": 14,
+            "policy_loss": -0.01366483654321885,
+            "value_loss": 0.13918803746962977,
+            "keep": 0.0021107428293357707,
+            "old211_keep": 0.0023295260225461587,
+            "actual_old8_keep": 0.0024980520834782392,
+            "own8_keep": 0.0018076966056593418,
+            "replay_actor": 0.004220604256945532,
+            "replay_value": 0.04303223882119352,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.43809523809523815,
+                "weight_mean": 0.9817817146206557,
+                "weight_min": 0.8611716322321922,
+                "advantage_mean": 0.4009716408566942,
+                "advantage_RMS": 0.489192728556329
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6037735849056604,
+                "weight_mean": 0.9781557780900338,
+                "weight_min": 0.7776659393895412,
+                "advantage_mean": 0.22270099223760345,
+                "advantage_RMS": 0.26858103382087156
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.49523809523809526,
+                "weight_mean": 0.978326749577235,
+                "weight_min": 0.7252992034005401,
+                "advantage_mean": 0.239315545268267,
+                "advantage_RMS": 0.3037704545798197
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6101694915254238,
+                "weight_mean": 0.968478225464439,
+                "weight_min": 0.7036822332131372,
+                "advantage_mean": 0.2031577554401166,
+                "advantage_RMS": 0.22495319821336576
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5140845070422535,
+                "weight_mean": 0.9738619749330754,
+                "weight_min": 0.7472422419587545,
+                "advantage_mean": 0.15419589351045615,
+                "advantage_RMS": 0.3033969005245146
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4962962962962963,
+                "weight_mean": 0.9658602895035263,
+                "weight_min": 0.804341920690496,
+                "advantage_mean": 0.15951556174496806,
+                "advantage_RMS": 0.20887101593438434
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5487179487179488,
+                "weight_mean": 0.9678002349693708,
+                "weight_min": 0.6685371014488424,
+                "advantage_mean": 0.11417827196128902,
+                "advantage_RMS": 0.224815710790206
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.46411483253588515,
+                "weight_mean": 0.9629155917820373,
+                "weight_min": 0.6096428236232421,
+                "advantage_mean": 0.13970948947601905,
+                "advantage_RMS": 0.21902330678016962
+              }
+            ],
+            "actor_norm": 0.8207210810963093,
+            "value_norm": 0.8769620845241365,
+            "KL": 0.003992494630522394
+          },
+          {
+            "epoch": 15,
+            "policy_loss": -0.014765308410613737,
+            "value_loss": 0.12950565020024876,
+            "keep": 0.002081897213994214,
+            "old211_keep": 0.002190660325448247,
+            "actual_old8_keep": 0.0025067901155468135,
+            "own8_keep": 0.001815069207490898,
+            "replay_actor": 0.0028123759017440455,
+            "replay_value": 0.04335155570008001,
+            "replay_stats": [
+              {
+                "id": "dev_task0_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.44761904761904764,
+                "weight_mean": 0.9820196134009346,
+                "weight_min": 0.8674916578216361,
+                "advantage_mean": 0.4196586730900279,
+                "advantage_RMS": 0.4910334512439772
+              },
+              {
+                "id": "dev_task1_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5943396226415094,
+                "weight_mean": 0.9764848132723972,
+                "weight_min": 0.7628858677619341,
+                "advantage_mean": 0.21611080998072926,
+                "advantage_RMS": 0.2682572741497452
+              },
+              {
+                "id": "dev_task2_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5047619047619049,
+                "weight_mean": 0.9763489962951456,
+                "weight_min": 0.7100005266076761,
+                "advantage_mean": 0.23944961768614403,
+                "advantage_RMS": 0.3121438020821113
+              },
+              {
+                "id": "dev_task3_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.6101694915254238,
+                "weight_mean": 0.969524362988851,
+                "weight_min": 0.7129483396970964,
+                "advantage_mean": 0.2070801462711756,
+                "advantage_RMS": 0.227474346977034
+              },
+              {
+                "id": "dev_task4_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5422535211267606,
+                "weight_mean": 0.9746434437619008,
+                "weight_min": 0.7668393915197724,
+                "advantage_mean": 0.165157088209088,
+                "advantage_RMS": 0.29577656175577005
+              },
+              {
+                "id": "dev_task5_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.4962962962962963,
+                "weight_mean": 0.963645266607688,
+                "weight_min": 0.7921507857813882,
+                "advantage_mean": 0.15561102521009765,
+                "advantage_RMS": 0.20931167710398807
+              },
+              {
+                "id": "dev_task6_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.5435897435897435,
+                "weight_mean": 0.9682189422164308,
+                "weight_min": 0.6743997331873642,
+                "advantage_mean": 0.12175054408359924,
+                "advantage_RMS": 0.22040544557685351
+              },
+              {
+                "id": "dev_task7_13",
+                "terminal": [
+                  false,
+                  true,
+                  false
+                ],
+                "clipped_fraction": 0.47368421052631576,
+                "weight_mean": 0.9640468022160403,
+                "weight_min": 0.6238143901949597,
+                "advantage_mean": 0.1463364288999794,
+                "advantage_RMS": 0.22692957281824808
+              }
+            ],
+            "actor_norm": 0.8459762910650206,
+            "value_norm": 0.6977792366273013,
+            "KL": 0.0042434243662602756
+          }
+        ],
+        "epochs": 16,
+        "pooled_advantage": [
+          {
+            "group": 0,
+            "raw_mean": -0.8008171375756354,
+            "normalized_mean": -0.9413979855752002,
+            "shared_mean": -0.2597233080600282,
+            "shared_sd": 0.5747769145533018
+          },
+          {
+            "group": 0,
+            "raw_mean": 0.28137052145557906,
+            "normalized_mean": 0.9413979855752003,
+            "shared_mean": -0.2597233080600282,
+            "shared_sd": 0.5747769145533018
+          },
+          {
+            "group": 1,
+            "raw_mean": -0.5620256190692859,
+            "normalized_mean": 0.0003181754765510365,
+            "shared_mean": -0.5620903606259157,
+            "shared_sd": 0.2034775191714072
+          },
+          {
+            "group": 1,
+            "raw_mean": -0.5621551021825454,
+            "normalized_mean": -0.0003181754765511429,
+            "shared_mean": -0.5620903606259157,
+            "shared_sd": 0.2034775191714072
+          }
+        ],
+        "old_replay_NOT_fresh_PPO": true,
+        "all_old_outcomes_included": true,
+        "single_pilot_NOT_matched_ablation": true
+      },
+      "candidates": {
+        "B": {
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t480_old_task_rehearsal/pair/proposal_B.pt.gz",
+            "sha256": "ff0f0780b46cfd2629649597e5b14bc0940186ff8ec07ed0cfb5af13eae1b09e",
+            "policy_hash": "83fe21ba87eb6571630829dfdd18bf09573dac2669f8ef2ca7aaed9170cf7cc7",
+            "joint_hash": "12943d5a8e440aaa53af9418d7be5aadf5f377cc209f9a3ac0e493cb69cbb302",
+            "bytes": 1587214
+          },
+          "success_ids": [
+            "dev_task0_00",
+            "dev_task0_01",
+            "dev_task0_02",
+            "dev_task0_03",
+            "dev_task0_04",
+            "dev_task0_05",
+            "dev_task0_06",
+            "dev_task0_07",
+            "dev_task0_08",
+            "dev_task0_09",
+            "dev_task0_10",
+            "dev_task0_11",
+            "dev_task0_12",
+            "dev_task0_13",
+            "dev_task0_14",
+            "dev_task0_15",
+            "dev_task0_16",
+            "dev_task0_17",
+            "dev_task0_18",
+            "dev_task0_19",
+            "dev_task0_20",
+            "dev_task0_21",
+            "dev_task0_22",
+            "dev_task0_23",
+            "dev_task0_24",
+            "dev_task0_25",
+            "dev_task0_26",
+            "dev_task1_00",
+            "dev_task1_01",
+            "dev_task1_02",
+            "dev_task1_03",
+            "dev_task1_04",
+            "dev_task1_05",
+            "dev_task1_06",
+            "dev_task1_07",
+            "dev_task1_08",
+            "dev_task1_09",
+            "dev_task1_10",
+            "dev_task1_11",
+            "dev_task1_12",
+            "dev_task1_13",
+            "dev_task1_14",
+            "dev_task1_15",
+            "dev_task1_16",
+            "dev_task1_17",
+            "dev_task1_18",
+            "dev_task1_19",
+            "dev_task1_20",
+            "dev_task1_21",
+            "dev_task1_22",
+            "dev_task1_23",
+            "dev_task1_24",
+            "dev_task1_25",
+            "dev_task1_26",
+            "dev_task2_00",
+            "dev_task2_01",
+            "dev_task2_02",
+            "dev_task2_03",
+            "dev_task2_04",
+            "dev_task2_05",
+            "dev_task2_06",
+            "dev_task2_07",
+            "dev_task2_08",
+            "dev_task2_09",
+            "dev_task2_10",
+            "dev_task2_11",
+            "dev_task2_12",
+            "dev_task2_13",
+            "dev_task2_14",
+            "dev_task2_15",
+            "dev_task2_16",
+            "dev_task2_17",
+            "dev_task2_18",
+            "dev_task2_19",
+            "dev_task2_20",
+            "dev_task2_21",
+            "dev_task2_22",
+            "dev_task2_23",
+            "dev_task2_24",
+            "dev_task2_25",
+            "dev_task2_26",
+            "dev_task3_00",
+            "dev_task3_01",
+            "dev_task3_02",
+            "dev_task3_03",
+            "dev_task3_04",
+            "dev_task3_05",
+            "dev_task3_06",
+            "dev_task3_07",
+            "dev_task3_08",
+            "dev_task3_09",
+            "dev_task3_10",
+            "dev_task3_11",
+            "dev_task3_12",
+            "dev_task3_13",
+            "dev_task3_14",
+            "dev_task3_15",
+            "dev_task3_16",
+            "dev_task3_17",
+            "dev_task3_18",
+            "dev_task3_19",
+            "dev_task3_20",
+            "dev_task3_21",
+            "dev_task3_22",
+            "dev_task3_23",
+            "dev_task3_24",
+            "dev_task3_25",
+            "dev_task3_26",
+            "dev_task4_00",
+            "dev_task4_01",
+            "dev_task4_02",
+            "dev_task4_03",
+            "dev_task4_04",
+            "dev_task4_05",
+            "dev_task4_06",
+            "dev_task4_07",
+            "dev_task4_08",
+            "dev_task4_09",
+            "dev_task4_10",
+            "dev_task4_11",
+            "dev_task4_12",
+            "dev_task4_13",
+            "dev_task4_14",
+            "dev_task4_15",
+            "dev_task4_16",
+            "dev_task4_17",
+            "dev_task4_18",
+            "dev_task4_19",
+            "dev_task4_20",
+            "dev_task4_21",
+            "dev_task4_22",
+            "dev_task4_23",
+            "dev_task4_24",
+            "dev_task4_25",
+            "dev_task4_26",
+            "dev_task5_00",
+            "dev_task5_01",
+            "dev_task5_02",
+            "dev_task5_03",
+            "dev_task5_04",
+            "dev_task5_09",
+            "dev_task5_10",
+            "dev_task5_11",
+            "dev_task5_12",
+            "dev_task5_13",
+            "dev_task5_14",
+            "dev_task5_15",
+            "dev_task5_16",
+            "dev_task5_18",
+            "dev_task5_19",
+            "dev_task5_20",
+            "dev_task5_21",
+            "dev_task5_22",
+            "dev_task5_23",
+            "dev_task5_24",
+            "dev_task5_25",
+            "dev_task5_26",
+            "dev_task6_04",
+            "dev_task6_05",
+            "dev_task6_06",
+            "dev_task6_07",
+            "dev_task6_08",
+            "dev_task6_11",
+            "dev_task6_14",
+            "dev_task6_16",
+            "dev_task6_17",
+            "dev_task6_20",
+            "dev_task6_21",
+            "dev_task6_22",
+            "dev_task6_23",
+            "dev_task6_24",
+            "dev_task6_26",
+            "dev_task7_00",
+            "dev_task7_01",
+            "dev_task7_02",
+            "dev_task7_03",
+            "dev_task7_04",
+            "dev_task7_05",
+            "dev_task7_06",
+            "dev_task7_07",
+            "dev_task7_08",
+            "dev_task7_09",
+            "dev_task7_10",
+            "dev_task7_11",
+            "dev_task7_12",
+            "dev_task7_13",
+            "dev_task7_14",
+            "dev_task7_15",
+            "dev_task7_16",
+            "dev_task7_17",
+            "dev_task7_18",
+            "dev_task7_19",
+            "dev_task7_20",
+            "dev_task7_21",
+            "dev_task7_22",
+            "dev_task7_23",
+            "dev_task7_24",
+            "dev_task7_25",
+            "dev_task7_26",
+            "hold_task0_00",
+            "hold_task0_01",
+            "hold_task0_02",
+            "hold_task0_03",
+            "hold_task0_04",
+            "hold_task0_05",
+            "hold_task0_06",
+            "hold_task0_07",
+            "hold_task1_00",
+            "hold_task1_01",
+            "hold_task1_02",
+            "hold_task1_03",
+            "hold_task1_04",
+            "hold_task1_05",
+            "hold_task1_06",
+            "hold_task1_07",
+            "hold_task2_00",
+            "hold_task2_01",
+            "hold_task2_02",
+            "hold_task2_03",
+            "hold_task2_04",
+            "hold_task2_05",
+            "hold_task2_06",
+            "hold_task2_07",
+            "hold_task3_00",
+            "hold_task3_01",
+            "hold_task3_02",
+            "hold_task3_03",
+            "hold_task3_04",
+            "hold_task3_05",
+            "hold_task3_06",
+            "hold_task3_07",
+            "hold_task4_00",
+            "hold_task4_01",
+            "hold_task4_02",
+            "hold_task4_03",
+            "hold_task4_04",
+            "hold_task4_05",
+            "hold_task4_06",
+            "hold_task4_07",
+            "hold_task5_00",
+            "hold_task5_01",
+            "hold_task5_02",
+            "hold_task5_03",
+            "hold_task5_04",
+            "hold_task5_05",
+            "hold_task5_06",
+            "hold_task5_07",
+            "hold_task6_01",
+            "hold_task6_03",
+            "hold_task6_04",
+            "hold_task6_05",
+            "hold_task6_06",
+            "hold_task6_07",
+            "hold_task7_00",
+            "hold_task7_01",
+            "hold_task7_02",
+            "hold_task7_03",
+            "hold_task7_04",
+            "hold_task7_05",
+            "hold_task7_06",
+            "hold_task7_07",
+            "wide117_80_dev6_LEFT_00",
+            "wide117_80_dev6_LEFT_01",
+            "wide117_80_dev6_LEFT_02",
+            "wide117_80_dev6_LEFT_03",
+            "wide117_80_dev6_LEFT_04",
+            "wide117_80_dev6_LEFT_05",
+            "wide117_80_dev6_LEFT_06",
+            "wide117_80_dev6_LEFT_07",
+            "wide117_80_dev6_LEFT_08",
+            "wide117_80_dev6_LEFT_09",
+            "wide117_80_dev6_LEFT_10",
+            "wide117_80_dev6_LEFT_12",
+            "wide117_80_dev6_LEFT_13",
+            "wide117_80_dev6_LEFT_14",
+            "wide117_80_dev6_LEFT_15",
+            "wide117_80_dev6_LEFT_16",
+            "wide117_80_dev6_LEFT_17",
+            "wide117_80_dev6_LEFT_18",
+            "wide117_80_dev6_LEFT_19",
+            "wide117_80_dev6_LEFT_20",
+            "wide117_80_dev6_LEFT_21",
+            "wide117_80_dev6_LEFT_22",
+            "wide117_80_dev6_LEFT_23",
+            "wide117_80_dev6_LEFT_26",
+            "wide117_80_dev6_RIGHT_00",
+            "wide117_80_dev6_RIGHT_01",
+            "wide117_80_dev6_RIGHT_02",
+            "wide117_80_dev6_RIGHT_03",
+            "wide117_80_dev6_RIGHT_04",
+            "wide117_80_dev6_RIGHT_05",
+            "wide117_80_dev6_RIGHT_06",
+            "wide117_80_dev6_RIGHT_07",
+            "wide117_80_dev6_RIGHT_08",
+            "wide117_80_dev6_RIGHT_09",
+            "wide117_80_dev6_RIGHT_10",
+            "wide117_80_dev6_RIGHT_11",
+            "wide117_80_dev6_RIGHT_12",
+            "wide117_80_dev6_RIGHT_13",
+            "wide117_80_dev6_RIGHT_14",
+            "wide117_80_dev6_RIGHT_15",
+            "wide117_80_dev6_RIGHT_16",
+            "wide117_80_dev6_RIGHT_17",
+            "wide117_80_dev6_RIGHT_18",
+            "wide117_80_dev6_RIGHT_19",
+            "wide117_80_dev6_RIGHT_20",
+            "wide117_80_dev6_RIGHT_21",
+            "wide117_80_dev6_RIGHT_22",
+            "wide117_80_dev6_RIGHT_23",
+            "wide117_80_dev6_RIGHT_24",
+            "wide117_80_dev6_RIGHT_25",
+            "wide117_80_dev6_RIGHT_26",
+            "wide117_8m_dev6_LEFT_00",
+            "wide117_8m_dev6_LEFT_03",
+            "wide117_8m_dev6_LEFT_09",
+            "wide117_8m_dev6_LEFT_12",
+            "wide117_8m_dev6_LEFT_18",
+            "wide117_8m_dev6_LEFT_19",
+            "wide117_8m_dev6_LEFT_21",
+            "wide117_8m_dev6_RIGHT_05",
+            "wide117_8m_dev6_RIGHT_14",
+            "wide117_8m_dev6_RIGHT_16",
+            "wide117_8m_dev6_RIGHT_25"
+          ],
+          "wide8": {
+            "valid": 54,
+            "success": 11,
+            "contact": 16,
+            "timeout": 27,
+            "invalid": 0,
+            "censored": 0
+          },
+          "wide6": {
+            "valid": 54,
+            "success": 51,
+            "contact": 3,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "old275": {
+            "valid": 275,
+            "success": 261,
+            "contact": 14,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "lost_ids": [
+            "dev_task6_01",
+            "dev_task6_02",
+            "dev_task6_03",
+            "dev_task6_09",
+            "dev_task6_10",
+            "dev_task6_12",
+            "dev_task6_13",
+            "dev_task6_15",
+            "dev_task6_18",
+            "dev_task6_19",
+            "dev_task6_25",
+            "hold_task6_00",
+            "hold_task6_02",
+            "wide117_80_dev6_LEFT_11",
+            "wide117_80_dev6_LEFT_24",
+            "wide117_80_dev6_LEFT_25",
+            "wide117_8m_dev6_LEFT_13",
+            "wide117_8m_dev6_LEFT_20",
+            "wide117_8m_dev6_RIGHT_01"
+          ],
+          "accepted": false
+        }
+      },
+      "chosen_arm": null,
+      "selected": {
+        "success_ids": [
+          "dev_task0_00",
+          "dev_task0_01",
+          "dev_task0_02",
+          "dev_task0_03",
+          "dev_task0_04",
+          "dev_task0_05",
+          "dev_task0_06",
+          "dev_task0_07",
+          "dev_task0_08",
+          "dev_task0_09",
+          "dev_task0_10",
+          "dev_task0_11",
+          "dev_task0_12",
+          "dev_task0_13",
+          "dev_task0_14",
+          "dev_task0_15",
+          "dev_task0_16",
+          "dev_task0_17",
+          "dev_task0_18",
+          "dev_task0_19",
+          "dev_task0_20",
+          "dev_task0_21",
+          "dev_task0_22",
+          "dev_task0_23",
+          "dev_task0_24",
+          "dev_task0_25",
+          "dev_task0_26",
+          "dev_task1_00",
+          "dev_task1_01",
+          "dev_task1_02",
+          "dev_task1_03",
+          "dev_task1_04",
+          "dev_task1_05",
+          "dev_task1_06",
+          "dev_task1_07",
+          "dev_task1_08",
+          "dev_task1_09",
+          "dev_task1_10",
+          "dev_task1_11",
+          "dev_task1_12",
+          "dev_task1_13",
+          "dev_task1_14",
+          "dev_task1_15",
+          "dev_task1_16",
+          "dev_task1_17",
+          "dev_task1_18",
+          "dev_task1_19",
+          "dev_task1_20",
+          "dev_task1_21",
+          "dev_task1_22",
+          "dev_task1_23",
+          "dev_task1_24",
+          "dev_task1_25",
+          "dev_task1_26",
+          "dev_task2_00",
+          "dev_task2_01",
+          "dev_task2_02",
+          "dev_task2_03",
+          "dev_task2_04",
+          "dev_task2_05",
+          "dev_task2_06",
+          "dev_task2_07",
+          "dev_task2_08",
+          "dev_task2_09",
+          "dev_task2_10",
+          "dev_task2_11",
+          "dev_task2_12",
+          "dev_task2_13",
+          "dev_task2_14",
+          "dev_task2_15",
+          "dev_task2_16",
+          "dev_task2_17",
+          "dev_task2_18",
+          "dev_task2_19",
+          "dev_task2_20",
+          "dev_task2_21",
+          "dev_task2_22",
+          "dev_task2_23",
+          "dev_task2_24",
+          "dev_task2_25",
+          "dev_task2_26",
+          "dev_task3_00",
+          "dev_task3_01",
+          "dev_task3_02",
+          "dev_task3_03",
+          "dev_task3_04",
+          "dev_task3_05",
+          "dev_task3_06",
+          "dev_task3_07",
+          "dev_task3_08",
+          "dev_task3_09",
+          "dev_task3_10",
+          "dev_task3_11",
+          "dev_task3_12",
+          "dev_task3_13",
+          "dev_task3_14",
+          "dev_task3_15",
+          "dev_task3_16",
+          "dev_task3_17",
+          "dev_task3_18",
+          "dev_task3_19",
+          "dev_task3_20",
+          "dev_task3_21",
+          "dev_task3_22",
+          "dev_task3_23",
+          "dev_task3_24",
+          "dev_task3_25",
+          "dev_task3_26",
+          "dev_task4_00",
+          "dev_task4_01",
+          "dev_task4_02",
+          "dev_task4_03",
+          "dev_task4_04",
+          "dev_task4_05",
+          "dev_task4_06",
+          "dev_task4_07",
+          "dev_task4_08",
+          "dev_task4_09",
+          "dev_task4_10",
+          "dev_task4_11",
+          "dev_task4_12",
+          "dev_task4_13",
+          "dev_task4_14",
+          "dev_task4_15",
+          "dev_task4_16",
+          "dev_task4_17",
+          "dev_task4_18",
+          "dev_task4_19",
+          "dev_task4_20",
+          "dev_task4_21",
+          "dev_task4_22",
+          "dev_task4_23",
+          "dev_task4_24",
+          "dev_task4_25",
+          "dev_task4_26",
+          "dev_task5_00",
+          "dev_task5_01",
+          "dev_task5_02",
+          "dev_task5_03",
+          "dev_task5_04",
+          "dev_task5_09",
+          "dev_task5_10",
+          "dev_task5_11",
+          "dev_task5_12",
+          "dev_task5_13",
+          "dev_task5_14",
+          "dev_task5_15",
+          "dev_task5_16",
+          "dev_task5_18",
+          "dev_task5_19",
+          "dev_task5_20",
+          "dev_task5_21",
+          "dev_task5_22",
+          "dev_task5_23",
+          "dev_task5_24",
+          "dev_task5_25",
+          "dev_task5_26",
+          "dev_task6_01",
+          "dev_task6_02",
+          "dev_task6_03",
+          "dev_task6_04",
+          "dev_task6_05",
+          "dev_task6_06",
+          "dev_task6_07",
+          "dev_task6_08",
+          "dev_task6_09",
+          "dev_task6_10",
+          "dev_task6_11",
+          "dev_task6_12",
+          "dev_task6_13",
+          "dev_task6_14",
+          "dev_task6_15",
+          "dev_task6_16",
+          "dev_task6_17",
+          "dev_task6_18",
+          "dev_task6_19",
+          "dev_task6_20",
+          "dev_task6_21",
+          "dev_task6_22",
+          "dev_task6_23",
+          "dev_task6_24",
+          "dev_task6_25",
+          "dev_task6_26",
+          "dev_task7_00",
+          "dev_task7_01",
+          "dev_task7_02",
+          "dev_task7_03",
+          "dev_task7_04",
+          "dev_task7_05",
+          "dev_task7_06",
+          "dev_task7_07",
+          "dev_task7_08",
+          "dev_task7_09",
+          "dev_task7_10",
+          "dev_task7_11",
+          "dev_task7_12",
+          "dev_task7_13",
+          "dev_task7_14",
+          "dev_task7_15",
+          "dev_task7_16",
+          "dev_task7_17",
+          "dev_task7_18",
+          "dev_task7_19",
+          "dev_task7_20",
+          "dev_task7_21",
+          "dev_task7_22",
+          "dev_task7_23",
+          "dev_task7_24",
+          "dev_task7_25",
+          "dev_task7_26",
+          "hold_task0_00",
+          "hold_task0_01",
+          "hold_task0_02",
+          "hold_task0_03",
+          "hold_task0_04",
+          "hold_task0_05",
+          "hold_task0_06",
+          "hold_task0_07",
+          "hold_task1_00",
+          "hold_task1_01",
+          "hold_task1_02",
+          "hold_task1_03",
+          "hold_task1_04",
+          "hold_task1_05",
+          "hold_task1_06",
+          "hold_task1_07",
+          "hold_task2_00",
+          "hold_task2_01",
+          "hold_task2_02",
+          "hold_task2_03",
+          "hold_task2_04",
+          "hold_task2_05",
+          "hold_task2_06",
+          "hold_task2_07",
+          "hold_task3_00",
+          "hold_task3_01",
+          "hold_task3_02",
+          "hold_task3_03",
+          "hold_task3_04",
+          "hold_task3_05",
+          "hold_task3_06",
+          "hold_task3_07",
+          "hold_task4_00",
+          "hold_task4_01",
+          "hold_task4_02",
+          "hold_task4_03",
+          "hold_task4_04",
+          "hold_task4_05",
+          "hold_task4_06",
+          "hold_task4_07",
+          "hold_task5_00",
+          "hold_task5_01",
+          "hold_task5_02",
+          "hold_task5_03",
+          "hold_task5_04",
+          "hold_task5_05",
+          "hold_task5_06",
+          "hold_task5_07",
+          "hold_task6_00",
+          "hold_task6_01",
+          "hold_task6_02",
+          "hold_task6_03",
+          "hold_task6_04",
+          "hold_task6_05",
+          "hold_task6_06",
+          "hold_task6_07",
+          "hold_task7_00",
+          "hold_task7_01",
+          "hold_task7_02",
+          "hold_task7_03",
+          "hold_task7_04",
+          "hold_task7_05",
+          "hold_task7_06",
+          "hold_task7_07",
+          "wide117_80_dev6_LEFT_01",
+          "wide117_80_dev6_LEFT_02",
+          "wide117_80_dev6_LEFT_03",
+          "wide117_80_dev6_LEFT_04",
+          "wide117_80_dev6_LEFT_05",
+          "wide117_80_dev6_LEFT_06",
+          "wide117_80_dev6_LEFT_07",
+          "wide117_80_dev6_LEFT_08",
+          "wide117_80_dev6_LEFT_09",
+          "wide117_80_dev6_LEFT_10",
+          "wide117_80_dev6_LEFT_11",
+          "wide117_80_dev6_LEFT_12",
+          "wide117_80_dev6_LEFT_13",
+          "wide117_80_dev6_LEFT_14",
+          "wide117_80_dev6_LEFT_15",
+          "wide117_80_dev6_LEFT_16",
+          "wide117_80_dev6_LEFT_17",
+          "wide117_80_dev6_LEFT_18",
+          "wide117_80_dev6_LEFT_19",
+          "wide117_80_dev6_LEFT_20",
+          "wide117_80_dev6_LEFT_21",
+          "wide117_80_dev6_LEFT_22",
+          "wide117_80_dev6_LEFT_23",
+          "wide117_80_dev6_LEFT_24",
+          "wide117_80_dev6_LEFT_25",
+          "wide117_80_dev6_LEFT_26",
+          "wide117_80_dev6_RIGHT_00",
+          "wide117_80_dev6_RIGHT_01",
+          "wide117_80_dev6_RIGHT_02",
+          "wide117_80_dev6_RIGHT_03",
+          "wide117_80_dev6_RIGHT_04",
+          "wide117_80_dev6_RIGHT_05",
+          "wide117_80_dev6_RIGHT_06",
+          "wide117_80_dev6_RIGHT_07",
+          "wide117_80_dev6_RIGHT_08",
+          "wide117_80_dev6_RIGHT_09",
+          "wide117_80_dev6_RIGHT_10",
+          "wide117_80_dev6_RIGHT_11",
+          "wide117_80_dev6_RIGHT_12",
+          "wide117_80_dev6_RIGHT_13",
+          "wide117_80_dev6_RIGHT_14",
+          "wide117_80_dev6_RIGHT_15",
+          "wide117_80_dev6_RIGHT_16",
+          "wide117_80_dev6_RIGHT_17",
+          "wide117_80_dev6_RIGHT_18",
+          "wide117_80_dev6_RIGHT_19",
+          "wide117_80_dev6_RIGHT_20",
+          "wide117_80_dev6_RIGHT_21",
+          "wide117_80_dev6_RIGHT_22",
+          "wide117_80_dev6_RIGHT_23",
+          "wide117_80_dev6_RIGHT_24",
+          "wide117_80_dev6_RIGHT_25",
+          "wide117_80_dev6_RIGHT_26",
+          "wide117_8m_dev6_LEFT_00",
+          "wide117_8m_dev6_LEFT_09",
+          "wide117_8m_dev6_LEFT_13",
+          "wide117_8m_dev6_LEFT_19",
+          "wide117_8m_dev6_LEFT_20",
+          "wide117_8m_dev6_RIGHT_01",
+          "wide117_8m_dev6_RIGHT_16",
+          "wide117_8m_dev6_RIGHT_25"
+        ],
+        "counts": {
+          "valid": 383,
+          "success": 335,
+          "contact": 15,
+          "timeout": 33,
+          "invalid": 0,
+          "censored": 0
+        },
+        "model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t477_wide8_recovery/longcredit/proposal_0.pt.gz",
+          "sha256": "5a6314c0823871af9222349f8785f7eaf5ebc8522ba2f2826e0d2d388e9d75b6",
+          "policy_hash": "b6a5b5b42263782426357d5eb3970bc8e268d5a5546cca30fdb74210702ca9a9",
+          "joint_hash": "4a956d17d3afb7736da2200ad8ea5aae3e80831fc3ec5792d53b469ca4f571d2",
+          "bytes": 1587530
+        },
+        "wide8": {
+          "valid": 54,
+          "success": 8,
+          "contact": 14,
+          "timeout": 32,
+          "invalid": 0,
+          "censored": 0
+        },
+        "wide6": {
+          "valid": 54,
+          "success": 53,
+          "contact": 0,
+          "timeout": 1,
+          "invalid": 0,
+          "censored": 0
+        },
+        "old275": {
+          "valid": 275,
+          "success": 274,
+          "contact": 1,
+          "timeout": 0,
+          "invalid": 0,
+          "censored": 0
+        }
+      },
+      "joint_hash_after_rollback": {
+        "B": "4a956d17d3afb7736da2200ad8ea5aae3e80831fc3ec5792d53b469ca4f571d2"
+      },
+      "single_pilot_NOT_matched_ablation": true
+    },
+    "fresh16": null,
+    "reload78": null,
+    "eight_stability_gate": false
+  },
+  "epoch": 1794375660.2008662,
+  "remote": "PENDING"
+}
