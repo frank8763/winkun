@@ -1,4 +1,398 @@
 {
-  "state": "REGISTERED_NOT_PREFLIGHTED_NOT_LAUNCHED",
-  "previous_audit_and_raw_remote_complete": true
+  "state": "PREFLIGHT_PASS_NOT_LAUNCHED",
+  "epoch": 1794376854.515369,
+  "preflight": {
+    "state": "PASS",
+    "native": 0,
+    "commands": 6,
+    "discarded_Adam": 8,
+    "maximum_discarded_Adam": 8,
+    "actual_old8_independently_audited_reused": true,
+    "fixture_history_density_exact": true,
+    "clone_result": {
+      "trace": [
+        {
+          "epoch": 0,
+          "policy_loss": 9.492190020110591e-17,
+          "value_loss": 0.18879333925117295,
+          "keep": 0.0,
+          "old211_keep": 0.0,
+          "actual_old8_keep": 0.0,
+          "own8_keep": 0.0,
+          "replay_actor": 0.051838891825840165,
+          "replay_value": 0.28556994192114044,
+          "replay_stats": [
+            {
+              "id": "dev_task0_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.4,
+              "weight_mean": 0.9999999999999997,
+              "weight_min": 0.9999999999999956,
+              "advantage_mean": 0.9293201359239469,
+              "advantage_RMS": 0.9657103795237512
+            },
+            {
+              "id": "dev_task1_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.40566037735849053,
+              "weight_mean": 0.9999999999999997,
+              "weight_min": 0.9999999999999976,
+              "advantage_mean": 0.7061630425996319,
+              "advantage_RMS": 0.7085199613405183
+            },
+            {
+              "id": "dev_task2_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.46666666666666673,
+              "weight_mean": 0.9999999999999998,
+              "weight_min": 0.9999999999999971,
+              "advantage_mean": 0.5564509374493928,
+              "advantage_RMS": 0.5578159941756256
+            },
+            {
+              "id": "dev_task3_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.4745762711864407,
+              "weight_mean": 0.9999999999999994,
+              "weight_min": 0.9999999999999947,
+              "advantage_mean": 0.8179064414185871,
+              "advantage_RMS": 0.8382675714743403
+            },
+            {
+              "id": "dev_task4_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.5070422535211268,
+              "weight_mean": 0.9999999999999997,
+              "weight_min": 0.999999999999996,
+              "advantage_mean": 0.8116089171816443,
+              "advantage_RMS": 0.8703539912325815
+            },
+            {
+              "id": "dev_task5_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.40740740740740744,
+              "weight_mean": 0.9999999999999997,
+              "weight_min": 0.9999999999999953,
+              "advantage_mean": 0.6789440939693129,
+              "advantage_RMS": 0.6837082590193733
+            },
+            {
+              "id": "dev_task6_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.4358974358974359,
+              "weight_mean": 0.9999999999999996,
+              "weight_min": 0.9999999999999947,
+              "advantage_mean": 0.7351141849206976,
+              "advantage_RMS": 0.7837045851450695
+            },
+            {
+              "id": "dev_task7_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.5023923444976076,
+              "weight_mean": 0.9999999999999994,
+              "weight_min": 0.999999999999992,
+              "advantage_mean": 0.5150607401735334,
+              "advantage_RMS": 0.5305703185945737
+            }
+          ],
+          "actor_norm": 1.7158421039362755,
+          "value_norm": 1.6089994454389003,
+          "KL": 9.912035921732327e-05,
+          "fresh_episodes": 16
+        },
+        {
+          "epoch": 1,
+          "policy_loss": -0.0007358568379045552,
+          "value_loss": 0.2001954406981002,
+          "keep": 2.691434555108528e-05,
+          "old211_keep": 1.777601555402383e-05,
+          "actual_old8_keep": 1.888910295823406e-05,
+          "own8_keep": 3.549613184604162e-05,
+          "replay_actor": 0.044913860883388904,
+          "replay_value": 0.2134795166470883,
+          "replay_stats": [
+            {
+              "id": "dev_task0_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.5047619047619049,
+              "weight_mean": 0.9972070049286912,
+              "weight_min": 0.9828774304571248,
+              "advantage_mean": 0.796830987840796,
+              "advantage_RMS": 0.8656808263193457
+            },
+            {
+              "id": "dev_task1_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.5471698113207547,
+              "weight_mean": 0.9968983114630222,
+              "weight_min": 0.9812428711553997,
+              "advantage_mean": 0.5957214230814606,
+              "advantage_RMS": 0.6008750470552426
+            },
+            {
+              "id": "dev_task2_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.5523809523809524,
+              "weight_mean": 0.9979931957460068,
+              "weight_min": 0.9787873806774339,
+              "advantage_mean": 0.48286246137839506,
+              "advantage_RMS": 0.48402696787782407
+            },
+            {
+              "id": "dev_task3_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.6016949152542372,
+              "weight_mean": 0.9981491847665966,
+              "weight_min": 0.974650467684913,
+              "advantage_mean": 0.7329328451436028,
+              "advantage_RMS": 0.7531585436501368
+            },
+            {
+              "id": "dev_task4_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.45774647887323944,
+              "weight_mean": 0.9961745296465225,
+              "weight_min": 0.9670561732881814,
+              "advantage_mean": 0.6344191720854436,
+              "advantage_RMS": 0.7480845724120228
+            },
+            {
+              "id": "dev_task5_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.3703703703703704,
+              "weight_mean": 0.9971328801970875,
+              "weight_min": 0.9844052621251406,
+              "advantage_mean": 0.5523225608937047,
+              "advantage_RMS": 0.560094149982106
+            },
+            {
+              "id": "dev_task6_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.5230769230769231,
+              "weight_mean": 0.9959924348314005,
+              "weight_min": 0.9709519324183075,
+              "advantage_mean": 0.5709042123262182,
+              "advantage_RMS": 0.6723209051232301
+            },
+            {
+              "id": "dev_task7_13",
+              "terminal": [
+                false,
+                true,
+                false
+              ],
+              "clipped_fraction": 0.47368421052631576,
+              "weight_mean": 0.997375897636976,
+              "weight_min": 0.9685721466480315,
+              "advantage_mean": 0.4034156270253155,
+              "advantage_RMS": 0.42229950251670517
+            }
+          ],
+          "actor_norm": 1.5850509069771725,
+          "value_norm": 1.8294317527426678,
+          "KL": 0.00045061635285443077,
+          "fresh_episodes": 16
+        }
+      ],
+      "epochs": 2,
+      "pooled_advantage": [
+        {
+          "group": 0,
+          "raw_mean": -0.8008171375756354,
+          "normalized_mean": -0.9413979855752002,
+          "shared_mean": -0.2597233080600282,
+          "shared_sd": 0.5747769145533018
+        },
+        {
+          "group": 0,
+          "raw_mean": 0.28137052145557906,
+          "normalized_mean": 0.9413979855752003,
+          "shared_mean": -0.2597233080600282,
+          "shared_sd": 0.5747769145533018
+        },
+        {
+          "group": 0,
+          "raw_mean": -0.8008171375756354,
+          "normalized_mean": -0.9413979855752002,
+          "shared_mean": -0.2597233080600282,
+          "shared_sd": 0.5747769145533018
+        },
+        {
+          "group": 0,
+          "raw_mean": 0.28137052145557906,
+          "normalized_mean": 0.9413979855752003,
+          "shared_mean": -0.2597233080600282,
+          "shared_sd": 0.5747769145533018
+        },
+        {
+          "group": 0,
+          "raw_mean": -0.8008171375756354,
+          "normalized_mean": -0.9413979855752002,
+          "shared_mean": -0.2597233080600282,
+          "shared_sd": 0.5747769145533018
+        },
+        {
+          "group": 0,
+          "raw_mean": 0.28137052145557906,
+          "normalized_mean": 0.9413979855752003,
+          "shared_mean": -0.2597233080600282,
+          "shared_sd": 0.5747769145533018
+        },
+        {
+          "group": 0,
+          "raw_mean": -0.8008171375756354,
+          "normalized_mean": -0.9413979855752002,
+          "shared_mean": -0.2597233080600282,
+          "shared_sd": 0.5747769145533018
+        },
+        {
+          "group": 0,
+          "raw_mean": 0.28137052145557906,
+          "normalized_mean": 0.9413979855752003,
+          "shared_mean": -0.2597233080600282,
+          "shared_sd": 0.5747769145533018
+        },
+        {
+          "group": 1,
+          "raw_mean": -0.5620256190692859,
+          "normalized_mean": 0.0003181754765510365,
+          "shared_mean": -0.5620903606259157,
+          "shared_sd": 0.2034775191714072
+        },
+        {
+          "group": 1,
+          "raw_mean": -0.5621551021825454,
+          "normalized_mean": -0.0003181754765511429,
+          "shared_mean": -0.5620903606259157,
+          "shared_sd": 0.2034775191714072
+        },
+        {
+          "group": 1,
+          "raw_mean": -0.5620256190692859,
+          "normalized_mean": 0.0003181754765510365,
+          "shared_mean": -0.5620903606259157,
+          "shared_sd": 0.2034775191714072
+        },
+        {
+          "group": 1,
+          "raw_mean": -0.5621551021825454,
+          "normalized_mean": -0.0003181754765511429,
+          "shared_mean": -0.5620903606259157,
+          "shared_sd": 0.2034775191714072
+        },
+        {
+          "group": 1,
+          "raw_mean": -0.5620256190692859,
+          "normalized_mean": 0.0003181754765510365,
+          "shared_mean": -0.5620903606259157,
+          "shared_sd": 0.2034775191714072
+        },
+        {
+          "group": 1,
+          "raw_mean": -0.5621551021825454,
+          "normalized_mean": -0.0003181754765511429,
+          "shared_mean": -0.5620903606259157,
+          "shared_sd": 0.2034775191714072
+        },
+        {
+          "group": 1,
+          "raw_mean": -0.5620256190692859,
+          "normalized_mean": 0.0003181754765510365,
+          "shared_mean": -0.5620903606259157,
+          "shared_sd": 0.2034775191714072
+        },
+        {
+          "group": 1,
+          "raw_mean": -0.5621551021825454,
+          "normalized_mean": -0.0003181754765511429,
+          "shared_mean": -0.5620903606259157,
+          "shared_sd": 0.2034775191714072
+        }
+      ],
+      "old_replay_NOT_fresh_PPO": true,
+      "all_old_outcomes_included": true,
+      "single_pilot_NOT_matched_ablation": true,
+      "fresh_episode_weight": 0.0625
+    },
+    "mature_Actor_Value_Adam_shadow_rollback_exact": true,
+    "serialized_bytes": 1588441,
+    "single_pilot": true
+  },
+  "alternate_storage": {
+    "state": "PASS_LOCAL_LOSSLESS_ALTERNATIVE_ZERO_REMOTE_CACHE_EVICTIONS",
+    "native": 0,
+    "optimizer": 0,
+    "registered_scientific_protocol_unchanged": true,
+    "original_failed_preparation_preserved": true,
+    "cache_plan_unexecuted": true,
+    "storage_audit": {
+      "files": 78,
+      "native": 0,
+      "optimizer": 0,
+      "state": "PASS_LOCAL_REVERSIBLE_ENCODING"
+    },
+    "original_T481_protocol_sha256": "8419c62e3433044113f93a62055142d473a34d935e04c678b6a71d7e19290e80"
+  },
+  "original_remote_readback_failed_before_any_cache_unlink": true,
+  "original_queue_error_and_protocol_preserved": true
 }

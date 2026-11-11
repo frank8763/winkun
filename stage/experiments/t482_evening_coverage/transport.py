@@ -5,6 +5,10 @@ ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/'stage/experiments/t377_full_human_observation_transfer'));import transport as T
 
 def stopped(folder):
+    if folder==ROOT/'stage/runs/t483_local_log_reserve':
+        d=json.loads((folder/'summary.json').read_text());assert d['state']=='COMPLETE' and d['native']==d['optimizer']==0
+        assert json.loads((folder/'compression_audit.json').read_text())['state']=='PASS_LOCAL_REVERSIBLE_ENCODING'
+        assert not Path('/proc',str(d['pid'])).exists();return
     assert folder==ROOT/'stage/runs/t482_evening_coverage';d=json.loads((folder/'SEALED.json').read_text());assert d['all_scientific_processes_stopped'] and d['finalizer_writes_only_docs_after_this_point'];assert all(not Path('/proc',str(pid)).exists() for pid in d['scientific_pids'])
 def install():
     T.install();run=T.subprocess.run
@@ -25,6 +29,6 @@ if __name__=='__main__':
         import sync_source
         sync_source.main()
     else:
-        assert sys.argv[1]=='T482';T.B.GROUPS['T482']=['t482_evening_coverage'];T.B.require_stopped=stopped
+        assert sys.argv[1]=='T482';T.B.GROUPS['T482']=['t482_evening_coverage','t483_local_log_reserve'];T.B.require_stopped=stopped
         import small_parts
         small_parts.main('T482')
