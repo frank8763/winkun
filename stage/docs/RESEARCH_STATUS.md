@@ -1,3 +1,5 @@
+2026-11-11 T489仅宽八米PPO单候选结束，completed=['capture', 'pair']/reason=RETAINED_PROGRESS_STOP_FURTHER_LEARNING/physics=3146468/commands=70/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；保留八米39/54，旧275/六米本轮未运行null，不称联合能力或稳定八米。详review_20261111/T489_FINAL_REPORT，Phase隔离。
+
 2026-11-11 T488仅宽八米PPO单候选结束，completed=[]/reason=EVIDENCE_OR_ENGINEERING_FAILURE_STOP/physics=397758/commands=18/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；保留八米35/54，旧275/六米本轮未运行null，不称联合能力或稳定八米。详review_20261111/T488_FINAL_REPORT，Phase隔离。
 
 2026-11-11用户要求定位八米失败并继续。T488仅宽八米完整姿态诊断＋左侧失败定向PPO已注册/正式0native8丢弃Adam预检PASS，尚待实际launch。初始T48735/54保留模型；4冻结诊断LEFT01/08/26+RIGHT00须全数组/终态积分精确历史，4exact另计；新4LEFT近末段01/19＋远端08/26随机探索4exact，右00确定性成功history保持1，原PPO/.005KL/奖励/速度/半径/cap不变，最多16epoch及shadow。不能从compact判“转不过弯/找不到目标”，诊断将给真实速度/航向误差/转向饱和/路径和余距。单候选完整54成功>35且接触<=1才保留，旧275/six/fresh16/reload78null。新5M/100cmd/2400main/3300all秒，20:00学20:20native20:30all更严，root12MiB/global1GiB/free40；11非输入历史文本/协议已本地无损gzip、独立全原SHA审计过，所有原字节可用t488control.text/恢复账本解码，模型NPZ不动。T486远端仍PENDING不假称全备份，T487全部已备份。Phase隔离。详review_20261111/T488_PLAN/READINESS。
