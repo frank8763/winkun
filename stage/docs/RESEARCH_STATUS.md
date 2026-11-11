@@ -1,3 +1,5 @@
+2026-11-11 T485接口修复复用T481真实16数据的剩余单候选学习结束，completed=['pair']/reason=ONE_OLD_TASK_REHEARSAL_PILOT_COMPLETE/physics=7939783/commands=387/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；选中8m8/54 six53/54 old274/275，fresh16/reload78未执行不称稳定。详review_20261111/T485_FINAL_REPORT，Phase隔离。
+
 2026-11-11 T481实际16采集+16exact已完成1,464,102物理/36cmd/457.110266s（加原pref6cmd=42），7GOAL4接触5超时；原采集audit因漏导出vtrace在0Actor/Value Adam停止，全部原始远端逐SHA已过、原错误保留。T484独立接口adapter仅重新导出原T480.vtrace，fit/batch/epoch函数对象不变；原采集全部SHA/history/密度/奖励/MC及重生已按原audit独立重审PASS、原sealed所有文件SHA未变/0新native0Adam。T484注册准备剩余单候选学习，原T481+T484合12M/500cmd/4500main与原15:56:56allstop不扩；T484新root10MiB/global1GiB/free40，启动以新launch与真实进程为准。原T482等待器已按上游工程失败停；未注册晚间设计改等待T484完整收尾，20:30截止不变，与Phase全隔离。详review_20261111/T484_PLAN/BUDGET/CAPTURE_AUDIT。
 
 2026-11-11 T48116新鲜回合与旧任务Vtrace辅助单候选试验结束，completed=[]/reason=EVIDENCE_OR_ENGINEERING_FAILURE_STOP/physics=1464102/commands=42/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；选中8m8/54 six53/54 old274/275，fresh16/reload78未执行不称稳定。详review_20261111/T481_FINAL_REPORT，Phase隔离。
