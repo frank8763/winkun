@@ -1,6 +1,6 @@
 """Only ended unpinned Stage cold caches; full remote byte proof before unlink."""
 from pathlib import Path
-import concurrent.futures,importlib.util,hashlib,json,os,shutil,subprocess,sys,time,urllib.error,urllib.parse
+import concurrent.futures,importlib.util,gzip,hashlib,io,json,os,shutil,subprocess,sys,tarfile,time,urllib.error,urllib.parse
 ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent
 OUT=ROOT/'stage/runs/t492_cold_remote_reserve';DOC=ROOT/'stage/docs/overnight_20261111'
 sys.path.insert(0,str(ROOT/'stage/experiments/t486_adam_memory_projection'));import t486_cache as K
@@ -61,36 +61,47 @@ def run():
     for page in range(1,12):
         batch=T.B.api('GET',f"releases/{release['id']}/assets?per_page=100&page={page}");assets+=batch
         if len(batch)<100:break
+    bundles=[];current=[];size=0
+    for row in p['files']:
+        if current and size+row['bytes']>8*2**20:bundles.append(current);current=[];size=0
+        current.append(row);size+=row['bytes']
+    if current:bundles.append(current)
     def upload(pair):
-        index,row=pair;assert time.time()<end-180;data=(ROOT/row['path']).read_bytes();assert sha(data)==row['sha256'];parts=[];returned=[]
+        index,rows=pair;assert time.time()<end-180;buf=io.BytesIO()
+        manifest=[{k:r[k] for k in ['path','bytes','sha256']} for r in rows]
+        with tarfile.open(fileobj=buf,mode='w') as archive:
+            for r in rows:
+                blob=(ROOT/r['path']).read_bytes();assert sha(blob)==r['sha256'];info=tarfile.TarInfo(r['path']);info.size=len(blob);info.mtime=0;archive.addfile(info,io.BytesIO(blob))
+        data=gzip.compress(buf.getvalue(),compresslevel=1,mtime=0);T.B.verify_tar(data,manifest);parts=[];returned=[]
         for n,off in enumerate(range(0,len(data),PART)):
             assert time.time()<end-120;part=data[off:off+PART];name=f"stage-t492-{index:04d}-{n:02d}-{sha(part)[:20]}.bin"
-            a=next((a for a in assets if a['name']==name and a.get('digest')=='sha256:'+sha(part)),None)
-            if a is None:
-                a=json.loads(T.req('POST',f"https://uploads.github.com/repos/{T.A.SLUG}/releases/{release['id']}/assets?name="+urllib.parse.quote(name),part,{'Content-Type':'application/octet-stream'}))
-            a=T.B.api('GET',f"releases/assets/{a['id']}");assert a['size']==len(part) and a['digest']=='sha256:'+sha(part)
-            b=T.readback(a,len(part));assert b==part;returned.append(b)
-            parts.append(dict(order=n,asset_id=a['id'],url=a['browser_download_url'],bytes=len(b),sha256=sha(b)))
-        assert sha(b''.join(returned))==row['sha256']
-        return dict(row,parts=parts)
+            asset=next((a for a in assets if a['name']==name and a.get('digest')=='sha256:'+sha(part)),None)
+            if asset is None:
+                asset=json.loads(T.req('POST',f"https://uploads.github.com/repos/{T.A.SLUG}/releases/{release['id']}/assets?name="+urllib.parse.quote(name),part,{'Content-Type':'application/octet-stream'}))
+            asset=T.B.api('GET',f"releases/assets/{asset['id']}");assert asset['size']==len(part) and asset['digest']=='sha256:'+sha(part)
+            blob=T.readback(asset,len(part));assert blob==part;returned.append(blob)
+            parts.append(dict(order=n,asset_id=asset['id'],url=asset['browser_download_url'],bytes=len(blob),sha256=sha(blob)))
+        restored=b''.join(returned);assert restored==data;T.B.verify_tar(restored,manifest)
+        return dict(index=index,files=rows,archive_sha256=sha(data),archive_bytes=len(data),parts=parts)
     completed=[]
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-        for row in pool.map(upload,enumerate(p['files'])):
-            completed.append(row);save(OUT/'upload_progress.json',dict(state='READBACK_IN_PROGRESS_NO_UNLINK',completed=len(completed),files=len(p['files']),files_deleted=0));print('T492_REMOTE_FILE',len(completed),len(p['files']),flush=True)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+        for bundle in pool.map(upload,enumerate(bundles)):
+            completed.append(bundle);save(OUT/'upload_progress.json',dict(state='READBACK_IN_PROGRESS_NO_UNLINK',completed_bundles=len(completed),bundles=len(bundles),files_deleted=0));print('T492_REMOTE_BUNDLE',len(completed),len(bundles),flush=True)
+    remote_files=[dict(row,bundle_index=bundle['index']) for bundle in completed for row in bundle['files']]
     verify(p);idle();assert time.time()<end-90
-    for row in completed:assert sha((ROOT/row['path']).read_bytes())==row['sha256']
-    receipt=dict(state='FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED',group='T492',url=release['html_url'],files=completed,
+    for row in remote_files:assert sha((ROOT/row['path']).read_bytes())==row['sha256']
+    receipt=dict(state='FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED',group='T492',url=release['html_url'],files=remote_files,bundles=completed,
         encoded_and_NPZ_source_bytes_preserved_exact=True,temporary_disk_archive_bytes=0,files_deleted=0,verified_epoch=time.time())
     save(DOC/'release_receipt_T492.json',receipt)
-    save(OUT/'remote_verified_before_unlink.json',dict(state=receipt['state'],receipt_sha256=sha((DOC/'release_receipt_T492.json').read_bytes()),files=len(completed),epoch=time.time()))
+    save(OUT/'remote_verified_before_unlink.json',dict(state=receipt['state'],receipt_sha256=sha((DOC/'release_receipt_T492.json').read_bytes()),files=len(remote_files),epoch=time.time()))
     before=used();ledger=OUT/'eviction_ledger.jsonl'
     with ledger.open('xb') as log:
-        for row in completed:
+        for row in remote_files:
             assert time.time()<end-30;f=ROOT/row['path'];assert sha(f.read_bytes())==row['sha256'];marker=Path(str(f)+'.t492-remote.json')
             entry=dict(original=row['path'],bytes=row['bytes'],sha256=row['sha256'],receipt=str((DOC/'release_receipt_T492.json').relative_to(ROOT)),receipt_sha256=sha((DOC/'release_receipt_T492.json').read_bytes()),offline_available=False,restore=p['restore'])
             save(marker,entry);marker.chmod(0o444);f.unlink();log.write((json.dumps(entry,separators=(',',':'))+'\n').encode());log.flush();os.fsync(log.fileno())
     verify(p);assert before-used()>=TARGET
-    save(OUT/'summary.json',dict(state='COMPLETE',pid=os.getpid(),files=len(completed),released_net_bytes=before-used(),native=0,Adam=0,all_remote_verified_before_any_unlink=True,elapsed_s=time.time()-start))
+    save(OUT/'summary.json',dict(state='COMPLETE',pid=os.getpid(),files=len(remote_files),released_net_bytes=before-used(),native=0,Adam=0,all_remote_verified_before_any_unlink=True,elapsed_s=time.time()-start))
     print('T492_COMPLETE',before-used(),flush=True)
 def audit():
     idle();p=read(OUT/'protocol.json');verify(p);s=read(OUT/'summary.json');assert s['state']=='COMPLETE' and not Path('/proc',str(s['pid'])).exists()
@@ -98,14 +109,17 @@ def audit():
     by={x['path']:x for x in r['files']}
     for row in p['files']:
         f=ROOT/row['path'];assert not f.exists();m=read(Path(str(f)+'.t492-remote.json'));assert m['sha256']==row['sha256'] and m['bytes']==row['bytes']
-        assert by[row['path']]['sha256']==row['sha256'] and sum(x['bytes'] for x in by[row['path']]['parts'])==row['bytes']
+        assert by[row['path']]['sha256']==row['sha256'];bundle=next(b for b in r['bundles'] if b['index']==by[row['path']]['bundle_index']);assert any(x['path']==row['path'] and x['sha256']==row['sha256'] for x in bundle['files'])
     save(OUT/'audit.json',dict(state='PASS',files=len(p['files']),native=0,Adam=0,current_inputs_unchanged=True,remote_all_bytes_verified_before_unlink=True,offline_cache_availability=False))
 def restore(path):
     f=Path(path);f=f if f.is_absolute() else ROOT/f;assert not f.exists();m=read(Path(str(f)+'.t492-remote.json'));r=read(ROOT/m['receipt']);assert sha((ROOT/m['receipt']).read_bytes())==m['receipt_sha256'];row=next(x for x in r['files'] if ROOT/x['path']==f)
     assert used()+row['bytes']+65536<=LIMIT and shutil.disk_usage(ROOT).free-row['bytes']>=40*2**30;T=install();parts=[]
-    for a in row['parts']:
-        b=T.readback({'id':a['asset_id']},a['bytes']);assert sha(b)==a['sha256'];parts.append(b)
-    data=b''.join(parts);assert sha(data)==row['sha256']
+    bundle=next(b for b in r['bundles'] if b['index']==row['bundle_index'])
+    for a in bundle['parts']:
+        blob=T.readback({'id':a['asset_id']},a['bytes']);assert sha(blob)==a['sha256'];parts.append(blob)
+    blob=b''.join(parts);assert sha(blob)==bundle['archive_sha256'];T.B.verify_tar(blob,[{k:x[k] for k in ['path','bytes','sha256']} for x in bundle['files']])
+    with tarfile.open(fileobj=io.BytesIO(blob),mode='r:gz') as archive:data=archive.extractfile(row['path']).read()
+    assert sha(data)==row['sha256']
     with f.open('xb') as out:out.write(data);out.flush();os.fsync(out.fileno())
 if __name__=='__main__':
     if sys.argv[1]=='restore':restore(sys.argv[2])
