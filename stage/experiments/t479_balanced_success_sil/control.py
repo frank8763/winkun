@@ -129,6 +129,11 @@ def cache():
     K.evict(cache_protocol())
 
 
+def cache_recovery():
+    import t479_cache as K
+    K.evict(cache_protocol(), recovery=True)
+
+
 def cache_audit():
     import t479_cache as K
     K.cacheaudit(cache_protocol())

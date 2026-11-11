@@ -311,17 +311,48 @@ def _archive(group, cache, deadline):
     spec.loader.exec_module(module)
     # This reader only imports transport when called, and uses at most four
     # existing gh CLI calls. Stderr/tokens are never emitted by this wrapper.
-    return module.archive(group, deadline=deadline, cli=True)
+    # One failed CLI request must not discard an otherwise verified archive.
+    # Keep the original member verifier unchanged; retry only failed binary
+    # transport, at most three calls and within the SAME absolute deadline.
+    original_run = subprocess.run
+    def bounded_run(args, *a, **kw):
+        binary = (isinstance(args, list) and 'Accept: application/octet-stream' in args
+                  and any('/releases/assets/' in str(v) for v in args))
+        if not binary:
+            return original_run(args, *a, **kw)
+        for attempt in range(3):
+            assert time.time() < deadline - 40, 'Original cache deadline; no further transport attempt'
+            result = original_run(args, *a, **kw)
+            if result.returncode == 0:
+                return result
+            with (OUT / 'cache_transport_attempts.jsonl').open('a') as log:
+                log.write(json.dumps(dict(attempt=attempt, returncode=result.returncode,
+                    epoch=time.time(), stderr_sha256=sha(result.stderr),
+                    no_native_no_optimizer=True)) + '\n')
+        return result
+    subprocess.run = bounded_run
+    try:
+        return module.archive(group, deadline=deadline, cli=True)
+    finally:
+        subprocess.run = original_run
 
 
 def _reserve(p):
     return int(p.get('cache_total_reserved_bytes', p.get('max_bytes', 0)))
 
 
-def evict(p):
+def evict(p, recovery=False):
     """Run once before preflight/launch, after a clean exact source sync."""
     assert OUT.exists()
-    assert not any((OUT / f).exists() for f in ('cache_started.json', 'cache_summary.json', 'cache_ledger.jsonl', 'launch.json', 'preflight.json'))
+    assert not any((OUT / f).exists() for f in ('cache_summary.json', 'cache_ledger.jsonl', 'launch.json', 'preflight.json'))
+    started_name = 'cache_started.json'
+    if recovery:
+        first = read(OUT / started_name)
+        assert not Path('/proc', str(first['pid'])).exists()
+        assert not (OUT / 'cache_remote_verified.json').exists(), 'Never resume after cache mutation'
+        assert first['hard_stop_epoch'] == p['cache_hard_stop_epoch']
+        started_name = 'cache_readback_recovery_started.json'
+    assert not (OUT / started_name).exists()
     _idle()
     src = read(RUNS / 't224_archive/latest_source_sync_receipt.json')
     assert src['root_tree'] == subprocess.check_output(['git', 'rev-parse', 'HEAD^{tree}'], cwd=ROOT, text=True).strip()
@@ -338,7 +369,7 @@ def evict(p):
     # Leave 40s so that even exception cleanup fits the absolute hard stop.
     signal.alarm(max(1, int(deadline - start - 40)))
     try:
-        _exclusive(OUT / 'cache_started.json', dict(pid=os.getpid(), start_epoch=start, hard_stop_epoch=deadline,
+        _exclusive(OUT / started_name, dict(pid=os.getpid(), start_epoch=start, hard_stop_epoch=deadline,
                    groups=[g['group'] for g in cache['groups']], before=before, native=0, optimizer=0))
         recovered, verification = {}, []
         for group in cache['groups']:
