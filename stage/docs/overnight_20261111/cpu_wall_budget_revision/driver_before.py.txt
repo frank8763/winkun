@@ -1,0 +1,151 @@
+"""Finite, offline round-robin relay. One writer, audit gates, absolute09:00 stop."""
+from pathlib import Path
+import copy,hashlib,json,os,signal,subprocess,time,traceback
+ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent
+OUT=ROOT/'stage/runs/t493_wide8_night';DOC=ROOT/'stage/docs/overnight_20261111'
+def read(f):return json.loads(Path(f).read_text())
+def save(f,v):
+    f=Path(f);tmp=Path(str(f)+'.partial')
+    with tmp.open('w') as o:json.dump(v,o,ensure_ascii=False,separators=(',',':'));o.write('\n');o.flush();os.fsync(o.fileno())
+    tmp.replace(f)
+def sha(f):return hashlib.sha256(Path(f).read_bytes()).hexdigest()
+def stopped(folder):
+    ids=[]
+    for name in ['summary.json','audit.json']:
+        if (folder/name).exists():ids.append(read(folder/name)['pid'])
+    if (folder/'worker_generations.json').exists():
+        for g in read(folder/'worker_generations.json'):ids+=[g['parent']]+g['workers']
+    assert all(not Path('/proc',str(pid)).exists() for pid in ids);return ids
+def manifest(folder):
+    stopped(folder);rr=[dict(path=str(f.relative_to(ROOT)),bytes=f.stat().st_size,sha256=sha(f)) for f in sorted(folder.rglob('*')) if f.is_file() and f.name!='local_manifest.json']
+    save(folder/'local_manifest.json',dict(state='LOCAL_ALL_SHA_PASS_REMOTE_PENDING',files=rr))
+    assert all(sha(ROOT/r['path'])==r['sha256'] for r in rr)
+def call(action,mode,name,seconds):
+    assert seconds>0
+    with (OUT/(name+'_'+action+'.log')).open('xb') as log:
+        c=subprocess.Popen(['taskset','-c','14',str(ROOT/'run_stage.sh'),str(HERE/'t493_runtime.py'),action,mode,name],cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
+        with (OUT/'subprocesses.jsonl').open('a') as f:f.write(json.dumps(dict(pid=c.pid,pgid=c.pid,action=action,mode=mode,child=name,epoch=time.time()))+'\n');f.flush();os.fsync(f.fileno())
+        try:
+            c.wait(timeout=seconds)
+            assert c.returncode==0,('Child failed',name,action,c.returncode)
+        except BaseException:
+            try:os.killpg(c.pid,signal.SIGTERM)
+            except ProcessLookupError:pass
+            try:c.wait(timeout=3)
+            except subprocess.TimeoutExpired:
+                try:os.killpg(c.pid,signal.SIGKILL)
+                except ProcessLookupError:pass
+                c.wait()
+            raise
+def accounting():
+    ss=[read(f) for f in OUT.glob('*/summary.json')]
+    return dict(physics=sum(s['physics'] for s in ss),commands=read(OUT/'preflight.json')['commands']+sum(s['commands'] for s in ss),main_seconds=sum(s['elapsed_s'] for s in ss))
+def choose_jobs(state,p):
+    rows={r['job_id']:r for r in state['eval_rows']};by={j['id']:j for j in p['wide8_jobs']};ids=[]
+    for side in ['LEFT','RIGHT']:
+        failed=[r for r in rows.values() if side in r['job_id'] and not r['success']]
+        if failed:
+            # One contact/long-distance failure and one near-goal timeout.
+            far=min(failed,key=lambda r:(not r['collision'],-float(r['remaining_m']),r['job_id']));ids.append(far['job_id'])
+            rest=[r for r in failed if r['job_id']!=far['job_id']]
+            if rest:ids.append(min(rest,key=lambda r:(float(r['remaining_m']),r['job_id']))['job_id'])
+            else:ids.append(next(j['id'] for j in p['wide8_jobs'] if side in j['id'] and j['id']!=far['job_id']))
+        else:ids += [j['id'] for j in p['wide8_jobs'] if side in j['id']][:2]
+    assert len(ids)==len(set(ids))==4;return [by[x] for x in ids]
+def main():
+    p=read(OUT/'protocol.json');end=p['absolute_all_stop'];complete=[];arms={m:copy.deepcopy(p['initial_state']) for m in p['modes']};best=copy.deepcopy(p['initial_state']);reason='FINITE_SCHEDULE_COMPLETE';gate=None;allpids=[];remote='PENDING'
+    save(OUT/'driver_started.json',dict(pid=os.getpid(),epoch=time.time(),all_stop=end,offline_no_LLM_API_or_install=True))
+    signal.signal(signal.SIGTERM,lambda *_:(_ for _ in ()).throw(TimeoutError('T493 absolute09:00 stop')))
+    def admit(physics,commands,main,audit,learn=False):
+        a=accounting();now=time.time()
+        return a['physics']+physics<=p['root_max_physics'] and a['commands']+commands<=p['root_max_commands'] and a['main_seconds']+main<=p['root_max_main_seconds'] and now+main<p['absolute_native_stop'] and now+main+audit+900<end and (not learn or now+1200<p['absolute_learning_stop'])
+    def execute(mode,name,pp,main,audit):
+        nonlocal allpids
+        f=OUT/name;assert not f.exists();f.mkdir();pp.update(out=str(f),mode=mode,main_seconds=main,audit_seconds=audit)
+        override={k:v for k,v in pp.items() if k not in p or v!=p[k]}
+        if 'current' in override:override['current']={k:v for k,v in override['current'].items() if k!='eval_rows'}
+        if 'anchor_rows' in override:override.pop('anchor_rows');override['_load_anchor_source']=True
+        override['_root_sha256']=sha(OUT/'protocol.json');save(f/'protocol.json',override);save(f/'launch.json',dict(epoch=time.time(),mode=mode,initial=pp['initial'],registered_finite_mechanism=True))
+        save(OUT/'status.json',dict(state='RUNNING_'+name,epoch=time.time(),completed=complete,accounting=accounting(),all_stop=end))
+        call('main',mode,name,min(main+3,p['absolute_native_stop']-time.time()-5));s=read(f/'summary.json');allpids+=stopped(f);assert s['state']=='COMPLETE'
+        call('audit',mode,name,min(audit,end-time.time()-900));assert read(f/'audit.json')['state']=='PASS';allpids+=stopped(f);manifest(f);complete.append(name)
+        a=accounting();assert a['physics']<=p['root_max_physics'] and a['commands']<=p['root_max_commands'] and a['main_seconds']<=p['root_max_main_seconds']+len(complete)*3
+        save(DOC/'NIGHT_LEDGER.json',dict(epoch=time.time(),completed=complete,accounting=a,latest_child=name,latest_result=s['result'],best=best,remote='PENDING'))
+        return s['result']
+    try:
+        pp=copy.deepcopy(p);pp.update(max_physics=2*len(p['anchor_jobs'])*53334,max_commands=2*len(p['anchor_jobs'])+4,learning_seconds=1)
+        assert admit(pp['max_physics'],pp['max_commands'],1800,600)
+        anchors=execute('anchors','anchors',pp,1800,600)['anchor_rows']
+        # Round-robin gives all four distinct mechanisms a chance even if a
+        # slower branch or eventual budget boundary ends later cycles.
+        for rnd in range(p['rounds_per_arm']):
+            for i,mechanism in enumerate(p['modes']):
+                if not admit(3306708,66,1800,600,True):reason='FULL_WORST_REMAINING_ADMISSION_STOP';break
+                state=arms[mechanism];pp=copy.deepcopy(p);pp.update(initial=state['model'],current=state,mechanism=mechanism,arm_index=i,round=rnd,
+                    training_jobs=choose_jobs(state,p),anchor_rows=anchors,max_physics=3306708,max_commands=66,learning_seconds=1200)
+                name=f'{mechanism}_{rnd:02d}';r=execute('round',name,pp,1800,600)
+                if r['candidate']['accepted']:
+                    selected=r['selected'];selected['eval_rows']=read_rows(OUT/name,'FULL54_EIGHT');arms[mechanism]=selected
+                    if rank(selected)>rank(best):best=copy.deepcopy(selected)
+                save(OUT/'retained_arms.json',dict(arms=arms,best=best,epoch=time.time()))
+                if r['candidate']['all8_development_pass'] and r['candidate']['accepted']:
+                    best=copy.deepcopy(arms[mechanism]);reason='EIGHT54_ALLPASS_CONDITIONAL_UNDER8';break
+            else:continue
+            break
+        if best['wide8']['success']==54:
+            # Full under-eight regression must precede any fresh consumption.
+            caps=sum(j['case']['step_cap'] for j in p['old275_jobs']+p['six_jobs'])
+            if admit(caps,333,3000,600):
+                pp=copy.deepcopy(p);pp.update(initial=best['model'],max_physics=caps,max_commands=333,learning_seconds=1)
+                regression=execute('regression','under8_regression',pp,3000,600)
+                joint=regression['all329_pass']
+                # Both conditional repair branches start from the exact same
+                # eight-allpass Actor. No rejected model is a subsequent init.
+                if not joint:
+                    for repair in ['mean','tail']:
+                        cap383=caps+sum(j['case']['step_cap'] for j in p['wide8_jobs'])
+                        if not admit(cap383,387,4200,900,True):break
+                        pp=copy.deepcopy(p);pp.update(initial=best['model'],anchor_rows=anchors,repair_mechanism=repair,repair_steps=64,max_physics=cap383,max_commands=387,learning_seconds=1800)
+                        repair_result=execute('repair','under8_repair_'+repair,pp,4200,900)
+                        if repair_result['all383_pass']:best['model']=repair_result['model'];joint=True;break
+                if joint:
+                    caps78=2*sum(j['case']['step_cap'] for j in p['old8_jobs']+p['wide8_jobs']+p['fresh_jobs'])
+                    if admit(caps78,164,4200,900):
+                        pp=copy.deepcopy(p);pp.update(initial=best['model'],max_physics=caps78,max_commands=164,learning_seconds=1)
+                        gate=execute('gate','independent_gate',pp,4200,900)
+                        reason='FULL_UNDER8_NATIVE_GATE_PASS' if gate['native_gate'] else 'UNDER8_FRESH_OR_RELOAD_FAILED'
+                    else:reason='EIGHT_AND_UNDER8_PASS_GATE_RESOURCE_DEFERRED'
+                else:reason='EIGHT54_PASS_UNDER8_REGRESSION_FAILED_OR_DEFERRED'
+            else:reason='EIGHT54_PASS_UNDER8_RESOURCE_DEFERRED'
+        for f in OUT.glob('*/worker_generations.json'):allpids+=stopped(f.parent)
+        groups={json.loads(s)['pgid'] for s in (OUT/'subprocesses.jsonl').read_text().splitlines()}
+        for stat in Path('/proc').glob('[0-9]*/stat'):
+            try:assert int(stat.read_text().rsplit(')',1)[1].split()[2]) not in groups,('Scientific descendant alive',stat)
+            except (FileNotFoundError,ProcessLookupError):pass
+        a=accounting();report=dict(state='LOCAL_SCIENTIFIC_FINISHED_ALL_COMPLETED_CHILD_AUDITS_PASS',reason=reason,completed=complete,accounting=a,best=best,arms=arms,gate=gate,
+            eight_development_allpass=best['wide8']['success']==54,under8_full_native_gate=bool(gate and gate['native_gate']),independent_layout_or_real_robot_claim=False,remote='PENDING',all_scientific_processes_stopped=True,epoch=time.time())
+        save(OUT/'report_before_backup.json',report);save(OUT/'SEALED.json',dict(all_scientific_processes_stopped=True,scientific_pids=sorted(set(allpids)),epoch=time.time(),finalizer_writes_only_docs_after_this_point=True))
+        save(OUT/'status.json',dict(state='SCIENTIFIC_FINISHED',reason=reason,epoch=time.time()))
+        # No network operation is on a scientific relay dependency. Offline
+        # finalization never waits longer than a finite final backup allowance.
+        try:
+            c=subprocess.run(['taskset','-c','14',str(ROOT/'run_stage.sh'),str(HERE/'transport.py'),'T493'],cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=min(600,end-time.time()-180))
+            if c.returncode:raise RuntimeError(c.stdout.decode(errors='replace')[-2000:])
+            remote=read(ROOT/'stage/docs/long_distance_20261101/release_receipt_T493.json')['state']
+        except BaseException:save(DOC/'REMOTE_PENDING.json',dict(error=traceback.format_exc(),raw_preserved=True))
+        report['remote']=remote;save(DOC/'FINAL_REPORT.json',report)
+        (DOC/'FINAL_REPORT.md').write_text('# Stage宽八米通宵实际结果\n\n'+f"state={report['state']};reason={reason};remote={remote}\n\n"+json.dumps(dict(best=best['wide8'],accounting=a,eight_allpass=report['eight_development_allpass'],under8_gate=report['under8_full_native_gate'],gate=gate),ensure_ascii=False,indent=2)+'\n')
+        save(DOC/'NIGHT_STATUS.json',dict(state='FINISHED',epoch=time.time(),reason=reason,remote=remote,no_automatic_restart=True))
+        f=ROOT/'stage/docs/RESEARCH_STATUS.md';f.write_text(f"2026-11-11/12 T493宽八米通宵有限多机制接力结束，reason={reason}，best={best['wide8']}，accounting={a}，remote={remote}；独立gate={bool(gate and gate['native_gate'])}，不得将开发/探索/中心称稳定或实体部署。详overnight_20261111/FINAL_REPORT；Phase隔离。\n\n"+f.read_text())
+        subprocess.run(['git','add','stage/docs/overnight_20261111','stage/docs/long_distance_20261101','stage/docs/RESEARCH_STATUS.md'],cwd=ROOT,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+        subprocess.run(['git','commit','-m','Report bounded offline eight metre overnight relay'],cwd=ROOT,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+        try:
+            c=subprocess.run(['taskset','-c','14',str(ROOT/'run_stage.sh'),str(HERE/'transport.py'),'source_sync'],cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=min(120,end-time.time()-5))
+            if c.returncode:raise RuntimeError(c.stdout.decode(errors='replace')[-2000:])
+        except BaseException:save(DOC/'SOURCE_PENDING.json',dict(error=traceback.format_exc(),local_committed=True))
+    except BaseException:
+        save(DOC/'NIGHT_ERROR.json',dict(error=traceback.format_exc(),epoch=time.time(),completed=complete,accounting=accounting(),best=best,raw_preserved=True,no_restart=True))
+        save(DOC/'NIGHT_STATUS.json',dict(state='FAILED_STOPPED_NO_RESTART',epoch=time.time(),completed=complete))
+def rank(state):return (state['wide8']['success'],-state['wide8']['contact'],-state['distance_sum'])
+def read_rows(folder,role):return [json.loads(x) for x in (folder/'cases.jsonl').read_text().splitlines() if json.loads(x)['role']==role]
+if __name__=='__main__':main()

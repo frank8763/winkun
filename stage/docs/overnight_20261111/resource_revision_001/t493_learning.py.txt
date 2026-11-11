@@ -1,0 +1,90 @@
+"""Four finite mechanisms. Inert import; actual complete histories only."""
+from pathlib import Path
+import sys,math
+ROOT=Path(__file__).resolve().parents[3]
+sys.path.insert(0,str(ROOT/'stage/experiments/t478_wide8_pooled_credit'))
+import t478_learning as C
+P,E,M,R,torch,np=C.P,C.E,C.M,C.R,C.torch,C.np
+read,save,sha,digest=C.read,C.save,C.sha,C.digest
+make=C.make
+
+def returns(a,gamma,reward_rate=0.):
+    assert not a['end_flags'][:-1].any() and a['end_flags'][-1].sum()==1
+    result=np.empty(len(a['rewards']),np.float64);v=0.
+    for i in reversed(range(len(result))):
+        v=float(a['rewards'][i])-reward_rate*float(a['native_counts'][i])*.002+gamma**int(a['native_counts'][i])*v
+        result[i]=v
+    return result
+
+def batch(obj,arrays,p):
+    # This runs the original stringent current-policy density/history check.
+    items,original=C.batch(obj,arrays,p);rate=.002 if p['mechanism']=='time_cost' else 0.
+    for b,a in zip(items,arrays):
+        with torch.no_grad():
+            g=b['old'].new_tensor(returns(a,p['gamma_native'],rate));adv=g-obj[1](b['x'])
+        b.update(target=g,adv=adv.detach(),G0=float(g[0]),side=0 if b['group']==0 else 1)
+    if p['mechanism']=='episode_return':
+        # Two independently sampled trajectories per side. Baseline is the
+        # other episode's complete initial return, independent of own actions.
+        for side in [0,1]:
+            group=[b for b in items if b['side']==side]
+            for i,b in enumerate(group):b['adv']=b['old'].new_full(b['old'].shape,b['G0']-group[1-i]['G0'])
+    diag=[]
+    for side in [0,1]:
+        group=[b for b in items if b['side']==side]
+        rms=math.sqrt(sum(float(b['adv'].square().mean()) for b in group)/2)+1e-8
+        for b in group:
+            diag.append(dict(side=side,G0=b['G0'],raw_adv_mean=float(b['adv'].mean()),rms=rms,positive_fraction=float((b['adv']>0).double().mean()),density_error=b['density_error']))
+            if p['mechanism']!='awr':b['adv']=b['adv']/rms
+    return items,diag
+
+def anchors(obj,rows,p):
+    q=obj[0];groups=[]
+    for row in rows:
+        assert row['success'] and not row['collision'] and sha(row['path'])==row['sha256']
+        a=E.N.S.arrays(row['path']);x=torch.tensor(a['states'],device=next(q.parameters()).device)
+        with torch.no_grad():target=q.sequence(x).detach().clone()
+        groups.append(dict(id=row['job_id'],x=x,target=target,side=0 if '_LEFT_' in row['job_id'] else 1,sha256=row['sha256']))
+    assert {g['side'] for g in groups}=={0,1}
+    return groups
+
+def keep_backward(q,groups,p):
+    total=0.
+    for side in [0,1]:
+        group=[g for g in groups if g['side']==side]
+        for g in group:
+            err=.5*((q.sequence(g['x'])-g['target'])/g['x'].new_tensor(p['raw_sigma'])).square().mean(-1)
+            # Actual full success coverage, with upper20% risk to prevent
+            # a long history average hiding a small important action region.
+            loss=(.5*err.mean()+.5*err.topk(max(1,math.ceil(.2*len(err)))).values.mean())/(2*len(group))
+            (p['keep_weight']*loss).backward();total+=float(loss.detach())
+    return total
+
+def fit(obj,arrays,p,anchor_rows,guard,event,steps=None):
+    assert digest(P.state(*obj))==p['initial']['joint_hash']
+    q,v,ao,vo=obj;items,diag=batch(obj,arrays,p);refs=anchors(obj,anchor_rows,p)
+    with torch.no_grad():targets=[q.sequence(b['x']).detach().clone() for b in items]
+    trace=[]
+    for k in range(p['epochs'] if steps is None else steps):
+        guard();ao.zero_grad(set_to_none=True);vo.zero_grad(set_to_none=True);pl=vl=own=0.
+        for b,target in zip(items,targets):
+            loc=q.sequence(b['x']);lp=P.L.density(loc,b['raw'],b['atom'],p['raw_sigma'])
+            if p['mechanism']=='awr':
+                # Off-policy-compatible AWR objective; weights frozen at
+                # initial V for this batch, no fabricated on-policy ratio.
+                weight=(b['adv']/.1).clamp(-5,math.log(10.)).exp().detach()
+                loss=-(lp*weight).mean()/4
+            else:
+                ratio=(lp-b['old']).exp();term=torch.minimum(ratio*b['adv'],ratio.clamp(.8,1.2)*b['adv'])
+                loss=-term.sum()/(4*math.ceil(53334/100)) if p['mechanism']=='episode_return' else -term.mean()/4
+            anchor=.5*((loc-target)/loc.new_tensor(p['raw_sigma'])).square().mean()/4
+            (loss+p['keep_weight']*anchor).backward();pl+=float(loss.detach());own+=float(anchor.detach())
+            val=.5*(v(b['x'])-b['target']).square().mean()/4;val.backward();vl+=float(val.detach())
+        preserve=keep_backward(q,refs,p)
+        an=float(torch.nn.utils.clip_grad_norm_(q.parameters(),1.,error_if_nonfinite=True));vn=float(torch.nn.utils.clip_grad_norm_(v.parameters(),1.,error_if_nonfinite=True))
+        event('BEFORE',k);ao.step();vo.step();event('AFTER',k)
+        with torch.no_grad():
+            kl=sum(float(((z:=(P.L.density(q.sequence(b['x']),b['raw'],b['atom'],p['raw_sigma'])-b['old'])).exp()-1-z).mean()) for b in items)/4
+        trace.append(dict(epoch=k,policy_loss=pl,value_loss=vl,training_keep=own,success_risk_keep=preserve,actor_norm=an,value_norm=vn,KL=kl))
+        if kl>p['target_kl']:break
+    return dict(mechanism=p['mechanism'],epochs=len(trace),trace=trace,batch=diag,actual_anchor_count=len(refs),Actor_Adam=len(trace),Value_Adam=len(trace),no_runtime_teacher=True)

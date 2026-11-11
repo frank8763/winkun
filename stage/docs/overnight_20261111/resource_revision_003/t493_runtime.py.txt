@@ -1,0 +1,196 @@
+"""One native writer per child, strict arrays/history/Adam audits."""
+from pathlib import Path
+import copy,fcntl,json,os,shutil,sys,time,traceback
+ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent
+# Restrict BEFORE importing historical Stage modules, some of which pinCPU0
+# at import time. No other chat/process configuration is read or modified.
+os.environ['CUDA_VISIBLE_DEVICES']=''
+os.environ['MUJOCO_GL']='disable'
+_real_affinity=os.sched_setaffinity
+_STAGE_CPUS={14,15}
+def _stage_affinity(pid,values):
+    values=set(values)
+    if values<=_STAGE_CPUS:return _real_affinity(pid,values)
+    # Historical worker/import numbering is local to this Stage process.
+    mapped={14+(int(v)%2) for v in values}
+    return _real_affinity(pid,mapped)
+os.sched_setaffinity=_stage_affinity
+os.sched_setaffinity(0,{14})
+sys.path.insert(0,str(HERE));import t493_learning as L
+sys.path.insert(0,str(ROOT/'stage/experiments/t478_wide8_pooled_credit'));import t478_runtime as T
+B,P,E,M,R,torch,np=T.B,T.P,T.E,T.M,T.R,T.torch,T.np
+read,save,sha,digest=T.read,T.save,T.sha,T.digest
+OUT=ROOT/'stage/runs/t493_wide8_night';ACTIVE=OUT
+def cpu_worker(pipe,index,p,counts):
+    assert os.environ.get('CUDA_VISIBLE_DEVICES')=='' and not torch.cuda.is_initialized()
+    real=os.sched_setaffinity;cpus=p['stage_cpus'];assert cpus==[14,15]
+    def pinned(pid,mask):
+        values=set(mask)
+        if pid==0 and values=={index}:return real(pid,{cpus[index]})
+        assert values<=set(cpus);return real(pid,values)
+    os.sched_setaffinity=pinned
+    T.worker(pipe,index,p,counts)
+
+class Pool(T.Pool):
+    def __init__(self,p,counts,guard):
+        self.guard,self.children,self.pipes=guard,[],[];ctx=R.M.mp.get_context('spawn')
+        try:
+            for i in range(2):
+                a,b=ctx.Pipe();c=ctx.Process(target=cpu_worker,args=(b,i,p,counts));c.start();b.close();self.children.append(c);self.pipes.append(a)
+            self.ready=[self.receive(i) for i in range(2)];assert all(v['state']=='READY' for v in self.ready)
+            f=Path(p['out'])/'worker_generations.json';g=read(f) if f.exists() else [];g.append(dict(parent=os.getpid(),workers=[c.pid for c in self.children],epoch=time.time(),stage_cpus=p['stage_cpus'],gpu=False));save(f,g)
+        except BaseException:self.close();raise
+
+def verify(p,full=False):
+    root=read(OUT/'protocol.json');assert os.environ.get('CUDA_VISIBLE_DEVICES')=='' and set(os.sched_getaffinity(0))<=set(root['stage_cpus']) and not torch.cuda.is_initialized();assert sha(HERE/'protocol.json')==sha(OUT/'protocol.json')
+    assert M.used(OUT)<=root['max_bytes'] and M.used()-M.used(OUT)+root['max_bytes']<=2**30 and shutil.disk_usage(ROOT).free>=40*2**30
+    for f,h in (root['inputs'] if full else root['protected_files']).items():assert sha(f)==h,f
+def setup(folder):
+    global ACTIVE
+    ACTIVE=Path(folder);B.OUT,B.ACTIVE,B.verify=OUT,ACTIVE,verify;M.OUT,M.verify=ACTIVE,verify;M.setup_runtime()
+def rows(folder,name='cases.jsonl'):
+    f=Path(folder)/name;return [json.loads(x) for x in f.read_text().splitlines()] if f.exists() else []
+def stopped(folder):
+    ids=[read(folder/'summary.json')['pid']]
+    if (folder/'worker_generations.json').exists():
+        for g in read(folder/'worker_generations.json'):ids+=[g['parent']]+g['workers']
+    assert all(not Path('/proc',str(pid)).exists() for pid in ids);return ids
+def event(which):
+    def emit(stage,k):
+        with (ACTIVE/'optimizer_calls.jsonl').open('a') as f:f.write(json.dumps([which,stage,k])+'\n')
+    return emit
+def tally(values):return R.M.tally([r for a,r in values])
+def safe(values):return sorted(r['job_id'] for a,r in values if r['success'] and not r['collision'])
+def acceptance(rr,p,model):
+    assert len(rr)==54 and len({r['job_id'] for r in rr})==54 and all(r['complete'] and not r['administrative_censor'] for r in rr)
+    count=R.M.tally(rr);ids={r['job_id'] for r in rr if r['success'] and not r['collision']};before=set(p['current']['success_ids'])
+    sides={side:sum(side in x for x in ids) for side in ['LEFT','RIGHT']}
+    no_side_loss=all(sides[s]>=sum(s in x for x in before) for s in sides)
+    distance=sum(min(8.,float(r['remaining_m'])) for r in rr)
+    improved=count['success']>p['current']['wide8']['success']
+    flat_progress=count['success']==p['current']['wide8']['success'] and before<=ids and distance<p['current']['distance_sum']-.02
+    admitted=count['invalid']==count['censored']==0 and count['contact']<=p['current']['wide8']['contact'] and no_side_loss and (improved or flat_progress)
+    return dict(model=model,wide8=count,success_ids=sorted(ids),distance_sum=distance,sides=sides,lost_ids=sorted(before-ids),gained_ids=sorted(ids-before),accepted=admitted,all8_development_pass=count['success']==54)
+def child_protocol(folder):
+    override=read(Path(folder)/'protocol.json');assert override.pop('_root_sha256')==sha(OUT/'protocol.json');p=read(OUT/'protocol.json');p.update(override)
+    if p.pop('_load_anchor_source',False):p['anchor_rows']=read(OUT/'anchors/summary.json')['result']['anchor_rows']
+    return p
+
+def main(mode,child):
+    folder=OUT/child;p=child_protocol(folder);setup(folder);verify(p,True);E.N.offline();E.L.install_stop_handlers();rt=B.Runtime(p)
+    state,error,result='FAILED',None,{};objects=shadows=None
+    try:
+        rt.pool=Pool(dict(p,native_stop_epoch=rt.deadline),rt.counts,rt.guard)
+        if mode=='anchors':
+            vv=rt.request(p['anchor_jobs'],p['initial'],'FROZEN_INITIAL_SUCCESSES',full=True)
+            for a,r in vv:
+                old=p['original_cases'][r['job_id']];assert r['success'] and not r['collision'] and r['array_digest']==old['array_digest'] and r['integration_sha256']==old['integration_sha256']
+            rt.request(p['anchor_jobs'],p['initial'],'EXACT_INITIAL_SUCCESSES',full=True,references=[r for a,r in vv]);result=dict(anchor_rows=[r for a,r in vv],historical_reconstruction_NOT_new_independent=True)
+        elif mode=='round':
+            seeds=[[p['seed'],p['arm_index'],p['round'],i] for i in range(4)]
+            vv=rt.request(p['training_jobs'],p['initial'],'FRESH_EIGHT_TRAIN',seeds=seeds,full=True)
+            rt.request(p['training_jobs'],p['initial'],'EXACT_EIGHT_TRAIN',seeds=seeds,full=True,references=[r for a,r in vv])
+            # Read the exact saved arrays before learning, never stochastic
+            # evaluation or a teacher trajectory disguised as this policy.
+            arrays=[E.N.S.arrays(r['path']) for a,r in vv];refs=p['anchor_rows']
+            objects=L.make(p);shadows=L.make(p)
+            update=L.fit(objects,arrays,p,refs,lambda:rt.guard(True),event('live'))
+            duplicate=L.fit(shadows,arrays,p,refs,lambda:rt.guard(True),event('shadow'))
+            assert update==duplicate and digest(P.state(*objects))==digest(P.state(*shadows))
+            proposal=P.export(objects,folder/'proposal.pt.gz',p['model_bytes'])
+            vals=rt.request(p['wide8_jobs'],proposal,'FULL54_EIGHT');candidate=acceptance([r for a,r in vals],p,proposal)
+            if not candidate['accepted']:
+                for obj in [objects,shadows]:P.load(obj,P.checkpoint(p['initial']['path'])['joint_state'])
+            result=dict(samples=[r for a,r in vv],update=update,candidate=candidate,selected=candidate if candidate['accepted'] else p['current'],rollback_joint_hash=digest(P.state(*objects)))
+        elif mode=='regression':
+            vv=rt.request(p['old275_jobs']+p['six_jobs'],p['initial'],'FULL329_UNDER8_REGRESSION')
+            result=dict(old275=tally(vv[:275]),wide6=tally(vv[275:]),all329_pass=all(r['success'] and not r['collision'] for a,r in vv),rows=[r for a,r in vv])
+        elif mode=='gate':
+            # Save complete current8 history for all54, fresh16, and old8.
+            jobs=p['old8_jobs']+p['wide8_jobs']+p['fresh_jobs']
+            vv=rt.request(jobs,p['initial'],'GATE_FULL78_FIRST',full=True)
+            old=tally(vv[:8]);dev=tally(vv[8:62]);fresh=tally(vv[62:]);passed=all(r['success'] and not r['collision'] for a,r in vv)
+            exact=0
+            if passed:
+                # New processes and independently read model bytes. Same
+                # paths are immutable sinks: worker asserts exact file bytes.
+                rt.pool.close();rt.commands+=2
+                dest=folder/'independent_reload.pt.gz';shutil.copyfile(p['initial']['path'],dest);assert sha(dest)==p['initial']['sha256']
+                model=dict(p['initial'],path=str(dest));rt.pool=Pool(dict(p,native_stop_epoch=rt.deadline),rt.counts,rt.guard);rt.commands+=2
+                rt.request(jobs,model,'INDEPENDENT_FULL78_RELOAD',full=True,references=[r for a,r in vv]);exact=78
+            result=dict(old8=old,wide8=dev,fresh16=fresh,reload78=dict(valid=exact,exact=exact) if exact else None,native_gate=passed and exact==78,rows=[r for a,r in vv])
+        elif mode=='repair':
+            groups=repair_groups(p);objects=L.make(p);shadows=L.make(p)
+            update=fit_repair(objects,groups,p,lambda:rt.guard(True),event('live'))
+            duplicate=fit_repair(shadows,groups,p,lambda:rt.guard(True),event('shadow'))
+            assert update==duplicate and digest(P.state(*objects))==digest(P.state(*shadows))
+            proposal=P.export(objects,folder/'proposal.pt.gz',p['model_bytes'])
+            vv=rt.request(p['old275_jobs']+p['six_jobs']+p['wide8_jobs'],proposal,'FULL383_REPAIR')
+            accepted=all(r['success'] and not r['collision'] for a,r in vv)
+            if not accepted:
+                for obj in [objects,shadows]:P.load(obj,P.checkpoint(p['initial']['path'])['joint_state'])
+            result=dict(update=update,model=proposal,old275=tally(vv[:275]),wide6=tally(vv[275:329]),wide8=tally(vv[329:]),all383_pass=accepted,rollback_joint_hash=digest(P.state(*objects)))
+        else:raise AssertionError(mode)
+        state='COMPLETE'
+    except BaseException:
+        error=traceback.format_exc();back={}
+        for name,obj in [('live',objects),('shadow',shadows)]:
+            if obj is not None:P.load(obj,P.checkpoint(p['initial']['path'])['joint_state']);back[name]=digest(P.state(*obj));assert back[name]==p['initial']['joint_hash']
+        save(folder/'failure.json',dict(error=error,raw_preserved=True,no_restart=True,joint_rollback=back))
+    finally:
+        if rt.pool:rt.pool.close();rt.commands+=2
+        save(folder/'summary.json',dict(state=state,pid=os.getpid(),mode=mode,error=error,physics=sum(rt.counts),commands=rt.commands,elapsed_s=time.time()-rt.start,result=result))
+        fcntl.flock(rt.lock,fcntl.LOCK_UN);rt.lock.close()
+    assert state=='COMPLETE',error
+
+def repair_groups(p):
+    old=P.old_data(p);assert len(old)==211;groups=P.packs(old,'cpu')
+    return groups
+def fit_repair(obj,groups,p,guard,emit):
+    q,v,ao,vo=obj;refs=L.anchors(obj,p['anchor_rows'],p);trace=[]
+    for k in range(p['repair_steps']):
+        guard();ao.zero_grad(set_to_none=True);loss_sum=0.
+        for task in range(8):
+            group=[g for g in groups if g['task']==task];g=group[k%len(group)];err=P.action_loss(q.sequence(g['x']),g['y']).mean(-1)
+            loss=err.mean()/8 if p['repair_mechanism']=='mean' else (.5*err.mean()+.5*err.topk(max(1,int(np.ceil(.2*len(err))))).values.mean())/8
+            loss.backward();loss_sum+=float(loss.detach())
+        keep=L.keep_backward(q,refs,p);norm=float(torch.nn.utils.clip_grad_norm_(q.parameters(),1.,error_if_nonfinite=True))
+        emit('BEFORE',k);ao.step();emit('AFTER',k);trace.append(dict(epoch=k,old_reference_loss=loss_sum,eight_keep=keep,norm=norm))
+    return dict(trace=trace,Actor_Adam=len(trace),Value_Adam=0,teacher_at_deployment=False)
+
+def audit(mode,child):
+    folder=OUT/child;p=child_protocol(folder);setup(folder);verify(p,True);s=read(folder/'summary.json');assert s['state']=='COMPLETE' and not (folder/'audit.json').exists();stopped(folder)
+    rr=rows(folder);rep=rows(folder,'replays.jsonl');by={r['path']:r for r in rr}
+    for r in rr:
+        assert sha(r['path'])==r['sha256'];a=E.N.S.arrays(r['path']);assert int(a['native_counts'].sum())==r['physics']
+        assert all(digest(v)==r['array_hashes'][k] for k,v in a.items())
+        assert not a['end_flags'][:-1].any() and a['end_flags'][-1].tolist()==[int(r['collision']),int(r['success']),int(r['timeout'])]
+        if r['full']:M.audit_full_history(p,r,a)
+    for r in rep:
+        old=by[r['reference_path']];assert r['exact'] and r['array_hashes']==old['array_hashes'] and r['array_digest']==old['array_digest'] and r['integration_sha256']==old['integration_sha256']
+    discarded=0
+    if mode=='anchors':
+        assert len(rr)==len(rep)==len(p['anchor_jobs']) and all(r['success'] for r in rr)
+        for r in rr:assert r['array_hashes']==p['original_cases'][r['job_id']]['array_hashes']
+    elif mode=='round':
+        result=s['result'];assert result['samples']==rr[:4] and len(rep)==4 and len(rr)==58
+        obj=L.make(p);update=L.fit(obj,[E.N.S.arrays(r['path']) for r in rr[:4]],p,p['anchor_rows'],lambda:None,lambda *_:None)
+        c=result['candidate'];assert update==result['update'] and digest(P.state(*obj))==c['model']['joint_hash'] and sha(c['model']['path'])==c['model']['sha256']
+        assert acceptance(rr[4:],p,c['model'])==c
+        if not c['accepted']:P.load(obj,P.checkpoint(p['initial']['path'])['joint_state'])
+        assert digest(P.state(*obj))==result['rollback_joint_hash'];discarded=2*update['epochs']
+    elif mode=='repair':
+        obj=L.make(p);update=fit_repair(obj,repair_groups(p),p,lambda:None,lambda *_:None);assert update==s['result']['update'] and digest(P.state(*obj))==s['result']['model']['joint_hash'];discarded=len(update['trace'])
+        assert s['result']['all383_pass']==(len(rr)==383 and all(r['success'] and not r['collision'] for r in rr))
+        if not s['result']['all383_pass']:P.load(obj,P.checkpoint(p['initial']['path'])['joint_state'])
+        assert digest(P.state(*obj))==s['result']['rollback_joint_hash']
+    elif mode=='regression':assert s['result']['all329_pass']==(len(rr)==329 and all(r['success'] and not r['collision'] for r in rr))
+    elif mode=='gate':assert len(rr)==78 and (len(rep)==78 if s['result']['native_gate'] else len(rep)==0)
+    assert s['physics']==sum(r['physics'] for r in rr+rep)
+    assert s['commands']==len(rr)+len(rep)+4+(4 if mode=='gate' and s['result']['native_gate'] else 0)
+    save(folder/'audit.json',dict(state='PASS',pid=os.getpid(),native=0,historical_discarded_Adam=discarded,physics=s['physics'],commands=s['commands'],full_arrays_density_history_reward_and_Adam_verified=True))
+if __name__=='__main__':
+    try:globals()[sys.argv[1]](*sys.argv[2:])
+    except BaseException:
+        if OUT.exists():save(OUT/f'error_{sys.argv[1]}_{os.getpid()}.json',dict(error=traceback.format_exc(),epoch=time.time()))
+        raise
