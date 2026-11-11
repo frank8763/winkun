@@ -1,3 +1,5 @@
+2026-11-11 T487仅宽八米PPO单候选结束，completed=['capture', 'pair']/reason=RETAINED_PROGRESS_STOP_FURTHER_LEARNING/physics=3152297/commands=76/remote=PENDING；保留八米35/54，旧275/六米本轮未运行null，不称联合能力或稳定八米。详review_20261111/T487_FINAL_REPORT，Phase隔离。
+
 2026-11-11用户最新明确下一步只跑宽八米。T487单任务PPO已注册/0native8丢弃Adam正式预检PASS，尚待唯一launch。起点T48526/54研究候选（非原安全基线晋升），仅八米4失败新探索+4exact，移除所有旧task/old211/旧投影，当前八米history保持1/targetKL.005，16epoch+shadow/一末54验收；成功>26且接触<=2才保留八米研究，旧275/six/fresh16/reload78本轮null，不称联合/全图/未见泛化。4M/100cmd/3000main/4200all，今晚20:30更早从严，root8MiB/global1GiB/free40。7已结束文本本地immutable gzip逐字节恢复/auditPASS释放约2.47MB，原模型/NPZ/错误/协议不动、原日志字节全本地保留，T486远端PENDING未冒称备份齐；旧编码文本用t487control.text，未来原archive须按恢复账本解码，Stage/Phase隔离。详review_20261111/T487_PLAN/READINESS。
 
 2026-11-11 T486定向旧左五米经验/实际Adam位移投影单候选结束，completed=['capture', 'pair']/reason=ONE_TARGETED_ACTUAL_ADAM_PROJECTION_COMPLETE/physics=8240778/commands=413/remote=PENDING；保留8m8/54 six53/54 old274/275，fresh16/reload78未执行不称稳定。详review_20261111/T486_FINAL_REPORT，Phase隔离。

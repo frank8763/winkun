@@ -1,0 +1,265 @@
+{
+  "completed": [
+    "capture",
+    "pair"
+  ],
+  "latest": {
+    "state": "COMPLETE",
+    "pid": 691361,
+    "mode": "pair",
+    "error": null,
+    "physics": 2791695,
+    "commands": 58,
+    "elapsed_s": 830.0434823036194,
+    "result": {
+      "update": {
+        "trace": [
+          {
+            "epoch": 0,
+            "policy_loss": 2.1337098754514727e-16,
+            "value_loss": 0.09987469955915865,
+            "eight_current_history_keep": 0.0,
+            "actor_norm": 1.5742428926000318,
+            "value_norm": 0.4848457632271098,
+            "KL": 3.1215707070081554e-05
+          },
+          {
+            "epoch": 1,
+            "policy_loss": -0.000491024760456357,
+            "value_loss": 0.10131758287302453,
+            "eight_current_history_keep": 1.5621192856299684e-05,
+            "actor_norm": 1.529865641760806,
+            "value_norm": 0.560383380058111,
+            "KL": 0.00016557593123108427
+          },
+          {
+            "epoch": 2,
+            "policy_loss": -0.001449190598198498,
+            "value_loss": 0.10262133291964806,
+            "eight_current_history_keep": 8.209749832302995e-05,
+            "actor_norm": 1.4256825636670578,
+            "value_norm": 0.617732796034844,
+            "KL": 0.0005057310811434829
+          },
+          {
+            "epoch": 3,
+            "policy_loss": -0.0027883066943925807,
+            "value_loss": 0.10360566083263029,
+            "eight_current_history_keep": 0.0002510940636203982,
+            "actor_norm": 1.277789188348341,
+            "value_norm": 0.6580339917521209,
+            "KL": 0.0011750712917281564
+          },
+          {
+            "epoch": 4,
+            "policy_loss": -0.00444287199450098,
+            "value_loss": 0.10412703373008665,
+            "eight_current_history_keep": 0.000586498703154208,
+            "actor_norm": 1.1038297663269092,
+            "value_norm": 0.6833186087553077,
+            "KL": 0.0022819774726842573
+          },
+          {
+            "epoch": 5,
+            "policy_loss": -0.006163975559035298,
+            "value_loss": 0.10409494436490362,
+            "eight_current_history_keep": 0.0011464846606794093,
+            "actor_norm": 0.6989798091778162,
+            "value_norm": 0.69599974309179,
+            "KL": 0.0037085963984932534
+          },
+          {
+            "epoch": 6,
+            "policy_loss": -0.007353047552291762,
+            "value_loss": 0.10347885638742892,
+            "eight_current_history_keep": 0.0018778110490155196,
+            "actor_norm": 1.1219548868009672,
+            "value_norm": 0.6983797282484212,
+            "KL": 0.004929390747852883
+          },
+          {
+            "epoch": 7,
+            "policy_loss": -0.007891581305222085,
+            "value_loss": 0.1023030834986474,
+            "eight_current_history_keep": 0.002515243246452792,
+            "actor_norm": 1.7033440367564991,
+            "value_norm": 0.6923380040574373,
+            "KL": 0.005764262462117066
+          }
+        ],
+        "epochs": 8,
+        "pooled_advantage": [
+          {
+            "group": 0,
+            "raw_mean": 0.380969897720469,
+            "normalized_mean": 0.9300346557310403,
+            "shared_mean": -0.12108608180049094,
+            "shared_sd": 0.5398250231076885
+          },
+          {
+            "group": 0,
+            "raw_mean": -0.6231420613214509,
+            "normalized_mean": -0.9300346557310404,
+            "shared_mean": -0.12108608180049094,
+            "shared_sd": 0.5398250231076885
+          },
+          {
+            "group": 1,
+            "raw_mean": 0.2723874163999126,
+            "normalized_mean": 0.006338106320156495,
+            "shared_mean": 0.2714974813892046,
+            "shared_sd": 0.1404102370258187
+          },
+          {
+            "group": 1,
+            "raw_mean": 0.27060754637849654,
+            "normalized_mean": -0.0063381063201571235,
+            "shared_mean": 0.2714974813892046,
+            "shared_sd": 0.1404102370258187
+          }
+        ],
+        "eight_only": true,
+        "oldtask_gradient_or_reference": false
+      },
+      "candidates": {
+        "B": {
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t487_eight_only/pair/proposal_B.pt.gz",
+            "sha256": "36a5a4a30518086b7b63d1e474709bcd1002b4f9e14185653e68a056dcadef1c",
+            "policy_hash": "e56b58e7a1dcdd823ba18244438bf2357a609f510c100ef5264238422312b5d4",
+            "joint_hash": "b8f466cd5a4fb221b30329643df2d624956fc6cea36bf0444cad2bbf0dc1da36",
+            "bytes": 1587925
+          },
+          "wide8": {
+            "valid": 54,
+            "success": 35,
+            "contact": 1,
+            "timeout": 18,
+            "invalid": 0,
+            "censored": 0
+          },
+          "success_ids": [
+            "wide117_8m_dev6_LEFT_00",
+            "wide117_8m_dev6_LEFT_03",
+            "wide117_8m_dev6_LEFT_06",
+            "wide117_8m_dev6_LEFT_07",
+            "wide117_8m_dev6_LEFT_09",
+            "wide117_8m_dev6_LEFT_12",
+            "wide117_8m_dev6_LEFT_13",
+            "wide117_8m_dev6_LEFT_15",
+            "wide117_8m_dev6_LEFT_18",
+            "wide117_8m_dev6_LEFT_21",
+            "wide117_8m_dev6_LEFT_24",
+            "wide117_8m_dev6_RIGHT_00",
+            "wide117_8m_dev6_RIGHT_01",
+            "wide117_8m_dev6_RIGHT_02",
+            "wide117_8m_dev6_RIGHT_03",
+            "wide117_8m_dev6_RIGHT_04",
+            "wide117_8m_dev6_RIGHT_05",
+            "wide117_8m_dev6_RIGHT_06",
+            "wide117_8m_dev6_RIGHT_09",
+            "wide117_8m_dev6_RIGHT_10",
+            "wide117_8m_dev6_RIGHT_11",
+            "wide117_8m_dev6_RIGHT_12",
+            "wide117_8m_dev6_RIGHT_13",
+            "wide117_8m_dev6_RIGHT_14",
+            "wide117_8m_dev6_RIGHT_15",
+            "wide117_8m_dev6_RIGHT_16",
+            "wide117_8m_dev6_RIGHT_18",
+            "wide117_8m_dev6_RIGHT_19",
+            "wide117_8m_dev6_RIGHT_20",
+            "wide117_8m_dev6_RIGHT_21",
+            "wide117_8m_dev6_RIGHT_22",
+            "wide117_8m_dev6_RIGHT_23",
+            "wide117_8m_dev6_RIGHT_24",
+            "wide117_8m_dev6_RIGHT_25",
+            "wide117_8m_dev6_RIGHT_26"
+          ],
+          "lost_ids": [
+            "wide117_8m_dev6_LEFT_16",
+            "wide117_8m_dev6_LEFT_20",
+            "wide117_8m_dev6_LEFT_22"
+          ],
+          "accepted": true,
+          "old275": null,
+          "wide6": null,
+          "eight_only_research_NOT_joint_retention": true
+        }
+      },
+      "chosen_arm": "B",
+      "selected": {
+        "model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t487_eight_only/pair/proposal_B.pt.gz",
+          "sha256": "36a5a4a30518086b7b63d1e474709bcd1002b4f9e14185653e68a056dcadef1c",
+          "policy_hash": "e56b58e7a1dcdd823ba18244438bf2357a609f510c100ef5264238422312b5d4",
+          "joint_hash": "b8f466cd5a4fb221b30329643df2d624956fc6cea36bf0444cad2bbf0dc1da36",
+          "bytes": 1587925
+        },
+        "wide8": {
+          "valid": 54,
+          "success": 35,
+          "contact": 1,
+          "timeout": 18,
+          "invalid": 0,
+          "censored": 0
+        },
+        "success_ids": [
+          "wide117_8m_dev6_LEFT_00",
+          "wide117_8m_dev6_LEFT_03",
+          "wide117_8m_dev6_LEFT_06",
+          "wide117_8m_dev6_LEFT_07",
+          "wide117_8m_dev6_LEFT_09",
+          "wide117_8m_dev6_LEFT_12",
+          "wide117_8m_dev6_LEFT_13",
+          "wide117_8m_dev6_LEFT_15",
+          "wide117_8m_dev6_LEFT_18",
+          "wide117_8m_dev6_LEFT_21",
+          "wide117_8m_dev6_LEFT_24",
+          "wide117_8m_dev6_RIGHT_00",
+          "wide117_8m_dev6_RIGHT_01",
+          "wide117_8m_dev6_RIGHT_02",
+          "wide117_8m_dev6_RIGHT_03",
+          "wide117_8m_dev6_RIGHT_04",
+          "wide117_8m_dev6_RIGHT_05",
+          "wide117_8m_dev6_RIGHT_06",
+          "wide117_8m_dev6_RIGHT_09",
+          "wide117_8m_dev6_RIGHT_10",
+          "wide117_8m_dev6_RIGHT_11",
+          "wide117_8m_dev6_RIGHT_12",
+          "wide117_8m_dev6_RIGHT_13",
+          "wide117_8m_dev6_RIGHT_14",
+          "wide117_8m_dev6_RIGHT_15",
+          "wide117_8m_dev6_RIGHT_16",
+          "wide117_8m_dev6_RIGHT_18",
+          "wide117_8m_dev6_RIGHT_19",
+          "wide117_8m_dev6_RIGHT_20",
+          "wide117_8m_dev6_RIGHT_21",
+          "wide117_8m_dev6_RIGHT_22",
+          "wide117_8m_dev6_RIGHT_23",
+          "wide117_8m_dev6_RIGHT_24",
+          "wide117_8m_dev6_RIGHT_25",
+          "wide117_8m_dev6_RIGHT_26"
+        ],
+        "lost_ids": [
+          "wide117_8m_dev6_LEFT_16",
+          "wide117_8m_dev6_LEFT_20",
+          "wide117_8m_dev6_LEFT_22"
+        ],
+        "accepted": true,
+        "old275": null,
+        "wide6": null,
+        "eight_only_research_NOT_joint_retention": true
+      },
+      "joint_hash_after_rollback": {
+        "B": "b8f466cd5a4fb221b30329643df2d624956fc6cea36bf0444cad2bbf0dc1da36"
+      },
+      "old275": null,
+      "wide6": null
+    },
+    "fresh16": null,
+    "reload78": null,
+    "eight_stability_gate": false
+  },
+  "epoch": 1794395625.4045708,
+  "remote": "PENDING"
+}

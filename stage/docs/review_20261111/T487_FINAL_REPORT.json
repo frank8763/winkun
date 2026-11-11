@@ -1,0 +1,943 @@
+{
+  "state": "COMPLETE_AUDITED_LOCAL",
+  "reason": "RETAINED_PROGRESS_STOP_FURTHER_LEARNING",
+  "completed": [
+    "capture",
+    "pair"
+  ],
+  "physics": 3152297,
+  "commands": 76,
+  "summaries": {
+    "pair": {
+      "state": "COMPLETE",
+      "pid": 691361,
+      "mode": "pair",
+      "error": null,
+      "physics": 2791695,
+      "commands": 58,
+      "elapsed_s": 830.0434823036194,
+      "result": {
+        "update": {
+          "trace": [
+            {
+              "epoch": 0,
+              "policy_loss": 2.1337098754514727e-16,
+              "value_loss": 0.09987469955915865,
+              "eight_current_history_keep": 0.0,
+              "actor_norm": 1.5742428926000318,
+              "value_norm": 0.4848457632271098,
+              "KL": 3.1215707070081554e-05
+            },
+            {
+              "epoch": 1,
+              "policy_loss": -0.000491024760456357,
+              "value_loss": 0.10131758287302453,
+              "eight_current_history_keep": 1.5621192856299684e-05,
+              "actor_norm": 1.529865641760806,
+              "value_norm": 0.560383380058111,
+              "KL": 0.00016557593123108427
+            },
+            {
+              "epoch": 2,
+              "policy_loss": -0.001449190598198498,
+              "value_loss": 0.10262133291964806,
+              "eight_current_history_keep": 8.209749832302995e-05,
+              "actor_norm": 1.4256825636670578,
+              "value_norm": 0.617732796034844,
+              "KL": 0.0005057310811434829
+            },
+            {
+              "epoch": 3,
+              "policy_loss": -0.0027883066943925807,
+              "value_loss": 0.10360566083263029,
+              "eight_current_history_keep": 0.0002510940636203982,
+              "actor_norm": 1.277789188348341,
+              "value_norm": 0.6580339917521209,
+              "KL": 0.0011750712917281564
+            },
+            {
+              "epoch": 4,
+              "policy_loss": -0.00444287199450098,
+              "value_loss": 0.10412703373008665,
+              "eight_current_history_keep": 0.000586498703154208,
+              "actor_norm": 1.1038297663269092,
+              "value_norm": 0.6833186087553077,
+              "KL": 0.0022819774726842573
+            },
+            {
+              "epoch": 5,
+              "policy_loss": -0.006163975559035298,
+              "value_loss": 0.10409494436490362,
+              "eight_current_history_keep": 0.0011464846606794093,
+              "actor_norm": 0.6989798091778162,
+              "value_norm": 0.69599974309179,
+              "KL": 0.0037085963984932534
+            },
+            {
+              "epoch": 6,
+              "policy_loss": -0.007353047552291762,
+              "value_loss": 0.10347885638742892,
+              "eight_current_history_keep": 0.0018778110490155196,
+              "actor_norm": 1.1219548868009672,
+              "value_norm": 0.6983797282484212,
+              "KL": 0.004929390747852883
+            },
+            {
+              "epoch": 7,
+              "policy_loss": -0.007891581305222085,
+              "value_loss": 0.1023030834986474,
+              "eight_current_history_keep": 0.002515243246452792,
+              "actor_norm": 1.7033440367564991,
+              "value_norm": 0.6923380040574373,
+              "KL": 0.005764262462117066
+            }
+          ],
+          "epochs": 8,
+          "pooled_advantage": [
+            {
+              "group": 0,
+              "raw_mean": 0.380969897720469,
+              "normalized_mean": 0.9300346557310403,
+              "shared_mean": -0.12108608180049094,
+              "shared_sd": 0.5398250231076885
+            },
+            {
+              "group": 0,
+              "raw_mean": -0.6231420613214509,
+              "normalized_mean": -0.9300346557310404,
+              "shared_mean": -0.12108608180049094,
+              "shared_sd": 0.5398250231076885
+            },
+            {
+              "group": 1,
+              "raw_mean": 0.2723874163999126,
+              "normalized_mean": 0.006338106320156495,
+              "shared_mean": 0.2714974813892046,
+              "shared_sd": 0.1404102370258187
+            },
+            {
+              "group": 1,
+              "raw_mean": 0.27060754637849654,
+              "normalized_mean": -0.0063381063201571235,
+              "shared_mean": 0.2714974813892046,
+              "shared_sd": 0.1404102370258187
+            }
+          ],
+          "eight_only": true,
+          "oldtask_gradient_or_reference": false
+        },
+        "candidates": {
+          "B": {
+            "model": {
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t487_eight_only/pair/proposal_B.pt.gz",
+              "sha256": "36a5a4a30518086b7b63d1e474709bcd1002b4f9e14185653e68a056dcadef1c",
+              "policy_hash": "e56b58e7a1dcdd823ba18244438bf2357a609f510c100ef5264238422312b5d4",
+              "joint_hash": "b8f466cd5a4fb221b30329643df2d624956fc6cea36bf0444cad2bbf0dc1da36",
+              "bytes": 1587925
+            },
+            "wide8": {
+              "valid": 54,
+              "success": 35,
+              "contact": 1,
+              "timeout": 18,
+              "invalid": 0,
+              "censored": 0
+            },
+            "success_ids": [
+              "wide117_8m_dev6_LEFT_00",
+              "wide117_8m_dev6_LEFT_03",
+              "wide117_8m_dev6_LEFT_06",
+              "wide117_8m_dev6_LEFT_07",
+              "wide117_8m_dev6_LEFT_09",
+              "wide117_8m_dev6_LEFT_12",
+              "wide117_8m_dev6_LEFT_13",
+              "wide117_8m_dev6_LEFT_15",
+              "wide117_8m_dev6_LEFT_18",
+              "wide117_8m_dev6_LEFT_21",
+              "wide117_8m_dev6_LEFT_24",
+              "wide117_8m_dev6_RIGHT_00",
+              "wide117_8m_dev6_RIGHT_01",
+              "wide117_8m_dev6_RIGHT_02",
+              "wide117_8m_dev6_RIGHT_03",
+              "wide117_8m_dev6_RIGHT_04",
+              "wide117_8m_dev6_RIGHT_05",
+              "wide117_8m_dev6_RIGHT_06",
+              "wide117_8m_dev6_RIGHT_09",
+              "wide117_8m_dev6_RIGHT_10",
+              "wide117_8m_dev6_RIGHT_11",
+              "wide117_8m_dev6_RIGHT_12",
+              "wide117_8m_dev6_RIGHT_13",
+              "wide117_8m_dev6_RIGHT_14",
+              "wide117_8m_dev6_RIGHT_15",
+              "wide117_8m_dev6_RIGHT_16",
+              "wide117_8m_dev6_RIGHT_18",
+              "wide117_8m_dev6_RIGHT_19",
+              "wide117_8m_dev6_RIGHT_20",
+              "wide117_8m_dev6_RIGHT_21",
+              "wide117_8m_dev6_RIGHT_22",
+              "wide117_8m_dev6_RIGHT_23",
+              "wide117_8m_dev6_RIGHT_24",
+              "wide117_8m_dev6_RIGHT_25",
+              "wide117_8m_dev6_RIGHT_26"
+            ],
+            "lost_ids": [
+              "wide117_8m_dev6_LEFT_16",
+              "wide117_8m_dev6_LEFT_20",
+              "wide117_8m_dev6_LEFT_22"
+            ],
+            "accepted": true,
+            "old275": null,
+            "wide6": null,
+            "eight_only_research_NOT_joint_retention": true
+          }
+        },
+        "chosen_arm": "B",
+        "selected": {
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t487_eight_only/pair/proposal_B.pt.gz",
+            "sha256": "36a5a4a30518086b7b63d1e474709bcd1002b4f9e14185653e68a056dcadef1c",
+            "policy_hash": "e56b58e7a1dcdd823ba18244438bf2357a609f510c100ef5264238422312b5d4",
+            "joint_hash": "b8f466cd5a4fb221b30329643df2d624956fc6cea36bf0444cad2bbf0dc1da36",
+            "bytes": 1587925
+          },
+          "wide8": {
+            "valid": 54,
+            "success": 35,
+            "contact": 1,
+            "timeout": 18,
+            "invalid": 0,
+            "censored": 0
+          },
+          "success_ids": [
+            "wide117_8m_dev6_LEFT_00",
+            "wide117_8m_dev6_LEFT_03",
+            "wide117_8m_dev6_LEFT_06",
+            "wide117_8m_dev6_LEFT_07",
+            "wide117_8m_dev6_LEFT_09",
+            "wide117_8m_dev6_LEFT_12",
+            "wide117_8m_dev6_LEFT_13",
+            "wide117_8m_dev6_LEFT_15",
+            "wide117_8m_dev6_LEFT_18",
+            "wide117_8m_dev6_LEFT_21",
+            "wide117_8m_dev6_LEFT_24",
+            "wide117_8m_dev6_RIGHT_00",
+            "wide117_8m_dev6_RIGHT_01",
+            "wide117_8m_dev6_RIGHT_02",
+            "wide117_8m_dev6_RIGHT_03",
+            "wide117_8m_dev6_RIGHT_04",
+            "wide117_8m_dev6_RIGHT_05",
+            "wide117_8m_dev6_RIGHT_06",
+            "wide117_8m_dev6_RIGHT_09",
+            "wide117_8m_dev6_RIGHT_10",
+            "wide117_8m_dev6_RIGHT_11",
+            "wide117_8m_dev6_RIGHT_12",
+            "wide117_8m_dev6_RIGHT_13",
+            "wide117_8m_dev6_RIGHT_14",
+            "wide117_8m_dev6_RIGHT_15",
+            "wide117_8m_dev6_RIGHT_16",
+            "wide117_8m_dev6_RIGHT_18",
+            "wide117_8m_dev6_RIGHT_19",
+            "wide117_8m_dev6_RIGHT_20",
+            "wide117_8m_dev6_RIGHT_21",
+            "wide117_8m_dev6_RIGHT_22",
+            "wide117_8m_dev6_RIGHT_23",
+            "wide117_8m_dev6_RIGHT_24",
+            "wide117_8m_dev6_RIGHT_25",
+            "wide117_8m_dev6_RIGHT_26"
+          ],
+          "lost_ids": [
+            "wide117_8m_dev6_LEFT_16",
+            "wide117_8m_dev6_LEFT_20",
+            "wide117_8m_dev6_LEFT_22"
+          ],
+          "accepted": true,
+          "old275": null,
+          "wide6": null,
+          "eight_only_research_NOT_joint_retention": true
+        },
+        "joint_hash_after_rollback": {
+          "B": "b8f466cd5a4fb221b30329643df2d624956fc6cea36bf0444cad2bbf0dc1da36"
+        },
+        "old275": null,
+        "wide6": null
+      },
+      "fresh16": null,
+      "reload78": null,
+      "eight_stability_gate": false
+    },
+    "capture": {
+      "state": "COMPLETE",
+      "pid": 691099,
+      "mode": "capture",
+      "error": null,
+      "physics": 360602,
+      "commands": 12,
+      "elapsed_s": 118.03959512710571,
+      "result": {
+        "samples": [
+          {
+            "complete": true,
+            "collision": false,
+            "success": true,
+            "timeout": false,
+            "administrative_censor": false,
+            "physics_steps": 46363,
+            "remaining_m": 0.19994346770439997,
+            "terminal_contacts": [
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015825450369210917
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.01580149886117231
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.01565693298736652
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015632761791156732
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015622410059545871
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015600438040180326
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.01545384881273014
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015431744951730789
+              },
+              {
+                "geom1": null,
+                "geom2": "chassis_collision",
+                "distance": -0.0445033448278404
+              },
+              {
+                "geom1": null,
+                "geom2": "chassis_collision",
+                "distance": -0.045642644539038026
+              }
+            ],
+            "policy_hash": "a0c93682351b91068bbb61deb758595cbc4bc0806ece5c048a38ebbb745e525e",
+            "physics": 46363,
+            "array_digest": "67fc010a71b2854dfb155ca441668e2871dac01e6e8a4a71fbc636b6a883d460",
+            "array_hashes": {
+              "states": "4406f4526818633646ea0b4611f5cdccf9bcf47342d342c3ea07a8806e0eb50b",
+              "actions": "d2b0eeb0e3febc520643baaddf3ffeaa973daf61d0ad9c10cb7062b42d485540",
+              "native_counts": "6aee76a63f4cb5fe0cec9b906016a933e7f9acf0c1d264ed5b603c48c77beef4",
+              "next_states": "a48abd6f3c950ffaa88f43cf7418f1bb92f5517e35100af7dcf8b1286172d40f",
+              "poses": "6fa4e28a1df87b4adfe144f07e63ef8ea1da722b650e0042ef00a4573604037b",
+              "next_poses": "7bfda8a20d09473dd3feffadae1d9dcb1a6f4eaa8905559ebac2449228a5347c",
+              "end_flags": "6bc5ef1d212d3172da2aad04be54ca89b8a9d9cebfadfb4d694b08810c48d85a",
+              "rewards": "5430e7e1e7b05f8d61672bd154393256f082c166692924a38bf205ec8ed29180",
+              "history_poses": "3a1f03f363f1cbdcdfd602c6b4ac5e62801426c6a3ce8e05735cd47707f6f81c",
+              "history_goals": "d374491b738bff32e137240e9700f5d0923f187a44ad8b601525470166feda82",
+              "history_times": "2199164692429cc0d0b942ab9b48407e106080399e75c9816dc38cb9ff5ac384",
+              "environment_rewards": "5430e7e1e7b05f8d61672bd154393256f082c166692924a38bf205ec8ed29180",
+              "initial_native_integration": "2621d62f5468d46d2d671e2d7ef08da5aaab8abdf57412305fc4e336d07e39e1",
+              "final_native_integration": "c4a071f58ccee96d3f9d7c4ea2c89c8019ef959b33f5ccb211e10078948e0e70",
+              "hidden_before": "4c4d58b53ff4d70a18dc67623f131b2208760ac6023fd86b5f1adaa8eb7eb7db",
+              "last_hidden_after": "f2b8e4af97e1a5204479dc362fb57e00f291ab05329ec4fe88c101d0f5675a72",
+              "innovations": "c4a99107e50f9fefca62d4d7680798bac1392e5b86c585730b38d6591357b22d",
+              "raw_actions": "53ee50a593385fdcc6436072176b3312394c4d542bfcdbb208a20811b1ae1a50",
+              "atom": "fc41fdd1f7bf3a696a8ce906c19daa73192cea560c98db59ab607fb864c790a0",
+              "locations": "451e1ace03aeebf0a75285a6fe5ede7146724c9f211ae72c70446a5c7f8e3716",
+              "logp": "34a497d4ffb156f1f3d9273ec8939d57843b52bd42b37e6fdbabb7e52d398171",
+              "stochastic": "03124f5d073498366d1d2b9ccb1f37d88e83c851e7c49ede5c508b85587180d6",
+              "hold_sha256": "95e2b596d4270c27934a7562e8e6819c726644f8cb0754b9dc6fd6ae0c81b9bf",
+              "ownership": "0bd4b19766b375dabe84339a2eb81cc69de0b3f869e4275ec1ab004bc783e7c6",
+              "task_goal_xy": "2b338ebdf26f81b8845e0007ac935ff78436b89ce41643873ce913498e5e8448",
+              "scene_sha256": "9165ebf6ec1082c3076ae8056602a6c9788e890e0b3ce2e5d67d27a88a4ef552"
+            },
+            "integration_sha256": "c4a071f58ccee96d3f9d7c4ea2c89c8019ef959b33f5ccb211e10078948e0e70",
+            "pid": 691103,
+            "cpu": 0,
+            "teacher": false,
+            "teacher_first": null,
+            "job_id": "wide117_8m_dev6_LEFT_00",
+            "role": "FRESH_EIGHT_ONLY",
+            "seed": [
+              20261111487,
+              0
+            ],
+            "request": {
+              "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t485_afternoon_recovery/pair/proposal_B.pt.gz",
+              "job": {
+                "id": "wide117_8m_dev6_LEFT_00",
+                "source_reset_id": "dev6_LEFT_00",
+                "group": "6m_LEFT",
+                "case": {
+                  "id": "6m_LEFT",
+                  "seed": 2029653601,
+                  "angle_deg": -17.3,
+                  "side": "LEFT",
+                  "distance_m": 8.0,
+                  "step_cap": 53334,
+                  "group": "original_5m_primary"
+                },
+                "delta_x_m": -0.03,
+                "delta_y_m": -0.03,
+                "delta_yaw_deg": -2.0,
+                "seed": 0,
+                "mode": "deterministic",
+                "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+                "wide_course": true,
+                "circle_shift_x_m": 0.6,
+                "expected_initial120_sha256": null,
+                "radial_distance_m": 8.0
+              },
+              "seed": [
+                20261111487,
+                0
+              ],
+              "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t487_eight_only/capture/episodes/0000.npz",
+              "query": false
+            },
+            "loaded_model_sha256": "d5c563abe042a8c985ab3654c92aa343a0f7fd61d505967ffd0ffdae46480d61",
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t487_eight_only/capture/episodes/0000.npz",
+            "sha256": "4902769547871164ff494942a06f772c5fdadc6d7f5adc943fbe59582c607a5b",
+            "full": true
+          },
+          {
+            "complete": true,
+            "collision": true,
+            "success": false,
+            "timeout": false,
+            "administrative_censor": false,
+            "physics_steps": 34283,
+            "remaining_m": 3.52203647358922,
+            "terminal_contacts": [
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.01569335378848391
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015690527142096622
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015663532673811625
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015660556180798618
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015674273136663003
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.01567035867336436
+              },
+              {
+                "geom1": "real_circle_obs_9",
+                "geom2": null,
+                "distance": -2.0375378638393724e-05
+              },
+              {
+                "geom1": "real_circle_obs_9",
+                "geom2": null,
+                "distance": -2.0375378638393724e-05
+              },
+              {
+                "geom1": "real_circle_obs_9",
+                "geom2": null,
+                "distance": -2.0375378638393724e-05
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.01564443270816411
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.01564040702556195
+              },
+              {
+                "geom1": null,
+                "geom2": "chassis_collision",
+                "distance": -0.07603645790473713
+              },
+              {
+                "geom1": null,
+                "geom2": "chassis_collision",
+                "distance": -0.07603645790473713
+              },
+              {
+                "geom1": null,
+                "geom2": "chassis_collision",
+                "distance": -0.0656114618354144
+              }
+            ],
+            "policy_hash": "a0c93682351b91068bbb61deb758595cbc4bc0806ece5c048a38ebbb745e525e",
+            "physics": 34283,
+            "array_digest": "4851fef9586757b25928ce314d2b23b5137cf99a66dab9b65747b83b8ad9030b",
+            "array_hashes": {
+              "states": "525b53eef71692c118c96f4b7088f47f46d350206cf3162c073634c7850b3697",
+              "actions": "7a1600bc6a772ca6ec3b96c94ee00272928ac052e7ba4f9a57729b8ee41b487f",
+              "native_counts": "62dab3f09d3c2f764d7f18ee3cc4245421b93b681f40277e6febe4a00e5bf5f1",
+              "next_states": "995089217eb25e3f5a86d944b652a3cf66a5d3504f17c940a52e0b9071fc863f",
+              "poses": "50b0c772a00a35863a419f4a3f2da3d2148503c514cf840f7002477f39d00de0",
+              "next_poses": "96979b61781e49d133295cb25f4f37ff4d7640c9d4f1fadd8a24066dcbdc7a0f",
+              "end_flags": "749929fb0b1c23e5cbb2b9c6c135487957f7d529fbcd303258bc4a7d99a7bc65",
+              "rewards": "598c7619e0ccf8f5644c87421bc0b3162f7aeef7355d3c29eefdbab1ac75fab7",
+              "history_poses": "8f51ede5840ae46d10007e6d24ed23285bda2b1a236b39a9a126ffa3d96adb67",
+              "history_goals": "8db373260d419a5bc4b801b596bcf93452038d352abaabb5c94989d7acdc3832",
+              "history_times": "4505cde5203722389bc16647fa00a34e5f43b2717f7358827a35b03557710f88",
+              "environment_rewards": "598c7619e0ccf8f5644c87421bc0b3162f7aeef7355d3c29eefdbab1ac75fab7",
+              "initial_native_integration": "68435c9af858aa8d83abb28c1d8909eea07034007dd5ac864d988d4729b278d1",
+              "final_native_integration": "9c9b9f7d68ff7ac5dc6c9abfa4f3b6a66644c890f05420d1c8071d957305b29b",
+              "hidden_before": "20dc32a0a06dfba5a501aa2b97116025c7fa9a20d9d1528ad9d11a6fce98336c",
+              "last_hidden_after": "a9fbb1fae546f644b07e47da45883a192261aa2d008921e773b60fd539424c9e",
+              "innovations": "a0f47e9d56b2f963cdb825654129a4da64af91ecc736004f0fba956ed9616540",
+              "raw_actions": "c25df5318517be7bd0ff264832abd70822fe03e7ce146c49a7945ffe41ee3c5d",
+              "atom": "18c330af4b8c7d28422eede52b90446c71cc796651ff12fdf5198bdb6acc0c90",
+              "locations": "95a3e592df974ed3b37dd79c6a8431460efd5b1286e27870fc7f448973814687",
+              "logp": "58b5f62c949735c5fb9358d57cbc783bd412cf62b046495e2c17238b97c7834a",
+              "stochastic": "acdbb19f28d6339f0c3c9b4cdd80f59344bcdf76f20aae3e29d20105af4d8459",
+              "hold_sha256": "3f1f64f868852e8e42f476d4e33bae8ef1eda59ad4ae4f1fdca10031cbf47da9",
+              "ownership": "0585dc5c452b4a5c6a36cf26a3bca76dd2deea2e5e8115871b8e03be14a80559",
+              "task_goal_xy": "2b338ebdf26f81b8845e0007ac935ff78436b89ce41643873ce913498e5e8448",
+              "scene_sha256": "9165ebf6ec1082c3076ae8056602a6c9788e890e0b3ce2e5d67d27a88a4ef552"
+            },
+            "integration_sha256": "9c9b9f7d68ff7ac5dc6c9abfa4f3b6a66644c890f05420d1c8071d957305b29b",
+            "pid": 691104,
+            "cpu": 1,
+            "teacher": false,
+            "teacher_first": null,
+            "job_id": "wide117_8m_dev6_LEFT_13",
+            "role": "FRESH_EIGHT_ONLY",
+            "seed": [
+              20261111487,
+              1
+            ],
+            "request": {
+              "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t485_afternoon_recovery/pair/proposal_B.pt.gz",
+              "job": {
+                "id": "wide117_8m_dev6_LEFT_13",
+                "source_reset_id": "dev6_LEFT_13",
+                "group": "6m_LEFT",
+                "case": {
+                  "id": "6m_LEFT",
+                  "seed": 2029653601,
+                  "angle_deg": -17.3,
+                  "side": "LEFT",
+                  "distance_m": 8.0,
+                  "step_cap": 53334,
+                  "group": "original_5m_primary"
+                },
+                "delta_x_m": 0,
+                "delta_y_m": 0,
+                "delta_yaw_deg": 0.0,
+                "seed": 0,
+                "mode": "deterministic",
+                "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+                "expected_initial120_sha256": null,
+                "wide_course": true,
+                "circle_shift_x_m": 0.6,
+                "radial_distance_m": 8.0
+              },
+              "seed": [
+                20261111487,
+                1
+              ],
+              "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t487_eight_only/capture/episodes/0001.npz",
+              "query": false
+            },
+            "loaded_model_sha256": "d5c563abe042a8c985ab3654c92aa343a0f7fd61d505967ffd0ffdae46480d61",
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t487_eight_only/capture/episodes/0001.npz",
+            "sha256": "e7e616c0fa2b8e818451d55bea67a06d156909259dd0981293a111a8a73d0da5",
+            "full": true
+          },
+          {
+            "complete": true,
+            "collision": false,
+            "success": true,
+            "timeout": false,
+            "administrative_censor": false,
+            "physics_steps": 49714,
+            "remaining_m": 0.19976240166279477,
+            "terminal_contacts": [
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.01543314267412807
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015428693754689055
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015491627730416221
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015486853504710837
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015627912417326292
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015620104030486068
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015686100407038578
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015678561021669507
+              },
+              {
+                "geom1": null,
+                "geom2": "chassis_collision",
+                "distance": -0.051100522641357726
+              },
+              {
+                "geom1": null,
+                "geom2": "chassis_collision",
+                "distance": -0.04862577354506146
+              }
+            ],
+            "policy_hash": "a0c93682351b91068bbb61deb758595cbc4bc0806ece5c048a38ebbb745e525e",
+            "physics": 49714,
+            "array_digest": "a28c38849d1c7fee38c07d0d3b35b7ff65598f6ef25770e65fa9e7f959626ddd",
+            "array_hashes": {
+              "states": "0b4957d274bd724687bf0b86a5e29a8c55726053d4049371be5f3633bf69f8cd",
+              "actions": "5e7350b2aaede16dfb02a1c5f979abaa6de0538b44f0b0a237aa1da31ded3e4d",
+              "native_counts": "e3995b30268e44ada7ef7cd21f6b1bd25d831b0a42618451506e5aa6e946247a",
+              "next_states": "9d69e3eba08c91ee8ac81fe9cc9c4c21be38aebf30461a5ac3ea5e555592f785",
+              "poses": "53dd4e07a424cf8c395a9ebba7055de2f9f3d16917a3c5773a101a9446b9c2a8",
+              "next_poses": "8bcef4be6555b422008f8a27613d5347b6b0ca8758362928dac309c413565cc0",
+              "end_flags": "56fb88b628528ab736ba9a689c5a2c62ea7733ac9705a3dec717b733f6b3d7fe",
+              "rewards": "3d4907d82fc11ce3c0971870c197e57e3f36ad929ce77a1748960cedd6409489",
+              "history_poses": "895fc0f66b962f52ca2ac540bc5847f01bcacba8f04736411d5ee802b516291a",
+              "history_goals": "8dea8f6cd78c0860fbf628a97b67c1608b45787a940229dd6380cfa407466000",
+              "history_times": "2610a317895f20c097f2d35d450b37d6023c952ba06d8a53bff57e8f35b3fba3",
+              "environment_rewards": "3d4907d82fc11ce3c0971870c197e57e3f36ad929ce77a1748960cedd6409489",
+              "initial_native_integration": "49223e2ab95ba9e2c8d1bc18d5fbe6ddc251ee0fcf1c8d45c795b958d85347f2",
+              "final_native_integration": "a0d870bfd5d8b0939effff25fb2f42fee0ad748de125bfd89a2d3e785afee730",
+              "hidden_before": "edd986304434da26a2eb1b95dc5c08289f4fee8da5c177805c93831d31c15515",
+              "last_hidden_after": "bc8e2b1d4726ce87d000d32ef615c78cd28369e47779b667046af4d72cc102a5",
+              "innovations": "b3cae4cf7151b2037cce4621b049dcd27a50f2a8b59682c0892e76fc50c6c904",
+              "raw_actions": "db88f51d3af2567d9adcdbec19962cbbff823b5b802f7811da976329b31f06c9",
+              "atom": "d66e6882fff27e9e41f6c47e75243bd39fb8d36cd4e6843e28de88a61c0c4162",
+              "locations": "822f19c4554ae5ac7dcddfe68cefc6f07c3cd86d6326d2be6511059dce5cbe2f",
+              "logp": "8e4d561832c5c2adf89fc629ad46cd8b853a22d2acba3e3deb4d357068789f80",
+              "stochastic": "f638ab1402ae3869cc85684538aba3eeb88f796dc70355d68e617597dfe68f50",
+              "hold_sha256": "dbb6f3b76766c47e97d8ccf91fa28e17aca8732d598f9524c46c1eb6d6d55957",
+              "ownership": "0c344da06e9e743a4263cb485bc6c8377cdac4245b8915ce251bdc1edfa2dc2b",
+              "task_goal_xy": "0f36017ee96a4ccb13bf741903439e378e98dc22f5dd65752a49bafb20b0cb18",
+              "scene_sha256": "9165ebf6ec1082c3076ae8056602a6c9788e890e0b3ce2e5d67d27a88a4ef552"
+            },
+            "integration_sha256": "a0d870bfd5d8b0939effff25fb2f42fee0ad748de125bfd89a2d3e785afee730",
+            "pid": 691103,
+            "cpu": 0,
+            "teacher": false,
+            "teacher_first": null,
+            "job_id": "wide117_8m_dev6_RIGHT_16",
+            "role": "FRESH_EIGHT_ONLY",
+            "seed": [
+              20261111487,
+              2
+            ],
+            "request": {
+              "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t485_afternoon_recovery/pair/proposal_B.pt.gz",
+              "job": {
+                "id": "wide117_8m_dev6_RIGHT_16",
+                "source_reset_id": "dev6_RIGHT_16",
+                "group": "6m_RIGHT",
+                "case": {
+                  "id": "6m_RIGHT",
+                  "seed": 2029654802,
+                  "angle_deg": 18.8,
+                  "side": "RIGHT",
+                  "distance_m": 8.0,
+                  "step_cap": 53334,
+                  "group": "original_5m_primary"
+                },
+                "delta_x_m": 0,
+                "delta_y_m": 0.03,
+                "delta_yaw_deg": 0.0,
+                "seed": 0,
+                "mode": "deterministic",
+                "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz",
+                "wide_course": true,
+                "circle_shift_x_m": 0.6,
+                "expected_initial120_sha256": null,
+                "radial_distance_m": 8.0
+              },
+              "seed": [
+                20261111487,
+                2
+              ],
+              "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t487_eight_only/capture/episodes/0002.npz",
+              "query": false
+            },
+            "loaded_model_sha256": "d5c563abe042a8c985ab3654c92aa343a0f7fd61d505967ffd0ffdae46480d61",
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t487_eight_only/capture/episodes/0002.npz",
+            "sha256": "506e09aaf654a453a097b3d674a027345c92492d8292414a82bf839e43a218ca",
+            "full": true
+          },
+          {
+            "complete": true,
+            "collision": false,
+            "success": true,
+            "timeout": false,
+            "administrative_censor": false,
+            "physics_steps": 49941,
+            "remaining_m": 0.1999138517199697,
+            "terminal_contacts": [
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015343053727991718
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.01533611628455206
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.01518076774683591
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.01517637578901751
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.016158088463592166
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.016137265915647306
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.015997174953736107
+              },
+              {
+                "geom1": "floor",
+                "geom2": null,
+                "distance": -0.0159761520372209
+              },
+              {
+                "geom1": null,
+                "geom2": "chassis_collision",
+                "distance": -0.05201051943061573
+              },
+              {
+                "geom1": null,
+                "geom2": "chassis_collision",
+                "distance": -0.05501385191711533
+              },
+              {
+                "geom1": null,
+                "geom2": "chassis_collision",
+                "distance": -0.05501385191711533
+              }
+            ],
+            "policy_hash": "a0c93682351b91068bbb61deb758595cbc4bc0806ece5c048a38ebbb745e525e",
+            "physics": 49941,
+            "array_digest": "cf4b0ea383de241ee24787ba3c9068810a658cd82bede519a8c2a2aae2d5b5f8",
+            "array_hashes": {
+              "states": "171c0114878f0a91af2b13b79188f188d5fc683ec2f6676d6d6d716180284573",
+              "actions": "ff9aa920f11bbc2fa0b1ae4842f2cb290251d04ad5b5989c4b5e97974e388157",
+              "native_counts": "3a6e3d04ae5e31b62a063bbeac8a3b4b7616b2c6c1b3280603cc40168b6a11c1",
+              "next_states": "cdb1734257199d56604b647d560416f957722afa6e0d385d6159194d128a184f",
+              "poses": "999e91e3e27d1addee9cc3aaf6656eff38ccd1c01b43c1e43e307cbf23f85cab",
+              "next_poses": "7c08b91597f4f2d7cdcec5e06a65cd600d68c8b2baa411d5928208ee2b729e71",
+              "end_flags": "ec26a1cfda3e10c8c9ea503a35d063535819845b7ecf01036ad6913b2c3d71a9",
+              "rewards": "3e8c509dfde824d5410516dacd5c27e73a9f86a8d12ae4f9b50f6d85f9f2d8ec",
+              "history_poses": "49aa07650690c35a3c41eaa9d1ff65473230c8c26943b83c89ab3de07247a98e",
+              "history_goals": "9c0d2497992bb2f67d5459edbed43eaac50cc782838d72e9f7a3f1dfdcf4cce7",
+              "history_times": "97bce26afac6c524f0a4e9ecaeaeb78f28760dbcb7735ee3d058bae11d10286f",
+              "environment_rewards": "3e8c509dfde824d5410516dacd5c27e73a9f86a8d12ae4f9b50f6d85f9f2d8ec",
+              "initial_native_integration": "6eceb2a1784be4a25172fc20ea1cad199ad23a0575dd1cc1ae64822289693208",
+              "final_native_integration": "b05763b74fc898ae332ec35d511e283d224c12853a9b8f72111b2ba735890a26",
+              "hidden_before": "e7e3724617bc2429bea2956be52bbbeda86290e8187ee9d2ce70f9cba7067989",
+              "last_hidden_after": "3fda8c865c9cfbc23ed9beeb2abb961051c1dbd139a748364aa42be45e4263f9",
+              "innovations": "fb4aff6f09a35330981e59dd6a99157e6817c602b45c9fb0b757e8bcd1481d5a",
+              "raw_actions": "919be0d9af3a3aaf7fc86fc6cee90fea036036c3896256298fa213081abd6756",
+              "atom": "ba3262fb56d38bd7ab94866132871a3bc8943952b847d902ee16c8269e207eb6",
+              "locations": "e95d2a0be32e872a677febaa9931b6538fb1aa03131702b0cebdb3e808c1ca98",
+              "logp": "58f6f497806553967d0640f7565943cf387792affefa813f5f087c12f80ffba8",
+              "stochastic": "402f137372e63b1144b92a92427738f2aee64f997b600b9c8b4041ff8a2676ed",
+              "hold_sha256": "88b4ee3b1825dc7e0e7e46a2e10c0370cd515d5e2052249157b14024e23d2ad1",
+              "ownership": "7e15c3447b3291d59375b574edcabacc2b75a2aec9197c25f6858e3154e848b8",
+              "task_goal_xy": "0f36017ee96a4ccb13bf741903439e378e98dc22f5dd65752a49bafb20b0cb18",
+              "scene_sha256": "9165ebf6ec1082c3076ae8056602a6c9788e890e0b3ce2e5d67d27a88a4ef552"
+            },
+            "integration_sha256": "b05763b74fc898ae332ec35d511e283d224c12853a9b8f72111b2ba735890a26",
+            "pid": 691104,
+            "cpu": 1,
+            "teacher": false,
+            "teacher_first": null,
+            "job_id": "wide117_8m_dev6_RIGHT_25",
+            "role": "FRESH_EIGHT_ONLY",
+            "seed": [
+              20261111487,
+              3
+            ],
+            "request": {
+              "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t485_afternoon_recovery/pair/proposal_B.pt.gz",
+              "job": {
+                "id": "wide117_8m_dev6_RIGHT_25",
+                "source_reset_id": "dev6_RIGHT_25",
+                "group": "6m_RIGHT",
+                "case": {
+                  "id": "6m_RIGHT",
+                  "seed": 2029654802,
+                  "angle_deg": 18.8,
+                  "side": "RIGHT",
+                  "distance_m": 8.0,
+                  "step_cap": 53334,
+                  "group": "original_5m_primary"
+                },
+                "delta_x_m": 0.03,
+                "delta_y_m": 0.03,
+                "delta_yaw_deg": 0.0,
+                "seed": 0,
+                "mode": "deterministic",
+                "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_RIGHT.npz",
+                "wide_course": true,
+                "circle_shift_x_m": 0.6,
+                "expected_initial120_sha256": null,
+                "radial_distance_m": 8.0
+              },
+              "seed": [
+                20261111487,
+                3
+              ],
+              "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t487_eight_only/capture/episodes/0003.npz",
+              "query": false
+            },
+            "loaded_model_sha256": "d5c563abe042a8c985ab3654c92aa343a0f7fd61d505967ffd0ffdae46480d61",
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t487_eight_only/capture/episodes/0003.npz",
+            "sha256": "8e8f0e16d54d728ef66dfc405d634b89381f5d5f61adf0ed8fbf1481b8c00e7a",
+            "full": true
+          }
+        ],
+        "no_old_or_six_native": true
+      },
+      "fresh16": null,
+      "reload78": null,
+      "eight_stability_gate": false
+    }
+  },
+  "selected": {
+    "model": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t487_eight_only/pair/proposal_B.pt.gz",
+      "sha256": "36a5a4a30518086b7b63d1e474709bcd1002b4f9e14185653e68a056dcadef1c",
+      "policy_hash": "e56b58e7a1dcdd823ba18244438bf2357a609f510c100ef5264238422312b5d4",
+      "joint_hash": "b8f466cd5a4fb221b30329643df2d624956fc6cea36bf0444cad2bbf0dc1da36",
+      "bytes": 1587925
+    },
+    "wide8": {
+      "valid": 54,
+      "success": 35,
+      "contact": 1,
+      "timeout": 18,
+      "invalid": 0,
+      "censored": 0
+    },
+    "success_ids": [
+      "wide117_8m_dev6_LEFT_00",
+      "wide117_8m_dev6_LEFT_03",
+      "wide117_8m_dev6_LEFT_06",
+      "wide117_8m_dev6_LEFT_07",
+      "wide117_8m_dev6_LEFT_09",
+      "wide117_8m_dev6_LEFT_12",
+      "wide117_8m_dev6_LEFT_13",
+      "wide117_8m_dev6_LEFT_15",
+      "wide117_8m_dev6_LEFT_18",
+      "wide117_8m_dev6_LEFT_21",
+      "wide117_8m_dev6_LEFT_24",
+      "wide117_8m_dev6_RIGHT_00",
+      "wide117_8m_dev6_RIGHT_01",
+      "wide117_8m_dev6_RIGHT_02",
+      "wide117_8m_dev6_RIGHT_03",
+      "wide117_8m_dev6_RIGHT_04",
+      "wide117_8m_dev6_RIGHT_05",
+      "wide117_8m_dev6_RIGHT_06",
+      "wide117_8m_dev6_RIGHT_09",
+      "wide117_8m_dev6_RIGHT_10",
+      "wide117_8m_dev6_RIGHT_11",
+      "wide117_8m_dev6_RIGHT_12",
+      "wide117_8m_dev6_RIGHT_13",
+      "wide117_8m_dev6_RIGHT_14",
+      "wide117_8m_dev6_RIGHT_15",
+      "wide117_8m_dev6_RIGHT_16",
+      "wide117_8m_dev6_RIGHT_18",
+      "wide117_8m_dev6_RIGHT_19",
+      "wide117_8m_dev6_RIGHT_20",
+      "wide117_8m_dev6_RIGHT_21",
+      "wide117_8m_dev6_RIGHT_22",
+      "wide117_8m_dev6_RIGHT_23",
+      "wide117_8m_dev6_RIGHT_24",
+      "wide117_8m_dev6_RIGHT_25",
+      "wide117_8m_dev6_RIGHT_26"
+    ],
+    "lost_ids": [
+      "wide117_8m_dev6_LEFT_16",
+      "wide117_8m_dev6_LEFT_20",
+      "wide117_8m_dev6_LEFT_22"
+    ],
+    "accepted": true,
+    "old275": null,
+    "wide6": null,
+    "eight_only_research_NOT_joint_retention": true
+  },
+  "remote": "PENDING",
+  "eight_stability_gate": false,
+  "fresh16": null,
+  "reload78": null,
+  "all_scientific_processes_stopped": true,
+  "new_training_episodes": 4,
+  "eight_only": true,
+  "old275": null,
+  "wide6": null
+}
