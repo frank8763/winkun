@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t492_cold_remote_reserve/storage.py", line 131, in <module>
+    else:globals()[sys.argv[1]]()
+  File "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t492_cold_remote_reserve/storage.py", line 109, in recover
+    def recover():return run(True)
+  File "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t492_cold_remote_reserve/storage.py", line 51, in run
+    idle();p=read(OUT/'protocol.json');verify(p)
+  File "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t492_cold_remote_reserve/storage.py", line 15, in idle
+    def idle():K._idle()
+  File "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t486_adam_memory_projection/t486_cache.py", line 292, in _idle
+    assert not (a.startswith(str(ROOT / 'stage/experiments') + '/') or a.startswith('stage/experiments/')), ('Another Stage process', f.name)
+AssertionError: ('Another Stage process', '718516')

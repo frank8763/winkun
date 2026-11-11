@@ -12,7 +12,17 @@ def save(f,v):
     with tmp.open('xb') as s:s.write(b);s.flush();os.fsync(s.fileno())
     tmp.replace(f)
 def used():return K.used()
-def idle():K._idle()
+def idle():
+    own=os.getpid();wrapper=read(OUT/'recovery_wrapper_launch.json') if (OUT/'recovery_wrapper_launch.json').exists() else None
+    for f in Path('/proc').glob('[0-9]*/cmdline'):
+        if int(f.parent.name)==own:continue
+        try:args=f.read_bytes().split(b'\0')
+        except OSError:continue
+        if wrapper and int(f.parent.name)==wrapper['pid']==os.getppid():
+            assert args[0].endswith(b'timeout') and os.fsencode(str(HERE/'storage.py')) in args and b'recover' in args
+            continue
+        assert not any(os.fsdecode(a).startswith(str(ROOT/'stage/experiments')+'/') for a in args[1:]),('Other Stage process',f.parent.name)
+
 def prepare():
     idle();assert not OUT.exists()
     old=read(ROOT/'stage/runs/t491_uncentered_eight/protocol.json')
