@@ -18,7 +18,7 @@ import traceback
 ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent
 DOC = ROOT / 'stage/docs/review_20261111'
-PREVIOUS = ROOT / 'stage/runs/t481_fresh16_rehearsal'
+PREVIOUS = ROOT / 'stage/runs/t484_symbol_recovery'
 OUT = ROOT / 'stage/runs/t482_evening_coverage'
 
 
@@ -28,7 +28,7 @@ def read(f):
 
 def previous_done():
     # Completion of a child or a native summary alone does not authorize us.
-    if not (DOC / 'T481_FINAL_REPORT.json').exists():
+    if not (DOC / 'T484_FINAL_REPORT.json').exists():
         return False
     files = [PREVIOUS / 'launch.json', PREVIOUS / 'driver_started.json', PREVIOUS / 'SEALED.json']
     ids = []
@@ -78,7 +78,7 @@ def main():
         assert time.time() < wait_stop, 'Previous writer did not finish before bounded queue admission stop'
         time.sleep(10)
     assert not OUT.exists()
-    assert read(DOC / 'T481_FINAL_REPORT.json')['remote'] == 'FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED'
+    assert read(DOC / 'T484_FINAL_REPORT.json')['remote'] == 'FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED'
     assert not subprocess.check_output(['git', 'status', '--porcelain'], cwd=ROOT, text=True).strip()
     sys.path.insert(0, str(HERE))
     import control as C

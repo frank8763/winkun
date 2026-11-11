@@ -12,6 +12,7 @@ B,P,E,M,R,torch,np=F.B,F.P,F.E,F.M,F.R,F.torch,F.np
 read,save,sha,digest=F.read,F.save,F.sha,F.digest
 make,references,memory,replay_losses=F.make,F.references,F.memory,F.replay_losses
 batch=F.batch
+vtrace=F.B.vtrace
 
 
 def aggregate(values,mode):

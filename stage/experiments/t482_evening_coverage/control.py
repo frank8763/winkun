@@ -14,8 +14,8 @@ def prepare():
     import t482_cache as K
     import t482_storage as S
     assert not OUT.exists();K._idle()
-    previous=ROOT/'stage/runs/t481_fresh16_rehearsal'
-    report=read(DOC/'T481_FINAL_REPORT.json')
+    previous=ROOT/'stage/runs/t484_symbol_recovery'
+    report=read(DOC/'T484_FINAL_REPORT.json')
     assert report['state']=='COMPLETE_AUDITED_LOCAL' and report['remote']==K.COMPLETE
     assert read(previous/'pair/audit.json')['state']=='PASS'
     assert report['summaries']['pair']['result']['chosen_arm'] is None,'Retained progress: stop failure relay'
@@ -23,7 +23,7 @@ def prepare():
     stop=datetime(2026,11,11,20,30,tzinfo=ZoneInfo('Asia/Shanghai')).timestamp()
     assert time.time()+11400<stop,'Insufficient complete relay reservation'
     old=read(previous/'protocol.json');p=copy.deepcopy(old)
-    cap=read(previous/'capture/summary.json')['result'];fresh=cap['samples'];retention=old['retention_rows']
+    cap=read(old['capture_summary_path'])['result'];fresh=cap['samples'];retention=old['retention_rows']
     assert len(fresh)==16 and all(r['full'] and r['policy_hash']==base['model']['policy_hash'] for r in fresh)
     assert len(retention)==8 and all(r['policy_hash']==base['model']['policy_hash'] for r in retention)
     target_ids=['dev_task6_01','dev_task6_13','dev_task6_25','hold_task6_00',
@@ -50,9 +50,9 @@ def prepare():
         reference_semantics='Pre-fixed eight T480 lost-ID situations, four old5m+threewide6m+onewide8m, one stochastic full episode each, all outcomes included without success filtering. Real bounded-Gaussian behavior; finite physical discounts, no administrative censor admitted.')
     files=set(old['inputs'])|{str(f) for f in HERE.glob('*.py')}
     files|={r['path'] for r in fresh+retention+p['replay_rows']}
-    files|={str(previous/'protocol.json'),str(previous/'capture/summary.json'),str(previous/'capture/audit.json'),
-            str(previous/'pair/summary.json'),str(previous/'pair/audit.json'),str(DOC/'T481_FINAL_REPORT.json'),
-            str(DOC/'T482_PLAN.md'),str(ROOT/'stage/docs/long_distance_20261101/release_receipt_T481.json')}
+    files|={str(previous/'protocol.json'),old['capture_summary_path'],old['capture_audit_path'],
+            str(previous/'pair/summary.json'),str(previous/'pair/audit.json'),str(DOC/'T484_FINAL_REPORT.json'),
+            str(DOC/'T482_PLAN.md'),str(ROOT/'stage/docs/long_distance_20261101/release_receipt_T484.json')}
     p['protected_files']=dict(old['protected_files']);files|=set(p['protected_files'])
     needed=max(1,M.used()+p['max_bytes']+2**20-2**30)
     enc=S.plan(files,needed);p['storage_rows']=enc['rows'];p['storage_expected_release']=enc['selected_net_release_bytes']
