@@ -1,3 +1,5 @@
+2026-11-12 T504成功经验末段似然整合已注册/0native4丢弃监督Adam预检PASS，尚待源码同步/launch：从T503接受模型，sector5既有2成功完整history回放，最多64live64shadow/0新PG/Value0；保留6field成功且>6、old8安全、contact<=10才接受，否则整ActorAdam回退。旧275/six/eight未安排，原最佳锁定。own48MiB/global1GiB/free40GiB，CPU14/15总1核idle/GPU禁用，全部截止见T504_BUDGET，详T504_PLAN。Phase隔离。
+
 2026-11-12 T503新起点真实闭环RL结束，FIELD_PROGRESS_RETAINED，training={'valid': 8, 'success': 6, 'contact': 0, 'timeout': 2, 'invalid': 0, 'censored': 0}，field24={'valid': 24, 'success': 6, 'contact': 10, 'timeout': 8, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；自己的8真实采集+8exact、最多16Actor更新/Value0，旧379最佳独立保留，本轮完整old275/six/eight未执行。详review_20261112/T503_FINAL_REPORT。Phase隔离。
 
 2026-11-12 T503新起点真实闭环RL已注册/正式0native4合成丢弃Adam预检PASS，尚待源码同步/launch：sector5/2_offset1各4新iid样本+8exact，至少1safeGOAL才最多16live16shadow策略裁剪更新/Value0，物理时间三同行RTG基线及原奖励，mature896/256保留显式lr3e-5；保持原379+场地5成功history，old8+field24+24exact。研究接受保field原5且>5、old8安全/碰撞<=11，否则回退，完整old275/six/eight未测，旧最佳锁定。own48MiB/global1GiB/free40，CPU14/15总1核idle/GPU禁用，详review_20261112/T503_PLAN/BUDGET。Phase隔离。
