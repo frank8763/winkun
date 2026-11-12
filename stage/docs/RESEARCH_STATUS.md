@@ -1,3 +1,5 @@
+2026-11-12 T507因20:34意外关机中断，原目录不重启/不补造summary：完成1块32live32shadow，旧8/8+场地10/10(原7+新增3)及18exact；独立断电复核32丢弃历史Adam/完整history密度奖励SHA PASS/0新native。剩余14缺测(2已派发无完整结果+12未派发)、最终全24exact未执行，fullfield24=null，不称10/24最终率/不晋升；T505接受最佳保留。全部原始含零字节文件及独立复核已RAM远端逐成员SHA，见release_receipt_T507_powerloss与T507_POWERLOSS_REPORT/FINDINGS。实际physics仅下界747195上界831302，精确null；所有原进程退出。下一仅冻结候选补验草案未注册启动，Stage/Phase隔离。
+
 2026-11-12 T507新旧成功联合整合已注册/正式0native4丢弃监督Adam预检PASS，尚待源同步/launch：从接受T505，12已存真实GOAL执行动作BC+15真实成功未裁剪保持，最多3x32live/shadow、每块18原生+18exact逐ID保护、首次拒绝全ActorAdam回退止学；有新成功才余14+24exact，field>7/old8safe才保留。非新增RL/Value0/无新增容量，原最佳独立保留。own64MiB/global1GiB/free40GiB/CPU14,15总1核/GPU禁用/all22:24，详T507_PLAN/BUDGET及research_20261112_t507。Phase隔离。
 
 2026-11-12 T506新三任务真实闭环RL结束，PROPOSAL_REJECTED_ROLLBACK，training={'valid': 12, 'success': 12, 'contact': 0, 'timeout': 0, 'invalid': 0, 'censored': 0}，field24=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；12新采集+12exact/最多16真实策略更新及shadow/Value0，旧最佳独立保留，本轮完整old275/six/eight未执行。详review_20261112/T506_FINAL_REPORT。Phase隔离。
