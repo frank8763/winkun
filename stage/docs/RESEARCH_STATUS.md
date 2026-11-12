@@ -1,3 +1,9 @@
+2026-11-12 T502归档收尾完成：全部57科学原始及注册/原静态拒绝/预检文件完整远端二进制逐成员SHA，原TLS35/PENDING保留，见release_receipt_T502/T502_BACKUP_COMPLETION。24自主5GOAL11contact8timeout+24exact/auditPASS，全部进程停；旧最佳锁定，未开启新训练。后续多起点/目标训练与末段恢复方案未注册启动，Phase隔离。
+
+2026-11-12 T502全场地首轮独立检查：24新任务5GOAL/11contact/8timeout（20.83%），三距离组3/8、2/8、0/8；24exact/全history auditPASS/模型不变，所有进程停止。6近目标错过后驶离、1近目标后再接触、2慢速远距超时、10未到目标前障碍接触，行为分类非唯一因果；原旧271/六54/八54最佳保留，暂停旧4修复按用户新范围。下一多起点goal数据/末段真实恢复+短程避障课程仅草案未启动；归档TLS35后补传以receipt为准，详T502_FINDINGS/FAILURE_TYPES。Phase隔离。
+
+2026-11-12 T502全场地区域覆盖首轮结束，FROZEN_FIELD24_TRANSFER_GAPS_RECORDED，native={'valid': 24, 'success': 5, 'contact': 11, 'timeout': 8, 'invalid': 0, 'censored': 0}，field_qualified=5/24，remote=PENDING；0Adam/冻结T501旧271六54八54，24新任务+24exact不是全场地穷尽/稳定证明。详review_20261112/T502_FINAL_REPORT。Phase隔离。
+
 2026-11-12 用户明确旧任务保留最佳、暂停4项修复转全场地。T502全场地区域覆盖首轮注册/正式预检PASS，尚待源码同步后launch：冻结T501旧271/六54/八54模型，8新起点×3目标=24距离5.204/9.617/12.565m+24exact，0Adam。原radius5.8静态目标阻塞0native拒绝与源码保留，统一radius6.8全24净空/真实history通过，无策略成绩筛选；±7.5m越界另列，局部净空非可达证明。2.9212M/100cmd/2400main/240audit/5400all，own40MiB/global1GiB/free40，CPU14/15总1核idle/GPU禁用，safeT255与联合最佳均锁定。详review_20261112/T502_PLAN/BUDGET，Phase隔离。
 
 2026-11-12 T501双动作联合修复结束，RETAINED_PARTIAL_PROGRESS，old275={'valid': 275, 'success': 271, 'contact': 4, 'timeout': 0, 'invalid': 0, 'censored': 0}，wide6={'valid': 54, 'success': 54, 'contact': 0, 'timeout': 0, 'invalid': 0, 'censored': 0}，wide8={'valid': 54, 'success': 54, 'contact': 0, 'timeout': 0, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；256live256shadow/独立256历史Adam，0新PG/Value，fresh16/reload78未执行，不称联合稳定或原创算法。详review_20261112/T501_FINAL_REPORT。Phase隔离。
