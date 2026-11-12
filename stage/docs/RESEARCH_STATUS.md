@@ -1,3 +1,5 @@
+2026-11-12 T503新起点真实闭环RL结束，FIELD_PROGRESS_RETAINED，training={'valid': 8, 'success': 6, 'contact': 0, 'timeout': 2, 'invalid': 0, 'censored': 0}，field24={'valid': 24, 'success': 6, 'contact': 10, 'timeout': 8, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；自己的8真实采集+8exact、最多16Actor更新/Value0，旧379最佳独立保留，本轮完整old275/six/eight未执行。详review_20261112/T503_FINAL_REPORT。Phase隔离。
+
 2026-11-12 T503新起点真实闭环RL已注册/正式0native4合成丢弃Adam预检PASS，尚待源码同步/launch：sector5/2_offset1各4新iid样本+8exact，至少1safeGOAL才最多16live16shadow策略裁剪更新/Value0，物理时间三同行RTG基线及原奖励，mature896/256保留显式lr3e-5；保持原379+场地5成功history，old8+field24+24exact。研究接受保field原5且>5、old8安全/碰撞<=11，否则回退，完整old275/six/eight未测，旧最佳锁定。own48MiB/global1GiB/free40，CPU14/15总1核idle/GPU禁用，详review_20261112/T503_PLAN/BUDGET。Phase隔离。
 
 2026-11-12 T502归档收尾完成：全部57科学原始及注册/原静态拒绝/预检文件完整远端二进制逐成员SHA，原TLS35/PENDING保留，见release_receipt_T502/T502_BACKUP_COMPLETION。24自主5GOAL11contact8timeout+24exact/auditPASS，全部进程停；旧最佳锁定，未开启新训练。后续多起点/目标训练与末段恢复方案未注册启动，Phase隔离。
