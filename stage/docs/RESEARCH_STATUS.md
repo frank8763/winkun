@@ -1,3 +1,5 @@
+2026-11-12 T497完整成功来源→单Actor速度学习已注册，预检/launch以实际文件为准：重建原40策略RIGHT09/18/21/22/24完整历史+5exact，合并27LEFT/22RIGHT既有成功标签；仅复用T496原512live/512shadow/独立512审计、5953参数神经drive adapter，新source覆盖非原创。完整54保原40且新增/零接触才接受，失败整ActorAdam回退；0新PG/Value，old275/six/freshnull。6.293412M/136cmd/4500main/72MiB/global1GiB/free40；CPU14/15总1核idle/GPU禁用，详review_20261112/T497_PLAN/BUDGET。Phase隔离。
+
 2026-11-12 T496检查补充（零新native/Adam）：原RIGHT5全GOAL，新增失败RIGHT09/18/21/22/24均原40策略已GOAL，最近决策点距目标.20175–.25362m后驶离；教师22/27及27exact/auditPASS，学生未执行。与T495 LEFT27成功来源及原40这5项成功记录合计覆盖54，但不是单Actor通过；5条baseline完整轨迹尚须精确原生重建。下一“完整54验证成功来源→单神经速度读出”仅草案，未注册启动。详review_20261112/T496_POSTMORTEM。Phase隔离。
 
 2026-11-12 T496神经速度策略学习结束，TEACHER_PROFILE_NOT_RECOVERABLE，student=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；训练期教师非部署策略，0新策略梯度/Value更新，非原创/稳定全图证明。详review_20261112/T496_FINAL_REPORT。Phase隔离。
