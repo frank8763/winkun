@@ -1,3 +1,5 @@
+2026-11-12 T509两项近目标失败联合成功学习已注册/正式0native4合成丢弃Adam预检PASS，尚待源同步/launch：接受field11/old8模型完整ActorAdam不变，固定1off1/0off2各4新iid+8exact、两项各有qualifiedGOAL才最多2x16监督与21项逐ID保护/首次拒绝全回退。新成功后余11+24exact，field>11/original11全保/old8safe才接受，0新PG/Value0。own60MiB/global1GiB/free40GiB/CPU14,15合计1核/GPU禁用/all22:59，详T509_PLAN/BUDGET及research_20261112_t509，原最佳独立保留。Phase隔离。
+
 2026-11-12 T508关机后冻结补验结束，FROZEN_COMPLETION_PROGRESS_VERIFIED，training=0，field24={'valid': 24, 'success': 11, 'contact': 9, 'timeout': 4, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；补14原生+24exact/0Adam/同模型旧18复用非独立新数据，旧最佳独立保留，本轮完整old275/six/eight未执行。详review_20261112/T508_FINAL_REPORT。Phase隔离。
 
 2026-11-12 T508冻结关机候选补验已注册/0native0Adam预检PASS，尚待源同步/launch：同T507block0模型SHA固定，导入已审计old8+field10共18，新增原缺14+全field24exact，所有物理重复计账不充独立样本。0训练/Actor/ValueAdam，原T507不重启，旧最佳T505保留。own32MiB/global1GiB/free40GiB/CPU14,15总1核/GPU禁用/all22:06，详T508_PLAN/BUDGET。Phase隔离。
