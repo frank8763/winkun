@@ -1,3 +1,5 @@
+2026-11-12 T499冻结模型329验收结束，FROZEN_FULL329_NOT_ALLPASS，old275={'valid': 275, 'success': 233, 'contact': 42, 'timeout': 0, 'invalid': 0, 'censored': 0}，wide6={'valid': 54, 'success': 53, 'contact': 1, 'timeout': 0, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；0Actor/ValueAdam，八米T49854/54保留，fresh16/reload78未执行，不称联合稳定。详review_20261112/T499_FINAL_REPORT。Phase隔离。
+
 2026-11-12 T499冻结同一T498八米54/54Actor的old275+宽六米54共329完整验收已注册，预检/launch以实际凭证为准；0Adam/无教师路由/不改科学。6.966735M/339cmd/6000main/600audit/8400all，完整329full原始shape最坏117316984B+10MiB<own128MiB/global1GiB/free40；CPU14/15总1核idle/GPU禁用。329科学失败也完成分项，异常/预算停止保partial；fresh16/reload78不在本轮预算且未执行。详review_20261112/T499_PLAN/BUDGET。Phase隔离。
 
 2026-11-12 T498最终核验：同一自主Actor宽八米54/54(LEFT27 RIGHT27)全safe，独立模型拷贝54原生全数组/积分精确、128历史Adam审计PASS，所有进程退出；原TLS35后补传全部76原件远端完整二进制逐成员SHA已过，旧PENDING/错误保留，以release_receipt_T498/T498_BACKUP_COMPLETION为准。global774840689B<1GiB/free40GiB。下一T499冻结同模型old275+wide6共329验收，条件未见16/独立78仅草案未注册启动，不继续改八米已过模型。详T498_FINDINGS/T499_VALIDATION_DRAFT；old275/six/fresh仍null，不称全图/实体已部署或算法原创。Phase隔离。
