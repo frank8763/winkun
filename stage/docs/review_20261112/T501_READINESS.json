@@ -1,0 +1,99 @@
+{
+  "state": "REGISTERED_PREFLIGHT_PASS_NOT_LAUNCHED",
+  "preflight": {
+    "state": "PASS",
+    "pid": 814965,
+    "native": 0,
+    "commands": 6,
+    "discarded_Actor_Adam": 4,
+    "Value_Adam": 0,
+    "initial_actual_policy_actions_and_hidden_exact": true,
+    "drive_mature640_newsteer0_mapped": true,
+    "initial_metrics": {
+      "repair": {
+        "family_mean_MSE": [
+          0.0009240480379056044,
+          0.002774564976382405,
+          0.0026013880781985753
+        ],
+        "max_episode_MSE": 0.003009470905169591
+      },
+      "keep": {
+        "family_mean_MSE": [
+          2.5067595860347865e-32,
+          3.10945123033284e-32,
+          2.5902934481294206e-32
+        ],
+        "max_episode_MSE": 5.051426862800833e-32
+      }
+    },
+    "clone_updates_exact": true,
+    "full_mapped_ActorAdam_rejection_interruption_restore": true,
+    "sequence_step_error": 4.440892098500626e-16,
+    "clone4_step_seconds": 3.8029566790210083,
+    "estimated_live_shadow512_seconds": 486.77845491468906,
+    "all_workers_stopped": true,
+    "preflight_fit": {
+      "Actor_Adam": 2,
+      "Value_Adam": 0,
+      "drive_step_before": 640,
+      "drive_step_after": 642,
+      "new_steer_step_before": 0,
+      "new_steer_step_after": 2,
+      "initial": {
+        "repair": {
+          "family_mean_MSE": [
+            0.0009240480379056044,
+            0.002774564976382405,
+            0.0026013880781985753
+          ],
+          "max_episode_MSE": 0.003009470905169591
+        },
+        "keep": {
+          "family_mean_MSE": [
+            2.5067595860347865e-32,
+            3.10945123033284e-32,
+            2.5902934481294206e-32
+          ],
+          "max_episode_MSE": 5.051426862800833e-32
+        }
+      },
+      "final": {
+        "repair": {
+          "family_mean_MSE": [
+            0.0007468686244574516,
+            0.0023150067917556924,
+            0.002050893910503541
+          ],
+          "max_episode_MSE": 0.0026055123305878413
+        },
+        "keep": {
+          "family_mean_MSE": [
+            1.1954811949553893e-05,
+            1.3618570473062512e-05,
+            3.0768579744020105e-05
+          ],
+          "max_episode_MSE": 5.7349962622167744e-05
+        }
+      },
+      "trace": [
+        {
+          "step": 0,
+          "repair_balanced_tail_loss": 0.004278467064858041,
+          "keep_balanced_MSE": 2.735501421499015e-32,
+          "gradient_norm": 0.02407801975711282
+        },
+        {
+          "step": 1,
+          "repair_balanced_tail_loss": 0.003955894927655283,
+          "keep_balanced_MSE": 2.957691741400238e-06,
+          "gradient_norm": 0.02294080617370904
+        }
+      ],
+      "trainable_parameters": 11906,
+      "teacher_at_deployment": false
+    }
+  },
+  "protocol_sha256": "c7d83b5670d33960da44877453e076410bbbde5a4c38203eff2b145c39cd8ec5",
+  "no_autonomous_proposal_result_yet": true
+}
