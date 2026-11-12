@@ -1,3 +1,5 @@
+2026-11-12 用户专攻宽六米与旧任务。T500原因对照与成功源重建已注册，preflight/launch以凭证为准：固定3失败初态只移除速度adapter+3exact，旧42任务T449已GOAL完整重建+42exact，另dev_task6_00既有实际prefix5+safe恢复成功全history独立核验；合43训练源非单策略成功。0Adam/不训练学生，后续需同时修油门/转向且保护340真实成功；来源完整后另注册。48MiB/global1GiB/free40，CPU14/15总1核idle/GPU禁用；详review_20261112/T500_PLAN/BUDGET/CAUSE_AND_SOURCE_REVIEW。Phase隔离。
+
 2026-11-12 T499冻结模型329验收结束，FROZEN_FULL329_NOT_ALLPASS，old275={'valid': 275, 'success': 233, 'contact': 42, 'timeout': 0, 'invalid': 0, 'censored': 0}，wide6={'valid': 54, 'success': 53, 'contact': 1, 'timeout': 0, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；0Actor/ValueAdam，八米T49854/54保留，fresh16/reload78未执行，不称联合稳定。详review_20261112/T499_FINAL_REPORT。Phase隔离。
 
 2026-11-12 T499冻结同一T498八米54/54Actor的old275+宽六米54共329完整验收已注册，预检/launch以实际凭证为准；0Adam/无教师路由/不改科学。6.966735M/339cmd/6000main/600audit/8400all，完整329full原始shape最坏117316984B+10MiB<own128MiB/global1GiB/free40；CPU14/15总1核idle/GPU禁用。329科学失败也完成分项，异常/预算停止保partial；fresh16/reload78不在本轮预算且未执行。详review_20261112/T499_PLAN/BUDGET。Phase隔离。
