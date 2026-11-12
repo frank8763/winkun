@@ -1,3 +1,5 @@
+2026-11-12 T496检查补充（零新native/Adam）：原RIGHT5全GOAL，新增失败RIGHT09/18/21/22/24均原40策略已GOAL，最近决策点距目标.20175–.25362m后驶离；教师22/27及27exact/auditPASS，学生未执行。与T495 LEFT27成功来源及原40这5项成功记录合计覆盖54，但不是单Actor通过；5条baseline完整轨迹尚须精确原生重建。下一“完整54验证成功来源→单神经速度读出”仅草案，未注册启动。详review_20261112/T496_POSTMORTEM。Phase隔离。
+
 2026-11-12 T496神经速度策略学习结束，TEACHER_PROFILE_NOT_RECOVERABLE，student=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；训练期教师非部署策略，0新策略梯度/Value更新，非原创/稳定全图证明。详review_20261112/T496_FINAL_REPORT。Phase隔离。
 
 2026-11-12 T495单偏置校准左27/27右0/27已拒绝/独立auditPASS及T49431+T49572原件全远端逐SHA。新T496训练期前10s油门脉冲验证→5953参数神经纵向读出已注册/0native4合成丢弃Adam预检PASS及0native0Adam教师函数100步合同PASS，尚待实际launch。两哨兵RIGHT00/17均GOAL才其余25，RIGHT27全安全及27exact+audit才学生用LEFT27+RIGHT27真实54成功历史，512live512shadow/独立512重构、0新PG/Value；完整54及条件独立54读回，保原40成功ID且新增/0接触才接受，否则回退。部署单120真实carryActor，无侧/时间手工分支、规划/地图/路点/运行教师或路由；本轮学习是示范监督，非新增RL/原创/稳定全图。8.640108M/180cmd/6600main/9000all、90MiB/global1GiB/free40、CPU14/15总1核idle/GPU禁用，详review_20261112/T496_PLAN/BUDGET；Phase隔离。
