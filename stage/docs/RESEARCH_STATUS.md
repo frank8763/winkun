@@ -1,3 +1,5 @@
+2026-11-12/13 T510离线固定三分支结束：REGISTERED_FINITE_ARMS_COMPLETE，completed=['drive_only', 'steer_only', 'joint_keep_priority']，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；逐臂真实guard/field与缺测见overnight_20261112/FINAL_REPORT，原接受11模型保留；无新PG/Value，未验old275/six/eight/fresh。Phase隔离。
+
 2026-11-12 T510离线通宵三固定输出信用分支已注册/全部0native12丢弃历史Adam预检PASS，尚待源码同步/launch。用户确认11月13日09:00全停，08学/08:30native。drive-only/steer-only/joint保持优先原始梯度投影，各同接受field11/old8起点完整Adam1025/385一次32监督+21/21exact，保护19/条件余11+24exact；新PG0/Value0。根own52MiB/global1GiB/free40、每臂28MiB完整最坏准入，不足明文skip，不无限填钟；CPU14,15合计1核/GPU禁用。科学接力本地无需网络LLM，全部结束后备份失败REMOTE_PENDING。详overnight_20261112/PLAN/BUDGET/LOCAL_READINESS，原最佳保留，Phase隔离。
 
 2026-11-12 T509两近目标自身成功联合学习结束，JOINT_PROPOSAL_REJECTED_ROLLBACK，training={'valid': 8, 'success': 8, 'contact': 0, 'timeout': 0, 'invalid': 0, 'censored': 0}，field24=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；8新探索8exact/最多2x16监督及21原生守门/0新PG/Value0，旧最佳独立保留，本轮完整old275/six/eight未执行。详review_20261112/T509_FINAL_REPORT。Phase隔离。
