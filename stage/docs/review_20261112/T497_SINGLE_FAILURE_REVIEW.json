@@ -1,0 +1,223 @@
+{
+  "state": "POSTHOC_READ_ONLY_COMPLETE",
+  "job": "wide117_8m_dev6_RIGHT_18",
+  "source_files": {
+    "baseline_success": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t497_success_union_student/teacher/episodes/0001.npz",
+      "sha256": "2d5a3be9bc96a941f1910fc6532b6c95ec7bd10632a579966eb5fdb2100311b7",
+      "array_digest": "986e757f756a0a481f683335faf223f3b6a3e0320d67304a0fb8157ac3aabd86"
+    },
+    "pulse_failure": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t496_neural_speed_profile/teacher/episodes/0018.npz",
+      "sha256": "cbe65ea59f30839b28a4f3722fbcf25a19c2cc9bf33020409436fe215478cb9f",
+      "array_digest": "7de5853cff8bde37efec07139693141de530b31ac9f595c42c29e01c5281aecf"
+    },
+    "student_failure": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t497_success_union_student/student/episodes/0045.npz",
+      "sha256": "2024b2ce113ae5a4078a41f5bb85c95fa2419ad56afd67a67d728883637f2a29",
+      "array_digest": "763351e6df62e1c0073ad50c44c2abbcbd7dfdaa1bc2dc0235928cb26c512786"
+    }
+  },
+  "trajectories": {
+    "baseline_success": {
+      "success": true,
+      "timeout": false,
+      "contact": false,
+      "seconds": 97.29600000000084,
+      "remaining_m": 0.19995712353967796,
+      "min_decision_distance_m": 0.19995712353967796,
+      "closest_seconds": 97.29600000000084,
+      "first20": {
+        "speed_m_s": 0.048982573215616484,
+        "heading_deg": 9.090350234346806,
+        "drive": 0.16796182135193802,
+        "steer": 0.5605140602363662,
+        "away_seconds": 0.0
+      },
+      "last20": {
+        "speed_m_s": 0.1400694321653612,
+        "heading_deg": 13.036713458397339,
+        "drive": 0.9718420492342117,
+        "steer": -0.11220168493535321,
+        "away_seconds": 0.0
+      },
+      "whole": {
+        "speed_m_s": 0.08172692359962601,
+        "heading_deg": 8.002405338709233,
+        "drive": 0.41603016084262473,
+        "steer": 0.13883223852513205,
+        "away_seconds": 0.0
+      },
+      "distance_by_second": {
+        "0": 7.959851325889632,
+        "10": 7.54823251573379,
+        "20": 6.987790218325029,
+        "40": 5.732607031352729,
+        "60": 4.988345608961999,
+        "80": 2.427735384315727,
+        "90": 0.8826063102888164,
+        "100": 0.19995712353967796
+      }
+    },
+    "pulse_failure": {
+      "success": false,
+      "timeout": true,
+      "contact": false,
+      "seconds": 106.66800000000097,
+      "remaining_m": 1.215538270200226,
+      "min_decision_distance_m": 0.25361623915710646,
+      "closest_seconds": 93.00000000000078,
+      "first20": {
+        "speed_m_s": 0.062276425730511294,
+        "heading_deg": 8.264266424442848,
+        "drive": 0.3529127381078089,
+        "steer": 0.3022263364054928,
+        "away_seconds": 0.0
+      },
+      "last20": {
+        "speed_m_s": 0.10229842887493477,
+        "heading_deg": 114.95763722536715,
+        "drive": 0.831765255494595,
+        "steer": 0.7929825514227975,
+        "away_seconds": 13.667999999999996
+      },
+      "whole": {
+        "speed_m_s": 0.08774008030152648,
+        "heading_deg": 27.002732093703788,
+        "drive": 0.5102834960099105,
+        "steer": 0.23345820694987396,
+        "away_seconds": 13.667999999999996
+      },
+      "distance_by_second": {
+        "0": 7.959851325889632,
+        "10": 7.306164195123257,
+        "20": 6.723312144099607,
+        "40": 5.620688996690399,
+        "60": 4.598600380356025,
+        "80": 1.516690143602539,
+        "90": 0.4141426608362476,
+        "100": 0.6614331893623248
+      }
+    },
+    "student_failure": {
+      "success": false,
+      "timeout": true,
+      "contact": false,
+      "seconds": 106.66800000000097,
+      "remaining_m": 0.9137009399251808,
+      "min_decision_distance_m": 0.2046345802724518,
+      "closest_seconds": 96.60000000000083,
+      "first20": {
+        "speed_m_s": 0.053724636165051014,
+        "heading_deg": 8.648229710393505,
+        "drive": 0.22085779078078854,
+        "steer": 0.4357146817158061,
+        "away_seconds": 0.0
+      },
+      "last20": {
+        "speed_m_s": 0.10010546560421552,
+        "heading_deg": 89.50522452659985,
+        "drive": 0.8781823984617102,
+        "steer": 0.5728314613615179,
+        "away_seconds": 10.067999999999998
+      },
+      "whole": {
+        "speed_m_s": 0.08441904488324184,
+        "heading_deg": 21.931155601514714,
+        "drive": 0.4744555921673928,
+        "steer": 0.21495105726914712,
+        "away_seconds": 10.067999999999998
+      },
+      "distance_by_second": {
+        "0": 7.959851325889632,
+        "10": 7.492559921302783,
+        "20": 6.896751424356591,
+        "40": 5.697948286344789,
+        "60": 4.9281871080902775,
+        "80": 2.108721213810578,
+        "90": 0.7427529447492712,
+        "100": 0.35500264065819515
+      }
+    }
+  },
+  "student_actions_on_original_success_history": {
+    "all": {
+      "drive_RMSE": 0.017334531992673874,
+      "drive_mean_error": 0.0053799874149262905,
+      "drive_max_abs_error": 0.1260729432106018
+    },
+    "first20": {
+      "drive_RMSE": 0.03558026999235153,
+      "drive_mean_error": 0.022006262093782425,
+      "drive_max_abs_error": 0.1260729432106018
+    },
+    "last20": {
+      "drive_RMSE": 0.0016500992933288217,
+      "drive_mean_error": -0.00012117743608541787,
+      "drive_max_abs_error": 0.0033586621284484863
+    }
+  },
+  "drive_examples": [
+    {
+      "seconds": 0.0,
+      "target_drive": 0.4036426544189453,
+      "student_drive_on_success_history": 0.5297155976295471,
+      "error": 0.1260729432106018
+    },
+    {
+      "seconds": 5.000000000000002,
+      "target_drive": -0.09308528155088425,
+      "student_drive_on_success_history": -0.0485912561416626,
+      "error": 0.04449402540922165
+    },
+    {
+      "seconds": 9.999999999999996,
+      "target_drive": -0.014966852031648159,
+      "student_drive_on_success_history": 0.053261905908584595,
+      "error": 0.06822875887155533
+    },
+    {
+      "seconds": 19.99999999999996,
+      "target_drive": 0.2983521819114685,
+      "student_drive_on_success_history": 0.2963455319404602,
+      "error": -0.0020066499710083008
+    },
+    {
+      "seconds": 40.00000000000003,
+      "target_drive": -0.05301607400178909,
+      "student_drive_on_success_history": -0.05244944617152214,
+      "error": 0.0005666278302669525
+    },
+    {
+      "seconds": 60.00000000000031,
+      "target_drive": 0.09573924541473389,
+      "student_drive_on_success_history": 0.09686840325593948,
+      "error": 0.001129157841205597
+    },
+    {
+      "seconds": 80.0000000000006,
+      "target_drive": 0.9669812917709351,
+      "student_drive_on_success_history": 0.9660549759864807,
+      "error": -0.0009263157844543457
+    },
+    {
+      "seconds": 90.00000000000074,
+      "target_drive": 0.980437695980072,
+      "student_drive_on_success_history": 0.9815866351127625,
+      "error": 0.0011489391326904297
+    }
+  ],
+  "first_XY_deviation_seconds": {
+    "0.01": 1.4000000000000001,
+    "0.05": 8.200000000000001,
+    "0.1": 12.600000000000001,
+    "0.2": 61.800000000000004
+  },
+  "native": 0,
+  "Adam": 0,
+  "causal_intervention_tested": false,
+  "nearest_distance_is_decision_endpoints_not_continuous_native_minimum": true,
+  "global_logical_bytes": 746260839,
+  "free_bytes": 237850599424,
+  "elapsed_s": 0.9988055229187012
+}
