@@ -1,3 +1,5 @@
+2026-11-12 T495单一油门神经头因果校准完成，{'valid': 54, 'success': 27, 'contact': 0, 'timeout': 27, 'invalid': 0, 'censored': 0}；仅开发验收，0新增Actor/Value Adam，不称新RL算法或八米稳定。独立auditPASS，远端FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，旧模型保留；详review_20261112/T495_FINAL_REPORT。Phase隔离。
+
 2026-11-12 T494原40/54研究候选14个超时完整原生复现+14exact及独立audit PASS：1493352物理/32命令/874.241秒/0Adam，14均单调接近、前20s均速.0167–.0278m/s，末20s.1133–.1624、航向误差5.2–11.13度，路径额外仅1–4.2%；T49318轮仅4起点采集，14失败中11未直接覆盖。新T495单一油门头偏置+0.16347722555444755因果校准已注册/0native0Adam预检PASS，尚待实际launch；从明确未晋升40/54副本，不覆盖原39。冻结其他参数，完整54full后条件独立54读回或原14exact，40成功ID不丢且新增/零接触才接受；5.760072M/116cmd/3600main/600audit/4800all、52MiB/global1GiB/free40，CPU14/15总1核idle/GPU禁用。非新RL训练/算法原创，不改时限/半径/执行器，不称8米稳定。详review_20261112/T494_FINDINGS/T495_BUDGET；Phase隔离。
 
 2026-11-11/12 T493宽八米通宵有限多机制接力结束，reason=FULL_WORST_REMAINING_ADMISSION_STOP，best={'valid': 54, 'success': 39, 'contact': 1, 'timeout': 14, 'invalid': 0, 'censored': 0}，accounting={'physics': 60809715, 'commands': 1292, 'main_seconds': 36477.81173944473}，remote=PENDING；独立gate=False，不得将开发/探索/中心称稳定或实体部署。详overnight_20261111/FINAL_REPORT；Phase隔离。
