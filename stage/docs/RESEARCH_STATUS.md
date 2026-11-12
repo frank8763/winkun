@@ -1,3 +1,5 @@
+2026-11-12 T498初段最差误差修复+53自主成功保持已注册，预检/launch以实际文件为准。未晋升53候选与512成熟Adam初始化，5953参数仅adapter、128live128shadow/独立128audit/预检4丢弃Adam。repair前20s/top20%+.5mean53未裁剪location保持，固定单候选；54/54零接触才接受和独立全54模型读回，否则原14+RIGHT18共15exact/整ActorAdam回退。5.760072M/122cmd/3600main/600audit/6000all、64MiB/global1GiB/free40，CPU14/15总1核idle/GPU禁用；old275/six/freshnull，详review_20261112/T498_PLAN/BUDGET。Phase隔离。
+
 2026-11-12 T497独立检查：自主wide8 53/54=98.15%(LEFT27 RIGHT26)，原14全GOAL、唯一丢RIGHT18，故按原40保持合同不接受，候选原件保留。原14exact/512历史Adam独立auditPASS，全部92原件远端逐SHA通过，所有进程结束。RIGHT18最近决策.20463458m后驶离，初段成功历史上油门误差+.126073、前20s RMSE.03558，8.2s XY偏差过5cm；相关证据非唯一因果。posthoc0native0Adam；下一T498早期/最差状态修复+53自主成功零损失保持仅草案未注册启动，详T497_FINDINGS/T498_NEXT_DRAFT。原最终source TLS35错误保留，后续补同步以receipt为准。Phase隔离。
 
 2026-11-12 T497完整成功来源的单Actor速度学习结束，FIXED_STUDENT_BUDGET_COMPLETE_NOT_ALLPASS，student={'valid': 54, 'success': 53, 'contact': 0, 'timeout': 1, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；训练期教师非部署策略，0新策略梯度/Value更新，非原创/稳定全图证明。详review_20261112/T497_FINAL_REPORT。Phase隔离。

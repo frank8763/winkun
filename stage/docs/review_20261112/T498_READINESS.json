@@ -1,0 +1,61 @@
+{
+  "state": "REGISTERED_PREFLIGHT_PASS_NOT_LAUNCHED",
+  "preflight": {
+    "state": "PASS",
+    "pid": 788022,
+    "native": 0,
+    "commands": 6,
+    "discarded_Actor_Adam": 4,
+    "Value_Adam": 0,
+    "initial_mature_joint_exact": true,
+    "initial_53_keep": {
+      "repair_all_MSE": 0.0003004859561808107,
+      "repair_first20_MSE": 0.0012659555513124892,
+      "repair_first_drive_error": 0.12607292396372194,
+      "keep_mean_MSE": 1.6244364219380158e-32,
+      "keep_max_episode_MSE": 2.0402694297362094e-32
+    },
+    "clone_updates_exact": true,
+    "full_rejection_and_interruption_rollback_exact": true,
+    "sequence_step_error": 4.440892098500626e-16,
+    "all_workers_stopped": true,
+    "preflight_fit": {
+      "Actor_Adam": 2,
+      "Value_Adam": 0,
+      "trainable_parameters": 5953,
+      "mature_initial_step": 512,
+      "final_step": 514,
+      "initial": {
+        "repair_all_MSE": 0.0003004859561808107,
+        "repair_first20_MSE": 0.0012659555513124892,
+        "repair_first_drive_error": 0.12607292396372194,
+        "keep_mean_MSE": 1.6244364219380158e-32,
+        "keep_max_episode_MSE": 2.0402694297362094e-32
+      },
+      "final": {
+        "repair_all_MSE": 0.00017386010634441387,
+        "repair_first20_MSE": 0.0006456926661532659,
+        "repair_first_drive_error": 0.10608970999473344,
+        "keep_mean_MSE": 4.994881205674555e-05,
+        "keep_max_episode_MSE": 0.00011364537520228593
+      },
+      "trace": [
+        {
+          "step": 0,
+          "repair_loss": 0.0015405730980562239,
+          "keep_MSE": 1.6244364219380158e-32,
+          "norm": 0.03849431523514406
+        },
+        {
+          "step": 1,
+          "repair_loss": 0.0011839811250798473,
+          "keep_MSE": 5.832245007203205e-06,
+          "norm": 0.026652066171747382
+        }
+      ],
+      "teacher_at_deployment": false
+    }
+  },
+  "protocol_sha256": "2dea349f62fd610b977cfe8dccc9009a5ae01362d5ad0ae7443aed7343a8207e",
+  "no_navigation_result_yet": true
+}
