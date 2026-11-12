@@ -1,3 +1,5 @@
+2026-11-12 T503新起点真实闭环RL已注册/正式0native4合成丢弃Adam预检PASS，尚待源码同步/launch：sector5/2_offset1各4新iid样本+8exact，至少1safeGOAL才最多16live16shadow策略裁剪更新/Value0，物理时间三同行RTG基线及原奖励，mature896/256保留显式lr3e-5；保持原379+场地5成功history，old8+field24+24exact。研究接受保field原5且>5、old8安全/碰撞<=11，否则回退，完整old275/six/eight未测，旧最佳锁定。own48MiB/global1GiB/free40，CPU14/15总1核idle/GPU禁用，详review_20261112/T503_PLAN/BUDGET。Phase隔离。
+
 2026-11-12 T502归档收尾完成：全部57科学原始及注册/原静态拒绝/预检文件完整远端二进制逐成员SHA，原TLS35/PENDING保留，见release_receipt_T502/T502_BACKUP_COMPLETION。24自主5GOAL11contact8timeout+24exact/auditPASS，全部进程停；旧最佳锁定，未开启新训练。后续多起点/目标训练与末段恢复方案未注册启动，Phase隔离。
 
 2026-11-12 T502全场地首轮独立检查：24新任务5GOAL/11contact/8timeout（20.83%），三距离组3/8、2/8、0/8；24exact/全history auditPASS/模型不变，所有进程停止。6近目标错过后驶离、1近目标后再接触、2慢速远距超时、10未到目标前障碍接触，行为分类非唯一因果；原旧271/六54/八54最佳保留，暂停旧4修复按用户新范围。下一多起点goal数据/末段真实恢复+短程避障课程仅草案未启动；归档TLS35后补传以receipt为准，详T502_FINDINGS/FAILURE_TYPES。Phase隔离。
