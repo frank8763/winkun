@@ -1,3 +1,5 @@
+2026-11-12 T505联合修复有限闭环检查结束，JOINT_OLD8_FIELD7_RETAINED，training=2，field24={'valid': 24, 'success': 7, 'contact': 10, 'timeout': 7, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；最多4x16监督与逐块15项原生检查/0新策略梯度/Value0，旧最佳独立保留，本轮完整old275/six/eight未执行。详review_20261112/T505_FINAL_REPORT。Phase隔离。
+
 2026-11-12 T505联合旧2修复+13真实成功保持已注册/正式0native4丢弃监督Adam预检PASS，尚待源同步/launch：明确T504未晋升研究初始，最多4x16live/shadow，每块old8+field7各15原生+15exact，首次丢保护ID整块回退止学。old8恢复后剩余17+全24exact，原T503最佳独立保留，非新增RL/原创。own64MiB/global1GiB/free40GiB/CPU14,15总1核/GPU禁用/all21:02，详T505_PLAN/BUDGET及research_20261112_t505。Phase隔离。
 
 2026-11-12 T504成功历史有限回放结束，SUCCESS_REPLAY_REJECTED_ROLLBACK，training=2，field24={'valid': 24, 'success': 7, 'contact': 10, 'timeout': 7, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；2条既有成功监督64live64shadow/0新策略梯度/Value0，旧最佳独立保留，本轮完整old275/six/eight未执行。详review_20261112/T504_FINAL_REPORT。Phase隔离。
