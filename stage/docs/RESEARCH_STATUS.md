@@ -1,3 +1,5 @@
+2026-11-12 T511通宵新机制已注册/0native4新头丢弃Adam预检PASS，尚待源同步/launch：冻结接受field11父策略全部参数/原Adam，新增11970参数0输出全局残差(.1tanh)，27完整历史初始函数逐位相同；只新头freshAdam3e-4。固定8GOAL+19keep，最多6x32live/shadow、逐块21+21exact保护，首次拒绝全回退，有新成功才余11+24exact。own40MiB/global1GiB/free40/完整nextblock+final容量准入，不足明文stop不扩；与T510合计最坏13.99M物理/441cmd/16083s。09:00all/08学/08:30native，CPU14,15总1核/GPU禁用，离线本地不依赖LLM网络。清理7已全远端备份废弃预检clone释放7.45MB，科研模型/轨迹未删。详overnight_20261112/CONTINUATION_PLAN/BUDGET/T511_READINESS。Phase隔离。
+
 2026-11-12/13 T510离线固定三分支结束：REGISTERED_FINITE_ARMS_COMPLETE，completed=['drive_only', 'steer_only', 'joint_keep_priority']，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；逐臂真实guard/field与缺测见overnight_20261112/FINAL_REPORT，原接受11模型保留；无新PG/Value，未验old275/six/eight/fresh。Phase隔离。
 
 2026-11-12 T510离线通宵三固定输出信用分支已注册/全部0native12丢弃历史Adam预检PASS，尚待源码同步/launch。用户确认11月13日09:00全停，08学/08:30native。drive-only/steer-only/joint保持优先原始梯度投影，各同接受field11/old8起点完整Adam1025/385一次32监督+21/21exact，保护19/条件余11+24exact；新PG0/Value0。根own52MiB/global1GiB/free40、每臂28MiB完整最坏准入，不足明文skip，不无限填钟；CPU14,15合计1核/GPU禁用。科学接力本地无需网络LLM，全部结束后备份失败REMOTE_PENDING。详overnight_20261112/PLAN/BUDGET/LOCAL_READINESS，原最佳保留，Phase隔离。
