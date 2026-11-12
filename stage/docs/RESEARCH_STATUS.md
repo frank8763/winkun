@@ -1,3 +1,5 @@
+2026-11-12 T507新旧成功联合整合已注册/正式0native4丢弃监督Adam预检PASS，尚待源同步/launch：从接受T505，12已存真实GOAL执行动作BC+15真实成功未裁剪保持，最多3x32live/shadow、每块18原生+18exact逐ID保护、首次拒绝全ActorAdam回退止学；有新成功才余14+24exact，field>7/old8safe才保留。非新增RL/Value0/无新增容量，原最佳独立保留。own64MiB/global1GiB/free40GiB/CPU14,15总1核/GPU禁用/all22:24，详T507_PLAN/BUDGET及research_20261112_t507。Phase隔离。
+
 2026-11-12 T506新三任务真实闭环RL结束，PROPOSAL_REJECTED_ROLLBACK，training={'valid': 12, 'success': 12, 'contact': 0, 'timeout': 0, 'invalid': 0, 'censored': 0}，field24=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；12新采集+12exact/最多16真实策略更新及shadow/Value0，旧最佳独立保留，本轮完整old275/six/eight未执行。详review_20261112/T506_FINAL_REPORT。Phase隔离。
 
 2026-11-12 T506三个近目标超时任务真实RL已注册/正式0native4合成丢弃Adam预检PASS，尚待源同步/launch：从已接受T505，固定7off1/7off2/0off1各4新iid探索+12exact，有qualifiedGOAL才max16live16shadow/Value0，old8+field7真实15+15exact全过才余17+24exact，field>7才保留否则全ActorAdam回退。原T505最佳保留，旧275/six/eight/fresh未安排，own64MiB/global1GiB/free40GiB/CPU14,15总1核/GPU禁用/all21:46，详T506_PLAN/BUDGET及research_20261112_t506。Phase隔离。
