@@ -1,3 +1,7 @@
+2026-11-12 T498最终核验：同一自主Actor宽八米54/54(LEFT27 RIGHT27)全safe，独立模型拷贝54原生全数组/积分精确、128历史Adam审计PASS，所有进程退出；原TLS35后补传全部76原件远端完整二进制逐成员SHA已过，旧PENDING/错误保留，以release_receipt_T498/T498_BACKUP_COMPLETION为准。global774840689B<1GiB/free40GiB。下一T499冻结同模型old275+wide6共329验收，条件未见16/独立78仅草案未注册启动，不继续改八米已过模型。详T498_FINDINGS/T499_VALIDATION_DRAFT；old275/six/fresh仍null，不称全图/实体已部署或算法原创。Phase隔离。
+
+2026-11-12 T498早期误差修复与53成功保持结束，STUDENT54_DEVELOPMENT_ALLPASS，student={'valid': 54, 'success': 54, 'contact': 0, 'timeout': 0, 'invalid': 0, 'censored': 0}，remote=PENDING；训练期教师非部署策略，0新策略梯度/Value更新，非原创/稳定全图证明。详review_20261112/T498_FINAL_REPORT。Phase隔离。
+
 2026-11-12 T498初段最差误差修复+53自主成功保持已注册，预检/launch以实际文件为准。未晋升53候选与512成熟Adam初始化，5953参数仅adapter、128live128shadow/独立128audit/预检4丢弃Adam。repair前20s/top20%+.5mean53未裁剪location保持，固定单候选；54/54零接触才接受和独立全54模型读回，否则原14+RIGHT18共15exact/整ActorAdam回退。5.760072M/122cmd/3600main/600audit/6000all、64MiB/global1GiB/free40，CPU14/15总1核idle/GPU禁用；old275/six/freshnull，详review_20261112/T498_PLAN/BUDGET。Phase隔离。
 
 2026-11-12 T497独立检查：自主wide8 53/54=98.15%(LEFT27 RIGHT26)，原14全GOAL、唯一丢RIGHT18，故按原40保持合同不接受，候选原件保留。原14exact/512历史Adam独立auditPASS，全部92原件远端逐SHA通过，所有进程结束。RIGHT18最近决策.20463458m后驶离，初段成功历史上油门误差+.126073、前20s RMSE.03558，8.2s XY偏差过5cm；相关证据非唯一因果。posthoc0native0Adam；下一T498早期/最差状态修复+53自主成功零损失保持仅草案未注册启动，详T497_FINDINGS/T498_NEXT_DRAFT。原最终source TLS35错误保留，后续补同步以receipt为准。Phase隔离。
