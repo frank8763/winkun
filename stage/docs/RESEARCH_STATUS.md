@@ -1,3 +1,5 @@
+2026-11-12 T500最终检查：42GOAL+42exact/独立audit与原dev6_00实际成功恢复全history核验齐全，75原件远端逐SHA，所有进程退。固定速度模块ablation仅六米LEFT18恢复，两个旧代表仍接触，不能推广全部43因果。后续只读0native0Adam：43成功动作最小logit修正drive.22784/steer.09705均在±.3内；T501拟新增零初始转向神经残差+原速度残差联合修复43并保护340真实成功，成熟driveAdam640保留/newsteer0，完整383验收。仅草案未注册启动，详T500_FINDINGS/T501_PLAN_DRAFT/DATA_AND_ACTION_SUPPORT；原成绩旧233/275六米53/54八米54/54未变，Phase隔离。
+
 2026-11-12 T500冻结对照与43成功修复来源结束，FROZEN_CAUSE_PROBE_AND43_VERIFIED_SOURCES_COMPLETE，ablation={'valid': 3, 'success': 1, 'contact': 2, 'timeout': 0, 'invalid': 0, 'censored': 0}，sources={'valid': 42, 'success': 42, 'contact': 0, 'timeout': 0, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；0native训练/0Adam，教师成功不算新学生能力，无新329/383验收，详review_20261112/T500_FINAL_REPORT。Phase隔离。
 
 2026-11-12 用户专攻宽六米与旧任务。T500原因对照与成功源重建已注册，preflight/launch以凭证为准：固定3失败初态只移除速度adapter+3exact，旧42任务T449已GOAL完整重建+42exact，另dev_task6_00既有实际prefix5+safe恢复成功全history独立核验；合43训练源非单策略成功。0Adam/不训练学生，后续需同时修油门/转向且保护340真实成功；来源完整后另注册。48MiB/global1GiB/free40，CPU14/15总1核idle/GPU禁用；详review_20261112/T500_PLAN/BUDGET/CAUSE_AND_SOURCE_REVIEW。Phase隔离。
