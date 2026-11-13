@@ -5,6 +5,7 @@ ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent
 OUT=ROOT/'stage/runs/t536_compact_native_restore';DOC=ROOT/'stage/docs/day_20261113'
 sys.path.insert(0,str(ROOT/'stage/experiments/t502_fullfield_probe'));import t502_runtime as F
 sys.path.insert(0,str(ROOT/'stage/experiments/t535_minimal_snapshot'));import compact_snapshot as Compact
+sys.path.insert(0,str(HERE));from state_equal import equal as state_equal
 G,A,E,P,np,torch=F.G,F.L,F.E,F.P,F.np,F.torch
 read,save,sha,digest=G.read,G.save,G.sha,G.digest
 def used(folder):return sum(f.stat().st_size for f in Path(folder).rglob('*') if f.is_file())
@@ -65,13 +66,17 @@ def main():
                 assert np.array_equal(s.initial,a['initial_native_integration'])
                 for k in range(first):s.step();source_check(s,a,k)
                 assert counts-before==first*100 and not s.done()
-                snapshot=Compact.compact(s.capture());assert np.array_equal(snapshot['packet'],a['states'][first])
+                original_snapshot=s.capture();snapshot=Compact.compact(original_snapshot)
+                Compact.verify_preserved(original_snapshot,snapshot,state_equal)
+                assert np.array_equal(snapshot['packet'],a['states'][first])
                 blob=gzip.compress(pickle.dumps(snapshot,protocol=5),mtime=0);assert len(blob)<=p['snapshot_bytes'];snapfile=OUT/('snapshot_'+str(wi)+'.pkl.gz');snapfile.write_bytes(blob)
                 snapshot_digest=digest(dict(physics=snapshot['native']['physics'],packet=snapshot['packet'],hidden=snapshot['hidden'],meta=snapshot['meta'],steps=snapshot['steps'],previous=snapshot['previous'],pn=snapshot['pn']))
                 for k in range(first,stop):s.step();source_check(s,a,k)
                 continuous=continuation(s,first);assert len(continuous['states'])==p['holds']
                 # Restore a deserialized disk artifact, never an in-memory alias.
-                saved=pickle.loads(gzip.decompress(snapfile.read_bytes()));s.restore(saved);commands+=1
+                saved=pickle.loads(gzip.decompress(snapfile.read_bytes()))
+                Compact.verify_preserved(original_snapshot,saved,state_equal)
+                s.restore(saved);commands+=1
                 assert np.array_equal(s.packet(),saved['packet']) and np.array_equal(s.hidden.numpy(),saved['hidden'].numpy())
                 for k in range(first,stop):s.step();source_check(s,a,k,first)
                 restored=continuation(s,0)
