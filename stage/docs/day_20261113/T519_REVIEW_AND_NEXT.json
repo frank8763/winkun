@@ -1,0 +1,81 @@
+{
+  "epoch": 1794539004.8001308,
+  "native": 0,
+  "Adam": 0,
+  "source_summary_sha256": "b17be6067c0292e0278457828f543fc785728b1ab5875bbf5c2d78f5caf04787",
+  "source_audit_sha256": "41dc11fae4c07e8728ea0f1069acd0ca21fb2faaf3a4668ef8ab11db73865e66",
+  "candidate": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t519_fresh_full_actor_rl/pilot/proposal.pt.gz",
+    "sha256": "8dda282ab57f95d8743b6327bcd0dce2b1c4d60e1739426f406bcb2e5e0ba141",
+    "policy_hash": "95a01cd180dd70435c777d260cad0c2d5c336d6a4b414f7760cbc8784500eb42",
+    "joint_hash": "e22a844f51262f6689f8c4d0266fe2f6868109bb1ecc22755209c00af98a6de6",
+    "bytes": 1855938
+  },
+  "candidate_accepted": false,
+  "field24": {
+    "valid": 24,
+    "success": 12,
+    "contact": 9,
+    "timeout": 3,
+    "invalid": 0,
+    "censored": 0
+  },
+  "old8": {
+    "valid": 8,
+    "success": 7,
+    "contact": 0,
+    "timeout": 1,
+    "invalid": 0,
+    "censored": 0
+  },
+  "gained_ids": [
+    "t502_field_sector0_offset2"
+  ],
+  "lost_field_ids": [],
+  "old_failed_task": "dev_task6_13",
+  "old_failure_type": "TIMEOUT_NO_COLLISION",
+  "old_final_distance_m": 0.31577659354998966,
+  "old_final_seconds": 46.668,
+  "continuous_or_decision_minimum_distance_UNKNOWN": true,
+  "evaluation_full120_NOT_saved": true,
+  "parent_history_output_diagnostic": {
+    "location_RMSE_per_axis": [
+      0.004459642329072112,
+      0.005399924224273249
+    ],
+    "max_abs_per_axis": [
+      0.011557292759002857,
+      0.01265483184396466
+    ],
+    "worst_parent_history_time_s": 3.8000000000000003,
+    "not_actual_candidate_closedloop_causal_decomposition": true
+  },
+  "locked_best": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+    "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+    "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+    "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+    "bytes": 1063607
+  },
+  "locked_best_SHA_unchanged": true,
+  "next_draft_only": {
+    "out_directory_NOT_CREATED": true,
+    "new_model_NOT_promoted": true,
+    "initial_candidate": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t519_fresh_full_actor_rl/pilot/proposal.pt.gz",
+      "sha256": "8dda282ab57f95d8743b6327bcd0dce2b1c4d60e1739426f406bcb2e5e0ba141",
+      "policy_hash": "95a01cd180dd70435c777d260cad0c2d5c336d6a4b414f7760cbc8784500eb42",
+      "joint_hash": "e22a844f51262f6689f8c4d0266fe2f6868109bb1ecc22755209c00af98a6de6",
+      "bytes": 1855938
+    },
+    "training_task": "dev_task6_13",
+    "fresh_episodes": 4,
+    "exact_replays": 4,
+    "max_PG_steps": 16,
+    "behavior_acceptance": "old8all8safeGOAL plus all12T519fieldsuccessIDs retained,field>=12/contact<=9/0invalidcensor; full32+32nativeexact, no actionRMSEhardgate.",
+    "own_bytes_proposed": 6291456,
+    "actual_global_bytes": 1066425000,
+    "global_reserved": 1072716456,
+    "global_limit": 1073741824
+  }
+}
