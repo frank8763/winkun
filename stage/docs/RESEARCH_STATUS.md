@@ -1,3 +1,5 @@
+2026-11-13 T530已验证恢复轨迹学习结束，OLD_RECOVERY_UNQUALIFIED_ZERO_LEARNING，old8=None，field24=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；旧左真实恢复资格＋新目标实际成功history与原19保持，条件16监督live/shadow，0新PG，同候选完整old8+field24与exact；不代表old275/six/eight全验收，旧接受最佳保留。详T530_FINAL_REPORT。Phase隔离。
+
 2026-11-13 用户下一步开始，T530已注册/零物理4合成丢弃Adam预检PASS，待source/launch；T529旧左30.2s教师失败，而等物理时刻历史轨迹首次持续偏离5.0s，预冻结4.8s接管一次，不扫时刻；原失败/新目标成功T529全数组已audit精确，复用而不重跑。教师全恢复安全才16全Actor监督live/shadow＋真实old8/field11/newgoal三族成功保持，再完整old8+field24及32exact，否则0训练；原接受T50711+8独立不动。80cmd3.247872M物理2400main300audit300backup/own5MiB/global1GiB/free40/CPU14,15总1核GPUoff/17:30all。注册前导入路径错误0native0Adam原源已保留，仅路径修复。不是新PG/原创/完整场地已通过。详T530_PLAN/BUDGET/DIVERGENCE；Phase隔离。
 
 2026-11-13 T529已验证恢复轨迹学习结束，OLD_RECOVERY_UNQUALIFIED_ZERO_LEARNING，old8=None，field24=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；旧左真实恢复资格＋新目标实际成功history与原19保持，条件16监督live/shadow，0新PG，同候选完整old8+field24与exact；不代表old275/six/eight全验收，旧接受最佳保留。详T529_FINAL_REPORT。Phase隔离。
