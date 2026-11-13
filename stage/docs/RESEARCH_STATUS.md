@@ -1,3 +1,5 @@
+2026-11-13 T52012场地研究副本旧中心修复结束，OLD_CENTER_REPAIR_REJECTED_ROLLBACK，training={'valid': 4, 'success': 1, 'contact': 3, 'timeout': 0, 'invalid': 0, 'censored': 0}，field24={'valid': 24, 'success': 11, 'contact': 9, 'timeout': 4, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；4新onpolicy+4exact/最多16PPO+shadow/旧8及完整field24原生验收/Value0，旧最佳独立保留，本轮完整old275/six/eight未执行。详day_20261113/T520_FINAL_REPORT。Phase隔离。
+
 2026-11-13 T519真实闭环全Actor强化学习结束，FRESH_FULL_ACTOR_RL_REJECTED_ROLLBACK，training={'valid': 4, 'success': 3, 'contact': 0, 'timeout': 1, 'invalid': 0, 'censored': 0}，field24={'valid': 24, 'success': 12, 'contact': 9, 'timeout': 3, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；4新onpolicy+4exact/最多16PPO+shadow/旧8及完整field24原生验收/Value0，旧最佳独立保留，本轮完整old275/six/eight未执行。详day_20261113/T519_FINAL_REPORT。Phase隔离。
 
 2026-11-13 T518活跃输出约束切向投影试验结束，offline_joint_gate=False，最多2048提案/live-shadow与历史audit实际计数见报告+5pref，0native/0新PG/Value0，原父策略冻结/零残差回退，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；教师30训练29同轨迹blocked验证非导航留出，旧19和前缀保持指标见day_20261113/T518_FINAL_REPORT。无新自主验收或晋升，field最佳11/24不变，Phase隔离。
