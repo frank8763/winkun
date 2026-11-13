@@ -1,3 +1,5 @@
+2026-11-13 T538原生条件参数方向测量结束，NATIVE_LOCAL_DIRECTION_PARTLY_UNRESOLVED_OR_NONSMOOTH，真实20000物理/45命令/0ActorValue；固定方向40个原生短分支及重复/扰动hidden独立原件auditPASS，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。T534/T536/T537已用116900物理另计，累计136900；这仅条件窗口原生有限差分，不是原点整回合梯度或导航提升，Actor仍0更新。后续学习未启动，旧最佳与失败原件保持。详T538_PLAN/FINAL_REPORT；窗口以注册协议为准，Stage/Phase隔离。
+
 2026-11-13 用户明确允许额外5k替换首窗，T538持久化修复已注册/0native预检PASS，待精确source/launch。科学设置精确T537，40原生1秒分支/20k新物理/45cmd，T537旧5k另计合计≤25k；首10hash/指标须精确旧reported。26字段stack未压缩NPZ，每branch完整数组先原子保存再写case，schema固定文件上界138252B，4完整+1partial+320KiB元数据=1018940B<1MiB。0Actor/Value/新PG，不晋升。19:45native/20:00all，CPU14,15总1核/GPUoff/global1GiB/free40，原失败原件已备份保持。详T538_PLAN/BUDGET/RECOVERY_AUTHORIZATION，Phase隔离。
 
 2026-11-13 T537工程停止：首窗10分支5,000物理/12命令后，NPZ137994B超128KiB文件cap；完整数组未写入，10case指标/hash已留且两repeat一致，后3窗未执行，完整方向gate=null。FAILED/源/协议/error保留，metadata-onlyaudit及全部现有原件远端逐SHA完成，不冒称完整数组独立验收。T538只准备同科学设置持久化修复：26字段stack/每branch落盘/fsync/原子替换，未压缩shape上界+原子partial总预算≤1MiB零native检查过。若替换首窗需新增5k使T537+恢复合计25k，等待明确授权，不自动launch/续失败预算。20:00all不扩，0ActorValue/Phase隔离。详T537_FINAL_REPORT/T538_PLAN/STORAGE_CHECK。

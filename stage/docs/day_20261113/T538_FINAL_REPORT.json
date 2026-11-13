@@ -1,0 +1,230 @@
+{
+  "state": "COMPLETE",
+  "result": {
+    "reason": "NATIVE_LOCAL_DIRECTION_PARTLY_UNRESOLVED_OR_NONSMOOTH",
+    "windows": [
+      {
+        "id": "old_success",
+        "base_metrics": {
+          "end_goal_distance_m": 4.567537798832594,
+          "progress_m": 0.09336434651594683,
+          "discounted_native_reward": 0.004074043879022528,
+          "min_recorded_lidar_m": 1.3518667221069336,
+          "contact": false,
+          "goal": false,
+          "timeout": false,
+          "physics": 500,
+          "saturated_commands": 0
+        },
+        "derivatives": [
+          {
+            "metric": "end_goal_distance_m",
+            "coarse": -0.052746108885592946,
+            "fine": -1.2749260798870843,
+            "max_antithetic_effect": 0.012749260798870843,
+            "resolved": true,
+            "scale_stable": false,
+            "unresolved_NOT_pass": false
+          },
+          {
+            "metric": "discounted_native_reward",
+            "coarse": 0.0015562287716742139,
+            "fine": 0.03761560215905417,
+            "max_antithetic_effect": 0.00037615602159054174,
+            "resolved": true,
+            "scale_stable": false,
+            "unresolved_NOT_pass": false
+          },
+          {
+            "metric": "min_recorded_lidar_m",
+            "coarse": 0.0,
+            "fine": 0.0,
+            "max_antithetic_effect": 0.0,
+            "resolved": false,
+            "scale_stable": false,
+            "unresolved_NOT_pass": true
+          }
+        ],
+        "short_primary_direction": "UNRESOLVED_OR_SCALE_UNSTABLE",
+        "contact_in_any_branch": false,
+        "clipped_in_any_branch": false,
+        "exact_repeat": true
+      },
+      {
+        "id": "old_failure",
+        "base_metrics": {
+          "end_goal_distance_m": 4.672401312247244,
+          "progress_m": 0.033751451189256265,
+          "discounted_native_reward": 0.002337654261938857,
+          "min_recorded_lidar_m": 1.3128693103790283,
+          "contact": false,
+          "goal": false,
+          "timeout": false,
+          "physics": 500,
+          "saturated_commands": 0
+        },
+        "derivatives": [
+          {
+            "metric": "end_goal_distance_m",
+            "coarse": 0.011600309740167347,
+            "fine": 0.03553555469473224,
+            "max_antithetic_effect": 0.0003553555469473224,
+            "resolved": true,
+            "scale_stable": false,
+            "unresolved_NOT_pass": false
+          },
+          {
+            "metric": "discounted_native_reward",
+            "coarse": -0.00034225720455059033,
+            "fine": -0.0010484461091456523,
+            "max_antithetic_effect": 1.0484461091456523e-05,
+            "resolved": true,
+            "scale_stable": false,
+            "unresolved_NOT_pass": false
+          },
+          {
+            "metric": "min_recorded_lidar_m",
+            "coarse": 0.0,
+            "fine": 0.0,
+            "max_antithetic_effect": 0.0,
+            "resolved": false,
+            "scale_stable": false,
+            "unresolved_NOT_pass": true
+          }
+        ],
+        "short_primary_direction": "UNRESOLVED_OR_SCALE_UNSTABLE",
+        "contact_in_any_branch": false,
+        "clipped_in_any_branch": false,
+        "exact_repeat": true
+      },
+      {
+        "id": "new_parent_failure",
+        "base_metrics": {
+          "end_goal_distance_m": 1.5045227135000767,
+          "progress_m": 0.13869911006224278,
+          "discounted_native_reward": 0.003915271196921548,
+          "min_recorded_lidar_m": 2.048464775085449,
+          "contact": false,
+          "goal": false,
+          "timeout": false,
+          "physics": 500,
+          "saturated_commands": 0
+        },
+        "derivatives": [
+          {
+            "metric": "end_goal_distance_m",
+            "coarse": 0.00842635212013887,
+            "fine": 0.008252980174194846,
+            "max_antithetic_effect": 0.00016852704240277738,
+            "resolved": true,
+            "scale_stable": true,
+            "unresolved_NOT_pass": false
+          },
+          {
+            "metric": "discounted_native_reward",
+            "coarse": -0.00024861230310058505,
+            "fine": -0.00024349711230829338,
+            "max_antithetic_effect": 4.972246062011701e-06,
+            "resolved": true,
+            "scale_stable": true,
+            "unresolved_NOT_pass": false
+          },
+          {
+            "metric": "min_recorded_lidar_m",
+            "coarse": 0.0,
+            "fine": 0.0,
+            "max_antithetic_effect": 0.0,
+            "resolved": false,
+            "scale_stable": false,
+            "unresolved_NOT_pass": true
+          }
+        ],
+        "short_primary_direction": "toward_T527_increases_distance",
+        "contact_in_any_branch": false,
+        "clipped_in_any_branch": false,
+        "exact_repeat": true
+      },
+      {
+        "id": "new_candidate_success",
+        "base_metrics": {
+          "end_goal_distance_m": 1.4944370197060601,
+          "progress_m": 0.13361255390663396,
+          "discounted_native_reward": 0.003757673456584828,
+          "min_recorded_lidar_m": 1.6684391498565674,
+          "contact": false,
+          "goal": false,
+          "timeout": false,
+          "physics": 500,
+          "saturated_commands": 0
+        },
+        "derivatives": [
+          {
+            "metric": "end_goal_distance_m",
+            "coarse": -0.13984479701276697,
+            "fine": -0.05045420065414863,
+            "max_antithetic_effect": 0.0027968959402553395,
+            "resolved": true,
+            "scale_stable": false,
+            "unresolved_NOT_pass": false
+          },
+          {
+            "metric": "discounted_native_reward",
+            "coarse": 0.0041260009748258185,
+            "fine": 0.0014886079820622313,
+            "max_antithetic_effect": 8.252001949651637e-05,
+            "resolved": true,
+            "scale_stable": false,
+            "unresolved_NOT_pass": false
+          },
+          {
+            "metric": "min_recorded_lidar_m",
+            "coarse": -0.0264585018157959,
+            "fine": -0.058388710021972656,
+            "max_antithetic_effect": 0.0005838871002197266,
+            "resolved": true,
+            "scale_stable": false,
+            "unresolved_NOT_pass": false
+          }
+        ],
+        "short_primary_direction": "UNRESOLVED_OR_SCALE_UNSTABLE",
+        "contact_in_any_branch": false,
+        "clipped_in_any_branch": false,
+        "exact_repeat": true
+      }
+    ],
+    "all_primary_local_scale_checks": false,
+    "Actor_Adam": 0,
+    "Value_Adam": 0,
+    "policy_gradient_updates": 0,
+    "new_navigation_result": null,
+    "whole_episode_gradient_NOT_measured": true,
+    "conditional_fixed_history_prefix": true,
+    "local_effect_NOT_long_horizon_success": true
+  },
+  "audit": {
+    "state": "PASS",
+    "pid": 148361,
+    "new_native": 0,
+    "new_optimizer": 0,
+    "all_arrays_policies_conditional_hidden_metrics_and_exact_repeats_rebuilt": true,
+    "first_window_reexecutes_all_T537_reported_array_hashes": true,
+    "prior_failed_physics": 5000,
+    "combined_T537_T538_physics": 25000,
+    "physics": 20000,
+    "commands": 45,
+    "navigation_test": null,
+    "policy_update": 0
+  },
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "main_seconds": 24.3266019821167,
+  "new_native": 20000,
+  "commands": 45,
+  "prior_T534_T536_T537_native": 116900,
+  "new_optimizer": 0,
+  "navigation_test": null,
+  "scientific_pids_stopped": [
+    148315,
+    148361
+  ],
+  "epoch": 1794568459.0654628
+}
