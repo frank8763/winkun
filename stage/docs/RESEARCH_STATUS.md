@@ -1,3 +1,5 @@
+2026-11-13 用户下一步开始，T534原生完整状态持久化恢复验证已注册/0native0Adam预检PASS，待源码远端及唯一launch。固定四窗旧4.8s/新64.2s两策略真实重生前缀，磁盘完整snapshot恢复同Actor1秒，全部source前后缀/生成数组/hidden/history/积分逐位一致才过；73000全部物理/9命令，0Actor/Value/新PG，不是参数方向或导航增益。2.5MiBown/global1GiB/free40，CPU14/15总1核/GPUoff/实际Mesa，main480audit180backup240source120，17:15native/17:30all更早从严。T532/T533已完整结束不重启，不接失败模型。详T534_PLAN/BUDGET；Phase隔离。
+
 2026-11-13 T533既有四轨迹物理模型前向合同结束，CAUSAL_ARX_TEMPORAL_GATE_FAILED_STOP_THIS_MODEL，0新native/Actor/Value，1次因果速度ARX辨识及独立重算PASS；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。这是已有轨迹时间块模型验证，完整自递归速度/pose预测，不是自主LiDAR闭环或导航提升，Actor不可学习。旧最佳T507/失败原件保留，原生方向与配对RL尚未启动。详day_20261113/T533_PLAN/FINAL_REPORT；17:30all不扩/Stage隔离。
 
 2026-11-13 用户继续，T533单次因果车辆响应辨识已注册/0native0Adam预检PASS，待精确source及launch。T532四窗未拟合模型前向全部失败已audit/10原件全远端，原件保留不重启。新项7特征ARX固定ridge.001，四已有轨迹各前40%fit、5秒隔离、后段自递归1秒全部窗2cm/1deg；1次线性辨识+独立重构，0Actor/Value/新native，不扫模型/正则/时窗。通过亦不接Actor，原生参数方向及LiDAR闭环尚未实现。1MiB own/global1GiB/free40，CPU14/15总1核/GPUoff，17:30all。详T533_PLAN/BUDGET；Phase隔离。
