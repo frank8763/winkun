@@ -1,3 +1,5 @@
+2026-11-13 T536精简快照原生恢复结束，PERSISTED_NATIVE_RESTORE_ALL_FOUR_EXACT，真实73000物理/9命令/0ActorValue；四窗完整source与磁盘恢复后缀逐位一致、独立原件auditPASS，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。T534已用38900物理另计，累计111900；这仅有限窗口恢复资格，不是导航成功或参数方向梯度。原生方向/学习下一项未启动，旧最佳与失败原件保持。详T536_PLAN/FINAL_REPORT；窗口以注册协议为准，Stage/Phase隔离。
+
 2026-11-13 用户最新确认今晚20:00all，T536已注册/零native预检PASS，待精确source后唯一launch。73,000新物理/9命令/1MiBown，4固定旧4.8s与新64.2s窗口，精简记录缓冲而完整因果状态不变，真实prefix/连续1s/磁盘restore1s所有数组积分逐位一致。0Actor/Value/PG，不参数方向或导航新增成功；T534先前38,900步另计不抹除。19:45native/20:00all，main480audit180backup240source120及更严准入，CPU14,15总1核/GPUoff/global1GiB/free40。窗口授权/协议/工程检查原件保持，Phase全隔离。
 
 2026-11-13 用户确认18:30截止后本次恢复执行已18:55，窗口过期，T536尚未注册/未创建runs/未launch/0native0Adam。精简快照完整控制/driver/archive/launch代码与零native工程检查已落地，两个既有真实snapshot全部非日志状态一致、hidden/RNG篡改负例拒绝。准备完整预算73000新物理/9cmd/1MiBown，CPU14,15总1核/GPUoff/global1GiB/free40，需有效新窗口方可正式注册并源同步启动；不暗延18:30。T534已用38900另计、2旧恢复过/2新未执行，T535仅序列化。详T536_PLAN/ENGINEERING_CHECK/READINESS，Phase完全隔离。
