@@ -1,3 +1,5 @@
+2026-11-13 T513固定目标反馈训练期教师验证结束，conditional={'valid': 1, 'success': 0, 'contact': 0, 'timeout': 1, 'invalid': 0, 'censored': 0}，qualified=0，0Adam/0新PG/模型未改/1exact及独立auditPASS/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；不是确定性field24提高，接受最佳仍11/24+old8。详day_20261113/T513_FINAL_REPORT。Phase隔离。
+
 2026-11-13 T512单任务真实学生前缀恢复诊断结束，conditional={'valid': 4, 'success': 0, 'contact': 0, 'timeout': 4, 'invalid': 0, 'censored': 0}，qualified=0，0Adam/0新PG/模型未改/5exact及独立auditPASS/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；不是确定性field24提高，接受最佳仍11/24+old8。详day_20261113/T512_FINAL_REPORT。Phase隔离。
 
 2026-11-12 T511冻结父策略新残差头结束，RESIDUAL_PROPOSAL_REJECTED_ROLLBACK，training=1，field24=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；最多6x32新头监督与逐块21项保护/原父ActorAdam冻结/0新PG/Value0，旧最佳独立保留，本轮完整old275/six/eight未执行。详overnight_20261112/T511_FINAL_REPORT。Phase隔离。
