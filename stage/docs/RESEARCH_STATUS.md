@@ -1,3 +1,5 @@
+2026-11-13 用户在T536完整结束后明确下一步开始，T537原生条件参数方向已注册/0native0optimizer预检PASS，待精确source/唯一launch。固定D=T527-T507，在4个已验证snapshot各alpha0/±.01/±.005、真实1秒及exact重复共40分支，20k新物理/45cmd/1MiBown；扰动权重从同历史重算自己的64hidden，不沿用原hidden，未来120由native闭环生成。0Actor/Value/新PG，不晋升/不把局部末距当整回合改善。19:45native/20:00all，CPU14,15总1核/GPUoff/global1GiB/free40；T534/T536111900物理另计，本项新独立授权预算，不续旧编号。详T537_PLAN/BUDGET，Phase隔离。
+
 2026-11-13 T536精简快照原生恢复结束，PERSISTED_NATIVE_RESTORE_ALL_FOUR_EXACT，真实73000物理/9命令/0ActorValue；四窗完整source与磁盘恢复后缀逐位一致、独立原件auditPASS，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。T534已用38900物理另计，累计111900；这仅有限窗口恢复资格，不是导航成功或参数方向梯度。原生方向/学习下一项未启动，旧最佳与失败原件保持。详T536_PLAN/FINAL_REPORT；窗口以注册协议为准，Stage/Phase隔离。
 
 2026-11-13 用户最新确认今晚20:00all，T536已注册/零native预检PASS，待精确source后唯一launch。73,000新物理/9命令/1MiBown，4固定旧4.8s与新64.2s窗口，精简记录缓冲而完整因果状态不变，真实prefix/连续1s/磁盘restore1s所有数组积分逐位一致。0Actor/Value/PG，不参数方向或导航新增成功；T534先前38,900步另计不抹除。19:45native/20:00all，main480audit180backup240source120及更严准入，CPU14,15总1核/GPUoff/global1GiB/free40。窗口授权/协议/工程检查原件保持，Phase全隔离。
