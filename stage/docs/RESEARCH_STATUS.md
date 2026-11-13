@@ -1,3 +1,5 @@
+2026-11-13 T517逐提案输出硬约束试验结束，offline_joint_gate=False，最多2048提案/live-shadow与历史audit实际计数见报告+5pref，0native/0新PG/Value0，原父策略冻结/零残差回退，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；教师30训练29同轨迹blocked验证非导航留出，旧19和前缀保持指标见day_20261113/T517_FINAL_REPORT。无新自主验收或晋升，field最佳11/24不变，Phase隔离。
+
 2026-11-13 T516非线性离线兼容试验结束，offline_joint_gate=False，512live/512shadow/512历史audit+4pref，0native/0新PG/Value0，原父策略冻结/零残差回退，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；教师30训练29同轨迹blocked验证非导航留出，旧19和前缀保持指标见day_20261113/T516_FINAL_REPORT。无新自主验收或晋升，field最佳11/24不变，Phase隔离。
 
 2026-11-13 T515最终动作层恢复学习结束，DECODER_RECOVERY_REJECTED_ROLLBACK，training=1，field24=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；单块128动作层监督与20项保护/原残差ActorAdam冻结/0新PG/Value0，旧最佳独立保留，本轮完整old275/six/eight未执行。详day_20261113/T515_FINAL_REPORT。Phase隔离。
