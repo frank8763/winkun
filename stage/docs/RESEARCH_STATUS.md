@@ -1,3 +1,5 @@
+2026-11-13 T512单任务真实学生前缀恢复诊断结束，conditional={'valid': 4, 'success': 0, 'contact': 0, 'timeout': 4, 'invalid': 0, 'censored': 0}，qualified=0，0Adam/0新PG/模型未改/5exact及独立auditPASS/remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；不是确定性field24提高，接受最佳仍11/24+old8。详day_20261113/T512_FINAL_REPORT。Phase隔离。
+
 2026-11-12 T511冻结父策略新残差头结束，RESIDUAL_PROPOSAL_REJECTED_ROLLBACK，training=1，field24=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；最多6x32新头监督与逐块21项保护/原父ActorAdam冻结/0新PG/Value0，旧最佳独立保留，本轮完整old275/six/eight未执行。详overnight_20261112/T511_FINAL_REPORT。Phase隔离。
 
 2026-11-12 T511通宵新机制已注册/0native4新头丢弃Adam预检PASS，尚待源同步/launch：冻结接受field11父策略全部参数/原Adam，新增11970参数0输出全局残差(.1tanh)，27完整历史初始函数逐位相同；只新头freshAdam3e-4。固定8GOAL+19keep，最多6x32live/shadow、逐块21+21exact保护，首次拒绝全回退，有新成功才余11+24exact。own40MiB/global1GiB/free40/完整nextblock+final容量准入，不足明文stop不扩；与T510合计最坏13.99M物理/441cmd/16083s。09:00all/08学/08:30native，CPU14,15总1核/GPU禁用，离线本地不依赖LLM网络。清理7已全远端备份废弃预检clone释放7.45MB，科研模型/轨迹未删。详overnight_20261112/CONTINUATION_PLAN/BUDGET/T511_READINESS。Phase隔离。
