@@ -1,3 +1,5 @@
+2026-11-13 T537工程停止：首窗10分支5,000物理/12命令后，NPZ137994B超128KiB文件cap；完整数组未写入，10case指标/hash已留且两repeat一致，后3窗未执行，完整方向gate=null。FAILED/源/协议/error保留，metadata-onlyaudit及全部现有原件远端逐SHA完成，不冒称完整数组独立验收。T538只准备同科学设置持久化修复：26字段stack/每branch落盘/fsync/原子替换，未压缩shape上界+原子partial总预算≤1MiB零native检查过。若替换首窗需新增5k使T537+恢复合计25k，等待明确授权，不自动launch/续失败预算。20:00all不扩，0ActorValue/Phase隔离。详T537_FINAL_REPORT/T538_PLAN/STORAGE_CHECK。
+
 2026-11-13 用户在T536完整结束后明确下一步开始，T537原生条件参数方向已注册/0native0optimizer预检PASS，待精确source/唯一launch。固定D=T527-T507，在4个已验证snapshot各alpha0/±.01/±.005、真实1秒及exact重复共40分支，20k新物理/45cmd/1MiBown；扰动权重从同历史重算自己的64hidden，不沿用原hidden，未来120由native闭环生成。0Actor/Value/新PG，不晋升/不把局部末距当整回合改善。19:45native/20:00all，CPU14,15总1核/GPUoff/global1GiB/free40；T534/T536111900物理另计，本项新独立授权预算，不续旧编号。详T537_PLAN/BUDGET，Phase隔离。
 
 2026-11-13 T536精简快照原生恢复结束，PERSISTED_NATIVE_RESTORE_ALL_FOUR_EXACT，真实73000物理/9命令/0ActorValue；四窗完整source与磁盘恢复后缀逐位一致、独立原件auditPASS，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。T534已用38900物理另计，累计111900；这仅有限窗口恢复资格，不是导航成功或参数方向梯度。原生方向/学习下一项未启动，旧最佳与失败原件保持。详T536_PLAN/FINAL_REPORT；窗口以注册协议为准，Stage/Phase隔离。
