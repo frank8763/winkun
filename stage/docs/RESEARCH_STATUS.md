@@ -1,3 +1,5 @@
+2026-11-13 T533既有四轨迹物理模型前向合同结束，CAUSAL_ARX_TEMPORAL_GATE_FAILED_STOP_THIS_MODEL，0新native/Actor/Value，1次因果速度ARX辨识及独立重算PASS；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。这是已有轨迹时间块模型验证，完整自递归速度/pose预测，不是自主LiDAR闭环或导航提升，Actor不可学习。旧最佳T507/失败原件保留，原生方向与配对RL尚未启动。详day_20261113/T533_PLAN/FINAL_REPORT；17:30all不扩/Stage隔离。
+
 2026-11-13 用户继续，T533单次因果车辆响应辨识已注册/0native0Adam预检PASS，待精确source及launch。T532四窗未拟合模型前向全部失败已audit/10原件全远端，原件保留不重启。新项7特征ARX固定ridge.001，四已有轨迹各前40%fit、5秒隔离、后段自递归1秒全部窗2cm/1deg；1次线性辨识+独立重构，0Actor/Value/新native，不扫模型/正则/时窗。通过亦不接Actor，原生参数方向及LiDAR闭环尚未实现。1MiB own/global1GiB/free40，CPU14/15总1核/GPUoff，17:30all。详T533_PLAN/BUDGET；Phase隔离。
 
 2026-11-13 T532既有四轨迹物理模型前向合同结束，UNFITTED_QUASISTATIC_MODEL_REJECTED_NO_ACTOR_LEARNING，0新native/Actor/Value/模型拟合，完整因果prefix动作hidden与四窗预测独立重算PASS；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。这是未拟合准静态模型的记录动作前向检查，不是自主闭环梯度、原生方向验证或导航提升，Actor不可学习。旧最佳T507/失败原件保留，原生方向与配对RL尚未启动。详day_20261113/T532_PLAN/FINAL_REPORT；17:30all不扩/Stage隔离。
