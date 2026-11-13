@@ -1,3 +1,5 @@
+2026-11-13 T522午间有限两机制结束，FINITE_MECHANISMS_COMPLETE_OR_TIME_ADMISSION_STOP，completed=['joint_pg', 'success_bc']，remote=PENDING；两任务新鲜联合PG/实际自主成功轨迹BC分列，原接受最佳独立保留，完整old275/six/eight未执行。详day_20261113/T522_FINAL_REPORT。Phase隔离。
+
 2026-11-13 T52012场地研究副本旧中心修复结束，OLD_CENTER_REPAIR_REJECTED_ROLLBACK，training={'valid': 4, 'success': 1, 'contact': 3, 'timeout': 0, 'invalid': 0, 'censored': 0}，field24={'valid': 24, 'success': 11, 'contact': 9, 'timeout': 4, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；4新onpolicy+4exact/最多16PPO+shadow/旧8及完整field24原生验收/Value0，旧最佳独立保留，本轮完整old275/six/eight未执行。详day_20261113/T520_FINAL_REPORT。Phase隔离。
 
 2026-11-13 T519真实闭环全Actor强化学习结束，FRESH_FULL_ACTOR_RL_REJECTED_ROLLBACK，training={'valid': 4, 'success': 3, 'contact': 0, 'timeout': 1, 'invalid': 0, 'censored': 0}，field24={'valid': 24, 'success': 12, 'contact': 9, 'timeout': 3, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；4新onpolicy+4exact/最多16PPO+shadow/旧8及完整field24原生验收/Value0，旧最佳独立保留，本轮完整old275/six/eight未执行。详day_20261113/T519_FINAL_REPORT。Phase隔离。
