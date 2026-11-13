@@ -1,0 +1,7 @@
+# T517 primary-source check
+
+2026-11-13 checked publisher [Schulman et al., Trust Region Policy Optimization, ICML2015](https://proceedings.mlr.press/v37/schulman15.html). A constrained policy step and backtracking have strong precedents, but this implementation is offline supervised Adam with per-stored-episode output-error constraints. It has no TRPO Fisher/CG/KL surrogate, no on-policy advantage or monotonic-return proof. Do not call it TRPO, unbiased RL, collision safety or algorithmic novelty.
+
+The proposal must constrain actual Adam-induced parameter changes, not merely project raw gradients and assume moments preserve the constraint. T510 already showed a raw-gradient protection proposal could lose a field task. T517 verifies actual nonlinear outputs after each finite backtracking candidate and exact whole-Adam rollback on rejection. This is a finite-set compatibility test; it says nothing by itself about the new state distribution induced in native rollouts. All validation-action labels remain excluded from update acceptance, and same-trajectory temporal blocks are not fresh navigation holdouts.
+
+Local prior: T516 train/held recovery actions fit, but fixed old/prefix output drift breached predeclared thresholds. A hard feasibility step can prevent those particular threshold breaches; it may also stall early and fail recovery fitting. No finite backtracking failure proves the full feasible parameter space empty. No extra seeds, thresholds or iterations beyond registered2048 are implied.
