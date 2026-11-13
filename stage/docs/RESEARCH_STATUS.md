@@ -1,3 +1,5 @@
+2026-11-13 T534原生恢复工程停止：38900物理/6命令/37.615秒、0Actor/Value；旧成功/旧失败两4.8s窗口磁盘恢复1秒全部数组hidden/history积分逐位一致，已执行子集独立auditPASS，完整四窗gate=null。新父目标64.2s前缀后snapshot超384KiB断言，生成新prefix未落盘32100步计账；两新目标恢复未执行，不作导航失败率。原failed summary/protocol/error/raw保留，全部当前原件远端逐SHA，主/driver退。T535仅0native精简snapshot字节验证(29KiB→3.9KiB)，保留两比较器工程错误；同进程磁盘重读，不是独立nativeaudit。精简版原生恢复/参数方向/Actor训练未启动，不借新号续T534物理。17:30all不扩，Stage隔离。详T534_FINAL_REPORT/FINDINGS及T535_PREPARATION。
+
 2026-11-13 用户下一步开始，T534原生完整状态持久化恢复验证已注册/0native0Adam预检PASS，待源码远端及唯一launch。固定四窗旧4.8s/新64.2s两策略真实重生前缀，磁盘完整snapshot恢复同Actor1秒，全部source前后缀/生成数组/hidden/history/积分逐位一致才过；73000全部物理/9命令，0Actor/Value/新PG，不是参数方向或导航增益。2.5MiBown/global1GiB/free40，CPU14/15总1核/GPUoff/实际Mesa，main480audit180backup240source120，17:15native/17:30all更早从严。T532/T533已完整结束不重启，不接失败模型。详T534_PLAN/BUDGET；Phase隔离。
 
 2026-11-13 T533既有四轨迹物理模型前向合同结束，CAUSAL_ARX_TEMPORAL_GATE_FAILED_STOP_THIS_MODEL，0新native/Actor/Value，1次因果速度ARX辨识及独立重算PASS；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。这是已有轨迹时间块模型验证，完整自递归速度/pose预测，不是自主LiDAR闭环或导航提升，Actor不可学习。旧最佳T507/失败原件保留，原生方向与配对RL尚未启动。详day_20261113/T533_PLAN/FINAL_REPORT；17:30all不扩/Stage隔离。

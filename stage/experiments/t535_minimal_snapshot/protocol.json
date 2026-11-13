@@ -1,0 +1,26 @@
+{
+  "id": "T535_ZERO_NATIVE_SNAPSHOT_SERIALIZATION_CONTRACT",
+  "source_original_protocol_sha256": "896888d47966d4702f812ad1d2bebdbaf8ce8753c63c5f69e5edda46582226ab",
+  "source_failed_summary_sha256": "7d6d35bc1a837b2631145842afc0a09658b3a6b0e49cd5ee5a94a693d1225436",
+  "max_bytes": 131072,
+  "new_native": 0,
+  "new_Actor_Adam": 0,
+  "new_Value_Adam": 0,
+  "native_restore_gate": null,
+  "absolute_all_stop": 1794562200.0,
+  "source_snapshots": [
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t534_native_state_restore/snapshot_0.pkl.gz",
+      "sha256": "f27740cc1917b43701ecacc12190eed894c63fc84cc6baf380c8c3a6e2847c09"
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t534_native_state_restore/snapshot_1.pkl.gz",
+      "sha256": "5710709fbfdf2a357861801c1e21bce9bdeba25526e95fc165c3ab02af3395c0"
+    }
+  ],
+  "source_code": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t535_minimal_snapshot/prepare.py": "4ad1a936f7d7b51ec21acee64de0e74cdeac03e806d4d03d84fddeacd5b26b93",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t535_minimal_snapshot/compact_snapshot.py": "70410aafb14593d301925644c8fdaa9941b435eb8e2f243696011c8f9eeb8292"
+  },
+  "scope": "Serialization of already persisted old24decision snapshots ONLY. Removes historical logging buffers, leaves physical/causal state exactly unchanged. No new321decision snapshot, no actual restore continuation, no direction/Actor training, not a solution or extension of T534 physical budget."
+}

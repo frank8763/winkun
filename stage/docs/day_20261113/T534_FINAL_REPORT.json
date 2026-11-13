@@ -1,0 +1,55 @@
+{
+  "state": "ENGINEERING_STOP_PARTIAL_EVIDENCE_AUDITED",
+  "reason": "NEW_TARGET_FULL_LOG_SNAPSHOT_EXCEEDS_LOCKED_384KiB_LIMIT",
+  "original_failed_summary_preserved": true,
+  "original_protocol_preserved": true,
+  "completed_restore_windows": [
+    "old_success",
+    "old_failure"
+  ],
+  "pending_restore_windows": [
+    "new_parent_failure",
+    "new_candidate_success"
+  ],
+  "all_four_restore_gate": null,
+  "native_direction_gate": null,
+  "navigation_result": null,
+  "Actor_Adam": 0,
+  "Value_Adam": 0,
+  "physics": 38900,
+  "commands": 6,
+  "main_seconds": 37.61457920074463,
+  "unpersisted_third_prefix_physics": 32100,
+  "unpersisted_third_prefix_not_independently_rebuilt_from_new_raw": true,
+  "audit": {
+    "state": "PASS",
+    "scope": "EXECUTED_TWO_WINDOWS_AND_FAILURE_ACCOUNTING_ONLY",
+    "pid": 134142,
+    "new_native": 0,
+    "new_optimizer": 0,
+    "completed_restore_windows": 2,
+    "all_four_restore_gate": null,
+    "new_goal_restore_NOT_tested": true,
+    "unpersisted_third_prefix_physics": 32100,
+    "unpersisted_third_prefix_NOT_independently_rebuilt_from_new_raw": true,
+    "physics": 38900,
+    "commands": 6,
+    "reason": "ENGINEERING_SINGLE_SNAPSHOT_SIZE_CAP_STOP_NOT_NAVIGATION_FAILURE",
+    "original_failed_summary_unchanged": true
+  },
+  "raw_backup": {
+    "state": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+    "group": "T534",
+    "url": "https://github.com/frank8763/winkun/releases/tag/stage-eight-only-2026-11-11",
+    "members": 15,
+    "bytes": 124244,
+    "child_receipts": [
+      "T534"
+    ],
+    "excluded_active_finalizer_log": "driver.log",
+    "verified_epoch": 1794560817.9939651
+  },
+  "main_and_driver_stopped": true,
+  "next_compact_serializer": "T535 zero-native only; no new native continuation or directions launched",
+  "epoch": 1794561085.205938
+}
