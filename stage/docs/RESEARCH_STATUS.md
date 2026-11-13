@@ -1,3 +1,5 @@
+2026-11-13 T526早期真实反馈恢复资格验证结束，EARLY_FEEDBACK_OR_HANDOFF_FAILED_NO_LEARNING，teacher=True，learning_eligible=False，field24=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；教师恢复/短纠正交回与学生自主分列，0监督/0优化器，0新PG/Value，原接受最佳保留，old275/six54/eight54/fresh16/78未执行。详T526_FINAL_REPORT。Phase隔离。
+
 2026-11-13用户明确下一步开始，T526早期strict反馈恢复资格已注册/0native0Adam预检PASS，待源码精确同步launch。固定T507接受11+8学生真实64.2s前缀，复用T514已核strict映射反馈教师(同一原goal)，完整恢复GOAL才唯一4s纠正交回，均精确原生重生；更换教师+早期接管联合pilot不因果单归因。0训练/Actor/Value/PG，最多14命令256448物理600main180audit360backup/own3MiB/global1GiB/free40，CPU14,15总1核GPUoff/15:30all不延长。余时及容量不足完整学习最坏，本轮仅资格不杜撰后续学习，原最佳与失败全保。详T526_PLAN/BUDGET；Phase隔离。
 
 2026-11-13 T525实际学生状态神经恢复+19真实成功序列保持试验结束，RECOVERY_UNQUALIFIED_OR_STUDENT_REJECTED_ROLLBACK，teacher=False，learning_eligible=False，field24=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；教师恢复/短纠正交回与学生自主分列，最多32监督live/shadow，0新PG/Value，原接受最佳保留，old275/six54/eight54/fresh16/78未执行。详T525_FINAL_REPORT。Phase隔离。
