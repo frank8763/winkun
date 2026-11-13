@@ -1,3 +1,5 @@
+2026-11-13 T522补传恢复：两科学分支结束/审计PASS/77原件完整远端逐成员SHA已过，源码精确根树d20e47d0b580a28e6320df6d3e1b0c9ba3e8dc97。原FINAL_REPORT的PENDING及两个原网络错误保留，当前以T522_TRANSPORT_RECOVERY为准。T523用户已授权首次联合成功失败信号PG，零原生预检PASS（原载入绑定拒绝4+fresh4合成Adam共8），8个既有T522同策略完整历史/密度均通过；尚待源同步和真实launch。最多16live/shadow PG，0新训练采集，68命令/物理预算见T523_BUDGET，6MiB/global1GiB/free40/13:17all不变。旧最佳field11+old8冻结，不称遗忘唯一因果。详T523_PLAN/FORGETTING_PRIMARY_SOURCES。Phase隔离。
+
 2026-11-13 T522午间有限两机制结束，FINITE_MECHANISMS_COMPLETE_OR_TIME_ADMISSION_STOP，completed=['joint_pg', 'success_bc']，remote=PENDING；两任务新鲜联合PG/实际自主成功轨迹BC分列，原接受最佳独立保留，完整old275/six/eight未执行。详day_20261113/T522_FINAL_REPORT。Phase隔离。
 
 2026-11-13 T52012场地研究副本旧中心修复结束，OLD_CENTER_REPAIR_REJECTED_ROLLBACK，training={'valid': 4, 'success': 1, 'contact': 3, 'timeout': 0, 'invalid': 0, 'censored': 0}，field24={'valid': 24, 'success': 11, 'contact': 9, 'timeout': 4, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；4新onpolicy+4exact/最多16PPO+shadow/旧8及完整field24原生验收/Value0，旧最佳独立保留，本轮完整old275/six/eight未执行。详day_20261113/T520_FINAL_REPORT。Phase隔离。
