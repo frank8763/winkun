@@ -1,3 +1,5 @@
+2026-11-13 T527已验证恢复轨迹学习结束，RECOVERY_LEARNING_PANEL_REJECTED_ROLLBACK，old8={'valid': 8, 'success': 6, 'contact': 1, 'timeout': 1, 'invalid': 0, 'censored': 0}，target={'valid': 1, 'success': 1, 'contact': 0, 'timeout': 0, 'invalid': 0, 'censored': 0}，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；真实恢复标签16监督live/shadow与原19成功history保持，0新PG，20保护面板及20exact，完整field24未执行不晋升，旧接受最佳保留。详T527_FINAL_REPORT。Phase隔离。
+
 2026-11-13 T526完整早期反馈已safeGOAL89.816s、4秒交回未训练学生仍超时，0Adam/218040物理14命令135.859s，完整audit及22原始远端逐SHA收据通过，原学生未变。用户继续推进，新T527明确修订过严“未训练学生先能交回才学”条件：仅用T526完整真实恢复GOAL标签，失败交回不作成功标签；原T526eligiblefalse保留不改。已注册零物理4丢弃Adam预检PASS，待源同步launch；T50711+8权重/完整因果19成功目标/16监督live-shadow，0PGValue，20原保护+目标自主及20exact，完整field24null、通过仅研究候选不晋升。own3.5MiB/global1GiB/free40，44cmd1.406882M物理780main150audit180backup，15:30all硬停CPU14,15总1核GPUoff。详T527_PLAN/BUDGET；Phase隔离。
 
 2026-11-13 T526早期真实反馈恢复资格验证结束，EARLY_FEEDBACK_OR_HANDOFF_FAILED_NO_LEARNING，teacher=True，learning_eligible=False，field24=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；教师恢复/短纠正交回与学生自主分列，0监督/0优化器，0新PG/Value，原接受最佳保留，old275/six54/eight54/fresh16/78未执行。详T526_FINAL_REPORT。Phase隔离。
