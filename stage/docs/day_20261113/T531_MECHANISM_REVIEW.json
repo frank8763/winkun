@@ -1,0 +1,33 @@
+{
+  "state": "READ_ONLY_POSTHOC_MECHANISM_REVIEW_NOT_NEW_TRAINING",
+  "source_summary": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t531_joint_success_distillation/pilot/summary.json",
+  "source_summary_sha256": "9fedc7865de31b93db6bdce8e9d2a0f15ed7dc1db53c74d5476d4bc7b3f739ec",
+  "native": 0,
+  "optimizer": 0,
+  "loss_before_first_step": 0.012698347848415031,
+  "loss_before_last_step": 0.0035371495479211545,
+  "loss_reduction_fraction": 0.721448050553864,
+  "old8": {
+    "valid": 8,
+    "success": 8,
+    "contact": 0,
+    "timeout": 0,
+    "invalid": 0,
+    "censored": 0
+  },
+  "field24": {
+    "valid": 24,
+    "success": 11,
+    "contact": 10,
+    "timeout": 3,
+    "invalid": 0,
+    "censored": 0
+  },
+  "lost_baseline_ids": [
+    "t502_field_sector2_offset2"
+  ],
+  "new_target_retained": false,
+  "accepted": false,
+  "interpretation": "Stored-success imitation proxy decreases while newgoal autonomous success lost. Supports proxy/rollout mismatch in this pilot, NOT proof every BC fails or forgetting unique causal root. Native exact replays not independent new samples. T531 audit/finalizer may still active; do not rerun or overwrite.",
+  "epoch": 1794557933.9465227
+}
