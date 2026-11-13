@@ -1,0 +1,9 @@
+# T540补验结果与接口修复
+
+T540不是还在后台跑。实际63,476物理/6命令/47.379秒后，收到第一个双worker结果时调用F.detail，raw row没有job_id，触发KeyError并停止。任务ID本应由请求方附加；此前只验证了输出目录和文件shape，没有验证真实worker结果到汇总函数的契约，这是工程缺陷，不是导航失败。
+
+两项已派发并耗费物理步，但完整数组和结果记录都没有在派生汇总前写盘，因此无法从现存raw判定两项导航结局；不能填成两失败或0%成功率。旧T53910项记录保留，其中old8初验8/8、field仅2项1GOAL1TIMEOUT；fullfield24仍null。一次真实SGD已独立重构，候选仍未晋升。T539+T540合计298,493物理，0额外学习。全部父/worker/driver均退，现存文件远端完整逐成员SHA；不存在的原始数组不冒称已备份或恢复。
+
+common/native_case_record.py显式将trusted request job.id加入raw worker row，并验证120维shape/终止flags/物理counts/field边界；不信任已有冲突ID。使用两个已经保存的真实native full-episode记录，先删job_id复现原KeyError，再用新envelope与原rich metrics比合格结果一致；冲突ID和不一致outcome两个负例均拒绝。0新native/优化器，未复用“已经带job_id的丰富case”作为假阳性测试。
+
+T541修复版runtime已准备：从envelope获取任务身份和足够的field资格事实，原完整derived F.detail不再成为保存compact证据之前的必经步骤。保持旧源码与FAILED原件，T541尚无protocol、launch或新physics。它只应在另行核准的有界余时/物理/磁盘内补同一候选未完成任务，不再次训练或扫参数。当前20:00截止不扩大。本次不盲目重跑。
