@@ -1,0 +1,347 @@
+{
+  "state": "COMPLETE",
+  "result": {
+    "windows": [
+      {
+        "id": "old_success",
+        "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/episodes/0006.npz",
+        "source_sha256": "94aec930b8edd7987cd88714d9201cf24c388b1f3bd70a12b15fdde8e9467a91",
+        "source_policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+        "start_seconds": 4.8,
+        "seconds": 1.0,
+        "source_outcome": {
+          "success": true,
+          "collision": false,
+          "timeout": false
+        },
+        "full_prefix_action_exact": true,
+        "hidden_max_error": 0.0,
+        "location_max_error": 0.0,
+        "primary_quasistatic": {
+          "xy_m": [
+            0.07347899829932174,
+            0.13915589145269164,
+            0.20958447623160031,
+            0.280462097466901,
+            0.3505915968930981
+          ],
+          "yaw_deg": [
+            0.4587987195686171,
+            1.028567265929524,
+            1.1875899089419428,
+            1.2798341378093907,
+            2.135365440040039
+          ],
+          "max_xy_m": 0.3505915968930981,
+          "max_yaw_deg": 2.135365440040039
+        },
+        "causal_constant_twist_control": {
+          "xy_m": [
+            0.0037618417678727156,
+            0.014698863437992352,
+            0.018235609158681026,
+            0.01706353105664363,
+            0.02879028749159672
+          ],
+          "yaw_deg": [
+            0.09693862340006396,
+            0.18080750820460453,
+            0.17248828871961472,
+            0.12393633188612548,
+            0.23063668303331653
+          ],
+          "max_xy_m": 0.02879028749159672,
+          "max_yaw_deg": 0.23063668303331653
+        },
+        "one_step_teacher_forced_DIAGNOSTIC_ONLY": {
+          "xy_m": [
+            0.07347899829932174,
+            0.06567680596426932,
+            0.07042735085287033,
+            0.07088020166195294,
+            0.0702092988274888
+          ],
+          "yaw_deg": [
+            0.4587987195686171,
+            0.569768546360907,
+            0.15902264301241884,
+            0.0922442288674477,
+            0.8555313022306482
+          ],
+          "max_xy_m": 0.07347899829932174,
+          "max_yaw_deg": 0.8555313022306482
+        },
+        "forward_gate": false,
+        "initial_body_v": [
+          0.06909722834825516,
+          -6.283649418037385e-05
+        ],
+        "initial_yaw_rate": -0.0049590314738452435,
+        "source_midpoint_full_integration_saved": false
+      },
+      {
+        "id": "old_failure",
+        "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t529_bidirectional_recovery/pilot/episodes/0000.npz",
+        "source_sha256": "b424d40508b370aa3193d6d05d778b29eacf816c647a03abbaa055b10b809d72",
+        "source_policy_hash": "0670968254329bcf40100ea27af8b6e458288cdeabbc9eb7c1831ea44b895495",
+        "start_seconds": 4.8,
+        "seconds": 1.0,
+        "source_outcome": {
+          "success": false,
+          "collision": true,
+          "timeout": false
+        },
+        "full_prefix_action_exact": true,
+        "hidden_max_error": 0.0,
+        "location_max_error": 0.0,
+        "primary_quasistatic": {
+          "xy_m": [
+            0.038589484955360485,
+            0.07478410503951664,
+            0.11388650835878338,
+            0.15115644677056345,
+            0.18853796314060456
+          ],
+          "yaw_deg": [
+            0.09853837430943153,
+            0.18967553336575796,
+            0.20311480072337884,
+            0.21471711134104152,
+            0.22452897240889824
+          ],
+          "max_xy_m": 0.18853796314060456,
+          "max_yaw_deg": 0.22452897240889824
+        },
+        "causal_constant_twist_control": {
+          "xy_m": [
+            0.0005083238712980424,
+            4.0131770665467036e-05,
+            0.0001455429591650828,
+            0.0006994288381008219,
+            0.0011831128401770703
+          ],
+          "yaw_deg": [
+            0.010091388528503335,
+            0.002738207046310496,
+            0.004305430382226932,
+            0.011478746050254115,
+            0.016147029410352617
+          ],
+          "max_xy_m": 0.0011831128401770703,
+          "max_yaw_deg": 0.016147029410352617
+        },
+        "one_step_teacher_forced_DIAGNOSTIC_ONLY": {
+          "xy_m": [
+            0.038589484955360485,
+            0.03619445003297647,
+            0.03910372504590703,
+            0.03727049825204397,
+            0.03738175877441814
+          ],
+          "yaw_deg": [
+            0.09853837430943153,
+            0.09113715905632642,
+            0.01343926735762086,
+            0.011602310617662717,
+            0.009811861067856706
+          ],
+          "max_xy_m": 0.03910372504590703,
+          "max_yaw_deg": 0.09853837430943153
+        },
+        "forward_gate": false,
+        "initial_body_v": [
+          0.036811742931604385,
+          -3.668402132461779e-05
+        ],
+        "initial_yaw_rate": 0.0006032178062014282,
+        "source_midpoint_full_integration_saved": false
+      },
+      {
+        "id": "new_parent_failure",
+        "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t508_frozen_completion/pilot/episodes/0000.npz",
+        "source_sha256": "0699c765bd8baf51ca176ce604507868efb184dcf373c98581bc5082791132ed",
+        "source_policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+        "start_seconds": 64.2,
+        "seconds": 1.0,
+        "source_outcome": {
+          "success": false,
+          "collision": false,
+          "timeout": true
+        },
+        "full_prefix_action_exact": true,
+        "hidden_max_error": 0.0,
+        "location_max_error": 0.0,
+        "primary_quasistatic": {
+          "xy_m": [
+            0.079423572803056,
+            0.15886326752929866,
+            0.23827097727904317,
+            0.3176508560458117,
+            0.3962810383146272
+          ],
+          "yaw_deg": [
+            0.803760026283451,
+            1.66569726745916,
+            2.5864243960697664,
+            3.5657612806371213,
+            4.411999247013832
+          ],
+          "max_xy_m": 0.3962810383146272,
+          "max_yaw_deg": 4.411999247013832
+        },
+        "causal_constant_twist_control": {
+          "xy_m": [
+            8.329282512888182e-05,
+            0.00023260922268297714,
+            0.0004906517173439596,
+            0.000862193793496025,
+            0.0010475476362452954
+          ],
+          "yaw_deg": [
+            0.012678772826980812,
+            0.043317410082511464,
+            0.09265496032589728,
+            0.16100172772529134,
+            0.20402156321240328
+          ],
+          "max_xy_m": 0.0010475476362452954,
+          "max_yaw_deg": 0.20402156321240328
+        },
+        "one_step_teacher_forced_DIAGNOSTIC_ONLY": {
+          "xy_m": [
+            0.079423572803056,
+            0.0794300769026734,
+            0.07939433865021811,
+            0.07937057566826783,
+            0.07858472171378794
+          ],
+          "yaw_deg": [
+            0.803760026283451,
+            0.8619372411757087,
+            0.9207271286106069,
+            0.9793368845673548,
+            0.8462379663767107
+          ],
+          "max_xy_m": 0.0794300769026734,
+          "max_yaw_deg": 0.9793368845673548
+        },
+        "forward_gate": false,
+        "initial_body_v": [
+          0.1574636697769165,
+          0.0032972851768136024
+        ],
+        "initial_yaw_rate": 0.015867389738559723,
+        "source_midpoint_full_integration_saved": false
+      },
+      {
+        "id": "new_candidate_success",
+        "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t529_bidirectional_recovery/pilot/episodes/0001.npz",
+        "source_sha256": "6af48273b5bc9b996fa331929450beac05e7d2e6756e0236c4c1a064a0ed2cb5",
+        "source_policy_hash": "0670968254329bcf40100ea27af8b6e458288cdeabbc9eb7c1831ea44b895495",
+        "start_seconds": 64.2,
+        "seconds": 1.0,
+        "source_outcome": {
+          "success": true,
+          "collision": false,
+          "timeout": false
+        },
+        "full_prefix_action_exact": true,
+        "hidden_max_error": 0.0,
+        "location_max_error": 0.0,
+        "primary_quasistatic": {
+          "xy_m": [
+            0.07768104076190331,
+            0.1554064668207039,
+            0.2331812942589251,
+            0.31601196732216674,
+            0.4060323975573277
+          ],
+          "yaw_deg": [
+            0.6784713619836796,
+            1.3626708397418172,
+            2.0532710702805717,
+            2.3185141814785166,
+            2.611241552856723
+          ],
+          "max_xy_m": 0.4060323975573277,
+          "max_yaw_deg": 2.611241552856723
+        },
+        "causal_constant_twist_control": {
+          "xy_m": [
+            1.169260742824778e-05,
+            4.290819956803628e-05,
+            9.637693756651146e-05,
+            0.005363998624276542,
+            0.018545175024074177
+          ],
+          "yaw_deg": [
+            0.001351972156968799,
+            0.004484326207657328,
+            0.00955567147002331,
+            0.04028883658449513,
+            0.15761864167976827
+          ],
+          "max_xy_m": 0.018545175024074177,
+          "max_yaw_deg": 0.15761864167976827
+        },
+        "one_step_teacher_forced_DIAGNOSTIC_ONLY": {
+          "xy_m": [
+            0.07768104076190331,
+            0.07771566386046824,
+            0.07775680770007504,
+            0.0827944546388313,
+            0.08999052585533607
+          ],
+          "yaw_deg": [
+            0.6784713619836796,
+            0.6841994777581376,
+            0.6906002305387543,
+            0.265243111197945,
+            0.2927273713782068
+          ],
+          "max_xy_m": 0.08999052585533607,
+          "max_yaw_deg": 0.6906002305387543
+        },
+        "forward_gate": false,
+        "initial_body_v": [
+          0.15384995937347412,
+          0.0028007745277136564
+        ],
+        "initial_yaw_rate": 0.013883962295949459,
+        "source_midpoint_full_integration_saved": false
+      }
+    ],
+    "forward_gate": false,
+    "direction_gate": null,
+    "Actor_learning_eligible": false,
+    "closed_loop_surrogate_NOT_implemented": true,
+    "new_native": 0,
+    "new_Actor_Adam": 0,
+    "new_Value_Adam": 0,
+    "new_model_fit": 0,
+    "new_policy_gradient_updates": 0,
+    "reason": "UNFITTED_QUASISTATIC_MODEL_REJECTED_NO_ACTOR_LEARNING",
+    "not_a_test_of_all_differentiable_models": true
+  },
+  "audit": {
+    "state": "PASS",
+    "pid": 126567,
+    "new_native": 0,
+    "new_optimizer": 0,
+    "all_source_arrays_hidden_actions_and_prediction_metrics_recomputed": true,
+    "scientific_forward_gate": false,
+    "local_direction_gate": null,
+    "Actor_learning_eligible": false,
+    "source_models_unchanged": true
+  },
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "elapsed_main_s": 3.8328638076782227,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "navigation_test": null,
+  "scientific_pids_stopped": [
+    126555,
+    126567
+  ],
+  "epoch": 1794559470.9955935
+}
