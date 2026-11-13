@@ -1,0 +1,5 @@
+# T514 source check
+
+Primary control geometry remains [Coulter1992, CMU-RI-TR-92-01](https://publications.ri.cmu.edu/storage/publications/pub_files/pub3/coulter_r_craig_1992_1/coulter_r_craig_1992_1.pdf), selective geometric derivation reviewed. Point-target curvature is established machinery, not novelty or a collision certificate. No reference path/planner is added.
+
+Authoritative project interfaces are verified Stage runtime dependencies `phase10_strict_mujoco_env.py` (squared wheel/direct steering map; kinematic response disabled) and `stage9_runtime_fullplant_fix_v5_2.py` (physical Ackermann WHEELBASE_M=.60). Historical file names are verified Stage simulator dependencies, not Phase research. Exact bound-method roundtrip is necessary; correctness cannot be inferred from matching an unused superclass formula. T513 failed that intended interface contract despite consistent raw replays. T514 fixes implementation and moves takeover earlier, so results cannot isolate either change causally.
