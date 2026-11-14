@@ -1,0 +1,65 @@
+{
+  "state": "EXACT_SAVED_FAILURE_DETECTED_NOT_FIXED",
+  "new_native": 0,
+  "new_optimizer": 0,
+  "red_capable_signal": "safeGOAL_false_originalcandidate_and_actualteacher_vs_T507_originalsuccess",
+  "records": [
+    {
+      "role": "REBUILD_CANDIDATE19_SUCCESSES_AND_OLD_FAILURE",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t543_feedback_joint_repair/episodes/full_19.npz",
+      "sha256": "68669270a3106aa5a111878ee67688af6d94d72dcab5bd9528e7e2a128fb4553",
+      "closest_recorded_d_m": 0.20761193625054428,
+      "closest_recorded_t_s": 44.20000000000009,
+      "final_remaining_m": 0.29580196747843557,
+      "last20s_mean_speed_m_s": 0.11157550919408209,
+      "final_recorded_heading_error_deg": -136.98988460658722
+    },
+    {
+      "role": "ACTUAL_OLDLEFT_FEEDBACK_TEACHER",
+      "success": false,
+      "contact": false,
+      "timeout": true,
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t543_feedback_joint_repair/episodes/full_20.npz",
+      "sha256": "635b9de95c037bee3ac0fb8d4e7b1c4baad590ab9c6d6592c3c2b54d6230741c",
+      "closest_recorded_d_m": 0.2163287480191722,
+      "closest_recorded_t_s": 44.600000000000094,
+      "final_remaining_m": 0.27890269563767844,
+      "last20s_mean_speed_m_s": 0.10970984223721027,
+      "final_recorded_heading_error_deg": -131.1856055869769
+    },
+    {
+      "role": "BLOCK_0_NATIVE_GUARD18",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/episodes/0006.npz",
+      "sha256": "94aec930b8edd7987cd88714d9201cf24c388b1f3bd70a12b15fdde8e9467a91",
+      "closest_recorded_d_m": 0.2014659193439857,
+      "closest_recorded_t_s": 42.600000000000065,
+      "final_remaining_m": 0.19999377533728122,
+      "last20s_mean_speed_m_s": 0.11876138564797901,
+      "final_recorded_heading_error_deg": -85.9859643932404
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "prediction": "Pure near-zero speed stalls",
+      "evidence": "Last20s mean speed>.1m/s; simple stopped-vehicle explanation unsupported."
+    },
+    {
+      "id": "H2",
+      "prediction": "Insufficient terminal bearing correction; crosses outside radius and departs",
+      "evidence": "Candidate sampled minimum .2076m and final heading about -137deg; actual causal fix still needs native test."
+    },
+    {
+      "id": "H3",
+      "prediction": "Teacher originalstart success does not transfer to actual student states",
+      "evidence": "T507 original safeGOAL but at T543 actual5.4s intervention timeout; no claim of memory bug or unique root cause."
+    }
+  ],
+  "next_fixed_test": "First actual candidate d<=1m pointgoal strictcurvature feedback .14m/s training-only,fullnativeGOAL+exact beforeconditionalaction learning;no radius/clock/goal change."
+}

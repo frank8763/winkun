@@ -1,3 +1,5 @@
+2026-11-14 T544已注册/8合成丢弃Adam与1000物理6命令短原生预检PASS，尚未launch。T543失败实际近目标0.207612m后驶离/末heading-137deg，改原学生首次d<=1m(34s)训练期strict点目标反馈.14m/s；完整safeGOAL+exact才16监督MIR/live及shadow，实际成功19历史复用不重采。自主old8+field24+32exact，保原12/旧8/接触<=9，否则回退；0PG/Value，完整old275/six54/eight54/fresh/reload未安排。main3.247872M/74cmd+pref1000/6，own10MiB/global1GiB/free40，CPU14/15总一核/GPUoff，12:00all不延长；先精确source才唯一启动。详day_20261114/T544_PLAN/BUDGET/READINESS，Stage隔离。
+
 2026-11-14 T543实际偏离恢复+MIR启发回放结束，NEURAL_FEEDBACK_NOT_QUALIFIED_ZERO_LEARNING；自主check=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。新PG/Value0，16条件监督live及shadow/虚拟Adam分列，旧接受T507不覆盖；old275/six54/eight54/fresh/reload未执行null，不称24稳定。详day_20261114/T543_FINAL_REPORT，12:00all/Stage隔离。
 
 2026-11-14 T543已注册/8合成丢弃Adam与2000物理12命令短原生合同PASS，尚未launch。rtg06未晋升12/24+旧7/8研究副本，20历史完整重建+exact后单次早期神经教师恢复，实际GOAL才16全ActorAdam+16virtualMIR/live及shadow；真实19自身成功保持，再自主old8+field24+32exact。完整旧275/六54/八54/fresh/78未安排，不称稳定；44MiB/global1GiB/free40、CPU14/15总一核/GPUoff，11月14日12:00all用户已确认。先远端精确树才唯一启动，Stage隔离。详day_20261114/T543_PLAN/BUDGET/READINESS。

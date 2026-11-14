@@ -1,0 +1,13 @@
+"""Saved-data red-capable terminal failure loop; zero native/optimizer."""
+from pathlib import Path
+import sys
+HERE=Path(__file__).resolve().parent;sys.path.insert(0,str(HERE));import t544_runtime as R
+old=R.ROOT/'stage/runs/t543_feedback_joint_repair';rows=R.G.rows(old);source=[rows[19],rows[20],R.read(old/'protocol.json')['old_success_row']];out=[]
+for row in source:
+ assert R.sha(row['path'])==row['sha256'];a=R.E.N.S.arrays(row['path']);d=R.np.linalg.norm(a['poses'][:,:2]-a['task_goal_xy'],axis=1);dt=a['native_counts']*.002;t=R.np.r_[0.,R.np.cumsum(dt)][:-1];heading=R.np.arctan2(a['task_goal_xy'][1]-a['poses'][:,1],a['task_goal_xy'][0]-a['poses'][:,0])-a['poses'][:,2];heading=R.np.arctan2(R.np.sin(heading),R.np.cos(heading))*180/R.np.pi;v=R.np.linalg.norm(a['next_poses'][:,:2]-a['poses'][:,:2],axis=1)/dt
+ out.append(dict(role=row.get('role'),success=row['success'],contact=row['collision'],timeout=row['timeout'],source_path=row['path'],sha256=row['sha256'],closest_recorded_d_m=float(d.min()),closest_recorded_t_s=float(t[d.argmin()]),final_remaining_m=row['remaining_m'],last20s_mean_speed_m_s=float(v[-100:].mean()),final_recorded_heading_error_deg=float(heading[-1])))
+# Negative control: same observer rejects failed candidate and teacher, accepts original T507.
+assert [x['success'] and not x['contact'] for x in out]==[False,False,True]
+assert out[0]['closest_recorded_d_m']>.2 and out[0]['last20s_mean_speed_m_s']>.1 and abs(out[0]['final_recorded_heading_error_deg'])>120
+R.save(R.DOC/'T544_FAILURE_DIAGNOSIS.json',dict(state='EXACT_SAVED_FAILURE_DETECTED_NOT_FIXED',new_native=0,new_optimizer=0,red_capable_signal='safeGOAL_false_originalcandidate_and_actualteacher_vs_T507_originalsuccess',records=out,hypotheses=[dict(id='H1',prediction='Pure near-zero speed stalls',evidence='Last20s mean speed>.1m/s; simple stopped-vehicle explanation unsupported.'),dict(id='H2',prediction='Insufficient terminal bearing correction; crosses outside radius and departs',evidence='Candidate sampled minimum .2076m and final heading about -137deg; actual causal fix still needs native test.'),dict(id='H3',prediction='Teacher originalstart success does not transfer to actual student states',evidence='T507 original safeGOAL but at T543 actual5.4s intervention timeout; no claim of memory bug or unique root cause.')],next_fixed_test='First actual candidate d<=1m pointgoal strictcurvature feedback .14m/s training-only,fullnativeGOAL+exact beforeconditionalaction learning;no radius/clock/goal change.'))
+print('FAILURE_REPRODUCED_FROM_IMMUTABLE_RAW',[(x['success'],round(x['closest_recorded_d_m'],6),round(x['final_recorded_heading_error_deg'],2)) for x in out],flush=True)
