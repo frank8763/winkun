@@ -1,3 +1,5 @@
+2026-11-14 T548恢复资格FAILED科学门（管线COMPLETE/独立audit/原始远端SHA均PASS），0新拟合/Adam/RL/候选。128,224物理/6cmd85.588s：原128.224s恢复及exact无碰撞超时余.832938m，最近.259981m未入.2m圈。只读复核接入d.98047/朝向偏36.61deg，所用纯追踪名义需36.13deg而命令限25deg、全接管steer饱和，首次1m接入点未先筛曲率可行性不足；非任务不可达证明。T546原完整old8/8+field12/24与权重保持，完整32候选未执行null。所有自身进程已退，不重启/借剩余额度扫窗口；按转弯能力提前介入仅下一草案，未注册启动。详day_20261114/T548_FINDINGS/SAVED_RECOVERY_REVIEW，13:00all/Stage隔离。
+
 2026-11-14 T548单目标末段恢复与20成功保护试验结束，RECOVERY_TEACHER_NOT_QUALIFIED_ZERO_FIT；check=None；真实教师须safeGOAL+exact才一次神经局部代数拟合+shadow，0新Adam/PG/Value，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。完整old275/six54/eight54/fresh/reload未执行null，不自动晋升。详day_20261114/T548_FINAL_REPORT，Stage隔离。
 
 2026-11-14 用户明确授权T548新窗口13:00all、最多新增3,329,428物理/74命令，日最坏9,276,536/356；原12:00all已由本次新授权替换。T548已正式注册/复用PASS零原生数值合同，尚未launch；唯一sector0off2恢复须真实safeGOAL+exact后才新增独立神经残差一次线性解+shadow，T546原函数和20成功history精确保留，完整32纯Actor+32exact，0Adam/RL/Value。严格CONTACT<=9门不改，不自动晋升。own12MiB/global1GiB/free40/CPU14,15总1核GPUoff；先精确源树再唯一启动。授权见day_20261114/T548_BUDGET_AUTHORIZATION，Phase隔离。
