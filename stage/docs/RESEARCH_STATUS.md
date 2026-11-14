@@ -1,3 +1,5 @@
+2026-11-14 T548单目标末段恢复与20成功保护试验结束，RECOVERY_TEACHER_NOT_QUALIFIED_ZERO_FIT；check=None；真实教师须safeGOAL+exact才一次神经局部代数拟合+shadow，0新Adam/PG/Value，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。完整old275/six54/eight54/fresh/reload未执行null，不自动晋升。详day_20261114/T548_FINAL_REPORT，Stage隔离。
+
 2026-11-14 用户明确授权T548新窗口13:00all、最多新增3,329,428物理/74命令，日最坏9,276,536/356；原12:00all已由本次新授权替换。T548已正式注册/复用PASS零原生数值合同，尚未launch；唯一sector0off2恢复须真实safeGOAL+exact后才新增独立神经残差一次线性解+shadow，T546原函数和20成功history精确保留，完整32纯Actor+32exact，0Adam/RL/Value。严格CONTACT<=9门不改，不自动晋升。own12MiB/global1GiB/free40/CPU14,15总1核GPUoff；先精确源树再唯一启动。授权见day_20261114/T548_BUDGET_AUTHORIZATION，Phase隔离。
 
 2026-11-14 T547保存轨迹只读复核完成0native/拟合/梯度：全部12失败数组/积分精确同rtg06父，T546残差0激活；20成功保存动作仍逐位同。old8=8/8和field12/24完整保持，但未学会其余10接触2超时。sector0off2已到.401211m后驶离超时，T548单目标末段恢复+20成功精确函数保护及完整32exact已准备/0native合同PASS，尚未注册/launch。新增3,329,428物理/74cmd、拟新13:00all，等待明确新窗口与额度；当前12:00all仍有效。原CONTACT<=9不改，0新RL/Adam/Value，不晋升。详day_20261114/T547_FINDINGS_AND_NEXT/T548_PLAN，Stage隔离。
