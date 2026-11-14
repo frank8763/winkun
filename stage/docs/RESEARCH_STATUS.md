@@ -1,3 +1,5 @@
+2026-11-14 T543实际偏离恢复+MIR启发回放结束，NEURAL_FEEDBACK_NOT_QUALIFIED_ZERO_LEARNING；自主check=None，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。新PG/Value0，16条件监督live及shadow/虚拟Adam分列，旧接受T507不覆盖；old275/six54/eight54/fresh/reload未执行null，不称24稳定。详day_20261114/T543_FINAL_REPORT，12:00all/Stage隔离。
+
 2026-11-14 T543已注册/8合成丢弃Adam与2000物理12命令短原生合同PASS，尚未launch。rtg06未晋升12/24+旧7/8研究副本，20历史完整重建+exact后单次早期神经教师恢复，实际GOAL才16全ActorAdam+16virtualMIR/live及shadow；真实19自身成功保持，再自主old8+field24+32exact。完整旧275/六54/八54/fresh/78未安排，不称稳定；44MiB/global1GiB/free40、CPU14/15总一核/GPUoff，11月14日12:00all用户已确认。先远端精确树才唯一启动，Stage隔离。详day_20261114/T543_PLAN/BUDGET/READINESS。
 
 2026-11-14 T542早晨备份恢复完成：3,776现存成员/61,777,705B RAM压缩附件全部远端完整读回逐成员SHA，release_receipt_T542.json=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；含失败final/partial与拒绝模型，0新native/0optimizer。原夜PENDING/FAILED不覆盖，59中断hold无观测行缺口未恢复，失败final仍非完整audit。详情MORNING_REPORT/MORNING_RAW_REVIEW。Stage隔离。
