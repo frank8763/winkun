@@ -12,7 +12,9 @@ def main():
         import sync_source;sync_source.main();return
     assert sys.argv[1]=='T550';stopped();A.stopped=stopped
     receipt=ROOT/'stage/docs/long_distance_20261101/release_receipt_T550.json';assert not receipt.exists()
-    assert all(json.loads((p/'audit.json').read_text())['state']=='PASS' for p in OUT.iterdir() if p.is_dir() and (p/'summary.json').exists())
+    assert all(json.loads((p/'audit.json').read_text())['state']=='PASS' for p in OUT.iterdir() if p.is_dir() and (p/'summary.json').exists() and json.loads((p/'summary.json').read_text())['state']=='COMPLETE')
+    assert json.loads((OUT/'native_preflight/summary.json').read_text())['state']=='FAILED'
+    assert (ROOT/'stage/docs/day_20261114/T550_FAILED_PREFLIGHT_REVIEW.json').exists()
     release=T.B.api('GET','releases/tags/stage-eight-only-2026-11-11')
     files=sorted(f for f in OUT.rglob('*') if f.is_file() and f.name!='driver.log' and f.suffix not in ['.partial','.lock','.pyc'])
     deadline=min(time.time()+540,json.loads((OUT/'protocol.json').read_text())['absolute_all_stop']-180)

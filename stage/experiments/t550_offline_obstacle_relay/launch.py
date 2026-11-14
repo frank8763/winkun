@@ -3,7 +3,7 @@ from pathlib import Path
 import os,subprocess,sys,time
 HERE=Path(__file__).resolve().parent;sys.path.insert(0,str(HERE));import t550_runtime as R
 p=R.read(R.OUT/'protocol.json');R.verify(p,True)
-assert R.read(R.OUT/'native_preflight/audit.json')['state']=='PASS'
+assert R.read(R.OUT/'native_preflight_002/audit.json')['state']=='PASS'
 pre=R.read(R.OUT/'preflight.json');assert pre['state']=='PASS_ZERO_NATIVE' and not Path('/proc',str(pre['pid'])).exists()
 assert not (R.OUT/'launch.json').exists()
 src=R.read(R.ROOT/'stage/runs/t224_archive/latest_source_sync_receipt.json')
