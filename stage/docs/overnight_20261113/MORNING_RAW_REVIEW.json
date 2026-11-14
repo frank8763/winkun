@@ -1,0 +1,539 @@
+{
+  "state": "PASS_PERSISTED_EVIDENCE_AND_PARTIAL_ACCOUNTING_ONLY",
+  "source_original_protocol_and_scientific_inputs_unchanged": true,
+  "all_own_processes_stopped": true,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "not_a_full_failed_child_audit": true,
+  "previous_completed_child_independent_audits_verified": 34,
+  "completed_child_manifest_members_checked": 2999,
+  "night_start": "2026-11-13T20:42:04.055537+08:00",
+  "night_science_end": "2026-11-14T05:32:00.508193+08:00",
+  "science_elapsed_seconds": 31796.45265507698,
+  "driver_report_end": "2026-11-14T05:33:48.945073+08:00",
+  "all_before_deadline": true,
+  "actual_physics": 53337590,
+  "actual_commands": 2224,
+  "rounds": 32,
+  "arms": {
+    "readout": {
+      "rounds": 10,
+      "live_SGD": 40,
+      "shadow_SGD": 40,
+      "independent_rebuild_discarded_SGD": 40,
+      "retained_updates": 0,
+      "train": {
+        "valid": 40,
+        "success": 8,
+        "contact": 27,
+        "timeout": 5
+      },
+      "max_field_success": 11,
+      "zero_signal_rounds": 0
+    },
+    "rtg": {
+      "rounds": 11,
+      "live_SGD": 44,
+      "shadow_SGD": 44,
+      "independent_rebuild_discarded_SGD": 44,
+      "retained_updates": 0,
+      "train": {
+        "valid": 44,
+        "success": 6,
+        "contact": 31,
+        "timeout": 7
+      },
+      "max_field_success": 12,
+      "zero_signal_rounds": 0
+    },
+    "terminal": {
+      "rounds": 11,
+      "live_SGD": 4,
+      "shadow_SGD": 4,
+      "independent_rebuild_discarded_SGD": 4,
+      "retained_updates": 0,
+      "train": {
+        "valid": 44,
+        "success": 7,
+        "contact": 31,
+        "timeout": 6
+      },
+      "max_field_success": 10,
+      "zero_signal_rounds": 10
+    }
+  },
+  "total_training": {
+    "valid": 128,
+    "success": 21,
+    "contact": 89,
+    "timeout": 18
+  },
+  "training_native_exact_repeats": 128,
+  "live_Actor_SGD": 88,
+  "shadow_SGD": 88,
+  "independent_audit_discarded_SGD": 88,
+  "preflight_synthetic_discarded_SGD": 24,
+  "retained_new_updates": 0,
+  "research_peaks": [
+    {
+      "child": "rtg_06",
+      "old8": {
+        "valid": 8,
+        "success": 7,
+        "contact": 0,
+        "timeout": 1,
+        "invalid": 0,
+        "censored": 0
+      },
+      "field24": {
+        "valid": 24,
+        "success": 12,
+        "contact": 10,
+        "timeout": 2,
+        "invalid": 0,
+        "censored": 0
+      },
+      "gain": [
+        "t502_field_sector1_offset1"
+      ],
+      "lost": [],
+      "accepted": false
+    },
+    {
+      "child": "rtg_07",
+      "old8": {
+        "valid": 8,
+        "success": 7,
+        "contact": 1,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "field24": {
+        "valid": 24,
+        "success": 12,
+        "contact": 10,
+        "timeout": 2,
+        "invalid": 0,
+        "censored": 0
+      },
+      "gain": [
+        "t502_field_sector0_offset2"
+      ],
+      "lost": [],
+      "accepted": false
+    }
+  ],
+  "retained_model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+    "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+    "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+    "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+    "bytes": 1063607
+  },
+  "retained_field24": {
+    "valid": 24,
+    "success": 11,
+    "contact": 9,
+    "timeout": 4,
+    "invalid": 0,
+    "censored": 0
+  },
+  "retained_old8": {
+    "valid": 8,
+    "success": 8,
+    "contact": 0,
+    "timeout": 0,
+    "invalid": 0,
+    "censored": 0
+  },
+  "final_evaluation": {
+    "state": "PARTIAL_ADMINISTRATIVE_TIME_LIMIT_STOP",
+    "relative_limit_seconds": 3300,
+    "actual_seconds": 3295.989088535309,
+    "completed": 350,
+    "expected": 407,
+    "groups": {
+      "old275": {
+        "expected": 275,
+        "completed": 275,
+        "tally": {
+          "valid": 275,
+          "success": 245,
+          "contact": 20,
+          "timeout": 10,
+          "invalid": 0,
+          "censored": 0
+        },
+        "not_completed": 0
+      },
+      "wide6_54": {
+        "expected": 54,
+        "completed": 54,
+        "tally": {
+          "valid": 54,
+          "success": 27,
+          "contact": 24,
+          "timeout": 3,
+          "invalid": 0,
+          "censored": 0
+        },
+        "not_completed": 0
+      },
+      "wide8_54": {
+        "expected": 54,
+        "completed": 21,
+        "tally": {
+          "valid": 21,
+          "success": 12,
+          "contact": 9,
+          "timeout": 0,
+          "invalid": 0,
+          "censored": 0
+        },
+        "not_completed": 33
+      },
+      "field24": {
+        "expected": 24,
+        "completed": 0,
+        "tally": {
+          "valid": 0,
+          "success": 0,
+          "contact": 0,
+          "timeout": 0,
+          "invalid": 0,
+          "censored": 0
+        },
+        "not_completed": 24
+      }
+    },
+    "partial": [
+      {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/final_selected407/workers/1/partial.npz",
+        "sha256": "bd4dba27f70b6334293298fdd630089187cc770d92d026b9fce69e19d3a954c2",
+        "physics": 11000,
+        "decisions": 110,
+        "outcome": "ADMINISTRATIVE_CENSOR_NOT_NAVIGATION_TIMEOUT"
+      },
+      {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/final_selected407/workers/0/partial.npz",
+        "sha256": "c3211c5e76840597a8fc53c9171978793c725132944a684bdbecf2149b3f6a5d",
+        "physics": 9800,
+        "decisions": 98,
+        "outcome": "ADMINISTRATIVE_CENSOR_NOT_NAVIGATION_TIMEOUT"
+      }
+    ],
+    "complete_recorded_physics": 5514019,
+    "partial_saved_complete_hold_physics": 20800,
+    "charged_interrupted_hold_physics_without_observation_row": 59,
+    "partial_physics": 20859,
+    "not_started": 55,
+    "censored_cases": 2,
+    "whole407_success_rate": null
+  },
+  "admission_stop": {
+    "child": "readout_10",
+    "checks": {
+      "physical": true,
+      "commands": true,
+      "main_seconds": true,
+      "native_time": true,
+      "all_time": true,
+      "learning_time": true,
+      "bytes": false
+    },
+    "epoch": 1794602222.2298646,
+    "no_budget_extension": true
+  },
+  "scope_notes": [
+    "field11/24 is retained historical T507 result,not overnight new gain",
+    "T507 full old275245/275 is current research parent; safeT255 historical275/275 separate and unchanged",
+    "rtg12/24 gained a field task but old8 fell7/8 and contact10>9; cannot promote",
+    "two partial final trajectories are administrative censor,not native navigation timeouts",
+    "fresh16/reload78 not executed",
+    "no new training or deadline extension during morning inspection"
+  ],
+  "children": [
+    {
+      "child": "final_selected407",
+      "state": "FAILED",
+      "physics": 5534878,
+      "commands": 356,
+      "seconds": 3295.989088535309,
+      "existing_independent_audit": false
+    },
+    {
+      "child": "native_preflight",
+      "state": "COMPLETE",
+      "physics": 2000,
+      "commands": 8,
+      "seconds": 11.678025245666504,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "qualify_t539",
+      "state": "COMPLETE",
+      "physics": 1785908,
+      "commands": 68,
+      "seconds": 1052.3027493953705,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "readout_00",
+      "state": "COMPLETE",
+      "physics": 1891250,
+      "commands": 76,
+      "seconds": 1108.9422724246979,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "readout_01",
+      "state": "COMPLETE",
+      "physics": 2101092,
+      "commands": 76,
+      "seconds": 1235.7240965366364,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "readout_02",
+      "state": "COMPLETE",
+      "physics": 1898030,
+      "commands": 76,
+      "seconds": 1120.8167579174042,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "readout_03",
+      "state": "COMPLETE",
+      "physics": 1836242,
+      "commands": 76,
+      "seconds": 1082.3146193027496,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "readout_04",
+      "state": "COMPLETE",
+      "physics": 2144120,
+      "commands": 76,
+      "seconds": 1266.6581935882568,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "readout_05",
+      "state": "COMPLETE",
+      "physics": 2100412,
+      "commands": 76,
+      "seconds": 1228.8317954540253,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "readout_06",
+      "state": "COMPLETE",
+      "physics": 1910472,
+      "commands": 76,
+      "seconds": 1124.8918232917786,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "readout_07",
+      "state": "COMPLETE",
+      "physics": 1839718,
+      "commands": 76,
+      "seconds": 1082.9646651744843,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "readout_08",
+      "state": "COMPLETE",
+      "physics": 2356998,
+      "commands": 76,
+      "seconds": 1380.6691586971283,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "readout_09",
+      "state": "COMPLETE",
+      "physics": 1806084,
+      "commands": 76,
+      "seconds": 1067.1760787963867,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "rtg_00",
+      "state": "COMPLETE",
+      "physics": 1989000,
+      "commands": 76,
+      "seconds": 1174.2410049438477,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "rtg_01",
+      "state": "COMPLETE",
+      "physics": 2152900,
+      "commands": 76,
+      "seconds": 1274.982899427414,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "rtg_02",
+      "state": "COMPLETE",
+      "physics": 1963850,
+      "commands": 76,
+      "seconds": 1155.7729449272156,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "rtg_03",
+      "state": "COMPLETE",
+      "physics": 1830986,
+      "commands": 76,
+      "seconds": 1085.994226694107,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "rtg_04",
+      "state": "COMPLETE",
+      "physics": 2043184,
+      "commands": 76,
+      "seconds": 1202.3192727565765,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "rtg_05",
+      "state": "COMPLETE",
+      "physics": 2079938,
+      "commands": 76,
+      "seconds": 1238.3257982730865,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "rtg_06",
+      "state": "COMPLETE",
+      "physics": 1840376,
+      "commands": 76,
+      "seconds": 1088.013825416565,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "rtg_07",
+      "state": "COMPLETE",
+      "physics": 1751200,
+      "commands": 76,
+      "seconds": 1040.512955904007,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "rtg_08",
+      "state": "COMPLETE",
+      "physics": 2358880,
+      "commands": 76,
+      "seconds": 1393.9284055233002,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "rtg_09",
+      "state": "COMPLETE",
+      "physics": 1742054,
+      "commands": 76,
+      "seconds": 1039.41366648674,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "rtg_10",
+      "state": "COMPLETE",
+      "physics": 1880712,
+      "commands": 76,
+      "seconds": 1114.8524358272552,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "terminal_00",
+      "state": "COMPLETE",
+      "physics": 1893846,
+      "commands": 76,
+      "seconds": 1111.894196987152,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "terminal_01",
+      "state": "COMPLETE",
+      "physics": 299880,
+      "commands": 12,
+      "seconds": 180.7808713912964,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "terminal_02",
+      "state": "COMPLETE",
+      "physics": 221204,
+      "commands": 12,
+      "seconds": 136.15395665168762,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "terminal_03",
+      "state": "COMPLETE",
+      "physics": 144664,
+      "commands": 12,
+      "seconds": 91.84963774681091,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "terminal_04",
+      "state": "COMPLETE",
+      "physics": 321358,
+      "commands": 12,
+      "seconds": 195.32332587242126,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "terminal_05",
+      "state": "COMPLETE",
+      "physics": 407654,
+      "commands": 12,
+      "seconds": 245.21621465682983,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "terminal_06",
+      "state": "COMPLETE",
+      "physics": 188888,
+      "commands": 12,
+      "seconds": 118.34791326522827,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "terminal_07",
+      "state": "COMPLETE",
+      "physics": 136728,
+      "commands": 12,
+      "seconds": 87.85666489601135,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "terminal_08",
+      "state": "COMPLETE",
+      "physics": 670128,
+      "commands": 12,
+      "seconds": 395.59666681289673,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "terminal_09",
+      "state": "COMPLETE",
+      "physics": 62526,
+      "commands": 12,
+      "seconds": 44.96701002120972,
+      "existing_independent_audit": true
+    },
+    {
+      "child": "terminal_10",
+      "state": "COMPLETE",
+      "physics": 150430,
+      "commands": 12,
+      "seconds": 96.08234906196594,
+      "existing_independent_audit": true
+    }
+  ],
+  "epoch": 1794616902.0550349
+}

@@ -1,0 +1,63 @@
+{
+  "state": "FAILED",
+  "reason": "SHARED_CONTRACT_OR_PROCESS_FAILURE_STOP_CHAIN",
+  "physics": 53337590,
+  "physics_lower_bound": 53337590,
+  "counts_exact": true,
+  "commands": 2224,
+  "main_seconds": 31571.38556790352,
+  "elapsed_s": 31904.88918709755,
+  "best": {
+    "model": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+      "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+      "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+      "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+      "bytes": 1063607
+    },
+    "check": {
+      "old8": {
+        "valid": 8,
+        "success": 8,
+        "contact": 0,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "field24": {
+        "valid": 24,
+        "success": 11,
+        "contact": 9,
+        "timeout": 4,
+        "invalid": 0,
+        "censored": 0
+      },
+      "field_success_ids": [
+        "t502_field_sector0_offset1",
+        "t502_field_sector2_offset1",
+        "t502_field_sector2_offset2",
+        "t502_field_sector3_offset1",
+        "t502_field_sector3_offset2",
+        "t502_field_sector4_offset1",
+        "t502_field_sector5_offset1",
+        "t502_field_sector5_offset2",
+        "t502_field_sector6_offset1",
+        "t502_field_sector7_offset1",
+        "t502_field_sector7_offset2"
+      ],
+      "distance_sum": 96.70766544743901,
+      "all_field24_pass": false
+    },
+    "origin": "T507_LOCKED_BASELINE"
+  },
+  "final_development": null,
+  "new_field24_all_pass": false,
+  "fresh16": null,
+  "reload78": null,
+  "stability_claim": false,
+  "remote": "PENDING_OFFLINE",
+  "all_native_processes_stopped": true,
+  "deadline": 1794616200.0,
+  "ended_epoch": 1794605628.9450734,
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t542_offline_field_relay/driver.py\", line 82, in main\n    final,why=run('final_selected407',over)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t542_offline_field_relay/driver.py\", line 53, in run\n    call(child,'main',over['main_seconds']);call(child,'audit',p['audit_seconds']);s=read(folder/'summary.json');a=read(folder/'audit.json');assert s['state']=='COMPLETE' and a['state']=='PASS';manifest(folder)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t542_offline_field_relay/driver.py\", line 38, in call\n    try:proc.wait(timeout=cap);assert proc.returncode==0,(child,action,proc.returncode)\nAssertionError: ('final_selected407', 'main', 1)\n"
+}

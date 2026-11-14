@@ -1,0 +1,4861 @@
+{
+  "children": [
+    {
+      "child": "native_preflight",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 162658,
+        "physics": 2000,
+        "commands": 8,
+        "elapsed_s": 11.678025245666504,
+        "error": null,
+        "result": {
+          "scope": "TRUNCATED_CAP_ENGINEERING_ONLY_NOT_NAVIGATION_ACCEPTANCE",
+          "steps": 0,
+          "complete": true
+        }
+      },
+      "audit_sha256": "bd7fb687a0f438fb19d3680d4093e4029c44bbd39e45c365ca154ead3612e283"
+    },
+    {
+      "child": "qualify_t539",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 167168,
+        "physics": 1785908,
+        "commands": 68,
+        "elapsed_s": 1052.3027493953705,
+        "error": null,
+        "result": {
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 8,
+              "contact": 0,
+              "timeout": 0,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 10,
+              "contact": 9,
+              "timeout": 5,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 99.32012315356482,
+            "all_field24_pass": false
+          },
+          "accepted": false,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t539_terminal_success_pg/proposal.pt.gz",
+            "sha256": "5d2e1771fdc2c53f2583a3385594ba37555578838b64724aee74a023161a252d",
+            "bytes": 500176,
+            "policy_hash": "0b6c78d49414adbbb973b8e3972609aee718f25748068b7fd7cd887ebfd5637b",
+            "joint_hash": "7a80ee80efd0eab22cea1703c28769c8d48ca0839d33bb81aa24baa87fa7dae8"
+          },
+          "steps": 0,
+          "not_new_training": true
+        }
+      },
+      "audit_sha256": "76c81b0f9b1f83ba71b8fdd61b4232066e99aa5154f70d13ee879562e0fe92fe",
+      "manifest_sha256": "65610788b887d0c513baa29e1908a41e09b93abd87f80dc0464bb5db1c319157"
+    },
+    {
+      "child": "terminal_00",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 169282,
+        "physics": 1893846,
+        "commands": 76,
+        "elapsed_s": 1111.894196987152,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "outcomes": [
+                1.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "LOO": [
+                0.33333333333333337,
+                -1.0,
+                0.33333333333333337,
+                0.33333333333333337
+              ],
+              "coefficient_RMS": 0.5773502691896258,
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  3.608224830031759e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  4.163336342344337e-16,
+                  3.1086244689504383e-15
+                ],
+                [
+                  3.608224830031759e-16,
+                  3.1086244689504383e-15
+                ],
+                [
+                  4.440892098500626e-16,
+                  2.6645352591003757e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 71.15841944512135,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 454.6294340951857,
+                "sampled_KL": 0.0006670785622368988
+              },
+              {
+                "step": 1,
+                "RL_loss": 70.70345736317239,
+                "successful_history_KL": 0.00044718140101728985,
+                "gradient_norm": 454.7843887986848,
+                "sampled_KL": 0.0026693816690354756
+              },
+              {
+                "step": 2,
+                "RL_loss": 70.28686358201284,
+                "successful_history_KL": 0.001786153659281358,
+                "gradient_norm": 290.7309550180892,
+                "sampled_KL": 0.005767163848892179
+              },
+              {
+                "step": 3,
+                "RL_loss": 70.24833038848608,
+                "successful_history_KL": 0.0038532767594129783,
+                "gradient_norm": 326.6519340855093,
+                "sampled_KL": 0.0025923811174822717
+              }
+            ],
+            "trainable_parameters": 64772,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 3,
+            "contact": 0,
+            "timeout": 1,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 7,
+              "contact": 0,
+              "timeout": 1,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 10,
+              "contact": 10,
+              "timeout": 4,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 102.2089631941653,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/terminal_00/proposal.pt.gz",
+            "sha256": "3aecbcc53ba60b838cfad9e6180f0714919c75a035da96c2040e4aa0766aae77",
+            "bytes": 500098,
+            "policy_hash": "af06fe2bbb8d905d95a1f634a62ffc115335e5022ac49baf7588751567b29068",
+            "joint_hash": "dcaf1db0ff07d1e505366f41271aa6366b53dec384f33dd8f62b9961e699cbcc"
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "9850b59a44d51051c194f1d695828fd281397d4c5aa7d4ba66ef82e94a671f35",
+      "manifest_sha256": "810550d2e53e391b24cd8727b3edece35c262fa9cee453eacd0c9d244d73d079"
+    },
+    {
+      "child": "rtg_00",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 172592,
+        "physics": 1989000,
+        "commands": 76,
+        "elapsed_s": 1174.2410049438477,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": 0.6594399791715357,
+                  "peer_RMS": 0.33928736239816515,
+                  "advantage_mean": 0.7097696061396499,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    3.885780586188048e-16,
+                    3.552713678800501e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.6715095547724206,
+                  "peer_RMS": 0.33928736239816515,
+                  "advantage_mean": 0.7157511410202315,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    4.440892098500626e-16,
+                    4.440892098500626e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.6780869695491516,
+                  "peer_RMS": 0.33928736239816515,
+                  "advantage_mean": 0.7280420086029832,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    4.440892098500626e-16,
+                    3.552713678800501e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.04227939447147186,
+                  "peer_RMS": 0.33928736239816515,
+                  "advantage_mean": -1.314504346968761,
+                  "terminal": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "density_error": [
+                    5.551115123125783e-16,
+                    4.218847493575595e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  3.885780586188048e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  4.440892098500626e-16,
+                  4.440892098500626e-15
+                ],
+                [
+                  4.440892098500626e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  5.551115123125783e-16,
+                  4.218847493575595e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 14.632752933841758,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 657.2725616610826,
+                "sampled_KL": 0.0006182206911060074
+              },
+              {
+                "step": 1,
+                "RL_loss": 13.989334871713723,
+                "successful_history_KL": 0.00045273309779291534,
+                "gradient_norm": 628.4965787780475,
+                "sampled_KL": 0.0024662880044568234
+              },
+              {
+                "step": 2,
+                "RL_loss": 13.38567402598352,
+                "successful_history_KL": 0.0018039077875619172,
+                "gradient_norm": 491.1478479394743,
+                "sampled_KL": 0.005476802181956554
+              },
+              {
+                "step": 3,
+                "RL_loss": 13.195001631971309,
+                "successful_history_KL": 0.003994004454265626,
+                "gradient_norm": 176.7708369120586,
+                "sampled_KL": 0.0037030997398271766
+              }
+            ],
+            "trainable_parameters": 64772,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 3,
+            "contact": 0,
+            "timeout": 1,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 8,
+              "contact": 0,
+              "timeout": 0,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 9,
+              "contact": 9,
+              "timeout": 6,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset2",
+              "t502_field_sector2_offset1",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1"
+            ],
+            "distance_sum": 100.64145043082569,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/rtg_00/proposal.pt.gz",
+            "sha256": "f18fdc0819aa18b2a5553b7789e48ed1e3b97daf136e47237afb3a24824e9b5e",
+            "bytes": 500136,
+            "policy_hash": "f68f9208cfca4577565d388364a8d43a4e25cf633ec176ec6fd0f6d94272e14a",
+            "joint_hash": "15d14fa65c0fb92c5f77a7141347d4d14ea353a6e18b8c3078b7f519e37531ef"
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "6b8ac910c306399bc8143d03649ce2d50e6072e1c560157e526813d6e78aaed9",
+      "manifest_sha256": "47517e22e1494003feb6ee1e22313e93d548bf851ed85e7b86bf3ee8f25c7611"
+    },
+    {
+      "child": "readout_00",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 178327,
+        "physics": 1891250,
+        "commands": 76,
+        "elapsed_s": 1108.9422724246979,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": 0.668601690629433,
+                  "peer_RMS": 0.043390169362305483,
+                  "advantage_mean": 0.08781869771072218,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    3.608224830031759e-16,
+                    3.552713678800501e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.6611701028308092,
+                  "peer_RMS": 0.043390169362305483,
+                  "advantage_mean": 0.11509584847691975,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    3.7643499428696714e-16,
+                    4.440892098500626e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.6755513144279873,
+                  "peer_RMS": 0.043390169362305483,
+                  "advantage_mean": 0.2363965681793408,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    4.440892098500626e-16,
+                    3.552713678800501e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.6649495955579986,
+                  "peer_RMS": 0.043390169362305483,
+                  "advantage_mean": 0.0759343633653801,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    4.440892098500626e-16,
+                    3.552713678800501e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  3.608224830031759e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  3.7643499428696714e-16,
+                  4.440892098500626e-15
+                ],
+                [
+                  4.440892098500626e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  4.440892098500626e-16,
+                  3.552713678800501e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": -23.805868949146884,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 62.18032765178505,
+                "sampled_KL": 8.353120602575872e-06
+              },
+              {
+                "step": 1,
+                "RL_loss": -23.8681604134524,
+                "successful_history_KL": 4.965425048534448e-06,
+                "gradient_norm": 62.39238250503814,
+                "sampled_KL": 3.3496447870843865e-05
+              },
+              {
+                "step": 2,
+                "RL_loss": -23.93067273547939,
+                "successful_history_KL": 1.990930158634571e-05,
+                "gradient_norm": 62.602072851932185,
+                "sampled_KL": 7.555457523356197e-05
+              },
+              {
+                "step": 3,
+                "RL_loss": -23.99340358336635,
+                "successful_history_KL": 4.490239751084698e-05,
+                "gradient_norm": 62.809322251591425,
+                "sampled_KL": 0.00013465023062252422
+              }
+            ],
+            "trainable_parameters": 11906,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 4,
+            "contact": 0,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 7,
+              "contact": 0,
+              "timeout": 1,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 9,
+              "contact": 10,
+              "timeout": 5,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 103.88558359956764,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/readout_00/proposal.pt.gz",
+            "sha256": "5ed98ecb43d6990a3e8ad23892714e7c282ce12d0965fb98312c6b55ef0d2c40",
+            "bytes": 500030,
+            "policy_hash": "e28e9fe485e8ff8f92a7fc8d9a5788a4ef0ac41bf38a8ea3c231f9d53c1959aa",
+            "joint_hash": "5df79da2157ec090c71388f9a4f108464afa769348897b283463bac156b490a9"
+          },
+          "retained_joint_hash": "176b162c0643850f5a8aa5e2d7e283949eb19b007bf769312d2a0986bad0131f"
+        }
+      },
+      "audit_sha256": "0053c0b5598079351f0b160a7251c7123df51d81d25489c223a2839048dd85c9",
+      "manifest_sha256": "4214d18163e3e8fb3ba90ab92434bed7d800e2e43c905deeb6ec8156fe5ff3fe"
+    },
+    {
+      "child": "terminal_01",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 179356,
+        "physics": 299880,
+        "commands": 12,
+        "elapsed_s": 180.7808713912964,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 0,
+            "reason": "ZERO_REGISTERED_RL_SIGNAL_NO_ARTIFICIAL_UPDATE",
+            "diagnosis": {
+              "outcomes": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "LOO": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "coefficient_RMS": 0.0,
+              "homogeneous_outcomes_zero_RL_signal": true,
+              "density_errors": [
+                [
+                  6.661338147750939e-16,
+                  4.884981308350689e-15
+                ],
+                [
+                  5.273559366969494e-16,
+                  6.217248937900877e-15
+                ],
+                [
+                  4.996003610813204e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  5.329070518200751e-15
+                ]
+              ]
+            },
+            "trace": [],
+            "trainable_parameters": 64772
+          },
+          "steps": 0,
+          "training": {
+            "valid": 4,
+            "success": 4,
+            "contact": 0,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": null,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+            "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+            "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+            "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+            "bytes": 1063607
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "c7b4918b6235890b43a207a566c0ee8ebe23345a986236003c08d35bdf58bd37",
+      "manifest_sha256": "0a3e5f9e9d93f06507c88719c96cd0226f03f5c625aa06e771f9340c7a3af2ea"
+    },
+    {
+      "child": "rtg_01",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 179496,
+        "physics": 2152900,
+        "commands": 76,
+        "elapsed_s": 1274.982899427414,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": 0.5288209705525202,
+                  "peer_RMS": 0.17079838548876125,
+                  "advantage_mean": 0.6912285799032426,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    4.579669976578771e-16,
+                    3.9968028886505635e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.17657651096279528,
+                  "peer_RMS": 0.17079838548876125,
+                  "advantage_mean": -1.3426981111108152,
+                  "terminal": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    7.993605777301127e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.5278914126597907,
+                  "peer_RMS": 0.17079838548876125,
+                  "advantage_mean": 0.6866297396163981,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    5.273559366969494e-16,
+                    5.329070518200751e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.5308902808935005,
+                  "peer_RMS": 0.17079838548876125,
+                  "advantage_mean": 0.6985812361708635,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    4.0245584642661925e-16,
+                    4.218847493575595e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  4.579669976578771e-16,
+                  3.9968028886505635e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  7.993605777301127e-15
+                ],
+                [
+                  5.273559366969494e-16,
+                  5.329070518200751e-15
+                ],
+                [
+                  4.0245584642661925e-16,
+                  4.218847493575595e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 18.938032114791824,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 409.35603191028093,
+                "sampled_KL": 0.00016428014569216625
+              },
+              {
+                "step": 1,
+                "RL_loss": 18.529269816385636,
+                "successful_history_KL": 0.00017775508866444857,
+                "gradient_norm": 407.8341471492145,
+                "sampled_KL": 0.0006474111443058015
+              },
+              {
+                "step": 2,
+                "RL_loss": 18.121713405616745,
+                "successful_history_KL": 0.0007041359114138648,
+                "gradient_norm": 406.2424945046065,
+                "sampled_KL": 0.0014347790955378974
+              },
+              {
+                "step": 3,
+                "RL_loss": 17.730877875364058,
+                "successful_history_KL": 0.0015679365495244926,
+                "gradient_norm": 352.9061417022968,
+                "sampled_KL": 0.002244927105567514
+              }
+            ],
+            "trainable_parameters": 64772,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 3,
+            "contact": 0,
+            "timeout": 1,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 8,
+              "contact": 0,
+              "timeout": 0,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 8,
+              "contact": 10,
+              "timeout": 6,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1"
+            ],
+            "distance_sum": 106.45802122751628,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/rtg_01/proposal.pt.gz",
+            "sha256": "7e3a21ce4ad4aa298093fe52fdc407d36b3303ab3ca563e09940477e4c45f687",
+            "bytes": 500146,
+            "policy_hash": "cf9c5258abe1cce9153b69036194f51159ca0beaa70baed1fba6661179232592",
+            "joint_hash": "f0fc7b66dec7c2fee509cd403b056b3c8aeaa2e71ac8ca1978e4860e10e40d53"
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "532f9288e5dcf38dc3d0bc399166b4d776c0c7e5875106c1614e78d1eb02fc6e",
+      "manifest_sha256": "864b9c950961fe626dd3c2aea7d6e15d07fc153080e8b5cd9b54575c5c6e1d95"
+    },
+    {
+      "child": "readout_01",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 180801,
+        "physics": 2101092,
+        "commands": 76,
+        "elapsed_s": 1235.7240965366364,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": 0.5339090067711176,
+                  "peer_RMS": 0.01679172392358831,
+                  "advantage_mean": 0.1434167765753877,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    5.551115123125783e-16,
+                    5.329070518200751e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.5279113728481853,
+                  "peer_RMS": 0.01679172392358831,
+                  "advantage_mean": -0.0592248794316389,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    4.440892098500626e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.530749197682195,
+                  "peer_RMS": 0.01679172392358831,
+                  "advantage_mean": 0.12020514830092423,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    4.440892098500626e-16,
+                    6.661338147750939e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.5331667448186168,
+                  "peer_RMS": 0.01679172392358831,
+                  "advantage_mean": 0.09814452272043059,
+                  "terminal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "density_error": [
+                    5.134781488891349e-16,
+                    3.9968028886505635e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  5.551115123125783e-16,
+                  5.329070518200751e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  4.440892098500626e-15
+                ],
+                [
+                  4.440892098500626e-16,
+                  6.661338147750939e-15
+                ],
+                [
+                  5.134781488891349e-16,
+                  3.9968028886505635e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": -28.313489296195534,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 73.94808103146512,
+                "sampled_KL": 5.764526505137749e-06
+              },
+              {
+                "step": 1,
+                "RL_loss": -28.387782535604316,
+                "successful_history_KL": 6.383527452367902e-06,
+                "gradient_norm": 74.62640740159013,
+                "sampled_KL": 2.306449009084594e-05
+              },
+              {
+                "step": 2,
+                "RL_loss": -28.462768462160973,
+                "successful_history_KL": 2.5568569840213566e-05,
+                "gradient_norm": 75.30782415943109,
+                "sampled_KL": 5.190920092384602e-05
+              },
+              {
+                "step": 3,
+                "RL_loss": -28.538450141376327,
+                "successful_history_KL": 5.760588948530101e-05,
+                "gradient_norm": 75.99217970738168,
+                "sampled_KL": 9.230760346028621e-05
+              }
+            ],
+            "trainable_parameters": 11906,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 4,
+            "contact": 0,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 8,
+              "contact": 0,
+              "timeout": 0,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 8,
+              "contact": 10,
+              "timeout": 6,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1"
+            ],
+            "distance_sum": 106.68566345229497,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/readout_01/proposal.pt.gz",
+            "sha256": "2735e0245755effeaa32eb125bea291a1182119fb7d07f750a6b5c89758807bd",
+            "bytes": 500058,
+            "policy_hash": "7b71414687b246a059c35c09c6c0e61af8c60ae3ce31850225b384a9af7072c2",
+            "joint_hash": "4fc30d14643aaabdaba0294b1d4208deedbc5a9eaf49d3bab7f4f3025473fb7e"
+          },
+          "retained_joint_hash": "176b162c0643850f5a8aa5e2d7e283949eb19b007bf769312d2a0986bad0131f"
+        }
+      },
+      "audit_sha256": "ca1406dde8aa8e3cdab1c222f70b2844602464ed073dc8f3165d19871ec2e8f9",
+      "manifest_sha256": "d3017b68f398b4254d59d1c9a8b40865b36020472fd90625b6f22b5c956e7fdb"
+    },
+    {
+      "child": "terminal_02",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 181721,
+        "physics": 221204,
+        "commands": 12,
+        "elapsed_s": 136.15395665168762,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 0,
+            "reason": "ZERO_REGISTERED_RL_SIGNAL_NO_ARTIFICIAL_UPDATE",
+            "diagnosis": {
+              "outcomes": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "LOO": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "coefficient_RMS": 0.0,
+              "homogeneous_outcomes_zero_RL_signal": true,
+              "density_errors": [
+                [
+                  6.661338147750939e-16,
+                  5.329070518200751e-15
+                ],
+                [
+                  5.828670879282072e-16,
+                  5.551115123125783e-15
+                ],
+                [
+                  5.551115123125783e-16,
+                  4.440892098500626e-15
+                ],
+                [
+                  5.551115123125783e-16,
+                  4.884981308350689e-15
+                ]
+              ]
+            },
+            "trace": [],
+            "trainable_parameters": 64772
+          },
+          "steps": 0,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": null,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+            "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+            "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+            "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+            "bytes": 1063607
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "75208d579b165bf869c3e5e2f69ac2f41807b5c797255fe0f9d4263ecc68390f",
+      "manifest_sha256": "252144bae339651f9077f815292cf85ffb0fd499b7b57ccd7b41ea96da6a62b4"
+    },
+    {
+      "child": "rtg_02",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 181833,
+        "physics": 1963850,
+        "commands": 76,
+        "elapsed_s": 1155.7729449272156,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": -0.05422348407722981,
+                  "peer_RMS": 0.036418975820433006,
+                  "advantage_mean": -0.10691820753220635,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.689893001203927e-16,
+                    4.218847493575595e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.06725214014022662,
+                  "peer_RMS": 0.036418975820433006,
+                  "advantage_mean": -0.4288881736023063,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.938893903907228e-16,
+                    5.329070518200751e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.04086057234416501,
+                  "peer_RMS": 0.036418975820433006,
+                  "advantage_mean": 0.13061559940539266,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.828670879282072e-16,
+                    5.773159728050814e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.06052431708263295,
+                  "peer_RMS": 0.036418975820433006,
+                  "advantage_mean": -0.2406814778359012,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    4.996003610813204e-16,
+                    5.329070518200751e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  5.689893001203927e-16,
+                  4.218847493575595e-15
+                ],
+                [
+                  6.938893903907228e-16,
+                  5.329070518200751e-15
+                ],
+                [
+                  5.828670879282072e-16,
+                  5.773159728050814e-15
+                ],
+                [
+                  4.996003610813204e-16,
+                  5.329070518200751e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 43.31732492499475,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 404.91243381875523,
+                "sampled_KL": 0.00030283535289720093
+              },
+              {
+                "step": 1,
+                "RL_loss": 42.911572181835055,
+                "successful_history_KL": 1.3320329312603345e-05,
+                "gradient_norm": 406.309520783292,
+                "sampled_KL": 0.0012324579363187976
+              },
+              {
+                "step": 2,
+                "RL_loss": 42.508329426357506,
+                "successful_history_KL": 5.35163240595366e-05,
+                "gradient_norm": 379.6690154352149,
+                "sampled_KL": 0.002745070072263549
+              },
+              {
+                "step": 3,
+                "RL_loss": 42.14474255398272,
+                "successful_history_KL": 0.00012021829656630345,
+                "gradient_norm": 301.4770872514786,
+                "sampled_KL": 0.004455421442481318
+              }
+            ],
+            "trainable_parameters": 64772,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 7,
+              "contact": 0,
+              "timeout": 1,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 10,
+              "contact": 10,
+              "timeout": 4,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 102.29772666052449,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/rtg_02/proposal.pt.gz",
+            "sha256": "5f6aebb0285b02cc95b6876f3ea5e07f8f550afbf5fe3a6cac1cb10e3e564f64",
+            "bytes": 500098,
+            "policy_hash": "f11c80b5833906fe0449aec0fdaaf8e54053662b4ffc71b6067021c3285bac2a",
+            "joint_hash": "d4b448a725bf162f6e126f0709d97b8803208a3556dca4bd8d6a28dfaebd402c"
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "044f02ed20970bc9a97276d46a61a9652d30d718b03f1196226c3417164cd1f4",
+      "manifest_sha256": "1c93caac3abae579b001469e62df7db680d052c04d7f2db6c897b38a30bf27de"
+    },
+    {
+      "child": "readout_02",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 183086,
+        "physics": 1898030,
+        "commands": 76,
+        "elapsed_s": 1120.8167579174042,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": -0.09769964284200576,
+                  "peer_RMS": 0.048720502912855145,
+                  "advantage_mean": -1.032617600195162,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.941427905220564e-16,
+                    4.884981308350689e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.03981255641562388,
+                  "peer_RMS": 0.048720502912855145,
+                  "advantage_mean": 0.100410144303613,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.828670879282072e-16,
+                    5.329070518200751e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.05433485038134036,
+                  "peer_RMS": 0.048720502912855145,
+                  "advantage_mean": -0.10189217737691363,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.551115123125783e-16,
+                    7.105427357601002e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.05042010218561371,
+                  "peer_RMS": 0.048720502912855145,
+                  "advantage_mean": -0.02487815024734745,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.828670879282072e-16,
+                    5.329070518200751e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  5.941427905220564e-16,
+                  4.884981308350689e-15
+                ],
+                [
+                  5.828670879282072e-16,
+                  5.329070518200751e-15
+                ],
+                [
+                  5.551115123125783e-16,
+                  7.105427357601002e-15
+                ],
+                [
+                  5.828670879282072e-16,
+                  5.329070518200751e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 65.06203337839234,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 92.54683572900169,
+                "sampled_KL": 1.2834339029062077e-05
+              },
+              {
+                "step": 1,
+                "RL_loss": 64.96953752127511,
+                "successful_history_KL": 1.6798474045273555e-06,
+                "gradient_norm": 92.44290649465769,
+                "sampled_KL": 5.134297494258372e-05
+              },
+              {
+                "step": 2,
+                "RL_loss": 64.87714059841971,
+                "successful_history_KL": 6.73548818494528e-06,
+                "gradient_norm": 92.34226981570168,
+                "sampled_KL": 0.00011553470314509047
+              },
+              {
+                "step": 3,
+                "RL_loss": 64.78483918413028,
+                "successful_history_KL": 1.5191414489583393e-05,
+                "gradient_norm": 92.24514338917943,
+                "sampled_KL": 0.0002054187610305786
+              }
+            ],
+            "trainable_parameters": 11906,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 8,
+              "contact": 0,
+              "timeout": 0,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 11,
+              "contact": 10,
+              "timeout": 3,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector1_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 99.88846087106626,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/readout_02/proposal.pt.gz",
+            "sha256": "51599b30d975944df128624897f11e853774360931291d1e25f6170d856cf7ca",
+            "bytes": 500066,
+            "policy_hash": "66e0279662cadf3265cb33a40109315ece9570ec1e79a9a7dd279774c5a335d5",
+            "joint_hash": "ecca8a9a8208515e5a2cbd95c3ab7dd3308a833f41e1b6407a03995665a1129d"
+          },
+          "retained_joint_hash": "176b162c0643850f5a8aa5e2d7e283949eb19b007bf769312d2a0986bad0131f"
+        }
+      },
+      "audit_sha256": "720f2e6b26010f722c8dc1e97fd0ca10272255e209c1ac6d451e148bd7f0fdb8",
+      "manifest_sha256": "3a03938b05904b783c072694988578320437b0b097064db1d8849d93b02d7603"
+    },
+    {
+      "child": "terminal_03",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 184239,
+        "physics": 144664,
+        "commands": 12,
+        "elapsed_s": 91.84963774681091,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 0,
+            "reason": "ZERO_REGISTERED_RL_SIGNAL_NO_ARTIFICIAL_UPDATE",
+            "diagnosis": {
+              "outcomes": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "LOO": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "coefficient_RMS": 0.0,
+              "homogeneous_outcomes_zero_RL_signal": true,
+              "density_errors": [
+                [
+                  4.787836793695988e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  5.412337245047638e-16,
+                  4.218847493575595e-15
+                ],
+                [
+                  5.551115123125783e-16,
+                  4.218847493575595e-15
+                ],
+                [
+                  5.551115123125783e-16,
+                  5.10702591327572e-15
+                ]
+              ]
+            },
+            "trace": [],
+            "trainable_parameters": 64772
+          },
+          "steps": 0,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": null,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+            "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+            "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+            "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+            "bytes": 1063607
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "abe6c9000e07955bd8f6d0830a7d367473ec68d2c2818ef7b9d25cd2c8f6969e",
+      "manifest_sha256": "107cc579ec24f24569466542fbdce477b7bc4c7fdfe28652f5f076047ef8355c"
+    },
+    {
+      "child": "rtg_03",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 184314,
+        "physics": 1830986,
+        "commands": 76,
+        "elapsed_s": 1085.994226694107,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": -0.28788384849889403,
+                  "peer_RMS": 0.06088844717689053,
+                  "advantage_mean": -0.11750898294185469,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    4.440892098500626e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.27182128921162,
+                  "peer_RMS": 0.06088844717689053,
+                  "advantage_mean": -0.11355743203935005,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.551115123125783e-16,
+                    3.774758283725532e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.29805212407733184,
+                  "peer_RMS": 0.06088844717689053,
+                  "advantage_mean": -0.2655653446585424,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    3.885780586188048e-16,
+                    4.440892098500626e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.29189268670546514,
+                  "peer_RMS": 0.06088844717689053,
+                  "advantage_mean": -0.19057092959190058,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    3.9968028886505635e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  6.661338147750939e-16,
+                  4.440892098500626e-15
+                ],
+                [
+                  5.551115123125783e-16,
+                  3.774758283725532e-15
+                ],
+                [
+                  3.885780586188048e-16,
+                  4.440892098500626e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  3.9968028886505635e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 30.714381113738735,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 329.8430073852611,
+                "sampled_KL": 0.00017415978864921062
+              },
+              {
+                "step": 1,
+                "RL_loss": 30.384121592956998,
+                "successful_history_KL": 4.415344479906614e-05,
+                "gradient_norm": 330.6166770263479,
+                "sampled_KL": 0.0006895501307980134
+              },
+              {
+                "step": 2,
+                "RL_loss": 30.053086196187753,
+                "successful_history_KL": 0.0001744053657060265,
+                "gradient_norm": 331.2277413962321,
+                "sampled_KL": 0.0015346771307699944
+              },
+              {
+                "step": 3,
+                "RL_loss": 29.73634940090494,
+                "successful_history_KL": 0.0003874402402864721,
+                "gradient_norm": 259.72227090400366,
+                "sampled_KL": 0.002500406491100074
+              }
+            ],
+            "trainable_parameters": 64772,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 8,
+              "contact": 0,
+              "timeout": 0,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 10,
+              "contact": 10,
+              "timeout": 4,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector2_offset1",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 99.53340392080625,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/rtg_03/proposal.pt.gz",
+            "sha256": "8c82198c0a3e4dacc4b4aafee1252625dee6f48cf35a071d4e85b0ff58d402f8",
+            "bytes": 500165,
+            "policy_hash": "5a405ac491a69b2c8270a70d5f83009699ed79a0d30240196ac8146281e2eb8e",
+            "joint_hash": "5fcdff4f21e791719aa85f0d7173c404eced7ff1d16092af342f80100d821f34"
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "5efd22e5a150f1af4ef8c7ed6bf23b89e196811ebfc007ba813e07a3b8e982e9",
+      "manifest_sha256": "aa3d845e2afd6be42c549817bfaed0e90d5d23874bfa307a70b2e8be85712144"
+    },
+    {
+      "child": "readout_03",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 185480,
+        "physics": 1836242,
+        "commands": 76,
+        "elapsed_s": 1082.3146193027496,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": -0.2848803863581266,
+                  "peer_RMS": 0.04968705666835287,
+                  "advantage_mean": -0.2968677954925222,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    4.996003610813204e-16,
+                    3.552713678800501e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.28220072107701494,
+                  "peer_RMS": 0.04968705666835287,
+                  "advantage_mean": -0.18099755921421246,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    4.510281037539698e-16,
+                    4.6629367034256575e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.266644926452493,
+                  "peer_RMS": 0.04968705666835287,
+                  "advantage_mean": -0.06653392122528412,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.759281940243e-16,
+                    4.440892098500626e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.2723719438576744,
+                  "peer_RMS": 0.04968705666835287,
+                  "advantage_mean": -0.06778747192525628,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    4.718447854656915e-16,
+                    3.552713678800501e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  4.996003610813204e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  4.510281037539698e-16,
+                  4.6629367034256575e-15
+                ],
+                [
+                  5.759281940243e-16,
+                  4.440892098500626e-15
+                ],
+                [
+                  4.718447854656915e-16,
+                  3.552713678800501e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 28.246592166351842,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 84.68944217603915,
+                "sampled_KL": 3.966581296207674e-06
+              },
+              {
+                "step": 1,
+                "RL_loss": 28.161806239192934,
+                "successful_history_KL": 3.823088649759905e-06,
+                "gradient_norm": 84.87412183660588,
+                "sampled_KL": 1.5846129472791128e-05
+              },
+              {
+                "step": 2,
+                "RL_loss": 28.076830523521433,
+                "successful_history_KL": 1.5296513263846203e-05,
+                "gradient_norm": 85.05369281468393,
+                "sampled_KL": 3.5609181873529973e-05
+              },
+              {
+                "step": 3,
+                "RL_loss": 27.991670183594522,
+                "successful_history_KL": 3.4426152029166666e-05,
+                "gradient_norm": 85.22803306219512,
+                "sampled_KL": 6.32273702163541e-05
+              }
+            ],
+            "trainable_parameters": 11906,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 8,
+              "contact": 0,
+              "timeout": 0,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 11,
+              "contact": 10,
+              "timeout": 3,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector1_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 99.93288757283713,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/readout_03/proposal.pt.gz",
+            "sha256": "b8bb1249bc460ad05227a87b7612c697e570e085690d234aa51e024d89a38e85",
+            "bytes": 500044,
+            "policy_hash": "3b2cbd827942581890e21abfca66a10fe4fb5669be155dc429e00c54dc7ce7c3",
+            "joint_hash": "e79183e71e5e736e67bdde1921a50b7f226aaf89968223786a93de8523b8e605"
+          },
+          "retained_joint_hash": "176b162c0643850f5a8aa5e2d7e283949eb19b007bf769312d2a0986bad0131f"
+        }
+      },
+      "audit_sha256": "81851de15e43f2357144da9d0d3c186ca38868befed118ca8603fc85f573a1d1",
+      "manifest_sha256": "837b0799699de0653c7ab32416089053fe765c2dc7d38d3d4a8e9e14ecf69212"
+    },
+    {
+      "child": "terminal_04",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 186606,
+        "physics": 321358,
+        "commands": 12,
+        "elapsed_s": 195.32332587242126,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 0,
+            "reason": "ZERO_REGISTERED_RL_SIGNAL_NO_ARTIFICIAL_UPDATE",
+            "diagnosis": {
+              "outcomes": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "LOO": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "coefficient_RMS": 0.0,
+              "homogeneous_outcomes_zero_RL_signal": true,
+              "density_errors": [
+                [
+                  5.828670879282072e-16,
+                  6.217248937900877e-15
+                ],
+                [
+                  7.494005416219807e-16,
+                  5.773159728050814e-15
+                ],
+                [
+                  5.670377362099188e-16,
+                  6.217248937900877e-15
+                ],
+                [
+                  8.187894806610529e-16,
+                  6.217248937900877e-15
+                ]
+              ]
+            },
+            "trace": [],
+            "trainable_parameters": 64772
+          },
+          "steps": 0,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": null,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+            "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+            "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+            "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+            "bytes": 1063607
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "644a0c695e67200ce4b7c16f5a732e5a13a1624a171ceff4e8fe25fa5462ec07",
+      "manifest_sha256": "22b4337286292c02a5971e3457acfff4597392b43903759c98a96e80a9722159"
+    },
+    {
+      "child": "rtg_04",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 186748,
+        "physics": 2043184,
+        "commands": 76,
+        "elapsed_s": 1202.3192727565765,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": 0.0965778019836645,
+                  "peer_RMS": 0.04098042365429668,
+                  "advantage_mean": 0.14821745505929,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    4.884981308350689e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.10802264269680033,
+                  "peer_RMS": 0.04098042365429668,
+                  "advantage_mean": 0.3705875767562677,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    7.216449660063518e-16,
+                    6.217248937900877e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.05320611221913289,
+                  "peer_RMS": 0.04098042365429668,
+                  "advantage_mean": -0.9879093993282515,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    7.771561172376096e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.07243395255431083,
+                  "peer_RMS": 0.04098042365429668,
+                  "advantage_mean": -0.4656995354903704,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    7.771561172376096e-16,
+                    5.440092820663267e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  6.661338147750939e-16,
+                  4.884981308350689e-15
+                ],
+                [
+                  7.216449660063518e-16,
+                  6.217248937900877e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  7.771561172376096e-15
+                ],
+                [
+                  7.771561172376096e-16,
+                  5.440092820663267e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 83.34890194545457,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 763.6185783387707,
+                "sampled_KL": 0.00041159315994922994
+              },
+              {
+                "step": 1,
+                "RL_loss": 82.59335637771247,
+                "successful_history_KL": 4.071021658456856e-05,
+                "gradient_norm": 747.445518401752,
+                "sampled_KL": 0.0016426914813941038
+              },
+              {
+                "step": 2,
+                "RL_loss": 81.85383428045287,
+                "successful_history_KL": 0.00016251518224671738,
+                "gradient_norm": 731.4430313845678,
+                "sampled_KL": 0.003686161319307246
+              },
+              {
+                "step": 3,
+                "RL_loss": 81.30032529618745,
+                "successful_history_KL": 0.00036490049232109267,
+                "gradient_norm": 452.84020912973483,
+                "sampled_KL": 0.005718106603246821
+              }
+            ],
+            "trainable_parameters": 64772,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 8,
+              "contact": 0,
+              "timeout": 0,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 11,
+              "contact": 10,
+              "timeout": 3,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector1_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 100.37511254993429,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/rtg_04/proposal.pt.gz",
+            "sha256": "f6f328b13d6e385c36f1d2979c9017403c7b8828bf0038dea2c0289679fbf232",
+            "bytes": 500162,
+            "policy_hash": "8ed905cc7c29d815bedf08d7104ec204d9a559ab0629fca8a00fbe525e69d2c3",
+            "joint_hash": "25ad1736eb087cf903d5f1388649c4f8552a5c96f53af9f7a2b46cb3ddd826f4"
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "8b76a56db1393138dd1bb81a20c97151563c9c56e39dee6943eda00fa9762a97",
+      "manifest_sha256": "81e60bc8b54a8a265c9385b39e27af471f9c8dd9750464d971f605ce09ddc12e"
+    },
+    {
+      "child": "readout_04",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 187795,
+        "physics": 2144120,
+        "commands": 76,
+        "elapsed_s": 1266.6581935882568,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": 0.08284983241890005,
+                  "peer_RMS": 0.022442480127065293,
+                  "advantage_mean": -0.04698335890508705,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    6.217248937900877e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.09205869810836784,
+                  "peer_RMS": 0.022442480127065293,
+                  "advantage_mean": 0.2772816745338329,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    7.216449660063518e-16,
+                    5.329070518200751e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.06877178046091997,
+                  "peer_RMS": 0.022442480127065293,
+                  "advantage_mean": -0.7940837765953765,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.106226635438361e-16,
+                    4.440892098500626e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.08196642311240887,
+                  "peer_RMS": 0.022442480127065293,
+                  "advantage_mean": -0.07575233744209393,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.967448757360216e-16,
+                    6.661338147750939e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  6.661338147750939e-16,
+                  6.217248937900877e-15
+                ],
+                [
+                  7.216449660063518e-16,
+                  5.329070518200751e-15
+                ],
+                [
+                  6.106226635438361e-16,
+                  4.440892098500626e-15
+                ],
+                [
+                  5.967448757360216e-16,
+                  6.661338147750939e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 62.388601746709995,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 197.39720283137711,
+                "sampled_KL": 1.8976441647360365e-05
+              },
+              {
+                "step": 1,
+                "RL_loss": 62.19086798465804,
+                "successful_history_KL": 2.5867852950080727e-06,
+                "gradient_norm": 198.0627093526148,
+                "sampled_KL": 7.584328939918119e-05
+              },
+              {
+                "step": 2,
+                "RL_loss": 61.992472270948625,
+                "successful_history_KL": 1.0346066526752532e-05,
+                "gradient_norm": 198.71078131367793,
+                "sampled_KL": 0.0001705025414448374
+              },
+              {
+                "step": 3,
+                "RL_loss": 61.79343196494531,
+                "successful_history_KL": 2.327606426728879e-05,
+                "gradient_norm": 199.3415733478392,
+                "sampled_KL": 0.0003028505595955678
+              }
+            ],
+            "trainable_parameters": 11906,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 8,
+              "contact": 0,
+              "timeout": 0,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 10,
+              "contact": 9,
+              "timeout": 5,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1"
+            ],
+            "distance_sum": 99.44846235640917,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/readout_04/proposal.pt.gz",
+            "sha256": "e4ad5d49d0627cf552600630e716853672decaafcc5d672ce65f8bd7e899f9a0",
+            "bytes": 500047,
+            "policy_hash": "123c1de231155858a09f7f1400a6e8f3773422799aa5af3dcf81e5073abd69e7",
+            "joint_hash": "1446168d9286e1bae1b81760d82bbc67e3765ba0c9ea4ad8b85a754609957d99"
+          },
+          "retained_joint_hash": "176b162c0643850f5a8aa5e2d7e283949eb19b007bf769312d2a0986bad0131f"
+        }
+      },
+      "audit_sha256": "e87cf0d21152d3db8fe938fa6d3a38bdc306a9ab23ad1176690b0cab0e0bc7b7",
+      "manifest_sha256": "d0a20bef6b1a8747c4528efbc8ddcbeb751f5227c5302280a1cbc44a6fe88052"
+    },
+    {
+      "child": "terminal_05",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 188997,
+        "physics": 407654,
+        "commands": 12,
+        "elapsed_s": 245.21621465682983,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 0,
+            "reason": "ZERO_REGISTERED_RL_SIGNAL_NO_ARTIFICIAL_UPDATE",
+            "diagnosis": {
+              "outcomes": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "LOO": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "coefficient_RMS": 0.0,
+              "homogeneous_outcomes_zero_RL_signal": true,
+              "density_errors": [
+                [
+                  7.771561172376096e-16,
+                  5.773159728050814e-15
+                ],
+                [
+                  6.245004513516506e-16,
+                  8.881784197001252e-15
+                ],
+                [
+                  7.771561172376096e-16,
+                  8.881784197001252e-15
+                ],
+                [
+                  7.216449660063518e-16,
+                  5.329070518200751e-15
+                ]
+              ]
+            },
+            "trace": [],
+            "trainable_parameters": 64772
+          },
+          "steps": 0,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 3,
+            "timeout": 1,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": null,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+            "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+            "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+            "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+            "bytes": 1063607
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "cdd4a8c737667a179e9fd340aab1597be6d108d3da6c541439f662d7ca75dded",
+      "manifest_sha256": "f416c9e65d704f6159c7d0658f9b9431e145c365090497981a854358ee6b6160"
+    },
+    {
+      "child": "rtg_05",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 189294,
+        "physics": 2079938,
+        "commands": 76,
+        "elapsed_s": 1238.3257982730865,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": 0.07584124958623001,
+                  "peer_RMS": 0.10120963871349703,
+                  "advantage_mean": -0.6648011824262168,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    7.650130529057719e-16,
+                    6.217248937900877e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.07413953134104848,
+                  "peer_RMS": 0.10120963871349703,
+                  "advantage_mean": -0.6873848627088712,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    5.329070518200751e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.05669924938188541,
+                  "peer_RMS": 0.10120963871349703,
+                  "advantage_mean": -0.8943966531333988,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    6.661338147750939e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.28997494535041257,
+                  "peer_RMS": 0.10120963871349703,
+                  "advantage_mean": 1.018800661406865,
+                  "terminal": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "density_error": [
+                    5.551115123125783e-16,
+                    5.10702591327572e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  7.650130529057719e-16,
+                  6.217248937900877e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  5.329070518200751e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  6.661338147750939e-15
+                ],
+                [
+                  5.551115123125783e-16,
+                  5.10702591327572e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 10.787869146343041,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 1150.5021513944064,
+                "sampled_KL": 0.00034203574627106234
+              },
+              {
+                "step": 1,
+                "RL_loss": 9.645499356956122,
+                "successful_history_KL": 4.60138912705916e-05,
+                "gradient_norm": 1134.4256806185538,
+                "sampled_KL": 0.0013614289285740963
+              },
+              {
+                "step": 2,
+                "RL_loss": 8.51842547197856,
+                "successful_history_KL": 0.0001836136829443614,
+                "gradient_norm": 1119.7222618700894,
+                "sampled_KL": 0.0030485406365915006
+              },
+              {
+                "step": 3,
+                "RL_loss": 7.608574628064105,
+                "successful_history_KL": 0.0004120717946095205,
+                "gradient_norm": 794.1608142851079,
+                "sampled_KL": 0.00526471677198906
+              }
+            ],
+            "trainable_parameters": 64772,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 3,
+            "timeout": 1,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 7,
+              "contact": 0,
+              "timeout": 1,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 11,
+              "contact": 10,
+              "timeout": 3,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector0_offset2",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 99.31799703081762,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/rtg_05/proposal.pt.gz",
+            "sha256": "a1d7e484b4f8b8837a29b691fd7a36218cc3b570e4f1e38458ea7923ff1a5e15",
+            "bytes": 500121,
+            "policy_hash": "fc59f923cc838b1263c02e4c7c33dd02202f4f25c4548d9c6085bf717ea756ed",
+            "joint_hash": "5d2b3652ccd65af416e644f8d7e6bb07bf973c65abf848c316715900656dc0e1"
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "b62e43563d2462874029249df7e2dba06730c576d97505215f13d89c072d3936",
+      "manifest_sha256": "7c8a2e8d4363dfd9e7cdf475f4ad47f5a4ca5ed28083ad50768ab966587de455"
+    },
+    {
+      "child": "readout_05",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 190493,
+        "physics": 2100412,
+        "commands": 76,
+        "elapsed_s": 1228.8317954540253,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": 0.11748838663015142,
+                  "peer_RMS": 0.14356029658213915,
+                  "advantage_mean": -0.23577563154621214,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.551115123125783e-16,
+                    6.217248937900877e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.057565280527685676,
+                  "peer_RMS": 0.14356029658213915,
+                  "advantage_mean": -0.6152099238897648,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    7.216449660063518e-16,
+                    4.218847493575595e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.04879506901932134,
+                  "peer_RMS": 0.14356029658213915,
+                  "advantage_mean": -1.4346135117895842,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    8.326672684688674e-16,
+                    3.552713678800501e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.2899749453504123,
+                  "peer_RMS": 0.14356029658213915,
+                  "advantage_mean": 0.7382835992832868,
+                  "terminal": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "density_error": [
+                    6.106226635438361e-16,
+                    6.661338147750939e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  5.551115123125783e-16,
+                  6.217248937900877e-15
+                ],
+                [
+                  7.216449660063518e-16,
+                  4.218847493575595e-15
+                ],
+                [
+                  8.326672684688674e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  6.106226635438361e-16,
+                  6.661338147750939e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 34.17656649868036,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 93.46856454124857,
+                "sampled_KL": 1.6870744513096948e-05
+              },
+              {
+                "step": 1,
+                "RL_loss": 34.083485421443584,
+                "successful_history_KL": 1.0543038223120443e-06,
+                "gradient_norm": 92.69354860039893,
+                "sampled_KL": 6.72920204704078e-05
+              },
+              {
+                "step": 2,
+                "RL_loss": 33.99117308561799,
+                "successful_history_KL": 4.2073562858987e-06,
+                "gradient_norm": 91.92691801995598,
+                "sampled_KL": 0.00015096887003943803
+              },
+              {
+                "step": 3,
+                "RL_loss": 33.89962104313915,
+                "successful_history_KL": 9.444231160035412e-06,
+                "gradient_norm": 91.16882833864095,
+                "sampled_KL": 0.0002675948682463623
+              }
+            ],
+            "trainable_parameters": 11906,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 3,
+            "timeout": 1,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 7,
+              "contact": 1,
+              "timeout": 0,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 10,
+              "contact": 10,
+              "timeout": 4,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 102.26491664753632,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/readout_05/proposal.pt.gz",
+            "sha256": "265048938a60ef1d571f9397dd0dc7e375be4b2a58462782ca307c23cb9e33dd",
+            "bytes": 500060,
+            "policy_hash": "dd80b473d039c28bc70ebaf22da9ccb089282bcc1c11dc59629778581f381141",
+            "joint_hash": "9c103a90772950d9bbab288cc08a8b6cb448bce0be5c20395dbca53df51e88d0"
+          },
+          "retained_joint_hash": "176b162c0643850f5a8aa5e2d7e283949eb19b007bf769312d2a0986bad0131f"
+        }
+      },
+      "audit_sha256": "a819a6a6185b9ac27430f661852dbe8117d21bc14583ec2f84f31a6c546605dd",
+      "manifest_sha256": "1a1f544c6af235307093857d2b71b1c32374184c772ab67eff2c7795a195d89e"
+    },
+    {
+      "child": "terminal_06",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 191758,
+        "physics": 188888,
+        "commands": 12,
+        "elapsed_s": 118.34791326522827,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 0,
+            "reason": "ZERO_REGISTERED_RL_SIGNAL_NO_ARTIFICIAL_UPDATE",
+            "diagnosis": {
+              "outcomes": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "LOO": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "coefficient_RMS": 0.0,
+              "homogeneous_outcomes_zero_RL_signal": true,
+              "density_errors": [
+                [
+                  6.869504964868156e-16,
+                  4.440892098500626e-15
+                ],
+                [
+                  6.800116025829084e-16,
+                  6.8833827526759706e-15
+                ],
+                [
+                  6.106226635438361e-16,
+                  5.773159728050814e-15
+                ],
+                [
+                  5.273559366969494e-16,
+                  6.661338147750939e-15
+                ]
+              ]
+            },
+            "trace": [],
+            "trainable_parameters": 64772
+          },
+          "steps": 0,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": null,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+            "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+            "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+            "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+            "bytes": 1063607
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "5edd5edb5e36f7be427f643a622cf82f332a9289f3a37cca271330a6294cbc32",
+      "manifest_sha256": "14cf3a299d855d4b47c32d69693337633f541f682722025f06c6bc75184352a6"
+    },
+    {
+      "child": "rtg_06",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 191938,
+        "physics": 1840376,
+        "commands": 76,
+        "elapsed_s": 1088.013825416565,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": -0.13484670606311658,
+                  "peer_RMS": 0.036030280341677816,
+                  "advantage_mean": -0.5866733156531433,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    7.355227538141662e-16,
+                    7.105427357601002e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.11350087590337075,
+                  "peer_RMS": 0.036030280341677816,
+                  "advantage_mean": -0.07344382916895965,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    7.494005416219807e-16,
+                    7.993605777301127e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.11988968068096213,
+                  "peer_RMS": 0.036030280341677816,
+                  "advantage_mean": -0.13610974762046837,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.551115123125783e-16,
+                    5.329070518200751e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.10889130196431945,
+                  "peer_RMS": 0.036030280341677816,
+                  "advantage_mean": 0.02625573438672823,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.106226635438361e-16,
+                    5.773159728050814e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  7.355227538141662e-16,
+                  7.105427357601002e-15
+                ],
+                [
+                  7.494005416219807e-16,
+                  7.993605777301127e-15
+                ],
+                [
+                  5.551115123125783e-16,
+                  5.329070518200751e-15
+                ],
+                [
+                  6.106226635438361e-16,
+                  5.773159728050814e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 42.84595161676586,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 891.5086924157264,
+                "sampled_KL": 0.0005574893345320917
+              },
+              {
+                "step": 1,
+                "RL_loss": 41.969264019003866,
+                "successful_history_KL": 1.8108433003469855e-05,
+                "gradient_norm": 861.9745173414079,
+                "sampled_KL": 0.0022157175162767443
+              },
+              {
+                "step": 2,
+                "RL_loss": 41.13790721231258,
+                "successful_history_KL": 7.237367096129936e-05,
+                "gradient_norm": 732.1695319958517,
+                "sampled_KL": 0.004814416296292785
+              },
+              {
+                "step": 3,
+                "RL_loss": 40.737045389493865,
+                "successful_history_KL": 0.00016088410098333695,
+                "gradient_norm": 265.5331956012105,
+                "sampled_KL": 0.0055908410042436905
+              }
+            ],
+            "trainable_parameters": 64772,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 7,
+              "contact": 0,
+              "timeout": 1,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 12,
+              "contact": 10,
+              "timeout": 2,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector1_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 95.6056628971832,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/rtg_06/proposal.pt.gz",
+            "sha256": "97846e81a18e06376997f23b0c132b9899958d8398f83b53524cd483e39e3932",
+            "bytes": 500076,
+            "policy_hash": "175e716d17dfcf9673bbfd2bc83ca4c97e78159e6788d7f52cff4ff99f325831",
+            "joint_hash": "4cf62d438f8094447f1f2083cb8b35072ff2d81dc2e4fdba1d7f6eb0edeac979"
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "dde785977995fa126b8afbddc951f8ca262f5dbe497b9d1a7e2bad7b73e98577",
+      "manifest_sha256": "b7a6ade3e7c4d23248621a0a94d785c70af7bdb6a6ba4b592e6aee047294c729"
+    },
+    {
+      "child": "readout_06",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 192922,
+        "physics": 1910472,
+        "commands": 76,
+        "elapsed_s": 1124.8918232917786,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": -0.12907093048944898,
+                  "peer_RMS": 0.03507131870884985,
+                  "advantage_mean": -0.678825783511906,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.551115123125783e-16,
+                    6.217248937900877e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.10217409814433377,
+                  "peer_RMS": 0.03507131870884985,
+                  "advantage_mean": 0.0036529083300665083,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.175615574477433e-16,
+                    5.329070518200751e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.10361553594937109,
+                  "peer_RMS": 0.03507131870884985,
+                  "advantage_mean": 0.03796851616302445,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.828670879282072e-16,
+                    5.329070518200751e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.11218287351612377,
+                  "peer_RMS": 0.03507131870884985,
+                  "advantage_mean": -0.1799360781492493,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.828670879282072e-16,
+                    4.440892098500626e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  5.551115123125783e-16,
+                  6.217248937900877e-15
+                ],
+                [
+                  6.175615574477433e-16,
+                  5.329070518200751e-15
+                ],
+                [
+                  5.828670879282072e-16,
+                  5.329070518200751e-15
+                ],
+                [
+                  5.828670879282072e-16,
+                  4.440892098500626e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 46.11146307855793,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 109.66466982672904,
+                "sampled_KL": 2.3484434711461067e-05
+              },
+              {
+                "step": 1,
+                "RL_loss": 46.00172282507356,
+                "successful_history_KL": 2.295481878788738e-06,
+                "gradient_norm": 109.8127821349919,
+                "sampled_KL": 9.397424948025803e-05
+              },
+              {
+                "step": 2,
+                "RL_loss": 45.89182661769989,
+                "successful_history_KL": 9.189993784583491e-06,
+                "gradient_norm": 109.96730021184553,
+                "sampled_KL": 0.0002115175582561083
+              },
+              {
+                "step": 3,
+                "RL_loss": 45.781768214843225,
+                "successful_history_KL": 2.0694901122287004e-05,
+                "gradient_norm": 110.12787653071018,
+                "sampled_KL": 0.00037615377427584087
+              }
+            ],
+            "trainable_parameters": 11906,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 7,
+              "contact": 0,
+              "timeout": 1,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 10,
+              "contact": 10,
+              "timeout": 4,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 102.13654608000917,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/readout_06/proposal.pt.gz",
+            "sha256": "3882ccff7ba0930bcff066c975579f9bf47e4a0040e42016efa971f983f78798",
+            "bytes": 500066,
+            "policy_hash": "5b6794b50dca29897953b9ead3ec466438721b01841ab1194a68e486c8902053",
+            "joint_hash": "4d590a57d830474485c758132537e11ae1c34098becdd83ba23d4883840025d4"
+          },
+          "retained_joint_hash": "176b162c0643850f5a8aa5e2d7e283949eb19b007bf769312d2a0986bad0131f"
+        }
+      },
+      "audit_sha256": "5dbc76432fe87a3cf914b33ace6204553664fe107c4c3e55841119196719260d",
+      "manifest_sha256": "8ab1820be46bd4d2d98adc27d3d41a748e8e22b8151ea4c6df476064aa445b09"
+    },
+    {
+      "child": "terminal_07",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 194070,
+        "physics": 136728,
+        "commands": 12,
+        "elapsed_s": 87.85666489601135,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 0,
+            "reason": "ZERO_REGISTERED_RL_SIGNAL_NO_ARTIFICIAL_UPDATE",
+            "diagnosis": {
+              "outcomes": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "LOO": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "coefficient_RMS": 0.0,
+              "homogeneous_outcomes_zero_RL_signal": true,
+              "density_errors": [
+                [
+                  5.724587470723463e-16,
+                  4.440892098500626e-15
+                ],
+                [
+                  4.85722573273506e-16,
+                  6.661338147750939e-15
+                ],
+                [
+                  5.551115123125783e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  5.551115123125783e-16,
+                  7.549516567451064e-15
+                ]
+              ]
+            },
+            "trace": [],
+            "trainable_parameters": 64772
+          },
+          "steps": 0,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": null,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+            "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+            "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+            "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+            "bytes": 1063607
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "64c92590d33c4cbf62cf4e44358ac9409ba741183312142888179f571a237366",
+      "manifest_sha256": "a4f987c792d155024bb4c46956942c8966b956375b6e01e5be15a9a5e65066d9"
+    },
+    {
+      "child": "rtg_07",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 194184,
+        "physics": 1751200,
+        "commands": 76,
+        "elapsed_s": 1040.512955904007,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": -0.3050842398028691,
+                  "peer_RMS": 0.03677645863801149,
+                  "advantage_mean": -0.020948244940023696,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    7.216449660063518e-16,
+                    3.552713678800501e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.3035213569192813,
+                  "peer_RMS": 0.03677645863801149,
+                  "advantage_mean": -0.09596274277123927,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.273559366969494e-16,
+                    7.105427357601002e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.3094596747641458,
+                  "peer_RMS": 0.03677645863801149,
+                  "advantage_mean": -0.15666095347285852,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.106226635438361e-16,
+                    4.440892098500626e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.3170622419995161,
+                  "peer_RMS": 0.03677645863801149,
+                  "advantage_mean": -0.3070837708740577,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.551115123125783e-16,
+                    3.552713678800501e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  7.216449660063518e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  5.273559366969494e-16,
+                  7.105427357601002e-15
+                ],
+                [
+                  6.106226635438361e-16,
+                  4.440892098500626e-15
+                ],
+                [
+                  5.551115123125783e-16,
+                  3.552713678800501e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 24.162902315117915,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 565.0199534753098,
+                "sampled_KL": 0.00021010078434030842
+              },
+              {
+                "step": 1,
+                "RL_loss": 23.60603600424598,
+                "successful_history_KL": 7.791448127258405e-05,
+                "gradient_norm": 548.7645193683404,
+                "sampled_KL": 0.0008450725880741971
+              },
+              {
+                "step": 2,
+                "RL_loss": 23.06492925722808,
+                "successful_history_KL": 0.00030667828263466123,
+                "gradient_norm": 533.1973224675131,
+                "sampled_KL": 0.0019115315515536085
+              },
+              {
+                "step": 3,
+                "RL_loss": 22.63628625994632,
+                "successful_history_KL": 0.0006781963105918518,
+                "gradient_norm": 332.75946397756763,
+                "sampled_KL": 0.003427875615602832
+              }
+            ],
+            "trainable_parameters": 64772,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 7,
+              "contact": 1,
+              "timeout": 0,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 12,
+              "contact": 10,
+              "timeout": 2,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector0_offset2",
+              "t502_field_sector2_offset1",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 94.78527575003218,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/rtg_07/proposal.pt.gz",
+            "sha256": "8394fe7feb7122d268343b6b476c81570c47aa6dbc232c887013ae55b66d818f",
+            "bytes": 500115,
+            "policy_hash": "316b293a9d63f6395e6a4512f180463ea0cb80873971075030fcd7a8b4e16f81",
+            "joint_hash": "72c8d3afa030d969cc4aed8ec4c565eef43a36a78e493329f611d0f1326c8c8c"
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "60e91939724de38e428702207e3761279d34290346b7914ef1cde1a972133272",
+      "manifest_sha256": "c97bad57a4e5910d4853a74ac2a72113f10491f8f6cef3c330fb7e1f1687ca68"
+    },
+    {
+      "child": "readout_07",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 195201,
+        "physics": 1839718,
+        "commands": 76,
+        "elapsed_s": 1082.9646651744843,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": -0.30892198541214694,
+                  "peer_RMS": 0.05377764221102253,
+                  "advantage_mean": -0.08503705063955899,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.689893001203927e-16,
+                    3.552713678800501e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.3001449231248467,
+                  "peer_RMS": 0.05377764221102253,
+                  "advantage_mean": -0.10993145248077861,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.106226635438361e-16,
+                    5.329070518200751e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.3130760964663607,
+                  "peer_RMS": 0.05377764221102253,
+                  "advantage_mean": -0.16100944216140833,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    7.105427357601002e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.32462473149834337,
+                  "peer_RMS": 0.05377764221102253,
+                  "advantage_mean": -0.35830365464135244,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    4.996003610813204e-16,
+                    4.440892098500626e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  5.689893001203927e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  6.106226635438361e-16,
+                  5.329070518200751e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  7.105427357601002e-15
+                ],
+                [
+                  4.996003610813204e-16,
+                  4.440892098500626e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 29.340129482007715,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 36.754344750448546,
+                "sampled_KL": 2.4346929684706916e-06
+              },
+              {
+                "step": 1,
+                "RL_loss": 29.303245736875983,
+                "successful_history_KL": 3.3946250052140376e-06,
+                "gradient_norm": 37.006650578903276,
+                "sampled_KL": 9.764170766100408e-06
+              },
+              {
+                "step": 2,
+                "RL_loss": 29.266102485311713,
+                "successful_history_KL": 1.359106620680574e-05,
+                "gradient_norm": 37.25973920666529,
+                "sampled_KL": 2.202555998770567e-05
+              },
+              {
+                "step": 3,
+                "RL_loss": 29.228698960582737,
+                "successful_history_KL": 3.060714417601632e-05,
+                "gradient_norm": 37.51354311497693,
+                "sampled_KL": 3.9254707263940164e-05
+              }
+            ],
+            "trainable_parameters": 11906,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 8,
+              "contact": 0,
+              "timeout": 0,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 10,
+              "contact": 10,
+              "timeout": 4,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 102.07397655324378,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/readout_07/proposal.pt.gz",
+            "sha256": "e602433849c17ec36027bb62adeb2dacec1e7cc4626ad30474836de71d0b45ba",
+            "bytes": 500051,
+            "policy_hash": "08489d4e6dc39682c944bda34464278d67b9a1930d909f4c48caa97ba76cef5f",
+            "joint_hash": "21bae789e3ed8e4eeb40b54d877b7477b84d310cef91f261b8b5951071acd762"
+          },
+          "retained_joint_hash": "176b162c0643850f5a8aa5e2d7e283949eb19b007bf769312d2a0986bad0131f"
+        }
+      },
+      "audit_sha256": "8566d3af2b19447f644c501b7aeaf74a6ebaa17b8a2c8bae2a94da1250335363",
+      "manifest_sha256": "f7b75b1d7f46f50556e87bb54b4d69158905296a26d2a4798b4037ed66f4b55d"
+    },
+    {
+      "child": "terminal_08",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 196259,
+        "physics": 670128,
+        "commands": 12,
+        "elapsed_s": 395.59666681289673,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 0,
+            "reason": "ZERO_REGISTERED_RL_SIGNAL_NO_ARTIFICIAL_UPDATE",
+            "diagnosis": {
+              "outcomes": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "LOO": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "coefficient_RMS": 0.0,
+              "homogeneous_outcomes_zero_RL_signal": true,
+              "density_errors": [
+                [
+                  5.551115123125783e-16,
+                  6.661338147750939e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  6.661338147750939e-15
+                ],
+                [
+                  6.938893903907228e-16,
+                  6.217248937900877e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  7.993605777301127e-15
+                ]
+              ]
+            },
+            "trace": [],
+            "trainable_parameters": 64772
+          },
+          "steps": 0,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 0,
+            "timeout": 4,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": null,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+            "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+            "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+            "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+            "bytes": 1063607
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "c53c26cda19326a4202b5493ff419a8a8784637fb0bed9991f30ed1f6e97c2b1",
+      "manifest_sha256": "679104af39c4c53f90cdcab21fd821cdd47a8385fb5da5c1ca00455bff31e9d8"
+    },
+    {
+      "child": "rtg_08",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 196718,
+        "physics": 2358880,
+        "commands": 76,
+        "elapsed_s": 1393.9284055233002,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": 0.28997494535041207,
+                  "peer_RMS": 0.000915299120228713,
+                  "advantage_mean": 0.3177793990656471,
+                  "terminal": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    6.661338147750939e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.28997494535041257,
+                  "peer_RMS": 0.000915299120228713,
+                  "advantage_mean": 0.8030782572754901,
+                  "terminal": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "density_error": [
+                    6.938893903907228e-16,
+                    5.329070518200751e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.28997494535041224,
+                  "peer_RMS": 0.000915299120228713,
+                  "advantage_mean": -0.6795193047421796,
+                  "terminal": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    6.661338147750939e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.2899749453504126,
+                  "peer_RMS": 0.000915299120228713,
+                  "advantage_mean": -0.44133835159895834,
+                  "terminal": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "density_error": [
+                    7.28583859910259e-16,
+                    5.773159728050814e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  6.661338147750939e-16,
+                  6.661338147750939e-15
+                ],
+                [
+                  6.938893903907228e-16,
+                  5.329070518200751e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  6.661338147750939e-15
+                ],
+                [
+                  7.28583859910259e-16,
+                  5.773159728050814e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 1.4210854715202004e-13,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 581.1801693960025,
+                "sampled_KL": 0.0002750840478129462
+              },
+              {
+                "step": 1,
+                "RL_loss": -0.5909931415549465,
+                "successful_history_KL": 2.0665453264873175e-05,
+                "gradient_norm": 601.1333051699629,
+                "sampled_KL": 0.0011228847836834547
+              },
+              {
+                "step": 2,
+                "RL_loss": -1.1832428553857142,
+                "successful_history_KL": 8.630487844310402e-05,
+                "gradient_norm": 569.7666501520484,
+                "sampled_KL": 0.0024303801337815017
+              },
+              {
+                "step": 3,
+                "RL_loss": -1.5219568637546672,
+                "successful_history_KL": 0.00019719702264924487,
+                "gradient_norm": 638.5376396295294,
+                "sampled_KL": 0.001300076480185671
+              }
+            ],
+            "trainable_parameters": 64772,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 0,
+            "timeout": 4,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 7,
+              "contact": 0,
+              "timeout": 1,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 11,
+              "contact": 10,
+              "timeout": 3,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector0_offset2",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 99.352956625692,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/rtg_08/proposal.pt.gz",
+            "sha256": "debe95fadced07eeafd63e193995407003e192910d6ab0da6b84ad4593629d19",
+            "bytes": 500114,
+            "policy_hash": "23a8ac20f153bc362970db5ad2c4734ad3cd436240ec38d712664f831a410de6",
+            "joint_hash": "749e1e72e095d0dad1df6ef3494a582571595b408b83e61d73d662ad94ac779f"
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "9c334cfe316852f0db3333a50fe415bc23378055fb901d3a7cc7713cfa53a477",
+      "manifest_sha256": "22cbd2d74a6b58337ba09e3ac1933f5316ab30df627d5a4a390d20d0450c001e"
+    },
+    {
+      "child": "readout_08",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 198036,
+        "physics": 2356998,
+        "commands": 76,
+        "elapsed_s": 1380.6691586971283,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": 0.28997494535041207,
+                  "peer_RMS": 0.0009876898207134082,
+                  "advantage_mean": -0.08272453701219198,
+                  "terminal": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "density_error": [
+                    6.106226635438361e-16,
+                    5.773159728050814e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.2899749453504124,
+                  "peer_RMS": 0.0009876898207134082,
+                  "advantage_mean": 1.034589375660792,
+                  "terminal": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    5.662137425588298e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.2899749453504123,
+                  "peer_RMS": 0.0009876898207134082,
+                  "advantage_mean": -0.45446917904631173,
+                  "terminal": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "density_error": [
+                    6.375108774214766e-16,
+                    5.773159728050814e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": 0.28997494535041235,
+                  "peer_RMS": 0.0009876898207134082,
+                  "advantage_mean": -0.4973956596022882,
+                  "terminal": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "density_error": [
+                    7.216449660063518e-16,
+                    6.661338147750939e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  6.106226635438361e-16,
+                  5.773159728050814e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  5.662137425588298e-15
+                ],
+                [
+                  6.375108774214766e-16,
+                  5.773159728050814e-15
+                ],
+                [
+                  7.216449660063518e-16,
+                  6.661338147750939e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": -5.684341886080802e-14,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 167.6010683161405,
+                "sampled_KL": 1.0764498199678628e-05
+              },
+              {
+                "step": 1,
+                "RL_loss": -0.16757209815520469,
+                "successful_history_KL": 1.9537912892937005e-06,
+                "gradient_norm": 167.5394840433033,
+                "sampled_KL": 4.307108913843861e-05
+              },
+              {
+                "step": 2,
+                "RL_loss": -0.33508554872440754,
+                "successful_history_KL": 7.810690822976004e-06,
+                "gradient_norm": 167.4760178000153,
+                "sampled_KL": 9.69364515102956e-05
+              },
+              {
+                "step": 3,
+                "RL_loss": -0.5025385837470822,
+                "successful_history_KL": 1.756376146002287e-05,
+                "gradient_norm": 167.41091328443335,
+                "sampled_KL": 0.00017237322713395961
+              }
+            ],
+            "trainable_parameters": 11906,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 0,
+            "timeout": 4,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 7,
+              "contact": 0,
+              "timeout": 1,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 11,
+              "contact": 10,
+              "timeout": 3,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector1_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 99.92372232655755,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/readout_08/proposal.pt.gz",
+            "sha256": "ac89df347df1b6ee10dd8c0136e146684b33b05fc3801975eaf22c46634ab339",
+            "bytes": 500049,
+            "policy_hash": "21b956380654b9b0c92427a2378a7e059c63b9e4c762545f842c47631ec0bddd",
+            "joint_hash": "e993cf629462a52d00a9ce2a6f715b9af82c9fc254016b5ec3dbf7ca5951dba7"
+          },
+          "retained_joint_hash": "176b162c0643850f5a8aa5e2d7e283949eb19b007bf769312d2a0986bad0131f"
+        }
+      },
+      "audit_sha256": "0884e568d50d645326838a7afdf94a3c0959f34d3fce6cfeb950c164a71bfff2",
+      "manifest_sha256": "408514397a7fdc11d7302a24f53b2c846965818ebe58879f60e112ff28f629ca"
+    },
+    {
+      "child": "terminal_09",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 199473,
+        "physics": 62526,
+        "commands": 12,
+        "elapsed_s": 44.96701002120972,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 0,
+            "reason": "ZERO_REGISTERED_RL_SIGNAL_NO_ARTIFICIAL_UPDATE",
+            "diagnosis": {
+              "outcomes": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "LOO": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "coefficient_RMS": 0.0,
+              "homogeneous_outcomes_zero_RL_signal": true,
+              "density_errors": [
+                [
+                  5.828670879282072e-16,
+                  3.3306690738754696e-15
+                ],
+                [
+                  4.996003610813204e-16,
+                  7.993605777301127e-15
+                ],
+                [
+                  4.163336342344337e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  6.938893903907228e-16,
+                  4.440892098500626e-15
+                ]
+              ]
+            },
+            "trace": [],
+            "trainable_parameters": 64772
+          },
+          "steps": 0,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": null,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+            "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+            "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+            "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+            "bytes": 1063607
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "f1fb1ae60a76220c0a4f251c5eb2268e1b3de1811efc3ab75992af80d0107e83",
+      "manifest_sha256": "888d83584851dc3175c9552da058c696b2a94bdc6973cf21d42c980658bdd1f1"
+    },
+    {
+      "child": "rtg_09",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 199559,
+        "physics": 1742054,
+        "commands": 76,
+        "elapsed_s": 1039.41366648674,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": -0.4027436229564348,
+                  "peer_RMS": 0.0741162291916061,
+                  "advantage_mean": -0.29330194066676013,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    4.440892098500626e-16,
+                    3.552713678800501e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.40382396121588904,
+                  "peer_RMS": 0.0741162291916061,
+                  "advantage_mean": -0.21966503423309738,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    4.884981308350689e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.4180903247529308,
+                  "peer_RMS": 0.0741162291916061,
+                  "advantage_mean": -0.1573002675402484,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    4.996003610813204e-16,
+                    5.10702591327572e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.42177468885749636,
+                  "peer_RMS": 0.0741162291916061,
+                  "advantage_mean": -0.21211060445530264,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.828670879282072e-16,
+                    4.884981308350689e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  4.440892098500626e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  4.884981308350689e-15
+                ],
+                [
+                  4.996003610813204e-16,
+                  5.10702591327572e-15
+                ],
+                [
+                  5.828670879282072e-16,
+                  4.884981308350689e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 17.113738463967707,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 121.12462048336788,
+                "sampled_KL": 0.00018664509698139474
+              },
+              {
+                "step": 1,
+                "RL_loss": 16.99442094474402,
+                "successful_history_KL": 2.3758858521747226e-05,
+                "gradient_norm": 117.54677957904497,
+                "sampled_KL": 0.0007090313023847992
+              },
+              {
+                "step": 2,
+                "RL_loss": 16.87852320016128,
+                "successful_history_KL": 8.97598905046142e-05,
+                "gradient_norm": 114.1949908087694,
+                "sampled_KL": 0.0015154035792485166
+              },
+              {
+                "step": 3,
+                "RL_loss": 16.765834433402482,
+                "successful_history_KL": 0.00019090856296248438,
+                "gradient_norm": 111.05678579377636,
+                "sampled_KL": 0.002559963449464262
+              }
+            ],
+            "trainable_parameters": 64772,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 7,
+              "contact": 0,
+              "timeout": 1,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 11,
+              "contact": 10,
+              "timeout": 3,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector0_offset2",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 99.30221219601529,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/rtg_09/proposal.pt.gz",
+            "sha256": "bd3e9271a074f1a7b0aeca76278a01ca8512552fe3e5de9046087f9624f3b3ec",
+            "bytes": 500106,
+            "policy_hash": "9ae6ba9fb992bb7b7f939b321ae990eb4921728ee9f06dc604e53723f57cb305",
+            "joint_hash": "cb9c23c3c454419544f712af390c333e3347dd21a94d1dcf3acf59190f09af7f"
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "6a1f09041f4894bb3df8621da9bb069646aac1467f49ff81491313b43e6ea8ce",
+      "manifest_sha256": "1f547baa58fee3ca4468b26a66919cd8a368c9771b57a6797ec6afa964aa4197"
+    },
+    {
+      "child": "readout_09",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 200531,
+        "physics": 1806084,
+        "commands": 76,
+        "elapsed_s": 1067.1760787963867,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": -0.4086934933668607,
+                  "peer_RMS": 0.0763130456327244,
+                  "advantage_mean": -0.16728168233221719,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    5.551115123125783e-16,
+                    3.9968028886505635e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.399536196432418,
+                  "peer_RMS": 0.0763130456327244,
+                  "advantage_mean": -0.33855810537997477,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    4.163336342344337e-16,
+                    3.552713678800501e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.4139856483991373,
+                  "peer_RMS": 0.0763130456327244,
+                  "advantage_mean": -0.1684903488866291,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    4.440892098500626e-16,
+                    2.55351295663786e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.4246365889126053,
+                  "peer_RMS": 0.0763130456327244,
+                  "advantage_mean": -0.24060044229248018,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    4.440892098500626e-16,
+                    3.552713678800501e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  5.551115123125783e-16,
+                  3.9968028886505635e-15
+                ],
+                [
+                  4.163336342344337e-16,
+                  3.552713678800501e-15
+                ],
+                [
+                  4.440892098500626e-16,
+                  2.55351295663786e-15
+                ],
+                [
+                  4.440892098500626e-16,
+                  3.552713678800501e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 17.734558555878316,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 48.5247731089775,
+                "sampled_KL": 1.2774788575553157e-05
+              },
+              {
+                "step": 1,
+                "RL_loss": 17.686091693818852,
+                "successful_history_KL": 1.757435613903595e-06,
+                "gradient_norm": 48.40758857340517,
+                "sampled_KL": 5.115776988657971e-05
+              },
+              {
+                "step": 2,
+                "RL_loss": 17.63773286670358,
+                "successful_history_KL": 7.0252959927025725e-06,
+                "gradient_norm": 48.30163715062003,
+                "sampled_KL": 0.00011523705486203234
+              },
+              {
+                "step": 3,
+                "RL_loss": 17.58947096997924,
+                "successful_history_KL": 1.5796978675173704e-05,
+                "gradient_norm": 48.20667382634737,
+                "sampled_KL": 0.00020510094360617255
+              }
+            ],
+            "trainable_parameters": 11906,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 7,
+              "contact": 0,
+              "timeout": 1,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 9,
+              "contact": 10,
+              "timeout": 5,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 104.13863175974816,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/readout_09/proposal.pt.gz",
+            "sha256": "4089a808d55f1d4091b764a1028bdf25730351aa9c8c58771aa26322a9683b90",
+            "bytes": 500060,
+            "policy_hash": "fad91970754c4d3c1df8f50e49bb04609f4f0deb6d76bf497183f82d74f48e87",
+            "joint_hash": "582d0a6326419c0399b3a04131078ae0f97c1966992fa7fa67ec53dd6c47f775"
+          },
+          "retained_joint_hash": "176b162c0643850f5a8aa5e2d7e283949eb19b007bf769312d2a0986bad0131f"
+        }
+      },
+      "audit_sha256": "0b91a482b387627c38dde8c9d1390b7a57d01c1b8a72139b62b36f3699f1cbc8",
+      "manifest_sha256": "9bbbb8cfc1a159341dc9a665ba69e88335f64be24c5ee1ed22e4515f31a3bd2a"
+    },
+    {
+      "child": "terminal_10",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 201724,
+        "physics": 150430,
+        "commands": 12,
+        "elapsed_s": 96.08234906196594,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 0,
+            "reason": "ZERO_REGISTERED_RL_SIGNAL_NO_ARTIFICIAL_UPDATE",
+            "diagnosis": {
+              "outcomes": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "LOO": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "coefficient_RMS": 0.0,
+              "homogeneous_outcomes_zero_RL_signal": true,
+              "density_errors": [
+                [
+                  5.48172618408671e-16,
+                  3.219646771412954e-15
+                ],
+                [
+                  5.551115123125783e-16,
+                  5.329070518200751e-15
+                ],
+                [
+                  6.38378239159465e-16,
+                  7.105427357601002e-15
+                ],
+                [
+                  8.881784197001252e-16,
+                  3.552713678800501e-15
+                ]
+              ]
+            },
+            "trace": [],
+            "trainable_parameters": 64772
+          },
+          "steps": 0,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": null,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+            "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+            "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+            "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+            "bytes": 1063607
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "dc5eb747d31ea3b521c3e6c326bcff6e3ce7ebb7f470681ad690698304b55d5d",
+      "manifest_sha256": "96261483e004b3b50f10c78c6bb377ee0673402e34b145adbb1b4fba0fa0d7a6"
+    },
+    {
+      "child": "rtg_10",
+      "summary": {
+        "state": "COMPLETE",
+        "pid": 201814,
+        "physics": 1880712,
+        "commands": 76,
+        "elapsed_s": 1114.8524358272552,
+        "error": null,
+        "result": {
+          "update": {
+            "steps": 4,
+            "diagnosis": {
+              "native_time_RTG": [
+                {
+                  "group": 0,
+                  "G0": -0.2526362936305121,
+                  "peer_RMS": 0.0635725167864458,
+                  "advantage_mean": -0.11182867676416201,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    4.996003610813204e-16,
+                    4.440892098500626e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.2649478487763471,
+                  "peer_RMS": 0.0635725167864458,
+                  "advantage_mean": -0.10470058272144138,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.106226635438361e-16,
+                    6.661338147750939e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.28539402208626397,
+                  "peer_RMS": 0.0635725167864458,
+                  "advantage_mean": -0.35238301061032146,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.106226635438361e-16,
+                    4.218847493575595e-15
+                  ]
+                },
+                {
+                  "group": 0,
+                  "G0": -0.28022983000918744,
+                  "peer_RMS": 0.0635725167864458,
+                  "advantage_mean": -0.2268162299235622,
+                  "terminal": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "density_error": [
+                    6.661338147750939e-16,
+                    5.329070518200751e-15
+                  ]
+                }
+              ],
+              "homogeneous_outcomes_zero_RL_signal": false,
+              "density_errors": [
+                [
+                  4.996003610813204e-16,
+                  4.440892098500626e-15
+                ],
+                [
+                  6.106226635438361e-16,
+                  6.661338147750939e-15
+                ],
+                [
+                  6.106226635438361e-16,
+                  4.218847493575595e-15
+                ],
+                [
+                  6.661338147750939e-16,
+                  5.329070518200751e-15
+                ]
+              ]
+            },
+            "trace": [
+              {
+                "step": 0,
+                "RL_loss": 37.22104688612344,
+                "successful_history_KL": 4.97238585201743e-31,
+                "gradient_norm": 399.9783996730267,
+                "sampled_KL": 0.0001915620873786966
+              },
+              {
+                "step": 1,
+                "RL_loss": 36.819382718286114,
+                "successful_history_KL": 6.346182925907902e-05,
+                "gradient_norm": 403.30893132521294,
+                "sampled_KL": 0.0007663854826582231
+              },
+              {
+                "step": 2,
+                "RL_loss": 36.41669907148935,
+                "successful_history_KL": 0.0002512999414192051,
+                "gradient_norm": 394.8051601359209,
+                "sampled_KL": 0.0017125931458156943
+              },
+              {
+                "step": 3,
+                "RL_loss": 36.13231575195944,
+                "successful_history_KL": 0.0005672577645211329,
+                "gradient_norm": 232.99161583843602,
+                "sampled_KL": 0.002894249485902599
+              }
+            ],
+            "trainable_parameters": 64772,
+            "new_fresh_policy_batch": true,
+            "Value_updates": 0,
+            "not_claimed_unbiased_or_original": true
+          },
+          "steps": 4,
+          "training": {
+            "valid": 4,
+            "success": 0,
+            "contact": 4,
+            "timeout": 0,
+            "invalid": 0,
+            "censored": 0
+          },
+          "accepted": false,
+          "check": {
+            "old8": {
+              "valid": 8,
+              "success": 7,
+              "contact": 0,
+              "timeout": 1,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field24": {
+              "valid": 24,
+              "success": 10,
+              "contact": 10,
+              "timeout": 4,
+              "invalid": 0,
+              "censored": 0
+            },
+            "field_success_ids": [
+              "t502_field_sector0_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2",
+              "t502_field_sector4_offset1",
+              "t502_field_sector5_offset1",
+              "t502_field_sector5_offset2",
+              "t502_field_sector6_offset1",
+              "t502_field_sector7_offset1",
+              "t502_field_sector7_offset2"
+            ],
+            "distance_sum": 102.43199358837161,
+            "all_field24_pass": false
+          },
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/rtg_10/proposal.pt.gz",
+            "sha256": "36f21c2a49fadbf2abc6137d918ef0e37fcd50179580abb5cb7860fdf76f8088",
+            "bytes": 500100,
+            "policy_hash": "342e79eed162691fb10b58d360c1c7e5ef437cd65b919751f28e5c0b63117ff8",
+            "joint_hash": "137e53fdd8b1862ee1be5e1cfbffe760bf643cb81fba0480544ca6f9a210fb2f"
+          },
+          "retained_joint_hash": "83ba8e6425293b13d677574deef83d09486fb040ecb0aedf119b04c256c4ea46"
+        }
+      },
+      "audit_sha256": "4fbb91b8d4d4451b0f50ed74a8f97b12f3a027332f5bcab83884b0f2d15e4bdc",
+      "manifest_sha256": "138163fa30ae0be0373fb5f0c4edd3342438139fbe22d42bb3f85e9fdcc032d3"
+    },
+    {
+      "child": "final_selected407",
+      "summary": {
+        "state": "FAILED",
+        "pid": 202895,
+        "physics": 5534878,
+        "commands": 356,
+        "elapsed_s": 3295.989088535309,
+        "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t542_offline_field_relay/t542_runtime.py\", line 113, in main\n    vals=rt.request(p['final_jobs'],p['initial'],'FROZEN_SELECTED_COMPLETE_DEVELOPMENT');rs=[r for a,r in vals]\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t542_offline_field_relay/t542_runtime.py\", line 66, in request\n    values=self.pool.request(req);pending=[]\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t441_joint_actor_critic/run.py\", line 34, in request\n    return [self.receive(i) for i in range(len(items))]\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t441_joint_actor_critic/run.py\", line 34, in <listcomp>\n    return [self.receive(i) for i in range(len(items))]\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t496_neural_speed_profile/speed_runtime.py\", line 55, in receive\n    value=super().receive(i)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t404_last_narrow/t404_core.py\", line 134, in receive\n    if isinstance(x,dict) and x.get('state')=='FAILED':raise RuntimeError(x['error'])\nRuntimeError: Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t449_offline_joint_recovery/run.py\", line 102, in worker\n    else:s.step(owner=0)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t381_native_mppi_teacher/run.py\", line 131, in step\n    self.guard(physical=True)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t449_offline_joint_recovery/run.py\", line 72, in guard\n    def guard(physical=False):E.L.check_stop();assert time.time()<p['native_stop_epoch']-5 and sum(counts)<p['max_physics']\nAssertionError\n\n",
+        "result": null
+      },
+      "audit_sha256": null,
+      "partial": true
+    }
+  ],
+  "physics": 53337590,
+  "commands": 2224,
+  "main_seconds": 31571.38556790352,
+  "last_epoch": 1794605520.504575
+}

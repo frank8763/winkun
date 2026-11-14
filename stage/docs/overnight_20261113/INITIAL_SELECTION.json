@@ -1,0 +1,90 @@
+{
+  "qualifier": {
+    "check": {
+      "old8": {
+        "valid": 8,
+        "success": 8,
+        "contact": 0,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "field24": {
+        "valid": 24,
+        "success": 10,
+        "contact": 9,
+        "timeout": 5,
+        "invalid": 0,
+        "censored": 0
+      },
+      "field_success_ids": [
+        "t502_field_sector0_offset1",
+        "t502_field_sector2_offset1",
+        "t502_field_sector2_offset2",
+        "t502_field_sector3_offset1",
+        "t502_field_sector3_offset2",
+        "t502_field_sector4_offset1",
+        "t502_field_sector5_offset2",
+        "t502_field_sector6_offset1",
+        "t502_field_sector7_offset1",
+        "t502_field_sector7_offset2"
+      ],
+      "distance_sum": 99.32012315356482,
+      "all_field24_pass": false
+    },
+    "accepted": false,
+    "model": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t539_terminal_success_pg/proposal.pt.gz",
+      "sha256": "5d2e1771fdc2c53f2583a3385594ba37555578838b64724aee74a023161a252d",
+      "bytes": 500176,
+      "policy_hash": "0b6c78d49414adbbb973b8e3972609aee718f25748068b7fd7cd887ebfd5637b",
+      "joint_hash": "7a80ee80efd0eab22cea1703c28769c8d48ca0839d33bb81aa24baa87fa7dae8"
+    },
+    "steps": 0,
+    "not_new_training": true
+  },
+  "selected": {
+    "model": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t507_joint_success_transfer/pilot/block0_proposal.pt.gz",
+      "sha256": "ba3d7a21467b16686bd2e583f5e12a75e07e15c80c6ff0fb889ced69bf2dbe18",
+      "policy_hash": "b1f1a7b953fca3c096681328447529b47d1e23fb623c1474f24c7a8852b0a949",
+      "joint_hash": "53fe3b7f29593d7cd44fd43040f2d8420b02f20a22b7a3d8c25f436553d884b1",
+      "bytes": 1063607
+    },
+    "check": {
+      "old8": {
+        "valid": 8,
+        "success": 8,
+        "contact": 0,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "field24": {
+        "valid": 24,
+        "success": 11,
+        "contact": 9,
+        "timeout": 4,
+        "invalid": 0,
+        "censored": 0
+      },
+      "field_success_ids": [
+        "t502_field_sector0_offset1",
+        "t502_field_sector2_offset1",
+        "t502_field_sector2_offset2",
+        "t502_field_sector3_offset1",
+        "t502_field_sector3_offset2",
+        "t502_field_sector4_offset1",
+        "t502_field_sector5_offset1",
+        "t502_field_sector5_offset2",
+        "t502_field_sector6_offset1",
+        "t502_field_sector7_offset1",
+        "t502_field_sector7_offset2"
+      ],
+      "distance_sum": 96.70766544743901,
+      "all_field24_pass": false
+    },
+    "origin": "T507_LOCKED_BASELINE"
+  },
+  "selection_rule": "retain_all_prior_successIDs_and_improve_count_or_total_remaining_at_equal_count"
+}
