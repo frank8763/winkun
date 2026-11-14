@@ -1,0 +1,2610 @@
+{
+  "state": "COMPLETE",
+  "result": {
+    "source_model": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t542_offline_field_relay/rtg_06/proposal.pt.gz",
+      "sha256": "97846e81a18e06376997f23b0c132b9899958d8398f83b53524cd483e39e3932",
+      "bytes": 500076,
+      "policy_hash": "175e716d17dfcf9673bbfd2bc83ca4c97e78159e6788d7f52cff4ff99f325831",
+      "joint_hash": "4cf62d438f8094447f1f2083cb8b35072ff2d81dc2e4fdba1d7f6eb0edeac979"
+    },
+    "reused_audited_success_histories": 19,
+    "reused_full_native_teacher": true,
+    "derived_prefix": {
+      "teacher_first": 170,
+      "prefix_seconds": 34.0,
+      "distance_at_intervention_m": 0.9940613783110807,
+      "rule": "FIRST_ACTUAL_STUDENT_DISTANCE_AT_MOST_1M_NO_WINDOW_GRID"
+    },
+    "teacher_qualified": true,
+    "teacher_result": {
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "remaining_m": 0.19990498363717144
+    },
+    "Actor_Adam": 16,
+    "Value_updates": 0,
+    "new_policy_gradient_updates": 0,
+    "update": {
+      "Actor_Adam": 16,
+      "virtual_discarded_Adam": 16,
+      "Value_updates": 0,
+      "new_policy_gradient_updates": 0,
+      "trace": [
+        {
+          "step": 0,
+          "recovery_loss": 0.09627430612247845,
+          "tail_executed_action_loss": 0.09627430612247845,
+          "protected_prefix_KL": 8.938767714639856e-31,
+          "selected_rehearsal_loss": 8.628661672279999e-31,
+          "gradient_norm": 1.1649249625402676,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 6.491506178725591e-31,
+                "loss_after": 9.871955920199253e-05,
+                "interference_increase": 9.871955920199253e-05
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 3.1368307255134636e-31,
+                "loss_after": 2.990895625442626e-05,
+                "interference_increase": 2.990895625442626e-05
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 4.286579155333598e-31,
+                "loss_after": 0.0001027022740254051,
+                "interference_increase": 0.0001027022740254051
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 7.015008323714445e-31,
+                "loss_after": 0.0001650598043127437,
+                "interference_increase": 0.0001650598043127437
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 7.963287343548586e-31,
+                "loss_after": 9.696214398223824e-05,
+                "interference_increase": 9.696214398223824e-05
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 3.603161943625315e-31,
+                "loss_after": 2.809746548326225e-05,
+                "interference_increase": 2.809746548326225e-05
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 1.2303960910643485e-30,
+                "loss_after": 0.00016989597219189216,
+                "interference_increase": 0.00016989597219189216
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 3.893352383101646e-31,
+                "loss_after": 1.1227398371541522e-05,
+                "interference_increase": 1.1227398371541522e-05
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 3.6740623219129508e-31,
+                "loss_after": 5.838505088624075e-06,
+                "interference_increase": 5.838505088624075e-06
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 3.4337771561736487e-31,
+                "loss_after": 4.5347409453375195e-06,
+                "interference_increase": 4.5347409453375195e-06
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 5.416656350302189e-31,
+                "loss_after": 9.893169225027848e-05,
+                "interference_increase": 9.893169225027848e-05
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 3.454122083170787e-31,
+                "loss_after": 7.12979159696325e-05,
+                "interference_increase": 7.12979159696325e-05
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 5.2075187710168e-31,
+                "loss_after": 7.309951734966433e-05,
+                "interference_increase": 7.309951734966433e-05
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 3.571501778904245e-31,
+                "loss_after": 1.2845782065826234e-05,
+                "interference_increase": 1.2845782065826234e-05
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 3.9859062115761404e-31,
+                "loss_after": 1.6259923366191374e-05,
+                "interference_increase": 1.6259923366191374e-05
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 4.571502333443073e-31,
+                "loss_after": 0.00013831675450705168,
+                "interference_increase": 0.00013831675450705168
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 3.6726702253361813e-31,
+                "loss_after": 2.4761925613887223e-05,
+                "interference_increase": 2.4761925613887223e-05
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 4.241094056292465e-31,
+                "loss_after": 4.3933050258576205e-05,
+                "interference_increase": 4.3933050258576205e-05
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 5.201806082279037e-31,
+                "loss_after": 3.889941889247071e-05,
+                "interference_increase": 3.889941889247071e-05
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task3_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.09627430612247845,
+            "virtual_gradient_norm": 2.329849925080536
+          }
+        },
+        {
+          "step": 1,
+          "recovery_loss": 0.09103125054420867,
+          "tail_executed_action_loss": 0.0907533861484889,
+          "protected_prefix_KL": 0.00027786439571978426,
+          "selected_rehearsal_loss": 0.00015441749107847566,
+          "gradient_norm": 0.971435357080562,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 9.871955920128891e-05,
+                "loss_after": 0.00027051176336461916,
+                "interference_increase": 0.00017179220416333024
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 2.9908956253451757e-05,
+                "loss_after": 0.00015184464251044236,
+                "interference_increase": 0.0001219356862569906
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.00010270227402733902,
+                "loss_after": 0.0005234855246724116,
+                "interference_increase": 0.0004207832506450726
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.00016505980430787446,
+                "loss_after": 0.0006323052313034654,
+                "interference_increase": 0.00046724542699559093
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 9.696214398143826e-05,
+                "loss_after": 0.00022084126441994587,
+                "interference_increase": 0.0001238791204385076
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 2.8097465482115318e-05,
+                "loss_after": 0.0001357909080845363,
+                "interference_increase": 0.00010769344260242098
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.00016989597218992772,
+                "loss_after": 0.0007322271182980076,
+                "interference_increase": 0.0005623311461080799
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 1.1227398372053323e-05,
+                "loss_after": 8.449988671904272e-05,
+                "interference_increase": 7.327248834698939e-05
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 5.8385050893571915e-06,
+                "loss_after": 4.7546013524129714e-05,
+                "interference_increase": 4.170750843477252e-05
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 4.534740945634461e-06,
+                "loss_after": 3.1291241700513474e-05,
+                "interference_increase": 2.6756500754879012e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 9.893169225061698e-05,
+                "loss_after": 0.0003020661875194788,
+                "interference_increase": 0.00020313449526886183
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 7.129791596865102e-05,
+                "loss_after": 0.00031868550079004797,
+                "interference_increase": 0.00024738758482139694
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 7.309951734785177e-05,
+                "loss_after": 0.0002805018374997894,
+                "interference_increase": 0.00020740232015193765
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 1.2845782066197269e-05,
+                "loss_after": 8.498096526205017e-05,
+                "interference_increase": 7.21351831958529e-05
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 1.625992336634671e-05,
+                "loss_after": 9.343910308210618e-05,
+                "interference_increase": 7.717917971575947e-05
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.00013831675449959768,
+                "loss_after": 0.000553063059945763,
+                "interference_increase": 0.00041474630544616534
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 2.4761925613367043e-05,
+                "loss_after": 0.00010782135436342131,
+                "interference_increase": 8.305942875005426e-05
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 4.393305026151751e-05,
+                "loss_after": 0.00016882686854900806,
+                "interference_increase": 0.00012489381828749055
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 3.88994188849999e-05,
+                "loss_after": 0.00017551628426023378,
+                "interference_increase": 0.00013661686537523387
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task3_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.09103125054420867,
+            "virtual_gradient_norm": 2.024080398972651
+          }
+        },
+        {
+          "step": 2,
+          "recovery_loss": 0.08637057940871636,
+          "tail_executed_action_loss": 0.08558048005893712,
+          "protected_prefix_KL": 0.0007900993497792297,
+          "selected_rehearsal_loss": 0.000511478003360909,
+          "gradient_norm": 0.7936186331468019,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.0002810580293040634,
+                "loss_after": 0.000472899225088059,
+                "interference_increase": 0.00019184119578399562
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.00012533195900004115,
+                "loss_after": 0.0003316819350829223,
+                "interference_increase": 0.00020634997608288115
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.0004647758597079971,
+                "loss_after": 0.001234049897560083,
+                "interference_increase": 0.000769274037852086
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.0005113480113836951,
+                "loss_after": 0.0010894670670180532,
+                "interference_increase": 0.0005781190556343581
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.00024138072681203747,
+                "loss_after": 0.000352333120897689,
+                "interference_increase": 0.00011095239408565155
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.00010817168893233889,
+                "loss_after": 0.00027813795226045465,
+                "interference_increase": 0.00016996626332811576
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.0006024169766569647,
+                "loss_after": 0.001418810871163812,
+                "interference_increase": 0.0008163938945068474
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 6.873465527864903e-05,
+                "loss_after": 0.0002407191445588746,
+                "interference_increase": 0.00017198448928022557
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 3.9607210105865346e-05,
+                "loss_after": 0.00016847581069148856,
+                "interference_increase": 0.00012886860058562323
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 2.5241248293494547e-05,
+                "loss_after": 9.800163472181908e-05,
+                "interference_increase": 7.276038642832453e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.00027445194195471436,
+                "loss_after": 0.0005291931496341302,
+                "interference_increase": 0.0002547412076794159
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.0002841933255290472,
+                "loss_after": 0.000691421902067961,
+                "interference_increase": 0.0004072285765389138
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.0002259460358440654,
+                "loss_after": 0.0004890574929865285,
+                "interference_increase": 0.0002631114571424631
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 7.046024809831324e-05,
+                "loss_after": 0.00022915257029016927,
+                "interference_increase": 0.00015869232219185603
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 7.674385633453564e-05,
+                "loss_after": 0.00022514873374425274,
+                "interference_increase": 0.0001484048774097171
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.0004685798157055618,
+                "loss_after": 0.0010328219791407227,
+                "interference_increase": 0.0005642421634351609
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 9.656555850942532e-05,
+                "loss_after": 0.0002380861587892301,
+                "interference_increase": 0.00014152060027980477
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.00017627548800422887,
+                "loss_after": 0.00039069177665171536,
+                "interference_increase": 0.0002144162886474865
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.00012906251437850536,
+                "loss_after": 0.0003183219479899754,
+                "interference_increase": 0.00018925943361147005
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task2_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector3_offset1",
+              "t502_field_sector3_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.08637057940871636,
+            "virtual_gradient_norm": 1.7978513909399136
+          }
+        },
+        {
+          "step": 3,
+          "recovery_loss": 0.08217054751501518,
+          "tail_executed_action_loss": 0.08077567393098593,
+          "protected_prefix_KL": 0.0013948735840292454,
+          "selected_rehearsal_loss": 0.0009853859801815642,
+          "gradient_norm": 0.7019879076786093,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.0005065394431688162,
+                "loss_after": 0.000703970173539807,
+                "interference_increase": 0.00019743073037099086
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.00020309203709188825,
+                "loss_after": 0.0003717578940346256,
+                "interference_increase": 0.00016866585694273734
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.0008804915512705469,
+                "loss_after": 0.0016708999587880034,
+                "interference_increase": 0.0007904084075174566
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.000980762122651665,
+                "loss_after": 0.001654014427480109,
+                "interference_increase": 0.000673252304828444
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.0004120576977710526,
+                "loss_after": 0.0005187716259290427,
+                "interference_increase": 0.00010671392815799006
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.00016626434122848463,
+                "loss_after": 0.0002956888776596421,
+                "interference_increase": 0.0001294245364311575
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.0011902275640653815,
+                "loss_after": 0.0021375996321365155,
+                "interference_increase": 0.0009473720680711339
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 0.00013174413461284907,
+                "loss_after": 0.000295935977123249,
+                "interference_increase": 0.00016419184251039993
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 9.098788889760601e-05,
+                "loss_after": 0.00023348123523715913,
+                "interference_increase": 0.0001424933463395531
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 4.995779279209739e-05,
+                "loss_after": 0.00011533557202484792,
+                "interference_increase": 6.537777923275053e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.0004879246712728623,
+                "loss_after": 0.000758549095923355,
+                "interference_increase": 0.00027062442465049274
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.0004934532861297188,
+                "loss_after": 0.0008709889111739232,
+                "interference_increase": 0.00037753562504420435
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.00041393923898352047,
+                "loss_after": 0.000684164881982019,
+                "interference_increase": 0.00027022564299849854
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 0.00013109153792805085,
+                "loss_after": 0.00027927533523199223,
+                "interference_increase": 0.00014818379730394138
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 0.0001235005588331325,
+                "loss_after": 0.0002453393172783723,
+                "interference_increase": 0.00012183875844523981
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.0008894468479877471,
+                "loss_after": 0.0015094344796612322,
+                "interference_increase": 0.0006199876316734851
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 0.00016994771040214267,
+                "loss_after": 0.00029670364631639054,
+                "interference_increase": 0.00012675593591424786
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.0003556966796333753,
+                "loss_after": 0.0005910444480315441,
+                "interference_increase": 0.00023534776839816883
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.0002437794166431592,
+                "loss_after": 0.00044011828436535134,
+                "interference_increase": 0.00019633886772219214
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task2_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector3_offset1",
+              "t502_field_sector2_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.08217054751501518,
+            "virtual_gradient_norm": 1.6233730901160173
+          }
+        },
+        {
+          "step": 4,
+          "recovery_loss": 0.07835047030618832,
+          "tail_executed_action_loss": 0.07635738911207053,
+          "protected_prefix_KL": 0.001993081194117785,
+          "selected_rehearsal_loss": 0.0015055433351725282,
+          "gradient_norm": 0.6417918394461258,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.0007338990094172506,
+                "loss_after": 0.0009102859644560747,
+                "interference_increase": 0.00017638695503882412
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.0002504038755630883,
+                "loss_after": 0.00037447572881785615,
+                "interference_increase": 0.00012407185325476785
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.0012077905534812982,
+                "loss_after": 0.0018716193309584691,
+                "interference_increase": 0.000663828777477171
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.0015222006997451445,
+                "loss_after": 0.0022504198072786155,
+                "interference_increase": 0.0007282191075334711
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.0005877421162109492,
+                "loss_after": 0.0006852704156293189,
+                "interference_increase": 9.75282994183697e-05
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.00020090291704823984,
+                "loss_after": 0.00029378109460798444,
+                "interference_increase": 9.287817755974459e-05
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.0018289519288078864,
+                "loss_after": 0.002800441675647835,
+                "interference_increase": 0.0009714897468399485
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 0.00017768843801638427,
+                "loss_after": 0.00030396633520983176,
+                "interference_increase": 0.0001262778971934475
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 0.0001407125650633589,
+                "loss_after": 0.00026401833807840883,
+                "interference_increase": 0.00012330577301504993
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 7.901756032524624e-05,
+                "loss_after": 0.00013247918076994767,
+                "interference_increase": 5.346162044470143e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.0006990370243814923,
+                "loss_after": 0.000971175163736821,
+                "interference_increase": 0.0002721381393553287
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.0006253121090658027,
+                "loss_after": 0.0009086167057543513,
+                "interference_increase": 0.0002833045966885487
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.0006466391096900091,
+                "loss_after": 0.00094358225387529,
+                "interference_increase": 0.00029694314418528094
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 0.00017404915592134773,
+                "loss_after": 0.0002865775595601921,
+                "interference_increase": 0.00011252840363884438
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 0.0001384605556379955,
+                "loss_after": 0.00021554308778518687,
+                "interference_increase": 7.708253214719138e-05
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.001399069493381271,
+                "loss_after": 0.0020889033925145595,
+                "interference_increase": 0.0006898338991332886
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 0.00023263546366139975,
+                "loss_after": 0.00033572172482892256,
+                "interference_increase": 0.00010308626116752281
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.0005569266529491096,
+                "loss_after": 0.0007907750267853215,
+                "interference_increase": 0.00023384837383621192
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.0004039411765291779,
+                "loss_after": 0.0006229836268957407,
+                "interference_increase": 0.00021904245036656286
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task3_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector3_offset2",
+              "t502_field_sector3_offset1"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.07835047030618832,
+            "virtual_gradient_norm": 1.4917682588431238
+          }
+        },
+        {
+          "step": 5,
+          "recovery_loss": 0.07482420520407489,
+          "tail_executed_action_loss": 0.07231837233784692,
+          "protected_prefix_KL": 0.0025058328662279686,
+          "selected_rehearsal_loss": 0.0019541129704686534,
+          "gradient_norm": 0.6258547372961193,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.000935208516715901,
+                "loss_after": 0.0010883719582775286,
+                "interference_increase": 0.00015316344156162765
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.0003453226995681873,
+                "loss_after": 0.000495326287786008,
+                "interference_increase": 0.00015000358821782065
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.0016403902181754036,
+                "loss_after": 0.00238320768037871,
+                "interference_increase": 0.0007428174622033064
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.0019304297969004543,
+                "loss_after": 0.0025211543710911594,
+                "interference_increase": 0.0005907245741907051
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.0007533178809407822,
+                "loss_after": 0.0008518727022307348,
+                "interference_increase": 9.855482128995254e-05
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.00027356915796603515,
+                "loss_after": 0.0003822822343316057,
+                "interference_increase": 0.00010871307636557058
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.002430285925773754,
+                "loss_after": 0.0033460709381674778,
+                "interference_increase": 0.0009157850123937238
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 0.00026673016048782704,
+                "loss_after": 0.0004285328386886419,
+                "interference_increase": 0.00016180267820081485
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 0.0002300505627398034,
+                "loss_after": 0.0003975703288908218,
+                "interference_increase": 0.00016751976615101837
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 0.00013524460445649933,
+                "loss_after": 0.00020924705563348021,
+                "interference_increase": 7.400245117698088e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.0009832494247758244,
+                "loss_after": 0.0013513149440139865,
+                "interference_increase": 0.0003680655192381621
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.0008115547530852572,
+                "loss_after": 0.001130875752187829,
+                "interference_increase": 0.00031932099910257194
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.0008703890522740022,
+                "loss_after": 0.0011594913830295232,
+                "interference_increase": 0.0002891023307555209
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 0.00025606482759620524,
+                "loss_after": 0.0003977282470481896,
+                "interference_increase": 0.00014166341945198436
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 0.00018823390511086261,
+                "loss_after": 0.00028653679602159656,
+                "interference_increase": 9.830289091073395e-05
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.0019509715600643756,
+                "loss_after": 0.0026742168007346176,
+                "interference_increase": 0.000723245240670242
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 0.00032550094642305386,
+                "loss_after": 0.0004494174386889046,
+                "interference_increase": 0.00012391649226585076
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.0008325037596138179,
+                "loss_after": 0.001126914294258629,
+                "interference_increase": 0.0002944105346448112
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.000607149313989977,
+                "loss_after": 0.0008578257543993533,
+                "interference_increase": 0.0002506764404093763
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task2_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset1"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.07482420520407489,
+            "virtual_gradient_norm": 1.3838330060916821
+          }
+        },
+        {
+          "step": 6,
+          "recovery_loss": 0.07158113900730571,
+          "tail_executed_action_loss": 0.06861817915746875,
+          "protected_prefix_KL": 0.0029629598498369636,
+          "selected_rehearsal_loss": 0.0025821800867437826,
+          "gradient_norm": 0.53821108226142,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.001113017802763332,
+                "loss_after": 0.001241789071882824,
+                "interference_increase": 0.00012877126911949206
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.0004277670060093063,
+                "loss_after": 0.0005617983601683296,
+                "interference_increase": 0.0001340313541590233
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.0018443071381041883,
+                "loss_after": 0.0023247087950442782,
+                "interference_increase": 0.0004804016569400899
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.002376460606602135,
+                "loss_after": 0.0029997960074932225,
+                "interference_increase": 0.0006233354008910877
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.0009312531740481285,
+                "loss_after": 0.0010432030676034163,
+                "interference_increase": 0.00011194989355528778
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.000352930729517181,
+                "loss_after": 0.0004657445214607116,
+                "interference_increase": 0.00011281379194353063
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.0029703294991571694,
+                "loss_after": 0.0038088461224905436,
+                "interference_increase": 0.0008385166233333742
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 0.00032744052114226126,
+                "loss_after": 0.0004439052934516322,
+                "interference_increase": 0.00011646477230937096
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 0.0002976040358376643,
+                "loss_after": 0.0004214839602689742,
+                "interference_increase": 0.0001238799244313099
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 0.00021129524616172787,
+                "loss_after": 0.0002948685664303577,
+                "interference_increase": 8.357332026862982e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.0012684830693523647,
+                "loss_after": 0.0016380652549261986,
+                "interference_increase": 0.0003695821855738339
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.0008708844598553962,
+                "loss_after": 0.0010560479153516363,
+                "interference_increase": 0.00018516345549624013
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.001137711957623218,
+                "loss_after": 0.0014651596382608103,
+                "interference_increase": 0.0003274476806375923
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 0.0003189619595672223,
+                "loss_after": 0.0004303732178892313,
+                "interference_increase": 0.00011141125832200897
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 0.00020662196321340814,
+                "loss_after": 0.00026662110725903215,
+                "interference_increase": 5.999914404562401e-05
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.0025757352142402423,
+                "loss_after": 0.0033695378880998156,
+                "interference_increase": 0.0007938026738595733
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 0.000419448095407459,
+                "loss_after": 0.0005426228873974914,
+                "interference_increase": 0.0001231747919900324
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.0010963860306427934,
+                "loss_after": 0.0013686889575746043,
+                "interference_increase": 0.0002723029269318109
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.0008573256300297236,
+                "loss_after": 0.0011418229481195339,
+                "interference_increase": 0.0002844973180898102
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task3_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.07158113900730571,
+            "virtual_gradient_norm": 1.298684521305093
+          }
+        },
+        {
+          "step": 7,
+          "recovery_loss": 0.06855524470167014,
+          "tail_executed_action_loss": 0.06522098929646739,
+          "protected_prefix_KL": 0.0033342554052027506,
+          "selected_rehearsal_loss": 0.002950060452408262,
+          "gradient_norm": 0.53490205142433,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.0012452255747519825,
+                "loss_after": 0.0013497884517770108,
+                "interference_increase": 0.00010456287702502822
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.000544618253791809,
+                "loss_after": 0.0006873101032968152,
+                "interference_increase": 0.00014269184950500618
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.0021810597363119263,
+                "loss_after": 0.002745380434757672,
+                "interference_increase": 0.0005643206984457458
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.0026898347345166067,
+                "loss_after": 0.0031930500576542297,
+                "interference_increase": 0.000503215323137623
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.0010841006829464927,
+                "loss_after": 0.0011989134100145024,
+                "interference_increase": 0.00011481272706800969
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.0004494375728621003,
+                "loss_after": 0.0005561414463348453,
+                "interference_increase": 0.00010670387347274496
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.0034380869882261727,
+                "loss_after": 0.004194405086069921,
+                "interference_increase": 0.0007563180978437485
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 0.0004242794583674988,
+                "loss_after": 0.0005654935869461567,
+                "interference_increase": 0.00014121412857865794
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 0.00039796920724392116,
+                "loss_after": 0.0005518913169943488,
+                "interference_increase": 0.00015392210975042768
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 0.00029472518271852853,
+                "loss_after": 0.000379199141714284,
+                "interference_increase": 8.447395899575548e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.0015676053826092471,
+                "loss_after": 0.0019690766750061197,
+                "interference_increase": 0.0004014712923968726
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.0010105074673783026,
+                "loss_after": 0.0012437951037782423,
+                "interference_increase": 0.00023328763639993968
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.0013678215938842055,
+                "loss_after": 0.0016732523298727841,
+                "interference_increase": 0.00030543073598857866
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 0.0004187638851124241,
+                "loss_after": 0.0005520300463519153,
+                "interference_increase": 0.00013326616123949115
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 0.0002559505701512074,
+                "loss_after": 0.00032710522863602706,
+                "interference_increase": 7.115465848481965e-05
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.003245668108601496,
+                "loss_after": 0.004086674393857311,
+                "interference_increase": 0.0008410062852558147
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 0.0005425862812284934,
+                "loss_after": 0.0006820470398964577,
+                "interference_increase": 0.00013946075866796438
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.0013656013793774712,
+                "loss_after": 0.0016359981410940573,
+                "interference_increase": 0.0002703967617165861
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.0011125760795727474,
+                "loss_after": 0.0014038595656771006,
+                "interference_increase": 0.0002912834861043532
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task2_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.06855524470167014,
+            "virtual_gradient_norm": 1.222964018501722
+          }
+        },
+        {
+          "step": 8,
+          "recovery_loss": 0.06585816930457421,
+          "tail_executed_action_loss": 0.06219837536870179,
+          "protected_prefix_KL": 0.003659793935872417,
+          "selected_rehearsal_loss": 0.0035203264094060445,
+          "gradient_norm": 0.43415495674062,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.0013593945780189405,
+                "loss_after": 0.0014710111070717383,
+                "interference_increase": 0.00011161652905279781
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.0006594094534897549,
+                "loss_after": 0.0007991935336781049,
+                "interference_increase": 0.00013978408018835
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.002334350188793725,
+                "loss_after": 0.0027111468788300445,
+                "interference_increase": 0.00037679669003631974
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.00303965963529375,
+                "loss_after": 0.0035841944386855737,
+                "interference_increase": 0.0005445348033918237
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.0012513382473485022,
+                "loss_after": 0.0014038238898717514,
+                "interference_increase": 0.00015248564252324918
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.0005582433001707742,
+                "loss_after": 0.0006778153072946819,
+                "interference_increase": 0.00011957200712390766
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.0038309624771488346,
+                "loss_after": 0.004511425939648211,
+                "interference_increase": 0.0006804634624993765
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 0.0005029454820152964,
+                "loss_after": 0.0006209856775084719,
+                "interference_increase": 0.0001180401954931755
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 0.00047885098025692767,
+                "loss_after": 0.0006048579606285226,
+                "interference_increase": 0.0001260069803715949
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 0.000398143155669139,
+                "loss_after": 0.0005015438810092741,
+                "interference_increase": 0.00010340072534013514
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.001864466354468462,
+                "loss_after": 0.002262124303791707,
+                "interference_increase": 0.00039765794932324506
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.0010641068610934986,
+                "loss_after": 0.0012130411570700397,
+                "interference_increase": 0.0001489342959765411
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.0016006188636907477,
+                "loss_after": 0.001926999078822011,
+                "interference_increase": 0.0003263802151312633
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 0.0005139798795213582,
+                "loss_after": 0.0006399324267642401,
+                "interference_increase": 0.0001259525472428819
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 0.0002897049793041644,
+                "loss_after": 0.0003438715471354015,
+                "interference_increase": 5.416656783123708e-05
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.003944237961262655,
+                "loss_after": 0.004825754927241976,
+                "interference_increase": 0.0008815169659793206
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 0.0006758563240659234,
+                "loss_after": 0.0008275893086274713,
+                "interference_increase": 0.00015173298456154798
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.001597249960260343,
+                "loss_after": 0.001836485080601014,
+                "interference_increase": 0.000239235120340671
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.0014019792094504774,
+                "loss_after": 0.0017346386866177207,
+                "interference_increase": 0.00033265947716724334
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task3_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector2_offset2",
+              "t502_field_sector7_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.06585816930457421,
+            "virtual_gradient_norm": 1.1066051374708556
+          }
+        },
+        {
+          "step": 9,
+          "recovery_loss": 0.06336070987598819,
+          "tail_executed_action_loss": 0.05941840062640162,
+          "protected_prefix_KL": 0.0039423092495865595,
+          "selected_rehearsal_loss": 0.0040330056200094415,
+          "gradient_norm": 0.4042221937718488,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.0014711912031447002,
+                "loss_after": 0.0015940426244910144,
+                "interference_increase": 0.00012285142134631417
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.0007853077437488623,
+                "loss_after": 0.000923842180974356,
+                "interference_increase": 0.0001385344372254937
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.002564951768700158,
+                "loss_after": 0.0029862132176344774,
+                "interference_increase": 0.00042126144893431944
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.0032809310165132118,
+                "loss_after": 0.0037218900690868923,
+                "interference_increase": 0.00044095905257368053
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.00144085175174059,
+                "loss_after": 0.0016275616344755886,
+                "interference_increase": 0.00018670988273499856
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.0006673226588919337,
+                "loss_after": 0.0007776523714625893,
+                "interference_increase": 0.00011032971257065563
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.004142277699863429,
+                "loss_after": 0.004734284804174327,
+                "interference_increase": 0.0005920071043108979
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 0.0005991948712476369,
+                "loss_after": 0.000727326682145764,
+                "interference_increase": 0.00012813181089812704
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 0.0005773035499082596,
+                "loss_after": 0.000715398200616144,
+                "interference_increase": 0.00013809465070788445
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 0.0004978825503060488,
+                "loss_after": 0.0005936774229691449,
+                "interference_increase": 9.579487266309604e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.002216913954968055,
+                "loss_after": 0.002656722458369989,
+                "interference_increase": 0.0004398085034019337
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.0011720089362994254,
+                "loss_after": 0.0013555017976643914,
+                "interference_increase": 0.00018349286136496606
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.0018557217274002469,
+                "loss_after": 0.0022098828956779244,
+                "interference_increase": 0.00035416116827767757
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 0.0006262330469306628,
+                "loss_after": 0.000758909340826809,
+                "interference_increase": 0.00013267629389614622
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 0.00033598384667294544,
+                "loss_after": 0.0003922848083099197,
+                "interference_increase": 5.6300961636974274e-05
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.004636178081292822,
+                "loss_after": 0.00551646125854161,
+                "interference_increase": 0.0008802831772487885
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 0.0008208846891977563,
+                "loss_after": 0.0009765795946964117,
+                "interference_increase": 0.0001556949054986554
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.0018466831103111365,
+                "loss_after": 0.002100051998103203,
+                "interference_increase": 0.00025336888779206633
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.0016702392958653752,
+                "loss_after": 0.001980223687981878,
+                "interference_increase": 0.000309984392116503
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task3_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.06336070987598819,
+            "virtual_gradient_norm": 1.0514160233671563
+          }
+        },
+        {
+          "step": 10,
+          "recovery_loss": 0.0610302853433759,
+          "tail_executed_action_loss": 0.056843562353676144,
+          "protected_prefix_KL": 0.004186722989699753,
+          "selected_rehearsal_loss": 0.004300026479964828,
+          "gradient_norm": 0.4508079626298811,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.001594774752772893,
+                "loss_after": 0.0017350512182024156,
+                "interference_increase": 0.00014027646542952256
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.0008953932829201494,
+                "loss_after": 0.001015485074141881,
+                "interference_increase": 0.00012009179122173159
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.002824451483858156,
+                "loss_after": 0.0032572408649537738,
+                "interference_increase": 0.00043278938109561757
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.003422365990066487,
+                "loss_after": 0.0037697493708180037,
+                "interference_increase": 0.00034738338075151684
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.001660551266765556,
+                "loss_after": 0.001881465448723325,
+                "interference_increase": 0.00022091418195776895
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.0007551784125413341,
+                "loss_after": 0.000843834871330699,
+                "interference_increase": 8.86564587893649e-05
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.004385439574026011,
+                "loss_after": 0.0049040634366316295,
+                "interference_increase": 0.0005186238626056182
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 0.0006956779281760498,
+                "loss_after": 0.0008224840877217606,
+                "interference_increase": 0.00012680615954571077
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 0.000680172650328628,
+                "loss_after": 0.0008204717245437505,
+                "interference_increase": 0.00014029907421512253
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 0.0005833388187176272,
+                "loss_after": 0.0006651037362194635,
+                "interference_increase": 8.176491750183635e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.0026004459660924936,
+                "loss_after": 0.0030574169919873515,
+                "interference_increase": 0.0004569710258948579
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.0012956168767661704,
+                "loss_after": 0.0014860871418988111,
+                "interference_increase": 0.00019047026513264076
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.002086922561071083,
+                "loss_after": 0.0024322489224598365,
+                "interference_increase": 0.0003453263613887535
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 0.0007376444261033058,
+                "loss_after": 0.0008652458969230745,
+                "interference_increase": 0.00012760147081976867
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 0.00037841313285455274,
+                "loss_after": 0.00042835294474464266,
+                "interference_increase": 4.993981189008992e-05
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.0053028463348115664,
+                "loss_after": 0.006170152112930816,
+                "interference_increase": 0.0008673057781192492
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 0.0009633637068408963,
+                "loss_after": 0.0011139017650415594,
+                "interference_increase": 0.00015053805820066312
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.002076303463176923,
+                "loss_after": 0.0023130079400075156,
+                "interference_increase": 0.0002367044768305927
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.0019371421522573263,
+                "loss_after": 0.0022521583540378127,
+                "interference_increase": 0.0003150162017804864
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task2_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.0610302853433759,
+            "virtual_gradient_norm": 1.0036083254072377
+          }
+        },
+        {
+          "step": 11,
+          "recovery_loss": 0.05886371117088775,
+          "tail_executed_action_loss": 0.054466170255129065,
+          "protected_prefix_KL": 0.004397540915758683,
+          "selected_rehearsal_loss": 0.004842225123363229,
+          "gradient_norm": 0.35432768691600725,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.0017452346822917732,
+                "loss_after": 0.0019166913012921823,
+                "interference_increase": 0.00017145661900040904
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.0009906675505914012,
+                "loss_after": 0.001086634608594103,
+                "interference_increase": 9.596705800270179e-05
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.002855495896008162,
+                "loss_after": 0.0030808651823855905,
+                "interference_increase": 0.00022536928637742829
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.00360703420008384,
+                "loss_after": 0.00398079481026712,
+                "interference_increase": 0.0003737606101832801
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.001929494922678249,
+                "loss_after": 0.002198303020116056,
+                "interference_increase": 0.0002688080974378069
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.0008534384808937108,
+                "loss_after": 0.0009435592528265948,
+                "interference_increase": 9.0120771932884e-05
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.004563171952717292,
+                "loss_after": 0.005008983827506235,
+                "interference_increase": 0.0004458118747889435
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 0.0007598367884805638,
+                "loss_after": 0.0008490412515396783,
+                "interference_increase": 8.920446305911455e-05
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 0.000747018630044147,
+                "loss_after": 0.0008467363168696743,
+                "interference_increase": 9.971768682552737e-05
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 0.0006904937585624174,
+                "loss_after": 0.0007864820375331251,
+                "interference_increase": 9.598827897070762e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.0029374976812558675,
+                "loss_after": 0.0033345807039608113,
+                "interference_increase": 0.0003970830227049437
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.0013032208876026647,
+                "loss_after": 0.0013839984280826628,
+                "interference_increase": 8.077754047999819e-05
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.0023290812997607525,
+                "loss_after": 0.00268999086940408,
+                "interference_increase": 0.0003609095696433277
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 0.0008369009349745271,
+                "loss_after": 0.0009483100722162463,
+                "interference_increase": 0.00011140913724171921
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 0.00040380124400810557,
+                "loss_after": 0.00043381406299401157,
+                "interference_increase": 3.0012818985906e-05
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.005932115359635165,
+                "loss_after": 0.006763744083307254,
+                "interference_increase": 0.0008316287236720885
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 0.0011106368312207222,
+                "loss_after": 0.0012657674420521142,
+                "interference_increase": 0.00015513061083139205
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.002252558762631876,
+                "loss_after": 0.002430308980276135,
+                "interference_increase": 0.0001777502176442589
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.0022397232226524094,
+                "loss_after": 0.0025836569142355034,
+                "interference_increase": 0.000343933691583094
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task3_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.05886371117088775,
+            "virtual_gradient_norm": 0.9205259608116445
+          }
+        },
+        {
+          "step": 12,
+          "recovery_loss": 0.056950288103390624,
+          "tail_executed_action_loss": 0.052378768378885776,
+          "protected_prefix_KL": 0.004571519724504848,
+          "selected_rehearsal_loss": 0.005172091733207062,
+          "gradient_norm": 0.34578577225433416,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.0019107504319171252,
+                "loss_after": 0.0020816074126895905,
+                "interference_increase": 0.00017085698077246524
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.0010564845987288416,
+                "loss_after": 0.001114475672833309,
+                "interference_increase": 5.799107410446743e-05
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.002919892539595333,
+                "loss_after": 0.003161053901629805,
+                "interference_increase": 0.000241161362034472
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.003699488046617263,
+                "loss_after": 0.003980946813739234,
+                "interference_increase": 0.00028145876712197104
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.0022227591171721482,
+                "loss_after": 0.0024923138362746254,
+                "interference_increase": 0.0002695547191024772
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.0009204849494018849,
+                "loss_after": 0.0009725857574081712,
+                "interference_increase": 5.2100808006286356e-05
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.004686273060359705,
+                "loss_after": 0.005069007027761712,
+                "interference_increase": 0.0003827339674020063
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 0.0008148101665227221,
+                "loss_after": 0.0008859605277289392,
+                "interference_increase": 7.115036120621714e-05
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 0.0008094802582208903,
+                "loss_after": 0.0008957610632490531,
+                "interference_increase": 8.628080502816283e-05
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 0.0007723741525820165,
+                "loss_after": 0.0008330009781371395,
+                "interference_increase": 6.0626825555123e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.0032703502705525734,
+                "loss_after": 0.0036499427483666106,
+                "interference_increase": 0.00037959247781403724
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.0013232808894932321,
+                "loss_after": 0.0014070738590519771,
+                "interference_increase": 8.379296955874499e-05
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.0025422878848438924,
+                "loss_after": 0.002876160097093122,
+                "interference_increase": 0.0003338722122492297
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 0.0009236717856941464,
+                "loss_after": 0.0010103896034230294,
+                "interference_increase": 8.671781772888302e-05
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 0.0004217603910404915,
+                "loss_after": 0.00043660573743337756,
+                "interference_increase": 1.4845346392886039e-05
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.0064899676704548125,
+                "loss_after": 0.0072574207882224965,
+                "interference_increase": 0.000767453117767684
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 0.0012437364368995437,
+                "loss_after": 0.0013750355584744157,
+                "interference_increase": 0.000131299121574872
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.00240027954160651,
+                "loss_after": 0.0025428771160679034,
+                "interference_increase": 0.00014259757446139333
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.0025173669344926166,
+                "loss_after": 0.0028364012162539884,
+                "interference_increase": 0.00031903428176137177
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task3_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.056950288103390624,
+            "virtual_gradient_norm": 0.8889873562417403
+          }
+        },
+        {
+          "step": 13,
+          "recovery_loss": 0.055141745175502584,
+          "tail_executed_action_loss": 0.050439481484050364,
+          "protected_prefix_KL": 0.004702263691452223,
+          "selected_rehearsal_loss": 0.005260652333477837,
+          "gradient_norm": 0.3928604804073109,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.0020743966085312606,
+                "loss_after": 0.0022302922596291823,
+                "interference_increase": 0.00015589565109792175
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.001084335655513942,
+                "loss_after": 0.001103821776525045,
+                "interference_increase": 1.948612101110303e-05
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.0030071443890153553,
+                "loss_after": 0.0032637987525296645,
+                "interference_increase": 0.0002566543635143092
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.0037156829712648373,
+                "loss_after": 0.003919548265980432,
+                "interference_increase": 0.00020386529471559493
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.002514889365360445,
+                "loss_after": 0.0027627192754135117,
+                "interference_increase": 0.0002478299100530665
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.0009493756414081133,
+                "loss_after": 0.0009635021397691111,
+                "interference_increase": 1.4126498360997808e-05
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.0047674710755619696,
+                "loss_after": 0.00509742070223026,
+                "interference_increase": 0.00032994962666829056
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 0.0008511529614760203,
+                "loss_after": 0.0009041173656249088,
+                "interference_increase": 5.296440414888847e-05
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 0.0008576284275913596,
+                "loss_after": 0.0009290956797729502,
+                "interference_increase": 7.146725218159058e-05
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 0.0008163731678456001,
+                "loss_after": 0.0008373796385569802,
+                "interference_increase": 2.1006470711380093e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.0035841031901974476,
+                "loss_after": 0.003937602020368862,
+                "interference_increase": 0.0003534988301714145
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.001350618401444257,
+                "loss_after": 0.0014397025277382827,
+                "interference_increase": 8.908412629402571e-05
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.0027214652742491405,
+                "loss_after": 0.003023715544895332,
+                "interference_increase": 0.00030225027064619166
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 0.0009839775511601139,
+                "loss_after": 0.0010416456704919793,
+                "interference_increase": 5.766811933186544e-05
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 0.0004254990164584653,
+                "loss_after": 0.00042571204471058416,
+                "interference_increase": 2.1302825211884455e-07
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.006962425404887436,
+                "loss_after": 0.007653205627246063,
+                "interference_increase": 0.0006907802223586274
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 0.0013488897171121067,
+                "loss_after": 0.0014503163179205613,
+                "interference_increase": 0.00010142660080845458
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.0025147706362311636,
+                "loss_after": 0.002622953568859023,
+                "interference_increase": 0.00010818293262785956
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.002757761308177769,
+                "loss_after": 0.0030432888676106785,
+                "interference_increase": 0.00028552755943290955
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task2_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector2_offset2",
+              "t502_field_sector3_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.055141745175502584,
+            "virtual_gradient_norm": 0.8608352130962248
+          }
+        },
+        {
+          "step": 14,
+          "recovery_loss": 0.05342841798247139,
+          "tail_executed_action_loss": 0.048639062002907435,
+          "protected_prefix_KL": 0.004789355979563956,
+          "selected_rehearsal_loss": 0.005216607253985724,
+          "gradient_norm": 0.39613625002312625,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.0022413668367957593,
+                "loss_after": 0.0023885150142705937,
+                "interference_increase": 0.00014714817747483446
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.0010893530369977071,
+                "loss_after": 0.0010845907925129046,
+                "interference_increase": -4.7622444848025806e-06
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.002914914136718741,
+                "loss_after": 0.003009379616686218,
+                "interference_increase": 9.446547996747696e-05
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.0037745583564699446,
+                "loss_after": 0.004004341043339247,
+                "interference_increase": 0.0002297826868693023
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.0028124331402302463,
+                "loss_after": 0.003045628587010057,
+                "interference_increase": 0.0002331954467798109
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.000979828036604259,
+                "loss_after": 0.0009914361175221045,
+                "interference_increase": 1.1608080917845532e-05
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.004813706315436487,
+                "loss_after": 0.005098961384449933,
+                "interference_increase": 0.0002852550690134459
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 0.0008527572993208093,
+                "loss_after": 0.0008701722470202628,
+                "interference_increase": 1.741494769945341e-05
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 0.0008683718929972791,
+                "loss_after": 0.0009018235846131065,
+                "interference_increase": 3.3451691615827314e-05
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 0.0008684705868307114,
+                "loss_after": 0.0008909564490778182,
+                "interference_increase": 2.2485862247106762e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.0038073988390953917,
+                "loss_after": 0.004083327796284426,
+                "interference_increase": 0.00027592895718903413
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.0012834150118556677,
+                "loss_after": 0.0012891176305520177,
+                "interference_increase": 5.702618696350019e-06
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.0028951163811685885,
+                "loss_after": 0.0031897119889871973,
+                "interference_increase": 0.00029459560781860874
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 0.0010244712728251456,
+                "loss_after": 0.0010600351256658607,
+                "interference_increase": 3.556385284071511e-05
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 0.0004176428066429588,
+                "loss_after": 0.00040573530974816424,
+                "interference_increase": -1.1907496894794536e-05
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.007347181266390112,
+                "loss_after": 0.007960760915987592,
+                "interference_increase": 0.0006135796495974804
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 0.0014451715753672652,
+                "loss_after": 0.001535834616515644,
+                "interference_increase": 9.06630411483787e-05
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.002566935175924504,
+                "loss_after": 0.0026144203405179707,
+                "interference_increase": 4.748516459346678e-05
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.0029979919127174617,
+                "loss_after": 0.0032810322127144803,
+                "interference_increase": 0.0002830402999970186
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task4_13",
+              "t502_field_sector5_offset2",
+              "t502_field_sector3_offset2",
+              "t502_field_sector7_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.05342841798247139,
+            "virtual_gradient_norm": 0.8355775614469074
+          }
+        },
+        {
+          "step": 15,
+          "recovery_loss": 0.0517805823356038,
+          "tail_executed_action_loss": 0.04697067481496304,
+          "protected_prefix_KL": 0.004809907520640761,
+          "selected_rehearsal_loss": 0.005858722362214056,
+          "gradient_norm": 0.31850452788492006,
+          "ranking": {
+            "measures": [
+              {
+                "id": "dev_task0_13",
+                "family": 0,
+                "loss_before": 0.002244231617841472,
+                "loss_after": 0.00227482472093538,
+                "interference_increase": 3.059310309390774e-05
+              },
+              {
+                "id": "dev_task1_13",
+                "family": 0,
+                "loss_before": 0.0010461682579784477,
+                "loss_after": 0.001009670048340873,
+                "interference_increase": -3.64982096375747e-05
+              },
+              {
+                "id": "dev_task2_13",
+                "family": 0,
+                "loss_before": 0.002989098488858363,
+                "loss_after": 0.0032238094989703136,
+                "interference_increase": 0.00023471101011195063
+              },
+              {
+                "id": "dev_task3_13",
+                "family": 0,
+                "loss_before": 0.0038923595257496727,
+                "loss_after": 0.004160251547413957,
+                "interference_increase": 0.00026789202166428456
+              },
+              {
+                "id": "dev_task4_13",
+                "family": 0,
+                "loss_before": 0.002800145445022246,
+                "loss_after": 0.002808332355440862,
+                "interference_increase": 8.1869104186158e-06
+              },
+              {
+                "id": "dev_task5_13",
+                "family": 0,
+                "loss_before": 0.0009438855413300286,
+                "loss_after": 0.0009104267009381533,
+                "interference_increase": -3.345884039187533e-05
+              },
+              {
+                "id": "dev_task7_13",
+                "family": 0,
+                "loss_before": 0.004894420490806634,
+                "loss_after": 0.005186038889536719,
+                "interference_increase": 0.00029161839873008497
+              },
+              {
+                "id": "t502_field_sector0_offset1",
+                "family": 1,
+                "loss_before": 0.0008471394072763755,
+                "loss_after": 0.000878923241414014,
+                "interference_increase": 3.178383413763848e-05
+              },
+              {
+                "id": "t502_field_sector1_offset1",
+                "family": 1,
+                "loss_before": 0.0008822944567097497,
+                "loss_after": 0.0009394271313380901,
+                "interference_increase": 5.713267462834038e-05
+              },
+              {
+                "id": "t502_field_sector2_offset1",
+                "family": 1,
+                "loss_before": 0.0008287843420261756,
+                "loss_after": 0.0007919296772971738,
+                "interference_increase": -3.685466472900178e-05
+              },
+              {
+                "id": "t502_field_sector2_offset2",
+                "family": 1,
+                "loss_before": 0.004202076724613431,
+                "loss_after": 0.004640189437074717,
+                "interference_increase": 0.0004381127124612862
+              },
+              {
+                "id": "t502_field_sector3_offset1",
+                "family": 1,
+                "loss_before": 0.0013166196971799075,
+                "loss_after": 0.0014079824408984017,
+                "interference_increase": 9.136274371849412e-05
+              },
+              {
+                "id": "t502_field_sector3_offset2",
+                "family": 1,
+                "loss_before": 0.002972593492960528,
+                "loss_after": 0.003178291815179739,
+                "interference_increase": 0.0002056983222192112
+              },
+              {
+                "id": "t502_field_sector4_offset1",
+                "family": 1,
+                "loss_before": 0.0010090497736667346,
+                "loss_after": 0.0010136448905844631,
+                "interference_increase": 4.59511691772857e-06
+              },
+              {
+                "id": "t502_field_sector5_offset1",
+                "family": 1,
+                "loss_before": 0.00039732954588666565,
+                "loss_after": 0.0003842267976588649,
+                "interference_increase": -1.310274822780076e-05
+              },
+              {
+                "id": "t502_field_sector5_offset2",
+                "family": 1,
+                "loss_before": 0.007473439214725956,
+                "loss_after": 0.007846571090033852,
+                "interference_increase": 0.0003731318753078961
+              },
+              {
+                "id": "t502_field_sector6_offset1",
+                "family": 1,
+                "loss_before": 0.0014510491056078983,
+                "loss_after": 0.0014741603404076085,
+                "interference_increase": 2.3111234799710195e-05
+              },
+              {
+                "id": "t502_field_sector7_offset1",
+                "family": 1,
+                "loss_before": 0.0026424113092359484,
+                "loss_after": 0.0027244959314119688,
+                "interference_increase": 8.20846221760204e-05
+              },
+              {
+                "id": "t502_field_sector7_offset2",
+                "family": 1,
+                "loss_before": 0.0030303232100700656,
+                "loss_after": 0.0031384055919645767,
+                "interference_increase": 0.00010808238189451104
+              }
+            ],
+            "selected": [
+              "dev_task7_13",
+              "dev_task3_13",
+              "t502_field_sector2_offset2",
+              "t502_field_sector5_offset2",
+              "t502_field_sector3_offset2"
+            ],
+            "virtual_discarded_Adam": 1,
+            "virtual_repair_loss": 0.0517805823356038,
+            "virtual_gradient_norm": 0.8080078074575594
+          }
+        }
+      ],
+      "current_student_feedback_states": true,
+      "teacher_executed_action_feasible_set": true,
+      "explicit_student_prefix_location_preservation": true,
+      "prefix_keep_weight": 1.0,
+      "full_history_recomputed": true,
+      "standard_DAgger_MIR_inspired_NOT_original": true
+    },
+    "model": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t545_protected_prefix_repair/proposal.pt.gz",
+      "sha256": "c7d9c0ff721f911965563813b93db1ddf477e200f0a099a2eeb01e31753e7a25",
+      "bytes": 1468460,
+      "policy_hash": "ded8a506d4490eb99775dd9bac6b83ceb6c3fbe557126e138a4c5f3f3674bb33",
+      "joint_hash": "d62d1b7f92fb95f2043c7bf0abe7dee15033bdd43bdec19eb7e6e5fb42c555fd"
+    },
+    "check": {
+      "old8": {
+        "valid": 8,
+        "success": 8,
+        "contact": 0,
+        "timeout": 0,
+        "invalid": 0,
+        "censored": 0
+      },
+      "field24": {
+        "valid": 24,
+        "success": 10,
+        "contact": 10,
+        "timeout": 4,
+        "invalid": 0,
+        "censored": 0
+      },
+      "field_success_ids": [
+        "t502_field_sector2_offset1",
+        "t502_field_sector2_offset2",
+        "t502_field_sector3_offset1",
+        "t502_field_sector3_offset2",
+        "t502_field_sector4_offset1",
+        "t502_field_sector5_offset1",
+        "t502_field_sector5_offset2",
+        "t502_field_sector6_offset1",
+        "t502_field_sector7_offset1",
+        "t502_field_sector7_offset2"
+      ],
+      "distance_sum": 99.92544989363844,
+      "all_field24_pass": false,
+      "lost_prior_field_ids": [
+        "t502_field_sector0_offset1",
+        "t502_field_sector1_offset1"
+      ],
+      "gained_vs_T507": [],
+      "panel_repaired": false,
+      "accepted": false
+    },
+    "accepted": false,
+    "old275": null,
+    "six54": null,
+    "eight54": null,
+    "fresh16": null,
+    "reload78": null,
+    "virtual_discarded_Adam": 16,
+    "retained_joint_hash": "c89953eb1ccd73c59467537a8524460d1aa67a83734cd77c5f86651557373559",
+    "reason": "REPAIR_REJECTED_ROLLBACK"
+  },
+  "audit": {
+    "state": "PASS",
+    "pid": 241146,
+    "new_native": 0,
+    "discarded_historical_Actor_Adam": 16,
+    "discarded_virtual_Adam": 16,
+    "teacher_actual_feedback_commands_and_intervention_rebuilt": true,
+    "all_saved_full_training_density_rewards_hidden_rebuilt": true,
+    "Actor_Adam_and_virtual_MIR_ranking_rollback_exact": true,
+    "compact_evaluation_full120_NOT_reconstructed_offline": true,
+    "all_native_replay_full_hashes_and_integration_exact": true,
+    "physics": 1706600,
+    "commands": 68
+  },
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "main_seconds": 1016.186943769455,
+  "main_native": 1706600,
+  "main_commands": 68,
+  "engineering_native": 0,
+  "engineering_commands": 0,
+  "new_policy_gradient_updates": 0,
+  "old275": null,
+  "six54": null,
+  "eight54": null,
+  "fresh16": null,
+  "reload78": null,
+  "scientific_pids_stopped": [
+    238824,
+    241146
+  ],
+  "epoch": 1794622197.9676735
+}
