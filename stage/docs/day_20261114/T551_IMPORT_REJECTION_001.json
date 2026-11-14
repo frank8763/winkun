@@ -1,0 +1,31 @@
+{
+  "state": "IMPORT_REJECTED_BEFORE_REGISTRATION",
+  "error": "AttributeError: partially initialized module 'runtime' has no attribute 'C' (historical generic-module collision)",
+  "new_native": 0,
+  "new_optimizer": 0,
+  "source_snapshot": "stage/experiments/t551_retention_recovery_probe/registration_failed_001",
+  "source_files": [
+    {
+      "file": "driver.py",
+      "sha256": "4d95f1fc0e985d6692a861ecb4d20a512237db8442d737be145e5965811e2a57"
+    },
+    {
+      "file": "launch.py",
+      "sha256": "6d58706bf82a800fe965b828e7cb82e3ba2b02c2a339bf79cf3efb94ac584857"
+    },
+    {
+      "file": "runtime.py",
+      "sha256": "c84bb19f70649131a7f8df5305999267fe7393e318479d0816b37398519eae17"
+    },
+    {
+      "file": "transport.py",
+      "sha256": "6c614e5753fc7d3b34559e9cc05b727e4c40ef6f2fa77b49b15d03a32437bc2f"
+    },
+    {
+      "file": "control.py",
+      "sha256": "2a35ce6c445939bfe1bd8d065974046369b5751c5c05e1cf0cf05e9c4e79487a"
+    }
+  ],
+  "fix": "Unique t551_runtime module name, no scientific changes",
+  "epoch": 1794660907.245478
+}
