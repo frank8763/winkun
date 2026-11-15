@@ -1,3 +1,5 @@
+2026-11-15 T565已结束66.293714s，4live/4shadow/4audit历史丢弃联合方向各对应4solve，预检4另计，0Adam0RL0native；3保留1拒绝，peak .139496→.138339仅降.83%，27RMS/24fit保持但剩3max .110012/.138339/.137174未过.1，所有原生门null。最后七档小四档peak下降但RMS>.02（最小.020082396），原方向未把RMS纳入solve，非场景或永久不可行证明。独立audit/12原始远端SHA/10manifest再次核过，全部PID退。下一约束联合方向仅草案未启动，不追加T565半径/方向或放宽门；17:30窗口不扩。详day_20261115/t565/FINDINGS_AND_NEXT/COMPLETION_VERIFICATION，T550保留，CPU一核GPUoff/Phase隔离。
+
 2026-11-15 T565平滑策略蒸馏试验结束，COMPLETE，真实联合残差校正与条件原生结果见day_20261115/t565/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。本轮监督表示迁移，不晋升，不自动追加学习或重启。
 
 2026-11-15 用户要求加大力度/继续已落实T565联合多动作残差校正，已注册/零原生预检4丢弃方向应用及4solve PASS（2live+2shadow均接受/精确），尚待唯一launch。初始化T564未晋升模型，同93186变量/27history；选全部abs误差>.1并补top至少32最多128，有符号Jacobian联合阻尼solve，lambda=max1e−12,1e−4meanGramdiag，内部目标.075，delta范数cap.005，固定七因素回溯；原24fit/全27RMS/整体peak实降接受，首次全拒停，max12方向+shadow/audit，0Adam0RL。过原27动作门才2short+exact/32自主+32exact保原23GOAL ID；不称预检导航进步。最坏3203204物理72cmd2400main/own6MiB仍计日19M/600/12300余额，16:30学17:00native17:30all，CPU一核GPUoff/global1GiB/free40/Phase隔离。详day_20261115/t565/PLAN/PREFLIGHT/BUDGET/SOURCES及真实launch/status，来源官方文档主任务核读，未称Moré全文或完整LM复现/原创安全。
