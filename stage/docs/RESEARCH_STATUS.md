@@ -1,3 +1,7 @@
+2026-11-15 T562下午检查：12:18科学与audit已结束，0native/0RL，500live500shadow+500独立audit丢弃/4预检另计。保存27history RMS全过，24同时max≤.1；剩sector0off2/sector1off2/sector4off2共20超限决策，最坏RMS .018813/max .182749。比初始化MSE下降97.81%，联合变量不归因单模块；32自主/407/54/fresh/reload均null，非导航24/27成功率。原断网pending保留，15点后检查仅补transport，12原始远端逐SHA现过，本地10manifest再次全过，所有科学PID退出。下一尾部/约束式纠正仅草案，未注册启动，不延已过15:00窗口。详day_20261115/t562/FINDINGS_AND_NEXT/COMPLETION_VERIFICATION/BACKUP_RECOVERY，T550保留，CPU一核GPUoff/Phase隔离。
+
+2026-11-15 T562平滑策略蒸馏试验结束，COMPLETE，真实监督Adam与条件原生结果见day_20261115/t562/FINAL_REPORT，remote=PENDING。本轮监督表示迁移，不晋升，不自动追加学习或重启。
+
 2026-11-15 T561最终已结束：1500live1500shadow/独立1500audit丢弃PASS，0native/0RL，最坏RMS .111742/max1.022835未过原.02/.1，所有自主门均null；全12原始远端逐SHA及本地manifest再次PASS、科学PID均退，不称仍运行。用户15:00下午接力授权内新T562完整history表示学习已注册/4合成Adam预检PASS，尚待唯一launch：明确从未晋升T561研究模型freshAdam，解冻encoder/core/student93186参数，固定500full27historyBPTT+500shadow+500audit，无缓存旧hidden伪训练；原head/adapters/normalization冻结但函数非冻结。门过才2short+exact/32自主+32exact保23ID；0RL/407/fresh/reload，own7.5MiB/3203204物理72cmd3600main计原日19M/600/12300内，13:00学14:30native15:00all不变，CPU一核GPUoff/Phase隔离。详day_20261115/t562/PLAN/PREFLIGHT/BUDGET及真实launch/status。
 
 2026-11-15 T561平滑策略蒸馏试验结束，COMPLETE，真实监督Adam与条件原生结果见day_20261115/t561/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。本轮监督表示迁移，不晋升，不自动追加学习或重启。

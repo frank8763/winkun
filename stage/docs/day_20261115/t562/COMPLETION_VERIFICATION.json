@@ -1,0 +1,78 @@
+{
+  "state": "POSTRUN_SAVED_MODEL_VERIFIED_NO_UPDATE",
+  "epoch": 1794726470.546256,
+  "new_native": 0,
+  "new_Adam": 0,
+  "manifest_verified": 10,
+  "all_scientific_PIDs_stopped": true,
+  "fit_histories_both_pass": 24,
+  "RMS_pass": 27,
+  "total": 27,
+  "remaining_peak_errors": [
+    {
+      "id": "t502_field_sector0_offset2",
+      "bad_decisions": 1,
+      "maximum_error": 0.10885483026504517,
+      "component": "steer",
+      "worst_original_decision": 200,
+      "component_max": [
+        0.017346858978271484,
+        0.10885483026504517
+      ],
+      "bad_indices": [
+        200
+      ]
+    },
+    {
+      "id": "t502_field_sector1_offset2",
+      "bad_decisions": 7,
+      "maximum_error": 0.18274876475334167,
+      "component": "steer",
+      "worst_original_decision": 218,
+      "component_max": [
+        0.17585104703903198,
+        0.18274876475334167
+      ],
+      "bad_indices": [
+        195,
+        196,
+        218,
+        229,
+        317,
+        363,
+        364
+      ]
+    },
+    {
+      "id": "t502_field_sector4_offset2",
+      "bad_decisions": 12,
+      "maximum_error": 0.16261082887649536,
+      "component": "steer",
+      "worst_original_decision": 311,
+      "component_max": [
+        0.07416117936372757,
+        0.16261082887649536
+      ],
+      "bad_indices": [
+        297,
+        302,
+        305,
+        310,
+        311,
+        314,
+        321,
+        325,
+        331,
+        332,
+        364,
+        365
+      ]
+    }
+  ],
+  "global_bytes": 1064098782,
+  "free_bytes": 238453870592,
+  "closed_loop32": null,
+  "six54": null,
+  "eight54": null,
+  "posthoc_adapter_correction": "Initial in-memory checker used unavailable torch.flatnonzero, exited0native0Adam beforeoutput; replaced with torch.nonzero.flatten, no training/raw changes."
+}
