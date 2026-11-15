@@ -1,0 +1,237 @@
+{
+  "state": "READ_ONLY_ANALYSIS_COMPLETE",
+  "original_summary_sha256": "86b8b013b79b1c0e87db42ec49829d7a224e22893ddf85898337bcf28b11c173",
+  "source_initial": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t572_functional_trust_region/unconstrained/proposal.pt.gz",
+    "sha256": "0d7d5e0ad6ac37a6d9c26df0b1d6ccdd261075a8b39ad5efc59fbd836192af43",
+    "policy_hash": "490d521dcf41218826b756e019d80c59ad08a0cfdd71a874bac40f26a3acd320",
+    "joint_hash": "c77e5e745de3db2491dc4daffe696dd66db1aa19025c646b25e30bc01048c144",
+    "bytes": 856698
+  },
+  "source_proposal": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t575_complete_neural_recovery/proposal.pt.gz",
+    "sha256": "35376317c8c912063ed7c4012506393de04df5ba78f5a86a8d8bb6de675d53e7",
+    "policy_hash": "b22511ae379126a1e252784971386e23c38b9af608da8501b22ab11f53991dcb",
+    "joint_hash": "47bd0fc1d45ea517afb947a1e8d051b525eeea971fa04061ec15c65be3f745dc",
+    "bytes": 856705
+  },
+  "changed_state_keys": [
+    "continual.2.weight",
+    "continual.2.bias"
+  ],
+  "old_history_design_shape": [
+    4839,
+    33
+  ],
+  "rank_default_torch_tolerance": 33,
+  "nullity_per_action": 0,
+  "smallest_singular_value": 4.838304443602485,
+  "largest_singular_value": 264.9454673211075,
+  "condition_number": 54.75998263636248,
+  "finite_basis_implication": "If full column rank, exactly zero raw-location changes at all retained old histories force zero final-layer coefficient change. This does not prove old success and new success cannot coexist, does not prove backbone capacity insufficient, and does not certify trajectory stability.",
+  "per_old_task": [
+    {
+      "id": "dev_task0_13",
+      "lost_in_autonomous_test": false,
+      "n": 104,
+      "raw_location_RMS": 0.011694447068777614,
+      "raw_location_absmax": 0.03478824743288691,
+      "command_absmax": 0.034788246266543865,
+      "command_RMS": 0.011250070735784306
+    },
+    {
+      "id": "dev_task1_13",
+      "lost_in_autonomous_test": false,
+      "n": 87,
+      "raw_location_RMS": 0.0037339475255441556,
+      "raw_location_absmax": 0.026542596637891103,
+      "command_absmax": 0.02654258906841278,
+      "command_RMS": 0.0037184960112754913
+    },
+    {
+      "id": "dev_task2_13",
+      "lost_in_autonomous_test": false,
+      "n": 103,
+      "raw_location_RMS": 0.004873089700552022,
+      "raw_location_absmax": 0.02889193623236458,
+      "command_absmax": 0.028891921043395996,
+      "command_RMS": 0.0047879514125164745
+    },
+    {
+      "id": "dev_task3_13",
+      "lost_in_autonomous_test": false,
+      "n": 120,
+      "raw_location_RMS": 0.008042605677414928,
+      "raw_location_absmax": 0.02729328944788667,
+      "command_absmax": 0.027293264865875244,
+      "command_RMS": 0.008019985067057932
+    },
+    {
+      "id": "dev_task4_13",
+      "lost_in_autonomous_test": false,
+      "n": 151,
+      "raw_location_RMS": 0.009741998729371046,
+      "raw_location_absmax": 0.03635266901507178,
+      "command_absmax": 0.03635266423225403,
+      "command_RMS": 0.009495541500588563
+    },
+    {
+      "id": "dev_task5_13",
+      "lost_in_autonomous_test": false,
+      "n": 118,
+      "raw_location_RMS": 0.0043786865501204905,
+      "raw_location_absmax": 0.01895433014011877,
+      "command_absmax": 0.0189543217420578,
+      "command_RMS": 0.003797798537334707
+    },
+    {
+      "id": "dev_task6_13",
+      "lost_in_autonomous_test": true,
+      "n": 218,
+      "raw_location_RMS": 0.010509876497152208,
+      "raw_location_absmax": 0.036610541182712064,
+      "command_absmax": 0.036610543727874756,
+      "command_RMS": 0.010368754296033794
+    },
+    {
+      "id": "dev_task7_13",
+      "lost_in_autonomous_test": false,
+      "n": 206,
+      "raw_location_RMS": 0.008945413116860966,
+      "raw_location_absmax": 0.03151870691709069,
+      "command_absmax": 0.031518757343292236,
+      "command_RMS": 0.008854256281686354
+    },
+    {
+      "id": "t502_field_sector0_offset1",
+      "lost_in_autonomous_test": false,
+      "n": 197,
+      "raw_location_RMS": 0.003233427376608647,
+      "raw_location_absmax": 0.011689273700215441,
+      "command_absmax": 0.01168927550315857,
+      "command_RMS": 0.003166196577110203
+    },
+    {
+      "id": "t502_field_sector0_offset2",
+      "lost_in_autonomous_test": false,
+      "n": 380,
+      "raw_location_RMS": 0.01211511051733725,
+      "raw_location_absmax": 0.0866984751036586,
+      "command_absmax": 0.08669846877455711,
+      "command_RMS": 0.012109619705522772
+    },
+    {
+      "id": "t502_field_sector1_offset1",
+      "lost_in_autonomous_test": true,
+      "n": 199,
+      "raw_location_RMS": 0.0020780879145048635,
+      "raw_location_absmax": 0.01035023519712238,
+      "command_absmax": 0.010350234806537628,
+      "command_RMS": 0.0020523696748907887
+    },
+    {
+      "id": "t502_field_sector1_offset2",
+      "lost_in_autonomous_test": true,
+      "n": 381,
+      "raw_location_RMS": 0.009710853368400746,
+      "raw_location_absmax": 0.051701330359742004,
+      "command_absmax": 0.051701366901397705,
+      "command_RMS": 0.009629733090585561
+    },
+    {
+      "id": "t502_field_sector2_offset1",
+      "lost_in_autonomous_test": false,
+      "n": 157,
+      "raw_location_RMS": 0.0028470261183346484,
+      "raw_location_absmax": 0.013341195671739303,
+      "command_absmax": 0.013341203331947327,
+      "command_RMS": 0.0027928745909802594
+    },
+    {
+      "id": "t502_field_sector3_offset1",
+      "lost_in_autonomous_test": false,
+      "n": 205,
+      "raw_location_RMS": 0.004133977579210168,
+      "raw_location_absmax": 0.024162834368291333,
+      "command_absmax": 0.024162832647562027,
+      "command_RMS": 0.004126561268620961
+    },
+    {
+      "id": "t502_field_sector3_offset2",
+      "lost_in_autonomous_test": false,
+      "n": 368,
+      "raw_location_RMS": 0.009985817930796908,
+      "raw_location_absmax": 0.05056812774097086,
+      "command_absmax": 0.0505681037902832,
+      "command_RMS": 0.009955156634849993
+    },
+    {
+      "id": "t502_field_sector4_offset1",
+      "lost_in_autonomous_test": false,
+      "n": 164,
+      "raw_location_RMS": 0.004041964692263927,
+      "raw_location_absmax": 0.021738016725298237,
+      "command_absmax": 0.021738022565841675,
+      "command_RMS": 0.004031709990178725
+    },
+    {
+      "id": "t502_field_sector4_offset2",
+      "lost_in_autonomous_test": false,
+      "n": 429,
+      "raw_location_RMS": 0.012725166909865138,
+      "raw_location_absmax": 0.06664886119886726,
+      "command_absmax": 0.06664890050888062,
+      "command_RMS": 0.012628615135394032
+    },
+    {
+      "id": "t502_field_sector5_offset1",
+      "lost_in_autonomous_test": false,
+      "n": 166,
+      "raw_location_RMS": 0.0055009288192350006,
+      "raw_location_absmax": 0.022544867886197667,
+      "command_absmax": 0.02254486083984375,
+      "command_RMS": 0.005490996247748802
+    },
+    {
+      "id": "t502_field_sector5_offset2",
+      "lost_in_autonomous_test": false,
+      "n": 363,
+      "raw_location_RMS": 0.008847859045807536,
+      "raw_location_absmax": 0.0410904217800967,
+      "command_absmax": 0.041090428829193115,
+      "command_RMS": 0.008846768396928892
+    },
+    {
+      "id": "t502_field_sector6_offset1",
+      "lost_in_autonomous_test": false,
+      "n": 162,
+      "raw_location_RMS": 0.00309879270128336,
+      "raw_location_absmax": 0.009159365133934283,
+      "command_absmax": 0.009159365086816251,
+      "command_RMS": 0.0030008430330749586
+    },
+    {
+      "id": "t502_field_sector7_offset1",
+      "lost_in_autonomous_test": false,
+      "n": 173,
+      "raw_location_RMS": 0.008730362760833218,
+      "raw_location_absmax": 0.052307326275590926,
+      "command_absmax": 0.052307337522506714,
+      "command_RMS": 0.008730289742581993
+    },
+    {
+      "id": "t502_field_sector7_offset2",
+      "lost_in_autonomous_test": false,
+      "n": 388,
+      "raw_location_RMS": 0.00724911569654388,
+      "raw_location_absmax": 0.040039801734729735,
+      "command_absmax": 0.04003980755805969,
+      "command_RMS": 0.007230219754903371
+    }
+  ],
+  "new_native": 0,
+  "new_Adam": 0,
+  "new_RL": 0,
+  "new_linear_solves": 0,
+  "elapsed_s": 0.16248011589050293
+}
