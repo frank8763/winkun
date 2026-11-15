@@ -1,0 +1,105 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "epoch": 1794730675.3934937,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "source": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t567_frozen_closed_loop_diagnosis/driver.py": "4df36891452b89c167c19e4427a1e5ebfe7dc5fe1c14e19bf3c3160ad5f364b4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t567_frozen_closed_loop_diagnosis/t567_runtime.py": "aeaf9f0f56898ca700da0e0ca0df5101564fb3dd9d44f248c1694960819cbb96",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t567_frozen_closed_loop_diagnosis/transport.py": "4c081451beb0b0f01073562015cff25b21e694433d2fb7955f234ac71d2bee8d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t567_frozen_closed_loop_diagnosis/control.py": "9495ebfeb13dfe2de3d799fc6199a67b7e8b36afe08106bb9adf6c0fa3d98856"
+  },
+  "bounds": [
+    {
+      "id": "t502_field_sector0_offset2",
+      "uncompressed_schema_upper": 938000,
+      "max_decisions": 642
+    },
+    {
+      "id": "t502_field_sector1_offset2",
+      "uncompressed_schema_upper": 938000,
+      "max_decisions": 642
+    },
+    {
+      "id": "t502_field_sector4_offset2",
+      "uncompressed_schema_upper": 938000,
+      "max_decisions": 642
+    }
+  ],
+  "storage_bytes": 5275648,
+  "global_worst": 1073351071,
+  "model_hash": "40a3a9e7f2cda24c67317af03fc2083e7d975cb1c80e3ea8d33341e827f513d5",
+  "same_sequence_and_serial_step": true,
+  "baseline_descriptors": [
+    {
+      "id": "t502_field_sector0_offset2",
+      "model_policy_hash": "c0aa5f4a990641642fbd0815801e6f9a8b3baa2a4ca0f751d6e1bd605a5f5754",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "remaining_m": 0.19986916200191807,
+      "minimum_recorded_endpoint_distance_m": 0.19986916200191807,
+      "seconds": 73.642,
+      "descriptive_outcome": "GOAL",
+      "first_3cm_or3deg_deviation_decision": null,
+      "first_deviation_seconds": null,
+      "first_deviation_translation_m": null,
+      "first_deviation_yaw_deg": null,
+      "mean_recorded_speed_mps": 0.1298711333624506,
+      "slow_below_003mps_fraction": 0.0,
+      "drive_mean": 0.8118781875222554,
+      "steer_saturated_abs099_fraction": 0.0,
+      "heading_error_final_deg": 0.8726369900265352,
+      "baseline_safe": true,
+      "initial_native_exact": true,
+      "not_unique_causal_diagnosis": true
+    },
+    {
+      "id": "t502_field_sector1_offset2",
+      "model_policy_hash": "c0aa5f4a990641642fbd0815801e6f9a8b3baa2a4ca0f751d6e1bd605a5f5754",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "remaining_m": 0.19998786678049038,
+      "minimum_recorded_endpoint_distance_m": 0.19998786678049038,
+      "seconds": 85.89,
+      "descriptive_outcome": "GOAL",
+      "first_3cm_or3deg_deviation_decision": null,
+      "first_deviation_seconds": null,
+      "first_deviation_translation_m": null,
+      "first_deviation_yaw_deg": null,
+      "mean_recorded_speed_mps": 0.11354207186373684,
+      "slow_below_003mps_fraction": 0.13272790778903246,
+      "drive_mean": 0.6389840555878585,
+      "steer_saturated_abs099_fraction": 0.1816276632902549,
+      "heading_error_final_deg": 0.10686736432892235,
+      "baseline_safe": true,
+      "initial_native_exact": true,
+      "not_unique_causal_diagnosis": true
+    },
+    {
+      "id": "t502_field_sector4_offset2",
+      "model_policy_hash": "c0aa5f4a990641642fbd0815801e6f9a8b3baa2a4ca0f751d6e1bd605a5f5754",
+      "success": true,
+      "contact": false,
+      "timeout": false,
+      "remaining_m": 0.19996207759916812,
+      "minimum_recorded_endpoint_distance_m": 0.19996207759916812,
+      "seconds": 96.14800000000002,
+      "descriptive_outcome": "GOAL",
+      "first_3cm_or3deg_deviation_decision": null,
+      "first_deviation_seconds": null,
+      "first_deviation_translation_m": null,
+      "first_deviation_yaw_deg": null,
+      "mean_recorded_speed_mps": 0.1003234473264957,
+      "slow_below_003mps_fraction": 0.18305112950867405,
+      "drive_mean": 0.46360246731484356,
+      "steer_saturated_abs099_fraction": 0.02496151766027374,
+      "heading_error_final_deg": 0.6688028316029841,
+      "baseline_safe": true,
+      "initial_native_exact": true,
+      "not_unique_causal_diagnosis": true
+    }
+  ],
+  "no_promotion_or_offline_gate_qualification": true
+}
