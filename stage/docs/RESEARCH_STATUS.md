@@ -1,3 +1,5 @@
+2026-11-15 用户明确新窗口17:30all、日19M/600/12300余额不扩，T563尾部损失+经验接受已注册，零原生预检PASS尚待唯一launch：T562同权重同93186变量freshAdam，完整27history，半均值locMSE+半13558命令坐标top32平方误差，最多240提案/同shadow/audit；固定1/.25/.0625参数位移，原24fit门保持/全27RMS≤.02/全局peak降≥1e−6或门全过才接受，否则整ActorAdam回退，8连拒或27门全过停。仅原门全过才2short+exact/32自主+32exact保原23GOAL ID，不将24拟合当导航。首预检4丢弃后工程断言拒绝原件保留；恢复6丢弃/累计10，计数metadata原件和0重算纠错均保留，科学阈值未改。最坏3203204物理72cmd3600main/own8MiB/global1GiB/free40，16:30学17:00native17:30all、CPU一核GPUoff/Phase隔离。详day_20261115/t563/PLAN/PREFLIGHT/BUDGET/SOURCES与真实launch/status，不声称已运行。
+
 2026-11-15 T562下午检查：12:18科学与audit已结束，0native/0RL，500live500shadow+500独立audit丢弃/4预检另计。保存27history RMS全过，24同时max≤.1；剩sector0off2/sector1off2/sector4off2共20超限决策，最坏RMS .018813/max .182749。比初始化MSE下降97.81%，联合变量不归因单模块；32自主/407/54/fresh/reload均null，非导航24/27成功率。原断网pending保留，15点后检查仅补transport，12原始远端逐SHA现过，本地10manifest再次全过，所有科学PID退出。下一尾部/约束式纠正仅草案，未注册启动，不延已过15:00窗口。详day_20261115/t562/FINDINGS_AND_NEXT/COMPLETION_VERIFICATION/BACKUP_RECOVERY，T550保留，CPU一核GPUoff/Phase隔离。
 
 2026-11-15 T562平滑策略蒸馏试验结束，COMPLETE，真实监督Adam与条件原生结果见day_20261115/t562/FINAL_REPORT，remote=PENDING。本轮监督表示迁移，不晋升，不自动追加学习或重启。
