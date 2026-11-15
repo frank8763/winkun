@@ -1,3 +1,5 @@
+2026-11-15 T569平滑策略蒸馏试验结束，COMPLETE，冻结学生完整32开发测量与条件原生结果见day_20261115/t569/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。本轮监督表示迁移，不晋升，不自动追加学习或重启。
+
 2026-11-15 T568已完成49.899407s/72412物理6cmd/0optimizerRL：同T562学生真实前195决策39s完整复现，训练期反馈接管后总72.412s无接触GOAL终距.199950；1混合unique+1exact，非学生自主提升，16原始远端逐SHA/14manifest再核及独立audit全过、全部PID退出。用户继续/全场地缺口任务内T569同冻结T562补齐缺29自主已注册/零原生预检PASS待launch：import已审同SHA三full/exact凑完整old8+field24=32，新增29仅一次紧凑测量/全数组hash，mainRAM全history检查非独立离线完整审计，0新学习/不晋升。max1408266物理33cmd900main/own3MiB/partial1280KiB max838正确schema1202992B，必须17:00native17:30all前完成，日19M/600/12300不扩，16:30后不训练、CPU一核GPUoff/Phase隔离。详day_20261115/t568/FINDINGS_AND_NEXT/COMPLETION_VERIFICATION、t569/PLAN/PREFLIGHT/BUDGET及实际launch/status，不将T550339/407混为T562成绩。
 
 2026-11-15 T568平滑策略蒸馏试验结束，COMPLETE，学生真实偏离恢复资格验证与条件原生结果见day_20261115/t568/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。本轮监督表示迁移，不晋升，不自动追加学习或重启。
