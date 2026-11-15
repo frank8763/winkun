@@ -1,3 +1,7 @@
+2026-11-15 T572最终：A旧8/8、field14/24（7接触3超时），两目标恢复却丢sector2off2，拒绝不晋升；B5000ADMM raw.00205836/primal1.74265e-5超原.002/1e-7，0应用0native，所有自主门null非失败率。合计1990730物理68cmd839.249964main；两auditPASS/全部科学PID退，原TLS/sourcepending保留，纯补传现全部raw逐SHA通过。用户继续同21:00窗口，新T572R同矩阵/目标/特征/data/阈值主动集求解恢复已注册/零native0Adam预检PASS待launch；每输出256active-set，始终可行零起点，KKT及raw精度全过才32+32，不续ADMM。max3201204物理68cmd1800main/own6MiB，与原T572合并5191934/136/2639.249964≤原6402408/136/3600，日/磁盘不扩，19:30学/20:30native/21:00all，CPU14/15Quota200低优先GPUoff/Phase隔离。详t572/FINDINGS_AND_NEXT/BACKUP_RECOVERY及t572r/PLAN/SOURCES/PREFLIGHT/BUDGET和实际launch/status。
+
+2026-11-15 T572两固定线性函数约束试验结束，COMPLETE，实际逐臂结果见day_20261115/t572/FINAL_REPORT，remote=PENDING。0Adam/0新RL/无全场地或泛化晋升声明，不自动续预算。
+
 2026-11-15 T571最终复核：1170.561746s/2714340物理93cmd，512liveBC/512shadow/512audit历史丢弃/0新RL；旧7/8、field13/24（6接触5超时）合计20/32，两目标恢复但丢dev3/field1off2/field2off2，拒绝整ActorAdam回退，不晋升。32+32exact/独立audit/176raw远端SHA/174manifest再核/全部PID退通过。用户新授权21:00all/19:30学/20:30native，下一T572两固定相同凸目标已注册/零native0Adam预检PASS待launch：冻结T562body＋T571失败候选第一层固定特征/零最后层恢复T562函数，66线性系数；A无约束ridge，B全部4730旧状态location漂移≤.002/customADMM5000/KKT合格才原生；同一21自身history＋2恢复数据，32+32每臂，不称OGD/GPM/OSQP复现或闭环保证。max6402408物理136cmd3600main/own9MiB，日与磁盘不扩/CPU14,15Quota200低优先GPUoff/Phase隔离。详t571/FINDINGS_AND_NEXT及t572/PLAN/SOURCES/PREFLIGHT/BUDGET和实际launch/status。
 
 2026-11-15 T571平滑策略蒸馏试验结束，COMPLETE，冻结学生完整32开发测量与条件原生结果见day_20261115/t571/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。本轮自身状态复习与恢复示范持续学习pilot，不晋升，不自动追加学习或重启。
