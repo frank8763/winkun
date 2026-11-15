@@ -1,3 +1,5 @@
+2026-11-15 T561平滑策略蒸馏试验结束，COMPLETE，真实监督Adam与条件原生结果见day_20261115/t561/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。本轮监督表示迁移，不晋升，不自动追加学习或重启。
+
 2026-11-15 T560保存特征诊断完成0native/0Adam：6779行6173唯一/303重复组0标签矛盾，最坏两条所需大修正覆盖84%/87%，不能仅归罕见短段。用户授权下一轮至15:00，T561正弦头受控迁移已注册/4合成Adam零原生预检PASS，尚待唯一launch：同T55940450参数/数据/1500步/损失/seed/初始publicbase，换sin30和专用隐藏初始化，0新RL。门仍27每条RMS .02/max .1，过才2短+exact及32自主+32exact，保留23成功ID；不做新yaw/407/fresh/reload。新增最坏3203204物理72cmd2400main/own6.5MiB计原日19M/600/12300内，13:00学14:30native15:00all不延，CPU一核GPUoff/Phase隔离。详day_20261115/t560/RESULT、t561/PLAN/PREFLIGHT/BUDGET/SOURCES。
 
 2026-11-15 T559最终检查：1500监督Adam+1500shadow，独立1500历史丢弃重构PASS；27历史仅14过动作拟合门，最坏RMS .119416/max1.056345，均值loss下降93.57%仍不合格。0native/0RL，32自主/新扰动/407/fresh/reload均未执行null；未保留新策略，T550不变。12原始远端逐SHA已过，本地10manifest成员再次全过，科学及driver已退出。下一仅保存特征-标签冲突/关键纠正误差诊断草案，不追加训练或改门槛。详day_20261115/t559/FINDINGS_AND_NEXT/COMPLETION_VERIFICATION；15:00all/CPU一核GPUoff/Phase隔离。
