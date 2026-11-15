@@ -1,3 +1,5 @@
+2026-11-15 T572R和T573均已真实结束/全部science及relay退出。B数值证书KKT/raw漂移通过，但旧7/8、field13/24（5接触6超时），两原恢复目标0成功；32+32exact/独立audit/114raw远端逐SHA/110manifest再核过，拒绝回退。T573冻结A唯一丢失sector2off2：41.112s撞real_circle_obs_0余5.512558m，17.8s真实前缀后goal-only训练反馈仍49.822s碰撞余5.525815m，teacher未合格，0学习/新模型；90934物理12cmd68.028573main，独立完整history/教师公式/原生exact审计及21raw远端逐SHA/19manifest再核通过。当前没有运行；下一障碍感知神经教师从真实前缀独立carry接管只草案未注册，不能重用失败反馈作成功标签。T550保留，21:00all/19:30学/20:30native、日与磁盘/CPU/GPU/Phase隔离不扩。详t573/FINDINGS_AND_NEXT/COMPLETION_VERIFICATION。
+
 2026-11-15 T573平滑策略蒸馏试验结束，COMPLETE，A候选实际失守恢复资格验证与条件原生结果见day_20261115/t573/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。本轮监督表示迁移，不晋升，不自动追加学习或重启。
 
 2026-11-15 T572R同目标可行主动集求解恢复结束，COMPLETE，实际逐臂结果见day_20261115/t572r/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。0Adam/0新RL/无全场地或泛化晋升声明，不自动续预算。
