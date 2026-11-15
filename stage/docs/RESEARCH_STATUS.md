@@ -1,3 +1,5 @@
+2026-11-15 T566平滑策略蒸馏试验结束，COMPLETE，真实联合残差校正与条件原生结果见day_20261115/t566/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。本轮监督表示迁移，不晋升，不自动追加学习或重启。
+
 2026-11-15 用户明确“第一步开始”，T566历史约束联合方向已注册/零原生预检最终PASS尚待唯一launch：从T562同policyhash研究副本起，93186变量/27currenthistory，对超限+近峰Jacobian阻尼方向，投影进27 RMS平方梯度及24合格near>.07动作线性约束；行归一化双坐标256sweeps，primal/dual/stationarity/complementarity及缩放可行1e−8核验，原24fit/全27RMS/peak实际下降再接受，首次全拒停。max8方向+shadow/audit（残差solve+投影各8），0Adam/RL。首pref4应用/4solve原件保留，补全证书fresh4/4累计8，均0native且两步接受/精确，非导航改善。过原27动作门才2short+exact/32自主+32exact保原23GOAL，所有未执行null。最坏3203204物理72cmd2400main/own6MiB计日19M/600/12300不扩，16:30学17:00native17:30all、CPU一核GPUoff/global1GiB/free40/Phase隔离。详day_20261115/t566/PLAN/PREFLIGHT/BUDGET/SOURCES与实际launch/status。
 
 2026-11-15 T565已结束66.293714s，4live/4shadow/4audit历史丢弃联合方向各对应4solve，预检4另计，0Adam0RL0native；3保留1拒绝，peak .139496→.138339仅降.83%，27RMS/24fit保持但剩3max .110012/.138339/.137174未过.1，所有原生门null。最后七档小四档peak下降但RMS>.02（最小.020082396），原方向未把RMS纳入solve，非场景或永久不可行证明。独立audit/12原始远端SHA/10manifest再次核过，全部PID退。下一约束联合方向仅草案未启动，不追加T565半径/方向或放宽门；17:30窗口不扩。详day_20261115/t565/FINDINGS_AND_NEXT/COMPLETION_VERIFICATION，T550保留，CPU一核GPUoff/Phase隔离。
