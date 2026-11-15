@@ -13,3 +13,5 @@ own17MiB：12full各1MiB上限+1原子暂存+2worker partial+2metadata；实际g
 预检实际两个模型SHA/phash、真实因果sequence/cache一致（误差0）、未来输入不影响过去输出，0native/0Adam PASS；复用已审相同worker/动作/GRU/物理时标合同。预检不等于实际原生恢复或导航通过。T557尚无AUTHORIZATION/protocol/launch，当前没有后台Stage训练。
 
 依据及后续分流见上级T555_FINDINGS_AND_NEXT.md；先区分BC与RL后再确定唯一学习变量，不预设更换任何方法必然有效。
+
+用户已明确答复“允许按日余额启动冻结诊断”，授权该scope从既有日余额分配，详AUTHORIZATION.json。0新学习，原截止和全局预算不扩大；实际launch另记录。
