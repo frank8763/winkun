@@ -1,3 +1,5 @@
+2026-11-15 T575平滑策略蒸馏试验结束，COMPLETE，神经教师因果接管与条件交回资格验证与条件原生结果见day_20261115/t575/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。本轮监督表示迁移，不晋升，不自动追加学习或重启。
+
 2026-11-15 T574原producerFAILED是旧审计run.py:360仅支持教师后缀全1、错误拒绝已注册4秒交回，原source/summary/failure/16raw完整远端保留不改。新T574R零native/optimizer离线恢复已PASS：真实原件复现旧断言，完整学生/教师独立carry/ownership区间/tape/奖励/history/边界hidden核验及3负回归过，1.719781s/0新物理原生命令/学习。真实有效进展：T550神经教师从A17.8s真实前缀接管87.202s无接触GOAL余.199955m，已原生exact一次，恢复数据合格；仅接管4s后归还未更新A，113自主决策后44.256s碰撞余5.499322m，该分支原生exact缺测1，不称整体T574通过。原109330物理7cmd/0新学生，T574learning_eligible仍false不跳门。T574R小证据远端逐SHA以receipt为准；当前所有进程停，19:30学习停/20:30native/21:00all、日/磁盘/Phase隔离不扩。下一完整恢复学习是新机制草案未注册，详t574r/FINDINGS_AND_NEXT/COMPLETION_VERIFICATION。
 
 2026-11-15 T574平滑策略蒸馏试验结束，FAILED，神经教师因果接管与条件交回资格验证与条件原生结果见day_20261115/t574/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。本轮监督表示迁移，不晋升，不自动追加学习或重启。
