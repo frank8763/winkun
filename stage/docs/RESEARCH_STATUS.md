@@ -1,3 +1,5 @@
+2026-11-15 T554已只读原始梯度诊断完成，0native/0Adam，3保存模型共9分量梯度，原JSON可逆全文在day_20261115/T554_RAW_EVIDENCE。T552 behavior恢复+PPO/保持范数377.44、cos−.59835，原4Adam位移损伤保持代理；非唯一闭环因果。T555已准备后Adam保持半空间vs同状态等位移长度控制，两臂各一轮32BC+4freshPPO上限；18丢弃克隆预检PASS、原源错误保留、0native，尚无protocol/launch。最坏18,971,363物理595命令12300main/own22.5MiB/global1GiB/free40/CPU14,15一核idle GPUoff；建议新15:00all窗口，原夜间10:00已过，待当前窗口预算确认才注册原生。CAGrad.5因局部保持可行性不成立未运行，漂移项后置，T553草案未启动。细节day_20261115/t555/PLAN/PREFLIGHT/READINESS，Phase隔离。
+
 2026-11-15早间T552原始复核：6候选全拒绝/0保留，最佳RL修回旧失败5/6但丢3场地，最终回退T550且完整407数组/积分逐项一致：旧249/275、宽六27/54、宽八48/54、field15/24。24采集只有16不同轨迹，216live含200BC/16RL，shadow216/audit216/synthetic8另计。8审计和1679本地清单成员SHA全过，所有进程已退；01:29科学结束。追加T553只有部分代码，无protocol/preflight/launch/runs，未执行，未交付后续离线接力；不能说跑到10点或CAGrad已试。夜间网络PENDING保留，今晨1695原文件RAM全远端逐SHA读回通过（release_receipt_T552），无新native/optimizer。详day_20261115/T552_MORNING_RESULTS/MORNING_REVIEW；Phase隔离，未启动日间新训练。
 
 2026-11-15 T552三固定臂离线夜间接力已结束，state=COMPLETE；物理/命令/保留和最终407以overnight_20261114/FINAL_REPORT为准。fresh/reload未执行null，不称泛化/稳定；remote=PENDING_OFFLINE。Stage/Phase隔离，不自动重启。
