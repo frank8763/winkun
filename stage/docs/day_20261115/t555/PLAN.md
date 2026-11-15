@@ -1,4 +1,4 @@
-# T555：实际Adam位移方向修正与等步长控制（准备，未启动）
+# T555：实际Adam位移方向修正与等步长控制（用户已授权，待注册启动）
 
 ## 问题与证据
 
@@ -35,3 +35,5 @@ CPU14/15总一核，CPUQuota100%、Nice19、idle、CPUWeight1/IOWeight1、GPU禁
 首次预检因docs父目录缺失，在首个Adam前退出，0native/0Adam，原源和错误保留preflight_failed_001。仅创建输出父目录修复后，fresh18丢弃Adam检查PASS（16合成、2既有真实数据克隆），不计新导航训练。后续prepare仅精简重复JSON元数据，保留预检源码并逐AST验证preflight函数不变，不重做18克隆。
 
 零步容量检查另有两次拒绝，均0native/0Adam：缩进JSON超根元数据预留，改紧凑JSON且科学字段不变；readiness的通用driver导入绑定历史模块，改唯一文件绑定。原源/错误在readiness_failed_001/002。修复后全预算正反例检查PASS，global最坏1,073,230,096B < 1GiB，未靠删唯一数据或扩额通过。此检查不是实际原生driver全链执行。
+
+用户现已明确批准本轮19M物理/600命令/12300主管线秒、15:00全部停止。13:00学习、14:30原生从严截止，授权原文及epoch见AUTHORIZATION.json。本文件不是launch记录。
