@@ -1,3 +1,5 @@
+2026-11-15 T576同数据同Adam线性与非线性可塑性对照结束，COMPLETE，实际逐臂结果见day_20261115/t576/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。每臂最多256live256shadow及独立历史Adam重构/0新RL/无全场地或泛化晋升声明，不自动续预算。
+
 2026-11-15 T575已真实COMPLETE/独立audit PASS/全部原件远端逐SHA/源树核验：1635496物理64cmd683.809941s，22自身历史精确再生、1live+1shadow线性求解/0Adam0新RL；32自主旧7/8+field13/24=20/32。sector2off2恢复GOAL且指定exact，但丢dev6/field1off1/off2，拒绝回退T572A研究副本，T550保留不改。零更新posthoc Phi_old4839x33满秩33/nullity0，仅66末层变化；说明固定特征精确保旧会封死该读出更新，不证明任务不可兼容。三失守旧history command差峰值.03661/.01035/.05170；平均小不代表闭环安全。下一同数据可塑性对照+新旧真实自分布恢复聚合仅草案，未注册启动；不重复T571或昨夜响应保持，不追加已过20:10学习窗口/日600命令。日累计15010653物理584cmd，CPU/磁盘/Phase隔离保持。见day_20261115/t575/POSTHOC_INTERFERENCE/SOLUTION_PRIMARY_REVIEW/NEXT_SOLUTION_DRAFT。
 
 2026-11-15 T575平滑策略蒸馏试验结束，COMPLETE，神经教师因果接管与条件交回资格验证与条件原生结果见day_20261115/t575/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。本轮监督表示迁移，不晋升，不自动追加学习或重启。
