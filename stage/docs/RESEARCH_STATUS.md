@@ -1,3 +1,5 @@
+2026-11-15 T555最终两臂0保留已审计/304全原始远端逐SHA且本地再次304清单核验过，服务/所有科学PID均退；4,134,236物理184cmd2553.581main，8采集8不同+8exact，72live72shadow72历史重构/18预检另计。project旧8/恢复4/field11，scalar旧7/恢复5/field11，冻结T550保持；同SHA已有407复用0新最终仿真。T556保存历史逐任务诊断0native0Adam/297分量梯度完成：project23主keep均值略降但4失守误差全升，原加权keep+neighbor仍略升；不是所有保持代理改善/唯一闭环因果。T557已准备两个BC冻结模型6项12+12exact，0学习，预检PASS，尚无protocol/launch；需将日19M/600/12300余额重分配该新scope，最坏1,257,916物理32cmd/17MiB，15:00all不延。详day_20261115/T555_FINDINGS_AND_NEXT、T556_RAW_EVIDENCE、t557/PLAN，Phase隔离。
+
 2026-11-15 T555有限两臂已结束，COMPLETE；逐ID和完整407见day_20261115/t555/FINAL_REPORT；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。无泛化/晋升声明，不重启。
 
 2026-11-15 T555已按用户新授权注册：19M物理/600cmd/12300main、15:00all/13:00学/14:30native。短原生接口2000物理8命令12.208s/0Adam及独立audit PASS，接口父workers全退；两臂正式训练尚待唯一driver launch。实际后Adam位移保持半空间vs自身状态等位移长度控制，各一轮32BC+4fresh/4exact+最多4PPO，5986头/T550冻结；38+38exact接受才条件407，否则同SHA已审407复用。own22.5MiB/global1GiB/free40GiB，CPU14,15总一核idle/GPUoff。详day_20261115/t555/AUTHORIZATION/BUDGET/NATIVE_CONTRACT及实时launch/LEDGER；不把预检当导航通过，Phase隔离。
