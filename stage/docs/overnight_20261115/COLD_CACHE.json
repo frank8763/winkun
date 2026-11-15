@@ -1,5 +1,5 @@
 {
-  "state": "JOURNALED_PROGRESSIVE_VERIFICATION",
+  "state": "VERIFIED_SUBSET_COMPLETE_CAPACITY_SUFFICIENT",
   "records": [
     {
       "path": "stage/runs/t404_last_narrow/episodes/0000.npz",
@@ -20334,5 +20334,8 @@
   "all_original_bytes_fresh_remote_verified": true,
   "released_bytes": 93408577,
   "restore_script": "stage/experiments/t577_offline_recovery_night/cold_cache.py restore PATH",
-  "epoch": 1794747803.4315763
+  "epoch": 1794747803.4315763,
+  "all_planned_groups_finished": false,
+  "termination_note": "Transport and absent legacy receipts prevented exhaustively completing the initial eligible list; every removed member was freshly verified and journaled, existing subset supplies full night reserve; no further eviction needed.",
+  "verified_subset_epoch": 1794748898.326463
 }
