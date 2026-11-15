@@ -1,3 +1,5 @@
+2026-11-15 T573平滑策略蒸馏试验结束，COMPLETE，A候选实际失守恢复资格验证与条件原生结果见day_20261115/t573/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。本轮监督表示迁移，不晋升，不自动追加学习或重启。
+
 2026-11-15 T572R同目标可行主动集求解恢复结束，COMPLETE，实际逐臂结果见day_20261115/t572r/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。0Adam/0新RL/无全场地或泛化晋升声明，不自动续预算。
 
 2026-11-15 T572最终：A旧8/8、field14/24（7接触3超时），两目标恢复却丢sector2off2，拒绝不晋升；B5000ADMM raw.00205836/primal1.74265e-5超原.002/1e-7，0应用0native，所有自主门null非失败率。合计1990730物理68cmd839.249964main；两auditPASS/全部科学PID退，原TLS/sourcepending保留，纯补传现全部raw逐SHA通过。用户继续同21:00窗口，新T572R同矩阵/目标/特征/data/阈值主动集求解恢复已注册/零native0Adam预检PASS待launch；每输出256active-set，始终可行零起点，KKT及raw精度全过才32+32，不续ADMM。max3201204物理68cmd1800main/own6MiB，与原T572合并5191934/136/2639.249964≤原6402408/136/3600，日/磁盘不扩，19:30学/20:30native/21:00all，CPU14/15Quota200低优先GPUoff/Phase隔离。详t572/FINDINGS_AND_NEXT/BACKUP_RECOVERY及t572r/PLAN/SOURCES/PREFLIGHT/BUDGET和实际launch/status。

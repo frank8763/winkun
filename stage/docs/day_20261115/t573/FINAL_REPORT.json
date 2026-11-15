@@ -1,0 +1,137 @@
+{
+  "state": "COMPLETE",
+  "error": null,
+  "summary": {
+    "state": "COMPLETE",
+    "pid": 421692,
+    "physics": 90934,
+    "commands": 12,
+    "elapsed_s": 68.02857255935669,
+    "error": null,
+    "result": {
+      "model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t572_functional_trust_region/unconstrained/proposal.pt.gz",
+        "sha256": "0d7d5e0ad6ac37a6d9c26df0b1d6ccdd261075a8b39ad5efc59fbd836192af43",
+        "policy_hash": "490d521dcf41218826b756e019d80c59ad08a0cfdd71a874bac40f26a3acd320",
+        "joint_hash": "c77e5e745de3db2491dc4daffe696dd66db1aa19025c646b25e30bc01048c144",
+        "bytes": 856698
+      },
+      "pure_student_failure": {
+        "id": "t502_field_sector2_offset2",
+        "native_success": false,
+        "collision": true,
+        "timeout": false,
+        "seconds": 41.112000000000045,
+        "remaining_m": 5.512557697139006,
+        "min_decision_distance_m": 5.512557697139006,
+        "closest_time_s": 41.112000000000045,
+        "mean_speed_m_s": 0.100196677344526,
+        "last20_heading_deg": 3.8089538461216286,
+        "moving_away_seconds": 0.0,
+        "field_boundary_crossed": false,
+        "field_qualified_success": false,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015694534878066005
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015688737694308688
+          },
+          {
+            "geom1": "real_circle_obs_0",
+            "geom2": null,
+            "distance": -4.605380914670433e-05
+          },
+          {
+            "geom1": "real_circle_obs_0",
+            "geom2": null,
+            "distance": -4.605380914670433e-05
+          },
+          {
+            "geom1": "real_circle_obs_0",
+            "geom2": null,
+            "distance": -4.605380914670433e-05
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015650449105968745
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01564459147121766
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01569468754009068
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015689183234853438
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015650550695310503
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01564508811290534
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.04675260331309031
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.04675260331309031
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.05159293870930955
+          }
+        ]
+      },
+      "derived_prefix": {
+        "rule": "ONE_STEP_BEFORE_FIRST_3CM_OR_3DEG_FROM_OLD_SUCCESS",
+        "available": true,
+        "teacher_first": 89,
+        "prefix_seconds": 17.8,
+        "first_divergence_decision": 90,
+        "position_difference_at_intervention_m": 0.02484292346808824,
+        "heading_difference_at_intervention_deg": 0.18127037788956188,
+        "no_grid": true
+      },
+      "teacher_qualified": false,
+      "teacher_result": {
+        "success": false,
+        "contact": true,
+        "timeout": false,
+        "remaining_m": 5.525814888961892,
+        "seconds": 49.822
+      },
+      "new_optimizer": 0,
+      "new_RL": 0,
+      "new_student_model": null,
+      "new_student_test": null,
+      "globally_promoted": false,
+      "scope": "Frozen failure reconstruction and one teacher recovery qualification, not learning or autonomous improvement"
+    }
+  },
+  "all_scientific_processes_stopped": true,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "new_RL": 0,
+  "globally_promoted": false,
+  "epoch": 1794741987.1919324
+}
