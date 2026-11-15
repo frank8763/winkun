@@ -1,3 +1,7 @@
+2026-11-15早间T552原始复核：6候选全拒绝/0保留，最佳RL修回旧失败5/6但丢3场地，最终回退T550且完整407数组/积分逐项一致：旧249/275、宽六27/54、宽八48/54、field15/24。24采集只有16不同轨迹，216live含200BC/16RL，shadow216/audit216/synthetic8另计。8审计和1679本地清单成员SHA全过，所有进程已退；01:29科学结束。追加T553只有部分代码，无protocol/preflight/launch/runs，未执行，未交付后续离线接力；不能说跑到10点或CAGrad已试。夜间网络PENDING保留，今晨1695原文件RAM全远端逐SHA读回通过（release_receipt_T552），无新native/optimizer。详day_20261115/T552_MORNING_RESULTS/MORNING_REVIEW；Phase隔离，未启动日间新训练。
+
+2026-11-15 T552三固定臂离线夜间接力已结束，state=COMPLETE；物理/命令/保留和最终407以overnight_20261114/FINAL_REPORT为准。fresh/reload未执行null，不称泛化/稳定；remote=PENDING_OFFLINE。Stage/Phase隔离，不自动重启。
+
 2026-11-14 T552新夜间三固定臂已注册/零原生8合成丢弃Adam预检PASS/2000工程物理8cmd独立auditPASS，尚未launch。用户已授权夜60M/2000cmd/28000main、11月15日08:30all；06:30学停/07:15native停，CPU14/15总一核idle GPUoff，global1GiB/free40。冻结T550+同一零初始化5986平滑读出：A联合6恢复+23保持+4真实邻域history监督，B加真实新鲜PPO，C加有限响应保持，各最多4轮/连续2拒绝停臂、整ActorAdam回退；每候选38+38exact，完整407后置，不称全275保持或泛化已过。所有下项与final完整最坏预留及独立audit/manifest后才接力，科学不依赖网/LLM；新seed/网格/旧目录重启禁止。26已全远端SHA非输入冷缓存可恢复移出16550194B，模型和当前数据不动；own40MiB。详overnight_20261114/PLAN/BUDGET/LOCAL_READINESS/SOURCES，source精确同步后唯一启动。Phase全隔离。
 
 2026-11-14 T551固定8任务三模型归因与4单步转向扰动已完成，1425904物理/72cmd，独立28全history/28exact审计PASS，0新策略/优化器；实测各模型结局与扰动恢复见day_20261114/T551_FINAL_REPORT。没有跨场地/完整275/留出新验收，不以4扰动称鲁棒性已解决。remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，Phase隔离，不自动启动下一学习。
