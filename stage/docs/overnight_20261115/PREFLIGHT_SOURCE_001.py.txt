@@ -1,0 +1,52 @@
+"""Local bounded overnight protocol preparation. Launch requires explicit night budget."""
+from pathlib import Path
+import sys,json,copy,time,datetime,shutil,math
+HERE=Path(__file__).resolve().parent;sys.path.insert(0,str(HERE));import t577_runtime as R
+ROOT,OUT,DOC,L,torch,np,read,save,sha,digest=R.ROOT,R.OUT,R.DOC,R.L,R.torch,R.np,R.read,R.save,R.sha,R.digest
+
+def epoch(x):return datetime.datetime.fromisoformat(x).timestamp()
+def build():
+ old=ROOT/'stage/runs/t576_nonlinear_plasticity_pair';assert read(old/'nonlinear/audit.json')['state']=='PASS';assert read(ROOT/'stage/docs/long_distance_20261101/release_receipt_T576.json')['state']=='FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED';s=read(old/'nonlinear/summary.json')['result'];p=read(old/'protocol.json');source=read(ROOT/'stage/runs/t575_complete_neural_recovery/protocol.json');base=read(ROOT/'stage/runs/t550_offline_obstacle_relay/protocol.json');cfg=read(p['actor_configuration']);cfg.update(p);p=cfg
+ # New protocol lists only actual inputs, no stale inherited cold-cache paths.
+ memory=R.G.rows(ROOT/'stage/runs/t575_complete_neural_recovery','memory_rows.jsonl');static=s['model'];bootstrap=source['repair_row'];E=p['evaluation_jobs'];cap=max(j['case']['step_cap'] for j in E);common=dict(learning_seconds=360,audit_seconds=180,child_bytes=96*2**20)
+ recovery=dict(common,main_seconds=600,max_physics=4*cap,max_commands=8,storage_reserve=1600*1024)
+ roundc=dict(common,main_seconds=1200,max_physics=sum(j['case']['step_cap'] for j in E)+sum(j['case']['step_cap'] for j in E if j['id'] in p['key_replay_ids']),max_commands=42,storage_reserve=int(1.4*2**20))
+ rlc=dict(roundc,max_physics=roundc['max_physics']+8*cap,max_commands=50,storage_reserve=7*2**20)
+ final=dict(common,main_seconds=5400,learning_seconds=0,audit_seconds=180,max_physics=sum(j['case']['step_cap'] for j in base['final_jobs']),max_commands=411,storage_reserve=6*2**20,final_jobs=base['final_jobs'])
+ stress=dict(common,main_seconds=900,learning_seconds=0,audit_seconds=60,storage_reserve=64*1024)
+ jobs=[]
+ # Same frozen model pair, fixed physical reset perturbations, no noise-grid
+ # learning or adaptive validation selection. Original goals/geometries intact.
+ for i in range(1024):
+  j=copy.deepcopy(E[8+i%24]);angle=2*math.pi*(i//24)/43;radius=.01+.01*((i//24)%3);pose=list(j['fullfield_start_pose']);pose[0]+=radius*math.cos(angle);pose[1]+=radius*math.sin(angle);pose[2]+=math.radians(1.0 if i%2 else -1.0);j['fullfield_start_pose']=pose;j['id']=f't577_diagnostic_{i:04d}';j['source_reset_id']=j['id'];jobs.append(j)
+ probe=copy.deepcopy(E[8]);probe['case']['step_cap']=500
+ p.update(id='T577_OFFLINE_ACTUAL_PREFIX_AGGREGATION_NIGHT',static_model=static,anchor_model=source['initial'],initial=static,initial_check=s['check'],reference_rows=source['keep_rows'],neural_teacher=source['frozen_base'],memory_rows=memory,bootstrap_correction=bootstrap,arms=['mean','tail','rl'],rounds_per_arm=6,bc_steps=256,bc_lr=1e-4,rl_steps=4,rl_lr=1e-5,target_kl=.01,model_bytes=256*1024,full_bytes=1280*1024,compact_bytes=12*1024,max_bytes=96*2**20,max_physics=120000000,max_commands=4000,max_main_seconds=36000,main_seconds=36000,audit_seconds=180,transport_seconds=900,source_seconds=180,absolute_learning_stop=epoch('2026-11-16T07:00:00+08:00'),absolute_native_stop=epoch('2026-11-16T07:45:00+08:00'),absolute_all_stop=epoch('2026-11-16T08:30:00+08:00'),final_storage_reserve=12*2**20,recovery_template=recovery,round_template=roundc,rl_template=rlc,final_template=final,stress_template=stress,stress_chunks=[jobs[i:i+16] for i in range(0,1024,16)],engineering_template=dict(common,main_seconds=180,learning_seconds=0,audit_seconds=120,max_physics=2000,max_commands=8,storage_reserve=128*1024,probe_job=probe,initial=static,kind='engineering',arm='engineering'),probe_job=probe,inputs={},protected_files={},scope='Threepredeclared6roundarms:jointmean/oldworsttasktail/truefreshonpolicyPPO+tail.ActualstudentprefixneuralteacherqualifiedGOAL/exactthenaggregation,all32autonomous/key2,acceptedmodelsalonepropagate.NoonlineLLM/networkneeded;frozenpairedresetdiagnosticsaftertrainingwithinactualresidualbudget,notnewRL/unseengate.0deployteacher/router/map/planner.')
+ return p
+
+def preflight():
+ assert not OUT.exists();DOC.mkdir(exist_ok=True,parents=True);assert not (DOC/'PREFLIGHT.json').exists();torch.set_num_threads(1);torch.use_deterministic_algorithms(True);p=build();q=L.frozen(p,p['static_model']['path']);assert q.phash()==p['static_model']['policy_hash'];p['correction_rows']=[p['bootstrap_correction']];data=L.dataset(p);events=[];results=[];P=L.P;start=time.time()
+ for arm in p['arms']:
+  pp=dict(p,arm=arm);o=L.make(pp);z=L.make(pp);before=L.state(o);a=L.bc(o,data,pp,lambda:None,lambda *_:None,steps=2);b=L.bc(z,data,pp,lambda:None,lambda *_:None,steps=2);assert a==b and digest(L.state(o))==digest(L.state(z));saved=L.state(o);L.load(o,before);assert digest(L.state(o))==digest(before);L.load(o,saved);assert digest(L.state(o))==digest(saved);results.append(dict(arm=arm,discarded_BC_Adam=4,live_shadow_mature_rollback_exact=True))
+ # Synthetic stochastic density/credit test on actual inputs; not native data.
+ pp=dict(p,arm='rl',rl_steps=2);o=L.make(pp);z=L.make(pp);raw=R.E.N.S.arrays(p['bootstrap_correction']['path']);aa=[]
+ for seed in range(4):
+  actor=o[0];actor.sample=True;actor.rng=np.random.default_rng(seed+577);actor.reset_noise();h=None;loc=[];tapes=[];x=raw['states'][:16]
+  with torch.no_grad():
+   for v in x:
+    u,b,h,_=actor.step(torch.tensor(v[None]),h);loc.append(b[0].numpy().copy());tapes.append(actor.tape[-1])
+  flags=np.zeros((len(x),3),np.uint8);flags[-1,2]=1;a=dict(states=x.copy(),next_states=np.r_[x[1:],x[-1:]],locations=np.asarray(loc),raw_actions=np.asarray([t['raw_actions'] for t in tapes]),atom=np.asarray([t['atom'] for t in tapes]),logp=np.asarray([t['logp'] for t in tapes]),ownership=np.zeros(len(x),np.uint8),stochastic=np.ones(len(x),np.uint8),end_flags=flags,native_counts=np.full(len(x),100,np.int64),rewards=np.linspace(-.001,.001,len(x)));aa.append(a)
+ u=L.rl(o,aa,data,pp,lambda:None,lambda *_:None);v=L.rl(z,aa,data,pp,lambda:None,lambda *_:None);assert u==v and digest(L.state(o))==digest(L.state(z));assert all(max(b['density_error'])<1e-9 for b in u['peer_batch']);tmp=DOC/'preflight_discarded.pt.gz';m=L.export(o,pp,tmp);rest=L.frozen(p,str(tmp));assert rest.phash()==o[0].phash();size=m['bytes'];tmp.unlink();assert not torch.cuda.is_initialized()
+ # Exact worst storage: 18 teacher traces + 24 RL traces + 36 delta checkpoints,
+ # compact autonomous records, bounded metadata, streamed stress summaries.
+ storage=18*p['full_bytes']+24*p['full_bytes']+36*p['model_bytes']+18*34*p['compact_bytes']+411*p['compact_bytes']+2048*1024+8*2**20+2*p['full_bytes'];assert storage<=p['max_bytes'];used=R.used(ROOT/'stage/runs');assert used+p['max_bytes']+131072<2**30 and shutil.disk_usage(ROOT).free>=40*2**30
+ save(DOC/'PREFLIGHT.json',dict(state='PASS_ZERO_NATIVE',source={str(f):sha(f) for f in HERE.glob('*.py')},discarded_BC_Adam=12,discarded_synthetic_RL_Adam=4,new_navigation_Adam=0,new_native=0,arms=results,real_input_synthetic_stochastic_density_peer_credit_shadow_exact=True,compact_checkpoint_readback_exact=True,checkpoint_bytes=size,actual_input_histories=23,storage_upper=storage,own_bytes=p['max_bytes'],global_worst=used+p['max_bytes']+131072,elapsed_s=time.time()-start,not_real_navigation_or_exploration_success=True));save(DOC/'BUDGET_PROPOSAL.json',dict(state='PREPARED_NOT_REGISTERED_NOT_LAUNCHED',night_physics=p['max_physics'],night_commands=p['max_commands'],night_main_seconds=p['max_main_seconds'],separate_cross_midnight_budget=True,arms=p['arms'],max_learning_rounds=18,max_stress_pairs=1024,own_bytes=p['max_bytes'],global_worst=used+p['max_bytes']+131072,learning_stop='07:00',native_stop='07:45',all_stop='2026-11-16 08:30',minimum_native_engineering_first=True,finite_chunks_actual_budget_admission=True));print('T577_PREFLIGHT_PASS',storage,size)
+
+def prepare():
+ assert not OUT.exists();pre=read(DOC/'PREFLIGHT.json');assert all(sha(f)==h for f,h in pre['source'].items());a=read(DOC/'AUTHORIZATION.json');assert a['authorized'] and a['night_physics']==120000000 and a['night_commands']==4000 and a['night_main_seconds']==36000;p=build();assert time.time()+3600<p['absolute_learning_stop'];assert time.time()+1500<p['absolute_all_stop'];assert R.used(ROOT/'stage/runs')+p['max_bytes']+131072<2**30
+ for m in list(sys.modules.values()):
+  f=getattr(m,'__file__',None)
+  if f and str(f).startswith(str(ROOT)) and str(f).endswith('.py'):p['inputs'][str(Path(f).resolve())]=sha(f)
+ files=[*HERE.glob('*.py'),DOC/'AUTHORIZATION.json',DOC/'PLAN.md',DOC/'PREFLIGHT.json',DOC/'SOURCES.md',DOC/'BUDGET_PROPOSAL.json',Path(p['static_model']['path']),Path(p['anchor_model']['path']),Path(p['neural_teacher']['path']),Path(p['bootstrap_correction']['path']),Path(p['actor_configuration'])]+[Path(r['path']) for r in p['memory_rows']+p['reference_rows']]
+ for f in files:p['inputs'][str(f)]=sha(f)
+ p['protected_files']={p['static_model']['path']:p['static_model']['sha256'],p['anchor_model']['path']:p['anchor_model']['sha256'],p['neural_teacher']['path']:p['neural_teacher']['sha256']};OUT.mkdir();blob=json.dumps(p,separators=(',',':'),allow_nan=False)+'\n';(HERE/'protocol.json').write_text(blob);(OUT/'protocol.json').write_text(blob);R.verify(p,True);save(DOC/'BUDGET.json',dict(read(DOC/'BUDGET_PROPOSAL.json'),state='REGISTERED_NOT_LAUNCHED'));print('T577_REGISTERED')
+if __name__=='__main__':globals()[sys.argv[1]]()

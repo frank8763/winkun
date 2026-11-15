@@ -1,0 +1,37 @@
+"""Fresh remote verification and reversible eviction of ended evidence caches only."""
+from pathlib import Path
+import importlib.util,json,tarfile,io,hashlib,time,sys
+ROOT=Path(__file__).resolve().parents[3];DOC=ROOT/'stage/docs/overnight_20261115';LEDGER=DOC/'COLD_CACHE.json'
+def read(p):return json.loads(Path(p).read_text())
+def sha(b):return hashlib.sha256(b).hexdigest()
+def save(p,x):Path(p).write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n')
+def backend():
+ s=importlib.util.spec_from_file_location('_night_old_cold',ROOT/'stage/experiments/t552_joint_robust_night/cold_cache.py');b=importlib.util.module_from_spec(s);s.loader.exec_module(b);return b
+
+def evict():
+ assert not LEDGER.exists();B=backend();T=B.backend();records=[];archives={};groups=[]
+ for n in range(400,544):
+  f=ROOT/f'stage/docs/long_distance_20261101/source_manifest_T{n}.json'
+  if f.exists():
+   members=read(f)['files'];eligible=[x for x in members if x['path'].endswith('.npz') and (ROOT/x['path']).exists() and n!=543]
+   if n in [415,416]:eligible +=[x for x in members if x['path'].endswith('/values.pt.gz') and (ROOT/x['path']).exists()]
+   if n==486:eligible +=[x for x in members if x['path'].endswith('/proposal_B.pt.gz') and (ROOT/x['path']).exists()]
+   if eligible:groups.append((f'T{n}',eligible))
+ for n in [544,546,547,548,549,550,568,573]:
+  f=ROOT/f'stage/docs/long_distance_20261101/source_manifest_T{n}.json';eligible=[x for x in read(f)['files'] if '/episodes/full_' in x['path'] and x['path'].endswith('.npz') and (ROOT/x['path']).exists()]
+  if eligible:groups.append((f'T{n}',eligible))
+ # No models in current loader chain, T54323 reference histories, T574 success,
+ # T575 own-memory, T576 proposals or reset snapshots are eligible.
+ for group,eligible in groups:
+  blob,receipt=B.fetch(group,T);archives[group]=receipt
+  with tarfile.open(fileobj=io.BytesIO(blob),mode='r:gz') as t:
+   for x in eligible:
+    f=ROOT/x['path'];raw=f.read_bytes();assert len(raw)==x['bytes'] and sha(raw)==x['sha256'] and t.extractfile(x['path']).read()==raw;records.append(dict(x,group=group))
+ total=sum(x['bytes'] for x in records);assert total>88*2**20,(total,len(records));save(LEDGER,dict(state='JOURNALED_BEFORE_EVICTION',records=records,archives=archives,completed=[],all_original_bytes_fresh_remote_verified=True,released_bytes=0,restore_script='stage/experiments/t577_offline_recovery_night/cold_cache.py restore PATH',epoch=time.time()))
+ l=read(LEDGER)
+ for x in records:
+  f=ROOT/x['path'];assert sha(f.read_bytes())==x['sha256'];f.unlink();l['completed'].append(x['path']);save(LEDGER,l)
+ l.update(state='COMPLETE_REMOTE_RESTORABLE',released_bytes=total);save(LEDGER,l);print('T577_COLD_RELEASE',total,flush=True)
+def restore(path):
+ B=backend();B.LEDGER=LEDGER;B.restore(path)
+if __name__=='__main__':globals()[sys.argv[1]](*sys.argv[2:])
