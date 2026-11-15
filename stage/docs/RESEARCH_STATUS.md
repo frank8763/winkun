@@ -1,3 +1,5 @@
+2026-11-15 T559最终检查：1500监督Adam+1500shadow，独立1500历史丢弃重构PASS；27历史仅14过动作拟合门，最坏RMS .119416/max1.056345，均值loss下降93.57%仍不合格。0native/0RL，32自主/新扰动/407/fresh/reload均未执行null；未保留新策略，T550不变。12原始远端逐SHA已过，本地10manifest成员再次全过，科学及driver已退出。下一仅保存特征-标签冲突/关键纠正误差诊断草案，不追加训练或改门槛。详day_20261115/t559/FINDINGS_AND_NEXT/COMPLETION_VERIFICATION；15:00all/CPU一核GPUoff/Phase隔离。
+
 2026-11-15 T559平滑策略蒸馏试验结束，COMPLETE，真实监督Adam与条件原生结果见day_20261115/t559/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。只诊断，不晋升，不自动学习或重启。
 
 2026-11-15 T559已按用户“下一步开始/继续”授权正式注册，零原生预检PASS，尚未实际launch。新40450参数平滑读出替代紧支撑库，仅迁移T550已成功23+4扰动history，固定1500监督Adam/1500shadow/1500独立丢弃重构，0新RL；条件32自主保持及4初态扰动，不以低loss称稳定。新增最坏4228996物理88cmd3600main/own14.25MiB，计原日19M/600/12300余额，13:00学14:30native15:00all/CPU14,15总一核GPUoff/Phase隔离不变。详day_20261115/t559/PLAN/PREFLIGHT/BUDGET及实际launch/status。launch.new_Adam=0仅表示launch时尚未更新，完整实际监督步数以optimizer_calls和summary.fit为准，不是整轮0Adam。
