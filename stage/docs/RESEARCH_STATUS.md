@@ -1,3 +1,5 @@
+2026-11-15 T559平滑策略蒸馏试验结束，COMPLETE，真实监督Adam与条件原生结果见day_20261115/t559/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。只诊断，不晋升，不自动学习或重启。
+
 2026-11-15 T559已按用户“下一步开始/继续”授权正式注册，零原生预检PASS，尚未实际launch。新40450参数平滑读出替代紧支撑库，仅迁移T550已成功23+4扰动history，固定1500监督Adam/1500shadow/1500独立丢弃重构，0新RL；条件32自主保持及4初态扰动，不以低loss称稳定。新增最坏4228996物理88cmd3600main/own14.25MiB，计原日19M/600/12300余额，13:00学14:30native15:00all/CPU14,15总一核GPUoff/Phase隔离不变。详day_20261115/t559/PLAN/PREFLIGHT/BUDGET及实际launch/status。launch.new_Adam=0仅表示launch时尚未更新，完整实际监督步数以optimizer_calls和summary.fit为准，不是整轮0Adam。
 
 2026-11-15 T557完整结束已audit/51原始全远端逐SHA且本次本地51清单与raw全部worker PID退出核验过：713868物理32cmd451.016s/0Adam，两个BC在六任务分别3/6与4/6成功，两共同sector1off2/sector4off2已在BC碰撞，RL又新增损伤。T558保存history分析0native0Adam完成：原T550这两任务RBF层激活430/481决策，两BC实际轨迹各仅1决策，.6–1.0s已偏离；第三sector0off2原168→1。支持脆弱轨迹支撑丢失，不是唯一因果/泛化证明。下一拟先从同T550已成功23history+4真实扰动迁移到移除紧支撑前向的固定平滑单Actor，再自主资格/恢复覆盖/RL；仅方案，未注册未启动，不重启T555/T557。详day_20261115/NEXT_AFTER_T557_AND_T558、T558_RAW_EVIDENCE，CPU总一核GPUoff/Phase隔离/15:00all不扩。
