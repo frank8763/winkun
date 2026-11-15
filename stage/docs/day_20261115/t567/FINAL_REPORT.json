@@ -1,0 +1,18 @@
+{
+  "state": "FAILED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t567_frozen_closed_loop_diagnosis/driver.py\", line 26, in main\n    call('main',p['main_seconds']);pids+=R.G.stopped(OUT);call('audit',p['audit_seconds']);assert read(OUT/'audit.json')['state']=='PASS'\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t567_frozen_closed_loop_diagnosis/driver.py\", line 17, in call\n    try:c.wait(timeout=cap);assert c.returncode==0,(action,c.returncode)\nAssertionError: ('main', 1)\n",
+  "summary": {
+    "state": "FAILED",
+    "pid": 387480,
+    "physics": 0,
+    "commands": 2,
+    "elapsed_s": 6.531444787979126,
+    "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t567_frozen_closed_loop_diagnosis/t567_runtime.py\", line 37, in main\n    rt.pool=Pool(dict(p,phase='student',native_stop_epoch=rt.deadline),rt.counts,rt.guard)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t567_frozen_closed_loop_diagnosis/t567_runtime.py\", line 28, in __init__\n    self.ready=[self.receive(i) for i in range(2)];assert all(v['state']=='READY' for v in self.ready);save(OUT/'worker_generations.json',[dict(parent=os.getpid(),workers=[c.pid for c in self.children],epoch=time.time(),CPU=[14,15],GPU=False)])\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t567_frozen_closed_loop_diagnosis/t567_runtime.py\", line 28, in <listcomp>\n    self.ready=[self.receive(i) for i in range(2)];assert all(v['state']=='READY' for v in self.ready);save(OUT/'worker_generations.json',[dict(parent=os.getpid(),workers=[c.pid for c in self.children],epoch=time.time(),CPU=[14,15],GPU=False)])\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t496_neural_speed_profile/speed_runtime.py\", line 55, in receive\n    value=super().receive(i)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t404_last_narrow/t404_core.py\", line 132, in receive\n    while not self.pipes[i].poll(.05):self.guard();assert self.children[i].is_alive() and time.time()-start<300,'Worker died or stalled'\nIndexError: list index out of range\n",
+    "result": null
+  },
+  "all_scientific_processes_stopped": true,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "new_RL": 0,
+  "globally_promoted": false,
+  "epoch": 1794730792.6992006
+}
