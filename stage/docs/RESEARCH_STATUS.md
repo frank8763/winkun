@@ -1,3 +1,5 @@
+2026-11-15 T557完整结束已audit/51原始全远端逐SHA且本次本地51清单与raw全部worker PID退出核验过：713868物理32cmd451.016s/0Adam，两个BC在六任务分别3/6与4/6成功，两共同sector1off2/sector4off2已在BC碰撞，RL又新增损伤。T558保存history分析0native0Adam完成：原T550这两任务RBF层激活430/481决策，两BC实际轨迹各仅1决策，.6–1.0s已偏离；第三sector0off2原168→1。支持脆弱轨迹支撑丢失，不是唯一因果/泛化证明。下一拟先从同T550已成功23history+4真实扰动迁移到移除紧支撑前向的固定平滑单Actor，再自主资格/恢复覆盖/RL；仅方案，未注册未启动，不重启T555/T557。详day_20261115/NEXT_AFTER_T557_AND_T558、T558_RAW_EVIDENCE，CPU总一核GPUoff/Phase隔离/15:00all不扩。
+
 2026-11-15 T557冻结BC阶段归因结束，COMPLETE，0Adam/0RL；逐任务BC与postRL结果见day_20261115/t557/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。只诊断，不晋升，不自动学习或重启。
 
 2026-11-15 T557已获用户日余额scope重分配授权并注册，尚待唯一driver实际launch。0新学习/0Adam，两个既有BC冻结模型各6任务+12精确原生重生，1,257,916物理32命令1800main/own17MiB；连T555日最坏5,392,152物理216cmd4353.581main<19M/600/12300。15:00all/14:30native不延，CPU14,15一核idle/GPUoff/global1GiB/free40/Phase隔离。目标区分BC已失守与RL新增失守，不晋升/不自动接学习；详day_20261115/t557/PLAN/AUTHORIZATION/BUDGET、实际launch/status。
