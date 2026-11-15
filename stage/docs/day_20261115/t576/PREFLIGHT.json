@@ -1,0 +1,44 @@
+{
+  "state": "PASS_ZERO_NATIVE",
+  "source": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t576_nonlinear_plasticity_pair/driver.py": "d83dc106050c118712308ac8cc3fef40cc642a97512b0db14e7f236a2853efa0",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t576_nonlinear_plasticity_pair/t576_learning.py": "4dbcecde4558cd04e445c203ee175e84efc06ed80f02cd923c088be50ec840a3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t576_nonlinear_plasticity_pair/t576_runtime.py": "ba6252842bcb70faa680e3358cae2fe646085ad47a29e0188551e4ca08cab24d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t576_nonlinear_plasticity_pair/transport.py": "5b3d0fbf02ef465926675deea33adf1aa1046de60a1f9cb03b8bfd1edcb70429",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t576_nonlinear_plasticity_pair/control.py": "1a1af5f4501c33bc0cbfcbc6f09fcd89991bc025554969c0c286941d8a47ff26"
+  },
+  "arms": [
+    {
+      "arm": "linear",
+      "trainable": 66,
+      "discarded_Adam": 4,
+      "changed_keys": [
+        "continual.2.weight",
+        "continual.2.bias"
+      ],
+      "live_shadow_Adam_and_mature_rollback_exact": true
+    },
+    {
+      "arm": "nonlinear",
+      "trainable": 5986,
+      "discarded_Adam": 4,
+      "changed_keys": [
+        "continual.0.weight",
+        "continual.0.bias",
+        "continual.2.weight",
+        "continual.2.bias"
+      ],
+      "live_shadow_Adam_and_mature_rollback_exact": true
+    }
+  ],
+  "discarded_engineering_Adam": 8,
+  "new_navigation_Adam": 0,
+  "new_native": 0,
+  "new_RL": 0,
+  "actual_dataset_rows": 23,
+  "exact_initial_function": true,
+  "elapsed_s": 3.4532206058502197,
+  "storage_upper": 8175616,
+  "own_bytes": 9437184,
+  "global_worst": 1071331232
+}
