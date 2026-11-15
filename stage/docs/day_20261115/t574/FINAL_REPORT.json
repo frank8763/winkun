@@ -1,0 +1,18 @@
+{
+  "state": "FAILED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t574_neural_recovery_handoff/driver.py\", line 26, in main\n    call('main',p['main_seconds']);pids+=R.G.stopped(OUT);call('audit',p['audit_seconds']);assert read(OUT/'audit.json')['state']=='PASS'\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t574_neural_recovery_handoff/driver.py\", line 17, in call\n    try:c.wait(timeout=cap);assert c.returncode==0,(action,c.returncode)\nAssertionError: ('main', 1)\n",
+  "summary": {
+    "state": "FAILED",
+    "pid": 425583,
+    "physics": 109330,
+    "commands": 7,
+    "elapsed_s": 74.4687111377716,
+    "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t574_neural_recovery_handoff/t574_runtime.py\", line 66, in main\n    short=dict(p['job'],teacher_holds=20);ss=rt.request([short],p['model'],'FIXED_FOUR_SECONDS_CORRECTION_THEN_STUDENT',full=True);b,sr=ss[0];hd=recovery_audit(p,sr,b,baseline);rt.request([short],p['model'],'EXACT_FOUR_SECONDS_THEN_STUDENT',full=True,reference=[sr]);autonomous=max(0,len(b['states'])-p['teacher_first']-20);handoff=dict(detail=hd,autonomous_decisions_after_return=autonomous,safe_goal_after_handoff=bool(hd['field_qualified_success'] and autonomous>0))\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t574_neural_recovery_handoff/t574_runtime.py\", line 58, in recovery_audit\n    F.M.audit_full_history(p,row,a)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t449_offline_joint_recovery/run.py\", line 360, in audit_full_history\n    if r['teacher']:assert not a['ownership'][:p['teacher_first']].any() and a['ownership'][p['teacher_first']:].all() and not a['stochastic'].any()\nAssertionError\n",
+    "result": null
+  },
+  "all_scientific_processes_stopped": true,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "new_RL": 0,
+  "globally_promoted": false,
+  "epoch": 1794742694.0722578
+}
