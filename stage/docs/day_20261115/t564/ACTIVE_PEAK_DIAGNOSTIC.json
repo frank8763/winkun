@@ -1,0 +1,150 @@
+{
+  "state": "SAVED_MODEL_ZERO_OPTIMIZER_ACTIVE_PEAK_DIAGNOSIS",
+  "epoch": 1794728174.1495895,
+  "native": 0,
+  "SGD": 0,
+  "Adam": 0,
+  "current_peak": 0.13949613830922547,
+  "top4": [
+    {
+      "id": "t502_field_sector1_offset2",
+      "decision": 217,
+      "component": "steer",
+      "error": 0.13949613830922547
+    },
+    {
+      "id": "t502_field_sector4_offset2",
+      "decision": 305,
+      "component": "steer",
+      "error": 0.13898113579585797
+    },
+    {
+      "id": "t502_field_sector4_offset2",
+      "decision": 311,
+      "component": "steer",
+      "error": 0.1387847378412781
+    },
+    {
+      "id": "t502_field_sector1_offset2",
+      "decision": 218,
+      "component": "steer",
+      "error": 0.1385908164628148
+    }
+  ],
+  "gradient_cosine_top4": [
+    [
+      1.0,
+      0.23442424833774567,
+      0.049470484256744385,
+      -0.9988788366317749
+    ],
+    [
+      0.23442424833774567,
+      0.9999999403953552,
+      0.1644991785287857,
+      -0.2422921061515808
+    ],
+    [
+      0.049470484256744385,
+      0.1644991785287857,
+      1.0000001192092896,
+      -0.046207983046770096
+    ],
+    [
+      -0.9988788366317749,
+      -0.2422921061515808,
+      -0.046207983046770096,
+      1.0
+    ]
+  ],
+  "two_leader_minimum_norm_weight": 0.49541021161252086,
+  "two_leader_combo_squared_norm": 17315.463688608183,
+  "predicted_slopes_two_leader_combo": [
+    -17315.463688608186,
+    -17315.463688608183
+  ],
+  "trials": [
+    {
+      "factor": 1.0,
+      "maximum": 0.1533943755973609,
+      "new_active": {
+        "id": "t502_field_sector1_offset2",
+        "decision": 218,
+        "component": "steer"
+      },
+      "current_leader_error": 0.12467612202425626,
+      "initial_top4_errors": [
+        0.12467612202425626,
+        0.13552659422605629,
+        0.13834710112056564,
+        0.1533943755973609
+      ]
+    },
+    {
+      "factor": 0.5,
+      "maximum": 0.14599686217951902,
+      "new_active": {
+        "id": "t502_field_sector1_offset2",
+        "decision": 218,
+        "component": "steer"
+      },
+      "current_leader_error": 0.1320720884852572,
+      "initial_top4_errors": [
+        0.1320720884852572,
+        0.13725187778566844,
+        0.138563665497206,
+        0.14599686217951902
+      ]
+    },
+    {
+      "factor": 0.25,
+      "maximum": 0.14229469985023147,
+      "new_active": {
+        "id": "t502_field_sector1_offset2",
+        "decision": 218,
+        "component": "steer"
+      },
+      "current_leader_error": 0.1357808041394729,
+      "initial_top4_errors": [
+        0.1357808041394729,
+        0.1381160169791692,
+        0.13867363954555945,
+        0.14229469985023147
+      ]
+    },
+    {
+      "factor": 0.125,
+      "maximum": 0.14044294749784259,
+      "new_active": {
+        "id": "t502_field_sector1_offset2",
+        "decision": 218,
+        "component": "steer"
+      },
+      "current_leader_error": 0.1376376691665107,
+      "initial_top4_errors": [
+        0.1376376691665107,
+        0.13854845481365402,
+        0.13872904833637634,
+        0.14044294749784259
+      ]
+    },
+    {
+      "factor": 0.0625,
+      "maximum": 0.13951692608958033,
+      "new_active": {
+        "id": "t502_field_sector1_offset2",
+        "decision": 218,
+        "component": "steer"
+      },
+      "current_leader_error": 0.13856670638716895,
+      "initial_top4_errors": [
+        0.13856670638716895,
+        0.13876476502146218,
+        0.13875685802144788,
+        0.13951692608958033
+      ]
+    }
+  ],
+  "model_sha256": "5c090ca5f49791d7bfece9cb708638d94b39d015bca0e8164395ac3d2bf36e8f",
+  "limitations": "Saved-history differential and algebraic query only; combination not applied, not new optimization or physical recovery; two-leader slope omits other active/nearby constraints and is no navigation guarantee."
+}
