@@ -1,0 +1,1 @@
+T604成功恢复策略初始化匹配学习结束：COMPLETE；单臂42历史学习、三处自主接管及条件旧任务验收见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
