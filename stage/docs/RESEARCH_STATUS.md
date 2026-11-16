@@ -1,3 +1,5 @@
+2026-11-16 用户明确允许T598独立2879616物理63命令12MiB、128live128shadow128audit及4丢弃pref、20:00全停。4丢弃Adam0native预检PASS：影子/成熟ActorAdam回退/读回精确，更新后96步sequence-step位置误差<1e-12。正式注册，是否实际启动以launch为准。完整T550冻结+独立120→32GRU差分残差10274可训/10274冻结参考，额外双32carry逐步保存并审计；39keep+3已实际成功自主恢复后缀，128监督fullbatch/0新RL。3自主接管与exact必测，有1safe才49+4exact；全39保持且新接管safe才研究保留，407/fresh/reload null，不称原起点新成功/全场地晋升。计时零更新测量2.722s后在未训练前把草案256改128，原准备调整记录保留，不扩额度/seed。main1500learn900audit600backup180source120，19:35学19:45native20:00all及更早相对从严；全局1GiB/free40/CPU14,15总200低优先GPUoff/Phase隔离。唯一driver科学退后audit及全原始RAM远端SHA和source；active禁并发写runs/改源/重复收尾。详day_20261116/t598/PLAN/AUTHORIZATION/PREFLIGHT_OPTIMIZER。
+
 2026-11-16 T597只读固定批测量COMPLETE：47.904s/0native0optimizer，39历史特征+初末三损失梯度六组共100backward。逐层紧支撑active开关全不变，5失守中3修正幅度变、2无激活，不能称旧修正关闭或唯一根因；最终RL-保持cos=-.42501、保持-恢复=-.31519，总梯度dot恢复=-.010501，固定点存在冲突非全局证明。39动作指标精确T596/初始梯度总范数与原首更新匹配、输入SHA及模型不变，内部核对非独立全梯度复算。全部小型原始文本可逆bundle进源树，见day_20261116/t597/RAW_EVIDENCE。下一完整冻结T550+独立小循环残差/恢复先行再freshRL是草案，未注册学习/未仿真，不扩旧T596预算；仍保留T550，Phase隔离。
 
 2026-11-16 T596原函数初始化的可训练循环闭环策略试验结束：COMPLETE；真实更新、49自主及3恢复保持见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
