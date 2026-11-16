@@ -1,0 +1,199 @@
+[
+  {
+    "label": "rlpd",
+    "repository": "ikostrikov/rlpd",
+    "branch": "main",
+    "path": "train_finetuning.py",
+    "sha256": "2b823153be70a93c3b2061f82cd2868313e01ba2619331666ddd22bc705258a4",
+    "bytes": 7628,
+    "hits": [
+      [
+        36,
+        "flags.DEFINE_float(\"offline_ratio\", 0.5, \"Offline ratio.\")"
+      ],
+      [
+        84,
+        "assert FLAGS.offline_ratio >= 0.0 and FLAGS.offline_ratio <= 1.0"
+      ],
+      [
+        131,
+        "offline_batch = ds.sample(FLAGS.batch_size * FLAGS.utd_ratio)"
+      ],
+      [
+        133,
+        "for k, v in offline_batch.items():"
+      ],
+      [
+        138,
+        "agent, update_info = agent.update(batch, FLAGS.utd_ratio)"
+      ],
+      [
+        183,
+        "online_batch = replay_buffer.sample("
+      ],
+      [
+        184,
+        "int(FLAGS.batch_size * FLAGS.utd_ratio * (1 - FLAGS.offline_ratio))"
+      ],
+      [
+        186,
+        "offline_batch = ds.sample("
+      ],
+      [
+        187,
+        "int(FLAGS.batch_size * FLAGS.utd_ratio * FLAGS.offline_ratio)"
+      ],
+      [
+        190,
+        "batch = combine(offline_batch, online_batch)"
+      ],
+      [
+        195,
+        "agent, update_info = agent.update(batch, FLAGS.utd_ratio)"
+      ]
+    ],
+    "scope": "Read code only in RAM; no clone, install, execution or reproduction"
+  },
+  {
+    "label": "clear",
+    "repository": "AGI-Labs/continual_rl",
+    "branch": "develop",
+    "path": "continual_rl/policies/clear/clear_monobeast.py",
+    "sha256": "db7bee1ea26656d56fc3fd73d785ad960231d4af7e30dc6b2f4a63109592f616",
+    "bytes": 13770,
+    "hits": [
+      [
+        13,
+        "An implementation of Experience Replay for Continual Learning (Rolnick et al, 2019):"
+      ],
+      [
+        25,
+        "assert self._model_flags.always_reuse_actor_indices or self._model_flags.num_actors >= int(self._model_flags.batch_size * self._model_flags.batch_replay_ratio), \\"
+      ],
+      [
+        29,
+        "# We want the replay buffers to be created in the large_file_path,"
+      ],
+      [
+        45,
+        "model_flags.replay_buffer_frames // (model_flags.unroll_length * model_flags.num_actors)"
+      ],
+      [
+        47,
+        "self._replay_buffers, self._temp_files = self._create_replay_buffers("
+      ],
+      [
+        55,
+        "self._replay_lock = threading.Lock()"
+      ],
+      [
+        57,
+        "# Each replay batch needs to also have cloning losses applied to it"
+      ],
+      [
+        59,
+        "# guarantee order - i.e. one learner thread might get one replay batch for training and a different for cloning"
+      ],
+      [
+        60,
+        "self._replay_batches_for_loss = queue.Queue()"
+      ],
+      [
+        66,
+        "del self._replay_buffers"
+      ],
+      [
+        71,
+        "def _create_replay_buffers("
+      ],
+      [
+        101,
+        "permanent_file_name = f\"replay_{actor_id}_{key}.fbt\""
+      ],
+      [
+        120,
+        "def _get_replay_buffer_filled_indices(self, replay_buffers, actor_index):"
+      ],
+      [
+        122,
+        "Get the indices in the replay buffer corresponding to the actor_index."
+      ],
+      [
+        125,
+        "buffer_indicator = replay_buffers['reservoir_val'][actor_index].squeeze(1)"
+      ],
+      [
+        126,
+        "replay_indices = np.where(buffer_indicator != 0)[0]"
+      ],
+      [
+        127,
+        "return replay_indices"
+      ],
+      [
+        131,
+        "Get the unfilled entries in the actor's subset of the replay buffer using a set difference."
+      ]
+    ],
+    "scope": "Read code only in RAM; no clone, install, execution or reproduction"
+  },
+  {
+    "label": "cbp",
+    "repository": "shibhansh/loss-of-plasticity",
+    "branch": "main",
+    "path": "lop/algos/cbp.py",
+    "sha256": "34c7a1017d65d414aeb6930d74d6401b7e2f552134919c95632ab94166480a3d",
+    "bytes": 2625,
+    "hits": [
+      [
+        14,
+        "step_size=0.001,"
+      ],
+      [
+        19,
+        "replacement_rate=0.001,"
+      ],
+      [
+        22,
+        "maturity_threshold=100,"
+      ],
+      [
+        34,
+        "self.opt = optim.SGD(self.net.parameters(), lr=step_size, momentum=momentum, weight_decay=weight_decay)"
+      ],
+      [
+        36,
+        "self.opt = AdamGnT(self.net.parameters(), lr=step_size, betas=(beta, beta_2), weight_decay=weight_decay)"
+      ],
+      [
+        50,
+        "replacement_rate=replacement_rate,"
+      ],
+      [
+        52,
+        "maturity_threshold=maturity_threshold,"
+      ],
+      [
+        62,
+        "Learn using one step of gradient-descent and generate-&-test"
+      ],
+      [
+        72,
+        "# do the backward pass and take a gradient step"
+      ],
+      [
+        75,
+        "self.opt.step()"
+      ],
+      [
+        77,
+        "# take a generate-and-test step"
+      ],
+      [
+        80,
+        "self.gnt.gen_and_test(features=self.previous_features)"
+      ]
+    ],
+    "scope": "Read code only in RAM; no clone, install, execution or reproduction"
+  }
+]
