@@ -1,3 +1,7 @@
+2026-11-16 T578只读离线复盘COMPLETE/独立整数与SHA审计PASS，用户明确“先完成离线分析，不启动仿真”；0新增物理/优化器/模型推理，原夜间额度不延长。T550对T577完整407的job/初始积分/场景/目标逐项相同：原成功丢115、新增8，非仅总数相差107；T576初始化无完整407，不能全归因昨夜遗忘。六米49超时终余中位5.044m、八米45超时4.891m，分别驱动命令任务中位-.469/-.491但非实测速；完整验收407的NPZ均仅动作/计数/终止三数组，156项位置型原因仍缺测。30现存full限24探索训练+6混合接管，rl04四条167.532秒平均端点位移速.023-.024m/s，不冒充最终策略自主轨迹。6次新教师均不合格，mean/tail实际跳过，不称三路新纠正充分训练。已锁六任务/三模型/18unique18exact草案最坏1706604物理40命令，用户未授权、不注册launch；旧截止已过，不执行。论文与反证/数据覆盖及下一决策见day_20261116/t578/FINDINGS_AND_NEXT、PRIMARY_SOURCES，原代码/失败/模型不动、Stage/Phase隔离。
+
+2026-11-16 Stage T577通宵已结束。state=COMPLETE；物理=91652819，命令=3079；保留新模型=True；remote=PENDING。完整证据与未执行项见FINAL_REPORT.json，不称全局通过。
+
 2026-11-15 T576同数据同Adam线性与非线性可塑性对照结束，COMPLETE，实际逐臂结果见day_20261115/t576/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。每臂最多256live256shadow及独立历史Adam重构/0新RL/无全场地或泛化晋升声明，不自动续预算。
 
 2026-11-15 T575已真实COMPLETE/独立audit PASS/全部原件远端逐SHA/源树核验：1635496物理64cmd683.809941s，22自身历史精确再生、1live+1shadow线性求解/0Adam0新RL；32自主旧7/8+field13/24=20/32。sector2off2恢复GOAL且指定exact，但丢dev6/field1off1/off2，拒绝回退T572A研究副本，T550保留不改。零更新posthoc Phi_old4839x33满秩33/nullity0，仅66末层变化；说明固定特征精确保旧会封死该读出更新，不证明任务不可兼容。三失守旧history command差峰值.03661/.01035/.05170；平均小不代表闭环安全。下一同数据可塑性对照+新旧真实自分布恢复聚合仅草案，未注册启动；不重复T571或昨夜响应保持，不追加已过20:10学习窗口/日600命令。日累计15010653物理584cmd，CPU/磁盘/Phase隔离保持。见day_20261115/t575/POSTHOC_INTERFERENCE/SOLUTION_PRIMARY_REVIEW/NEXT_SOLUTION_DRAFT。
