@@ -1,0 +1,1 @@
+T582新旧任务真实RL两组对照结束：COMPLETE；真实训练/保留回退见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
