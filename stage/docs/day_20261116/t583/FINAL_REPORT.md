@@ -1,0 +1,1 @@
+T583实际噪声前缀训练教师资格检查结束：COMPLETE；四条恢复资格及失败见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
