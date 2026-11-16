@@ -1,0 +1,66 @@
+{
+  "state": "COMPLETED_RUN_PERFORMANCE_ASSESSMENT",
+  "new_native": 0,
+  "new_optimizer": 0,
+  "all_scientific_processes_stopped": true,
+  "main_seconds": 1496.1948835849762,
+  "physics": 3957378,
+  "commands": 158,
+  "observed_after_collection_learning_checkpoint_seconds_upper": 15.578392267227173,
+  "observed_after_collection_fraction": 0.010412007445113282,
+  "caveat": "mtime interval includes both arms live/shadow fit and checkpoint overhead; excludes native Actor inference and initial feature caching",
+  "existing_CPU_workers": 2,
+  "existing_CPU": [
+    14,
+    15
+  ],
+  "existing_CPU_quota_percent": 200,
+  "cpu14_thread_siblings": [
+    14,
+    30
+  ],
+  "cpu15_thread_siblings": [
+    15,
+    31
+  ],
+  "GPU_hardware": "RTX5060 Laptop,8151MiB; aggregate hardware queried only, no other process/model inspected",
+  "GPU_training_benchmark_executed": false,
+  "next_resource_policy": {
+    "requested_native_workers": 4,
+    "requested_CPU_quota_percent": 400,
+    "actual_new_CPU_assignment": null,
+    "admission": "Use only cores available without competing with the separate research line; retain low priority. Validate identical full trajectories on changed worker assignment before scientific collection.",
+    "native_protocol_change_requires_new_registered_source": true,
+    "GPU": "Consider only after measured end-to-end speed benefit and density/gradient contracts; current CPU-native MuJoCo is not moved to GPU by enabling CUDA in Torch"
+  },
+  "no_current_run_resource_mutation": true,
+  "no_automatic_science_launch": true,
+  "autonomous": {
+    "NEW_ONLY": {
+      "success": 32,
+      "lost": [
+        "t502_field_sector0_offset1",
+        "t502_field_sector0_offset2",
+        "t502_field_sector1_offset2",
+        "t502_field_sector2_offset2",
+        "t502_field_sector4_offset2",
+        "wide117_8m_dev6_LEFT_00",
+        "wide117_8m_dev6_RIGHT_10"
+      ],
+      "gained": [],
+      "accepted": false
+    },
+    "NEW_PLUS_OLD": {
+      "success": 36,
+      "lost": [
+        "t502_field_sector1_offset2",
+        "t502_field_sector2_offset2",
+        "t502_field_sector4_offset2"
+      ],
+      "gained": [],
+      "accepted": false
+    }
+  },
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "archive_sha256": "4315bc68980a12fc7edac3a4b4f018b41f8a6575c928398300baf9f97bbe3c68"
+}
