@@ -1,0 +1,1911 @@
+{
+  "id": "T588_ACTUAL_COMPACT_SUPPORT_AUDIT",
+  "inputs": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t588_actual_support_audit/support_audit.py": "069c01e6d75e59fc747fbab319f887c92e91a1e76d5abf1e8e4a94da8bb4f174",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261116/t588/PLAN.md": "3f5488539ae53563c113a3dffd7c0562cb2b6613a50ccdee4edcf3fc6aff245f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/protocol.json": "6f431a58b36b1254c1978839215ad39e62f20da188dcfced92b96d4de58a4f5c",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/summary.json": "161ff30d036ad761e1cb3a8b69fc353b27c35d5549693ef186545bebb69bc0b4",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/audit.json": "db7d7a18363f7ec4072d98bcc28164b85fa926a695281b5b346835980e190c50",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/SEALED.json": "8c60e79f962511dcb00f57765451cd16599dbac56e113fa34029e3a8bc05e5ff",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/initial.pt.gz": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_00_gap/episodes/full_1.npz": "3f8392febd5df3fdc65d3e722fe72452ff9ca330489a588f2e454546e4a1c236",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t543_feedback_joint_repair/episodes/full_10.npz": "0c0ebc17920aca3d89ce2d2d2fd2526053b166b166076b02952191f78d7e33b3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_01_gap/episodes/full_1.npz": "42cc13c0fc564522ccf7162e2c64fd78a1ab986d62af17e7552164cc4bdc93c2",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_0.npz": "c5938b54299f32c5f75862522a0d5ebcab804464381444ade892a17ab90fb9ad",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_1.npz": "f3eb5066e36efedad946ee3b32f1976643c2b11a674f6c3b5846024ec35c5cb9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_2.npz": "068998b8af1518ec0a9cd5915955c6a2bcd2fe45b7d5a2a1ea90c06b04ce40e6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t583_qualified_gap_recovery/episodes/full_5.npz": "c253df8218ade50c64d0e2789ca4239022c81cda77982b6e36fd28d37d45e2c6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t583_qualified_gap_recovery/episodes/full_6.npz": "eab29ca3e3047c04894e2824324b4c50fdedd10e71eb4c2feb93ac0e62bf2521",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t583_qualified_gap_recovery/episodes/full_7.npz": "4328d7e9815fbfe8f04ede7418eebf5bbef7d28c34eca9b3f285d36c3527299b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/episodes/full_0.npz": "b9773a05faa2b7a07af50ed98eb993f4e8b8f1953132337ea90245f423b7ad38",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/episodes/full_1.npz": "a5b1266f863f43ca02dfd1e4ec3adebe8002b181ba88bfafe6e385ffd4919430",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/episodes/full_2.npz": "50d734f500dfaea50767949f28113dee90877fbc76b2c72e81b8931d532025d3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_01_gap/proposal.pt.gz": "a8231f5bb0ed1822b3cdf6700b35fdeed8d87e36abe869b66a122663149bb5d8",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_00_gap/proposal.pt.gz": "ce43a95cb799fbd9a335e47a8a0a9fc1ae2a90d9237dcb4d39e1c0b87524260a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t549_curvature_gated_transfer/proposal.pt.gz": "539346fcc7b4330e1a23e101330fdd610ca74d6e2ec8c7995c80eaeb888380e4"
+  },
+  "entries": [
+    {
+      "kind": "old_success_record",
+      "job": "t502_field_sector1_offset2",
+      "row": {
+        "job_id": "t502_field_sector1_offset2",
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_00_gap/episodes/full_1.npz",
+        "sha256": "3f8392febd5df3fdc65d3e722fe72452ff9ca330489a588f2e454546e4a1c236",
+        "success": true,
+        "collision": false
+      },
+      "k": 3,
+      "teacher_stop": 23
+    },
+    {
+      "kind": "old_success_record",
+      "job": "t502_field_sector2_offset2",
+      "row": {
+        "job_id": "t502_field_sector2_offset2",
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t543_feedback_joint_repair/episodes/full_10.npz",
+        "sha256": "0c0ebc17920aca3d89ce2d2d2fd2526053b166b166076b02952191f78d7e33b3",
+        "success": true,
+        "collision": false
+      },
+      "k": 26,
+      "teacher_stop": 46
+    },
+    {
+      "kind": "old_success_record",
+      "job": "t502_field_sector4_offset2",
+      "row": {
+        "job_id": "t502_field_sector4_offset2",
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_01_gap/episodes/full_1.npz",
+        "sha256": "42cc13c0fc564522ccf7162e2c64fd78a1ab986d62af17e7552164cc4bdc93c2",
+        "success": true,
+        "collision": false
+      },
+      "k": 4,
+      "teacher_stop": 24
+    },
+    {
+      "kind": "actual_failed_handoff",
+      "job": "t502_field_sector1_offset2",
+      "row": {
+        "complete": true,
+        "collision": true,
+        "success": false,
+        "timeout": false,
+        "administrative_censor": false,
+        "physics_steps": 20839,
+        "remaining_m": 5.324801668229545,
+        "terminal_contacts": [
+          {
+            "geom1": "real_rect_obs_0",
+            "geom2": "chassis_collision",
+            "distance": -0.00026845738892992423
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.014482297983443429
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.014468784556394984
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.014249659282348545
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.014237704150644723
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.017076496208125763
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.017046539864467553
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.016844607056945154
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01681470902233398
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.04144030562885267
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.041965667335206555
+          }
+        ],
+        "policy_hash": "8ef9816c048e48321a09b6195a7061b4d1173cc9b1630de4c47008d906892183",
+        "physics": 20839,
+        "array_digest": "af41f99fbed6126493480d46fda878f7e62753d00fa64f7982bfb84cc77bfc3e",
+        "array_hashes": {
+          "states": "c669e6f454bd3273e80e5d129920b84ee0883e36308452a29197d449e7d78e9c",
+          "actions": "2b9c5100da8882b757465b4e083d69fab4974e01fe2871b5675cccbba0198a29",
+          "native_counts": "16d4b372f1bf062a554b70493588552200bc68e9bd241e73e71c1778f133f039",
+          "next_states": "c07e2f6f9df991dcd3c93ec7f7db4b8fc6dc4b40cd7273a7ad518e3dd16aaa5f",
+          "poses": "d043746744024c6a230e127fed273fdad6a229c25250a11cf713a52fa13006e5",
+          "next_poses": "8c810095bc609fb3493e7a3adb21ee5f8825907b6a9ee4f9195bcbfd639c328c",
+          "end_flags": "84023d5da253d5661775e5e8b001a0d3edfa8a7ad62542e13d710aa3bd0a5f72",
+          "rewards": "a4b526e60ed00a41c52368c0e72aad9fb541d49f189d4ede51f15f85baadc209",
+          "history_poses": "125550401edfb85192e9f0b1f15463e0866e44a8664ad5b4879c0e94af857fb6",
+          "history_goals": "3a4231f6c9de7d19fe807e06be5bf74e21be055ef4a67d000cbaaca00f400b99",
+          "history_times": "3157845038426ad80925d95775e05d2adb0490c8cb96ddd4d2fd97d54a0f39bd",
+          "environment_rewards": "a4b526e60ed00a41c52368c0e72aad9fb541d49f189d4ede51f15f85baadc209",
+          "initial_native_integration": "768f11a6d34ada6d0e5722430b6c5527cb90e2a4d5525ddd51a08bad33a18b5a",
+          "final_native_integration": "a181b5c0c5e185e85995403c400245842310109aea260cc9ad52041b13de79f1",
+          "hidden_before": "7f78529120fd460e5831371b4b74ffbd90b1f535ba946795207b38922c11e91e",
+          "last_hidden_after": "02d0cfb6d3b63a501a4d92a97980c1065a3ca5abf91fcb38c0bf52f4716488aa",
+          "innovations": "c8c60f9e3e7f9b1859564614ba32bbfe6346da5997b4f4584b85da7e418f1f4f",
+          "raw_actions": "ba5cfc6328f44e30d868ec99dc39da2008c095d9af7ebcc534e85c4f6efabf88",
+          "atom": "afd55e99784c7a64158c8f54d111f54dc736e303bb022da269de73f2b75d0ac1",
+          "locations": "ba5cfc6328f44e30d868ec99dc39da2008c095d9af7ebcc534e85c4f6efabf88",
+          "logp": "b5761f55786e95dfab863eaaf327d4123a6c42694f316c4f7f6298693ee99e33",
+          "stochastic": "79c42e6e96449d981b63164b4979e057b2371c0dc1b304f2aa56c0891165b55d",
+          "hold_sha256": "f45b1c512aa05ccc6eb9f9e7e83b6bdc64372a6e38fd85bc402e2b2cbdf017f3",
+          "ownership": "b14957e00b6ad230269075e2e43b60c367566cdabb43affa857c3d7787adcf67",
+          "task_goal_xy": "8867bafac354f24811273d75b56f5f73c4a0710fc5efcf264c700040b97c7d29",
+          "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+          "source_prefix_actions": "e69d36c4ee15d99771ed0cd07e47288a3f1be274b0d98873405fa4bddcdf19a5",
+          "student_takeover_first": "556dffc4bb2f17c8d57345cc40fe77e4d572c1590acec9b560654f4ddfdda88e"
+        },
+        "integration_sha256": "a181b5c0c5e185e85995403c400245842310109aea260cc9ad52041b13de79f1",
+        "pid": 537446,
+        "cpu": 0,
+        "teacher": false,
+        "teacher_first": null,
+        "job_id": "t502_field_sector1_offset2",
+        "field_detail": {
+          "id": "t502_field_sector1_offset2",
+          "field_boundary_crossed": false,
+          "field_qualified_success": false
+        },
+        "observation_contract": {
+          "decisions": 209,
+          "pose_min_xy": [
+            0.512162303906412,
+            4.808326112068523
+          ],
+          "pose_max_xy": [
+            4.8083261120685235,
+            5.023344832282338
+          ],
+          "input_dim": 120
+        },
+        "role": "INITIAL_FROZEN_ACTUAL_STATE_HANDOFF",
+        "seed": null,
+        "request": {
+          "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/initial.pt.gz",
+          "job": {
+            "id": "t502_field_sector1_offset2",
+            "source_reset_id": "t502_new_sector1_offset2",
+            "group": "6m_LEFT",
+            "case": {
+              "id": "6m_LEFT",
+              "seed": 2029653601,
+              "angle_deg": -17.3,
+              "side": "LEFT",
+              "distance_m": 9.616652224137045,
+              "step_cap": 64112,
+              "group": "original_5m_primary"
+            },
+            "delta_x_m": 0.0,
+            "delta_y_m": 0.0,
+            "delta_yaw_deg": 0.0,
+            "seed": 0,
+            "mode": "deterministic",
+            "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+            "expected_initial120_sha256": null,
+            "wide_course": true,
+            "circle_shift_x_m": 0.6,
+            "fullfield_start_pose": [
+              4.8083261120685235,
+              4.808326112068523,
+              3.141592653589793
+            ],
+            "fullfield_goal_xy": [
+              -4.808326112068523,
+              4.8083261120685235
+            ],
+            "start_sector": 1,
+            "sector_offset": 2,
+            "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/episodes/full_12.npz",
+            "student_takeover_first": 3
+          },
+          "seed": null,
+          "query": false,
+          "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_0.npz"
+        },
+        "loaded_model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+        "model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+        "full": true,
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_0.npz",
+        "sha256": "c5938b54299f32c5f75862522a0d5ebcab804464381444ade892a17ab90fb9ad",
+        "full_arrays_generated_but_not_saved": false
+      },
+      "k": 3,
+      "teacher_stop": 23
+    },
+    {
+      "kind": "actual_failed_handoff",
+      "job": "t502_field_sector2_offset2",
+      "row": {
+        "complete": true,
+        "collision": true,
+        "success": false,
+        "timeout": false,
+        "administrative_censor": false,
+        "physics_steps": 22275,
+        "remaining_m": 5.5663726709913,
+        "terminal_contacts": [
+          {
+            "geom1": "real_circle_obs_0",
+            "geom2": "chassis_collision",
+            "distance": -0.00020105652746515374
+          },
+          {
+            "geom1": "real_circle_obs_0",
+            "geom2": "chassis_collision",
+            "distance": -0.00020105652746515374
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015686906378747242
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015678982787311377
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015623737142839197
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015616048445172545
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015722088257027242
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.0157139505421965
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01565902470444286
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01565091043625627
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.045197219540141595
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.046525087935107554
+          }
+        ],
+        "policy_hash": "8ef9816c048e48321a09b6195a7061b4d1173cc9b1630de4c47008d906892183",
+        "physics": 22275,
+        "array_digest": "6dca9d18d357359fa8fb9eaad2912a05556491d388172026bd2d385871ed6c98",
+        "array_hashes": {
+          "states": "3c2c9ff9f55571ef79fd3b7ae54d6679b02af847d866f03fc276cbb84862c42e",
+          "actions": "8e8b022a6aeabb352df41dbf9962bc8673fd1e1fe41f169283657c496130f11c",
+          "native_counts": "5ab610a572acea4c973dbc9e8b06840ec26cde3b948a1c6f7ca7dcb7c0379cae",
+          "next_states": "a7b8e3634a6f6fe3fe9376ced54c496cbd99847189821f081f8650ab4a1769b2",
+          "poses": "e93059d403c8adcef8559e15bcf9d4c8c9dbfe99a092b3d9f0dcfa9c3f2fed79",
+          "next_poses": "95870f35939c9dbe5ccebda68f5caf3a1eb261c92875889c5757aa3ddf10cf71",
+          "end_flags": "3f9ffe148fcf2a3e0f04f53122ce39f0e9f5f09bb4fcfee821f516bd6e302411",
+          "rewards": "59c18b947dccf67890662b684abe1756fcdd6408051b437c4bcaa8ef6427d6ef",
+          "history_poses": "495b0fad62b6691de8d532e9d911f1b8fb01ae034b1182e813c3e753aff01c71",
+          "history_goals": "305b288485b2a4b94f2db5c7d4800ee8f56cb926d2437d1a3f49916985b9d209",
+          "history_times": "afdf852131a1e26a0410d25c0d21927b42a0a5074c0fbea7773a8b48184aac5e",
+          "environment_rewards": "59c18b947dccf67890662b684abe1756fcdd6408051b437c4bcaa8ef6427d6ef",
+          "initial_native_integration": "d51462fa16f0afa1f0c4761a00eb51588bb1c278f67546accb4182081035a1e8",
+          "final_native_integration": "35e95a17e83199ed4411494493818ce984aac2dddf4d981a51b139e8f604cf61",
+          "hidden_before": "09c59a73e9e691a85ad914f80f2a8da359d748e4773730b9ddf43003628f2473",
+          "last_hidden_after": "0e58e791ecb2a4b8c32db390f1a52ed514dfd85411df0a40d15f82671abe0de0",
+          "innovations": "b0f191b1053d71c975b6f55fe98213db196dc57d3e0ffd89685f021639895ccc",
+          "raw_actions": "c59c3d3bc8fb3eb9aaa95a861e8e22e32a6125a6120db606a6c8a705379df295",
+          "atom": "ce7d7ba02f3603c12ea80263beb07d3ed6e4b1eb608462ccca28f597960e4c23",
+          "locations": "c59c3d3bc8fb3eb9aaa95a861e8e22e32a6125a6120db606a6c8a705379df295",
+          "logp": "d8481d0653346c7373e040ae9ff98316fd213fc75c91afbdd7138c5df88924f6",
+          "stochastic": "1e1a716fb9cc2798d32ad2bcf0465df048c6faf14500241b72ab3c6b12fc4ba1",
+          "hold_sha256": "6984b2f47029cc2a43b5a66b393c59dff9c2ad372b41fd6cac0757699c5734a1",
+          "ownership": "4932e446b5440e2afb03d6b0db6bcafc6323c3186370e7ec8cf5c39d17d0511e",
+          "task_goal_xy": "4e215db893ba4105ee1db4ae1366558171ed563b02ff8ca29427b5dfe20ba64a",
+          "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+          "source_prefix_actions": "4880a95a95929794c2a919ee470f90cdb4865128bb506b507e9dc37309c5b3cf",
+          "student_takeover_first": "4411e81b5bd96c557cb25aff180157d2719c5c3c298fd401924f0c382d420955"
+        },
+        "integration_sha256": "35e95a17e83199ed4411494493818ce984aac2dddf4d981a51b139e8f604cf61",
+        "pid": 537447,
+        "cpu": 1,
+        "teacher": false,
+        "teacher_first": null,
+        "job_id": "t502_field_sector2_offset2",
+        "field_detail": {
+          "id": "t502_field_sector2_offset2",
+          "field_boundary_crossed": false,
+          "field_qualified_success": false
+        },
+        "observation_contract": {
+          "decisions": 223,
+          "pose_min_xy": [
+            -2.965008874578606,
+            4.03451952285498
+          ],
+          "pose_max_xy": [
+            4.1637991171010006e-16,
+            6.8
+          ],
+          "input_dim": 120
+        },
+        "role": "INITIAL_FROZEN_ACTUAL_STATE_HANDOFF",
+        "seed": null,
+        "request": {
+          "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/initial.pt.gz",
+          "job": {
+            "id": "t502_field_sector2_offset2",
+            "source_reset_id": "t502_new_sector2_offset2",
+            "group": "6m_LEFT",
+            "case": {
+              "id": "6m_LEFT",
+              "seed": 2029653601,
+              "angle_deg": -17.3,
+              "side": "LEFT",
+              "distance_m": 9.616652224137045,
+              "step_cap": 64112,
+              "group": "original_5m_primary"
+            },
+            "delta_x_m": 0.0,
+            "delta_y_m": 0.0,
+            "delta_yaw_deg": 0.0,
+            "seed": 0,
+            "mode": "deterministic",
+            "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+            "expected_initial120_sha256": null,
+            "wide_course": true,
+            "circle_shift_x_m": 0.6,
+            "fullfield_start_pose": [
+              4.1637991171010006e-16,
+              6.8,
+              -2.356194490192345
+            ],
+            "fullfield_goal_xy": [
+              -6.8,
+              8.327598234202001e-16
+            ],
+            "start_sector": 2,
+            "sector_offset": 2,
+            "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/episodes/full_16.npz",
+            "student_takeover_first": 26
+          },
+          "seed": null,
+          "query": false,
+          "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_1.npz"
+        },
+        "loaded_model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+        "model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+        "full": true,
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_1.npz",
+        "sha256": "f3eb5066e36efedad946ee3b32f1976643c2b11a674f6c3b5846024ec35c5cb9",
+        "full_arrays_generated_but_not_saved": false
+      },
+      "k": 26,
+      "teacher_stop": 46
+    },
+    {
+      "kind": "actual_failed_handoff",
+      "job": "t502_field_sector4_offset2",
+      "row": {
+        "complete": true,
+        "collision": true,
+        "success": false,
+        "timeout": false,
+        "administrative_censor": false,
+        "physics_steps": 19775,
+        "remaining_m": 6.0178072941019405,
+        "terminal_contacts": [
+          {
+            "geom1": "real_circle_obs_8",
+            "geom2": "chassis_collision",
+            "distance": -0.0001136907864521552
+          },
+          {
+            "geom1": "real_circle_obs_8",
+            "geom2": "chassis_collision",
+            "distance": -0.0001136907864521552
+          },
+          {
+            "geom1": "real_circle_obs_8",
+            "geom2": "chassis_collision",
+            "distance": -0.0001136907864521552
+          },
+          {
+            "geom1": "real_circle_obs_8",
+            "geom2": "chassis_collision",
+            "distance": -0.0001136907864521552
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015364355914728928
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015359878629161272
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015328758494394926
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015324258251304748
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015966902542143557
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015962373322924744
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01593130857297037
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015926749492308517
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03516193735193994
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03516193735193994
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03516193735193994
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03516193735193994
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03522789710184906
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03522789710184906
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03522789710184906
+          }
+        ],
+        "policy_hash": "8ef9816c048e48321a09b6195a7061b4d1173cc9b1630de4c47008d906892183",
+        "physics": 19775,
+        "array_digest": "8cca38b73dd0525a1779d63d0c917b1e9fb33481b2f6d2025c8754c1c86b82e3",
+        "array_hashes": {
+          "states": "a5a9bb814f602b4a912e6a5c832ad035b7e1d61e45760158de66eb149c1c9668",
+          "actions": "05d68d85de519ad919f51ea60bb3a588cab2936e0da355e6c838b71b4e72d727",
+          "native_counts": "845dc3419660efc976bb1458c24dd115d672aa8b8e2e59c6989d6023fe66b72a",
+          "next_states": "397579838bb3f57aa8f50fc299b1f16c71f6baa85dcfb5a9739f518b3bad680b",
+          "poses": "86e68a40ee406b583d346da6fba6232c39e1b7781ca8cab796b3796aa625fa1c",
+          "next_poses": "fa66882a9e0aa281da474d93a1b28937a079f490b09d6ddea68e392423dff34d",
+          "end_flags": "9b511534ce29955757e7c0733575f2554c021b58c7c8e658be40646c03142750",
+          "rewards": "4ca4952107aff6d295e0fd588ec0bcd0762af1e20fe11d3669e03c705d63e9c6",
+          "history_poses": "fa79e968fdc8e66d29a52999a2b81089082813ea8d4a59c600ae59f8ba117b11",
+          "history_goals": "d0a0e2d3ebf0fd7febba6ee4f3b8a898785f11de36ce7354f12abc8b6cf428e3",
+          "history_times": "6d398a35ee500d909699bcf32b1d681b704461d41913229c9bbac2e4922f5ab7",
+          "environment_rewards": "4ca4952107aff6d295e0fd588ec0bcd0762af1e20fe11d3669e03c705d63e9c6",
+          "initial_native_integration": "698dbb46e1fcdc025eca00f94ba99d1822e2418b89f06ea7639fcefe56a55342",
+          "final_native_integration": "04935090b8b3c66fdce8d97e867a9206aa01d63fae7c60dd5e1515f6983f9727",
+          "hidden_before": "91b466a93c2be7871b805358d4b71834246cab2d45bc5d194949770605abbbc7",
+          "last_hidden_after": "e8dfb2174e711d007380ca147de41f29775aa130a78fb40033cf59b99c910c9e",
+          "innovations": "800fd09be473cf08e9ca356a5e21b426d9a632da2b9672f91e1dd6a4ea50f943",
+          "raw_actions": "1f2b90a32f31d0201646a994e4110becfa98e38f8dc9d1f3412548b575e76446",
+          "atom": "6267362938d5529f4ded38b24a154ab25abfdf54aa78bfebf7de003feb142eee",
+          "locations": "1f2b90a32f31d0201646a994e4110becfa98e38f8dc9d1f3412548b575e76446",
+          "logp": "3fb88943e108d4f0aaea1a340fe6cdda889c9e77c5a347288115230caa1e6264",
+          "stochastic": "d35687acdcc0120f1fc51def60b01854fa245c501488b5038dadf4e3d1b80c77",
+          "hold_sha256": "6bc9ab533599bc08cb8c1105ef18941376a64c02b0b70845447fca550fe30579",
+          "ownership": "7568b4c4d233e0197c06ad7e0b7d0a77f07027995051ba62fb3120495b810054",
+          "task_goal_xy": "256922c51207f151b6a54e5f4b9bbf80d182f8f4f85dae287c70437e9fd34d35",
+          "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+          "source_prefix_actions": "c370e4e616d04de95f50a0b2df330462d5011e05240a0f4c19ca90a21968205f",
+          "student_takeover_first": "d587114f6f881c7ec3077c92723410af988bbc8b833410743fffa8e038c2fa1a"
+        },
+        "integration_sha256": "04935090b8b3c66fdce8d97e867a9206aa01d63fae7c60dd5e1515f6983f9727",
+        "pid": 537446,
+        "cpu": 0,
+        "teacher": false,
+        "teacher_first": null,
+        "job_id": "t502_field_sector4_offset2",
+        "field_detail": {
+          "id": "t502_field_sector4_offset2",
+          "field_boundary_crossed": false,
+          "field_qualified_success": false
+        },
+        "observation_contract": {
+          "decisions": 198,
+          "pose_min_xy": [
+            -6.8,
+            -2.4892404400153905
+          ],
+          "pose_max_xy": [
+            -4.19897090308421,
+            8.327598234202001e-16
+          ],
+          "input_dim": 120
+        },
+        "role": "INITIAL_FROZEN_ACTUAL_STATE_HANDOFF",
+        "seed": null,
+        "request": {
+          "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/initial.pt.gz",
+          "job": {
+            "id": "t502_field_sector4_offset2",
+            "source_reset_id": "t502_new_sector4_offset2",
+            "group": "6m_LEFT",
+            "case": {
+              "id": "6m_LEFT",
+              "seed": 2029653601,
+              "angle_deg": -17.3,
+              "side": "LEFT",
+              "distance_m": 9.616652224137047,
+              "step_cap": 64112,
+              "group": "original_5m_primary"
+            },
+            "delta_x_m": 0.0,
+            "delta_y_m": 0.0,
+            "delta_yaw_deg": 0.0,
+            "seed": 0,
+            "mode": "deterministic",
+            "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+            "expected_initial120_sha256": null,
+            "wide_course": true,
+            "circle_shift_x_m": 0.6,
+            "fullfield_start_pose": [
+              -6.8,
+              8.327598234202001e-16,
+              -0.7853981633974484
+            ],
+            "fullfield_goal_xy": [
+              -1.2491397351303002e-15,
+              -6.8
+            ],
+            "start_sector": 4,
+            "sector_offset": 2,
+            "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/episodes/full_20.npz",
+            "student_takeover_first": 4
+          },
+          "seed": null,
+          "query": false,
+          "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_2.npz"
+        },
+        "loaded_model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+        "model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+        "full": true,
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_2.npz",
+        "sha256": "068998b8af1518ec0a9cd5915955c6a2bcd2fe45b7d5a2a1ea90c06b04ce40e6",
+        "full_arrays_generated_but_not_saved": false
+      },
+      "k": 4,
+      "teacher_stop": 24
+    },
+    {
+      "kind": "full_GAP_success",
+      "job": "t502_field_sector1_offset2",
+      "row": {
+        "complete": true,
+        "collision": false,
+        "success": true,
+        "timeout": false,
+        "administrative_censor": false,
+        "physics_steps": 42948,
+        "remaining_m": 0.1999678976757438,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.007728493668374872
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.0074794896305089426
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.007951909254414746
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.007772471404414699
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.014912457179909605
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.014878804004286955
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01517004930606869
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015136880106522282
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.07193333242910374
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.06326875748716508
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.06326875748716508
+          }
+        ],
+        "policy_hash": "e87b1fe6d6dd0916443d7f7e684ea084905c0e5e909fafc2a0ef4ccd356a43c1",
+        "physics": 42948,
+        "array_digest": "3b160f5910e5105d3dcf1187281b57ca01107c12112f6eee3ee8737ad69f49bd",
+        "array_hashes": {
+          "states": "91745a0926d1865428b8341c095ea76a2f01cdf2e48a1940cf54e8993570b71c",
+          "actions": "c8306ebdb360efb71f7f989a2c7d4e0c23d00dea5f8f9173658853cc9863b581",
+          "native_counts": "04e5c4cd6cd1e0fb310b705646928cf859df20f9459ce38e08f4166e1583cb9a",
+          "next_states": "1ec7054f8d9eb40f2fb9d165defc538ff102d79c6472076ad6c71f5111b7e774",
+          "poses": "48ed3c912aac9db81e1bbc7a2a79d286c8e357aa7b0c31335a5a8cbe4e96c260",
+          "next_poses": "1bea32593ae52f989510b463d9977d0a6fefc475f0d7d660e8442c97385940e1",
+          "end_flags": "e680724bfc8668cf612a21da6dd45827a76d3bb21fd49d1a54ad78ef7a8ad5da",
+          "rewards": "e51d0de8b548443eb3043dfdcf31ecf805a21bf407dbf710d8bcb7957a26e75e",
+          "history_poses": "da76d01d28bfadaecedafc6d8398622a2c99e2bc001bfc16961a77cd40786a01",
+          "history_goals": "0bf766e48aa68b2600a66b7e776cb8fbf0596e20f0bf2bbebf88c88f7fc43493",
+          "history_times": "9c0653874f6ef6653453e61b6fd59d252a9c28936ff616d673673219b3c790fa",
+          "environment_rewards": "e51d0de8b548443eb3043dfdcf31ecf805a21bf407dbf710d8bcb7957a26e75e",
+          "initial_native_integration": "768f11a6d34ada6d0e5722430b6c5527cb90e2a4d5525ddd51a08bad33a18b5a",
+          "final_native_integration": "793c332ee075b98fca856a17b2c5134440577c94ee97cd76dba4316768aa1ba6",
+          "hidden_before": "9156b508557c92aed2ce4728ea6ba390ccdc268cce1714149f72a742d1e7b04a",
+          "last_hidden_after": "b2300bff081dbd35dec504b179f34aaef2de8b30b137f63c978506ca5f91d8fb",
+          "innovations": "5e93394532dd90d5b3cde24fd4f24045c3553579d40bf359515be2cf95508e0a",
+          "raw_actions": "4ca9154e78db0df82194014e65bcc89a938dae22e0d790cc9f6dcd2c90817346",
+          "atom": "0506c5ee3f8bc0cff5a3657925ceb9bdf3a6028cacce40017c821d6f52c48ae8",
+          "locations": "7e127c25b44b153c5ea06e2e4f5ebd24de829e80b8dd3c99de56d25fa4b9a341",
+          "logp": "ea4a7f4b499cd88f959f659ea9010bcaa30b30e8fc4a0f50e7bf58e8a4d49c51",
+          "stochastic": "84f4fcda9e402b86a5b313d1dcb02172abbb447df393ee99615ddfcd3a3f3ab6",
+          "hold_sha256": "5d9d2806ad8f4f70e4a21767b39dce0fd2a50ca9cac5039ca94d42bedb35da27",
+          "ownership": "9d9c339e70ae34d29774e81d433472a0de49be6730970b11c1b6cfc10f766a8e",
+          "task_goal_xy": "8867bafac354f24811273d75b56f5f73c4a0710fc5efcf264c700040b97c7d29",
+          "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+          "teacher_actions": "3d458e58ec6e43ab45d8a2efae619a0f2ccb41c642c3f05029fbb7a7215f2dab",
+          "teacher_scans": "b4087ab9e20314c1a2fae27672d25531160412f43eee2c8b361ccf3926991806",
+          "teacher_vehicle_parameters": "61f2adcc367ecd686ee144313992f4bb55c5cbdb4a54e1f8ed8d0b46d254d09b",
+          "teacher_first_declared": "556dffc4bb2f17c8d57345cc40fe77e4d572c1590acec9b560654f4ddfdda88e"
+        },
+        "integration_sha256": "793c332ee075b98fca856a17b2c5134440577c94ee97cd76dba4316768aa1ba6",
+        "pid": 535000,
+        "cpu": 1,
+        "teacher": true,
+        "teacher_first": 3,
+        "teacher_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_01_gap/proposal.pt.gz",
+          "sha256": "a8231f5bb0ed1822b3cdf6700b35fdeed8d87e36abe869b66a122663149bb5d8",
+          "bytes": 456893,
+          "policy_hash": "c0aa5f4a990641642fbd0815801e6f9a8b3baa2a4ca0f751d6e1bd605a5f5754",
+          "joint_hash": "05c1ef006fcaa64b2a58366c65e08a6aacf5da427d323d53c619ee424ea43203",
+          "parent": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_00_gap/proposal.pt.gz",
+            "sha256": "ce43a95cb799fbd9a335e47a8a0a9fc1ae2a90d9237dcb4d39e1c0b87524260a",
+            "bytes": 402289,
+            "policy_hash": "c6fdc938725be92748fdb86cd32d1e1d33290fc1e7ffb52f5f0acc710e5e9273",
+            "joint_hash": "734eeb753e64e64a3e3b3f1a5ac647f8f09d9459d9e22591d96d16f4f3e59c10",
+            "parent": {
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t549_curvature_gated_transfer/proposal.pt.gz",
+              "sha256": "539346fcc7b4330e1a23e101330fdd610ca74d6e2ec8c7995c80eaeb888380e4",
+              "bytes": 701541,
+              "policy_hash": "3b636fd3d71b8d1fd0956c697e144d25ba5488e53d6a726f4d77ad46871e341e",
+              "joint_hash": "7250d3defbc318e86e719110e2796502384064a56f78622e1b8d377fc8eb6f4a"
+            }
+          }
+        },
+        "training_only": true,
+        "teacher_kind": "FIXED_GAP_TRAINING_ONLY",
+        "training_mixture_NOT_autonomous": true,
+        "job_id": "t502_field_sector1_offset2",
+        "field_detail": {
+          "id": "t502_field_sector1_offset2",
+          "field_boundary_crossed": false,
+          "field_qualified_success": true
+        },
+        "observation_contract": {
+          "decisions": 430,
+          "pose_min_xy": [
+            -4.615388981879899,
+            4.808326112068523
+          ],
+          "pose_max_xy": [
+            4.8083261120685235,
+            5.771324284756416
+          ],
+          "input_dim": 120
+        },
+        "role": "ACTUAL_FIXED_GAP_RECOVERY",
+        "seed": [
+          582,
+          3,
+          0
+        ],
+        "request": {
+          "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/initial.pt.gz",
+          "job": {
+            "id": "t502_field_sector1_offset2",
+            "source_reset_id": "t502_new_sector1_offset2",
+            "group": "6m_LEFT",
+            "case": {
+              "id": "6m_LEFT",
+              "seed": 2029653601,
+              "angle_deg": -17.3,
+              "side": "LEFT",
+              "distance_m": 9.616652224137045,
+              "step_cap": 64112,
+              "group": "original_5m_primary"
+            },
+            "delta_x_m": 0.0,
+            "delta_y_m": 0.0,
+            "delta_yaw_deg": 0.0,
+            "seed": 0,
+            "mode": "deterministic",
+            "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+            "expected_initial120_sha256": null,
+            "wide_course": true,
+            "circle_shift_x_m": 0.6,
+            "fullfield_start_pose": [
+              4.8083261120685235,
+              4.808326112068523,
+              3.141592653589793
+            ],
+            "fullfield_goal_xy": [
+              -4.808326112068523,
+              4.8083261120685235
+            ],
+            "start_sector": 1,
+            "sector_offset": 2,
+            "gap_recovery_first": 3
+          },
+          "seed": [
+            582,
+            3,
+            0
+          ],
+          "query": false,
+          "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t583_qualified_gap_recovery/episodes/full_5.npz"
+        },
+        "loaded_model_sha256": "e7b9de672177f5372a0ec69ecd19393863a7a4d83b7fe05a4a500ec263177e05",
+        "model_sha256": "e7b9de672177f5372a0ec69ecd19393863a7a4d83b7fe05a4a500ec263177e05",
+        "full": true,
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t583_qualified_gap_recovery/episodes/full_5.npz",
+        "sha256": "c253df8218ade50c64d0e2789ca4239022c81cda77982b6e36fd28d37d45e2c6",
+        "full_arrays_generated_but_not_saved": false
+      },
+      "k": 3,
+      "teacher_stop": 23
+    },
+    {
+      "kind": "full_GAP_success",
+      "job": "t502_field_sector2_offset2",
+      "row": {
+        "complete": true,
+        "collision": false,
+        "success": true,
+        "timeout": false,
+        "administrative_censor": false,
+        "physics_steps": 47307,
+        "remaining_m": 0.199886608748304,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.017168219236443683
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01712509317874611
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.017280652203935
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.017247881333444806
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.016293116710771494
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01627787427642885
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01641084703014721
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.016395345637078187
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.06695173842003753
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.055454944352938684
+          }
+        ],
+        "policy_hash": "e87b1fe6d6dd0916443d7f7e684ea084905c0e5e909fafc2a0ef4ccd356a43c1",
+        "physics": 47307,
+        "array_digest": "daf596a13d3a7c021e82fcfe1f0bf4acbfafea7c5ad898e3103017952296013e",
+        "array_hashes": {
+          "states": "f0352896b25bc821f7d0ee5fa36c714e07d3cf0ee45a1be6042b441b2980d75e",
+          "actions": "46872db4f8a11a081d3d162d8d2e8e637d311400e9b58d4c6c2815a5bfdfcd59",
+          "native_counts": "d9fc4f46512bbccf6380fc9810ba9826b444fb18e4f601bc366e36ef2e098024",
+          "next_states": "e427b9c4e440357f466bd64f1c08b67ff9af6c353cc855d1b44551fddde3c264",
+          "poses": "01b4816cecacf506c6fdddb12c4012aa5ac4fd851b3eb507d3fdad3338627459",
+          "next_poses": "908b970a94a2f648c8b2ce5579a9805766d9b4e1c9fc2d4a0ef12157faabb1f8",
+          "end_flags": "3fc242e4e0dfb1186b49f0e45208d92c213fb0e660826f3bee7794824e37e5e4",
+          "rewards": "2a409ae78b9b424c77c95b1129ebdac912f251191d9462711156f7959e55c1dd",
+          "history_poses": "af3d45ea06cab33a13c8f64abd0d87a5df6dc10d9ef44aaea6b3f702e07c35db",
+          "history_goals": "dcbebe98c405904c010a99d7533871abe62194ca0ecd4dd6790cd7f10efd9b60",
+          "history_times": "7ce0fc5c95f0a88d6332ee44ad1c536d239feae034faca23d2a202b939d667e4",
+          "environment_rewards": "2a409ae78b9b424c77c95b1129ebdac912f251191d9462711156f7959e55c1dd",
+          "initial_native_integration": "d51462fa16f0afa1f0c4761a00eb51588bb1c278f67546accb4182081035a1e8",
+          "final_native_integration": "2adab482a7b5e5a7461e1cf07d280d472902e78c9e7957b36f4ce6b747b1baaa",
+          "hidden_before": "57398eddb10874a265b10c2425f49e3687e85b69e5e1c81391847d7268341940",
+          "last_hidden_after": "046db2983bd9bae34602e0ec8197848e25f3e5e155ed01db0c92765d846b7568",
+          "innovations": "7afe03b5454cde64437cd0efbef13caf87c70312f5d30b78e31bd4735d168c73",
+          "raw_actions": "2a8d5d5a2399c8c5cfd47b0ef6305851951dd9a2eca1685bc4b16effffcd9f45",
+          "atom": "8654fcf419984e06b9a1a5e717c03d22758a0269d5c395b26708758a8a95cfd9",
+          "locations": "0d3416de615e73773d1371b2a85f5c1f1c127739a33f4cf339c1867cf28adce1",
+          "logp": "1d302b215ac947aedd7af3a9586965b2a56d599d01cafc1d4eb88baac8631881",
+          "stochastic": "0f09eff64e1bcc6bdcc2b30c65b6d30ed3ebd82ac1aec99dedd85423e2364239",
+          "hold_sha256": "fc93e7519162df5071ea2e14499a3f04f6f93a31d68d42690b8f5db63926eacc",
+          "ownership": "bcd7854a8f1749ac973085f506254db0a9d71f22dc98b9d0e9d5092aa6aabd92",
+          "task_goal_xy": "4e215db893ba4105ee1db4ae1366558171ed563b02ff8ca29427b5dfe20ba64a",
+          "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+          "teacher_actions": "fb6410981780d126e60b83f5b84dafbb37e16eac0cce35f0ebce57f7759d7c01",
+          "teacher_scans": "1c0c80cca2b6f9b013a40da8235a3cc8d65fc3eef5df32160f1f3f9938a7f297",
+          "teacher_vehicle_parameters": "61f2adcc367ecd686ee144313992f4bb55c5cbdb4a54e1f8ed8d0b46d254d09b",
+          "teacher_first_declared": "4411e81b5bd96c557cb25aff180157d2719c5c3c298fd401924f0c382d420955"
+        },
+        "integration_sha256": "2adab482a7b5e5a7461e1cf07d280d472902e78c9e7957b36f4ce6b747b1baaa",
+        "pid": 534999,
+        "cpu": 0,
+        "teacher": true,
+        "teacher_first": 26,
+        "teacher_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_01_gap/proposal.pt.gz",
+          "sha256": "a8231f5bb0ed1822b3cdf6700b35fdeed8d87e36abe869b66a122663149bb5d8",
+          "bytes": 456893,
+          "policy_hash": "c0aa5f4a990641642fbd0815801e6f9a8b3baa2a4ca0f751d6e1bd605a5f5754",
+          "joint_hash": "05c1ef006fcaa64b2a58366c65e08a6aacf5da427d323d53c619ee424ea43203",
+          "parent": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_00_gap/proposal.pt.gz",
+            "sha256": "ce43a95cb799fbd9a335e47a8a0a9fc1ae2a90d9237dcb4d39e1c0b87524260a",
+            "bytes": 402289,
+            "policy_hash": "c6fdc938725be92748fdb86cd32d1e1d33290fc1e7ffb52f5f0acc710e5e9273",
+            "joint_hash": "734eeb753e64e64a3e3b3f1a5ac647f8f09d9459d9e22591d96d16f4f3e59c10",
+            "parent": {
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t549_curvature_gated_transfer/proposal.pt.gz",
+              "sha256": "539346fcc7b4330e1a23e101330fdd610ca74d6e2ec8c7995c80eaeb888380e4",
+              "bytes": 701541,
+              "policy_hash": "3b636fd3d71b8d1fd0956c697e144d25ba5488e53d6a726f4d77ad46871e341e",
+              "joint_hash": "7250d3defbc318e86e719110e2796502384064a56f78622e1b8d377fc8eb6f4a"
+            }
+          }
+        },
+        "training_only": true,
+        "teacher_kind": "FIXED_GAP_TRAINING_ONLY",
+        "training_mixture_NOT_autonomous": true,
+        "job_id": "t502_field_sector2_offset2",
+        "field_detail": {
+          "id": "t502_field_sector2_offset2",
+          "field_boundary_crossed": false,
+          "field_qualified_success": true
+        },
+        "observation_contract": {
+          "decisions": 474,
+          "pose_min_xy": [
+            -6.684811809123695,
+            0.16335953305375783
+          ],
+          "pose_max_xy": [
+            4.1637991171010006e-16,
+            6.8
+          ],
+          "input_dim": 120
+        },
+        "role": "ACTUAL_FIXED_GAP_RECOVERY",
+        "seed": [
+          582,
+          4,
+          0
+        ],
+        "request": {
+          "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/initial.pt.gz",
+          "job": {
+            "id": "t502_field_sector2_offset2",
+            "source_reset_id": "t502_new_sector2_offset2",
+            "group": "6m_LEFT",
+            "case": {
+              "id": "6m_LEFT",
+              "seed": 2029653601,
+              "angle_deg": -17.3,
+              "side": "LEFT",
+              "distance_m": 9.616652224137045,
+              "step_cap": 64112,
+              "group": "original_5m_primary"
+            },
+            "delta_x_m": 0.0,
+            "delta_y_m": 0.0,
+            "delta_yaw_deg": 0.0,
+            "seed": 0,
+            "mode": "deterministic",
+            "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+            "expected_initial120_sha256": null,
+            "wide_course": true,
+            "circle_shift_x_m": 0.6,
+            "fullfield_start_pose": [
+              4.1637991171010006e-16,
+              6.8,
+              -2.356194490192345
+            ],
+            "fullfield_goal_xy": [
+              -6.8,
+              8.327598234202001e-16
+            ],
+            "start_sector": 2,
+            "sector_offset": 2,
+            "gap_recovery_first": 26
+          },
+          "seed": [
+            582,
+            4,
+            0
+          ],
+          "query": false,
+          "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t583_qualified_gap_recovery/episodes/full_6.npz"
+        },
+        "loaded_model_sha256": "e7b9de672177f5372a0ec69ecd19393863a7a4d83b7fe05a4a500ec263177e05",
+        "model_sha256": "e7b9de672177f5372a0ec69ecd19393863a7a4d83b7fe05a4a500ec263177e05",
+        "full": true,
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t583_qualified_gap_recovery/episodes/full_6.npz",
+        "sha256": "eab29ca3e3047c04894e2824324b4c50fdedd10e71eb4c2feb93ac0e62bf2521",
+        "full_arrays_generated_but_not_saved": false
+      },
+      "k": 26,
+      "teacher_stop": 46
+    },
+    {
+      "kind": "full_GAP_success",
+      "job": "t502_field_sector4_offset2",
+      "row": {
+        "complete": true,
+        "collision": false,
+        "success": true,
+        "timeout": false,
+        "administrative_censor": false,
+        "physics_steps": 48028,
+        "remaining_m": 0.1999345542403371,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01973081252120429
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.019534716103406347
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.019882845952994263
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.019733711725936617
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015317771723038498
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015295160307082084
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015493272720868367
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015470290900906736
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.0736778154427789
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.0736778154427789
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.0736778154427789
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.06366126641292691
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.06366126641292691
+          }
+        ],
+        "policy_hash": "e87b1fe6d6dd0916443d7f7e684ea084905c0e5e909fafc2a0ef4ccd356a43c1",
+        "physics": 48028,
+        "array_digest": "9863d177d17a4c3fd3b27ca4d4214a0f78bb8daf880e5d6dd3215f14be8df5a5",
+        "array_hashes": {
+          "states": "6429f24376391b43f376846483cee8fb2cc3f66bfb36620465b13d7024f7ec82",
+          "actions": "010ba3936be2ed95aaa00533105fa8131f177dd2708b35c940016165d8d6a264",
+          "native_counts": "a4cc3a49502c4a774aca6ce36ff689f470ec6a4f1c692f7b18c1b2a36b34f397",
+          "next_states": "deccc6989e63ab5cc24d6d16800b84afa5fb667be7b777d9324af33ddad124d3",
+          "poses": "49f8e411d76036a0a28a68c1719d449a97c17318839c5bf5040bc39316403792",
+          "next_poses": "c231e5c9c90a700ab7035735e22312ba2be20855d84b94b4630b9410c58ee640",
+          "end_flags": "a2646ab6ce3815021f041129e63272ef1cf8f7adc72d47b137fef818a7b59190",
+          "rewards": "cb3130c4b14903406245b5273ecf19c4b94a5c0c38d160495df4fe7ea2193f54",
+          "history_poses": "bf116341c7243071b6626a4d23df8ee414d86c38abca351366b3f383e259b414",
+          "history_goals": "c0c1e15669ee926ae9e0062a65aa6332be92271ec9d35cffe6513a54bc083e1a",
+          "history_times": "06cff1138ccb3f371f376e375f203d7ebd83366e6bb73de7fb291b689ee252cd",
+          "environment_rewards": "cb3130c4b14903406245b5273ecf19c4b94a5c0c38d160495df4fe7ea2193f54",
+          "initial_native_integration": "698dbb46e1fcdc025eca00f94ba99d1822e2418b89f06ea7639fcefe56a55342",
+          "final_native_integration": "10e1e6513363a0d28469daac6047a70b59ff39d3bab348783506c35e695bb472",
+          "hidden_before": "811f72d54bd4248ae3a27d0d8dc6b4b975b8eaf7ce6f3633dbd93f61c4e657e8",
+          "last_hidden_after": "a3a25bb890ec5939d7dd15674288729d32b0e5de7bc1c0242e6cdc5a49e0a789",
+          "innovations": "eb3297e7062e504011f65791fbdb868fc75651eee475495656de862e6e4a4099",
+          "raw_actions": "c173a4b77453668450fd5ffce6662822cd2b8ef6c99c7710a683a6426e3436fc",
+          "atom": "f1ec4687afa274c73cfae4d268d224f581727cb9ebd9d8bda1fec21eb9b5a846",
+          "locations": "a80d4b0b2fb2b2c71f16c263164c9f28fc898b35122075fca48e401c0d1431a4",
+          "logp": "0501c60a0003ece3fe5d78bddc52da49ebacdeb8bdc6689da7aa2ffc6e160a8d",
+          "stochastic": "394a18a26420b0dba522c8cbef1444e70ca579779e21c42e17c87d051948655c",
+          "hold_sha256": "a46a2afdf518141f30e9d4eb88da1a3c0c8dfc68fd62b4480cf1f78743d4e299",
+          "ownership": "fad7303d6bc43d466918336b4130717b89bd2250fa25d3d35d712f3baba9584f",
+          "task_goal_xy": "256922c51207f151b6a54e5f4b9bbf80d182f8f4f85dae287c70437e9fd34d35",
+          "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+          "teacher_actions": "7fd533268d5b8bc7f1bec09f97069efcc3f0bc7625eb36c885058020d43aa0df",
+          "teacher_scans": "7ccfab1becfb1faaf70edd178301c9f412296622a09549eafc15c53875dbd178",
+          "teacher_vehicle_parameters": "61f2adcc367ecd686ee144313992f4bb55c5cbdb4a54e1f8ed8d0b46d254d09b",
+          "teacher_first_declared": "d587114f6f881c7ec3077c92723410af988bbc8b833410743fffa8e038c2fa1a"
+        },
+        "integration_sha256": "10e1e6513363a0d28469daac6047a70b59ff39d3bab348783506c35e695bb472",
+        "pid": 535000,
+        "cpu": 1,
+        "teacher": true,
+        "teacher_first": 4,
+        "teacher_model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_01_gap/proposal.pt.gz",
+          "sha256": "a8231f5bb0ed1822b3cdf6700b35fdeed8d87e36abe869b66a122663149bb5d8",
+          "bytes": 456893,
+          "policy_hash": "c0aa5f4a990641642fbd0815801e6f9a8b3baa2a4ca0f751d6e1bd605a5f5754",
+          "joint_hash": "05c1ef006fcaa64b2a58366c65e08a6aacf5da427d323d53c619ee424ea43203",
+          "parent": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_00_gap/proposal.pt.gz",
+            "sha256": "ce43a95cb799fbd9a335e47a8a0a9fc1ae2a90d9237dcb4d39e1c0b87524260a",
+            "bytes": 402289,
+            "policy_hash": "c6fdc938725be92748fdb86cd32d1e1d33290fc1e7ffb52f5f0acc710e5e9273",
+            "joint_hash": "734eeb753e64e64a3e3b3f1a5ac647f8f09d9459d9e22591d96d16f4f3e59c10",
+            "parent": {
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t549_curvature_gated_transfer/proposal.pt.gz",
+              "sha256": "539346fcc7b4330e1a23e101330fdd610ca74d6e2ec8c7995c80eaeb888380e4",
+              "bytes": 701541,
+              "policy_hash": "3b636fd3d71b8d1fd0956c697e144d25ba5488e53d6a726f4d77ad46871e341e",
+              "joint_hash": "7250d3defbc318e86e719110e2796502384064a56f78622e1b8d377fc8eb6f4a"
+            }
+          }
+        },
+        "training_only": true,
+        "teacher_kind": "FIXED_GAP_TRAINING_ONLY",
+        "training_mixture_NOT_autonomous": true,
+        "job_id": "t502_field_sector4_offset2",
+        "field_detail": {
+          "id": "t502_field_sector4_offset2",
+          "field_boundary_crossed": false,
+          "field_qualified_success": true
+        },
+        "observation_contract": {
+          "decisions": 481,
+          "pose_min_xy": [
+            -6.8,
+            -6.694332735366337
+          ],
+          "pose_max_xy": [
+            -0.16972994775266434,
+            8.327598234202001e-16
+          ],
+          "input_dim": 120
+        },
+        "role": "ACTUAL_FIXED_GAP_RECOVERY",
+        "seed": [
+          582,
+          5,
+          0
+        ],
+        "request": {
+          "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/initial.pt.gz",
+          "job": {
+            "id": "t502_field_sector4_offset2",
+            "source_reset_id": "t502_new_sector4_offset2",
+            "group": "6m_LEFT",
+            "case": {
+              "id": "6m_LEFT",
+              "seed": 2029653601,
+              "angle_deg": -17.3,
+              "side": "LEFT",
+              "distance_m": 9.616652224137047,
+              "step_cap": 64112,
+              "group": "original_5m_primary"
+            },
+            "delta_x_m": 0.0,
+            "delta_y_m": 0.0,
+            "delta_yaw_deg": 0.0,
+            "seed": 0,
+            "mode": "deterministic",
+            "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+            "expected_initial120_sha256": null,
+            "wide_course": true,
+            "circle_shift_x_m": 0.6,
+            "fullfield_start_pose": [
+              -6.8,
+              8.327598234202001e-16,
+              -0.7853981633974484
+            ],
+            "fullfield_goal_xy": [
+              -1.2491397351303002e-15,
+              -6.8
+            ],
+            "start_sector": 4,
+            "sector_offset": 2,
+            "gap_recovery_first": 4
+          },
+          "seed": [
+            582,
+            5,
+            0
+          ],
+          "query": false,
+          "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t583_qualified_gap_recovery/episodes/full_7.npz"
+        },
+        "loaded_model_sha256": "e7b9de672177f5372a0ec69ecd19393863a7a4d83b7fe05a4a500ec263177e05",
+        "model_sha256": "e7b9de672177f5372a0ec69ecd19393863a7a4d83b7fe05a4a500ec263177e05",
+        "full": true,
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t583_qualified_gap_recovery/episodes/full_7.npz",
+        "sha256": "4328d7e9815fbfe8f04ede7418eebf5bbef7d28c34eca9b3f285d36c3527299b",
+        "full_arrays_generated_but_not_saved": false
+      },
+      "k": 4,
+      "teacher_stop": 24
+    },
+    {
+      "kind": "short_GAP_failed",
+      "job": "t502_field_sector1_offset2",
+      "row": {
+        "complete": true,
+        "collision": true,
+        "success": false,
+        "timeout": false,
+        "administrative_censor": false,
+        "physics_steps": 19340,
+        "remaining_m": 5.326203267680405,
+        "terminal_contacts": [
+          {
+            "geom1": "real_rect_obs_0",
+            "geom2": "chassis_collision",
+            "distance": -3.48776309409208e-05
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015567781522937169
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015562738034223256
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015533033514323849
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015528472870992724
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015785968294987046
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015781496823737
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01575147530921371
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01574697651809802
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03736417443801649
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03545415211918642
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03545415211918642
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03545415211918642
+          }
+        ],
+        "policy_hash": "8ef9816c048e48321a09b6195a7061b4d1173cc9b1630de4c47008d906892183",
+        "physics": 19340,
+        "array_digest": "8beccbd8bab65424a6595795a18bfc15e66d34486eb8f90c2b376d295748c44f",
+        "array_hashes": {
+          "states": "1af4c15b37bdcd9e6375637d3e332ad6b965757909743bf6f1b569baeaf5cf8e",
+          "actions": "0ac6801967aeff4ac2727be3431c0c3475214d6fbd43d3b8250c48d00fbfa421",
+          "native_counts": "edff070567d6968ff3e32052e27088bfd6fcd506d004ca4ec39e732ca8dd1a0a",
+          "next_states": "cd6cf6ba79b78468d68847a8a7f6002cb6383ac239454c42967fbae7a726dcfe",
+          "poses": "41362d4f4e74615e2e8030df620fc3bd8b07eea294808031d302e5f031371f1b",
+          "next_poses": "957e42a8f7804439905106b2451f33d1e9b7c88fe07f394b1800c22e1ecd959f",
+          "end_flags": "959042d75dd7176b77da57aab93d9abeeb85b75ad19304c14c6b1d5baef50f07",
+          "rewards": "d6cfc15e2afc79516522ee74912a83f9cb20ec44e5b08ede90a1e16d43b4b36b",
+          "history_poses": "9f73bdffacb824bf900a5c604a0422a8133fbbf597c72fc77ecd8b8ab6027793",
+          "history_goals": "71d7bb3da4b7db02d03e7fa07a810893523282f625e459763dd9776b1a9e97da",
+          "history_times": "f96c9486202f645b5fa825c4ebc753f50e27043834b603ee2b49cc8801155058",
+          "environment_rewards": "d6cfc15e2afc79516522ee74912a83f9cb20ec44e5b08ede90a1e16d43b4b36b",
+          "initial_native_integration": "768f11a6d34ada6d0e5722430b6c5527cb90e2a4d5525ddd51a08bad33a18b5a",
+          "final_native_integration": "89a427721a3e4bb2a98995029ca024c74c5a9a64302bedcc980a38f72a6bb24e",
+          "hidden_before": "48690280686b88fe0e152052b83473ede1714dc107c45dcf2c01b65edf9a90eb",
+          "last_hidden_after": "c55f4aff2e085b45f8704e5a7578dd8944b9cb2046b6956b5a402731c809cb70",
+          "innovations": "c75e47b3dd9aedcc7ea09f5c1d46317bae78f0ca3746ab7273d155bbbc411613",
+          "raw_actions": "3815d4474f175549a34d84e9df9672e6e9f5488f6774bcd8c90609fa0edabd73",
+          "atom": "a9d332ad8a32310b6cf8639ebfec5e3e9d54330fab1f5f1a745f5a0d381d0c8c",
+          "locations": "dd7c08e94f32064c361224156572557ba1d04a49585b96ac0c0450acec7075d1",
+          "logp": "97bad6e43612fad0cf35b90dc1175423aefb3e69a4fffc76000cf64e151b37a4",
+          "stochastic": "5628a71c5d31c536d4ebcf2d7c6643f249ef3bfe84c416a3afe19ddabce45977",
+          "hold_sha256": "024e2c42971f41e9ee558cbba5377c0654bea5f1301bda81ca7f52702a52ec9c",
+          "ownership": "9f221ca06ebc0999057e841ef73aeee29d509e2d887b76dd71b7e33491f53932",
+          "task_goal_xy": "8867bafac354f24811273d75b56f5f73c4a0710fc5efcf264c700040b97c7d29",
+          "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+          "teacher_actions": "6da32cdfcd558de96c0ab4beb7f9a2b86e6ae18a20d4e79dd95b20c6926e5685",
+          "teacher_scans": "4645a4c13e0b31977a16d10550946ce9b4af9621b5ec87b3d51c1d65c9e12d5e",
+          "teacher_vehicle_parameters": "61f2adcc367ecd686ee144313992f4bb55c5cbdb4a54e1f8ed8d0b46d254d09b",
+          "teacher_first_declared": "556dffc4bb2f17c8d57345cc40fe77e4d572c1590acec9b560654f4ddfdda88e",
+          "teacher_stop_declared": "b971edb793ff8e99968026489a5d8f843872ce94067c6c1d0e877bc812e2a980"
+        },
+        "integration_sha256": "89a427721a3e4bb2a98995029ca024c74c5a9a64302bedcc980a38f72a6bb24e",
+        "pid": 546414,
+        "cpu": 0,
+        "teacher": true,
+        "teacher_first": 3,
+        "teacher_kind": "FIXED_GAP_4S_THEN_DETERMINISTIC_STUDENT",
+        "teacher_stop": 23,
+        "training_only": true,
+        "job_id": "t502_field_sector1_offset2",
+        "field_detail": {
+          "id": "t502_field_sector1_offset2",
+          "field_boundary_crossed": false,
+          "field_qualified_success": false
+        },
+        "observation_contract": {
+          "decisions": 194,
+          "pose_min_xy": [
+            0.5165350936680643,
+            4.808326112068523
+          ],
+          "pose_max_xy": [
+            4.8083261120685235,
+            4.927885253462751
+          ],
+          "input_dim": 120
+        },
+        "role": "FIXED_4S_TEACHER_THEN_ORIGINAL_STUDENT",
+        "seed": [
+          582,
+          3,
+          0
+        ],
+        "request": {
+          "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/initial.pt.gz",
+          "job": {
+            "id": "t502_field_sector1_offset2",
+            "source_reset_id": "t502_new_sector1_offset2",
+            "group": "6m_LEFT",
+            "case": {
+              "id": "6m_LEFT",
+              "seed": 2029653601,
+              "angle_deg": -17.3,
+              "side": "LEFT",
+              "distance_m": 9.616652224137045,
+              "step_cap": 64112,
+              "group": "original_5m_primary"
+            },
+            "delta_x_m": 0.0,
+            "delta_y_m": 0.0,
+            "delta_yaw_deg": 0.0,
+            "seed": 0,
+            "mode": "deterministic",
+            "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+            "expected_initial120_sha256": null,
+            "wide_course": true,
+            "circle_shift_x_m": 0.6,
+            "fullfield_start_pose": [
+              4.8083261120685235,
+              4.808326112068523,
+              3.141592653589793
+            ],
+            "fullfield_goal_xy": [
+              -4.808326112068523,
+              4.8083261120685235
+            ],
+            "start_sector": 1,
+            "sector_offset": 2,
+            "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/episodes/full_12.npz",
+            "gap_recovery_first": 3,
+            "correction_decisions": 20
+          },
+          "seed": [
+            582,
+            3,
+            0
+          ],
+          "query": false,
+          "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/episodes/full_0.npz"
+        },
+        "loaded_model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+        "model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+        "full": true,
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/episodes/full_0.npz",
+        "sha256": "b9773a05faa2b7a07af50ed98eb993f4e8b8f1953132337ea90245f423b7ad38",
+        "full_arrays_generated_but_not_saved": false
+      },
+      "k": 3,
+      "teacher_stop": 23
+    },
+    {
+      "kind": "short_GAP_failed",
+      "job": "t502_field_sector2_offset2",
+      "row": {
+        "complete": true,
+        "collision": true,
+        "success": false,
+        "timeout": false,
+        "administrative_censor": false,
+        "physics_steps": 17868,
+        "remaining_m": 5.562396772301553,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01568812436080562
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015679686093644493
+          },
+          {
+            "geom1": "real_circle_obs_0",
+            "geom2": null,
+            "distance": -1.5661509887103098e-05
+          },
+          {
+            "geom1": "real_circle_obs_0",
+            "geom2": null,
+            "distance": -1.5661509887103098e-05
+          },
+          {
+            "geom1": "real_circle_obs_0",
+            "geom2": null,
+            "distance": -1.5661509887103098e-05
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015619786980973133
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015611221956459531
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015726747525892856
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015718057798016785
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015658370742354655
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015649633096869314
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.0456776048922244
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.04712029076902674
+          }
+        ],
+        "policy_hash": "8ef9816c048e48321a09b6195a7061b4d1173cc9b1630de4c47008d906892183",
+        "physics": 17868,
+        "array_digest": "8d55e9193cdb1cc76b11b6b7dfd89a7dde32652ac4b0447532eb61a20f40dea8",
+        "array_hashes": {
+          "states": "46f13ece530290ff7e3ca7680f99228844f67336bb670e6a03a46ee78c460d4a",
+          "actions": "1005c5e5d833766da08cf6d84b807202d85aff2e2e76564f753f45e60595b8ac",
+          "native_counts": "0a4010fd234c3c8852e06586ecf339f4680751d3869cb0557953b580511306f9",
+          "next_states": "45189c0d054b42b4b921341f5d2f1dab4993f1e66eeb199f1f347e373c11f6ff",
+          "poses": "a0bf5ab79fb1b4f52aa36eaefb2c30bbd492e68e6af831294b80e9acdf28c284",
+          "next_poses": "f52f673651dd447d428a3f3ebcac596e10cfd6713bf3ba5bd740e6e609e016cb",
+          "end_flags": "bfd766b54fc96039002a7d22f8c5524d789894082900a049f14ccc369dc3eabe",
+          "rewards": "3be04d58a86d7022d56f5bd14b66ccfc86865689dc849025993b3456629eebd8",
+          "history_poses": "5e1f3c231c7c7624efb87fc3668b7852a60ed1f4e38d480ecaa51a3ac54fe055",
+          "history_goals": "6c602ecdda4695284bd97f192bb79392e3da3dd38a6f0886463ea3155130ba15",
+          "history_times": "d6cdd9ad9c4479bea9768eb8d198b0033018898287fc49fbe238b10f54cbb0c4",
+          "environment_rewards": "3be04d58a86d7022d56f5bd14b66ccfc86865689dc849025993b3456629eebd8",
+          "initial_native_integration": "d51462fa16f0afa1f0c4761a00eb51588bb1c278f67546accb4182081035a1e8",
+          "final_native_integration": "ea5db896fac2210fa4265df07cc545e718dfeecd73ce159dc08e2ef9f610f4b6",
+          "hidden_before": "89e8831a290e7b8d2c559f94e7fbfcb01f377b1aa0526187ec162a17b8dc5f3b",
+          "last_hidden_after": "805ba9986cdad71fb650d5f3ea21221212f7344e9e865f83ea32f5f9693db61f",
+          "innovations": "1d4f66c4fe11eef3e902f19659eda93c406c64b92bf3e74cab36d2800cc2206a",
+          "raw_actions": "c77efdbc5df551f195339351deeafea3821fec4e7e9614a5308075707c7830c4",
+          "atom": "2be7c3d8f263facb1add716cb89e8a10f8a3928268cc05fa3bda387003af0de1",
+          "locations": "9fdbbc6c4a5bfa62104485df8ec659887af9e80014108737359897bbe39b96d7",
+          "logp": "f117776156097460dc9e1710e8b936b2342a87af9af556b3d170c18782e2db53",
+          "stochastic": "ea21ffe3f1c8e3121e046d83a05195d9492387ac44dfb3993d1b1b8f3abe35dd",
+          "hold_sha256": "77615497ac0ac05427b75d7469947e2bd4803e48ed271f796bf87053bbf67b22",
+          "ownership": "c91e2eb2431522ad0a1a9cf953525501a73c87990f5c955f35626d1280da2130",
+          "task_goal_xy": "4e215db893ba4105ee1db4ae1366558171ed563b02ff8ca29427b5dfe20ba64a",
+          "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+          "teacher_actions": "b44a9a7b6e0945117590b48fd7478dff8fe72a6cba956f6625eda76d0b6ef624",
+          "teacher_scans": "020285ee26876b2fb2a30c986bcc48d86186e9875e748a20d9767438548b1c4c",
+          "teacher_vehicle_parameters": "61f2adcc367ecd686ee144313992f4bb55c5cbdb4a54e1f8ed8d0b46d254d09b",
+          "teacher_first_declared": "4411e81b5bd96c557cb25aff180157d2719c5c3c298fd401924f0c382d420955",
+          "teacher_stop_declared": "62bfeba3255549271f30c129416119f7ed4763c8ba8700ef3e1ab7a9678a4557"
+        },
+        "integration_sha256": "ea5db896fac2210fa4265df07cc545e718dfeecd73ce159dc08e2ef9f610f4b6",
+        "pid": 546415,
+        "cpu": 1,
+        "teacher": true,
+        "teacher_first": 26,
+        "teacher_kind": "FIXED_GAP_4S_THEN_DETERMINISTIC_STUDENT",
+        "teacher_stop": 46,
+        "training_only": true,
+        "job_id": "t502_field_sector2_offset2",
+        "field_detail": {
+          "id": "t502_field_sector2_offset2",
+          "field_boundary_crossed": false,
+          "field_qualified_success": false
+        },
+        "observation_contract": {
+          "decisions": 179,
+          "pose_min_xy": [
+            -2.9880713746563177,
+            4.050858922228244
+          ],
+          "pose_max_xy": [
+            4.1637991171010006e-16,
+            6.8
+          ],
+          "input_dim": 120
+        },
+        "role": "FIXED_4S_TEACHER_THEN_ORIGINAL_STUDENT",
+        "seed": [
+          582,
+          4,
+          0
+        ],
+        "request": {
+          "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/initial.pt.gz",
+          "job": {
+            "id": "t502_field_sector2_offset2",
+            "source_reset_id": "t502_new_sector2_offset2",
+            "group": "6m_LEFT",
+            "case": {
+              "id": "6m_LEFT",
+              "seed": 2029653601,
+              "angle_deg": -17.3,
+              "side": "LEFT",
+              "distance_m": 9.616652224137045,
+              "step_cap": 64112,
+              "group": "original_5m_primary"
+            },
+            "delta_x_m": 0.0,
+            "delta_y_m": 0.0,
+            "delta_yaw_deg": 0.0,
+            "seed": 0,
+            "mode": "deterministic",
+            "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+            "expected_initial120_sha256": null,
+            "wide_course": true,
+            "circle_shift_x_m": 0.6,
+            "fullfield_start_pose": [
+              4.1637991171010006e-16,
+              6.8,
+              -2.356194490192345
+            ],
+            "fullfield_goal_xy": [
+              -6.8,
+              8.327598234202001e-16
+            ],
+            "start_sector": 2,
+            "sector_offset": 2,
+            "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/episodes/full_16.npz",
+            "gap_recovery_first": 26,
+            "correction_decisions": 20
+          },
+          "seed": [
+            582,
+            4,
+            0
+          ],
+          "query": false,
+          "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/episodes/full_1.npz"
+        },
+        "loaded_model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+        "model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+        "full": true,
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/episodes/full_1.npz",
+        "sha256": "a5b1266f863f43ca02dfd1e4ec3adebe8002b181ba88bfafe6e385ffd4919430",
+        "full_arrays_generated_but_not_saved": false
+      },
+      "k": 26,
+      "teacher_stop": 46
+    },
+    {
+      "kind": "short_GAP_failed",
+      "job": "t502_field_sector4_offset2",
+      "row": {
+        "complete": true,
+        "collision": true,
+        "success": false,
+        "timeout": false,
+        "administrative_censor": false,
+        "physics_steps": 16447,
+        "remaining_m": 6.017717129815203,
+        "terminal_contacts": [
+          {
+            "geom1": "real_circle_obs_8",
+            "geom2": "chassis_collision",
+            "distance": -9.690054942476249e-05
+          },
+          {
+            "geom1": "real_circle_obs_8",
+            "geom2": "chassis_collision",
+            "distance": -9.690054942476249e-05
+          },
+          {
+            "geom1": "real_circle_obs_8",
+            "geom2": "chassis_collision",
+            "distance": -9.690054942476249e-05
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.014530923453107483
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.014510285986731639
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01443760725941734
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01441676888743107
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.016807953549663926
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.016796100660512417
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.016714536956055792
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.016702684165253806
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03878601635438824
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.038896982193367485
+          }
+        ],
+        "policy_hash": "8ef9816c048e48321a09b6195a7061b4d1173cc9b1630de4c47008d906892183",
+        "physics": 16447,
+        "array_digest": "02faaacac103a29b079cc90cdd6ebaf2707d14ed71fe81bc12b5bf94d34967a7",
+        "array_hashes": {
+          "states": "ba326c29f76360d8d8992bc0b9e6c888ac169cb13ff56247925933ed2838e4fa",
+          "actions": "149d15448916d9ece2e5755f4ef0c8d862717a5d8abf62c28b446c755190eeb9",
+          "native_counts": "7a2986e086134360dc3febe1b864dd34ff42e085570e67e46cb4da6b2e44c211",
+          "next_states": "4cdc48b1f633fa96aedb15014c304e9a80d05fef2bc470d823409d8f020c2c31",
+          "poses": "758c4f706c7df0b9e6f9e4beff09e3869bdf7432fab18437899badab25c644d3",
+          "next_poses": "d15cf253c6b618bd1cbf26074baba6be69d0949783275fb489ed5e55f59cc0b1",
+          "end_flags": "0e912a2bc7ff47d0620e24785f751f5ef1441c0ce75c834aa90412ac241e7686",
+          "rewards": "d3f242a3aaf5f63c6b4bccc28f0bc628702ea290ea1a6d0b785961c2cd2f7355",
+          "history_poses": "4e50bb860f05bb270cc1fd3516bbf8c3c908d38d4b3450329f7c35cc7d39a4d7",
+          "history_goals": "47ddbcc20bd63c02fab18c56848e28d1cbfb0797d2ed3d104855fc371f9a8c17",
+          "history_times": "6d41ad753ba4f6017d11dfa933b96c8e7201a79fefb972c25ad89fc9ff9e9b8c",
+          "environment_rewards": "d3f242a3aaf5f63c6b4bccc28f0bc628702ea290ea1a6d0b785961c2cd2f7355",
+          "initial_native_integration": "698dbb46e1fcdc025eca00f94ba99d1822e2418b89f06ea7639fcefe56a55342",
+          "final_native_integration": "3d29b398426a2de23b8fb93763652e4085a203d1eac34a3cba7c1cfa6b5cb9f5",
+          "hidden_before": "1721a3ef1fc5b157b48d884b74ef7130f9f130a5d97ddf5f98e51c1c350cc321",
+          "last_hidden_after": "f3555e6d3d909649fd91d0bdb5cd651f6dc6d7aadf7323bc1e009b523078a889",
+          "innovations": "3fe8ea558c84f8ffc1eeda688a4f1ee20ce58b8dea7b3d096a50ce00becce89e",
+          "raw_actions": "b1fdc7cbac45d4b39793248bf3aa9b6890be5e17d455999bf0cf8d5bdba489c2",
+          "atom": "e9f983723c0618640d5f53aadff899a3396421762b0f0f9c00c3c9da4b9c5eca",
+          "locations": "28be29f22258b8c3a7bfdf6c93338126328227cb39812952635f551f251a61c8",
+          "logp": "3c7e7eb1f0addc74e1d8fd844019e4d0d90fd656495b3aa7e00e948653674054",
+          "stochastic": "594f0a9d6a8e9649113fef91d0ddf5f4355ee66decc34728e35000bbbaf3d7ed",
+          "hold_sha256": "8b3c14ec2a09df1c79f3acdbcb1012f82f9f4c7adb3794122edca1c79a6fecb5",
+          "ownership": "76d578702805063ebad5463da529928b4b6f56502546f9102f88e8dedf21ee01",
+          "task_goal_xy": "256922c51207f151b6a54e5f4b9bbf80d182f8f4f85dae287c70437e9fd34d35",
+          "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+          "teacher_actions": "3e917dbbbd7324680b24854ec9078c425087da31cb4c44a1ab84668d55c703b0",
+          "teacher_scans": "e352a961181a99be9db18e5ea5d0154b01e9b96bf5e976818a7424fa8d4729ba",
+          "teacher_vehicle_parameters": "61f2adcc367ecd686ee144313992f4bb55c5cbdb4a54e1f8ed8d0b46d254d09b",
+          "teacher_first_declared": "d587114f6f881c7ec3077c92723410af988bbc8b833410743fffa8e038c2fa1a",
+          "teacher_stop_declared": "e5338b3425700266307190406a725fc20918e665dd92c82ac5eaf1a2db7feb69"
+        },
+        "integration_sha256": "3d29b398426a2de23b8fb93763652e4085a203d1eac34a3cba7c1cfa6b5cb9f5",
+        "pid": 546414,
+        "cpu": 0,
+        "teacher": true,
+        "teacher_first": 4,
+        "teacher_kind": "FIXED_GAP_4S_THEN_DETERMINISTIC_STUDENT",
+        "teacher_stop": 24,
+        "training_only": true,
+        "job_id": "t502_field_sector4_offset2",
+        "field_detail": {
+          "id": "t502_field_sector4_offset2",
+          "field_boundary_crossed": false,
+          "field_qualified_success": false
+        },
+        "observation_contract": {
+          "decisions": 165,
+          "pose_min_xy": [
+            -6.8,
+            -2.4943941431950085
+          ],
+          "pose_max_xy": [
+            -4.204126265981778,
+            8.327598234202001e-16
+          ],
+          "input_dim": 120
+        },
+        "role": "FIXED_4S_TEACHER_THEN_ORIGINAL_STUDENT",
+        "seed": [
+          582,
+          5,
+          0
+        ],
+        "request": {
+          "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/initial.pt.gz",
+          "job": {
+            "id": "t502_field_sector4_offset2",
+            "source_reset_id": "t502_new_sector4_offset2",
+            "group": "6m_LEFT",
+            "case": {
+              "id": "6m_LEFT",
+              "seed": 2029653601,
+              "angle_deg": -17.3,
+              "side": "LEFT",
+              "distance_m": 9.616652224137047,
+              "step_cap": 64112,
+              "group": "original_5m_primary"
+            },
+            "delta_x_m": 0.0,
+            "delta_y_m": 0.0,
+            "delta_yaw_deg": 0.0,
+            "seed": 0,
+            "mode": "deterministic",
+            "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+            "expected_initial120_sha256": null,
+            "wide_course": true,
+            "circle_shift_x_m": 0.6,
+            "fullfield_start_pose": [
+              -6.8,
+              8.327598234202001e-16,
+              -0.7853981633974484
+            ],
+            "fullfield_goal_xy": [
+              -1.2491397351303002e-15,
+              -6.8
+            ],
+            "start_sector": 4,
+            "sector_offset": 2,
+            "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/episodes/full_20.npz",
+            "gap_recovery_first": 4,
+            "correction_decisions": 20
+          },
+          "seed": [
+            582,
+            5,
+            0
+          ],
+          "query": false,
+          "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/episodes/full_2.npz"
+        },
+        "loaded_model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+        "model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+        "full": true,
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/episodes/full_2.npz",
+        "sha256": "50d734f500dfaea50767949f28113dee90877fbc76b2c72e81b8931d532025d3",
+        "full_arrays_generated_but_not_saved": false
+      },
+      "k": 4,
+      "teacher_stop": 24
+    }
+  ],
+  "actor_protocol": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t587_verified_short_correction/protocol.json",
+  "initial": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/initial.pt.gz",
+    "sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+    "bytes": 28047,
+    "policy_hash": "8ef9816c048e48321a09b6195a7061b4d1173cc9b1630de4c47008d906892183",
+    "joint_hash": "ddf6a01069925c41c6ecd4c13b068f886302c0c464501bef1567b5ed8dbadea3"
+  },
+  "max_bytes": 1048576,
+  "all_stop": 1794808800.0,
+  "main_seconds": 120,
+  "audit_seconds": 120,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "new_gradients": 0,
+  "scope": "Four fixed existing actual trajectory types x3, exact learned RBF support only; no policy edit, intervention, simulator, optimization, selection or implied causal rescue.",
+  "user_authorization": "2026-11-16 user: \u4e0b\u4e00\u6b65\u505a\u4ec0\u4e48\uff0c\u7ee7\u7eed; existing14:00 unchanged"
+}
