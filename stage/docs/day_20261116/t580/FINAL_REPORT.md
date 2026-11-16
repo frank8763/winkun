@@ -1,0 +1,1 @@
+T580三组MER式监督迁移对照结束：COMPLETE；SGD实际计数见summary，0新Adam/0新RL；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。三组逐任务自主/回退及SGD/meta计数见day_20261116/t580/FINAL_REPORT，不称完整导航或泛化通过。
