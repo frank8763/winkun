@@ -1,0 +1,26 @@
+{
+  "state": "PASS_ZERO_OPTIMIZER_TIMING_ONLY",
+  "full_batch_gradient_calls": 6,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "models_unchanged": true,
+  "measurements": [
+    {
+      "method": "frozen_representation",
+      "seconds": [
+        2.724366563023068,
+        0.10047720198053867,
+        0.08856877498328686
+      ]
+    },
+    {
+      "method": "trainable_representation",
+      "seconds": [
+        0.678450272011105,
+        0.6527480240329169,
+        0.6287720869877376
+      ]
+    }
+  ],
+  "explanation": "Warm timing after first-call setup; no Adam or changes to objective/data/step budget."
+}
