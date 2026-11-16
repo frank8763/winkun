@@ -1,3 +1,5 @@
+2026-11-16 T602检查确认固定T598教师从两T600实际偏离状态均safeGOAL：18.8s→81.580s、18.4s→78.544s，均保留原时钟，本field case cap128.224s，不当原80s六米或学生原起点成功。2teacher资格+2exact/160124物理8cmd58.935s，auditPASS、21raw1261861B远端全逐SHA，所有PID退。T600+T602合计251894步16cmd；T600256live学习已用完，不自动续预算。下一39旧+原1恢复+本轮2真实状态合格恢复、相同tail方法/32GRU/128步仅草案，未注册未启动；canonical自主及旧39同保才可研究保留，其他2恢复分列，非独立泛化。后续42样本匹配重复对照消融未执行，不称标准数据聚合原创。详day_20261116/t602/FINDINGS_AND_NEXT/NEXT_QUALIFIED_INPUTS。Phase隔离/global1GiB/free40，21:00不自动延长。
+
 2026-11-16 T602实际偏离状态教师恢复资格结束：COMPLETE；固定教师恢复资格及精确重放见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
 
 2026-11-16 用户明确允许T602按原剩余额度验证恢复、21:00全停。正式注册，实际launch另查；固定T598研究教师在mean18.8s/tail18.4s的T600真实失败prefix恢复，2full+2exact/256448步8cmd/0optimizer/0新RL，原时钟history保持，重算教师自身carry；teacher真safeGOAL+exact/audit后才作正例，不称学生新成功。原T600+T601+本项最坏仍≤原10MiB与5246336步114cmd，不扩总额；main600audit300backup180source120和21:00/更早20:40native硬停，CPU14/15总200低优先GPUoff/Phase隔离。唯一driver收尾，active禁止改源/外写runs/并发审计备份。详day_20261116/t602/AUTHORIZATION/PLAN/BUDGET。
