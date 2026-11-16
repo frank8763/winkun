@@ -14,7 +14,8 @@ ROOT,HERE,OUT,DOC,read,save,sha=R.ROOT,R.HERE,R.OUT,R.DOC,R.read,R.save,R.sha
 def main():
     p=read(OUT/'protocol.json');R.setup(OUT);R.verify(dict(p,_root_sha256=sha(OUT/'protocol.json')),True)
     assert not (OUT/'launch.json').exists()
-    start=time.time();end=p['absolute_all_stop']
+    start=time.time();assert start<p['latest_launch_epoch']
+    end=min(p['absolute_all_stop'],start+p['relative_window_seconds'])
     assert start+p['main_seconds']+p['audit_seconds']+p['transport_seconds']+p['source_seconds']+30<end
     receipt=read(ROOT/'stage/runs/t224_archive/latest_source_sync_receipt.json')
     assert receipt['root_tree']==subprocess.check_output(['git','rev-parse','HEAD^{tree}'],cwd=ROOT,text=True).strip()

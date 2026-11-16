@@ -96,6 +96,8 @@ def register():
  assert read(DOC/'PREFLIGHT_OPTIMIZER.json')['state']=='PASS_AUTHORIZED_ZERO_NATIVE'
  for key in ['new_Actor_Adam_cap','shadow_Adam_cap','audit_discarded_Adam_cap','preflight_discarded_Adam_cap']:assert auth[key]==p[key]
  p.update(absolute_learning_stop=auth['learning_stop_epoch'],absolute_native_stop=auth['native_stop_epoch'],absolute_all_stop=auth['all_stop_epoch'])
+ p.update(relative_window_seconds=auth['relative_window_seconds'],latest_launch_epoch=auth['latest_launch_epoch'])
+ assert p['relative_window_seconds']==5400 and time.time()<p['latest_launch_epoch']
  assert time.time()+3750<p['absolute_all_stop'] and time.time()+2400<p['absolute_native_stop'] and time.time()+1500<p['absolute_learning_stop']
  assert R.used(ROOT/'stage/runs')+p['max_bytes']+131072<2**30
  for f,h in p['inputs'].items():assert sha(f)==h,f
