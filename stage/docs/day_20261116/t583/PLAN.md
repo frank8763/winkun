@@ -1,0 +1,11 @@
+# T583 actual-prefix recovery qualification
+
+T582 did not retain a candidate. Four tasks had zero successful exploration. Freeze its initial T550-preserving T581 Actor and test the existing fixed T550 GAP training teacher from each task’s first historical noisy episode (indices 0,12,16,20). This differs from previous from-start GAP trials. Rebuild each exact stochastic source, select the decision before first 3cm/3deg deviation from the fixed corresponding historical reference (halfway fallback), then use GAP to the original terminal deadline. Original goal, accumulated clock, causal120/history, true64GRU, and native integration are preserved. Reference trajectories locate divergence only; the left reference is itself a failure, not an expert.
+
+Four source repeats + four mixed recoveries + four exact replays; 16 commands including worker lifecycle, at most697008 native steps. 0Actor,0Adam,0RL,0BC. Safe GOAL + exact replay and full history/action ownership/native audit are required for usable training data. Never treat teacher completion as student navigation success. No parameter/time/seed grid or automatic follow-up learning.
+
+Mixed audit reconstructs Actor proposals at actual recorded mixed states (including real previous executed teacher commands), and separately checks fixed teacher commands/scan/ownership; proposal-only audit view does not represent a physically executed counterfactual. Source noisy prefixes and takeover states must be bitwise identical. Every mixed episode, including failure, is stored and replayed. All source/parent model hashes are protected.
+
+Main900s, audit300s, remote300s, source180s; relative deadlines and absolute12:45 native /13:00 all-work are both enforced. Own16MiB includes8 full files,2 worker partial slots,metadata2MiB. Global1GiB/free40GiB. CPU14/15 quota200%,nice19,idle; GPU off. Four physical cores are not yet partitioned; do not compete with Phase. Native single writer followed by unique driver audit/manifest/RAM remote readback/source root sync. No completed directory restart.
+
+Method is existing training-only reactive GAP feedback. Standard gap following and state-distribution correction are not claimed as original. No map/planner/waypoint/runtime teacher/router in deployment. Full407, six54, fresh16 and reload78 not executed in this diagnostic.
