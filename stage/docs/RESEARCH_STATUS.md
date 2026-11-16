@@ -1,3 +1,5 @@
+2026-11-16 T586完整结束/独立auditPASS/13原件271070B RAM全远端逐SHA/所有进程退。100liveBC100shadow100audit历史Adam＋4pref，main10.015543秒0物理0cmd0RL，离线gate拒绝而非故障。三teacherMAE A→B .209924→.210930、.275478→.268369、.260113→.257984；27旧history最大偏差14不劣/13更差（非13导航任务失败），平均旧偏差.006247→.007049。初始梯度通路改善不等于学会；候选整ActorAdam回退，T550保留。未进入3接管49自主/407/fresh/reload均null，不能报0%导航。无同机制续训/seed网格或新运行，14:00上限仍有效。详day_20261116/t586/FINDINGS及COMPLETION_VERIFICATION，Phase全隔离。
+
 2026-11-16 T586保持函数的初始化对照结束：COMPLETE；学习及配对接管、49自主与回退见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
 
 2026-11-16 用户在查看T586方案后最新指令“下一步开始实验”，已撤销先看暂不启动，按展示的14:00有界方案记录AUTHORIZATION。T586正式注册/零native合同PASS，4授权丢弃Adam/影子/成熟ActorAdam回退/模型读回PASS，尚无launch不得称运行。初始30hist及48step与T550逐位一致、前层5920初始有效梯度，非收益证明。B100BC100shadow100audit、A历史T584复用；离线三MAE及27逐historymax严格门全过才3接管+49自主和7exact，否则0native回退。2820614物理63cmd18MiBown/global1GiB/free40，main780learn240audit240backup180source90，13:40学13:50native14:00all更早相对截止从严。CPU14/15总200低优先GPUoff/Phase隔离，单Actor额外冻结支路不称参数完全匹配，不扩seed轮数/失败预算。唯一driver结束后audit/RAM逐成员SHA/source，active不并发改源或收尾。原13:00窗口不改写，新独立授权见day_20261116/t586/AUTHORIZATION及正式protocol。
