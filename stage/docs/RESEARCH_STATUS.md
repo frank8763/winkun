@@ -1,3 +1,5 @@
+2026-11-16 用户允许T603独立2879616物理63命令6MiB、128live128shadow128历史审计及4丢弃pref，21:00全停。已正式注册，实际launch另查；39old+原1恢复+T602两真实偏离合格恢复共42history，固定tail/32GRU/128steps，无新RL。零native4pref优化器shadow/成熟回退/读回PASS，更新后96step误差5.55e-16。先3学生接管+3exact，仅canonical保存full其余紧凑RAM实时全history检查；canonical过才15哨兵，全过才补34+4exact，原39不丢+canonical safe才研究保留，额外两恢复另列。main900learn600audit300backup120source90、20:40学20:50native21:00all从严；global1GiB/free40/CPU14,15总200低优先GPUoff/Phase隔离。唯一driver负责收尾，active禁外写runs改科学源/并发audit备份同步。详day_20261116/t603。
+
 2026-11-16 T602检查确认固定T598教师从两T600实际偏离状态均safeGOAL：18.8s→81.580s、18.4s→78.544s，均保留原时钟，本field case cap128.224s，不当原80s六米或学生原起点成功。2teacher资格+2exact/160124物理8cmd58.935s，auditPASS、21raw1261861B远端全逐SHA，所有PID退。T600+T602合计251894步16cmd；T600256live学习已用完，不自动续预算。下一39旧+原1恢复+本轮2真实状态合格恢复、相同tail方法/32GRU/128步仅草案，未注册未启动；canonical自主及旧39同保才可研究保留，其他2恢复分列，非独立泛化。后续42样本匹配重复对照消融未执行，不称标准数据聚合原创。详day_20261116/t602/FINDINGS_AND_NEXT/NEXT_QUALIFIED_INPUTS。Phase隔离/global1GiB/free40，21:00不自动延长。
 
 2026-11-16 T602实际偏离状态教师恢复资格结束：COMPLETE；固定教师恢复资格及精确重放见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
