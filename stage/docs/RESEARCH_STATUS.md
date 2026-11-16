@@ -1,3 +1,5 @@
+2026-11-16 T597只读固定批测量COMPLETE：47.904s/0native0optimizer，39历史特征+初末三损失梯度六组共100backward。逐层紧支撑active开关全不变，5失守中3修正幅度变、2无激活，不能称旧修正关闭或唯一根因；最终RL-保持cos=-.42501、保持-恢复=-.31519，总梯度dot恢复=-.010501，固定点存在冲突非全局证明。39动作指标精确T596/初始梯度总范数与原首更新匹配、输入SHA及模型不变，内部核对非独立全梯度复算。全部小型原始文本可逆bundle进源树，见day_20261116/t597/RAW_EVIDENCE。下一完整冻结T550+独立小循环残差/恢复先行再freshRL是草案，未注册学习/未仿真，不扩旧T596预算；仍保留T550，Phase隔离。
+
 2026-11-16 T596原函数初始化的可训练循环闭环策略试验结束：COMPLETE；真实更新、49自主及3恢复保持见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
 
 2026-11-16 用户明确允许T596独立4161453物理90cmd18MiB、16live16shadow/audit16+4pref、20:00全停。4丢弃合成Adam/0native优化器影子、完整ActorAdam成熟回退/模型读回PASS；正式protocol注册，尚待source精确远端后唯一launch。初始T550原函数/39history与48step精确，64772神经参数encoder/core/head/adapters全开，basis支撑/权重与normalization冻结；原peerRTG的PPO式非标准V/GAE，0新Critic。8fresh旧sector1off1/困难sector0off3各4＋8exact；联合39old初始输出保持和3已成功自主恢复；16更新上限KL早停、同影子，49自主＋3handoff及7exact，保原39/field15/恢复3且新增原失败field才接受，否则完整回退。学习18:50native19:15全部20:00及更早相对5400/3600秒从严，不加seed/轮数/重启；CPU14/15总200低优先GPUoff/Phase隔离/global1GiB/free40。唯一driver科学退后audit/RAM全远端逐SHA/source；active禁外部写runs改源并发收尾。详day_20261116/t596/AUTHORIZATION/PLAN/PREFLIGHT_OPTIMIZER。
