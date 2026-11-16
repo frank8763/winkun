@@ -1,3 +1,5 @@
+2026-11-16 T590完整结束/auditPASS/20raw582690B全远端逐SHA/所有进程退。两臂各512live512shadow，audit合计1024丢弃重构，pref另8；74.736754s/0native0cmd0RL。fixed100教师MAE .204139/.218323/.249577，旧39最坏location漂移.319640；逐historyPHR .223703/.314473/.284896，最坏.019114仍>.01且3教师改善均不到1%，均未过offlinegate，全部ActorAdam/dual回退T550。3自主接管/49原起点/407/fresh/reload全未执行null非0%导航失败。说明当前表示及有限优化出现保持-恢复权衡，不证明任务不相容/唯因/算法普遍失败。新更强平滑残差可表示性对照仅草案未注册启动，不续512步/网格；15:00原授权不扩。详day_20261116/t590/FINDINGS及COMPLETION_VERIFICATION。Phase全隔离。
+
 2026-11-16 T590两固定同数据保持约束学习对照结束：COMPLETE；学习及配对接管、49自主与回退见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
 
 2026-11-16 T590用户明确允许独立5641228物理/126cmd/1024live1024shadow1024audit及8丢弃pref、15:00全部停止；8丢弃Adam/0native预检PASS，ActorAdam/39dual成熟回退与影子和模型读回通过，正式已注册但尚待源码精确远端后唯一launch。两臂同39history+3full恢复/512BC/5986可训初始函数相同，仅fixed100保持vs逐historyPHR不同；512有限优化无收敛保证，offline39max<=.01且3MAE各降20%才3接管+exact，有新safe才49+4compactexact。完整407/fresh/reload null，不称六米稳定或原创；CPU14/15低优先GPUoff/Phase隔离，active只driver写入收尾。

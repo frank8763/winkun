@@ -1,0 +1,55 @@
+{
+  "state": "INDEPENDENT_COMPLETION_CHECK_PASS",
+  "summary": "COMPLETE",
+  "physical_steps": 0,
+  "native_commands": 0,
+  "main_elapsed_s": 74.73675417900085,
+  "live_Adam": 1024,
+  "shadow_Adam": 1024,
+  "audit_historical_discarded_Adam": 1024,
+  "preflight_discarded_Adam": 8,
+  "all_processes_stopped": true,
+  "remote_member_count": 20,
+  "results": [
+    {
+      "method": "fixed_penalty",
+      "teacher_MAE": [
+        0.20413883731417326,
+        0.2183232101507631,
+        0.24957714202462986
+      ],
+      "teacher_improvement_percent": [
+        9.065942648678526,
+        31.03835701056741,
+        12.984731106770154
+      ],
+      "old_max_location_drift": 0.3196399602788509,
+      "old_histories_above_limit": 39,
+      "dual_max": 0.0,
+      "accepted": false,
+      "offline_passed": false
+    },
+    {
+      "method": "per_history_constraints",
+      "teacher_MAE": [
+        0.22370281937140413,
+        0.31447300107549087,
+        0.2848956176761588
+      ],
+      "teacher_improvement_percent": [
+        0.35112733073638935,
+        0.6675707314500068,
+        0.6709165050567845
+      ],
+      "old_max_location_drift": 0.019113557870216402,
+      "old_histories_above_limit": 21,
+      "dual_max": 50.76392722164892,
+      "accepted": false,
+      "offline_passed": false
+    }
+  ],
+  "full407": null,
+  "fresh16": null,
+  "reload78": null,
+  "raw_archive_sha256": "fa01378fd6cab614c4ee1d92f2244a17e5100988c3b89e03ac03111911d8af1a"
+}
