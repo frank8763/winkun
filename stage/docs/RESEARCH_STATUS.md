@@ -1,3 +1,5 @@
+2026-11-16 T594当前学生近目标及原失败场地恢复验证结束：COMPLETE；两项真实接管恢复资格见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
+
 2026-11-16 用户明确下一步开始后T594两当前学生恢复资格已注册/0native0optimizer预检PASS，尚待source精确同步唯一launch。固定T591600步B研究模型；sector1off1从历史最近目标前1决策k186(37.2s)接现有GAP、sector0off3从原起点第1决策后接同GAP；2compactsource+2exact、2fullmixed+2exact，源须精确T591；训练教师GOAL仅恢复数据非自主成功。473852物理12cmd/own8MiB/main300audit120backup120source90总660，累计T591+T592+本项最坏2897940物理119cmd<原6025900/136，原16:24绝对全停不扩。CPU14/15总200低优先/GPUoff/global1GiB/free40GiB、Phase隔离。0学习不自动接新训练/扫接管点；唯一driver收尾备份source，失败不重启。PPO/SAC解释及T336旧SAC证据核读中。
 
 2026-11-16 用户询问GitHub/期刊解决方法后完成T593资料only研究：0native0optimizer无run注册。核验Reinforced Imitation RA-L2018/ETH作者repo、NavACL-Q ApplSci2022/作者repo、RLPD ICML2023/作者repo、CLEAR NeurIPS2019及CORA后续实现、Nature2024可塑性/作者代码；少量raw源码只RAM阅读、无clone安装。T59139keep里15field成功history且无offset3成功标签、3恢复均已有成功ID、0新RL，不能当作充分困难探索；T592失守5中4初始化原失败。建议先有效当前学生恢复＋旧任务闭环保持，并另对原失败field获取新探索正例；标准方法不冒称原创、CBP不可未经诊断随机重置Actor、APPLR运行planner不符合部署。详day_20261116/t593_research/METHOD_REVIEW与NAVIGATION_PRIMARY_SOURCES；当前无新训练，旧窗口不扩/Phase隔离。

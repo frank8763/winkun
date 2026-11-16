@@ -1,0 +1,1 @@
+T594当前学生近目标及原失败场地恢复验证结束：COMPLETE；两项真实接管恢复资格见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
