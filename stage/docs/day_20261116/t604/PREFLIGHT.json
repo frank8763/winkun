@@ -1,0 +1,34 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "all42_initial_full_history_locations_exact_T598": true,
+  "actual96step_initial_commands_and_legacy_hidden_exact": true,
+  "qualified_new_recovery_rawlocation_matches_saved_steps": true,
+  "single_gradient_only": [
+    {
+      "method": "tail",
+      "loss": 0.02609410014025864,
+      "parts": {
+        "mean": 0.01130730512017462,
+        "worst10": 0.040880895160342656,
+        "old_mean": 0.012177097821726515,
+        "recovery": 1.881329248414282e-33
+      },
+      "nonzero_gradients": {
+        "encoder": 3872,
+        "core": 6336,
+        "head": 66
+      },
+      "seconds": 2.724817454989534
+    }
+  ],
+  "new_native": 0,
+  "new_optimizer": 0,
+  "model_state_unchanged": true,
+  "fixed_single_tail_method": true,
+  "same_trainable_parameters": 10274,
+  "extra_frozen_reference_parameters": 10274,
+  "real_runtime_all3_schedules_pass": true,
+  "undersized63minus1_rejected": true,
+  "own_upper": 5300224,
+  "global_worst": 1073732971
+}
