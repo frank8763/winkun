@@ -1,0 +1,26 @@
+{
+  "reason": "Measured full batch backward2.72198s: original256live+256shadow could exhaust1500s main before mandatory navigation. Set128 before any optimizer or registration; no thresholds/seed modified during training.",
+  "original_proposed_steps": 256,
+  "final_proposed_steps": 128,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "original_budget": {
+    "state": "PREPARED_NOT_REGISTERED_NOT_LAUNCHED",
+    "max_physics": 2879616,
+    "max_commands": 63,
+    "own_bytes": 12582912,
+    "own_upper": 10125312,
+    "global_worst": 1071218056,
+    "live_Adam": 256,
+    "shadow_Adam": 256,
+    "audit_historical_Adam": 256,
+    "pref_discarded_Adam": 4,
+    "main_seconds": 1500,
+    "audit_seconds": 600,
+    "transport_seconds": 180,
+    "source_seconds": 120,
+    "all_stop": "20:00",
+    "total_admission_seconds": 2430,
+    "budget_approval": "PENDING"
+  }
+}
