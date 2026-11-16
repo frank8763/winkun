@@ -1,0 +1,1 @@
+T589已知成功任务完整历史补齐结束：COMPLETE；12项完整成功历史复验见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
