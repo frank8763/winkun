@@ -1,3 +1,5 @@
+2026-11-16 用户继续后T601只读输入差距测量完成0.986s/0native0optimizer0gradient：接管5.2s同历史时mean/tail驱动较源少.112/.089，短期3cm偏差曾缩小，不能唯一归因首步；20.6/21s首次3度偏离，25–40s成功源输入预测负steer而实际学生输入正steer，最终圆障碍接触。原结果精确text bundle入源树。新T602固定T598成功研究Actor从两个实际T600失败prefix验证恢复资格已代码/0native0optimizer预检PASS，未注册无run/launch；事后固定规则偏离≥.1m连续5决策前1步，mean18.8s/tail18.4s，原时钟/goal/history/执行器不清零，teacher从全实际history重算carry。2full+2exact/256448全部物理8命令/5.5MiB/0学习，拟原T600批准余额重分配，不扩5246336步114cmd及10MiB联合上限（联合最坏8246320B）/21:00截止；科学范围变更待答。global最坏1070507716B<1GiB/free40，CPU14/15总200低优先GPUoff/Phase隔离。teacher必须真实safeGOAL+exact/audit才作正例，不称学生新成功；不扫teacher/入点seed，不自动接训练。详day_20261116/t601和t602/PLAN/PREFLIGHT/BUDGET/ENTRY_ANALYSIS_POSTHOC。
+
 2026-11-16 T600检查确认两组均未过新增恢复：mean/tail都碰撞余5.564/5.567m；各128live128shadow完成，256历史Adam独立审计PASS、8pref另计，2自主+2exact/91,770物理/8命令/130.267s。无工程错误，按注册恢复门提前结束；15sentinel/49/407/fresh/reload全null非0%旧任务失败。保存恢复RMS .097184→.069563/.060652，old39最大RMS .017586/.018877，不能把tail拟合更好当导航收益或旧闭环保持。两臂完整回退T550，29原件已完整远端逐SHA，所有PID退。详day_20261116/t600/FINDINGS；当前无新作业，不扩步数/网格，Phase隔离。
 
 2026-11-16 T600任务风险匹配对照结束：COMPLETE；两组任务风险学习、分级自主验收见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
