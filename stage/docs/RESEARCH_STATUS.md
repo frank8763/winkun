@@ -1,3 +1,7 @@
+2026-11-16 T585全部7原件95777B RAM全远端逐SHA读回完成，archive15dc25eed1466b09c13fb22c8bdf39594a509b2efd2792e834983b4b5be86ad5；本地manifest再核通过，4主梯度+4独立重构/0native0optimizer、全部进程退。下一初始化保持对照未启动，13:00窗口不延长。
+
+2026-11-16 T584完成629.965746秒1618374物理69cmd，100live100shadow/100audit历史Adam，auditPASS/138原件RAM全远端逐SHA/进程已退；3初始及3学习后接管全碰，49自主32成功12接触5超时，丢7无新增，整ActorAdam回退T550。教师MAE仅降6.49/12.98/9.31%，关键转向符号未学对，旧平均保持误差小不保证闭环。新T585纯离线4梯度+4独立重构PASS，0native0optimizer，候选教师vs100保持梯度cos−.960742692/范数比.89869；初始保持梯度0不能夸称每步冲突。未找到相同完整特征的矛盾标签；初始前5920梯度0、末66非0，候选5986均非0。保持函数抵消的非零初始化残差仅下一草案未注册启动，不声称原创/已解决/六米通过；13:00不扩。详day_20261116/t584及t585/FINDINGS_AND_NEXT。
+
 2026-11-16 T584无界残差恢复学习与保持试验结束：COMPLETE；学习及配对接管、49自主与回退见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
 
 2026-11-16 T584新合格恢复有限学习诊断已零native预检PASS、尚无launch。实际3教师suffix固定输入下旧±.1残差范围至少1维不可达占70.02/94.87/81.55%，非学生闭环不可能或唯一根因证明；新同T550初始函数5986直接无界位置残差（动作仍[-1,1]），固定100BC+100shadow及100audit历史Adam，27history保持100。先3实际历史动作prefix后冻结学生确定性接管，全部safe则0学习结束；否则100BC、3post接管及49自主/关键exact，39成功ID无丢且新增才研究保留，整ActorAdam回退。两次未注册200步时长预检拒绝各4丢弃Adam/0native，源错误完整保留，最终100步fresh4累计12；无导航结果选步数。3205286物理69cmd20MiBown/global1GiB/free40，main780learn240audit240backup180source90，12:42学12:50native13:00all更早从严；2CPU低优先GPUoff/Phase隔离。完整407/fresh/reload null，不重复旧实验，实际状态查launch。详day_20261116/t584/PLAN/PREFLIGHT/BUDGET。
