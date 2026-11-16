@@ -1,3 +1,5 @@
+2026-11-16 T584无界残差恢复学习与保持试验结束：COMPLETE；学习及配对接管、49自主与回退见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
+
 2026-11-16 T584新合格恢复有限学习诊断已零native预检PASS、尚无launch。实际3教师suffix固定输入下旧±.1残差范围至少1维不可达占70.02/94.87/81.55%，非学生闭环不可能或唯一根因证明；新同T550初始函数5986直接无界位置残差（动作仍[-1,1]），固定100BC+100shadow及100audit历史Adam，27history保持100。先3实际历史动作prefix后冻结学生确定性接管，全部safe则0学习结束；否则100BC、3post接管及49自主/关键exact，39成功ID无丢且新增才研究保留，整ActorAdam回退。两次未注册200步时长预检拒绝各4丢弃Adam/0native，源错误完整保留，最终100步fresh4累计12；无导航结果选步数。3205286物理69cmd20MiBown/global1GiB/free40，main780learn240audit240backup180source90，12:42学12:50native13:00all更早从严；2CPU低优先GPUoff/Phase隔离。完整407/fresh/reload null，不重复旧实验，实际状态查launch。详day_20261116/t584/PLAN/PREFLIGHT/BUDGET。
 
 2026-11-16 T583完整结束/独立auditPASS/34原件RAM全远端逐SHA/所有科学及driver退出，136.675398秒418941物理16cmd，0Actor0Adam0RL。4历史source重复+4新mixed恢复+4exact，真实噪声prefix及接管态精确。GAP恢复field1off2/2off2/4off2三条safeGOAL，左六米仍碰矩形1余4.2152m；仅3条合格教师恢复数据，不是学生进步/六米通过。所有模型不变，T550保留，407/fresh/reload null。global1036416010B<1GiB/free40；下步三恢复联合保持学习、左六米新约束训练教师分别只是草案未注册启动，不重复T583/不续其预算，13:00窗口不扩。详day_20261116/t583/FINDINGS_AND_NEXT及COMPLETION_VERIFICATION。

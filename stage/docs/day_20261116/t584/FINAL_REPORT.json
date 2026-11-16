@@ -1,0 +1,1788 @@
+{
+  "state": "COMPLETE",
+  "error": null,
+  "summary": {
+    "state": "COMPLETE",
+    "pid": 537435,
+    "physics": 1618374,
+    "commands": 69,
+    "elapsed_s": 629.9657464027405,
+    "error": null,
+    "result": {
+      "update": {
+        "Actor_Adam": 100,
+        "new_RL": 0,
+        "new_Critic": 0,
+        "before": {
+          "teacher": [
+            {
+              "command_MAE": 0.22449106886926637,
+              "command_max": 1.5958369831788475
+            },
+            {
+              "command_MAE": 0.31658643948523396,
+              "command_max": 1.60316603827075
+            },
+            {
+              "command_MAE": 0.28681993999336824,
+              "command_max": 1.3204954654978664
+            }
+          ],
+          "keep_location_MAE": 0.0
+        },
+        "after": {
+          "teacher": [
+            {
+              "command_MAE": 0.20992385874269173,
+              "command_max": 1.5726232817620405
+            },
+            {
+              "command_MAE": 0.2754781791543977,
+              "command_max": 1.5786323969928133
+            },
+            {
+              "command_MAE": 0.26011273909722205,
+              "command_max": 1.3004526052125234
+            }
+          ],
+          "keep_location_MAE": 0.006246596853284367
+        },
+        "trace": [
+          [
+            2.1480971398824638,
+            0.0,
+            11.507880011484572
+          ],
+          [
+            2.128955979388813,
+            3.23621835401201e-05,
+            9.34796554729986
+          ],
+          [
+            2.11054178336885,
+            8.208911036683333e-05,
+            7.447410066181881
+          ],
+          [
+            2.091507732820183,
+            0.0001625487833669149,
+            6.430425390688034
+          ],
+          [
+            2.0731501696983097,
+            0.0002530107184162351,
+            5.90681976716701
+          ],
+          [
+            2.0564711183524143,
+            0.0003372376112677295,
+            5.296013453089615
+          ],
+          [
+            2.041373477769059,
+            0.0004131783811731327,
+            4.41127581314416
+          ],
+          [
+            2.027126965412415,
+            0.0004925022809112627,
+            3.8690490949228
+          ],
+          [
+            2.0130944821231727,
+            0.0005780688200195613,
+            3.6704110359038316
+          ],
+          [
+            1.9994571042871634,
+            0.0006622962881242763,
+            3.3486510077159637
+          ],
+          [
+            1.9869199195382194,
+            0.0007369959282672268,
+            2.821601374289095
+          ],
+          [
+            1.97604054141416,
+            0.0008002110242501844,
+            2.5755465959063257
+          ],
+          [
+            1.9671165140425009,
+            0.0008497269400108574,
+            2.6725042415856235
+          ],
+          [
+            1.9601118953953205,
+            0.0008821047067626881,
+            2.54355412499322
+          ],
+          [
+            1.9546749903564153,
+            0.0008992269473465678,
+            2.1516206557855115
+          ],
+          [
+            1.950024496964991,
+            0.0009093949476273126,
+            1.9345264462167429
+          ],
+          [
+            1.9450345524108485,
+            0.0009223803489975372,
+            1.8916860526597021
+          ],
+          [
+            1.9395200529565768,
+            0.0009391860580010704,
+            1.7277573515202116
+          ],
+          [
+            1.9339552859429798,
+            0.0009568038740489767,
+            1.5746896070131309
+          ],
+          [
+            1.9286623736911541,
+            0.0009736099409957731,
+            1.5919112808592835
+          ],
+          [
+            1.92391553156487,
+            0.0009862598535852556,
+            1.4711130602889992
+          ],
+          [
+            1.9197625408319816,
+            0.0009945943305040383,
+            1.3575933816702819
+          ],
+          [
+            1.9154375407579636,
+            0.0010064607933674536,
+            1.4146422725092789
+          ],
+          [
+            1.9107158956734396,
+            0.0010231410968912905,
+            1.3537788961774864
+          ],
+          [
+            1.906120965915541,
+            0.0010399763992965895,
+            1.360372700404594
+          ],
+          [
+            1.9017463988279795,
+            0.0010563463438276592,
+            1.4307698684560586
+          ],
+          [
+            1.89761068788194,
+            0.0010714489107449547,
+            1.3574404053210163
+          ],
+          [
+            1.8929624683962132,
+            0.001092351910313748,
+            1.333612361947217
+          ],
+          [
+            1.887014524473492,
+            0.0011260436378231309,
+            1.2623790387866793
+          ],
+          [
+            1.8806417397936714,
+            0.001164107649864262,
+            1.1842055107422156
+          ],
+          [
+            1.8744079746148454,
+            0.0012010645839497442,
+            1.1063002633339154
+          ],
+          [
+            1.8693039094881925,
+            0.0012271815013862363,
+            1.007982051634319
+          ],
+          [
+            1.8635195455447553,
+            0.0012607085371115607,
+            1.1709051999462705
+          ],
+          [
+            1.858701951860204,
+            0.0012845817335700022,
+            1.013489881540504
+          ],
+          [
+            1.8539133401149614,
+            0.0013085566430525817,
+            0.9454279372851231
+          ],
+          [
+            1.8502941029734972,
+            0.0013211959889022858,
+            0.9299395292006434
+          ],
+          [
+            1.8465933759199737,
+            0.0013343857817426086,
+            0.9630770488564664
+          ],
+          [
+            1.8421967973007225,
+            0.0013543785324746714,
+            1.1371870441170566
+          ],
+          [
+            1.8397602825788537,
+            0.0013546717605771802,
+            0.8351151055467827
+          ],
+          [
+            1.8371596866162978,
+            0.0013568778592427484,
+            0.8642754630522524
+          ],
+          [
+            1.8341689816064863,
+            0.0013629004444600337,
+            1.130333361858669
+          ],
+          [
+            1.832811585743304,
+            0.00135241605434934,
+            1.001245121078907
+          ],
+          [
+            1.8296910906191088,
+            0.0013595131103744918,
+            0.9897886000900864
+          ],
+          [
+            1.8263964067330951,
+            0.0013684804077420923,
+            0.8699540703666339
+          ],
+          [
+            1.8224176087715565,
+            0.0013847813647703874,
+            0.8122596994389198
+          ],
+          [
+            1.818072826264262,
+            0.0014054155045032574,
+            0.849461001035006
+          ],
+          [
+            1.814149247329306,
+            0.0014225007426807406,
+            0.8737468372554964
+          ],
+          [
+            1.8089060801700376,
+            0.001453773479287413,
+            1.1335738438023464
+          ],
+          [
+            1.8065234040681601,
+            0.0014575850781667204,
+            1.2173671188368966
+          ],
+          [
+            1.8010670602334844,
+            0.001492285106388324,
+            1.1122591138139122
+          ],
+          [
+            1.7989244972948566,
+            0.0014942341162105834,
+            0.8077818221337564
+          ],
+          [
+            1.79536467101575,
+            0.0015106667146289948,
+            0.763137106601131
+          ],
+          [
+            1.7933229310301046,
+            0.0015120256545208578,
+            0.7508176782041855
+          ],
+          [
+            1.7904356634108445,
+            0.001521950981661309,
+            0.8685330445262225
+          ],
+          [
+            1.7890888490370218,
+            0.0015169047864200002,
+            1.083457373680881
+          ],
+          [
+            1.7839243732314551,
+            0.001551060268222992,
+            1.7328383052220697
+          ],
+          [
+            1.7823565127977412,
+            0.001546785330636518,
+            0.6777604905340419
+          ],
+          [
+            1.7790860335429726,
+            0.0015617991736289315,
+            0.9726280749030637
+          ],
+          [
+            1.772614744169881,
+            0.0016120740858956493,
+            2.3842926124066293
+          ],
+          [
+            1.770603661957798,
+            0.001610874109709503,
+            0.9162152959248173
+          ],
+          [
+            1.7711262238425816,
+            0.001599739618500745,
+            3.721695784927512
+          ],
+          [
+            1.7675989595911168,
+            0.001614768005371549,
+            3.0524474590019675
+          ],
+          [
+            1.7605551608351049,
+            0.0016660187325535912,
+            2.250822853920787
+          ],
+          [
+            1.7579428767485747,
+            0.001678762985178554,
+            2.5482452840604046
+          ],
+          [
+            1.7592215370746151,
+            0.001649268838556159,
+            1.7752480278785383
+          ],
+          [
+            1.7566074126337763,
+            0.0016602857054538497,
+            1.3238054657128986
+          ],
+          [
+            1.7513294723873185,
+            0.0017058192886365044,
+            3.1942146951137804
+          ],
+          [
+            1.750503138089787,
+            0.0016975350665637459,
+            2.5958353787287387
+          ],
+          [
+            1.7532837904834389,
+            0.0016562652596699306,
+            2.5416860831791324
+          ],
+          [
+            1.7517046560246665,
+            0.0016596851612129455,
+            2.6475106462950815
+          ],
+          [
+            1.7464013714047422,
+            0.0016973756355815194,
+            1.8335238936842086
+          ],
+          [
+            1.745173149112052,
+            0.0016962380863804985,
+            1.5045157230832156
+          ],
+          [
+            1.7474234844086207,
+            0.0016666832429602975,
+            3.074696316377258
+          ],
+          [
+            1.7456174039862047,
+            0.0016703368818121872,
+            2.631336322223242
+          ],
+          [
+            1.7402235973371947,
+            0.0017109310712251206,
+            2.2826503206613262
+          ],
+          [
+            1.7390538384617207,
+            0.0017105064685809996,
+            2.234354406097751
+          ],
+          [
+            1.7416103394237585,
+            0.0016732775247921665,
+            2.316987973670142
+          ],
+          [
+            1.740049535367753,
+            0.0016760119964889756,
+            2.0128156627051
+          ],
+          [
+            1.7348359776334394,
+            0.00171879682666233,
+            2.6534472704103473
+          ],
+          [
+            1.7337929184103307,
+            0.001716167594579324,
+            2.3150519035745973
+          ],
+          [
+            1.7364230886413856,
+            0.0016789249420325566,
+            2.533827839017743
+          ],
+          [
+            1.734919784206733,
+            0.0016820641068340482,
+            2.440733998480108
+          ],
+          [
+            1.7296707987319266,
+            0.00172220278914738,
+            2.1576439326210832
+          ],
+          [
+            1.7283536440187204,
+            0.0017227184623253278,
+            1.8047264436980823
+          ],
+          [
+            1.7305895695171714,
+            0.001692856117511534,
+            2.9760412812155805
+          ],
+          [
+            1.7287848869877498,
+            0.0016981053707646246,
+            2.689492004964504
+          ],
+          [
+            1.7232622432976759,
+            0.001740152227075964,
+            2.1821718856344585
+          ],
+          [
+            1.7216552308880264,
+            0.0017442428479075268,
+            2.0241597701607894
+          ],
+          [
+            1.7238396102030575,
+            0.0017131200681186425,
+            2.6918790395427323
+          ],
+          [
+            1.7222386768422435,
+            0.0017162818319279853,
+            2.3469604937474053
+          ],
+          [
+            1.7171655860592174,
+            0.0017564593581398567,
+            2.561016114350185
+          ],
+          [
+            1.716187147353547,
+            0.0017539090299510292,
+            2.328326835819382
+          ],
+          [
+            1.7188193802317788,
+            0.001716885075069233,
+            2.5689049938738924
+          ],
+          [
+            1.717327947185677,
+            0.001719633871374471,
+            2.378857450189649
+          ],
+          [
+            1.7121312536878432,
+            0.0017604793741788924,
+            2.4358296164377
+          ],
+          [
+            1.7109929997307725,
+            0.001759128417517165,
+            2.0812549384061834
+          ],
+          [
+            1.713426616832574,
+            0.0017262424610177932,
+            2.9450698438793026
+          ],
+          [
+            1.711777621047023,
+            0.001730367681288993,
+            2.7508723215017863
+          ],
+          [
+            1.7065337762791892,
+            0.0017694677639564225,
+            2.2060342701641686
+          ],
+          [
+            1.705459529080176,
+            0.0017678078476824149,
+            1.9523088011339187
+          ]
+        ],
+        "frozen_body_sha": "fce4aa4b8ba3cbd20160fc6df9498877d901392c35c1987db08a3216a46fbec9"
+      },
+      "initial": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/initial.pt.gz",
+        "sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+        "bytes": 28047,
+        "policy_hash": "8ef9816c048e48321a09b6195a7061b4d1173cc9b1630de4c47008d906892183",
+        "joint_hash": "ddf6a01069925c41c6ecd4c13b068f886302c0c464501bef1567b5ed8dbadea3"
+      },
+      "proposal": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/proposal.pt.gz",
+        "sha256": "3640bc67cfb4e422ccc02a04fe2d7d3f1404561230554c97f7c66ee1d1d5c1c3",
+        "bytes": 136293,
+        "policy_hash": "195f33dd60a4875aa3d139de7ed5c719a5d079afc07076990df86955a1df155b",
+        "joint_hash": "5bafd33f863a226a9cd11fbf506c50af8ac6053794fa17dfa331a94aebcfecd2"
+      },
+      "baseline_handoff": [
+        {
+          "complete": true,
+          "collision": true,
+          "success": false,
+          "timeout": false,
+          "administrative_censor": false,
+          "physics_steps": 20839,
+          "remaining_m": 5.324801668229545,
+          "terminal_contacts": [
+            {
+              "geom1": "real_rect_obs_0",
+              "geom2": "chassis_collision",
+              "distance": -0.00026845738892992423
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.014482297983443429
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.014468784556394984
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.014249659282348545
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.014237704150644723
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.017076496208125763
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.017046539864467553
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.016844607056945154
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01681470902233398
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.04144030562885267
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.041965667335206555
+            }
+          ],
+          "policy_hash": "8ef9816c048e48321a09b6195a7061b4d1173cc9b1630de4c47008d906892183",
+          "physics": 20839,
+          "array_digest": "af41f99fbed6126493480d46fda878f7e62753d00fa64f7982bfb84cc77bfc3e",
+          "array_hashes": {
+            "states": "c669e6f454bd3273e80e5d129920b84ee0883e36308452a29197d449e7d78e9c",
+            "actions": "2b9c5100da8882b757465b4e083d69fab4974e01fe2871b5675cccbba0198a29",
+            "native_counts": "16d4b372f1bf062a554b70493588552200bc68e9bd241e73e71c1778f133f039",
+            "next_states": "c07e2f6f9df991dcd3c93ec7f7db4b8fc6dc4b40cd7273a7ad518e3dd16aaa5f",
+            "poses": "d043746744024c6a230e127fed273fdad6a229c25250a11cf713a52fa13006e5",
+            "next_poses": "8c810095bc609fb3493e7a3adb21ee5f8825907b6a9ee4f9195bcbfd639c328c",
+            "end_flags": "84023d5da253d5661775e5e8b001a0d3edfa8a7ad62542e13d710aa3bd0a5f72",
+            "rewards": "a4b526e60ed00a41c52368c0e72aad9fb541d49f189d4ede51f15f85baadc209",
+            "history_poses": "125550401edfb85192e9f0b1f15463e0866e44a8664ad5b4879c0e94af857fb6",
+            "history_goals": "3a4231f6c9de7d19fe807e06be5bf74e21be055ef4a67d000cbaaca00f400b99",
+            "history_times": "3157845038426ad80925d95775e05d2adb0490c8cb96ddd4d2fd97d54a0f39bd",
+            "environment_rewards": "a4b526e60ed00a41c52368c0e72aad9fb541d49f189d4ede51f15f85baadc209",
+            "initial_native_integration": "768f11a6d34ada6d0e5722430b6c5527cb90e2a4d5525ddd51a08bad33a18b5a",
+            "final_native_integration": "a181b5c0c5e185e85995403c400245842310109aea260cc9ad52041b13de79f1",
+            "hidden_before": "7f78529120fd460e5831371b4b74ffbd90b1f535ba946795207b38922c11e91e",
+            "last_hidden_after": "02d0cfb6d3b63a501a4d92a97980c1065a3ca5abf91fcb38c0bf52f4716488aa",
+            "innovations": "c8c60f9e3e7f9b1859564614ba32bbfe6346da5997b4f4584b85da7e418f1f4f",
+            "raw_actions": "ba5cfc6328f44e30d868ec99dc39da2008c095d9af7ebcc534e85c4f6efabf88",
+            "atom": "afd55e99784c7a64158c8f54d111f54dc736e303bb022da269de73f2b75d0ac1",
+            "locations": "ba5cfc6328f44e30d868ec99dc39da2008c095d9af7ebcc534e85c4f6efabf88",
+            "logp": "b5761f55786e95dfab863eaaf327d4123a6c42694f316c4f7f6298693ee99e33",
+            "stochastic": "79c42e6e96449d981b63164b4979e057b2371c0dc1b304f2aa56c0891165b55d",
+            "hold_sha256": "f45b1c512aa05ccc6eb9f9e7e83b6bdc64372a6e38fd85bc402e2b2cbdf017f3",
+            "ownership": "b14957e00b6ad230269075e2e43b60c367566cdabb43affa857c3d7787adcf67",
+            "task_goal_xy": "8867bafac354f24811273d75b56f5f73c4a0710fc5efcf264c700040b97c7d29",
+            "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+            "source_prefix_actions": "e69d36c4ee15d99771ed0cd07e47288a3f1be274b0d98873405fa4bddcdf19a5",
+            "student_takeover_first": "556dffc4bb2f17c8d57345cc40fe77e4d572c1590acec9b560654f4ddfdda88e"
+          },
+          "integration_sha256": "a181b5c0c5e185e85995403c400245842310109aea260cc9ad52041b13de79f1",
+          "pid": 537446,
+          "cpu": 0,
+          "teacher": false,
+          "teacher_first": null,
+          "job_id": "t502_field_sector1_offset2",
+          "field_detail": {
+            "id": "t502_field_sector1_offset2",
+            "field_boundary_crossed": false,
+            "field_qualified_success": false
+          },
+          "observation_contract": {
+            "decisions": 209,
+            "pose_min_xy": [
+              0.512162303906412,
+              4.808326112068523
+            ],
+            "pose_max_xy": [
+              4.8083261120685235,
+              5.023344832282338
+            ],
+            "input_dim": 120
+          },
+          "role": "INITIAL_FROZEN_ACTUAL_STATE_HANDOFF",
+          "seed": null,
+          "request": {
+            "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/initial.pt.gz",
+            "job": {
+              "id": "t502_field_sector1_offset2",
+              "source_reset_id": "t502_new_sector1_offset2",
+              "group": "6m_LEFT",
+              "case": {
+                "id": "6m_LEFT",
+                "seed": 2029653601,
+                "angle_deg": -17.3,
+                "side": "LEFT",
+                "distance_m": 9.616652224137045,
+                "step_cap": 64112,
+                "group": "original_5m_primary"
+              },
+              "delta_x_m": 0.0,
+              "delta_y_m": 0.0,
+              "delta_yaw_deg": 0.0,
+              "seed": 0,
+              "mode": "deterministic",
+              "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+              "expected_initial120_sha256": null,
+              "wide_course": true,
+              "circle_shift_x_m": 0.6,
+              "fullfield_start_pose": [
+                4.8083261120685235,
+                4.808326112068523,
+                3.141592653589793
+              ],
+              "fullfield_goal_xy": [
+                -4.808326112068523,
+                4.8083261120685235
+              ],
+              "start_sector": 1,
+              "sector_offset": 2,
+              "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/episodes/full_12.npz",
+              "student_takeover_first": 3
+            },
+            "seed": null,
+            "query": false,
+            "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_0.npz"
+          },
+          "loaded_model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+          "model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+          "full": true,
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_0.npz",
+          "sha256": "c5938b54299f32c5f75862522a0d5ebcab804464381444ade892a17ab90fb9ad",
+          "full_arrays_generated_but_not_saved": false
+        },
+        {
+          "complete": true,
+          "collision": true,
+          "success": false,
+          "timeout": false,
+          "administrative_censor": false,
+          "physics_steps": 22275,
+          "remaining_m": 5.5663726709913,
+          "terminal_contacts": [
+            {
+              "geom1": "real_circle_obs_0",
+              "geom2": "chassis_collision",
+              "distance": -0.00020105652746515374
+            },
+            {
+              "geom1": "real_circle_obs_0",
+              "geom2": "chassis_collision",
+              "distance": -0.00020105652746515374
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015686906378747242
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015678982787311377
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015623737142839197
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015616048445172545
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015722088257027242
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.0157139505421965
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01565902470444286
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01565091043625627
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.045197219540141595
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.046525087935107554
+            }
+          ],
+          "policy_hash": "8ef9816c048e48321a09b6195a7061b4d1173cc9b1630de4c47008d906892183",
+          "physics": 22275,
+          "array_digest": "6dca9d18d357359fa8fb9eaad2912a05556491d388172026bd2d385871ed6c98",
+          "array_hashes": {
+            "states": "3c2c9ff9f55571ef79fd3b7ae54d6679b02af847d866f03fc276cbb84862c42e",
+            "actions": "8e8b022a6aeabb352df41dbf9962bc8673fd1e1fe41f169283657c496130f11c",
+            "native_counts": "5ab610a572acea4c973dbc9e8b06840ec26cde3b948a1c6f7ca7dcb7c0379cae",
+            "next_states": "a7b8e3634a6f6fe3fe9376ced54c496cbd99847189821f081f8650ab4a1769b2",
+            "poses": "e93059d403c8adcef8559e15bcf9d4c8c9dbfe99a092b3d9f0dcfa9c3f2fed79",
+            "next_poses": "95870f35939c9dbe5ccebda68f5caf3a1eb261c92875889c5757aa3ddf10cf71",
+            "end_flags": "3f9ffe148fcf2a3e0f04f53122ce39f0e9f5f09bb4fcfee821f516bd6e302411",
+            "rewards": "59c18b947dccf67890662b684abe1756fcdd6408051b437c4bcaa8ef6427d6ef",
+            "history_poses": "495b0fad62b6691de8d532e9d911f1b8fb01ae034b1182e813c3e753aff01c71",
+            "history_goals": "305b288485b2a4b94f2db5c7d4800ee8f56cb926d2437d1a3f49916985b9d209",
+            "history_times": "afdf852131a1e26a0410d25c0d21927b42a0a5074c0fbea7773a8b48184aac5e",
+            "environment_rewards": "59c18b947dccf67890662b684abe1756fcdd6408051b437c4bcaa8ef6427d6ef",
+            "initial_native_integration": "d51462fa16f0afa1f0c4761a00eb51588bb1c278f67546accb4182081035a1e8",
+            "final_native_integration": "35e95a17e83199ed4411494493818ce984aac2dddf4d981a51b139e8f604cf61",
+            "hidden_before": "09c59a73e9e691a85ad914f80f2a8da359d748e4773730b9ddf43003628f2473",
+            "last_hidden_after": "0e58e791ecb2a4b8c32db390f1a52ed514dfd85411df0a40d15f82671abe0de0",
+            "innovations": "b0f191b1053d71c975b6f55fe98213db196dc57d3e0ffd89685f021639895ccc",
+            "raw_actions": "c59c3d3bc8fb3eb9aaa95a861e8e22e32a6125a6120db606a6c8a705379df295",
+            "atom": "ce7d7ba02f3603c12ea80263beb07d3ed6e4b1eb608462ccca28f597960e4c23",
+            "locations": "c59c3d3bc8fb3eb9aaa95a861e8e22e32a6125a6120db606a6c8a705379df295",
+            "logp": "d8481d0653346c7373e040ae9ff98316fd213fc75c91afbdd7138c5df88924f6",
+            "stochastic": "1e1a716fb9cc2798d32ad2bcf0465df048c6faf14500241b72ab3c6b12fc4ba1",
+            "hold_sha256": "6984b2f47029cc2a43b5a66b393c59dff9c2ad372b41fd6cac0757699c5734a1",
+            "ownership": "4932e446b5440e2afb03d6b0db6bcafc6323c3186370e7ec8cf5c39d17d0511e",
+            "task_goal_xy": "4e215db893ba4105ee1db4ae1366558171ed563b02ff8ca29427b5dfe20ba64a",
+            "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+            "source_prefix_actions": "4880a95a95929794c2a919ee470f90cdb4865128bb506b507e9dc37309c5b3cf",
+            "student_takeover_first": "4411e81b5bd96c557cb25aff180157d2719c5c3c298fd401924f0c382d420955"
+          },
+          "integration_sha256": "35e95a17e83199ed4411494493818ce984aac2dddf4d981a51b139e8f604cf61",
+          "pid": 537447,
+          "cpu": 1,
+          "teacher": false,
+          "teacher_first": null,
+          "job_id": "t502_field_sector2_offset2",
+          "field_detail": {
+            "id": "t502_field_sector2_offset2",
+            "field_boundary_crossed": false,
+            "field_qualified_success": false
+          },
+          "observation_contract": {
+            "decisions": 223,
+            "pose_min_xy": [
+              -2.965008874578606,
+              4.03451952285498
+            ],
+            "pose_max_xy": [
+              4.1637991171010006e-16,
+              6.8
+            ],
+            "input_dim": 120
+          },
+          "role": "INITIAL_FROZEN_ACTUAL_STATE_HANDOFF",
+          "seed": null,
+          "request": {
+            "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/initial.pt.gz",
+            "job": {
+              "id": "t502_field_sector2_offset2",
+              "source_reset_id": "t502_new_sector2_offset2",
+              "group": "6m_LEFT",
+              "case": {
+                "id": "6m_LEFT",
+                "seed": 2029653601,
+                "angle_deg": -17.3,
+                "side": "LEFT",
+                "distance_m": 9.616652224137045,
+                "step_cap": 64112,
+                "group": "original_5m_primary"
+              },
+              "delta_x_m": 0.0,
+              "delta_y_m": 0.0,
+              "delta_yaw_deg": 0.0,
+              "seed": 0,
+              "mode": "deterministic",
+              "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+              "expected_initial120_sha256": null,
+              "wide_course": true,
+              "circle_shift_x_m": 0.6,
+              "fullfield_start_pose": [
+                4.1637991171010006e-16,
+                6.8,
+                -2.356194490192345
+              ],
+              "fullfield_goal_xy": [
+                -6.8,
+                8.327598234202001e-16
+              ],
+              "start_sector": 2,
+              "sector_offset": 2,
+              "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/episodes/full_16.npz",
+              "student_takeover_first": 26
+            },
+            "seed": null,
+            "query": false,
+            "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_1.npz"
+          },
+          "loaded_model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+          "model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+          "full": true,
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_1.npz",
+          "sha256": "f3eb5066e36efedad946ee3b32f1976643c2b11a674f6c3b5846024ec35c5cb9",
+          "full_arrays_generated_but_not_saved": false
+        },
+        {
+          "complete": true,
+          "collision": true,
+          "success": false,
+          "timeout": false,
+          "administrative_censor": false,
+          "physics_steps": 19775,
+          "remaining_m": 6.0178072941019405,
+          "terminal_contacts": [
+            {
+              "geom1": "real_circle_obs_8",
+              "geom2": "chassis_collision",
+              "distance": -0.0001136907864521552
+            },
+            {
+              "geom1": "real_circle_obs_8",
+              "geom2": "chassis_collision",
+              "distance": -0.0001136907864521552
+            },
+            {
+              "geom1": "real_circle_obs_8",
+              "geom2": "chassis_collision",
+              "distance": -0.0001136907864521552
+            },
+            {
+              "geom1": "real_circle_obs_8",
+              "geom2": "chassis_collision",
+              "distance": -0.0001136907864521552
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015364355914728928
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015359878629161272
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015328758494394926
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015324258251304748
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015966902542143557
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015962373322924744
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01593130857297037
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015926749492308517
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.03516193735193994
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.03516193735193994
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.03516193735193994
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.03516193735193994
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.03522789710184906
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.03522789710184906
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.03522789710184906
+            }
+          ],
+          "policy_hash": "8ef9816c048e48321a09b6195a7061b4d1173cc9b1630de4c47008d906892183",
+          "physics": 19775,
+          "array_digest": "8cca38b73dd0525a1779d63d0c917b1e9fb33481b2f6d2025c8754c1c86b82e3",
+          "array_hashes": {
+            "states": "a5a9bb814f602b4a912e6a5c832ad035b7e1d61e45760158de66eb149c1c9668",
+            "actions": "05d68d85de519ad919f51ea60bb3a588cab2936e0da355e6c838b71b4e72d727",
+            "native_counts": "845dc3419660efc976bb1458c24dd115d672aa8b8e2e59c6989d6023fe66b72a",
+            "next_states": "397579838bb3f57aa8f50fc299b1f16c71f6baa85dcfb5a9739f518b3bad680b",
+            "poses": "86e68a40ee406b583d346da6fba6232c39e1b7781ca8cab796b3796aa625fa1c",
+            "next_poses": "fa66882a9e0aa281da474d93a1b28937a079f490b09d6ddea68e392423dff34d",
+            "end_flags": "9b511534ce29955757e7c0733575f2554c021b58c7c8e658be40646c03142750",
+            "rewards": "4ca4952107aff6d295e0fd588ec0bcd0762af1e20fe11d3669e03c705d63e9c6",
+            "history_poses": "fa79e968fdc8e66d29a52999a2b81089082813ea8d4a59c600ae59f8ba117b11",
+            "history_goals": "d0a0e2d3ebf0fd7febba6ee4f3b8a898785f11de36ce7354f12abc8b6cf428e3",
+            "history_times": "6d398a35ee500d909699bcf32b1d681b704461d41913229c9bbac2e4922f5ab7",
+            "environment_rewards": "4ca4952107aff6d295e0fd588ec0bcd0762af1e20fe11d3669e03c705d63e9c6",
+            "initial_native_integration": "698dbb46e1fcdc025eca00f94ba99d1822e2418b89f06ea7639fcefe56a55342",
+            "final_native_integration": "04935090b8b3c66fdce8d97e867a9206aa01d63fae7c60dd5e1515f6983f9727",
+            "hidden_before": "91b466a93c2be7871b805358d4b71834246cab2d45bc5d194949770605abbbc7",
+            "last_hidden_after": "e8dfb2174e711d007380ca147de41f29775aa130a78fb40033cf59b99c910c9e",
+            "innovations": "800fd09be473cf08e9ca356a5e21b426d9a632da2b9672f91e1dd6a4ea50f943",
+            "raw_actions": "1f2b90a32f31d0201646a994e4110becfa98e38f8dc9d1f3412548b575e76446",
+            "atom": "6267362938d5529f4ded38b24a154ab25abfdf54aa78bfebf7de003feb142eee",
+            "locations": "1f2b90a32f31d0201646a994e4110becfa98e38f8dc9d1f3412548b575e76446",
+            "logp": "3fb88943e108d4f0aaea1a340fe6cdda889c9e77c5a347288115230caa1e6264",
+            "stochastic": "d35687acdcc0120f1fc51def60b01854fa245c501488b5038dadf4e3d1b80c77",
+            "hold_sha256": "6bc9ab533599bc08cb8c1105ef18941376a64c02b0b70845447fca550fe30579",
+            "ownership": "7568b4c4d233e0197c06ad7e0b7d0a77f07027995051ba62fb3120495b810054",
+            "task_goal_xy": "256922c51207f151b6a54e5f4b9bbf80d182f8f4f85dae287c70437e9fd34d35",
+            "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+            "source_prefix_actions": "c370e4e616d04de95f50a0b2df330462d5011e05240a0f4c19ca90a21968205f",
+            "student_takeover_first": "d587114f6f881c7ec3077c92723410af988bbc8b833410743fffa8e038c2fa1a"
+          },
+          "integration_sha256": "04935090b8b3c66fdce8d97e867a9206aa01d63fae7c60dd5e1515f6983f9727",
+          "pid": 537446,
+          "cpu": 0,
+          "teacher": false,
+          "teacher_first": null,
+          "job_id": "t502_field_sector4_offset2",
+          "field_detail": {
+            "id": "t502_field_sector4_offset2",
+            "field_boundary_crossed": false,
+            "field_qualified_success": false
+          },
+          "observation_contract": {
+            "decisions": 198,
+            "pose_min_xy": [
+              -6.8,
+              -2.4892404400153905
+            ],
+            "pose_max_xy": [
+              -4.19897090308421,
+              8.327598234202001e-16
+            ],
+            "input_dim": 120
+          },
+          "role": "INITIAL_FROZEN_ACTUAL_STATE_HANDOFF",
+          "seed": null,
+          "request": {
+            "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/initial.pt.gz",
+            "job": {
+              "id": "t502_field_sector4_offset2",
+              "source_reset_id": "t502_new_sector4_offset2",
+              "group": "6m_LEFT",
+              "case": {
+                "id": "6m_LEFT",
+                "seed": 2029653601,
+                "angle_deg": -17.3,
+                "side": "LEFT",
+                "distance_m": 9.616652224137047,
+                "step_cap": 64112,
+                "group": "original_5m_primary"
+              },
+              "delta_x_m": 0.0,
+              "delta_y_m": 0.0,
+              "delta_yaw_deg": 0.0,
+              "seed": 0,
+              "mode": "deterministic",
+              "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+              "expected_initial120_sha256": null,
+              "wide_course": true,
+              "circle_shift_x_m": 0.6,
+              "fullfield_start_pose": [
+                -6.8,
+                8.327598234202001e-16,
+                -0.7853981633974484
+              ],
+              "fullfield_goal_xy": [
+                -1.2491397351303002e-15,
+                -6.8
+              ],
+              "start_sector": 4,
+              "sector_offset": 2,
+              "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/episodes/full_20.npz",
+              "student_takeover_first": 4
+            },
+            "seed": null,
+            "query": false,
+            "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_2.npz"
+          },
+          "loaded_model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+          "model_sha256": "c9ad29cf2707890b5740254e170ed9097b1fd8a6c455c6fc8f6f2e8f622c50d5",
+          "full": true,
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_2.npz",
+          "sha256": "068998b8af1518ec0a9cd5915955c6a2bcd2fe45b7d5a2a1ea90c06b04ce40e6",
+          "full_arrays_generated_but_not_saved": false
+        }
+      ],
+      "post_handoff": [
+        {
+          "complete": true,
+          "collision": true,
+          "success": false,
+          "timeout": false,
+          "administrative_censor": false,
+          "physics_steps": 21431,
+          "remaining_m": 5.322727014485307,
+          "terminal_contacts": [
+            {
+              "geom1": "real_rect_obs_0",
+              "geom2": "chassis_collision",
+              "distance": -4.466470730942443e-05
+            },
+            {
+              "geom1": "real_rect_obs_0",
+              "geom2": "chassis_collision",
+              "distance": -2.310089979703704e-05
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015658699357931766
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015651164036349863
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015599335375578102
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01559178978841276
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01572406448145898
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015716550712267005
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01566469798822835
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015657178977068434
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.03520260626430509
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.03520260626430509
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.03520260626430509
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.035264982277981
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.035264982277981
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.035264982277981
+            }
+          ],
+          "policy_hash": "195f33dd60a4875aa3d139de7ed5c719a5d079afc07076990df86955a1df155b",
+          "physics": 21431,
+          "array_digest": "25c6e1b933b1aa4e5887218c3072c0bbbd5c597c896307891c216de202f2de57",
+          "array_hashes": {
+            "states": "025e95e1cf544da3cc64ee8c185cc41d03513e9d437b8f1d73b81e2ee5833ef3",
+            "actions": "fee180f9e0a98ec49b5e6fd1f7eddb3f6ab9336ef80671a8191a902f1b8a1366",
+            "native_counts": "ee0d2e00f8b74b6359bed57c714c48cb0b7b287e0c1d4fd1fd1a6790c099ec81",
+            "next_states": "3e48d24b242aaf6526c9bb9b177c181f9739d49d5ad5bbc60ee99c75f2c48216",
+            "poses": "03bad3edb24812c82e221e9a947694e8a1f678bc30cd440099ebe0cea7707511",
+            "next_poses": "975a47c3e4ba0bc0d1b958e62930af7ee60f10508b9d173fd1d0bba93ceacd16",
+            "end_flags": "08cda1c6a014a7dcf26d47c01998c1003ea05ff39d550d748078300458307851",
+            "rewards": "7a1bf5802285138bdf39053e903e531eb6711e5824ccaf9ffe2149fdd4544c20",
+            "history_poses": "810872ed188225e3761f17458c5c5e4a683ce65541ee528b1268178c5e428a8d",
+            "history_goals": "96fe10994293d1f48689f0343af22a9672816ca12f7119eb77c3bf48b9e7f9d1",
+            "history_times": "7557d037b6aad5b05bfd81ec04bf632f93ffd09e490c5b400467a6734418b60d",
+            "environment_rewards": "7a1bf5802285138bdf39053e903e531eb6711e5824ccaf9ffe2149fdd4544c20",
+            "initial_native_integration": "768f11a6d34ada6d0e5722430b6c5527cb90e2a4d5525ddd51a08bad33a18b5a",
+            "final_native_integration": "6b5a1b1ad4651ff6a11c131afd14e076adfc4c4e08777baf404c9ad9ba4052ae",
+            "hidden_before": "a9fdf073a674ae10895dda3558f782a96896c0c4e8df22b89dadcf6d05a359d2",
+            "last_hidden_after": "a91629a27da23ae162233984812976f56645b5c4fbb806ec467ae3a35801dc12",
+            "innovations": "6211d4c238931b433c924ff540e828b7b457907c6881d6cb0abacc8bbf1ad312",
+            "raw_actions": "6d8be7f298b6e96b3d7c650cc7e19ea085e3189f29c05830423e189eb0a8600b",
+            "atom": "21f07ff209efd3322249b3f48fa899c0770b8a18054f73186fdad85cacc77d84",
+            "locations": "6d8be7f298b6e96b3d7c650cc7e19ea085e3189f29c05830423e189eb0a8600b",
+            "logp": "8e5b820767338f618aff3386dc37d60bd306e8ff103503d8a8bd0b2dd005fe99",
+            "stochastic": "dca16791016f118f5f66d30b90798d4c5b9352eb188911ac925f237b293b8bf5",
+            "hold_sha256": "136abd90f32153d240b629caf0dca865018a4f9d253d0410b70b3e9bfe1658ab",
+            "ownership": "0c2ea8293528dbcf8ba6411442506939a4bc2f3e0dd9c4b2e6f8a0449e2042d8",
+            "task_goal_xy": "8867bafac354f24811273d75b56f5f73c4a0710fc5efcf264c700040b97c7d29",
+            "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+            "source_prefix_actions": "339449dda5e72339af79244d1e65892763a4c4433c1e8c21a0e4697113776655",
+            "student_takeover_first": "556dffc4bb2f17c8d57345cc40fe77e4d572c1590acec9b560654f4ddfdda88e"
+          },
+          "integration_sha256": "6b5a1b1ad4651ff6a11c131afd14e076adfc4c4e08777baf404c9ad9ba4052ae",
+          "pid": 537446,
+          "cpu": 0,
+          "teacher": false,
+          "teacher_first": null,
+          "job_id": "t502_field_sector1_offset2",
+          "field_detail": {
+            "id": "t502_field_sector1_offset2",
+            "field_boundary_crossed": false,
+            "field_qualified_success": false
+          },
+          "observation_contract": {
+            "decisions": 215,
+            "pose_min_xy": [
+              0.5126485820001702,
+              4.808326112068523
+            ],
+            "pose_max_xy": [
+              4.8083261120685235,
+              4.957902331923557
+            ],
+            "input_dim": 120
+          },
+          "role": "PURE_STUDENT_AFTER_FIXED_SOURCE_PREFIX",
+          "seed": null,
+          "request": {
+            "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/proposal.pt.gz",
+            "job": {
+              "id": "t502_field_sector1_offset2",
+              "source_reset_id": "t502_new_sector1_offset2",
+              "group": "6m_LEFT",
+              "case": {
+                "id": "6m_LEFT",
+                "seed": 2029653601,
+                "angle_deg": -17.3,
+                "side": "LEFT",
+                "distance_m": 9.616652224137045,
+                "step_cap": 64112,
+                "group": "original_5m_primary"
+              },
+              "delta_x_m": 0.0,
+              "delta_y_m": 0.0,
+              "delta_yaw_deg": 0.0,
+              "seed": 0,
+              "mode": "deterministic",
+              "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+              "expected_initial120_sha256": null,
+              "wide_course": true,
+              "circle_shift_x_m": 0.6,
+              "fullfield_start_pose": [
+                4.8083261120685235,
+                4.808326112068523,
+                3.141592653589793
+              ],
+              "fullfield_goal_xy": [
+                -4.808326112068523,
+                4.8083261120685235
+              ],
+              "start_sector": 1,
+              "sector_offset": 2,
+              "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/episodes/full_12.npz",
+              "student_takeover_first": 3
+            },
+            "seed": null,
+            "query": false,
+            "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_3.npz"
+          },
+          "loaded_model_sha256": "3640bc67cfb4e422ccc02a04fe2d7d3f1404561230554c97f7c66ee1d1d5c1c3",
+          "model_sha256": "3640bc67cfb4e422ccc02a04fe2d7d3f1404561230554c97f7c66ee1d1d5c1c3",
+          "full": true,
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_3.npz",
+          "sha256": "5bda87e88045a3f02a4a603cbd8d5eb8f45c1e435a53011fd43299ba8a6feafd",
+          "full_arrays_generated_but_not_saved": false
+        },
+        {
+          "complete": true,
+          "collision": true,
+          "success": false,
+          "timeout": false,
+          "administrative_censor": false,
+          "physics_steps": 21756,
+          "remaining_m": 5.561377825025958,
+          "terminal_contacts": [
+            {
+              "geom1": "real_circle_obs_0",
+              "geom2": "chassis_collision",
+              "distance": -0.00018034031217988394
+            },
+            {
+              "geom1": "real_circle_obs_0",
+              "geom2": "chassis_collision",
+              "distance": -0.00018034031217988394
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01570143453900201
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01569288153274305
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01563569348251373
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015627224696299624
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015710827484734333
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015702426272339656
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015645121125994407
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015636734709122704
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.04572922314782442
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.04719177019172862
+            }
+          ],
+          "policy_hash": "195f33dd60a4875aa3d139de7ed5c719a5d079afc07076990df86955a1df155b",
+          "physics": 21756,
+          "array_digest": "0f066a8c872e88582480763c3b19c34cd247dd522b16189fe6c2ff420f4edc53",
+          "array_hashes": {
+            "states": "45a217e8976e442e61052f67b5ed7617c16702a662f930bb12e4bab894f078c5",
+            "actions": "c9026f1e98e1eb6411502ae1a27cab476a4a1540f81f015c5affa4414ae6a294",
+            "native_counts": "eb08502f34904b6d755c6fd49e3020cde7348d0a6ef7cdcaa7edfd839f9f9b8d",
+            "next_states": "3482d159ad962dfb9a08f3d4c5f3ca4a48e59a29e783725d0c891de981c54348",
+            "poses": "4e25507ca82bb1eacabc69557a37f26c859837a5db2ebd7154eeb47f2b688144",
+            "next_poses": "50aa9afbbec899127993dd5997b3a40ce20dca01f832bb77b285a9ca4c720558",
+            "end_flags": "d8dd4ac5d6c09df633ce1e2b379936e8eb0d50f256730145f60177c3626eb251",
+            "rewards": "16e2ed5170f801be20bc02401dc2a895ada177324357f721d6f3029c49df0452",
+            "history_poses": "a37855cf44a5393a03ac34218e53befcb6acbc5b6fd3dab3092965289f60d9d2",
+            "history_goals": "dbc7ccb1c6733aebb02114d85eb70b24bdd566ccdde64690d367b42c8fe9f619",
+            "history_times": "285fd4ea220c712122f51da7fc7f26a79c6e8ec0b1de4337c5fe617b9878f2c5",
+            "environment_rewards": "16e2ed5170f801be20bc02401dc2a895ada177324357f721d6f3029c49df0452",
+            "initial_native_integration": "d51462fa16f0afa1f0c4761a00eb51588bb1c278f67546accb4182081035a1e8",
+            "final_native_integration": "fb1cd579feb09dc1a9bc08c90ff63dc12d93ebeae264378903f75af79e4bc3a4",
+            "hidden_before": "088939785febbcf703f5fd47185d878316873a539cbc31c5a26c3bc876830648",
+            "last_hidden_after": "918bf36b422f0090c8862c5493c01cc006fab9307a570e04a5f224a53eca1a16",
+            "innovations": "9120661eb820d55ff5a8138ffaa5fa6310804acd94636090c72c7c68c02b0299",
+            "raw_actions": "6a9f8f60f5f1aad7c4917df69abd2b3359b750d50c03968c20bc107fb4e60c95",
+            "atom": "f0fac50fdcd3439141ff744f8fde192259807621d58c1a599495c2321e47db84",
+            "locations": "6a9f8f60f5f1aad7c4917df69abd2b3359b750d50c03968c20bc107fb4e60c95",
+            "logp": "cc23f2fd5d937f43197118171a0ed6db1612d091b641a6fca7fba576c1f2f09b",
+            "stochastic": "e926a3c1bdf14b1616c0b768c14ca057e5e3235b37dbe38fea67186f8046ae3c",
+            "hold_sha256": "d0d1ee32e6545d7023b47516a93707b6e367f209733fb66930aaf516dd9b4192",
+            "ownership": "ef3069339912e802d5fe22d73a5ff94c5e6dda16bb9240574a36b8340fc86220",
+            "task_goal_xy": "4e215db893ba4105ee1db4ae1366558171ed563b02ff8ca29427b5dfe20ba64a",
+            "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+            "source_prefix_actions": "5a3585846b6bb413ca29ea4215b501660bdae716eafbd2a5ed32c7c702ee0bb6",
+            "student_takeover_first": "4411e81b5bd96c557cb25aff180157d2719c5c3c298fd401924f0c382d420955"
+          },
+          "integration_sha256": "fb1cd579feb09dc1a9bc08c90ff63dc12d93ebeae264378903f75af79e4bc3a4",
+          "pid": 537447,
+          "cpu": 1,
+          "teacher": false,
+          "teacher_first": null,
+          "job_id": "t502_field_sector2_offset2",
+          "field_detail": {
+            "id": "t502_field_sector2_offset2",
+            "field_boundary_crossed": false,
+            "field_qualified_success": false
+          },
+          "observation_contract": {
+            "decisions": 218,
+            "pose_min_xy": [
+              -2.9761506920310357,
+              4.0382050198864015
+            ],
+            "pose_max_xy": [
+              4.1637991171010006e-16,
+              6.8
+            ],
+            "input_dim": 120
+          },
+          "role": "PURE_STUDENT_AFTER_FIXED_SOURCE_PREFIX",
+          "seed": null,
+          "request": {
+            "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/proposal.pt.gz",
+            "job": {
+              "id": "t502_field_sector2_offset2",
+              "source_reset_id": "t502_new_sector2_offset2",
+              "group": "6m_LEFT",
+              "case": {
+                "id": "6m_LEFT",
+                "seed": 2029653601,
+                "angle_deg": -17.3,
+                "side": "LEFT",
+                "distance_m": 9.616652224137045,
+                "step_cap": 64112,
+                "group": "original_5m_primary"
+              },
+              "delta_x_m": 0.0,
+              "delta_y_m": 0.0,
+              "delta_yaw_deg": 0.0,
+              "seed": 0,
+              "mode": "deterministic",
+              "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+              "expected_initial120_sha256": null,
+              "wide_course": true,
+              "circle_shift_x_m": 0.6,
+              "fullfield_start_pose": [
+                4.1637991171010006e-16,
+                6.8,
+                -2.356194490192345
+              ],
+              "fullfield_goal_xy": [
+                -6.8,
+                8.327598234202001e-16
+              ],
+              "start_sector": 2,
+              "sector_offset": 2,
+              "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/episodes/full_16.npz",
+              "student_takeover_first": 26
+            },
+            "seed": null,
+            "query": false,
+            "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_4.npz"
+          },
+          "loaded_model_sha256": "3640bc67cfb4e422ccc02a04fe2d7d3f1404561230554c97f7c66ee1d1d5c1c3",
+          "model_sha256": "3640bc67cfb4e422ccc02a04fe2d7d3f1404561230554c97f7c66ee1d1d5c1c3",
+          "full": true,
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_4.npz",
+          "sha256": "9c610694da95de1dc6281b92176d2d3597a3b0f32f442f25a09da3d3391be5cb",
+          "full_arrays_generated_but_not_saved": false
+        },
+        {
+          "complete": true,
+          "collision": true,
+          "success": false,
+          "timeout": false,
+          "administrative_censor": false,
+          "physics_steps": 20682,
+          "remaining_m": 6.0181677879102455,
+          "terminal_contacts": [
+            {
+              "geom1": "real_circle_obs_8",
+              "geom2": "chassis_collision",
+              "distance": -0.00013484064619366203
+            },
+            {
+              "geom1": "real_circle_obs_8",
+              "geom2": "chassis_collision",
+              "distance": -0.00013484064619366203
+            },
+            {
+              "geom1": "real_circle_obs_8",
+              "geom2": "chassis_collision",
+              "distance": -0.00013484064619366203
+            },
+            {
+              "geom1": "real_circle_obs_8",
+              "geom2": "chassis_collision",
+              "distance": -0.00013484064619366203
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01576759121916961
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01575774354897834
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01584361533690387
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01583373665352722
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01565725285467469
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.01564755954485024
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015733282040852836
+            },
+            {
+              "geom1": "floor",
+              "geom2": null,
+              "distance": -0.015723547576356883
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.03660215968308806
+            },
+            {
+              "geom1": null,
+              "geom2": "chassis_collision",
+              "distance": -0.036536457749698166
+            }
+          ],
+          "policy_hash": "195f33dd60a4875aa3d139de7ed5c719a5d079afc07076990df86955a1df155b",
+          "physics": 20682,
+          "array_digest": "c3b2325c8b389098353adc288019fdf05ed2afc55e72b8663f3829dfb779071b",
+          "array_hashes": {
+            "states": "cea1ea2d8d3940282a7595a1469b4886e7e1903bb71750440a97a817b521398d",
+            "actions": "73611baf2c1764663f1197eba6cb2166fb7eac5c8c3dc0216a5928f459d25d43",
+            "native_counts": "145a4a13b5b769fc88b95e15bbe2fbb4ffe2650f9f16640ffe163fc5424747ac",
+            "next_states": "2553ea36e34d1532e56d1b9b0037ab3533fc878dcf5d00ef8c43f68b0c1dec1d",
+            "poses": "b8236c7f337fa81d5605be4dcd3d85ab1172d431d5c282aabfde7b55ec18bc10",
+            "next_poses": "b5c3c8b5ebba5759b8190eb139b143ea581da1d60f6ab4410d37282af5111e00",
+            "end_flags": "b4f3e2b8a22bd6d9f7c342ff05a9d6d285b621d014706bc6d67dbea95a6d2cc0",
+            "rewards": "76ece72142f0d8d6600951e9c58a2445e95aea3edd01edbd60330cfbfcde6ca9",
+            "history_poses": "0f8f428d6a6b5f305c9e8222cf9172e0fd82a14e17bc88db7b9a665933785112",
+            "history_goals": "d07cda4e9ee2f4f89f8ee46627a3fb7e74f083717ac1c5875069a999855e19d9",
+            "history_times": "f60e8f3b9080379e66de7a3f0cced2bbe2119c7403500aaf18c3648729720633",
+            "environment_rewards": "76ece72142f0d8d6600951e9c58a2445e95aea3edd01edbd60330cfbfcde6ca9",
+            "initial_native_integration": "698dbb46e1fcdc025eca00f94ba99d1822e2418b89f06ea7639fcefe56a55342",
+            "final_native_integration": "12869287e03c4e18238c23a1f9ccb0ba2c478ef330d7b742f9c5997b5432187a",
+            "hidden_before": "1acc4bb40151ec494236317eddefd0ef36160239e5c97de8ca4cb950d550b1b6",
+            "last_hidden_after": "08bc2aef2bdc1b572dabef2853915d5db27a878f8c1272cc51177ff4974d49c2",
+            "innovations": "46a315600efe14b5bd0e35b33a11fc4ca05b0751644d5a59e0231013aebe29c1",
+            "raw_actions": "5b2511a98a4552e06aed9db7ca54749404b40128b5adfa2261cd3599494e1d7b",
+            "atom": "4a037e81b27d3d18ab66ae1b4ba7fc5e75722f8aa4f897b58ba949e717d0f9b8",
+            "locations": "5b2511a98a4552e06aed9db7ca54749404b40128b5adfa2261cd3599494e1d7b",
+            "logp": "1679a4c54d8945e53e98f390394b00e25e582da762475cfe1b3973a059973129",
+            "stochastic": "e01f49265fc7d9e2da444603158a2f61c9133f48747cb4f67d70749bb76e5184",
+            "hold_sha256": "76ae51279a223700a95a028b8a696f2ade16410b1a769fe922c2a7f2ea4be67f",
+            "ownership": "6c74c606259d4de7b8bdc7685ee5d71ef0cf59bcccfe5da265900754cb9732b0",
+            "task_goal_xy": "256922c51207f151b6a54e5f4b9bbf80d182f8f4f85dae287c70437e9fd34d35",
+            "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+            "source_prefix_actions": "689e452e4ae4dbd6da6ab7f2a1b23de3c86a1705f5f011cded342d7df103921c",
+            "student_takeover_first": "d587114f6f881c7ec3077c92723410af988bbc8b833410743fffa8e038c2fa1a"
+          },
+          "integration_sha256": "12869287e03c4e18238c23a1f9ccb0ba2c478ef330d7b742f9c5997b5432187a",
+          "pid": 537446,
+          "cpu": 0,
+          "teacher": false,
+          "teacher_first": null,
+          "job_id": "t502_field_sector4_offset2",
+          "field_detail": {
+            "id": "t502_field_sector4_offset2",
+            "field_boundary_crossed": false,
+            "field_qualified_success": false
+          },
+          "observation_contract": {
+            "decisions": 207,
+            "pose_min_xy": [
+              -6.8,
+              -2.4936642297923517
+            ],
+            "pose_max_xy": [
+              -4.204023757981228,
+              8.327598234202001e-16
+            ],
+            "input_dim": 120
+          },
+          "role": "PURE_STUDENT_AFTER_FIXED_SOURCE_PREFIX",
+          "seed": null,
+          "request": {
+            "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/proposal.pt.gz",
+            "job": {
+              "id": "t502_field_sector4_offset2",
+              "source_reset_id": "t502_new_sector4_offset2",
+              "group": "6m_LEFT",
+              "case": {
+                "id": "6m_LEFT",
+                "seed": 2029653601,
+                "angle_deg": -17.3,
+                "side": "LEFT",
+                "distance_m": 9.616652224137047,
+                "step_cap": 64112,
+                "group": "original_5m_primary"
+              },
+              "delta_x_m": 0.0,
+              "delta_y_m": 0.0,
+              "delta_yaw_deg": 0.0,
+              "seed": 0,
+              "mode": "deterministic",
+              "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+              "expected_initial120_sha256": null,
+              "wide_course": true,
+              "circle_shift_x_m": 0.6,
+              "fullfield_start_pose": [
+                -6.8,
+                8.327598234202001e-16,
+                -0.7853981633974484
+              ],
+              "fullfield_goal_xy": [
+                -1.2491397351303002e-15,
+                -6.8
+              ],
+              "start_sector": 4,
+              "sector_offset": 2,
+              "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/episodes/full_20.npz",
+              "student_takeover_first": 4
+            },
+            "seed": null,
+            "query": false,
+            "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_5.npz"
+          },
+          "loaded_model_sha256": "3640bc67cfb4e422ccc02a04fe2d7d3f1404561230554c97f7c66ee1d1d5c1c3",
+          "model_sha256": "3640bc67cfb4e422ccc02a04fe2d7d3f1404561230554c97f7c66ee1d1d5c1c3",
+          "full": true,
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t584_unbounded_recovery_learning/episodes/full_5.npz",
+          "sha256": "111720877085b5fb6f6dc5767df8a40b6d85fcc1555b9be757e5b6e6dc51ad75",
+          "full_arrays_generated_but_not_saved": false
+        }
+      ],
+      "new_handoff_success_ids": [],
+      "check": {
+        "success": 32,
+        "valid": 49,
+        "contact": 12,
+        "timeout": 5,
+        "success_ids": [
+          "dev_task0_00",
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_01",
+          "dev_task3_10",
+          "dev_task3_13",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task6_13",
+          "dev_task7_13",
+          "hold_task7_05",
+          "t502_field_sector1_offset1",
+          "t502_field_sector2_offset1",
+          "t502_field_sector3_offset1",
+          "t502_field_sector3_offset2",
+          "t502_field_sector4_offset1",
+          "t502_field_sector5_offset1",
+          "t502_field_sector5_offset2",
+          "t502_field_sector6_offset1",
+          "t502_field_sector7_offset1",
+          "t502_field_sector7_offset2",
+          "wide117_80_dev6_RIGHT_00",
+          "wide117_80_dev6_RIGHT_08",
+          "wide117_80_dev6_RIGHT_16",
+          "wide117_80_dev6_RIGHT_23",
+          "wide117_80_dev6_RIGHT_26",
+          "wide117_8m_dev6_LEFT_13",
+          "wide117_8m_dev6_LEFT_17",
+          "wide117_8m_dev6_RIGHT_10",
+          "wide117_8m_dev6_RIGHT_13",
+          "wide117_8m_dev6_RIGHT_26"
+        ],
+        "lost_initial": [
+          "dev_task6_20",
+          "t502_field_sector0_offset1",
+          "t502_field_sector0_offset2",
+          "t502_field_sector1_offset2",
+          "t502_field_sector2_offset2",
+          "t502_field_sector4_offset2",
+          "wide117_8m_dev6_LEFT_00"
+        ],
+        "gained": [],
+        "accepted": false,
+        "full407": null,
+        "fresh16": null,
+        "reload78": null,
+        "finite_development_NOT_global_retention": true
+      },
+      "accepted": false,
+      "retained_joint_hash": "ddf6a01069925c41c6ecd4c13b068f886302c0c464501bef1567b5ed8dbadea3",
+      "model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_01_gap/proposal.pt.gz",
+        "sha256": "a8231f5bb0ed1822b3cdf6700b35fdeed8d87e36abe869b66a122663149bb5d8",
+        "bytes": 456893,
+        "policy_hash": "c0aa5f4a990641642fbd0815801e6f9a8b3baa2a4ca0f751d6e1bd605a5f5754",
+        "joint_hash": "05c1ef006fcaa64b2a58366c65e08a6aacf5da427d323d53c619ee424ea43203",
+        "parent": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_00_gap/proposal.pt.gz",
+          "sha256": "ce43a95cb799fbd9a335e47a8a0a9fc1ae2a90d9237dcb4d39e1c0b87524260a",
+          "bytes": 402289,
+          "policy_hash": "c6fdc938725be92748fdb86cd32d1e1d33290fc1e7ffb52f5f0acc710e5e9273",
+          "joint_hash": "734eeb753e64e64a3e3b3f1a5ac647f8f09d9459d9e22591d96d16f4f3e59c10",
+          "parent": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t549_curvature_gated_transfer/proposal.pt.gz",
+            "sha256": "539346fcc7b4330e1a23e101330fdd610ca74d6e2ec8c7995c80eaeb888380e4",
+            "bytes": 701541,
+            "policy_hash": "3b636fd3d71b8d1fd0956c697e144d25ba5488e53d6a726f4d77ad46871e341e",
+            "joint_hash": "7250d3defbc318e86e719110e2796502384064a56f78622e1b8d377fc8eb6f4a"
+          }
+        }
+      },
+      "new_RL": 0,
+      "new_Critic": 0,
+      "full407": null,
+      "fresh16": null,
+      "reload78": null,
+      "globally_promoted": false
+    }
+  },
+  "all_scientific_processes_stopped": true,
+  "new_Adam_cap": 100,
+  "new_RL_cap": 0,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "qualified_recovery_learning": true,
+  "no_global_model_promotion": true,
+  "epoch": 1794804380.1251662
+}
