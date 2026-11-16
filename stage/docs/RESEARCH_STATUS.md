@@ -1,3 +1,5 @@
+2026-11-16 T603最终完成但科学门未过：三处学生接管0/3全部碰撞（均余约5.56m），3exact；136564物理10cmd130.496s，128live128shadow128历史审计+4pref/0新RL。canonical未过，15/49/407/fresh/reload均null；候选整ActorAdam回退独立核验，T550保留。三恢复历史RMS .036705/.038106/.035251仍未换来闭环成功，不能称旧任务实测退化或网络根本不可表示：相同结构T598教师在这三处均可达。auditPASS/28raw848562B远端全SHA/所有PID退，global1GiB/free40。反向初始化+保持三恢复修旧缺口仅下一草案未注册未训练，不续本轮预算；21:00不自动延长，Phase隔离。详day_20261116/t603/FINDINGS_AND_NEXT/COMPLETION_VERIFICATION。
+
 2026-11-16 T603实际偏离恢复数据聚合结束：COMPLETE；单臂42历史学习、三处自主接管及条件旧任务验收见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
 
 2026-11-16 用户允许T603独立2879616物理63命令6MiB、128live128shadow128历史审计及4丢弃pref，21:00全停。已正式注册，实际launch另查；39old+原1恢复+T602两真实偏离合格恢复共42history，固定tail/32GRU/128steps，无新RL。零native4pref优化器shadow/成熟回退/读回PASS，更新后96step误差5.55e-16。先3学生接管+3exact，仅canonical保存full其余紧凑RAM实时全history检查；canonical过才15哨兵，全过才补34+4exact，原39不丢+canonical safe才研究保留，额外两恢复另列。main900learn600audit300backup120source90、20:40学20:50native21:00all从严；global1GiB/free40/CPU14,15总200低优先GPUoff/Phase隔离。唯一driver负责收尾，active禁外写runs改科学源/并发audit备份同步。详day_20261116/t603。
