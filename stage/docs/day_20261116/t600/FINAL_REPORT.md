@@ -1,0 +1,1 @@
+T600任务风险匹配对照结束：COMPLETE；两组任务风险学习、分级自主验收见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
