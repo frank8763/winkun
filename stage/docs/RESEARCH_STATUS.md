@@ -1,3 +1,5 @@
+2026-11-16 T591联合成功与恢复数据的表示学习对照结束：COMPLETE；学习及配对接管、49自主与回退见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
+
 2026-11-16 用户明确允许T591新90分钟窗口及6025900物理136cmd22MiB额度。8丢弃Adam/0native优化器影子、成熟回退及读回预检PASS；正式protocol已注册，尚待精确源码远端后唯一启动，实际启动以launch为准。窗口从实际driver启动计5400秒，systemd额外RuntimeMaxSec5400更早从严；main2400/学习1500/audit900/transport300/source120不扩。两臂各600live600shadow，审计合计1200历史重构；两臂先学完再测，39旧+3恢复、0新RL。旧T590不重启，T550保持。Phase隔离/CPU14,15总200低优先/GPUoff/global1GiB/free40GiB。唯一driver负责active后所有结果及备份源码，不并发写runs或重复收尾。
 
 2026-11-16 T591联合成功/完整恢复的表示对照已代码准备、零native零optimizer预检PASS及源码精确远端；尚未注册/无run目录/未启动。共同T562研究初始非晋升模型，39旧+3完整恢复实际动作标签，A仅40450头/B93186头+encoder/core，拟各600Adam及配对shadow/audit；42history前向误差<1e-12，全部训练参数梯度非零，0权重更新。另6次梯度only暖机计时，合计8求导不算学习。两个arm先全部学完再验收，3自主handoff必测不再由拟合gate阻挡，有safe才49+4exact；保T550原39且新增才研究retain，407/fresh/reload null。准备独立6025900物理136cmd22MiB/1GiB内、90分钟窗口；新授权待答，原T59015:00不扩。新初始在39旧上最坏RMS.091/max.572，不能沿用T562较小数据集.0188称已学会。部署单120真实carryActor无运行teacher/planner/router、0新RL、不称原创或安全保证。详day_20261116/t591/NEXT_STEP、PLAN、PREFLIGHT、BUDGET。Phase隔离。

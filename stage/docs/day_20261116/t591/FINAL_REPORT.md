@@ -1,0 +1,1 @@
+T591联合成功与恢复数据的表示学习对照结束：COMPLETE；学习及配对接管、49自主与回退见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
