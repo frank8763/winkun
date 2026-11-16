@@ -1,3 +1,5 @@
+2026-11-16 T606原启动因冷存间接依赖遗漏在0物理/0学习退出，原错误/全部数据已远端逐SHA。T606R仅入口工程恢复已注册待真实launch；科学学习源逐字节相同，原12丢弃预检复用不重复，总夜预算扣4保守生命周期命令/5main秒/原目录字节，绝对截止不变。五份原依赖2970658B按原SHA恢复并纳入全部输入锁，global完整最坏仍≤1GiB。
+
 2026-11-17 T606离线通宵接力已结束：FAILED；物理0、命令0，新研究成功改进=False；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。各臂与冻结扰动分列，fresh16/reload78未执行，不称全局/泛化通过。
 
 2026-11-16 用户已明确允许T606离线通宵独立120M物理/4000命令/36000main秒/own60MiB，432live+432shadow+432历史审计上限和12丢弃pref。正式注册，实际launch另查。raw/command/真实freshPG三机制各max6轮，固定T598研究起点或已审计新成功保留模型；3恢复raw或clipped前向漂移≤.002+固定Adam位移回溯，真实3恢复全safe及此前成功ID不丢才中间研究保留，新增0须明示。A/B确定性拒绝不重复同before-state，C两连续拒绝止；单写driver全子科学退/audit/本地SHAmanifest后才下一块。12pref优化器/影子/成熟回退/读回通过，RL仅合成密度fixture，首次真实engineering当前策略4+4exact/peer合同通过后才学习。A/B子2879616步63cmd，C最长任务83766已实际虚拟计账重算3549744步71cmd。07:00停学07:45原生08:30全部停，完整剩余最坏准入/不承诺全6轮。学习结束冻结模型做预注册同创新流配对扰动，不选模不训练/非泛化；条件原39+3恢复才407，fresh16/78未实现不冒称。T605145旧metadata无损XZ释放67132579B，原raw远端/本地可恢复，元数据完整远端SHA；历史裸记录需t605.codec.load_original/守卫restore。global1GiB/free40/CPU14,15总200低优先GPUoff/Phase全隔离。active禁外写runs改源并发审计备份同步，断网报告remotePENDING不阻塞预编程科学链。详overnight_20261116。
