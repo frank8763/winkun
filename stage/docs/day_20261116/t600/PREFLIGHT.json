@@ -1,0 +1,50 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "all40_initial_full_history_locations_exact_T550": true,
+  "actual96step_initial_commands_and_legacy_hidden_exact": true,
+  "qualified_new_recovery_rawlocation_matches_saved_steps": true,
+  "two_gradients_only": [
+    {
+      "method": "mean",
+      "loss": 0.0005894908805062048,
+      "parts": {
+        "mean": 0.0005894908805062048,
+        "worst10": 0.002357963522024819,
+        "old_mean": 2.0039618720997623e-33,
+        "recovery": 0.02357963522024819
+      },
+      "nonzero_gradients": {
+        "encoder": 3872,
+        "core": 6336,
+        "head": 66
+      },
+      "seconds": 2.733503842027858
+    },
+    {
+      "method": "tail",
+      "loss": 0.0014737272012655118,
+      "parts": {
+        "mean": 0.0005894908805062048,
+        "worst10": 0.002357963522024819,
+        "old_mean": 2.0039618720997623e-33,
+        "recovery": 0.02357963522024819
+      },
+      "nonzero_gradients": {
+        "encoder": 3872,
+        "core": 6336,
+        "head": 66
+      },
+      "seconds": 0.09354349301429465
+    }
+  ],
+  "new_native": 0,
+  "new_optimizer": 0,
+  "model_state_unchanged": true,
+  "nominal_tail_vs_mean_initial_loss_ratio": 2.5,
+  "same_trainable_parameters": 10274,
+  "extra_frozen_reference_parameters": 10274,
+  "real_runtime_all9_schedules_pass": true,
+  "undersized114minus1_rejected": true,
+  "own_upper": 9715712,
+  "global_worst": 1072747156
+}
