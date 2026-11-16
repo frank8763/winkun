@@ -1,0 +1,1 @@
+T602实际偏离状态教师恢复资格结束：COMPLETE；固定教师恢复资格及精确重放见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
