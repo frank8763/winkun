@@ -1,0 +1,250 @@
+{
+  "state": "COMPLETE",
+  "error": null,
+  "summary": {
+    "state": "COMPLETE",
+    "pid": 518016,
+    "physics": 1648268,
+    "commands": 67,
+    "elapsed_s": 632.7060661315918,
+    "error": null,
+    "result": {
+      "update": {
+        "trace": [
+          {
+            "policy_loss": 0.4208285245185271,
+            "keep_loss": 0.0,
+            "gradient_norm": 0.04906908652433792,
+            "KL": 1.006611335122725e-08
+          },
+          {
+            "policy_loss": 0.42081874856409296,
+            "keep_loss": 1.7264383455049398e-09,
+            "gradient_norm": 0.04783255527290192,
+            "KL": 3.541620736116626e-08
+          },
+          {
+            "policy_loss": 0.42080889973794167,
+            "keep_loss": 5.808499922323663e-09,
+            "gradient_norm": 0.04695348264611886,
+            "KL": 7.579214215068727e-08
+          },
+          {
+            "policy_loss": 0.42079896495515007,
+            "keep_loss": 1.2202051061089444e-08,
+            "gradient_norm": 0.04616030870681395,
+            "KL": 1.307468503038454e-07
+          },
+          {
+            "policy_loss": 0.42078895343846767,
+            "keep_loss": 2.0684775236150328e-08,
+            "gradient_norm": 0.04543500609220866,
+            "KL": 1.9975440799777024e-07
+          },
+          {
+            "policy_loss": 0.42077887555041227,
+            "keep_loss": 3.100291585786008e-08,
+            "gradient_norm": 0.04476534933629942,
+            "KL": 2.823663422600515e-07
+          },
+          {
+            "policy_loss": 0.42076873952067595,
+            "keep_loss": 4.294128575582646e-08,
+            "gradient_norm": 0.044139398572210824,
+            "KL": 3.781908450931612e-07
+          },
+          {
+            "policy_loss": 0.42075855221335967,
+            "keep_loss": 5.631399059065637e-08,
+            "gradient_norm": 0.043546121492750826,
+            "KL": 4.868854042373695e-07
+          }
+        ],
+        "Actor_Adam": 8,
+        "Critic_Adam": 0,
+        "peer_batch": [
+          {
+            "group": 0,
+            "G0": -0.37588189497507174,
+            "peer_RMS": 0.19619097491187337,
+            "advantage_mean": -0.7688928603138455,
+            "terminal": [
+              1,
+              0,
+              0
+            ],
+            "density_error": [
+              8.413408858487514e-16,
+              7.771561172376096e-15
+            ]
+          },
+          {
+            "group": 0,
+            "G0": -0.3052725114561681,
+            "peer_RMS": 0.19619097491187337,
+            "advantage_mean": -0.6053342936631714,
+            "terminal": [
+              1,
+              0,
+              0
+            ],
+            "density_error": [
+              5.828670879282072e-16,
+              4.440892098500626e-15
+            ]
+          },
+          {
+            "group": 0,
+            "G0": -0.4009746149668052,
+            "peer_RMS": 0.19619097491187337,
+            "advantage_mean": -0.9081975705268107,
+            "terminal": [
+              1,
+              0,
+              0
+            ],
+            "density_error": [
+              8.326672684688674e-16,
+              6.217248937900877e-15
+            ]
+          },
+          {
+            "group": 0,
+            "G0": 0.0036379660642320375,
+            "peer_RMS": 0.19619097491187337,
+            "advantage_mean": 0.5991106264297189,
+            "terminal": [
+              0,
+              0,
+              1
+            ],
+            "density_error": [
+              5.551115123125783e-16,
+              4.884981308350689e-15
+            ]
+          }
+        ],
+        "frozen_T550_body_hash": "fce4aa4b8ba3cbd20160fc6df9498877d901392c35c1987db08a3216a46fbec9",
+        "new_BC": 0,
+        "full_actor_trainable": false,
+        "bounded_residual_NOT_closed_loop_retention_guarantee": true
+      },
+      "behavior": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t581_preserved_t550_rl/initial.pt.gz",
+        "sha256": "e7b9de672177f5372a0ec69ecd19393863a7a4d83b7fe05a4a500ec263177e05",
+        "bytes": 28041,
+        "policy_hash": "e87b1fe6d6dd0916443d7f7e684ea084905c0e5e909fafc2a0ef4ccd356a43c1",
+        "joint_hash": "c3be3eaa371570be66afa07d01b48aae786a42a89ed3fb89059bb0e48692ad6c"
+      },
+      "proposal": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t581_preserved_t550_rl/proposal.pt.gz",
+        "sha256": "67c20b9d1e0eaf9bcc83ef6c0fbadc41cfe83c951f978bbab94437bb88a496eb",
+        "bytes": 136798,
+        "policy_hash": "3d87f054db45cc4950c3c134ea1b187fa20e332742b15945d95b12ae819a4a5f",
+        "joint_hash": "d88722ef682fbf3374da5a9f66fc56a8afe64e22b9072400054bed65243b4921"
+      },
+      "check": {
+        "success": 34,
+        "valid": 49,
+        "contact": 11,
+        "timeout": 4,
+        "success_ids": [
+          "dev_task0_00",
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_01",
+          "dev_task3_10",
+          "dev_task3_13",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task6_13",
+          "dev_task6_20",
+          "dev_task7_13",
+          "hold_task7_05",
+          "t502_field_sector0_offset1",
+          "t502_field_sector2_offset1",
+          "t502_field_sector3_offset1",
+          "t502_field_sector3_offset2",
+          "t502_field_sector4_offset1",
+          "t502_field_sector5_offset1",
+          "t502_field_sector5_offset2",
+          "t502_field_sector6_offset1",
+          "t502_field_sector7_offset1",
+          "t502_field_sector7_offset2",
+          "wide117_80_dev6_RIGHT_00",
+          "wide117_80_dev6_RIGHT_08",
+          "wide117_80_dev6_RIGHT_16",
+          "wide117_80_dev6_RIGHT_23",
+          "wide117_80_dev6_RIGHT_26",
+          "wide117_8m_dev6_LEFT_00",
+          "wide117_8m_dev6_LEFT_13",
+          "wide117_8m_dev6_LEFT_17",
+          "wide117_8m_dev6_RIGHT_10",
+          "wide117_8m_dev6_RIGHT_13",
+          "wide117_8m_dev6_RIGHT_26"
+        ],
+        "lost_initial": [
+          "t502_field_sector0_offset2",
+          "t502_field_sector1_offset1",
+          "t502_field_sector1_offset2",
+          "t502_field_sector2_offset2",
+          "t502_field_sector4_offset2"
+        ],
+        "gained": [],
+        "accepted": false,
+        "full407": null,
+        "fresh16": null,
+        "reload78": null,
+        "finite_development_NOT_global_retention": true
+      },
+      "training": {
+        "valid": 4,
+        "success": 0,
+        "contact": 3,
+        "timeout": 1,
+        "invalid": 0,
+        "censored": 0
+      },
+      "retained_joint_hash": "c3be3eaa371570be66afa07d01b48aae786a42a89ed3fb89059bb0e48692ad6c",
+      "model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_01_gap/proposal.pt.gz",
+        "sha256": "a8231f5bb0ed1822b3cdf6700b35fdeed8d87e36abe869b66a122663149bb5d8",
+        "bytes": 456893,
+        "policy_hash": "c0aa5f4a990641642fbd0815801e6f9a8b3baa2a4ca0f751d6e1bd605a5f5754",
+        "joint_hash": "05c1ef006fcaa64b2a58366c65e08a6aacf5da427d323d53c619ee424ea43203",
+        "parent": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_00_gap/proposal.pt.gz",
+          "sha256": "ce43a95cb799fbd9a335e47a8a0a9fc1ae2a90d9237dcb4d39e1c0b87524260a",
+          "bytes": 402289,
+          "policy_hash": "c6fdc938725be92748fdb86cd32d1e1d33290fc1e7ffb52f5f0acc710e5e9273",
+          "joint_hash": "734eeb753e64e64a3e3b3f1a5ac647f8f09d9459d9e22591d96d16f4f3e59c10",
+          "parent": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t549_curvature_gated_transfer/proposal.pt.gz",
+            "sha256": "539346fcc7b4330e1a23e101330fdd610ca74d6e2ec8c7995c80eaeb888380e4",
+            "bytes": 701541,
+            "policy_hash": "3b636fd3d71b8d1fd0956c697e144d25ba5488e53d6a726f4d77ad46871e341e",
+            "joint_hash": "7250d3defbc318e86e719110e2796502384064a56f78622e1b8d377fc8eb6f4a"
+          }
+        }
+      },
+      "accepted": false,
+      "new_Actor_Adam": 8,
+      "shadow_Actor_Adam": 8,
+      "teacher_queries": 0,
+      "BC": 0,
+      "Critic": 0,
+      "full407": null,
+      "fresh16": null,
+      "reload78": null,
+      "globally_promoted": false
+    }
+  },
+  "all_scientific_processes_stopped": true,
+  "new_Adam_cap": 8,
+  "new_RL_cap": 8,
+  "remote": "PENDING",
+  "neural_residual_RL_pilot": true,
+  "no_global_model_promotion": true,
+  "epoch": 1794798358.8247023
+}

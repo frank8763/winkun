@@ -1,0 +1,1 @@
+T581保留T550原函数的单次残差RL结束：COMPLETE；真实训练/保留回退见summary；remote=PENDING。不称完整407或泛化通过。
