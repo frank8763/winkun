@@ -1,0 +1,1 @@
+T579三模型六任务冻结诊断结束：COMPLETE；0新训练/0Adam；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。原始完整位置/速度/目标进度及历史重复计数见day_20261116/t579/FINAL_REPORT，不称完整导航或泛化通过。
