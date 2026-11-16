@@ -1,3 +1,5 @@
+2026-11-16 T591联合成功/完整恢复的表示对照已代码准备、零native零optimizer预检PASS及源码精确远端；尚未注册/无run目录/未启动。共同T562研究初始非晋升模型，39旧+3完整恢复实际动作标签，A仅40450头/B93186头+encoder/core，拟各600Adam及配对shadow/audit；42history前向误差<1e-12，全部训练参数梯度非零，0权重更新。另6次梯度only暖机计时，合计8求导不算学习。两个arm先全部学完再验收，3自主handoff必测不再由拟合gate阻挡，有safe才49+4exact；保T550原39且新增才研究retain，407/fresh/reload null。准备独立6025900物理136cmd22MiB/1GiB内、90分钟窗口；新授权待答，原T59015:00不扩。新初始在39旧上最坏RMS.091/max.572，不能沿用T562较小数据集.0188称已学会。部署单120真实carryActor无运行teacher/planner/router、0新RL、不称原创或安全保证。详day_20261116/t591/NEXT_STEP、PLAN、PREFLIGHT、BUDGET。Phase隔离。
+
 2026-11-16 T590完整结束/auditPASS/20raw582690B全远端逐SHA/所有进程退。两臂各512live512shadow，audit合计1024丢弃重构，pref另8；74.736754s/0native0cmd0RL。fixed100教师MAE .204139/.218323/.249577，旧39最坏location漂移.319640；逐historyPHR .223703/.314473/.284896，最坏.019114仍>.01且3教师改善均不到1%，均未过offlinegate，全部ActorAdam/dual回退T550。3自主接管/49原起点/407/fresh/reload全未执行null非0%导航失败。说明当前表示及有限优化出现保持-恢复权衡，不证明任务不相容/唯因/算法普遍失败。新更强平滑残差可表示性对照仅草案未注册启动，不续512步/网格；15:00原授权不扩。详day_20261116/t590/FINDINGS及COMPLETION_VERIFICATION。Phase全隔离。
 
 2026-11-16 T590两固定同数据保持约束学习对照结束：COMPLETE；学习及配对接管、49自主与回退见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
