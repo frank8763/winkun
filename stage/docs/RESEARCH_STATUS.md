@@ -1,3 +1,5 @@
+2026-11-16 T590两固定同数据保持约束学习对照结束：COMPLETE；学习及配对接管、49自主与回退见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
+
 2026-11-16 T590用户明确允许独立5641228物理/126cmd/1024live1024shadow1024audit及8丢弃pref、15:00全部停止；8丢弃Adam/0native预检PASS，ActorAdam/39dual成熟回退与影子和模型读回通过，正式已注册但尚待源码精确远端后唯一launch。两臂同39history+3full恢复/512BC/5986可训初始函数相同，仅fixed100保持vs逐historyPHR不同；512有限优化无收敛保证，offline39max<=.01且3MAE各降20%才3接管+exact，有新safe才49+4compactexact。完整407/fresh/reload null，不称六米稳定或原创；CPU14/15低优先GPUoff/Phase隔离，active只driver写入收尾。
 
 2026-11-16 T589完成12/12原起点已知成功+12精确重放/573324物理28cmd182.774s，39已知成功ID历史覆盖补齐但非39本轮重测；51原件全远端逐SHA/进程退/source根树匹配。新T590两组同39keep+3合格完整恢复，512BC同5986可训/额外5986冻结reference：fixed100保持vs39逐historyPHR约束，tol.01/rho.1；零native零optimizer准备预检PASS42完整history初始函数精确，未注册未launch。需独立5641228物理126cmd/20MiB/1024live+1024shadow+1024audit/8丢弃pref，拟15:00all/2700秒完整准入，等待新科学预算与截止确认，不能借T589数据only14:30授权启动。无新RL/407/fresh/reload，不称约束原创/安全保证；Phase隔离。详day_20261116/t590/PLAN/PREFLIGHT/BUDGET。
