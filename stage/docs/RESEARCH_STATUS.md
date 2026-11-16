@@ -1,3 +1,5 @@
+2026-11-16 T592五项失守的冻结前后对照结束：COMPLETE；五项轨迹与首次偏离见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
+
 2026-11-16 用户下一步开始后T592五失守冻结前后归因已注册/0native0optimizer预检PASS，尚待source精确远端再唯一launch。T591结束1994346物理83cmd/两臂600live600shadow/audit1200历史重构及8pref；A3接管全碰，B3全safe相对初始2新增1，但原49为34/9contact/6timeout，丢5无新增原起点，拒绝保留；165原件2包全远端逐SHA、所有进程退。T592只固定lost5，before600五compact+exact、after600五full+exact，后者须精确重建T591；相对T550完整成功历史测首3cm/3deg偏离、速度/近目标/终止，0学习/0教师。594796新增物理24cmd，连T591最多2589142/107不扩原6025900/136，原实际90分钟16:24截止不延长；own13MiB/global1GiB/free40GiB、CPU14/15总200低优先/GPUoff/Phase隔离。先完整1380秒余时准入；未验证恢复状态不可当教师标签。三个已成功handoff证据保留不无谓重跑；只有唯一driver收尾，失败不重启或追加学习。详day_20261116/t592/PLAN/AUTHORIZATION/BUDGET。
 
 2026-11-16 T591联合成功与恢复数据的表示学习对照结束：COMPLETE；学习及配对接管、49自主与回退见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
