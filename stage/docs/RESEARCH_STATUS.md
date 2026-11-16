@@ -1,3 +1,5 @@
+2026-11-16 用户下一步开始后T592五失守冻结前后归因已注册/0native0optimizer预检PASS，尚待source精确远端再唯一launch。T591结束1994346物理83cmd/两臂600live600shadow/audit1200历史重构及8pref；A3接管全碰，B3全safe相对初始2新增1，但原49为34/9contact/6timeout，丢5无新增原起点，拒绝保留；165原件2包全远端逐SHA、所有进程退。T592只固定lost5，before600五compact+exact、after600五full+exact，后者须精确重建T591；相对T550完整成功历史测首3cm/3deg偏离、速度/近目标/终止，0学习/0教师。594796新增物理24cmd，连T591最多2589142/107不扩原6025900/136，原实际90分钟16:24截止不延长；own13MiB/global1GiB/free40GiB、CPU14/15总200低优先/GPUoff/Phase隔离。先完整1380秒余时准入；未验证恢复状态不可当教师标签。三个已成功handoff证据保留不无谓重跑；只有唯一driver收尾，失败不重启或追加学习。详day_20261116/t592/PLAN/AUTHORIZATION/BUDGET。
+
 2026-11-16 T591联合成功与恢复数据的表示学习对照结束：COMPLETE；学习及配对接管、49自主与回退见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
 
 2026-11-16 用户明确允许T591新90分钟窗口及6025900物理136cmd22MiB额度。8丢弃Adam/0native优化器影子、成熟回退及读回预检PASS；正式protocol已注册，尚待精确源码远端后唯一启动，实际启动以launch为准。窗口从实际driver启动计5400秒，systemd额外RuntimeMaxSec5400更早从严；main2400/学习1500/audit900/transport300/source120不扩。两臂各600live600shadow，审计合计1200历史重构；两臂先学完再测，39旧+3恢复、0新RL。旧T590不重启，T550保持。Phase隔离/CPU14,15总200低优先/GPUoff/global1GiB/free40GiB。唯一driver负责active后所有结果及备份源码，不并发写runs或重复收尾。
