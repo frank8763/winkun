@@ -1,3 +1,5 @@
+2026-11-16 用户允许T604独立2879616物理63cmd/5.125MiB、128live128shadow128历史审计及4丢弃pref，21:30全停。已正式注册，实际launch另查。相同42history/rawlocation目标/32GRU/tail/128steps，仅Actor初始改T598并freshAdam；初始42history逐位保持T598，pref4Adam/shadow成熟回退/读回PASS。三个固定恢复全safe才15哨兵，再补34/4exact成49；保T598初始31成功＋至少修回1个旧失守＋三恢复保持才研究中间保留，最终39/407/未见/原生模型读回门不降低，T550部署保留。拒绝整ActorAdam回退，不接新RL/7/8/网格。main1200learn600audit300backup180source120/21:10学21:20native21:30all更早从严。global完整最坏1073732971B<1GiB/free40，CPU14,15总200低优先GPUoff/Phase完全隔离。唯一driver收尾，active不改源/外写runs/并发audit备份同步。详day_20261116/t604。
+
 2026-11-16 T603最终完成但科学门未过：三处学生接管0/3全部碰撞（均余约5.56m），3exact；136564物理10cmd130.496s，128live128shadow128历史审计+4pref/0新RL。canonical未过，15/49/407/fresh/reload均null；候选整ActorAdam回退独立核验，T550保留。三恢复历史RMS .036705/.038106/.035251仍未换来闭环成功，不能称旧任务实测退化或网络根本不可表示：相同结构T598教师在这三处均可达。auditPASS/28raw848562B远端全SHA/所有PID退，global1GiB/free40。反向初始化+保持三恢复修旧缺口仅下一草案未注册未训练，不续本轮预算；21:00不自动延长，Phase隔离。详day_20261116/t603/FINDINGS_AND_NEXT/COMPLETION_VERIFICATION。
 
 2026-11-16 T603实际偏离恢复数据聚合结束：COMPLETE；单臂42历史学习、三处自主接管及条件旧任务验收见summary；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。不称完整407或泛化通过。
