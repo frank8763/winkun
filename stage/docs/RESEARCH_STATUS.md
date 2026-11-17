@@ -1,3 +1,5 @@
+2026-11-17 T628四任务当前policy重采样/固定sigma.2-vs.1→.05两轮对照已代码、零native零optimizer采样密度/GPU梯度/CPUloader/8pair缓存释放精确链/参数fixture继承预检PASS；377B真实GitHub完整读回SHA过。尚无run/launch，拟新增8Actor各项、14.263788M物理272cmd3600main900audit/local4.5MiB/remote96MiB及22:30学23:00native23:30all待新增确认；日物理拟28.567711M/cmd853/main11171.971秒、Actor116，不借旧108/21:00继续。原T608仍34/49场地13/24，Phase隔离，完整方案见t628/PLAN/BUDGET。
+
 2026-11-17 T627结果复核：mean34/49新增2丢2，CAGrad33/49新增0丢1（保8米LEFT13/仍失field4）；两臂全audit+远端SHA过、均拒绝保T608。field4两臂所有实际一阶loss变化全负且sampleloss下降仍自主timeout，不能再仅归因任务梯度冲突；固定sigma.2随机训练与零噪声确定性验收/更新后状态覆盖待配对检验，非已证唯一原因。下一拟两轮重新采样、固定噪声vs.1→.05探索退火与4能力哨兵/最终49，代码预算未核未注册未launch，不新学习或延旧21:00/21:30。当前日Actor108/Critic1120已消费，Phase隔离。详t627/FINDINGS_AND_NEXT/LOCAL_SURROGATE_VS_CLOSED_LOOP。
 
 2026-11-17 T627九任务共享32旧+4新经验/均值SGD-vs-CAGradSGD对照结束：COMPLETE；实际成功丢失/新增/49与原始remote见t627/FINAL_REPORT，不称泛化或全局晋升。
