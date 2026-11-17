@@ -1,3 +1,5 @@
+2026-11-17 T626八任务32新闭环/无Critic联合Actor更新结束：COMPLETE；实际成功丢失/新增/49与原始remote见t626/FINAL_REPORT，不称泛化或全局晋升。
+
 2026-11-17 用户明确批准T626新21:00停学21:15native21:30all，新增8Actor live/shadow/历史重构、日各92，0Critic/pref；32fresh+32exact/8固定任务→无Critic联合更新→有应用才完整49+4keyexact，原34不丢+新增原起点才保留。5177190物理123cmd1800main900audit仍原日22M6609000内；本地7.5MiB仍日50MiB/global1GiB，远端新raw64MiB，用户准本轮缓存仅全远端逐成员SHA后释放、断网保当批停。唯一root已注册、source后启动另查launch；真实三CPU+GPU、Phase隔离，不重启旧目录/不全局晋升。
 
 2026-11-17 T626八固定任务32fresh+32exact、无Critic联合Actor学习代码/GPU零更新/真实IO缓存释放重放路径/407B真实GitHub上传完整读回预检PASS，仅准备无run/launch。最多8Actor live/shadow/历史重构、0pref，原34全保+新增原起点才保留，条件完整49+4keyexact，5177190物理123cmd1800main900audit。本地7.5MiB仍日50MiB/global1GiB；新训练raw分批完整远端逐SHA后只释放本轮缓存、远端总64MiB，明确依赖网络，失败保当批停止。拟新21:00学21:15native21:30all及Actor84→92/缓存方案待用户确认，不借已过19:00点自行学；CPU真实三核+GPU/Phase隔离。详t626/PLAN/BUDGET/PREFLIGHT/IO/STREAM，标准组件不称原创。

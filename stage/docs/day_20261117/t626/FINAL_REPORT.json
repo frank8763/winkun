@@ -1,0 +1,330 @@
+{
+  "state": "COMPLETE",
+  "error": null,
+  "summary": {
+    "state": "COMPLETE",
+    "pid": 74968,
+    "error": null,
+    "physics": 3064131,
+    "commands": 123,
+    "elapsed_s": 1177.064833164215,
+    "groups": 8,
+    "result": {
+      "coverage": {
+        "pass_gate": true,
+        "new_task_exploration_successes": 4,
+        "old_task_exploration_successes": 10
+      },
+      "accepted": false,
+      "candidate": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t626_multitask_closed_loop/proposal.pt.gz",
+        "sha256": "e6edccdbbfd38b84f19b38004793a49319ca3437da3bd8f5bc3fecbda4c5e2a2",
+        "bytes": 280177,
+        "policy_hash": "5fe2be635167ef48fa7a374367601e6f959264c840fa118c0cc6035f1b5f84cc",
+        "joint_hash": "621f2ba1efdceb357efa9feb354e442df15186f7eb02624d061a8f7e9185153d"
+      },
+      "final49": {
+        "success": 34,
+        "success_ids": [
+          "dev_task0_00",
+          "dev_task0_13",
+          "dev_task1_13",
+          "dev_task2_13",
+          "dev_task3_01",
+          "dev_task3_10",
+          "dev_task3_13",
+          "dev_task4_13",
+          "dev_task5_13",
+          "dev_task7_13",
+          "hold_task7_05",
+          "t502_field_sector0_offset1",
+          "t502_field_sector1_offset1",
+          "t502_field_sector1_offset2",
+          "t502_field_sector2_offset1",
+          "t502_field_sector2_offset2",
+          "t502_field_sector3_offset1",
+          "t502_field_sector3_offset2",
+          "t502_field_sector4_offset1",
+          "t502_field_sector5_offset1",
+          "t502_field_sector5_offset2",
+          "t502_field_sector6_offset1",
+          "t502_field_sector7_offset1",
+          "t502_field_sector7_offset2",
+          "wide117_80_dev6_RIGHT_00",
+          "wide117_80_dev6_RIGHT_08",
+          "wide117_80_dev6_RIGHT_16",
+          "wide117_80_dev6_RIGHT_23",
+          "wide117_80_dev6_RIGHT_26",
+          "wide117_8m_dev6_LEFT_00",
+          "wide117_8m_dev6_LEFT_17",
+          "wide117_8m_dev6_RIGHT_10",
+          "wide117_8m_dev6_RIGHT_13",
+          "wide117_8m_dev6_RIGHT_26"
+        ],
+        "lost_prior": [
+          "t502_field_sector4_offset2",
+          "wide117_8m_dev6_LEFT_13"
+        ],
+        "gained_prior": [
+          "t502_field_sector1_offset2",
+          "wide117_8m_dev6_LEFT_00"
+        ]
+      },
+      "model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t608_current_policy_memory/rl_00/proposal.pt.gz",
+        "sha256": "797cce22f6f4bd19bf6af057893282a03de5658d58f8a9aeccbdb720378adde6",
+        "bytes": 280330,
+        "policy_hash": "9e2017ccc814478ebcfb9d025ac5e58a45e2719437fc78c0164ce08999c6983c",
+        "joint_hash": "b9024a30c65305199c6945fa62e69dbb9a467eab6fb5ead908a64d12c9c7550d"
+      },
+      "update": {
+        "attempted_Adam": 8,
+        "applied": 8,
+        "trace": [
+          {
+            "step": 0,
+            "loss": 0.05634270834880752,
+            "policy_loss": 0.05634270834880752,
+            "keep": 0.0,
+            "gradient_norm": 0.6331579299183677,
+            "task_latent_KL": [
+              8.639220022383572e-06,
+              2.0883806286745387e-05,
+              9.823906905642973e-06,
+              9.37485706765022e-06,
+              1.0747134417323562e-05,
+              1.0158525539366613e-05,
+              1.4730567278485646e-05,
+              2.7206836538371875e-05
+            ],
+            "accepted": true
+          },
+          {
+            "step": 1,
+            "loss": 0.056020321363247146,
+            "policy_loss": 0.05601476148433157,
+            "keep": 5.559878915601649e-06,
+            "gradient_norm": 0.6107468782763398,
+            "task_latent_KL": [
+              3.4426470061401694e-05,
+              8.300855589657674e-05,
+              3.936503233027931e-05,
+              3.7141609677972606e-05,
+              4.2841998838126594e-05,
+              4.062499457627102e-05,
+              5.8499260566227154e-05,
+              0.0001084827252603377
+            ],
+            "accepted": true
+          },
+          {
+            "step": 2,
+            "loss": 0.055709755646558064,
+            "policy_loss": 0.05568772393791519,
+            "keep": 2.203170864286434e-05,
+            "gradient_norm": 0.5889345410010878,
+            "task_latent_KL": [
+              7.69879448548218e-05,
+              0.0001858348339149319,
+              8.823045781278633e-05,
+              8.273993582701893e-05,
+              9.593936909027992e-05,
+              9.102897784683651e-05,
+              0.00012974943144342826,
+              0.0002422622438950707
+            ],
+            "accepted": true
+          },
+          {
+            "step": 3,
+            "loss": 0.0554108954905447,
+            "policy_loss": 0.05536195885640133,
+            "keep": 4.893663414337473e-05,
+            "gradient_norm": 0.5678653158215635,
+            "task_latent_KL": [
+              0.00013587466611628788,
+              0.0003284495301380774,
+              0.000155982376994589,
+              0.00014543934067598355,
+              0.00016956980962868663,
+              0.00016091953952107922,
+              0.00022669364488332283,
+              0.00042668763102495584
+            ],
+            "accepted": true
+          },
+          {
+            "step": 4,
+            "loss": 0.05512351847835607,
+            "policy_loss": 0.05503781457533099,
+            "keep": 8.570390302508714e-05,
+            "gradient_norm": 0.5475915770241983,
+            "task_latent_KL": [
+              0.00021062853870530931,
+              0.0005094143296848202,
+              0.00024231480592864894,
+              0.00022437392201966086,
+              0.0002631395966768548,
+              0.00024985946915630805,
+              0.00034772473777940836,
+              0.0006599931253270645
+            ],
+            "accepted": true
+          },
+          {
+            "step": 5,
+            "loss": 0.05484739039371402,
+            "policy_loss": 0.054715643462918705,
+            "keep": 0.0001317469307953235,
+            "gradient_norm": 0.528127538974736,
+            "task_latent_KL": [
+              0.0003007574923765378,
+              0.000726973925524054,
+              0.0003469222352611084,
+              0.0003185734609314613,
+              0.0003759579363901711,
+              0.0003573705407773206,
+              0.0004912095172083344,
+              0.0009402380158845624
+            ],
+            "accepted": true
+          },
+          {
+            "step": 6,
+            "loss": 0.05458225159551611,
+            "policy_loss": 0.0543958131339919,
+            "keep": 0.00018643846152420417,
+            "gradient_norm": 0.509493561261161,
+            "task_latent_KL": [
+              0.00040574487147425364,
+              0.000979125289333863,
+              0.00046946733968225064,
+              0.00042695147469707246,
+              0.0005072716947356066,
+              0.0004829323288897905,
+              0.0006554060092126537,
+              0.0012652469121768712
+            ],
+            "accepted": true
+          },
+          {
+            "step": 7,
+            "loss": 0.05432825737562496,
+            "policy_loss": 0.05407915810777856,
+            "keep": 0.00024909926784639585,
+            "gradient_norm": 0.4900122433097181,
+            "task_latent_KL": [
+              0.0005249559770662077,
+              0.0012636937945621027,
+              0.0006094854132161763,
+              0.0005482982076379287,
+              0.0006561771785010622,
+              0.0006258760783237585,
+              0.0008383600478058015,
+              0.0016323858739213089
+            ],
+            "accepted": true
+          }
+        ],
+        "peer_batch": [
+          {
+            "returns": [
+              0.7540703305369354,
+              0.765037768225736,
+              0.760981785608857,
+              0.7748790835211651
+            ],
+            "peer_RMS": 0.08044981908218181,
+            "initial_density_reconstructed": true
+          },
+          {
+            "returns": [
+              0.7297024322386306,
+              -0.24593002209210174,
+              -0.2459300220921018,
+              -0.24593002209210185
+            ],
+            "peer_RMS": 0.554948729774475,
+            "initial_density_reconstructed": true
+          },
+          {
+            "returns": [
+              -0.3357014486687409,
+              -0.3942163655198797,
+              -0.37522165958771575,
+              -0.3276087123756003
+            ],
+            "peer_RMS": 0.09018002439665075,
+            "initial_density_reconstructed": true
+          },
+          {
+            "returns": [
+              0.0032049646218284406,
+              0.5554743094439447,
+              0.5444755782813188,
+              0.559638742687655
+            ],
+            "peer_RMS": 0.2790000152722583,
+            "initial_density_reconstructed": true
+          },
+          {
+            "returns": [
+              0.5716109275579428,
+              0.5679228515291362,
+              -0.4530746671601783,
+              -0.4450886992978599
+            ],
+            "peer_RMS": 0.6234298887338902,
+            "initial_density_reconstructed": true
+          },
+          {
+            "returns": [
+              -0.4053333564740989,
+              -0.41182695913497536,
+              -0.44265505664235993,
+              -0.35720542986877446
+            ],
+            "peer_RMS": 0.112349965526577,
+            "initial_density_reconstructed": true
+          },
+          {
+            "returns": [
+              0.5442714538924072,
+              0.5334410696065439,
+              0.5466486539031358,
+              0.17657651096279559
+            ],
+            "peer_RMS": 0.1748548310163483,
+            "initial_density_reconstructed": true
+          },
+          {
+            "returns": [
+              -0.3247353672211904,
+              0.17657651096279528,
+              -0.3174806656614429,
+              0.5429270263920121
+            ],
+            "peer_RMS": 0.42319925788036644,
+            "initial_density_reconstructed": true
+          }
+        ],
+        "critic_updates": 0,
+        "reference_success_histories": 33,
+        "missing_known_success_history": "wide117_8m_dev6_LEFT_17_is_covered_by_new_collection_and_final_closed_loop",
+        "task_balanced": true,
+        "full_current_history_BPTT": true,
+        "not_standard_value_GAE_PPO": true,
+        "not_claimed_unbiased_variance_reduction": true
+      },
+      "retained_state_sha": "b71d5e224695161ad1614a10ad4c5f0a4e61741deb4c24efc15d52cf7c49bfc4"
+    },
+    "new_Critic": 0
+  },
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "dataset_remote_batches": 8,
+  "no_global_promotion": true,
+  "full407": null,
+  "fresh16": null,
+  "reload78": null,
+  "epoch": 1794916182.7472594
+}
