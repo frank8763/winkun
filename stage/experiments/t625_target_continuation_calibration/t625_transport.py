@@ -28,7 +28,7 @@ def main():
     original=T.B.write
     def write(path,value):
         if Path(path).name=='source_manifest_T625.json':
-            value=dict(value,scope='Ended Stage T625 action-aware versus action-blind recorded behavior-return prediction; frozen Actor; zero native or Actor updates; no policy-Q certification')
+            value=dict(value,scope='Ended Stage T625 matched fixed-target-Actor continuation return regression versus added action-pair ranking, independent heldout-task native branches, zero Actor updates, no navigation promotion')
         return original(path,value)
     T.B.write=write
     p=json.loads((OUT/'protocol.json').read_text())

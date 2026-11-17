@@ -1,3 +1,5 @@
+2026-11-17 用户明确批准T625新增512live/512shadow/512独立历史Critic重构，今日Critic各上限1120，Actor0/额外pref0；正式注册root，19:00停学19:30native20:00all，384672步12cmd900main540audit10MiB仍原日22M6609000/50MiB及global1GiB/free40。三CPU8/10/12真实并行采field4留出3+3，GPU两组同目标策略续行回报回归vs加pairrank，初始旧Critic+freshAdam；原八米三已验证分支训练。源码远端后唯一后台launch另查，不自动Actor/全局晋升，Phase隔离。
+
 2026-11-17 T625同T608目标续行MC回报/动作排序两组已代码与GPU零native零optimizer预检PASS，仅准备无run/launch。用户新窗已准19:00学19:30native20:00all；训练原八米LEFT13三exact分支、field4整任务新3+3仅留出，两组回归vs加pairhinge，各256Critic，新增512live/shadow/历史重构待额度确认（今日608拟1120），Actor0/pref0。384672步12cmd900main540audit10MiB全在原日/全局余额，实际三CPU原生/GPU学习/独立逐位重构/Phase隔离。gate过也不自动Actor/导航晋升。详t625/PLAN/BUDGET/PREFLIGHT。
 
 2026-11-17 T623/T624三固定单周期动作/同T608续行及3exact已完成172376物理18cmd0optimizer，T624R零native独立恢复全数组/积分/field/实际完整memory-reward合同PASS；两个原producerFAILED（跨behavior hold摘要语义、generic recover模块冲突）保留不覆盖。预注册Critic+.1>0>-.1，实际0>-.1>+.1，回报.01737/-.53241/-.49867，动作指导该状态未过，不新Actor。三raw与exact全远端SHA，T60834/49场地13/24不变。实际三worker绑核8/10/12已核；旧导入重绑14导致T623/原CPU多线程基准未真多核已勘误。后续按ACCELERATION_POLICY默认GPU学习/实核CPU原生并行、唯一tNNN模块、Phase隔离。17:30已停学18:00native18:30all不扩，无运行训练，下一目标策略一致续行价值训练仅准备。详t624r/FINDINGS与RECOVERY_AUDIT。

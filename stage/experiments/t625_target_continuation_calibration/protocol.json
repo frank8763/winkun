@@ -1,5 +1,5 @@
 {
-  "id": "T625_TARGET_CONSISTENT_RETURN_CALIBRATION_PREPARED",
+  "id": "T625_TARGET_CONTINUATION_CALIBRATION_AUTHORIZED",
   "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t625_target_continuation_calibration",
   "actor_configuration": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t604_reverse_initialization/protocol.json",
   "base_model": {
@@ -91,7 +91,7 @@
   "final_storage_reserve": 1048576,
   "root_tail_bytes": 1048576,
   "stress_chunks": 0,
-  "authorization_approved": false,
+  "authorization_approved": true,
   "inputs": {
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t604_reverse_initialization/control.py": "9e88ca8c9e33b313d3aa7ec8359871a1a7014dc78d421a9f6ddd0c5fa92b2bcf",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t200_residual_placement/common.py": "a213ec43cb4a8e54cf6abb780a122d2e117d28a41d69e4d6430477868aab0552",
@@ -819,13 +819,14 @@
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t625_target_continuation_calibration/t625_native.py": "908b2951fa7f05018d5e129bc2b46e8af73a879970f78919abc0a07dc3c94eb8",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t625_target_continuation_calibration/t625_sync_source.py": "07b0fb7308f613676660ea008cd5695a4eaaaff18328f80f421a125105613647",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t625_target_continuation_calibration/t625_driver.py": "ec6cd14e12c4a3753ac6ab6d723e73ad786a95c2d21b74a6bef9a8a539465172",
-    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t625_target_continuation_calibration/t625_transport.py": "0c8b4bd9dd8f0d239363ce4ad3f6e97114603c1d8452cbeccc46570b1ce82036",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t625_target_continuation_calibration/t625_transport.py": "142718a0732e63d10b5c6de186cf91ac5e5392e491e8bcae60827ee9de7daf71",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t625_target_continuation_calibration/t625_collect.py": "01eb792c1b510a344c5b87029f1452bd94047c60e425ce7ccf6eebed42a6756a",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t625_target_continuation_calibration/t625_train.py": "7bdc1f05cf827bbb5c238a5e06348600a26111586c0845639b9753a4f070ea13",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t625_target_continuation_calibration/t625_preflight.py": "ff4866b1cdd38989dd735195454ae1564df3f53c9c48df0625c92bf8b03b6c8f",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t625/PREFLIGHT.json": "eb3ab8a945932a634293421c391b90feea6fba508ffc76bb9a92649cd992f790",
-    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t625/BUDGET.json": "b86050a4659fae07926aa44c7f0515c45af2d7abcb0626e494464a9e35f484d4",
-    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t625/WINDOW_AUTHORIZATION.json": "7478d5c4dcaa6d728b4790a011a3f9d9a86322d637905417a998326cf174d906"
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t625/BUDGET.json": "28726ac8c70cc5c7f7a582a1ebb79a765abf268ef878b1f22dab535099e681f6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t625/WINDOW_AUTHORIZATION.json": "e189eaf11ffbb0b53c9c254896c0770c46a7542ea2147a617b17e46949d6e14b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t625/AUTHORIZATION.json": "66ade2fd093df7ed39231420aa47061ea5ea5757c0812b1d5e36e1d90875e6b0"
   },
   "protected_files": {
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_01_gap/proposal.pt.gz": "a8231f5bb0ed1822b3cdf6700b35fdeed8d87e36abe869b66a122663149bb5d8",
@@ -1214,7 +1215,7 @@
     "critic_history": 0,
     "discarded_preflight": 4
   },
-  "authorization_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t620/AUTHORIZATION.json",
+  "authorization_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t625/AUTHORIZATION.json",
   "stage_cpus": [
     8,
     10,
@@ -1342,5 +1343,6 @@
   "ranking_weight": 1.0,
   "heldout_MSE_cap": 0.1,
   "heldout_relative_MSE_cap": 0.8,
-  "heldout_prediction_min_gap": 0.001
+  "heldout_prediction_min_gap": 0.001,
+  "day_critic_each_cap": 1120
 }
