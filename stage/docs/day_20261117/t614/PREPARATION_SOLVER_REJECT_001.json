@@ -1,0 +1,155 @@
+{
+  "state": "ZERO_NATIVE_ZERO_OPTIMIZER_SOLVER_RESIDUAL_REJECT",
+  "previous_analysis": {
+    "state": "ZERO_NATIVE_ZERO_OPTIMIZER_ANALYTIC_FIRST_ADAM_DISPLACEMENT",
+    "new_Adam": 0,
+    "new_native": 0,
+    "projection_seconds": 1.4029746055603027,
+    "projection": {
+      "passes": 128,
+      "converged": false,
+      "max_violation": 4.337542905580224e-07,
+      "selected_indices": [
+        200,
+        46,
+        48,
+        44,
+        42,
+        40,
+        38,
+        50,
+        36,
+        34,
+        32,
+        52,
+        30,
+        54,
+        28,
+        26,
+        56,
+        24,
+        58,
+        1124,
+        1118,
+        1122,
+        1120,
+        60,
+        1126,
+        1116,
+        506,
+        514,
+        512,
+        62,
+        22,
+        510,
+        1128,
+        1114,
+        20,
+        516,
+        1112,
+        508,
+        502,
+        72,
+        504,
+        68,
+        66,
+        70,
+        518,
+        1130,
+        74,
+        1726,
+        1108,
+        1730,
+        1734,
+        1110,
+        1728,
+        76,
+        1724,
+        500,
+        64,
+        1732,
+        78,
+        1132,
+        1102,
+        1104,
+        80,
+        520
+      ],
+      "selected_normals_sha256": "95030bee9a64b68c89781dbfac121f6cdf3f967e886cfe5c26dc2fc2f0fde5ca",
+      "selected_rhs_sha256": "ce6d9d5e33ec6923d1b880674917213dcd2f07c7f1d2616882ce55c5886c0884",
+      "initial_recovery_command_max": 0.0019963966557305923,
+      "unprojected_linear_max_violation": 0.05931635524717104,
+      "unprojected_L2": 0.030372762445394816,
+      "projected_L2": 0.028333559140812443,
+      "only_selected_linear_constraints_NOT_full_nonlinear_guarantee": true
+    },
+    "trials": [
+      {
+        "factor": 1.0,
+        "objective_delta": -0.001705399796867041,
+        "raw_max": 0.015398445503230218,
+        "command_max": 0.015398445503230218,
+        "parts": {
+          "replay": 0.014064350583880928,
+          "correction": 0.004317703810960591,
+          "KL": 0.0
+        },
+        "finite_gate": false
+      },
+      {
+        "factor": 0.25,
+        "objective_delta": -0.0004613383752193369,
+        "raw_max": 0.0034615700975292873,
+        "command_max": 0.0034615700975292873,
+        "parts": {
+          "replay": 0.014740100321514809,
+          "correction": 0.004886015494974416,
+          "KL": 0.0
+        },
+        "finite_gate": false
+      },
+      {
+        "factor": 0.0625,
+        "objective_delta": -0.00011705467581922882,
+        "raw_max": 0.0019968531368141917,
+        "command_max": 0.0019968531368141917,
+        "parts": {
+          "replay": 0.014922370007917435,
+          "correction": 0.005048029507971896,
+          "KL": 0.0
+        },
+        "finite_gate": false
+      },
+      {
+        "factor": 0.015625,
+        "objective_delta": -2.9382727551298393e-05,
+        "raw_max": 0.001996498218723719,
+        "command_max": 0.001996498218723719,
+        "parts": {
+          "replay": 0.01496874059227129,
+          "correction": 0.005089330871885971,
+          "KL": 0.0
+        },
+        "finite_gate": false
+      },
+      {
+        "factor": 0.00390625,
+        "objective_delta": -7.3526251633850015e-06,
+        "raw_max": 0.0019964212606107257,
+        "command_max": 0.0019964212606107257,
+        "parts": {
+          "replay": 0.014980395310591102,
+          "correction": 0.005099706255954071,
+          "KL": 0.0
+        },
+        "finite_gate": false
+      }
+    ],
+    "ActorAdam_unchanged": true,
+    "first_step_has_finite_gate_candidate": false,
+    "not_training_or_navigation_gain": true
+  },
+  "source_sha256": "072354d4e2ed541faa74009b2d1de59a597e2298c72dd7737003981c83b70393",
+  "source": "\"\"\"GEM-inspired linear recovery-output constraints on the actual Adam displacement.\nFinite nonlinear forward gates still decide acceptance; no safety certificate.\n\"\"\"\nfrom pathlib import Path\nimport sys,math\nROOT=Path(__file__).resolve().parents[3]\nsys.path.insert(0,str(ROOT/'stage/experiments/t613_qualified_recovery_learning'))\nimport t613_learning as Previous\nPrior,Old,P,G,torch,np=Previous.Prior,Previous.Old,Previous.P,Previous.G,Previous.torch,Previous.np\nread,save,sha,digest=Previous.read,Previous.save,Previous.sha,Previous.digest\nstate,load,fixed,variables,frozen,export,make,dataset,objective,protection=Previous.state,Previous.load,Previous.fixed,Previous.variables,Previous.frozen,Previous.export,Previous.make,Previous.dataset,Previous.objective,Previous.protection\nCredit=Previous.Credit\n\ndef flat(vs):return torch.cat([v.reshape(-1) for v in vs])\ndef unflat(z,vs):\n out=[];off=0\n for v in vs:n=v.numel();out.append(z[off:off+n].reshape_as(v));off+=n\n assert off==len(z);return tuple(out)\n\ndef project_halfspaces(delta,normal,rhs,max_passes,tolerance):\n norm=torch.linalg.vector_norm(normal,dim=1);keep=norm>1e-14\n if not bool(keep.all()):\n  assert bool((rhs[~keep]>=-tolerance).all());normal=normal[keep];rhs=rhs[keep];norm=norm[keep]\n if not len(norm):return delta.clone(),dict(passes=0,converged=True,max_violation=0.)\n normal=normal/norm[:,None];rhs=rhs/norm;x=delta.clone();correction=torch.zeros_like(normal)\n for it in range(max_passes):\n  before=x.clone()\n  for i in range(len(normal)):\n   y=x+correction[i];n=normal[i];z=y-torch.clamp(torch.dot(n,y)-rhs[i],min=0)*n;correction[i]=y-z;x=z\n  violation=max(0.,float((normal@x-rhs).max()))\n  if violation<=tolerance and float((x-before).abs().max())<=tolerance:break\n return x,dict(passes=it+1,converged=violation<=tolerance,max_violation=violation)\n\ndef feasible_displacement(q,data,delta,p,guard):\n rec=[g for g in data if g['kind']=='recovery'];assert len(rec)==3;packed=torch.nn.utils.rnn.pad_sequence([g['n'] for g in rec]);named=list(q.branch.named_parameters());vs=tuple(v for name,v in named)\n def outputs(*values):\n  pred=torch.func.functional_call(q.branch,{name:v for (name,_),v in zip(named,values)},(packed,))[0];out=[]\n  for i,g in enumerate(rec):\n   loc=(g['base']+pred[:len(g['n']),i]-g['reference'])[g['mask']];out.append((loc.clamp(-1,1)-g['target'][g['mask']].clamp(-1,1)).reshape(-1))\n  return torch.cat(out)\n guard();e,jd=torch.autograd.functional.jvp(outputs,vs,unflat(delta,vs),create_graph=False,strict=False);e=e.detach();jd=jd.detach();bound=p['protected_max_change'];assert float(e.abs().max())<=bound\n predicted=e+jd;violation=predicted.abs()-bound;near=e.abs()>=bound-p['active_boundary_margin'];score=violation+near.to(e.dtype)*10.;indices=torch.argsort(score,descending=True,stable=True)[:min(p['projection_max_constraints'],len(e))];sign=torch.where(predicted[indices]>=0,1.,-1.)\n actual=outputs(*vs);normal=[]\n for k,index in enumerate(indices):\n  guard();normal.append(flat(torch.autograd.grad(actual[index],vs,retain_graph=True))*sign[k])\n normal=torch.stack(normal).detach();rhs=(bound-sign*e[indices]).detach();assert torch.isfinite(normal).all() and torch.isfinite(rhs).all()\n d,info=project_halfspaces(delta,normal,rhs,p['projection_max_passes'],p['projection_tolerance']);info.update(selected_indices=indices.tolist(),selected_normals_sha256=digest(normal),selected_rhs_sha256=digest(rhs),initial_recovery_command_max=float(e.abs().max()),unprojected_linear_max_violation=max(0.,float(violation.max())),unprojected_L2=float(torch.linalg.vector_norm(delta)),projected_L2=float(torch.linalg.vector_norm(d)),only_selected_linear_constraints_NOT_full_nonlinear_guarantee=True)\n return d,info\n\ndef fit(obj,data,p,guard,event,arrays=None,steps=None):\n assert arrays is None and p['arm']=='command';q,opt=obj;body=fixed(q);packed=torch.nn.utils.rnn.pad_sequence([g['n'] for g in data]);before=Old.measure(q,data);trace=[];applied=0\n names=[name for name,v in q.named_parameters() if name.startswith('branch.')];vs=variables(q)\n for k in range(p['fit_steps'] if steps is None else steps):\n  guard();prior=state(obj);opt.zero_grad(set_to_none=True);loss,parts=objective(q,data,packed,p);value=float(loss.detach());loss.backward();norm=float(torch.nn.utils.clip_grad_norm_(vs,1.,error_if_nonfinite=True));event('BEFORE',k);opt.step();event('AFTER',k);proposal=state(obj);delta=flat([proposal['actor'][name]-prior['actor'][name] for name in names])\n  with torch.no_grad():\n   for name,v in q.named_parameters():\n    if name.startswith('branch.'):v.copy_(prior['actor'][name])\n  projected,diag=feasible_displacement(q,data,delta,p,guard);trials=[];accepted=False\n  for factor in p['step_factors']:\n   guard()\n   with torch.no_grad():\n    for name,d in zip(names,unflat(projected,vs)):dict(q.named_parameters())[name].copy_(prior['actor'][name]+factor*d)\n    nxt,detail=objective(q,data,packed,p);raw,cmd=protection(q,data,packed)\n   okay=diag['converged'] and math.isfinite(float(nxt)) and float(nxt)<=value+1e-12 and cmd<=p['protected_max_change']\n   trials.append(dict(factor=factor,loss=float(nxt),raw_max=raw,command_max=cmd,parts=detail,accepted=okay))\n   if okay:accepted=True;applied+=1;break\n  if not accepted:load(obj,prior)\n  trace.append(dict(step=k,before_loss=value,before_parts=parts,gradient_norm=norm,projection=diag,trials=trials,applied=accepted))\n  if not accepted:break\n assert fixed(q)==body\n return dict(attempted_Adam=len(trace),applied_parameter_steps=applied,trace=trace,before=before,after=Old.measure(q,data),fixed_sha=body,new_RL_attempted_Adam=0,new_BC_attempted_Adam=len(trace),new_Critic=0,full_history_BPTT=True,actual_Adam_displacement_projected=True,teacher_suffix_mask_unchanged=True,scaled_Adam_moments_from_full_proposal=True,rejected_entire_step_restored=True,not_standard_GEM_or_safety_proof=True)\n",
+  "fix": "Retain128 Dykstra passes and1e-10 constraint tolerance; append closed-form radial contraction toward feasible zero displacement, not extra solver sweep or line-search grid. Method is approximate displacement correction, not exact Euclidean GEM projection."
+}

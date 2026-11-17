@@ -1,0 +1,153 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER_ANALYTIC_FIRST_DISPLACEMENT",
+  "projection_seconds": 1.510650873184204,
+  "projection": {
+    "passes": 128,
+    "converged": true,
+    "max_violation": 0.0,
+    "dykstra_max_violation_before_radial_repair": 4.337542905580224e-07,
+    "radial_contraction": 0.5782221081821212,
+    "finite_approximate_not_exact_Euclidean_projection": true,
+    "selected_indices": [
+      200,
+      46,
+      48,
+      44,
+      42,
+      40,
+      38,
+      50,
+      36,
+      34,
+      32,
+      52,
+      30,
+      54,
+      28,
+      26,
+      56,
+      24,
+      58,
+      1124,
+      1118,
+      1122,
+      1120,
+      60,
+      1126,
+      1116,
+      506,
+      514,
+      512,
+      62,
+      22,
+      510,
+      1128,
+      1114,
+      20,
+      516,
+      1112,
+      508,
+      502,
+      72,
+      504,
+      68,
+      66,
+      70,
+      518,
+      1130,
+      74,
+      1726,
+      1108,
+      1730,
+      1734,
+      1110,
+      1728,
+      76,
+      1724,
+      500,
+      64,
+      1732,
+      78,
+      1132,
+      1102,
+      1104,
+      80,
+      520
+    ],
+    "selected_normals_sha256": "95030bee9a64b68c89781dbfac121f6cdf3f967e886cfe5c26dc2fc2f0fde5ca",
+    "selected_rhs_sha256": "ce6d9d5e33ec6923d1b880674917213dcd2f07c7f1d2616882ce55c5886c0884",
+    "initial_recovery_command_max": 0.0019963966557305923,
+    "unprojected_linear_max_violation": 0.05931635524717104,
+    "unprojected_L2": 0.030372762445394816,
+    "projected_L2": 0.01638309029870338,
+    "only_selected_linear_constraints_NOT_full_nonlinear_guarantee": true
+  },
+  "trials": [
+    {
+      "factor": 1.0,
+      "objective_delta": -0.001031422412133453,
+      "raw_max": 0.00837688878030829,
+      "command_max": 0.00837688878030829,
+      "parts": {
+        "replay": 0.014434766184441068,
+        "correction": 0.004621265595134039,
+        "KL": 0.0
+      },
+      "finite_gate": false
+    },
+    {
+      "factor": 0.25,
+      "objective_delta": -0.0002690841726332924,
+      "raw_max": 0.0022879928240652015,
+      "command_max": 0.0022879928240652015,
+      "parts": {
+        "replay": 0.01484186980756202,
+        "correction": 0.004976500211513248,
+        "KL": 0.0
+      },
+      "finite_gate": false
+    },
+    {
+      "factor": 0.0625,
+      "objective_delta": -6.783908034262501e-05,
+      "raw_max": 0.00199664427749513,
+      "command_max": 0.00199664427749513,
+      "parts": {
+        "replay": 0.014948398327097158,
+        "correction": 0.005071216784268775,
+        "KL": 0.0
+      },
+      "finite_gate": true
+    },
+    {
+      "factor": 0.015625,
+      "objective_delta": -1.6998873736694814e-05,
+      "raw_max": 0.0019964543596379114,
+      "command_max": 0.0019964543596379114,
+      "parts": {
+        "replay": 0.014975292101035707,
+        "correction": 0.00509516321693616,
+        "KL": 0.0
+      },
+      "finite_gate": true
+    },
+    {
+      "factor": 0.00390625,
+      "objective_delta": -4.2519896920438505e-06,
+      "raw_max": 0.0019964108189107765,
+      "command_max": 0.0019964108189107765,
+      "parts": {
+        "replay": 0.014982035637165287,
+        "correction": 0.005101166564851228,
+        "KL": 0.0
+      },
+      "finite_gate": true
+    }
+  ],
+  "ActorAdam_unchanged": true,
+  "optimizer_calls": 0,
+  "new_native": 0,
+  "first_step_has_finite_gate_candidate": true,
+  "known_halfspaces_and_zero_boundary_case": true,
+  "not_actual_training_or_navigation_gain": true
+}
