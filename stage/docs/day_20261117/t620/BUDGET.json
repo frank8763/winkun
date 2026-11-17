@@ -1,0 +1,69 @@
+{
+  "state": "PREPARED_OPTIMIZER_APPROVAL_PENDING",
+  "own_caps": {
+    "physics": 7000000,
+    "commands": 150,
+    "main_seconds": 3600,
+    "bytes": 20971520,
+    "actor": 48,
+    "critic": 96,
+    "shadow_actor": 48,
+    "shadow_critic": 96,
+    "history_actor": 48,
+    "history_critic": 96,
+    "preflight_optimizer": 0
+  },
+  "day_before": {
+    "physics": 6613990,
+    "commands": 280,
+    "main_seconds": 3881.820460796356,
+    "bytes": 31348942,
+    "actor_live": 36,
+    "actor_shadow": 36,
+    "actor_history": 36,
+    "critic_live": 0,
+    "critic_shadow": 0,
+    "critic_history": 0,
+    "discarded_preflight": 4
+  },
+  "day_after_max": {
+    "physics": 13613990,
+    "commands": 430,
+    "main_seconds": 7481.820460796356,
+    "bytes": 52320462,
+    "actor_live": 84,
+    "actor_shadow": 84,
+    "actor_history": 84,
+    "critic_live": 96,
+    "critic_shadow": 96,
+    "critic_history": 96,
+    "discarded_preflight": 4
+  },
+  "day_unchanged_caps": {
+    "physics": 22000000,
+    "commands": 660,
+    "main_seconds": 9000,
+    "bytes": 52428800
+  },
+  "global_storage": {
+    "before": 1050592089,
+    "own": 20971520,
+    "extra_tail": 131072,
+    "worst": 1071694681,
+    "cap": 1073741824,
+    "free_min_bytes": 42949672960
+  },
+  "per_arm": {
+    "physics": 3360178,
+    "commands": 71,
+    "main_seconds": 1800,
+    "learning_seconds": 1500,
+    "audit_seconds": 900,
+    "storage_admission": 12058624
+  },
+  "transport_seconds": 300,
+  "source_seconds": 120,
+  "finalization_seconds": 450,
+  "full_worst_admission_before_each_arm": true,
+  "possible_partial_arm_count_not_promised_two": true
+}

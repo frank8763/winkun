@@ -1,0 +1,9 @@
+{
+  "state": "ZERO_UPDATE_PREPARATION_FIX",
+  "original_error": "KeyError input_std in Critic.__init__; repository normalization key is input_scale",
+  "original_source_line": "self.register_buffer('std',torch.tensor(p['input_std'],dtype=torch.float64))",
+  "fix": "Use positive input_scale and same [-10,10] normalized observation bound as Actor; no scientific run registered",
+  "new_native": 0,
+  "new_optimizer": 0,
+  "epoch": 1794903365.997877
+}

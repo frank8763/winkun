@@ -1,0 +1,59 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "prior_episodes": 54,
+  "three_historical_fixtures_not_new_online": true,
+  "Actor_initial_function_exact": true,
+  "critic_nonzero_gradient_entries": 8610,
+  "actor_gradient_norm": 0.7205546148733437,
+  "critic_gradient_seconds": 6.207351274002576,
+  "actor_gradient_seconds": 3.758050962998823,
+  "critic_stream_sequence_max_errors": [
+    3.3306690738754696e-16,
+    4.440892098500626e-16
+  ],
+  "critic_loss": {
+    "critic_loss": 0.4217019975134137,
+    "target_min": -0.5473626507326482,
+    "target_max": -0.08825944303129192,
+    "sampled_prior_episodes": 2,
+    "sampled_online_episodes": 2
+  },
+  "actor_loss": {
+    "actor_loss": 0.29303974381948267,
+    "negative_Q": 0.29303974381948267,
+    "old_function_MSE": 0.0,
+    "protected_sampled_coordinates": 32
+  },
+  "all_model_and_optimizer_parameters_unchanged": true,
+  "joint_storage_safe_upper": 699873,
+  "joint_cap": 786432,
+  "synthetic_moment_slots_storage_only_not_actual_Adam": true,
+  "actual_Runtime_request_record_and_envelope_path_checked": true,
+  "record_path_does_not_use_root_output": true,
+  "existing_three_real_prefix_recoveries_audited": true,
+  "actual_guide_Session_step_boundary_checked": [
+    275,
+    276
+  ],
+  "native_return_before_request_annotation_checked": true,
+  "packed_storage_bounds": [
+    {
+      "decisions": 644,
+      "safe_upper": 1247429,
+      "cap": 1310720
+    },
+    {
+      "decisions": 840,
+      "safe_upper": 1613138,
+      "cap": 1703936
+    }
+  ],
+  "median_executed_command_std": [
+    0.14323220105575815,
+    0.19890032815415246
+  ],
+  "scalar_noise_not_control_success": true,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "epoch": 1794903725.7473114
+}
