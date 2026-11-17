@@ -1,3 +1,5 @@
+2026-11-17 T627任务梯度冲突CAGrad匹配对照代码/真实原32远端读回零native零optimizer8任务梯度预检PASS，平均最坏unitdot-.03695→CAGrad+.18125/方向cos.92924，真实mean梯度=原scalar、simplex gap5.3e-9、c0/排列检验PASS，局部不是闭环保留保证。复用初始T608原8×4（非新采），共享新field4四fresh四exact、两臂meanSGD vsCAGradSGD各8update/8shadow/8历史重构，完整49+4exact各一次。新增16Actor拟日92→108待额度，Critic0/pref0；max5381004物理120cmd1800main900audit/local6MiB/remote16MiB仍原日/全局余额，21:00学21:15native21:30all不延长。仅准备无run/launch，CPU收集三核/评估两核留partial余量、GPU学习，Phase隔离。详t627/PLAN/BUDGET/PREFLIGHT/PRIMARY_REVIEW。
+
 2026-11-17 T626八任务32新闭环/无Critic联合Actor更新结束：COMPLETE；实际成功丢失/新增/49与原始remote见t626/FINAL_REPORT，不称泛化或全局晋升。
 
 2026-11-17 用户明确批准T626新21:00停学21:15native21:30all，新增8Actor live/shadow/历史重构、日各92，0Critic/pref；32fresh+32exact/8固定任务→无Critic联合更新→有应用才完整49+4keyexact，原34不丢+新增原起点才保留。5177190物理123cmd1800main900audit仍原日22M6609000内；本地7.5MiB仍日50MiB/global1GiB，远端新raw64MiB，用户准本轮缓存仅全远端逐成员SHA后释放、断网保当批停。唯一root已注册、source后启动另查launch；真实三CPU+GPU、Phase隔离，不重启旧目录/不全局晋升。
