@@ -1,0 +1,4 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t625_target_continuation_calibration/t625_driver.py\", line 25, in main\n    (M.OUT/'collect').mkdir();call('t625_collect.py','main',p['main_seconds']);g=M.read(M.OUT/'collect/worker_generations.json');pids.extend([i for z in g for i in [z['parent'],*z['workers']]]);assert all(not Path('/proc',str(i)).exists() for i in pids);call('t625_collect.py','audit',p['audit_seconds']);assert M.read(M.OUT/'collect/audit.json')['state']=='PASS';manifest(M.OUT/'collect')\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t625_target_continuation_calibration/t625_driver.py\", line 15, in call\n    try:c.wait(timeout=seconds);assert c.returncode==0,(script,action,arm,c.returncode)\nAssertionError: ('t625_collect.py', 'audit', None, 1)\n",
+  "no_restart": true
+}

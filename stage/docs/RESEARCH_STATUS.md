@@ -1,3 +1,5 @@
+2026-11-17 T625同目标策略续行回报学习对照结束：FAILED；0Actor，留出排序和回报误差见FINAL_REPORT，不称导航改善/全局晋升，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。
+
 2026-11-17 用户明确批准T625新增512live/512shadow/512独立历史Critic重构，今日Critic各上限1120，Actor0/额外pref0；正式注册root，19:00停学19:30native20:00all，384672步12cmd900main540audit10MiB仍原日22M6609000/50MiB及global1GiB/free40。三CPU8/10/12真实并行采field4留出3+3，GPU两组同目标策略续行回报回归vs加pairrank，初始旧Critic+freshAdam；原八米三已验证分支训练。源码远端后唯一后台launch另查，不自动Actor/全局晋升，Phase隔离。
 
 2026-11-17 T625同T608目标续行MC回报/动作排序两组已代码与GPU零native零optimizer预检PASS，仅准备无run/launch。用户新窗已准19:00学19:30native20:00all；训练原八米LEFT13三exact分支、field4整任务新3+3仅留出，两组回归vs加pairhinge，各256Critic，新增512live/shadow/历史重构待额度确认（今日608拟1120），Actor0/pref0。384672步12cmd900main540audit10MiB全在原日/全局余额，实际三CPU原生/GPU学习/独立逐位重构/Phase隔离。gate过也不自动Actor/导航晋升。详t625/PLAN/BUDGET/PREFLIGHT。
