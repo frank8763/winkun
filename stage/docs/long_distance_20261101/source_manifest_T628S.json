@@ -1,0 +1,701 @@
+{
+  "scope": "Ended Stage T628S four-task fresh-policy recollection, fixed .2 versus .1-to-.05 noise schedule; two rounds per arm maximum, conditional49 development, no Critic or global promotion",
+  "files": [
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/MEMORY_ACCOUNTING.json",
+      "bytes": 454,
+      "sha256": "c80e746332e75ee14a095cc2aac03dbcf0df52a55872754b8f8e5d50f0600d27"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/SEALED.json",
+      "bytes": 214,
+      "sha256": "bdb071a6164e307ea9f2e44102884f9d456947e181cde282310f0b74430c4f13"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/DATA_ADMISSION.json",
+      "bytes": 196,
+      "sha256": "9a2b21a663a9bd75ab9c629c3f3e07660983e6ef30682cfccee19500bdeee50c"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/LEARNING_COMPLETE.json",
+      "bytes": 3511,
+      "sha256": "7f3912724fc25cd74a57056862ea34ea8c1ce894ff7f24f769e8154cc6610f45"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/batch_00_receipt.json",
+      "bytes": 17116,
+      "sha256": "71298e18897b6f5003bdc8eb0e5a9a13ecc2d5d8738c28273b33a6dbfbcc7f0f"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/batch_01_receipt.json",
+      "bytes": 17113,
+      "sha256": "ec7633345bd83a1c6f3d6a12e405136eaa5e9fc4e6c1ba6bddb86541e22e6fc6"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/batch_02_receipt.json",
+      "bytes": 15606,
+      "sha256": "151c07040539825b391d309f317db0ffef28b0f1cc3fe09bd13a4fe2d526d329"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/batch_03_receipt.json",
+      "bytes": 16166,
+      "sha256": "e21eb6b7a958437f802b8b2783df83f0038bb79a517b7defd26340e19df96568"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/batch_04_receipt.json",
+      "bytes": 16892,
+      "sha256": "bb217a7004bc7ceb2f14b154987812399e4a14fbdc2b2723148fef40ccfdd5c4"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/batch_05_receipt.json",
+      "bytes": 16885,
+      "sha256": "f045bdf8937507f36537623fc8dbc250e0c8e5bd3a68b037879ad565d90c9317"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/batch_06_receipt.json",
+      "bytes": 16323,
+      "sha256": "28449d3f764808b16bca404e235010522f2d7cf73c0ec870911f81fa4e3f3031"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/batch_07_receipt.json",
+      "bytes": 15765,
+      "sha256": "6f95025a4240ae2126b8b479426ff7acc09fd61c4652b4463d5f2b3938b70155"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/cache_evictions.jsonl.gz",
+      "bytes": 4322,
+      "sha256": "61dec2443ca1b561e16325a3b6f0047b7d1a5d5753f114682ca3c9aa08b126f8"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/cases.jsonl.gz",
+      "bytes": 51260,
+      "sha256": "838bf51cf00bb6e2fc0cd238276705816dfa000084cef9c5d8db1a4d808031a3"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/evaluation/t502_field_sector1_offset2.npz",
+      "bytes": 2012,
+      "sha256": "78d8413f782e79a30d1ef874f3963fb915d9a42d2fcacb0ec6da14241de4f3fe"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/evaluation/t502_field_sector4_offset2.npz",
+      "bytes": 3554,
+      "sha256": "060f001fc40458e004ad2152cab44c6387da4da452cd35e817e9d8ba18b00dc5"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/evaluation/wide117_8m_dev6_LEFT_00.npz",
+      "bytes": 2158,
+      "sha256": "ec8ea48d16ce8b2e408ab32b42509d458422c7b3be0abbe9c8eef44348de1c83"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/evaluation/wide117_8m_dev6_LEFT_13.npz",
+      "bytes": 2140,
+      "sha256": "bb6b5f87ccbc62a48fa47001bb1391448c99edd4c4350c55bef6a576e902e7ef"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/optimizer_calls.jsonl.gz",
+      "bytes": 500,
+      "sha256": "7cc37c16ec7875370bb713a9f43ea3d29abe972dd8f3a9a50757f29720ec265e"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/proposal.pt.remote.json",
+      "bytes": 1333,
+      "sha256": "9a0a76a2775101eeea691fa31505804236bda8dc0401b9d2c9eea12eaf89a509"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/replays.jsonl.gz",
+      "bytes": 50553,
+      "sha256": "1875c51a654f00353f4fe60ca31e50736c5dfd1438a0fb5d73a616922b299c21"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/start.pt.remote.json",
+      "bytes": 1326,
+      "sha256": "62cc39307a943702d19dd41874c6c3151adb788ab4ef3a22e619300203a63f72"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/status.json",
+      "bytes": 121,
+      "sha256": "03f9a5dedfdd689dcf984de6c3d773f0f06c065c9113dd36929ad9085cf805b0"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/round_0/summary.json",
+      "bytes": 33063,
+      "sha256": "7c284ba2dc183c6997ef764bdb036b9ec00381a0821e6845ab01dc5237e6af89"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/anneal/summary.json",
+      "bytes": 37038,
+      "sha256": "85547365aab52e3f081853dbd1a44593e06a0ddac9515d30d794ce3970743f54"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/audit.json",
+      "bytes": 341,
+      "sha256": "56a1e4226f74bd09f769591fa02f7fc5642b4dca5e6eb1106c9535e298e87135"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/audit.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/DATA_ADMISSION.json",
+      "bytes": 199,
+      "sha256": "09744a945d5deebd7c3ba5783c71c3e45c38f6116ad6c5ad48fa4dd3b325ab7a"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/LEARNING_COMPLETE.json",
+      "bytes": 3516,
+      "sha256": "0b8bfd3dd9e7eef2e8a0ed4cfb06211b8e4e60460ec878ce436c249399a81b0b"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/batch_00_receipt.json",
+      "bytes": 16696,
+      "sha256": "1317e95c9130c972b5166c4bf94f7806c4bf504fb9761a81df6ce887bb17d6a6"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/batch_01_receipt.json",
+      "bytes": 16415,
+      "sha256": "fb4cf2ee4d39e13d7f71923cf9082a79ecb0891ef56afb53d538a697fbad3f9d"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/batch_02_receipt.json",
+      "bytes": 16732,
+      "sha256": "2d7d393c323e6c07f20e5e2b599538412781a71d9ff2615b1d4fc9757496696b"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/batch_03_receipt.json",
+      "bytes": 16444,
+      "sha256": "0b60664bc1088038c48e7a61e4cc8f162d36b62c5dfd528b8970885ca75c62b8"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/batch_04_receipt.json",
+      "bytes": 16600,
+      "sha256": "1b92acfce51a6103f30c24e7a7efa043eda5e6d575a816b313c69e746c7fe43f"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/batch_05_receipt.json",
+      "bytes": 16322,
+      "sha256": "6b92e10f1432013e72b1e324f7c901d19ada5c89c9ac21e03300071a9df3dfc7"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/batch_06_receipt.json",
+      "bytes": 16748,
+      "sha256": "9d839422420cd4d058c3bcfd8d4bff5883d15b1cc6030e31abe90e1d63f5843b"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/batch_07_receipt.json",
+      "bytes": 16178,
+      "sha256": "c372966bea5910f7552c8797c6636acfa9dcca18c55885fa2c76db33d0c947d6"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/cache_evictions.jsonl.gz",
+      "bytes": 4315,
+      "sha256": "8ddb9e885237ac9eb6bbcec2d9df16bb2c39164e3a86b82ce6fac6ec37bbaf36"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/cases.jsonl.gz",
+      "bytes": 51316,
+      "sha256": "f65d04a267bed0e9bafa359b3ecf88a9c1a2b09a6f9e4f5bf63abdad4947a5c5"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/evaluation/t502_field_sector1_offset2.npz",
+      "bytes": 2009,
+      "sha256": "daa280fe9e11d06c0383b3dfceb24d980f868cdbc18826d4ada4c23508e9979a"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/evaluation/t502_field_sector4_offset2.npz",
+      "bytes": 3584,
+      "sha256": "0bcf213874c99952482b4c1ba4556dd477884d17bb8115b696a01b9327087855"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/evaluation/wide117_8m_dev6_LEFT_00.npz",
+      "bytes": 4148,
+      "sha256": "75aa44dd97cb54935f003c8935d07db2a163445da1111e5712059c1cae9139ca"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/evaluation/wide117_8m_dev6_LEFT_13.npz",
+      "bytes": 2749,
+      "sha256": "4eb86fc4f77354106bab9f673fa9f9eb83b512311fdd26b95844fa99e12dbf1b"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/optimizer_calls.jsonl.gz",
+      "bytes": 500,
+      "sha256": "9002f6763baa24f571abd7af5cd174d461341182a31e66e5aad26909f7e15522"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/proposal.pt.remote.json",
+      "bytes": 1333,
+      "sha256": "961997c4e8a4bd2208d7be80bec4db019fe2e9ce197790df69ddc58e037a262a"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/replays.jsonl.gz",
+      "bytes": 50614,
+      "sha256": "a6929693adda885375f99221a41161b23495f2c372f5d319efa3556b3e42449b"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/start.pt.remote.json",
+      "bytes": 1323,
+      "sha256": "393d9595a1d0ab4fa6dbe46c0c45f13f09d2b75ddc843de9cb18ae5af3b57099"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/status.json",
+      "bytes": 121,
+      "sha256": "b17b905dce83be7ebbe5861ee0eb1818e4e9919b1c513222a1125745e17fa31f"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/round_0/summary.json",
+      "bytes": 32036,
+      "sha256": "a271a47c067277bdf4dd1f7135cd0ee213213961a0cb6f8d5d0914b46a1ab898"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/fixed/summary.json",
+      "bytes": 35850,
+      "sha256": "e1c0566fbe1727aed1b9dac46904607952420fe2b1629b6fba8541ecbde16202"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/launch.json",
+      "bytes": 226,
+      "sha256": "eb798bbfbeafa1bde7eb2db645b9fb6f212a9c3359f27ccfcf71cb67a8f23da8"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/main.log",
+      "bytes": 120,
+      "sha256": "4b0314ba46e94d8fc8ef2dc81459a56128c3b1b88828225908468cb70d312808"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/protocol.json",
+      "bytes": 209328,
+      "sha256": "a5efb01ffc181712801dfb4199cf6b75eb806bbf2a4102de197016c01a5769f8"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/status.json",
+      "bytes": 114,
+      "sha256": "91dbfdb14d302b64983d3168404f74360d262499479615be5889b8988a5b554b"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/summary.json",
+      "bytes": 79742,
+      "sha256": "6896f7d363ce3a8770407a3aedf00b214d49e44e0698127e75c91fab7abd994a"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_generations.json",
+      "bytes": 241,
+      "sha256": "15fa698800e55e491a30dd92f2e3879526c8fed33dc1e7767784f9d444e91896"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_10_0.json.gz",
+      "bytes": 2306,
+      "sha256": "bbaf82a76de7ad2795b0b40de28ca247a1c2396ed6dfca367cc62f89d36fbbf6"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_10_1.json.gz",
+      "bytes": 2308,
+      "sha256": "faf659e2ae553f02d556c8209c163072a2c40e86e4c940323aa581f034c766d6"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_11_0.json.gz",
+      "bytes": 2330,
+      "sha256": "81a8833be2fd318227c101fbea37c16b4624ae30128866dbe35bcdd007eebfdb"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_11_1.json.gz",
+      "bytes": 2323,
+      "sha256": "2e158eef2d8bbfea231ada1cdb01cc5e1be3de29ba906ff8d850244982ed8e39"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_12_0.json.gz",
+      "bytes": 2310,
+      "sha256": "35f67c09aeaca707c16b3c010125bb41868f5cc75f7b4eefe0fdf14d667936c9"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_12_1.json.gz",
+      "bytes": 2303,
+      "sha256": "9dcf8ef5b03dcb8c2352ec6d8cf4772976ebc4591318796dc04bbfebcecf65df"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_13_0.json.gz",
+      "bytes": 2293,
+      "sha256": "464b4fbf2368a44f73c80a22cf3aba980f48febb2c4f408540f8fa14628fd1d7"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_13_1.json.gz",
+      "bytes": 2288,
+      "sha256": "b2ddd6864ffde0e466035a83a32da73a81dec1d4369f1b947cf8450aacb84719"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_14_0.json.gz",
+      "bytes": 2274,
+      "sha256": "2faf4f978cb930aeeb42da80f90607840cbe365698e4f4f27304b3bb55854517"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_14_1.json.gz",
+      "bytes": 2268,
+      "sha256": "4c14b0be59db2e60940ffcb2089dea4168e4c0540888104b26e867b09e2f7544"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_15_0.json.gz",
+      "bytes": 2283,
+      "sha256": "27d0921d54a59941c4235725be8a7d61c7191937414b1f64cdd854624c036323"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_15_1.json.gz",
+      "bytes": 2253,
+      "sha256": "8a385068d2ca7d3d9f5c4a882712f37a031c26bab6c1feec1602fa50d93ad05f"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_16_0.json.gz",
+      "bytes": 2265,
+      "sha256": "2807753c6632a55ceee677a8f48f41af63532c6918240e2b427ba79cb0e025fd"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_16_1.json.gz",
+      "bytes": 2232,
+      "sha256": "77d286bf0d233283b189fa835e172c577305138a0540f8981eca526ed859d430"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_17_0.json.gz",
+      "bytes": 2243,
+      "sha256": "e56c1b1fb7e3034045d275ffddf679651c457c7f8d272218d76615ceab590c73"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_18_0.json.gz",
+      "bytes": 2144,
+      "sha256": "6eba5fd0b5aba3b563137c367dc672b4612e4057605441e8025eb90da29765f8"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_19_0.json.gz",
+      "bytes": 2261,
+      "sha256": "aa8c7b797f2b3fab7fe26acad872ed6803e128587f685aa626021f9d1e50ce9d"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_1_0.json.gz",
+      "bytes": 2341,
+      "sha256": "07cb904a31d6344687ab651e5bd25365ef1f094606eecb6ecdf6dc5300ddf9c1"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_1_1.json.gz",
+      "bytes": 2384,
+      "sha256": "e7641318a88214cd0e59491990f3eb9f1ce8f255ad808dd06bc52d9b24d4e63f"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_20_0.json.gz",
+      "bytes": 2137,
+      "sha256": "7bd8558a2017b02e38cbed5a8894700b5846a1b6108367557d0bb741f2623607"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_21_0.json.gz",
+      "bytes": 2243,
+      "sha256": "e56c1b1fb7e3034045d275ffddf679651c457c7f8d272218d76615ceab590c73"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_22_0.json.gz",
+      "bytes": 2144,
+      "sha256": "6eba5fd0b5aba3b563137c367dc672b4612e4057605441e8025eb90da29765f8"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_23_0.json.gz",
+      "bytes": 2261,
+      "sha256": "aa8c7b797f2b3fab7fe26acad872ed6803e128587f685aa626021f9d1e50ce9d"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_24_0.json.gz",
+      "bytes": 2137,
+      "sha256": "7bd8558a2017b02e38cbed5a8894700b5846a1b6108367557d0bb741f2623607"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_25_0.json.gz",
+      "bytes": 2349,
+      "sha256": "5cdd1c81574995182a5ab0f80f49f551139d97ce75e6b6c6229e6249c9798e0f"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_25_1.json.gz",
+      "bytes": 2384,
+      "sha256": "0f8cde0be47ca7579d550424b1934a26a0aa76bc6d8be27ba3dbb396eead4433"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_26_0.json.gz",
+      "bytes": 2329,
+      "sha256": "f335bf397da6659ec1abe31beb55491d70dd3656a9862cf3a4803d45e5047753"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_26_1.json.gz",
+      "bytes": 2364,
+      "sha256": "ae3e77bcd28e076826437cad966a7faa5f3032cc2b536f497c2e45f9445d7896"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_27_0.json.gz",
+      "bytes": 2353,
+      "sha256": "a9e3ed08f7f35ce16c2b0164f97c1b670f22ddc70bd69b3a71fae6fc3b04ce63"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_27_1.json.gz",
+      "bytes": 2350,
+      "sha256": "68f81c329558ec9234481f8cebfd76e284f4327e92facf57dde70c4586432f05"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_28_0.json.gz",
+      "bytes": 2332,
+      "sha256": "1c6e4ccf384ca62738b02643a34d9616d1a4a69a7ec77c496c48886ae48cb4e2"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_28_1.json.gz",
+      "bytes": 2331,
+      "sha256": "e33ab35bbb56b0eaab56df71e329f10daf7a8ed92b72c2be771d769248b5d5f2"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_29_0.json.gz",
+      "bytes": 2245,
+      "sha256": "eb4e3a54ae9046536d3295cfef1ce22da1f7c6d171af671a6e34f9dd2d2d93a2"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_29_1.json.gz",
+      "bytes": 2244,
+      "sha256": "9aa29abc99e944f45327a6733b63405bcf125bcc1db2a794580073d29cf89bb5"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_2_0.json.gz",
+      "bytes": 2318,
+      "sha256": "752717d9ad445c06a57336210c73d7c61adb34be78a695f5c084e0a49e3b4946"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_2_1.json.gz",
+      "bytes": 2364,
+      "sha256": "af4ac8576e9bd69db7f1d4736242b32048edf68632d31b3738f9ec89cc2a2127"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_30_0.json.gz",
+      "bytes": 2225,
+      "sha256": "32d340e6796cbeb7cfd68d6ff168b1565620f406f7bb9205234d3c63827a08e4"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_30_1.json.gz",
+      "bytes": 2225,
+      "sha256": "bc4bb87f1b0a55e4a64ae0ef63068ec7e7d56b91c88b0ae0641db656d94f2335"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_31_0.json.gz",
+      "bytes": 2254,
+      "sha256": "5f5eb46d4892b7695d6f51df52b33ea64e5edc0d9c675edfaf2d9548428c99de"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_31_1.json.gz",
+      "bytes": 2284,
+      "sha256": "8d337af4c34ad30d20c29b58f894c0284ee060d9692f78ebf564af7afe911b83"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_32_0.json.gz",
+      "bytes": 2234,
+      "sha256": "4349ce4e0f90b821b15449b63daee997bdae708e8cd71c18a81e45e9aded6ad7"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_32_1.json.gz",
+      "bytes": 2263,
+      "sha256": "047cd9aaf36668256b8e5fb3164fd26181c7e456d756c88f17445f1416f87579"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_33_0.json.gz",
+      "bytes": 2335,
+      "sha256": "70516332a8b3324f770724f3b85e20dd1210fb290c1b28fb07cea404a8d2f224"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_33_1.json.gz",
+      "bytes": 2365,
+      "sha256": "ce915cf81b603b4d1c99f1f05e416ec62604121d8cd03c6c3fc80832e5ff73b5"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_34_0.json.gz",
+      "bytes": 2315,
+      "sha256": "7a56053196da9e2d559a7d443f6379e289f0a7e4cf4aeecc71e31683664550f1"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_34_1.json.gz",
+      "bytes": 2346,
+      "sha256": "f356ecb12ba2ac5b0fe2a3928fcd35860a91a6a25cef9a29b052d792fd70fb2d"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_35_0.json.gz",
+      "bytes": 2331,
+      "sha256": "86bf79cb639babf1941f8ff533d3ecc1972cd665db0afbd5a477beda4765c6f3"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_35_1.json.gz",
+      "bytes": 2365,
+      "sha256": "18ea8bdcaf23b3c6dac7f9c0ad6efdc5880a64dd0a06561bd164648d97056d02"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_36_0.json.gz",
+      "bytes": 2310,
+      "sha256": "a16062d4f111d846bf21458f1479cbdbe120dc95ff6acc5b8dbefc2c10eb175b"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_36_1.json.gz",
+      "bytes": 2346,
+      "sha256": "6d54d68ab40aa526671f70ddf4996aa9116b8b0d59afb8adf6e72505db038e3b"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_37_0.json.gz",
+      "bytes": 2288,
+      "sha256": "3e8e4a1fbffbb817e78975f51a219111fef24df53c291568889ed8117546508f"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_37_1.json.gz",
+      "bytes": 2251,
+      "sha256": "871f1553f04c5e1ea25bdae8f9f6bd612a677f8a34841f625476dfc7632cfc88"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_38_0.json.gz",
+      "bytes": 2269,
+      "sha256": "09bb2db830aed0fcc5fbb76b1d9fe85babc1745076a3673a8b87763afc3844f9"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_38_1.json.gz",
+      "bytes": 2231,
+      "sha256": "1c2e481e321096fea428023fe0db9aca0ff1d11080944f59325d02bc54407d39"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_39_0.json.gz",
+      "bytes": 2252,
+      "sha256": "817b5b42761461cede29705a8882f529bd4e3599e2ea101294c5a7fd6bf6fbe6"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_39_1.json.gz",
+      "bytes": 2246,
+      "sha256": "4fd6881ac68fb3a633e00d52e7a5453798e672bc9e7d61fcb1fbf30e88ab2438"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_3_0.json.gz",
+      "bytes": 2344,
+      "sha256": "828164324b79ff01a3a868621f6576a3a30c414363c2aa015a393e80faa3652d"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_3_1.json.gz",
+      "bytes": 2339,
+      "sha256": "77ba2c221fbed738e4509cb7e09d67e9daea32b578f0a869f3247428616a26a1"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_40_0.json.gz",
+      "bytes": 2232,
+      "sha256": "835c0c1a22ff6e560dd9ff0ce921b937578c5b959bf5efe14ddfefaf6ddea40e"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_40_1.json.gz",
+      "bytes": 2225,
+      "sha256": "8cf9d8c849624c796258a2d94f04b6c0bd54e049f6b0875120d25a4f354ce115"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_41_0.json.gz",
+      "bytes": 2246,
+      "sha256": "c7ea5f54233b8d6443e04233bcf2ceef71dac2aca7203dc07be8aef7fbcbd26b"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_42_0.json.gz",
+      "bytes": 2175,
+      "sha256": "9b51f81b845b2e18c22270a9968a4287bf1f70fefc8d80e228b0fb8eb24f44bd"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_43_0.json.gz",
+      "bytes": 2264,
+      "sha256": "0aa035e943c581a7af44a39170b437b7033539f190f0c4a086f1fec76bb29580"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_44_0.json.gz",
+      "bytes": 2177,
+      "sha256": "e313cd64c3f6c3498e51e1ce8196ad8fb2bbf84e8682a138956d31f90fa1227d"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_45_0.json.gz",
+      "bytes": 2246,
+      "sha256": "c7ea5f54233b8d6443e04233bcf2ceef71dac2aca7203dc07be8aef7fbcbd26b"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_46_0.json.gz",
+      "bytes": 2175,
+      "sha256": "9b51f81b845b2e18c22270a9968a4287bf1f70fefc8d80e228b0fb8eb24f44bd"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_47_0.json.gz",
+      "bytes": 2264,
+      "sha256": "0aa035e943c581a7af44a39170b437b7033539f190f0c4a086f1fec76bb29580"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_48_0.json.gz",
+      "bytes": 2177,
+      "sha256": "e313cd64c3f6c3498e51e1ce8196ad8fb2bbf84e8682a138956d31f90fa1227d"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_4_0.json.gz",
+      "bytes": 2325,
+      "sha256": "b681586617dce9b8735039ad5d212d5a4ce9f7f25ce8f7c49ec96e1fead5b9c3"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_4_1.json.gz",
+      "bytes": 2318,
+      "sha256": "430d0b2fc98de2ea642ad7f61e2d6dd7a5c74928058a3705077aca5465108e02"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_5_0.json.gz",
+      "bytes": 2293,
+      "sha256": "36fa120ab3fb059c50588a0c7760dc5affe7fb49d09dca0f2e8b30237b37f23b"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_5_1.json.gz",
+      "bytes": 2290,
+      "sha256": "bfb48138272a2b52f5b2f32615e98f7b8b87f1f9150b8aaff696771957e082d1"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_6_0.json.gz",
+      "bytes": 2273,
+      "sha256": "188c9bfbf203f57e773b83c08b0ea4aab0affa9befa8fbf207c5154d000e00a1"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_6_1.json.gz",
+      "bytes": 2270,
+      "sha256": "cab024000c4f044185a0ede25e047ddf983766aaf367db6ecc451d09da7a22f2"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_7_0.json.gz",
+      "bytes": 2293,
+      "sha256": "789b521317f5c99b08a09db1eb84c65b71e410ac0b37c3d3484b6196d8176333"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_7_1.json.gz",
+      "bytes": 2289,
+      "sha256": "c99eed1e636e2d34157fee02886fd695be8a56c75b87a48e8a7936d5686be7bc"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_8_0.json.gz",
+      "bytes": 2272,
+      "sha256": "0741fe0e6ede7053b94fb605c9930b1032f9c40322bf88d223af5d6f7ec04c4a"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_8_1.json.gz",
+      "bytes": 2271,
+      "sha256": "183290d3216cf3392165a6783e9f24586e7eb5cd9dc9f1fa7c4a0d20e15572e1"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_9_0.json.gz",
+      "bytes": 2326,
+      "sha256": "7dd22174779b3914e80c74f913005218ad18f48675200fa49040bb74d9c503b4"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/worker_return_9_1.json.gz",
+      "bytes": 2328,
+      "sha256": "79baf3402e5f1edcac36b7aa7c4c7993dc0dd3e5ccaa1c894136646b04996d3b"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/workers/0/console.log",
+      "bytes": 38884,
+      "sha256": "4dad8813cc8dfd15ddb935c0096ced1ff44539be1357b9e28f4dcbc5a64579bc"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/workers/1/console.log",
+      "bytes": 26148,
+      "sha256": "1d383335ac10cd0f41a919baa56ab2e6ca32f0c5d6ad6ca985e269eba41ee703"
+    },
+    {
+      "path": "stage/runs/t628s_actual_memory_recovery/workers/2/console.log",
+      "bytes": 67,
+      "sha256": "e07bcd2b97fd5f4e0be2dbd3ae4ba19f0e117e66acda47e37298b37758a4cc07"
+    }
+  ],
+  "active_runs_included": false
+}

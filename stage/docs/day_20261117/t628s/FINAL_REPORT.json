@@ -1,0 +1,1692 @@
+{
+  "state": "COMPLETE",
+  "error": null,
+  "summary": {
+    "state": "COMPLETE",
+    "pid": 91285,
+    "error": null,
+    "physics": 2570220,
+    "commands": 86,
+    "elapsed_s": 1315.7946202754974,
+    "results": [
+      {
+        "arm": "fixed",
+        "stop_reason": null,
+        "rounds": [
+          {
+            "state": "COMPLETE",
+            "round": 0,
+            "sigma": [
+              0.2,
+              0.2
+            ],
+            "coverage": {
+              "old_successes": 3,
+              "new_successes": 3,
+              "return_spread_by_task": [
+                2.0322881880730623,
+                0.008235808156681568,
+                1.4893677484022187,
+                1.9821469241546483
+              ],
+              "pass_gate": true
+            },
+            "update": {
+              "attempted_optimizer": 2,
+              "applied": 2,
+              "trace": [
+                {
+                  "step": 0,
+                  "loss": 0.09547085148230124,
+                  "policy_loss": 0.09547085148230124,
+                  "keep": 0.0,
+                  "gradient_norm": 0.4413237663813983,
+                  "task_latent_KL": [
+                    4.5389267046569615e-06,
+                    4.752938063081765e-06,
+                    4.43212459564037e-06,
+                    5.343005617894539e-06
+                  ],
+                  "accepted": true
+                },
+                {
+                  "step": 1,
+                  "loss": 0.09527788575990796,
+                  "policy_loss": 0.09527674488314697,
+                  "keep": 1.1408767609881206e-06,
+                  "gradient_norm": 0.43327843979832903,
+                  "task_latent_KL": [
+                    1.7544354760503218e-05,
+                    1.8345621470707952e-05,
+                    1.6910040865360126e-05,
+                    2.0720123682142624e-05
+                  ],
+                  "accepted": true
+                }
+              ],
+              "peer_batch": [
+                {
+                  "returns": [
+                    0.538597042356016,
+                    -0.3563858634341811,
+                    0.5370092822519459,
+                    0.5095740462551317
+                  ],
+                  "peer_RMS": 0.47679423739655574,
+                  "initial_density_reconstructed": true
+                },
+                {
+                  "returns": [
+                    -0.43508212399816026,
+                    -0.39056411948096215,
+                    -0.4182282878649859,
+                    -0.4612509896510944
+                  ],
+                  "peer_RMS": 0.10829039113177663,
+                  "initial_density_reconstructed": true
+                },
+                {
+                  "returns": [
+                    0.5321427533052594,
+                    0.17657651096279559,
+                    0.1765765109627954,
+                    0.5281410106828064
+                  ],
+                  "peer_RMS": 0.21128361773452056,
+                  "initial_density_reconstructed": true
+                },
+                {
+                  "returns": [
+                    -0.30537166573826274,
+                    -0.39041097347995807,
+                    -0.3628430066433235,
+                    0.5520560388186423
+                  ],
+                  "peer_RMS": 0.49267376879172003,
+                  "initial_density_reconstructed": true
+                }
+              ],
+              "optimizer": "SGD_no_momentum",
+              "sigma": [
+                0.2,
+                0.2
+              ],
+              "full_current_history_BPTT": true,
+              "reference_is_fixed_T608_not_round_initial": true,
+              "no_Critic": true
+            },
+            "candidate": {
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/fixed/round_0/proposal.pt.gz",
+              "sha256": "39d9ae0d8af01e1a70bf8f3269a1d4a57a6a4447e3fd7191ab3fd55bcf4aea97",
+              "bytes": 80746,
+              "policy_hash": "7a286e740f23fb46fbf99060a4ff3e03dac4bc5cc64903a07d3ce0fdc1001e42",
+              "joint_hash": "bb80b8a8b2fa342ec17a1e088e63cece86f3358c41df8471a57a81b912863e4f",
+              "sigma": [
+                0.2,
+                0.2
+              ],
+              "remote_receipt": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/fixed/round_0/proposal.pt.remote.json"
+            },
+            "start_model": {
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/fixed/round_0/start.pt.gz",
+              "sha256": "b576ddd403dccaecf8c94fe61b87d10bd9ee79e7f05c288a529d2f1f5d88f83b",
+              "bytes": 80674,
+              "policy_hash": "9e2017ccc814478ebcfb9d025ac5e58a45e2719437fc78c0164ce08999c6983c",
+              "joint_hash": "17d1cbae8d32c9bec16f49fe22657960e29f8f9182f2a77fb79f857597f1d76b",
+              "sigma": [
+                0.2,
+                0.2
+              ],
+              "remote_receipt": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/fixed/round_0/start.pt.remote.json"
+            },
+            "sentinel_rows": [
+              {
+                "complete": true,
+                "collision": false,
+                "success": true,
+                "timeout": false,
+                "administrative_censor": false,
+                "physics_steps": 41341,
+                "remaining_m": 0.19999706806313733,
+                "terminal_contacts": [
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01568916094437023
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015684461824106516
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015649945039489313
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015644692666449536
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015692322494814157
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015687164638253356
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015652691320390114
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01564781095318911
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.07941904256171725
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.07941904256171725
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.06702216093044028
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.06702216093044028
+                  }
+                ],
+                "policy_hash": "7a286e740f23fb46fbf99060a4ff3e03dac4bc5cc64903a07d3ce0fdc1001e42",
+                "physics": 41341,
+                "array_digest": "2f415dfaa4653b3b6e2f026f1ef58481165be3a961ebde54f1eeeaf43b9ada19",
+                "array_hashes": {
+                  "states": "51a7bfa8acfceb148f5019f6f14084432e1b72a93fd0c2d4150c7b2e4c3f7098",
+                  "actions": "5a2534d7c3179cb3e9ce7a746ca85c919e2b876d64be02484bb75712b0ed99a7",
+                  "native_counts": "ac9621a2561b97be132a2e5f72aa72929e06256a470556aa56687c28c20c444a",
+                  "next_states": "0c2f3f190395a02139e040e62cc6f7c035443ffe06eb4c9739000361ca6c8df7",
+                  "poses": "f03ea33621bda3748ba5b250f8382ef0161bc31e1b7d042764881cf70fc398e5",
+                  "next_poses": "6cbb27cccda85c9887c849ae3366c63bdd73aa8b9dacc3c80b0e6943bcd1bc6c",
+                  "end_flags": "51fd923f9dfcc7090624761bca890af67949b8f5263933a86f55958773fa0124",
+                  "rewards": "f8bec72ac60e389808390fbd508af94e59eb7cd00158c708285836725d5f42dd",
+                  "history_poses": "358624557a8baa1f84fc86b612d5e5df2972d2713a2cb21cce1e69d6a7106e79",
+                  "history_goals": "7d62120849bcf9f9c568c3c92d4119db6ab50267c4d1c053153d4c467cc63dd1",
+                  "history_times": "a10d6b1adcaecc878ab2d8120769e792a1a036e7433dd4fc90da4df568a0eb21",
+                  "environment_rewards": "f8bec72ac60e389808390fbd508af94e59eb7cd00158c708285836725d5f42dd",
+                  "initial_native_integration": "698dbb46e1fcdc025eca00f94ba99d1822e2418b89f06ea7639fcefe56a55342",
+                  "final_native_integration": "f1d0c57a1c9f9e0001c9c70b25f6bb826afddc7031d3b43b5fc79f2dfae0ff1c",
+                  "hidden_before": "dc69f7d882e6da4eaf373b7f7fdaf44c42a91f07839faf522b14ff5c6c6894e3",
+                  "last_hidden_after": "02d38b192a79b4ad111c68dd6fd41e739aa0854f68e6f122611b13c567071870",
+                  "innovations": "c1a9e094fde733766ca00c1e3d2b50c1f35ee904136290205bd76a159d26bf7b",
+                  "raw_actions": "098965dd40414e2e265f3772e15610b8648e05082bd7b51e27a35708480eef52",
+                  "atom": "bffc009f1780fc29e0cb2f87763540ed9745823dced2af10b5d7b215e8e6a2a9",
+                  "locations": "098965dd40414e2e265f3772e15610b8648e05082bd7b51e27a35708480eef52",
+                  "logp": "5b5cd5e00fdf2b621cc613de05c1b1cf202224039390fecb5737a64ed599bebe",
+                  "stochastic": "e9ce22c8c39d9c1e21d0730bb5e3d755dbd722126b57e1fcd24e5f9389f86c9e",
+                  "extra_hidden_before": "6cdf45d5fb3c652597744c9b9069b2c78c0d3b576c4e7493c7d7869e1ccf09f0",
+                  "anchor_hidden_before": "a037fb10927dfce27eff387dff20bb657d011ae0e3c637cb87a71e1643f52edb",
+                  "hold_sha256": "b6359d71593567ddee477cfa4c8174e4591237468df9434143878b38ba363b48",
+                  "ownership": "e9ce22c8c39d9c1e21d0730bb5e3d755dbd722126b57e1fcd24e5f9389f86c9e",
+                  "task_goal_xy": "256922c51207f151b6a54e5f4b9bbf80d182f8f4f85dae287c70437e9fd34d35",
+                  "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+                  "last_extra_hidden_after": "2233ab0f28e876439deda67084bba1225ebba7827d756a8dbe64fd30f40a58a3",
+                  "last_anchor_hidden_after": "18752804a0ac2d3d30793afab58a4cee40d22c282879205fc7cd3deaf895cbfb"
+                },
+                "integration_sha256": "f1d0c57a1c9f9e0001c9c70b25f6bb826afddc7031d3b43b5fc79f2dfae0ff1c",
+                "pid": 91296,
+                "cpu": 0,
+                "teacher": false,
+                "teacher_first": null,
+                "job_id": "t502_field_sector4_offset2",
+                "field_detail": {
+                  "id": "t502_field_sector4_offset2",
+                  "field_boundary_crossed": false,
+                  "field_qualified_success": true
+                },
+                "observation_contract": {
+                  "decisions": 414,
+                  "pose_min_xy": [
+                    -6.8,
+                    -6.984730198160026
+                  ],
+                  "pose_max_xy": [
+                    -0.07663929228280246,
+                    8.327598234202001e-16
+                  ],
+                  "input_dim": 120
+                },
+                "role": "FINAL49",
+                "seed": null,
+                "request": {
+                  "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/fixed/round_0/proposal.pt.gz",
+                  "job": {
+                    "id": "t502_field_sector4_offset2",
+                    "source_reset_id": "t502_new_sector4_offset2",
+                    "group": "6m_LEFT",
+                    "case": {
+                      "id": "6m_LEFT",
+                      "seed": 2029653601,
+                      "angle_deg": -17.3,
+                      "side": "LEFT",
+                      "distance_m": 9.616652224137047,
+                      "step_cap": 64112,
+                      "group": "original_5m_primary"
+                    },
+                    "delta_x_m": 0.0,
+                    "delta_y_m": 0.0,
+                    "delta_yaw_deg": 0.0,
+                    "seed": 0,
+                    "mode": "deterministic",
+                    "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+                    "expected_initial120_sha256": null,
+                    "wide_course": true,
+                    "circle_shift_x_m": 0.6,
+                    "fullfield_start_pose": [
+                      -6.8,
+                      8.327598234202001e-16,
+                      -0.7853981633974484
+                    ],
+                    "fullfield_goal_xy": [
+                      -1.2491397351303002e-15,
+                      -6.8
+                    ],
+                    "start_sector": 4,
+                    "sector_offset": 2
+                  },
+                  "seed": null,
+                  "query": false,
+                  "full_path": null
+                },
+                "loaded_model_sha256": "39d9ae0d8af01e1a70bf8f3269a1d4a57a6a4447e3fd7191ab3fd55bcf4aea97",
+                "model_sha256": "39d9ae0d8af01e1a70bf8f3269a1d4a57a6a4447e3fd7191ab3fd55bcf4aea97",
+                "full": false,
+                "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/fixed/round_0/evaluation/t502_field_sector4_offset2.npz",
+                "sha256": "0bcf213874c99952482b4c1ba4556dd477884d17bb8115b696a01b9327087855",
+                "full_arrays_generated_but_not_saved": true
+              },
+              {
+                "complete": true,
+                "collision": false,
+                "success": true,
+                "timeout": false,
+                "administrative_censor": false,
+                "physics_steps": 29897,
+                "remaining_m": 0.19990855077556036,
+                "terminal_contacts": [
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015674637420272086
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01566513654893803
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015593409089710311
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01558438176383535
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015742833044772198
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01573257823562646
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015662068719660915
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015651358996640635
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.051595276013763854
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.05403843815131608
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.05403843815131608
+                  }
+                ],
+                "policy_hash": "7a286e740f23fb46fbf99060a4ff3e03dac4bc5cc64903a07d3ce0fdc1001e42",
+                "physics": 29897,
+                "array_digest": "47fc81037e83ab9804d73a86753ed642f964451aeb597dcc71c99677a686214a",
+                "array_hashes": {
+                  "states": "e89b65c709cb01cda6f386ee923d7a1d7320673d55fcaaba556ffbe9bc1b04ba",
+                  "actions": "ec707fd1ee89f0b1df15bea0e848a7bd6e7bdae487d3774d7650c1b15906cfd0",
+                  "native_counts": "b35dd789f8262bf75a5f77585dabeb93ff65b7b3f5b200cbdffc1f0c3e2a87ec",
+                  "next_states": "d831b9e860721db75a99bf7d077ade2cec364135209233c214591e9726176b16",
+                  "poses": "fb282bf7d2b4cd76833e2b2462377555c30f0c657cd3727d112e2cae5b1d1616",
+                  "next_poses": "5991d144985c34034412f3059d0b32a8d70fcf0e4a4bd27757e12180d70e04ce",
+                  "end_flags": "22079b858a9221fbb0f2f0281ddd157eab35dfedc8fb94d0633363908c01ad89",
+                  "rewards": "cec9bec76092d1f3dff1d84e012d08c6a3b1698005ceee2d800542aca8e777d0",
+                  "history_poses": "b8f946ee8379045b7f3501c4989811612dfe62cefd736dc2f4edfc5b7036d89c",
+                  "history_goals": "7bd7c031d23c7eb5fa0895291c16cde225411c25093f2766c9e84aabcd4e8c21",
+                  "history_times": "fffafdc137d16502d9f53d0b075c167ae5e702a7ee3a51fa811de799f75b38f1",
+                  "environment_rewards": "cec9bec76092d1f3dff1d84e012d08c6a3b1698005ceee2d800542aca8e777d0",
+                  "initial_native_integration": "68435c9af858aa8d83abb28c1d8909eea07034007dd5ac864d988d4729b278d1",
+                  "final_native_integration": "d475d6c4a73901464d5efd85ff23b31f575e522d3f0192050a6a0d8023a15808",
+                  "hidden_before": "00e0a15e5c15675f77f5a8259d90f58f9dac70855675c0e765cd2782e367f44a",
+                  "last_hidden_after": "939a9c66bf6a10ebe0d07e3e6f47d119811fabe84d220e6e2145394b2f15c019",
+                  "innovations": "461b87d05be6cb10daefd6b68cb86e8d874535a2fd07774dfc507b6df1daeb01",
+                  "raw_actions": "45851ede6d4ae35be96e77ac31c7e6baa5931bf3d37390d3ab4fae61d590d60a",
+                  "atom": "d8071e0ad3ea349c9dda89d281c8438dfd17a7fc50ac35502068b37fd088e15c",
+                  "locations": "45851ede6d4ae35be96e77ac31c7e6baa5931bf3d37390d3ab4fae61d590d60a",
+                  "logp": "cfa91bd5d5cadfffcd5a1a96288f204b08ba2c73f10bb5d8cca77eb4bfedcf65",
+                  "stochastic": "2583f6104b149e54635c380cbd86d3e83cc99426131f3720f3fc4e48da8f9341",
+                  "extra_hidden_before": "2398ff44195ff1c79f17514cb86606e574dce229f2852c760958544d57640dab",
+                  "anchor_hidden_before": "b1860471ba1ec923f3e5acb83146ecfb4eb59261ac7901eafa7d2096447317ad",
+                  "hold_sha256": "f801ed5135903339f4c4725826a0d2076d9550dd4caea93277a39440d698b8cc",
+                  "ownership": "2583f6104b149e54635c380cbd86d3e83cc99426131f3720f3fc4e48da8f9341",
+                  "task_goal_xy": "c98ebe0b676276ae49b862f480ef79a311ef09bc0e1a1e03efd9a304bb55a175",
+                  "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+                  "last_extra_hidden_after": "1f965a61cf48a3c74940ac5428dde13ab07cd7f56706aa29568d328cac72b4e0",
+                  "last_anchor_hidden_after": "03856a86b4780bcf39d698316dded992fc0a1cae0ba56933205fed76fb440f88"
+                },
+                "integration_sha256": "d475d6c4a73901464d5efd85ff23b31f575e522d3f0192050a6a0d8023a15808",
+                "pid": 91296,
+                "cpu": 0,
+                "teacher": false,
+                "teacher_first": null,
+                "job_id": "wide117_8m_dev6_LEFT_13",
+                "field_detail": {
+                  "id": "wide117_8m_dev6_LEFT_13",
+                  "field_boundary_crossed": false,
+                  "field_qualified_success": true
+                },
+                "observation_contract": {
+                  "decisions": 299,
+                  "pose_min_xy": [
+                    -0.75,
+                    -4.43411529260341
+                  ],
+                  "pose_max_xy": [
+                    2.193797001958632,
+                    0.75
+                  ],
+                  "input_dim": 120
+                },
+                "role": "FINAL49",
+                "seed": null,
+                "request": {
+                  "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/fixed/round_0/proposal.pt.gz",
+                  "job": {
+                    "case": {
+                      "angle_deg": -17.3,
+                      "distance_m": 8.0,
+                      "group": "original_5m_primary",
+                      "id": "6m_LEFT",
+                      "seed": 2029653601,
+                      "side": "LEFT",
+                      "step_cap": 53334
+                    },
+                    "circle_shift_x_m": 0.6,
+                    "delta_x_m": 0,
+                    "delta_y_m": 0,
+                    "delta_yaw_deg": 0.0,
+                    "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+                    "expected_initial120_sha256": null,
+                    "group": "6m_LEFT",
+                    "id": "wide117_8m_dev6_LEFT_13",
+                    "mode": "deterministic",
+                    "radial_distance_m": 8.0,
+                    "seed": 0,
+                    "source_reset_id": "dev6_LEFT_13",
+                    "wide_course": true
+                  },
+                  "seed": null,
+                  "query": false,
+                  "full_path": null
+                },
+                "loaded_model_sha256": "39d9ae0d8af01e1a70bf8f3269a1d4a57a6a4447e3fd7191ab3fd55bcf4aea97",
+                "model_sha256": "39d9ae0d8af01e1a70bf8f3269a1d4a57a6a4447e3fd7191ab3fd55bcf4aea97",
+                "full": false,
+                "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/fixed/round_0/evaluation/wide117_8m_dev6_LEFT_13.npz",
+                "sha256": "4eb86fc4f77354106bab9f673fa9f9eb83b512311fdd26b95844fa99e12dbf1b",
+                "full_arrays_generated_but_not_saved": true
+              },
+              {
+                "complete": true,
+                "collision": true,
+                "success": false,
+                "timeout": false,
+                "administrative_censor": false,
+                "physics_steps": 20697,
+                "remaining_m": 4.848223165007588,
+                "terminal_contacts": [
+                  {
+                    "geom1": "real_rect_obs_0",
+                    "geom2": "chassis_collision",
+                    "distance": -1.7775607243584184e-06
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01566073812075565
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015656280992046065
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015630309720420454
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015625838889834126
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015711216356797578
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01570752760611678
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015680963242036466
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015676910152249257
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.048706406182457654
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.046927571924679896
+                  }
+                ],
+                "policy_hash": "7a286e740f23fb46fbf99060a4ff3e03dac4bc5cc64903a07d3ce0fdc1001e42",
+                "physics": 20697,
+                "array_digest": "ea66eb30c8d5b9bd530ad4a3ae0ebb2c12b40caae9affb52b20252dd56077cc9",
+                "array_hashes": {
+                  "states": "36be8e491003b7118cbb60494d3eb4b0ace51822d50ecde651fe2376fa2218a8",
+                  "actions": "f881506f0f46a9c139eb76fa0508a6a84dfc6619594956c4532b4e45082cf79d",
+                  "native_counts": "41e9aa73cec2f688bbbb8c45194515b8b4b2cd4d3d24fa6b498b29de2050eb02",
+                  "next_states": "44c3a3129b86ded3a09e709687a779efd8ba838cbcf0a2ffb58639e29b580c3a",
+                  "poses": "02ba00095e5ff9b1ec66e92f24a908cdb567a2ecdd9dc86c278a2c67699968f7",
+                  "next_poses": "00170fcd9e1c6e0a50365e300ad78c85ce576de04906e308c5d3ad37111ed003",
+                  "end_flags": "b4f3e2b8a22bd6d9f7c342ff05a9d6d285b621d014706bc6d67dbea95a6d2cc0",
+                  "rewards": "214b6ffacbf1c260ba420fd3307330432b10e8fd0fab63983b9a5d766e6e2ee3",
+                  "history_poses": "f14274212982e6b9c0cc266adf096b24717c075cf6130dcf0b4b1942342431cb",
+                  "history_goals": "9f4764b081f7936261758c0644ab36df2c17f612e4bdcb048479dcb71a19ba65",
+                  "history_times": "ce65c22fcdcc5319f45026d2a9f683f405491888be9e13bc7dc6ba2c833712df",
+                  "environment_rewards": "214b6ffacbf1c260ba420fd3307330432b10e8fd0fab63983b9a5d766e6e2ee3",
+                  "initial_native_integration": "768f11a6d34ada6d0e5722430b6c5527cb90e2a4d5525ddd51a08bad33a18b5a",
+                  "final_native_integration": "29ca1273af38bc5c59ed95afd18bf10f3eaddb9f82d01171ea48a17ca9da2ce1",
+                  "hidden_before": "b83c63db5334bd4ec8119132760837d3fb11f67435ae641421fc8d3b076cfaf2",
+                  "last_hidden_after": "e9aceaf06623586e96e52de359fd338376edab7a11920f334839bfeb7d8f2a0f",
+                  "innovations": "46a315600efe14b5bd0e35b33a11fc4ca05b0751644d5a59e0231013aebe29c1",
+                  "raw_actions": "11e5bbd4b426b32da8deabeed9a1038aee0382031d37201c452df0cabcf0fa2e",
+                  "atom": "32d70709f60c1d663be8539a9c12ab7813584951dab26485cf770822a84cb9b3",
+                  "locations": "11e5bbd4b426b32da8deabeed9a1038aee0382031d37201c452df0cabcf0fa2e",
+                  "logp": "1679a4c54d8945e53e98f390394b00e25e582da762475cfe1b3973a059973129",
+                  "stochastic": "e01f49265fc7d9e2da444603158a2f61c9133f48747cb4f67d70749bb76e5184",
+                  "extra_hidden_before": "c81c139e8e0fece34a7ae1ac420ac43d040f1aec6979246844c206f07d5ef88a",
+                  "anchor_hidden_before": "8d22a2c91f7db620765e09fc7755f008d9c1da4235013a1eef1fc35193ce2135",
+                  "hold_sha256": "dd68f5e1da918ea423955c755d4ccd7ca68d8757619637ff0d2cde7758b703a7",
+                  "ownership": "e01f49265fc7d9e2da444603158a2f61c9133f48747cb4f67d70749bb76e5184",
+                  "task_goal_xy": "8867bafac354f24811273d75b56f5f73c4a0710fc5efcf264c700040b97c7d29",
+                  "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+                  "last_extra_hidden_after": "f8c5a9f81e8b5e24991421c10ae6b6030e4e2e73bd9646f461bdbc0a4a4c2039",
+                  "last_anchor_hidden_after": "2f95c8f7915382e9c58900e8fb6d1d7d2cd509c7460e972eec3c4f6f51ef72ac"
+                },
+                "integration_sha256": "29ca1273af38bc5c59ed95afd18bf10f3eaddb9f82d01171ea48a17ca9da2ce1",
+                "pid": 91296,
+                "cpu": 0,
+                "teacher": false,
+                "teacher_first": null,
+                "job_id": "t502_field_sector1_offset2",
+                "field_detail": {
+                  "id": "t502_field_sector1_offset2",
+                  "field_boundary_crossed": false,
+                  "field_qualified_success": false
+                },
+                "observation_contract": {
+                  "decisions": 207,
+                  "pose_min_xy": [
+                    0.016347764030999943,
+                    4.8052831180877815
+                  ],
+                  "pose_max_xy": [
+                    4.8083261120685235,
+                    5.285599458274868
+                  ],
+                  "input_dim": 120
+                },
+                "role": "FINAL49",
+                "seed": null,
+                "request": {
+                  "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/fixed/round_0/proposal.pt.gz",
+                  "job": {
+                    "id": "t502_field_sector1_offset2",
+                    "source_reset_id": "t502_new_sector1_offset2",
+                    "group": "6m_LEFT",
+                    "case": {
+                      "id": "6m_LEFT",
+                      "seed": 2029653601,
+                      "angle_deg": -17.3,
+                      "side": "LEFT",
+                      "distance_m": 9.616652224137045,
+                      "step_cap": 64112,
+                      "group": "original_5m_primary"
+                    },
+                    "delta_x_m": 0.0,
+                    "delta_y_m": 0.0,
+                    "delta_yaw_deg": 0.0,
+                    "seed": 0,
+                    "mode": "deterministic",
+                    "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+                    "expected_initial120_sha256": null,
+                    "wide_course": true,
+                    "circle_shift_x_m": 0.6,
+                    "fullfield_start_pose": [
+                      4.8083261120685235,
+                      4.808326112068523,
+                      3.141592653589793
+                    ],
+                    "fullfield_goal_xy": [
+                      -4.808326112068523,
+                      4.8083261120685235
+                    ],
+                    "start_sector": 1,
+                    "sector_offset": 2
+                  },
+                  "seed": null,
+                  "query": false,
+                  "full_path": null
+                },
+                "loaded_model_sha256": "39d9ae0d8af01e1a70bf8f3269a1d4a57a6a4447e3fd7191ab3fd55bcf4aea97",
+                "model_sha256": "39d9ae0d8af01e1a70bf8f3269a1d4a57a6a4447e3fd7191ab3fd55bcf4aea97",
+                "full": false,
+                "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/fixed/round_0/evaluation/t502_field_sector1_offset2.npz",
+                "sha256": "daa280fe9e11d06c0383b3dfceb24d980f868cdbc18826d4ada4c23508e9979a",
+                "full_arrays_generated_but_not_saved": true
+              },
+              {
+                "complete": true,
+                "collision": false,
+                "success": false,
+                "timeout": true,
+                "administrative_censor": false,
+                "physics_steps": 53334,
+                "remaining_m": 4.452570378523596,
+                "terminal_contacts": [
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015671337306666144
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015666270597906956
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015628830597240198
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015623996204137583
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015714361053182607
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015708614385808756
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015671971801696175
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015666222477020778
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.047647771243458224
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.04975286781153494
+                  }
+                ],
+                "policy_hash": "7a286e740f23fb46fbf99060a4ff3e03dac4bc5cc64903a07d3ce0fdc1001e42",
+                "physics": 53334,
+                "array_digest": "6298c080923efaf48b3de9b276c429c4f5bc3d507a7be57ef9d2fad206ceec46",
+                "array_hashes": {
+                  "states": "e84f8f28ac6b9a2a93a7c5b097dddf3b9a37aa3a4c0ac70ed987c81d8413da6b",
+                  "actions": "478385b08ae86b4ad3d36b26ef37eb7dce0ce27714c71248755f467c5ac76799",
+                  "native_counts": "75b34ac72c1538a76aeea2394440c612dfe25cb64bf7544de5445e0828374c06",
+                  "next_states": "28649002ab54e8383a73998dc5ca8142fd7ec3cba5d6fde57294d4c7d29e145a",
+                  "poses": "16208207534a62768761ca65f15c84225b0302a49afcbd64937d0d87dd09830b",
+                  "next_poses": "22c62aef5e70e5c0973bb56569748cd69867794894b8c72bac6b4558ed36385c",
+                  "end_flags": "8b340445d2c445a97784fba8733f21c91304228be01d3da5a65d26fcfd896358",
+                  "rewards": "d483eaea3d042e5277682126e411fc213cbdf9a0dfe65c328b551c0148f70c62",
+                  "history_poses": "0020a6dce218c4f8a84e2b65535fe29512ca4118de0f9799631dfeb2531de8b6",
+                  "history_goals": "e116470cbbeb2dede5e2321d86b14caa772e1f75f63e24346e4364421297de52",
+                  "history_times": "a6a2083bff7740bb1884bbabc5222ae106576b78bf7eed2994dbdc201b6cde1d",
+                  "environment_rewards": "d483eaea3d042e5277682126e411fc213cbdf9a0dfe65c328b551c0148f70c62",
+                  "initial_native_integration": "2621d62f5468d46d2d671e2d7ef08da5aaab8abdf57412305fc4e336d07e39e1",
+                  "final_native_integration": "bedf559732c93e2cad9a9f7f6600a41b8d86e933d26f948a33fa58193cfce2d6",
+                  "hidden_before": "e7561867c64bb4db1af0f56101cd0f3ae861acc863841723e74f770fadd9d2a7",
+                  "last_hidden_after": "82946324767dd7407f8fb11f0483a68e63d0a81fb3d9312b34006da33fd9e53a",
+                  "innovations": "e3c045fb3154ddc2a128fb9e07988238fddf91409ba13787c64d5a9b64dc28e9",
+                  "raw_actions": "9b79f3bba27d36e8babd41d4e31d0c323e8798fbaee0d4594966435bcaa87d6f",
+                  "atom": "97b57a9e05cfc15bb2d24b57dc2f1fc3a7b9bfd633e610ee547f3a041539fcc4",
+                  "locations": "9b79f3bba27d36e8babd41d4e31d0c323e8798fbaee0d4594966435bcaa87d6f",
+                  "logp": "117a8fe7305a581c88473b0583a0610e13938e951941e6967532a0cb2dc94268",
+                  "stochastic": "6a40e19564ed29b506ea43c3e0cc8f2a01ce41923bd46930014ca8f77721ccf9",
+                  "extra_hidden_before": "d96f4f3d7b28edd10e4eec17f5ce0f0a6d38d01ec2f51f24b335ba4f05c6947c",
+                  "anchor_hidden_before": "a2f4ea112e2b2bd0c9952fe3369d8e99aa6bfe3e78213b7d8e23ef3af429fc3f",
+                  "hold_sha256": "30c1f4579f79c7063ab27fc7f4d17b637795c6be3b50bcde9e7864ece0e5f1d3",
+                  "ownership": "6a40e19564ed29b506ea43c3e0cc8f2a01ce41923bd46930014ca8f77721ccf9",
+                  "task_goal_xy": "c98ebe0b676276ae49b862f480ef79a311ef09bc0e1a1e03efd9a304bb55a175",
+                  "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+                  "last_extra_hidden_after": "bac471cdfe78184b9d68726af07e2ad1ae02e718a4ec726788000c496a008081",
+                  "last_anchor_hidden_after": "ba4a78444147dcc941fbe5d36f107dbee1fe7d9e344949ec4eac8a28e91fd4ff"
+                },
+                "integration_sha256": "bedf559732c93e2cad9a9f7f6600a41b8d86e933d26f948a33fa58193cfce2d6",
+                "pid": 91296,
+                "cpu": 0,
+                "teacher": false,
+                "teacher_first": null,
+                "job_id": "wide117_8m_dev6_LEFT_00",
+                "field_detail": {
+                  "id": "wide117_8m_dev6_LEFT_00",
+                  "field_boundary_crossed": true,
+                  "field_qualified_success": false
+                },
+                "observation_contract": {
+                  "decisions": 534,
+                  "pose_min_xy": [
+                    -0.78,
+                    -8.955353927712657
+                  ],
+                  "pose_max_xy": [
+                    2.329750964193498,
+                    0.72
+                  ],
+                  "input_dim": 120
+                },
+                "role": "FINAL49",
+                "seed": null,
+                "request": {
+                  "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/fixed/round_0/proposal.pt.gz",
+                  "job": {
+                    "id": "wide117_8m_dev6_LEFT_00",
+                    "source_reset_id": "dev6_LEFT_00",
+                    "group": "6m_LEFT",
+                    "case": {
+                      "id": "6m_LEFT",
+                      "seed": 2029653601,
+                      "angle_deg": -17.3,
+                      "side": "LEFT",
+                      "distance_m": 8.0,
+                      "step_cap": 53334,
+                      "group": "original_5m_primary"
+                    },
+                    "delta_x_m": -0.03,
+                    "delta_y_m": -0.03,
+                    "delta_yaw_deg": -2.0,
+                    "seed": 0,
+                    "mode": "deterministic",
+                    "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+                    "wide_course": true,
+                    "circle_shift_x_m": 0.6,
+                    "expected_initial120_sha256": null,
+                    "radial_distance_m": 8.0
+                  },
+                  "seed": null,
+                  "query": false,
+                  "full_path": null
+                },
+                "loaded_model_sha256": "39d9ae0d8af01e1a70bf8f3269a1d4a57a6a4447e3fd7191ab3fd55bcf4aea97",
+                "model_sha256": "39d9ae0d8af01e1a70bf8f3269a1d4a57a6a4447e3fd7191ab3fd55bcf4aea97",
+                "full": false,
+                "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/fixed/round_0/evaluation/wide117_8m_dev6_LEFT_00.npz",
+                "sha256": "75aa44dd97cb54935f003c8935d07db2a163445da1111e5712059c1cae9139ca",
+                "full_arrays_generated_but_not_saved": true
+              }
+            ],
+            "passed_sentinel": false,
+            "retained_state_sha": "17d1cbae8d32c9bec16f49fe22657960e29f8f9182f2a77fb79f857597f1d76b"
+          }
+        ],
+        "final49": null,
+        "accepted": false,
+        "model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t608_current_policy_memory/rl_00/proposal.pt.gz",
+          "sha256": "797cce22f6f4bd19bf6af057893282a03de5658d58f8a9aeccbdb720378adde6",
+          "bytes": 280330,
+          "policy_hash": "9e2017ccc814478ebcfb9d025ac5e58a45e2719437fc78c0164ce08999c6983c",
+          "joint_hash": "b9024a30c65305199c6945fa62e69dbb9a467eab6fb5ead908a64d12c9c7550d"
+        },
+        "retained_state_sha": "17d1cbae8d32c9bec16f49fe22657960e29f8f9182f2a77fb79f857597f1d76b"
+      },
+      {
+        "arm": "anneal",
+        "stop_reason": null,
+        "rounds": [
+          {
+            "state": "COMPLETE",
+            "round": 0,
+            "sigma": [
+              0.1,
+              0.1
+            ],
+            "coverage": {
+              "old_successes": 4,
+              "new_successes": 3,
+              "return_spread_by_task": [
+                2.031655439815955,
+                1.9900014053656663,
+                2.0044309047438307,
+                1.9813855729331422
+              ],
+              "pass_gate": true
+            },
+            "update": {
+              "attempted_optimizer": 2,
+              "applied": 2,
+              "trace": [
+                {
+                  "step": 0,
+                  "loss": 0.1239629390442911,
+                  "policy_loss": 0.1239629390442911,
+                  "keep": 0.0,
+                  "gradient_norm": 0.966111407343946,
+                  "task_latent_KL": [
+                    0.0001725007299508426,
+                    0.000206718748295418,
+                    0.00026301176268799594,
+                    0.00032173524634983454
+                  ],
+                  "accepted": true
+                },
+                {
+                  "step": 1,
+                  "loss": 0.12305634466399817,
+                  "policy_loss": 0.12304407415972385,
+                  "keep": 1.2270504274325645e-05,
+                  "gradient_norm": 0.9118569068280058,
+                  "task_latent_KL": [
+                    0.000619737309600068,
+                    0.0007652839426908719,
+                    0.0009489005872810702,
+                    0.0011932190683257996
+                  ],
+                  "accepted": true
+                }
+              ],
+              "peer_batch": [
+                {
+                  "returns": [
+                    0.5318797090125419,
+                    -0.3746805965358803,
+                    0.5358801476401606,
+                    0.5236012113475421
+                  ],
+                  "peer_RMS": 0.48556632327966337,
+                  "initial_density_reconstructed": true
+                },
+                {
+                  "returns": [
+                    0.045632145909584476,
+                    0.04563214590958453,
+                    0.5642797031788246,
+                    -0.4346567248935926
+                  ],
+                  "peer_RMS": 0.45348872837403875,
+                  "initial_density_reconstructed": true
+                },
+                {
+                  "returns": [
+                    0.5414735443624781,
+                    -0.2583310858089799,
+                    0.5489155575070641,
+                    -0.2514349587739063
+                  ],
+                  "peer_RMS": 0.48057088647984525,
+                  "initial_density_reconstructed": true
+                },
+                {
+                  "returns": [
+                    -0.3094569758530073,
+                    0.04525798251057598,
+                    0.4925918241015693,
+                    0.045257982510575785
+                  ],
+                  "peer_RMS": 0.36812424692005147,
+                  "initial_density_reconstructed": true
+                }
+              ],
+              "optimizer": "SGD_no_momentum",
+              "sigma": [
+                0.1,
+                0.1
+              ],
+              "full_current_history_BPTT": true,
+              "reference_is_fixed_T608_not_round_initial": true,
+              "no_Critic": true
+            },
+            "candidate": {
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/anneal/round_0/proposal.pt.gz",
+              "sha256": "91cd18b6e85c54cf2b4082fe94c52eb7ba964f1c4d91cc39226bb099b48eeae9",
+              "bytes": 80736,
+              "policy_hash": "28689ade932c44c9ad741b48a7dc7556b4b365f8225e54bf5fba30cf20dee8fb",
+              "joint_hash": "292742b0000c2608bde4871deeeb945b12f94c5e6a98ae20006d08acdd9fddfd",
+              "sigma": [
+                0.1,
+                0.1
+              ],
+              "remote_receipt": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/anneal/round_0/proposal.pt.remote.json"
+            },
+            "start_model": {
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/anneal/round_0/start.pt.gz",
+              "sha256": "2c33f6a18363e825aedbc6bfab535c0fecf3a5183ece62f174fbcd155d5c2723",
+              "bytes": 80740,
+              "policy_hash": "0f265084db8c7af454dee88a5b7921fdc0501ddd51ca503f2f2d5dd3f7d9d9a1",
+              "joint_hash": "4d9fdc0ff036139a18ebaa3320c6d0bd72cbd284704c1c324faf152a522c3997",
+              "sigma": [
+                0.1,
+                0.1
+              ],
+              "remote_receipt": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/anneal/round_0/start.pt.remote.json"
+            },
+            "sentinel_rows": [
+              {
+                "complete": true,
+                "collision": false,
+                "success": true,
+                "timeout": false,
+                "administrative_censor": false,
+                "physics_steps": 41424,
+                "remaining_m": 0.1999879114241899,
+                "terminal_contacts": [
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015678652166695214
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015673207851071944
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015641071240460658
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015635357706084846
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01570203782444199
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01569710070765512
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015664188492630085
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015659519104796613
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.07893676998365019
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.07893676998365019
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.07893676998365019
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.06702212704314402
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.06702212704314402
+                  }
+                ],
+                "policy_hash": "28689ade932c44c9ad741b48a7dc7556b4b365f8225e54bf5fba30cf20dee8fb",
+                "physics": 41424,
+                "array_digest": "eb4455188d0004d48c06c8575fd6acb3e061177e4f6071d162caebd890e0d382",
+                "array_hashes": {
+                  "states": "3338559978fa75a04a00da2361a107b83670c5225c3b3db9e13ad8d8749f0191",
+                  "actions": "432775b79768d4e14aad752d26b25a8a39e141c8df371d9443b3e81f7969e849",
+                  "native_counts": "843d18c16df8ba33a50c621541a6029d03ed7b37ebf64f6f87d0e0b8d86023a9",
+                  "next_states": "d1633787bf5391011bf3480ae2234bf7decc491220fe02294e4e9cc8fb1edb96",
+                  "poses": "1749d2ff6a8acb0181f8f9205edf00f78fc6f4aff1c95b3c9bb26473fa1967f7",
+                  "next_poses": "ee3b8351de0c15b6b003f6cb56f5a2111104c5bd4388431117bf4cda3a8b3be1",
+                  "end_flags": "10fa08b7aa0823bcfdef56d7101a5df04be377fd5593d609f7eacb44b2e3a9da",
+                  "rewards": "3f0ca5818406ba6bfe83d8d26ed3c9eb76e4d1a7e5f0c174dca2486d26d37447",
+                  "history_poses": "7a8016b3bd9b7d7652e6f529535bc55fe159ca9b16bfe9c5ce7df1a7ee423d86",
+                  "history_goals": "e68241d66669371439930ea3176cb69c71f8722f7c19b18b581cf730e2e333a6",
+                  "history_times": "6752cad7857df4984581e7f887d9ff948532263d0233e36b97220f61220e202b",
+                  "environment_rewards": "3f0ca5818406ba6bfe83d8d26ed3c9eb76e4d1a7e5f0c174dca2486d26d37447",
+                  "initial_native_integration": "698dbb46e1fcdc025eca00f94ba99d1822e2418b89f06ea7639fcefe56a55342",
+                  "final_native_integration": "0dea64244fa6c7cea84cbfea17bbb225edc7872e9fa1c2405b347cfc48206797",
+                  "hidden_before": "c7c2c62857e1b9f9de40c728e76ccf5fe9c292eed08373493fcde2d00e070af4",
+                  "last_hidden_after": "858547e79146c2d6586b13a3849cd76011c7e88475248047c8bf7a91614e7102",
+                  "innovations": "3f66cf1675d9318f17450dc0bc37c852af0c81a730ec9e6948edd1efff96cf87",
+                  "raw_actions": "7cb8df46e3094ca78a2798c8b1d518765a2d925937ae41af0df9daf8b49876c3",
+                  "atom": "fae11bff88f80ef9b1a769ca9e15dd2991af2e2531357e853cabc9d4c7a2b498",
+                  "locations": "7cb8df46e3094ca78a2798c8b1d518765a2d925937ae41af0df9daf8b49876c3",
+                  "logp": "cae3c6f40a699fc4be524b4bf240be0c360d9d1757b7524e572603997b126ae8",
+                  "stochastic": "7038fb37d8c8218c3eade11a083cfb8619bbb7ff996eb83565f0977dacda9213",
+                  "extra_hidden_before": "4f4f0ffb13d441fc94d72710770fd901f1ebbe7f6fbb52330d9f33c0a8f561fd",
+                  "anchor_hidden_before": "dcb1904b267b16540f4be4f76be29cf2d1ac35a3d1f50a73dcbd7f38982ef956",
+                  "hold_sha256": "571d493615fb7b67655cd4c6c6770723892d8fcee557be550b8fb9375ee9d546",
+                  "ownership": "7038fb37d8c8218c3eade11a083cfb8619bbb7ff996eb83565f0977dacda9213",
+                  "task_goal_xy": "256922c51207f151b6a54e5f4b9bbf80d182f8f4f85dae287c70437e9fd34d35",
+                  "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+                  "last_extra_hidden_after": "fef5f9c148a90dccfafb3babb0ccb778ffc2edb54e5398a481bf0b8b37614f03",
+                  "last_anchor_hidden_after": "67bfa702155383c6521007d23f95b12a44ab82cf8f3b59862856dc73abe4dd8a"
+                },
+                "integration_sha256": "0dea64244fa6c7cea84cbfea17bbb225edc7872e9fa1c2405b347cfc48206797",
+                "pid": 91296,
+                "cpu": 0,
+                "teacher": false,
+                "teacher_first": null,
+                "job_id": "t502_field_sector4_offset2",
+                "field_detail": {
+                  "id": "t502_field_sector4_offset2",
+                  "field_boundary_crossed": false,
+                  "field_qualified_success": true
+                },
+                "observation_contract": {
+                  "decisions": 415,
+                  "pose_min_xy": [
+                    -6.8,
+                    -6.985846207229065
+                  ],
+                  "pose_max_xy": [
+                    -0.07386712377222583,
+                    8.327598234202001e-16
+                  ],
+                  "input_dim": 120
+                },
+                "role": "FINAL49",
+                "seed": null,
+                "request": {
+                  "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/anneal/round_0/proposal.pt.gz",
+                  "job": {
+                    "id": "t502_field_sector4_offset2",
+                    "source_reset_id": "t502_new_sector4_offset2",
+                    "group": "6m_LEFT",
+                    "case": {
+                      "id": "6m_LEFT",
+                      "seed": 2029653601,
+                      "angle_deg": -17.3,
+                      "side": "LEFT",
+                      "distance_m": 9.616652224137047,
+                      "step_cap": 64112,
+                      "group": "original_5m_primary"
+                    },
+                    "delta_x_m": 0.0,
+                    "delta_y_m": 0.0,
+                    "delta_yaw_deg": 0.0,
+                    "seed": 0,
+                    "mode": "deterministic",
+                    "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+                    "expected_initial120_sha256": null,
+                    "wide_course": true,
+                    "circle_shift_x_m": 0.6,
+                    "fullfield_start_pose": [
+                      -6.8,
+                      8.327598234202001e-16,
+                      -0.7853981633974484
+                    ],
+                    "fullfield_goal_xy": [
+                      -1.2491397351303002e-15,
+                      -6.8
+                    ],
+                    "start_sector": 4,
+                    "sector_offset": 2
+                  },
+                  "seed": null,
+                  "query": false,
+                  "full_path": null
+                },
+                "loaded_model_sha256": "91cd18b6e85c54cf2b4082fe94c52eb7ba964f1c4d91cc39226bb099b48eeae9",
+                "model_sha256": "91cd18b6e85c54cf2b4082fe94c52eb7ba964f1c4d91cc39226bb099b48eeae9",
+                "full": false,
+                "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/anneal/round_0/evaluation/t502_field_sector4_offset2.npz",
+                "sha256": "060f001fc40458e004ad2152cab44c6387da4da452cd35e817e9d8ba18b00dc5",
+                "full_arrays_generated_but_not_saved": true
+              },
+              {
+                "complete": true,
+                "collision": true,
+                "success": false,
+                "timeout": false,
+                "administrative_censor": false,
+                "physics_steps": 21318,
+                "remaining_m": 2.380281886829155,
+                "terminal_contacts": [
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015477176690767161
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015469692539259658
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015479974530310386
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01547378452768261
+                  },
+                  {
+                    "geom1": "real_circle_obs_9",
+                    "geom2": null,
+                    "distance": -3.4689497527124614e-05
+                  },
+                  {
+                    "geom1": "real_circle_obs_9",
+                    "geom2": null,
+                    "distance": -3.4689497527124614e-05
+                  },
+                  {
+                    "geom1": "real_circle_obs_9",
+                    "geom2": null,
+                    "distance": -3.4689497527124614e-05
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01583580491951396
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015835573926720845
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01583948594401352
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01583878228598745
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.056260911887723496
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.053185408043768534
+                  }
+                ],
+                "policy_hash": "28689ade932c44c9ad741b48a7dc7556b4b365f8225e54bf5fba30cf20dee8fb",
+                "physics": 21318,
+                "array_digest": "7ae9d4d66c04b9db779986119927920d8d1303d72c518d4884c4276ed0d1f7e9",
+                "array_hashes": {
+                  "states": "c98b1ce99e4953a7d38452a180a6de674e986a5412815303baab89a6dfe550e4",
+                  "actions": "c0cc7b7226b828f683ef751af84329b26779ae4d649c84250679d9b32720dce6",
+                  "native_counts": "c6776390ea910fa318fab67daac398f4e274852a05353c9329855d491023d354",
+                  "next_states": "e4ac4ea141e85e5e6c0324f35a4e3c5e22108f1b4d6a5d4bc09f443a96f3ee62",
+                  "poses": "dc19a882815519bb55caef2b82b3fb0014dfbaa7bff365bde942824910347c38",
+                  "next_poses": "958b8484f09b9310fe6b4312f469bc9059ca9d59783a4374b70e8484036d5f26",
+                  "end_flags": "8fcd4402b11d5d395b455a991f01d5caa5d17f54626b517cc4e520d82b408542",
+                  "rewards": "6133294acee12575d9386c1a77a517da1c4ed44400c468bbc599d4db06c067a3",
+                  "history_poses": "03f84b7731b095c24e4efd81b093a8079cff2d1460d2f1fc679fe68d2f3ef96f",
+                  "history_goals": "7dc57c20be1338315b16e7b2d4f4a9b1784d999f861ba21d48e1e5335ec4dcff",
+                  "history_times": "7d5d6f49ed9ab2ebcfbe3cabb4a44c855fa0b782072f730a8c1908474ec2af5a",
+                  "environment_rewards": "6133294acee12575d9386c1a77a517da1c4ed44400c468bbc599d4db06c067a3",
+                  "initial_native_integration": "68435c9af858aa8d83abb28c1d8909eea07034007dd5ac864d988d4729b278d1",
+                  "final_native_integration": "44f4c42730f8471a1bcc9db94ddecd6c8bbf230f8ee285b0454419e3a933d566",
+                  "hidden_before": "11aefa0334101ba7238d52b92602e2db728a8cf4655d7e6695821d7d6b58c8fb",
+                  "last_hidden_after": "0aaa6127ae28fa1ea70429aec0678a53782706957fc3e0ae0ad662bc3e1fc2c1",
+                  "innovations": "85b88909d8b861c1d10733dd4b43caa74acf5e516331e10317179c33f33d9ae5",
+                  "raw_actions": "7fc7c172b5b2d0b8f002e8e8335d5dd78a762b96172d08d96ca6afe2b9955c50",
+                  "atom": "c43d6dc870357dd6440ae79f57ac8378ce7ae0416cc639650065246079846331",
+                  "locations": "7fc7c172b5b2d0b8f002e8e8335d5dd78a762b96172d08d96ca6afe2b9955c50",
+                  "logp": "0e3796b14f1128bdd1ebe5eae15f058f145a77b5a171365a416724068f0eeac1",
+                  "stochastic": "f5d6ce4b74199fbe18e49e020b96d21700da4b60db2d1799b1cb15d7f05905f5",
+                  "extra_hidden_before": "64ffa8da821d8bc5f990e895caa416f2e012d39ea55ffb86a4f293000a3dd5ff",
+                  "anchor_hidden_before": "fa955819f767655a27e3981fa80e127bbcf69527995f762502e51c0133480f54",
+                  "hold_sha256": "ebeff93cb14b1b703372dcdc457e7ec7a98e97498cb0d209d4d42a7a6a9193dc",
+                  "ownership": "f5d6ce4b74199fbe18e49e020b96d21700da4b60db2d1799b1cb15d7f05905f5",
+                  "task_goal_xy": "c98ebe0b676276ae49b862f480ef79a311ef09bc0e1a1e03efd9a304bb55a175",
+                  "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+                  "last_extra_hidden_after": "2eb6c7ec93ef49a77d9c4018fd82158e7395d7deac14c7edb2cdd5ebec56fb18",
+                  "last_anchor_hidden_after": "f4db3212a8e90571bffa0072baaa7adae1647f9460e44a8bd1dd00154c46174e"
+                },
+                "integration_sha256": "44f4c42730f8471a1bcc9db94ddecd6c8bbf230f8ee285b0454419e3a933d566",
+                "pid": 91296,
+                "cpu": 0,
+                "teacher": false,
+                "teacher_first": null,
+                "job_id": "wide117_8m_dev6_LEFT_13",
+                "field_detail": {
+                  "id": "wide117_8m_dev6_LEFT_13",
+                  "field_boundary_crossed": false,
+                  "field_qualified_success": false
+                },
+                "observation_contract": {
+                  "decisions": 214,
+                  "pose_min_xy": [
+                    -0.75,
+                    -2.388005639864058
+                  ],
+                  "pose_max_xy": [
+                    1.0704181222335496,
+                    0.75
+                  ],
+                  "input_dim": 120
+                },
+                "role": "FINAL49",
+                "seed": null,
+                "request": {
+                  "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/anneal/round_0/proposal.pt.gz",
+                  "job": {
+                    "case": {
+                      "angle_deg": -17.3,
+                      "distance_m": 8.0,
+                      "group": "original_5m_primary",
+                      "id": "6m_LEFT",
+                      "seed": 2029653601,
+                      "side": "LEFT",
+                      "step_cap": 53334
+                    },
+                    "circle_shift_x_m": 0.6,
+                    "delta_x_m": 0,
+                    "delta_y_m": 0,
+                    "delta_yaw_deg": 0.0,
+                    "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+                    "expected_initial120_sha256": null,
+                    "group": "6m_LEFT",
+                    "id": "wide117_8m_dev6_LEFT_13",
+                    "mode": "deterministic",
+                    "radial_distance_m": 8.0,
+                    "seed": 0,
+                    "source_reset_id": "dev6_LEFT_13",
+                    "wide_course": true
+                  },
+                  "seed": null,
+                  "query": false,
+                  "full_path": null
+                },
+                "loaded_model_sha256": "91cd18b6e85c54cf2b4082fe94c52eb7ba964f1c4d91cc39226bb099b48eeae9",
+                "model_sha256": "91cd18b6e85c54cf2b4082fe94c52eb7ba964f1c4d91cc39226bb099b48eeae9",
+                "full": false,
+                "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/anneal/round_0/evaluation/wide117_8m_dev6_LEFT_13.npz",
+                "sha256": "bb6b5f87ccbc62a48fa47001bb1391448c99edd4c4350c55bef6a576e902e7ef",
+                "full_arrays_generated_but_not_saved": true
+              },
+              {
+                "complete": true,
+                "collision": true,
+                "success": false,
+                "timeout": false,
+                "administrative_censor": false,
+                "physics_steps": 20148,
+                "remaining_m": 4.785939840226808,
+                "terminal_contacts": [
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015659282429161037
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015653600678168983
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015620014442614821
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015614512354189286
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01572298893098538
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015718105710597632
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "real_rect_obs_0",
+                    "distance": -2.6604591627802018e-05
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "real_rect_obs_0",
+                    "distance": -2.6604591627802018e-05
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "real_rect_obs_0",
+                    "distance": -2.6604591627802018e-05
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01568397262999298
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015678765571833106
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.04710873383816283
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.04567074907178936
+                  }
+                ],
+                "policy_hash": "28689ade932c44c9ad741b48a7dc7556b4b365f8225e54bf5fba30cf20dee8fb",
+                "physics": 20148,
+                "array_digest": "a42f2363ff069e3dd78136331cf6e38670715780098758c309d9a89c9661a8fc",
+                "array_hashes": {
+                  "states": "8f99c4ed71d7089b318e501e52116f24b234c17fda4fc13785140b33e9174edc",
+                  "actions": "b5bd6797ad28354ff4ba1d30497063b991ed8b2bb601a9e20ed279564fb9af41",
+                  "native_counts": "8df85387e3715a0de7bfce77f58c8b69fb6f6bb790305c44541246895ca69089",
+                  "next_states": "f3a31ad58d9a20a2c001967217dc17b54a5e4a9d84f0083cdd313d9888c92ed3",
+                  "poses": "deef9dd3285af3d0a501e774e511ec54ae76eb6937a62cd00147a75acd6a3b10",
+                  "next_poses": "04b5ca3f77b434615982ae4df458da15be54a97447adef181d26306fd39bcf63",
+                  "end_flags": "5259f1f3eac95b4e2b577f42aedcde827995fc1be9b2ed66582d4bc9e2c38ed8",
+                  "rewards": "5bf856dcbf11ff7edb6aa1afe18b29b3d43b440840395544b9e1adca0ccaaa4d",
+                  "history_poses": "17f93f7940a11daa9ba2c93287baf43c5d71bcf69f948c689964bc7c97470cbc",
+                  "history_goals": "c2cc6bee3491bc1e595d99f4a897d036365d0d164010e4fefbee4a5c3b8e2059",
+                  "history_times": "1007807263981a778a8e75d7e54a2fc11df0830d99ab2bb876d3ca2ed5adfba0",
+                  "environment_rewards": "5bf856dcbf11ff7edb6aa1afe18b29b3d43b440840395544b9e1adca0ccaaa4d",
+                  "initial_native_integration": "768f11a6d34ada6d0e5722430b6c5527cb90e2a4d5525ddd51a08bad33a18b5a",
+                  "final_native_integration": "3d22a2e40ec263860a7223b8befb2c0b84f09af0c3579d9d44681d5f86d7f5d1",
+                  "hidden_before": "f6a1cd0b88e8b569115bf97c9a2c733cf59cf3b0c2ced3d287f8565ff1c3eade",
+                  "last_hidden_after": "f734df645c9780e78983e7ea165e1fa643904c8f2eea48b195106996a199c11a",
+                  "innovations": "f7c5018092b50de14da1eb3d0346379d4bfbd21560796fb2b6b8bbe5cb6aa1c9",
+                  "raw_actions": "6483f13d955270f9889615a49763d926b27fd218ebaaea323710aa16db8de089",
+                  "atom": "6fa4fc86caf6bccc77ed251a71cbdb0386b7c8e55ef306ee6068fa20fc838fa7",
+                  "locations": "6483f13d955270f9889615a49763d926b27fd218ebaaea323710aa16db8de089",
+                  "logp": "def93299de789977d336782b82245f092a605173d82b34bdbb0452e1f00cdb04",
+                  "stochastic": "f4287479d1a7c52fb4ce1bd0206ea886267512b7f80034a1d6ae277da784a7f8",
+                  "extra_hidden_before": "b3c9a6e025ec677f253766bc72298edd5b9be5deedba6d8b8ef6cd81a9092258",
+                  "anchor_hidden_before": "eb6a7956b47f3f885d36313eff4e032f26db1b3ca8710d1414d19ffc07d92a5d",
+                  "hold_sha256": "8ceba545e208882c4fce9d78d0af6d282ec96107a8e1f4a02238748d2afa8038",
+                  "ownership": "f4287479d1a7c52fb4ce1bd0206ea886267512b7f80034a1d6ae277da784a7f8",
+                  "task_goal_xy": "8867bafac354f24811273d75b56f5f73c4a0710fc5efcf264c700040b97c7d29",
+                  "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+                  "last_extra_hidden_after": "d3355c0e9db8dfa1fe3ca06e8c8a7aa0db670e6e763f9b6511fd35271d79127e",
+                  "last_anchor_hidden_after": "2f446e290306d6d67188cb9d5c1181b3d232321fc55b4ce7a11c5dda569b9df6"
+                },
+                "integration_sha256": "3d22a2e40ec263860a7223b8befb2c0b84f09af0c3579d9d44681d5f86d7f5d1",
+                "pid": 91296,
+                "cpu": 0,
+                "teacher": false,
+                "teacher_first": null,
+                "job_id": "t502_field_sector1_offset2",
+                "field_detail": {
+                  "id": "t502_field_sector1_offset2",
+                  "field_boundary_crossed": false,
+                  "field_qualified_success": false
+                },
+                "observation_contract": {
+                  "decisions": 202,
+                  "pose_min_xy": [
+                    -0.04772717585806077,
+                    4.808326112068523
+                  ],
+                  "pose_max_xy": [
+                    4.8083261120685235,
+                    5.30017763724866
+                  ],
+                  "input_dim": 120
+                },
+                "role": "FINAL49",
+                "seed": null,
+                "request": {
+                  "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/anneal/round_0/proposal.pt.gz",
+                  "job": {
+                    "id": "t502_field_sector1_offset2",
+                    "source_reset_id": "t502_new_sector1_offset2",
+                    "group": "6m_LEFT",
+                    "case": {
+                      "id": "6m_LEFT",
+                      "seed": 2029653601,
+                      "angle_deg": -17.3,
+                      "side": "LEFT",
+                      "distance_m": 9.616652224137045,
+                      "step_cap": 64112,
+                      "group": "original_5m_primary"
+                    },
+                    "delta_x_m": 0.0,
+                    "delta_y_m": 0.0,
+                    "delta_yaw_deg": 0.0,
+                    "seed": 0,
+                    "mode": "deterministic",
+                    "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+                    "expected_initial120_sha256": null,
+                    "wide_course": true,
+                    "circle_shift_x_m": 0.6,
+                    "fullfield_start_pose": [
+                      4.8083261120685235,
+                      4.808326112068523,
+                      3.141592653589793
+                    ],
+                    "fullfield_goal_xy": [
+                      -4.808326112068523,
+                      4.8083261120685235
+                    ],
+                    "start_sector": 1,
+                    "sector_offset": 2
+                  },
+                  "seed": null,
+                  "query": false,
+                  "full_path": null
+                },
+                "loaded_model_sha256": "91cd18b6e85c54cf2b4082fe94c52eb7ba964f1c4d91cc39226bb099b48eeae9",
+                "model_sha256": "91cd18b6e85c54cf2b4082fe94c52eb7ba964f1c4d91cc39226bb099b48eeae9",
+                "full": false,
+                "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/anneal/round_0/evaluation/t502_field_sector1_offset2.npz",
+                "sha256": "78d8413f782e79a30d1ef874f3963fb915d9a42d2fcacb0ec6da14241de4f3fe",
+                "full_arrays_generated_but_not_saved": true
+              },
+              {
+                "complete": true,
+                "collision": true,
+                "success": false,
+                "timeout": false,
+                "administrative_censor": false,
+                "physics_steps": 22162,
+                "remaining_m": 2.410517634742596,
+                "terminal_contacts": [
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015672488500054774
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015664112317637577
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015613450520675351
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015605237255626667
+                  },
+                  {
+                    "geom1": "real_circle_obs_9",
+                    "geom2": null,
+                    "distance": -0.0001133061292814659
+                  },
+                  {
+                    "geom1": "real_circle_obs_9",
+                    "geom2": null,
+                    "distance": -0.0001133061292814659
+                  },
+                  {
+                    "geom1": "real_circle_obs_9",
+                    "geom2": null,
+                    "distance": -0.0001133061292814659
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015723000202010826
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01571521995077589
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.01566385949641433
+                  },
+                  {
+                    "geom1": "floor",
+                    "geom2": null,
+                    "distance": -0.015656447685871766
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.04817055200977432
+                  },
+                  {
+                    "geom1": null,
+                    "geom2": "chassis_collision",
+                    "distance": -0.04650776699398012
+                  }
+                ],
+                "policy_hash": "28689ade932c44c9ad741b48a7dc7556b4b365f8225e54bf5fba30cf20dee8fb",
+                "physics": 22162,
+                "array_digest": "1286bc82eda1c1346319c8aee7f0046d05a571ba294a8f836c7533936bc19c36",
+                "array_hashes": {
+                  "states": "40bb7e6c0d844b1abeb2b7938efef0bd68f1fefb3cf2fec82619813a8939b33e",
+                  "actions": "9f58306a4e1dc003cf85e035e8b0054ea69c2b9d3397585f70d39f85660b9a2a",
+                  "native_counts": "ad441b8920bf2fdff62daf9da803c0256a225e6470422ca1e4836d72c16dc141",
+                  "next_states": "7a1c2ef58c3dd63dae38a943e0697a8bc2feb23116cd881b7c546bfd3f81b6a2",
+                  "poses": "e27820e167aa9a5bf0ab2d297e9430e4ebddd1b23db65355902c2889bf60bd79",
+                  "next_poses": "a3f41764da3c16c538eb554d9fa5e6261834bde70dd6acd76f4817a7ec75e36b",
+                  "end_flags": "9f06c799633b7c942b4a98499ddff84d81472ef7cae9946465978a0d92c6e73e",
+                  "rewards": "17d5692a0ce986b64c9605198a4608729851ce89bf2530cf4ce1be93cf2b4ee2",
+                  "history_poses": "59087338c0399ad60e52b97240391a50ae4e5a460719b7f0c653b93792021086",
+                  "history_goals": "bcb9b4a2d9a63535cb7bf1310266b209cc4918ef1d615ea7dc5e44875869b883",
+                  "history_times": "f80013ba9402c2f6ef9c229805ea41c65da0ef4b210be67d7cd04ae444d54ced",
+                  "environment_rewards": "17d5692a0ce986b64c9605198a4608729851ce89bf2530cf4ce1be93cf2b4ee2",
+                  "initial_native_integration": "2621d62f5468d46d2d671e2d7ef08da5aaab8abdf57412305fc4e336d07e39e1",
+                  "final_native_integration": "34343225a884d15daf2ee769e2ace87bd38cad071274cf7a507e5016cc78c217",
+                  "hidden_before": "b54e4bb1ee8035f7a0804d5227a73243a37e7de372639e6b42a324b568dc5a7f",
+                  "last_hidden_after": "d62ee6e0278cd056deb0d363ca34c572abe847f308057c91ee91332718b9e49f",
+                  "innovations": "7ee3021e13b93d2599a02585d3699b314c4da0c6a6ac44fc89dcdee627b7ca13",
+                  "raw_actions": "587f14b1bdf97364b333eb5e4e5a0bc0cc54937fb233c36ae2024ccfd088bf37",
+                  "atom": "df5a35c721e85afa65531f842078ede6c33513f1fd75e169c58fbe6f99294cc3",
+                  "locations": "587f14b1bdf97364b333eb5e4e5a0bc0cc54937fb233c36ae2024ccfd088bf37",
+                  "logp": "6d2e40d83560afb897c2b680cecab70b4b032f6da5216536260137e9714edc83",
+                  "stochastic": "2b5c327aa13f322354a5d576295c93b1b9816b57638ef7ff32054c9a5d9ae750",
+                  "extra_hidden_before": "0b87c005423945be05005f12521685552ef2d37f470918b6ef3b2cd8f29cce31",
+                  "anchor_hidden_before": "03de4835729a1f0824c9d41cc0d4781f457ccdbfe2c6d01951013ea4b3b78106",
+                  "hold_sha256": "a93ea7ba04542f3a1bdab00213efa35a43ec3584e17cf697d9d585c2769b374b",
+                  "ownership": "2b5c327aa13f322354a5d576295c93b1b9816b57638ef7ff32054c9a5d9ae750",
+                  "task_goal_xy": "c98ebe0b676276ae49b862f480ef79a311ef09bc0e1a1e03efd9a304bb55a175",
+                  "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+                  "last_extra_hidden_after": "53895a9a7f7b100e0e1e5ac8359e3b8daf9f534fdace706344e8c429189d0e3a",
+                  "last_anchor_hidden_after": "f05e0a7d4e38e81a8d38410f48f1d860a87e36a95ff29287e18edbcc1d9205d0"
+                },
+                "integration_sha256": "34343225a884d15daf2ee769e2ace87bd38cad071274cf7a507e5016cc78c217",
+                "pid": 91296,
+                "cpu": 0,
+                "teacher": false,
+                "teacher_first": null,
+                "job_id": "wide117_8m_dev6_LEFT_00",
+                "field_detail": {
+                  "id": "wide117_8m_dev6_LEFT_00",
+                  "field_boundary_crossed": false,
+                  "field_qualified_success": false
+                },
+                "observation_contract": {
+                  "decisions": 222,
+                  "pose_min_xy": [
+                    -0.78,
+                    -2.36302637550815
+                  ],
+                  "pose_max_xy": [
+                    1.052216893740009,
+                    0.72
+                  ],
+                  "input_dim": 120
+                },
+                "role": "FINAL49",
+                "seed": null,
+                "request": {
+                  "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/anneal/round_0/proposal.pt.gz",
+                  "job": {
+                    "id": "wide117_8m_dev6_LEFT_00",
+                    "source_reset_id": "dev6_LEFT_00",
+                    "group": "6m_LEFT",
+                    "case": {
+                      "id": "6m_LEFT",
+                      "seed": 2029653601,
+                      "angle_deg": -17.3,
+                      "side": "LEFT",
+                      "distance_m": 8.0,
+                      "step_cap": 53334,
+                      "group": "original_5m_primary"
+                    },
+                    "delta_x_m": -0.03,
+                    "delta_y_m": -0.03,
+                    "delta_yaw_deg": -2.0,
+                    "seed": 0,
+                    "mode": "deterministic",
+                    "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+                    "wide_course": true,
+                    "circle_shift_x_m": 0.6,
+                    "expected_initial120_sha256": null,
+                    "radial_distance_m": 8.0
+                  },
+                  "seed": null,
+                  "query": false,
+                  "full_path": null
+                },
+                "loaded_model_sha256": "91cd18b6e85c54cf2b4082fe94c52eb7ba964f1c4d91cc39226bb099b48eeae9",
+                "model_sha256": "91cd18b6e85c54cf2b4082fe94c52eb7ba964f1c4d91cc39226bb099b48eeae9",
+                "full": false,
+                "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628s_actual_memory_recovery/anneal/round_0/evaluation/wide117_8m_dev6_LEFT_00.npz",
+                "sha256": "ec8ea48d16ce8b2e408ab32b42509d458422c7b3be0abbe9c8eef44348de1c83",
+                "full_arrays_generated_but_not_saved": true
+              }
+            ],
+            "passed_sentinel": false,
+            "retained_state_sha": "4d9fdc0ff036139a18ebaa3320c6d0bd72cbd284704c1c324faf152a522c3997"
+          }
+        ],
+        "final49": null,
+        "accepted": false,
+        "model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t608_current_policy_memory/rl_00/proposal.pt.gz",
+          "sha256": "797cce22f6f4bd19bf6af057893282a03de5658d58f8a9aeccbdb720378adde6",
+          "bytes": 280330,
+          "policy_hash": "9e2017ccc814478ebcfb9d025ac5e58a45e2719437fc78c0164ce08999c6983c",
+          "joint_hash": "b9024a30c65305199c6945fa62e69dbb9a467eab6fb5ead908a64d12c9c7550d"
+        },
+        "retained_state_sha": "17d1cbae8d32c9bec16f49fe22657960e29f8f9182f2a77fb79f857597f1d76b"
+      }
+    ],
+    "new_Critic": 0
+  },
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "dataset_remote_batches": 16,
+  "no_global_promotion": true,
+  "full407": null,
+  "fresh16": null,
+  "reload78": null,
+  "epoch": 1794923639.3122633
+}
