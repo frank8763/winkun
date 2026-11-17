@@ -1,0 +1,19 @@
+{
+  "state": "FAILED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t623_common_continuation_branches/driver.py\", line 18, in main\n    call('main',p['main_seconds']);g=M.read(M.OUT/'worker_generations.json');pids.extend([i for z in g for i in [z['parent'],*z['workers']]]);assert all(not Path('/proc',str(i)).exists() for i in pids);call('audit',p['audit_seconds']);assert M.read(M.OUT/'audit.json')['state']=='PASS'\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t623_common_continuation_branches/driver.py\", line 10, in call\n    try:c.wait(timeout=seconds);assert c.returncode==0,(action,c.returncode)\nAssertionError: ('main', 1)\n",
+  "summary": {
+    "state": "FAILED",
+    "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t623_common_continuation_branches/t623_runtime.py\", line 40, in main\n    rt.pool=N.Pool(dict(p,native_stop_epoch=rt.deadline,phase='student'),rt.counts,rt.guard);vv=execute(rt,p);N.inspect(p,vv);rows=[r for a,r in vv];save(OUT/'METRICS.json',metrics(p,rows));execute(rt,p,rows)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t623_common_continuation_branches/t623_native.py\", line 29, in inspect\n    for key in ['states','next_states','actions','native_counts','poses','next_poses','history_poses','history_goals','history_times','hold_sha256']:assert np.array_equal(a[key][:k],source[key][:k]),key\nAssertionError: hold_sha256\n",
+    "rows": [],
+    "physics": 86188,
+    "commands": 9,
+    "elapsed_s": 66.44459223747253,
+    "new_optimizer": 0
+  },
+  "metrics": null,
+  "comparison": null,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "actor_updates": 0,
+  "globally_promoted": false,
+  "epoch": 1794908197.4121273
+}
