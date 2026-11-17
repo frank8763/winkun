@@ -1,0 +1,42 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "original_failure_reproduced": true,
+  "architecture_schema_regression": [
+    {
+      "model": "T550",
+      "policy_hash": "c0aa5f4a990641642fbd0815801e6f9a8b3baa2a4ca0f751d6e1bd605a5f5754",
+      "trace_decisions": 64,
+      "extra_hidden_present": false
+    },
+    {
+      "model": "T608_initial33",
+      "policy_hash": "91c583aa2e6e53024a9fc4af81fe81b74e586f39a7dbefe4ab104d4c1ca22cef",
+      "trace_decisions": 64,
+      "extra_hidden_present": true
+    }
+  ],
+  "real_model_forward_only_no_native": true,
+  "whole_model_weights_unchanged": true,
+  "memory_rows_per_episode_upper": 839,
+  "memory_uncompressed": 834397,
+  "memory_deflate_safe_upper": 867999,
+  "memory_file_cap": 1048576,
+  "old_model_missing_fields_not_filled_with_fake_zeros": true,
+  "new_native": 0,
+  "new_Adam": 0,
+  "scope": "Actual Actor.step tapes and real payload append seam, delegated base payload fixture. Actual spawned dual-model native path must still pass before learning.",
+  "actual_saved_native_histories_both_architectures": [
+    {
+      "label": "T550_full_native_stochastic_history",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t596_recurrent_joint_online/episodes/full_3.npz",
+      "sha256": "ca82b0abada6f172a2c6755026361dbf9180613897bee754ab8d68bff4cc1e56",
+      "full_history_inspection": true
+    },
+    {
+      "label": "T598_full_native_stochastic_history",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t606r_offline_retention_recovery/rl_00/episodes/full_0.npz",
+      "sha256": "52d182f0a7d5c8b368591fa1a9df595fe5da4f92c73a733a0f7d8acef9881b69",
+      "full_history_inspection": true
+    }
+  ]
+}
