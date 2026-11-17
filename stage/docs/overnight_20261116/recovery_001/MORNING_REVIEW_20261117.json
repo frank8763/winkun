@@ -1,0 +1,137 @@
+{
+  "state": "POST_WINDOW_READ_ONLY_REVIEW_NO_NATIVE_NO_OPTIMIZER",
+  "pipeline_state": "FAILED_SECONDARY_DIAGNOSTIC_SERIALIZER",
+  "end_CST": "2026-11-16T22:35:20.526824+08:00",
+  "T607_executed": false,
+  "baseline_success": 31,
+  "best_success": 33,
+  "denominator": 49,
+  "best_percent": 67.34693877551021,
+  "contact": 12,
+  "timeout": 4,
+  "invalid": 0,
+  "censored": 0,
+  "retained_initial31": true,
+  "recovered_task_ids": [
+    "t502_field_sector4_offset2",
+    "wide117_8m_dev6_LEFT_13"
+  ],
+  "historical_T55039_remaining_missing": [
+    "dev_task6_13",
+    "dev_task6_20",
+    "t502_field_sector0_offset2",
+    "t502_field_sector1_offset2",
+    "wide117_8m_dev6_LEFT_00",
+    "wide117_8m_dev6_LEFT_17"
+  ],
+  "recovery_pass": 3,
+  "recovery_total": 3,
+  "full407": null,
+  "fresh16": null,
+  "reload78": null,
+  "live_Adam": 18,
+  "shadow_Adam": 18,
+  "historical_audit_Adam": 18,
+  "discarded_preflight_Adam": 12,
+  "final_best_lineage_RL_updates": 8,
+  "child_ledger": [
+    {
+      "child": "command_00",
+      "physics": 1848310,
+      "commands": 63,
+      "main_seconds": 845.7967615127563,
+      "audit": "PASS",
+      "attempted_live_Adam": 3,
+      "summary_sha256": "9a7eb50a83896e6e0fa1915e35aed94611fe9dc90114bb36552dc2fed8e18303"
+    },
+    {
+      "child": "command_01",
+      "physics": 0,
+      "commands": 0,
+      "main_seconds": 5.678062438964844,
+      "audit": "PASS",
+      "attempted_live_Adam": 1,
+      "summary_sha256": "d8d4bef2d28751cea51fc44cfc7206540ffc2808e297da37f22e799af60820f6"
+    },
+    {
+      "child": "engineering",
+      "physics": 40000,
+      "commands": 12,
+      "main_seconds": 21.317304372787476,
+      "audit": "PASS",
+      "attempted_live_Adam": 0,
+      "summary_sha256": "451daddce58e1c4846f85c909311fb62028473f7a5bb088cfed030311a8c9ac6"
+    },
+    {
+      "child": "raw_00",
+      "physics": 1825297,
+      "commands": 63,
+      "main_seconds": 814.637354850769,
+      "audit": "PASS",
+      "attempted_live_Adam": 3,
+      "summary_sha256": "be5649dab30167f338e5afcea7a18db95f7c82aa93727ddc669b106a736ef0d6"
+    },
+    {
+      "child": "rl_00",
+      "physics": 1875933,
+      "commands": 71,
+      "main_seconds": 847.712039232254,
+      "audit": "PASS",
+      "attempted_live_Adam": 8,
+      "summary_sha256": "a2c5c8ac67c0ac3861acbae78d4aefd393368862b250576fefc0a56dca192bee"
+    },
+    {
+      "child": "rl_01",
+      "physics": 882042,
+      "commands": 33,
+      "main_seconds": 403.60525274276733,
+      "audit": "PASS",
+      "attempted_live_Adam": 2,
+      "summary_sha256": "310bd8960dfc314f82377841a591f83667504c374a1093d899c402ebd9833491"
+    },
+    {
+      "child": "rl_02",
+      "physics": 258642,
+      "commands": 12,
+      "main_seconds": 104.35369157791138,
+      "audit": "PASS",
+      "attempted_live_Adam": 1,
+      "summary_sha256": "26cef4dc1e9495f5c310d3899b178a7413f91041cbc18c879bee9ad91763040f"
+    },
+    {
+      "child": "stress_000",
+      "physics": 21681,
+      "commands": 6,
+      "main_seconds": 14.498885869979858,
+      "audit": null,
+      "attempted_live_Adam": 0,
+      "summary_sha256": "994b2d7c112c050e9ce5ab769a1082ac9ca423a9d7732e154030d552e36411d6"
+    }
+  ],
+  "partial_failed_diagnostic": [
+    {
+      "child": "stress_000",
+      "summary_physics": 21681,
+      "saved_row_count": 0,
+      "full_array_audit_completed": false,
+      "unavailable_trajectory_details_not_navigation_failure_rate": true
+    }
+  ],
+  "total_physics": 6751905,
+  "total_commands": 260,
+  "prior_T606_conservative_start_close_commands": 4,
+  "physics_new_in_review": 0,
+  "Adam_new_in_review": 0,
+  "best_model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t606r_offline_retention_recovery/rl_00/proposal.pt.gz",
+    "sha256": "7baee70ca4e099d95bf6070006704df31cce9bec9c5e4f048a87e9a85e7b9858",
+    "bytes": 280518,
+    "policy_hash": "91c583aa2e6e53024a9fc4af81fe81b74e586f39a7dbefe4ab104d4c1ca22cef",
+    "joint_hash": "96de91d373ca75276d267c17fe5b376cec1d53a6e1a4bbcb016025288f358c53"
+  },
+  "all_scientific_pids_stopped": true,
+  "all_completed_saved_payload_file_SHA_verified": true,
+  "full_pipeline_audit_not_passed": true,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "review_initial_replay_schema_mistake": "First read-only review assumed replays had new saved path; corrected to reference_path and exact arrays. 0 native or optimizer."
+}

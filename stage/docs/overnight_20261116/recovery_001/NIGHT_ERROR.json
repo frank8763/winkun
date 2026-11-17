@@ -1,0 +1,6 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t606r_offline_retention_recovery/driver.py\", line 75, in main\n    if child(f'stress_{k:03d}',c,tail=False) is None:break\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t606r_offline_retention_recovery/driver.py\", line 31, in child\n    try:call('main',name,c['main_seconds'])\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t606r_offline_retention_recovery/driver.py\", line 21, in call\n    try:c.wait(timeout=cap);assert c.returncode==0,(name,action,c.returncode)\nAssertionError: ('stress_000', 'main', 1)\n",
+  "epoch": 1794839720.525462,
+  "no_training_restart": true,
+  "partial_raw_preserved": true
+}

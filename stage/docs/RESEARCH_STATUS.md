@@ -1,3 +1,7 @@
+2026-11-17早晨只读复核：T606R真实RL候选33/49=67.35%（12接触4超时），相对T598起点31项恢复field_sector4_offset2与wide8_LEFT13两项历史能力、原31不丢、三恢复3/3；相对T550历史39仍缺6项，不称新全局能力。rl00独立audit PASS及模型SHA复核；最佳模型仅8次RL保留更新，全支线18live18shadow18历史audit另12pref。整管线22:35:20因T550对照无extra_hidden_before字段而记录器KeyError退出，是工程覆盖错误；诊断21681物理无完整数组/未审计，整管线FAILED，T607未训练，昨夜未跑满。合计6751905物理260cmd，另原T606保守4cmd；407/fresh16/reload78均null。全部PID退；547原文件RAM远端完整读回逐成员SHA PASS，archive 71f501fd5ccb6ee375cc0a14a7ca67d41eea49bbf0770741cc8f440183bbc0f1。原错误保留，今晨0native0Adam不续过期窗口；global<1GiB/free>40GiB/Phase隔离。详细recovery_001/MORNING_REPORT_20261117.md及MORNING_REVIEW_20261117.json。
+
+2026-11-17 T606R离线通宵接力已结束：FAILED；物理6751905、命令260，新研究成功改进=True；remote=PENDING。各臂与冻结扰动分列，fresh16/reload78未执行，不称全局/泛化通过。
+
 2026-11-16 T606原启动因冷存间接依赖遗漏在0物理/0学习退出，原错误/全部数据已远端逐SHA。T606R仅入口工程恢复已注册待真实launch；科学学习源逐字节相同，原12丢弃预检复用不重复，总夜预算扣4保守生命周期命令/5main秒/原目录字节，绝对截止不变。五份原依赖2970658B按原SHA恢复并纳入全部输入锁，global完整最坏仍≤1GiB。
 
 2026-11-17 T606离线通宵接力已结束：FAILED；物理0、命令0，新研究成功改进=False；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。各臂与冻结扰动分列，fresh16/reload78未执行，不称全局/泛化通过。

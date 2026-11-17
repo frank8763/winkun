@@ -1,0 +1,761 @@
+{
+  "arms": {
+    "raw": {
+      "model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t598_independent_recurrent_recovery/proposal.pt.gz",
+        "sha256": "e06dc88c5ef9fbc84789e991e994735a8fe5df745270e6abf900b8ba49f11692",
+        "policy_hash": "751043dc4d87d810a555645a69d2a3477c06ca86b22d1fcdf7d28ffda180b07b"
+      },
+      "ids": [
+        "dev_task0_00",
+        "dev_task0_13",
+        "dev_task1_13",
+        "dev_task2_13",
+        "dev_task3_01",
+        "dev_task3_10",
+        "dev_task3_13",
+        "dev_task4_13",
+        "dev_task5_13",
+        "dev_task7_13",
+        "hold_task7_05",
+        "t502_field_sector0_offset1",
+        "t502_field_sector1_offset1",
+        "t502_field_sector2_offset1",
+        "t502_field_sector2_offset2",
+        "t502_field_sector3_offset1",
+        "t502_field_sector3_offset2",
+        "t502_field_sector4_offset1",
+        "t502_field_sector5_offset1",
+        "t502_field_sector5_offset2",
+        "t502_field_sector6_offset1",
+        "t502_field_sector7_offset1",
+        "t502_field_sector7_offset2",
+        "wide117_80_dev6_RIGHT_00",
+        "wide117_80_dev6_RIGHT_08",
+        "wide117_80_dev6_RIGHT_16",
+        "wide117_80_dev6_RIGHT_23",
+        "wide117_80_dev6_RIGHT_26",
+        "wide117_8m_dev6_RIGHT_10",
+        "wide117_8m_dev6_RIGHT_13",
+        "wide117_8m_dev6_RIGHT_26"
+      ],
+      "active": false,
+      "resume": false,
+      "accepted_rounds": 0,
+      "rejected_rounds": 1,
+      "consecutive_rejects": 1
+    },
+    "command": {
+      "model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t606r_offline_retention_recovery/command_00/proposal.pt.gz",
+        "sha256": "746b4ccd4d1fb74eb1ad60ef94ef776f135ee551013e7e75ed722ae183213d05",
+        "bytes": 280586,
+        "policy_hash": "cbd8f2c98ae55d85fb6c9faeed87c0058671d3a17f93895d77725292a2504c93",
+        "joint_hash": "af76efd6132b5b906a65f9eee7ddb9d3c4b7efa4bee19bd780d195b754cb8d37"
+      },
+      "ids": [
+        "dev_task0_00",
+        "dev_task0_13",
+        "dev_task1_13",
+        "dev_task2_13",
+        "dev_task3_01",
+        "dev_task3_10",
+        "dev_task3_13",
+        "dev_task4_13",
+        "dev_task5_13",
+        "dev_task7_13",
+        "hold_task7_05",
+        "t502_field_sector0_offset1",
+        "t502_field_sector1_offset1",
+        "t502_field_sector2_offset1",
+        "t502_field_sector2_offset2",
+        "t502_field_sector3_offset1",
+        "t502_field_sector3_offset2",
+        "t502_field_sector4_offset1",
+        "t502_field_sector5_offset1",
+        "t502_field_sector5_offset2",
+        "t502_field_sector6_offset1",
+        "t502_field_sector7_offset1",
+        "t502_field_sector7_offset2",
+        "wide117_80_dev6_RIGHT_00",
+        "wide117_80_dev6_RIGHT_08",
+        "wide117_80_dev6_RIGHT_16",
+        "wide117_80_dev6_RIGHT_23",
+        "wide117_80_dev6_RIGHT_26",
+        "wide117_8m_dev6_RIGHT_10",
+        "wide117_8m_dev6_RIGHT_13",
+        "wide117_8m_dev6_RIGHT_26"
+      ],
+      "active": false,
+      "resume": true,
+      "accepted_rounds": 1,
+      "rejected_rounds": 1,
+      "consecutive_rejects": 1
+    },
+    "rl": {
+      "model": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t606r_offline_retention_recovery/rl_00/proposal.pt.gz",
+        "sha256": "7baee70ca4e099d95bf6070006704df31cce9bec9c5e4f048a87e9a85e7b9858",
+        "bytes": 280518,
+        "policy_hash": "91c583aa2e6e53024a9fc4af81fe81b74e586f39a7dbefe4ab104d4c1ca22cef",
+        "joint_hash": "96de91d373ca75276d267c17fe5b376cec1d53a6e1a4bbcb016025288f358c53"
+      },
+      "ids": [
+        "dev_task0_00",
+        "dev_task0_13",
+        "dev_task1_13",
+        "dev_task2_13",
+        "dev_task3_01",
+        "dev_task3_10",
+        "dev_task3_13",
+        "dev_task4_13",
+        "dev_task5_13",
+        "dev_task7_13",
+        "hold_task7_05",
+        "t502_field_sector0_offset1",
+        "t502_field_sector1_offset1",
+        "t502_field_sector2_offset1",
+        "t502_field_sector2_offset2",
+        "t502_field_sector3_offset1",
+        "t502_field_sector3_offset2",
+        "t502_field_sector4_offset1",
+        "t502_field_sector4_offset2",
+        "t502_field_sector5_offset1",
+        "t502_field_sector5_offset2",
+        "t502_field_sector6_offset1",
+        "t502_field_sector7_offset1",
+        "t502_field_sector7_offset2",
+        "wide117_80_dev6_RIGHT_00",
+        "wide117_80_dev6_RIGHT_08",
+        "wide117_80_dev6_RIGHT_16",
+        "wide117_80_dev6_RIGHT_23",
+        "wide117_80_dev6_RIGHT_26",
+        "wide117_8m_dev6_LEFT_13",
+        "wide117_8m_dev6_RIGHT_10",
+        "wide117_8m_dev6_RIGHT_13",
+        "wide117_8m_dev6_RIGHT_26"
+      ],
+      "active": false,
+      "resume": true,
+      "accepted_rounds": 1,
+      "rejected_rounds": 2,
+      "consecutive_rejects": 2
+    }
+  },
+  "best_improved": {
+    "arm": "rl",
+    "model": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t606r_offline_retention_recovery/rl_00/proposal.pt.gz",
+      "sha256": "7baee70ca4e099d95bf6070006704df31cce9bec9c5e4f048a87e9a85e7b9858",
+      "bytes": 280518,
+      "policy_hash": "91c583aa2e6e53024a9fc4af81fe81b74e586f39a7dbefe4ab104d4c1ca22cef",
+      "joint_hash": "96de91d373ca75276d267c17fe5b376cec1d53a6e1a4bbcb016025288f358c53"
+    },
+    "ids": [
+      "dev_task0_00",
+      "dev_task0_13",
+      "dev_task1_13",
+      "dev_task2_13",
+      "dev_task3_01",
+      "dev_task3_10",
+      "dev_task3_13",
+      "dev_task4_13",
+      "dev_task5_13",
+      "dev_task7_13",
+      "hold_task7_05",
+      "t502_field_sector0_offset1",
+      "t502_field_sector1_offset1",
+      "t502_field_sector2_offset1",
+      "t502_field_sector2_offset2",
+      "t502_field_sector3_offset1",
+      "t502_field_sector3_offset2",
+      "t502_field_sector4_offset1",
+      "t502_field_sector4_offset2",
+      "t502_field_sector5_offset1",
+      "t502_field_sector5_offset2",
+      "t502_field_sector6_offset1",
+      "t502_field_sector7_offset1",
+      "t502_field_sector7_offset2",
+      "wide117_80_dev6_RIGHT_00",
+      "wide117_80_dev6_RIGHT_08",
+      "wide117_80_dev6_RIGHT_16",
+      "wide117_80_dev6_RIGHT_23",
+      "wide117_80_dev6_RIGHT_26",
+      "wide117_8m_dev6_LEFT_13",
+      "wide117_8m_dev6_RIGHT_10",
+      "wide117_8m_dev6_RIGHT_13",
+      "wide117_8m_dev6_RIGHT_26"
+    ],
+    "check": {
+      "success": 33,
+      "valid": 49,
+      "contact": 12,
+      "timeout": 4,
+      "success_ids": [
+        "dev_task0_00",
+        "dev_task0_13",
+        "dev_task1_13",
+        "dev_task2_13",
+        "dev_task3_01",
+        "dev_task3_10",
+        "dev_task3_13",
+        "dev_task4_13",
+        "dev_task5_13",
+        "dev_task7_13",
+        "hold_task7_05",
+        "t502_field_sector0_offset1",
+        "t502_field_sector1_offset1",
+        "t502_field_sector2_offset1",
+        "t502_field_sector2_offset2",
+        "t502_field_sector3_offset1",
+        "t502_field_sector3_offset2",
+        "t502_field_sector4_offset1",
+        "t502_field_sector4_offset2",
+        "t502_field_sector5_offset1",
+        "t502_field_sector5_offset2",
+        "t502_field_sector6_offset1",
+        "t502_field_sector7_offset1",
+        "t502_field_sector7_offset2",
+        "wide117_80_dev6_RIGHT_00",
+        "wide117_80_dev6_RIGHT_08",
+        "wide117_80_dev6_RIGHT_16",
+        "wide117_80_dev6_RIGHT_23",
+        "wide117_80_dev6_RIGHT_26",
+        "wide117_8m_dev6_LEFT_13",
+        "wide117_8m_dev6_RIGHT_10",
+        "wide117_8m_dev6_RIGHT_13",
+        "wide117_8m_dev6_RIGHT_26"
+      ],
+      "lost_initial": [
+        "dev_task6_13",
+        "dev_task6_20",
+        "t502_field_sector0_offset2",
+        "t502_field_sector1_offset2",
+        "wide117_8m_dev6_LEFT_00",
+        "wide117_8m_dev6_LEFT_17"
+      ],
+      "gained": [],
+      "accepted": false,
+      "full407": null,
+      "fresh16": null,
+      "reload78": null,
+      "finite_development_NOT_global_retention": true
+    },
+    "handoff": [
+      {
+        "complete": true,
+        "collision": false,
+        "success": true,
+        "timeout": false,
+        "administrative_censor": false,
+        "physics_steps": 38993,
+        "remaining_m": 0.1998189828807844,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015663680244537223
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015658720498618398
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01562730680779173
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015622443727282526
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015715248344531266
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015710796619113412
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015679118202098774
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015674276441440482
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.043173885633596226
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.04245094353116187
+          }
+        ],
+        "policy_hash": "91c583aa2e6e53024a9fc4af81fe81b74e586f39a7dbefe4ab104d4c1ca22cef",
+        "physics": 38993,
+        "array_digest": "2cfb304f810112d7aa7d2dc2d084ac5236cc94764711ed3d24007690c4755cf9",
+        "array_hashes": {
+          "states": "cdb74e6bd8110860a658cfc1624a5ecc7715d3ede8c321a89fef6ec31ddb8e1f",
+          "actions": "5be1280d34b93366b73f2ec818ee634768f5a0fad3e586ed2fde9374c64f18e3",
+          "native_counts": "d2557e841ea0b65282503b9977776247379fba7050251f2205816729aa23fec2",
+          "next_states": "1083d608784eb58981eca6f8a92f6bf03e50e0f88ce3dea7ff59a67336b70063",
+          "poses": "e4a2354b148d95fedd5a0c008a061ca25c57e147902c15ab9aad44999e4ddeb4",
+          "next_poses": "5d56d1a303c8bf0e105b7aef6b175f346c211fc4a9c729780cfdc0213b7cda6b",
+          "end_flags": "de0c65a98cf6296f7335d549c8754e2534de434df24f3527b5c4ce893561824c",
+          "rewards": "acd3d40056f9749c35211d11079540236ac27da5374a4a93f604db9fd15a2dae",
+          "history_poses": "658e99d9669f4b649dcfd9c48883f84bd24f4be205b8c358e6615ffeb7b32f19",
+          "history_goals": "6fbf7e34032eb5c2941fd3b21803da4713d9c6f5e64f39ca943cbd215c317ff2",
+          "history_times": "7ad01f4a64176f687bb711c4a454d0907bb5c8ec6c08e50c33f74aaa22bfd87c",
+          "environment_rewards": "acd3d40056f9749c35211d11079540236ac27da5374a4a93f604db9fd15a2dae",
+          "initial_native_integration": "d51462fa16f0afa1f0c4761a00eb51588bb1c278f67546accb4182081035a1e8",
+          "final_native_integration": "d07ec4960776c3d712b9b0f2374da6a70ebab714dfbfa62986b506ee9f8d9793",
+          "hidden_before": "4218b945a7abeeecaba58cfff1c03f344d32b7e199dc351febe96ed4e59c6a5d",
+          "last_hidden_after": "24f364b028231fc04b7fe2b83302be6631194ac66450eaac9454e1a23a3da7f5",
+          "innovations": "036181ed9e7b205dc487350876bb10646ae36333c38421073b65167395f2da7a",
+          "raw_actions": "447f37e1f813b5ddf3c8d557bd18f54964e0e547880d2b71cc4b4db20f1e0d6a",
+          "atom": "f0609a67b74b79d0c64eba820c866c74ff46cb86fe56e43487e0d7faa3a2e91a",
+          "locations": "447f37e1f813b5ddf3c8d557bd18f54964e0e547880d2b71cc4b4db20f1e0d6a",
+          "logp": "6846b02c9d92acff37401b7cdb3178f69aacdad447f3998727413005da692c06",
+          "stochastic": "de96f3e417dd0be98c90a7fbf96e6caeeb17d3d131b944e3651a7c1faa6b2943",
+          "extra_hidden_before": "0befe646bed2d95311fe45c7f19012a12ea7fdeb68da88fbb5c8bf8127e19b88",
+          "anchor_hidden_before": "528941ae7a133970a1c396799d0a3d8da4eb341900dce6adb0af6ceed6a42f18",
+          "hold_sha256": "5ac90c41e136f4fdb4a533d8458a2cb282b88dc423274350416316598b767382",
+          "ownership": "96ab2f3cc013a54d33163ab6d14ea961c0bba87ca49283ecb39a6062a6c5451d",
+          "task_goal_xy": "4e215db893ba4105ee1db4ae1366558171ed563b02ff8ca29427b5dfe20ba64a",
+          "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+          "source_prefix_actions": "7c92ce0e8b58ee209620a13056956cdb64dadb6dba7fa819951a9d9bc576b047",
+          "student_takeover_first": "4411e81b5bd96c557cb25aff180157d2719c5c3c298fd401924f0c382d420955",
+          "last_extra_hidden_after": "c5e82e6fa3dc0e7fb4fbc0946275b76edd2ca2d1c814e97d27cdf4fac3e9e1a1",
+          "last_anchor_hidden_after": "ae12f89c3ec4995b9150e595532155eed53ed35e2380751c1c00f027bb804ea4"
+        },
+        "integration_sha256": "d07ec4960776c3d712b9b0f2374da6a70ebab714dfbfa62986b506ee9f8d9793",
+        "pid": 660377,
+        "cpu": 0,
+        "teacher": false,
+        "teacher_first": null,
+        "job_id": "t502_field_sector2_offset2",
+        "field_detail": {
+          "id": "t502_field_sector2_offset2",
+          "field_boundary_crossed": false,
+          "field_qualified_success": true
+        },
+        "observation_contract": {
+          "decisions": 390,
+          "pose_min_xy": [
+            -6.701070506756478,
+            0.17361042965816167
+          ],
+          "pose_max_xy": [
+            4.1637991171010006e-16,
+            6.8
+          ],
+          "input_dim": 120
+        },
+        "role": "RECOVERY_0",
+        "seed": null,
+        "request": {
+          "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t606r_offline_retention_recovery/rl_00/proposal.pt.gz",
+          "job": {
+            "id": "t502_field_sector2_offset2",
+            "source_reset_id": "t502_new_sector2_offset2",
+            "group": "6m_LEFT",
+            "case": {
+              "id": "6m_LEFT",
+              "seed": 2029653601,
+              "angle_deg": -17.3,
+              "side": "LEFT",
+              "distance_m": 9.616652224137045,
+              "step_cap": 64112,
+              "group": "original_5m_primary"
+            },
+            "delta_x_m": 0.0,
+            "delta_y_m": 0.0,
+            "delta_yaw_deg": 0.0,
+            "seed": 0,
+            "mode": "deterministic",
+            "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+            "expected_initial120_sha256": null,
+            "wide_course": true,
+            "circle_shift_x_m": 0.6,
+            "fullfield_start_pose": [
+              4.1637991171010006e-16,
+              6.8,
+              -2.356194490192345
+            ],
+            "fullfield_goal_xy": [
+              -6.8,
+              8.327598234202001e-16
+            ],
+            "start_sector": 2,
+            "sector_offset": 2,
+            "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t582_fresh_multitask_pair/episodes/full_16.npz",
+            "student_takeover_first": 26
+          },
+          "seed": null,
+          "query": false,
+          "full_path": null
+        },
+        "loaded_model_sha256": "7baee70ca4e099d95bf6070006704df31cce9bec9c5e4f048a87e9a85e7b9858",
+        "model_sha256": "7baee70ca4e099d95bf6070006704df31cce9bec9c5e4f048a87e9a85e7b9858",
+        "full": false,
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t606r_offline_retention_recovery/rl_00/episodes/case_4.npz",
+        "sha256": "36466523f813fa11a8dff6766053cb0fb5cf94e9911f85fefdb01a3d0d478ff5",
+        "full_arrays_generated_but_not_saved": true
+      },
+      {
+        "complete": true,
+        "collision": false,
+        "success": true,
+        "timeout": false,
+        "administrative_censor": false,
+        "physics_steps": 40221,
+        "remaining_m": 0.19977010530441008,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01566086317388786
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01565568093832491
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015624303583993457
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.0156193904447295
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015718277690397367
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015713776310495822
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015681962140282946
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015677241661109065
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.04377069143215555
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.04294603994677676
+          }
+        ],
+        "policy_hash": "91c583aa2e6e53024a9fc4af81fe81b74e586f39a7dbefe4ab104d4c1ca22cef",
+        "physics": 40221,
+        "array_digest": "fe6d45cbb61a4f1c6bc8cd3f0f433eb7c5bc8f5255fbbb07d941b00e58cf7287",
+        "array_hashes": {
+          "states": "408d6fa372391829d6760b731fb28d4c93c5942482159f300a6d2d56ac611c69",
+          "actions": "90a71a53ac25fae231e45d07a686d191f7c1e99287dc38cdbea8ff04195254d6",
+          "native_counts": "00e4f3a5b819e2cb5e3518e946959fde76a259e7282159833c08af8570cada73",
+          "next_states": "4957b23410260e84046f028ece6a87c81f0d19e194fb52f3b0b23038d70a597a",
+          "poses": "e0ab7ab5a7508525f9e62b5f7273d1ad81e2e3d3384c10a83b04ae91f385bbe0",
+          "next_poses": "cc52e1c0fd64c61b91d0a1202321752b9c427434ce0e61e9073cdfe666f38835",
+          "end_flags": "05afabd6bf2d8f3c599bf58f11e110810689db17062210f44bbe0a6b303640be",
+          "rewards": "d2b75cde02653cf1218ccfc203e64d8a830cf2005c809f1b12c6ae378ec2b4c8",
+          "history_poses": "1aaf973a9316d66d70cdbcde61248e7735009da7326b2318a0187f8efd6ac5b4",
+          "history_goals": "ca080fccb06dadc3cddd9a112fadd1fdd77ff4c5b7a144c8d5d8a001adb1e1da",
+          "history_times": "1ad05a855c49090b3576e7a61067aee39706a891e7f5b109678c394bb8861510",
+          "environment_rewards": "d2b75cde02653cf1218ccfc203e64d8a830cf2005c809f1b12c6ae378ec2b4c8",
+          "initial_native_integration": "d51462fa16f0afa1f0c4761a00eb51588bb1c278f67546accb4182081035a1e8",
+          "final_native_integration": "98855367c0e25e0123c252c53dfe82cb8d8f15d9550d296fd4309a736ea69e8c",
+          "hidden_before": "6e7feb698123fa288e7295edcf3967d744cd981853075a06b458addd39d79b1f",
+          "last_hidden_after": "a9cd645051f33dcb530f654eaf142a19290bd96e74e185ae43319a845789e845",
+          "innovations": "c30d56b19f58fa278f3ce6a0703b6530049fa62a6229a01170c553c7ae8b1559",
+          "raw_actions": "2325e7b439706fe7e9595c731b574a7d644fe7808fa5632bbac85ae92930cd00",
+          "atom": "034480b97bb3ce98afd2d9641b7387116144ea028699395e091fa75995ff2b43",
+          "locations": "2325e7b439706fe7e9595c731b574a7d644fe7808fa5632bbac85ae92930cd00",
+          "logp": "254f5cb43c4943ab7320742646ed770d122009cbd02079d5d8cae75242764c68",
+          "stochastic": "4bac0efb41b84f0875e040a362874ca194c6a7f92be4f2ea5146a620f2748a37",
+          "extra_hidden_before": "003c89726bb324b5f3e085c0c00b4d8564e5edb240861668f44a5f0add0cbe88",
+          "anchor_hidden_before": "78f0315e7b95c51a7f98cf8455e82ac7ca7734cce6ad0c84d86c353e86153e2a",
+          "hold_sha256": "1a56e8d625719d37ecf2a4f4f8060e0324bb4a9563707576c62f6f261acc26ea",
+          "ownership": "47be729f98035eac82bba167a70bdc0e2aadb2c672a99ea44fa89866adfaa59a",
+          "task_goal_xy": "4e215db893ba4105ee1db4ae1366558171ed563b02ff8ca29427b5dfe20ba64a",
+          "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+          "source_prefix_actions": "c998de21e155c8c65ee737ab6b8eede1d1563a9b38cb968d2c06fd5d343bba3b",
+          "student_takeover_first": "e20996de29f03e69b10a22075da4007b96a2081cdefa128de02fea69a547c1ad",
+          "last_extra_hidden_after": "2e0ebd92f4bbf13d56d69306ec2c95f708f85e6fbe779ff1257f3161fe1591f3",
+          "last_anchor_hidden_after": "768f510069ca38aa3db7ba1cff4fc88e525017dff99865424a6a12bc9b85b019"
+        },
+        "integration_sha256": "98855367c0e25e0123c252c53dfe82cb8d8f15d9550d296fd4309a736ea69e8c",
+        "pid": 660377,
+        "cpu": 0,
+        "teacher": false,
+        "teacher_first": null,
+        "job_id": "t502_field_sector2_offset2",
+        "field_detail": {
+          "id": "t502_field_sector2_offset2",
+          "field_boundary_crossed": false,
+          "field_qualified_success": true
+        },
+        "observation_contract": {
+          "decisions": 403,
+          "pose_min_xy": [
+            -6.697746912137181,
+            0.17161701837479318
+          ],
+          "pose_max_xy": [
+            4.1637991171010006e-16,
+            6.8
+          ],
+          "input_dim": 120
+        },
+        "role": "RECOVERY_1",
+        "seed": null,
+        "request": {
+          "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t606r_offline_retention_recovery/rl_00/proposal.pt.gz",
+          "job": {
+            "id": "t502_field_sector2_offset2",
+            "source_reset_id": "t502_new_sector2_offset2",
+            "group": "6m_LEFT",
+            "case": {
+              "id": "6m_LEFT",
+              "seed": 2029653601,
+              "angle_deg": -17.3,
+              "side": "LEFT",
+              "distance_m": 9.616652224137045,
+              "step_cap": 64112,
+              "group": "original_5m_primary"
+            },
+            "delta_x_m": 0.0,
+            "delta_y_m": 0.0,
+            "delta_yaw_deg": 0.0,
+            "seed": 0,
+            "mode": "deterministic",
+            "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+            "expected_initial120_sha256": null,
+            "wide_course": true,
+            "circle_shift_x_m": 0.6,
+            "fullfield_start_pose": [
+              4.1637991171010006e-16,
+              6.8,
+              -2.356194490192345
+            ],
+            "fullfield_goal_xy": [
+              -6.8,
+              8.327598234202001e-16
+            ],
+            "start_sector": 2,
+            "sector_offset": 2,
+            "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t600_task_risk_pair/episodes/full_0.npz",
+            "student_takeover_first": 94
+          },
+          "seed": null,
+          "query": false,
+          "full_path": null
+        },
+        "loaded_model_sha256": "7baee70ca4e099d95bf6070006704df31cce9bec9c5e4f048a87e9a85e7b9858",
+        "model_sha256": "7baee70ca4e099d95bf6070006704df31cce9bec9c5e4f048a87e9a85e7b9858",
+        "full": false,
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t606r_offline_retention_recovery/rl_00/episodes/case_5.npz",
+        "sha256": "41f66fec4c2d8c6289e40ff3a2eaab7530df8feb6e662eaacad8b3174ff38ad7",
+        "full_arrays_generated_but_not_saved": true
+      },
+      {
+        "complete": true,
+        "collision": false,
+        "success": true,
+        "timeout": false,
+        "administrative_censor": false,
+        "physics_steps": 39597,
+        "remaining_m": 0.19972422975877385,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01566228694633197
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015657433819591407
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015628059528226948
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015623449700217493
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015714243629450578
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015710059930454115
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015680293264898656
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01567579863506137
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.044553063132759384
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.04359853587939879
+          }
+        ],
+        "policy_hash": "91c583aa2e6e53024a9fc4af81fe81b74e586f39a7dbefe4ab104d4c1ca22cef",
+        "physics": 39597,
+        "array_digest": "8052dd88c49d3791f1da8a5d22c3b72b8648848bf7230748673525e09c0727f6",
+        "array_hashes": {
+          "states": "001610d06f8568d6d6c9a3f11f267d01b3dbd666aed090766b13ed8f3ce27bb4",
+          "actions": "5468d73f680f7de912eb8b83340b3748940ed00010f49e8501b7bddf4591ee31",
+          "native_counts": "9047a84f2351ae7ee05687319886a4ea50833ecd71d3cbb1f8cb98db91acd1b2",
+          "next_states": "883c97dea38885b6187569d71192f61798772a35fd37b8715eee3a9f9e4eb59c",
+          "poses": "e7041d82e704221265b16a19fbe6c3c93bff0bfed36fc6538a9b8341208a5b5e",
+          "next_poses": "c7478a05750029afe158af29b64728f8a286c343afc3f77b60d16b7a225e5a22",
+          "end_flags": "4c11fd638795db6233c11a00f9758bafb2ad4d380800a5b63344e243dbc57b99",
+          "rewards": "74fad726e3330c738497d3201d22138933dda0f20b3822687ed8aaa7166adbd1",
+          "history_poses": "15c51779da9c317b475bbf95c59e680e39bf2c17272c0a518a06ab248f788c36",
+          "history_goals": "d11f0513a7dd478d38a3bbbb1f28cfd076ace2488a6533acaf312c8497629ea0",
+          "history_times": "82289111b7f0702e0d31d24c92b4dcf833509c4a117a05f58bb0f98a64409ca8",
+          "environment_rewards": "74fad726e3330c738497d3201d22138933dda0f20b3822687ed8aaa7166adbd1",
+          "initial_native_integration": "d51462fa16f0afa1f0c4761a00eb51588bb1c278f67546accb4182081035a1e8",
+          "final_native_integration": "45594f39f7dd437999433b8fc197dc5de6bf81c742a614022c01fa8ad18fd1e1",
+          "hidden_before": "55d3cb5ab4329edc79ddadf8951f0b55bf898cd0b4fe6ce4d91a4d6d86368b85",
+          "last_hidden_after": "14e4681f63c44ad99ad88f3bb8efd504880a958c15c3c6b9df35be43e5fd6b5a",
+          "innovations": "9051dbd5c1731d729a1443f59f9c21798f9ab5dc54c080400b74fb80aa26a051",
+          "raw_actions": "46d7b07227455bdba10f2ab0bf059f3ada1b137599c4b4a4cb5518335cf0c6e0",
+          "atom": "4a9a183bdc0b3798443a14c2ce9ac493ad48f88123ebfee1ca29577dbbefe6ff",
+          "locations": "46d7b07227455bdba10f2ab0bf059f3ada1b137599c4b4a4cb5518335cf0c6e0",
+          "logp": "b90ac186968185b0851365b9a971a9763acded048ff5f0dc7d046a49f41508cd",
+          "stochastic": "cf7dd8e39db64376ee1ac43e8a3347c6eeae432bd94b1b508b5debdda4160fe3",
+          "extra_hidden_before": "27bc5b151d08bdd41b6bcc3546eafee1c50339e090bc9c2bb2facec5a0d9f6a8",
+          "anchor_hidden_before": "bf2d290439fdafe20a29243ccc3c449a969942695ab6594b0c84b226947fc368",
+          "hold_sha256": "2c2230e2272046683d3621546889f6969ec31866477a45d0f7bc64da6718a4d1",
+          "ownership": "bca8dbef67e30c44f9b3b8971a5b6fff31f9f0e89bcb6ff34864c10e8773e85c",
+          "task_goal_xy": "4e215db893ba4105ee1db4ae1366558171ed563b02ff8ca29427b5dfe20ba64a",
+          "scene_sha256": "2a03049ae6fdfadc2a7870109d6709352331ece5d840c79f7ee4ae113917bdda",
+          "source_prefix_actions": "473968f4ce69b7274d4e2a05ba64204249a3b76470f5cc4877240fc24842d852",
+          "student_takeover_first": "d4d403a9e0bb104bab72ba177509990116deb468aeec8ad7f1324b27a0bfd6f2",
+          "last_extra_hidden_after": "350d1879a4c5fd28c59acaa43c7a76821fa6233e095c2ccd3e8c35c89132bbbe",
+          "last_anchor_hidden_after": "320e2e9dc980dc0ad00534d17326329095a92b5482bc1e33f2d67452a2546440"
+        },
+        "integration_sha256": "45594f39f7dd437999433b8fc197dc5de6bf81c742a614022c01fa8ad18fd1e1",
+        "pid": 660377,
+        "cpu": 0,
+        "teacher": false,
+        "teacher_first": null,
+        "job_id": "t502_field_sector2_offset2",
+        "field_detail": {
+          "id": "t502_field_sector2_offset2",
+          "field_boundary_crossed": false,
+          "field_qualified_success": true
+        },
+        "observation_contract": {
+          "decisions": 396,
+          "pose_min_xy": [
+            -6.698710173384859,
+            0.1721340726788581
+          ],
+          "pose_max_xy": [
+            4.1637991171010006e-16,
+            6.8
+          ],
+          "input_dim": 120
+        },
+        "role": "RECOVERY_2",
+        "seed": null,
+        "request": {
+          "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t606r_offline_retention_recovery/rl_00/proposal.pt.gz",
+          "job": {
+            "id": "t502_field_sector2_offset2",
+            "source_reset_id": "t502_new_sector2_offset2",
+            "group": "6m_LEFT",
+            "case": {
+              "id": "6m_LEFT",
+              "seed": 2029653601,
+              "angle_deg": -17.3,
+              "side": "LEFT",
+              "distance_m": 9.616652224137045,
+              "step_cap": 64112,
+              "group": "original_5m_primary"
+            },
+            "delta_x_m": 0.0,
+            "delta_y_m": 0.0,
+            "delta_yaw_deg": 0.0,
+            "seed": 0,
+            "mode": "deterministic",
+            "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+            "expected_initial120_sha256": null,
+            "wide_course": true,
+            "circle_shift_x_m": 0.6,
+            "fullfield_start_pose": [
+              4.1637991171010006e-16,
+              6.8,
+              -2.356194490192345
+            ],
+            "fullfield_goal_xy": [
+              -6.8,
+              8.327598234202001e-16
+            ],
+            "start_sector": 2,
+            "sector_offset": 2,
+            "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t600_task_risk_pair/episodes/full_1.npz",
+            "student_takeover_first": 92
+          },
+          "seed": null,
+          "query": false,
+          "full_path": null
+        },
+        "loaded_model_sha256": "7baee70ca4e099d95bf6070006704df31cce9bec9c5e4f048a87e9a85e7b9858",
+        "model_sha256": "7baee70ca4e099d95bf6070006704df31cce9bec9c5e4f048a87e9a85e7b9858",
+        "full": false,
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t606r_offline_retention_recovery/rl_00/episodes/case_6.npz",
+        "sha256": "f4606cb71328bd72d43f86e111145759e8809e37d458454db0b9333e09013379",
+        "full_arrays_generated_but_not_saved": true
+      }
+    ]
+  },
+  "epoch": 1794839703.776249
+}

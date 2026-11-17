@@ -1,0 +1,34 @@
+{
+  "state": "REGISTERED_WAIT_ONLY_NOT_NEW_TRAINING",
+  "epoch": 1794838246.9674501,
+  "new_user_instruction": "\u8fd9\u4e2a\u8dd1\u5b8c\uff0c\u8fd8\u6709\u65f6\u95f4\uff0c\u7ee7\u7eed\u5199\u63a5\u529b\u7684\uff0c\u4e0d\u7ba1\u8fd9\u4e2a\u5931\u8d25\u8fd8\u662f\u6210\u529f",
+  "shared_budget_no_expansion": true,
+  "source_sha256": {
+    "stage/experiments/t607_taskwise_adam_relay/driver.py": "b934a45d66781a73445b2dde13e4948415c290ec12df2835e17685b4830411b0",
+    "stage/experiments/t607_taskwise_adam_relay/t607_learning.py": "57fb76b0f611f7bfa846529c60f52ceb72e9207d19e07a4814bd1e81638eb0f6",
+    "stage/experiments/t607_taskwise_adam_relay/t607_runtime.py": "89dd97d77a8adf2269f1eeacb94362fa5bb5bff7524a1161dd53bd459e781425",
+    "stage/experiments/t607_taskwise_adam_relay/t607_queue.py": "b86222430a5d0cda2e7f5189d80d82612cf6a1fa1b91d05abf25ef5df42e0459",
+    "stage/experiments/t607_taskwise_adam_relay/transport.py": "93e1decec35863af51dd6bb2f8a468c12fc232f2754b42b68b6e41100ecb80f1"
+  },
+  "plan_sha256": "240d8052e7fee79e813659ebbd020157a227fcdbdb951d306e0c8c822349fc8f",
+  "zero_optimizer_preflight": {
+    "state": "PASS_ZERO_NATIVE_ZERO_ADAM",
+    "projection_known_halfspaces_and_zero_gradients": true,
+    "real42_history_task_loss_gradients_finite": true,
+    "protected_old_histories": 31,
+    "whole_ActorAdam_unchanged": true,
+    "new_native": 0,
+    "new_Adam": 0,
+    "no_extra_optimizer_preflight": true,
+    "actual31_real_history_gradient_normals": true,
+    "parameter_count": 10274,
+    "analytic_first_step_displacement_only_no_optimizer": true,
+    "real_projection_diagnostic": {
+      "passes": 53,
+      "max_violation": 8.988229366520273e-11,
+      "zero_normals": false,
+      "converged": true
+    },
+    "real_projection_elapsed_s": 4.8572423458099365
+  }
+}
