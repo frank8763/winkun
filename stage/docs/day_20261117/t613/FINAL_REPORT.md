@@ -1,0 +1,1 @@
+T613合格恢复后缀监督学习已结束：COMPLETE；物理0、命令0，新研究成功改进=False；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。各臂与冻结扰动分列，fresh16/reload78未执行，不称全局/泛化通过。

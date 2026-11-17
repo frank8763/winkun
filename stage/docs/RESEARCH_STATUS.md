@@ -1,3 +1,5 @@
+2026-11-17 T613合格恢复后缀监督学习已结束：COMPLETE；物理0、命令0，新研究成功改进=False；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。各臂与冻结扰动分列，fresh16/reload78未执行，不称全局/泛化通过。
+
 2026-11-17 用户允许T613新窗12:30停学13:00原生13:30全停，已正式注册；max3live3shadow3audit/0新增pref，日合计≤16/16/16+4pref及22M660cmd9000main50MiB不扩。启动前实际driver完整余时/容量准入通过；final407未注册因此仅将未使用2MiB最终预留改512KiB，child7MiB+元数据尾≤own8MiB，科学不改、0native0Adam修订证据保留。原34候选+43history中T612teacher真成功后缀ownership==1监督，全prefix给student自身BPTT；先唯一偏离状态学生自主接管+exact，过后原3恢复和49，34不丢才研究保留。实际launch另查，CPU14/15/GPUoff/Phase隔离。
 
 2026-11-17 T613恢复后缀最小监督学习已准备/43真实history零native零Adam预检PASS，尚未授权新停学时间/未注册未launch。从T60834候选+freshAdam，原42复习+T612成功恢复1条43history，严格ownership==1教师后缀监督、完整真实prefix给student自己BPTT；不借teacherhidden、不作onpolicy。最多3live3shadow3历史audit，0新增pref，日13+3≤16上限；max2986284物理65cmd1800main300audit8MiB，日≤8034616步277cmd4507.747main，22M6609000/50MiB不扩。先强制实际candidate前38步后新学生自主接管+exact，过后原3恢复和49，34不得丢；本项407/fresh/reload未注册null。原11:30停学已过，拟12:30停学13:00原生13:30全停须用户确认新窗口后才能启动。CPU14/15/GPUoff/Phase隔离，source备份后询问；不复活旧目录。
