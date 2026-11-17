@@ -1,0 +1,32 @@
+{
+  "state": "READ_ONLY_UPDATE_FEASIBILITY_REVIEW",
+  "initial_raw_max": 0.0019963966557305923,
+  "initial_command_max": 0.0019963966557305923,
+  "registered_limit": 0.002,
+  "remaining_action_slack": 3.603344269407713e-06,
+  "attempted_live_Adam": 1,
+  "shadow_Adam": 1,
+  "historical_audit_Adam": 1,
+  "actual_parameter_steps": 0,
+  "first_loss": 0.02008745419170856,
+  "smallest_trial": {
+    "factor": 0.00390625,
+    "loss": 0.020069026191434476,
+    "raw_max": 0.002150995260045807,
+    "command_max": 0.002150995260045807,
+    "parts": {
+      "replay": 0.01497412694408249,
+      "correction": 0.005094899247351986,
+      "KL": 0.0
+    },
+    "accepted": false
+  },
+  "whole_ActorAdam_rollback_exact": true,
+  "new_recovery_native_test": null,
+  "full49": null,
+  "retained_research_success": 34,
+  "retained_field_success": 13,
+  "new_native": 0,
+  "new_Adam_in_review": 0,
+  "interpretation": "Correction/replay objective decreases on all five fixed proposal scales, but all scales breach old recovery output gate. This is a rejected update, not an autonomous recovery failure or impossibility proof. A feasible-direction mechanism must be separately registered; do not relax0.002 or repeat identical before/data."
+}

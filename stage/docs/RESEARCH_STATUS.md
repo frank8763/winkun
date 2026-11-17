@@ -1,3 +1,5 @@
+2026-11-17 T613科学首提案拒绝且完整结束：1live1shadow1历史audit，全部5已锁比例loss均降但旧三恢复max漂移超.002，最小1/256仍.002150995，整ActorAdam精确回退、0参数应用/0原生/0cmd。其余2学习尝试未执行，日累计14live14shadow14audit+4pref，剩2不新编号扩额。新自主恢复/49/407均null，不能当恢复失败或0%导航。原模型固定历史漂移0.00199639665573，仅余3.60334426941e-06；普通同方向Adam与函数保持界冲突，非示范无效/全局不可学证明。auditPASS及13raw远端RAM全SHA读回，全部PID退，仍T60834/49、field13/24。可行方向更新只是下一待注册机制，不放宽旧判据/不重复结束目录。原授权12:30学13:00原生13:30全部停/CPU14,15/GPUoff/Phase隔离。详t613/FINDINGS和UPDATE_FEASIBILITY_REVIEW。
+
 2026-11-17 T613合格恢复后缀监督学习已结束：COMPLETE；物理0、命令0，新研究成功改进=False；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。各臂与冻结扰动分列，fresh16/reload78未执行，不称全局/泛化通过。
 
 2026-11-17 用户允许T613新窗12:30停学13:00原生13:30全停，已正式注册；max3live3shadow3audit/0新增pref，日合计≤16/16/16+4pref及22M660cmd9000main50MiB不扩。启动前实际driver完整余时/容量准入通过；final407未注册因此仅将未使用2MiB最终预留改512KiB，child7MiB+元数据尾≤own8MiB，科学不改、0native0Adam修订证据保留。原34候选+43history中T612teacher真成功后缀ownership==1监督，全prefix给student自身BPTT；先唯一偏离状态学生自主接管+exact，过后原3恢复和49，34不丢才研究保留。实际launch另查，CPU14/15/GPUoff/Phase隔离。
