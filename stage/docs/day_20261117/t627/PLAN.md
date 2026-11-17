@@ -1,4 +1,4 @@
-# T627 CAGrad任务梯度组合对照（准备，新增学习额度未批准）
+# T627 CAGrad任务梯度组合对照（用户已批准，实际启动查launch）
 
 要解决的可检验问题是多任务更新方向冲突，而不是再放大旧动作MSE。T626完整49为新增2/丢旧2，旧field4未参加本轮PG、旧八米LEFT13参加PG仍丢。旧函数MSE在初值梯度为零，不能替代旧任务回报方向。真实8任务梯度零optimizer检查已有18?具体负cos数量以PREFLIGHT为准；平均单位方向的最差任务dot=-.0369500，CAGrad组合后+.1812489，方向cos=.92924，固定零更新门已过。不能据此声称闭环保持保证。
 
@@ -16,6 +16,6 @@ CAGrad(c<1)不保证每任务dot都非负，后续步可能仍局部伤害任务
 
 本地own6MiB：新采四full每1.25MiB短缓存，只在完整上传+远端RAM全成员SHA后释放，断网保当批停；原32不落盘。原生采集3worker，其最坏当前第四未完整partial+前三full与metadata预留<=6MiB。模型各229376B安全上界203055；双49compact各318273B全无损安全上界，runtime每file12KiB仍守；评估只2worker同时（第三空闲），最多2×1.625MiB partial，再加模型、紧凑资料、协议/原返回gzip/日志保持6MiB内。日50MiB/global1GiB/free40GiB不扩，远端新增raw+root<=16MiB，原32已备份不重复上传。只新批缓存已授权释放，唯一失败数据/旧模型不删。
 
-CPU8/10/12原生三核收集、评估两核按存储限制、parent/audit14可用；GPU float64学/独立重构，其他compute出现让出，Phase研究数据不读取。唯一driver顺序main全native退出后audit及最终原始归档；native接收先无损保存，两个候选eval独立路径不覆盖。源码根树GitHub核验后唯一launch。当前仅准备，确认新增16Actor额度后注册启动，不拿旧额度继续。
+CPU8/10/12原生三核收集、评估两核按存储限制、parent/audit14可用；GPU float64学/独立重构，其他compute出现让出，Phase研究数据不读取。唯一driver顺序main全native退出后audit及最终原始归档；native接收先无损保存，两个候选eval独立路径不覆盖。源码根树GitHub核验后唯一launch。当前仅准备，确认新增16Actor额度已批准，源码精确同步后唯一启动，不拿旧额度继续。
 
 一手来源：[CAGrad论文](https://arxiv.org/abs/2110.14048)、[作者仓库](https://github.com/Cranial-XIX/CAGrad)、[mtrl实现](https://raw.githubusercontent.com/Cranial-XIX/CAGrad/main/mtrl/mtrl_files/cagrad.py)。见PRIMARY_RETENTION_REVIEW的CLEAR/DAgger反证与限制。PCGrad/GEM/函数投影历史已有失败，本次是新batch真实任务回报梯度的匹配CAGrad消融，不称首次想到梯度冲突或原创创新已成立。

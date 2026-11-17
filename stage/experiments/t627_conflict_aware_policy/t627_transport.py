@@ -28,7 +28,7 @@ def main():
     original=T.B.write
     def write(path,value):
         if Path(path).name=='source_manifest_T627.json':
-            value=dict(value,scope='Ended Stage T627 one eight-task fresh32 critic-free clipped-PG Actor candidate and complete49 development; remote full dataset batches independently member-SHA verified; no global promotion')
+            value=dict(value,scope='Ended Stage T627 two matched9-task meanSGD-versus-CAGradSGD policies using32 historical parent-policy episodes plus4shared fresh episodes; both complete49 development; no global promotion')
         return original(path,value)
     T.B.write=write
     p=json.loads((OUT/'protocol.json').read_text())

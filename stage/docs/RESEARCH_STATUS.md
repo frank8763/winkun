@@ -1,3 +1,5 @@
+2026-11-17 用户明确批准T627新增16Actor policySGD live/shadow/历史重构、日各108，Critic1120不扩/0pref；正式唯一root注册，原21:00停学21:15native21:30all不延长。共享原T62632旧初始policy数据及新field4四fresh四exact，两臂meanSGD/CAGradSGD各最多8更新、完整49+4keyexact；max5381004步120cmd1800main900audit/local6MiB/remote16MiB仍原日/全局余额，真实三核收集/两核验收留partial/GPU学习/Phase隔离。source后launch另查，不重复旧run/不保证遗忘已解决。
+
 2026-11-17 T627任务梯度冲突CAGrad匹配对照代码/真实原32远端读回零native零optimizer8任务梯度预检PASS，平均最坏unitdot-.03695→CAGrad+.18125/方向cos.92924，真实mean梯度=原scalar、simplex gap5.3e-9、c0/排列检验PASS，局部不是闭环保留保证。复用初始T608原8×4（非新采），共享新field4四fresh四exact、两臂meanSGD vsCAGradSGD各8update/8shadow/8历史重构，完整49+4exact各一次。新增16Actor拟日92→108待额度，Critic0/pref0；max5381004物理120cmd1800main900audit/local6MiB/remote16MiB仍原日/全局余额，21:00学21:15native21:30all不延长。仅准备无run/launch，CPU收集三核/评估两核留partial余量、GPU学习，Phase隔离。详t627/PLAN/BUDGET/PREFLIGHT/PRIMARY_REVIEW。
 
 2026-11-17 T626八任务32新闭环/无Critic联合Actor更新结束：COMPLETE；实际成功丢失/新增/49与原始remote见t626/FINAL_REPORT，不称泛化或全局晋升。

@@ -65,7 +65,11 @@ def audit():
  for r in reps:assert r['exact'] and r['array_hashes']==by[r['reference_path']]['array_hashes'] and r['integration_sha256']==by[r['reference_path']]['integration_sha256']
  for result in s['results']:
   arm=result['arm'];folder=OUT/arm;M.configure_gpu(p);obj=M.make(p);before=M.state(obj);events=[]
-  def guard():assert time.time()<p['absolute_all_stop']-5
+  gpu_last=[0.]
+  def guard():
+   assert time.time()<p['absolute_all_stop']-5
+   if time.time()-gpu_last[0]>5:
+    jobsGPU=subprocess.check_output(['nvidia-smi','--query-compute-apps=pid','--format=csv,noheader'],text=True).strip().splitlines();assert all(int(z)==os.getpid() for z in jobsGPU if z.strip()),'Other GPU compute during audit, yield';gpu_last[0]=time.time()
   def event(stage,k):
    events.append(['live',stage,k])
    with gzip.open(folder/'audit_optimizer_calls.jsonl.gz','ab') as f:f.write((json.dumps([stage,k])+'\n').encode())
