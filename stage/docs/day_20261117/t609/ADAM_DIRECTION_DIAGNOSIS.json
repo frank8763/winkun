@@ -1,0 +1,93 @@
+{
+  "state": "ZERO_OPTIMIZER_ZERO_NATIVE_ANALYTIC_NEXT_DISPLACEMENT",
+  "new_Adam": 0,
+  "new_native": 0,
+  "source": "T608rl01 unchanged current34 policy historical onpolicy batch; not fresh collection",
+  "policy_hash": "9e2017ccc814478ebcfb9d025ac5e58a45e2719437fc78c0164ce08999c6983c",
+  "before_objective": 0.15455161605149903,
+  "gradient_direction": [
+    {
+      "mode": "retained_Adam",
+      "directional_derivative": 1.1188517753318275e-05,
+      "delta_L2": 0.0007678676843654208
+    },
+    {
+      "mode": "fresh_Adam",
+      "directional_derivative": -0.000509088436655499,
+      "delta_L2": 0.0010133491135585091
+    }
+  ],
+  "trials": [
+    {
+      "mode": "retained_Adam",
+      "factor": 1.0,
+      "objective_delta": 2.214187082150154e-05,
+      "recovery_drift": 0.002826160672721567,
+      "guard_pass": false
+    },
+    {
+      "mode": "retained_Adam",
+      "factor": 0.25,
+      "objective_delta": 5.483998451072392e-06,
+      "recovery_drift": 0.002203843316013754,
+      "guard_pass": false
+    },
+    {
+      "mode": "retained_Adam",
+      "factor": 0.0625,
+      "objective_delta": 1.3680248609759804e-06,
+      "recovery_drift": 0.0020482586726126017,
+      "guard_pass": false
+    },
+    {
+      "mode": "retained_Adam",
+      "factor": 0.015625,
+      "objective_delta": 3.4188420386382923e-07,
+      "recovery_drift": 0.0020093621819129437,
+      "guard_pass": false
+    },
+    {
+      "mode": "retained_Adam",
+      "factor": 0.00390625,
+      "objective_delta": 8.546345522941756e-08,
+      "recovery_drift": 0.0019996380386483326,
+      "guard_pass": false
+    },
+    {
+      "mode": "fresh_Adam",
+      "factor": 1.0,
+      "objective_delta": -0.000991201326269453,
+      "recovery_drift": 0.0014403708124817172,
+      "guard_pass": true
+    },
+    {
+      "mode": "fresh_Adam",
+      "factor": 0.25,
+      "objective_delta": -0.00024855428118439327,
+      "recovery_drift": 0.0015790339998386083,
+      "guard_pass": true
+    },
+    {
+      "mode": "fresh_Adam",
+      "factor": 0.0625,
+      "objective_delta": -6.219842801277742e-05,
+      "recovery_drift": 0.001892052168235292,
+      "guard_pass": true
+    },
+    {
+      "mode": "fresh_Adam",
+      "factor": 0.015625,
+      "objective_delta": -1.555319876900274e-05,
+      "recovery_drift": 0.0019703102951065254,
+      "guard_pass": true
+    },
+    {
+      "mode": "fresh_Adam",
+      "factor": 0.00390625,
+      "objective_delta": -3.888462518142344e-06,
+      "recovery_drift": 0.0019898750506561758,
+      "guard_pass": true
+    }
+  ],
+  "whole_ActorAdam_unchanged": true
+}

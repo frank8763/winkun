@@ -1,3 +1,5 @@
+2026-11-17 用户继续推进已落实T609新单次freshAdam对照，T608完整结束原件不改。固定同34/49研究模型+原T608rl01同policyhash四轨迹（历史复用非新独立样本、原首次提案0参数应用）。零Adam解析重现旧moments使loss方向导数正+1.11885e-5、freshAdam负-5.09088e-4；原五因素损失/漂移均可过，非导航因果或唯一根因。实际full120历史/密度/42memory/fresh空状态零optimizer预检PASS。唯一改初始化优化器，原目标/三恢复.002/门槛不改，max4live4shadow4audit，0额外pref；日总≤13/13/13+原4pref在已批16/16/16/4内。新最多14186987物理474cmd5400main/20MiB，连T608≤18366144物理641cmd7593.154main，均在22M6609000/50MiB；11:30学12:30原生13:00全停。原34不丢且三恢复过才研究保留，原T55039恢复才条件407；fresh16/reload78未实现不晋升。正式注册待source核验/实际launch另查，双CPU/GPUoff/Phase隔离。
+
 2026-11-17 T608当前策略成功记忆RL已结束：COMPLETE；物理4179157、命令167，新研究成功改进=True；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。各臂与冻结扰动分列，fresh16/reload78未执行，不称全局/泛化通过。
 
 2026-11-17 用户答复“开始吧”已确认T608已审阅的新白天22M/660cmd/9000main/50MiB，11:30停学12:30原生13:00全部停；正式协议/授权已注册，实际launch另查，不复用昨夜过期额度。33自身成功+3恢复先全部原生与exact，匹配数据最多4丢弃Adam预检；两轮全场地RL共16live+16shadow+16历史audit，前成功ID不丢，原39和三恢复过才407。完整source核验后唯一后台启动，所有工程/证据错误保留，不改旧结束目录，CPU14/15总200%低优先GPU关闭/Phase隔离。
