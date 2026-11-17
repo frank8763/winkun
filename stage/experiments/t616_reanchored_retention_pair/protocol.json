@@ -1,5 +1,5 @@
 {
-  "id": "T616_REANCHORED_RETENTION_PAIR_PREPARED",
+  "id": "T616_REANCHORED_RETENTION_PAIR",
   "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t616_reanchored_retention_pair",
   "actor_configuration": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t604_reverse_initialization/protocol.json",
   "base_model": {
@@ -122,7 +122,7 @@
     "max_physics": 3103730,
     "max_commands": 67
   },
-  "authorization_approved": false,
+  "authorization_approved": true,
   "inputs": {
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t604_reverse_initialization/control.py": "9e88ca8c9e33b313d3aa7ec8359871a1a7014dc78d421a9f6ddd0c5fa92b2bcf",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t200_residual_placement/common.py": "a213ec43cb4a8e54cf6abb780a122d2e117d28a41d69e4d6430477868aab0552",
@@ -833,7 +833,9 @@
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t616_reanchored_retention_pair/preflight.py": "abff7a69aad05a1533071a3d69bb7ff54a8e487e12609fc0e49f179d1ca7d991",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t616/PLAN.md": "3a6c562edc1c01f861867924d7fee8b8658fd51ada708b20dc6f8eaabd4b7e5b",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t616/PREFLIGHT.json": "b884ae0444910d62960825ff0bd8b4142036fd297b1804f513d0b2f8abd80ac3",
-    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t616/STATIC_CONTRACT.json": "d43c67efacfe28d4ac05421a0606295952be6bc86be07817002af6d6f32cc040"
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t616/STATIC_CONTRACT.json": "d43c67efacfe28d4ac05421a0606295952be6bc86be07817002af6d6f32cc040",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t616/AUTHORIZATION.json": "80b71ffd33b4cbee4d6ec1be1e29578445c7b0bf9957e6e342d006a79f044647",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t616/BUDGET.json": "29f603614980f2ee55318e4a30b6eca5bac9a36f8a8d8b9d178a3be000f2a54b"
   },
   "protected_files": {
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_01_gap/proposal.pt.gz": "a8231f5bb0ed1822b3cdf6700b35fdeed8d87e36abe869b66a122663149bb5d8",
@@ -879,14 +881,72 @@
   "reused_engineering_audit": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t608_current_policy_memory/engineering/audit.json",
   "reused_matching_data_optimizer_preflight_audit": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t608_current_policy_memory/optimizer_preflight/audit.json",
   "day_shared_accounting": {
-    "parent_protocol": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t608_current_policy_memory/protocol.json",
-    "parent_physics": 4179157,
-    "parent_commands": 167,
-    "parent_main_seconds": 2193.1537363529205,
-    "parent_live_Adam": 9,
-    "parent_shadow_Adam": 9,
-    "parent_historical_Adam": 9,
-    "parent_preflight_Adam": 4
+    "parent_actual": [
+      {
+        "run": "t608_current_policy_memory",
+        "physics": 4179157,
+        "commands": 167,
+        "main_seconds": 2193.1537363529205,
+        "bytes": 11607038
+      },
+      {
+        "run": "t609_fresh_batch_proposal",
+        "physics": 595691,
+        "commands": 25,
+        "main_seconds": 320.2982220649719,
+        "bytes": 1489270
+      },
+      {
+        "run": "t610_retention_trajectory_pair",
+        "physics": 170526,
+        "commands": 8,
+        "main_seconds": 112.80852222442627,
+        "bytes": 1703805
+      },
+      {
+        "run": "t611_early_teacher_recovery",
+        "physics": 42618,
+        "commands": 6,
+        "main_seconds": 35.32930302619934,
+        "bytes": 962508
+      },
+      {
+        "run": "t612_baseline_teacher_recovery",
+        "physics": 60340,
+        "commands": 6,
+        "main_seconds": 46.156816244125366,
+        "bytes": 1028546
+      },
+      {
+        "run": "t613_qualified_recovery_learning",
+        "physics": 0,
+        "commands": 0,
+        "main_seconds": 12.516435623168945,
+        "bytes": 558535
+      },
+      {
+        "run": "t614_feasible_recovery_step",
+        "physics": 643094,
+        "commands": 27,
+        "main_seconds": 350.84695053100586,
+        "bytes": 1911498
+      },
+      {
+        "run": "t615_original_start_drift_pair",
+        "physics": 314346,
+        "commands": 12,
+        "main_seconds": 200.0995078086853,
+        "bytes": 2683515
+      }
+    ],
+    "physical_cap": 22000000,
+    "command_cap": 660,
+    "main_cap": 9000,
+    "bytes_cap": 52428800,
+    "live_cap": 48,
+    "shadow_cap": 48,
+    "historical_audit_cap": 48,
+    "discarded_preflight_cap": 4
   },
   "qualified_recovery_manifest": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t612/QUALIFIED_RECOVERY_DATA.json",
   "new_recovery_job": {
@@ -1368,7 +1428,7 @@
   "historical_same_policy_training_rows": [],
   "new_teacher_queries": 0,
   "new_RL": 0,
-  "scope": "PREPARED ONLY; needs new learning deadline and optimizer quota approval; no new simulation or optimizer preflight",
+  "scope": "User approved two bounded16-attempt arms, reanchored current-parent recovery references, additional32 live/shadow/audit and new14:00/14:30/15:00 hard stops; no fresh RL",
   "recovery_bound_reference": "Frozen retained T608 sequence on the same actual histories; legacy teacher max drift diagnostic only",
   "old_bound_reference": "Frozen retained T608 sequence, fixed throughout all16 attempts in an arm"
 }

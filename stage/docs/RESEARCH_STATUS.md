@@ -1,3 +1,5 @@
+2026-11-17 用户已明确允许T616新增32live/32shadow/32历史audit及当前函数重锚恢复参照、14:00停学14:30停原生15:00全停；正式注册root，仍原日22M660cmd9000秒50MiB/global1GiB/free40GiB，CPU14/15总200/GPUoff/Phase隔离。两臂各最多16真实更新＋匹配影子/独立重构，0额外optimizer预检，原34全保且原起点新增≥1才保留。source精确远端后唯一后台启动，是否实际运行查launch/status，不重复。
+
 2026-11-17 用户要求继续加速多实验。T616两臂代码/真实45history零native零optimizer预检与静态物理计数PASS，仅准备未授权、无run/launch。共同当前T608函数重锚40旧+3恢复参照，保留1新失败场地T550成功监督+T612恢复后缀，A三恢复相对当前0.002、B另旧40逐坐标0.00025；旧教师漂移改诊断非硬门，须明确授权此参照变更，不放宽碰撞/0.2mGOAL/34逐ID保持。各16live16shadow16audit/第一拒绝停，总新增32/32/32，旧日16已满拟改48/48/48+4pref；6207460物理134cmd3600main24MiB仍原日22M6609000/50MiB及global1GiB余额，拟14:00学14:30native15:00all须确认。新接管+两原起点full/exact提前，四恢复/原34保持且新增原起点≥1才研究保留；完整49缺测null，407/fresh/reload不实施。准备5次解析梯度0optimizer/0native，拒绝源码/全部解析证据保存，预检不当导航收益。CPU14/15总200/GPUoff/Phase隔离。详t616/PLAN/BUDGET/PREFLIGHT，source同步后待询问，不启动。
 
 2026-11-17 T615冻结失守轨迹对照结束：COMPLETE；0Adam/0新RL，指标见day_20261117/t615/FINAL_REPORT。原始remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；不称导航改善或通过，T60834/49和field13/24保留，Phase隔离。
