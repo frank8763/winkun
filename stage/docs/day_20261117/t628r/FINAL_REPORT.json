@@ -1,0 +1,34 @@
+{
+  "state": "FAILED_INITIALIZATION_OOM",
+  "summary": {
+    "state": "FAILED_OOM_DURING_WORKER_INITIALIZATION",
+    "metadata_recovery_only": true,
+    "original_producer_was_killed_no_original_summary": true,
+    "physics": 0,
+    "optimizer_updates": 0,
+    "commands": 6,
+    "commands_are_conservative_upper_bound": true,
+    "elapsed_s": 15.0,
+    "elapsed_s_is_conservative_upper_bound": true,
+    "reason": "Internal2GiB resident estimate insufficient for native worker initialization. No Pool returned READY for full generation; main never reached any request.",
+    "evidence": {
+      "MainPID": "0",
+      "Result": "oom-kill",
+      "ControlGroup": "",
+      "ActiveState": "failed"
+    },
+    "pids": [
+      89581,
+      89589
+    ],
+    "results": [],
+    "epoch": 1794921928.3725843
+  },
+  "raw_preserved": true,
+  "no_original_restart": true,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "scientific_results": null,
+  "full49": null,
+  "new_updates": 0,
+  "epoch": 1794921928.3727272
+}

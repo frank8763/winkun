@@ -1,3 +1,5 @@
+2026-11-17 T628R真实原生初始化OOM，未Pool READY/未发episode，0物理0更新，metadata-only收尾/全cgroup退/全远端SHA过。T628S修内部RAM估算至4GiB无swap，保留thin driver和唯一cgroup计量；用户明确科学/磁盘/CPU/截止额度不扩。旧两失败12cmd/34.689961s/505874Blocal/269615Bremote全扣，新260cmd3565.31main/4212718Blocal/100393681Bremote；原2臂四任务最多2轮合同不变，40+53final+3close准入，不足不启后轮，matched共同首轮。仅注册source后唯一启动另查，不重启旧两根；22:30学23:00native23:30all，T608仍34/49，Phase隔离。
+
 2026-11-17 T628启动工程FAILED，0物理0optimizer/6startup-close命令19.689961秒，原root完整远端SHA且全进程退，不重启。T628R独立恢复同已批准科学合同：修sumRSS重复页误计为整个Stage cgroup实际内存/2GiB无swap硬上限，thin驱动RSS598.12→15.95MB；旧guard红/新绿/真实超cap红以及GPU/IO零native零optimizer预检过。原6cmd/19.69秒/292473Blocal/216865Bremote全扣，剩266cmd3580.31main/local4426119B/remote100446431B，合计原批准上限不扩；每轮完整40+53final+3close准入，不足不启后轮。唯一新root仅注册，source后launch另查，截止22:30学23:00native23:30all不延；T608仍34/49，Phase隔离。
 
 2026-11-17 T628四任务新策略重采样/固定sigma-vs退火对照结束：FAILED；实际成功丢失/新增/49与原始remote见t628/FINAL_REPORT，不称泛化或全局晋升。
