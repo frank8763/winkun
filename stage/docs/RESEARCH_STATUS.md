@@ -1,3 +1,5 @@
+2026-11-17 T620循环prior-TD3对照结束：COMPLETE；647510物理/28命令；逐臂Actor/Critic更新与实际原起点成功见FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，不称全局/泛化通过。
+
 2026-11-17 用户明确允许T620新增48Actor+96Critic及等量shadow/独立历史重构，0额外optimizer预检；正式注册唯一root，17:30学18:00native18:30全停，仍原日22M660cmd9000main50MiB/global1GiB及CPU14/15总200/GPUoff/Phase隔离。原34逐ID保持且新增原起点成功才研究保留；源码远端后唯一后台启动，是否实际运行查launch/status，不重复。
 
 2026-11-17 T619完整历史合同9真实轨迹/45负回归PASS、55完整prior中54既有审计合格/1排除、36BC记忆不伪造RL转移，0native0optimizer。T620循环TD3式prior+online对照代码与零更新预检PASS，仅准备无run/launch；A直接闭环/B固定成功276决策前缀，同T608初值、各48Critic/24Actor，全部真实完整因果历史重算。用户已确认17:30停学18:00native18:30全停；新增48Actor+96Critic及等量shadow/历史重构待明确额度确认，不据窗口答复自行扩大优化器上限。拟7M150cmd3600main20MiB仍原日22M6609000/50MiB与global1GiB内，原34逐ID保持+新增原起点才保留；407/fresh/reload为null。详t619/FINDINGS与t620/PLAN/BUDGET/PREFLIGHT。Phase隔离，无全局晋升。
