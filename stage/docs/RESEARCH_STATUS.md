@@ -1,3 +1,5 @@
+2026-11-17 T617冻结早期教师恢复诊断结束：FAILED；0Adam/0新RL，指标见day_20261117/t617/FINAL_REPORT。原始remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；不称导航改善或通过，T60834/49和field13/24保留，Phase隔离。
+
 2026-11-17 用户明确“下一步启动吧”，T617末段双教师零学习诊断正式注册/预检PASS。固定T616B sector4offset2实际前370决策74s首距目标≤0.5m处，同状态T608/T550各一次mixed+各exact；教师独立真实全120carry不复制/清零学生hidden。max256448步8cmd900main300audit6MiB，日余额22M6609000/50MiB/global1GiB/free40GiB不扩，0optimizer/0RL；两教师成功才后缀标签合格，不自动学习，不把mixed当部署。14:30native15:00all更早从严，CPU14/15总200低优先GPUoff/Phase隔离。source远端后唯一后台启动，实际launch另查；原失败证据保持。
 
 2026-11-17 T616两臂完整结束/独立auditPASS/科学PID全退。A4live3应用新恢复碰撞拒绝；B16live16应用，新接管和八米LEFT13原起点均safeGOAL+exact，但sector4offset2最近0.220581m后驶离超时余1.425097m，拒绝整ActorAdam回退；其余47/49/原3恢复/407/fresh/reload未执行null，仍T60834/49、field13/24。合计287658物理16cmd468.075546main；日36live36shadow36audit+4pref≤新48上限，剩12不自动授权新机制。原curl35远端pending错误保留，一次归档补重试全原始远端逐成员SHA成功，补收尾见FINALIZATION_RECOVERY，不重复audit。下一唯一末段0.5m首入实际B状态decision370/74s，T608/T550训练teacher恢复各一次+exact草案256448步8cmd6MiB0学习，未注册未启动；合格后才提末段纠正学习，不缩GOAL/取消34保持。14:00学14:30native15:00all/CPU14,15GPUoff/Phase隔离。

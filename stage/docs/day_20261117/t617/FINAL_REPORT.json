@@ -1,0 +1,22 @@
+{
+  "state": "FAILED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t617_terminal_teacher_pair/driver.py\", line 23, in main\n    call('main',p['main_seconds']);workers=read(OUT/'worker_generations.json')\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t617_terminal_teacher_pair/driver.py\", line 14, in call\n    try:c.wait(timeout=seconds);assert c.returncode==0,(action,c.returncode)\nAssertionError: ('main', 1)\n",
+  "summary": {
+    "state": "FAILED",
+    "pid": 37777,
+    "physics": 128224,
+    "commands": 6,
+    "elapsed_s": 54.40162682533264,
+    "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t617_terminal_teacher_pair/t617_runtime.py\", line 24, in main\n    vv=rt.request(p['teacher_jobs'],p['candidate_model'],'TERMINAL_TEACHER_PAIR',full=True);Native.inspect(p,vv);rows=[r for a,r in vv];save(OUT/'PROGRESS.json',dict(rows=rows));rt.request(p['teacher_jobs'],p['candidate_model'],'EXACT_TERMINAL_TEACHER_PAIR',reference=rows)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t542_offline_field_relay/t542_runtime.py\", line 66, in request\n    values=self.pool.request(req);pending=[]\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t441_joint_actor_critic/run.py\", line 34, in request\n    return [self.receive(i) for i in range(len(items))]\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t441_joint_actor_critic/run.py\", line 34, in <listcomp>\n    return [self.receive(i) for i in range(len(items))]\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t617_terminal_teacher_pair/t617_native.py\", line 67, in receive\n    a,r=value;r.update(teacher=True,teacher_first=self.p['teacher_first'],mixed_teacher_diagnostic=True,deployment_evaluation=False,rollout_is_single_actor=False,candidate_policy_hash=r['policy_hash'],teacher_policy_hash=r['request']['job']['handover_teacher']['policy_hash'],teacher_model_sha256=r['request']['job']['handover_teacher']['sha256'],policy_hash_is_recorded_actor_NOT_entire_executed_controller=True)\nKeyError: 'request'\n",
+    "rows": [],
+    "new_Adam": 0,
+    "new_RL": 0
+  },
+  "metrics": null,
+  "audit": null,
+  "all_scientific_processes_stopped": true,
+  "new_Adam": 0,
+  "new_RL": 0,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "epoch": 1794892744.541513
+}
