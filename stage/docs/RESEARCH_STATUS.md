@@ -1,3 +1,5 @@
+2026-11-17 T627结果复核：mean34/49新增2丢2，CAGrad33/49新增0丢1（保8米LEFT13/仍失field4）；两臂全audit+远端SHA过、均拒绝保T608。field4两臂所有实际一阶loss变化全负且sampleloss下降仍自主timeout，不能再仅归因任务梯度冲突；固定sigma.2随机训练与零噪声确定性验收/更新后状态覆盖待配对检验，非已证唯一原因。下一拟两轮重新采样、固定噪声vs.1→.05探索退火与4能力哨兵/最终49，代码预算未核未注册未launch，不新学习或延旧21:00/21:30。当前日Actor108/Critic1120已消费，Phase隔离。详t627/FINDINGS_AND_NEXT/LOCAL_SURROGATE_VS_CLOSED_LOOP。
+
 2026-11-17 T627九任务共享32旧+4新经验/均值SGD-vs-CAGradSGD对照结束：COMPLETE；实际成功丢失/新增/49与原始remote见t627/FINAL_REPORT，不称泛化或全局晋升。
 
 2026-11-17 用户明确批准T627新增16Actor policySGD live/shadow/历史重构、日各108，Critic1120不扩/0pref；正式唯一root注册，原21:00停学21:15native21:30all不延长。共享原T62632旧初始policy数据及新field4四fresh四exact，两臂meanSGD/CAGradSGD各最多8更新、完整49+4keyexact；max5381004步120cmd1800main900audit/local6MiB/remote16MiB仍原日/全局余额，真实三核收集/两核验收留partial/GPU学习/Phase隔离。source后launch另查，不重复旧run/不保证遗忘已解决。

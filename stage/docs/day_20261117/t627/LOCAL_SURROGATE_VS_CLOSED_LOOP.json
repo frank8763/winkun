@@ -1,0 +1,128 @@
+{
+  "state": "READONLY_EXISTING_TRACE_REVIEW",
+  "rows": [
+    {
+      "arm": "mean",
+      "success": 34,
+      "lost": [
+        "t502_field_sector4_offset2",
+        "wide117_8m_dev6_LEFT_13"
+      ],
+      "gained": [
+        "t502_field_sector1_offset2",
+        "wide117_8m_dev6_LEFT_00"
+      ],
+      "local": [
+        {
+          "task": "t502_field_sector4_offset2",
+          "all_actual_first_order_changes_nonpositive": true,
+          "first_policy_loss": -0.19633479458101238,
+          "last_preupdate_policy_loss": -0.19740475662968182,
+          "changes": [
+            -0.00016382846621666597,
+            -0.00014680440471564508,
+            -0.00013237922869271425,
+            -0.00012015563030862503,
+            -0.00010979509538328721,
+            -0.00010100941814787176,
+            -9.345256169905074e-05,
+            -7.157422709848729e-05
+          ]
+        },
+        {
+          "task": "wide117_8m_dev6_LEFT_13",
+          "all_actual_first_order_changes_nonpositive": true,
+          "first_policy_loss": 0.1299372392950251,
+          "last_preupdate_policy_loss": 0.12824224029326564,
+          "changes": [
+            -0.0002711150764919403,
+            -0.00024675643030416697,
+            -0.00022541460583306932,
+            -0.0002066920587127689,
+            -0.00019024575253704322,
+            -0.00017577952263788968,
+            -0.00016261190120332725,
+            -0.00015159260805743896
+          ]
+        },
+        {
+          "task": "t502_field_sector1_offset2",
+          "all_actual_first_order_changes_nonpositive": true,
+          "first_policy_loss": 0.25272837658728037,
+          "last_preupdate_policy_loss": 0.24700895196091477,
+          "changes": [
+            -0.0009570645410423495,
+            -0.0008928467815157099,
+            -0.0008352919665310243,
+            -0.0007835971063860206,
+            -0.0007370631567855303,
+            -0.0006950809814835655,
+            -0.0006470206360468002,
+            -0.0006077082397848432
+          ]
+        }
+      ]
+    },
+    {
+      "arm": "cagrad",
+      "success": 33,
+      "lost": [
+        "t502_field_sector4_offset2"
+      ],
+      "gained": [],
+      "local": [
+        {
+          "task": "t502_field_sector4_offset2",
+          "all_actual_first_order_changes_nonpositive": true,
+          "first_policy_loss": -0.19633479458101238,
+          "last_preupdate_policy_loss": -0.19752367830700138,
+          "changes": [
+            -0.00020105161576893017,
+            -0.0001777217174896678,
+            -0.0001581695591353425,
+            -0.0001417208279194857,
+            -0.00012782232058171532,
+            -0.0001160226618789138,
+            -0.00010595458474310143,
+            -9.731974818884926e-05
+          ]
+        },
+        {
+          "task": "wide117_8m_dev6_LEFT_13",
+          "all_actual_first_order_changes_nonpositive": true,
+          "first_policy_loss": 0.1299372392950251,
+          "last_preupdate_policy_loss": 0.1285439707023926,
+          "changes": [
+            -0.00022221967004565222,
+            -0.0002015683841965667,
+            -0.00018456730970311424,
+            -0.00017051653504738108,
+            -0.0001588465876219571,
+            -0.00014909874302285005,
+            -0.00014090530270231306,
+            -0.0001339727542581882
+          ]
+        },
+        {
+          "task": "t502_field_sector1_offset2",
+          "all_actual_first_order_changes_nonpositive": true,
+          "first_policy_loss": 0.25272837658728037,
+          "last_preupdate_policy_loss": 0.24832064110169744,
+          "changes": [
+            -0.0007669739579525044,
+            -0.0007014576305916618,
+            -0.000645350265754401,
+            -0.0005971046532596755,
+            -0.0005554201093381018,
+            -0.0005192134331976103,
+            -0.00048758906227096754,
+            -0.00045980974054497196
+          ]
+        }
+      ]
+    }
+  ],
+  "new_native": 0,
+  "new_optimizer": 0,
+  "not_a_causal_proof_of_noise_or_distribution_mismatch": true
+}
