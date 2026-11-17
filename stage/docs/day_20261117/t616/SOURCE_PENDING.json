@@ -1,0 +1,4 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t616_reanchored_retention_pair/driver.py\", line 94, in main\n    if time.time()+root['source_seconds']+5<root['absolute_all_stop']:subprocess.run(['taskset','-c','14',str(ROOT/'run_stage.sh'),str(HERE/'transport.py'),'source_sync'],cwd=ROOT,check=True,capture_output=True,timeout=root['source_seconds'])\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['taskset', '-c', '14', '/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/run_stage.sh', '/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t616_reanchored_retention_pair/transport.py', 'source_sync']' returned non-zero exit status 1.\n",
+  "epoch": 1794892188.6096904
+}
