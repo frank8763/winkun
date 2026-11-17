@@ -1,3 +1,5 @@
+2026-11-17 T629已获独立夜间预算并完成旧缓存准入：11组42分片RAM远端完整逐成员SHA后才释放766旧NPZ共154404031B，恢复marker/ledger独立auditPASS，824原输入逐SHA未变，模型视频/当前数据/失败摘要不动。全局冷后914534337B，含完整144MiB夜间reserve仍<1GiB。唯一root已注册未launch，待source精确树同步后唯一CPU400%低优先/GPU/4GiB无swap后台；07:30学08:15native09:00all，0LLM/API/安装/网络科学依赖，Phase隔离。
+
 2026-11-17 用户明确批准T629离线通宵独立80M物理2500cmd30000main/Actor live-shadow-history各146/0Critic/0pref、本地144MiB；07:30学08:15native09:00all。明确准766个T498/T499/T501旧NPZ缓存147.25MiB本次全远端逐成员SHA后释放、保恢复索引，模型视频当前输入失败摘要不动；全局1GiB/free40GiB不扩。先冷缓存核验再注册唯一root/source同步后唯一launch，当前未启动。CPU400%低优先/GPUfloat64/4GiB实际RAM无swap，Phase完全隔离，离线全原始/独立审计/manifest，网络备份仅全部科学结束后有限尝试，remotePENDING如实。
 
 2026-11-17 用户通宵全停确认2026-11-18 09:00。T629离线接力已代码/零native零optimizer真实full-history GPU梯度/合格教师实际prefix自身carry/新参数模型读回/离线IO不删原始/严格34同总数丢ID拒绝预检过；72full最坏52.724MB、最长期partial1.599MB<2MiB。拟36task72fresh72exact共享4taskPG vs36taskPG各8SGD、合格实际偏离恢复最多128+条件2PG、49与407/72邻域有限接力；拟独立夜80M/2500cmd30000main/Actor各146/0Critic、本地144MiB，全局1GiB不扩。766旧NPZ147.25MiB冷缓存全远端SHA再释放清单待用户批准，模型视频当前输入不动；预算/缓存未准，无root/launch。原T628S完整audit+全远端PASS，两组无新保留，T608仍34/49场地13/24，Stage/Phase隔离。详overnight_20261117/PLAN/BUDGET/READINESS/PRIMARY_RELAY_REVIEW。
