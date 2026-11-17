@@ -1,3 +1,5 @@
+2026-11-17 用户下一步开始已注册T611唯一7.6秒实际偏离恢复诊断，候选真实前38决策+父教师后缀，父自身64/extra32/anchor32用每条实际120前缀从零时刻重算，接管处不清零/不借学生hidden。1mixed+1exact，106668物理6cmd900main300audit5MiB，0Adam/0RL，仍原日22M6609000/50MiB及12:30原生13:00全停，CPU14/15/GPUoff/Phase隔离。真实父float32执行动作、独立step hidden和既有1e-12 step/sequence零native预检PASS，双策略全数组3MiB安全容量核验过；原pref误将批/逐行raw输出要求位级一致的0native拒绝证据保留，不改真实原生/重放门。已注册待source/actual launch，mixed诊断不当部署或新独立导航成功，成功也只给后续纠正数据资格，不自动学习。
+
 2026-11-17 T610冻结失守轨迹对照结束：COMPLETE；0Adam/0新RL，指标见day_20261117/t610/FINAL_REPORT。原始remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；不称导航改善或通过，T60834/49和field13/24保留，Phase隔离。
 
 2026-11-17 用户下一步开始已注册T610固定唯一失守wide8_LEFT13父/拒绝候选完整轨迹及2exact，0Adam/0新RL，213336物理8cmd1200main300audit6MiB，日合计最坏4988184物理200cmd3713.452main，仍在22M6609000/50MiB。原11:30学12:30原生13:00全停，双CPU/GPUoff/Phase隔离。原generic run.py预检import冲突零native零optimizer拒绝，原源错误保留preflight_failed_001，唯一模块名修复零步PASS；新源远端精确核验后唯一launch，实际PID/心跳另查。只比较真实完整120/pose/carry双顺序反馈分解，不宣称因果或导航改善；恢复教师接管尚未注册实现，不自动训练。
