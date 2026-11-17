@@ -1,0 +1,1 @@
+T609单次freshAdam批次对照已结束：COMPLETE；物理595691、命令25，新研究成功改进=False；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。各臂与冻结扰动分列，fresh16/reload78未执行，不称全局/泛化通过。
