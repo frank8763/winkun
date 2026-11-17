@@ -1,0 +1,89 @@
+{
+  "state": "PASS_INDEPENDENT_EXACT_RESULT_RECOVERY_ORIGINAL_PRODUCERS_FAILED",
+  "original_T623": "FAILED_hold_digest_semantic_assertion",
+  "original_T624": "FAILED_generic_recover_module_collision_after_three_saved_exact_returns",
+  "new_native": 0,
+  "new_optimizer": 0,
+  "exact_replays_completed": 3,
+  "all_arrays_and_integrations_and_field_detail_exact": true,
+  "all_actual_actor_memories_rewards_ownership_actions_reconstructed": true,
+  "actual_CPU_worker_affinity": [
+    [
+      8
+    ],
+    [
+      10
+    ],
+    [
+      12
+    ]
+  ],
+  "T623_actual_physics": 86188,
+  "T624_actual_physics": 86188,
+  "total_original_plus_exact_physics": 172376,
+  "total_commands": 18,
+  "native_metrics": {
+    "rows": [
+      {
+        "delta": 0.0,
+        "return_from_branch": 0.017371543199673677,
+        "success": false,
+        "collision": false,
+        "timeout": true,
+        "remaining_m": 5.137452469338859,
+        "branch_action": [
+          1.0,
+          -0.2592906653881073
+        ],
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t623_common_continuation_branches/episodes/full_0.npz"
+      },
+      {
+        "delta": 0.1,
+        "return_from_branch": -0.5324085794320553,
+        "success": false,
+        "collision": true,
+        "timeout": false,
+        "remaining_m": 2.33497673549817,
+        "branch_action": [
+          1.0,
+          -0.15929067134857178
+        ],
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t623_common_continuation_branches/episodes/full_1.npz"
+      },
+      {
+        "delta": -0.1,
+        "return_from_branch": -0.49867014591371195,
+        "success": false,
+        "collision": true,
+        "timeout": false,
+        "remaining_m": 1.740886547454832,
+        "branch_action": [
+          1.0,
+          -0.3592906892299652
+        ],
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t623_common_continuation_branches/episodes/full_2.npz"
+      }
+    ],
+    "ranking_descending": [
+      0.0,
+      -0.1,
+      0.1
+    ],
+    "fixed_single_control_then_same_T608": true,
+    "not_deployment_success": true
+  },
+  "predicted_ranking": [
+    0.1,
+    0.0,
+    -0.1
+  ],
+  "actual_ranking": [
+    0.0,
+    -0.1,
+    0.1
+  ],
+  "ranking_match": false,
+  "retained_model_unchanged": true,
+  "no_global_navigation_gain": true,
+  "epoch": 1794908646.7901323
+}
