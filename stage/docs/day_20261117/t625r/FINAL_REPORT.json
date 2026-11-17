@@ -1,0 +1,33 @@
+{
+  "state": "COMPLETE",
+  "error": null,
+  "children": [
+    {
+      "arm": "regression",
+      "state": "COMPLETE",
+      "initial_MSE": 0.31578758262306944,
+      "final_MSE": 0.41120972890506463,
+      "critic_live": 256,
+      "critic_shadow": 256,
+      "critic_audit": 256,
+      "actor_updates": 0
+    },
+    {
+      "arm": "rank",
+      "state": "COMPLETE",
+      "initial_MSE": 0.31578758262306944,
+      "final_MSE": 0.44081816699314064,
+      "critic_live": 256,
+      "critic_shadow": 256,
+      "critic_audit": 256,
+      "actor_updates": 0
+    }
+  ],
+  "actor_updates": 0,
+  "native_commands": 0,
+  "physics": 0,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "navigation_validation": null,
+  "policy_Q_certified": false,
+  "epoch": 1794912835.9432552
+}
