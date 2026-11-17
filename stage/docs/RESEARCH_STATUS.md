@@ -1,3 +1,5 @@
+2026-11-17 用户明确允许T620新增48Actor+96Critic及等量shadow/独立历史重构，0额外optimizer预检；正式注册唯一root，17:30学18:00native18:30全停，仍原日22M660cmd9000main50MiB/global1GiB及CPU14/15总200/GPUoff/Phase隔离。原34逐ID保持且新增原起点成功才研究保留；源码远端后唯一后台启动，是否实际运行查launch/status，不重复。
+
 2026-11-17 T619完整历史合同9真实轨迹/45负回归PASS、55完整prior中54既有审计合格/1排除、36BC记忆不伪造RL转移，0native0optimizer。T620循环TD3式prior+online对照代码与零更新预检PASS，仅准备无run/launch；A直接闭环/B固定成功276决策前缀，同T608初值、各48Critic/24Actor，全部真实完整因果历史重算。用户已确认17:30停学18:00native18:30全停；新增48Actor+96Critic及等量shadow/历史重构待明确额度确认，不据窗口答复自行扩大优化器上限。拟7M150cmd3600main20MiB仍原日22M6609000/50MiB与global1GiB内，原34逐ID保持+新增原起点才保留；407/fresh/reload为null。详t619/FINDINGS与t620/PLAN/BUDGET/PREFLIGHT。Phase隔离，无全局晋升。
 
 2026-11-17 用户要求全网查找当前困境解决方法，本轮仅一手文献/作者代码及既有源码证据研究，0native0optimizer0launch，原15:00窗不延长。建议循环离策略RLPD基线+训练期JSRL/RFCL成功前缀课程、旧新真实在线回放，失败经验用于RL而非成功BC；HER/局部响应/可塑性更新为后续独立消融。已核旧11/5与11/16推荐及T336动作饱和/新自主后缀3.79%反证，不能称新发现或SAC已否定；需明确当前clipGaussian与标准tanhSAC动作密度差异和当前函数初始化缺口，不默换。源码drive映射无主动倒车、转向有限解释末段可恢复性风险但不证明不可达。先真实全轨迹执行→落盘→审计合同回归，区分T617/618工程失败与科学结果；不继续末段动作网格。详day_20261117/METHOD_DECISION_AFTER_T618与METHOD_REVIEW_OFFPOLICY_PRIMARY，保持T60834/49、field13/24/Phase隔离/无当前训练。
