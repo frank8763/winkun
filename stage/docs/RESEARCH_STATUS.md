@@ -1,3 +1,7 @@
+2026-11-17 15:22用户检查：T618原producer因错误复用teacher suffix全1 ownership断言FAILED，三完整native结果已落盘；T618R仅离线恢复0native0optimizer，原断言3次复现/6真实mask与动作负回归拒绝、全部SHA/120/reward/所有memory/干预公式重构PASS，零支全历史精确T616B。三支均无碰撞超时，最近记录距离0/+.25/-.25为0.220581/0.214522/0.262707m，原0.2mGOAL未触发；无成功标签，3exact均未执行null，不能称原3+3完成或原auditPASS。192336物理7cmd88.133795main/0Adam，全部科学PID退/原始远端全SHA已过。已过15:00截止不重启native/学习，当前无运行，保留T60834/49和field13/24。审计接口修复与真实全轨迹回归在t618r，原源错误保留，下一须新的有效窗口与具体协议。Phase隔离。
+
+2026-11-17 T618末段固定正负转向脉冲诊断结束：FAILED；0Adam/0新RL，指标见day_20261117/t618/FINAL_REPORT。原始remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；不称导航改善或通过，T60834/49和field13/24保留，Phase隔离。
+
 2026-11-17 用户继续推进，T618末段固定正负转向干预新机制正式注册/真实Session.step与缺request原始返回seam零native零optimizer预检PASS。相同T616B原起点/74秒真实状态，固定delta0/+.25/-.25作用raw转向6秒后同Actor续行，drive不变；3mixed3exact/384672物理10cmd900main300audit8MiB，日22M660cmd9000秒50MiB/global1GiB/free40GiB余额内，0optimizer/新教师。零分支全历史须逐位T616B，所有signed公式/carry/history/数组积分独立审计；有safeGOAL才干预段合格监督，不自动训练、不当自主部署/创新证明，不失败后扩幅度时长接管点网格。14:30native15:00all/CPU14,15总200低优先GPUoff/Stage Phase隔离，source同步后唯一launch另查。
 
 2026-11-17 T617因本次Pool.receive过早读取request字段工程FAILED，原源/错误/两完整数组已远端备份，不重启。T617R零native零optimizer恢复：真实两载荷原bug回归重现、新pending-request修复通过，全120/奖励/实际前缀/候选和教师所有架构memory独立重构PASS；T608/T550两原mixed均超时，余1.41737/2.84627m、最近0.22017/0.23586m，无合格成功标签。128224步6cmd已计，exact未执行null，不能说完整双mixed+exact验收完成；原8cmd只剩2而新pool+2replay至少6，未经扩额不补跑。全部科学PID退，当前无仿真/训练；保留T60834/49、field13/24。14:30native15:00all/CPU14,15GPUoff/Phase隔离。详t617r/FINDINGS与RECOVERY_AND_REGRESSION。

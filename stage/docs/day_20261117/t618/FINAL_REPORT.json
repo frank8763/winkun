@@ -1,0 +1,22 @@
+{
+  "state": "FAILED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t618_terminal_signed_pulse/driver.py\", line 23, in main\n    call('main',p['main_seconds']);workers=read(OUT/'worker_generations.json')\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t618_terminal_signed_pulse/driver.py\", line 14, in call\n    try:c.wait(timeout=seconds);assert c.returncode==0,(action,c.returncode)\nAssertionError: ('main', 1)\n",
+  "summary": {
+    "state": "FAILED",
+    "pid": 39698,
+    "physics": 192336,
+    "commands": 7,
+    "elapsed_s": 88.13379454612732,
+    "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t618_terminal_signed_pulse/t618_runtime.py\", line 24, in main\n    vv=rt.request(p['pulse_jobs'],p['candidate_model'],'TERMINAL_SIGNED_PULSES',full=True);Native.inspect(p,vv);rows=[r for a,r in vv];save(OUT/'PROGRESS.json',dict(rows=rows));rt.request(p['pulse_jobs'],p['candidate_model'],'EXACT_TERMINAL_SIGNED_PULSES',reference=rows)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t618_terminal_signed_pulse/t618_native.py\", line 39, in inspect\n    Previous.inspect(p,[(dict(a,teacher_actions=a['actions']),dict(r,teacher=True))])\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t608_current_policy_memory/t608_native.py\", line 27, in inspect\n    if isinstance(model,L.Actor):Legacy.inspect(p,[(a,r)])\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t598_independent_recurrent_recovery/t598_runtime.py\", line 47, in inspect\n    R.inspect(p,vals)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t591_joint_representation_pair/t591_runtime.py\", line 83, in inspect\n    else:F.M.audit_full_history(p,r,a)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t449_offline_joint_recovery/run.py\", line 360, in audit_full_history\n    if r['teacher']:assert not a['ownership'][:p['teacher_first']].any() and a['ownership'][p['teacher_first']:].all() and not a['stochastic'].any()\nAssertionError\n",
+    "rows": [],
+    "new_Adam": 0,
+    "new_RL": 0
+  },
+  "metrics": null,
+  "audit": null,
+  "all_scientific_processes_stopped": true,
+  "new_Adam": 0,
+  "new_RL": 0,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "epoch": 1794893435.3842504
+}
