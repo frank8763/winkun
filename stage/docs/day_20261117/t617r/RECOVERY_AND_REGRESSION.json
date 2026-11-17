@@ -1,0 +1,89 @@
+{
+  "state": "OFFLINE_RAW_RECOVERY_COMPLETE_NO_NATIVE_REPLAY",
+  "original_producer_state": "FAILED",
+  "original_failure_preserved": true,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "actual_original_physics": 128224,
+  "actual_original_commands": 6,
+  "rows": [
+    {
+      "teacher": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t608_current_policy_memory/rl_00/proposal.pt.gz",
+        "sha256": "797cce22f6f4bd19bf6af057893282a03de5658d58f8a9aeccbdb720378adde6",
+        "bytes": 280330,
+        "policy_hash": "9e2017ccc814478ebcfb9d025ac5e58a45e2719437fc78c0164ce08999c6983c",
+        "joint_hash": "b9024a30c65305199c6945fa62e69dbb9a467eab6fb5ead908a64d12c9c7550d"
+      },
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t617_terminal_teacher_pair/episodes/full_0.npz",
+      "sha256": "6e77e1bd05de7b160fffa154a0805808478fd00b54008ca097d0410f40c49dbc",
+      "physics": 64112,
+      "terminal_flags_collision_success_timeout": [
+        false,
+        false,
+        true
+      ],
+      "remaining_m": 1.4173668426113182,
+      "minimum_recorded_goal_distance_m": 0.22016925689502861,
+      "full_candidate_and_teacher_memory_and_rewards_reconstructed": true,
+      "original_prefix_exact": true,
+      "native_exact_replay": false,
+      "training_label_eligible": false
+    },
+    {
+      "teacher": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_01_gap/proposal.pt.gz",
+        "sha256": "a8231f5bb0ed1822b3cdf6700b35fdeed8d87e36abe869b66a122663149bb5d8",
+        "bytes": 456893,
+        "policy_hash": "c0aa5f4a990641642fbd0815801e6f9a8b3baa2a4ca0f751d6e1bd605a5f5754",
+        "joint_hash": "05c1ef006fcaa64b2a58366c65e08a6aacf5da427d323d53c619ee424ea43203",
+        "parent": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_00_gap/proposal.pt.gz",
+          "sha256": "ce43a95cb799fbd9a335e47a8a0a9fc1ae2a90d9237dcb4d39e1c0b87524260a",
+          "bytes": 402289,
+          "policy_hash": "c6fdc938725be92748fdb86cd32d1e1d33290fc1e7ffb52f5f0acc710e5e9273",
+          "joint_hash": "734eeb753e64e64a3e3b3f1a5ac647f8f09d9459d9e22591d96d16f4f3e59c10",
+          "parent": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t549_curvature_gated_transfer/proposal.pt.gz",
+            "sha256": "539346fcc7b4330e1a23e101330fdd610ca74d6e2ec8c7995c80eaeb888380e4",
+            "bytes": 701541,
+            "policy_hash": "3b636fd3d71b8d1fd0956c697e144d25ba5488e53d6a726f4d77ad46871e341e",
+            "joint_hash": "7250d3defbc318e86e719110e2796502384064a56f78622e1b8d377fc8eb6f4a"
+          }
+        }
+      },
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t617_terminal_teacher_pair/episodes/full_1.npz",
+      "sha256": "77ecef31b240a6b02b83553e9509594e358f57f46a9aa88bf3f51470793ec9e5",
+      "physics": 64112,
+      "terminal_flags_collision_success_timeout": [
+        false,
+        false,
+        true
+      ],
+      "remaining_m": 2.8462748276189034,
+      "minimum_recorded_goal_distance_m": 0.2358573715311644,
+      "full_candidate_and_teacher_memory_and_rewards_reconstructed": true,
+      "original_prefix_exact": true,
+      "native_exact_replay": false,
+      "training_label_eligible": false
+    }
+  ],
+  "regression": [
+    {
+      "teacher_index": 0,
+      "old_KeyError_request_reproduced": true,
+      "new_result_annotation_uses_pending_request": true,
+      "teacher_association_matches_issued_request": true
+    },
+    {
+      "teacher_index": 1,
+      "old_KeyError_request_reproduced": true,
+      "new_result_annotation_uses_pending_request": true,
+      "teacher_association_matches_issued_request": true
+    }
+  ],
+  "native_exact_replay_missing": true,
+  "no_successful_training_labels": true,
+  "all_worker_pids_gone": true,
+  "epoch": 1794892891.9527671
+}

@@ -1,3 +1,5 @@
+2026-11-17 T617因本次Pool.receive过早读取request字段工程FAILED，原源/错误/两完整数组已远端备份，不重启。T617R零native零optimizer恢复：真实两载荷原bug回归重现、新pending-request修复通过，全120/奖励/实际前缀/候选和教师所有架构memory独立重构PASS；T608/T550两原mixed均超时，余1.41737/2.84627m、最近0.22017/0.23586m，无合格成功标签。128224步6cmd已计，exact未执行null，不能说完整双mixed+exact验收完成；原8cmd只剩2而新pool+2replay至少6，未经扩额不补跑。全部科学PID退，当前无仿真/训练；保留T60834/49、field13/24。14:30native15:00all/CPU14,15GPUoff/Phase隔离。详t617r/FINDINGS与RECOVERY_AND_REGRESSION。
+
 2026-11-17 T617冻结早期教师恢复诊断结束：FAILED；0Adam/0新RL，指标见day_20261117/t617/FINAL_REPORT。原始remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；不称导航改善或通过，T60834/49和field13/24保留，Phase隔离。
 
 2026-11-17 用户明确“下一步启动吧”，T617末段双教师零学习诊断正式注册/预检PASS。固定T616B sector4offset2实际前370决策74s首距目标≤0.5m处，同状态T608/T550各一次mixed+各exact；教师独立真实全120carry不复制/清零学生hidden。max256448步8cmd900main300audit6MiB，日余额22M6609000/50MiB/global1GiB/free40GiB不扩，0optimizer/0RL；两教师成功才后缀标签合格，不自动学习，不把mixed当部署。14:30native15:00all更早从严，CPU14/15总200低优先GPUoff/Phase隔离。source远端后唯一后台启动，实际launch另查；原失败证据保持。
