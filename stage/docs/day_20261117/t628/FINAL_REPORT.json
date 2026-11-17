@@ -1,0 +1,21 @@
+{
+  "state": "FAILED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_driver.py\", line 18, in main\n    call('main',p['main_seconds']);g=M.read(M.OUT/'worker_generations.json');pids.extend([i for z in g for i in [z['parent'],*z['workers']]]);assert all(not Path('/proc',str(i)).exists() for i in pids);call('audit',p['audit_seconds']);assert M.read(M.OUT/'audit.json')['state']=='PASS'\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_driver.py\", line 10, in call\n    try:c.wait(timeout=seconds);assert c.returncode==0,(action,c.returncode)\nAssertionError: ('main', 1)\n",
+  "summary": {
+    "state": "FAILED",
+    "pid": 87896,
+    "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_runtime.py\", line 80, in main\n    jobs=[copy.deepcopy(job) for _ in range(2)];seeds=[[p['seed'],rnd,index,half*2+i] for i in range(2)];vv=rt.request(jobs,start_model,'FRESH_TRAIN4',seeds=seeds);refs=[r for a,r in vv]\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_runtime.py\", line 63, in capacity_request\n    return original_request(jobs,model,role,*args,**kwargs)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t626_multitask_closed_loop/t626_runtime.py\", line 29, in request\n    self.guard();js=jobs[off:off+3];assert sum(self.counts)+sum(j['case']['step_cap'] for j in js)<=self.p['max_physics'];assert self.commands+len(js)+3<=self.p['max_commands'];self.commands+=len(js);req=[dict(model=model['path'],job=j,seed=None if seeds is None else seeds[off+i],query=False,full_path=str(OUT/'batch_cache'/f'episode_{len(self.rows)+i:03d}.npz') if role=='FRESH_TRAIN4' else None) for i,j in enumerate(js)];returned=self.pool.request(req)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_runtime.py\", line 56, in runtime_guard\n    if time.time()-last_gpu_check[0]>5:gpu_check();ram_check(p,[os.getpid()]+([] if rt.pool is None else [c.pid for c in rt.pool.children]));last_gpu_check[0]=time.time()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_runtime.py\", line 38, in ram_check\n    assert rss<=p['working_RAM_cap_bytes'],'Stage process RAM cap'\nAssertionError: Stage process RAM cap\n",
+    "physics": 0,
+    "commands": 6,
+    "elapsed_s": 19.689961433410645,
+    "results": [],
+    "new_Critic": 0
+  },
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "dataset_remote_batches": 0,
+  "no_global_promotion": true,
+  "full407": null,
+  "fresh16": null,
+  "reload78": null,
+  "epoch": 1794921099.7248583
+}

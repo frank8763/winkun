@@ -1,0 +1,5 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_driver.py\", line 18, in main\n    call('main',p['main_seconds']);g=M.read(M.OUT/'worker_generations.json');pids.extend([i for z in g for i in [z['parent'],*z['workers']]]);assert all(not Path('/proc',str(i)).exists() for i in pids);call('audit',p['audit_seconds']);assert M.read(M.OUT/'audit.json')['state']=='PASS'\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_driver.py\", line 10, in call\n    try:c.wait(timeout=seconds);assert c.returncode==0,(action,c.returncode)\nAssertionError: ('main', 1)\n",
+  "no_restart": true,
+  "raw_preserved": true
+}

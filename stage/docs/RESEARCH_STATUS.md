@@ -1,3 +1,5 @@
+2026-11-17 T628四任务新策略重采样/固定sigma-vs退火对照结束：FAILED；实际成功丢失/新增/49与原始remote见t628/FINAL_REPORT，不称泛化或全局晋升。
+
 2026-11-17 用户明确批准T628新22:30学/23:00native/23:30all、14.263788M物理272cmd3600main/8Actor live-shadow-history各项，今日上限28.567711M/853/11172秒/Actor各116，Critic1120不扩。唯一root仅注册未launch；source远端精确树核验后唯一后台启动。两组各最多2轮全新当前策略重采样，fixed.2 vs.1→.05，0Critic/pref，local4.5MiB仍日50MiB/global1GiB/free40，remote96MiB按完整逐SHA后仅释放新缓存，断网保当前批停。CPU总400%低优先/GPU float64/Phase隔离，原34保持且新增原起点才保留，无全局晋升。
 
 2026-11-17 T628四任务当前policy重采样/固定sigma.2-vs.1→.05两轮对照已代码、零native零optimizer采样密度/GPU梯度/CPUloader/8pair缓存释放精确链/参数fixture继承预检PASS；377B真实GitHub完整读回SHA过。尚无run/launch，拟新增8Actor各项、14.263788M物理272cmd3600main900audit/local4.5MiB/remote96MiB及22:30学23:00native23:30all待新增确认；日物理拟28.567711M/cmd853/main11171.971秒、Actor116，不借旧108/21:00继续。原T608仍34/49场地13/24，Phase隔离，完整方案见t628/PLAN/BUDGET。
