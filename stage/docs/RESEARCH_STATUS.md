@@ -1,3 +1,5 @@
+2026-11-17 T628启动工程FAILED，0物理0optimizer/6startup-close命令19.689961秒，原root完整远端SHA且全进程退，不重启。T628R独立恢复同已批准科学合同：修sumRSS重复页误计为整个Stage cgroup实际内存/2GiB无swap硬上限，thin驱动RSS598.12→15.95MB；旧guard红/新绿/真实超cap红以及GPU/IO零native零optimizer预检过。原6cmd/19.69秒/292473Blocal/216865Bremote全扣，剩266cmd3580.31main/local4426119B/remote100446431B，合计原批准上限不扩；每轮完整40+53final+3close准入，不足不启后轮。唯一新root仅注册，source后launch另查，截止22:30学23:00native23:30all不延；T608仍34/49，Phase隔离。
+
 2026-11-17 T628四任务新策略重采样/固定sigma-vs退火对照结束：FAILED；实际成功丢失/新增/49与原始remote见t628/FINAL_REPORT，不称泛化或全局晋升。
 
 2026-11-17 用户明确批准T628新22:30学/23:00native/23:30all、14.263788M物理272cmd3600main/8Actor live-shadow-history各项，今日上限28.567711M/853/11172秒/Actor各116，Critic1120不扩。唯一root仅注册未launch；source远端精确树核验后唯一后台启动。两组各最多2轮全新当前策略重采样，fixed.2 vs.1→.05，0Critic/pref，local4.5MiB仍日50MiB/global1GiB/free40，remote96MiB按完整逐SHA后仅释放新缓存，断网保当前批停。CPU总400%低优先/GPU float64/Phase隔离，原34保持且新增原起点才保留，无全局晋升。
