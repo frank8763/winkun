@@ -1,3 +1,5 @@
+2026-11-17 T614已结束/auditPASS/全原始远端逐SHA：2真实可行方向Adam及2shadow2历史重构，四恢复全safe+exact，但15自主哨兵8成功，原成功10项中丢sector4offset2超时余1.3803m和wide8LEFT13碰撞余2.8812m，候选拒绝整ActorAdam回退；其余34自主/完整49/407/fresh/reload未执行null，仍保留T60834/49、field13/24。日16live16shadow16audit+4pref已用满，无权新学习。新T615仅两失守任务父/拒绝候选四完整自主+4exact、0optimizer，469784步12cmd1200main300audit10MiB，仍日22M6609000/50MiB余额与13:00原生13:30all；零原生预检PASS、source同步后唯一启动另查launch。CPU14/15/GPUoff/Phase隔离，详t614/FINDINGS_AND_NEXT和t615/PLAN。
+
 2026-11-17 T614合格恢复后缀监督学习已结束：COMPLETE；物理643094、命令27，新研究成功改进=False；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。各臂与冻结扰动分列，fresh16/reload78未执行，不称全局/泛化通过。
 
 2026-11-17 用户下一步继续推进已注册T614不同可行方向机制（非T613重启），同43数据/34初值/freshAdam/目标/五比例/原三恢复.002门，实际Adam位移经最多64线性输出约束128Dykstra+一次解析向零可行修复，线性残差1e-10及完整非线性原门均须过，不叫精确GEM或安全证明。原预备求解器残差4.34e-7在0native0Adam拒绝，源码/分析保留；修复后零更新解析候选.00199664<.002且目标下降，真实训练收益未证。max2live2shadow2audit/0额外pref，连今日14+2≤16/16/16+4pref，22M6609000/50MiB原额度不扩；12:30学13:00原生13:30全停，完整余时/盘准入通过。源同步后实际launch另查，接管/34保持同T613，407/fresh/reload本项null。CPU14/15/GPUoff/Phase隔离。
