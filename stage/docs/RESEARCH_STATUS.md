@@ -1,3 +1,5 @@
+2026-11-17 用户下一步开始及未来加速授权已落实T623同状态/固定T608续行三单周期转向分支，源T620 A八米LEFT13第38决策真实前缀，不是旧末段6秒脉冲；0optimizer，320004物理12cmd600main300audit9MiB全在原日/全局余额，18:00native18:30all不延长。Critic三动作预测已在native前封存、真实Session9边界组合/容量零native预检PASS；CPU8/10/12三原生worker并行+14父/审计，不无故占GPU。唯一root已注册，source远端后后台启动另查launch；干预诊断非部署通过，不自动新学习/晋升，Phase隔离。
+
 2026-11-17 T622 GPU行为回报预测对照结束：COMPLETE；Actor更新0/native0，非导航通过/非目标策略Q或动作梯度认证，结果见t622/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。
 
 2026-11-17 用户已明确允许T622新增512live/512shadow/512独立历史Critic重构，今日Critic各上限608，Actor0/native0/pref0；正式注册root，源码远端后唯一GPU后台启动，是否运行查launch/status。CPU8/10/12/14总400%低优先+GPU float64，其他GPU compute出现即让出，Phase研究完全隔离。仍17:30停学18:00native18:30all，600main/600audit/2MiB及日总额不扩；行为MC回报预测留出对照不认证当前策略Q/动作梯度、不自动Actor或导航晋升。
