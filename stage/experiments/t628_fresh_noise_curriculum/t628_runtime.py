@@ -18,7 +18,7 @@ def setup(p):
  B.ROOT=ROOT;B.HERE=HERE;B.OUT=OUT;B.DOC=DOC;B.M=M;B.setup(p);B.verify=verify;B.R.Base.verify=lambda *args:verify(p);B.R.P.frozen=M.frozen;Native.install();B.N.worker=Native.worker;B.N.N.inspect=inspect;B.N.restore(p)
  def stream(p,action,data,tag=None):
   if action=='upload':
-   committed=sum(read(f)['bytes'] for pattern in ['batch_*_receipt.json','*.remote.json'] for f in OUT.rglob(pattern))
+   committed=p.get('remote_preflight_bytes',0)+sum(read(f)['bytes'] for pattern in ['batch_*_receipt.json','*.remote.json'] for f in OUT.rglob(pattern))
    assert committed+len(data)+p['max_bytes']+131072<=p['new_remote_raw_bytes_cap'],'Whole experiment remote cap'
   cmd=[str(ROOT/'run_stage.sh'),str(HERE/'t628_stream.py'),action]+([] if tag is None else [tag.replace('T626','T628')]);c=subprocess.run(cmd,cwd=ROOT,input=data,capture_output=True,timeout=p['stream_seconds'],env=dict(os.environ,CUDA_VISIBLE_DEVICES=''));assert c.returncode==0,c.stderr.decode(errors='replace')[-1200:];return c.stdout
  B.stream=stream

@@ -34,7 +34,7 @@ def main():
     p=json.loads((OUT/'protocol.json').read_text())
     release=T.B.api('GET','releases/tags/stage-eight-only-2026-11-11')
     files=sorted(f for f in OUT.rglob('*') if f.is_file() and f.name!='driver.log' and f.suffix not in ['.lock','.pyc','.partial'])
-    streamed=sum(json.loads(f.read_text())['bytes'] for pattern in ['batch_*_receipt.json','*.remote.json'] for f in OUT.rglob(pattern))
+    streamed=p.get('remote_preflight_bytes',0)+sum(json.loads(f.read_text())['bytes'] for pattern in ['batch_*_receipt.json','*.remote.json'] for f in OUT.rglob(pattern))
     assert streamed+sum(f.stat().st_size for f in files)+131072<=p['new_remote_raw_bytes_cap']
     deadline=min(time.time()+p['transport_seconds']-10,p['absolute_all_stop']-30)
     r=A.archive('T628',files,release,deadline,T)

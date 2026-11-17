@@ -1,5 +1,5 @@
 {
-  "id": "T628_FRESH_POLICY_NOISE_CURRICULUM_PREPARED",
+  "id": "T628_FRESH_POLICY_NOISE_CURRICULUM_APPROVED",
   "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t628_fresh_noise_curriculum",
   "actor_configuration": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t604_reverse_initialization/protocol.json",
   "base_model": {
@@ -89,7 +89,7 @@
   "finalization_seconds": 360,
   "final_storage_reserve": 1048576,
   "root_tail_bytes": 1048576,
-  "authorization_approved": false,
+  "authorization_approved": true,
   "inputs": {
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t604_reverse_initialization/control.py": "9e88ca8c9e33b313d3aa7ec8359871a1a7014dc78d421a9f6ddd0c5fa92b2bcf",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t200_residual_placement/common.py": "a213ec43cb4a8e54cf6abb780a122d2e117d28a41d69e4d6430477868aab0552",
@@ -862,15 +862,16 @@
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t627/BUDGET.json": "a44c3bb16c94ea859969266a3a2072205ac2f2589bfdbbcb59d111b3c10b46ce",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t627/PRIMARY_RETENTION_REVIEW.md": "3d07462375ed61906312edf78a97b48dccf43b8e4dd33d47b3031a62de788c16",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t627/AUTHORIZATION.json": "ac0872b4c52aba4f72a9b6904957cd0ee2c4beef166b87a348a9d26d4e8186c0",
-    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_transport.py": "0e9da0043187adacbca235214857e55630ebd47a1cac12f49fa9e89d77193786",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_transport.py": "27aa137720cc9121fa958bbf8b89d06d826c72c78faef9b56bd271b814d06743",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_preflight.py": "941731b3ccd4f66ba278ad183afd6c9b23a1b4fc04fb8859babebfa2e45f32d2",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_native.py": "1dcdd234d3b5438bf0649d819d61e86c0c8ce15a747f3eae9823345fb30c2503",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_learning.py": "5a4dcaa747dc84fa64a3461099d6874f5bcf9400a4b74f8ff822983d84432a45",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_sync_source.py": "07b0fb7308f613676660ea008cd5695a4eaaaff18328f80f421a125105613647",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_stream.py": "13a36d142d1d817d2719b8210ba83dd177ff1547d252859c0a4cec0116bc10ef",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_driver.py": "342f9a724bdcba4d19cf87ae8c9fdb187360d9c20a1bd8857b391ad2f6ad17a3",
-    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_runtime.py": "9042633d6807dd36afbe8f68a9a5ff738c1d5dd02c67fbef00ba0a0d15b6d1a8",
-    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_io_preflight.py": "dc8e16ae4f4acf9f217b6d4d7b5b0c3c5a8141b40f0e2f5fcc51892505c1501f"
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_runtime.py": "a8529298d8c5b745bc1ce174c33b0bcd51a49d2544a032a8648face9ffd469c1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t628_fresh_noise_curriculum/t628_io_preflight.py": "dc8e16ae4f4acf9f217b6d4d7b5b0c3c5a8141b40f0e2f5fcc51892505c1501f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t628/AUTHORIZATION.json": "241edb64a217100ff96c37b9581bb8c2845e0ec193acda21c43d112bdca35fe7"
   },
   "protected_files": {
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_01_gap/proposal.pt.gz": "a8231f5bb0ed1822b3cdf6700b35fdeed8d87e36abe869b66a122663149bb5d8",
@@ -884,7 +885,7 @@
   "day_shared_accounting": {
     "physical_cap": 28567711,
     "command_cap": 853,
-    "main_cap": 11171.971382141113,
+    "main_cap": 11172,
     "bytes_cap": 52428800,
     "live_cap": 116,
     "shadow_cap": 116,
@@ -904,7 +905,7 @@
       "critic_history": 1120,
       "bytes": 47504952
     },
-    "optimizer_expansion_pending": true
+    "optimizer_expansion_pending": false
   },
   "allow_final407": false,
   "critical_ids": [
@@ -2502,7 +2503,7 @@
   "working_RAM_cap_bytes": 2147483648,
   "new_remote_raw_bytes_cap": 100663296,
   "learning_admission_seconds": 3000,
-  "proposed_window_not_approved": true,
+  "proposed_window_not_approved": false,
   "day_Actor_each_cap": 116,
   "day_Critic_each_cap": 1120,
   "new_actor_updates_cap": 8,
