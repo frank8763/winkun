@@ -1,12 +1,16 @@
 """One writer, two bounded Critic-only arms, no native simulators or Actor steps."""
 from pathlib import Path
-import time,os,subprocess,signal,fcntl,traceback,json
+import time,os,subprocess,signal,fcntl,traceback,json,shutil
 import t622_learning as M
 L=M.L
 
 def main():
     p=M.config();assert p['authorization_approved'];assert not (M.OUT/'launch.json').exists()
     assert L.sha(M.HERE/'protocol.json')==L.sha(M.OUT/'protocol.json')
+    for f,h in p['inputs'].items():assert L.sha(f)==h,f
+    used=lambda folder:sum(f.stat().st_size for f in folder.rglob('*') if f.is_file())
+    assert used(M.ROOT/'stage/runs')-used(M.OUT)+p['max_bytes']+131072<2**30
+    assert shutil.disk_usage(M.ROOT).free>=40*2**30
     receipt=L.read(M.ROOT/'stage/runs/t224_archive/latest_source_sync_receipt.json');assert receipt['root_tree']==subprocess.check_output(['git','rev-parse','HEAD^{tree}'],cwd=M.ROOT,text=True).strip()
     locks=[]
     for name in ['.stage_writer.lock','.stage_gpu.lock']:
@@ -28,6 +32,7 @@ def main():
             now=time.time()
             if not (now+p['learning_seconds']+15<p['absolute_learning_stop'] and now+p['main_seconds']+p['audit_seconds']+p['finalization_seconds']<p['absolute_all_stop']):
                 children.append(dict(arm=arm,state='NOT_ADMITTED_FULL_WORST_TIME'));break
+            assert used(M.OUT)+900000+131072<p['max_bytes'],'Full arm storage admission denied'
             folder=M.OUT/arm;folder.mkdir();call('main',arm,p['main_seconds']);call('audit',arm,p['audit_seconds']);assert L.read(folder/'audit.json')['state']=='PASS'
             members=[dict(path=str(f.relative_to(M.ROOT)),sha256=L.sha(f),bytes=f.stat().st_size) for f in sorted(folder.rglob('*')) if f.is_file()];L.save(folder/'local_manifest.json',dict(files=members));s=L.read(folder/'summary.json');children.append(dict(arm=arm,state='COMPLETE',initial_MSE=s['initial']['episode_mean_MSE'],final_MSE=s['final']['episode_mean_MSE'],critic_live=p['updates_per_arm'],critic_shadow=p['updates_per_arm'],critic_audit=p['updates_per_arm'],actor_updates=0))
     except BaseException:error=traceback.format_exc();L.save(M.DOC/'DRIVER_ERROR.json',dict(error=error,raw_preserved=True,no_restart=True))

@@ -1,4 +1,4 @@
-# T622 GPU回报预测能力对照：准备，待新增Critic额度
+# T622 GPU回报预测能力对照：已批准，实际启动查launch
 
 T620新Critic第2步即推动Actor，24次Actor后两组共同损伤八米LEFT13；这不证明唯一原因是Critic错误，但损失下降没有证明动作梯度可靠。先冻结Actor，判断价值表示是否学到了可留出的回报信息。
 
@@ -10,6 +10,6 @@ MC标签对应原记录行为及其续行，不是当前策略Q；留出MSE改�
 
 使用GPU float64，不用混合精度；CPU8/10/12/14四独立物理核可用、线程实测选2，总CPU400%低优先，GPU单科学进程。共享Stage writer/GPU锁，启动前查其他compute，运行发现其他GPU作业即停止让出，Phase研究数据不读取。独立GPU审计逐位重建Critic/Adam/trace，而非放宽CPU/GPU误差当审核。
 
-17:30停学、18:00原生（本轮0）、18:30全停不延长。各main300s/audit300s，尾300s，实际完整余时准入；无native费用、独立输出2MiB、global1GiB/free40GiB不变；日原物理/命令/主管线/存储不扩。GPU加速授权来自用户“充分利用cpu和gpu；加快速度推进实验”，新增优化器额度另待明确批准。
+17:30停学、18:00原生（本轮0）、18:30全停不延长。各main300s/audit300s，尾300s，实际完整余时准入；无native费用、独立输出2MiB、global1GiB/free40GiB不变；日原物理/命令/主管线/存储不扩。GPU加速授权来自用户“充分利用cpu和gpu；加快速度推进实验”，新增优化器额度已获用户明确批准。
 
 方案参考[TD3延迟策略更新](https://spinningup.openai.com/en/latest/algorithms/td3.html)及[RLPD作者实现](https://github.com/ikostrikov/rlpd)。本轮MC监督预测诊断不是这两算法的完整复现或原创算法。

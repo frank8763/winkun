@@ -1,3 +1,5 @@
+2026-11-17 用户已明确允许T622新增512live/512shadow/512独立历史Critic重构，今日Critic各上限608，Actor0/native0/pref0；正式注册root，源码远端后唯一GPU后台启动，是否运行查launch/status。CPU8/10/12/14总400%低优先+GPU float64，其他GPU compute出现即让出，Phase研究完全隔离。仍17:30停学18:00native18:30all，600main/600audit/2MiB及日总额不扩；行为MC回报预测留出对照不认证当前策略Q/动作梯度、不自动Actor或导航晋升。
+
 2026-11-17 用户明确要求充分利用CPU/GPU加速，T621实际float64全历史loss/gradient CPU1/2/4与GPU测量/旧CPU实现等价/重复GPU逐位PASS，0native0optimizer。单批Critic4.64→.416s/Actor2.12→.121s、显存269MiB，非整轮倍数；新协议可用CPU8/10/12/14+GPU，不改旧GPUoff协议或Phase数据。T622冻结Actor的动作感知/当前动作盲MC回报预测两臂已代码/零更新预检PASS：39训练/18留出轨迹按整任务拆，512新Critic+等量shadow/audit、Actor/native0，待额外优化器额度确认，尚无run/launch。原17:30学18:00native18:30all不延长；仅行为回报预测，不是目标策略Q/动作梯度/导航通过。详t621/FINDINGS及t622/PLAN/BUDGET。
 
 2026-11-17 T620循环prior-TD3对照结束：COMPLETE；647510物理/28命令；逐臂Actor/Critic更新与实际原起点成功见FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，不称全局/泛化通过。
