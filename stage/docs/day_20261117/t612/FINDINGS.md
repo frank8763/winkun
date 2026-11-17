@@ -1,0 +1,9 @@
+# T612固定历史教师恢复对照
+
+同候选真实前38决策/7.6秒，T60834研究父教师接管在T611碰撞，历史T550教师接管在T612无碰撞到达（剩0.199902944m）。T611与T612前缀states/nextstates/actions/native_counts/pose/history和接管120输入逐位一致，初始原生积分相同，分别由教师实际前缀独立计算自己的memory。只换固定教师、不扫时刻，提供该状态存在可验证成功纠正行为的直接证据；不等于所有恢复状态可达或该方法已解决泛化。
+
+T612一条mixed＋一次逐数组/积分exact，合计60340物理/6命令/46.1568main秒，0Adam/0RL。独立候选和T550全部memory/history/执行动作/奖励核验及原生exact通过，18原文件远端RAM逐成员SHA读回通过，全部进程退出。T550只有真实64循环memory，不含T598额外32/anchor32，字段按架构真实记录。继承audit的two_order_decomposition_exact仅为通用metrics重算标记，不代表本项执行过T610双顺序分解；原件保留。
+
+QUALIFIED_RECOVERY_DATA锁定teacher/candidate/path/array/SHA和第38决策边界。后续若学习，只把ownership==1的teacher后缀当合格监督标签，完整120前缀用于重新计算学生自己的carry；不能用~ownership掩码误学候选前缀，不能把教师hidden当学生hidden，不把mixed teacher数据作onpolicy PPO经验。训练仍待新有效学习窗口和额度；11:30停学已过，本项只完成零更新诊断。
+
+当前单Actor研究候选仍34/49、全场地13/24。接下来有针对性的学习对照应检验加入这条真实恢复历史，能否在继续学新全场地任务时保住唯一失守八米任务及全部34成功ID；单条拟合过关不当闭环通过，不替换T550部署基线。当前结果是有效纠正数据的获得，不称导航新策略成功/顶刊创新已成立。

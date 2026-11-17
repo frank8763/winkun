@@ -1,3 +1,5 @@
+2026-11-17 T612固定T550教师恢复成功：同T611真实前38决策7.6s，prefix各120/pose/history/actions/native计数及接管输入逐位一致，T60834父teacher接管碰撞而历史T550接管safeGOAL余.199903m，获得真实合格恢复监督数据，不是新部署策略/新独立任务。T550实际64hidden逐步前向，不伪造额外memory；teacher后缀ownership==1才是监督mask，完整前缀保留给studentBPTT，mixed数据不可作onpolicy。1mixed+1exact，共60340物理6cmd46.1568main秒0Adam0RL，独立auditPASS/18raw RAM远端逐成员SHA过，全PID退。qual数据与限制见t612/QUALIFIED_RECOVERY_DATA/FINDINGS；原audit继承two_order标记不代表本mixed做双顺序分解。当前T60834/49、field13/24保持，11:30已停学不自动新学习，12:30原生13:00全停/CPU14,15/GPUoff/Phase隔离。
+
 2026-11-17 T612冻结早期教师恢复诊断结束：COMPLETE；0Adam/0新RL，指标见day_20261117/t612/FINAL_REPORT。原始remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；不称导航改善或通过，T60834/49和field13/24保留，Phase隔离。
 
 2026-11-17 用户下一步开始已注册T612固定T550历史合格教师对照，只换教师不改同一7.6s候选前缀/时刻/目标/clock。T55064真实hidden从candidate实际120前缀逐步重算，明确无extra32/anchor32不造零字段；候选原memory仍真实记录。1mixed+1exact，106668步6cmd900main300audit5MiB0Adam0RL，仍日22M6609000/50MiB；已过11:30停学不新学习，12:30停原生13:00全停。真实T550同task历史合格success已核、真实prefix逐步action/hidden/源码schema零native0Adam预检PASS。actual launch另查，mixed恢复不作单Actor导航或新独立样本，失败无成功标签，不扫时刻/教师。CPU14/15/GPUoff/Phase隔离。
