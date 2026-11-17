@@ -1,0 +1,47 @@
+{
+  "state": "READONLY_POSTHOC_TRAINING_FIT_CHECK",
+  "rows": [
+    {
+      "arm": "regression",
+      "training_initial_MSE": 1.6161847229517348,
+      "training_final_MSE": 0.0587142402362702,
+      "training_actual_ranking": [
+        0.0,
+        -0.1,
+        0.1
+      ],
+      "training_predicted_ranking": [
+        -0.1,
+        0.1,
+        0.0
+      ],
+      "heldout_initial_MSE": 0.31578758262306944,
+      "heldout_final_MSE": 0.41120972890506463,
+      "heldout_effective_pairs": 0,
+      "calibration_gate": false
+    },
+    {
+      "arm": "rank",
+      "training_initial_MSE": 1.6161847229517348,
+      "training_final_MSE": 0.056607986743877396,
+      "training_actual_ranking": [
+        0.0,
+        -0.1,
+        0.1
+      ],
+      "training_predicted_ranking": [
+        -0.1,
+        0.0,
+        0.1
+      ],
+      "heldout_initial_MSE": 0.31578758262306944,
+      "heldout_final_MSE": 0.44081816699314064,
+      "heldout_effective_pairs": 0,
+      "calibration_gate": false
+    }
+  ],
+  "new_optimizer": 0,
+  "new_native": 0,
+  "no_checkpoint_selection_or_new_learning": true,
+  "epoch": 1794912938.1730044
+}

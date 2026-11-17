@@ -1,3 +1,5 @@
+2026-11-17 T625R同原授权完成两组256live/shadow/历史GPU Critic重构，全部auditPASS与原始远端全SHA，0Actor/0新native。训练MSE1.616→.0587/.0566但三动作训练排序仍未全对；留出MSE.3158→.4112/.4408，三留出全timeout且回报差2.55e-6低于.02，0有效pair属信息不足，不能称排序过/导航进步。T625原audit缺summary.pid的FAILED保留，零native独立原数据恢复PASS；不是重跑或额外512额度。导航仍34/49场地13/24，日Critic1120已用满，不自动Actor/追加。下一固定8任务32新闭环经验/匹配策略训练仅草案，尚无协议额度/launch；详t625r/FINDINGS/FIT_REVIEW/NEXT_MULTI_TASK_CLOSED_LOOP。Phase隔离，19:00学20:00all不扩。
+
 2026-11-17 T625R GPU行为回报预测对照结束：COMPLETE；Actor更新0/native0，非导航通过/非目标策略Q或动作梯度认证，结果见t625r/FINAL_REPORT，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。
 
 2026-11-17 T625三raw三exact已完整384672步12cmd，audit因summary缺pid工程FAILED，0Critic学习。T625R依据实际SEALED/workerPID退出零native恢复全数组/积分/真实memory reward审计PASS，原FAILED保留；新root仅执行已批准而未用512live/shadow/历史Critic同原fit/loss/data/evaluation，不新物理/Actor/额度，旧新合计仍原10MiB，19:00学20:00all。源码后唯一GPU启动另查launch，不重启旧root，Phase隔离。
