@@ -1,3 +1,5 @@
+2026-11-17 用户下一步开始已注册T610固定唯一失守wide8_LEFT13父/拒绝候选完整轨迹及2exact，0Adam/0新RL，213336物理8cmd1200main300audit6MiB，日合计最坏4988184物理200cmd3713.452main，仍在22M6609000/50MiB。原11:30学12:30原生13:00全停，双CPU/GPUoff/Phase隔离。原generic run.py预检import冲突零native零optimizer拒绝，原源错误保留preflight_failed_001，唯一模块名修复零步PASS；新源远端精确核验后唯一launch，实际PID/心跳另查。只比较真实完整120/pose/carry双顺序反馈分解，不宣称因果或导航改善；恢复教师接管尚未注册实现，不自动训练。
+
 2026-11-17 T609拒绝候选复核：4live4shadow4历史audit，原批次复用0新采集；3自主恢复+3exact全safe，15哨兵9safe3接触3超时，其中唯一已要求成功wide8_LEFT13由成功变超时余4.6596m，故停止，不执行完整49/407，不能把9/15当全局成功率。freshAdam解决本批次正方向导数/目标升问题，但不保证闭环保持；候选整ActorAdam回退，仍保留T60834/49、field13/24。失守项在固定保存成功历史的动作RMS差.000824/max.002048，历史误差小不是轨迹保持证明；紧凑失败NPZ无states/poses，首次反馈分叉不可杜撰。595691物理25cmd320.298main，独立auditPASS，61raw RAM远端全成员SHA读回通过，全部PID退。日合计13live13shadow13audit＋4pref，剩3尝试不新编号扩额度；窗口11:30学12:30原生13:00全停。下一继承成熟RL与自身记忆、补逐任务闭环恢复覆盖的受控假设仅草案，非已证创新。详t609/COMPLETION_REVIEW/CLOSED_LOOP_RETENTION_GAP/NEXT_INHERITANCE_AND_TEST。Phase隔离。
 
 2026-11-17 T609单次freshAdam批次对照已结束：COMPLETE；物理595691、命令25，新研究成功改进=False；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。各臂与冻结扰动分列，fresh16/reload78未执行，不称全局/泛化通过。
