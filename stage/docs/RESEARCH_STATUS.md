@@ -1,3 +1,5 @@
+2026-11-17 T625三raw三exact已完整384672步12cmd，audit因summary缺pid工程FAILED，0Critic学习。T625R依据实际SEALED/workerPID退出零native恢复全数组/积分/真实memory reward审计PASS，原FAILED保留；新root仅执行已批准而未用512live/shadow/历史Critic同原fit/loss/data/evaluation，不新物理/Actor/额度，旧新合计仍原10MiB，19:00学20:00all。源码后唯一GPU启动另查launch，不重启旧root，Phase隔离。
+
 2026-11-17 T625同目标策略续行回报学习对照结束：FAILED；0Actor，留出排序和回报误差见FINAL_REPORT，不称导航改善/全局晋升，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。
 
 2026-11-17 用户明确批准T625新增512live/512shadow/512独立历史Critic重构，今日Critic各上限1120，Actor0/额外pref0；正式注册root，19:00停学19:30native20:00all，384672步12cmd900main540audit10MiB仍原日22M6609000/50MiB及global1GiB/free40。三CPU8/10/12真实并行采field4留出3+3，GPU两组同目标策略续行回报回归vs加pairrank，初始旧Critic+freshAdam；原八米三已验证分支训练。源码远端后唯一后台launch另查，不自动Actor/全局晋升，Phase隔离。
