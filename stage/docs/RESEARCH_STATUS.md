@@ -1,3 +1,5 @@
+2026-11-17 用户要求全网查找当前困境解决方法，本轮仅一手文献/作者代码及既有源码证据研究，0native0optimizer0launch，原15:00窗不延长。建议循环离策略RLPD基线+训练期JSRL/RFCL成功前缀课程、旧新真实在线回放，失败经验用于RL而非成功BC；HER/局部响应/可塑性更新为后续独立消融。已核旧11/5与11/16推荐及T336动作饱和/新自主后缀3.79%反证，不能称新发现或SAC已否定；需明确当前clipGaussian与标准tanhSAC动作密度差异和当前函数初始化缺口，不默换。源码drive映射无主动倒车、转向有限解释末段可恢复性风险但不证明不可达。先真实全轨迹执行→落盘→审计合同回归，区分T617/618工程失败与科学结果；不继续末段动作网格。详day_20261117/METHOD_DECISION_AFTER_T618与METHOD_REVIEW_OFFPOLICY_PRIMARY，保持T60834/49、field13/24/Phase隔离/无当前训练。
+
 2026-11-17 15:22用户检查：T618原producer因错误复用teacher suffix全1 ownership断言FAILED，三完整native结果已落盘；T618R仅离线恢复0native0optimizer，原断言3次复现/6真实mask与动作负回归拒绝、全部SHA/120/reward/所有memory/干预公式重构PASS，零支全历史精确T616B。三支均无碰撞超时，最近记录距离0/+.25/-.25为0.220581/0.214522/0.262707m，原0.2mGOAL未触发；无成功标签，3exact均未执行null，不能称原3+3完成或原auditPASS。192336物理7cmd88.133795main/0Adam，全部科学PID退/原始远端全SHA已过。已过15:00截止不重启native/学习，当前无运行，保留T60834/49和field13/24。审计接口修复与真实全轨迹回归在t618r，原源错误保留，下一须新的有效窗口与具体协议。Phase隔离。
 
 2026-11-17 T618末段固定正负转向脉冲诊断结束：FAILED；0Adam/0新RL，指标见day_20261117/t618/FINAL_REPORT。原始remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；不称导航改善或通过，T60834/49和field13/24保留，Phase隔离。
