@@ -1,0 +1,1 @@
+T608当前策略成功记忆RL已结束：COMPLETE；物理4179157、命令167，新研究成功改进=True；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。各臂与冻结扰动分列，fresh16/reload78未执行，不称全局/泛化通过。
