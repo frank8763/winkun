@@ -1,3 +1,5 @@
+2026-11-17 T615冻结失守轨迹对照结束：COMPLETE；0Adam/0新RL，指标见day_20261117/t615/FINAL_REPORT。原始remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；不称导航改善或通过，T60834/49和field13/24保留，Phase隔离。
+
 2026-11-17 T614已结束/auditPASS/全原始远端逐SHA：2真实可行方向Adam及2shadow2历史重构，四恢复全safe+exact，但15自主哨兵8成功，原成功10项中丢sector4offset2超时余1.3803m和wide8LEFT13碰撞余2.8812m，候选拒绝整ActorAdam回退；其余34自主/完整49/407/fresh/reload未执行null，仍保留T60834/49、field13/24。日16live16shadow16audit+4pref已用满，无权新学习。新T615仅两失守任务父/拒绝候选四完整自主+4exact、0optimizer，469784步12cmd1200main300audit10MiB，仍日22M6609000/50MiB余额与13:00原生13:30all；零原生预检PASS、source同步后唯一启动另查launch。CPU14/15/GPUoff/Phase隔离，详t614/FINDINGS_AND_NEXT和t615/PLAN。
 
 2026-11-17 T614合格恢复后缀监督学习已结束：COMPLETE；物理643094、命令27，新研究成功改进=False；remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。各臂与冻结扰动分列，fresh16/reload78未执行，不称全局/泛化通过。
