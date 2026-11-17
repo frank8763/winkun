@@ -1,3 +1,5 @@
+2026-11-17 用户下一步开始已注册T612固定T550历史合格教师对照，只换教师不改同一7.6s候选前缀/时刻/目标/clock。T55064真实hidden从candidate实际120前缀逐步重算，明确无extra32/anchor32不造零字段；候选原memory仍真实记录。1mixed+1exact，106668步6cmd900main300audit5MiB0Adam0RL，仍日22M6609000/50MiB；已过11:30停学不新学习，12:30停原生13:00全停。真实T550同task历史合格success已核、真实prefix逐步action/hidden/源码schema零native0Adam预检PASS。actual launch另查，mixed恢复不作单Actor导航或新独立样本，失败无成功标签，不扫时刻/教师。CPU14/15/GPUoff/Phase隔离。
+
 2026-11-17 T611固定7.6秒接管诊断真实失败：candidate原生前38决策精确T610，parentteacher自身64/extra32/anchor32从实际120prefix逐步重算、接管处不重置；后缀碰撞余2.33653m，21309步，1exact全数组/积分精确，合计42618物理6cmd35.3293main秒0Adam0RL。独立双策略轨迹审计PASS，18原始文件远端二进制逐成员SHA过，全部PID退。说明此固定偏离状态的成功父策略未能恢复，无成功纠正标签，不当新导航能力/部署成功，34/49研究和field13/24不变；不是所有教师/恢复邻域失败证明。audit继承two_order标记不代表本混合轨迹做了双顺序分解，详t611/FINDINGS澄清。原11:30停学12:30原生13:00全停，不自动训练/扫时刻。Phase隔离。
 
 2026-11-17 T611冻结早期教师恢复诊断结束：COMPLETE；0Adam/0新RL，指标见day_20261117/t611/FINAL_REPORT。原始remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；不称导航改善或通过，T60834/49和field13/24保留，Phase隔离。
