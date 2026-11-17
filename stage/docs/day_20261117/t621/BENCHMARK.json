@@ -1,0 +1,92 @@
+{
+  "state": "COMPLETE_ZERO_UPDATES",
+  "torch": "2.11.0+cu128",
+  "cuda_build": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "affinity": [
+    14
+  ],
+  "records": [
+    {
+      "device": "cpu",
+      "threads": 1,
+      "new_optimizer": 0,
+      "new_native": 0,
+      "state": "PASS",
+      "critic_gradient_seconds": 4.636554332999367,
+      "actor_gradient_seconds": 2.1244689080012904,
+      "losses": [
+        0.3692251765873577,
+        0.14397565217199587
+      ],
+      "gradient_max_errors": [
+        0.0,
+        0.0
+      ],
+      "all_parameters_optimizer_and_targets_unchanged": true
+    },
+    {
+      "device": "cpu",
+      "threads": 2,
+      "new_optimizer": 0,
+      "new_native": 0,
+      "state": "PASS",
+      "critic_gradient_seconds": 1.1908502070000395,
+      "actor_gradient_seconds": 2.1901072910004586,
+      "losses": [
+        0.3692251765873577,
+        0.14397565217199587
+      ],
+      "gradient_max_errors": [
+        8.326672684688674e-17,
+        0.0
+      ],
+      "all_parameters_optimizer_and_targets_unchanged": true
+    },
+    {
+      "device": "cpu",
+      "threads": 4,
+      "new_optimizer": 0,
+      "new_native": 0,
+      "state": "PASS",
+      "critic_gradient_seconds": 1.2966647579996788,
+      "actor_gradient_seconds": 2.3176227510011813,
+      "losses": [
+        0.3692251765873577,
+        0.14397565217199587
+      ],
+      "gradient_max_errors": [
+        8.326672684688674e-17,
+        0.0
+      ],
+      "all_parameters_optimizer_and_targets_unchanged": true
+    },
+    {
+      "device": "cuda",
+      "threads": 4,
+      "new_optimizer": 0,
+      "new_native": 0,
+      "peak_gpu_bytes": 281872896,
+      "state": "PASS",
+      "critic_gradient_seconds": 0.41615720899790176,
+      "actor_gradient_seconds": 0.12096633400142309,
+      "losses": [
+        0.36922517658735776,
+        0.14397565217199593
+      ],
+      "gradient_max_errors": [
+        4.440892098500626e-16,
+        2.42861286636753e-17
+      ],
+      "all_parameters_optimizer_and_targets_unchanged": true
+    }
+  ],
+  "best_measured": {
+    "device": "cuda",
+    "threads": 4
+  },
+  "single_gradient_timing_not_full_training_speed": true,
+  "new_optimizer": 0,
+  "new_native": 0,
+  "epoch": 1794906223.2112863
+}

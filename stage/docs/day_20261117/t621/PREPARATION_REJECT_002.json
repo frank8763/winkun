@@ -1,0 +1,81 @@
+{
+  "state": "COMPLETE_ZERO_UPDATES",
+  "torch": "2.11.0+cu128",
+  "cuda_build": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "affinity": [
+    14
+  ],
+  "records": [
+    {
+      "device": "cpu",
+      "threads": 1,
+      "new_optimizer": 0,
+      "new_native": 0,
+      "state": "PASS",
+      "critic_gradient_seconds": 4.601583888997993,
+      "actor_gradient_seconds": 2.130587154002569,
+      "losses": [
+        0.3692251765873577,
+        0.14397565217199587
+      ],
+      "gradient_max_errors": [
+        0.0,
+        0.0
+      ],
+      "all_parameters_optimizer_and_targets_unchanged": true
+    },
+    {
+      "device": "cpu",
+      "threads": 2,
+      "new_optimizer": 0,
+      "new_native": 0,
+      "state": "PASS",
+      "critic_gradient_seconds": 1.1878065839991905,
+      "actor_gradient_seconds": 2.1900324289999844,
+      "losses": [
+        0.3692251765873577,
+        0.14397565217199587
+      ],
+      "gradient_max_errors": [
+        8.326672684688674e-17,
+        0.0
+      ],
+      "all_parameters_optimizer_and_targets_unchanged": true
+    },
+    {
+      "device": "cpu",
+      "threads": 4,
+      "new_optimizer": 0,
+      "new_native": 0,
+      "state": "PASS",
+      "critic_gradient_seconds": 1.3028980039998714,
+      "actor_gradient_seconds": 2.32261803000074,
+      "losses": [
+        0.3692251765873577,
+        0.14397565217199587
+      ],
+      "gradient_max_errors": [
+        8.326672684688674e-17,
+        0.0
+      ],
+      "all_parameters_optimizer_and_targets_unchanged": true
+    },
+    {
+      "device": "cuda",
+      "threads": 4,
+      "new_optimizer": 0,
+      "new_native": 0,
+      "state": "FAILED",
+      "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t621_acceleration_probe/probe.py\", line 29, in main\n    start=time.perf_counter();loss=A.loss(obj,ref,pp,p,gen,actor);loss.backward()\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/_tensor.py\", line 631, in backward\n    torch.autograd.backward(\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/autograd/__init__.py\", line 381, in backward\n    _engine_run_backward(\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/autograd/graph.py\", line 869, in _engine_run_backward\n    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass\nRuntimeError: cudnn RNN backward can only be called in training mode\n"
+    }
+  ],
+  "best_measured": {
+    "device": "cpu",
+    "threads": 2
+  },
+  "single_gradient_timing_not_full_training_speed": true,
+  "new_optimizer": 0,
+  "new_native": 0,
+  "epoch": 1794906175.8285637
+}

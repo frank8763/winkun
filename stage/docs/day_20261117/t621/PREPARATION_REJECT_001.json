@@ -1,0 +1,81 @@
+{
+  "state": "COMPLETE_ZERO_UPDATES",
+  "torch": "2.11.0+cu128",
+  "cuda_build": "12.8",
+  "gpu": null,
+  "affinity": [
+    14
+  ],
+  "records": [
+    {
+      "device": "cpu",
+      "threads": 1,
+      "new_optimizer": 0,
+      "new_native": 0,
+      "state": "PASS",
+      "critic_gradient_seconds": 4.516253064997727,
+      "actor_gradient_seconds": 2.1224689739974565,
+      "losses": [
+        0.3692251765873577,
+        0.14397565217199587
+      ],
+      "gradient_max_errors": [
+        0.0,
+        0.0
+      ],
+      "all_parameters_optimizer_and_targets_unchanged": true
+    },
+    {
+      "device": "cpu",
+      "threads": 2,
+      "new_optimizer": 0,
+      "new_native": 0,
+      "state": "PASS",
+      "critic_gradient_seconds": 1.218712111000059,
+      "actor_gradient_seconds": 2.2140747960002045,
+      "losses": [
+        0.3692251765873577,
+        0.14397565217199587
+      ],
+      "gradient_max_errors": [
+        8.326672684688674e-17,
+        0.0
+      ],
+      "all_parameters_optimizer_and_targets_unchanged": true
+    },
+    {
+      "device": "cpu",
+      "threads": 4,
+      "new_optimizer": 0,
+      "new_native": 0,
+      "state": "PASS",
+      "critic_gradient_seconds": 1.2882476670019969,
+      "actor_gradient_seconds": 2.3681658300010895,
+      "losses": [
+        0.3692251765873577,
+        0.14397565217199587
+      ],
+      "gradient_max_errors": [
+        8.326672684688674e-17,
+        0.0
+      ],
+      "all_parameters_optimizer_and_targets_unchanged": true
+    },
+    {
+      "device": "cuda",
+      "threads": 4,
+      "new_optimizer": 0,
+      "new_native": 0,
+      "state": "FAILED",
+      "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t621_acceleration_probe/probe.py\", line 21, in main\n    obj=L.make(p);before=L.digest(L.state(obj));fixed=L.fixed(obj['actor']);A.move(obj,device);ref=L.frozen(p,p['student_initial']['path']).to(device);pp=A.pack_to(pack,device)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t621_acceleration_probe/accelerated.py\", line 10, in move\n    for name in ['actor','critics','target_actor','target_critics']:obj[name].to(device)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1384, in to\n    return self._apply(convert)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 934, in _apply\n    module._apply(fn)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 934, in _apply\n    module._apply(fn)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 965, in _apply\n    param_applied = fn(param)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1370, in convert\n    return t.to(\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/cuda/__init__.py\", line 478, in _lazy_init\n    torch._C._cuda_init()\nRuntimeError: No CUDA GPUs are available\n"
+    }
+  ],
+  "best_measured": {
+    "device": "cpu",
+    "threads": 2
+  },
+  "single_gradient_timing_not_full_training_speed": true,
+  "new_optimizer": 0,
+  "new_native": 0,
+  "epoch": 1794906119.391939
+}
