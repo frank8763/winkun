@@ -1,0 +1,109 @@
+{
+  "state": "PREPARED_NOT_AUTHORIZED",
+  "parents_actual": [
+    {
+      "run": "t608_current_policy_memory",
+      "physics": 4179157,
+      "commands": 167,
+      "main_seconds": 2193.1537363529205,
+      "bytes": 11607038
+    },
+    {
+      "run": "t609_fresh_batch_proposal",
+      "physics": 595691,
+      "commands": 25,
+      "main_seconds": 320.2982220649719,
+      "bytes": 1489270
+    },
+    {
+      "run": "t610_retention_trajectory_pair",
+      "physics": 170526,
+      "commands": 8,
+      "main_seconds": 112.80852222442627,
+      "bytes": 1703805
+    },
+    {
+      "run": "t611_early_teacher_recovery",
+      "physics": 42618,
+      "commands": 6,
+      "main_seconds": 35.32930302619934,
+      "bytes": 962508
+    },
+    {
+      "run": "t612_baseline_teacher_recovery",
+      "physics": 60340,
+      "commands": 6,
+      "main_seconds": 46.156816244125366,
+      "bytes": 1028546
+    },
+    {
+      "run": "t613_qualified_recovery_learning",
+      "physics": 0,
+      "commands": 0,
+      "main_seconds": 12.516435623168945,
+      "bytes": 558535
+    },
+    {
+      "run": "t614_feasible_recovery_step",
+      "physics": 643094,
+      "commands": 27,
+      "main_seconds": 350.84695053100586,
+      "bytes": 1911498
+    },
+    {
+      "run": "t615_original_start_drift_pair",
+      "physics": 314346,
+      "commands": 12,
+      "main_seconds": 200.0995078086853,
+      "bytes": 2683515
+    }
+  ],
+  "new_caps": {
+    "physics": 6207460,
+    "commands": 134,
+    "main_seconds": 3600,
+    "bytes": 25165824,
+    "live": 32,
+    "shadow": 32,
+    "historical_Adam": 32,
+    "preflight_Adam": 0,
+    "new_RL": 0,
+    "new_teacher_queries": 0
+  },
+  "day_unchanged_caps": {
+    "physics": 22000000,
+    "commands": 660,
+    "main_seconds": 9000,
+    "bytes": 52428800
+  },
+  "day_worst": {
+    "physics": 12213232,
+    "commands": 385,
+    "main_seconds": 6871.2094938755035,
+    "bytes": 47110539
+  },
+  "previous_optimizer_cap_used": {
+    "live": 16,
+    "shadow": 16,
+    "historical_Adam": 16,
+    "preflight_Adam": 4
+  },
+  "requested_new_day_optimizer_caps": {
+    "live": 48,
+    "shadow": 48,
+    "historical_Adam": 48,
+    "preflight_Adam": 4
+  },
+  "global_now_bytes": 1041187862,
+  "global_reserved_worst_bytes": 1066484758,
+  "global_cap": 1073741824,
+  "learning_stop": 1794895200.0,
+  "native_stop": 1794897000.0,
+  "all_stop": 1794898800.0,
+  "max_science_and_finalize_seconds": 4650,
+  "wall_schedule_is_proposal_not_authorized": true,
+  "epoch": 1794891254.7132497,
+  "preparation_zero_optimizer_gradient_evaluations": 5,
+  "teacher_reference_change_requires_scope_approval": true,
+  "max_Adam_per_arm": 16
+}
