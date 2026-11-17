@@ -1,0 +1,85 @@
+{
+  "state": "PREPARED_NOT_APPROVED_NOT_LAUNCHED",
+  "window_user_confirmed_all_stop": "2026-11-18T09:00:00+08:00",
+  "proposed_learning_stop": "2026-11-18T07:30:00+08:00",
+  "proposed_native_stop": "2026-11-18T08:15:00+08:00",
+  "independent_cross_midnight_budget_requested": true,
+  "max_physics": 80000000,
+  "max_commands": 2500,
+  "max_main_seconds": 30000,
+  "Actor_live": 146,
+  "Actor_shadow": 146,
+  "Actor_independent_history": 146,
+  "Critic": 0,
+  "optimizer_preflight": 0,
+  "local_new_bytes": 150994944,
+  "night_remote_backup_bytes_cap": 201326592,
+  "global_before": 1068442994,
+  "cold_npz_files": 766,
+  "cold_original_bytes": 154404031,
+  "marker_conservative_bytes": 1568768,
+  "global_worst_after_verified_cold_and_night_reserve": 1066733747,
+  "global_cap": 1073741824,
+  "free_min_bytes": 42949672960,
+  "all_fixed_science_branches_worst_physics": 69302399,
+  "all_fixed_science_branches_worst_commands": 2065,
+  "complete_stage_admission": true,
+  "templates": {
+    "collect": {
+      "max_physics": 5457016,
+      "max_commands": 150,
+      "main_seconds": 3000,
+      "learning_seconds": 0,
+      "audit_seconds": 600,
+      "storage_reserve": 65011712
+    },
+    "core": {
+      "max_physics": 2434054,
+      "max_commands": 59,
+      "main_seconds": 1800,
+      "learning_seconds": 900,
+      "audit_seconds": 600,
+      "storage_reserve": 3145728
+    },
+    "broad": {
+      "max_physics": 2434054,
+      "max_commands": 59,
+      "main_seconds": 2400,
+      "learning_seconds": 1200,
+      "audit_seconds": 900,
+      "storage_reserve": 3145728
+    },
+    "recovery": {
+      "max_physics": 3600000,
+      "max_commands": 75,
+      "main_seconds": 2400,
+      "learning_seconds": 1500,
+      "audit_seconds": 900,
+      "storage_reserve": 25165824
+    },
+    "recovery_rl": {
+      "max_physics": 3373622,
+      "max_commands": 75,
+      "main_seconds": 1800,
+      "learning_seconds": 900,
+      "audit_seconds": 600,
+      "storage_reserve": 14680064
+    },
+    "profile": {
+      "max_physics": 11492151,
+      "max_commands": 417,
+      "main_seconds": 3600,
+      "learning_seconds": 0,
+      "audit_seconds": 600,
+      "storage_reserve": 7340032
+    }
+  },
+  "mandatory_final_and_partial_reserve": 8388608,
+  "stage_all_native_exit_before_audit": true,
+  "no_network_for_science": true,
+  "remote_pending_valid_offline_end": true,
+  "actual_unique_RAM_cap": 4294967296,
+  "swap_bytes_cap": 0,
+  "CPU_percent_cap": 400,
+  "epoch": 1794924625.5382526
+}

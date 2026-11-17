@@ -1,3 +1,5 @@
+2026-11-17 用户通宵全停确认2026-11-18 09:00。T629离线接力已代码/零native零optimizer真实full-history GPU梯度/合格教师实际prefix自身carry/新参数模型读回/离线IO不删原始/严格34同总数丢ID拒绝预检过；72full最坏52.724MB、最长期partial1.599MB<2MiB。拟36task72fresh72exact共享4taskPG vs36taskPG各8SGD、合格实际偏离恢复最多128+条件2PG、49与407/72邻域有限接力；拟独立夜80M/2500cmd30000main/Actor各146/0Critic、本地144MiB，全局1GiB不扩。766旧NPZ147.25MiB冷缓存全远端SHA再释放清单待用户批准，模型视频当前输入不动；预算/缓存未准，无root/launch。原T628S完整audit+全远端PASS，两组无新保留，T608仍34/49场地13/24，Stage/Phase隔离。详overnight_20261117/PLAN/BUDGET/READINESS/PRIMARY_RELAY_REVIEW。
+
 2026-11-17 T628S四任务新策略重采样/固定sigma-vs退火对照结束：COMPLETE；实际成功丢失/新增/49与原始remote见t628/FINAL_REPORT，不称泛化或全局晋升。
 
 2026-11-17 T628R真实原生初始化OOM，未Pool READY/未发episode，0物理0更新，metadata-only收尾/全cgroup退/全远端SHA过。T628S修内部RAM估算至4GiB无swap，保留thin driver和唯一cgroup计量；用户明确科学/磁盘/CPU/截止额度不扩。旧两失败12cmd/34.689961s/505874Blocal/269615Bremote全扣，新260cmd3565.31main/4212718Blocal/100393681Bremote；原2臂四任务最多2轮合同不变，40+53final+3close准入，不足不启后轮，matched共同首轮。仅注册source后唯一启动另查，不重启旧两根；22:30学23:00native23:30all，T608仍34/49，Phase隔离。
