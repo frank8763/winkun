@@ -1,5 +1,5 @@
 {
-  "id": "T626_MULTITASK_CRITIC_FREE_PREPARED",
+  "id": "T626_MULTITASK_CRITIC_FREE_AUTHORIZED",
   "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t626_multitask_closed_loop",
   "actor_configuration": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t604_reverse_initialization/protocol.json",
   "base_model": {
@@ -91,7 +91,7 @@
   "final_storage_reserve": 1048576,
   "root_tail_bytes": 1048576,
   "stress_chunks": 0,
-  "authorization_approved": false,
+  "authorization_approved": true,
   "inputs": {
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t604_reverse_initialization/control.py": "9e88ca8c9e33b313d3aa7ec8359871a1a7014dc78d421a9f6ddd0c5fa92b2bcf",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t200_residual_placement/common.py": "a213ec43cb4a8e54cf6abb780a122d2e117d28a41d69e4d6430477868aab0552",
@@ -839,8 +839,9 @@
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t626/PREFLIGHT.json": "a3218c37acc748a730154099bf09d3fe63a969bf694cc9cdd6c90e62092b3066",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t626/IO_PREFLIGHT.json": "00d70da42db72f93b7b08953adbddba765f9839f936d42c58331aef51b5f6896",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t626/STREAM_PREFLIGHT.json": "05a38e26caace418cfdbc596c6347eceb6b5a188bc320e3b0dee35d6bb2cd1ea",
-    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t626/BUDGET.json": "28313bf7f68f7717c9800af4113f0998fe388330c8111882bfab692d5c7144b1",
-    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t626/PHYSICS.json": "e7edfe79f553e500ce6b2b85405e0cad600f698e5beaef6937b4d2ab3e3caeed"
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t626/BUDGET.json": "e37b2feb6c0867c9bb1df783e7efb5778d630751f1aa7306904869f4e9a20ee1",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t626/PHYSICS.json": "e7edfe79f553e500ce6b2b85405e0cad600f698e5beaef6937b4d2ab3e3caeed",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t626/AUTHORIZATION.json": "56f4022b4c9e6b3b5c2905c36f35de03554afd2b379d41ec3caf2800737e0d7f"
   },
   "protected_files": {
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t550_offline_obstacle_relay/attempt_01_gap/proposal.pt.gz": "a8231f5bb0ed1822b3cdf6700b35fdeed8d87e36abe869b66a122663149bb5d8",
@@ -1229,7 +1230,7 @@
     "critic_history": 0,
     "discarded_preflight": 4
   },
-  "authorization_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t625/AUTHORIZATION.json",
+  "authorization_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261117/t626/AUTHORIZATION.json",
   "stage_cpus": [
     8,
     10,
@@ -2904,5 +2905,7 @@
   "working_RAM_cap_bytes": 2147483648,
   "new_remote_raw_bytes_cap": 67108864,
   "learning_admission_seconds": 1500,
-  "proposed_window_not_approved": true
+  "proposed_window_not_approved": false,
+  "day_Actor_each_cap": 92,
+  "day_Critic_each_cap": 1120
 }
