@@ -1,0 +1,18 @@
+{
+  "state": "FAILED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t624_exact_branch_completion/driver.py\", line 18, in main\n    call('main',p['main_seconds']);g=M.read(M.OUT/'worker_generations.json');pids.extend([i for z in g for i in [z['parent'],*z['workers']]]);assert all(not Path('/proc',str(i)).exists() for i in pids);call('audit',p['audit_seconds']);assert M.read(M.OUT/'audit.json')['state']=='PASS'\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t624_exact_branch_completion/driver.py\", line 10, in call\n    try:c.wait(timeout=seconds);assert c.returncode==0,(action,c.returncode)\nAssertionError: ('main', 1)\n",
+  "summary": {
+    "state": "FAILED",
+    "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t624_exact_branch_completion/replay.py\", line 20, in main\n    for a,r in vv:C.check(p,a,r,M.R.R.E.N.S.arrays(p['prefix_source']))\nAttributeError: module 'recover' has no attribute 'check'\n",
+    "physics": 86188,
+    "commands": 9,
+    "elapsed_s": 35.905193567276,
+    "new_optimizer": 0
+  },
+  "metrics": null,
+  "comparison": null,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "actor_updates": 0,
+  "globally_promoted": false,
+  "epoch": 1794908589.087195
+}
