@@ -1,0 +1,4 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t629_offline_night_relay/t629_driver.py\", line 81, in main\n    if time.time()+p['source_seconds']+10<p['absolute_all_stop']:subprocess.run([str(ROOT/'run_stage.sh'),str(HERE/'t629_transport.py'),'source_sync'],cwd=ROOT,capture_output=True,check=True,timeout=p['source_seconds'],env=dict(os.environ,CUDA_VISIBLE_DEVICES=''))\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/run_stage.sh', '/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t629_offline_night_relay/t629_transport.py', 'source_sync']' returned non-zero exit status 1.\n",
+  "local_science_complete": true
+}

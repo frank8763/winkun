@@ -1,3 +1,7 @@
+2026-11-18 用户下一步开始：T630提前首次偏离恢复资格验证已代码/零native零optimizer预检准备，仅新源与docs无run/launch。原T629初始化实际182°与atan2 -178°原断言红已真实closure/pose/Witness seam复现；新SO2只修断言，72green/71canonical初始数组逐位同旧，真实XY/yaw/goal/time/NaN六负例仍拒。两旧丢失任务同T626/T608固定首2cm或1deg真实物理时对齐接管，0更新/不接RL/不重复407；拟726232物理18cmd900main600audit24MiB及相对启动1h全停，旧09:00额度不挪用，待新窗口具体额度确认/注册/源精确同步。Phase隔离/无规划路点运行teacher部署/保T608。详day_20261118/t630/PLAN/BUDGET/PREFLIGHT/RESET_PREFLIGHT。
+
+2026-11-18 T629离线接力结束：FAILED，保留改进=False，完整结果/原始SHA见overnight_20261117/FINAL_REPORT，remote=REMOTE_PENDING_OFFLINE_LOCAL_DATA_COMPLETE，非全局晋升。
+
 2026-11-17 T629已获独立夜间预算并完成旧缓存准入：11组42分片RAM远端完整逐成员SHA后才释放766旧NPZ共154404031B，恢复marker/ledger独立auditPASS，824原输入逐SHA未变，模型视频/当前数据/失败摘要不动。全局冷后914534337B，含完整144MiB夜间reserve仍<1GiB。唯一root已注册未launch，待source精确树同步后唯一CPU400%低优先/GPU/4GiB无swap后台；07:30学08:15native09:00all，0LLM/API/安装/网络科学依赖，Phase隔离。
 
 2026-11-17 用户明确批准T629离线通宵独立80M物理2500cmd30000main/Actor live-shadow-history各146/0Critic/0pref、本地144MiB；07:30学08:15native09:00all。明确准766个T498/T499/T501旧NPZ缓存147.25MiB本次全远端逐成员SHA后释放、保恢复索引，模型视频当前输入失败摘要不动；全局1GiB/free40GiB不扩。先冷缓存核验再注册唯一root/source同步后唯一launch，当前未启动。CPU400%低优先/GPUfloat64/4GiB实际RAM无swap，Phase完全隔离，离线全原始/独立审计/manifest，网络备份仅全部科学结束后有限尝试，remotePENDING如实。
