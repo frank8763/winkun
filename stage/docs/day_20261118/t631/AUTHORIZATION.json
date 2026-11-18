@@ -1,0 +1,29 @@
+{
+  "state": "APPROVED",
+  "user_answer": "允许，按此预算启动1小时窗口",
+  "approved_epoch": 1794966708.2813323,
+  "max_physics": 3608514,
+  "max_commands": 79,
+  "Actor_each_cap": 64,
+  "Actor_live_cap": 64,
+  "Actor_shadow_cap": 64,
+  "Actor_independent_history_cap": 64,
+  "Critic": 0,
+  "new_optimizer_preflight": 0,
+  "local_new_bytes_cap": 33554432,
+  "relative_all_stop_seconds": 3600,
+  "CPU_percent_cap": 400,
+  "stage_cpus": [
+    8,
+    10,
+    12,
+    14
+  ],
+  "GPU_float64_learning_only": true,
+  "global_bytes_cap": 1073741824,
+  "free_min_bytes": 42949672960,
+  "RAM_cap": 4294967296,
+  "swap_cap": 0,
+  "Phase_isolated": true,
+  "scope": "Fixed two real early-departure states, four seeded recoveries each plus exact; both tasks require actual safeGOAL before one 64-step sampled-action fit, shadow and history audit; two autonomous handoffs and complete49; original34 retained plus new success required; no automatic RL or further branch"
+}
