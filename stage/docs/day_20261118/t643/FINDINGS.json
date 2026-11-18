@@ -1,0 +1,39 @@
+{
+  "state": "FAILED_OLD_EXPERT_RECOVERY_QUALIFICATION",
+  "new_native": 0,
+  "new_optimizer": 0,
+  "actual_source": "62f8005c2ff43d9a5342cded172136f58406b546d0efe14b1a0c1abceb39ba74",
+  "teacher": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t501_joint_command_repair/joint/proposal.pt.gz",
+    "sha256": "6c8cf7128cd096801aed3a20c672791bcfa64ca0c50cc7bf1c4e3e77bea18187",
+    "policy_hash": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+    "joint_hash": "913555eb5b5322ddea31913a09fc05b57715377fcd269b98215b430363ac8d03",
+    "bytes": 1063700
+  },
+  "handoff": {
+    "rule": "first physical-time aligned XY>=.02m OR yaw>=1degree",
+    "decision": 7,
+    "seconds": 1.4000000000000001,
+    "xy_m": 0.02055538304311987,
+    "yaw_degrees": 0.5289256002390733
+  },
+  "success": false,
+  "collision": true,
+  "collision_seconds": 34.456,
+  "remaining_m": 2.8221339810108095,
+  "metrics": {
+    "closest_suffix_recorded_distance": 2.8221339810108095,
+    "suffix_steer_saturation": 0.006024096385542169
+  },
+  "exact": true,
+  "audit": "PASS",
+  "inference": "Original successful T501 also fails from this actual early shifted state with its own causal carry. Nominal success is not a robust recovery teacher; this is not proof the state is physically unrecoverable.",
+  "method_decision": "Prioritize training-time recovery-state coverage and verified new successful recoveries, then response/stability-aware learning. Do not keep scaling mean/tail replay weights or blindly enlarge the network. No failed recovery labels admitted.",
+  "proposed_falsifiable_order": [
+    "Verify physical action and achievable turning/speed envelope from existing contracts; do not silently change deployment action mapping.",
+    "Use bounded exploration/curriculum from real early shifted states to obtain new safe successful control, then verify exact and independent carry before imitation.",
+    "Compare successful recovery data augmentation against local-response regularization on full causal histories, fixed network and matched interaction budget.",
+    "Require both original-start new-target success and full old-ID retention, then unseen geometry and real robot."
+  ],
+  "no_next_training_launched": true
+}
