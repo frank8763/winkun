@@ -1,3 +1,5 @@
+2026-11-18 T631后只读复盘0native0optimizer：八米四失败32.062–46.782s接触circle9/rect9，剩1.657–2.880m，25s对名义成功路径偏0.244–0.892m；名义T608同起点63.858s成功。八轨迹回报闭式核验maxerr2.276e-15，全碰撞固定接管组的距离势项抵消、回报仅分碰撞时刻，非奖励bug/唯一根因证明。T631因仅field3/4恢复而8m0/4，未达双任务准入，0更新/full49 null。下一T632只草案：同T626研究初始化，现有三field真实成功后缀＋八米T608名义成功完整轨迹＋两新成功锚＋旧33保持，任务内均分/任务间平衡，场地自主恢复与原34全保且新增原起点才保留；不虚造8m恢复标签、不把强制前缀混成onpolicy，不自动开新训练/改奖励/加seed。已存只读分析源与after_t631/FINDINGS_AND_NEXT/OUTCOME_AND_REWARD，无新协议/run/launch，待后续明确启动。Stage/Phase隔离。
+
 2026-11-18 T631冻结提前偏离恢复验证结束：COMPLETE，合格恢复=1，Actor更新=0，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；非自主导航晋升。详day_20261118/t631/FINAL_REPORT。
 
 2026-11-18 用户检查继续推进：T630全部结束458740物理18cmd/272.400秒，auditPASS，T629/T630全原始远端逐成员SHA补齐；两个T608原起点成功，T626前缀4s/7.4s仅2.15/2.25cm偏离后T608接管均超时，无恢复标签，保T60834/49/field13/24。T631固定同两早期实际状态各4探索+exact，双任务各有safeGOAL才用实际sampled raw动作（非失败教师均值）+两T626新成功锚+33旧函数，64SGD/64shadow/64历史审计，完整49+两handoff+6exact，原34全保且新增才研究保留。代码/实际Session采样边界与随机全history/GPU梯度/真实IO零native零optimizer预检PASS，拟3608514物理79cmd32MiB/注册起1h/main1800audit900，仅准备无run/launch，待新学习具体额度确认；T630原0更新18cmd不挪用。Phase资源隔离/四CPU低优先/GPU学习让出其他计算，不称SIL/JSRL完整复现或新算法原创。详day_20261118/t631/PLAN/BUDGET/PREFLIGHT。

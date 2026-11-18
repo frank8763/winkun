@@ -1,0 +1,199 @@
+{
+  "state": "OFFLINE_REVIEW_COMPLETE",
+  "native_steps": 0,
+  "optimizer_updates": 0,
+  "source_summary_sha256": "c2d59e26d7199ca98b01b71f041effd634cd119a7d2c488a0aa60fe1ee1363c2",
+  "source_audit_sha256": "f78e466727a7827a95a43f2b40bb8e942ed5a8ea6c3e88e2d8c5b7b89a135dd9",
+  "T631_physics": 504160,
+  "T631_commands": 22,
+  "T631_Actor_updates": 0,
+  "full49": null,
+  "retained_model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t608_current_policy_memory/rl_00/proposal.pt.gz",
+    "sha256": "797cce22f6f4bd19bf6af057893282a03de5658d58f8a9aeccbdb720378adde6",
+    "bytes": 280330,
+    "policy_hash": "9e2017ccc814478ebcfb9d025ac5e58a45e2719437fc78c0164ce08999c6983c",
+    "joint_hash": "b9024a30c65305199c6945fa62e69dbb9a467eab6fb5ead908a64d12c9c7550d"
+  },
+  "baseline_8m_physics": 31929,
+  "baseline_8m_goal_seconds": 63.858000000000004,
+  "gamma_native": 0.999966667222216,
+  "discount_efold_seconds": 60.000000000009315,
+  "maximum_return_reconstruction_error": 2.275957200481571e-15,
+  "reward_inference": "For this fixed-start all-collision group, potential terms telescope; total return distinguishes collision time, not an independent terminal-distance preference. This is an intended property of potential shaping, not proof of an implementation bug or the unique failure cause.",
+  "records": [
+    {
+      "job_id": "t502_field_sector4_offset2",
+      "seed_index": 0,
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "boundary_crossed": false,
+      "original_clock_terminal_s": 73.276,
+      "suffix_seconds": 69.276,
+      "suffix_return": 0.5438810044435064,
+      "closed_form_return": 0.5438810044435062,
+      "terminal_distance_m": 0.19991768295954895,
+      "minimum_logged_endpoint_distance_m": 0.19991768295954895,
+      "contact_obstacles": [],
+      "position_gap_to_nominal_by_clock_s": {},
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t631_explored_recovery/batch_cache/episode_000.npz",
+      "sha256": "8b369d0a7751be18c6c2670146fbaad657a11afe9c43e69a4acdb6a99941793e"
+    },
+    {
+      "job_id": "t502_field_sector4_offset2",
+      "seed_index": 1,
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "boundary_crossed": false,
+      "original_clock_terminal_s": 75.762,
+      "suffix_seconds": 71.762,
+      "suffix_return": 0.5303207659514023,
+      "closed_form_return": 0.5303207659514028,
+      "terminal_distance_m": 0.19999430403579863,
+      "minimum_logged_endpoint_distance_m": 0.19999430403579863,
+      "contact_obstacles": [],
+      "position_gap_to_nominal_by_clock_s": {},
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t631_explored_recovery/batch_cache/episode_001.npz",
+      "sha256": "56a79a192da0a02d4972ca2c9a4532c09e9727dcbd8935298b0a68ea73384dcb"
+    },
+    {
+      "job_id": "t502_field_sector4_offset2",
+      "seed_index": 2,
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "boundary_crossed": false,
+      "original_clock_terminal_s": 73.64,
+      "suffix_seconds": 69.64,
+      "suffix_return": 0.5418602340863012,
+      "closed_form_return": 0.5418602340863006,
+      "terminal_distance_m": 0.19996211316453424,
+      "minimum_logged_endpoint_distance_m": 0.19996211316453427,
+      "contact_obstacles": [],
+      "position_gap_to_nominal_by_clock_s": {},
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t631_explored_recovery/batch_cache/episode_002.npz",
+      "sha256": "1dcc3b84c162f90ca1ccccc75eed86f6a9c081032812291da352396256104b88"
+    },
+    {
+      "job_id": "t502_field_sector4_offset2",
+      "seed_index": 3,
+      "success": false,
+      "collision": false,
+      "timeout": true,
+      "boundary_crossed": true,
+      "original_clock_terminal_s": 128.224,
+      "suffix_seconds": 124.224,
+      "suffix_return": 0.15427406688168174,
+      "closed_form_return": 0.15427406688167997,
+      "terminal_distance_m": 4.178825715272132,
+      "minimum_logged_endpoint_distance_m": 0.31202161809413115,
+      "contact_obstacles": [],
+      "position_gap_to_nominal_by_clock_s": {},
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t631_explored_recovery/batch_cache/episode_003.npz",
+      "sha256": "616b5c2b3db2656047db7ab8262557cd5321596192ead45cd5d62bb8ba237cc5"
+    },
+    {
+      "job_id": "wide117_8m_dev6_LEFT_13",
+      "seed_index": 0,
+      "success": false,
+      "collision": true,
+      "timeout": false,
+      "boundary_crossed": false,
+      "original_clock_terminal_s": 36.92,
+      "suffix_seconds": 29.52,
+      "suffix_return": -0.4650203837685637,
+      "closed_form_return": -0.46502038376856536,
+      "terminal_distance_m": 2.4909744744088016,
+      "minimum_logged_endpoint_distance_m": 2.490974474408802,
+      "contact_obstacles": [
+        "real_circle_obs_9"
+      ],
+      "position_gap_to_nominal_by_clock_s": {
+        "7.4": 0.022511782036366095,
+        "15.0": 0.23801549251662507,
+        "25.0": 0.7347853040303733,
+        "30.0": 0.6441602825714614
+      },
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t631_explored_recovery/batch_cache/episode_004.npz",
+      "sha256": "a1b531050f67b51b14e1a388100804525e5128c05e485e39f31e227b5b2c4b82"
+    },
+    {
+      "job_id": "wide117_8m_dev6_LEFT_13",
+      "seed_index": 1,
+      "success": false,
+      "collision": true,
+      "timeout": false,
+      "boundary_crossed": false,
+      "original_clock_terminal_s": 32.062,
+      "suffix_seconds": 24.662,
+      "suffix_return": -0.5134907695612564,
+      "closed_form_return": -0.5134907695612583,
+      "terminal_distance_m": 2.880075565125245,
+      "minimum_logged_endpoint_distance_m": 2.880075565125245,
+      "contact_obstacles": [
+        "real_rect_obs_9"
+      ],
+      "position_gap_to_nominal_by_clock_s": {
+        "7.4": 0.022511782036366095,
+        "15.0": 0.22389423624036126,
+        "25.0": 0.8916115313978561,
+        "30.0": 0.8002532986675324
+      },
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t631_explored_recovery/batch_cache/episode_005.npz",
+      "sha256": "d1e438a5a8f8377549145be358f8a1342f8ee560071f2512f1711d6f37d72b6b"
+    },
+    {
+      "job_id": "wide117_8m_dev6_LEFT_13",
+      "seed_index": 2,
+      "success": false,
+      "collision": true,
+      "timeout": false,
+      "boundary_crossed": false,
+      "original_clock_terminal_s": 37.494,
+      "suffix_seconds": 30.094,
+      "suffix_return": -0.45954827363109296,
+      "closed_form_return": -0.45954827363109524,
+      "terminal_distance_m": 2.418971002942418,
+      "minimum_logged_endpoint_distance_m": 2.418971002942418,
+      "contact_obstacles": [
+        "real_circle_obs_9"
+      ],
+      "position_gap_to_nominal_by_clock_s": {
+        "7.4": 0.022511782036366095,
+        "15.0": 0.11731242925609305,
+        "25.0": 0.6540871433755887,
+        "30.0": 0.5016340640789259
+      },
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t631_explored_recovery/batch_cache/episode_006.npz",
+      "sha256": "a00e3c47f175f4e809a7f4224f23f1bc617c6df75054800ac50ea71bc7f20fd8"
+    },
+    {
+      "job_id": "wide117_8m_dev6_LEFT_13",
+      "seed_index": 3,
+      "success": false,
+      "collision": true,
+      "timeout": false,
+      "boundary_crossed": false,
+      "original_clock_terminal_s": 46.782000000000004,
+      "suffix_seconds": 39.382,
+      "suffix_return": -0.37790784823030443,
+      "closed_form_return": -0.3779078482303063,
+      "terminal_distance_m": 1.6569180778792105,
+      "minimum_logged_endpoint_distance_m": 1.6569180778792105,
+      "contact_obstacles": [
+        "real_circle_obs_9"
+      ],
+      "position_gap_to_nominal_by_clock_s": {
+        "7.4": 0.022511782036366095,
+        "15.0": 0.05555746898861747,
+        "25.0": 0.24383266602294731,
+        "30.0": 0.17674246529345522
+      },
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t631_explored_recovery/batch_cache/episode_007.npz",
+      "sha256": "a3ccfd6ce0c307e73bdac0c638e1ef63ac2ff0f2bb8fc36649bef6bd8c16590c"
+    }
+  ],
+  "dtype_note": "Widen packed uint native_counts to int64 before sums/cumsums. An earlier ad-hoc built-in sum printed an overflowed nominal duration; only this int64 result is authoritative. Existing native counters/audit evidence were not modified."
+}
