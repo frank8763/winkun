@@ -1,3 +1,5 @@
+2026-11-18 用户要求开始T632：任务分别准入的64步SGD学习/影子/历史重构代码及真实6条数据+33历史GPU零native零optimizer预检PASS，场地3成功后缀合计1/4、T608八米名义成功1/4、两T626新目标各1/4，旧保持1；失败BC拒绝/当前fullhistory与zero-init差.535/实际IO和初始重载通过。拟2562278物理61cmd/main1800audit900/16MiB/相对注册1h，4CPU低优先/GPU学习/4GiB无swap/Phase资源隔离。场地自主恢复+完整49/4keyexact，原34逐ID全保且新增原起点才研究保留；原T631停学10:16:48与全停10:51:48不擅延，尚无新授权/run/launch，待具体窗口额度确认与源同步。详day_20261118/t632/PLAN/BUDGET/PREFLIGHT。
+
 2026-11-18 T631后只读复盘0native0optimizer：八米四失败32.062–46.782s接触circle9/rect9，剩1.657–2.880m，25s对名义成功路径偏0.244–0.892m；名义T608同起点63.858s成功。八轨迹回报闭式核验maxerr2.276e-15，全碰撞固定接管组的距离势项抵消、回报仅分碰撞时刻，非奖励bug/唯一根因证明。T631因仅field3/4恢复而8m0/4，未达双任务准入，0更新/full49 null。下一T632只草案：同T626研究初始化，现有三field真实成功后缀＋八米T608名义成功完整轨迹＋两新成功锚＋旧33保持，任务内均分/任务间平衡，场地自主恢复与原34全保且新增原起点才保留；不虚造8m恢复标签、不把强制前缀混成onpolicy，不自动开新训练/改奖励/加seed。已存只读分析源与after_t631/FINDINGS_AND_NEXT/OUTCOME_AND_REWARD，无新协议/run/launch，待后续明确启动。Stage/Phase隔离。
 
 2026-11-18 T631冻结提前偏离恢复验证结束：COMPLETE，合格恢复=1，Actor更新=0，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；非自主导航晋升。详day_20261118/t631/FINAL_REPORT。
