@@ -1,3 +1,5 @@
+2026-11-18 T630冻结提前偏离恢复验证结束：COMPLETE，资格数=0，0新优化器，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；非自主导航晋升。详day_20261118/t630/FINAL_REPORT。
+
 2026-11-18 用户下一步开始：T630提前首次偏离恢复资格验证已代码/零native零optimizer预检准备，仅新源与docs无run/launch。原T629初始化实际182°与atan2 -178°原断言红已真实closure/pose/Witness seam复现；新SO2只修断言，72green/71canonical初始数组逐位同旧，真实XY/yaw/goal/time/NaN六负例仍拒。两旧丢失任务同T626/T608固定首2cm或1deg真实物理时对齐接管，0更新/不接RL/不重复407；拟726232物理18cmd900main600audit24MiB及相对启动1h全停，旧09:00额度不挪用，待新窗口具体额度确认/注册/源精确同步。Phase隔离/无规划路点运行teacher部署/保T608。详day_20261118/t630/PLAN/BUDGET/PREFLIGHT/RESET_PREFLIGHT。
 
 2026-11-18 T629离线接力结束：FAILED，保留改进=False，完整结果/原始SHA见overnight_20261117/FINAL_REPORT，remote=REMOTE_PENDING_OFFLINE_LOCAL_DATA_COMPLETE，非全局晋升。
