@@ -1,3 +1,5 @@
+2026-11-18 T636冻结联合最佳兼容复现结束：COMPLETE，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；结果见day_20261118/t636/FINAL_REPORT；仅六个历史案例，不等于新全407/泛化通过。
+
 2026-11-18 用户指出八米此前已通过，离线全407证据对齐纠正：T498八米54/54；T501联合原271/275+宽6m54/54+8m54/54，T502同冻结T501field5/24，合384/407。T501原模型SHA6c8cf712...仍精确LOCKED_BEST/旧audit与远端PASS；T608在T629完整同407为235+28+35+13=311，原379丢81/新field增8，净损73，407request.job逐项一致。不能再把T608局部分支保留当全任务最佳，49门不能代表379保持。建议后续主线回T501联合最佳、先有限冻结loader/接口精确兼容复现，再从原379覆盖的旧新混合训练扩场，原成功逐ID全保且field新增才保留；T608等场地成功只作研究数据/教师且真实恢复须验证，无运行路由。392并集目标尚未实现；0native0optimizer/no new launch，旧截止不延。详joint_baseline_reconciliation/EVIDENCE/DECISION，Stage/Phase隔离。
 
 2026-11-18 T634冻结执行读出对照结束：COMPLETE，0新策略更新，Actor更新=0，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；非全局/泛化晋升。详day_20261118/t634/FINAL_REPORT。
