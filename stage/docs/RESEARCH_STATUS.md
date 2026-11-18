@@ -1,3 +1,5 @@
+2026-11-18 T633条件后缀RL结束：FAILED，本批合格恢复={'anchor_safe': True, 'suffix_safe': 4, 'passed': True}，Actor更新=8，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；非全局/泛化晋升。详day_20261118/t633/FINAL_REPORT。
+
 2026-11-18 用户检查继续：T632完整49=34，gained field1offset2/lost field4offset2，8mLEFT13恢复但新LEFT00碰撞，field4自主handoff超时1.366m；64live64shadow64历史auditPASS/1688805物理61cmd644.094s，拒绝保T608。T632原始本地完整，第一次及新有界补传curl35均REMOTE_PENDING，不删；原协议/失败全保。新T633已代码/真实历史条件suffix密度和masked前缀/GPU梯度/IO零native零optimizer预检PASS，未run/launch：同T632研究副本新采field1锚+4真实恢复随机后缀和全exact，至少一safe才8live8shadow8history条件PG；强制前缀无score但全history重建，保持当前自身35函数锚；完整49要求原34与学生34并集35指定ID全保+场地自主恢复。拟3203398物理71cmd24MiB/main1800audit900/注册1h，旧11:28:58截止和64额度不挪，待新具体额度窗口确认；阶段完全隔离。详t633/PLAN/BUDGET/PREFLIGHT/after_t632补备份记录。
 
 2026-11-18 T632分任务恢复学习结束：COMPLETE，注册合格恢复轨迹=3，Actor更新=64，remote=PENDING_LOCAL_RAW_RETAINED；非全局/泛化晋升。详day_20261118/t632/FINAL_REPORT。
