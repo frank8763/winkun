@@ -1,0 +1,27 @@
+{
+  "state": "EARLY_ACTUAL_STATE_NEURAL_RECOVERY_QUALIFIED",
+  "T501_policy_unchanged": true,
+  "late_T639": {
+    "first_seconds": 41.6,
+    "teacher": "T608",
+    "safe_success": false,
+    "remaining_m": 0.9680361935484828,
+    "audit": "PASS"
+  },
+  "early_T640": {
+    "first_seconds": 1.0,
+    "first_deviation_rule": "First XY>=.02m OR yaw>=1degree against successful same-task teacher control",
+    "teacher": "T608",
+    "safe_success": true,
+    "goal_seconds": 43.84,
+    "remaining_m": 0.1999970039196635,
+    "exact_replay": true,
+    "audit": "PASS",
+    "unique_new_successful_trajectories": 1
+  },
+  "original_total_horizon_seconds": 69.394,
+  "new_policy_updates": 0,
+  "full407": null,
+  "conclusion": "A validated successful correction now exists at an actual T501 early state. Late-state teacher recovery failed; this sequential exploratory result does not prove universal recovery or causal optimality of the selected time.",
+  "next": "Use the early successful suffix, masked prefix and T501 full384-history retention for a separately registered bounded learning candidate, then original-start autonomous and same-candidate joint407 checks."
+}
