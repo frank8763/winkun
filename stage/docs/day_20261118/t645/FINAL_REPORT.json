@@ -1,0 +1,11 @@
+{
+  "state": "FAILED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t645_iterative_recovery_relay/control.py\", line 101, in driver\n    raw=Memory.preload(p,OUT,prepare_guard)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t638_memory_ready_recovery/t638_memory.py\", line 56, in preload\n    try:data=fetch(key,min(180,left-5));break\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t638_memory_ready_recovery/t638_memory.py\", line 32, in fetch\n    assert child.returncode==0,error.decode(errors='replace')[-1000:]\nAssertionError: eriments/t638_memory_ready_recovery/fetch.py\", line 44, in <module>\n    Old.main()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t637_joint_coverage_recovery/t637_fetch.py\", line 13, in main\n    asset=T.B.api('GET',f\"releases/assets/{p['asset_id']}\")\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t224_archive/archive.py\", line 20, in api\n    def api(method,path,payload=None):return json.loads(req(method,'https://api.github.com/repos/'+SLUG+'/'+path,payload))\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t377_full_human_observation_transfer/transport.py\", line 38, in req\n    code,_,data=response(method,url,body,fields)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t638_memory_ready_recovery/fetch.py\", line 35, in response\n    raise RuntimeError('Bounded verified TLS GET failed: '+str(last))\nRuntimeError: Bounded verified TLS GET failed: URLError\n\n",
+  "summary": null,
+  "independent_audit": null,
+  "all_scientific_processes_stopped": true,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "scope": "Up to3 distinct verified recovery aggregation rounds from original T501; original384 retention; one conditional same-candidate407; no universal safety or generalization claim.",
+  "science_started": false,
+  "preload_seconds_used": 46.6056649684906
+}
