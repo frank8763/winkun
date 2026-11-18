@@ -1,3 +1,5 @@
+2026-11-18 T631冻结提前偏离恢复验证结束：COMPLETE，合格恢复=1，Actor更新=0，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；非自主导航晋升。详day_20261118/t631/FINAL_REPORT。
+
 2026-11-18 用户检查继续推进：T630全部结束458740物理18cmd/272.400秒，auditPASS，T629/T630全原始远端逐成员SHA补齐；两个T608原起点成功，T626前缀4s/7.4s仅2.15/2.25cm偏离后T608接管均超时，无恢复标签，保T60834/49/field13/24。T631固定同两早期实际状态各4探索+exact，双任务各有safeGOAL才用实际sampled raw动作（非失败教师均值）+两T626新成功锚+33旧函数，64SGD/64shadow/64历史审计，完整49+两handoff+6exact，原34全保且新增才研究保留。代码/实际Session采样边界与随机全history/GPU梯度/真实IO零native零optimizer预检PASS，拟3608514物理79cmd32MiB/注册起1h/main1800audit900，仅准备无run/launch，待新学习具体额度确认；T630原0更新18cmd不挪用。Phase资源隔离/四CPU低优先/GPU学习让出其他计算，不称SIL/JSRL完整复现或新算法原创。详day_20261118/t631/PLAN/BUDGET/PREFLIGHT。
 
 2026-11-18 T630冻结提前偏离恢复验证结束：COMPLETE，资格数=0，0新优化器，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；非自主导航晋升。详day_20261118/t630/FINAL_REPORT。
