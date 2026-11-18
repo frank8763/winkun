@@ -1,0 +1,33 @@
+{
+  "state": "OFFLINE_ACTUAL_CLOSED_LOOP_COMPARISON",
+  "new_native": 0,
+  "new_optimizer": 0,
+  "job_id": "wide117_80_dev6_LEFT_18",
+  "candidate_sha256": "62f8005c2ff43d9a5342cded172136f58406b546d0efe14b1a0c1abceb39ba74",
+  "reference_sha256": "ed3d4266a167027ee217281a3d3e06d46367679a3ffa2dfa53eaa5c1cd588a48",
+  "first_lateral_distance_deviations": {
+    "0.01": {
+      "seconds": 1.2,
+      "xy_m": 0.013889260753181578,
+      "yaw_degrees": 0.4407959632867077
+    },
+    "0.02": {
+      "seconds": 1.4000000000000001,
+      "xy_m": 0.02055538304311987,
+      "yaw_degrees": 0.5289256002390733
+    },
+    "0.1": {
+      "seconds": 5.8,
+      "xy_m": 0.10366525776012496,
+      "yaw_degrees": 0.8919468284431102
+    }
+  },
+  "final_collision_seconds": 34.548,
+  "final_remaining_m": 2.8515059198996644,
+  "max_common_prefix_xy_error_m": 0.7090223320595537,
+  "initial_action_difference": [
+    -0.04354169964790344,
+    -0.013983860611915588
+  ],
+  "causal_caution": "Same initial state and different policies support a closed-loop trajectory change, but do not identify one unique parameter or universal instability cause."
+}
