@@ -1,3 +1,5 @@
+2026-11-18 T634冻结执行读出对照结束：COMPLETE，0新策略更新，Actor更新=0，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；非全局/泛化晋升。详day_20261118/t634/FINAL_REPORT。
+
 2026-11-18 用户检查继续：T633主producerCOMPLETE但独立auditFAILED（原错误保留）：field恢复fresh4/4safe+exact，8live8shadow，最终handoff超时1.40067m/full49=33/lostfield1新增仍无，拒绝保T608。2025690物理71cmd721.137s；audit同job_id的handoff compact被原起点覆盖，55case仅54unique，缺1原compact字节，hash/exact元数据在；远端逐成员SHA只核归档现存字节不证明覆盖前完整，不能报fullauditPASS。新T634旧红新绿唯一文件存储回归、解析EclipGaussian公式/真实Actorstep/hidden/权重不变零native零optimizer预检PASS，无run/launch：先8次旧历史SGD重构且永久partial审计，再冻结T632原mode-vs执行期望固定4态各full+exact；期望4全safe才49+4exact/原34与学生34并集35。0新live/0新shadow/0Critic，拟3416734物理75cmd32MiB/main1200audit600旧audit600/注册1h，待新具体额度确认，不扫sigma/任务网格、不称EPG/CAPG/创新/全局晋升。Stage/Phase资源隔离/四CPU低优先/GPU仅旧audit，T632网络pending保持本地。详t634/PLAN/BUDGET/PREFLIGHT/STORAGE_REGRESSION。
 
 2026-11-18 T633条件后缀RL结束：FAILED，本批合格恢复={'anchor_safe': True, 'suffix_safe': 4, 'passed': True}，Actor更新=8，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；非全局/泛化晋升。详day_20261118/t633/FINAL_REPORT。
