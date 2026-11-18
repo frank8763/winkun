@@ -1,3 +1,5 @@
+2026-11-18 T639固定神经教师恢复资格验证结束：COMPLETE，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；结果见day_20261118/t639/FINAL_REPORT；恢复资格见完整报告；0学习，不称自主全局晋升。
+
 2026-11-18 T638完整内存数据供给恢复学习结束：COMPLETE，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；结果见day_20261118/t638/FINAL_REPORT；完整结果含恢复资格、实际更新和条件407；未测项null，不称泛化。
 
 2026-11-18 T637巡检纠正：原生启动前GitHub归档TLS/curl35失败，0实际native/0Actor更新，恢复资格及407均NOT_RUN/null；账本6为预留启动/退出计数、非已发worker命令。原FAILED及本地raw保留，T501字节未变，补备份=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED。公共API当前恢复不证明稳定修复；新训练不得沿用已过18:35停学点。下一先完整384数据准备并在RAM保留原始供独立审计，后续科学不依赖网络。详t637/CHECK_AND_RECOVERY。
