@@ -1,0 +1,8 @@
+{
+  "state": "REMOTE_PENDING_LOCAL_RAW_RETAINED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t633_conditional_recovery_pg/finalize_previous.py\", line 22, in main\n    mod.main()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t632_taskwise_recovery/transport.py\", line 34, in main\n    r=A.archive('T632_'+folder.name,files,release,deadline,T)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t493_wide8_night/transport.py\", line 25, in archive\n    a=json.loads(T.req('POST',f\"https://uploads.github.com/repos/{T.A.SLUG}/releases/{release['id']}/assets?name=\"+urllib.parse.quote(label),part,{'Content-Type':'application/octet-stream'}));a=T.B.api('GET',f\"releases/assets/{a['id']}\")\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t377_full_human_observation_transfer/transport.py\", line 38, in req\n    code,_,data=response(method,url,body,fields)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t491_uncentered_eight/transport.py\", line 17, in bounded\n    try:return original(*a,**kw)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t377_full_human_observation_transfer/transport.py\", line 23, in response\n    if result.returncode:raise urllib.error.URLError('curl transport exit '+str(result.returncode))\nurllib.error.URLError: <urlopen error curl transport exit 35>\n",
+  "new_native": 0,
+  "new_optimizer": 0,
+  "original_protocol_unchanged": true,
+  "epoch": 1794976924.4337447
+}
