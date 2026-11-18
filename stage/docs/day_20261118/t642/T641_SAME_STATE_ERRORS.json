@@ -1,0 +1,79 @@
+{
+  "state": "OFFLINE_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "proposal": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t641_verified_recovery_learning/proposal.pt.gz",
+    "sha256": "90ec24cea5bf4b1eda08e04fe9b32206f0a430791d02e3081636f47a0487fccd",
+    "policy_hash": "e9011b49e243b2ba633daa84e337e8368bffb52bafa4a5b30c59afd5e0510971",
+    "joint_hash": "475fe15633908b6d7262a9e3d655943754cb660ee902a1b4a87e56e789f291f4",
+    "bytes": 1064015
+  },
+  "comparisons": [
+    {
+      "id": "dev_task6_24",
+      "same_old_states_not_candidate_actual_rollout": true,
+      "mean_command_error": 0.0021770266377864824,
+      "max_command_error": 0.01133022361721684,
+      "peak_error_time_s": 4.4,
+      "first_error_over_01_s": 4.4,
+      "task_MSE": 8.215416389514765e-06,
+      "contribution_to_equal384_keep": 5.34857837859034e-07,
+      "max_raw_error": 0.01133022361721684
+    },
+    {
+      "id": "dev_task7_13",
+      "same_old_states_not_candidate_actual_rollout": true,
+      "mean_command_error": 0.0017965536532689931,
+      "max_command_error": 0.01117161481738932,
+      "peak_error_time_s": 27.0,
+      "first_error_over_01_s": 19.8,
+      "task_MSE": 7.237472717278077e-06,
+      "contribution_to_equal384_keep": 4.711896300311247e-07,
+      "max_raw_error": 0.01117161481738932
+    },
+    {
+      "id": "wide117_80_dev6_LEFT_18",
+      "same_old_states_not_candidate_actual_rollout": true,
+      "mean_command_error": 0.0015633390098563629,
+      "max_command_error": 0.012898149130924533,
+      "peak_error_time_s": 4.2,
+      "first_error_over_01_s": 3.8000000000000003,
+      "task_MSE": 9.971576687205068e-06,
+      "contribution_to_equal384_keep": 6.491911905732465e-07,
+      "max_raw_error": 0.012898149130924533
+    },
+    {
+      "id": "wide117_80_dev6_RIGHT_00",
+      "same_old_states_not_candidate_actual_rollout": true,
+      "mean_command_error": 0.0014848253530738383,
+      "max_command_error": 0.014457584187617778,
+      "peak_error_time_s": 31.8,
+      "first_error_over_01_s": 0.0,
+      "task_MSE": 5.498483315003037e-06,
+      "contribution_to_equal384_keep": 3.579741741538435e-07,
+      "max_raw_error": 0.014457584187617778
+    },
+    {
+      "id": "wide117_8m_dev6_LEFT_13",
+      "same_old_states_not_candidate_actual_rollout": true,
+      "mean_command_error": 0.0024512018454496006,
+      "max_command_error": 0.02156845626701369,
+      "peak_error_time_s": 63.0,
+      "first_error_over_01_s": 28.6,
+      "task_MSE": 2.187249322083316e-05,
+      "contribution_to_equal384_keep": 1.4239904440646586e-06,
+      "max_raw_error": 0.02156845626701369
+    },
+    {
+      "id": "wide117_8m_dev6_RIGHT_18",
+      "same_old_states_not_candidate_actual_rollout": true,
+      "mean_command_error": 0.0021823306114442964,
+      "max_command_error": 0.032164185257586464,
+      "peak_error_time_s": 96.4,
+      "first_error_over_01_s": 0.0,
+      "task_MSE": 1.1647994914673969e-05,
+      "contribution_to_equal384_keep": 7.583330022574197e-07,
+      "max_raw_error": 0.032164185257586464
+    }
+  ],
+  "limitation": "These are actions on original T501 states, not the failed candidate physical trajectory. Six old compact evaluations did not preserve poses, so actual divergence location is not inferred."
+}
