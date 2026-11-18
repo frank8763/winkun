@@ -1,0 +1,37 @@
+{
+  "state": "POSTHOC_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "data_pipeline": "ALL384_ORIGINAL_MEMBERS_VERIFIED_AND_ALL384_FULL_HISTORIES_REBUILT",
+  "RAM_bytes": 79412164,
+  "records": [
+    {
+      "role": "baseline",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t638_memory_ready_recovery/episodes/0000_baseline.npz",
+      "source_sha256": "f1bec89e05ec51610d260123a3becf4654ac4abf5039b1c1b3e5aae0cff7d373",
+      "takeover_time_s": 41.6,
+      "takeover_distance_m": 0.5580491828989507,
+      "takeover_signed_heading_error_degrees": 94.74479568545918,
+      "suffix_min_recorded_distance_m": 0.5580226707986385,
+      "closest_decision_time_s": 41.800000000000004,
+      "remaining_m": 2.0999936242621415,
+      "end_signed_heading_error_degrees": 135.20426112204245,
+      "suffix_saturated_steer_fraction": 0.6618705035971223
+    },
+    {
+      "role": "qualified_teacher",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t638_memory_ready_recovery/episodes/0002_qualified_teacher.npz",
+      "source_sha256": "8d1545ede6a59bef4074b0718ce730c540865e9b9a742549fc498aa964873a84",
+      "takeover_time_s": 41.6,
+      "takeover_distance_m": 0.5580491828989507,
+      "takeover_signed_heading_error_degrees": 94.74479568545918,
+      "suffix_min_recorded_distance_m": 0.5579376060282322,
+      "closest_decision_time_s": 41.800000000000004,
+      "remaining_m": 0.8634067568384834,
+      "end_signed_heading_error_degrees": 133.07910081656132,
+      "suffix_saturated_steer_fraction": 1.0
+    }
+  ],
+  "conclusion": "GAP teacher stays saturated steering and does not reduce closest recorded distance meaningfully; recovery qualification fails, so no successful correction labels or optimization are admitted.",
+  "new_learning_updates": 0,
+  "full407": null,
+  "next_proposal": "Test one previously successful neural teacher on this actual T501 state, with its full causal history rebuilt and an exact replay; no automatic launch or takeover-time grid."
+}
