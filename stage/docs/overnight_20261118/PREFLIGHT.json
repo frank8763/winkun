@@ -1,0 +1,84 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "arms": [
+    {
+      "arm": "heads_command",
+      "parameters": 11906,
+      "gradient_norms": {
+        "drive_adapter.0.weight": 0.1679072021656958,
+        "drive_adapter.0.bias": 0.0149448986821416,
+        "drive_adapter.2.weight": 0.37721214803784187,
+        "drive_adapter.2.bias": 0.17419854885381128,
+        "steer_adapter.0.weight": 0.12588620756580302,
+        "steer_adapter.0.bias": 0.009624860948760914,
+        "steer_adapter.2.weight": 0.6636879326984234,
+        "steer_adapter.2.bias": 0.1738447033912513
+      },
+      "forward_backward_seconds": 0.32436037063598633,
+      "new_Adam": 0,
+      "full_history_batch_matches_individual": true
+    },
+    {
+      "arm": "full_command",
+      "parameters": 64772,
+      "gradient_norms": {
+        "encoder.0.weight": 2.0386842472815374,
+        "encoder.0.bias": 0.2790597090774478,
+        "core.weight_ih_l0": 1.0206915280418776,
+        "core.weight_hh_l0": 0.5475978754454371,
+        "core.bias_ih_l0": 0.20004943762430094,
+        "core.bias_hh_l0": 0.10764399541493828,
+        "head.weight": 4.4613014066412555,
+        "head.bias": 0.8401988972807135,
+        "drive_adapter.0.weight": 0.1679072021656958,
+        "drive_adapter.0.bias": 0.0149448986821416,
+        "drive_adapter.2.weight": 0.37721214803784187,
+        "drive_adapter.2.bias": 0.17419854885381128,
+        "steer_adapter.0.weight": 0.12588620756580302,
+        "steer_adapter.0.bias": 0.009624860948760914,
+        "steer_adapter.2.weight": 0.6636879326984234,
+        "steer_adapter.2.bias": 0.1738447033912513
+      },
+      "forward_backward_seconds": 0.03543281555175781,
+      "new_Adam": 0,
+      "full_history_batch_matches_individual": true
+    },
+    {
+      "arm": "full_raw",
+      "parameters": 64772,
+      "gradient_norms": {
+        "encoder.0.weight": 2.0386842472815374,
+        "encoder.0.bias": 0.2790597090774482,
+        "core.weight_ih_l0": 1.0206915280418776,
+        "core.weight_hh_l0": 0.5475978754454376,
+        "core.bias_ih_l0": 0.20004943762430122,
+        "core.bias_hh_l0": 0.10764399541493842,
+        "head.weight": 4.461301406641261,
+        "head.bias": 0.8401988972807147,
+        "drive_adapter.0.weight": 0.16790720216569593,
+        "drive_adapter.0.bias": 0.014944898682141645,
+        "drive_adapter.2.weight": 0.3772121480378425,
+        "drive_adapter.2.bias": 0.17419854885381178,
+        "steer_adapter.0.weight": 0.12588620756580302,
+        "steer_adapter.0.bias": 0.009624860948760914,
+        "steer_adapter.2.weight": 0.6636879326984234,
+        "steer_adapter.2.bias": 0.1738447033912513
+      },
+      "forward_backward_seconds": 0.027756690979003906,
+      "new_Adam": 0,
+      "full_history_batch_matches_individual": true
+    }
+  ],
+  "all384_original_SHA": true,
+  "old_passes": 4,
+  "causal_batch_verified": true,
+  "task_duplication_weight_invariant": true,
+  "saturation_feasible_set_checked": true,
+  "native_arm_worst": 13659519,
+  "profile_worst": 3733376,
+  "total_worst": 123322173,
+  "commands_worst": 2719,
+  "storage_worst": 2585571328,
+  "global_worst": 4238113876,
+  "no_navigation_claim": true
+}

@@ -1,3 +1,5 @@
+2026-11-18 T646夜间接力准备完成、尚未注册/启动：用户已确认2026-11-19 09:00全停、runs总上限10GiB；独立夜间计算/优化器额度仍待确认。384原始成功79,412,164B逐SHA离线就绪，三臂真实GPU梯度/因果批次/原函数/0optimizer预检PASS，Phase物理核无重叠。三机制各最多4轮×192学习，条件同候选407、48邻域+exact，后续19固定场地任务各最多32自主采样+exact，0自动RL/Critic；拟128M物理3000cmd36000main/Actor live-shadow-history各2304/本夜根3GiB，总全局10GiB/free40GiB。原T501保留；T645R拒绝且完整审计远端PASS，不重启。详overnight_20261118/PLAN/BUDGET/PREFLIGHT。
+
 2026-11-18 T645R完整内存数据供给恢复学习结束：COMPLETE，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；结果见day_20261118/t645r/FINAL_REPORT；完整结果含恢复资格、实际更新和条件407；未测项null，不称泛化。
 
 2026-11-18 T645完整内存数据供给恢复学习结束：FAILED，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；结果见day_20261118/t645/FINAL_REPORT；完整结果含恢复资格、实际更新和条件407；未测项null，不称泛化。
