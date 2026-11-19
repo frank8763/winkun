@@ -1,0 +1,72 @@
+{
+  "state": "FAILED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660r_joint_night_entry_recovery/driver.py\", line 86, in main\n    child(arm,template,arm=arm,arm_index=index)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660r_joint_night_entry_recovery/driver.py\", line 52, in child\n    call('main' if learning else 'frozen_main',name,c['main_seconds'],children);science_end=time.time()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660r_joint_night_entry_recovery/driver.py\", line 21, in call\n    try:c.wait(timeout=seconds);assert c.returncode==0,(action,name,c.returncode)\nAssertionError: ('main', 'ppo_mean', 1)\n",
+  "ledger": {
+    "physics": 6618220,
+    "commands": 254,
+    "main_seconds": 1950.723833322525,
+    "Actor_live": 512,
+    "Value_live": 0,
+    "children": [
+      {
+        "name": "bc_mean",
+        "kind": "learn",
+        "state": "COMPLETE",
+        "audit": {
+          "state": "PASS",
+          "all_complete_history_and_density": true,
+          "all_live_shadow_independent_equal": true,
+          "independent_Actor": 256,
+          "independent_Value": 0,
+          "full_Actor_Value_Adam_rollback": true,
+          "new_native": 0
+        },
+        "physics": 3315522,
+        "commands": 124,
+        "main_seconds": 959.3107922077179,
+        "Actor_live": 256,
+        "Value_live": 0,
+        "counts_exact": true
+      },
+      {
+        "name": "bc_tail",
+        "kind": "learn",
+        "state": "COMPLETE",
+        "audit": {
+          "state": "PASS",
+          "all_complete_history_and_density": true,
+          "all_live_shadow_independent_equal": true,
+          "independent_Actor": 256,
+          "independent_Value": 0,
+          "full_Actor_Value_Adam_rollback": true,
+          "new_native": 0
+        },
+        "physics": 3302698,
+        "commands": 124,
+        "main_seconds": 983.2836062908173,
+        "Actor_live": 256,
+        "Value_live": 0,
+        "counts_exact": true
+      },
+      {
+        "name": "ppo_mean",
+        "kind": "learn",
+        "state": "FAILED",
+        "audit": null,
+        "physics": 0,
+        "commands": 6,
+        "main_seconds": 8.129434823989868,
+        "Actor_live": 0,
+        "Value_live": 0,
+        "counts_exact": true
+      }
+    ],
+    "denied": []
+  },
+  "best": null,
+  "all_scientific_processes_stopped": true,
+  "remote": "REMOTE_PENDING_LOCAL_OFFLINE_RAW_RETAINED",
+  "no_unseen_layout_or_universal_nonforgetting_claim": true,
+  "epoch": 1795091110.4369974,
+  "backup_error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660r_joint_night_entry_recovery/driver.py\", line 116, in main\n    assert c.returncode==0;report['remote']='FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED'\nAssertionError\n"
+}

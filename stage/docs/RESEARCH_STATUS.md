@@ -1,3 +1,5 @@
+2026-11-20 T660离线联合学习多支线结束：FAILED，remote=REMOTE_PENDING_LOCAL_OFFLINE_RAW_RETAINED；真实branch/round/384保持与387目标/条件407及覆盖数据见overnight_20261119/FINAL_REPORT，缺测null，非普遍抗遗忘或真机通过。
+
 2026-11-19 T660原首子进程在plan()重复out关键字拒绝，发生在verify/setup/science_started与任何optimizer/pool前；0科学步/0更新的trace+无调用日志证据独立保存，原保守预留账目与原始远端备份不覆盖。T660R独立工程入口恢复已注册待source后唯一stage-t660r：显式dict.update子协议，实际调用含out的真实形状plan和setup/Pool/guard/transport.install预检PASS；其余科学四支/模型/数据/240M6500/Actor1072/Value192/7GiB总10GiB不变，主管线40000减2补失败墙钟，07:30/08:15/09:00绝对截止不延。用户明确夜间启动授权持续有效，不重启旧root，证据见overnight_20261119/recovery/ENTRY_FAILURE_REVIEW/PREFLIGHT/PLAN，源同步后启动，实际以DRIVER_STARTED/子science_started为准。
 
 2026-11-20 T660离线联合学习多支线结束：FAILED，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；真实branch/round/384保持与387目标/条件407及覆盖数据见overnight_20261119/FINAL_REPORT，缺测null，非普遍抗遗忘或真机通过。
