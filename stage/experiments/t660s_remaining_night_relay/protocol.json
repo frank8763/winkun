@@ -9669,7 +9669,7 @@
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660s_remaining_night_relay/prepare.py": "f2dc8be802b9a056e2a855c254006042c502012642b60702aca287038d1ef3ab",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t660r_joint_night_entry_recovery/bc_tail/audit.json": "584445239acbf3413474282bf636f055d7ba4b2d5971ea829b2e3475494abbc4",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660s_remaining_night_relay/resource_wait.py": "cb7f5234d50d79d480a2b57cc7f649cee9212bbed2baebd92a718c1ccb7e27b9",
-    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660s_remaining_night_relay/driver.py": "ec2d8a2acdb9b0f2a6fee8a87a2aab46f670f6792909a24c29895152b42f3329",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660s_remaining_night_relay/driver.py": "eef750474d2ae7dfc53dce730e96af26c7f3b3bd53ecd39b3845b44b800a7dd6",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t660r_joint_night_entry_recovery/LEDGER.json": "120e90a34a8851a448ca50b7343bd9050ffad7664b1645ea32e7743cbb301aea",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660s_remaining_night_relay/affinity_guard.py": "ba28b5a859c797c6b83a33ee05ef1a76070f4bec8e6c63f65ba2a995cd96eeca",
     "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660s_remaining_night_relay/t660_learning.py": "d6c3ae2a4629db697cf4f0f38de49609bf537bcc4b287b22915951ea6f903a68",
@@ -17056,7 +17056,7 @@
   "state_bytes": 4194304,
   "coverage_batches": 32,
   "coverage_replicates_per_batch": 2,
-  "user_authorization": "User explicitly requested continuing night and avoiding interruption: 继续开启通宵的，不要犯这种中断的错误了; unchanged original budget/deadlines",
+  "user_authorization": "User explicitly requested continuing night and avoiding interruption: \u7ee7\u7eed\u5f00\u542f\u901a\u5bb5\u7684\uff0c\u4e0d\u8981\u72af\u8fd9\u79cd\u4e2d\u65ad\u7684\u9519\u8bef\u4e86; unchanged original budget/deadlines",
   "bc_template": {
     "kind": "learn",
     "arm": "bc_mean",
@@ -17191,5 +17191,9 @@
     "denied": []
   },
   "resource_wait_policy": "Pause Stage child process group on physical CPU overlap; helper resumes only after strict probe clear; original deadlines never extended",
-  "registration_epoch": 1795091789.1270413
+  "registration_epoch": 1795091789.1270413,
+  "original_arm_indices": {
+    "ppo_mean": 2,
+    "ppo_tail": 3
+  }
 }

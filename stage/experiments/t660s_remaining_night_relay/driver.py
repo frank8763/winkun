@@ -84,7 +84,7 @@ def main():
         # rejection advances this list; contracts/errors abort the root.
         for index,arm in enumerate(p['arms']):
             template=p['bc_template'] if arm.startswith('bc') else p['rl_template']
-            child(arm,template,arm=arm,arm_index=index)
+            child(arm,template,arm=arm,arm_index=p.get('original_arm_indices',{}).get(arm,index))
         # Full original-start profiles are deterministic development measures.
         models=[('baseline',p['initial'])]+([] if best is None else [('best',best['model'])])
         for label,model in models:
