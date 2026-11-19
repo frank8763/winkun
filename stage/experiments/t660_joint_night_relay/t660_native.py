@@ -22,4 +22,3 @@ def inspect(p,a,row):
     F.M.audit_full_history(p,row,a)
     assert all(L.digest(v)==row['array_hashes'][key] for key,v in a.items())
     assert int(a['native_counts'].sum())==row['physics']
-
