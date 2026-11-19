@@ -1,3 +1,5 @@
+2026-11-19 T652固定骨干范围消融结束：COMPLETE，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；六实际轨迹重建/11906参数PG/36前置20exact条件407见day_20261119/t652/FINAL_REPORT，缺测null，未证泛化。
+
 2026-11-19 用户明确批准T652独立2h/12.5M物理460cmd3000main/Actor实际影子历史各8/0Critic-extra-pref/root192MiB/global10GiB/free40GiB，唯一新root已登记未launch，source精确树后唯一后台启动。北京时间 2026-11-19 13:12:57 停学、2026-11-19 13:52:57 停native、2026-11-19 14:12:57 全停。先T651六实际失效full+6exact逐数组积分重建、审计过才原T501同76数据仅11906adapterPG8步；36前置20exact/条件407全部原384保持且新增才能保留。CPU8/10/12/14+GPU/Phase隔离、4GiB无swap、离线科学/原始全保留。健康时不并发外写runs改源/audit/备份。实际运行以launch/DRIVER_STARTED/status为准。
 
 2026-11-19 用户要求T652下一步开始：完整新管线代码及零native零optimizer预检就绪，尚未注册/run/launch。先精确重建T651六条实际失效全轨迹及6exact，再原T501同76数据/目标/Adam3e-5/8提议固定encoderGRUhead、只11906既有adapter可训；新候选36前置(24场地+原6+丢6)/20full exact、条件371补同407，全原384全保新增才保留。拟独立2h/12.5M物理460cmd3000main/Actor实际影子历史各8/0Critic-extra-pref/root192MiB/global10GiB/free40GiB；精确最坏12298538步451cmd/152.72MiB，代码数据SHA锁定。原12:08:57停学及原各16提议只剩6不足完整8，待新窗口额度确认后唯一登记/source/启动，不静默延旧。CPU四核+GPU/Phase隔离/4GiB无swap。详day_20261119/t652/PLAN/PREFLIGHT/BUDGET。
