@@ -1,0 +1,4448 @@
+{
+  "state": "COMPLETE",
+  "error": null,
+  "summary": {
+    "state": "COMPLETE",
+    "pid": 363231,
+    "error": null,
+    "physics": 1063348,
+    "commands": 62,
+    "elapsed_s": 280.6559326648712,
+    "result": {
+      "queries": [
+        {
+          "query_key": "dev_task6_00__prefix0",
+          "id": "dev_task6_00",
+          "prefix_first": 0,
+          "original_start": true,
+          "source_category": "known_selected_diagnostic",
+          "complete": true,
+          "reference": 0,
+          "first_action_then_reference": 0,
+          "full_candidate": 0,
+          "local_old_continuation_difference": 0,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 0,
+            "remaining_native_steps": 23334,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.45976686477661133,
+              -0.21852834522724152
+            ],
+            "candidate_command": [
+              0.4606567621231079,
+              -0.2186475694179535
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 1,
+              "native_steps": 100,
+              "seconds": 0.2,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 28,
+              "native_steps": 2800,
+              "seconds": 5.6000000000000005,
+              "xy_m": 0.021235985876420622,
+              "yaw_degrees": 0.21519677204375784
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "CONTACT",
+              "seconds": 27.428,
+              "remaining_m": 1.4788366643668582,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015652649573514255
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01564387911694015
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01560062472507788
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015592412210976417
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -4.8226943019497596e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -4.8226943019497596e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -4.8226943019497596e-05
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015760264327670262
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01575380291048971
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01570873890281868
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015701836204463138
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05368928985080402
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05064407307413316
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/mean/episodes/0051_exact20.npz"
+            },
+            "candidate_once": {
+              "terminal": "CONTACT",
+              "seconds": 28.44,
+              "remaining_m": 1.3016130710979132,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015499718178272046
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015493358205302996
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015446848445855685
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015440055989637422
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -7.177327384854756e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -7.177327384854756e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -7.177327384854756e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -7.177327384854756e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -7.177327384854756e-05
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015894298515608543
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01588733291786283
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015841046588776928
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01583441314653576
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03695829416602959
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.035686030211782384
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.035686030211782384
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0008_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "CONTACT",
+              "seconds": 27.878,
+              "remaining_m": 1.3640436919382954,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015171940099144396
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015166116703074425
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015127950044442645
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015122256574736537
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -2.1574905582384997e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -2.1574905582384997e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -2.1574905582384997e-05
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01609749992473046
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016091940181292883
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01605354045145016
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016048049453492974
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03509649251541293
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03509649251541293
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03509649251541293
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03509649251541293
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0351507847976502
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0351507847976502
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0351507847976502
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t656_qualified_recovery_pg/pg/episodes/0051_exact20.npz"
+            }
+          }
+        },
+        {
+          "query_key": "dev_task6_02__prefix0",
+          "id": "dev_task6_02",
+          "prefix_first": 0,
+          "original_start": true,
+          "source_category": "known_selected_diagnostic",
+          "complete": true,
+          "reference": 1,
+          "first_action_then_reference": 0,
+          "full_candidate": 0,
+          "local_old_continuation_difference": -1,
+          "complete_policy_difference": -1,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": true,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 0,
+            "remaining_native_steps": 23334,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.767124354839325,
+              -0.3125840127468109
+            ],
+            "candidate_command": [
+              0.767694354057312,
+              -0.3126763701438904
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 1,
+              "native_steps": 100,
+              "seconds": 0.2,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 102,
+              "native_steps": 10200,
+              "seconds": 20.400000000000002,
+              "xy_m": 0.02475037975936531,
+              "yaw_degrees": 1.0845783135427387
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "GOAL",
+              "seconds": 36.902,
+              "remaining_m": 0.199995789239148,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01566104812034097
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01565493364091261
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01558979939087593
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015584763589577888
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01574932564904856
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015740034442497483
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.0156784519613654
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015669489201655826
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06405780576850179
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0753395355730889
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0753395355730889
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0753395355730889
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/mean/episodes/0052_exact20.npz"
+            },
+            "candidate_once": {
+              "terminal": "CONTACT",
+              "seconds": 27.816,
+              "remaining_m": 1.2234674891076227,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015650411246992124
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015638478113101928
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015554991459677883
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015542966991069121
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00016233204934464106
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00016233204934464106
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00016233204934464106
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00016233204934464106
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00016233204934464106
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015718885493779186
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01570629879197981
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015623186120795399
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015611067592461322
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.042187951776273415
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0429526133330996
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0009_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "CONTACT",
+              "seconds": 31.67,
+              "remaining_m": 0.6606706991745691,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01566690358690047
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015660313388120947
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015608610705325529
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015602484550422527
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015736389749058277
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01572861998164013
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015678080141328876
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015670807908862883
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -8.278534413270353e-07
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -8.278534413270353e-07
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -8.278534413270353e-07
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -8.278534413270353e-07
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -8.278534413270353e-07
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.049427728247268
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.052007873328195516
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t656_qualified_recovery_pg/pg/episodes/0052_exact20.npz"
+            }
+          }
+        },
+        {
+          "query_key": "dev_task6_03__prefix0",
+          "id": "dev_task6_03",
+          "prefix_first": 0,
+          "original_start": true,
+          "source_category": "known_selected_diagnostic",
+          "complete": true,
+          "reference": 0,
+          "first_action_then_reference": 1,
+          "full_candidate": 0,
+          "local_old_continuation_difference": 1,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": -1,
+          "first_action_proxy_mismatch": true,
+          "proxy_false_acceptance": true,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 0,
+            "remaining_native_steps": 23334,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.40719032287597656,
+              -0.184981107711792
+            ],
+            "candidate_command": [
+              0.40793249011039734,
+              -0.18507376313209534
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 1,
+              "native_steps": 100,
+              "seconds": 0.2,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 43,
+              "native_steps": 4300,
+              "seconds": 8.6,
+              "xy_m": 0.007940255160030624,
+              "yaw_degrees": 1.0862184532971473
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "CONTACT",
+              "seconds": 27.524,
+              "remaining_m": 1.3490894691618072,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016320708936296696
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016310059158250456
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016241245912919783
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016230397020610937
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -1.7138068627983438e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -1.7138068627983438e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -1.7138068627983438e-05
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.014592174283493117
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.014581964036109021
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.014512552326488917
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.014502460996053304
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.035046539301268484
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.035046539301268484
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.035046539301268484
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.035046539301268484
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.035046539301268484
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0351771715446051
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0351771715446051
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0351771715446051
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0351771715446051
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/mean/episodes/0053_exact20.npz"
+            },
+            "candidate_once": {
+              "terminal": "GOAL",
+              "seconds": 37.078,
+              "remaining_m": 0.19998450254267713,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015612055745100509
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015585796154208811
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01535704846037815
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015334015852072266
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01581966381812941
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015786658291147726
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015566061410383442
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01553346988163451
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06160960743909845
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06160960743909845
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07268622819034087
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07268622819034087
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07268622819034087
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0010_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "CONTACT",
+              "seconds": 27.68,
+              "remaining_m": 1.4787256528294659,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015600554330447464
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015591192292573941
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01555543446918152
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015546887701034143
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00013458644678148376
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00013458644678148376
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00013458644678148376
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015790707261997702
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01578512860188687
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015746152278516418
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01574025868651785
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05316987859993415
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05027985345036518
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t656_qualified_recovery_pg/pg/episodes/0053_exact20.npz"
+            }
+          }
+        },
+        {
+          "query_key": "dev_task6_26__prefix0",
+          "id": "dev_task6_26",
+          "prefix_first": 0,
+          "original_start": true,
+          "source_category": "known_selected_diagnostic",
+          "complete": true,
+          "reference": 0,
+          "first_action_then_reference": 1,
+          "full_candidate": 1,
+          "local_old_continuation_difference": 1,
+          "complete_policy_difference": 1,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": true,
+          "fork": {
+            "prefix_native_steps": 0,
+            "remaining_native_steps": 23334,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.7264824509620667,
+              -0.27889296412467957
+            ],
+            "candidate_command": [
+              0.7270662784576416,
+              -0.2790098786354065
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 1,
+              "native_steps": 100,
+              "seconds": 0.2,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 67,
+              "native_steps": 6700,
+              "seconds": 13.4,
+              "xy_m": 0.021437076632955156,
+              "yaw_degrees": 0.19476929336326054
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "CONTACT",
+              "seconds": 28.402,
+              "remaining_m": 1.3703216556466244,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015644134072561225
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01563894341346027
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015621458716462644
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015616726694531069
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -7.231942986288402e-06
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -7.231942986288402e-06
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -7.231942986288402e-06
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015737067383108427
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015734096514574747
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.0157145179223713
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015711753817872903
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.056800928772115
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05288936821910987
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/mean/episodes/0055_exact20.npz"
+            },
+            "candidate_once": {
+              "terminal": "GOAL",
+              "seconds": 37.724000000000004,
+              "remaining_m": 0.19999811120171912,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01569166959090129
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015682437754887313
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015611992083603865
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015602947881693419
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015707969555900175
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015697665201919564
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015628275073900716
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015618192330091651
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06510690461851684
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06510690461851684
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07524960764133017
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07524960764133017
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0011_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "GOAL",
+              "seconds": 38.196,
+              "remaining_m": 0.1999431730293677,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015673274626369874
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015668112240684
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015616875783246456
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015612222762974817
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01572654506032077
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01571938478903641
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015670332633173176
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01566330882031243
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06517006530657304
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06517006530657304
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0753855550384322
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0753855550384322
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0753855550384322
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t656_qualified_recovery_pg/pg/episodes/0055_exact20.npz"
+            }
+          }
+        },
+        {
+          "query_key": "dev_task3_00__prefix0",
+          "id": "dev_task3_00",
+          "prefix_first": 0,
+          "original_start": true,
+          "source_category": "known_selected_diagnostic",
+          "complete": true,
+          "reference": 1,
+          "first_action_then_reference": 1,
+          "full_candidate": 1,
+          "local_old_continuation_difference": 0,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 0,
+            "remaining_native_steps": 14000,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              1.0,
+              0.23415954411029816
+            ],
+            "candidate_command": [
+              1.0,
+              0.23413914442062378
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 1,
+              "native_steps": 100,
+              "seconds": 0.2,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 22,
+              "native_steps": 2200,
+              "seconds": 4.4,
+              "xy_m": 0.024355258961101068,
+              "yaw_degrees": 0.2536597025842617
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "GOAL",
+              "seconds": 27.826,
+              "remaining_m": 0.19993356896851414,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015689533772110978
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015681818737678918
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015629964913979263
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015622633037837466
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015715711784411474
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015707810630414404
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015656354042342308
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015648413658098603
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.043175451157039524
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.04405480915821163
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/mean/episodes/0050_exact20.npz"
+            },
+            "candidate_once": {
+              "terminal": "GOAL",
+              "seconds": 25.41,
+              "remaining_m": 0.19993826283427085,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015672533504982933
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015665721031385582
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015617395022153882
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015611138730220311
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015727716449464496
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015720495005665497
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015672837286921898
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015665653219392922
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.04467888518883977
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.04588351353351243
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0012_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "GOAL",
+              "seconds": 26.958000000000002,
+              "remaining_m": 0.19992477379542598,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015678447379002355
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01567417898873945
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015646076352504076
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01564226049746857
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01569607912544141
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015691767875406687
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015663953511650425
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015659603873692723
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.04289553468628899
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.04370545486892385
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t656_qualified_recovery_pg/pg/episodes/0050_exact20.npz"
+            }
+          }
+        },
+        {
+          "query_key": "t502_field_sector5_offset1__prefix0",
+          "id": "t502_field_sector5_offset1",
+          "prefix_first": 0,
+          "original_start": true,
+          "source_category": "known_selected_diagnostic",
+          "complete": true,
+          "reference": 1,
+          "first_action_then_reference": 1,
+          "full_candidate": 1,
+          "local_old_continuation_difference": 0,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 0,
+            "remaining_native_steps": 34697,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.9459912776947021,
+              -0.24098698794841766
+            ],
+            "candidate_command": [
+              0.9464375376701355,
+              -0.2413584291934967
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 1,
+              "native_steps": 100,
+              "seconds": 0.2,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 65,
+              "native_steps": 6500,
+              "seconds": 13.0,
+              "xy_m": 0.0055849564929914604,
+              "yaw_degrees": 1.0400380326065566
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "GOAL",
+              "seconds": 32.802,
+              "remaining_m": 0.19983801805768478,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015660500701416807
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015656394861526812
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015636239907997174
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015632338748980346
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015721681075405156
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015718392964384972
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015697371048778302
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01569438609148227
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05390425605558978
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05082148629068603
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/mean/episodes/0047_exact20.npz"
+            },
+            "candidate_once": {
+              "terminal": "GOAL",
+              "seconds": 33.156,
+              "remaining_m": 0.19995600819238415,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015828529876796962
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01582365582290786
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.0157783868000919
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015776990108191377
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01553432775824623
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015528032971019429
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015485785438351274
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015479766048528854
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06962240057026342
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06962240057026342
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05926357189446698
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05926357189446698
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0013_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "GOAL",
+              "seconds": 35.154,
+              "remaining_m": 0.19986529473567208,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015062859246768534
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015053335512119431
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015137698158200527
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015128317917685666
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015678884275368246
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01566911722082069
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015753868061768428
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015743954614430372
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03502363852449742
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03502363852449742
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03502363852449742
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03502363852449742
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03502363852449742
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03512122442507477
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03512122442507477
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03512122442507477
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03512122442507477
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t656_qualified_recovery_pg/pg/episodes/0047_exact20.npz"
+            }
+          }
+        },
+        {
+          "query_key": "dev_task6_01__prefix0",
+          "id": "dev_task6_01",
+          "prefix_first": 0,
+          "original_start": true,
+          "source_category": "unmeasured_frozen_pair",
+          "complete": true,
+          "reference": 1,
+          "first_action_then_reference": 0,
+          "full_candidate": 1,
+          "local_old_continuation_difference": -1,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": 1,
+          "first_action_proxy_mismatch": true,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 0,
+            "remaining_native_steps": 23334,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.5701790452003479,
+              -0.3055722117424011
+            ],
+            "candidate_command": [
+              0.570902407169342,
+              -0.305703341960907
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 1,
+              "native_steps": 100,
+              "seconds": 0.2,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 31,
+              "native_steps": 3100,
+              "seconds": 6.2,
+              "xy_m": 0.02132380016378901,
+              "yaw_degrees": 0.3626776779195596
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "GOAL",
+              "seconds": 41.736000000000004,
+              "remaining_m": 0.19999253876299933,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015616168244520862
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015612598323271859
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015543678022524224
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015542172456538259
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015793724045310528
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01578469549692678
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015722411485596652
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015713091580394786
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06510070159905926
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07527135179601183
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07527135179601183
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0000_reference.npz"
+            },
+            "candidate_once": {
+              "terminal": "CONTACT",
+              "seconds": 29.556,
+              "remaining_m": 1.4229857090129603,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01561680875699796
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015613700710850484
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015655478430701336
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015651834119534025
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -2.067100419614764e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -2.067100419614764e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -2.067100419614764e-05
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.0156953306533813
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01569037536739576
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015733811269502407
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015728697883356124
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.057273460150039146
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05322056425500929
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0014_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "GOAL",
+              "seconds": 40.542,
+              "remaining_m": 0.1999619653243855,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015734293741352615
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015725378240469115
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015687129771973438
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01567717182526672
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01563956129121369
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015633619050506226
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015591930667816528
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015585879739224678
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06512808061585841
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06512808061585841
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07528097198030272
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07528097198030272
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0040_candidate_full.npz"
+            }
+          }
+        },
+        {
+          "query_key": "dev_task6_04__prefix0",
+          "id": "dev_task6_04",
+          "prefix_first": 0,
+          "original_start": true,
+          "source_category": "unmeasured_frozen_pair",
+          "complete": true,
+          "reference": 1,
+          "first_action_then_reference": 1,
+          "full_candidate": 1,
+          "local_old_continuation_difference": 0,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 0,
+            "remaining_native_steps": 23334,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.591942310333252,
+              -0.28874844312667847
+            ],
+            "candidate_command": [
+              0.5927190780639648,
+              -0.2888823449611664
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 1,
+              "native_steps": 100,
+              "seconds": 0.2,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": null,
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "GOAL",
+              "seconds": 40.874,
+              "remaining_m": 0.1999890448683634,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015669191124018753
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015662433793255506
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015606568402976681
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015600313320527817
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.0157059281459683
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01569809458886548
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015643690684787992
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01563558859142461
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06512237764215661
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06512237764215661
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07526057708399288
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07526057708399288
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0001_reference.npz"
+            },
+            "candidate_once": {
+              "terminal": "GOAL",
+              "seconds": 40.762,
+              "remaining_m": 0.19995883879553578,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015704749324433026
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015696632629289553
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015645964386028194
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015637630933042962
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015681649835842623
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015674270174624125
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015622882641291871
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015615250729111588
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06507945810652432
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0753414474945149
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0753414474945149
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0753414474945149
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0015_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "GOAL",
+              "seconds": 40.838,
+              "remaining_m": 0.19998214579217868,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015664538206255685
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015658781194233667
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015603014911506313
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01559799278943888
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015727640307832025
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015719965409511455
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015666612241035813
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015658681484984602
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06509703936829114
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0752772451937015
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0752772451937015
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0041_candidate_full.npz"
+            }
+          }
+        },
+        {
+          "query_key": "dev_task6_06__prefix0",
+          "id": "dev_task6_06",
+          "prefix_first": 0,
+          "original_start": true,
+          "source_category": "unmeasured_frozen_pair",
+          "complete": true,
+          "reference": 1,
+          "first_action_then_reference": 1,
+          "full_candidate": 1,
+          "local_old_continuation_difference": 0,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 0,
+            "remaining_native_steps": 23334,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.4545168876647949,
+              -0.1447657197713852
+            ],
+            "candidate_command": [
+              0.45519399642944336,
+              -0.14487428963184357
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 1,
+              "native_steps": 100,
+              "seconds": 0.2,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 20,
+              "native_steps": 2000,
+              "seconds": 4.0,
+              "xy_m": 0.026537203474360744,
+              "yaw_degrees": 0.1908268708689723
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "GOAL",
+              "seconds": 41.01,
+              "remaining_m": 0.19997551043761255,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015656635591640586
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015649308676267362
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015578996465237235
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01557259656451708
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015732452609360348
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015722703548744693
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015655454854345885
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015645349580772905
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06510953125059317
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06510953125059317
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07531957343792271
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0002_reference.npz"
+            },
+            "candidate_once": {
+              "terminal": "GOAL",
+              "seconds": 39.078,
+              "remaining_m": 0.1999197066291012,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015562000602079948
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01556086720414361
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015478988338004943
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01547674705320691
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015863656571383555
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01585295134722245
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015780095962959068
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01576937962636718
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06510564822577114
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06510564822577114
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07531333028445489
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07531333028445489
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0016_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "GOAL",
+              "seconds": 41.01,
+              "remaining_m": 0.19997623833495778,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015681850483247023
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015677535666855424
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01564121087964772
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015636980565241917
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01570368132472788
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015698672581215933
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015663245174565313
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01565791392681619
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06509532250376009
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07529363068364288
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07529363068364288
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07529363068364288
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0042_candidate_full.npz"
+            }
+          }
+        },
+        {
+          "query_key": "dev_task6_07__prefix0",
+          "id": "dev_task6_07",
+          "prefix_first": 0,
+          "original_start": true,
+          "source_category": "unmeasured_frozen_pair",
+          "complete": true,
+          "reference": 1,
+          "first_action_then_reference": 1,
+          "full_candidate": 1,
+          "local_old_continuation_difference": 0,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 0,
+            "remaining_native_steps": 23334,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.6518000960350037,
+              -0.2239084243774414
+            ],
+            "candidate_command": [
+              0.6524537205696106,
+              -0.22406750917434692
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 1,
+              "native_steps": 100,
+              "seconds": 0.2,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 70,
+              "native_steps": 7000,
+              "seconds": 14.0,
+              "xy_m": 0.008187450569639862,
+              "yaw_degrees": 1.0568483899862973
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "GOAL",
+              "seconds": 40.758,
+              "remaining_m": 0.19999945588737053,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015681606414838054
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01567550980475961
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015627206120790743
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015621267456003535
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015702814883063285
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015696026256821524
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01564863693523176
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015641561417888458
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.065120327890672
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.065120327890672
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07529710803873274
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07529710803873274
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0003_reference.npz"
+            },
+            "candidate_once": {
+              "terminal": "GOAL",
+              "seconds": 41.124,
+              "remaining_m": 0.19995845604736925,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015783638645605322
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.0157732522526174
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015752548389866103
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01573975638050086
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015575675849050258
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015571722176944691
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01554354532525408
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015539267873128551
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06509281763716594
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07523706641260341
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07523706641260341
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0017_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "GOAL",
+              "seconds": 41.058,
+              "remaining_m": 0.1999622564807395,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015710586210844882
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015704494904144592
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015674345488656982
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015667568902237305
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01565999976783755
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015655488368709752
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015623572778743974
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015618748778194205
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06512634747994482
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06512634747994482
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07525052042126501
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07525052042126501
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0043_candidate_full.npz"
+            }
+          }
+        },
+        {
+          "query_key": "wide117_80_dev6_LEFT_18__prefix0",
+          "id": "wide117_80_dev6_LEFT_18",
+          "prefix_first": 0,
+          "original_start": true,
+          "source_category": "known_selected_diagnostic",
+          "complete": true,
+          "reference": 1,
+          "first_action_then_reference": 1,
+          "full_candidate": 1,
+          "local_old_continuation_difference": 0,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 0,
+            "remaining_native_steps": 40000,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.3991435170173645,
+              -0.1501251757144928
+            ],
+            "candidate_command": [
+              0.39989110827445984,
+              -0.15021303296089172
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 1,
+              "native_steps": 100,
+              "seconds": 0.2,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 56,
+              "native_steps": 5600,
+              "seconds": 11.200000000000001,
+              "xy_m": 0.02069717955032861,
+              "yaw_degrees": 0.6509870844235502
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "GOAL",
+              "seconds": 58.644,
+              "remaining_m": 0.19990193361068073,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.0156345254572081
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015630064535299623
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015622636997841374
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01561875000816089
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015700869690629893
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015699621561449134
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01568952294378241
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015687765166939996
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07928094142728599
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07928094142728599
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06702003076647432
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06702003076647432
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/mean/episodes/0038_exact20.npz"
+            },
+            "candidate_once": {
+              "terminal": "GOAL",
+              "seconds": 57.51,
+              "remaining_m": 0.1998795709032785,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01591708665086307
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015912282188292506
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01574224382450652
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015732651511792803
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015420330770794452
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015397363110843817
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015243091237410189
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015220130837609758
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06766263022894167
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06766263022894167
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.060197566779834386
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0018_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "GOAL",
+              "seconds": 57.216,
+              "remaining_m": 0.19994862341205588,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01565892724018632
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015657212612259372
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015654495681388617
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015652711057330335
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015711467378236366
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015710878880849682
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.0157069820174381
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015706431134969126
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05835737629053096
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05835737629053096
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05395572836719995
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t656_qualified_recovery_pg/pg/episodes/0038_exact20.npz"
+            }
+          }
+        },
+        {
+          "query_key": "wide117_8m_dev6_RIGHT_18__prefix0",
+          "id": "wide117_8m_dev6_RIGHT_18",
+          "prefix_first": 0,
+          "original_start": true,
+          "source_category": "known_selected_diagnostic",
+          "complete": true,
+          "reference": 1,
+          "first_action_then_reference": 1,
+          "full_candidate": 1,
+          "local_old_continuation_difference": 0,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 0,
+            "remaining_native_steps": 53334,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.44951319694519043,
+              0.9366124868392944
+            ],
+            "candidate_command": [
+              0.4493868350982666,
+              0.936682939529419
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 1,
+              "native_steps": 100,
+              "seconds": 0.2,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 115,
+              "native_steps": 11500,
+              "seconds": 23.0,
+              "xy_m": 0.02476617001864876,
+              "yaw_degrees": 0.10988623720456629
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "GOAL",
+              "seconds": 97.04,
+              "remaining_m": 0.1999962003521378,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01579607717569345
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015788491576065655
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015696607331755694
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01568760106748228
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015669837795941027
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015656931903983595
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015569822109156181
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01555658760513938
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0700939575394497
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0700939575394497
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0700939575394497
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0700939575394497
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06304294214065498
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06304294214065498
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/mean/episodes/0041_exact20.npz"
+            },
+            "candidate_once": {
+              "terminal": "GOAL",
+              "seconds": 96.134,
+              "remaining_m": 0.19996082663335543,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015738400459118077
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.0157358488382998
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015707656967140646
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015706991446607907
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015571126546161815
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015567410403449264
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015541524872739687
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015537410968328336
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07072447450386259
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07072447450386259
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.061826297939664605
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.061826297939664605
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0019_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "GOAL",
+              "seconds": 96.47200000000001,
+              "remaining_m": 0.1999992568198796,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015429901454709877
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015425680220471805
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015529619164622532
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015523160238297334
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015641263869241515
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015628330523990083
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01573966086558043
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01572713209294499
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07144296493418532
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07144296493418532
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06221191875009455
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06221191875009455
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t656_qualified_recovery_pg/pg/episodes/0041_exact20.npz"
+            }
+          }
+        },
+        {
+          "query_key": "dev_task6_00__prefix28",
+          "id": "dev_task6_00",
+          "prefix_first": 28,
+          "original_start": false,
+          "source_category": "known_selected_actual_departure",
+          "complete": true,
+          "reference": 0,
+          "first_action_then_reference": 0,
+          "full_candidate": 0,
+          "local_old_continuation_difference": 0,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 2800,
+            "remaining_native_steps": 20534,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.9898039698600769,
+              -0.3588734567165375
+            ],
+            "candidate_command": [
+              0.9898601770401001,
+              -0.3587894141674042
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 29,
+              "native_steps": 2900,
+              "seconds": 5.8,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 101,
+              "native_steps": 10100,
+              "seconds": 20.2,
+              "xy_m": 0.006510246848775916,
+              "yaw_degrees": 1.0826633426218228
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "CONTACT",
+              "seconds": 27.428,
+              "remaining_m": 1.4788366643668582,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015652649573514255
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01564387911694015
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01560062472507788
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015592412210976417
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -4.8226943019497596e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -4.8226943019497596e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -4.8226943019497596e-05
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015760264327670262
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01575380291048971
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01570873890281868
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015701836204463138
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05368928985080402
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05064407307413316
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/mean/episodes/0051_exact20.npz"
+            },
+            "candidate_once": {
+              "terminal": "CONTACT",
+              "seconds": 27.648,
+              "remaining_m": 1.4654746126180382,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015796012609451723
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01579316102682017
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015733325407895418
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015729763079962114
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.0001507016403591838
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.0001507016403591838
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.0001507016403591838
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015611773022979683
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01560383919971324
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015548897119604485
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015540629934050018
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0618510237660345
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0618510237660345
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05766859353107616
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0020_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "CONTACT",
+              "seconds": 28.424,
+              "remaining_m": 1.281523314336244,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01557814604877654
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015568870804867033
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01549476169987539
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01548566851679399
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00014476206472645875
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00014476206472645875
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00014476206472645875
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00014476206472645875
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00014476206472645875
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01585020797088678
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015839306531483313
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015766744800854632
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015756183161250964
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.041532174454662264
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.04208857563710098
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0044_candidate_full.npz"
+            }
+          }
+        },
+        {
+          "query_key": "dev_task6_02__prefix149",
+          "id": "dev_task6_02",
+          "prefix_first": 149,
+          "original_start": false,
+          "source_category": "known_selected_actual_departure",
+          "complete": true,
+          "reference": 1,
+          "first_action_then_reference": 1,
+          "full_candidate": 1,
+          "local_old_continuation_difference": 0,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 14900,
+            "remaining_native_steps": 8434,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.90789794921875,
+              -0.46031513810157776
+            ],
+            "candidate_command": [
+              0.9081306457519531,
+              -0.46032705903053284
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 150,
+              "native_steps": 15000,
+              "seconds": 30.0,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": null,
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "GOAL",
+              "seconds": 36.902,
+              "remaining_m": 0.199995789239148,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01566104812034097
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01565493364091261
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01558979939087593
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015584763589577888
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01574932564904856
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015740034442497483
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.0156784519613654
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015669489201655826
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06405780576850179
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0753395355730889
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0753395355730889
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0753395355730889
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/mean/episodes/0052_exact20.npz"
+            },
+            "candidate_once": {
+              "terminal": "GOAL",
+              "seconds": 36.982,
+              "remaining_m": 0.1999551080917816,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01566731619675646
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.0156607617805673
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015598250960717694
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015592187725476561
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015732092110543328
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01572304458281093
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015663106327985482
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015654391067000922
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06417873851052946
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06417873851052946
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07264798151420757
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07264798151420757
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07264798151420757
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0021_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "GOAL",
+              "seconds": 36.95,
+              "remaining_m": 0.1999487647290355,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.0156507770570571
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01564525241189689
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015582652587586704
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015577956491543421
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015746355584692562
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015737450900243255
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015678479017475475
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015669907012634474
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06402075571348458
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.06402075571348458
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07292321025563234
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.07292321025563234
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0045_candidate_full.npz"
+            }
+          }
+        },
+        {
+          "query_key": "dev_task6_03__prefix68",
+          "id": "dev_task6_03",
+          "prefix_first": 68,
+          "original_start": false,
+          "source_category": "known_selected_actual_departure",
+          "complete": true,
+          "reference": 0,
+          "first_action_then_reference": 0,
+          "full_candidate": 0,
+          "local_old_continuation_difference": 0,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 6800,
+            "remaining_native_steps": 16534,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.8072636723518372,
+              0.28801673650741577
+            ],
+            "candidate_command": [
+              0.807214617729187,
+              0.2878388464450836
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 69,
+              "native_steps": 6900,
+              "seconds": 13.8,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 86,
+              "native_steps": 8600,
+              "seconds": 17.2,
+              "xy_m": 0.020098602755757537,
+              "yaw_degrees": 0.008404101273147455
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "CONTACT",
+              "seconds": 27.524,
+              "remaining_m": 1.3490894691618072,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016320708936296696
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016310059158250456
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016241245912919783
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016230397020610937
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -1.7138068627983438e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -1.7138068627983438e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -1.7138068627983438e-05
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.014592174283493117
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.014581964036109021
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.014512552326488917
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.014502460996053304
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.035046539301268484
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.035046539301268484
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.035046539301268484
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.035046539301268484
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.035046539301268484
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0351771715446051
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0351771715446051
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0351771715446051
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.0351771715446051
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/mean/episodes/0053_exact20.npz"
+            },
+            "candidate_once": {
+              "terminal": "CONTACT",
+              "seconds": 27.372,
+              "remaining_m": 1.3450897658447603,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01613503428382229
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01611934134282117
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016016628716720563
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016000823054790433
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -9.307228498165124e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -9.307228498165124e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -9.307228498165124e-05
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015224989013430501
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015209743440953577
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015106473667727244
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015091335098097597
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03509273746799452
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03509273746799452
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03509273746799452
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03509273746799452
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03522712248929007
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03522712248929007
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03522712248929007
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03522712248929007
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0022_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "CONTACT",
+              "seconds": 27.658,
+              "remaining_m": 1.3545682258422291,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015196280241787749
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015188873448518256
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015141188527121069
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015133928553233728
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -5.575945592633863e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -5.575945592633863e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -5.575945592633863e-05
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016068888420050872
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016061854145314344
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.016013805926440153
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01600690002006229
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03502029134882077
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03502029134882077
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03502029134882077
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03502029134882077
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03502029134882077
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03510464767082567
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03510464767082567
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.03510464767082567
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0046_candidate_full.npz"
+            }
+          }
+        },
+        {
+          "query_key": "dev_task6_26__prefix67",
+          "id": "dev_task6_26",
+          "prefix_first": 67,
+          "original_start": false,
+          "source_category": "known_selected_actual_departure",
+          "complete": true,
+          "reference": 0,
+          "first_action_then_reference": 0,
+          "full_candidate": 0,
+          "local_old_continuation_difference": 0,
+          "complete_policy_difference": 0,
+          "suffix_replacement_effect": 0,
+          "first_action_proxy_mismatch": false,
+          "proxy_false_acceptance": false,
+          "full_candidate_regression": false,
+          "full_candidate_gain": false,
+          "fork": {
+            "prefix_native_steps": 6700,
+            "remaining_native_steps": 16634,
+            "first_hold_native_steps": 100,
+            "same_candidate_command_and_first_hold": true,
+            "reference_command": [
+              0.8150877356529236,
+              0.16553081572055817
+            ],
+            "candidate_command": [
+              0.8150065541267395,
+              0.16552141308784485
+            ]
+          },
+          "divergence": {
+            "first_different_post_fork_command": {
+              "decision": 68,
+              "native_steps": 6800,
+              "seconds": 13.6,
+              "xy_m": 0.0,
+              "yaw_degrees": 0.0
+            },
+            "first_post_fork_2cm_or_1degree": {
+              "decision": 120,
+              "native_steps": 12000,
+              "seconds": 24.0,
+              "xy_m": 0.007725149209110819,
+              "yaw_degrees": 1.0017636225711883
+            },
+            "descriptive_not_a_global_stability_proof": true
+          },
+          "outcomes": {
+            "reference": {
+              "terminal": "CONTACT",
+              "seconds": 28.402,
+              "remaining_m": 1.3703216556466244,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015644134072561225
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01563894341346027
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015621458716462644
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015616726694531069
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -7.231942986288402e-06
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -7.231942986288402e-06
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -7.231942986288402e-06
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015737067383108427
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015734096514574747
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.0157145179223713
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015711753817872903
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.056800928772115
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05288936821910987
+                }
+              ],
+              "historical_reuse": true,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/mean/episodes/0055_exact20.npz"
+            },
+            "candidate_once": {
+              "terminal": "CONTACT",
+              "seconds": 28.222,
+              "remaining_m": 1.3778393318092224,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015532166685021428
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015526502027643788
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015539972285454728
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015535494932788413
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00010422141592899241
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00010422141592899241
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -0.00010422141592899241
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015790790760541962
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015789727177394297
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01579924597409324
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015798070168368705
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.059332047590775636
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.05530734301091438
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0023_candidate_once.npz"
+            },
+            "candidate_full": {
+              "terminal": "CONTACT",
+              "seconds": 28.478,
+              "remaining_m": 1.3578664305882733,
+              "terminal_contacts": [
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015205258641016392
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01519432763178137
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015169547513758402
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015159386603498526
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -2.421490184534803e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -2.421490184534803e-05
+                },
+                {
+                  "geom1": "real_circle_obs_9",
+                  "geom2": null,
+                  "distance": -2.421490184534803e-05
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01574350675597075
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015738848915376302
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.01570805479819906
+                },
+                {
+                  "geom1": "floor",
+                  "geom2": null,
+                  "distance": -0.015703648375632956
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.04629290983057813
+                },
+                {
+                  "geom1": null,
+                  "geom2": "chassis_collision",
+                  "distance": -0.04498586706025256
+                }
+              ],
+              "historical_reuse": false,
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659r_continuation_entry_recovery/episodes/0047_candidate_full.npz"
+            }
+          }
+        }
+      ],
+      "proxy_mismatch_queries": [
+        "dev_task6_03__prefix0",
+        "dev_task6_01__prefix0"
+      ],
+      "all_complete": true,
+      "evidence_state": "LOCAL_PROXY_MISMATCH_OBSERVED",
+      "next_research_decision": "LOCAL_ESTIMAND_GAP_ONLY_PROSPECTIVE_PREDICTOR_VALIDATION_STILL_NEEDED",
+      "new_measurements": 28,
+      "historical_measurement_entries": 20,
+      "predictor_trained": false,
+      "actor_updated": false,
+      "alpha_gradient_validated": false,
+      "independent_generalization_or_nonforgetting_proven": false,
+      "automatic_learning": false,
+      "inference": "Matched first-hold per-query suffix replacement only; no global causal or policy-improvement claim"
+    },
+    "new_Actor": 0,
+    "new_Critic": 0,
+    "new_optimizer": 0,
+    "full407": null,
+    "retained": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t501_joint_command_repair/joint/proposal.pt.gz",
+      "sha256": "6c8cf7128cd096801aed3a20c672791bcfa64ca0c50cc7bf1c4e3e77bea18187",
+      "policy_hash": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+      "joint_hash": "913555eb5b5322ddea31913a09fc05b57715377fcd269b98215b430363ac8d03",
+      "bytes": 1063700
+    }
+  },
+  "audit": {
+    "state": "PASS",
+    "all_full_causal_recurrences_and_forced_actions": true,
+    "every_fresh_exact_replay_verified": true,
+    "original_start_and_prefix_separated": true,
+    "same_candidate_first_command_and_native_hold_verified": true,
+    "historical_reused_entries": 20,
+    "new_measurements": 28,
+    "frozen_models_unchanged": true,
+    "new_native": 0,
+    "new_optimizer": 0
+  },
+  "all_scientific_processes_stopped": true,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "scope": "Frozen per-query continuation replacement; no learning, predictor calibration or model promotion"
+}

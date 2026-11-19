@@ -1,3 +1,5 @@
+2026-11-19 T659R冻结续行因果检验结束：COMPLETE，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；实际28新测量28重放/20历史复用panel及审计见day_20261119/t659/FINAL_REPORT；0学习，不是新导航成功或Critic通过，407null，T501保留。
+
 2026-11-19 T659原启动在科学main之前因affinity_guard旧目录误植失败，science_started/main.log均无、SEALED科学PID为空，独立源码/文件证据确认0native/0optimizer，原raw与保守预留账目不覆盖；备份入口另有泛名transport导入冲突。T659R仅独立工程入口恢复，修守护路径并唯一模块名加载，实际配置loader/transport.client安装/20历史SHA及carry预检PASS；未延原绝对截止1795089752.723106=20:02:32，native仍1795088052.723106=19:34:12。科学同修订2，28新28exact＋20历史，1,404,094物理62cmd/0学习/root128MiB不扩；主管线1800下调1200秒、audit300 backup600 source240，CPU8/10/12/14与Phase隔离/GPU关。用户最新明确启动授权内已登记新root，源同步后唯一stage-t659r，不重启旧root；详day_20261119/t659r/ENTRY_FAILURE_REVIEW/PREFLIGHT/PLAN，实际运行以DRIVER_STARTED/worker为准。
 
 2026-11-19 T659冻结续行因果检验结束：FAILED，remote=REMOTE_PENDING_LOCAL_RAW_RETAINED；实际28新测量28重放/20历史复用panel及审计见day_20261119/t659/FINAL_REPORT；0学习，不是新导航成功或Critic通过，407null，T501保留。
