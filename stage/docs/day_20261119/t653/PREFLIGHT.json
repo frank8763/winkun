@@ -1,0 +1,101 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "existing76_full_history_and_density_rebuilt": true,
+  "numeric_repeated16_fixtures_not_new_samples": true,
+  "n4_n16_task_balancing_and_LOO_checked": true,
+  "scalar_and_mean_gradients_match": true,
+  "projection_active_set_fixtures": [
+    {
+      "active_constraints": [
+        0,
+        1
+      ],
+      "initial_unit_dots": [
+        1.0,
+        1.0
+      ],
+      "projected_unit_dots": [
+        0.0,
+        0.0
+      ],
+      "old_gradient_norms": [
+        1.0,
+        1.0
+      ],
+      "Adam_delta_L2": 2.449489742783178,
+      "projected_L2": 2.0,
+      "projection_distance": 1.4142135623730951,
+      "finite_halfspace_only": true
+    },
+    {
+      "active_constraints": [
+        0
+      ],
+      "initial_unit_dots": [
+        1.0,
+        -1.0
+      ],
+      "projected_unit_dots": [
+        0.0,
+        -1.0
+      ],
+      "old_gradient_norms": [
+        1.0,
+        1.0
+      ],
+      "Adam_delta_L2": 2.449489742783178,
+      "projected_L2": 2.23606797749979,
+      "projection_distance": 1.0,
+      "finite_halfspace_only": true
+    },
+    {
+      "active_constraints": [
+        0
+      ],
+      "initial_unit_dots": [
+        1.0,
+        1.0
+      ],
+      "projected_unit_dots": [
+        0.0,
+        0.0
+      ],
+      "old_gradient_norms": [
+        1.0,
+        2.0
+      ],
+      "Adam_delta_L2": 3.7416573867739413,
+      "projected_L2": 3.605551275463989,
+      "projection_distance": 1.0,
+      "finite_halfspace_only": true
+    }
+  ],
+  "actual_projection": {
+    "active_constraints": [],
+    "initial_unit_dots": [
+      -2.4916685097368577e-07,
+      -2.0725516856055856e-07
+    ],
+    "projected_unit_dots": [
+      -2.4916685097368577e-07,
+      -2.0725516856055856e-07
+    ],
+    "old_gradient_norms": [
+      0.0654698044454569,
+      0.09547449593405448
+    ],
+    "Adam_delta_L2": 6.313908185452777e-07,
+    "projected_L2": 6.313908185452777e-07,
+    "projection_distance": 0.0,
+    "finite_halfspace_only": true
+  },
+  "zero_constraint_gradient_rejected": true,
+  "projected_parameter_and_Adam_full_rollback_fixture": true,
+  "initial11906andfrozenbodyunchanged": true,
+  "native_worst": 29473292,
+  "commands_worst": 1086,
+  "storage_worst": 600506368,
+  "global_worst": 2078770137,
+  "new_native": 0,
+  "new_optimizer": 0
+}
