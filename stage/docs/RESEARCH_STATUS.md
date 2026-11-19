@@ -1,3 +1,5 @@
+2026-11-19 T651成功轨迹覆盖对照结束：COMPLETE，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；field24/旧384/条件407见day_20261119/t651/FINAL_REPORT，未测null、不称泛化。
+
 2026-11-19 T650已COMPLETE：原T501五米/宽六米/八米6fresh6exact全安全GOAL，全部数组/积分逐位同T636且首步前scene120/goal合同PASS、独立auditPASS、全远端SHA通过，0学习。确认T637–T649旧wide场景和8m目标路径混淆，相关遗忘/鲁棒性跨场景结论撤回待重评。用户继续授权下T651在同T649未消费额度续行：0额外optimizer预检，16正确wide fresh+16exact替换错误组、60正确narrow数据明确复用非新独立；仅PG最多8实际/影子/历史提议，固定lr3e-5处理原首步KL拒绝，无网格、不做BC优劣声明。±7边界只适用legacyfield，wide8目标x8.1787合法。拟14M/465cmd3000main/root192MiB，三run累计最坏21,153,300步741cmd5217.729main/Actor各10<原31M1020cmd6000main各16；仍12:08:57学12:38:57native13:08:57all、合计存储≤原512MiB/global10GiB。新源零更新预检PASS，待登记/source后唯一launch。
 
 2026-11-19 T650冻结基线初始化修复验证结束：COMPLETE，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，0学习；完整六原轨迹/六exact/初始场景合同见day_20261119/t650/FINAL_REPORT。T637–T649相关旧wide场景保留及鲁棒性比较因初始化工厂绕过存在场景混淆，不能直接称遗忘或算法失败，原结果保留并读FINDINGS勘误。
