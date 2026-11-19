@@ -1,0 +1,81 @@
+{
+  "state": "PROVEN_ZERO_SCIENCE_ENTRY_FAILURE_NOT_A_NAVIGATION_FAILURE",
+  "new_native": 0,
+  "new_optimizer": 0,
+  "no_science_started_record": true,
+  "no_main_process_log": true,
+  "scientific_children": [],
+  "first_error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t659_continuation_gate/control.py\", line 100, in driver\n    assert helper.poll() is None\nAssertionError\n",
+  "backup_error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t659_continuation_gate/control.py\", line 147, in driver\n    execute('backup', p['backup_seconds'], [])\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t659_continuation_gate/control.py\", line 68, in execute\n    assert c.returncode == 0, (action, c.returncode)\nAssertionError: ('backup', 1)\n",
+  "failed_guard_source_sha256": "6262ac800acf375532bd5b2fc48468ff68febaea82d8882542bc9f2a687b4856",
+  "failure_files": [
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659_continuation_gate/AFFINITY_STOP",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659_continuation_gate/DRIVER_STARTED.json",
+      "sha256": "c4db8a54f80bcca8ac875886f8dacc7304b15d13cc581995f2ec9d5d2cd12630",
+      "bytes": 114
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659_continuation_gate/FINAL_REPORT.json",
+      "sha256": "684c89086749194b9ec2697127a9424d63a549a12905709e011af217be5c7b5c",
+      "bytes": 506
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659_continuation_gate/FINAL_REPORT_FINAL.json",
+      "sha256": "86fb91481358151d4ba0cd9855cc6bc1d41a01114dd36cb610c39f8b38732a55",
+      "bytes": 979
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659_continuation_gate/LEDGER.json",
+      "sha256": "7a3c40d1e0ea951f3949d25b4bc92c8d5fa4443f61f2669c0032404750329d98",
+      "bytes": 184
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659_continuation_gate/SEALED.json",
+      "sha256": "4257abd33699b18c6a7bf9173b14a185bb1e0b27a0afcdcdfa6778640f388bd3",
+      "bytes": 103
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659_continuation_gate/affinity.log",
+      "sha256": "164b4166cb6a0bec18f16540829987b8a46441aac57440235eaa1d9db585f322",
+      "bytes": 1153
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659_continuation_gate/backup.log",
+      "sha256": "d38e3118f27787860eea67510c1a61ec55798811b52b2e4fb5937b973fb93000",
+      "bytes": 785
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659_continuation_gate/driver.log",
+      "sha256": "5224c0c5d443b36c73c2cca493996b5c223618b8057d1dabe9d25e67e033f1ec",
+      "bytes": 67
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659_continuation_gate/launch.json",
+      "sha256": "fc8e37854c1df2d0b3ef0769179e3ba5013c6274b6ca18f53513bf5d7346017b",
+      "bytes": 162
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659_continuation_gate/local_manifest.json",
+      "sha256": "48f5ee7ccfdac2124fbc31d3d03fdef7b5cf37b02be72dd74be7d2343a512f01",
+      "bytes": 1473
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659_continuation_gate/protocol.json",
+      "sha256": "058559d78446ac546eca3812d22df28de0a681c35c56b263c3f255479d26159f",
+      "bytes": 520762
+    },
+    {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t659_continuation_gate/status.json",
+      "sha256": "9a5f8c0991356b8b7e2c9e03fc21ea8d3a3d516b3945d47ac8973fdf59135e76",
+      "bytes": 86
+    }
+  ],
+  "original_budget_reservation_preserved": true,
+  "scientific_zero_established_from_unreached_main_entry": true,
+  "deadline_unchanged": 1795089752.723106
+}
