@@ -1,0 +1,10 @@
+{
+  "state": "FAILED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t659_continuation_gate/control.py\", line 100, in driver\n    assert helper.poll() is None\nAssertionError\n",
+  "summary": null,
+  "audit": null,
+  "all_scientific_processes_stopped": true,
+  "remote": "REMOTE_PENDING_LOCAL_RAW_RETAINED",
+  "scope": "Frozen per-query continuation replacement; no learning, predictor calibration or model promotion",
+  "backup_error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t659_continuation_gate/control.py\", line 147, in driver\n    execute('backup', p['backup_seconds'], [])\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t659_continuation_gate/control.py\", line 68, in execute\n    assert c.returncode == 0, (action, c.returncode)\nAssertionError: ('backup', 1)\n"
+}
