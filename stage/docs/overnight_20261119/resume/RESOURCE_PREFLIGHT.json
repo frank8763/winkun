@@ -1,0 +1,70 @@
+{
+  "state": "PASS",
+  "stage_cpus": [
+    8,
+    10,
+    12,
+    14
+  ],
+  "stage_physical_cores": [
+    [
+      "0",
+      "10"
+    ],
+    [
+      "0",
+      "12"
+    ],
+    [
+      "0",
+      "14"
+    ],
+    [
+      "0",
+      "8"
+    ]
+  ],
+  "phase_process_metadata_only": [
+    {
+      "pid": 379060,
+      "allowed_cpus": [
+        5
+      ],
+      "physical_overlap": []
+    },
+    {
+      "pid": 379064,
+      "allowed_cpus": [
+        2
+      ],
+      "physical_overlap": []
+    },
+    {
+      "pid": 379067,
+      "allowed_cpus": [
+        2
+      ],
+      "physical_overlap": []
+    },
+    {
+      "pid": 379068,
+      "allowed_cpus": [
+        2
+      ],
+      "physical_overlap": []
+    },
+    {
+      "pid": 379069,
+      "allowed_cpus": [
+        2
+      ],
+      "physical_overlap": []
+    }
+  ],
+  "GPU": "learning_and_history_only_yield_other_compute",
+  "CPUQuota": "400%",
+  "Nice": 19,
+  "CPUWeight": 10,
+  "MemoryMax": 4294967296,
+  "MemorySwapMax": 0
+}

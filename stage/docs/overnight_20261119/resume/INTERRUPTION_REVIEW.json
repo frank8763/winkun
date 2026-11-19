@@ -1,0 +1,75 @@
+{
+  "state": "RESOURCE_PROTECTION_STOP_NOT_NAVIGATION_FAILURE",
+  "previous_ledger": {
+    "physics": 6618220,
+    "commands": 254,
+    "main_seconds": 1950.723833322525,
+    "Actor_live": 512,
+    "Value_live": 0,
+    "children": [
+      {
+        "name": "bc_mean",
+        "kind": "learn",
+        "state": "COMPLETE",
+        "audit": {
+          "state": "PASS",
+          "all_complete_history_and_density": true,
+          "all_live_shadow_independent_equal": true,
+          "independent_Actor": 256,
+          "independent_Value": 0,
+          "full_Actor_Value_Adam_rollback": true,
+          "new_native": 0
+        },
+        "physics": 3315522,
+        "commands": 124,
+        "main_seconds": 959.3107922077179,
+        "Actor_live": 256,
+        "Value_live": 0,
+        "counts_exact": true
+      },
+      {
+        "name": "bc_tail",
+        "kind": "learn",
+        "state": "COMPLETE",
+        "audit": {
+          "state": "PASS",
+          "all_complete_history_and_density": true,
+          "all_live_shadow_independent_equal": true,
+          "independent_Actor": 256,
+          "independent_Value": 0,
+          "full_Actor_Value_Adam_rollback": true,
+          "new_native": 0
+        },
+        "physics": 3302698,
+        "commands": 124,
+        "main_seconds": 983.2836062908173,
+        "Actor_live": 256,
+        "Value_live": 0,
+        "counts_exact": true
+      },
+      {
+        "name": "ppo_mean",
+        "kind": "learn",
+        "state": "FAILED",
+        "audit": null,
+        "physics": 0,
+        "commands": 6,
+        "main_seconds": 8.129434823989868,
+        "Actor_live": 0,
+        "Value_live": 0,
+        "counts_exact": true
+      }
+    ],
+    "denied": []
+  },
+  "current_strict_resource_check": "PASS_NO_PHASE_PROCESS_OVERLAP_AT_PREPARATION",
+  "prior_failed_PPO_has_zero_native_and_optimizer": true,
+  "completed_BC_audits_preserved": true,
+  "failure": {
+    "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660r_joint_night_entry_recovery/t660_runtime.py\", line 92, in main\n    pool(rt)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660r_joint_night_entry_recovery/t660_runtime.py\", line 38, in pool\n    rt.pool=R.N.Pool(dict(rt.p,out=str(folder),native_stop_epoch=rt.deadline),rt.counts,rt.guard)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t637_joint_coverage_recovery/t637_native.py\", line 74, in __init__\n    D.save(out/'worker_generations.json',[record]);self.ready=[self.receive(i) for i in range(3)]\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t637_joint_coverage_recovery/t637_native.py\", line 74, in <listcomp>\n    D.save(out/'worker_generations.json',[record]);self.ready=[self.receive(i) for i in range(3)]\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t636_joint_best_reproduction/t636_runtime.py\", line 111, in receive\n    self.guard()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t637_joint_coverage_recovery/t637_runtime.py\", line 45, in guard\n    self.last=time.time();verify(self.p)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660r_joint_night_entry_recovery/t660_runtime.py\", line 26, in verify\n    Resource.resources()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t645_iterative_recovery_relay/control.py\", line 45, in resources\n    assert not overlap, ('Phase physical CPU overlap; do not launch',proc.name,overlap)\nAssertionError: ('Phase physical CPU overlap; do not launch', '377408', [8, 10, 12, 14, 24, 26, 28, 30])\n",
+    "no_restart": true,
+    "raw_preserved": true
+  },
+  "backup_error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660r_joint_night_entry_recovery/driver.py\", line 116, in main\n    assert c.returncode==0;report['remote']='FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED'\nAssertionError\n",
+  "absolute_all_stop_unchanged": 1795136400.0
+}
