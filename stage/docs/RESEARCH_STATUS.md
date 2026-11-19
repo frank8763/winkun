@@ -1,3 +1,5 @@
+2026-11-19 重要勘误：T649两臂均首Adam提议KL超限整态回退，策略hash与原T501相同，但sixLEFT18仍碰撞。对T636原NPZ发现同job/203积分/位姿/目标却scene和初始120输入不同，已定位T630/T502重置包装绕过t344宽场景工厂及t477径向目标。T637–T649相关旧wide保留/遗忘与T646邻域鲁棒性跨基线结论撤回待核；内部raw/exact/Adam审计是真实实际场景，原始保留。用户“检查然后继续下一步”下T650仅冻结修复验证：沿当前T649余额分配466672步18cmd900main/0optimizer/64MiB，两run合计最坏7246684步276cmd3024.778main<31M/1020/6000，13:08:57全停不延；新root已注册、source后唯一launch，6canonical+6exact首步前scene/初始120/积分/goal强校验并全数组对T636逐位。legacy field24实际geometry不静默改宽，新wide全场地须新ID。详day_20261119/t650/FINDINGS。
+
 2026-11-19 T649成功轨迹覆盖对照结束：COMPLETE，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；field24/旧384/条件407见day_20261119/t649/FINAL_REPORT，未测null、不称泛化。
 
 2026-11-19 用户明确批准并登记T649独立3h/31M物理1020cmd6000main/Actor实际影子历史各16/0Critic-extra-pref/root512MiB/global10GiB/free40GiB。唯一root已注册、source精确树后唯一launch，北京时间 2026-11-19 12:08:57 停学、2026-11-19 12:38:57 停native、2026-11-19 13:08:57 全停；不延T648/不重启旧作业。先T501共享19任务76fresh76exact、独立审计且≥2新任务成败差异才BC-vs终止safeGOAL PG各8提议；全部旧384每步回放，24+6和14exact/条件407同旧384全保新增才保留，未测null。科学离线/四物理核8/10/12/14与Phase隔离/GPU让出其他计算/4GiB无swap。实际以launch/DRIVER_STARTED/status为准，健康时不改源/外写runs/并发科学或备份。
