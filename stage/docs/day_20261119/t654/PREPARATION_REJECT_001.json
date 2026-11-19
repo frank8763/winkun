@@ -1,0 +1,18 @@
+{
+  "state": "PREPARATION_REJECTED_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "reason": "Generic module name runtime collided with immutable historical runtime import during import chain; no simulator or optimizer ran",
+  "source_sha256": {
+    "affinity_guard.py": "721a112a8f811432a5bb7b2eb923f4dcd08cc563dab5b35d0021cfd3bbe16863",
+    "prepare.py": "e6bc399abc88f84b4b31ed60a4824df478b869f64ab6aed43dc21b550a2d72a0",
+    "native.py": "d860e1f13a1f109b9daa772139243a64d17f9893b7021057c24ac78a71b363aa",
+    "collect.py": "0a4bd9c865c77fbc73a51d82ca8d0a6aef67c68f01ae0fd1fb5d826f5b4e06a7",
+    "runtime.py": "1415122c1c70f8e129c8fb0b0beb4358b9172e4a32a7e2923f0d806174b741ff",
+    "learning.py": "c076eea559b2d58e2769fbf95c3e342222e3fe19482e8542e6a3698e4e01669d",
+    "analyze.py": "7e60ebb10a75b27b3fc17e9679622245d697fabe0b27b5de6ae2e6aa2f53c833",
+    "transport.py": "571aaaa3bcf978979d4ae6c647b1633d28cec58fd96508fffdbc4da37d59409b",
+    "control.py": "89578a721b47ba1e3bc918e1d6172bc53808a72b0b6f1d5bb33d6d95ceb2bc02"
+  },
+  "fix": "Use unique t654_runtime/t654_learning/t654_native module names; unchanged scientific protocol",
+  "new_native": 0,
+  "new_optimizer": 0
+}
