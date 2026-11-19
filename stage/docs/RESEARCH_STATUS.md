@@ -1,3 +1,5 @@
+2026-11-19 用户明确选择T647“先调整方案，不启动”。原sparse-vs-dense3h/24M/860/384额度未获批准，无run/launch，不启动、不挪夜间余额。已记录USER_DECISION与PLAN_REVISION：修订为同成功数据普通回放vs有限步实际旧响应约束，阈值/全ActorAdam提交及成本尚待离线校准，未实现/未预检/未批准；不把原预检称修订通过。当前仅零仿真零optimizer方案准备，后续新窗口须另行批准。
+
 2026-11-19 T647原起点成功覆盖对照已完成代码/零native零optimizer真实GPU预检，尚未注册/run/launch。T646198条新成功轨迹8任务逐SHA及全部真实history/hidden/密度/reward重构通过；11零成功任务中10接触主导、field4offset3全超时，详情day_20261119/t647/COVERAGE_ANALYSIS。拟sparse每任务首条8 vs dense198任务等权、同原T501全Actor/Adam1e-4/192步/384四遍，各先完整field24+旧6、14exact，旧6+原field5保持且新增才条件同模型407；不改reward/时限、不称SIL/AWAC原创。源与预检已准备，拟独立注册3h/24M物理860cmd6000main/Actor live-shadow-history各384/0Critic-extra-pref/新增200MiB/global10GiB/free40GiB，待新具体窗口额度确认，不使用已结束09:00夜间余额。GPU/四核Stage8/10/12/14/Phase隔离/4GiB无swap，先释放训练再native；T646补备份仅新窗口内有限恢复、不重启旧科学。
 
 2026-11-19 T646离线多机制夜间接力结束：COMPLETE，remote=PENDING_LOCAL_OFFLINE_RAW_RETAINED；全部实际轮次/384保持/条件407见overnight_20261118/FINAL_REPORT，不称泛化或真机通过。
