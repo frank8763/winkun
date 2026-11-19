@@ -1,3 +1,5 @@
+2026-11-19 T650冻结基线初始化修复验证结束：COMPLETE，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED，0学习；完整六原轨迹/六exact/初始场景合同见day_20261119/t650/FINAL_REPORT。T637–T649相关旧wide场景保留及鲁棒性比较因初始化工厂绕过存在场景混淆，不能直接称遗忘或算法失败，原结果保留并读FINDINGS勘误。
+
 2026-11-19 重要勘误：T649两臂均首Adam提议KL超限整态回退，策略hash与原T501相同，但sixLEFT18仍碰撞。对T636原NPZ发现同job/203积分/位姿/目标却scene和初始120输入不同，已定位T630/T502重置包装绕过t344宽场景工厂及t477径向目标。T637–T649相关旧wide保留/遗忘与T646邻域鲁棒性跨基线结论撤回待核；内部raw/exact/Adam审计是真实实际场景，原始保留。用户“检查然后继续下一步”下T650仅冻结修复验证：沿当前T649余额分配466672步18cmd900main/0optimizer/64MiB，两run合计最坏7246684步276cmd3024.778main<31M/1020/6000，13:08:57全停不延；新root已注册、source后唯一launch，6canonical+6exact首步前scene/初始120/积分/goal强校验并全数组对T636逐位。legacy field24实际geometry不静默改宽，新wide全场地须新ID。详day_20261119/t650/FINDINGS。
 
 2026-11-19 T649成功轨迹覆盖对照结束：COMPLETE，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；field24/旧384/条件407见day_20261119/t649/FINAL_REPORT，未测null、不称泛化。
