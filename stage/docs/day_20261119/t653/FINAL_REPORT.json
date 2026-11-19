@@ -1,0 +1,174 @@
+{
+  "state": "COMPLETE",
+  "error": null,
+  "results": [
+    {
+      "arm": "shared",
+      "state": "COMPLETE",
+      "audit_pass": true,
+      "physics": 981270,
+      "commands": 70,
+      "counts_complete": true,
+      "actual_Adam": 0,
+      "physics_upper": 981270,
+      "commands_upper": 70,
+      "qualified": true,
+      "safe_by_task": {
+        "dev_task6_00": 5,
+        "dev_task6_03": 2
+      }
+    },
+    {
+      "arm": "mean",
+      "state": "COMPLETE",
+      "audit_pass": true,
+      "physics": 1609568,
+      "commands": 62,
+      "counts_complete": true,
+      "actual_Adam": 8,
+      "physics_upper": 1609568,
+      "commands_upper": 62,
+      "field24_success": 8,
+      "old_screen_kept": false,
+      "protected_tasks": [
+        {
+          "id": "dev_task6_00",
+          "safe": false
+        },
+        {
+          "id": "dev_task6_03",
+          "safe": false
+        }
+      ],
+      "final407": null,
+      "retained": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t501_joint_command_repair/joint/proposal.pt.gz",
+        "sha256": "6c8cf7128cd096801aed3a20c672791bcfa64ca0c50cc7bf1c4e3e77bea18187",
+        "policy_hash": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+        "joint_hash": "913555eb5b5322ddea31913a09fc05b57715377fcd269b98215b430363ac8d03",
+        "bytes": 1063700
+      }
+    },
+    {
+      "arm": "protected",
+      "state": "COMPLETE",
+      "audit_pass": true,
+      "physics": 1707189,
+      "commands": 62,
+      "counts_complete": true,
+      "actual_Adam": 8,
+      "physics_upper": 1707189,
+      "commands_upper": 62,
+      "field24_success": 6,
+      "old_screen_kept": false,
+      "protected_tasks": [
+        {
+          "id": "dev_task6_00",
+          "safe": false
+        },
+        {
+          "id": "dev_task6_03",
+          "safe": true
+        }
+      ],
+      "final407": null,
+      "retained": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t501_joint_command_repair/joint/proposal.pt.gz",
+        "sha256": "6c8cf7128cd096801aed3a20c672791bcfa64ca0c50cc7bf1c4e3e77bea18187",
+        "policy_hash": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+        "joint_hash": "913555eb5b5322ddea31913a09fc05b57715377fcd269b98215b430363ac8d03",
+        "bytes": 1063700
+      }
+    },
+    {
+      "arm": "paired",
+      "state": "COMPLETE",
+      "audit_pass": true,
+      "physics": 2852100,
+      "commands": 150,
+      "counts_complete": true,
+      "actual_Adam": 0,
+      "physics_upper": 2852100,
+      "commands_upper": 150,
+      "models": {
+        "T501": {
+          "safe": 15,
+          "n": 24,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t501_joint_command_repair/joint/proposal.pt.gz",
+            "sha256": "6c8cf7128cd096801aed3a20c672791bcfa64ca0c50cc7bf1c4e3e77bea18187",
+            "policy_hash": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+            "joint_hash": "913555eb5b5322ddea31913a09fc05b57715377fcd269b98215b430363ac8d03",
+            "bytes": 1063700
+          },
+          "by_task": {
+            "dev_task6_00": {
+              "safe": 1,
+              "n": 8
+            },
+            "dev_task6_03": {
+              "safe": 7,
+              "n": 8
+            },
+            "t502_field_sector5_offset1": {
+              "safe": 7,
+              "n": 8
+            }
+          }
+        },
+        "mean": {
+          "safe": 10,
+          "n": 24,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/mean/proposal.pt.gz",
+            "sha256": "43179dfb95f47fc32568f5d69d69aef3dd0e117dce20aa6f0bcc5e9bff46c992",
+            "policy_hash": "5ffa8e00c96384ef4ee0d1d9f5262604b27960d1d8fd67005e5956a6ceb2e7dd",
+            "joint_hash": "059c9724e3f44987fcaefb9921d2ae8029e7762dca885dba23db145c78b439fc",
+            "bytes": 1063651
+          },
+          "by_task": {
+            "dev_task6_00": {
+              "safe": 1,
+              "n": 8
+            },
+            "dev_task6_03": {
+              "safe": 6,
+              "n": 8
+            },
+            "t502_field_sector5_offset1": {
+              "safe": 3,
+              "n": 8
+            }
+          }
+        },
+        "protected": {
+          "safe": 13,
+          "n": 24,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t653_afternoon_outcome_constraints/protected/proposal.pt.gz",
+            "sha256": "9c67f6e4f41fb0ad0fd816c60cb187e5320de0020bb679a8c988f2331581e453",
+            "policy_hash": "916f1bbeaac64929d1292228b88f9afc56daea4c59313a7fc7a4aa0459db368a",
+            "joint_hash": "91170808e2ba68c00f4884c0f5635c5e0085eaa6ef3612ed7b2b63c9f02c2894",
+            "bytes": 1063663
+          },
+          "by_task": {
+            "dev_task6_00": {
+              "safe": 2,
+              "n": 8
+            },
+            "dev_task6_03": {
+              "safe": 8,
+              "n": 8
+            },
+            "t502_field_sector5_offset1": {
+              "safe": 3,
+              "n": 8
+            }
+          }
+        }
+      }
+    }
+  ],
+  "all_scientific_processes_stopped": true,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED"
+}
