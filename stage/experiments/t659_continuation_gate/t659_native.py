@@ -26,7 +26,9 @@ class Session(Prior.Session):
         self.job = job
         self.first = job['prefix_first']
         self.source = E.N.S.arrays(job['source_path'])
-        assert self.first < len(self.source['states'])
+        assert 0 <= self.first < len(self.source['states'])
+        assert not self.source['end_flags'][:self.first].any(), 'Prefix already terminated'
+        assert job['remaining_native_steps'] == self.cap-int(self.source['native_counts'][:self.first].sum()) > 0
         assert np.array_equal(self.packet(), self.source['states'][0])
         assert np.array_equal(self.initial, self.source['initial_native_integration'])
         self.forced_actions = []
@@ -38,6 +40,7 @@ class Session(Prior.Session):
         if k == self.first:
             assert np.array_equal(self.packet(), self.source['states'][k])
             assert self.steps == int(self.source['native_counts'][:k].sum())
+            assert self.cap-self.steps == self.job['remaining_native_steps']
         action, ownership = intervention(self.job, k, self.source)
         self.forced_actions.append(np.zeros(2, np.float32) if action is None else np.asarray(action).copy())
         # The loaded actor observes every real packet, including forced-prefix
@@ -74,6 +77,8 @@ def inspect(p, a, row):
     source = E.N.S.arrays(job['source_path'])
     assert int(a['prefix_first']) == k < len(a['states'])
     assert int(a['candidate_once']) == int(job['continuation_kind'] == 'candidate_once')
+    assert not a['end_flags'][:k].any() and not source['end_flags'][:k].any()
+    assert job['case']['step_cap']-int(a['native_counts'][:k].sum()) == job['remaining_native_steps']
     assert np.array_equal(a['initial_native_integration'], source['initial_native_integration'])
     for key in ['states', 'poses', 'history_poses', 'history_goals', 'history_times']:
         assert np.array_equal(a[key][:k + 1], source[key][:k + 1]), key

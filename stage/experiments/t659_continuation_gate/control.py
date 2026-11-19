@@ -33,6 +33,7 @@ def register():
     assert not OUT.exists()
     p, a = read(HERE/'protocol.json'), read(DOC/'AUTHORIZATION.json')
     assert a['approved'] and not p['authorization_approved']
+    assert a['protocol_revision'] == p['protocol_revision'] == 2
     for key in ['all_seconds','max_physics','max_commands','max_bytes','global_bytes','new_Actor','new_Critic','new_optimizer']:
         assert a[key] == p[key], key
     assert read(DOC/'PREFLIGHT.json')['state'] == 'PASS_ZERO_NATIVE_ZERO_OPTIMIZER'
@@ -40,7 +41,7 @@ def register():
         assert sha(f) == h, f
     save(DOC/'RESOURCE_PREFLIGHT.json', Resource.resources())
     now = time.time()
-    p.update(authorization_approved=True, registration_epoch=now,
+    p.update(authorization_approved=True, preparation_only=False, registration_epoch=now,
              absolute_all_stop=now+p['all_seconds'], absolute_native_stop=now+1900,
              absolute_learning_stop=now,
              user_authorization='User approved the T659 one-hour frozen continuation panel and existing group balances; see AUTHORIZATION.json')
@@ -152,7 +153,7 @@ def driver():
     save(OUT/'status.json', dict(state=report['state'], all_science_stopped=gone, epoch=time.time()))
     status = ROOT/'stage/docs/RESEARCH_STATUS.md'
     status.write_text('2026-11-19 T659冻结续行因果检验结束：'+report['state']+'，remote='+report['remote']+
-        '；实际panel/96原生命令路径及审计见day_20261119/t659/FINAL_REPORT；0学习，不是新导航成功或Critic通过，407null，T501保留。\n\n'+status.read_text())
+        '；实际28新测量28重放/20历史复用panel及审计见day_20261119/t659/FINAL_REPORT；0学习，不是新导航成功或Critic通过，407null，T501保留。\n\n'+status.read_text())
     if not gone:
         save(DOC/'SOURCE_PENDING.json', dict(reason='Scientific children not all gone; preserve local evidence, no source sync'))
         return
