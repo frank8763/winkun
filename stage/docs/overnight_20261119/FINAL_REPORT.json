@@ -1,0 +1,31 @@
+{
+  "state": "FAILED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660_joint_night_relay/driver.py\", line 86, in main\n    child(arm,template,arm=arm,arm_index=index)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660_joint_night_relay/driver.py\", line 52, in child\n    call('main' if learning else 'frozen_main',name,c['main_seconds'],children);science_end=time.time()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660_joint_night_relay/driver.py\", line 21, in call\n    try:c.wait(timeout=seconds);assert c.returncode==0,(action,name,c.returncode)\nAssertionError: ('main', 'bc_mean', 1)\n",
+  "ledger": {
+    "physics": 19700497,
+    "commands": 619,
+    "main_seconds": 1.070909023284912,
+    "Actor_live": 512,
+    "Value_live": 0,
+    "children": [
+      {
+        "name": "bc_mean",
+        "kind": "learn",
+        "state": "FAILED_NO_SUMMARY",
+        "audit": null,
+        "physics": 19700497,
+        "commands": 619,
+        "main_seconds": 1.070909023284912,
+        "Actor_live": 512,
+        "Value_live": 0,
+        "counts_exact": false
+      }
+    ],
+    "denied": []
+  },
+  "best": null,
+  "all_scientific_processes_stopped": true,
+  "remote": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "no_unseen_layout_or_universal_nonforgetting_claim": true,
+  "epoch": 1795088887.6062036
+}
