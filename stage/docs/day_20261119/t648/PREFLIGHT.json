@@ -1,0 +1,118 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "all198_actual_histories_checked": true,
+  "training_trajectories": 150,
+  "validation_trajectories": 48,
+  "heldout_sources_disjoint": true,
+  "actual_GPU_gradient_norms": {
+    "encoder.0.weight": 3.9228820317964264,
+    "encoder.0.bias": 0.48639745423976644,
+    "core.weight_ih_l0": 2.2265380493655456,
+    "core.weight_hh_l0": 0.9899928702884726,
+    "core.bias_ih_l0": 0.38587418306603144,
+    "core.bias_hh_l0": 0.19734745765183043,
+    "head.weight": 7.2782528546386445,
+    "head.bias": 1.353587038179771,
+    "drive_adapter.0.weight": 0.3489948632226965,
+    "drive_adapter.0.bias": 0.036463827561503105,
+    "drive_adapter.2.weight": 1.187618123039836,
+    "drive_adapter.2.bias": 0.35434337027559487,
+    "steer_adapter.0.weight": 0.06016598027599107,
+    "steer_adapter.0.bias": 0.0036477575522926246,
+    "steer_adapter.2.weight": 0.21682546038552064,
+    "steer_adapter.2.bias": 0.028230352039994792
+  },
+  "all_scales_actual_parameter_formula_and_proposed_moments_checked": true,
+  "mature_Adam_fixture_reject_restores_all": true,
+  "isolated_synthetic_moments_not_training": true,
+  "fixture_reports": [
+    {
+      "scale": 1.0,
+      "metrics": {
+        "all384_response_digest": "cb23a3df6a459338c2e0e17b46fb5bf706ea03092545347eabd011da52f4ccb8",
+        "max_peak_command_error": 0.3722125171594902,
+        "max_task_RMS_command_error": 0.25834118762091296,
+        "violating_ids": [
+          "dev_task0_00",
+          "dev_task0_01",
+          "dev_task0_02",
+          "dev_task0_03",
+          "dev_task0_04",
+          "dev_task0_05",
+          "dev_task0_06",
+          "dev_task0_07"
+        ],
+        "passed": false
+      }
+    },
+    {
+      "scale": 0.25,
+      "metrics": {
+        "all384_response_digest": "20996a94219cdd70649a9d39f0a6610ff145d0926cd559d3557f2f1b5adeb63a",
+        "max_peak_command_error": 0.0937059753914597,
+        "max_task_RMS_command_error": 0.06332166406271196,
+        "violating_ids": [
+          "dev_task0_00",
+          "dev_task0_01",
+          "dev_task0_02",
+          "dev_task0_03",
+          "dev_task0_04",
+          "dev_task0_05",
+          "dev_task0_06",
+          "dev_task0_07"
+        ],
+        "passed": false
+      }
+    },
+    {
+      "scale": 0.0625,
+      "metrics": {
+        "all384_response_digest": "b12be5000d47c294929f1392e0bf27af262696c8adbd785c3eb595362daa628f",
+        "max_peak_command_error": 0.02343645139968121,
+        "max_task_RMS_command_error": 0.01583407830008723,
+        "violating_ids": [
+          "dev_task0_00",
+          "dev_task0_01",
+          "dev_task0_02",
+          "dev_task0_03",
+          "dev_task0_04",
+          "dev_task0_05",
+          "dev_task0_06",
+          "dev_task0_07"
+        ],
+        "passed": false
+      }
+    },
+    {
+      "scale": 0.015625,
+      "metrics": {
+        "all384_response_digest": "a5c0c9c376ac7d96197e431c6a5bd2c2f7332fb9994fc1153a7cb548b776dcfe",
+        "max_peak_command_error": 0.005859307924903532,
+        "max_task_RMS_command_error": 0.003955608524764359,
+        "violating_ids": [
+          "dev_task0_00",
+          "dev_task0_01",
+          "dev_task0_02",
+          "dev_task0_03",
+          "dev_task0_04",
+          "dev_task0_05",
+          "dev_task0_06",
+          "dev_task0_07"
+        ],
+        "passed": false
+      }
+    }
+  ],
+  "one_bad_of384_task_rejected": true,
+  "causal_batch_individual_equal": true,
+  "original_Actor_Adam_unchanged": true,
+  "all_training_sources_scheduled": true,
+  "old384_four_complete_passes": true,
+  "physics_worst_each": 11906528,
+  "commands_worst_each": 427,
+  "storage_worst": 202833920,
+  "global_worst": 1572315845,
+  "max_response_checks_each_fit": 96,
+  "full384_forward_measured_seconds": 0.3839530944824219,
+  "preflight_seconds": 1.3372313976287842
+}
