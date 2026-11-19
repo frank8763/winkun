@@ -1,3 +1,5 @@
+2026-11-19 T649成功轨迹覆盖对照结束：COMPLETE，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；field24/旧384/条件407见day_20261119/t649/FINAL_REPORT，未测null、不称泛化。
+
 2026-11-19 用户明确批准并登记T649独立3h/31M物理1020cmd6000main/Actor实际影子历史各16/0Critic-extra-pref/root512MiB/global10GiB/free40GiB。唯一root已注册、source精确树后唯一launch，北京时间 2026-11-19 12:08:57 停学、2026-11-19 12:38:57 停native、2026-11-19 13:08:57 全停；不延T648/不重启旧作业。先T501共享19任务76fresh76exact、独立审计且≥2新任务成败差异才BC-vs终止safeGOAL PG各8提议；全部旧384每步回放，24+6和14exact/条件407同旧384全保新增才保留，未测null。科学离线/四物理核8/10/12/14与Phase隔离/GPU让出其他计算/4GiB无swap。实际以launch/DRIVER_STARTED/status为准，健康时不改源/外写runs/并发科学或备份。
 
 2026-11-19 用户要求改变方法下一步开始：T649真实终止到达目标clipped episodic PG vs共享成功BC代码/零native零optimizer预检已完成，尚未注册/run/launch，待独立具体额度批准。原T501初始化、19固定任务(8新+6旧哨兵+5旧场地)×4fresh+4exact，共76独立新/76重放；先shared审计且≥2新任务四样本含成败才两臂各最多8Adam/同全384每步保持，Actor实际影子历史各16，0Critic-extra-pref。score整episode求和/固定512/三peerLOO/真正clipGaussian原子密度/完整120carry已核，初始PG梯度匹配直接REINFORCE且与BC不同，非完整GAE-PPO或原创、不因信息准入宣称条件无偏。拟独立3h/31M物理1020cmd6000main/root512MiB/global10GiB/free40GiB，24+6和14exact/条件407全旧384保持才保留；科学后有限补T646备份，不先阻塞学习；四CPU+GPU/Phase物理隔离。详day_20261119/t649/PLAN/PRIMARY_REVIEW/PREFLIGHT/BUDGET。
