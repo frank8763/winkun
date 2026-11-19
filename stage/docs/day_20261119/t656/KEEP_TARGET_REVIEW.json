@@ -1,0 +1,117 @@
+{
+  "state": "READ_ONLY_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "old_histories": 384,
+  "field_histories": 8,
+  "old_weight": 10.0,
+  "field_weight": 10.0,
+  "old_per_history_weight": 0.026041666666666668,
+  "field_per_history_weight": 1.25,
+  "relative_field_to_old_single_history_weight": 48.0,
+  "overlapping_task_count": 5,
+  "initial_command_target_conflicts": 5,
+  "overlaps": [
+    {
+      "id": "t502_field_sector3_offset1",
+      "identical_initial120": true,
+      "both_initial_hidden_zero": true,
+      "old_initial_command_target": [
+        0.9113836652869212,
+        -0.4224829091900668
+      ],
+      "new_initial_command_target": [
+        0.911395856711491,
+        -0.42279516804568257
+      ],
+      "absolute_difference": [
+        1.2191424569873988e-05,
+        0.0003122588556157546
+      ],
+      "inconsistent_exact_initial_command_targets": true,
+      "old_sha256": "b05a6069760f43dce391f8614c8126dfbb9cbf43ba510b41663fcc2f57c313d8",
+      "new_sha256": "7d6cc3f34aa118bf25d186cede9ded03ab9350b91e7afa7757ad924dd542c6b6"
+    },
+    {
+      "id": "t502_field_sector3_offset2",
+      "identical_initial120": true,
+      "both_initial_hidden_zero": true,
+      "old_initial_command_target": [
+        0.386117672226733,
+        -0.35257008652826444
+      ],
+      "new_initial_command_target": [
+        0.3858263139128735,
+        -0.35333628968930114
+      ],
+      "absolute_difference": [
+        0.0002913583138595133,
+        0.0007662031610367048
+      ],
+      "inconsistent_exact_initial_command_targets": true,
+      "old_sha256": "13129939e58ce715dd81f63571590f6be3a2cef7d147724dc8b3e8c376495d20",
+      "new_sha256": "a6169d06e140df3111b1f3cf61a311cd6d84af8d2ea347ab69512eb928bd0488"
+    },
+    {
+      "id": "t502_field_sector4_offset1",
+      "identical_initial120": true,
+      "both_initial_hidden_zero": true,
+      "old_initial_command_target": [
+        1.0,
+        -0.251135929003621
+      ],
+      "new_initial_command_target": [
+        1.0,
+        -0.2516048546444623
+      ],
+      "absolute_difference": [
+        0.0,
+        0.00046892564084133337
+      ],
+      "inconsistent_exact_initial_command_targets": true,
+      "old_sha256": "1c7a50301621a673d898692ad1309bc28b9bb44a8e2ed51ea46355f22dce23f6",
+      "new_sha256": "c31726f1b311705e75779d037c0976d0f50f439b08428ca4e5abcda236d88f68"
+    },
+    {
+      "id": "t502_field_sector5_offset2",
+      "identical_initial120": true,
+      "both_initial_hidden_zero": true,
+      "old_initial_command_target": [
+        0.458709730480773,
+        -0.4319708106961672
+      ],
+      "new_initial_command_target": [
+        0.4585418940710301,
+        -0.43263206476403254
+      ],
+      "absolute_difference": [
+        0.00016783640974293856,
+        0.0006612540678653245
+      ],
+      "inconsistent_exact_initial_command_targets": true,
+      "old_sha256": "bf095413124a79609688dbe67e92fa5ebbdb1f1a08dcc95af7b123e99ff39468",
+      "new_sha256": "483d546f7a4e26f35ae539a335cb481ed2e96067943c1d7960b40728f7de6892"
+    },
+    {
+      "id": "t502_field_sector6_offset1",
+      "identical_initial120": true,
+      "both_initial_hidden_zero": true,
+      "old_initial_command_target": [
+        0.9777066793976241,
+        -0.4379059044297092
+      ],
+      "new_initial_command_target": [
+        0.9776484032960318,
+        -0.43832527340851857
+      ],
+      "absolute_difference": [
+        5.82761015923694e-05,
+        0.00041936897880934243
+      ],
+      "inconsistent_exact_initial_command_targets": true,
+      "old_sha256": "d42b1817981207e8f775c915e4bcdae973c5805071a897b718b6f603bb150691",
+      "new_sha256": "7530065ff60cfdcf125928a383526e2c24ff41d8ff0e2c0ce88949d5d6f28f8a"
+    }
+  ],
+  "limits": "Action-target inconsistency is not physical task incompatibility; weights alone do not establish causal source of old02 regression; both references can succeed on one task with different commands.",
+  "new_native": 0,
+  "new_optimizer": 0
+}
