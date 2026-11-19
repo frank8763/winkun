@@ -1,0 +1,157 @@
+"""One matched learning candidate per arm, field24 then conditional unique407."""
+from pathlib import Path
+import copy,fcntl,gzip,json,os,sys,time,traceback
+ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent
+OUT=ROOT/'stage/runs/t647_joint_success_coverage';DOC=ROOT/'stage/docs/day_20261119/t647'
+sys.path.insert(0,str(ROOT/'stage/experiments/t646_offline_night'))
+import t646_runtime as Shared
+import t646_coverage as Coverage
+import t647_learning as M
+O,R=Shared.O,Shared.R
+read,save,sha,digest,torch,np=Shared.read,Shared.save,Shared.sha,Shared.digest,Shared.torch,Shared.np
+
+
+def rootplan():return read(HERE/'protocol.json')
+def plan():
+    root=rootplan();name=sys.argv[2];assert name in root['arms']
+    child=read(OUT/name/'protocol.json');assert child['_root_sha256']==sha(OUT/'protocol.json')
+    return dict(root,**child,out=str(OUT/name))
+
+
+def verify(p,*args):
+    root=rootplan();assert root['authorization_approved'] and time.time()<root['absolute_all_stop']
+    assert sha(HERE/'protocol.json')==sha(OUT/'protocol.json')
+    assert R.used(OUT)<=root['max_bytes'] and R.used(Path(p['out']))<=root['child_bytes']
+    assert R.used(ROOT/'stage/runs')-R.used(OUT)+root['max_bytes']<root['global_bytes']
+    assert R.D.B.shutil.disk_usage(ROOT).free>=40*2**30
+    for f,h in root['inputs'].items():assert sha(f)==h,f
+
+
+def setup(p):
+    folder=Path(p['out']);O.OUT=folder;O.DOC=DOC/p['arm'];R.OUT=folder;R.DOC=DOC/p['arm'];R.HERE=HERE
+    R.verify=verify;R.M=M;O.M=M;R.setup(p);R.N.worker=O.N.worker;R.N.inspect=O.N.inspect
+    original=R.gpu_guard;last=[0.]
+    def gpu_guard():
+        if time.time()-last[0]>=5:original();last[0]=time.time()
+    R.gpu_guard=gpu_guard
+    R.E.N.offline()
+
+
+def load_new(p,guard):
+    source=read(p['coverage_summary'])['new_success_rows'];by={r['sha256']:r for r in source}
+    selected=p['sparse_rows'] if p['arm']=='sparse' else p['dense_rows'];data=[]
+    assert len({r['sha256'] for r in selected})==len(selected)
+    for item in selected:
+        guard();row=by[item['sha256']];assert row['path']==item['path'] and sha(row['path'])==row['sha256']
+        assert row['success'] and not row['collision'] and not row['field_boundary']
+        a=R.E.N.S.arrays(row['path']);Coverage.inspect(p,a,row)
+        assert all(digest(v)==row['array_hashes'][k] for k,v in a.items())
+        data.append(dict(id=row['job_id'],x=torch.tensor(a['states']),target=torch.tensor(a['actions']).double(),first=0,
+            source_sha256=row['sha256'],history_sha256=digest(a)))
+    return data
+
+
+def data(p,guard):
+    old=Shared.load(p,guard);new=load_new(p,guard)
+    return old,new
+
+
+def event(folder,who):
+    def emit(stage,k):
+        with (folder/'optimizer_calls.jsonl').open('a') as f:f.write(json.dumps([who,stage,k])+'\n')
+    return emit
+
+
+def gpu():
+    R.gpu_guard();os.environ['CUDA_VISIBLE_DEVICES']='0';os.environ['CUBLAS_WORKSPACE_CONFIG']=':4096:8'
+    f=(ROOT/'stage/runs/.stage_gpu.lock').open('a+b');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);return f
+
+
+def main():
+    p=plan();verify(p);setup(p);folder=Path(p['out']);R.E.L.install_stop_handlers()
+    lock=(ROOT/'stage/runs/.stage_writer.lock').open('a+b');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    assert not (folder/'launch.json').exists();save(folder/'launch.json',dict(pid=os.getpid(),epoch=time.time()))
+    rt=O.Runtime(p);error=None;proposal=None;final407=None;screen=None;retained=p['initial'];u=None
+    try:
+        old,new=data(p,rt.guard)
+        save(folder/'DATA_MANIFEST.json',dict(old=O.Parent.manifest(old),new=[dict(id=g['id'],sha256=g['source_sha256'],history=g['history_sha256']) for g in new]))
+        assert time.time()+p['learning_seconds']<p['absolute_learning_stop'];gl=gpu()
+        obj=M.make(dict(p,arm='full_command'));shadow=M.make(dict(p,arm='full_command'));before=M.state(obj)
+        start=time.time()
+        def guard():rt.guard();assert time.time()<min(start+p['learning_seconds'],p['absolute_learning_stop'])-5;R.gpu_guard()
+        u=M.fit(obj,old,new,p,guard,event(folder,'live'));v=M.fit(shadow,old,new,p,guard,event(folder,'shadow'))
+        assert u==v and digest(M.state(obj))==digest(M.state(shadow))
+        mature=digest(M.state(obj));proposal=M.export(obj,p,folder/'proposal.pt.gz')
+        save(folder/'LEARNING.json',dict(update=u,trained_state_hash=mature,proposal=proposal))
+        M.load(obj,before);M.load(shadow,before);assert digest(M.state(obj))==digest(before)==digest(M.state(shadow))
+        save(folder/'ROLLBACK.json',dict(before=digest(before),restored=digest(M.state(obj)),all_Actor_Adam=True))
+        obj[0].cpu();shadow[0].cpu();del obj,shadow,old,new;torch.cuda.empty_cache();fcntl.flock(gl,fcntl.LOCK_UN);gl.close()
+        # Launch native only after training tensors are freed; fourGiB cap.
+        os.environ['CUDA_VISIBLE_DEVICES']=''
+        rt.pool=R.N.Pool(dict(p,out=str(folder),native_stop_epoch=rt.deadline),rt.counts,rt.guard)
+        vv=rt.request(p['screen_jobs'],proposal,'screen30');rows=[r for a,r in vv];by={r['job_id']:r for r in rows}
+        old_ok=all(R.safe(by[k]) for k in p['old_screen_ids'])
+        gained=[r['job_id'] for r in rows if R.safe(r) and r['job_id'] not in p['before_success_ids']]
+        screen=dict(old_sentinels_and_field5_retained=old_ok,field24_success=sum(R.safe(by[j['id']]) for j in p['field_jobs']),new_field_success_ids=gained,rows=rows)
+        if old_ok and gained:
+            assert time.time()+p['full_evaluation_reserve_seconds']<rt.deadline
+            rest=[j for j in p['evaluation_jobs'] if j['id'] not in by];assert len(rest)==377
+            other=rt.request(rest,proposal,'remaining377');by.update({r['job_id']:r for a,r in other})
+            ordered=[by[j['id']] for j in p['evaluation_jobs']];ids={r['job_id'] for r in ordered if R.safe(r)}
+            lost=sorted(set(p['before_success_ids'])-ids);gained=sorted(ids-set(p['before_success_ids']));accepted=not lost and bool(gained)
+            final407=dict(success=len(ids),success_ids=sorted(ids),lost_prior=lost,gained_prior=gained,accepted=accepted)
+            with gzip.open(folder/'JOINT407.json.gz','xb') as f:f.write(json.dumps(dict(model=proposal,rows=ordered,reused30=True)).encode())
+            if accepted:retained=proposal
+        keys=[by[j['id']] for j in p['key_jobs']]
+        rt.request(p['key_jobs'],proposal,'exact14',True,keys)
+        save(folder/'SCREEN.json',screen)
+    except BaseException:error=traceback.format_exc();save(folder/'failure.json',dict(error=error,raw_preserved=True,no_restart=True))
+    finally:
+        if rt.pool:rt.pool.close()
+        rt.commands+=3
+        save(folder/'summary.json',dict(state='FAILED' if error else 'COMPLETE',pid=os.getpid(),error=error,physics=sum(rt.counts),commands=rt.commands,
+            elapsed_s=time.time()-rt.start,proposal=proposal,update=u,screen=screen,final407=final407,retained=retained,new_RL=0,new_Critic=0))
+        fcntl.flock(lock,fcntl.LOCK_UN);lock.close()
+    assert error is None,error
+
+
+def audit():
+    p=plan();verify(p);setup(p);folder=Path(p['out']);s=read(folder/'summary.json');assert s['state']=='COMPLETE'
+    assert not Path('/proc',str(s['pid'])).exists()
+    for g in read(folder/'worker_generations.json'):assert all(not Path('/proc',str(pid)).exists() for pid in [g['parent'],*g['workers']])
+    rows=[json.loads(x) for x in gzip.decompress((folder/'cases.jsonl.gz').read_bytes()).decode().splitlines()];by={r['path']:r for r in rows};assert len(by)==len(rows)
+    for r in rows:
+        assert sha(r['path'])==r['sha256'];a=R.E.N.S.arrays(r['path'])
+        if r['full']:O.N.inspect(p,a,r)
+        else:assert all(digest(v)==r['array_hashes'][k] for k,v in a.items())
+        if r.get('exact'):
+            ref=by[r['reference_path']];assert ref['array_hashes']==r['array_hashes'] and ref['integration_sha256']==r['integration_sha256']
+    assert sum(r['physics'] for r in rows)==s['physics']<=p['max_physics'] and len(rows)+6==s['commands']<=p['max_commands']
+    start=time.time();deadline=min(start+p['audit_seconds']-20,p['absolute_all_stop']-60)
+    def guard():assert time.time()<deadline
+    old,new=data(p,guard);assert read(folder/'DATA_MANIFEST.json')==dict(old=O.Parent.manifest(old),new=[dict(id=g['id'],sha256=g['source_sha256'],history=g['history_sha256']) for g in new])
+    gl=gpu();obj=M.make(dict(p,arm='full_command'));before=M.state(obj)
+    def guarded():guard();R.gpu_guard()
+    u=M.fit(obj,old,new,p,guarded,event(folder,'independent_history'))
+    learned=read(folder/'LEARNING.json');assert u==learned['update'] and digest(M.state(obj))==learned['trained_state_hash'] and obj[0].phash()==s['proposal']['policy_hash']
+    M.load(obj,before);assert digest(M.state(obj))==read(folder/'ROLLBACK.json')['restored']
+    fcntl.flock(gl,fcntl.LOCK_UN);gl.close()
+    calls=[json.loads(v) for v in (folder/'optimizer_calls.jsonl').read_text().splitlines()]
+    expected=[[where,k] for k in range(p['fit_steps']) for where in ['BEFORE','AFTER']]
+    for who in ['live','shadow','independent_history']:assert [v[1:] for v in calls if v[0]==who]==expected
+    screen=s['screen'];assert len(screen['rows'])==30
+    actual={r['job_id']:r for r in screen['rows']};assert screen['old_sentinels_and_field5_retained']==all(R.safe(actual[k]) for k in p['old_screen_ids'])
+    assert screen['field24_success']==sum(R.safe(actual[j['id']]) for j in p['field_jobs'])
+    assert screen['new_field_success_ids']==[r['job_id'] for r in screen['rows'] if R.safe(r) and r['job_id'] not in p['before_success_ids']]
+    if s['final407']:
+        joint=read_gzip(folder/'JOINT407.json.gz');ids={r['job_id'] for r in joint['rows'] if R.safe(r)}
+        assert len(joint['rows'])==407 and len({r['job_id'] for r in joint['rows']})==407
+        assert s['final407']['success_ids']==sorted(ids) and s['final407']['lost_prior']==sorted(set(p['before_success_ids'])-ids)
+        assert s['final407']['accepted']==(not(set(p['before_success_ids'])-ids) and bool(ids-set(p['before_success_ids'])))
+    assert sha(p['initial']['path'])==p['initial']['sha256'] and sha(s['proposal']['path'])==s['proposal']['sha256']
+    save(folder/'audit.json',dict(state='PASS',all_original_history_and_all_Actor_Adam_rebuilt=True,new_native=0,historical_Actor_Adam=p['fit_steps'],exact14_verified=True,full407_conditional_checked=True))
+
+
+def read_gzip(f):return json.loads(gzip.decompress(Path(f).read_bytes()))
+
+if __name__=='__main__':globals()[sys.argv[1]]()

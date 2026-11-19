@@ -1,0 +1,34 @@
+# T647 primary-method review — 2026-11-19
+
+Recommendation: compare task-balanced replay BC with the **same fit plus an explicit finite-step replay constraint**. Preserve the original T501, full recurrent history, and closed-loop acceptance gate. Successful stochastic episodes supply new supervision; they do not establish that their average deterministic action sequence succeeds. This note performs zero simulation and zero optimizer steps.
+
+## Evidence boundary
+
+The parent investigation supplies the audited T501 architecture (120→128 encoder, GRU64, 2+2 heads/adapters; 64,772 trainable parameters), deterministic `clip(location)`, genuine carry, and historical 384/407 successes. The [T646 report](../../overnight_20261118/FINAL_REPORT.json) confirms 198 successes in 608 frozen-policy coverage samples and no promoted replacement. The supplied per-task audit assigns these successes to eight of nineteen failed field tasks; eleven remain 0/32. Those eight are training tasks, not held-out generalization. Prior small raw/action replay losses alongside sentinel regressions make another loss-only acceptance criterion insufficient.
+
+## Five principal readings and their implications
+
+1. **DAgger**: §3, Algorithm 3.1 and Theorems 3.1–3.4 explicitly collect learner-visited states and query expert actions there. Low error on historical trajectories alone misses the changed state distribution. Mixing successful noisy T501 episodes is not DAgger: a frozen parent is not a verified recovery oracle on student-deviated histories. Its bounds require assumptions and expert labels absent here. [Paper](https://proceedings.mlr.press/v15/ross11a/ross11a.pdf).
+
+2. **SIL**: §3, Eqs. 1–3 weight replay log-likelihood by positive return advantage `(R−V)+`, with a value loss; Algorithm 1 combines this with actor-critic learning. Success-filtered, equally weighted BC is related experience reuse, not an exact SIL implementation. Adding SIL would introduce value estimation and a new experimental variable. [Paper](https://proceedings.mlr.press/v80/oh18b/oh18b.pdf), [author implementation](https://github.com/junhyukoh/self-imitation-learning).
+
+3. **GEM**: §3, Eqs. 6–8 replace old-memory loss constraints with gradient inner-product constraints under local linearity and representative memory. Neither assumption guarantees old navigation success. Author `model/gem.py` uses a dual QP and **SGD**. This is a useful constraint mechanism, not a closed-loop safety theorem. [Paper](https://proceedings.neurips.cc/paper_files/paper/2017/file/f87522788a2be2d171666752f97ddebb-Paper.pdf), [author source](https://github.com/facebookresearch/GradientEpisodicMemory/blob/master/model/gem.py).
+
+4. **A-GEM**: §4, Eqs. 9–11 protect one sampled pooled-memory gradient, rather than every previous task. Appendix D.2 distinguishes average accuracy from worst-task forgetting. `model/model.py` implements the negative-dot-product projection before optimizer application. A pooled average can conceal one critical task's deterioration. [Paper](https://arxiv.org/pdf/1812.00420), [author source](https://github.com/facebookresearch/agem/blob/main/model/model.py).
+
+5. **Behavior Transformers**: §2 and §3.5 investigate multimodal action modeling and historical context. This supports testing the possibility of incompatible successful modes, not diagnosing it from 198 successes alone. A deterministic squared-error regressor targets a conditional mean; by elementary regression algebra, that mean need not belong to any successful mode. Different trajectory branches can still require compatible continuation. [Paper](https://arxiv.org/pdf/2206.11251), [author implementation](https://github.com/notmahi/bet).
+
+Additional alternatives checked: [AWAC §IV, Eq. 13](https://arxiv.org/pdf/2006.09359) uses critic-advantage-weighted likelihood; its [author project](https://awacrl.github.io/) links implementation. [IQL §4.2–4.3](https://arxiv.org/pdf/2110.06169) uses expectile V, Bellman Q and weighted policy extraction; [author actor.py](https://github.com/ikostrikov/implicit_q_learning/blob/master/actor.py) caps exponential weights at 100. Neither automatically solves retention or deterministic mode averaging. [EWC Eq. 3](https://arxiv.org/pdf/1612.00796) adds a diagonal-Fisher parameter penalty, not a behavioral constraint. Defer these extra estimators/architectures in the first matched comparison.
+
+## Minimal matched experiment
+
+Freeze one dataset: all audited 198 successful episodes, sampling task uniformly across eight tasks, then episode, then time; retain all 384 old successful histories with explicit old-task balancing. Never count replay regeneration as independent evidence. Reserve complete episodes for validation where possible; disclose tasks with insufficient successful episodes. Match initial T501 weights, trainable parameters, batches, loss coefficients, Adam state, proposal count and evaluation schedule across two arms:
+
+- **A:** successful-trajectory command BC plus fixed-parent old replay loss.
+- **B:** identical objective/proposals, plus a preregistered GEM-inspired constraint on the **actual proposed Adam displacement**, followed by finite nonlinear replay checks. Fix constraint groups, tolerances, backtracking attempts and stop rule beforehand; report rejected proposals and extra compute.
+
+For `Δθ = θ_proposed−θ`, the first-order old-loss condition is `∇L_oldᵀΔθ ≤ 0`. Projecting a raw gradient and subsequently applying Adam can violate it through momentum and coordinate scaling. Snapshot parameters and Adam moments; define commit/rollback consistently. Call this an adaptation, not exact GEM. If old teacher-MSE is initially zero, its gradient is zero and projection is initially vacuous; finite replay checks remain necessary. Zero tolerance may block every useful update. Predeclare tolerances without tuning them on acceptance outcomes.
+
+For every sampled time, recompute candidate GRU carry from the true episode start with all 120 inputs and actual preceding inputs/actions. Never reuse parent hidden states for an updated body or reset at sampled windows. If burn-in is detached, disclose truncated gradient credit despite correct forward carry. Match executed commands through clipping; noisy executed labels and noiseless parent locations are different targets.
+
+Evaluate deterministic `clip(location)` from original starts. Use the same fixed sentinels for both arms; only eligible candidates advance to the full 384-ID retention and eight-task recovery checks, then conditional 407 evaluation within a separately registered budget. Report every missing test as untested. This can establish local retention/recovery differences for these candidates; it cannot establish universal stability, superiority of GEM, novelty, or unseen-layout generalization. Keep T501 unless its explicit closed-loop gate passes. Eleven uncovered tasks remain a separate exploration problem.

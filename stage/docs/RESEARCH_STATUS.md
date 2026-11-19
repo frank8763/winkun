@@ -1,3 +1,7 @@
+2026-11-19 T647原起点成功覆盖对照已完成代码/零native零optimizer真实GPU预检，尚未注册/run/launch。T646198条新成功轨迹8任务逐SHA及全部真实history/hidden/密度/reward重构通过；11零成功任务中10接触主导、field4offset3全超时，详情day_20261119/t647/COVERAGE_ANALYSIS。拟sparse每任务首条8 vs dense198任务等权、同原T501全Actor/Adam1e-4/192步/384四遍，各先完整field24+旧6、14exact，旧6+原field5保持且新增才条件同模型407；不改reward/时限、不称SIL/AWAC原创。源与预检已准备，拟独立注册3h/24M物理860cmd6000main/Actor live-shadow-history各384/0Critic-extra-pref/新增200MiB/global10GiB/free40GiB，待新具体窗口额度确认，不使用已结束09:00夜间余额。GPU/四核Stage8/10/12/14/Phase隔离/4GiB无swap，先释放训练再native；T646补备份仅新窗口内有限恢复、不重启旧科学。
+
+2026-11-19 T646离线多机制夜间接力结束：COMPLETE，remote=PENDING_LOCAL_OFFLINE_RAW_RETAINED；全部实际轮次/384保持/条件407见overnight_20261118/FINAL_REPORT，不称泛化或真机通过。
+
 2026-11-18 用户已批准T646独立夜间128M物理3000cmd36000main、Actor live/shadow/history各2304、0Critic/额外optimizer预检、根3GiB/global10GiB/free40GiB；正式唯一root已注册，源精确同步后唯一后台启动。2026-11-19 07:30停学、08:15前停native、09:00全停；覆盖接力更严07:45 native，实际余额准入，不无限重复。384原始输入离线就绪、三臂GPU预检PASS、物理核Stage8/10/12/14与Phase无重叠。当前注册不等于已经运行，实际以launch/DRIVER_STARTED/status为准；健康期间不并发外写runs/改源/backup。
 
 2026-11-18 T646夜间接力准备完成、尚未注册/启动：用户已确认2026-11-19 09:00全停、runs总上限10GiB；独立夜间计算/优化器额度仍待确认。384原始成功79,412,164B逐SHA离线就绪，三臂真实GPU梯度/因果批次/原函数/0optimizer预检PASS，Phase物理核无重叠。三机制各最多4轮×192学习，条件同候选407、48邻域+exact，后续19固定场地任务各最多32自主采样+exact，0自动RL/Critic；拟128M物理3000cmd36000main/Actor live-shadow-history各2304/本夜根3GiB，总全局10GiB/free40GiB。原T501保留；T645R拒绝且完整审计远端PASS，不重启。详overnight_20261118/PLAN/BUDGET/PREFLIGHT。
