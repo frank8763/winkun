@@ -1,27 +1,20 @@
 {
-  "epoch": 1795186268.1756437,
-  "state": "T672_REGISTERED_AWAITING_SOURCE_SYNC",
-  "active_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t672_full_suite_onpolicy",
-  "unit": "stage-t672.service",
+  "epoch": 1795207974.808932,
+  "state": "T673_REGISTERED_AWAITING_SOURCE_SYNC",
+  "active_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t673_all_task_signal_gate",
+  "unit": "stage-t673.service",
   "actual_status": {
-    "state": "ACTIVE",
-    "child_pid": 690916,
-    "pid": 690916,
-    "driver_pid": 690911,
-    "child": "t671_joint_outcome_feasibility",
-    "action": "main",
-    "epoch": 1795178840.8239365,
-    "physics": 1879667,
-    "commands": 76,
-    "completed": 70
+    "state": "COMPLETE",
+    "all_science_stopped": true,
+    "epoch": 1795202798.4380507
   },
   "new_campaign_science_started": true,
-  "new_campaign_physics": 10658069,
-  "new_campaign_commands": 543,
-  "new_campaign_optimizer": 0,
-  "new_campaign_registration_pending": true,
+  "new_campaign_physics": 83876237,
+  "new_campaign_commands": 4039,
+  "new_campaign_optimizer": 4,
+  "new_campaign_registration_pending": false,
   "current_job_must_exit_before_next": true,
-  "next_action": "Systematic all407 onpolicy 8-batch collection and per-batch independent audits,0optimizer. Only after full coverage review prepare finite joint RL; no sparse counterexample patch repetition.",
+  "next_action": "Verify exact full source tree on GitHub then unique T673 diagnostic launch. No learning or physics in this diagnostic.",
   "authorization": "AUTHORIZATION.json",
   "prior_group_current_ledger": {
     "physics": 64463885,
@@ -946,7 +939,7 @@
   "user_latest_delegation_supersedes_old_evening_stop_for_future_campaigns": true,
   "raw_archive_cleanup_trigger": 8589934592,
   "global_cap": 10737418240,
-  "current_global_bytes": 2188095737,
+  "current_global_bytes": 2609501536,
   "minimum_free_actual": 223643844608,
   "resource_probe": {
     "state": "PASS",
@@ -1059,14 +1052,14 @@
     }
   ],
   "network_now_user_available": true,
-  "next_job_spec": "NEXT_JOB_SPEC.md",
-  "next_job_worst_physics": 373344,
-  "next_job_max_commands": 22,
+  "next_job_spec": "t673/PLAN.md",
+  "next_job_worst_physics": 0,
+  "next_job_max_commands": 0,
   "next_job_new_optimizer": 0,
-  "next_launch_condition": "T665 finite queue, independent audits, postscience transport and source sync fully exited; then unique new registration under weekend budget",
-  "source_sync_of_weekend_docs": "VERIFIED_b13fb1f58f3df88e41b504be4a424994c890827b",
+  "next_launch_condition": "No next launch until T672 all finite batches/audits and scientific PID exit; review all407 support before separately registered learning.",
+  "source_sync_of_weekend_docs": "VERIFIED_0162c739b28babfd9a449b4c76f257a82c32de18",
   "method_note": "RETENTION_PRIMARY_SOURCES.md completed; TaSIL/CPO/PCPO/DAgger/PolicyConsolidation primary sources checked",
-  "next_learning_pilot": "Only after full-history diagnostic gate; one nominal-vs-causal-response matched PPO candidate per arm,4Actor each, no rescue sweep",
+  "next_learning_pilot": "Canceled derivative and BC pilots; after T672 all407 support review preregister one finite joint outcome RL job.",
   "primary_research_completed": true,
   "completed_current_coverage_batches": 17,
   "all_completed_current_children_audit_pass": true,
@@ -1076,10 +1069,10 @@
   "prior_group_final_report": "stage/docs/day_20261120/t665/FINAL_REPORT.json",
   "prior_group_coverage_batches_completed": 18,
   "prior_group_raw_remote": "PENDING_BACKUP_TIMEOUT_LOCAL_RAW_RETAINED",
-  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t671/FINAL_REPORT.json",
+  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t672/FINAL_REPORT.json",
   "response_gate": "SCIENTIFIC_GATE_FAILED",
   "response_derivative_learning_cancelled": true,
-  "source_remote": "cf7a3bd2216af52e266ac6f5b46585d12bf4b9c5",
+  "source_remote": "2ec89a93c1a11ca560d5237e8077208ca99b04fb",
   "recovery_qualified_ids": [
     "dev_task6_20",
     "dev_task6_23"
@@ -1115,5 +1108,28 @@
     "audit": "PASS"
   },
   "planned_collection_batches": 8,
-  "completed_collection_batches": 0
+  "completed_collection_batches": 8,
+  "supervision_checked_epoch": 1795196863.9028077,
+  "active_status": {
+    "state": "COMPLETE",
+    "all_science_stopped": true,
+    "epoch": 1795202798.4380507
+  },
+  "last_checked_epoch": 1795208137.3248422,
+  "working_hypotheses_note": "WORKING_HYPOTHESES_AFTER_T671.md",
+  "posthoc_KL_scale_note": "t671/POSTHOC_KL_SCALE_CORRECTION.md",
+  "T671_KL_sigma_mismatch": {
+    "logged_denominator": 0.2,
+    "actual_sigma": [
+      0.05,
+      0.05
+    ],
+    "factor": 16,
+    "corrected_max": 0.0003142286937924286,
+    "threshold": 0.01,
+    "changes_admission": false,
+    "full407_rejection_unchanged": true
+  },
+  "user_latest_direction": "Actively reason and develop falsifiable combinations; after all407 support review choose one main learning variable, not blind sparse patching or unvalidated components.",
+  "T665_first_evidence_batch_verified": "WEEKEND_T665_PRIMARY_EVIDENCE_0"
 }

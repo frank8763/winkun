@@ -1,0 +1,7 @@
+# T672全407结果采样已完成
+
+8批COMPLETE且各独立auditPASS，全科学/driver/helper已退出。1724fresh完整历史和1724exact，73218168物理3496cmd，16025.522science秒+183.013audit秒，0Actor/Value/optimizer。记录来自同一冻结T501权重sigma.05策略，不是新确定性性能或泛化。
+
+逐ID按原安全边界与collision-cost：341样本全安全、50mixed、11全碰撞、5全零。原T671新丢三ID本次有可区分结果：dev6_13和dev6_25各1safe/3collision；dev7_17为3safe/1timeout。24field仅sector0_offset1和sector7_offset2有safe/zero差异；多数失败field样本同回报，不能以LOO零梯度当保护或称覆盖已解决探索。4或8次观察有限，exact不增加独立样本。完整列表见SUPPORT_REVIEW.json。
+
+下一T673仅零更新逐任务score/单轨迹敏感性/两个解析Adam目标方向与真实sigma条件KL诊断，先source精确锁定。是否学习另依据结果和一手审查独立注册，不沿旧稀疏4ID无限拟合。T501保留，模型成功集合不拼接。原raw保留，远端大部分pending；科学退出窗口完成T665首4成员354127B全远端解包逐SHA，删除0，不冒充全部备份。

@@ -1,5 +1,5 @@
 {
-  "state": "ADDITIONAL_SOURCE_WALL_TO_RECONCILE_AFTER_ACTIVE_SCIENCE_EXIT",
+  "state": "RECONCILED_CONSERVATIVE_UPPER_WALL",
   "do_not_double_charge": true,
   "source_sync_commits": [
     "b13fb1f58f3df88e41b504be4a424994c890827b",
@@ -7,12 +7,31 @@
     "13725253d5b92333fd9dc922b55b115854ee9510",
     "e9e10b01935e186792f771cf17da0b0984f625aa",
     "37a686f23c8a3362e01cf3ff128e0363c16f6c28",
-    "cf7a3bd2216af52e266ac6f5b46585d12bf4b9c5"
+    "cf7a3bd2216af52e266ac6f5b46585d12bf4b9c5",
+    "2ec89a93c1a11ca560d5237e8077208ca99b04fb"
   ],
   "upper_seconds_each": 300,
-  "total_upper_seconds": 1800,
+  "total_upper_seconds": 2100,
   "raw_backup_seconds_new_campaign": 0,
   "old_T665_backup_is_old_group_not_new_campaign": true,
   "charged_epoch": 1795177799.6208496,
-  "epoch": 1795178405.032372
+  "epoch": 1795186828.126872,
+  "T672_source_attempts": {
+    "metadata_size_rejected_before_science": {
+      "attempt_id": "T672_METADATA_OVER_2M",
+      "upper_seconds": 300,
+      "charged": false
+    },
+    "verified_sync_remote_commit": "2ec89a93c1a11ca560d5237e8077208ca99b04fb",
+    "verified_sync_upper_seconds": 300,
+    "science_native_during_transport": 0,
+    "reconcile_after_science_exit": true
+  },
+  "additional_charged_seconds": 1200,
+  "newly_charged_source_commits": [
+    "37a686f23c8a3362e01cf3ff128e0363c16f6c28",
+    "cf7a3bd2216af52e266ac6f5b46585d12bf4b9c5",
+    "2ec89a93c1a11ca560d5237e8077208ca99b04fb"
+  ],
+  "reconciled_epoch": 1795207658.2751288
 }

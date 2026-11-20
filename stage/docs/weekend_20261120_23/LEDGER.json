@@ -1,9 +1,9 @@
 {
-  "physics": 10658069,
-  "commands": 543,
-  "science_seconds": 2529.8890450000763,
-  "audit_seconds": 44.28686738014221,
-  "transport_seconds": 1208.6604945659637,
+  "physics": 83876237,
+  "commands": 4039,
+  "science_seconds": 18556.616961479187,
+  "audit_seconds": 227.30017757415771,
+  "transport_seconds": 2414.935980319977,
   "Actor_live": 4,
   "Actor_shadow": 4,
   "Actor_independent": 4,
@@ -94,22 +94,47 @@
     },
     {
       "id": "T672",
-      "state": "RESERVED",
+      "state": "COMPLETE",
       "max_physics": 102143768,
       "max_commands": 3496,
       "main_seconds": 48000,
-      "audit_seconds": 4800,
+      "audit_seconds": 183.0133101940155,
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t672_full_suite_onpolicy",
-      "actual_physics": 0,
-      "actual_commands": 0,
-      "science_seconds": 0,
-      "completed_children": []
+      "actual_physics": 73218168,
+      "actual_commands": 3496,
+      "science_seconds": 16025.521806001663,
+      "completed_children": [
+        "nonfield_00",
+        "nonfield_01",
+        "nonfield_02",
+        "nonfield_03",
+        "nonfield_04",
+        "nonfield_05",
+        "field_00",
+        "field_01"
+      ]
+    },
+    {
+      "id": "T673",
+      "state": "RESERVED",
+      "max_physics": 0,
+      "max_commands": 0,
+      "main_seconds": 1800,
+      "audit_seconds": 1800,
+      "preflight_seconds": 1.2061104774475098,
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t673_all_task_signal_gate"
     }
   ],
   "charged_source_sync_commits": [
     "13725253d5b92333fd9dc922b55b115854ee9510",
     "2947f75d8567a539fd614c42cd73b57e9993c879",
     "b13fb1f58f3df88e41b504be4a424994c890827b",
-    "e9e10b01935e186792f771cf17da0b0984f625aa"
+    "e9e10b01935e186792f771cf17da0b0984f625aa",
+    "37a686f23c8a3362e01cf3ff128e0363c16f6c28",
+    "cf7a3bd2216af52e266ac6f5b46585d12bf4b9c5",
+    "2ec89a93c1a11ca560d5237e8077208ca99b04fb"
+  ],
+  "charged_transport_attempts": [
+    "T672_METADATA_OVER_2M"
   ]
 }
