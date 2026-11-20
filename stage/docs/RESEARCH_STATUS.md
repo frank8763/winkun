@@ -1,3 +1,7 @@
+2026-11-20 T661用户要求启动，单变量保留上一批Value代码/真实64历史与387参照/GPU零优化器预检/CPU自有组暂停恢复及GPU有界让出回归PASS；尚无科学run或新授权，旧09:00截止已过。复用T660S mean第二块同T501策略64条onpolicy轨迹及历史零Value对照；35失败原优势全零，载入第一块Value后均有非零且各有负优势决策，梯度确有变化，非导航已改善。仅新4Actor/16Value及等量影子/独立，screen36+exact20，保旧并新增才剩371分块补407；待独立2h/12,037,198物理433cmd/5400main/192MiB确认，总10GiB及四核/GPU让出Phase不变。详day_20261120/t661/PLAN/PREFLIGHT/PREPARED；不自动沿用旧夜间额度。
+
+T660S剩余夜间RL与采集接力结束：FAILED，remote=REMOTE_PENDING_LOCAL_OFFLINE_RAW_RETAINED；真实branch/round/384保持与387目标/条件407及覆盖数据见overnight_20261119/resume/FINAL_REPORT，前两监督支见recovery，缺测null，非普遍抗遗忘或真机通过。
+
 2026-11-19 用户再次明确“继续开启通宵的，不要犯这种中断的错误了”：T660R两BC各256实际/影子/独立均auditPASS、两次拒绝无保留；ppo_mean在任何物理/更新前因Phase进程亲和覆盖Stage物理核保护停止，当前严格资源probe已无重叠。新T660S仅续未执行ppo_mean/ppo_tail与冻结画像/采集，已用6,618,220步254cmd/512Actor及1950.724main完整扣账，剩233,381,780步6246cmd38047main/Actor各48/Value各192，新存储从7GiB扣旧目录37196108B，总10GiB；07:30学08:15native09:00全停不变。不重跑已完BC、不调Phase。资源策略改严格重叠时SIGSTOP自身Stage科学进程组，独立同cgroup助手持续探测，无重叠才SIGCONT，暂停墙钟计费原硬截止不延；真实旧scanner重叠回放红复现与等待恢复/自有inert组STOP-CONT/外cgroup拒绝/原deadline拒绝回归PASS。备份Release实际943926B完整解析PASS，修旧256KiB截断；科学继续离线。新root已注册待source后唯一stage-t660s，实际以DRIVER_STARTED/首fresh为准；旧raw/失败与审计保持，详overnight_20261119/resume/PLAN/RESOURCE_REGRESSION/INTERRUPTION_REVIEW/PREFLIGHT。
 
 2026-11-20 T660离线联合学习多支线结束：FAILED，remote=REMOTE_PENDING_LOCAL_OFFLINE_RAW_RETAINED；真实branch/round/384保持与387目标/条件407及覆盖数据见overnight_20261119/FINAL_REPORT，缺测null，非普遍抗遗忘或真机通过。

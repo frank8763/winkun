@@ -1,0 +1,72 @@
+{
+  "state": "FAILED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660s_remaining_night_relay/driver.py\", line 91, in main\n    child('full407_'+label,p['profile_template'],initial=model,frozen_jobs=p['evaluation_jobs'],frozen_seeds=None,frozen_full=False)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660s_remaining_night_relay/driver.py\", line 53, in child\n    call('main' if learning else 'frozen_main',name,c['main_seconds'],children);science_end=time.time()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660s_remaining_night_relay/driver.py\", line 22, in call\n    try:c.wait(timeout=seconds);assert c.returncode==0,(action,name,c.returncode)\nAssertionError: ('frozen_main', 'full407_baseline', 1)\n",
+  "ledger": {
+    "physics": 37221085,
+    "commands": 1604,
+    "main_seconds": 9229.905046224594,
+    "Actor_live": 16,
+    "Value_live": 64,
+    "children": [
+      {
+        "name": "ppo_mean",
+        "kind": "learn",
+        "state": "COMPLETE",
+        "audit": {
+          "state": "PASS",
+          "all_complete_history_and_density": true,
+          "all_live_shadow_independent_equal": true,
+          "independent_Actor": 8,
+          "independent_Value": 32,
+          "full_Actor_Value_Adam_rollback": true,
+          "new_native": 0
+        },
+        "physics": 10054378,
+        "commands": 392,
+        "main_seconds": 2827.157273054123,
+        "Actor_live": 8,
+        "Value_live": 32,
+        "counts_exact": true
+      },
+      {
+        "name": "ppo_tail",
+        "kind": "learn",
+        "state": "COMPLETE",
+        "audit": {
+          "state": "PASS",
+          "all_complete_history_and_density": true,
+          "all_live_shadow_independent_equal": true,
+          "independent_Actor": 8,
+          "independent_Value": 32,
+          "full_Actor_Value_Adam_rollback": true,
+          "new_native": 0
+        },
+        "physics": 10149964,
+        "commands": 392,
+        "main_seconds": 2804.6682636737823,
+        "Actor_live": 8,
+        "Value_live": 32,
+        "counts_exact": true
+      },
+      {
+        "name": "full407_baseline",
+        "kind": "profile",
+        "state": "FAILED",
+        "audit": null,
+        "physics": 17016743,
+        "commands": 820,
+        "main_seconds": 3598.079509496689,
+        "Actor_live": 0,
+        "Value_live": 0,
+        "counts_exact": true
+      }
+    ],
+    "denied": []
+  },
+  "best": null,
+  "all_scientific_processes_stopped": true,
+  "remote": "REMOTE_PENDING_LOCAL_OFFLINE_RAW_RETAINED",
+  "no_unseen_layout_or_universal_nonforgetting_claim": true,
+  "epoch": 1795101233.3830366,
+  "backup_error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t660s_remaining_night_relay/driver.py\", line 117, in main\n    assert c.returncode==0;report['remote']='FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED'\nAssertionError\n"
+}
