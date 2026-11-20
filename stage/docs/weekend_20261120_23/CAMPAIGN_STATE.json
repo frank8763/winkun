@@ -1,27 +1,27 @@
 {
-  "epoch": 1795175741.049846,
-  "state": "T668_REGISTERED_AWAITING_SOURCE_SYNC",
-  "active_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t668_observed_departure_recovery",
-  "unit": "stage-t668.service",
+  "epoch": 1795176633.5962052,
+  "state": "T669_REGISTERED_AWAITING_SOURCE_SYNC",
+  "active_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t669_old_task_onpolicy_signal",
+  "unit": "stage-t669.service",
   "actual_status": {
     "state": "ACTIVE",
-    "child_pid": 663585,
-    "pid": 663585,
-    "driver_pid": 663577,
-    "child": "t666_failure_full_history",
+    "child_pid": 674301,
+    "pid": 674301,
+    "driver_pid": 674285,
+    "child": "t668_observed_departure_recovery",
     "action": "main",
-    "epoch": 1795174407.5246196,
-    "physics": 115287,
-    "commands": 10,
-    "completed": 6
+    "epoch": 1795175819.5660133,
+    "physics": 34200,
+    "commands": 5,
+    "completed": 1
   },
   "new_campaign_science_started": true,
-  "new_campaign_physics": 272132,
-  "new_campaign_commands": 22,
+  "new_campaign_physics": 406000,
+  "new_campaign_commands": 36,
   "new_campaign_optimizer": 0,
   "new_campaign_registration_pending": true,
   "current_job_must_exit_before_next": true,
-  "next_action": "T668 fixed four actual-student first-cm T501 recovery and exact,0optimizer; only successful observed recovery can supply corrective labels, no takeover-time sweep",
+  "next_action": "T669 fixed four old counterexample IDs x8 true onpolicy original-start full+exact,0optimizer; then outcome score support before result-constrained RL pilot",
   "authorization": "AUTHORIZATION.json",
   "prior_group_current_ledger": {
     "physics": 64463885,
@@ -946,8 +946,8 @@
   "user_latest_delegation_supersedes_old_evening_stop_for_future_campaigns": true,
   "raw_archive_cleanup_trigger": 8589934592,
   "global_cap": 10737418240,
-  "current_global_bytes": 2155993044,
-  "minimum_free_actual": 224670031872,
+  "current_global_bytes": 2160221156,
+  "minimum_free_actual": 224362110976,
   "resource_probe": {
     "state": "PASS",
     "stage_cpus": [
@@ -1068,7 +1068,13 @@
   "prior_group_final_report": "stage/docs/day_20261120/t665/FINAL_REPORT.json",
   "prior_group_coverage_batches_completed": 18,
   "prior_group_raw_remote": "PENDING_BACKUP_TIMEOUT_LOCAL_RAW_RETAINED",
-  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t667/FINAL_REPORT.json",
+  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t668/FINAL_REPORT.json",
   "response_gate": "SCIENTIFIC_GATE_FAILED",
-  "response_derivative_learning_cancelled": true
+  "response_derivative_learning_cancelled": true,
+  "source_remote": "13725253d5b92333fd9dc922b55b115854ee9510",
+  "recovery_qualified_ids": [
+    "dev_task6_20",
+    "dev_task6_23"
+  ],
+  "recovery_gate_for_BC": false
 }

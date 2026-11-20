@@ -1,3 +1,5 @@
+2026-11-20 T668 COMPLETE/auditPASS：4真实偏离恢复仅dev_task6_20/23安全成功，旧21/hold6_06失败，133868物理14cmd/0更新，全部PID退。未达到3至4项纠偏准入，不训练BC。T669已零更新预检及独立注册，固定四反例原起点T501sigma.05各8full+exact，1493376物理70cmd/0更新/128MiB，补此前fresh32缺的旧任务真实成败；等待源码核验后唯一启动。后续先结果score支持再决定约束RL对照，不伪造teacher标签、不扫接管时间/seed。周末ledger及t669/PLAN为准，Stage/Phase隔离。
+
 2026-11-20 T667 COMPLETE/独立auditPASS但SCIENTIFIC_GATE_FAILED：32前缀28非零跨4对，JVP数值全过；secant相对残差旧20约27.3%、旧21约50—57%、旧23约6.2%、hold6_06约20—21%，仅2/4对<25%未达3对。停止原导数保持训练，不调门槛救。T668已零步预检及独立登记，四真实学生首次1cm决策14/25/21/29前缀后T501自身carry恢复，4full+4exact/186672物理14命令/0更新/64MiB，源同步后唯一启动，条件恢复不当新单Actor成功。见weekend_20261120_23/t667/FINDINGS及t668/PLAN；原始与备份pending全保留。
 
 2026-11-20 T666 COMPLETE/auditPASS：四真实遗忘ID均基准GOAL/对应候选CONTACT，8full+8exact全部旧数组及积分精确，272132物理22cmd/0更新，所有科学PID退出。新T667完整因果历史JVP/数值差分/secant可用性门槛已零物理零优化器预检并注册，0native0optimizer、600s计算+600s独立重构；源码同步后启动。仅网络响应非物理闭环导数，科学门槛PASS前不接学习，首次float32预检误差证据保留已显式float64修复且阈值未变。周末授权至11月23日09:00及ledger见weekend_20261120_23，raw全本地保留/远端pending。
