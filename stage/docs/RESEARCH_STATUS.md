@@ -1,3 +1,5 @@
+2026-11-20 T669 COMPLETE/auditPASS，四退化旧ID T501sigma.05各8样本安全成功4/8、3/8、7/8、4/8，32full+32exact全密度/因果carry/数组积分通过，1159856物理70cmd/0更新。全部科学退，T670零物理零优化器逐旧任务结果score梯度/Adam位移半空间投影可行性已预检并注册，600计算+600独立重算；来源64同policy/sigma旧field数据复用非新独立，源码核验后启动。只有支持与可行新目标上升方向才准匹配RLpilot，不把GEM/PCPO/Adam投影近邻称原创或安全保证。见weekend_20261120_23/OUTCOME_CONSTRAINT_PRIMARY_REVIEW及t670/PLAN。
+
 2026-11-20 T668 COMPLETE/auditPASS：4真实偏离恢复仅dev_task6_20/23安全成功，旧21/hold6_06失败，133868物理14cmd/0更新，全部PID退。未达到3至4项纠偏准入，不训练BC。T669已零更新预检及独立注册，固定四反例原起点T501sigma.05各8full+exact，1493376物理70cmd/0更新/128MiB，补此前fresh32缺的旧任务真实成败；等待源码核验后唯一启动。后续先结果score支持再决定约束RL对照，不伪造teacher标签、不扫接管时间/seed。周末ledger及t669/PLAN为准，Stage/Phase隔离。
 
 2026-11-20 T667 COMPLETE/独立auditPASS但SCIENTIFIC_GATE_FAILED：32前缀28非零跨4对，JVP数值全过；secant相对残差旧20约27.3%、旧21约50—57%、旧23约6.2%、hold6_06约20—21%，仅2/4对<25%未达3对。停止原导数保持训练，不调门槛救。T668已零步预检及独立登记，四真实学生首次1cm决策14/25/21/29前缀后T501自身carry恢复，4full+4exact/186672物理14命令/0更新/64MiB，源同步后唯一启动，条件恢复不当新单Actor成功。见weekend_20261120_23/t667/FINDINGS及t668/PLAN；原始与备份pending全保留。

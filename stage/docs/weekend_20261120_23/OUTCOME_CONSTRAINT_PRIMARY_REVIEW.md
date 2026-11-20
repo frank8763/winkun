@@ -1,0 +1,44 @@
+# Outcome constraints: primary-source review
+
+2026-11-20. Stage-only research note; no simulator, optimizer, scientific execution, protocol change, or other file edit. Read repository instructions, current Stage status/context/progress/migration records, weekend plan, T667/T668 findings, and T669 plan/summary/audit. This is selective evidence review, not complete historical-chat review.
+
+## Decision
+
+**Proceed with the bounded zero-update score audit; permit one matched pilot only if support and feasible ascent pass.** T665's nominal-retention candidates gained five/six while losing two old IDs; full407 rejected them. T667 passed numerical JVP checks but only 2/4 secant gates; T668 recovered 2/4 actual student histories, stopping those derivative/BC branches. T669 now supplies direct outcome variation: safe/collision/timeout counts are 4/3/1, 3/5/0, 7/1/0, 4/3/1 for old20/21/23/hold6_06. Audit PASS establishes reconstruction, not useful gradients. These selected IDs were absent from fresh32 training but present in deterministic387 replay. [Local evidence](t669/PLAN.md), [summary](../../runs/t669_old_task_onpolicy_signal/summary.json), [audit](../../runs/t669_old_task_onpolicy_signal/audit.json).
+
+## Prior art and unsupported claims
+
+- **CPO**, §§3–6, constrains expected auxiliary costs using divergence-based performance bounds and a practical approximate trust-region solve. Its recovery/line-search machinery acknowledges approximation and infeasibility. Four empirical tangent halfspaces with Euclidean Adam projection do not inherit its guarantees, especially for deterministic per-ID success. [Achiam et al., ICML 2017](https://proceedings.mlr.press/v70/achiam17a/achiam17a.pdf).
+- **PCPO**, §§3–4, explicitly takes a reward-improvement step and then projects against cost constraints. Practical computation linearizes reward/cost and quadratically approximates policy distance. Its theoretical bounds concern the specified policy-space metric, divergence and expected-cost setting, not arbitrary parameter projections or finite-sample collision guarantees. [Yang et al., ICLR 2020](https://arxiv.org/html/2010.03152).
+- **GEM**, §3, Eq.8, already solves nearest Euclidean projection subject to a separate gradient halfspace for each remembered task. **A-GEM**, §4, replaces these with an average-memory constraint; an average can permit individual-task deterioration. Keeping four separate outcome constraints is GEM-like prior art, not a novel projection algorithm or universal retention result. [GEM](https://proceedings.neurips.cc/paper/2017/file/f87522788a2be2d171666752f97ddebb-Paper.pdf), [A-GEM](https://arxiv.org/pdf/1812.00420).
+- **OGD**, §3, preserves outputs locally by projecting against remembered output Jacobians. **Adam-NSCL**, §4, explicitly projects candidate Adam updates into approximate feature-covariance null spaces. Neither establishes closed-loop navigation retention from nominal histories; importantly, projecting an optimizer displacement is already established. [OGD](https://proceedings.mlr.press/v108/farajtabar20a/farajtabar20a.pdf), [Adam-NSCL](https://arxiv.org/pdf/2103.07113). The latter's author repository was inspected as an implementation locator, not executed or fully audited: [author code](https://github.com/ShipengWang/Adam-NSCL).
+
+## What the score audit can establish
+
+For task k, eight original-start trajectories, fixed positive scale S, terminal Y in {+1 safe arrival, -1 collision, 0 timeout}, define
+
+`b_i = sum_{j!=i}Y_j/7; g_k = (1/8S) sum_i (Y_i-b_i) sum_t grad log p_theta(a_it | H_it)`.
+
+This estimates the gradient of the stochastic episode objective divided by S at its behavior policy, under independent within-task draws, fixed task selection/initialization, valid likelihoods, regular differentiation and integrability assumptions. Conditional independence makes `E[b_i score_i]=0`; detach baselines. LOO excludes the evaluated trajectory, not merely its timestep. Exact replays add no samples. Fixed S preserves episode weighting; dividing each episode by its own length changes the objective. Multiple-sample baseline variance reduction is established: [Kool et al., author source](https://wouterkool.github.io/publication/buy-4-samples-free-baseline/). This paragraph's conditional argument is our derivation, not an unconditional theorem attributed to that source.
+
+Reconstruct the whole causal history/carry under the evaluated parameters. Keep applied actions fixed during likelihood differentiation; do not differentiate simulator transitions. For clipped Gaussians, boundary atoms use tail probabilities, interior actions use density. A Gaussian density evaluated at a clipped endpoint is wrong. [Fujita and Maeda, CAPG, §3](https://arxiv.org/pdf/1802.07564). Check recorded atom flags/log-probabilities, stable tail gradients, finite differences and saturation; artificial probability floors can erase scores. Deterministic clipping saturation and stochastic atom scores differ. Sigma .05 outcome gradients therefore do not certify deterministic `clip(mu)` acceptance.
+
+Report each task's score norm, outcome-weighted contributions, Gram rank/conditioning, directional differences and leave-one-trajectory sensitivity. Mixed labels alone do not imply nonzero usable parameter gradients; old23 has only one collision. These are support diagnostics, not confidence bounds. Reused same-policy/sigma prior64 data supply 24 field tasks ×2; eight old anchors stay outside the field mean. Verify policy/density hashes and complete histories; reuse is not new independent sampling.
+
+## Adam, feasibility and finite checks
+
+Audit the cone `C={d:Gd>=0}` against both the field gradient and the combined soft-objective direction. Zero is always feasible; positive useful ascent is not. Report projected norm, `g_field^T d`, all four margins and removed displacement. If feasible field ascent disappears, do not launch a learning pilot or rescue it with threshold/seed sweeps.
+
+The first fresh Adam step has an analytical elementwise preconditioner, but moments, bias correction, epsilon, clipping and subsequent gradients determine the actual stateful displacement. Projecting a raw gradient then applying Adam need not preserve halfspaces. Use a transactional real proposal `d0=theta_Adam-theta_before`, then solve `min_d ||d-d0||²/2` subject to `Gd>=0`. [Adam, Algorithm 1](https://arxiv.org/pdf/1412.6980).
+
+Enumerating 16 active subsets is sufficient for four constraints only with rank-aware solves, primal feasibility, nonnegative multipliers, stationarity and complementarity checks; singular Gram cases need explicit handling. Check the represented final displacement after parameter casting. Predeclare numerical tolerances. Define whether G remains the initial tangent or is recomputed from the fixed behavior-data surrogate; these differ. Evaluate the nonlinear old-task surrogate after every actual projected displacement; tangent feasibility alone is insufficient. Reject transactionally, restoring parameters and all Adam moments/step counters. On acceptance, specify retention of proposed optimizer state.
+
+## Single-factor pilot and acceptance
+
+Both arms must use identical data, initialization, optimizer state, task-balanced soft episode-outcome objective, nominal387 replay weight, ratio clipping, four Adam opportunities, rollback and evaluation gates. Treatment adds displacement projection; baseline uses identity projection. The baseline must also receive the four old outcome batches. Otherwise improved coverage/objective and projection are confounded. Apply the same nonlinear checks to both arms and count attempted/rejected updates separately.
+
+At initialization the score estimator has its on-policy interpretation. Four clipped-ratio passes reuse one behavior batch: later gradients optimize a surrogate, not fresh unbiased full-outcome gradients. Per-decision ratios omit changed state occupancy; clipping does not supply a full-trajectory return theorem. Call the nonlinear check an empirical surrogate check. [PPO, §§2–3](https://arxiv.org/pdf/1707.06347).
+
+One bounded pilot is warranted only after that audit passes. Require the same checkpoint to preserve all original384 and gain an original-start success under complete407 verification and independent audit. Four selected constraints protect neither every old task nor future policies. Report per-ID gains/losses, collisions/timeouts and missing tests; no universal safety, retention, generalization or novelty claim follows from projection.
+
+Reading covered cited method/algorithm sections and relevant limitations; it was not exhaustive proof or author-code reproduction. OpenReview's Kool PDF challenged browser verification; only the author abstract was available, so the LOO reasoning above is explicitly derived. No budgets or launches are authorized by this note.
