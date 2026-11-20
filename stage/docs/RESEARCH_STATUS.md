@@ -1,3 +1,7 @@
+2026-11-20 14时监督定位T664R在最后碰撞支线启动前，helper读取非原子status触发JSONDecodeError，父主管检测退出停止；已完成三项独立auditPASS、raw本地全保留，TLS备份失败不报远端成功。独立T665已完成原代码红复现/原子写及有界读恢复/持续损坏拒绝/同候选36+exact20及loader/canonicalworker/同策略复用零物理零优化器预检并注册，尚待源码核验后唯一启动。先补低噪声候选剩371并独立合并407，再仅原未执行sigma.05碰撞至多两块及有限采集；所有累计消耗从原T663240M/6500/28000+3600/Actor各48Value192/7GiB扣除，19:00学19:45native20:30全停不延。screen7/24新增2但尚非384全保或晋升。详day_20261120/t665/PLAN/AUTHORIZATION/BUDGET/PREFLIGHT。
+
+2026-11-20 T664R白天有界四臂接力结束：FAILED，remote=REMOTE_PENDING_LOCAL_OFFLINE_RAW_RETAINED；实际各臂逐ID保持/场地新增/条件407/设备及审计见day_20261120/t664r/FINAL_REPORT；缺测null，不自动晋升或声称泛化。
+
 2026-11-20 T664前缀audit在任何更新前因387参照每次完整2187源/223.8MB扫描耗尽300秒，0新物理/0optimizer；旧raw保留，postscience备份受控中断由新末尾补。T664R仅完整扫描改5秒一次、每参照SHA逐份保留，原guard387次扫描红复现/新1次加到期拒绝绿，完整零步预检PASS。继续用户已批准紧凑剩余队列，同Actor/Value额度不增加，进一步扣已耗审计和旧目录存储；20:00回查、19:00学19:45native20:30全停不延。详day_20261120/t664r/PLAN/AUDIT_READ_FAILURE/BOUNDARY_RECONCILIATION/PREFLIGHT，实际以新DRIVER_STARTED和stage-t664r为准。
 
 2026-11-20 用户要求缩短每运行段/20:00回来查看，T663于low首轮完整ROUNDS落盘后受控停止，原源/协议/raw保留；baseline3轮auditPASS、low首轮field8/24丢旧00/03已保存。T664紧凑剩余队列代码/完整同策略64+exact复用/成熟Adam分离/接续状态位精确/实际入口零物理零优化器预检PASS，待唯一登记launch。仅low再1块、两碰撞各最多2块；复用两组首轮采样不作新独立样本，先audit原low首轮。原授权总量扣账：已用上界20,734,594物理787cmd/5770.62main/audit51.24s、Actor live16 shadow16 independent12、Value64/64/48；原240M/6500/28000main/3600audit/各48Actor各192Value/7GiB不扩。19:00学19:45native20:30全停不延，20:00查看。详day_20261120/t664/PLAN/BOUNDARY_RECONCILIATION/PREFLIGHT；停止为用户排程调整非导航通过或意外失败。
