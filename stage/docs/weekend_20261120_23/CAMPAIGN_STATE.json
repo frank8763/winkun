@@ -1,27 +1,27 @@
 {
-  "epoch": 1795178300.8933592,
-  "state": "T671_REGISTERED_AWAITING_SOURCE_SYNC",
-  "active_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t671_joint_outcome_feasibility",
-  "unit": "stage-t671.service",
+  "epoch": 1795186268.1756437,
+  "state": "T672_REGISTERED_AWAITING_SOURCE_SYNC",
+  "active_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t672_full_suite_onpolicy",
+  "unit": "stage-t672.service",
   "actual_status": {
     "state": "ACTIVE",
-    "child_pid": 680547,
-    "pid": 680547,
-    "driver_pid": 680541,
-    "child": "t669_old_task_onpolicy_signal",
+    "child_pid": 690916,
+    "pid": 690916,
+    "driver_pid": 690911,
+    "child": "t671_joint_outcome_feasibility",
     "action": "main",
-    "epoch": 1795176712.6960576,
-    "physics": 220544,
-    "commands": 18,
-    "completed": 12
+    "epoch": 1795178840.8239365,
+    "physics": 1879667,
+    "commands": 76,
+    "completed": 70
   },
   "new_campaign_science_started": true,
-  "new_campaign_physics": 1565856,
-  "new_campaign_commands": 106,
+  "new_campaign_physics": 10658069,
+  "new_campaign_commands": 543,
   "new_campaign_optimizer": 0,
   "new_campaign_registration_pending": true,
   "current_job_must_exit_before_next": true,
-  "next_action": "Unique single joint-outcome candidate, at most4Actor each live/shadow/independent; real old surrogate checks,40screen/24exact and conditional full407. No projection benefit claim.",
+  "next_action": "Systematic all407 onpolicy 8-batch collection and per-batch independent audits,0optimizer. Only after full coverage review prepare finite joint RL; no sparse counterexample patch repetition.",
   "authorization": "AUTHORIZATION.json",
   "prior_group_current_ledger": {
     "physics": 64463885,
@@ -946,8 +946,8 @@
   "user_latest_delegation_supersedes_old_evening_stop_for_future_campaigns": true,
   "raw_archive_cleanup_trigger": 8589934592,
   "global_cap": 10737418240,
-  "current_global_bytes": 2166254987,
-  "minimum_free_actual": 224290353152,
+  "current_global_bytes": 2188095737,
+  "minimum_free_actual": 223643844608,
   "resource_probe": {
     "state": "PASS",
     "stage_cpus": [
@@ -974,7 +974,15 @@
         "8"
       ]
     ],
-    "phase_process_metadata_only": [],
+    "phase_process_metadata_only": [
+      {
+        "pid": 691175,
+        "allowed_cpus": [
+          5
+        ],
+        "physical_overlap": []
+      }
+    ],
     "GPU": "learning_and_history_only_yield_other_compute",
     "CPUQuota": "400%",
     "Nice": 19,
@@ -1068,10 +1076,10 @@
   "prior_group_final_report": "stage/docs/day_20261120/t665/FINAL_REPORT.json",
   "prior_group_coverage_batches_completed": 18,
   "prior_group_raw_remote": "PENDING_BACKUP_TIMEOUT_LOCAL_RAW_RETAINED",
-  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t670/FINAL_REPORT.json",
+  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t671/FINAL_REPORT.json",
   "response_gate": "SCIENTIFIC_GATE_FAILED",
   "response_derivative_learning_cancelled": true,
-  "source_remote": "e9e10b01935e186792f771cf17da0b0984f625aa",
+  "source_remote": "cf7a3bd2216af52e266ac6f5b46585d12bf4b9c5",
   "recovery_qualified_ids": [
     "dev_task6_20",
     "dev_task6_23"
@@ -1080,5 +1088,32 @@
   "old_onpolicy_mixed_tasks": 4,
   "outcome_projection_gate": "SCIENTIFIC_GATE_FAILED_INACTIVE_CONSTRAINTS",
   "first_raw_batch_remote_verified": "WEEKEND_T666_PRIMARY_EVIDENCE_0",
-  "raw_deletions": 0
+  "raw_deletions": 0,
+  "new_campaign_optimizer_live_started": 4,
+  "new_campaign_optimizer_shadow_started": 4,
+  "T671_sampling_surrogate_gate_passes": 4,
+  "active_optimizer_counts": {
+    "Actor_live": 4,
+    "Actor_shadow": 4,
+    "Actor_independent": 0
+  },
+  "T671_full407": {
+    "success": 385,
+    "lost_prior": [
+      "dev_task6_13",
+      "dev_task6_25",
+      "dev_task7_17"
+    ],
+    "gained_prior": [
+      "dev_task6_15",
+      "t502_field_sector0_offset2",
+      "t502_field_sector2_offset1",
+      "t502_field_sector5_offset1"
+    ],
+    "field_success": 8,
+    "accepted": false,
+    "audit": "PASS"
+  },
+  "planned_collection_batches": 8,
+  "completed_collection_batches": 0
 }
