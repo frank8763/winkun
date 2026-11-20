@@ -1,0 +1,9 @@
+# T668：真实学生占用上的旧策略纠偏资格
+
+T667一阶响应可用性科学门槛失败并独立重算PASS，因此不训练导数保持，也不改阈值/扰动去救。T666四真实遗忘案例已完整复现，基准均GOAL、候选均CONTACT。此项只检查T501是否真能纠正这些新访问历史；既有名义成功不是纠偏资格的保证。
+
+固定四个任务和已落盘的首次XY差1cm决策索引：dev_task6_20/21/23及hold_task6_06。沿各自学生已经真实执行的外部前缀动作从同canonical起态重生，T501从reset逐包处理实际外部历史重建自己的carry，在对应索引起自主续行；不复制学生hidden，不重置时限/积分/目标。所有前缀动作ownership1只表示训练期诊断强制前缀，接管后ownership0，不是部署规划器、路由或新单Actor原起点成功。
+
+4条完整恢复＋4次精确重放，最多186672物理步/14命令（含worker6）/0更新/64MiB，1200主管秒＋600独立审计秒，总50分钟内结束；CPU8/10/12原生14主管、4GiB无swap、GPU关闭，与Phase隔离。每条用实际原任务step_cap，不减去前缀后又重新给满cap。先实际Session.step零native分支预检/源hash/模型loader/canonical worker再独立注册、GitHub精确源码、唯一launch。
+
+审计逐前缀states/next_states/actions/native_counts/poses/history_poses/history_goals/history_times、初始积分及接管点packet精确等于学生源；T501所有carry和未执行提议均按真实外部history独立重建。重放逐数组/终态积分SHA精确。任何恢复未成功就保留真实失败，不提供“成功纠偏”监督标签；不扫更早接管时间或其他seed。全部完成后按实际safeGOAL资格决定下一科学方案，不自动训练。原384完整保持和新增的最终验收门不变。
