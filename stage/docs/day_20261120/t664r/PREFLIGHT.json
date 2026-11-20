@@ -1,0 +1,66 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "actual_shared_behavior_full_history_density_and_exact_reuse": [
+    {
+      "arm": "ppo_collision_s020",
+      "full64": true,
+      "exact64": true,
+      "policy_hash": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+      "no_new_native": true,
+      "gradient_norm": 0.03326047617108587
+    },
+    {
+      "arm": "ppo_collision_s005",
+      "full64": true,
+      "exact64": true,
+      "policy_hash": "9c379a6dd734c926e563a144dea3df475ece066aa6e115ae597e9636e419f1c0",
+      "no_new_native": true,
+      "gradient_norm": 0.09142626348210806
+    }
+  ],
+  "resume_Actor_Value_and_separate_Adam_bitwise": true,
+  "actual_runtime_heartbeat_and_worker": true,
+  "actual_guard_transport_loader": true,
+  "all_old_processes_gone": true,
+  "aggregate_budget_subtracted": true,
+  "absolute_deadlines_unchanged": true,
+  "actual_prefix_guard_checks_once_per5seconds_and_hard_deadline_preserved": true,
+  "captured_actual_legacy_guard_full_source_checks_for387_references": 387,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "new_GPU": 0,
+  "resources": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      10,
+      12,
+      14
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "8"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "GPU": "learning_and_history_only_yield_other_compute",
+    "CPUQuota": "400%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 4294967296,
+    "MemorySwapMax": 0
+  }
+}
