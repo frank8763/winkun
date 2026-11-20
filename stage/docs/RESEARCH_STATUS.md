@@ -1,3 +1,5 @@
+2026-11-20 T670 COMPLETE/auditPASS但投影辨识门槛失败：真实4旧score非零、numeric与KKT均过，联合首Adam方向四旧+newfield同时上升，projection active空且d未变，不跑相同两臂。T671已零更新梯度核对1.64e-17误差并独立注册，单候选最多4live+4shadow+4historyActor/0Value、40screen+24exact及条件407，12130534物理437cmd/96MiB、2h硬停；源同步后唯一启动。不声称因果算法优势。T666首小批7成员755403B已完整远端读回逐SHA，未删raw，其余pending。见weekend_20261120_23/t670/FINDINGS、t671/PLAN及FIRST_RAW_BACKUP。
+
 2026-11-20 T669 COMPLETE/auditPASS，四退化旧ID T501sigma.05各8样本安全成功4/8、3/8、7/8、4/8，32full+32exact全密度/因果carry/数组积分通过，1159856物理70cmd/0更新。全部科学退，T670零物理零优化器逐旧任务结果score梯度/Adam位移半空间投影可行性已预检并注册，600计算+600独立重算；来源64同policy/sigma旧field数据复用非新独立，源码核验后启动。只有支持与可行新目标上升方向才准匹配RLpilot，不把GEM/PCPO/Adam投影近邻称原创或安全保证。见weekend_20261120_23/OUTCOME_CONSTRAINT_PRIMARY_REVIEW及t670/PLAN。
 
 2026-11-20 T668 COMPLETE/auditPASS：4真实偏离恢复仅dev_task6_20/23安全成功，旧21/hold6_06失败，133868物理14cmd/0更新，全部PID退。未达到3至4项纠偏准入，不训练BC。T669已零更新预检及独立注册，固定四反例原起点T501sigma.05各8full+exact，1493376物理70cmd/0更新/128MiB，补此前fresh32缺的旧任务真实成败；等待源码核验后唯一启动。后续先结果score支持再决定约束RL对照，不伪造teacher标签、不扫接管时间/seed。周末ledger及t669/PLAN为准，Stage/Phase隔离。
