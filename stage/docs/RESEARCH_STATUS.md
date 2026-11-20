@@ -1,3 +1,5 @@
+2026-11-20 T661R保留上一批Value单变量实验结束：FAILED，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；历史零Value对照复用非新样本；实际旧ID保持/场地新增/条件407及独立审计见day_20261120/t661r/FINAL_REPORT。缺测null，非终身学习或泛化通过；未通过原384保持不得晋升。
+
 2026-11-20 T661 live/shadow成熟Value Adam共享CPU step导致一致性失败，实际live/shadow各4Actor16Value、独立0、0物理6管理cmd；原raw完整远端SHA。独立T661R工程恢复已修每对象deepcopy，实际GPU共享step红复现/独立加载变更互不影响绿及全部原零步预检PASS；无新科学run。待补偿原已消费live/shadow额度及6管理cmd；独立上限不增、物理仍12,037,198、合计存储192MiB/全局10GiB、合计main5400，原09:40:05/11:05:05/11:25:05绝对截止不延。详day_20261120/t661r/ENGINEERING_REVIEW/PLAN/PREFLIGHT。
 
 2026-11-20 T661保留上一批Value单变量实验结束：FAILED，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；历史零Value对照复用非新样本；实际旧ID保持/场地新增/条件407及独立审计见day_20261120/t661/FINAL_REPORT。缺测null，非终身学习或泛化通过；未通过原384保持不得晋升。
