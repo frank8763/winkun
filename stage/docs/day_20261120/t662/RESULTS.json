@@ -1,0 +1,1186 @@
+{
+  "state": "COMPLETE_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "source_experiment_state": "FAILED",
+  "source_independent_audit": null,
+  "source_backup": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+  "source_optimizer_attempts": {
+    "live": {
+      "actor": 4,
+      "value": 16
+    },
+    "shadow": {
+      "actor": 4,
+      "value": 16
+    },
+    "independent_history": {
+      "actor": 0,
+      "value": 0
+    }
+  },
+  "source_audit_failure": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t661r_value_state_isolation/t661r_control.py\", line 134, in driver\n    call('audit', p['audit_seconds'], children)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t661r_value_state_isolation/t661r_control.py\", line 96, in call\n    child.wait(timeout=seconds)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 1209, in wait\n    return self._wait(timeout=timeout)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 1951, in _wait\n    raise TimeoutExpired(self.args, timeout)\nsubprocess.TimeoutExpired: Command '['/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/run_stage.sh', '/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t661r_value_state_isolation/runtime.py', 'audit']' timed out after 600 seconds\n",
+  "results": {
+    "dev_task6_00": {
+      "zero_Value": {
+        "reference_sha256": "b6bfc7e4b5533dcffc10243804312ae37057a4470784af9358d1c7d422e14bfe",
+        "candidate_sha256": "7be31350fc2a92b3da710593d8aeb7986fb7433e184462c5505802cd29012e96",
+        "same_initial_contract": {
+          "initial_native_integration": true,
+          "task_goal_xy": true,
+          "scene_sha256": true,
+          "initial120": true,
+          "initial_pose": true,
+          "initial_hidden": true
+        },
+        "reference_source_policy": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+        "source_outcome": {
+          "flags": [
+            0,
+            1,
+            0
+          ],
+          "terminal_steps": 19442,
+          "terminal_seconds": 38.884,
+          "goal_endpoint_distance_m": 0.19997850072237966
+        },
+        "candidate_outcome": {
+          "flags": [
+            1,
+            0,
+            0
+          ],
+          "terminal_steps": 13829,
+          "terminal_seconds": 27.658,
+          "goal_endpoint_distance_m": 1.3655327727472084
+        },
+        "candidate_success": false,
+        "collision": true,
+        "timeout": false,
+        "same_history_command_RMS": 0.00020841124732862897,
+        "same_history_command_max": 0.0005395412445068359,
+        "own_history_feedback_command_RMS": 0.1075706315394355,
+        "first_command_difference": {
+          "decision": 0,
+          "seconds": 0.0,
+          "value": 0.0005395412445068359
+        },
+        "first_position_1cm": {
+          "decision": 44,
+          "seconds": 8.8,
+          "value": 0.011871121454037773
+        },
+        "first_position_10cm": null,
+        "first_hidden_L2_001": {
+          "decision": 11,
+          "seconds": 2.2,
+          "value": 0.13052002325274795
+        },
+        "closest_recorded_endpoint_m": 1.3655327727472084,
+        "closest_recorded_endpoint_seconds": 27.658,
+        "final_endpoint_distance_m": 1.3655327727472084,
+        "endpoint_distance_increase_after_closest_m": 0.0,
+        "last10_drive_mean": 0.9992048144340515,
+        "last10_steer_mean": 0.42042025923728943,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01581753152521527
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01580660523549547
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.0157361042495789
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015725187525398712
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -5.795399125853545e-05
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -5.795399125853545e-05
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -5.795399125853545e-05
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015047823937296076
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015037434260933222
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.014966396333000218
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.014956016879578773
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.0351902165365761
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.0351902165365761
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.0351902165365761
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.0351902165365761
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.035249915699787984
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.035249915699787984
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.035249915699787984
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.035249915699787984
+          }
+        ],
+        "algebraic_feedback_decomposition_not_causal_proof": true,
+        "closest_endpoint_is_not_continuous_physics_minimum": true
+      },
+      "retained_Value": {
+        "reference_sha256": "b6bfc7e4b5533dcffc10243804312ae37057a4470784af9358d1c7d422e14bfe",
+        "candidate_sha256": "a9cdd37991949ba303857400046fbd5250968754944641cd1d31249467a00982",
+        "same_initial_contract": {
+          "initial_native_integration": true,
+          "task_goal_xy": true,
+          "scene_sha256": true,
+          "initial120": true,
+          "initial_pose": true,
+          "initial_hidden": true
+        },
+        "reference_source_policy": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+        "source_outcome": {
+          "flags": [
+            0,
+            1,
+            0
+          ],
+          "terminal_steps": 19442,
+          "terminal_seconds": 38.884,
+          "goal_endpoint_distance_m": 0.19997850072237966
+        },
+        "candidate_outcome": {
+          "flags": [
+            1,
+            0,
+            0
+          ],
+          "terminal_steps": 14131,
+          "terminal_seconds": 28.262,
+          "goal_endpoint_distance_m": 1.2983453892199375
+        },
+        "candidate_success": false,
+        "collision": true,
+        "timeout": false,
+        "same_history_command_RMS": 0.00017641461471523993,
+        "same_history_command_max": 0.0004742741584777832,
+        "own_history_feedback_command_RMS": 0.09183218332666658,
+        "first_command_difference": {
+          "decision": 0,
+          "seconds": 0.0,
+          "value": 0.0004742741584777832
+        },
+        "first_position_1cm": {
+          "decision": 44,
+          "seconds": 8.8,
+          "value": 0.01499438163103705
+        },
+        "first_position_10cm": null,
+        "first_hidden_L2_001": {
+          "decision": 11,
+          "seconds": 2.2,
+          "value": 0.3376734600922091
+        },
+        "closest_recorded_endpoint_m": 1.2983453892199375,
+        "closest_recorded_endpoint_seconds": 28.262,
+        "final_endpoint_distance_m": 1.2983453892199375,
+        "endpoint_distance_increase_after_closest_m": 0.0,
+        "last10_drive_mean": 0.9992393255233765,
+        "last10_steer_mean": 0.0896737203001976,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01471588476893343
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.014704360646436626
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.014517359999625667
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.014505694588979767
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -8.144425467719031e-05
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -8.144425467719031e-05
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -8.144425467719031e-05
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -8.144425467719031e-05
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -8.144425467719031e-05
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.016781890700811333
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.016756093177086276
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.016583141886338318
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01655765163097063
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.04204151386238594
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.041956104375302235
+          }
+        ],
+        "algebraic_feedback_decomposition_not_causal_proof": true,
+        "closest_endpoint_is_not_continuous_physics_minimum": true
+      }
+    },
+    "dev_task6_26": {
+      "zero_Value": {
+        "reference_sha256": "c8e1198346eb757c1b0b399fc631ccf5417648a2efd8738d4df2e1ee34754bd6",
+        "candidate_sha256": "45d2fe1252bc22856f9bb8779a8df507403630a8aab692e02e935a213a4d05ae",
+        "same_initial_contract": {
+          "initial_native_integration": true,
+          "task_goal_xy": true,
+          "scene_sha256": true,
+          "initial120": true,
+          "initial_pose": true,
+          "initial_hidden": true
+        },
+        "reference_source_policy": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+        "source_outcome": {
+          "flags": [
+            0,
+            1,
+            0
+          ],
+          "terminal_steps": 18932,
+          "terminal_seconds": 37.864000000000004,
+          "goal_endpoint_distance_m": 0.19994667260602572
+        },
+        "candidate_outcome": {
+          "flags": [
+            1,
+            0,
+            0
+          ],
+          "terminal_steps": 14005,
+          "terminal_seconds": 28.01,
+          "goal_endpoint_distance_m": 1.3816741401532764
+        },
+        "candidate_success": false,
+        "collision": true,
+        "timeout": false,
+        "same_history_command_RMS": 0.00019518758445571385,
+        "same_history_command_max": 0.00041119009256362915,
+        "own_history_feedback_command_RMS": 0.14318513483222778,
+        "first_command_difference": {
+          "decision": 0,
+          "seconds": 0.0,
+          "value": 0.0003795027732849121
+        },
+        "first_position_1cm": {
+          "decision": 40,
+          "seconds": 8.0,
+          "value": 0.011130246183531567
+        },
+        "first_position_10cm": {
+          "decision": 111,
+          "seconds": 22.2,
+          "value": 0.1027945887113432
+        },
+        "first_hidden_L2_001": {
+          "decision": 18,
+          "seconds": 3.6,
+          "value": 0.061904497886884506
+        },
+        "closest_recorded_endpoint_m": 1.3816741401532764,
+        "closest_recorded_endpoint_seconds": 28.01,
+        "final_endpoint_distance_m": 1.3816741401532764,
+        "endpoint_distance_increase_after_closest_m": 0.0,
+        "last10_drive_mean": 0.9931093454360962,
+        "last10_steer_mean": 0.528082013130188,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015676937150451417
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015671360891607658
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.0156398583502569
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015634430568855814
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -7.191057859696492e-05
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -7.191057859696492e-05
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -7.191057859696492e-05
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015701042475373808
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015696263301471988
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01566402072342543
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015659275898472852
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.06087433150831307
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.056488285687558266
+          }
+        ],
+        "algebraic_feedback_decomposition_not_causal_proof": true,
+        "closest_endpoint_is_not_continuous_physics_minimum": true
+      },
+      "retained_Value": {
+        "reference_sha256": "c8e1198346eb757c1b0b399fc631ccf5417648a2efd8738d4df2e1ee34754bd6",
+        "candidate_sha256": "4ef0e30f02a71d10d599462db20045ea3a970a9f8bce4aa07b764443f152d60d",
+        "same_initial_contract": {
+          "initial_native_integration": true,
+          "task_goal_xy": true,
+          "scene_sha256": true,
+          "initial120": true,
+          "initial_pose": true,
+          "initial_hidden": true
+        },
+        "reference_source_policy": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+        "source_outcome": {
+          "flags": [
+            0,
+            1,
+            0
+          ],
+          "terminal_steps": 18932,
+          "terminal_seconds": 37.864000000000004,
+          "goal_endpoint_distance_m": 0.19994667260602572
+        },
+        "candidate_outcome": {
+          "flags": [
+            1,
+            0,
+            0
+          ],
+          "terminal_steps": 14116,
+          "terminal_seconds": 28.232,
+          "goal_endpoint_distance_m": 1.34185432557683
+        },
+        "candidate_success": false,
+        "collision": true,
+        "timeout": false,
+        "same_history_command_RMS": 0.00016787368871657964,
+        "same_history_command_max": 0.0003882572054862976,
+        "own_history_feedback_command_RMS": 0.1468791412556637,
+        "first_command_difference": {
+          "decision": 0,
+          "seconds": 0.0,
+          "value": 0.00032788515090942383
+        },
+        "first_position_1cm": {
+          "decision": 23,
+          "seconds": 4.6000000000000005,
+          "value": 0.010578780970569
+        },
+        "first_position_10cm": {
+          "decision": 113,
+          "seconds": 22.6,
+          "value": 0.10906422891629086
+        },
+        "first_hidden_L2_001": {
+          "decision": 17,
+          "seconds": 3.4,
+          "value": 0.05444894205967495
+        },
+        "closest_recorded_endpoint_m": 1.34185432557683,
+        "closest_recorded_endpoint_seconds": 28.232,
+        "final_endpoint_distance_m": 1.34185432557683,
+        "endpoint_distance_increase_after_closest_m": 0.0,
+        "last10_drive_mean": 0.997921347618103,
+        "last10_steer_mean": 0.5327419638633728,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015279689527419052
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015278149531958954
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01531208667942073
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015311300261114949
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -0.00027775688669824043
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -0.00027775688669824043
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -0.00027775688669824043
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01573724265583945
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01573303364215367
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015770116958935196
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015765707134896015
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.047074337067074555
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.04545760995044281
+          }
+        ],
+        "algebraic_feedback_decomposition_not_causal_proof": true,
+        "closest_endpoint_is_not_continuous_physics_minimum": true
+      }
+    },
+    "wide117_8m_dev6_RIGHT_18": {
+      "zero_Value": {
+        "reference_sha256": "728f0ba0a6fb4135b36ab7220ebac151c1b68c8fd6d7e395dfa3263a32af572e",
+        "candidate_sha256": "1f15f9ff90c9af33c0269bfb637fa7f2ba2243b84767c66857f234bbb38da42a",
+        "same_initial_contract": {
+          "initial_native_integration": true,
+          "task_goal_xy": true,
+          "scene_sha256": true,
+          "initial120": true,
+          "initial_pose": true,
+          "initial_hidden": true
+        },
+        "reference_source_policy": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+        "source_outcome": {
+          "flags": [
+            0,
+            1,
+            0
+          ],
+          "terminal_steps": 48335,
+          "terminal_seconds": 96.67,
+          "goal_endpoint_distance_m": 0.1999594768246621
+        },
+        "candidate_outcome": {
+          "flags": [
+            0,
+            1,
+            0
+          ],
+          "terminal_steps": 48493,
+          "terminal_seconds": 96.986,
+          "goal_endpoint_distance_m": 0.19991859397056516
+        },
+        "candidate_success": true,
+        "collision": false,
+        "timeout": false,
+        "same_history_command_RMS": 0.00032815269588447647,
+        "same_history_command_max": 0.0013219118118286133,
+        "own_history_feedback_command_RMS": 0.08116439486936296,
+        "first_command_difference": {
+          "decision": 0,
+          "seconds": 0.0,
+          "value": 0.00013068318367004395
+        },
+        "first_position_1cm": {
+          "decision": 86,
+          "seconds": 17.2,
+          "value": 0.014163570843501679
+        },
+        "first_position_10cm": {
+          "decision": 474,
+          "seconds": 94.8,
+          "value": 0.1056425940713339
+        },
+        "first_hidden_L2_001": {
+          "decision": 2,
+          "seconds": 0.4,
+          "value": 0.046787934578380534
+        },
+        "closest_recorded_endpoint_m": 0.19991859397056516,
+        "closest_recorded_endpoint_seconds": 96.986,
+        "final_endpoint_distance_m": 0.19991859397056516,
+        "endpoint_distance_increase_after_closest_m": 0.0,
+        "last10_drive_mean": 0.941120445728302,
+        "last10_steer_mean": 0.29694864153862,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01571067216970433
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015709199432940732
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01568950568465287
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015687642671002464
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01567053342053837
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015667902253768018
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015649366447778965
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015646345957534682
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.06167879016089008
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.05732561435853747
+          }
+        ],
+        "algebraic_feedback_decomposition_not_causal_proof": true,
+        "closest_endpoint_is_not_continuous_physics_minimum": true
+      },
+      "retained_Value": {
+        "reference_sha256": "728f0ba0a6fb4135b36ab7220ebac151c1b68c8fd6d7e395dfa3263a32af572e",
+        "candidate_sha256": "eea848af9f3dfe0ea36fe71ddcf857965688e50f3d3bd39acacc066f12041ec6",
+        "same_initial_contract": {
+          "initial_native_integration": true,
+          "task_goal_xy": true,
+          "scene_sha256": true,
+          "initial120": true,
+          "initial_pose": true,
+          "initial_hidden": true
+        },
+        "reference_source_policy": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+        "source_outcome": {
+          "flags": [
+            0,
+            1,
+            0
+          ],
+          "terminal_steps": 48335,
+          "terminal_seconds": 96.67,
+          "goal_endpoint_distance_m": 0.1999594768246621
+        },
+        "candidate_outcome": {
+          "flags": [
+            0,
+            0,
+            1
+          ],
+          "terminal_steps": 53334,
+          "terminal_seconds": 106.668,
+          "goal_endpoint_distance_m": 0.9109567074580588
+        },
+        "candidate_success": false,
+        "collision": false,
+        "timeout": true,
+        "same_history_command_RMS": 0.000314394809307392,
+        "same_history_command_max": 0.0012336969375610352,
+        "own_history_feedback_command_RMS": 0.06489415278931661,
+        "first_command_difference": {
+          "decision": 0,
+          "seconds": 0.0,
+          "value": 7.992982864379883e-05
+        },
+        "first_position_1cm": {
+          "decision": 119,
+          "seconds": 23.8,
+          "value": 0.01094636461182677
+        },
+        "first_position_10cm": null,
+        "first_hidden_L2_001": {
+          "decision": 2,
+          "seconds": 0.4,
+          "value": 0.05680719389652139
+        },
+        "closest_recorded_endpoint_m": 0.2034105429310382,
+        "closest_recorded_endpoint_seconds": 97.0,
+        "final_endpoint_distance_m": 0.9109567074580588,
+        "endpoint_distance_increase_after_closest_m": 0.7075461645270206,
+        "last10_drive_mean": 0.834122359752655,
+        "last10_steer_mean": 0.9258770942687988,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015640942285913936
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015634368481142732
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01561249867815341
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015606424404864885
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015714430819677383
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015710793980288212
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015686122373872943
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015682714626848074
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.07866434284321494
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.07866434284321494
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.07866434284321494
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.06580382704892505
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.06580382704892505
+          }
+        ],
+        "algebraic_feedback_decomposition_not_causal_proof": true,
+        "closest_endpoint_is_not_continuous_physics_minimum": true
+      }
+    },
+    "dev_task6_03": {
+      "zero_Value": {
+        "reference_sha256": "a5123b9e28c47167ee680f22fed9e9c203d1ad893960d8f64ac0e78aa85d4d15",
+        "candidate_sha256": "81934d9dc5b8d4e650e407e75af52f40f91078c54cb51c6ee4f53aae02846ba9",
+        "same_initial_contract": {
+          "initial_native_integration": true,
+          "task_goal_xy": true,
+          "scene_sha256": true,
+          "initial120": true,
+          "initial_pose": true,
+          "initial_hidden": true
+        },
+        "reference_source_policy": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+        "source_outcome": {
+          "flags": [
+            0,
+            1,
+            0
+          ],
+          "terminal_steps": 19629,
+          "terminal_seconds": 39.258,
+          "goal_endpoint_distance_m": 0.19992607284754593
+        },
+        "candidate_outcome": {
+          "flags": [
+            1,
+            0,
+            0
+          ],
+          "terminal_steps": 13791,
+          "terminal_seconds": 27.582,
+          "goal_endpoint_distance_m": 1.3419273314351803
+        },
+        "candidate_success": false,
+        "collision": true,
+        "timeout": false,
+        "same_history_command_RMS": 0.0002158894395266457,
+        "same_history_command_max": 0.0005463957786560059,
+        "own_history_feedback_command_RMS": 0.11321490154261,
+        "first_command_difference": {
+          "decision": 0,
+          "seconds": 0.0,
+          "value": 0.00045603513717651367
+        },
+        "first_position_1cm": {
+          "decision": 55,
+          "seconds": 11.0,
+          "value": 0.010829971804255328
+        },
+        "first_position_10cm": {
+          "decision": 79,
+          "seconds": 15.8,
+          "value": 0.10208870571217742
+        },
+        "first_hidden_L2_001": {
+          "decision": 13,
+          "seconds": 2.6,
+          "value": 0.3485752763220263
+        },
+        "closest_recorded_endpoint_m": 1.3419273314351803,
+        "closest_recorded_endpoint_seconds": 27.582,
+        "final_endpoint_distance_m": 1.3419273314351803,
+        "endpoint_distance_increase_after_closest_m": 0.0,
+        "last10_drive_mean": 0.9988384246826172,
+        "last10_steer_mean": 0.35526299476623535,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01561719863870327
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01560899891778618
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.0155557475864989
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01554755710522486
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -6.720294956264093e-06
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -6.720294956264093e-06
+          },
+          {
+            "geom1": "real_circle_obs_9",
+            "geom2": null,
+            "distance": -6.720294956264093e-06
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015744185133608465
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015736310214169116
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015682668037359973
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015674934495984685
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03517324565083968
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03517324565083968
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03517324565083968
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03517324565083968
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03517105284628642
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03517105284628642
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03517105284628642
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.03517105284628642
+          }
+        ],
+        "algebraic_feedback_decomposition_not_causal_proof": true,
+        "closest_endpoint_is_not_continuous_physics_minimum": true
+      },
+      "retained_Value": {
+        "reference_sha256": "a5123b9e28c47167ee680f22fed9e9c203d1ad893960d8f64ac0e78aa85d4d15",
+        "candidate_sha256": "f71b74d4fd5f7225406348614ba2f034be732a27dc927e5ea9a07a28717eb5a6",
+        "same_initial_contract": {
+          "initial_native_integration": true,
+          "task_goal_xy": true,
+          "scene_sha256": true,
+          "initial120": true,
+          "initial_pose": true,
+          "initial_hidden": true
+        },
+        "reference_source_policy": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+        "source_outcome": {
+          "flags": [
+            0,
+            1,
+            0
+          ],
+          "terminal_steps": 19629,
+          "terminal_seconds": 39.258,
+          "goal_endpoint_distance_m": 0.19992607284754593
+        },
+        "candidate_outcome": {
+          "flags": [
+            0,
+            1,
+            0
+          ],
+          "terminal_steps": 18998,
+          "terminal_seconds": 37.996,
+          "goal_endpoint_distance_m": 0.1999805355782845
+        },
+        "candidate_success": true,
+        "collision": false,
+        "timeout": false,
+        "same_history_command_RMS": 0.00017262781311777527,
+        "same_history_command_max": 0.00041347742080688477,
+        "own_history_feedback_command_RMS": 0.09060260531603447,
+        "first_command_difference": {
+          "decision": 0,
+          "seconds": 0.0,
+          "value": 0.0004035830497741699
+        },
+        "first_position_1cm": {
+          "decision": 44,
+          "seconds": 8.8,
+          "value": 0.012391895566667525
+        },
+        "first_position_10cm": null,
+        "first_hidden_L2_001": {
+          "decision": 13,
+          "seconds": 2.6,
+          "value": 0.36639875093566654
+        },
+        "closest_recorded_endpoint_m": 0.1999805355782845,
+        "closest_recorded_endpoint_seconds": 37.996,
+        "final_endpoint_distance_m": 0.1999805355782845,
+        "endpoint_distance_increase_after_closest_m": 0.0,
+        "last10_drive_mean": 0.36744609475135803,
+        "last10_steer_mean": -0.6048548817634583,
+        "terminal_contacts": [
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01565466376253026
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.01564710260862863
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015567297348724668
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015560644683785763
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015762485009944094
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015751190281390964
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015675448277469986
+          },
+          {
+            "geom1": "floor",
+            "geom2": null,
+            "distance": -0.015664402495179627
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.06505380373384492
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.07268053235947676
+          },
+          {
+            "geom1": null,
+            "geom2": "chassis_collision",
+            "distance": -0.07268053235947676
+          }
+        ],
+        "algebraic_feedback_decomposition_not_causal_proof": true,
+        "closest_endpoint_is_not_continuous_physics_minimum": true
+      }
+    }
+  },
+  "budget": {
+    "new_native": 0,
+    "new_optimizer": 0,
+    "new_GPU": 0,
+    "seconds": 0.18635082244873047,
+    "max_seconds": 300,
+    "max_bytes": 1048576
+  },
+  "models": {
+    "T501": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t501_joint_command_repair/joint/proposal.pt.gz",
+      "sha256": "6c8cf7128cd096801aed3a20c672791bcfa64ca0c50cc7bf1c4e3e77bea18187",
+      "policy_hash": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+      "joint_hash": "913555eb5b5322ddea31913a09fc05b57715377fcd269b98215b430363ac8d03",
+      "bytes": 1063700
+    },
+    "zero_Value": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t660s_remaining_night_relay/ppo_mean/proposal_01.pt.gz",
+      "sha256": "3a15edbff258cd013c4562071e4ef5b158e7c6368dd107683f2126548c0bfe61",
+      "policy_hash": "b554470792caa738378e4b6f1c4c4af774511199c7fae9a35ffa82c2baef683a",
+      "joint_hash": "1f33ee7e8ad33e84f9ccfbdd4f90216d58f4b9b66f6fd9f7ec7948d4441be298",
+      "bytes": 1063264
+    },
+    "retained_Value": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t661r_value_state_isolation/proposal.pt.gz",
+      "sha256": "de28ed0540b5dd1a0c2a83200f65eb1de6fafe6196070d06c2c16d3cdaafae4a",
+      "policy_hash": "04417b122636be89203681ae808b8723dd1741e42a1f851e953ecd26c463f3e0",
+      "joint_hash": "807c41a1de23794c4c502b6c2076767f1f2b4e107b0ac9d2c7de2eb1ce4f7fe6",
+      "bytes": 1063297
+    }
+  },
+  "inputs": {
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261119/innovation_reset/UNIQUE_387_REFERENCE_CONTRACT.json": "c6073bc2c7e66099af258faa6b75b90013f01abc1652157b94855edfe4743a8b",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t662_frozen_failure_diagnosis/analyze.py": "ea5e4614aa1634bfe6b969727d8084bc779d0f017689cc655e2b7c66fff4acba",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t501_joint_command_repair/joint/proposal.pt.gz": "6c8cf7128cd096801aed3a20c672791bcfa64ca0c50cc7bf1c4e3e77bea18187",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t646_offline_night/offline_inputs/728f0ba0a6fb4135b36ab7220ebac151c1b68c8fd6d7e395dfa3263a32af572e.npz": "728f0ba0a6fb4135b36ab7220ebac151c1b68c8fd6d7e395dfa3263a32af572e",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t646_offline_night/offline_inputs/a5123b9e28c47167ee680f22fed9e9c203d1ad893960d8f64ac0e78aa85d4d15.npz": "a5123b9e28c47167ee680f22fed9e9c203d1ad893960d8f64ac0e78aa85d4d15",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t646_offline_night/offline_inputs/b6bfc7e4b5533dcffc10243804312ae37057a4470784af9358d1c7d422e14bfe.npz": "b6bfc7e4b5533dcffc10243804312ae37057a4470784af9358d1c7d422e14bfe",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t646_offline_night/offline_inputs/c8e1198346eb757c1b0b399fc631ccf5417648a2efd8738d4df2e1ee34754bd6.npz": "c8e1198346eb757c1b0b399fc631ccf5417648a2efd8738d4df2e1ee34754bd6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t660s_remaining_night_relay/ppo_mean/cases.jsonl.gz": "1b0dc2cf6f315abcbdcfbe3b163799191684cbb0407cc249dba5fdff6d8434f3",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t660s_remaining_night_relay/ppo_mean/episodes/0353_exact_key_01.npz": "1f15f9ff90c9af33c0269bfb637fa7f2ba2243b84767c66857f234bbb38da42a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t660s_remaining_night_relay/ppo_mean/episodes/0363_exact_key_01.npz": "7be31350fc2a92b3da710593d8aeb7986fb7433e184462c5505802cd29012e96",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t660s_remaining_night_relay/ppo_mean/episodes/0365_exact_key_01.npz": "81934d9dc5b8d4e650e407e75af52f40f91078c54cb51c6ee4f53aae02846ba9",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t660s_remaining_night_relay/ppo_mean/episodes/0367_exact_key_01.npz": "45d2fe1252bc22856f9bb8779a8df507403630a8aab692e02e935a213a4d05ae",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t660s_remaining_night_relay/ppo_mean/proposal_01.pt.gz": "3a15edbff258cd013c4562071e4ef5b158e7c6368dd107683f2126548c0bfe61",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t661r_value_state_isolation/FINAL_REPORT_FINAL.json": "80a40893642cee3be57c126af4f59de60ed1df7397bc48fbdc9e98df1f1334ac",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t661r_value_state_isolation/cases.jsonl.gz": "a6aef87863fb82c8509bcc9ed3678980be925abf78ab9abd593321568bf9505f",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t661r_value_state_isolation/episodes/0041_exact20.npz": "eea848af9f3dfe0ea36fe71ddcf857965688e50f3d3bd39acacc066f12041ec6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t661r_value_state_isolation/episodes/0051_exact20.npz": "a9cdd37991949ba303857400046fbd5250968754944641cd1d31249467a00982",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t661r_value_state_isolation/episodes/0053_exact20.npz": "f71b74d4fd5f7225406348614ba2f034be732a27dc927e5ea9a07a28717eb5a6",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t661r_value_state_isolation/episodes/0055_exact20.npz": "4ef0e30f02a71d10d599462db20045ea3a970a9f8bce4aa07b764443f152d60d",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t661r_value_state_isolation/proposal.pt.gz": "de28ed0540b5dd1a0c2a83200f65eb1de6fafe6196070d06c2c16d3cdaafae4a",
+    "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t661r_value_state_isolation/protocol.json": "6d328dc0d8eef5b1fc36c73460ad27c284f2a0b83cdd7e33341a006f042aceb7"
+  }
+}

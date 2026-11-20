@@ -1,3 +1,5 @@
+2026-11-20 10:00定时接续T662冻结失效诊断已完成：0物理/0optimizer/0GPU；四任务两候选8组历史SHA、完整初态/目标/场景一致，原动作与hidden因果重构匹配。旧00/26在28.262/28.232s碰撞余1.298/1.342m；八米RIGHT_18在97.0s记录端点0.2034105m随后驶离至0.91096m、106.668s超时，非找不到目标证明。115/116角速度输入差相关但不作单因果结论。T661R main完成1721945步62cmd、field6/24丢旧00/26和八米；独立审计GPU等待600秒超时，独立更新0，整体FAILED/原raw全远端SHA，T501保留407null。详day_20261120/t662/FINDINGS及RESULTS；新固定.2/.05双臂方案与37,551,228步/1134cmd最坏预算仅草案，原09:40停学/11:25全停不延，无新训练。完成本次接续后删除stage-10一次定时。
+
 2026-11-20 T661R保留上一批Value单变量实验结束：FAILED，remote=FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED；历史零Value对照复用非新样本；实际旧ID保持/场地新增/条件407及独立审计见day_20261120/t661r/FINAL_REPORT。缺测null，非终身学习或泛化通过；未通过原384保持不得晋升。
 
 2026-11-20 T661 live/shadow成熟Value Adam共享CPU step导致一致性失败，实际live/shadow各4Actor16Value、独立0、0物理6管理cmd；原raw完整远端SHA。独立T661R工程恢复已修每对象deepcopy，实际GPU共享step红复现/独立加载变更互不影响绿及全部原零步预检PASS；无新科学run。待补偿原已消费live/shadow额度及6管理cmd；独立上限不增、物理仍12,037,198、合计存储192MiB/全局10GiB、合计main5400，原09:40:05/11:05:05/11:25:05绝对截止不延。详day_20261120/t661r/ENGINEERING_REVIEW/PLAN/PREFLIGHT。

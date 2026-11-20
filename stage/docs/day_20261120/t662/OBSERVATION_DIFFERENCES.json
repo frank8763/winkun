@@ -1,0 +1,179 @@
+{
+  "state": "COMPLETE_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "results": {
+    "dev_task6_00": {
+      "decision": 11,
+      "seconds": 2.2,
+      "exact_recorded_hidden_reconstruction_errors": [
+        4.440892098500626e-15,
+        3.7539416020138106e-15
+      ],
+      "highest_input_differences": [
+        {
+          "index": 115,
+          "reference": 0.06566058844327927,
+          "candidate": -0.028508981689810753,
+          "delta": -0.09416957199573517
+        },
+        {
+          "index": 116,
+          "reference": -0.003295681206509471,
+          "candidate": 0.08448024839162827,
+          "delta": 0.08777593076229095
+        },
+        {
+          "index": 118,
+          "reference": 0.06662210077047348,
+          "candidate": 0.061770033091306686,
+          "delta": -0.004852067679166794
+        },
+        {
+          "index": 111,
+          "reference": 0.06662210077047348,
+          "candidate": 0.061770033091306686,
+          "delta": -0.004852067679166794
+        },
+        {
+          "index": 99,
+          "reference": 0.06662210077047348,
+          "candidate": 0.061770033091306686,
+          "delta": -0.004852067679166794
+        }
+      ],
+      "LF_steering_rate_difference_rad_per_s": -0.2825087308883667,
+      "RF_steering_rate_difference_rad_per_s": 0.26332777738571167
+    },
+    "dev_task6_26": {
+      "decision": 17,
+      "seconds": 3.4000000000000004,
+      "exact_recorded_hidden_reconstruction_errors": [
+        3.219646771412954e-15,
+        2.4980018054066022e-15
+      ],
+      "highest_input_differences": [
+        {
+          "index": 115,
+          "reference": 0.020185135304927826,
+          "candidate": -0.011562840081751347,
+          "delta": -0.0317479744553566
+        },
+        {
+          "index": 118,
+          "reference": -0.3519914150238037,
+          "candidate": -0.35605382919311523,
+          "delta": -0.0040624141693115234
+        },
+        {
+          "index": 99,
+          "reference": -0.3519914150238037,
+          "candidate": -0.35605382919311523,
+          "delta": -0.0040624141693115234
+        },
+        {
+          "index": 111,
+          "reference": -0.3519914150238037,
+          "candidate": -0.35605382919311523,
+          "delta": -0.0040624141693115234
+        },
+        {
+          "index": 75,
+          "reference": -0.3519914150238037,
+          "candidate": -0.35605382919311523,
+          "delta": -0.0040624141693115234
+        }
+      ],
+      "LF_steering_rate_difference_rad_per_s": -0.0952439233660698,
+      "RF_steering_rate_difference_rad_per_s": -0.00014452883624471724
+    },
+    "wide117_8m_dev6_RIGHT_18": {
+      "decision": 2,
+      "seconds": 0.4,
+      "exact_recorded_hidden_reconstruction_errors": [
+        1.8596235662471372e-15,
+        2.1094237467877974e-15
+      ],
+      "highest_input_differences": [
+        {
+          "index": 115,
+          "reference": 0.02418125979602337,
+          "candidate": -0.0006010568467900157,
+          "delta": -0.024782316759228706
+        },
+        {
+          "index": 113,
+          "reference": 0.818713366985321,
+          "candidate": 0.815377414226532,
+          "delta": -0.0033359527587890625
+        },
+        {
+          "index": 117,
+          "reference": 0.5212722420692444,
+          "candidate": 0.5200794339179993,
+          "delta": -0.0011928081512451172
+        },
+        {
+          "index": 110,
+          "reference": 0.5212722420692444,
+          "candidate": 0.5200794339179993,
+          "delta": -0.0011928081512451172
+        },
+        {
+          "index": 98,
+          "reference": 0.5212722420692444,
+          "candidate": 0.5200794339179993,
+          "delta": -0.0011928081512451172
+        }
+      ],
+      "LF_steering_rate_difference_rad_per_s": -0.07434695214033127,
+      "RF_steering_rate_difference_rad_per_s": -3.0923438316676766e-05
+    },
+    "dev_task6_03": {
+      "decision": 13,
+      "seconds": 2.6,
+      "exact_recorded_hidden_reconstruction_errors": [
+        3.066991105526995e-15,
+        3.5431726996826285e-15
+      ],
+      "highest_input_differences": [
+        {
+          "index": 116,
+          "reference": 0.027823861688375473,
+          "candidate": 0.059344589710235596,
+          "delta": 0.03152072802186012
+        },
+        {
+          "index": 115,
+          "reference": -0.0428510345518589,
+          "candidate": -0.06994839012622833,
+          "delta": -0.02709735557436943
+        },
+        {
+          "index": 47,
+          "reference": 0.6613163948059082,
+          "candidate": 0.6734055876731873,
+          "delta": 0.012089192867279053
+        },
+        {
+          "index": 1,
+          "reference": 0.4566577672958374,
+          "candidate": 0.44715169072151184,
+          "delta": -0.009506076574325562
+        },
+        {
+          "index": 99,
+          "reference": 0.06383246183395386,
+          "candidate": 0.07165693491697311,
+          "delta": 0.007824473083019257
+        }
+      ],
+      "LF_steering_rate_difference_rad_per_s": -0.081292062997818,
+      "RF_steering_rate_difference_rad_per_s": 0.09456218779087067
+    }
+  },
+  "fixed_encoder_GRU_head_identical": true,
+  "channel_source": "t251_actuator_recovery/actuator_support.py:22 plus t255_overnight/mem_actor.py:30",
+  "not_a_causal_steering_sensor_ablation": true,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "new_GPU": 0
+}
