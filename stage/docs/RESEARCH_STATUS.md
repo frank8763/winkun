@@ -1,3 +1,5 @@
+2026-11-20 T666 COMPLETE/auditPASS：四真实遗忘ID均基准GOAL/对应候选CONTACT，8full+8exact全部旧数组及积分精确，272132物理22cmd/0更新，所有科学PID退出。新T667完整因果历史JVP/数值差分/secant可用性门槛已零物理零优化器预检并注册，0native0optimizer、600s计算+600s独立重构；源码同步后启动。仅网络响应非物理闭环导数，科学门槛PASS前不接学习，首次float32预检误差证据保留已显式float64修复且阈值未变。周末授权至11月23日09:00及ledger见weekend_20261120_23，raw全本地保留/远端pending。
+
 2026-11-20 周末自主授权已生效至北京时间11月23日09:00，07:30学08:15native；今晚旧收尾定时已移除，T665原锁定协议正常预算止后全PID退出，18coverage全auditPASS、无保留新模型。备份时限未完成，raw全本地保留，非导航失败。T666四固定真实遗忘任务全历史(基准/对应候选8条+exact8条)已零物理零优化器预检PASS并独立登记，373344物理/22命令/0更新/128MiB；待源码核验唯一启动，不能声称已学习。周末总上限/逐轮审查及8GiB触发归档见weekend_20261120_23/PLAN/AUTHORIZATION/SUPERVISION，Stage/Phase隔离。
 
 2026-11-20 T665白天有界四臂接力结束：COMPLETE_FINITE_QUEUE_OR_BUDGET_STOP，remote=REMOTE_PENDING_LOCAL_OFFLINE_RAW_RETAINED；实际各臂逐ID保持/场地新增/条件407/设备及审计见day_20261120/t665/FINAL_REPORT；缺测null，不自动晋升或声称泛化。
