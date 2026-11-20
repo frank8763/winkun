@@ -1,3 +1,5 @@
+2026-11-20 T661独立2小时及明确额度已获用户批准并唯一登记，尚待最终source后launch；12,037,198物理433cmd/5400main，Actor各4/Value各16/0额外预检/192MiB，总10GiB。真实以DRIVER_STARTED/optimizer_calls/首native为准。授权与绝对截止见day_20261120/t661/AUTHORIZATION及REGISTERED；旧夜间原始失败不重启，Stage/Phase隔离。
+
 2026-11-20 T661用户要求启动，单变量保留上一批Value代码/真实64历史与387参照/GPU零优化器预检/CPU自有组暂停恢复及GPU有界让出回归PASS；尚无科学run或新授权，旧09:00截止已过。复用T660S mean第二块同T501策略64条onpolicy轨迹及历史零Value对照；35失败原优势全零，载入第一块Value后均有非零且各有负优势决策，梯度确有变化，非导航已改善。仅新4Actor/16Value及等量影子/独立，screen36+exact20，保旧并新增才剩371分块补407；待独立2h/12,037,198物理433cmd/5400main/192MiB确认，总10GiB及四核/GPU让出Phase不变。详day_20261120/t661/PLAN/PREFLIGHT/PREPARED；不自动沿用旧夜间额度。
 
 T660S剩余夜间RL与采集接力结束：FAILED，remote=REMOTE_PENDING_LOCAL_OFFLINE_RAW_RETAINED；真实branch/round/384保持与387目标/条件407及覆盖数据见overnight_20261119/resume/FINAL_REPORT，前两监督支见recovery，缺测null，非普遍抗遗忘或真机通过。
