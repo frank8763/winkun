@@ -1,9 +1,9 @@
 {
   "physics": 83876237,
   "commands": 4039,
-  "science_seconds": 18556.616961479187,
-  "audit_seconds": 227.30017757415771,
-  "transport_seconds": 2414.935980319977,
+  "science_seconds": 18614.06507396698,
+  "audit_seconds": 278.6125319004059,
+  "transport_seconds": 2714.935980319977,
   "Actor_live": 4,
   "Actor_shadow": 4,
   "Actor_independent": 4,
@@ -116,13 +116,27 @@
     },
     {
       "id": "T673",
-      "state": "RESERVED",
+      "state": "COMPLETE",
       "max_physics": 0,
       "max_commands": 0,
       "main_seconds": 1800,
-      "audit_seconds": 1800,
+      "audit_seconds": 51.31235432624817,
       "preflight_seconds": 1.2061104774475098,
-      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t673_all_task_signal_gate"
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t673_all_task_signal_gate",
+      "gate": "SIGNAL_DIAGNOSTIC_PASS",
+      "actual_physics": 0,
+      "actual_commands": 0,
+      "science_seconds": 51.40817713737488
+    },
+    {
+      "id": "T674",
+      "state": "RESERVED",
+      "max_physics": 0,
+      "max_commands": 0,
+      "main_seconds": 600,
+      "audit_seconds": 600,
+      "preflight_seconds": 6.039935350418091,
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t674_projection_feasibility"
     }
   ],
   "charged_source_sync_commits": [
@@ -132,7 +146,8 @@
     "e9e10b01935e186792f771cf17da0b0984f625aa",
     "37a686f23c8a3362e01cf3ff128e0363c16f6c28",
     "cf7a3bd2216af52e266ac6f5b46585d12bf4b9c5",
-    "2ec89a93c1a11ca560d5237e8077208ca99b04fb"
+    "2ec89a93c1a11ca560d5237e8077208ca99b04fb",
+    "8f08d04884253ba10037ace3cd9720a8fa5e147f"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"
