@@ -1,0 +1,87 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "device_preflight": "cpu",
+  "noise_variants_actual_loader_and_unchanged_weights": {
+    "ppo_binary_s020": {
+      "policy_hash": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+      "weights_sha256": "5c5a05caeae466b39400d7fdde36b0d0ecd5e25db97104abc4f79c0aa311ca5f",
+      "synthetic_density_fixture_gradient": 4.497855985625111,
+      "optimizer_steps": 0
+    },
+    "ppo_binary_s005": {
+      "policy_hash": "9c379a6dd734c926e563a144dea3df475ece066aa6e115ae597e9636e419f1c0",
+      "weights_sha256": "5c5a05caeae466b39400d7fdde36b0d0ecd5e25db97104abc4f79c0aa311ca5f",
+      "synthetic_density_fixture_gradient": 18.150585695550983,
+      "optimizer_steps": 0
+    },
+    "ppo_collision_s020": {
+      "policy_hash": "4a6907852b1d6e32f199a3289e42af404062b38f36523beb936aa8b3a9eef6b6",
+      "weights_sha256": "5c5a05caeae466b39400d7fdde36b0d0ecd5e25db97104abc4f79c0aa311ca5f",
+      "synthetic_density_fixture_gradient": 4.497855985625111,
+      "optimizer_steps": 0
+    },
+    "ppo_collision_s005": {
+      "policy_hash": "9c379a6dd734c926e563a144dea3df475ece066aa6e115ae597e9636e419f1c0",
+      "weights_sha256": "5c5a05caeae466b39400d7fdde36b0d0ecd5e25db97104abc4f79c0aa311ca5f",
+      "synthetic_density_fixture_gradient": 18.150585695550983,
+      "optimizer_steps": 0
+    }
+  },
+  "real64_density_and_terminal_labels": {
+    "binary": {
+      "0.0": 37,
+      "1.0": 27
+    },
+    "collision_cost": {
+      "-1.0": 27,
+      "0.0": 10,
+      "1.0": 27
+    }
+  },
+  "mature_Adam_independent_storage": true,
+  "actual387_reference_gradient": true,
+  "actual_binary_collision_gradient_difference": 0.005530484824625102,
+  "actual_runtime_child_pid_preserved": true,
+  "actual_canonical_worker_binding": true,
+  "CPU_fallback_and_fixed_branch_device": true,
+  "real_full_budget_admission": true,
+  "actual_guard_and_transport_install": true,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "new_GPU": 0,
+  "resource": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      10,
+      12,
+      14
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "8"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "GPU": "learning_and_history_only_yield_other_compute",
+    "CPUQuota": "400%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 4294967296,
+    "MemorySwapMax": 0
+  },
+  "worst_global_bytes": 9176788240
+}
