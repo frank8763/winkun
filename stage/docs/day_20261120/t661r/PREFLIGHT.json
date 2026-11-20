@@ -1,0 +1,80 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "legacy_actual_state_red_reproduced": true,
+  "saved_previous_Value_and_Adam_carried": true,
+  "Actor_and_Adam_exactly_unchanged": true,
+  "actual64_complete_histories_and_likelihoods_checked": true,
+  "real387_references_checked": true,
+  "previous_and_current_noise_seeds_disjoint": true,
+  "baseline_current_block_labels_not_used": true,
+  "detached_advantages_checked": true,
+  "carried": {
+    "episodes": 64,
+    "failed_episodes": 35,
+    "successful_episodes": 29,
+    "failed_with_nonzero_advantage": 35,
+    "failed_with_negative_advantage": 35,
+    "baseline_min": -0.15456409657107886,
+    "baseline_max": 0.22427262058223055,
+    "baseline_sha256": "e709b455f86ef9e9859a02866759940cdf5b596241da24994b76986d17e8df73",
+    "current_labels_not_used_to_fit_this_baseline": true,
+    "reused_data_is_on_policy_only_because_Actor_hash_is_identical": true
+  },
+  "zero": {
+    "episodes": 64,
+    "failed_episodes": 35,
+    "successful_episodes": 29,
+    "failed_with_nonzero_advantage": 0,
+    "failed_with_negative_advantage": 0,
+    "baseline_min": 0.0,
+    "baseline_max": 0.0,
+    "baseline_sha256": "14b9607d2593def9f02c1e85c2b8cf687e68d3ebfd79bb60299e7dd75241724a",
+    "current_labels_not_used_to_fit_this_baseline": true,
+    "reused_data_is_on_policy_only_because_Actor_hash_is_identical": true
+  },
+  "actual_policy_gradient_max_difference": 0.0019217008142260626,
+  "actual_runtime_guard_pool_binding": true,
+  "actual_affinity_loader_and_transport_install": true,
+  "bounded_GPU_yield_and_unrelated_error_propagation": true,
+  "actual_GPU_mature_Adam_CPU_step_alias_red_reproduced": true,
+  "independent_deepcopy_loader_step_mutation_does_not_change_peer_or_saved_state": true,
+  "no_network_used": true,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "extra_optimizer_preflight": 0,
+  "worst_global_bytes": 1848864225,
+  "resource": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      10,
+      12,
+      14
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "8"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "GPU": "learning_and_history_only_yield_other_compute",
+    "CPUQuota": "400%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 4294967296,
+    "MemorySwapMax": 0
+  }
+}
