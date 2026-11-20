@@ -1,9 +1,9 @@
 {
   "physics": 83876237,
   "commands": 4039,
-  "science_seconds": 18637.552274942398,
-  "audit_seconds": 301.29772448539734,
-  "transport_seconds": 3027.8276994228363,
+  "science_seconds": 18653.14196372032,
+  "audit_seconds": 310.71023297309875,
+  "transport_seconds": 3327.8276994228363,
   "Actor_live": 4,
   "Actor_shadow": 4,
   "Actor_independent": 4,
@@ -144,13 +144,27 @@
     },
     {
       "id": "T675",
-      "state": "RESERVED",
+      "state": "COMPLETE",
       "max_physics": 0,
       "max_commands": 0,
       "main_seconds": 600,
-      "audit_seconds": 600,
+      "audit_seconds": 9.412508487701416,
       "preflight_seconds": 0.44881272315979004,
-      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t675_progress_measurement"
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t675_progress_measurement",
+      "gate": "PROGRESS_MEASUREMENT_PASS",
+      "actual_physics": 0,
+      "actual_commands": 0,
+      "science_seconds": 9.362983226776123
+    },
+    {
+      "id": "T676",
+      "state": "RESERVED",
+      "max_physics": 0,
+      "max_commands": 0,
+      "main_seconds": 900,
+      "audit_seconds": 900,
+      "preflight_seconds": 6.226705551147461,
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t676_boundary_signal"
     }
   ],
   "charged_source_sync_commits": [
@@ -162,7 +176,8 @@
     "cf7a3bd2216af52e266ac6f5b46585d12bf4b9c5",
     "2ec89a93c1a11ca560d5237e8077208ca99b04fb",
     "8f08d04884253ba10037ace3cd9720a8fa5e147f",
-    "82e3cf0b8f7d3934c6bffb1636415195afc708d8"
+    "82e3cf0b8f7d3934c6bffb1636415195afc708d8",
+    "a96f8ccc4f9eec2461419140d92360c0cfa7b1d4"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"

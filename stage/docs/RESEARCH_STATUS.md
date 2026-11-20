@@ -1,3 +1,7 @@
+2026-11-21 T676边界连续代价/score诊断已真实0步预检PASS并独立登记，尚待精确源码GitHub后唯一launch。仅24field×8原full/exact与非field8m豁免，C=记录poses坐标超7m峰值/7，LOO完整因果score、固定前4后4及删单条敏感性/三numeric/实际首Adam公式与原44冲突；0物理0Actor/Value/optimizer，900main+900audit/root40min/16MiB。原记录边界规则不改，峰值不是连续native安全，PASS不自动学习。T675已完整审计且径向奖励因越界反例不准入；T501保留。见weekend_20261120_23/t676/PLAN及T676_PRIMARY_REVIEW。
+
+2026-11-21 T675 COMPLETE/测量PASS/独立auditPASS，407/1724几何合同过、remaining误差max1.7764e-15m，0物理0Actor/Value/optimizer。3项达进展差异门但全部样本越界，径向奖励不准入；同终态失败field实际15(10collision+5zero)，旧16误含非field dev6_01，旧冻结记录保留/更正见t675/FINDINGS。当前科学全退、监督继续；下一T676边界代价测量/score具体规格已落NEXT_T676_BOUNDARY_SIGNAL_SPEC，尚未注册/启动，需主动代码/一手审查/0步预检/预算登记/精确GitHub后唯一launch，不等用户。只适用fullfield7m约束，不误罚非field8m旧任务；T501保留无新性能提升。
+
 2026-11-21 T674 COMPLETE/auditPASS但SCIENTIFIC_GATE_FAILED：44半空间rank44/9active/KKT和表示线性均过，field线性-5.73393e-7/非线性-5.70668e-7，5旧非线性下降，0物理0Actor/Value/optimizer。停止当前直接投影训练，不扫步长/阈值救。T675径向进展测量合同已零步预检PASS/独立注册，407任务1724历史/600main+600audit/16MiB/30min硬停，待精确GitHub后launch；不定义新奖励或Actor更新。势函数望远镜常数不能假造完整return新信号，径向距离不是绕障安全余量。旧T665第二25成员8247206B完整远端逐SHA/恢复索引已落盘，deleted0，其余raw仍pending。见weekend_20261120_23/t674/FINDINGS、t675/PLAN及RESTORE_INDEX。
 
 2026-11-21 T673 COMPLETE/SIGNAL_DIAGNOSTIC_PASS/独立auditPASS：0物理0Actor/Value/optimizer，51.408main+51.312audit；44原旧有结果梯度、340无信号，六numeric全过。全407首Adam方向伤10旧，field-only伤19旧，小条件KL不能保护；field信号仅2任务且对单条失败敏感。新T674单次44半空间位移投影/NNLS-KKT及全历史非线性可行性已预检PASS并独立登记，600main+600audit/16MiB/30min硬停，待精确源码GitHub后唯一launch；无更新无candidate。若非线性不通过不救阈值/步长网格。见weekend_20261120_23/t673/FINDINGS、t674/PLAN及两一手审查，T501保留。
