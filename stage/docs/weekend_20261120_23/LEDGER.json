@@ -1,9 +1,9 @@
 {
   "physics": 101145369,
   "commands": 4711,
-  "science_seconds": 24006.30599617958,
-  "audit_seconds": 478.58564138412476,
-  "transport_seconds": 6069.371039152145,
+  "science_seconds": 24029.563595056534,
+  "audit_seconds": 485.994651556015,
+  "transport_seconds": 6369.371039152145,
   "Actor_live": 6,
   "Actor_shadow": 6,
   "Actor_independent": 6,
@@ -313,14 +313,35 @@
     },
     {
       "id": "T685",
-      "state": "RESERVED",
+      "state": "COMPLETE",
       "max_physics": 0,
       "max_commands": 0,
       "main_seconds": 600,
-      "audit_seconds": 600,
+      "audit_seconds": 7.409010171890259,
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t685_fresh_proxy_validity",
       "Actor_each": 0,
-      "preflight_seconds": 15.089160203933716
+      "preflight_seconds": 15.089160203933716,
+      "actual_physics": 0,
+      "actual_commands": 0,
+      "science_seconds": 7.460075616836548,
+      "Actor_calls": {
+        "Actor_live": 0,
+        "Actor_shadow": 0,
+        "Actor_independent": 0
+      },
+      "source_guard_early_refusal_accounted": true,
+      "source_guard_early_refusal_upper_seconds": 2
+    },
+    {
+      "id": "T686",
+      "state": "RESERVED",
+      "max_physics": 4969728,
+      "max_commands": 134,
+      "main_seconds": 3000,
+      "audit_seconds": 300,
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t686_direct_stochastic_validation",
+      "Actor_each": 0,
+      "preflight_seconds": 13.797523260116577
     }
   ],
   "charged_source_sync_commits": [
@@ -342,7 +363,8 @@
     "45e94a5e3f83c247d57b1cea53a2098b333d76ad",
     "a3120ccd465ac0b021d68f1053a63ad9e7252f6c",
     "7ff05fcc1daad1ac03f9480bf37070443b13df11",
-    "82cea0ed0a55ebfe998627d54249c3fae9091cee"
+    "82cea0ed0a55ebfe998627d54249c3fae9091cee",
+    "bbffa6efd04370a7c06d2b4c61d87c1f39d4ebea"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"

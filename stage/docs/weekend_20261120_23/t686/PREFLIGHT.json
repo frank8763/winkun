@@ -1,0 +1,67 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "two_fixed_model_loaders_and_frozen_backbone": true,
+  "all_baseline32full32exact_reaudited_no_new_native": true,
+  "candidate_model_seed_pairs_not_consumed": [
+    {
+      "candidate": "executed",
+      "known_deterministic_lost": [
+        "dev_task6_00",
+        "dev_task6_02",
+        "dev_task6_03",
+        "dev_task6_26"
+      ],
+      "new_model_seed_pairs": 32
+    },
+    {
+      "candidate": "self",
+      "known_deterministic_lost": [
+        "dev_task6_00",
+        "dev_task6_13",
+        "dev_task6_20"
+      ],
+      "new_model_seed_pairs": 32
+    }
+  ],
+  "candidate_owncarry_prefix_density_and_episode_reset": true,
+  "baseline_raw_vs_candidate_clip_semantics_verified": true,
+  "canonical_pool_worker_binding": true,
+  "shared32_CRN_streams_not_independent64": true,
+  "first_native_scene_reset_checked_at_registered_run": true,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "resources": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      10,
+      12,
+      14
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "8"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "GPU": "learning_and_history_only_yield_other_compute",
+    "CPUQuota": "400%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 4294967296,
+    "MemorySwapMax": 0
+  }
+}
