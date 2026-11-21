@@ -14,30 +14,30 @@
   "current_active_run": null,
   "current_active_unit": null,
   "current_run_protocol_immutable": true,
-  "last_checked_epoch": 1795248321.1828277,
-  "periodic_prompt_points_to": "T691R_REGISTERED_NOT_LAUNCHED",
-  "source_remote": "6a5e7030551edc4d8e72abc0fae9576d3b4f952a",
+  "last_checked_epoch": 1795249216.4334245,
+  "periodic_prompt_points_to": "T692_REVIEW_AND_CONCRETE_SPEC_PREPARE_NO_RUN",
+  "source_remote": "9814a2f9f69123ee6e44f2103eed3f3e9d99dd83",
   "last_health_check": {
-    "all_processes_exited": true,
-    "nominal_live": 64,
-    "nominal_shadow": 64,
-    "nominal_independent": 0,
-    "physics": 0,
-    "management_commands": 6,
-    "failed_at": "audit management count before independent updates",
-    "no_scientific_gate_change": true
+    "T691R_complete": true,
+    "all_processes_gone": true,
+    "two_audits": "PASS",
+    "nominal_maxKL": 0.1707783980182947,
+    "induced_maxKL": 0.17094728224976094,
+    "native_executed": false,
+    "samecandidate_full407": null,
+    "retained": "T501"
   },
   "working_hypotheses_note": "WORKING_HYPOTHESES_AFTER_T671.md",
   "posthoc_KL_scale_note": "t671/POSTHOC_KL_SCALE_CORRECTION.md",
-  "next_planned_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t691r_command_audit_recovery",
-  "last_completed_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t690_score_weighted_baseline",
+  "next_planned_run": null,
+  "last_completed_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t691r_command_audit_recovery",
   "historical_run_deadlines": {
     "T672": {
       "all_stop": "2026-11-21T14:49:01.564471+08:00",
       "native_stop": "2026-11-21T14:34:01.564471+08:00"
     }
   },
-  "current_job_absolute_all_stop": 1795262168.7778456,
+  "current_job_absolute_all_stop": null,
   "latest_all_science_exited": true,
   "T688_review_completed": true,
   "T688_review_result": "REJECT_AS_NEXT_PRIORITY_NO_JOB_NO_CODE_NO_LAUNCH",
@@ -46,5 +46,11 @@
   "T689_rejection_evidence": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t689/PRE_REGISTRATION_REJECTION.json",
   "T690_state": "COMPLETE_REJECTED",
   "T691_state": "FAILED_ENGINEERING_PRESERVED",
-  "T691R_state": "REGISTERED_NOT_LAUNCHED"
+  "T691R_state": "COMPLETE_BOTH_KL_REJECTED",
+  "nominal_recovered_independent_audit": "PASS64_NOT_REEXECUTED_LIVE_SHADOW",
+  "T692_state": "PRIMARY_REVIEW_AND_CONCRETE_SPEC_READY_NO_CODE_NO_RUN",
+  "last_raw_backup": "WEEKEND_T665_PRIMARY_EVIDENCE_5",
+  "raw_members_newly_verified": 31,
+  "raw_deleted": 0,
+  "next_planned_spec": "NEXT_T692_ONPOLICY_VALUE_CAUSAL_SPEC.md"
 }

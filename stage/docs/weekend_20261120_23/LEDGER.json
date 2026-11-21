@@ -1,12 +1,12 @@
 {
   "physics": 107262367,
-  "commands": 4967,
-  "science_seconds": 26604.247418165207,
-  "audit_seconds": 597.9001610279083,
-  "transport_seconds": 7585.852738618851,
-  "Actor_live": 71,
-  "Actor_shadow": 71,
-  "Actor_independent": 7,
+  "commands": 4973,
+  "science_seconds": 26659.79440164566,
+  "audit_seconds": 666.7815017700195,
+  "transport_seconds": 7902.923450231552,
+  "Actor_live": 135,
+  "Actor_shadow": 135,
+  "Actor_independent": 135,
   "Value_live": 0,
   "Value_shadow": 0,
   "Value_independent": 0,
@@ -431,7 +431,7 @@
     },
     {
       "id": "T691R",
-      "state": "RESERVED",
+      "state": "COMPLETE",
       "max_physics": 13625321,
       "max_commands": 468,
       "main_seconds": 5700,
@@ -441,7 +441,20 @@
       "Actor_shadow_cap": 64,
       "Actor_independent_cap": 128,
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t691r_command_audit_recovery",
-      "completed_children": []
+      "completed_children": [
+        "nominal",
+        "induced"
+      ],
+      "actual_physics": 0,
+      "actual_commands": 6,
+      "research_outcome": "BOTH_FIXED_ARMS_KL_GATE_REJECTED_NO_NATIVE",
+      "Actor_calls": {
+        "Actor_live": 64,
+        "Actor_shadow": 64,
+        "Actor_independent": 128
+      },
+      "actual_science_seconds": 55.54698348045349,
+      "actual_audit_seconds": 68.8813407421112
     }
   ],
   "charged_source_sync_commits": [
@@ -468,7 +481,8 @@
     "9ea10e95a84ef378773821ecdcbdbad064a4e12d",
     "7ede4e6477d95d206ed63161cad7cf116eb4bfe3",
     "6a5e7030551edc4d8e72abc0fae9576d3b4f952a",
-    "7a797cd17ad8a6786f766a709fa9bbb6b036c90d"
+    "7a797cd17ad8a6786f766a709fa9bbb6b036c90d",
+    "9814a2f9f69123ee6e44f2103eed3f3e9d99dd83"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"

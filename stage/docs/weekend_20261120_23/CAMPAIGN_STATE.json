@@ -1,35 +1,76 @@
 {
-  "epoch": 1795248321.1828277,
-  "state": "T691R_REGISTERED_NOT_LAUNCHED",
+  "epoch": 1795248560.594783,
+  "state": "T692_CONCRETE_SAMEBEHAVIOR_VALUE_CAUSAL_SPEC_PREPARING",
   "active_run": null,
   "unit": null,
   "actual_status": {
-    "state": "FAILED",
-    "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t691_induced_state_rehearsal/control.py\", line 91, in driver\n    if failure:raise RuntimeError(failure)\nRuntimeError: Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t691_induced_state_rehearsal/control.py\", line 71, in driver\n    try:c.wait(timeout=seconds);assert c.returncode==0,(arm,action,c.returncode)\nAssertionError: ('nominal', 'audit', 1)\n\n",
+    "state": "COMPLETE",
+    "error": null,
     "children": [
       {
         "arm": "nominal",
-        "state": "FAILED",
-        "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t691_induced_state_rehearsal/control.py\", line 71, in driver\n    try:c.wait(timeout=seconds);assert c.returncode==0,(arm,action,c.returncode)\nAssertionError: ('nominal', 'audit', 1)\n",
+        "state": "COMPLETE",
+        "error": null,
         "physics": 0,
-        "commands": 6,
-        "science_seconds": 53.71549987792969,
-        "audit_seconds": 3.0841305255889893,
+        "commands": 0,
+        "science_seconds": 0,
+        "audit_seconds": 35.183170795440674,
         "Actor_calls": {
-          "Actor_live": 64,
-          "Actor_shadow": 64,
-          "Actor_independent": 0
+          "Actor_live": 0,
+          "Actor_shadow": 0,
+          "Actor_independent": 64
         },
         "full407": null,
         "screen": null,
-        "audit": null
+        "audit": {
+          "state": "PASS",
+          "independent_Actor": 64,
+          "new_Value": 0,
+          "new_native": 0,
+          "live_shadow_independent_exact": true,
+          "complete_parameter_and_Adam_restore": true,
+          "all_cases_and_exact_verified": true,
+          "full407": null,
+          "screen": null,
+          "target_arm": "executed"
+        },
+        "prefix_evidence_not_reexecuted": true
+      },
+      {
+        "arm": "induced",
+        "state": "COMPLETE",
+        "error": null,
+        "physics": 0,
+        "commands": 6,
+        "science_seconds": 55.54698348045349,
+        "audit_seconds": 33.69816994667053,
+        "Actor_calls": {
+          "Actor_live": 64,
+          "Actor_shadow": 64,
+          "Actor_independent": 64
+        },
+        "full407": null,
+        "screen": null,
+        "audit": {
+          "state": "PASS",
+          "independent_Actor": 64,
+          "new_Value": 0,
+          "new_native": 0,
+          "live_shadow_independent_exact": true,
+          "complete_parameter_and_Adam_restore": true,
+          "all_cases_and_exact_verified": true,
+          "full407": null,
+          "screen": null,
+          "target_arm": "executed"
+        },
+        "prefix_evidence_not_reexecuted": false
       }
     ],
     "all_scientific_processes_stopped": true,
-    "helper_pid": 831606,
+    "helper_pid": 833364,
     "helper_stopped": true,
     "remote": "PENDING_LOCAL_RAW_RETAINED",
-    "epoch": 1795247956.693842
+    "epoch": 1795248473.1897748
   },
   "new_campaign_science_started": true,
   "new_campaign_physics": 107262367,
@@ -37,7 +78,7 @@
   "new_campaign_optimizer": 18,
   "new_campaign_registration_pending": false,
   "current_job_must_exit_before_next": true,
-  "next_action": "Exact newGitHub root then uniqueT691R. Only originalnominal independent64 audit then originalunexecutedinduced64live64shadow64independent; originalnominal64live/shadow notrerun orrecount. Managementaudit6fix redgreenPASS, originalabsolute deadline unchanged.",
+  "next_action": "Read T692 primary review and NEXT_T692_ONPOLICY_VALUE_CAUSAL_SPEC. Actively implement one joint matchedfit+conditionalcausalbranch job, not regression-only or Criticguidance. Fourfixed IDs old00/02 field0_1/7_2, decision20,4actions4CRN reps/64full64exact/4655264physics134cmd; bothCritics500steps,Valueeach1000Actor0. No code or preflight/register/launch yet. Realbranch/MC/fixedslot/split/ownership/full audit entry preflight and RESERVE/exactGitHub required.",
   "authorization": "AUTHORIZATION.json",
   "prior_group_current_ledger": {
     "physics": 64463885,
@@ -962,17 +1003,17 @@
   "user_latest_delegation_supersedes_old_evening_stop_for_future_campaigns": true,
   "raw_archive_cleanup_trigger": 8589934592,
   "global_cap": 10737418240,
-  "current_global_bytes": 2609501536,
+  "current_global_bytes": 2800490514,
   "minimum_free_actual": 223643844608,
   "network_now_user_available": true,
-  "next_job_spec": "t691r/PLAN.md",
-  "next_job_worst_physics": 13625321,
-  "next_job_max_commands": 468,
-  "next_job_new_optimizer": 64,
+  "next_job_spec": "NEXT_T692_ONPOLICY_VALUE_CAUSAL_SPEC.md",
+  "next_job_worst_physics": 4655264,
+  "next_job_max_commands": 134,
+  "next_job_new_optimizer": 0,
   "next_launch_condition": "Real1724stream/full407gradient/387reference/peerfixtures/numeric/loader preflightPASS, independent RESERVED, then exactGitHub tree and unique launch.",
-  "source_sync_of_weekend_docs": "VERIFIED_8af38f29416c96f95bab218c92a57c67b163bbcf",
+  "source_sync_of_weekend_docs": "VERIFIED_a7eb2d5201426d18fba5fb770d8a45023d881c4f",
   "method_note": "RETENTION_PRIMARY_SOURCES.md completed; TaSIL/CPO/PCPO/DAgger/PolicyConsolidation primary sources checked",
-  "next_learning_pilot": "T691R recovery only unexecuted independent audit and induced arm; not registered/launched yet.",
+  "next_learning_pilot": "T692 proposed samebehavior actionvalue and causalvalidation only; no Actor guidance admitted.",
   "primary_research_completed": true,
   "completed_current_coverage_batches": 17,
   "all_completed_current_children_audit_pass": true,
@@ -980,10 +1021,10 @@
   "prior_group_final_report": "stage/docs/day_20261120/t665/FINAL_REPORT.json",
   "prior_group_coverage_batches_completed": 18,
   "prior_group_raw_remote": "PENDING_BACKUP_TIMEOUT_LOCAL_RAW_RETAINED",
-  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t691/FINAL_REPORT.json",
+  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t691r/FINAL_REPORT.json",
   "response_gate": "SCIENTIFIC_GATE_FAILED",
   "response_derivative_learning_cancelled": true,
-  "source_remote": "6a5e7030551edc4d8e72abc0fae9576d3b4f952a",
+  "source_remote": "9814a2f9f69123ee6e44f2103eed3f3e9d99dd83",
   "recovery_qualified_ids": [
     "dev_task6_20",
     "dev_task6_23"
@@ -1019,7 +1060,7 @@
   "active_status": {
     "state": "NO_SCIENCE_RUNNING"
   },
-  "last_checked_epoch": 1795248321.1828277,
+  "last_checked_epoch": 1795249216.4334245,
   "working_hypotheses_note": "WORKING_HYPOTHESES_AFTER_T671.md",
   "posthoc_KL_scale_note": "t671/POSTHOC_KL_SCALE_CORRECTION.md",
   "T671_KL_sigma_mismatch": {
@@ -1036,7 +1077,7 @@
   },
   "user_latest_direction": "Actively reason and develop falsifiable combinations; after all407 support review choose one main learning variable, not blind sparse patching or unvalidated components.",
   "T665_first_evidence_batch_verified": "WEEKEND_T665_PRIMARY_EVIDENCE_0",
-  "periodic_prompt_points_to": "T691R_REGISTERED_NOT_LAUNCHED",
+  "periodic_prompt_points_to": "T692_REVIEW_AND_CONCRETE_SPEC_PREPARE_NO_RUN",
   "latest_all_science_exited": true,
   "last_method_reward_admission": "RADIAL_PROGRESS_NOT_ADMITTED_ALL3_INFORMATIVE_FIELD_CROSSED_BOUNDARY",
   "historical_metadata": {
@@ -1169,10 +1210,10 @@
     "Actor_shadow": 0,
     "Actor_independent": 0
   },
-  "current_job_absolute_all_stop": 1795262168.7778456,
+  "current_job_absolute_all_stop": null,
   "latest_driver": {
-    "pid": 826982,
-    "epoch": 1795245927.5115945,
+    "pid": 833360,
+    "epoch": 1795248346.898678,
     "science_network": false
   },
   "T688_review_completed": true,
@@ -1184,5 +1225,8 @@
   "T691_state": "FAILED_ENGINEERING_PRESERVED",
   "current_active_run": null,
   "current_active_unit": null,
-  "T691R_state": "REGISTERED_NOT_LAUNCHED"
+  "T691R_state": "COMPLETE_BOTH_KL_REJECTED",
+  "nominal_recovered_independent_audit": "PASS64_NOT_REEXECUTED_LIVE_SHADOW",
+  "T692_state": "PRIMARY_REVIEW_AND_CONCRETE_SPEC_READY_NO_CODE_NO_RUN",
+  "last_raw_backup": "WEEKEND_T665_PRIMARY_EVIDENCE_5_31members7985602bytes_FULL_READBACK_MEMBER_SHA_RESTORE_INDEX"
 }
