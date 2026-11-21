@@ -1,12 +1,12 @@
 {
-  "physics": 107262367,
-  "commands": 4979,
-  "science_seconds": 27460.54148721695,
-  "audit_seconds": 700.1302244663239,
-  "transport_seconds": 10095.425129175186,
-  "Actor_live": 135,
-  "Actor_shadow": 135,
-  "Actor_independent": 135,
+  "physics": 117127302,
+  "commands": 5447,
+  "science_seconds": 30642.951064109802,
+  "audit_seconds": 1723.2308433055878,
+  "transport_seconds": 10395.425129175186,
+  "Actor_live": 136,
+  "Actor_shadow": 136,
+  "Actor_independent": 136,
   "Value_live": 1000,
   "Value_shadow": 1000,
   "Value_independent": 1000,
@@ -547,7 +547,7 @@
     },
     {
       "id": "T694",
-      "state": "RESERVED",
+      "state": "FAILED",
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility",
       "max_physics": 13625321,
       "max_commands": 468,
@@ -557,7 +557,25 @@
       "Actor_each_cap": 1,
       "Value_each_cap": 0,
       "fit_type": "ONE_SUPERVISED_RADIAL_READOUT_COEFFICIENT_COMMIT",
-      "completed_children": []
+      "completed_children": [
+        "fit",
+        "evaluation"
+      ],
+      "actual_physics": 9864935,
+      "actual_commands": 468
+    },
+    {
+      "id": "T694R",
+      "state": "RESERVED",
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694r_audit_recovery",
+      "max_physics": 0,
+      "max_commands": 0,
+      "main_seconds": 0,
+      "audit_seconds": 600,
+      "preflight_seconds": 40,
+      "Actor_each_cap": 0,
+      "Value_each_cap": 0,
+      "scope": "ONLY_UNCOMMITTED_ORIGINAL_NATIVE_AUDIT_NO_FIT_OR_NATIVE_REEXECUTION"
     }
   ],
   "charged_source_sync_commits": [
@@ -592,7 +610,8 @@
     "224c34e9b84fc36d6ab0510acb6f8a9d864d3712",
     "ef5863909d7481c2ed7935fc791a1eae0e2bd520",
     "f76cf79d0cc248fea61bb45183c76a40c4278386",
-    "787d8f54ce61d4d3faf9fdb25c49cfa9da502c59"
+    "787d8f54ce61d4d3faf9fdb25c49cfa9da502c59",
+    "ec78c5f76b4fdfbb6aada26055227fdd1e7d5cc0"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"

@@ -14,16 +14,69 @@
   "current_active_run": null,
   "current_active_unit": null,
   "current_run_protocol_immutable": true,
-  "last_checked_epoch": 1795271464.492224,
-  "periodic_prompt_points_to": "T694_READY_FOR_REGISTRATION_EXACT_SOURCE_UNIQUE_LAUNCH",
-  "source_remote": "787d8f54ce61d4d3faf9fdb25c49cfa9da502c59",
+  "last_checked_epoch": 1795276294.7001762,
+  "periodic_prompt_points_to": "T694_ORIGINAL_FAILED_T694R_AUDIT_ONLY_RECOVERY",
+  "source_remote": "ec78c5f76b4fdfbb6aada26055227fdd1e7d5cc0",
   "last_health_check": {
-    "state": "UNCHANGED_NO_SCIENCE_ADMITTED",
-    "all_processes_gone": true,
-    "new_native": 0,
-    "new_optimizer": 0,
+    "state": "HEALTHY_SCREEN_PASS_FULL407_IN_PROGRESS",
+    "driver_pid": 863522,
+    "helper_pid": 863525,
+    "child_pid": 864909,
+    "phase": "evaluation",
+    "fit_audit": "PASS",
+    "screen_lost": [],
+    "screen_gained": [
+      "t502_field_sector0_offset1",
+      "t502_field_sector0_offset2",
+      "t502_field_sector1_offset1",
+      "t502_field_sector2_offset1",
+      "t502_field_sector5_offset1",
+      "t502_field_sector7_offset1"
+    ],
+    "screen_field_success": 11,
+    "progress": {
+      "physics": 8121452,
+      "commands": 431,
+      "completed": 425
+    },
+    "resource_probe": {
+      "state": "PASS",
+      "stage_cpus": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "stage_physical_cores": [
+        [
+          "0",
+          "10"
+        ],
+        [
+          "0",
+          "12"
+        ],
+        [
+          "0",
+          "14"
+        ],
+        [
+          "0",
+          "8"
+        ]
+      ],
+      "phase_process_metadata_only": [],
+      "GPU": "learning_and_history_only_yield_other_compute",
+      "CPUQuota": "400%",
+      "Nice": 19,
+      "CPUWeight": 10,
+      "MemoryMax": 4294967296,
+      "MemorySwapMax": 0
+    },
+    "evaluation_seconds_remaining": 3709.908833026886,
+    "root_seconds_remaining": 6961.3583018779755,
     "retained": "T501",
-    "verified_raw_batch": "WEEKEND_T665_PRIMARY_EVIDENCE_11"
+    "complete407_and_native_audit_pending": true
   },
   "working_hypotheses_note": "WORKING_HYPOTHESES_AFTER_T671.md",
   "posthoc_KL_scale_note": "t671/POSTHOC_KL_SCALE_CORRECTION.md",
@@ -35,7 +88,7 @@
       "native_stop": "2026-11-21T14:34:01.564471+08:00"
     }
   },
-  "current_job_absolute_all_stop": null,
+  "current_job_absolute_all_stop": 1795281665.719879,
   "latest_all_science_exited": true,
   "T688_review_completed": true,
   "T688_review_result": "REJECT_AS_NEXT_PRIORITY_NO_JOB_NO_CODE_NO_LAUNCH",
@@ -51,7 +104,7 @@
   "raw_members_newly_verified": 28,
   "raw_deleted": 0,
   "next_planned_spec": null,
-  "source_sync_of_weekend_docs": "VERIFIED_ac9a3946e6068ec6075e5f65c1b0cf76de900201",
+  "source_sync_of_weekend_docs": "VERIFIED_e2bae4d9b1b5ecb6644f7f3cafb40da57a702588",
   "T693_state": "NOT_LAUNCHED_TIME_ADMISSION_FAILED",
   "next_research_agent": null,
   "next_research_note": "EXACT_COMMAND_RETENTION_PRIMARY_REVIEW.md",
@@ -72,6 +125,8 @@
     "source_shell_exited": true
   },
   "user_latest_direction": "User explicitly asks continue thinking after status report; bounded exactfunctionretention review, not automatic generic queue",
-  "T694_state": "GEOMETRY_AND_ZERO_UPDATE_ENTRY_PASS_READY_FOR_INDEPENDENT_REGISTRATION",
-  "preparation_pids": []
+  "T694_state": "FAILED_FINAL_AUDIT_TIMEOUT_NATIVE_COMPLETE390_OF407_NO_OLD_LOSS",
+  "preparation_pids": [],
+  "source_charge_pending_until_all_science_exit": "ec78c5f76b4fdfbb6aada26055227fdd1e7d5cc0",
+  "T694R_state": "READY_ZERO_NATIVE_AUDIT_RECOVERY_ONLY_NOT_REGISTERED"
 }

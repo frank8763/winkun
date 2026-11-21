@@ -1,33 +1,19 @@
 {
-  "epoch": 1795271464.491578,
-  "state": "T694_ENTRY_PASS_NOT_REGISTERED",
+  "epoch": 1795276294.6993356,
+  "state": "T694_FAILED_AUDIT_RECOVERY_PREPARED",
   "active_run": null,
   "unit": null,
   "actual_status": {
-    "state": "PRELAUNCH_TIME_ADMISSION_FAILED",
-    "epoch": 1795260927.6029932,
-    "original_absolute_all_stop": 1795270430.4839032,
-    "remaining_seconds": 9502.880909919739,
-    "required_reserved_main_audit_seconds": 15900,
-    "minimum_physical_admission_seconds": 13057.1464,
-    "no_launch": true,
-    "no_driver": true,
-    "no_scientific_processes_ever_launched": true,
-    "actual_physics": 0,
-    "actual_commands": 0,
-    "Actor_live": 0,
-    "Actor_shadow": 0,
-    "Actor_independent": 0,
-    "Value_each": 0,
-    "source_remote": "224c34e9b84fc36d6ab0510acb6f8a9d864d3712",
-    "source_tree": "fac7adada325cddac1f9c1b635442bb54016976c",
-    "source_shell_exit0_before_receipt_check": true,
-    "protocol_unchanged": true,
-    "protocol_sha256": "c9ac125f65bda74e1a0c33daf38979288995f93c02fa08366720e2dcdf11df96",
-    "cause": "Registration-to-launch wall time consumed the finite admission window. Exact source sync was observed exited only after active-turn handoff. No scientific or code validity failure is inferred.",
-    "no_extended_deadline_or_new_id_restart": true,
-    "raw_and_source_evidence_preserved": true,
-    "method_scientifically_unexecuted": true
+    "state": "ACTIVE",
+    "child_pid": 864909,
+    "pid": 864909,
+    "driver_pid": 863522,
+    "child": "evaluation",
+    "action": "main",
+    "epoch": 1795274704.2010825,
+    "physics": 8121452,
+    "commands": 431,
+    "completed": 425
   },
   "new_campaign_science_started": true,
   "new_campaign_physics": 107262367,
@@ -35,7 +21,7 @@
   "new_campaign_optimizer": 18,
   "new_campaign_registration_pending": false,
   "current_job_must_exit_before_next": true,
-  "next_action": "T694 fixedexpandedneuralreadout feasibility: all38477589protectedpoints/6sources1405centers strict0/I and actualRAMloader/worker/auditentryPASS; source metadata compacted only. Registerworst, commit+exactGitHub+waitshellcompletion then immediateunique launch in sameactiveoperation. T501retained until actualcomplete407/audit.",
+  "next_action": "Register/sourceexact/unique T694R auditonly within originalevaluation/rootdeadline600s; no fit/native/repeatedActor. OriginalFAILED preserved. Do not retain until auditPASS+allPIDexit.",
   "authorization": "AUTHORIZATION.json",
   "prior_group_current_ledger": {
     "physics": 64463885,
@@ -963,12 +949,12 @@
   "current_global_bytes": 2806090151,
   "minimum_free_actual": 221830332416,
   "network_now_user_available": true,
-  "next_job_spec": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t694/PLAN.md",
+  "next_job_spec": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t694r/PLAN.md",
   "next_job_worst_physics": 13625321,
   "next_job_max_commands": 468,
   "next_job_new_optimizer": 0,
   "next_launch_condition": "No next scientific protocol admitted; new proposal must be substantivelydistinct and fullyreviewed/preflight/reserved/sourceexact",
-  "source_sync_of_weekend_docs": "VERIFIED_ac9a3946e6068ec6075e5f65c1b0cf76de900201",
+  "source_sync_of_weekend_docs": "VERIFIED_e2bae4d9b1b5ecb6644f7f3cafb40da57a702588",
   "method_note": "RETENTION_PRIMARY_SOURCES.md completed; TaSIL/CPO/PCPO/DAgger/PolicyConsolidation primary sources checked",
   "next_learning_pilot": "T694 singleexpanded120/GRU64 supervisedfinitecompatibility replication, nofreshmatchedalgorithmarm/no superiority orRL claim",
   "primary_research_completed": true,
@@ -978,10 +964,10 @@
   "prior_group_final_report": "stage/docs/day_20261120/t665/FINAL_REPORT.json",
   "prior_group_coverage_batches_completed": 18,
   "prior_group_raw_remote": "PENDING_BACKUP_TIMEOUT_LOCAL_RAW_RETAINED",
-  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t692/FINAL_REPORT.json",
+  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t694/FINAL_REPORT.json",
   "response_gate": "SCIENTIFIC_GATE_FAILED",
   "response_derivative_learning_cancelled": true,
-  "source_remote": "787d8f54ce61d4d3faf9fdb25c49cfa9da502c59",
+  "source_remote": "ec78c5f76b4fdfbb6aada26055227fdd1e7d5cc0",
   "recovery_qualified_ids": [
     "dev_task6_20",
     "dev_task6_23"
@@ -1017,7 +1003,7 @@
   "active_status": {
     "state": "NO_SCIENCE_RUNNING"
   },
-  "last_checked_epoch": 1795271464.4915757,
+  "last_checked_epoch": 1795276294.699332,
   "working_hypotheses_note": "WORKING_HYPOTHESES_AFTER_T671.md",
   "posthoc_KL_scale_note": "t671/POSTHOC_KL_SCALE_CORRECTION.md",
   "T671_KL_sigma_mismatch": {
@@ -1034,7 +1020,7 @@
   },
   "user_latest_direction": "User explicitly asks continue thinking after status report; bounded exactfunctionretention review, not automatic generic queue",
   "T665_first_evidence_batch_verified": "WEEKEND_T665_PRIMARY_EVIDENCE_0",
-  "periodic_prompt_points_to": "T694_READY_FOR_REGISTRATION_EXACT_SOURCE_UNIQUE_LAUNCH",
+  "periodic_prompt_points_to": "T694_ORIGINAL_FAILED_T694R_AUDIT_ONLY_RECOVERY",
   "latest_all_science_exited": true,
   "last_method_reward_admission": "RADIAL_PROGRESS_NOT_ADMITTED_ALL3_INFORMATIVE_FIELD_CROSSED_BOUNDARY",
   "historical_metadata": {
@@ -1167,10 +1153,10 @@
     "Actor_shadow": 0,
     "Actor_independent": 0
   },
-  "current_job_absolute_all_stop": null,
+  "current_job_absolute_all_stop": 1795281665.719879,
   "latest_driver": {
-    "pid": 838672,
-    "epoch": 1795252073.3309236,
+    "pid": 863522,
+    "epoch": 1795271517.1764357,
     "science_network": false
   },
   "T688_review_completed": true,
@@ -1212,6 +1198,89 @@
     "charged_upper_seconds": 300,
     "source_shell_exited": true
   },
-  "T694_state": "GEOMETRY_AND_ZERO_UPDATE_ENTRY_PASS_READY_FOR_INDEPENDENT_REGISTRATION",
-  "preparation_pids": []
+  "T694_state": "FAILED_FINAL_AUDIT_TIMEOUT_NATIVE_COMPLETE390_OF407_NO_OLD_LOSS",
+  "preparation_pids": [],
+  "T694_original_absolute_all_stop_local": "2026-11-22T01:21:05.719879+08:00",
+  "T694_active_helper": 863525,
+  "last_health_check": {
+    "state": "HEALTHY_SCREEN_PASS_FULL407_IN_PROGRESS",
+    "driver_pid": 863522,
+    "helper_pid": 863525,
+    "child_pid": 864909,
+    "phase": "evaluation",
+    "fit_audit": "PASS",
+    "screen_lost": [],
+    "screen_gained": [
+      "t502_field_sector0_offset1",
+      "t502_field_sector0_offset2",
+      "t502_field_sector1_offset1",
+      "t502_field_sector2_offset1",
+      "t502_field_sector5_offset1",
+      "t502_field_sector7_offset1"
+    ],
+    "screen_field_success": 11,
+    "progress": {
+      "physics": 8121452,
+      "commands": 431,
+      "completed": 425
+    },
+    "resource_probe": {
+      "state": "PASS",
+      "stage_cpus": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "stage_physical_cores": [
+        [
+          "0",
+          "10"
+        ],
+        [
+          "0",
+          "12"
+        ],
+        [
+          "0",
+          "14"
+        ],
+        [
+          "0",
+          "8"
+        ]
+      ],
+      "phase_process_metadata_only": [],
+      "GPU": "learning_and_history_only_yield_other_compute",
+      "CPUQuota": "400%",
+      "Nice": 19,
+      "CPUWeight": 10,
+      "MemoryMax": 4294967296,
+      "MemorySwapMax": 0
+    },
+    "evaluation_seconds_remaining": 3709.908833026886,
+    "root_seconds_remaining": 6961.3583018779755,
+    "retained": "T501",
+    "complete407_and_native_audit_pending": true
+  },
+  "T694_active_fit_counts": {
+    "live": 1,
+    "shadow": 1,
+    "independent": 1
+  },
+  "T694R_state": "READY_ZERO_NATIVE_AUDIT_RECOVERY_ONLY_NOT_REGISTERED",
+  "T694_unconfirmed_full407": {
+    "success": 390,
+    "lost_prior": [],
+    "gained_prior": [
+      "t502_field_sector0_offset1",
+      "t502_field_sector0_offset2",
+      "t502_field_sector1_offset1",
+      "t502_field_sector2_offset1",
+      "t502_field_sector5_offset1",
+      "t502_field_sector7_offset1"
+    ],
+    "all387": true,
+    "audit_pending": true
+  }
 }
