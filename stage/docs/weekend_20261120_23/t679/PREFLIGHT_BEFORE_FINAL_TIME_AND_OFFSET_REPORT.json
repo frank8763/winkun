@@ -1,0 +1,49 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "all11906_parameter_Gaussian_JVP_numeric": true,
+  "JVP_error": 4.2638470532097017e-10,
+  "own_complete_carry_output_identity": true,
+  "antithetic_parameters_restored": true,
+  "checkpoint_in_memory_roundtrip": true,
+  "canonical_deterministic_worker_loader": true,
+  "resource_helper_configuration": true,
+  "data_count_fresh": 64,
+  "exact_count": 64,
+  "calibration_seeds_disjoint": true,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "resources": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      10,
+      12,
+      14
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "8"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "GPU": "learning_and_history_only_yield_other_compute",
+    "CPUQuota": "400%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 4294967296,
+    "MemorySwapMax": 0
+  }
+}
