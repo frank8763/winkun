@@ -1,45 +1,94 @@
 {
-  "epoch": 1795245885.524417,
-  "state": "T690_REGISTERED_NOT_LAUNCHED",
+  "epoch": 1795247859.6433034,
+  "state": "T691_REGISTERED_NOT_LAUNCHED",
   "active_run": null,
   "unit": null,
   "actual_status": {
     "state": "COMPLETE",
     "error": null,
-    "failure_action": null,
+    "children": [
+      {
+        "arm": "executed",
+        "state": "COMPLETE",
+        "error": null,
+        "physics": 2950856,
+        "commands": 116,
+        "science_seconds": 910.7508788108826,
+        "audit_seconds": 44.145888805389404,
+        "Actor_calls": {
+          "Actor_live": 1,
+          "Actor_shadow": 1,
+          "Actor_independent": 1
+        },
+        "full407": null,
+        "screen": {
+          "lost_ids": [
+            "dev_task6_00",
+            "dev_task6_03",
+            "dev_task6_14"
+          ],
+          "gained_ids": [
+            "dev_task6_15",
+            "t502_field_sector0_offset1",
+            "t502_field_sector2_offset1",
+            "t502_field_sector5_offset1"
+          ],
+          "field_success": 8,
+          "model": {
+            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t690_score_weighted_baseline/executed/proposal.pt.gz",
+            "sha256": "b9b50462a7a8a0a5ab8a63fa0b6774ea21936fb111919589ef1196ba6ee3943a",
+            "policy_hash": "ea90d4f9f9f118284924bcdd66ad9f6535ce9192c70be883490c30fa23dad131",
+            "joint_hash": "33493228c73a72dc86399658554a9165729838c1f52ea4ffd40abd871e377500",
+            "bytes": 1064459
+          }
+        },
+        "audit": {
+          "state": "PASS",
+          "independent_Actor": 1,
+          "new_Value": 0,
+          "new_native": 0,
+          "live_shadow_independent_exact": true,
+          "complete_parameter_and_Adam_restore": true,
+          "all_cases_and_exact_verified": true,
+          "full407": null,
+          "screen": {
+            "lost_ids": [
+              "dev_task6_00",
+              "dev_task6_03",
+              "dev_task6_14"
+            ],
+            "gained_ids": [
+              "dev_task6_15",
+              "t502_field_sector0_offset1",
+              "t502_field_sector2_offset1",
+              "t502_field_sector5_offset1"
+            ],
+            "field_success": 8,
+            "model": {
+              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t690_score_weighted_baseline/executed/proposal.pt.gz",
+              "sha256": "b9b50462a7a8a0a5ab8a63fa0b6774ea21936fb111919589ef1196ba6ee3943a",
+              "policy_hash": "ea90d4f9f9f118284924bcdd66ad9f6535ce9192c70be883490c30fa23dad131",
+              "joint_hash": "33493228c73a72dc86399658554a9165729838c1f52ea4ffd40abd871e377500",
+              "bytes": 1064459
+            }
+          },
+          "target_arm": "executed"
+        }
+      }
+    ],
     "all_scientific_processes_stopped": true,
-    "helper_pid": 817901,
+    "helper_pid": 826986,
     "helper_stopped": true,
-    "gate": "FULL_ACTOR_GRADIENT_CONTRACT_PASS",
-    "full407": null,
-    "no_model_promoted": true,
-    "physics": 0,
-    "commands": 0,
-    "science_seconds": 46.761751651763916,
-    "audit_seconds": 45.695162534713745,
-    "Actor_calls": {
-      "Actor_live": 0,
-      "Actor_shadow": 0,
-      "Actor_independent": 0
-    },
-    "audit": {
-      "state": "PASS",
-      "full_BPTT_and_adapter_gradient_identity_and_formula_exact": true,
-      "all_arrays_numeric_and_full407_history_metrics_reconstructed": true,
-      "new_native": 0,
-      "new_optimizer": 0,
-      "full_scope_pilot_numerically_admitted": false
-    },
     "remote": "PENDING_LOCAL_RAW_RETAINED",
-    "epoch": 1795243058.305042
+    "epoch": 1795246883.5108805
   },
   "new_campaign_science_started": true,
-  "new_campaign_physics": 104311511,
-  "new_campaign_commands": 4845,
+  "new_campaign_physics": 107262367,
+  "new_campaign_commands": 4961,
   "new_campaign_optimizer": 18,
   "new_campaign_registration_pending": false,
   "current_job_must_exit_before_next": true,
-  "next_action": "Wait exact source sync shell exit and receipt tree==HEAD tree, then unique stage-t690 launch. Oneactual weightedpeerbaseline Adam+shadow+independent; original55full55exact+conditional407. No source or parallel science afterlaunch.",
+  "next_action": "Exact GitHub source sync must finish, receipt root==HEAD tree; then unique T691 sequential nominal/induced fixedtwoarm64step pilot. No adaptive changes or result interpretation until bothfixedarmsfinish.",
   "authorization": "AUTHORIZATION.json",
   "prior_group_current_ledger": {
     "physics": 64463885,
@@ -967,14 +1016,14 @@
   "current_global_bytes": 2609501536,
   "minimum_free_actual": 223643844608,
   "network_now_user_available": true,
-  "next_job_spec": "t690/PLAN.md",
-  "next_job_worst_physics": 13625321,
-  "next_job_max_commands": 468,
-  "next_job_new_optimizer": 1,
+  "next_job_spec": "t691/PLAN.md",
+  "next_job_worst_physics": 27250642,
+  "next_job_max_commands": 936,
+  "next_job_new_optimizer": 128,
   "next_launch_condition": "Real1724stream/full407gradient/387reference/peerfixtures/numeric/loader preflightPASS, independent RESERVED, then exactGitHub tree and unique launch.",
-  "source_sync_of_weekend_docs": "VERIFIED_8a9c8b33d0ef37ade94a0173984c7f88e8dd4dea",
+  "source_sync_of_weekend_docs": "VERIFIED_8af38f29416c96f95bab218c92a57c67b163bbcf",
   "method_note": "RETENTION_PRIMARY_SOURCES.md completed; TaSIL/CPO/PCPO/DAgger/PolicyConsolidation primary sources checked",
-  "next_learning_pilot": "T690 one actual score-norm-weighted peer baseline Adam, independently RESERVED; not yet executed.",
+  "next_learning_pilot": "T691 two fixed offline supervised64step arms, nominal vs induced32 history oldfunction rehearsal, RESERVED not launched.",
   "primary_research_completed": true,
   "completed_current_coverage_batches": 17,
   "all_completed_current_children_audit_pass": true,
@@ -982,10 +1031,10 @@
   "prior_group_final_report": "stage/docs/day_20261120/t665/FINAL_REPORT.json",
   "prior_group_coverage_batches_completed": 18,
   "prior_group_raw_remote": "PENDING_BACKUP_TIMEOUT_LOCAL_RAW_RETAINED",
-  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t687/FINAL_REPORT.json",
+  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t690/FINAL_REPORT.json",
   "response_gate": "SCIENTIFIC_GATE_FAILED",
   "response_derivative_learning_cancelled": true,
-  "source_remote": "7ede4e6477d95d206ed63161cad7cf116eb4bfe3",
+  "source_remote": "6a5e7030551edc4d8e72abc0fae9576d3b4f952a",
   "recovery_qualified_ids": [
     "dev_task6_20",
     "dev_task6_23"
@@ -995,8 +1044,8 @@
   "outcome_projection_gate": "SCIENTIFIC_GATE_FAILED_INACTIVE_CONSTRAINTS",
   "first_raw_batch_remote_verified": "WEEKEND_T666_PRIMARY_EVIDENCE_0",
   "raw_deletions": 0,
-  "new_campaign_optimizer_live_started": 6,
-  "new_campaign_optimizer_shadow_started": 6,
+  "new_campaign_optimizer_live_started": 7,
+  "new_campaign_optimizer_shadow_started": 7,
   "T671_sampling_surrogate_gate_passes": 4,
   "T671_full407": {
     "success": 385,
@@ -1021,7 +1070,7 @@
   "active_status": {
     "state": "NO_SCIENCE_RUNNING"
   },
-  "last_checked_epoch": 1795245885.524417,
+  "last_checked_epoch": 1795247859.6433034,
   "working_hypotheses_note": "WORKING_HYPOTHESES_AFTER_T671.md",
   "posthoc_KL_scale_note": "t671/POSTHOC_KL_SCALE_CORRECTION.md",
   "T671_KL_sigma_mismatch": {
@@ -1038,7 +1087,7 @@
   },
   "user_latest_direction": "Actively reason and develop falsifiable combinations; after all407 support review choose one main learning variable, not blind sparse patching or unvalidated components.",
   "T665_first_evidence_batch_verified": "WEEKEND_T665_PRIMARY_EVIDENCE_0",
-  "periodic_prompt_points_to": "T690_REGISTERED_NOT_LAUNCHED",
+  "periodic_prompt_points_to": "T691_REGISTERED_NOT_LAUNCHED",
   "latest_all_science_exited": true,
   "last_method_reward_admission": "RADIAL_PROGRESS_NOT_ADMITTED_ALL3_INFORMATIVE_FIELD_CROSSED_BOUNDARY",
   "historical_metadata": {
@@ -1171,10 +1220,10 @@
     "Actor_shadow": 0,
     "Actor_independent": 0
   },
-  "current_job_absolute_all_stop": 1795252951.392073,
+  "current_job_absolute_all_stop": 1795262168.7778456,
   "latest_driver": {
-    "pid": 817896,
-    "epoch": 1795242965.5763083,
+    "pid": 826982,
+    "epoch": 1795245927.5115945,
     "science_network": false
   },
   "T688_review_completed": true,
@@ -1182,5 +1231,6 @@
   "T688_review_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/T688_PRIMARY_REVIEW.md",
   "T689_pre_registration_state": "REJECTED_PRE_REGISTRATION_NO_NATIVE_NO_OPTIMIZER",
   "T689_rejection_evidence": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t689/PRE_REGISTRATION_REJECTION.json",
-  "T690_state": "REGISTERED_NOT_LAUNCHED"
+  "T690_state": "COMPLETE_REJECTED",
+  "T691_state": "REGISTERED_NOT_LAUNCHED"
 }

@@ -1,0 +1,11 @@
+# T690：基线加权实际学习完成，旧能力仍丢失
+
+COMPLETE / 独立audit PASS，但保留门失败。一次live Adam、一次shadow、一独立历史重建，55fresh full+55exact，2,950,856物理116命令/910.750879main+44.145889audit秒，Value0。driver826982/helper826986/science826987,827073,827074,827076,827820及stage-t690 unit全部核实退出。精确树8af38f29416c96f95bab218c92a57c67b163bbcf/commit6a5e7030551edc4d8e72abc0fae9576d3b4f952a后唯一launch；source300已按commit去重结算，全部模型/raw保留。
+
+仅把原T678executed终态LOO的普通peermean换为score范数加权peerbaseline，其余initial/407与1724数据/11906adapter范围/387executed参考/Adam均不变。全1724innovation逐seed精确核验、真实loader/完整owncarry/density/六代数fixture/numeric冻结baseline/逐score合成及三类实际Adam精确。weighted与original联合gradient cos.995548884、相对差11.240756%，非零不同方向；首步公式误差2.75e-17，sample max68任务mean latentKL6.34374e-5通过数值门，不构成闭环保持证书。贡献离散度不作无偏方差估计或准入，也不宣称总体方差降低。
+
+固定55任务安全32/55，原32保护成功29/32；**dev_task6_00、dev_task6_03、dev_task6_14均collision**。新增dev_task6_15、field0_offset1、field2_offset1、field5_offset1，field8/24。原T678executed丢00/02/03/26，新方案恢复其中02/26但又丢14；不能把这理解成已解决遗忘或选择好看ID。新4项不能抵消旧损失。候选拒绝，full407=null/未执行，T501继续保留。
+
+正式模型policy hash ea90d4f9f9f118284924bcdd66ad9f6535ce9192c70be883490c30fa23dad131、文件b9b50462a7a8a0a5ab8a63fa0b6774ea21936fb111919589ef1196ba6ee3943a。注意预检纯解析公式临时表示policy hash不同于实际Adam末位字节，不能把公式预检hash当最终导出模型；实际live-shadow-independent三者及原生loader均精确同正式模型。预检只要求公式误差<1e-12，不要求表示字节与Adam完全相同，既有科学阈值不变。
+
+停止本固定peerbaseline路线，不加步骤/seed/范数指数/权重。此结果不证明控制变量或所有baseline无效，但表明本项估计器改变未保住确定性闭环。下一需转向有明确区别的训练占用/监督机制或更强可验证学习假说，不继续OPE/同batch小修补填时钟。所有已完成块和Actor不重跑。

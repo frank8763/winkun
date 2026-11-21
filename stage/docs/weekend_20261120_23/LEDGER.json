@@ -1,12 +1,12 @@
 {
-  "physics": 104311511,
-  "commands": 4845,
-  "science_seconds": 25622.5970890522,
-  "audit_seconds": 550.6701416969299,
-  "transport_seconds": 6969.371039152145,
-  "Actor_live": 6,
-  "Actor_shadow": 6,
-  "Actor_independent": 6,
+  "physics": 107262367,
+  "commands": 4961,
+  "science_seconds": 26548.17983007431,
+  "audit_seconds": 594.8160305023193,
+  "transport_seconds": 7285.852738618851,
+  "Actor_live": 7,
+  "Actor_shadow": 7,
+  "Actor_independent": 7,
   "Value_live": 0,
   "Value_shadow": 0,
   "Value_independent": 0,
@@ -388,7 +388,7 @@
     },
     {
       "id": "T690",
-      "state": "RESERVED",
+      "state": "COMPLETE",
       "max_physics": 13625321,
       "max_commands": 468,
       "main_seconds": 5700,
@@ -396,7 +396,34 @@
       "preflight_seconds": 148.62396335601807,
       "Actor_each_cap": 1,
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t690_score_weighted_baseline",
-      "completed_children": []
+      "completed_children": [
+        "executed"
+      ],
+      "actual_physics": 2950856,
+      "actual_commands": 116,
+      "actual_science_seconds": 910.7508788108826,
+      "actual_audit_seconds": 44.145888805389404,
+      "Actor_calls": {
+        "Actor_live": 1,
+        "Actor_shadow": 1,
+        "Actor_independent": 1
+      },
+      "research_outcome": "REJECTED_3_OLD_COLLISIONS",
+      "full407": null
+    },
+    {
+      "id": "T691",
+      "state": "RESERVED",
+      "max_physics": 27250642,
+      "max_commands": 936,
+      "main_seconds": 11400,
+      "audit_seconds": 1800,
+      "preflight_seconds": 13.831862211227417,
+      "Actor_each_cap": 128,
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t691_induced_state_rehearsal",
+      "completed_children": [],
+      "early_metadata_read_accounted": true,
+      "early_metadata_read_upper_seconds": 1
     }
   ],
   "charged_source_sync_commits": [
@@ -421,7 +448,8 @@
     "82cea0ed0a55ebfe998627d54249c3fae9091cee",
     "bbffa6efd04370a7c06d2b4c61d87c1f39d4ebea",
     "9ea10e95a84ef378773821ecdcbdbad064a4e12d",
-    "7ede4e6477d95d206ed63161cad7cf116eb4bfe3"
+    "7ede4e6477d95d206ed63161cad7cf116eb4bfe3",
+    "6a5e7030551edc4d8e72abc0fae9576d3b4f952a"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"

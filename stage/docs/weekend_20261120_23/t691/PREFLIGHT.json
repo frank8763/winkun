@@ -1,0 +1,72 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "all384_nominal_and_all32_actual_induced_histories": true,
+  "induced_success": 29,
+  "induced_collision": 3,
+  "old_function_labels_not_success": true,
+  "new6_unique_relative_T501_only3_new_vs387": true,
+  "new_source_model_owncarry_locations_and_actual_commands": true,
+  "initial_two_gradients_equal": true,
+  "numeric": {
+    "nominal": {
+      "analytic": 0.016914723919635322,
+      "numeric": 0.016914723913186158,
+      "error": 6.449164119404216e-12,
+      "gradient_norm": 1.3928831444094736
+    },
+    "induced": {
+      "analytic": 0.016914723919635322,
+      "numeric": 0.016914723913186158,
+      "error": 6.449164119404216e-12,
+      "gradient_norm": 1.3928831444094736
+    }
+  },
+  "first_virtual_step_restoring_gradient_difference": 0.00020458988368846607,
+  "matched_old_perID_weight": true,
+  "local_old_targets_float64_prequantization": true,
+  "runtime_gradient_seconds": {
+    "nominal": 3.2855758666992188,
+    "induced": 0.7055771350860596
+  },
+  "peak_rss_bytes": 1305276416,
+  "all_state_and_Adam_exact_restore": true,
+  "loader_canonical_worker_bound": true,
+  "all_prior_processes_exited": true,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "resources": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      10,
+      12,
+      14
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "8"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "GPU": "learning_and_history_only_yield_other_compute",
+    "CPUQuota": "400%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 4294967296,
+    "MemorySwapMax": 0
+  },
+  "elapsed_seconds": 13.377333402633667
+}
