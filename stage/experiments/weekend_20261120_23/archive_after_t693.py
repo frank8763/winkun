@@ -10,7 +10,16 @@ read=lambda f:json.loads(Path(f).read_text())
 def stopped():
     ledger=read(DOC/'LEDGER.json');folders={ROOT/'stage/runs/t665_remaining_verification'}
     for item in ledger['jobs']:
-        if item.get('out'):folders.add(Path(item['out']))
+        if item.get('out'):
+            folder=Path(item['out'])
+            if item['state']=='NOT_LAUNCHED_TIME_ADMISSION_FAILED':
+                # No scientific process was ever created; do not manufacture a
+                # SEALED receipt for an unlaunched registration.
+                assert not any((folder/name).exists() for name in ['launch.json','DRIVER_STARTED.json','science_started.json','SEALED.json'])
+                rejection=read(DOC/'t693/PRELAUNCH_REJECTION.json')
+                assert item['id']=='T693' and rejection['no_scientific_processes_ever_launched']
+                continue
+            folders.add(folder)
     for folder in folders:
         assert folder.is_relative_to(ROOT/'stage/runs') and folder.exists(),folder
         seal=read(folder/'SEALED.json');assert seal['all_scientific_processes_stopped'],folder
