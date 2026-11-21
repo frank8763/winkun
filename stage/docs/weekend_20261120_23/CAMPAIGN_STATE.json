@@ -1,86 +1,35 @@
 {
-  "epoch": 1795247859.6433034,
-  "state": "T691_REGISTERED_NOT_LAUNCHED",
+  "epoch": 1795248321.1828277,
+  "state": "T691R_REGISTERED_NOT_LAUNCHED",
   "active_run": null,
   "unit": null,
   "actual_status": {
-    "state": "COMPLETE",
-    "error": null,
+    "state": "FAILED",
+    "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t691_induced_state_rehearsal/control.py\", line 91, in driver\n    if failure:raise RuntimeError(failure)\nRuntimeError: Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t691_induced_state_rehearsal/control.py\", line 71, in driver\n    try:c.wait(timeout=seconds);assert c.returncode==0,(arm,action,c.returncode)\nAssertionError: ('nominal', 'audit', 1)\n\n",
     "children": [
       {
-        "arm": "executed",
-        "state": "COMPLETE",
-        "error": null,
-        "physics": 2950856,
-        "commands": 116,
-        "science_seconds": 910.7508788108826,
-        "audit_seconds": 44.145888805389404,
+        "arm": "nominal",
+        "state": "FAILED",
+        "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t691_induced_state_rehearsal/control.py\", line 71, in driver\n    try:c.wait(timeout=seconds);assert c.returncode==0,(arm,action,c.returncode)\nAssertionError: ('nominal', 'audit', 1)\n",
+        "physics": 0,
+        "commands": 6,
+        "science_seconds": 53.71549987792969,
+        "audit_seconds": 3.0841305255889893,
         "Actor_calls": {
-          "Actor_live": 1,
-          "Actor_shadow": 1,
-          "Actor_independent": 1
+          "Actor_live": 64,
+          "Actor_shadow": 64,
+          "Actor_independent": 0
         },
         "full407": null,
-        "screen": {
-          "lost_ids": [
-            "dev_task6_00",
-            "dev_task6_03",
-            "dev_task6_14"
-          ],
-          "gained_ids": [
-            "dev_task6_15",
-            "t502_field_sector0_offset1",
-            "t502_field_sector2_offset1",
-            "t502_field_sector5_offset1"
-          ],
-          "field_success": 8,
-          "model": {
-            "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t690_score_weighted_baseline/executed/proposal.pt.gz",
-            "sha256": "b9b50462a7a8a0a5ab8a63fa0b6774ea21936fb111919589ef1196ba6ee3943a",
-            "policy_hash": "ea90d4f9f9f118284924bcdd66ad9f6535ce9192c70be883490c30fa23dad131",
-            "joint_hash": "33493228c73a72dc86399658554a9165729838c1f52ea4ffd40abd871e377500",
-            "bytes": 1064459
-          }
-        },
-        "audit": {
-          "state": "PASS",
-          "independent_Actor": 1,
-          "new_Value": 0,
-          "new_native": 0,
-          "live_shadow_independent_exact": true,
-          "complete_parameter_and_Adam_restore": true,
-          "all_cases_and_exact_verified": true,
-          "full407": null,
-          "screen": {
-            "lost_ids": [
-              "dev_task6_00",
-              "dev_task6_03",
-              "dev_task6_14"
-            ],
-            "gained_ids": [
-              "dev_task6_15",
-              "t502_field_sector0_offset1",
-              "t502_field_sector2_offset1",
-              "t502_field_sector5_offset1"
-            ],
-            "field_success": 8,
-            "model": {
-              "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t690_score_weighted_baseline/executed/proposal.pt.gz",
-              "sha256": "b9b50462a7a8a0a5ab8a63fa0b6774ea21936fb111919589ef1196ba6ee3943a",
-              "policy_hash": "ea90d4f9f9f118284924bcdd66ad9f6535ce9192c70be883490c30fa23dad131",
-              "joint_hash": "33493228c73a72dc86399658554a9165729838c1f52ea4ffd40abd871e377500",
-              "bytes": 1064459
-            }
-          },
-          "target_arm": "executed"
-        }
+        "screen": null,
+        "audit": null
       }
     ],
     "all_scientific_processes_stopped": true,
-    "helper_pid": 826986,
+    "helper_pid": 831606,
     "helper_stopped": true,
     "remote": "PENDING_LOCAL_RAW_RETAINED",
-    "epoch": 1795246883.5108805
+    "epoch": 1795247956.693842
   },
   "new_campaign_science_started": true,
   "new_campaign_physics": 107262367,
@@ -88,7 +37,7 @@
   "new_campaign_optimizer": 18,
   "new_campaign_registration_pending": false,
   "current_job_must_exit_before_next": true,
-  "next_action": "Exact GitHub source sync must finish, receipt root==HEAD tree; then unique T691 sequential nominal/induced fixedtwoarm64step pilot. No adaptive changes or result interpretation until bothfixedarmsfinish.",
+  "next_action": "Exact newGitHub root then uniqueT691R. Only originalnominal independent64 audit then originalunexecutedinduced64live64shadow64independent; originalnominal64live/shadow notrerun orrecount. Managementaudit6fix redgreenPASS, originalabsolute deadline unchanged.",
   "authorization": "AUTHORIZATION.json",
   "prior_group_current_ledger": {
     "physics": 64463885,
@@ -1016,14 +965,14 @@
   "current_global_bytes": 2609501536,
   "minimum_free_actual": 223643844608,
   "network_now_user_available": true,
-  "next_job_spec": "t691/PLAN.md",
-  "next_job_worst_physics": 27250642,
-  "next_job_max_commands": 936,
-  "next_job_new_optimizer": 128,
+  "next_job_spec": "t691r/PLAN.md",
+  "next_job_worst_physics": 13625321,
+  "next_job_max_commands": 468,
+  "next_job_new_optimizer": 64,
   "next_launch_condition": "Real1724stream/full407gradient/387reference/peerfixtures/numeric/loader preflightPASS, independent RESERVED, then exactGitHub tree and unique launch.",
   "source_sync_of_weekend_docs": "VERIFIED_8af38f29416c96f95bab218c92a57c67b163bbcf",
   "method_note": "RETENTION_PRIMARY_SOURCES.md completed; TaSIL/CPO/PCPO/DAgger/PolicyConsolidation primary sources checked",
-  "next_learning_pilot": "T691 two fixed offline supervised64step arms, nominal vs induced32 history oldfunction rehearsal, RESERVED not launched.",
+  "next_learning_pilot": "T691R recovery only unexecuted independent audit and induced arm; not registered/launched yet.",
   "primary_research_completed": true,
   "completed_current_coverage_batches": 17,
   "all_completed_current_children_audit_pass": true,
@@ -1031,7 +980,7 @@
   "prior_group_final_report": "stage/docs/day_20261120/t665/FINAL_REPORT.json",
   "prior_group_coverage_batches_completed": 18,
   "prior_group_raw_remote": "PENDING_BACKUP_TIMEOUT_LOCAL_RAW_RETAINED",
-  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t690/FINAL_REPORT.json",
+  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t691/FINAL_REPORT.json",
   "response_gate": "SCIENTIFIC_GATE_FAILED",
   "response_derivative_learning_cancelled": true,
   "source_remote": "6a5e7030551edc4d8e72abc0fae9576d3b4f952a",
@@ -1070,7 +1019,7 @@
   "active_status": {
     "state": "NO_SCIENCE_RUNNING"
   },
-  "last_checked_epoch": 1795247859.6433034,
+  "last_checked_epoch": 1795248321.1828277,
   "working_hypotheses_note": "WORKING_HYPOTHESES_AFTER_T671.md",
   "posthoc_KL_scale_note": "t671/POSTHOC_KL_SCALE_CORRECTION.md",
   "T671_KL_sigma_mismatch": {
@@ -1087,7 +1036,7 @@
   },
   "user_latest_direction": "Actively reason and develop falsifiable combinations; after all407 support review choose one main learning variable, not blind sparse patching or unvalidated components.",
   "T665_first_evidence_batch_verified": "WEEKEND_T665_PRIMARY_EVIDENCE_0",
-  "periodic_prompt_points_to": "T691_REGISTERED_NOT_LAUNCHED",
+  "periodic_prompt_points_to": "T691R_REGISTERED_NOT_LAUNCHED",
   "latest_all_science_exited": true,
   "last_method_reward_admission": "RADIAL_PROGRESS_NOT_ADMITTED_ALL3_INFORMATIVE_FIELD_CROSSED_BOUNDARY",
   "historical_metadata": {
@@ -1232,5 +1181,8 @@
   "T689_pre_registration_state": "REJECTED_PRE_REGISTRATION_NO_NATIVE_NO_OPTIMIZER",
   "T689_rejection_evidence": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t689/PRE_REGISTRATION_REJECTION.json",
   "T690_state": "COMPLETE_REJECTED",
-  "T691_state": "REGISTERED_NOT_LAUNCHED"
+  "T691_state": "FAILED_ENGINEERING_PRESERVED",
+  "current_active_run": null,
+  "current_active_unit": null,
+  "T691R_state": "REGISTERED_NOT_LAUNCHED"
 }

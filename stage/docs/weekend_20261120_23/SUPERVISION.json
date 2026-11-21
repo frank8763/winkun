@@ -14,31 +14,22 @@
   "current_active_run": null,
   "current_active_unit": null,
   "current_run_protocol_immutable": true,
-  "last_checked_epoch": 1795247859.6433034,
-  "periodic_prompt_points_to": "T691_REGISTERED_NOT_LAUNCHED",
+  "last_checked_epoch": 1795248321.1828277,
+  "periodic_prompt_points_to": "T691R_REGISTERED_NOT_LAUNCHED",
   "source_remote": "6a5e7030551edc4d8e72abc0fae9576d3b4f952a",
   "last_health_check": {
-    "state": "COMPLETE",
-    "audit": "PASS",
-    "all_science_driver_helper_gone": true,
-    "lost_old": [
-      "dev_task6_00",
-      "dev_task6_03",
-      "dev_task6_14"
-    ],
-    "gained": [
-      "dev_task6_15",
-      "t502_field_sector0_offset1",
-      "t502_field_sector2_offset1",
-      "t502_field_sector5_offset1"
-    ],
-    "field_safe": 8,
-    "full407": null,
-    "no_model_promoted": true
+    "all_processes_exited": true,
+    "nominal_live": 64,
+    "nominal_shadow": 64,
+    "nominal_independent": 0,
+    "physics": 0,
+    "management_commands": 6,
+    "failed_at": "audit management count before independent updates",
+    "no_scientific_gate_change": true
   },
   "working_hypotheses_note": "WORKING_HYPOTHESES_AFTER_T671.md",
   "posthoc_KL_scale_note": "t671/POSTHOC_KL_SCALE_CORRECTION.md",
-  "next_planned_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t691_induced_state_rehearsal",
+  "next_planned_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t691r_command_audit_recovery",
   "last_completed_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t690_score_weighted_baseline",
   "historical_run_deadlines": {
     "T672": {
@@ -54,5 +45,6 @@
   "T689_pre_registration_state": "REJECTED_PRE_REGISTRATION_NO_NATIVE_NO_OPTIMIZER",
   "T689_rejection_evidence": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t689/PRE_REGISTRATION_REJECTION.json",
   "T690_state": "COMPLETE_REJECTED",
-  "T691_state": "REGISTERED_NOT_LAUNCHED"
+  "T691_state": "FAILED_ENGINEERING_PRESERVED",
+  "T691R_state": "REGISTERED_NOT_LAUNCHED"
 }

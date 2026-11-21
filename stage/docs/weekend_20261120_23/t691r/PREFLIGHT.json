@@ -1,0 +1,92 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "original_no_rows_6_commands_red_reproduced": true,
+  "corrected6_management_rule_green": true,
+  "nonempty_rule_unchanged": true,
+  "original64live64shadow_preserved_not_reexecuted": true,
+  "original_independent_zero": true,
+  "actual_checkpoint_optimizer_full_load_and_rollback_exact": true,
+  "all_prior_processes_gone": true,
+  "real_loader_canonical_worker_bound": true,
+  "original_root_deadline_unchanged": 1795262168.7778456,
+  "remaining_nominal_audit": 896.915869474411,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "resources": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      10,
+      12,
+      14
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "8"
+      ]
+    ],
+    "phase_process_metadata_only": [
+      {
+        "pid": 832004,
+        "allowed_cpus": [
+          5
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 832006,
+        "allowed_cpus": [
+          2
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 832009,
+        "allowed_cpus": [
+          2
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 832010,
+        "allowed_cpus": [
+          2
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 832011,
+        "allowed_cpus": [
+          2
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 832730,
+        "allowed_cpus": [
+          2
+        ],
+        "physical_overlap": []
+      }
+    ],
+    "GPU": "learning_and_history_only_yield_other_compute",
+    "CPUQuota": "400%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 4294967296,
+    "MemorySwapMax": 0
+  }
+}

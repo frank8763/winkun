@@ -1,0 +1,19 @@
+{
+  "epoch": 1795248054.4935517,
+  "state": "ENGINEERING_AUDIT_COUNT_FAILURE",
+  "original_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t691_induced_state_rehearsal",
+  "original_error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t691_induced_state_rehearsal/control.py\", line 91, in driver\n    if failure:raise RuntimeError(failure)\nRuntimeError: Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t691_induced_state_rehearsal/control.py\", line 71, in driver\n    try:c.wait(timeout=seconds);assert c.returncode==0,(arm,action,c.returncode)\nAssertionError: ('nominal', 'audit', 1)\n\n",
+  "all_pids_exited": [
+    831609,
+    831633,
+    831606,
+    831602
+  ],
+  "nominal_completed_live": 64,
+  "nominal_completed_shadow": 64,
+  "nominal_completed_independent": 0,
+  "new_native": 0,
+  "management_commands": 6,
+  "root_absolute_deadline": 1795262168.7778456,
+  "fix_scope": "No-row audit management command6 not3; only unexecuted originalnominal independent audit and induced arm in newdirectory. No rerun consumed live/shadow or threshold change."
+}

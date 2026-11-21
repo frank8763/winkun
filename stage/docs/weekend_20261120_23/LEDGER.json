@@ -1,11 +1,11 @@
 {
   "physics": 107262367,
-  "commands": 4961,
-  "science_seconds": 26548.17983007431,
-  "audit_seconds": 594.8160305023193,
-  "transport_seconds": 7285.852738618851,
-  "Actor_live": 7,
-  "Actor_shadow": 7,
+  "commands": 4967,
+  "science_seconds": 26604.247418165207,
+  "audit_seconds": 597.9001610279083,
+  "transport_seconds": 7585.852738618851,
+  "Actor_live": 71,
+  "Actor_shadow": 71,
   "Actor_independent": 7,
   "Value_live": 0,
   "Value_shadow": 0,
@@ -413,7 +413,7 @@
     },
     {
       "id": "T691",
-      "state": "RESERVED",
+      "state": "FAILED",
       "max_physics": 27250642,
       "max_commands": 936,
       "main_seconds": 11400,
@@ -421,9 +421,27 @@
       "preflight_seconds": 13.831862211227417,
       "Actor_each_cap": 128,
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t691_induced_state_rehearsal",
-      "completed_children": [],
+      "completed_children": [
+        "nominal"
+      ],
       "early_metadata_read_accounted": true,
-      "early_metadata_read_upper_seconds": 1
+      "early_metadata_read_upper_seconds": 1,
+      "actual_physics": 0,
+      "actual_commands": 6
+    },
+    {
+      "id": "T691R",
+      "state": "RESERVED",
+      "max_physics": 13625321,
+      "max_commands": 468,
+      "main_seconds": 5700,
+      "audit_seconds": 1796.915869474411,
+      "preflight_seconds": 2.352088212966919,
+      "Actor_live_cap": 64,
+      "Actor_shadow_cap": 64,
+      "Actor_independent_cap": 128,
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t691r_command_audit_recovery",
+      "completed_children": []
     }
   ],
   "charged_source_sync_commits": [
@@ -449,7 +467,8 @@
     "bbffa6efd04370a7c06d2b4c61d87c1f39d4ebea",
     "9ea10e95a84ef378773821ecdcbdbad064a4e12d",
     "7ede4e6477d95d206ed63161cad7cf116eb4bfe3",
-    "6a5e7030551edc4d8e72abc0fae9576d3b4f952a"
+    "6a5e7030551edc4d8e72abc0fae9576d3b4f952a",
+    "7a797cd17ad8a6786f766a709fa9bbb6b036c90d"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"

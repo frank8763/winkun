@@ -1,0 +1,28 @@
+{
+  "state": "FAILED",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t691_induced_state_rehearsal/control.py\", line 91, in driver\n    if failure:raise RuntimeError(failure)\nRuntimeError: Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t691_induced_state_rehearsal/control.py\", line 71, in driver\n    try:c.wait(timeout=seconds);assert c.returncode==0,(arm,action,c.returncode)\nAssertionError: ('nominal', 'audit', 1)\n\n",
+  "children": [
+    {
+      "arm": "nominal",
+      "state": "FAILED",
+      "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t691_induced_state_rehearsal/control.py\", line 71, in driver\n    try:c.wait(timeout=seconds);assert c.returncode==0,(arm,action,c.returncode)\nAssertionError: ('nominal', 'audit', 1)\n",
+      "physics": 0,
+      "commands": 6,
+      "science_seconds": 53.71549987792969,
+      "audit_seconds": 3.0841305255889893,
+      "Actor_calls": {
+        "Actor_live": 64,
+        "Actor_shadow": 64,
+        "Actor_independent": 0
+      },
+      "full407": null,
+      "screen": null,
+      "audit": null
+    }
+  ],
+  "all_scientific_processes_stopped": true,
+  "helper_pid": 831606,
+  "helper_stopped": true,
+  "remote": "PENDING_LOCAL_RAW_RETAINED",
+  "epoch": 1795247956.693842
+}
