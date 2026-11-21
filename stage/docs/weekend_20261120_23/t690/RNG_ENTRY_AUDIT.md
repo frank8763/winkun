@@ -1,0 +1,7 @@
+# T690实际入口随机流补充核查
+
+独立主审未完成的native RNG链已由真实零更新入口补核，不改原主审文字。实际调用为t665_native绑定后t478_runtime.worker -> t477_runtime.worker -> t449_offline_joint_recovery/run.worker，最后worker每个request创建default_rng(SeedSequence(req.seed))；外层delegate自身不含RNG构造，第一次字符串guard错误拒绝已保留source snapshot与50s失败上界，加后续metadata探查共120s上界计预检，没有gradient/optimizer/native。
+
+全部T672407/1724 fresh rows（exact排除）seed三元组唯一。每条从该seed重新构造Generator，按实际存储innovations数组形状采样，逐元素与原full数组完全一致；最终worker路径/source hash、1724seed hash在PREFLIGHT.json.innovation_streams。原native场景/状态/owncarry/终态由既有T672审计与本次全原历史loader/loc/density重构约束。此证实种子及创新前缀接线，不证明固定伪随机开发面板是总体独立样本；baseline无偏性仍以理想独立peer/归一化score-law及可换微分积分等假设为条件。
+
+标量工作law是原clipGaussian连续内部与边界原子；不把它宣称为精确float32量化command密度，也不偷换T684rawlatent/AR。新baseline detach固定在theta0；没有未来state条件化密度或重选seed。临时首步表示后全state回到initial，无optimizer/native。

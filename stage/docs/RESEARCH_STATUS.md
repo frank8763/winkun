@@ -1,3 +1,9 @@
+2026-11-21 T690 score范数加权peerLOO baseline单变量已完整0native0optimizer预检PASS并独立RESERVED，尚未launch。原407/1724创新流逐seed精确重构/真实worker绑定、387参考、六fixture；梯度合成误差2.06e-17、固定baseline numeric1.75e-11，formulaKLmax6.34e-5<.01、与原控制gradcos.99555，提议hash不同且整态恢复，峰值1.09GiB。保持原T678 executed目标/11906scope/freshAdam，只换peerbaseline；13625321物理468cmd/各Actor1 Value0/5700main+600audit/root2h/416MiB，先精确GitHub源后唯一实际step+shadow+independent和55full55exact/条件407；不以经验方差或KL当研究成功。T689preCG联合条件拒绝0更新已停止，T501保留。见weekend_20261120_23/t690/PLAN/PREFLIGHT/RNG_ENTRY_AUDIT与主审。
+
+2026-11-21 T689参考分布Gaussian自然方向的实际零更新入口在固定10CG后联合数值条件(residual<=.1且g·d<0)拒绝，0native0optimizer，无科学root登记/run/launch/candidate，无运行audit。实际标量未落盘，只报告合取失败，不编造残差；stderr/源SHA保留并按timeout650秒上界计预检。停止固定提议不改CG/阻尼/容差救，T501保留。T688norm匹配SGD主审已拒，非新job。见weekend_20261120_23/t689/FINDINGS及PRE_REGISTRATION_REJECTION。
+
+2026-11-21 T687 COMPLETE/完整64772参数BPTT梯度合同PASS/独立auditPASS，但固定首Adam公式max panelKL .03302765>.01，fullscope学习不准入；101/407任务超.01。全1724历史/387参考/adapter梯度切片误差2.41e-17/2.21e-17、三numeric和全state恢复精确，0物理0优化器无candidate，46.762main+45.695audit，全PID/unit退出，source300已结算。停止固定全范围提议不调lr救；T501保留，下一单变量实际学习的一手/历史反例审查中，尚无T688代码/登记/launch。见weekend_20261120_23/t687/FINDINGS。
+
 2026-11-21 T687完整原Actor64772参数BPTT合同已真实0native0optimizer预检PASS并独立登记，尚未launch。固定全参数/core/encoder方向差分误差5.09e-11/1.03e-11/2.98e-11、完整owncarry逐步相同，峰值764MiB；全1724历史与387参考的梯度/原11906adapter切片恒等及首Adam公式KL待注册main和独立audit。0物理0更新/2400main+2400audit/root100min/64MiB，语义与固定lr3e-5首步KL<=.01准入分列，不调lr救；不是新学习或导航改善。先精确GitHub再唯一launch。T686两候选实际旧任务随机退化已拒绝，T501保留。见weekend_20261120_23/t687/PLAN与T687_PRIMARY_REVIEW。
 
 2026-11-21 T686 COMPLETE/独立auditPASS但有限分离门未成立：直接随机old安全executed4/16、self5/16，基准7/16；field4/16与5/16，基准4/16。T685正proxy/有限OPE未准确预测部分实际负向配对结果，不能简单称仅随机/确定性验收错配或高ESS证可靠。64fresh64exact/3166142物理134cmd/0更新、全部PID退出，T501保留；下一学习机制需重审目标与实际闭环对应，不恢复旧候选/步数/seed网格。见weekend_20261120_23/t686/FINDINGS。

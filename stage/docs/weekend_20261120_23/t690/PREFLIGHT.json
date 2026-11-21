@@ -1,0 +1,79 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "real_all407_and_387_fixed_gradient": true,
+  "gradient_error": 2.0599841277224584e-17,
+  "fixtures": {
+    "equal_norms_are_original_LOO": true,
+    "own_return_and_score_excluded": true,
+    "permutation_equivariant": true,
+    "reward_constant_shift_invariant": true,
+    "exact_zero_peer_weight_fallback": true,
+    "constant_returns_zero_advantage": true
+  },
+  "numeric": {
+    "analytic": 0.004002386515348748,
+    "numeric": 0.004002386532823093,
+    "error": 1.7474344887746796e-11,
+    "baseline_frozen_during_probe": true
+  },
+  "weighted_vs_ordinary_cosine": 0.9955488840137394,
+  "max_panel_task_KL": 6.343740189693439e-05,
+  "numerical_admission": true,
+  "analytic_represented_formula_error": 2.7515018258608692e-17,
+  "proposed_formula_policy_hash": "840812b384d7f9a0ab69e2e0bf3e624e45159937befa9e537f0ed9d8717da9c5",
+  "original_control_policy_hash": "33369e2c86cfda71401898c7a4e93bdecb8aa6ff3ad1e76e27389b355ce86eb6",
+  "innovation_streams": {
+    "unique_episode_seed_count": 1724,
+    "all_saved_innovation_prefixes_exact": true,
+    "seed_array_hash": "3e0b18d47bfb53b79d7d8718dd30ee9634693ae58ed6386a414653137cf15f1c",
+    "worker_file": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t449_offline_joint_recovery/run.py",
+    "worker_source_hash": "7fc17c55bffde33fd6d3986140cca9d5bfd93a834c4ac4415f874d81d44a2535",
+    "delegating_workers": [
+      "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t478_wide8_pooled_credit/t478_runtime.py",
+      "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t477_wide8_recovery/t477_runtime.py"
+    ],
+    "generator_reset_per_request_verified": true,
+    "distinct_PRNG_streams_not_finite_sample_independence_proof": true
+  },
+  "canonical_worker_and_real_loader": true,
+  "whole_Actor_and_optimizer_restore_and_deepcopy": true,
+  "all_prior_processes_gone": true,
+  "peak_rss_bytes": 1172840448,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "resources": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      10,
+      12,
+      14
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "8"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "GPU": "learning_and_history_only_yield_other_compute",
+    "CPUQuota": "400%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 4294967296,
+    "MemorySwapMax": 0
+  },
+  "elapsed_seconds": 28.184931755065918
+}

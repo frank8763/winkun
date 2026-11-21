@@ -1,9 +1,9 @@
 {
   "physics": 104311511,
   "commands": 4845,
-  "science_seconds": 24777.21137404442,
-  "audit_seconds": 504.9749791622162,
-  "transport_seconds": 6669.371039152145,
+  "science_seconds": 25622.5970890522,
+  "audit_seconds": 550.6701416969299,
+  "transport_seconds": 6969.371039152145,
   "Actor_live": 6,
   "Actor_shadow": 6,
   "Actor_independent": 6,
@@ -353,14 +353,50 @@
     },
     {
       "id": "T687",
-      "state": "RESERVED",
+      "state": "COMPLETE",
       "max_physics": 0,
       "max_commands": 0,
       "main_seconds": 2400,
-      "audit_seconds": 2400,
+      "audit_seconds": 45.695162534713745,
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t687_full_actor_gradient_contract",
       "Actor_each": 0,
-      "preflight_seconds": 5.170454502105713
+      "preflight_seconds": 5.170454502105713,
+      "actual_physics": 0,
+      "actual_commands": 0,
+      "science_seconds": 46.761751651763916,
+      "Actor_calls": {
+        "Actor_live": 0,
+        "Actor_shadow": 0,
+        "Actor_independent": 0
+      }
+    },
+    {
+      "id": "T689_PRE_REGISTRATION",
+      "state": "REJECTED_PRE_REGISTRATION_NO_NATIVE_NO_OPTIMIZER",
+      "actual_physics": 0,
+      "actual_commands": 0,
+      "science_seconds_upper": 650,
+      "Actor_calls": {
+        "Actor_live": 0,
+        "Actor_shadow": 0,
+        "Actor_independent": 0
+      },
+      "preflight_only": true,
+      "scientific_root_not_registered": true,
+      "source_dir": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t689_reference_functional_geometry",
+      "failure_evidence": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t689/PRE_REGISTRATION_REJECTION.json"
+    },
+    {
+      "id": "T690",
+      "state": "RESERVED",
+      "max_physics": 13625321,
+      "max_commands": 468,
+      "main_seconds": 5700,
+      "audit_seconds": 600,
+      "preflight_seconds": 148.62396335601807,
+      "Actor_each_cap": 1,
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t690_score_weighted_baseline",
+      "completed_children": []
     }
   ],
   "charged_source_sync_commits": [
@@ -384,7 +420,8 @@
     "7ff05fcc1daad1ac03f9480bf37070443b13df11",
     "82cea0ed0a55ebfe998627d54249c3fae9091cee",
     "bbffa6efd04370a7c06d2b4c61d87c1f39d4ebea",
-    "9ea10e95a84ef378773821ecdcbdbad064a4e12d"
+    "9ea10e95a84ef378773821ecdcbdbad064a4e12d",
+    "7ede4e6477d95d206ed63161cad7cf116eb4bfe3"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"

@@ -1,0 +1,7 @@
+# T689：预登记数值联合条件拒绝，未发生学习或原生
+
+本项未登记科学root、无run/protocol/DRIVER_STARTED/launch、无candidate或optimizer调用，0物理0命令0Actor/Value。一次真实零更新入口走到固定10CG后的联合断言：`residual_ratio<=.1 and gradient_dot_direction<0`，返回AssertionError，准备进程已退出。没有独立运行审计，不能称完整合同PASS或COMPLETE科学实验。
+
+终止点没有保存CG实际残差/方向内积及trace数值，故只能确认这个合取不成立，不能捏造精确残差、只归因某一项或宣称预期导航效果。完整stderr及当时源SHA见PRE_REGISTRATION_REJECTION.json/PREFLIGHT_STDERR.txt；源码原件保存，不重跑来挑数值。所有未执行的root归一化、实际自然更新、shadow、native和audit都未消费，不能填失败率。预检timeout650秒按保守上界计science，实际未取精确起止；0新增optimizer/原生。
+
+按锁定门停止该提议，不增加CG次数、阻尼、容差、root区间或step救门。方法层面的新问题（384参考Gaussian函数度量/与固定控制实际meanKL匹配）虽与T313经验scoreFisher不同，但本项没有获得可准入的数值提议，不能证明自然梯度在导航中无效。T501仍保留，尚无下一学习job。后续需另一个有明确证据、可区分控制的单变量；不得把本次求解拒绝改名为工程错误后重复同提议。

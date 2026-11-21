@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "stage/experiments/t689_reference_functional_geometry/control.py", line 105, in <module>
+    if __name__=='__main__':{'prepare':prepare,'register':register,'launch':launch,'driver':driver}[sys.argv[1]]()
+  File "stage/experiments/t689_reference_functional_geometry/control.py", line 17, in prepare
+    P.main()
+  File "stage/experiments/t689_reference_functional_geometry/t689_prepare.py", line 42, in main
+    rows,unused,keep=L.data(p,q,guard);delta,detail,metric=L.proposal(p,q,rows,keep,guard)
+  File "stage/experiments/t689_reference_functional_geometry/t689_learning.py", line 130, in proposal
+    assert residual_ratio<=p['cg_max_residual_ratio'] and float(gradient@direction)<0
+AssertionError

@@ -1,5 +1,5 @@
 {
-  "state": "T686_SOURCE_300_CHARGED",
+  "state": "T690_SOURCE_300_RESERVED_PENDING_SYNC_AND_SCIENCE_EXIT",
   "do_not_double_charge": true,
   "source_sync_commits": [
     "b13fb1f58f3df88e41b504be4a424994c890827b",
@@ -107,6 +107,18 @@
     "remote_commit": "9ea10e95a84ef378773821ecdcbdbad064a4e12d",
     "upper_seconds": 300,
     "charged": true,
+    "settle_after_all_science_exit": true
+  },
+  "T687_source_sync": {
+    "remote_commit": "7ede4e6477d95d206ed63161cad7cf116eb4bfe3",
+    "upper_seconds": 300,
+    "charged": true,
+    "settle_after_all_science_exit": true
+  },
+  "T690_source_sync": {
+    "remote_commit": null,
+    "upper_seconds": 300,
+    "charged": false,
     "settle_after_all_science_exit": true
   }
 }
