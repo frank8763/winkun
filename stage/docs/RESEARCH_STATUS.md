@@ -1,3 +1,7 @@
+2026-11-21 T677参考目标语义诊断已恢复一手审查/代码/真实全387零步预检PASS并独立登记，尚待精确GitHub后唯一launch。相同387历史/hinge动作损失/.2²/10权重，仅原executed目标vs初始T501自身clip命令；自身初始loss1.65e-34/梯度7.07e-19，零点不是闭环保留。复用T673原all407终态梯度，不加已失败C奖励，0物理0Actor/Value/optimizer，600main+600audit/root30min/32MiB。原审查usage中断已恢复，仍无新候选。另T665第3小批29成员8216868B全远端读回逐SHA，恢复索引更新/deleted0，其余pending。
+
+2026-11-21 08:49核实：T676 COMPLETE/auditPASS但科学门FAIL，0物理0更新，边界信号分半2任务同向/numeric全过，原组合实际Adam方向却恶化代价与旧任务，不准入训练。全部科学PID/unit退出，目前无实验运行。T677原拟文献审查子代理触发使用额度限制，未产出笔记/代码/登记/launch；正恢复参考目标语义合同检查：387参考=384T501+3T653成功，旧保持项初始梯度非零，不能称纯当前策略保持或认定遗忘根因。后续需独立有界协议/精确源再唯一launch，不重复失败边界代价权重试验。见weekend_20261120_23/t676/FINDINGS及NEXT_T677_REFERENCE_TARGET_SPEC。
+
 2026-11-21 T676边界连续代价/score诊断已真实0步预检PASS并独立登记，尚待精确源码GitHub后唯一launch。仅24field×8原full/exact与非field8m豁免，C=记录poses坐标超7m峰值/7，LOO完整因果score、固定前4后4及删单条敏感性/三numeric/实际首Adam公式与原44冲突；0物理0Actor/Value/optimizer，900main+900audit/root40min/16MiB。原记录边界规则不改，峰值不是连续native安全，PASS不自动学习。T675已完整审计且径向奖励因越界反例不准入；T501保留。见weekend_20261120_23/t676/PLAN及T676_PRIMARY_REVIEW。
 
 2026-11-21 T675 COMPLETE/测量PASS/独立auditPASS，407/1724几何合同过、remaining误差max1.7764e-15m，0物理0Actor/Value/optimizer。3项达进展差异门但全部样本越界，径向奖励不准入；同终态失败field实际15(10collision+5zero)，旧16误含非field dev6_01，旧冻结记录保留/更正见t675/FINDINGS。当前科学全退、监督继续；下一T676边界代价测量/score具体规格已落NEXT_T676_BOUNDARY_SIGNAL_SPEC，尚未注册/启动，需主动代码/一手审查/0步预检/预算登记/精确GitHub后唯一launch，不等用户。只适用fullfield7m约束，不误罚非field8m旧任务；T501保留无新性能提升。

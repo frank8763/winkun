@@ -1,0 +1,44 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "all387_real_reference_self_target_zero": true,
+  "loss": 1.6490563279933568e-34,
+  "gradient_norm": 7.068563917992461e-19,
+  "same_action_loss_hinge_and_detached_target": true,
+  "reference_provenance384_plus3": true,
+  "resources": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      10,
+      12,
+      14
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "8"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "GPU": "learning_and_history_only_yield_other_compute",
+    "CPUQuota": "400%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 4294967296,
+    "MemorySwapMax": 0
+  },
+  "new_native": 0,
+  "new_optimizer": 0
+}
