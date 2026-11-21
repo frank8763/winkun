@@ -1,3 +1,5 @@
+2026-11-21 T682 COMPLETE/独立auditPASS但head因素门FAIL，old4安全为0/0/3/0，全部候选已失旧，full407=null/T501保留；1921708物理86cmd/0更新、全PID退出。不救3/4/尺度/seed/单头训练。T683时间相关动作噪声概率语义合同已主审/真实32prefix预检PASS并独立登记，0native0optimizer/600main+600audit/root30min/32MiB，待精确源后唯一launch；非新collection，latent路径与clip条件原子明确分离。见weekend_20261120_23/t682/FINDINGS。
+
 2026-11-21 T681 COMPLETE/迁移描述门PASS/独立auditPASS，全PID退出：两固定源模型field10/24与4/24，后20新增相对T501各4和3，均仍丢旧(4已知old全碰撞)，拒绝保留/full407=null。40fresh40exact/2721516物理86cmd/0更新。T682两来源drive/steer静态因素拆分40fresh40exact已真实零更新预检PASS/独立登记，待精确GitHub源后唯一launch：2647464物理86cmd/1800main+300audit/root40min/256MiB/0优化器；不救T680四pair梯度、不BC/投影/seed网格。见weekend_20261120_23/t681/FINDINGS。
 
 2026-11-21 T680 COMPLETE/独立auditPASS但估计稳定性FAIL：field两半cos.0154、删pair0 cos.4543<.5、仅1field有>=2非零pair，0物理0更新/全PID退出。停止四pair11906维更新路径，不增seed/幅度救门。T681准备固定两个新成功源变体未见field迁移测试；两模型原已失旧，不跑无意义完整407、不晋升；40fresh+40exact真实loader/完整carry/原baseline逐任务身份0步预检PASS、独立登记，待GitHub精确树后唯一launch；4973312物理86cmd/2400main+300audit/root50min/256MiB，0更新。T501保留。见weekend_20261120_23/t680/FINDINGS。

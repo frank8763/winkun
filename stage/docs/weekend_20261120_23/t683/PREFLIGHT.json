@@ -1,0 +1,76 @@
+{
+  "state": "PASS_ZERO_NATIVE_ZERO_OPTIMIZER",
+  "actual_Actor32step_prefix_IID_identity": true,
+  "temporal_sampler_reset_causality_and_raw_joint": true,
+  "numeric": [
+    {
+      "index": 0,
+      "analytic": 0.0007689051751379791,
+      "numeric": 0.0007689058278970151,
+      "error": 6.527590360599911e-10,
+      "passed": true
+    },
+    {
+      "index": 1,
+      "analytic": -0.005198279718594658,
+      "numeric": -0.00519828002865097,
+      "error": 3.1005631222214003e-10,
+      "passed": true
+    },
+    {
+      "index": 2,
+      "analytic": 0.009217977932271292,
+      "numeric": 0.009217977492426144,
+      "error": 4.398451481507637e-10,
+      "passed": true
+    }
+  ],
+  "fixtures": {
+    "one_step_clipped_mixture_mass": 1.000000000000001,
+    "raw_two_time_logdensity_error": 3.9968028886505635e-15,
+    "upper_atom_joint_integrated": 0.11654689736291261,
+    "naive_single_raw_atom_product": 0.09199797213117644,
+    "difference": 0.02454892523173617,
+    "exact_zero_threshold_corner": 0.430003874717263,
+    "quadrature_corner_error": 8.881784197001252e-16,
+    "quadrature128_vs256_error": 2.581268532253489e-15,
+    "clipping_EDGE": 0.9999999701976776,
+    "conditional_atoms_not_marginal_command_history_likelihood": true
+  },
+  "no_native_or_optimizer": true,
+  "full_history_test_pending_registered_main": true,
+  "resources": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      10,
+      12,
+      14
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "8"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "GPU": "learning_and_history_only_yield_other_compute",
+    "CPUQuota": "400%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 4294967296,
+    "MemorySwapMax": 0
+  }
+}

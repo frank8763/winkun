@@ -1,0 +1,15 @@
+{
+  "state": "ZERO_NATIVE_ZERO_OPTIMIZER_ENGINEERING_REFUSAL_FIXED",
+  "failure": "native_counts stored uint8; unary minus before float conversion wrapped 100 to156, produced invalid rho1.1688262 instead .9048374. Strict sampler-vs-vector rho equality refused before density/gradient/native/optimizer. Cast positive counts tofloat64 before negation; preserve threshold/science and tau.",
+  "original_expression": "np.exp(-counts[:-1]*.002/tau)",
+  "correct_expression": "counts=np.asarray(counts,dtype=np.float64); np.exp(-counts[:-1]*.002/tau)",
+  "failed_preflight_and_isolated_probe_upper_seconds": 12,
+  "new_native": 0,
+  "new_optimizer": 0,
+  "additional_engineering_failure": {
+    "reason": "Existing runtime has no scipy; prototype import refused during fixtures before native/optimizer. Replaced only diagnostic quadrature with fixed NumPy GaussLegendre128/256 +math.erfc, independent covariance density and analytic corner; no dependency install or science change. Gaussian omittedtails beyond12 <4e-33.",
+    "additional_failed_prefix_upper_seconds": 6,
+    "new_native": 0,
+    "new_optimizer": 0
+  }
+}
