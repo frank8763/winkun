@@ -1,3 +1,5 @@
+2026-11-21 T677 COMPLETE/REFERENCE_CONTRACT_PASS/auditPASS，0物理0更新：初始动作参考梯度几乎全由3T653获取目标提供；self初始近零，方向差15.53%但同10旧样本下降，不当遗忘根因。新T678已实际两臂完整407梯度/首步公式0优化器预检PASS并独立登记，尚待GitHub精确源后launch。同初始化/同T672数据/同终态结果PG/同优化器，仅executed vs self目标，每臂1live1shadow1独立Actor/0Value，screen55全full+exact、32旧必保+23outside，条件完整407；27250642物理936cmd/root800MiB/2×5700main+300audit/root3h40有限两job，原384+新增同candidate/audit门不改。无C/径向奖励/投影/seed网格。见weekend_20261120_23/t677/FINDINGS、t678/PLAN。
+
 2026-11-21 T677参考目标语义诊断已恢复一手审查/代码/真实全387零步预检PASS并独立登记，尚待精确GitHub后唯一launch。相同387历史/hinge动作损失/.2²/10权重，仅原executed目标vs初始T501自身clip命令；自身初始loss1.65e-34/梯度7.07e-19，零点不是闭环保留。复用T673原all407终态梯度，不加已失败C奖励，0物理0Actor/Value/optimizer，600main+600audit/root30min/32MiB。原审查usage中断已恢复，仍无新候选。另T665第3小批29成员8216868B全远端读回逐SHA，恢复索引更新/deleted0，其余pending。
 
 2026-11-21 08:49核实：T676 COMPLETE/auditPASS但科学门FAIL，0物理0更新，边界信号分半2任务同向/numeric全过，原组合实际Adam方向却恶化代价与旧任务，不准入训练。全部科学PID/unit退出，目前无实验运行。T677原拟文献审查子代理触发使用额度限制，未产出笔记/代码/登记/launch；正恢复参考目标语义合同检查：387参考=384T501+3T653成功，旧保持项初始梯度非零，不能称纯当前策略保持或认定遗忘根因。后续需独立有界协议/精确源再唯一launch，不重复失败边界代价权重试验。见weekend_20261120_23/t676/FINDINGS及NEXT_T677_REFERENCE_TARGET_SPEC。
