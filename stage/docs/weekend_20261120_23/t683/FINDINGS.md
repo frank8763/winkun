@@ -1,0 +1,11 @@
+# T683实际语义合同结果
+
+COMPLETE / TEMPORAL_LATENT_CONTRACT_PASS / 独立audit PASS。0物理0原生命令0Actor/Value/optimizer、无新环境轨迹或candidate。11.007233main+6.949131audit秒。实际driver/helper及SEALED各科学PID核实全退出，unit inactive。源GitHub全树24c028c2c6bc035f38b14f6ef1b16fc132427739/commit7ff05fcc1daad1ac03f9480bf37070443b13df11。
+
+8个既有T672完整历史×tau0/2s共16组合，真实Actor.step自有GRU/carry、IID raw逐位相等与条件cliplogp、episode reset/prefix因果、全raw联合Gaussian重构、所有非末native_counts固定100(.2秒)均通过。3固定adapter方向数值score误差3.39e-10/4.50e-10/2.69e-11，包含上一mu的导数；主干/GRU冻结且同外部历史下特征独立于adapter，未推广可训练GRU梯度。全部数组/hash/result在独立过程精确复算。
+
+裁剪一阶混合概率总质量1+1e-15，二维raw协方差联合密度误差4e-15。真实upperatom联合积分.1165468974，代入一个raw代表值的原子乘积.0919979721，不相等。独立角点解析.4300038747，quad误差8.88e-16；128vs256差2.58e-15。完整因果轨迹的raw-policy似然因子不同于给定未来全部state后raw条件概率；一步clip条件律逐项乘积不等于只观测command的边缘联合律。固定时钟平稳sigma是未截断过程无条件尺度，非给定观测/存活条件的噪声方差。
+
+两项预登记工程问题已保留：uint8 native_counts负号溢出由sampler/vector强等式拒绝后转float64；scipy缺失由fixture import拒绝后用已存NumPy固定128/256GaussLegendre+math.erfc替代。均发生0native0optimizer，原counterexample/误差阈值/tau/sigma不变，失败前缀和probe保守12秒上界计预检16.731824秒，不算科学重跑。
+
+此PASS只说明概率实现合同可用，不是AR探索成功/安全/学会导航；旧IID历史只作fixture、不是AR onpolicy，不作回报学习。实际原生worker时钟接线尚未核验。下一具体匹配collection规格见NEXT_T684_TEMPORAL_COLLECTION_SPEC.md：真实固定两个噪声结构、相同sigma/初始权重/任务数和共同创新种子、全fresh/exact，独立审查/真实worker0物理预检/最坏预算登记/精确GitHub后才启动。
