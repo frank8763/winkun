@@ -1,6 +1,6 @@
 # T693：动作测度导数与匹配 score 对照的有限 Actor pilot（工程准备中）
 
-主审见 `../T693_METHOD_SELECTION_PRIMARY_REVIEW.md`。目前仅有 estimator 与 preparation 代码；没有 runtime、protocol、RESERVED、run、launch，也没有新原生、Actor、Value 或优化器调用。`PREPARATION.json` 不是完整入口预检，不授予 launch。T501 不变。
+主审见 `../T693_METHOD_SELECTION_PRIMARY_REVIEW.md`。已有有限三child runtime与完整零更新入口预检PASS（PREFLIGHT.json），尚未登记/启动时不称已学习。PREPARATION只为早期合同；完整入口见下文最新补充，T501不变。
 
 ## 科学目标与固定采样
 
@@ -31,3 +31,11 @@ action RNG namespace [seed,1,task,rep,coordinate]（MVD）、[seed,2,task,rep]�
 拟root2304MiB：collection1280MiB、每candidate384MiB、finalmetadata16MiB，余量240MiB；global10GiB/8GiB archive trigger/free40GiB不变。fixedactive collection72full×4MiB+72exact×32KiB远低collection上限，但全部schema/header/model/partial/log/metadata/独立audit峰值还须实际代码证明。现约2.61GiB加2.25GiB仍低8GiB；不需要以未经核验删除来准入。所有数字均尚未RESERVED。
 
 下一接续应完成上述真实入口与有限runtime，不重复已完成preparation、不再另造回归/OPE诊断或重跑T692。准备耗时已单列ledger，正式登记只能计尚未结算的预检新增耗时，防止重复记账。所有Stage资源隔离和原周一停止定时保持。
+
+## 完整入口与中断补充（登记前）
+
+72个实际Session.step边界/worker/loader绑定见证，真实保存轨迹的完整carry/密度/奖励审计和损坏carry拒绝；ownership/command/prefix/nativecount/latent/integration损坏拒绝；suffix从首个创新开始/独立namespace、no-native6管理计数均通过。Session constructor的新场景零GRU/scene/goal/initialintegration断言在正式首物理前运行；预检superstep与数组见证不是实际新物理。
+
+两学习臂使用合成detached credit检验真实11906参数/387参考/68KL入口：梯度独立合成误差4.44e-16和1.11e-16，numeric误差1.40e-9和1.18e-10（原atol1e-8+rtol1e-4门未改），零RL梯度拒绝、全部state/Adam恢复；没有把合成标签当新环境PG。PREFLIGHT峰值1328107520B、mainbody20.388s，0native0optimizer。初次preflight在F.K不存在时已拒绝，尚未梯度/原生/更新，原error/源码SHA与全文保留PREFLIGHT_FAILURE_001，保守20秒计费。修为已存在的E.N.K.R integration，不动科学变量。中断补充真实保存边界+故意Actor状态扰动后全state恢复通过，无真实optimizer/native，10秒上界。进口/元数据/finalize再10秒上界；T693_PREPARATION已结10秒不重复。
+
+初始注册锚定root原absolute deadline，此前未注册草稿不构成已锁定job；登记后不延。启动前锁定所有代码与上述文件SHA，registration与child实际deadline逐一记录。全过程三个child共同预先锁定，不因首候选结果改变第二臂。

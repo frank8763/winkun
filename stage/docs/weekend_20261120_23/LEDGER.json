@@ -1,9 +1,9 @@
 {
   "physics": 107262367,
   "commands": 4979,
-  "science_seconds": 26959.236276865005,
+  "science_seconds": 27036.609091758728,
   "audit_seconds": 700.1302244663239,
-  "transport_seconds": 8515.598600387573,
+  "transport_seconds": 8815.598600387573,
   "Actor_live": 135,
   "Actor_shadow": 135,
   "Actor_independent": 135,
@@ -489,7 +489,7 @@
       "state": "PREPARATION_ONLY_NOT_REGISTERED",
       "actual_physics": 0,
       "actual_commands": 0,
-      "science_seconds": 3.540985584259033,
+      "science_seconds": 10,
       "Actor_calls": {
         "Actor_live": 0,
         "Actor_shadow": 0,
@@ -501,7 +501,22 @@
         "Value_independent": 0
       },
       "evidence": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t693/PREPARATION.json",
-      "not_complete_entry_preflight": true
+      "not_complete_entry_preflight": true,
+      "measured_preparation_body_seconds": 3.540985584259033,
+      "charged_upper_includes_import_and_process_overhead": true
+    },
+    {
+      "id": "T693",
+      "state": "RESERVED",
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t693_measure_valued_actor",
+      "max_physics": 32642866,
+      "max_commands": 1086,
+      "main_seconds": 14400,
+      "audit_seconds": 1500,
+      "preflight_seconds": 70.91380047798157,
+      "Actor_each_cap": 2,
+      "Value_each_cap": 0,
+      "completed_children": []
     }
   ],
   "charged_source_sync_commits": [
@@ -531,7 +546,8 @@
     "7a797cd17ad8a6786f766a709fa9bbb6b036c90d",
     "9814a2f9f69123ee6e44f2103eed3f3e9d99dd83",
     "b034fb8935bcf45e53a1358f8d2f2f0cd8bdbe18",
-    "aba6d31a5a053071adf744d10aaa85777ae68b67"
+    "aba6d31a5a053071adf744d10aaa85777ae68b67",
+    "401f392586d444922ec2632b6990a6f05e01f170"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"
