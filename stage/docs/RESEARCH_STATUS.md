@@ -1,3 +1,5 @@
+2026-11-21 T684 COMPLETE/独立auditPASS但探索准入FAIL：tau2两个field安全样本增加，但old1/16 vsIID7/16，停止固定时间相关方案不扫tau/sigma/seed/sample；3164566物理134cmd/0更新、全PID退出，T501保留。T685新IID32与原train48的冻结T678候选代理/轨迹概率支持诊断已主审/真实零步前缀identity预检PASS、独立登记，待GitHub精确树后唯一launch；0物理0optimizer/600main+600audit/root30min/32MiB，不选模型、不准入学习。见weekend_20261120_23/t684/FINDINGS。
+
 2026-11-21 T683 COMPLETE/TEMPORAL_LATENT_CONTRACT_PASS/独立auditPASS：8完整旧历史×2噪声结构的raw路径密度/自有carry/重置/固定物理时钟/3numeric均过，0物理0optimizer，11.007main+6.949audit秒，全PID退出。clip条件原子乘积非command边缘joint的积分反例成立；不当新探索效果。T684匹配IID/tau2新采样已真实Session物理前guard/worker绑定及16源前缀同T683逐位0物理0优化器预检PASS、独立登记，待GitHub精确树后唯一launch：64fresh64exact/4969728物理134cmd/3000main+300audit/root1h/320MiB，0更新；真实新场景合同在正式每首动作前检查，预检不冒充原生新结果，T501保留。见weekend_20261120_23/t683/FINDINGS与NEXT_T684_TEMPORAL_COLLECTION_SPEC。
 
 2026-11-21 T682 COMPLETE/独立auditPASS但head因素门FAIL，old4安全为0/0/3/0，全部候选已失旧，full407=null/T501保留；1921708物理86cmd/0更新、全PID退出。不救3/4/尺度/seed/单头训练。T683时间相关动作噪声概率语义合同已主审/真实32prefix预检PASS并独立登记，0native0optimizer/600main+600audit/root30min/32MiB，待精确源后唯一launch；非新collection，latent路径与clip条件原子明确分离。见weekend_20261120_23/t682/FINDINGS。
