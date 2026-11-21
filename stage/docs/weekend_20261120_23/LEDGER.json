@@ -1,15 +1,15 @@
 {
   "physics": 107262367,
-  "commands": 4973,
-  "science_seconds": 26916.952835321426,
-  "audit_seconds": 666.7815017700195,
-  "transport_seconds": 8202.923450231552,
+  "commands": 4979,
+  "science_seconds": 26959.236276865005,
+  "audit_seconds": 700.1302244663239,
+  "transport_seconds": 8515.598600387573,
   "Actor_live": 135,
   "Actor_shadow": 135,
   "Actor_independent": 135,
-  "Value_live": 0,
-  "Value_shadow": 0,
-  "Value_independent": 0,
+  "Value_live": 1000,
+  "Value_shadow": 1000,
+  "Value_independent": 1000,
   "optimizer_preflight": 0,
   "jobs": [
     {
@@ -458,15 +458,50 @@
     },
     {
       "id": "T692",
-      "state": "RESERVED",
+      "state": "COMPLETE",
       "max_physics": 4655264,
       "max_commands": 134,
       "main_seconds": 5700,
-      "audit_seconds": 600,
+      "audit_seconds": 33.34872269630432,
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t692_onpolicy_value_causal",
       "Actor_each": 0,
       "Value_each": 1000,
-      "preflight_seconds": 257.158433675766
+      "preflight_seconds": 257.158433675766,
+      "actual_physics": 0,
+      "actual_commands": 6,
+      "science_seconds": 38.74245595932007,
+      "Value_calls": {
+        "Value_live": 1000,
+        "Value_shadow": 1000,
+        "Value_independent": 1000
+      },
+      "Actor_calls": {
+        "Actor_live": 0,
+        "Actor_shadow": 0,
+        "Actor_independent": 0
+      },
+      "research_outcome": "ACTION_INFORMATION_HELDOUT_GATE_FAILED_NATIVE_NOT_EXECUTED",
+      "new_Actor": 0,
+      "new_Value_each": 1000
+    },
+    {
+      "id": "T693_PREPARATION",
+      "state": "PREPARATION_ONLY_NOT_REGISTERED",
+      "actual_physics": 0,
+      "actual_commands": 0,
+      "science_seconds": 3.540985584259033,
+      "Actor_calls": {
+        "Actor_live": 0,
+        "Actor_shadow": 0,
+        "Actor_independent": 0
+      },
+      "Value_calls": {
+        "Value_live": 0,
+        "Value_shadow": 0,
+        "Value_independent": 0
+      },
+      "evidence": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t693/PREPARATION.json",
+      "not_complete_entry_preflight": true
     }
   ],
   "charged_source_sync_commits": [
@@ -495,7 +530,8 @@
     "6a5e7030551edc4d8e72abc0fae9576d3b4f952a",
     "7a797cd17ad8a6786f766a709fa9bbb6b036c90d",
     "9814a2f9f69123ee6e44f2103eed3f3e9d99dd83",
-    "b034fb8935bcf45e53a1358f8d2f2f0cd8bdbe18"
+    "b034fb8935bcf45e53a1358f8d2f2f0cd8bdbe18",
+    "aba6d31a5a053071adf744d10aaa85777ae68b67"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"
