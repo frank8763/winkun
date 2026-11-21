@@ -1,0 +1,69 @@
+"""Canonical zero-history neighborhood starts, one unchanged frozen Actor."""
+from pathlib import Path
+import os,sys
+ROOT=Path(__file__).resolve().parents[3]
+sys.path.insert(0,str(ROOT/'stage/experiments/t694_full_history_compatibility'))
+import t694_actor as A
+Old=A.L.T.N
+ORIGINAL_INSPECT=Old.inspect
+C=Old.Base
+G,F,P,np=Old.G,Old.F,Old.P,Old.np
+
+
+class Session(C.Session):
+    def __init__(self,job,*args,**kwargs):
+        super().__init__(job,*args,**kwargs)
+        assert np.max(np.abs(np.asarray(self.env._pose()[:3])-job['fullfield_start_pose']))<1e-10
+        assert np.array_equal(self.goal,np.asarray(job['fullfield_goal_xy']))
+        assert self.steps==0 and not self.hidden.any() and self.env.data.time==0
+        assert not self.env._collision(),'Invalid initial contact: no navigation outcome'
+
+
+def worker(pipe,index,p,counts):
+    C.ACTIVE=p;real=G._real_affinity
+    def pin(pid,mask):return real(pid,{p['stage_cpus'][index]}) if pid==0 and set(mask)=={index} else real(pid,mask)
+    os.sched_setaffinity=pin;G.T.Session=Session
+    G.B.native_setup=lambda folder,pc:C.C.consistent_reset.setup(F,folder,pc,C.C.CANONICAL_SETUP)
+    P.frozen=A.frozen
+    G.T.worker(pipe,index,p,counts)
+
+
+def inspect(p,a,row):
+    ORIGINAL_INSPECT(p,a,row)
+    job=row['request']['job']
+    assert np.max(np.abs(a['poses'][0]-job['fullfield_start_pose']))<1e-10
+    assert np.array_equal(a['task_goal_xy'],np.asarray(job['fullfield_goal_xy']))
+    assert bytes(a['scene_sha256']).hex()==p['narrow_scene']
+    assert not a['hidden_before'][0].any() and not a['stochastic'].any()
+
+
+def initial_hashes(a):
+    return {k:A.digest(a[k]) for k in ['initial_native_integration','scene_sha256','task_goal_xy']} | {
+        'first_state':A.digest(a['states'][0]),'first_pose':A.digest(a['poses'][0]),
+        'first_hidden':A.digest(a['hidden_before'][0])}
+
+
+def validate_all(p,folder,guard):
+    """Construct every policy-independent start before any physical action."""
+    import copy,mujoco
+    C.ACTIVE=p
+    module,native,create,w,_=C.C.consistent_reset.setup(F,folder,p,C.C.CANONICAL_SETUP)
+    original=copy.deepcopy(module.ACTIVE);records=[];current=None
+    def forbidden(*args,**kwargs):raise AssertionError('No physical integration during initial validity admission')
+    previous=mujoco.mj_step;mujoco.mj_step=forbidden
+    try:
+        for job in p['neighborhood_jobs']:
+            guard();module.ACTIVE=copy.deepcopy(original)
+            module.ACTIVE['circle_shift_x_m']=job['circle_shift_x_m']
+            current=Session(job,native,create,w,guard,forbidden,None)
+            assert not current.done() and np.linalg.norm(current.goal-np.asarray(current.env._pose()[:2]))>.2
+            first=current.packet()
+            hashes=dict(initial_native_integration=A.digest(current.initial),scene_sha256=A.digest(np.frombuffer(bytes.fromhex(current.scene),dtype=np.uint8)),task_goal_xy=A.digest(current.goal),first_state=A.digest(first),first_pose=A.digest(np.asarray(current.env._pose()[:3])),first_hidden=A.digest(current.hidden[0,0].numpy()))
+            records.append(dict(id=job['id'],initial_hashes=hashes,valid=True,physics=0))
+            current.close();current=None
+        assert len(records)==24
+        return records
+    finally:
+        mujoco.mj_step=previous
+        if current is not None:current.close()
+        w.close()

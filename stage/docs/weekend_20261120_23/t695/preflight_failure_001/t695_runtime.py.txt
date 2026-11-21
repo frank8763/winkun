@@ -1,0 +1,117 @@
+"""Fixed matched frozen neighborhood evaluation, no fitting or model selection."""
+from pathlib import Path
+import fcntl,gzip,json,os,sys,time,traceback
+import t695_native as N
+import t695_wait as Wait
+from status_io import save
+A,T=N.A,N.A.L.T
+ROOT=A.ROOT;HERE=Path(__file__).resolve().parent
+OUT=ROOT/'stage/runs/t695_frozen_neighborhood';DOC=ROOT/'stage/docs/weekend_20261120_23/t695'
+read,sha,digest,torch,np=A.read,A.sha,A.digest,A.torch,A.np
+T.OUT,T.DOC,T.HERE,T.Wait=OUT,DOC,HERE,Wait
+SNAPSHOT=None
+
+
+def inputs(p,closing=False):
+    global SNAPSHOT
+    current={}
+    for name,expected in p['inputs'].items():
+        f=Path(name);s=f.stat();assert sha(f)==expected,name
+        current[name]=(s.st_ino,s.st_size,s.st_mtime_ns)
+    if closing:assert current==SNAPSHOT,'Locked source metadata changed'
+    else:SNAPSHOT=current
+
+
+def verify(p,*unused):
+    assert p['authorization_approved'] and time.time()<p['absolute_all_stop']
+    assert sha(HERE/'protocol.json')==sha(OUT/'protocol.json')
+    assert T.R.used(OUT)<p['max_bytes']
+    assert T.R.used(ROOT/'stage/runs')-T.R.used(OUT)+p['max_bytes']<p['global_bytes']
+    assert T.R.D.B.shutil.disk_usage(ROOT).free>40*2**30
+    Wait.resources();h=read(DOC/'AFFINITY_GUARD.json')
+    assert h['state']=='ACTIVE_RESOURCE_ONLY' and Path('/proc',str(h['pid'])).exists()
+
+
+T.verify=verify
+
+
+def setup(p):
+    T.setup(p);T.R.N.worker=N.worker;T.R.N.inspect=T.O.N.inspect=T.N.inspect=N.inspect
+    N.P.frozen=A.frozen
+    assert T.R.N.Pool.__init__.__globals__['worker'] is N.worker
+    torch.set_num_threads(1);torch.use_deterministic_algorithms(True)
+
+
+def report(p,rows):
+    fresh=[r for r in rows if not r.get('exact')];by={}
+    assert len(fresh)==48
+    for r in fresh:
+        key=(r['policy_hash'],r['job_id']);assert key not in by;by[key]=r
+    models={m['name']:m['model']['policy_hash'] for m in p['models']};pairs=[]
+    for job in p['neighborhood_jobs']:
+        old=by[models['T501'],job['id']];new=by[models['T694'],job['id']]
+        assert old['initial_hashes']==new['initial_hashes']
+        pair=dict(id=job['id'],parent=job['neighborhood_parent_id'],direction=job['neighborhood_direction'],initial_hashes=old['initial_hashes'])
+        for name,row in [('T501',old),('T694',new)]:
+            pair[name]=dict(safe=T.Prior.safe(row),collision=row['collision'],timeout=row['timeout'],boundary=row['field_boundary'],complete=row['complete'],path=row['path'],sha256=row['sha256'])
+        pairs.append(pair)
+    counts={name:dict(safe=sum(r[name]['safe'] for r in pairs),collision=sum(r[name]['collision'] for r in pairs),timeout=sum(r[name]['timeout'] for r in pairs),boundary=sum(r[name]['boundary'] for r in pairs)) for name in models}
+    return dict(pairs=pairs,counts=counts,T694_only=sum(r['T694']['safe'] and not r['T501']['safe'] for r in pairs),T501_only=sum(r['T501']['safe'] and not r['T694']['safe'] for r in pairs),both_safe=sum(r['T501']['safe'] and r['T694']['safe'] for r in pairs),neither_safe=sum(not r['T501']['safe'] and not r['T694']['safe'] for r in pairs),per_parent={key:{name:sum(r[name]['safe'] for r in pairs if r['parent']==key) for name in models} for key in p['parent_ids']},finite_postselected_development_neighborhood_NOT_universal_robustness=True)
+
+
+def collect():
+    p=read(OUT/'protocol.json');inputs(p);verify(p);setup(p);T.R.E.L.install_stop_handlers()
+    lock=(ROOT/'stage/runs/.stage_writer.lock').open('a+b');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    save(OUT/'science_started.json',dict(pid=os.getpid(),epoch=time.time()));rt=T.Runtime(p);error=None;fresh=[];result=None
+    try:
+        rt.commands+=26
+        validity=N.validate_all(p,OUT/'validity',rt.guard)
+        save(OUT/'INITIAL_VALIDITY.json',dict(state='ALL24_VALID_BEFORE_FIRST_PHYSICAL',rows=validity,physics=0,commands=26))
+        T.pool(rt)
+        for item in p['models']:
+            vv=rt.request(p['neighborhood_jobs'],item['model'],item['name']+'_fresh',True)
+            rr=[]
+            for a,r in vv:
+                r['initial_hashes']=N.initial_hashes(a);rr.append(r)
+                assert r['initial_hashes']==next(v['initial_hashes'] for v in validity if v['id']==r['job_id'])
+            fresh.extend(rr)
+            rt.request(p['neighborhood_jobs'],item['model'],item['name']+'_exact',False,rr)
+        result=report(p,fresh);save(OUT/'PAIRED_NEIGHBORHOOD.json',result);inputs(p,True)
+    except BaseException:error=traceback.format_exc();save(OUT/'failure.json',dict(error=error,raw_preserved=True,no_restart=True,initial_validity_rejection_is_not_navigation_failure=True))
+    finally:
+        T.close(rt);rt.commands+=3
+        save(OUT/'summary.json',dict(state='FAILED' if error else 'COMPLETE',pid=os.getpid(),error=error,physics=sum(rt.counts),commands=rt.commands,elapsed_s=time.time()-rt.start,gate='FROZEN_FIXED_NEIGHBORHOOD_COMPLETE_PENDING_AUDIT' if result else None,result=result,rows=fresh,new_Actor=0,new_Value=0,new_optimizer=0,models_unchanged=True,full407=None,retained=p['retained']))
+        fcntl.flock(lock,fcntl.LOCK_UN);lock.close()
+    assert error is None,error
+
+
+def audit():
+    p=read(OUT/'protocol.json');inputs(p);verify(p);setup(p);s=read(OUT/'summary.json')
+    assert s['state']=='COMPLETE' and not Path('/proc',str(s['pid'])).exists()
+    for generation in read(OUT/'worker_generations.json'):
+        assert all(not Path('/proc',str(pid)).exists() for pid in [generation['parent'],*generation['workers']])
+    lock=(ROOT/'stage/runs/.stage_writer.lock').open('a+b');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    rows=[json.loads(line) for line in gzip.decompress((OUT/'cases.jsonl.gz').read_bytes()).decode().splitlines()]
+    assert len(rows)==96;by={r['path']:r for r in rows};assert len(by)==96
+    models={m['model']['policy_hash']:m['model'] for m in p['models']};fresh=[];started=time.time();last=[0.]
+    for r in rows:
+        assert time.time()<min(started+p['audit_seconds'],p['absolute_all_stop'])-10
+        if time.time()-last[0]>5:verify(p);last[0]=time.time()
+        assert sha(r['path'])==r['sha256'] and r['seed'] is None and not r.get('teacher')
+        m=models[r['policy_hash']];assert sha(m['path'])==m['sha256']==r['loaded_model_sha256']
+        a=T.R.E.N.S.arrays(r['path'])
+        if r['full']:
+            N.inspect(p,a,r);rr=dict(r,initial_hashes=N.initial_hashes(a));fresh.append(rr)
+        else:assert all(digest(v)==r['array_hashes'][k] for k,v in a.items())
+        if r.get('exact'):
+            ref=by[r['reference_path']];assert r['array_hashes']==ref['array_hashes'] and r['integration_sha256']==ref['integration_sha256']
+    assert fresh==s['rows'] and report(p,fresh)==s['result']==read(OUT/'PAIRED_NEIGHBORHOOD.json')
+    validity=read(OUT/'INITIAL_VALIDITY.json');assert validity['state']=='ALL24_VALID_BEFORE_FIRST_PHYSICAL' and validity['commands']==26 and validity['physics']==0
+    assert all(r['initial_hashes']==next(v['initial_hashes'] for v in validity['rows'] if v['id']==r['job_id']) for r in fresh)
+    assert len(rows)+6+26==s['commands']<=p['max_commands'] and sum(r['physics'] for r in rows)==s['physics']<=p['max_physics']
+    assert not (OUT/'optimizer_calls.jsonl').exists();inputs(p,True)
+    save(OUT/'audit.json',dict(state='PASS',all48fresh48exact_fullhistory_owncarry_density_reward_native_integral=True,all24paired_initial_hashes_equal=True,paired_report=s['result']['counts'],new_native=0,new_commands=0,new_Actor=0,new_Value=0,new_optimizer=0,retained_model_unchanged=True))
+    fcntl.flock(lock,fcntl.LOCK_UN);lock.close()
+
+
+if __name__=='__main__':{'collect':collect,'audit':audit}[sys.argv[1]]()
