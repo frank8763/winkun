@@ -1,3 +1,5 @@
+2026-11-21 T681 COMPLETE/迁移描述门PASS/独立auditPASS，全PID退出：两固定源模型field10/24与4/24，后20新增相对T501各4和3，均仍丢旧(4已知old全碰撞)，拒绝保留/full407=null。40fresh40exact/2721516物理86cmd/0更新。T682两来源drive/steer静态因素拆分40fresh40exact已真实零更新预检PASS/独立登记，待精确GitHub源后唯一launch：2647464物理86cmd/1800main+300audit/root40min/256MiB/0优化器；不救T680四pair梯度、不BC/投影/seed网格。见weekend_20261120_23/t681/FINDINGS。
+
 2026-11-21 T680 COMPLETE/独立auditPASS但估计稳定性FAIL：field两半cos.0154、删pair0 cos.4543<.5、仅1field有>=2非零pair，0物理0更新/全PID退出。停止四pair11906维更新路径，不增seed/幅度救门。T681准备固定两个新成功源变体未见field迁移测试；两模型原已失旧，不跑无意义完整407、不晋升；40fresh+40exact真实loader/完整carry/原baseline逐任务身份0步预检PASS、独立登记，待GitHub精确树后唯一launch；4973312物理86cmd/2400main+300audit/root50min/256MiB，0更新。T501保留。见weekend_20261120_23/t680/FINDINGS。
 
 2026-11-21 T679 COMPLETE/supportPASS/独立auditPASS：64fresh+64exact、3520946物理134cmd/0更新，发现field1_offset1有1safe、7_offset1有2safe，但旧任务大多被临时参数变体破坏，中心T501未更新/不晋升。新T680四pair高维估计稳定性已0步预检PASS并独立登记，待精确GitHub后唯一launch；0物理0Actor/Value/optimizer/600main+600audit/root30min/16MiB。固定逐删pair与半batch、每task多pair支持门，不为4方向硬训11906参数，不救seed/幅度/样本量。见weekend_20261120_23/t679/FINDINGS、t680/PLAN。
