@@ -1,3 +1,7 @@
+2026-11-21 T687完整原Actor64772参数BPTT合同已真实0native0optimizer预检PASS并独立登记，尚未launch。固定全参数/core/encoder方向差分误差5.09e-11/1.03e-11/2.98e-11、完整owncarry逐步相同，峰值764MiB；全1724历史与387参考的梯度/原11906adapter切片恒等及首Adam公式KL待注册main和独立audit。0物理0更新/2400main+2400audit/root100min/64MiB，语义与固定lr3e-5首步KL<=.01准入分列，不调lr救；不是新学习或导航改善。先精确GitHub再唯一launch。T686两候选实际旧任务随机退化已拒绝，T501保留。见weekend_20261120_23/t687/PLAN与T687_PRIMARY_REVIEW。
+
+2026-11-21 T686 COMPLETE/独立auditPASS但有限分离门未成立：直接随机old安全executed4/16、self5/16，基准7/16；field4/16与5/16，基准4/16。T685正proxy/有限OPE未准确预测部分实际负向配对结果，不能简单称仅随机/确定性验收错配或高ESS证可靠。64fresh64exact/3166142物理134cmd/0更新、全部PID退出，T501保留；下一学习机制需重审目标与实际闭环对应，不恢复旧候选/步数/seed网格。见weekend_20261120_23/t686/FINDINGS。
+
 2026-11-21 T685 COMPLETE/独立auditPASS：train48/freshIID32上冻结T678两候选失旧ID仍正代理，freshESS最小3.9441/4且maxweight.300955，有限概率支持未塌缩，但小N不能说总体随机回报改善。零物理零优化器，7.460main+7.409audit，全PID退出；T501保留。T686拟直接采集两候选同T68432创新种子的自身随机闭环，基准原数据只引用、不重跑；已真实候选loader/owncarry/IID密度与基准32full32exact重审0native0optimizer预检PASS、独立登记；4969728物理134cmd/3000main+300audit/root1h/320MiB，待精确GitHub树后唯一launch，无更新、不选模型。见weekend_20261120_23/t685/FINDINGS/NEXT_T686_DIRECT_STOCHASTIC_VALIDATION_SPEC。
 
 2026-11-21 T684 COMPLETE/独立auditPASS但探索准入FAIL：tau2两个field安全样本增加，但old1/16 vsIID7/16，停止固定时间相关方案不扫tau/sigma/seed/sample；3164566物理134cmd/0更新、全PID退出，T501保留。T685新IID32与原train48的冻结T678候选代理/轨迹概率支持诊断已主审/真实零步前缀identity预检PASS、独立登记，待GitHub精确树后唯一launch；0物理0optimizer/600main+600audit/root30min/32MiB，不选模型、不准入学习。见weekend_20261120_23/t684/FINDINGS。
