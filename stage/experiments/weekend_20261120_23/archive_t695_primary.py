@@ -1,0 +1,43 @@
+"""One finite primary-record and paired counterexample backup, no deletion."""
+from pathlib import Path
+import fcntl,importlib.util,json,signal,time
+ROOT=Path(__file__).resolve().parents[3];DOC=ROOT/'stage/docs/weekend_20261120_23'
+spec=importlib.util.spec_from_file_location('all_stage_stopped',Path(__file__).with_name('archive_after_t695.py'))
+Guard=importlib.util.module_from_spec(spec);spec.loader.exec_module(Guard)
+read=Guard.read
+
+
+def main():
+    start=time.time();auth=read(DOC/'AUTHORIZATION.json');ledger=read(DOC/'LEDGER.json')
+    assert auth['approved'] and ledger['transport_seconds']+180+300<auth['max_transport_seconds']
+    Guard.stopped();lock=(ROOT/'stage/runs/.stage_writer.lock').open('a+b');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    folder=ROOT/'stage/runs/t695_frozen_neighborhood';assert read(folder/'audit.json')['state']=='PASS'
+    files=[folder/name for name in ['protocol.json','INITIAL_VALIDITY.json','PAIRED_NEIGHBORHOOD.json','summary.json','audit.json','cases.jsonl.gz','SEALED.json','FINAL_REPORT.json']]
+    report=read(folder/'PAIRED_NEIGHBORHOOD.json')
+    # Preserve both sides of every reverse paired loss, not selected positive
+    # demonstrations. All48 outcome identities remain in the primary records.
+    losses=[r for r in report['pairs'] if r['T501']['safe'] and not r['T694']['safe']]
+    assert len(losses)==1
+    files.extend(Path(loss[name]['path']) for loss in losses for name in ['T501','T694'])
+    size=sum(f.stat().st_size for f in files);assert size<=8*2**20
+    group='WEEKEND_T695_PRIMARY_AND_REVERSE_PAIR_0';assert not (DOC/'T695_PRIMARY_BACKUP.json').exists()
+    client=Guard.Client.client();release=json.loads(client.req('GET','https://api.github.com/repos/frank8763/winkun/releases/tags/stage-eight-only-2026-11-11'))
+    Guard.Client.A.stopped=Guard.stopped
+    signal.signal(signal.SIGALRM,lambda *_:(_ for _ in ()).throw(TimeoutError('Finite T695 primary backup180s')));signal.alarm(180)
+    result=Guard.Client.A.archive(group,files,release,min(start+175,auth['absolute_all_stop']-30),client)
+    Guard.stopped();assert result['state']=='FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED'
+    manifest=ROOT/f'stage/docs/long_distance_20261101/source_manifest_{group}.json';receipt=manifest.with_name(manifest.name.replace('source_manifest_','release_receipt_'))
+    restore=read(DOC/'RESTORE_INDEX.json');assert group not in [g['group'] for g in restore['groups']]
+    restore['groups'].append(dict(group=group,manifest=str(manifest),receipt=str(receipt),remote_receipt=result,members=read(manifest)['files']))
+    restore.update(epoch=time.time(),files_deleted=0,other_raw_pending=True)
+    (DOC/'RESTORE_INDEX.json').write_text(json.dumps(restore,indent=2)+'\n')
+    value=dict(state=result['state'],group=group,members=result['members'],compressed_bytes=result['bytes'],source_bytes=size,elapsed_seconds=time.time()-start,deleted=0,all_paired_outcome_records_and_reverse_loss_full_trajectories=True,other_full_episode_raw_pending=True,all_science_driver_helper_units_source_stopped=True)
+    (DOC/'T695_PRIMARY_BACKUP.json').write_text(json.dumps(value,indent=2)+'\n')
+    signal.alarm(0);fcntl.flock(lock,fcntl.LOCK_UN);lock.close();print(json.dumps(value),flush=True)
+
+
+if __name__=='__main__':
+    started=time.time()
+    try:main()
+    finally:
+        f=DOC/'LEDGER.json';value=read(f);value['transport_seconds']+=time.time()-started;f.write_text(json.dumps(value,indent=2)+'\n')

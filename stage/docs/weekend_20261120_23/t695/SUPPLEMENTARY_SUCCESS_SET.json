@@ -1,0 +1,651 @@
+{
+  "state": "VERIFIED_SAME_FROZEN_POLICY_ADDITIONAL_STARTS_NOT_407_PROMOTION",
+  "source": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood",
+  "audit": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/audit.json",
+  "predefined_test_count": 24,
+  "safe_count": 13,
+  "not_safe_count": 11,
+  "policy_hash": "11eca188a1c3ad9a738488df61fcf5cbfe5976e0198330a123524b342a9b69af",
+  "success_ids": [
+    "t502_field_sector0_offset1_T695_xminus",
+    "t502_field_sector0_offset1_T695_xplus",
+    "t502_field_sector0_offset1_T695_yminus",
+    "t502_field_sector0_offset1_T695_yplus",
+    "t502_field_sector0_offset2_T695_xminus",
+    "t502_field_sector0_offset2_T695_yminus",
+    "t502_field_sector2_offset1_T695_xminus",
+    "t502_field_sector2_offset1_T695_yminus",
+    "t502_field_sector2_offset1_T695_yplus",
+    "t502_field_sector5_offset1_T695_xminus",
+    "t502_field_sector5_offset1_T695_xplus",
+    "t502_field_sector5_offset1_T695_yminus",
+    "t502_field_sector5_offset1_T695_yplus"
+  ],
+  "sources": [
+    {
+      "id": "t502_field_sector0_offset1_T695_xminus",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0048_T694_fresh.npz",
+      "sha256": "3adf948f08fbb5f00f4bac00ebebefe3d2faaaf8216ca582939d9339f0bfd345",
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "job": {
+          "id": "t502_field_sector0_offset1_T695_xminus",
+          "source_reset_id": "t502_field_sector0_offset1_T695_xminus",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.2044946801652205,
+            "step_cap": 34697,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.0,
+          "delta_yaw_deg": 0.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "expected_initial120_sha256": null,
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "fullfield_start_pose": [
+            6.79,
+            0.0,
+            1.9634954084936207
+          ],
+          "fullfield_goal_xy": [
+            4.8083261120685235,
+            4.808326112068523
+          ],
+          "start_sector": 0,
+          "sector_offset": 1,
+          "neighborhood_parent_id": "t502_field_sector0_offset1",
+          "neighborhood_direction": "xminus"
+        },
+        "seed": null,
+        "query": false,
+        "record_key": "0048_T694_fresh",
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0048_T694_fresh.npz"
+      }
+    },
+    {
+      "id": "t502_field_sector0_offset1_T695_xplus",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0049_T694_fresh.npz",
+      "sha256": "f4fadd4a44895b5d25c7b202b02aea2a7f4fe5c634ea3b2e879136ab695e41bf",
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "job": {
+          "id": "t502_field_sector0_offset1_T695_xplus",
+          "source_reset_id": "t502_field_sector0_offset1_T695_xplus",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.2044946801652205,
+            "step_cap": 34697,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.0,
+          "delta_yaw_deg": 0.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "expected_initial120_sha256": null,
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "fullfield_start_pose": [
+            6.81,
+            0.0,
+            1.9634954084936207
+          ],
+          "fullfield_goal_xy": [
+            4.8083261120685235,
+            4.808326112068523
+          ],
+          "start_sector": 0,
+          "sector_offset": 1,
+          "neighborhood_parent_id": "t502_field_sector0_offset1",
+          "neighborhood_direction": "xplus"
+        },
+        "seed": null,
+        "query": false,
+        "record_key": "0049_T694_fresh",
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0049_T694_fresh.npz"
+      }
+    },
+    {
+      "id": "t502_field_sector0_offset1_T695_yminus",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0050_T694_fresh.npz",
+      "sha256": "2baeeb75629549709e44e68c6b2c792e6d084d30f46223121ee41b8e04c6d404",
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "job": {
+          "id": "t502_field_sector0_offset1_T695_yminus",
+          "source_reset_id": "t502_field_sector0_offset1_T695_yminus",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.2044946801652205,
+            "step_cap": 34697,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.0,
+          "delta_yaw_deg": 0.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "expected_initial120_sha256": null,
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "fullfield_start_pose": [
+            6.8,
+            -0.01,
+            1.9634954084936207
+          ],
+          "fullfield_goal_xy": [
+            4.8083261120685235,
+            4.808326112068523
+          ],
+          "start_sector": 0,
+          "sector_offset": 1,
+          "neighborhood_parent_id": "t502_field_sector0_offset1",
+          "neighborhood_direction": "yminus"
+        },
+        "seed": null,
+        "query": false,
+        "record_key": "0050_T694_fresh",
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0050_T694_fresh.npz"
+      }
+    },
+    {
+      "id": "t502_field_sector0_offset1_T695_yplus",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0051_T694_fresh.npz",
+      "sha256": "a9a48a12f5e7469dad213041f0b748da136944c59459e653b1c60fce02855477",
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "job": {
+          "id": "t502_field_sector0_offset1_T695_yplus",
+          "source_reset_id": "t502_field_sector0_offset1_T695_yplus",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.2044946801652205,
+            "step_cap": 34697,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.0,
+          "delta_yaw_deg": 0.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "expected_initial120_sha256": null,
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "fullfield_start_pose": [
+            6.8,
+            0.01,
+            1.9634954084936207
+          ],
+          "fullfield_goal_xy": [
+            4.8083261120685235,
+            4.808326112068523
+          ],
+          "start_sector": 0,
+          "sector_offset": 1,
+          "neighborhood_parent_id": "t502_field_sector0_offset1",
+          "neighborhood_direction": "yplus"
+        },
+        "seed": null,
+        "query": false,
+        "record_key": "0051_T694_fresh",
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0051_T694_fresh.npz"
+      }
+    },
+    {
+      "id": "t502_field_sector0_offset2_T695_xminus",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0052_T694_fresh.npz",
+      "sha256": "82026037f360d1b193b6087cb80bb3ebb43470d7a7916b6ac90ba9e07d2cfde6",
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "job": {
+          "id": "t502_field_sector0_offset2_T695_xminus",
+          "source_reset_id": "t502_field_sector0_offset2_T695_xminus",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 9.616652224137047,
+            "step_cap": 64112,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.0,
+          "delta_yaw_deg": 0.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "expected_initial120_sha256": null,
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "fullfield_start_pose": [
+            6.79,
+            0.0,
+            2.356194490192345
+          ],
+          "fullfield_goal_xy": [
+            4.1637991171010006e-16,
+            6.8
+          ],
+          "start_sector": 0,
+          "sector_offset": 2,
+          "neighborhood_parent_id": "t502_field_sector0_offset2",
+          "neighborhood_direction": "xminus"
+        },
+        "seed": null,
+        "query": false,
+        "record_key": "0052_T694_fresh",
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0052_T694_fresh.npz"
+      }
+    },
+    {
+      "id": "t502_field_sector0_offset2_T695_yminus",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0054_T694_fresh.npz",
+      "sha256": "5a5fe853b303b50b2c03af4e123ffbe6a59e9ef201600197ea5daac3d256695f",
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "job": {
+          "id": "t502_field_sector0_offset2_T695_yminus",
+          "source_reset_id": "t502_field_sector0_offset2_T695_yminus",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 9.616652224137047,
+            "step_cap": 64112,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.0,
+          "delta_yaw_deg": 0.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "expected_initial120_sha256": null,
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "fullfield_start_pose": [
+            6.8,
+            -0.01,
+            2.356194490192345
+          ],
+          "fullfield_goal_xy": [
+            4.1637991171010006e-16,
+            6.8
+          ],
+          "start_sector": 0,
+          "sector_offset": 2,
+          "neighborhood_parent_id": "t502_field_sector0_offset2",
+          "neighborhood_direction": "yminus"
+        },
+        "seed": null,
+        "query": false,
+        "record_key": "0054_T694_fresh",
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0054_T694_fresh.npz"
+      }
+    },
+    {
+      "id": "t502_field_sector2_offset1_T695_xminus",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0060_T694_fresh.npz",
+      "sha256": "fc0e7a86e1fc189d16ce50a3d34f216ac37070c2a9aff7a42287afedcbc8f480",
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "job": {
+          "id": "t502_field_sector2_offset1_T695_xminus",
+          "source_reset_id": "t502_field_sector2_offset1_T695_xminus",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.2044946801652205,
+            "step_cap": 34697,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.0,
+          "delta_yaw_deg": 0.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "expected_initial120_sha256": null,
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "fullfield_start_pose": [
+            -0.009999999999999584,
+            6.8,
+            -2.748893571891069
+          ],
+          "fullfield_goal_xy": [
+            -4.808326112068523,
+            4.8083261120685235
+          ],
+          "start_sector": 2,
+          "sector_offset": 1,
+          "neighborhood_parent_id": "t502_field_sector2_offset1",
+          "neighborhood_direction": "xminus"
+        },
+        "seed": null,
+        "query": false,
+        "record_key": "0060_T694_fresh",
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0060_T694_fresh.npz"
+      }
+    },
+    {
+      "id": "t502_field_sector2_offset1_T695_yminus",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0062_T694_fresh.npz",
+      "sha256": "69eac7c4e948d617f0516e77232487a6b788cea5692fcbd81675e8ba2d8ca743",
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "job": {
+          "id": "t502_field_sector2_offset1_T695_yminus",
+          "source_reset_id": "t502_field_sector2_offset1_T695_yminus",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.2044946801652205,
+            "step_cap": 34697,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.0,
+          "delta_yaw_deg": 0.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "expected_initial120_sha256": null,
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "fullfield_start_pose": [
+            4.1637991171010006e-16,
+            6.79,
+            -2.748893571891069
+          ],
+          "fullfield_goal_xy": [
+            -4.808326112068523,
+            4.8083261120685235
+          ],
+          "start_sector": 2,
+          "sector_offset": 1,
+          "neighborhood_parent_id": "t502_field_sector2_offset1",
+          "neighborhood_direction": "yminus"
+        },
+        "seed": null,
+        "query": false,
+        "record_key": "0062_T694_fresh",
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0062_T694_fresh.npz"
+      }
+    },
+    {
+      "id": "t502_field_sector2_offset1_T695_yplus",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0063_T694_fresh.npz",
+      "sha256": "bd9545bc89ad7c33a2538a5e4c04e1a28c727e28cbe57a1d2853cf3bcf7525cc",
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "job": {
+          "id": "t502_field_sector2_offset1_T695_yplus",
+          "source_reset_id": "t502_field_sector2_offset1_T695_yplus",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.2044946801652205,
+            "step_cap": 34697,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.0,
+          "delta_yaw_deg": 0.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "expected_initial120_sha256": null,
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "fullfield_start_pose": [
+            4.1637991171010006e-16,
+            6.81,
+            -2.748893571891069
+          ],
+          "fullfield_goal_xy": [
+            -4.808326112068523,
+            4.8083261120685235
+          ],
+          "start_sector": 2,
+          "sector_offset": 1,
+          "neighborhood_parent_id": "t502_field_sector2_offset1",
+          "neighborhood_direction": "yplus"
+        },
+        "seed": null,
+        "query": false,
+        "record_key": "0063_T694_fresh",
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0063_T694_fresh.npz"
+      }
+    },
+    {
+      "id": "t502_field_sector5_offset1_T695_xminus",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0064_T694_fresh.npz",
+      "sha256": "886e31498e021807f8d70d4ec25a9a6bcc4533f45ded09495907aa3e3108ec98",
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "job": {
+          "id": "t502_field_sector5_offset1_T695_xminus",
+          "source_reset_id": "t502_field_sector5_offset1_T695_xminus",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.204494680165221,
+            "step_cap": 34697,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.0,
+          "delta_yaw_deg": 0.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "expected_initial120_sha256": null,
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "fullfield_start_pose": [
+            -4.818326112068524,
+            -4.808326112068523,
+            -0.3926990816987242
+          ],
+          "fullfield_goal_xy": [
+            -1.2491397351303002e-15,
+            -6.8
+          ],
+          "start_sector": 5,
+          "sector_offset": 1,
+          "neighborhood_parent_id": "t502_field_sector5_offset1",
+          "neighborhood_direction": "xminus"
+        },
+        "seed": null,
+        "query": false,
+        "record_key": "0064_T694_fresh",
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0064_T694_fresh.npz"
+      }
+    },
+    {
+      "id": "t502_field_sector5_offset1_T695_xplus",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0065_T694_fresh.npz",
+      "sha256": "56e481400977716d262338d212e46224548fa4921e6b6741c8e4aed6bf91f123",
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "job": {
+          "id": "t502_field_sector5_offset1_T695_xplus",
+          "source_reset_id": "t502_field_sector5_offset1_T695_xplus",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.204494680165221,
+            "step_cap": 34697,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.0,
+          "delta_yaw_deg": 0.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "expected_initial120_sha256": null,
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "fullfield_start_pose": [
+            -4.7983261120685246,
+            -4.808326112068523,
+            -0.3926990816987242
+          ],
+          "fullfield_goal_xy": [
+            -1.2491397351303002e-15,
+            -6.8
+          ],
+          "start_sector": 5,
+          "sector_offset": 1,
+          "neighborhood_parent_id": "t502_field_sector5_offset1",
+          "neighborhood_direction": "xplus"
+        },
+        "seed": null,
+        "query": false,
+        "record_key": "0065_T694_fresh",
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0065_T694_fresh.npz"
+      }
+    },
+    {
+      "id": "t502_field_sector5_offset1_T695_yminus",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0066_T694_fresh.npz",
+      "sha256": "ea2435fc0aaeb7042155399ebbcfd5c8b49ff4dc282573e0cfc5db0e24e10c53",
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "job": {
+          "id": "t502_field_sector5_offset1_T695_yminus",
+          "source_reset_id": "t502_field_sector5_offset1_T695_yminus",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.204494680165221,
+            "step_cap": 34697,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.0,
+          "delta_yaw_deg": 0.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "expected_initial120_sha256": null,
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "fullfield_start_pose": [
+            -4.808326112068524,
+            -4.818326112068522,
+            -0.3926990816987242
+          ],
+          "fullfield_goal_xy": [
+            -1.2491397351303002e-15,
+            -6.8
+          ],
+          "start_sector": 5,
+          "sector_offset": 1,
+          "neighborhood_parent_id": "t502_field_sector5_offset1",
+          "neighborhood_direction": "yminus"
+        },
+        "seed": null,
+        "query": false,
+        "record_key": "0066_T694_fresh",
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0066_T694_fresh.npz"
+      }
+    },
+    {
+      "id": "t502_field_sector5_offset1_T695_yplus",
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0067_T694_fresh.npz",
+      "sha256": "2df4d76b9d4bbbbdb0376520de616f494ee499e012ff459e0067435fe2b04004",
+      "request": {
+        "model": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "job": {
+          "id": "t502_field_sector5_offset1_T695_yplus",
+          "source_reset_id": "t502_field_sector5_offset1_T695_yplus",
+          "group": "6m_LEFT",
+          "case": {
+            "id": "6m_LEFT",
+            "seed": 2029653601,
+            "angle_deg": -17.3,
+            "side": "LEFT",
+            "distance_m": 5.204494680165221,
+            "step_cap": 34697,
+            "group": "original_5m_primary"
+          },
+          "delta_x_m": 0.0,
+          "delta_y_m": 0.0,
+          "delta_yaw_deg": 0.0,
+          "seed": 0,
+          "mode": "deterministic",
+          "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+          "expected_initial120_sha256": null,
+          "wide_course": true,
+          "circle_shift_x_m": 0.6,
+          "fullfield_start_pose": [
+            -4.808326112068524,
+            -4.798326112068523,
+            -0.3926990816987242
+          ],
+          "fullfield_goal_xy": [
+            -1.2491397351303002e-15,
+            -6.8
+          ],
+          "start_sector": 5,
+          "sector_offset": 1,
+          "neighborhood_parent_id": "t502_field_sector5_offset1",
+          "neighborhood_direction": "yplus"
+        },
+        "seed": null,
+        "query": false,
+        "record_key": "0067_T694_fresh",
+        "full_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood/episodes/0067_T694_fresh.npz"
+      }
+    }
+  ],
+  "claim": "Finite exposed-task one-centimeter XY starts only; no continuous safety radius or unseen-map robustness"
+}

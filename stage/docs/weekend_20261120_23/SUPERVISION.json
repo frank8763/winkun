@@ -14,13 +14,13 @@
   "current_active_run": null,
   "current_active_unit": null,
   "current_run_protocol_immutable": true,
-  "last_checked_epoch": 1795277634.255866,
-  "periodic_prompt_points_to": "T694_RETAINED_390_ORIGINAL384_PLUS6_T694R_PASS_ALL_EXITED",
-  "source_remote": "35e36401e4dee242671f2c6ae5d46f146aa0a2d1",
+  "last_checked_epoch": 1795278659.7869759,
+  "periodic_prompt_points_to": "T695_COMPLETE_AUDIT_PASS13_VS8_ALL_EXITED_T694_RETAINED",
+  "source_remote": "cbc81e7177f0981e3b2789b91bcd7754cd6e6d97",
   "working_hypotheses_note": "WORKING_HYPOTHESES_AFTER_T671.md",
   "posthoc_KL_scale_note": "t671/POSTHOC_KL_SCALE_CORRECTION.md",
-  "next_planned_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood",
-  "last_completed_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694r_audit_recovery",
+  "next_planned_run": null,
+  "last_completed_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood",
   "historical_run_deadlines": {
     "T672": {
       "all_stop": "2026-11-21T14:49:01.564471+08:00",
@@ -39,18 +39,20 @@
   "T691R_state": "COMPLETE_BOTH_KL_REJECTED",
   "nominal_recovered_independent_audit": "PASS64_NOT_REEXECUTED_LIVE_SHADOW",
   "T692_state": "COMPLETE_HELDOUT_ACTION_GATE_FAILED_NO_NATIVE",
-  "last_raw_backup": "WEEKEND_T694_RETAINED_PRIMARY_0",
-  "raw_members_newly_verified": 15,
+  "last_raw_backup": "WEEKEND_T695_PRIMARY_AND_REVERSE_PAIR_0",
+  "raw_members_newly_verified": 10,
   "raw_deleted": 0,
   "next_planned_spec": null,
-  "source_sync_of_weekend_docs": "VERIFIED_f194db7bc278b30a4b3a9034ca1de74ed65e7205",
+  "source_sync_of_weekend_docs": "VERIFIED_7f7b277109e9e1907c5ba96f803fcde5d5a1fc0a",
   "T693_state": "NOT_LAUNCHED_TIME_ADMISSION_FAILED",
   "next_research_agent": null,
-  "next_research_note": "T695_FROZEN_NEIGHBORHOOD_PRIMARY_REVIEW.md",
-  "next_research_state": "FIXED_NEIGHBORHOOD_PRIMARY_REVIEW_COMPLETE",
+  "next_research_note": "t695/NEXT_AFTER_T695.md",
+  "next_research_state": "T695_FINITE_REVIEW_COMPLETE_NO_NEXT_SCIENCE_ADMITTED",
   "post_T693_review_decision": "NONE_PRESENTLY_JUSTIFIED_NOT_IMPOSSIBILITY",
   "post_T693_review_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/POST_T693_BOUNDED_METHOD_REVIEW.md",
-  "local_raw_backup_metadata_pending_source_sync": [],
+  "local_raw_backup_metadata_pending_source_sync": [
+    "WEEKEND_T695_PRIMARY_AND_REVERSE_PAIR_0"
+  ],
   "source_sync_batch_policy": "Accumulate up to4 verified smallraw batches then one source300 sync, or sooner on materialstatechange/finalhandoff; never duplicate or exceed transport budget",
   "last_grouped_source_sync": {
     "groups": [
@@ -129,29 +131,96 @@
       "root_seconds_remaining": 6961.3583018779755,
       "retained": "T501",
       "complete407_and_native_audit_pending": true
+    },
+    "T695_active_health_before_completion": {
+      "state": "HEALTHY_T695_ACTIVE",
+      "driver_pid": 874410,
+      "helper_pid": 874414,
+      "child_pid": 874415,
+      "actual_status": {
+        "state": "ACTIVE",
+        "child_pid": 874415,
+        "pid": 874415,
+        "driver_pid": 874410,
+        "child": "t695_frozen_neighborhood",
+        "action": "main",
+        "epoch": 1795277744.288673,
+        "physics": 376556,
+        "commands": 38,
+        "completed": 6
+      },
+      "all24_initial_validity": true,
+      "zero_native_validity_commands": 26,
+      "resource_probe": {
+        "state": "PASS",
+        "stage_cpus": [
+          8,
+          10,
+          12,
+          14
+        ],
+        "stage_physical_cores": [
+          [
+            "0",
+            "10"
+          ],
+          [
+            "0",
+            "12"
+          ],
+          [
+            "0",
+            "14"
+          ],
+          [
+            "0",
+            "8"
+          ]
+        ],
+        "phase_process_metadata_only": [],
+        "GPU": "learning_and_history_only_yield_other_compute",
+        "CPUQuota": "400%",
+        "Nice": 19,
+        "CPUWeight": 10,
+        "MemoryMax": 4294967296,
+        "MemorySwapMax": 0
+      },
+      "retained_model": "T694",
+      "worker_generations": [
+        {
+          "parent": 874415,
+          "workers": [
+            874424,
+            874427,
+            874437
+          ],
+          "actual_affinity": [
+            [
+              8
+            ],
+            [
+              10
+            ],
+            [
+              12
+            ]
+          ]
+        }
+      ]
     }
   },
   "retained_model": "T694",
   "retained_model_manifest": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/RETAINED_MODEL.json",
   "immutable_retained_parent": "T501",
   "last_health_check": {
-    "state": "ALL_STAGE_STOPPED_SAME_CANDIDATE_RETENTION_GATE_PASS",
-    "same_candidate_success": 390,
-    "original384_retained": 384,
-    "gained": [
-      "t502_field_sector0_offset1",
-      "t502_field_sector0_offset2",
-      "t502_field_sector1_offset1",
-      "t502_field_sector2_offset1",
-      "t502_field_sector5_offset1",
-      "t502_field_sector7_offset1"
-    ],
-    "all387": true,
-    "fit_audit": "PASS",
-    "native_recovery_audit": "PASS",
-    "retained_model": "T694",
-    "model_policy_hash": "11eca188a1c3ad9a738488df61fcf5cbfe5976e0198330a123524b342a9b69af",
-    "remote_named_backup_verified": true
+    "state": "T695_COMPLETE_AUDIT_PASS_ALL_PIDS_EXITED_PRIMARY_REMOTE_VERIFIED",
+    "T694_safe": 13,
+    "T501_safe": 8,
+    "paired_gain": 6,
+    "paired_loss": 1,
+    "core407_success": 390,
+    "supplementary_success": 13,
+    "retained_policy_unchanged": true
   },
   "last_outcome_source_sync": {
     "remote_commit": "35e36401e4dee242671f2c6ae5d46f146aa0a2d1",
@@ -160,6 +229,7 @@
     "upper_seconds_charged": 300
   },
   "new_campaign_transport_seconds": 11006.956346035004,
-  "T695_state": "RESERVED_ZERO_PHYSICAL_PREFLIGHT_PASS_NOT_LAUNCHED",
-  "next_job_spec": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t695/PLAN.md"
+  "T695_state": "COMPLETE_INDEPENDENT_AUDIT_PASS_FROZEN13_VS8_PAIRED6_GAIN1_LOSS",
+  "next_job_spec": null,
+  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t695/FINAL_REPORT.json"
 }
