@@ -6,7 +6,7 @@
     "stage20",
     "stage-20-30"
   ],
-  "periodic": "\u6bcf\u5c0f\u65f605/25/45\u5206\uff0c\u81f311\u670823\u65e508:55",
+  "periodic": "每小时05/25/45分，至11月23日08:55",
   "final_stop_local": "2026-11-23T09:00:00+08:00",
   "native_stop_local": "2026-11-23T08:15:00+08:00",
   "learning_stop_local": "2026-11-23T07:30:00+08:00",
@@ -14,74 +14,13 @@
   "current_active_run": null,
   "current_active_unit": null,
   "current_run_protocol_immutable": true,
-  "last_checked_epoch": 1795276294.7001762,
-  "periodic_prompt_points_to": "T694_ORIGINAL_FAILED_T694R_AUDIT_ONLY_RECOVERY",
+  "last_checked_epoch": 1795276824.1808689,
+  "periodic_prompt_points_to": "T694_RETAINED_390_ORIGINAL384_PLUS6_T694R_PASS_ALL_EXITED",
   "source_remote": "ec78c5f76b4fdfbb6aada26055227fdd1e7d5cc0",
-  "last_health_check": {
-    "state": "HEALTHY_SCREEN_PASS_FULL407_IN_PROGRESS",
-    "driver_pid": 863522,
-    "helper_pid": 863525,
-    "child_pid": 864909,
-    "phase": "evaluation",
-    "fit_audit": "PASS",
-    "screen_lost": [],
-    "screen_gained": [
-      "t502_field_sector0_offset1",
-      "t502_field_sector0_offset2",
-      "t502_field_sector1_offset1",
-      "t502_field_sector2_offset1",
-      "t502_field_sector5_offset1",
-      "t502_field_sector7_offset1"
-    ],
-    "screen_field_success": 11,
-    "progress": {
-      "physics": 8121452,
-      "commands": 431,
-      "completed": 425
-    },
-    "resource_probe": {
-      "state": "PASS",
-      "stage_cpus": [
-        8,
-        10,
-        12,
-        14
-      ],
-      "stage_physical_cores": [
-        [
-          "0",
-          "10"
-        ],
-        [
-          "0",
-          "12"
-        ],
-        [
-          "0",
-          "14"
-        ],
-        [
-          "0",
-          "8"
-        ]
-      ],
-      "phase_process_metadata_only": [],
-      "GPU": "learning_and_history_only_yield_other_compute",
-      "CPUQuota": "400%",
-      "Nice": 19,
-      "CPUWeight": 10,
-      "MemoryMax": 4294967296,
-      "MemorySwapMax": 0
-    },
-    "evaluation_seconds_remaining": 3709.908833026886,
-    "root_seconds_remaining": 6961.3583018779755,
-    "retained": "T501",
-    "complete407_and_native_audit_pending": true
-  },
   "working_hypotheses_note": "WORKING_HYPOTHESES_AFTER_T671.md",
   "posthoc_KL_scale_note": "t671/POSTHOC_KL_SCALE_CORRECTION.md",
   "next_planned_run": null,
-  "last_completed_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t692_onpolicy_value_causal",
+  "last_completed_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694r_audit_recovery",
   "historical_run_deadlines": {
     "T672": {
       "all_stop": "2026-11-21T14:49:01.564471+08:00",
@@ -100,18 +39,20 @@
   "T691R_state": "COMPLETE_BOTH_KL_REJECTED",
   "nominal_recovered_independent_audit": "PASS64_NOT_REEXECUTED_LIVE_SHADOW",
   "T692_state": "COMPLETE_HELDOUT_ACTION_GATE_FAILED_NO_NATIVE",
-  "last_raw_backup": "WEEKEND_T665_PRIMARY_EVIDENCE_11_28members7960797bytes_FULL_READBACK_MEMBER_SHA_RESTORE_INDEX",
-  "raw_members_newly_verified": 28,
+  "last_raw_backup": "WEEKEND_T694_RETAINED_PRIMARY_0",
+  "raw_members_newly_verified": 15,
   "raw_deleted": 0,
   "next_planned_spec": null,
   "source_sync_of_weekend_docs": "VERIFIED_e2bae4d9b1b5ecb6644f7f3cafb40da57a702588",
   "T693_state": "NOT_LAUNCHED_TIME_ADMISSION_FAILED",
   "next_research_agent": null,
   "next_research_note": "EXACT_COMMAND_RETENTION_PRIMARY_REVIEW.md",
-  "next_research_state": "EXACT_REVIEW_COMPLETE_FIXED_SCOPE_REJECTED_EXPANDED_FEASIBILITY_PREPARATION",
+  "next_research_state": "NO_NEXT_EXPERIMENT_REGISTERED_FREEZE390_BEFORE_NEW_START_NEIGHBORHOOD_PROTOCOL",
   "post_T693_review_decision": "NONE_PRESENTLY_JUSTIFIED_NOT_IMPOSSIBILITY",
   "post_T693_review_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/POST_T693_BOUNDED_METHOD_REVIEW.md",
-  "local_raw_backup_metadata_pending_source_sync": [],
+  "local_raw_backup_metadata_pending_source_sync": [
+    "WEEKEND_T694_RETAINED_PRIMARY_0"
+  ],
   "source_sync_batch_policy": "Accumulate up to4 verified smallraw batches then one source300 sync, or sooner on materialstatechange/finalhandoff; never duplicate or exceed transport budget",
   "last_grouped_source_sync": {
     "groups": [
@@ -125,8 +66,93 @@
     "source_shell_exited": true
   },
   "user_latest_direction": "User explicitly asks continue thinking after status report; bounded exactfunctionretention review, not automatic generic queue",
-  "T694_state": "FAILED_FINAL_AUDIT_TIMEOUT_NATIVE_COMPLETE390_OF407_NO_OLD_LOSS",
+  "T694_state": "ORIGINAL_FAILED_FINAL_AUDIT_TIMEOUT_PRESERVED_SCIENCE_ACCEPTED_VIA_T694R",
   "preparation_pids": [],
-  "source_charge_pending_until_all_science_exit": "ec78c5f76b4fdfbb6aada26055227fdd1e7d5cc0",
-  "T694R_state": "READY_ZERO_NATIVE_AUDIT_RECOVERY_ONLY_NOT_REGISTERED"
+  "source_charge_pending_until_all_science_exit": null,
+  "T694R_state": "COMPLETE_INDEPENDENT_NATIVE_AUDIT_PASS_NO_REEXECUTION",
+  "historical_metadata": {
+    "before_T694_retention_last_health_check": {
+      "state": "HEALTHY_SCREEN_PASS_FULL407_IN_PROGRESS",
+      "driver_pid": 863522,
+      "helper_pid": 863525,
+      "child_pid": 864909,
+      "phase": "evaluation",
+      "fit_audit": "PASS",
+      "screen_lost": [],
+      "screen_gained": [
+        "t502_field_sector0_offset1",
+        "t502_field_sector0_offset2",
+        "t502_field_sector1_offset1",
+        "t502_field_sector2_offset1",
+        "t502_field_sector5_offset1",
+        "t502_field_sector7_offset1"
+      ],
+      "screen_field_success": 11,
+      "progress": {
+        "physics": 8121452,
+        "commands": 431,
+        "completed": 425
+      },
+      "resource_probe": {
+        "state": "PASS",
+        "stage_cpus": [
+          8,
+          10,
+          12,
+          14
+        ],
+        "stage_physical_cores": [
+          [
+            "0",
+            "10"
+          ],
+          [
+            "0",
+            "12"
+          ],
+          [
+            "0",
+            "14"
+          ],
+          [
+            "0",
+            "8"
+          ]
+        ],
+        "phase_process_metadata_only": [],
+        "GPU": "learning_and_history_only_yield_other_compute",
+        "CPUQuota": "400%",
+        "Nice": 19,
+        "CPUWeight": 10,
+        "MemoryMax": 4294967296,
+        "MemorySwapMax": 0
+      },
+      "evaluation_seconds_remaining": 3709.908833026886,
+      "root_seconds_remaining": 6961.3583018779755,
+      "retained": "T501",
+      "complete407_and_native_audit_pending": true
+    }
+  },
+  "retained_model": "T694",
+  "retained_model_manifest": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/RETAINED_MODEL.json",
+  "immutable_retained_parent": "T501",
+  "last_health_check": {
+    "state": "ALL_STAGE_STOPPED_SAME_CANDIDATE_RETENTION_GATE_PASS",
+    "same_candidate_success": 390,
+    "original384_retained": 384,
+    "gained": [
+      "t502_field_sector0_offset1",
+      "t502_field_sector0_offset2",
+      "t502_field_sector1_offset1",
+      "t502_field_sector2_offset1",
+      "t502_field_sector5_offset1",
+      "t502_field_sector7_offset1"
+    ],
+    "all387": true,
+    "fit_audit": "PASS",
+    "native_recovery_audit": "PASS",
+    "retained_model": "T694",
+    "model_policy_hash": "11eca188a1c3ad9a738488df61fcf5cbfe5976e0198330a123524b342a9b69af",
+    "remote_named_backup_verified": true
+  }
 }
