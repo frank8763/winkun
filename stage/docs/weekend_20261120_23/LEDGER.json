@@ -1,12 +1,12 @@
 {
-  "physics": 142091182,
-  "commands": 6595,
-  "science_seconds": 37687.16431474686,
-  "audit_seconds": 3611.336987733841,
-  "transport_seconds": 16061.381383180618,
-  "Actor_live": 138,
-  "Actor_shadow": 138,
-  "Actor_independent": 138,
+  "physics": 153092697,
+  "commands": 7109,
+  "science_seconds": 39411.72365689278,
+  "audit_seconds": 4053.2724924087524,
+  "transport_seconds": 16361.381383180618,
+  "Actor_live": 3979,
+  "Actor_shadow": 3979,
+  "Actor_independent": 1675,
   "Value_live": 1000,
   "Value_shadow": 1000,
   "Value_independent": 1000,
@@ -787,15 +787,66 @@
     },
     {
       "id": "T699",
-      "state": "RESERVED",
+      "state": "FAILED",
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t699_matched_value",
       "max_physics": 97486719,
       "max_commands": 3263,
       "Actor_live_cap": 3841,
       "Actor_shadow_cap": 3841,
       "Actor_independent_cap": 1537,
-      "completed_children": [],
-      "absolute_all_stop": 1795393002.6544747
+      "completed_children": [
+        "fit",
+        "fit_audit",
+        "cost_historical_parent",
+        "cost_historical_A",
+        "cost_plain",
+        "cost_replay_1736",
+        "cost_replay_108",
+        "cost_replay_434",
+        "cost_replay_1736_seed2",
+        "known_plain",
+        "known_plain_audit"
+      ],
+      "absolute_all_stop": 1795393002.6544747,
+      "accounted": {
+        "physics": 11001515,
+        "commands": 514,
+        "science_seconds": 1702.631002664566,
+        "audit_seconds": 441.9355046749115,
+        "Actor_live": 3841,
+        "Actor_shadow": 3841,
+        "Actor_independent": 1537
+      }
+    },
+    {
+      "id": "T699_FINAL_ENTRY",
+      "state": "PASS",
+      "science_seconds": 11.928341627120972,
+      "accounting": "actual gradient/last SHA verification +10s conservative registration/native-preflight allowance",
+      "physics": 0,
+      "commands": 0,
+      "Actor_each": 0,
+      "optimizer": 0
+    },
+    {
+      "id": "T699_AUDIT_DIAGNOSIS",
+      "state": "RED_GREEN_CONFIRMED_NO_POLICY_OR_NATIVE",
+      "science_seconds": 10,
+      "physics": 0,
+      "commands": 0,
+      "Actor_each": 0,
+      "accounting": "Conservative10s bound for two metadata-only cgroup repro invocations; actualRED1.886s plus GREEN receipt"
+    },
+    {
+      "id": "T699_CONTINUATION",
+      "state": "RESERVED",
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t699_unexecuted_continuation",
+      "max_physics": 86485204,
+      "max_commands": 2749,
+      "Actor_each_cap": 0,
+      "Value_each_cap": 0,
+      "original_T699_root_absolute_unchanged": 1795393002.6544747,
+      "completed_children": []
     }
   ],
   "charged_source_sync_commits": [
@@ -853,6 +904,7 @@
     "T672_METADATA_OVER_2M"
   ],
   "transport_remote_commits_accounted": [
-    "de3bea058b9f48e8bb590338307ea999faf5e795"
+    "de3bea058b9f48e8bb590338307ea999faf5e795",
+    "bba37c8c895e98006c6b82fdfb18548b19399602"
   ]
 }

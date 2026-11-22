@@ -1,3 +1,5 @@
+2026-11-23 T699原root FAILED：plain500条原生完成11001515physics/514cmd，但独立audit360s超时、旧child已过absolute不重试。目录重复全扫描红462s/绿36s已复现；仅修工程guard在新continuation衔接原未执行blocks，0新学习、不重已消费物理、不延原root08:16:42及native08:15，预先声明满容量known及完整新起点套件优先。T698仍保留，plain结果仅provisional，不能声称完整对照通过。见overnight_20261122_23/continuation。
+
 2026-11-23 用户停止后明确重新授权今夜T699：同T694父模型的普通插值/三容量回放BC/第二初始化公平比较，另78固定新起点及成本审计；当前仅预检PASS、RESERVED、未launch，无新能力结果。旧USER_STOP和所有旧run原件保留；新学习07:30/native08:15/全停09:00及每action更早absolute不延。T698398/407+14supp=412仍保留。见overnight_20261122_23/{PLAN.md,NEW_START_CONTRACT.md,SUPERVISION.json}。
 
 2026-11-22 用户直接要求停止周末任务：Stage接力及08:15/09:00三个定时已删除，全部已注册科学/driver/helper/unit/source退出，无后续自动运行。最终保留T698398/407核心、15/24场地、14/24邻域，原410全保，合计412不同成功；仍有7碰撞2超时核心失败、两邻域家族0/4。监督兼容性进步，非新RL或未知场景泛化证据。模型及原始证据保留，见weekend_20261120_23/USER_STOP.json。
