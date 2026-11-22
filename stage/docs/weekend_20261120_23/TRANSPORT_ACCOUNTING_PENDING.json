@@ -1,5 +1,5 @@
 {
-  "state": "T694_RETAINED_OUTCOME_SYNC_CHARGED",
+  "state": "T698_REGISTRATION_AND_RETAINED_OUTCOME_SOURCE_SYNCS_CHARGED",
   "do_not_double_charge": true,
   "source_sync_commits": [
     "b13fb1f58f3df88e41b504be4a424994c890827b",
@@ -352,13 +352,30 @@
     "settled_epoch": 1795328976.371485
   },
   "T698_retained_outcome_and_primary_backup_source_sync": {
-    "remote_commit": null,
+    "remote_commit": "2d590727dede48196f5efa62685b05530a42e95d",
     "upper_seconds": 300,
-    "charged": false,
+    "charged": true,
     "all_science_driver_helper_exited": true,
     "groups": [
       "WEEKEND_T698_RETAINED_PRIMARY_0"
     ],
-    "state": "RESERVED_BEFORE_BOUNDED_SOURCE_SYNC"
+    "state": "REMOTE_TREE_VERIFIED_AND_CHARGED",
+    "root_tree": "b56c05d01e85b05c5d934eeca9bdedac2fbc20f5",
+    "source_shell_exit0_before_receipt_check": true,
+    "settled_epoch": 1795329139.988494
+  },
+  "T698_three_raw_and_T696_finalfull_source_sync": {
+    "state": "RESERVED_BEFORE_BOUNDED_GROUPED_SOURCE",
+    "remote_commit": null,
+    "root_tree": null,
+    "upper_seconds": 300,
+    "charged": false,
+    "groups": [
+      "WEEKEND_T698_SUPPLEMENTARY_SUCCESS_0",
+      "WEEKEND_T698_FULL_EPISODES_0",
+      "WEEKEND_T698_FULL_EPISODES_1",
+      "WEEKEND_T696_FULL_EPISODES_1"
+    ],
+    "all_science_driver_helper_exited": true
   }
 }
