@@ -381,17 +381,21 @@
     "settled_epoch": 1795333616.9577906
   },
   "T698_compact_T695_remaining_outputs_grouped_source_sync": {
-    "state": "RESERVED_BEFORE_BOUNDED_GROUPED_SOURCE",
-    "remote_commit": null,
-    "root_tree": null,
+    "state": "SOURCE_COMPLETED_BEFORE_USER_STOP_TREE_VERIFIED_CHARGED",
+    "remote_commit": "2f511c4b8d77860ab099706022acb9ce35bb70bf",
+    "root_tree": "50b3f14124d06948e65348474e64a3a023edb571",
     "upper_seconds": 300,
-    "charged": false,
+    "charged": true,
     "groups": [
       "WEEKEND_T694_T696_T698_COMPACT_0",
       "WEEKEND_T695_FULL_EPISODES_0",
       "WEEKEND_T695_FULL_EPISODES_1",
       "WEEKEND_RETAINED_REMAINING_OUTPUTS_0"
     ],
-    "all_science_driver_helper_exited": true
+    "all_science_driver_helper_exited": true,
+    "settled_epoch": 1795360843.4945989,
+    "source_process_exited": true,
+    "original_exec_session_expired_exit_code_unavailable": true,
+    "completion_evidence": "Source receipt full tree equals current HEAD tree, remote commit merged into HEAD, no source process alive; no repeated sync"
   }
 }

@@ -1,9 +1,9 @@
 {
   "physics": 142091182,
   "commands": 6595,
-  "science_seconds": 37494.5612282753,
+  "science_seconds": 37687.16431474686,
   "audit_seconds": 3611.336987733841,
-  "transport_seconds": 15461.381383180618,
+  "transport_seconds": 15761.381383180618,
   "Actor_live": 138,
   "Actor_shadow": 138,
   "Actor_independent": 138,
@@ -761,6 +761,41 @@
       ],
       "actual_physics": 10981261,
       "actual_commands": 514
+    },
+    {
+      "id": "T699_PREPARATION",
+      "state": "IMPORT_FAILED_ZERO_NATIVE_ZERO_UPDATES",
+      "max_science_seconds": 600,
+      "max_physics": 0,
+      "max_commands": 0,
+      "Actor_each_cap": 0,
+      "new_optimizer": 0,
+      "bound": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/overnight_20261122_23/PREPARATION_BOUND.json",
+      "science_seconds": 126.02098369598389,
+      "accounting": "conservative registration-to-discovery upper; unit auto-collected exact exit duration unavailable",
+      "error": "stage/docs/overnight_20261122_23/preparation_failed_001/error.log"
+    },
+    {
+      "id": "T699_PREPARATION_RECOVERY",
+      "state": "PASS",
+      "original_absolute_stop": 1795364185.020472,
+      "max_physics": 0,
+      "max_commands": 0,
+      "Actor_each_cap": 0,
+      "new_optimizer": 0,
+      "science_seconds": 66.58210277557373
+    },
+    {
+      "id": "T699",
+      "state": "RESERVED",
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t699_matched_value",
+      "max_physics": 97486719,
+      "max_commands": 3263,
+      "Actor_live_cap": 3841,
+      "Actor_shadow_cap": 3841,
+      "Actor_independent_cap": 1537,
+      "completed_children": [],
+      "absolute_all_stop": 1795393002.6544747
     }
   ],
   "charged_source_sync_commits": [
@@ -811,7 +846,8 @@
     "919f0213969e8fe2401d76722300e273d8d7e60c",
     "a1718ae7e7b4e10c178a58a142fa00a4864c109d",
     "2d590727dede48196f5efa62685b05530a42e95d",
-    "ea8e7f224e285b2e1e4129efd65c8a3c21e040b2"
+    "ea8e7f224e285b2e1e4129efd65c8a3c21e040b2",
+    "2f511c4b8d77860ab099706022acb9ce35bb70bf"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"

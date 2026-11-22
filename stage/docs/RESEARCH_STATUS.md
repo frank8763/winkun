@@ -1,3 +1,7 @@
+2026-11-23 用户停止后明确重新授权今夜T699：同T694父模型的普通插值/三容量回放BC/第二初始化公平比较，另78固定新起点及成本审计；当前仅预检PASS、RESERVED、未launch，无新能力结果。旧USER_STOP和所有旧run原件保留；新学习07:30/native08:15/全停09:00及每action更早absolute不延。T698398/407+14supp=412仍保留。见overnight_20261122_23/{PLAN.md,NEW_START_CONTRACT.md,SUPERVISION.json}。
+
+2026-11-22 用户直接要求停止周末任务：Stage接力及08:15/09:00三个定时已删除，全部已注册科学/driver/helper/unit/source退出，无后续自动运行。最终保留T698398/407核心、15/24场地、14/24邻域，原410全保，合计412不同成功；仍有7碰撞2超时核心失败、两邻域家族0/4。监督兼容性进步，非新RL或未知场景泛化证据。模型及原始证据保留，见weekend_20261120_23/USER_STOP.json。
+
 2026-11-22 T698正式研究保留：核心398/407，由T696396新增field1_2及field4_2，原410成功起点全保，联合387通过；邻域仍14/24，合计412不同成功，不是412/407。场地15/24，两个邻域家族仍0/4。fit/native独立auditPASS，全科学/driver/helper/unit退出；冻结完整T696并新增734中心/1468监督系数，跨表示已曝光自主执行命令有限兼容性，非新RL/算法优越或泛化。原T697失败/T668恢复门及父模型保留。见weekend_20261120_23/t698/{FINDINGS.md,RETENTION_DECISION.json,NEXT_AFTER_T698.md}。
 
 2026-11-22 T696正式研究保留：同candidate核心407安全396，相对T694390新增6且原403不同成功起点全保；固定邻域14/24，修复唯一反向退步field2_1+x，合计410不同起点=396core+14supp，不是410/407。field13/24(9碰撞2超时0边界失败)，两个邻域家族仍0/4。fit/native独立auditPASS，全部PID/helper/unit退，0Adam/Value/RL；冻结完整T694加1737中心/3474监督系数，复用七已曝光自主成功轨迹，有限监督兼容性非新RL/算法优越性/未知地图泛化。原T694/T501及原FAILED证据保留，未来必须保护同T696410。见weekend_20261120_23/t696/{FINDINGS.md,RETENTION_DECISION.json,NEXT_AFTER_T696.md}。

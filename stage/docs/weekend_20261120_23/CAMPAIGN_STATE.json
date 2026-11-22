@@ -1,6 +1,6 @@
 {
-  "epoch": 1795341490.8170958,
-  "state": "T698_COMPLETE_RETAINED398_CORE412_TOTAL",
+  "epoch": 1795360843.49575,
+  "state": "STOPPED_BY_DIRECT_USER_REQUEST",
   "active_run": null,
   "unit": null,
   "actual_status": {
@@ -14,7 +14,7 @@
   "new_campaign_optimizer": 18,
   "new_campaign_registration_pending": false,
   "current_job_must_exit_before_next": true,
-  "next_action": "Fixed five completed retained/recovery/neighborhood output roots fully covered. Four pending raw metadata groups ready for one bounded source300 after archive exit and committed tracked changes; no additional raw batch this heartbeat. No next science admitted; prepare finite handoff after source verification.",
+  "next_action": "Stopped by direct user request. No automatic continuation, new science, archive or source transport. Retained T698398/407 and all evidence preserved.",
   "authorization": "AUTHORIZATION.json",
   "prior_group_current_ledger": {
     "physics": 64463885,
@@ -996,7 +996,7 @@
   "active_status": {
     "state": "NO_SCIENCE_RUNNING"
   },
-  "last_checked_epoch": 1795325672.8648636,
+  "last_checked_epoch": 1795360843.4957557,
   "working_hypotheses_note": "WORKING_HYPOTHESES_AFTER_T671.md",
   "posthoc_KL_scale_note": "t671/POSTHOC_KL_SCALE_CORRECTION.md",
   "T671_KL_sigma_mismatch": {
@@ -1325,7 +1325,7 @@
   "raw_deleted": 0,
   "T693_time_capacity": "DRAFT_SINGLE_2H_ROOT_NOT_ADMITTED;3_SEQUENTIAL_BOUNDED_CHILD_LAYOUT_UNREGISTERED",
   "new_campaign_science_seconds": 31592.1190867424,
-  "new_campaign_transport_seconds": 15461.381383180618,
+  "new_campaign_transport_seconds": 15761.381383180618,
   "T693_original_absolute_all_stop_local": "2026-11-21T22:13:50.483903+08:00",
   "T693_registered_original_deadline_not_extended": true,
   "next_research_agent": null,
@@ -1334,28 +1334,25 @@
   "post_T693_review_decision": "NONE_PRESENTLY_JUSTIFIED_NOT_IMPOSSIBILITY",
   "post_T693_review_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/POST_T693_BOUNDED_METHOD_REVIEW.md",
   "raw_members_newly_verified": 33,
-  "local_raw_backup_metadata_pending_source_sync": [
-    "WEEKEND_T694_T696_T698_COMPACT_0",
-    "WEEKEND_T695_FULL_EPISODES_0",
-    "WEEKEND_T695_FULL_EPISODES_1",
-    "WEEKEND_RETAINED_REMAINING_OUTPUTS_0"
-  ],
+  "local_raw_backup_metadata_pending_source_sync": [],
   "source_sync_batch_policy": "Accumulate up to4 verified smallraw batches then one source300 sync, or sooner on materialstatechange/finalhandoff; never duplicate or exceed transport budget",
   "last_grouped_source_sync": {
-    "state": "REMOTE_TREE_VERIFIED_AND_CHARGED",
-    "remote_commit": "ea8e7f224e285b2e1e4129efd65c8a3c21e040b2",
-    "root_tree": "4e31367adb18439a4a3eb47f0c00649003a97669",
+    "state": "SOURCE_COMPLETED_BEFORE_USER_STOP_TREE_VERIFIED_CHARGED",
+    "remote_commit": "2f511c4b8d77860ab099706022acb9ce35bb70bf",
+    "root_tree": "50b3f14124d06948e65348474e64a3a023edb571",
     "upper_seconds": 300,
     "charged": true,
     "groups": [
-      "WEEKEND_T698_SUPPLEMENTARY_SUCCESS_0",
-      "WEEKEND_T698_FULL_EPISODES_0",
-      "WEEKEND_T698_FULL_EPISODES_1",
-      "WEEKEND_T696_FULL_EPISODES_1"
+      "WEEKEND_T694_T696_T698_COMPACT_0",
+      "WEEKEND_T695_FULL_EPISODES_0",
+      "WEEKEND_T695_FULL_EPISODES_1",
+      "WEEKEND_RETAINED_REMAINING_OUTPUTS_0"
     ],
     "all_science_driver_helper_exited": true,
-    "source_shell_exit0_before_receipt_check": true,
-    "settled_epoch": 1795333616.9577906
+    "settled_epoch": 1795360843.4945989,
+    "source_process_exited": true,
+    "original_exec_session_expired_exit_code_unavailable": true,
+    "completion_evidence": "Source receipt full tree equals current HEAD tree, remote commit merged into HEAD, no source process alive; no repeated sync"
   },
   "T694_state": "ORIGINAL_FAILED_FINAL_AUDIT_TIMEOUT_PRESERVED_SCIENCE_ACCEPTED_VIA_T694R",
   "preparation_pids": [],
@@ -2402,5 +2399,7 @@
     "remaining_bytes": 0,
     "all_local_raw_retained": true
   },
-  "retained_five_root_output_coverage": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/RETAINED_OUTPUT_COVERAGE.json"
+  "retained_five_root_output_coverage": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/RETAINED_OUTPUT_COVERAGE.json",
+  "user_stop_receipt": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/USER_STOP.json",
+  "automatic_continuation_enabled": false
 }
