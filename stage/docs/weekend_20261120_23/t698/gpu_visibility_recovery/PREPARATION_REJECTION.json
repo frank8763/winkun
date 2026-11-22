@@ -1,0 +1,9 @@
+{
+  "state": "PREPARATION_REJECTED_NO_COEFFICIENT_COMMIT",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t698_cross_representation_success/gpu_visibility_recovery.py\", line 71, in <module>\n    try:main()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t698_cross_representation_success/gpu_visibility_recovery.py\", line 61, in main\n    geometry,info=A.construction(p,protected,sources,guard)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t698_cross_representation_success/t698_actor.py\", line 97, in construction\n    geometry, info = gpu_construction(p, protected, sources, guard)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t698_cross_representation_success/t698_actor.py\", line 144, in gpu_construction\n    guard();assert not Parent.Parent.basis(protected[off:off+64],cpu,radius_cpu).any()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t698_cross_representation_success/gpu_visibility_recovery.py\", line 20, in guard\n    if time.time()-last[0]>5:Resources.resources();Resources.gpu();last[0]=time.time()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t698_cross_representation_success/t698_resources.py\", line 24, in resources\n    assert not overlap,('Phase physical CPU overlap; do not launch',proc.name,overlap)\nAssertionError: ('Phase physical CPU overlap; do not launch', '934470', [2])\n",
+  "new_native": 0,
+  "new_Actor": 0,
+  "new_optimizer": 0,
+  "elapsed_seconds": 58.750120401382446,
+  "no_source_or_radius_rescue": true
+}

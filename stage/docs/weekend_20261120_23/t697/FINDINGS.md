@@ -1,0 +1,5 @@
+# T697准备拒绝：旧来源与当前骨干不相同
+
+两条固定旧自主成功NPZ已按原SHA从Release恢复，完整原始档案逐成员核验。来源模型为T608三记忆GRU体系，原actor_configuration补齐后正确加载；完整当前原T501状态比较在encoder.0.weight发现真实不同，因此本次预声明共同骨干资格FAIL。无fit/native/Actor/Value/optimizer，无正式protocol/RESERVED/run/launch，不把它记作导航失败或0%成功率。source输入模型和原错误全部保留，不换轨迹或调整半径/阈值救此候选。
+
+另一个工程配置错误input_mean缺失已原件保留；仅原actor_configuration合并恢复后才确认上述真实不匹配。当前T696396core+14supp=410保留模型未动。

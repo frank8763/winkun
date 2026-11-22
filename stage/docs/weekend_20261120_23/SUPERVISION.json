@@ -14,12 +14,12 @@
   "current_active_run": null,
   "current_active_unit": null,
   "current_run_protocol_immutable": true,
-  "last_checked_epoch": 1795323645.8827925,
+  "last_checked_epoch": 1795325559.1351244,
   "periodic_prompt_points_to": "T695_COMPLETE_AUDIT_PASS13_VS8_ALL_EXITED_T694_RETAINED",
-  "source_remote": "a5446ad3e0162c7ff69e89bb43620f614cadfe15",
+  "source_remote": "919f0213969e8fe2401d76722300e273d8d7e60c",
   "working_hypotheses_note": "WORKING_HYPOTHESES_AFTER_T671.md",
   "posthoc_KL_scale_note": "t671/POSTHOC_KL_SCALE_CORRECTION.md",
-  "next_planned_run": null,
+  "next_planned_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t698_cross_representation_success",
   "last_completed_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood",
   "historical_run_deadlines": {
     "T672": {
@@ -27,7 +27,7 @@
       "native_stop": "2026-11-21T14:34:01.564471+08:00"
     }
   },
-  "current_job_absolute_all_stop": 1795328369.694693,
+  "current_job_absolute_all_stop": 1795337539.3721921,
   "latest_all_science_exited": true,
   "T688_review_completed": true,
   "T688_review_result": "REJECT_AS_NEXT_PRIORITY_NO_JOB_NO_CODE_NO_LAUNCH",
@@ -39,11 +39,11 @@
   "T691R_state": "COMPLETE_BOTH_KL_REJECTED",
   "nominal_recovered_independent_audit": "PASS64_NOT_REEXECUTED_LIVE_SHADOW",
   "T692_state": "COMPLETE_HELDOUT_ACTION_GATE_FAILED_NO_NATIVE",
-  "last_raw_backup": "WEEKEND_T696_RETAINED_PRIMARY_0",
-  "raw_members_newly_verified": 18,
+  "last_raw_backup": "WEEKEND_T696_FULL_EPISODES_0",
+  "raw_members_newly_verified": 33,
   "raw_deleted": 0,
   "next_planned_spec": null,
-  "source_sync_of_weekend_docs": "VERIFIED_c08fa878b00bdc9079bb040c77af2fbf7395c09b",
+  "source_sync_of_weekend_docs": "VERIFIED_dd5484d155f323a76e47e3953e746babd5041a9a",
   "T693_state": "NOT_LAUNCHED_TIME_ADMISSION_FAILED",
   "next_research_agent": null,
   "next_research_note": "t695/NEXT_AFTER_T695.md",
@@ -51,7 +51,8 @@
   "post_T693_review_decision": "NONE_PRESENTLY_JUSTIFIED_NOT_IMPOSSIBILITY",
   "post_T693_review_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/POST_T693_BOUNDED_METHOD_REVIEW.md",
   "local_raw_backup_metadata_pending_source_sync": [
-    "WEEKEND_T696_RETAINED_PRIMARY_0"
+    "WEEKEND_T696_SUPPLEMENTARY_SUCCESS_0",
+    "WEEKEND_T696_FULL_EPISODES_0"
   ],
   "source_sync_batch_policy": "Accumulate up to4 verified smallraw batches then one source300 sync, or sooner on materialstatechange/finalhandoff; never duplicate or exceed transport budget",
   "last_grouped_source_sync": {
@@ -216,33 +217,28 @@
   "retained_model_manifest": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/RETAINED_MODEL.json",
   "immutable_retained_parent": "T501",
   "last_health_check": {
-    "state": "T696_COMPLETE_ALL_AUDITS_PASS_ALL_PIDS_EXITED",
-    "core_success": 396,
+    "state": "ALL_STAGE_STOPPED_BOUNDED_T696_FULL_BATCH_VERIFIED",
+    "group": "WEEKEND_T696_FULL_EPISODES_0",
+    "new_native": 0,
+    "new_optimizer": 0,
+    "retained_model": "T696",
+    "core407_success": 396,
     "total431_success": 410,
-    "lost_previous403": [],
-    "new_core_ids": [
-      "dev_task6_05",
-      "dev_task6_11",
-      "dev_task6_15",
-      "hold_task6_03",
-      "t502_field_sector2_offset2",
-      "t502_field_sector7_offset2"
-    ],
-    "neighborhood_success": 14,
-    "retained": "T696"
+    "retained_policy_unchanged": true,
+    "raw_deleted": 0
   },
   "last_outcome_source_sync": {
-    "remote_commit": "a5446ad3e0162c7ff69e89bb43620f614cadfe15",
-    "root_tree": "c08fa878b00bdc9079bb040c77af2fbf7395c09b",
+    "remote_commit": "919f0213969e8fe2401d76722300e273d8d7e60c",
+    "root_tree": "dd5484d155f323a76e47e3953e746babd5041a9a",
     "upper_seconds": 300,
-    "charged": false,
-    "source_shell_exit0_before_receipt_and_unique_launch": true,
-    "settle_after_all_science_driver_helper_exit": true,
+    "charged": true,
+    "all_science_driver_helper_exited": true,
+    "source_shell_exit0_before_receipt_check": true,
     "groups": [
-      "WEEKEND_T694_FULL_EPISODES_1"
+      "WEEKEND_T696_RETAINED_PRIMARY_0"
     ]
   },
-  "new_campaign_transport_seconds": 14092.537021160126,
+  "new_campaign_transport_seconds": 14417.592487573624,
   "T695_state": "COMPLETE_INDEPENDENT_AUDIT_PASS_FROZEN13_VS8_PAIRED6_GAIN1_LOSS",
   "next_job_spec": null,
   "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t696/FINAL_REPORT.json",
@@ -255,7 +251,7 @@
     "other_raw_pending": true,
     "all_local_raw_retained": true
   },
-  "next_action": "T696 retained396core+14supp/410samepolicy, all403 held and seven sources reproduced. Primary model/evidence18 fully remote verified. Commit finalized outcome and one material-state source sync after all-stop guard; settle once by remotecommit; no recursive receipt sync or more raw batch this turn. No new science currently admitted; fixed seven-source inventory consumed, keep all failures/models/raw.",
+  "next_action": "User requested hardware acceleration: T698 distinct cross-representation fixedtwo legacy source candidate registered withGPUgeometry/8physicalCPU7workers. Sharedbody T697 originalgateFAIL remains. Await exactsourceGitHub sync actualexit0/tree then unique launch; no archive/source/science overlap, no premature capability claim. RetainedT696410 remains until fullall410+2sources/core407+24/independent audits and allPIDexit.",
   "T666_episode_archive_coverage": {
     "state": "ALL16_TARGET_EPISODE_NPZ_REMOTE_VERIFIED",
     "scope": "stage/runs/t666_failure_full_history/episodes/*.npz",
@@ -276,5 +272,16 @@
   "latest_direct_user_continuation": "User asked whether progress occurred; informed finite390core vs384 and neighborhood13vs8 with two0of4 and reverse loss. User said continue encouragement; continue bounded authorized work, no deadline extension or automatic new science.",
   "T696_state": "COMPLETE_RETAINED396_CORE410_TOTAL_AUDIT_PASS_ALL_EXITED",
   "T696_original_preparation_stop": 1795314522.3577907,
-  "supplementary_protection_manifest": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t696/SUPPLEMENTARY_SUCCESS_SET.json"
+  "supplementary_protection_manifest": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t696/SUPPLEMENTARY_SUCCESS_SET.json",
+  "T696_full_episode_archive_coverage": {
+    "scope": "stage/runs/t696_existing_success_compatibility/evaluation/episodes/*.npz",
+    "total": 69,
+    "remote_verified": 47,
+    "remaining": 22,
+    "remaining_bytes": 6491206,
+    "other_compact_pending": true,
+    "all_local_raw_retained": true
+  },
+  "T697_state": "PREPARATION_SHARED_BACKBONE_GATE_FAILED_NO_FORMAL_RUN",
+  "T698_state": "REGISTERED_PREFLIGHT_PASS_NOT_LAUNCHED"
 }

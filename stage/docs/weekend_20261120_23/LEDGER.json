@@ -1,9 +1,9 @@
 {
   "physics": 131109921,
   "commands": 6081,
-  "science_seconds": 35649.20737481117,
+  "science_seconds": 35866.42187809944,
   "audit_seconds": 2854.687906742096,
-  "transport_seconds": 14092.537021160126,
+  "transport_seconds": 14425.074257612228,
   "Actor_live": 137,
   "Actor_shadow": 137,
   "Actor_independent": 137,
@@ -654,6 +654,108 @@
       ],
       "actual_physics": 10915363,
       "actual_commands": 506
+    },
+    {
+      "id": "T697_PREPARATION",
+      "state": "PREPARATION_REJECTED",
+      "max_science_seconds": 900,
+      "actual_physics": 0,
+      "actual_commands": 0,
+      "Actor_calls": {
+        "Actor_live": 0,
+        "Actor_shadow": 0,
+        "Actor_independent": 0
+      },
+      "no_scientific_root_registered": true,
+      "science_seconds": 3.300896167755127
+    },
+    {
+      "id": "T697_SOURCE_CONFIG_RECOVERY",
+      "state": "PREPARATION_REJECTED",
+      "max_science_seconds": 900,
+      "original_absolute_stop": 1795325667.8964875,
+      "actual_physics": 0,
+      "actual_commands": 0,
+      "Actor_calls": {
+        "Actor_live": 0,
+        "Actor_shadow": 0,
+        "Actor_independent": 0
+      },
+      "no_scientific_root_registered": true,
+      "science_seconds": 3.303494453430176
+    },
+    {
+      "id": "T698_PREPARATION",
+      "state": "PREPARATION_REJECTED",
+      "max_science_seconds": 900,
+      "actual_physics": 0,
+      "actual_commands": 0,
+      "Actor_calls": {
+        "Actor_live": 0,
+        "Actor_shadow": 0,
+        "Actor_independent": 0
+      },
+      "no_scientific_root_registered": true,
+      "science_seconds": 3.313760995864868
+    },
+    {
+      "id": "T698_SOURCE_INSPECTOR_BINDING_RECOVERY",
+      "state": "PREPARATION_REJECTED",
+      "max_science_seconds": 900,
+      "original_absolute_stop": 1795325886.6090808,
+      "actual_physics": 0,
+      "actual_commands": 0,
+      "Actor_calls": {
+        "Actor_live": 0,
+        "Actor_shadow": 0,
+        "Actor_independent": 0
+      },
+      "no_scientific_root_registered": true,
+      "science_seconds": 25.590400457382202
+    },
+    {
+      "id": "T698_GPU_VISIBILITY_RECOVERY",
+      "state": "PREPARATION_REJECTED",
+      "max_science_seconds": 900,
+      "original_absolute_stop": 1795325886.6090808,
+      "actual_physics": 0,
+      "actual_commands": 0,
+      "Actor_calls": {
+        "Actor_live": 0,
+        "Actor_shadow": 0,
+        "Actor_independent": 0
+      },
+      "no_scientific_root_registered": true,
+      "science_seconds": 58.75039076805115
+    },
+    {
+      "id": "T698_CPU_ALLOCATION_RECOVERY",
+      "state": "PREPARATION_PASS",
+      "max_science_seconds": 900,
+      "original_absolute_stop": 1795325886.6090808,
+      "actual_physics": 0,
+      "actual_commands": 0,
+      "Actor_calls": {
+        "Actor_live": 0,
+        "Actor_shadow": 0,
+        "Actor_independent": 0
+      },
+      "no_scientific_root_registered": true,
+      "science_seconds": 110.64887166023254
+    },
+    {
+      "id": "T698",
+      "state": "RESERVED",
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t698_cross_representation_success",
+      "max_physics": 15120297,
+      "max_commands": 514,
+      "main_seconds": 7700,
+      "audit_seconds": 3300,
+      "preflight_seconds": 12.306688785552979,
+      "Actor_each_cap": 1,
+      "Value_each_cap": 0,
+      "fit_type": "ONE_SUPERVISED_RADIAL_READOUT_COEFFICIENT_COMMIT",
+      "completed_children": []
     }
   ],
   "charged_source_sync_commits": [
@@ -700,7 +802,8 @@
     "fbad624e33508c8753f72dc38a7f7afcf375097c",
     "19be78c12e37e5597968d69c049e8b49c61d4961",
     "7635a892fe1e3b5805981df7c319a8aff6a75ce3",
-    "a5446ad3e0162c7ff69e89bb43620f614cadfe15"
+    "a5446ad3e0162c7ff69e89bb43620f614cadfe15",
+    "919f0213969e8fe2401d76722300e273d8d7e60c"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"

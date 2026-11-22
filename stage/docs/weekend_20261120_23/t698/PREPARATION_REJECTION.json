@@ -1,0 +1,9 @@
+{
+  "state": "PREPARATION_REJECTED_NO_COEFFICIENT_COMMIT",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t698_cross_representation_success/preparation.py\", line 64, in <module>\n    try:main()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t698_cross_representation_success/preparation.py\", line 45, in main\n    Legacy.inspect(sourcep,[(a,row)])\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t608_current_policy_memory/t608_native.py\", line 27, in inspect\n    if isinstance(model,L.Actor):Legacy.inspect(p,[(a,r)])\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t598_independent_recurrent_recovery/t598_runtime.py\", line 47, in inspect\n    R.inspect(p,vals)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t591_joint_representation_pair/t591_runtime.py\", line 83, in inspect\n    else:F.M.audit_full_history(p,r,a)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t449_offline_joint_recovery/run.py\", line 346, in audit_full_history\n    q=P.frozen(p,r['request']['model']);q.rng=None if r['seed'] is None else np.random.default_rng(np.random.SeedSequence(r['seed']));q.reset_noise();h=None\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t446_plain_joint/t446_learning.py\", line 60, in frozen\n    q=Actor(p).eval().requires_grad_(False);v=checkpoint(path);q.load_state_dict(v['joint_state']['actor']);assert q.phash()==v['policy_hash'];return q\nKeyError: 'joint_state'\n",
+  "new_native": 0,
+  "new_Actor": 0,
+  "new_optimizer": 0,
+  "elapsed_seconds": 3.313490390777588,
+  "no_source_or_radius_rescue": true
+}

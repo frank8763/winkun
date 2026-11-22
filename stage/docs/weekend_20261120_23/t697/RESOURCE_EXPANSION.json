@@ -1,0 +1,29 @@
+{
+  "basis": "User explicitly requests multi-CPU/multi-GPU acceleration and actual capability progress in this chat",
+  "hardware": {
+    "physical_cpu_cores": 16,
+    "logical_cpu_threads": 32,
+    "gpu_count": 1,
+    "gpu": "RTX5060Laptop8GB"
+  },
+  "new_job_only": {
+    "stage_cpus": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "cpu_quota_percent": 800,
+    "memory_bytes_cap": 8589934592,
+    "swap_bytes_cap": 0,
+    "worker_count": 7,
+    "learning_device": "cuda:0 only if exact contracts pass; CPU deployed float32 command path unchanged"
+  },
+  "no_other_gpu_available": true,
+  "phase_process_resource_metadata_only": true,
+  "old_protocols_deadlines_and_campaign_total_caps_unchanged": true
+}
