@@ -1,0 +1,9 @@
+{
+  "state": "PREPARATION_REJECTED_NO_COEFFICIENT_COMMIT",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t696_existing_success_compatibility/preparation.py\", line 131, in <module>\n    main()\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t696_existing_success_compatibility/preparation.py\", line 97, in main\n    source = A.frozen(p, row['request']['model'])\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t694_full_history_compatibility/t694_actor.py\", line 45, in frozen\n    if saved.get('architecture')!=ARCH:return ORIGINAL(p,path)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t501_joint_command_repair/t501_learning.py\", line 51, in frozen\n    q=Actor(p).eval().requires_grad_(False);q.load_state_dict(state['joint_state']['actor']);assert q.phash()==state['policy_hash'];return q\nAssertionError\n",
+  "new_native": 0,
+  "new_optimizer": 0,
+  "new_Actor": 0,
+  "no_source_seed_radius_or_threshold_rescue": true,
+  "elapsed_seconds": 20.692901849746704
+}

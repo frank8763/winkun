@@ -8,10 +8,19 @@ Client=importlib.util.module_from_spec(spec);spec.loader.exec_module(Client)
 read=lambda f:json.loads(Path(f).read_text())
 
 def stopped():
+    # Preparatory model forwards also exclude archive/source work. These
+    # receipts are process metadata, not a claim of a scientific launch.
+    for marker in DOC.glob('t696*/**/PREPARATION_STARTED.json'):
+        pid=read(marker)['pid']
+        assert pid==os.getpid() or not Path('/proc',str(pid)).exists(),marker
     ledger=read(DOC/'LEDGER.json');folders={ROOT/'stage/runs/t665_remaining_verification'}
     for item in ledger['jobs']:
         if item.get('out'):
             folder=Path(item['out'])
+            if item['id']=='T696' and item['state']=='RESERVED' and not (folder/'launch.json').exists():
+                assert read(DOC/'t696/REGISTERED.json')['state']=='REGISTERED_NOT_LAUNCHED'
+                assert not any((folder/name).exists() for name in ['DRIVER_STARTED.json','science_started.json','SEALED.json'])
+                continue
             if item['state']=='NOT_LAUNCHED_TIME_ADMISSION_FAILED':
                 # No scientific process was ever created; do not manufacture a
                 # SEALED receipt for an unlaunched registration.
@@ -28,7 +37,7 @@ def stopped():
         if report.get('helper_pid'):pids.add(report['helper_pid'])
         assert all(not Path('/proc',str(pid)).exists() for pid in pids),(folder,pids)
     # Includes numerical jobs not launched: their unit must also be inactive.
-    for index in [str(i) for i in range(665,696)]+['691r','694r']:
+    for index in [str(i) for i in range(665,697)]+['691r','694r']:
         props=subprocess.check_output(['systemctl','--user','show',f'stage-t{index}.service','-p','MainPID','-p','ActiveState'],text=True)
         fields=dict(line.split('=',1) for line in props.splitlines())
         assert fields['MainPID']=='0' and fields['ActiveState'] in ['inactive','failed'],(index,fields)
