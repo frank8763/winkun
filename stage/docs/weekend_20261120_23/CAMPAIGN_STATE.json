@@ -1,5 +1,5 @@
 {
-  "epoch": 1795333582.4906335,
+  "epoch": 1795341490.8170958,
   "state": "T698_COMPLETE_RETAINED398_CORE412_TOTAL",
   "active_run": null,
   "unit": null,
@@ -14,7 +14,7 @@
   "new_campaign_optimizer": 18,
   "new_campaign_registration_pending": false,
   "current_job_must_exit_before_next": true,
-  "next_action": "T698 and T696 all69 full histories each verified. Four pending raw metadata groups ready for one bounded source300 after archive exit and committed tracked changes; no additional raw batch this heartbeat. No science admitted.",
+  "next_action": "Fixed five completed retained/recovery/neighborhood output roots fully covered. Four pending raw metadata groups ready for one bounded source300 after archive exit and committed tracked changes; no additional raw batch this heartbeat. No next science admitted; prepare finite handoff after source verification.",
   "authorization": "AUTHORIZATION.json",
   "prior_group_current_ledger": {
     "physics": 64463885,
@@ -960,7 +960,7 @@
   "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t698/FINAL_REPORT.json",
   "response_gate": "SCIENTIFIC_GATE_FAILED",
   "response_derivative_learning_cancelled": true,
-  "source_remote": "2d590727dede48196f5efa62685b05530a42e95d",
+  "source_remote": "ea8e7f224e285b2e1e4129efd65c8a3c21e040b2",
   "recovery_qualified_ids": [
     "dev_task6_20",
     "dev_task6_23"
@@ -1320,12 +1320,12 @@
   "T691R_state": "COMPLETE_BOTH_KL_REJECTED",
   "nominal_recovered_independent_audit": "PASS64_NOT_REEXECUTED_LIVE_SHADOW",
   "T692_state": "COMPLETE_HELDOUT_ACTION_GATE_FAILED_NO_NATIVE",
-  "last_raw_backup": "WEEKEND_T696_FULL_EPISODES_1",
+  "last_raw_backup": "WEEKEND_RETAINED_REMAINING_OUTPUTS_0",
   "T693_state": "NOT_LAUNCHED_TIME_ADMISSION_FAILED",
   "raw_deleted": 0,
   "T693_time_capacity": "DRAFT_SINGLE_2H_ROOT_NOT_ADMITTED;3_SEQUENTIAL_BOUNDED_CHILD_LAYOUT_UNREGISTERED",
   "new_campaign_science_seconds": 31592.1190867424,
-  "new_campaign_transport_seconds": 15119.696033239365,
+  "new_campaign_transport_seconds": 15461.381383180618,
   "T693_original_absolute_all_stop_local": "2026-11-21T22:13:50.483903+08:00",
   "T693_registered_original_deadline_not_extended": true,
   "next_research_agent": null,
@@ -1335,25 +1335,27 @@
   "post_T693_review_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/POST_T693_BOUNDED_METHOD_REVIEW.md",
   "raw_members_newly_verified": 33,
   "local_raw_backup_metadata_pending_source_sync": [
-    "WEEKEND_T698_SUPPLEMENTARY_SUCCESS_0",
-    "WEEKEND_T698_FULL_EPISODES_0",
-    "WEEKEND_T698_FULL_EPISODES_1",
-    "WEEKEND_T696_FULL_EPISODES_1"
+    "WEEKEND_T694_T696_T698_COMPACT_0",
+    "WEEKEND_T695_FULL_EPISODES_0",
+    "WEEKEND_T695_FULL_EPISODES_1",
+    "WEEKEND_RETAINED_REMAINING_OUTPUTS_0"
   ],
   "source_sync_batch_policy": "Accumulate up to4 verified smallraw batches then one source300 sync, or sooner on materialstatechange/finalhandoff; never duplicate or exceed transport budget",
   "last_grouped_source_sync": {
-    "remote_commit": "7635a892fe1e3b5805981df7c319a8aff6a75ce3",
-    "root_tree": "0bdc418f5823ae867f8de149e39b9229feedf9c5",
-    "groups": [
-      "WEEKEND_T665_PRIMARY_EVIDENCE_31",
-      "WEEKEND_T665_PRIMARY_EVIDENCE_32",
-      "WEEKEND_T666_REMAINING_EPISODES_0",
-      "WEEKEND_T694_FULL_EPISODES_0"
-    ],
+    "state": "REMOTE_TREE_VERIFIED_AND_CHARGED",
+    "remote_commit": "ea8e7f224e285b2e1e4129efd65c8a3c21e040b2",
+    "root_tree": "4e31367adb18439a4a3eb47f0c00649003a97669",
     "upper_seconds": 300,
     "charged": true,
+    "groups": [
+      "WEEKEND_T698_SUPPLEMENTARY_SUCCESS_0",
+      "WEEKEND_T698_FULL_EPISODES_0",
+      "WEEKEND_T698_FULL_EPISODES_1",
+      "WEEKEND_T696_FULL_EPISODES_1"
+    ],
     "all_science_driver_helper_exited": true,
-    "source_shell_exit0_before_receipt_check": true
+    "source_shell_exit0_before_receipt_check": true,
+    "settled_epoch": 1795333616.9577906
   },
   "T694_state": "ORIGINAL_FAILED_FINAL_AUDIT_TIMEOUT_PRESERVED_SCIENCE_ACCEPTED_VIA_T694R",
   "preparation_pids": [],
@@ -1363,8 +1365,8 @@
   "immutable_retained_parent": "T501",
   "last_completed_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood",
   "last_health_check": {
-    "state": "T698_RETAINED_T696_ALL69_FULL_REMOTE_VERIFIED",
-    "epoch": 1795333582.4906344,
+    "state": "T698_RETAINED_FIXED_FIVE_OUTPUT_ROOTS_REMOTE_COVERED",
+    "epoch": 1795341490.8171003,
     "model_unchanged": true,
     "retained_model_sha256": "dbb7a6d9ae73f5054f93f02961e2eb72cb9fcf5078c74536afbce83a24e8b4b0",
     "core_success": 398,
@@ -1375,26 +1377,49 @@
     "new_optimizer": 0,
     "backup": {
       "state": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
-      "group": "WEEKEND_T696_FULL_EPISODES_1",
-      "members": 22,
-      "source_bytes": 6491206,
-      "compressed_bytes": 6318790,
-      "elapsed_seconds": 20.60979986190796,
+      "group": "WEEKEND_RETAINED_REMAINING_OUTPUTS_0",
+      "members": 1686,
+      "source_bytes": 6146312,
+      "compressed_bytes": 3532235,
+      "elapsed_seconds": 11.320798397064209,
       "deleted": 0,
       "all_weekend_science_driver_helper_units_checked": true,
       "no_new_optimizer_or_native": true
     },
     "coverage": {
-      "scope": "stage/runs/t696_existing_success_compatibility/evaluation/episodes/*.npz",
-      "total": 69,
-      "remote_verified": 69,
-      "remaining": 0,
-      "remaining_bytes": 0,
-      "other_compact_pending": true,
-      "all_local_raw_retained": true
+      "t694_full_history_compatibility": {
+        "total_regular_files": 957,
+        "remote_member_verified": 957,
+        "excluded_byte_identical_source_protocols": 0,
+        "unresolved": 0
+      },
+      "t694r_audit_recovery": {
+        "total_regular_files": 11,
+        "remote_member_verified": 11,
+        "excluded_byte_identical_source_protocols": 0,
+        "unresolved": 0
+      },
+      "t695_frozen_neighborhood": {
+        "total_regular_files": 213,
+        "remote_member_verified": 213,
+        "excluded_byte_identical_source_protocols": 0,
+        "unresolved": 0
+      },
+      "t696_existing_success_compatibility": {
+        "total_regular_files": 1033,
+        "remote_member_verified": 1032,
+        "excluded_byte_identical_source_protocols": 1,
+        "unresolved": 0
+      },
+      "t698_cross_representation_success": {
+        "total_regular_files": 1037,
+        "remote_member_verified": 1036,
+        "excluded_byte_identical_source_protocols": 1,
+        "unresolved": 0
+      }
     },
     "run_bytes": 2905570819,
-    "free_bytes": 220903264256
+    "free_bytes": 220748771328
   },
   "next_planned_run": null,
   "source_charge_pending_until_all_science_exit": {
@@ -2338,7 +2363,7 @@
     "remote_verified": 69,
     "remaining": 0,
     "remaining_bytes": 0,
-    "other_compact_pending": true,
+    "other_compact_pending": false,
     "all_local_raw_retained": true
   },
   "T697_state": "PREPARATION_SHARED_BACKBONE_GATE_FAILED_NO_FORMAL_RUN",
@@ -2349,7 +2374,33 @@
     "remote_verified": 69,
     "remaining": 0,
     "remaining_bytes": 0,
-    "other_compact_pending": true,
+    "other_compact_pending": false,
     "all_local_raw_retained": true
-  }
+  },
+  "retained_three_compact_coverage": {
+    "t694_full_history_compatibility": {
+      "total": 407,
+      "remote_verified": 407,
+      "remaining": 0
+    },
+    "t696_existing_success_compatibility": {
+      "total": 431,
+      "remote_verified": 431,
+      "remaining": 0
+    },
+    "t698_cross_representation_success": {
+      "total": 431,
+      "remote_verified": 431,
+      "remaining": 0
+    }
+  },
+  "T695_episode_archive_coverage": {
+    "scope": "stage/runs/t695_frozen_neighborhood/episodes/*.npz",
+    "total": 48,
+    "remote_verified": 48,
+    "remaining": 0,
+    "remaining_bytes": 0,
+    "all_local_raw_retained": true
+  },
+  "retained_five_root_output_coverage": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/RETAINED_OUTPUT_COVERAGE.json"
 }
