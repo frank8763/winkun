@@ -1,62 +1,54 @@
 {
-  "state": "RETAINED_FINITE_EXISTING_SUCCESS_COMPATIBILITY_RESEARCH_MODEL",
-  "epoch": 1795323517.8175328,
+  "state": "RETAINED_FINITE_CROSS_REPRESENTATION_EXECUTED_COMMAND_COMPATIBILITY",
+  "epoch": 1795328976.3676348,
   "model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t698_cross_representation_success/fit/proposal.pt.gz",
+    "sha256": "dbb7a6d9ae73f5054f93f02961e2eb72cb9fcf5078c74536afbce83a24e8b4b0",
+    "bytes": 4939692,
+    "policy_hash": "0a67196c16da50096e8ba74eb7c563bf900dd6187d3bc805f35c9def658a5b73",
+    "joint_hash": "7707ac6232f2ab28cd9e697f29c373993d960dfaaffa6aa198f3378efa0cc700"
+  },
+  "retained_parent": {
     "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t696_existing_success_compatibility/fit/proposal.pt.gz",
     "sha256": "2c347f0a5e9d6a6a336b33358cec58e08f777fbf928809acfe2cff4ed295e16f",
     "bytes": 4236102,
     "policy_hash": "ba24210efd3f33c8ff115f30d8bc0ecac345d7f51df4d9ff1c56777defb01b0a",
     "joint_hash": "ce93f8727744aa347c5322229657a14d1752cfe5777c4748e6701e36d4befa93"
   },
-  "retained_parent": {
-    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
-    "sha256": "8efc9bdeae31866f7d5745948cc9169306a46525c172834f627d3874f29b5003",
-    "bytes": 2388227,
-    "policy_hash": "11eca188a1c3ad9a738488df61fcf5cbfe5976e0198330a123524b342a9b69af",
-    "joint_hash": "b5ce0c737fbaa8e9480563ea277f12c98c53b2c127978a97aeae5ac4b574cf07"
-  },
-  "original_frozen_parent": {
-    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t669_old_task_onpolicy_signal/initial_sigma.pt.gz",
-    "sha256": "c40ce9f8000ba351b60f30675363bebe6e7bdacf93cc256f7bef957776d0b660",
-    "policy_hash": "9c379a6dd734c926e563a144dea3df475ece066aa6e115ae597e9636e419f1c0",
-    "joint_hash": "913555eb5b5322ddea31913a09fc05b57715377fcd269b98215b430363ac8d03",
-    "bytes": 1063881
-  },
-  "original_root": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t696_existing_success_compatibility",
+  "previous_retained_manifest": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t698/PARENT_RETAINED_MODEL.json",
+  "ancestor_T694_and_T501_preserved": true,
+  "original_root": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t698_cross_representation_success",
   "accepted_gate": {
     "complete_core407": true,
-    "success": 396,
-    "old_retained": 390,
+    "success": 398,
+    "old_retained": 396,
     "old_lost": [],
     "gained": [
-      "dev_task6_05",
-      "dev_task6_11",
-      "dev_task6_15",
-      "hold_task6_03",
-      "t502_field_sector2_offset2",
-      "t502_field_sector7_offset2"
+      "t502_field_sector1_offset2",
+      "t502_field_sector4_offset2"
     ],
     "all387": true,
-    "all_previous403_retained": true,
-    "all7_fixed_sources_pass": true,
-    "full431_safety_successes": 410,
+    "all_previous410_retained": true,
+    "all2_fixed_sources_pass": true,
+    "full431_safety_successes": 412,
     "fit_independent_audit": "PASS",
     "native_independent_audit": "PASS",
-    "all_scientific_driver_helper_PIDs_exited": true
+    "all_scientific_driver_helper_PIDs_exited": true,
+    "unit_inactive_MainPID0": true
   },
   "counts": {
     "core407": {
       "total": 407,
-      "success": 396,
-      "collision": 9,
+      "success": 398,
+      "collision": 7,
       "timeout": 2,
       "boundary_failures": 0,
       "nonfield_abs_over7_exempt": 27
     },
     "field24": {
       "total": 24,
-      "success": 13,
-      "collision": 9,
+      "success": 15,
+      "collision": 7,
       "timeout": 2,
       "boundary_failures": 0,
       "nonfield_abs_over7_exempt": 0
@@ -69,6 +61,14 @@
       "boundary_failures": 10,
       "nonfield_abs_over7_exempt": 0
     }
+  },
+  "neighborhood_parent_families": {
+    "0_1": 4,
+    "0_2": 2,
+    "1_1": 0,
+    "2_1": 4,
+    "5_1": 4,
+    "7_1": 0
   },
   "full431_success_ids": [
     "dev_task0_00",
@@ -355,6 +355,7 @@
     "t502_field_sector0_offset2_T695_xminus",
     "t502_field_sector0_offset2_T695_yminus",
     "t502_field_sector1_offset1",
+    "t502_field_sector1_offset2",
     "t502_field_sector2_offset1",
     "t502_field_sector2_offset1_T695_xminus",
     "t502_field_sector2_offset1_T695_xplus",
@@ -364,6 +365,7 @@
     "t502_field_sector3_offset1",
     "t502_field_sector3_offset2",
     "t502_field_sector4_offset1",
+    "t502_field_sector4_offset2",
     "t502_field_sector5_offset1",
     "t502_field_sector5_offset1_T695_xminus",
     "t502_field_sector5_offset1_T695_xplus",
@@ -761,11 +763,13 @@
     "t502_field_sector0_offset1",
     "t502_field_sector0_offset2",
     "t502_field_sector1_offset1",
+    "t502_field_sector1_offset2",
     "t502_field_sector2_offset1",
     "t502_field_sector2_offset2",
     "t502_field_sector3_offset1",
     "t502_field_sector3_offset2",
     "t502_field_sector4_offset1",
+    "t502_field_sector4_offset2",
     "t502_field_sector5_offset1",
     "t502_field_sector5_offset2",
     "t502_field_sector6_offset1",
@@ -896,16 +900,18 @@
     "t502_field_sector5_offset1_T695_yminus",
     "t502_field_sector5_offset1_T695_yplus"
   ],
-  "source_qualification": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/EXISTING_SUCCESS_SOURCE_QUALIFICATION.md",
-  "loader": "stage/experiments/t696_existing_success_compatibility/t696_actor.py:frozen",
+  "source_qualification": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/T698_CROSS_REPRESENTATION_SOURCE_REVIEW.md",
+  "loader": "stage/experiments/t698_cross_representation_success/t698_actor.py:frozen",
   "scientific_fit": {
     "frozen_T501_parameters": 64772,
     "frozen_T694_centers": 1405,
     "frozen_T694_coefficients": 2810,
-    "added_centers": 1737,
-    "added_supervised_coefficients": 3474,
-    "protected_decisions": 81956,
-    "source_decisions": 1737,
+    "frozen_T696_centers": 1737,
+    "frozen_T696_coefficients": 3474,
+    "added_centers": 734,
+    "added_supervised_coefficients": 1468,
+    "protected_decisions": 83693,
+    "source_decisions": 734,
     "Actor_live": 1,
     "Actor_shadow": 1,
     "Actor_independent": 1,
@@ -914,28 +920,27 @@
     "RL": 0
   },
   "actual_resources": {
-    "physics": 10915363,
-    "commands": 506,
-    "science_seconds": 3606.434364795685,
-    "audit_seconds": 1106.961416721344
+    "physics": 10981261,
+    "commands": 514,
+    "science_seconds": 1628.1393501758575,
+    "audit_seconds": 756.649080991745
   },
   "limitations": [
-    "Finite supervised interpolation of exposed successful histories; not new RL or algorithm superiority",
-    "All403 prior successful starts retained;410 total is396/407 core plus14/24 neighborhood, never410/407",
-    "Field13/24; two neighborhood parent families1_1 and7_1 remain0/4",
-    "Executed stochastic commands used as fixed supervision; no runtime noise/seed/taskID/teacher/router/planner/waypoints",
-    "No fresh same-budget algorithm control or unknown-map/continuous-neighborhood generalization",
-    "ParentT694 original FAILED audit-timeout root and all prior models/errors/raw remain unchanged",
-    "Old optimizer only provenance, not compatible new-head optimizer"
+    "Finite supervision of two exposed autonomous successful histories across representations; not new RL, fixed capacity, algorithm superiority or generalization",
+    "398/407 core plus14/24 supplementary=412 distinct successes, never412/407",
+    "All410 previous successful starts retained; two neighborhood parent families1_1 and7_1 remain0/4",
+    "No runtime source lookup, source hidden, taskID, teacher, router, planner or waypoints",
+    "T697 original common-body gate and engineering preparation failures preserved; T668 recovery2/4 still fails",
+    "Original retained T696/T694/T501 and all raw retained; old optimizer provenance only"
   ],
   "remote_raw_backup": {
     "state": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
-    "group": "WEEKEND_T696_RETAINED_PRIMARY_0",
-    "primary_backup_receipt": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/T696_RETAINED_BACKUP.json",
+    "group": "WEEKEND_T698_RETAINED_PRIMARY_0",
+    "primary_backup_receipt": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/T698_RETAINED_BACKUP.json",
     "named_model_verified": true,
     "other_raw_pending": true,
-    "deleted": 0
+    "deleted": 0,
+    "archived_retention_decision_is_pre_backup_metadata_snapshot": true
   },
-  "backup_verified_epoch": 1795323645.8810804,
-  "supplementary_frozen_neighborhood_evidence": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t696/SUPPLEMENTARY_SUCCESS_SET.json"
+  "backup_verified_epoch": 1795329073.3816702
 }

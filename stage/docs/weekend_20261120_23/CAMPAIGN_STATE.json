@@ -1,18 +1,20 @@
 {
-  "epoch": 1795323517.819113,
-  "state": "T698_REGISTERED_PREFLIGHT_PASS_NOT_LAUNCHED",
+  "epoch": 1795329073.3823907,
+  "state": "T698_COMPLETE_RETAINED398_CORE412_TOTAL",
   "active_run": null,
   "unit": null,
   "actual_status": {
-    "state": "NO_SCIENCE_RUNNING"
+    "state": "COMPLETE",
+    "all_science_stopped": true,
+    "epoch": 1795328005.2401018
   },
   "new_campaign_science_started": true,
-  "new_campaign_physics": 131109921,
-  "new_campaign_commands": 6081,
+  "new_campaign_physics": 142091182,
+  "new_campaign_commands": 6595,
   "new_campaign_optimizer": 18,
-  "new_campaign_registration_pending": true,
+  "new_campaign_registration_pending": false,
   "current_job_must_exit_before_next": true,
-  "next_action": "User requested hardware acceleration: T698 distinct cross-representation fixedtwo legacy source candidate registered withGPUgeometry/8physicalCPU7workers. Sharedbody T697 originalgateFAIL remains. Await exactsourceGitHub sync actualexit0/tree then unique launch; no archive/source/science overlap, no premature capability claim. RetainedT696410 remains until fullall410+2sources/core407+24/independent audits and allPIDexit.",
+  "next_action": "T698 fully retained398core+14supp=412. No new science admitted; fixed two sources consumed. Continue one bounded raw batch per heartbeat under all-science-exit guard and original stop times; do not rerun fits/native or generic review queues.",
   "authorization": "AUTHORIZATION.json",
   "prior_group_current_ledger": {
     "physics": 64463885,
@@ -933,7 +935,7 @@
     ],
     "denied": []
   },
-  "retained_model": "T696",
+  "retained_model": "T698",
   "user_latest_delegation_supersedes_old_evening_stop_for_future_campaigns": true,
   "raw_archive_cleanup_trigger": 8589934592,
   "global_cap": 10737418240,
@@ -945,7 +947,7 @@
   "next_job_max_commands": 0,
   "next_job_new_optimizer": 0,
   "next_launch_condition": "No next scientific protocol admitted; new proposal must be substantivelydistinct and fullyreviewed/preflight/reserved/sourceexact",
-  "source_sync_of_weekend_docs": "VERIFIED_dd5484d155f323a76e47e3953e746babd5041a9a",
+  "source_sync_of_weekend_docs": "VERIFIED_b450568e45b6976d5a54ba8be849f5118fd9df7a",
   "method_note": "RETENTION_PRIMARY_SOURCES.md completed; TaSIL/CPO/PCPO/DAgger/PolicyConsolidation primary sources checked",
   "next_learning_pilot": null,
   "primary_research_completed": true,
@@ -955,10 +957,10 @@
   "prior_group_final_report": "stage/docs/day_20261120/t665/FINAL_REPORT.json",
   "prior_group_coverage_batches_completed": 18,
   "prior_group_raw_remote": "PENDING_BACKUP_TIMEOUT_LOCAL_RAW_RETAINED",
-  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t696/FINAL_REPORT.json",
+  "last_report": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t698/FINAL_REPORT.json",
   "response_gate": "SCIENTIFIC_GATE_FAILED",
   "response_derivative_learning_cancelled": true,
-  "source_remote": "919f0213969e8fe2401d76722300e273d8d7e60c",
+  "source_remote": "a1718ae7e7b4e10c178a58a142fa00a4864c109d",
   "recovery_qualified_ids": [
     "dev_task6_20",
     "dev_task6_23"
@@ -994,7 +996,7 @@
   "active_status": {
     "state": "NO_SCIENCE_RUNNING"
   },
-  "last_checked_epoch": 1795325559.1342244,
+  "last_checked_epoch": 1795325672.8648636,
   "working_hypotheses_note": "WORKING_HYPOTHESES_AFTER_T671.md",
   "posthoc_KL_scale_note": "t671/POSTHOC_KL_SCALE_CORRECTION.md",
   "T671_KL_sigma_mismatch": {
@@ -1332,10 +1334,7 @@
   "post_T693_review_decision": "NONE_PRESENTLY_JUSTIFIED_NOT_IMPOSSIBILITY",
   "post_T693_review_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/POST_T693_BOUNDED_METHOD_REVIEW.md",
   "raw_members_newly_verified": 33,
-  "local_raw_backup_metadata_pending_source_sync": [
-    "WEEKEND_T696_SUPPLEMENTARY_SUCCESS_0",
-    "WEEKEND_T696_FULL_EPISODES_0"
-  ],
+  "local_raw_backup_metadata_pending_source_sync": [],
   "source_sync_batch_policy": "Accumulate up to4 verified smallraw batches then one source300 sync, or sooner on materialstatechange/finalhandoff; never duplicate or exceed transport budget",
   "last_grouped_source_sync": {
     "remote_commit": "7635a892fe1e3b5805981df7c319a8aff6a75ce3",
@@ -1359,18 +1358,43 @@
   "immutable_retained_parent": "T501",
   "last_completed_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t695_frozen_neighborhood",
   "last_health_check": {
-    "state": "ALL_STAGE_STOPPED_BOUNDED_T696_FULL_BATCH_VERIFIED",
-    "group": "WEEKEND_T696_FULL_EPISODES_0",
-    "new_native": 0,
-    "new_optimizer": 0,
-    "retained_model": "T696",
-    "core407_success": 396,
-    "total431_success": 410,
-    "retained_policy_unchanged": true,
-    "raw_deleted": 0
+    "state": "T698_COMPLETE_RETAINED",
+    "epoch": 1795329073.3823922,
+    "all_scientific_driver_helper_unit_exited": true,
+    "unit_MainPID": 0,
+    "core_success": 398,
+    "core_total": 407,
+    "previous410_kept": true,
+    "supplementary_success": 14,
+    "supplementary_total": 24,
+    "total_distinct_success": 412,
+    "independent_fit_audit": "PASS",
+    "independent_native_audit": "PASS",
+    "backup": {
+      "state": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+      "group": "WEEKEND_T698_RETAINED_PRIMARY_0",
+      "members": 19,
+      "source_bytes": 7061230,
+      "compressed_bytes": 6559261,
+      "elapsed_seconds": 21.660845041275024,
+      "deleted": 0,
+      "all_weekend_science_driver_helper_units_checked": true,
+      "no_new_optimizer_or_native": true
+    }
   },
-  "next_planned_run": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t698_cross_representation_success",
-  "source_charge_pending_until_all_science_exit": null,
+  "next_planned_run": null,
+  "source_charge_pending_until_all_science_exit": {
+    "remote_commit": "a1718ae7e7b4e10c178a58a142fa00a4864c109d",
+    "root_tree": "b450568e45b6976d5a54ba8be849f5118fd9df7a",
+    "upper_seconds": 300,
+    "charged": false,
+    "source_shell_exit0_before_receipt_and_unique_launch": true,
+    "settle_after_all_science_driver_helper_exit": true,
+    "groups": [
+      "WEEKEND_T696_SUPPLEMENTARY_SUCCESS_0",
+      "WEEKEND_T696_FULL_EPISODES_0"
+    ]
+  },
   "next_planned_spec": null,
   "T694_confirmed_full407": {
     "same_candidate_original384_all_retained": true,
@@ -2302,5 +2326,5 @@
     "all_local_raw_retained": true
   },
   "T697_state": "PREPARATION_SHARED_BACKBONE_GATE_FAILED_NO_FORMAL_RUN",
-  "T698_state": "REGISTERED_PREFLIGHT_PASS_NOT_LAUNCHED"
+  "T698_state": "COMPLETE_RETAINED398_CORE412_TOTAL_AUDIT_PASS_ALL_EXITED"
 }

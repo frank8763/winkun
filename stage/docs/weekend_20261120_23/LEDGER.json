@@ -1,12 +1,12 @@
 {
-  "physics": 131109921,
-  "commands": 6081,
-  "science_seconds": 35866.42187809944,
-  "audit_seconds": 2854.687906742096,
-  "transport_seconds": 14425.074257612228,
-  "Actor_live": 137,
-  "Actor_shadow": 137,
-  "Actor_independent": 137,
+  "physics": 142091182,
+  "commands": 6595,
+  "science_seconds": 37494.5612282753,
+  "audit_seconds": 3611.336987733841,
+  "transport_seconds": 14746.736860752106,
+  "Actor_live": 138,
+  "Actor_shadow": 138,
+  "Actor_independent": 138,
   "Value_live": 1000,
   "Value_shadow": 1000,
   "Value_independent": 1000,
@@ -745,7 +745,7 @@
     },
     {
       "id": "T698",
-      "state": "RESERVED",
+      "state": "COMPLETE",
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t698_cross_representation_success",
       "max_physics": 15120297,
       "max_commands": 514,
@@ -755,7 +755,12 @@
       "Actor_each_cap": 1,
       "Value_each_cap": 0,
       "fit_type": "ONE_SUPERVISED_RADIAL_READOUT_COEFFICIENT_COMMIT",
-      "completed_children": []
+      "completed_children": [
+        "fit",
+        "evaluation"
+      ],
+      "actual_physics": 10981261,
+      "actual_commands": 514
     }
   ],
   "charged_source_sync_commits": [
@@ -803,7 +808,8 @@
     "19be78c12e37e5597968d69c049e8b49c61d4961",
     "7635a892fe1e3b5805981df7c319a8aff6a75ce3",
     "a5446ad3e0162c7ff69e89bb43620f614cadfe15",
-    "919f0213969e8fe2401d76722300e273d8d7e60c"
+    "919f0213969e8fe2401d76722300e273d8d7e60c",
+    "a1718ae7e7b4e10c178a58a142fa00a4864c109d"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"
