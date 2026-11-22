@@ -1,0 +1,15 @@
+# T696：核心407为396安全，全部403旧成功保持
+
+T696 COMPLETE，独立fit及native审计PASS，全部科学、driver、helper与stage-t696 unit已退出。正式保留同一个候选：核心407安全396，相对T694390新增6且逐ID零遗忘；原联合387全保。原390核心加13邻域的403成功起点全部保持，并修复T695唯一反向退步field2_1+x，合计410个不同起点成功，构成为396/407核心及14/24邻域，绝不是410/407。
+
+六核心新增：dev_task6_05、dev_task6_11、dev_task6_15、hold_task6_03、field2_offset2、field7_offset2。场地24为13安全、9碰撞、2超时、0边界失败；完整407也为9碰撞2超时。27个非field豁免八米任务绝对坐标超过7标记不计边界失败。邻域24为14安全、0碰撞、10超时，其中10与边界失败重叠不能相加；父家族依次为4/4、2/4、0/4、4/4、4/4、0/4，两个0/4仍未解决。
+
+模型stage/runs/t696_existing_success_compatibility/fit/proposal.pt.gz，4236102B，SHA256 2c347f0a5e9d6a6a336b33358cec58e08f777fbf928809acfe2cff4ed295e16f，policy ba24210efd3f33c8ff115f30d8bc0ecac345d7f51df4d9ff1c56777defb01b0a。必须用t696_actor.frozen加载，T501或T694普通loader不支持新增state。保留T694和T501原件，旧optimizer只作provenance。
+
+本项复用已审T665/T672随机自主成功执行命令，以及T695确定性反向成功；固定三根6110元数据记录、七个ID全部纳入、每ID源路径字典序第一条，不新增采样/seed/半径搜索。原T69464772骨干及1405中心/2810系数完全冻结，新增1737固定中心/3474监督系数；完整403历史81956决策新basis精确0，源1737决策中心矩阵逐位I。403+7自身carry/batch1/clipfloat32命令逐位与原生物理源逐数组匹配，431fresh+69exact计500科学记录全部独立审计。
+
+这是已曝光来源的有限监督兼容性及表示扩展复现，不是新RL、固定容量可塑性、算法优越性或未知起点/地图泛化。没有新鲜同预算算法对照，不能把历史随机source成功概率与新deterministic插值混同。T668任意失败状态恢复2/4门仍FAIL；本项是原始注册起点完整自主成功，未借恢复老师绕门。
+
+实际10915363物理步、506命令，Actor live/shadow/independent各1，0Adam/Value/RL。fitmain1016.405393s、独立fit537.097221s、evalmain2590.028972s、独立native569.864196s，总主科学3606.434365s/审计1106.961417s。原source-sigma加载预检拒绝及独立配置恢复均保留并计账；不是科学negative。原root1795328369.694693和evalchild1795323946.0534706及native1795323286.0534706从严，未延。模型/全部失败/raw本地保留，主要证据独立有界备份以收据为准，其他raw仍pending。
+
+具名T696模型和18份主要证据已Release完整下载解包逐memberSHA/RESTORE_INDEX核验，WEEKEND_T696_RETAINED_PRIMARY_0，压缩5858753B/源6357515B/11.172644秒；本地删除0。该批含模型、fit/audit/命令事件、native完整summary/audit/JOINT407/cases及原准备拒绝。root协议已在登记源码GitHub逐树核验，不在本批重复；其他episode/raw仍待归档。

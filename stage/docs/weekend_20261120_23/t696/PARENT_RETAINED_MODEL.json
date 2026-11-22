@@ -1,0 +1,106 @@
+{
+  "state": "RETAINED_FINITE_DEVELOPMENT_COMPATIBILITY_RESEARCH_MODEL",
+  "epoch": 1795276416.9205356,
+  "model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+    "sha256": "8efc9bdeae31866f7d5745948cc9169306a46525c172834f627d3874f29b5003",
+    "bytes": 2388227,
+    "policy_hash": "11eca188a1c3ad9a738488df61fcf5cbfe5976e0198330a123524b342a9b69af",
+    "joint_hash": "b5ce0c737fbaa8e9480563ea277f12c98c53b2c127978a97aeae5ac4b574cf07"
+  },
+  "original_frozen_parent": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t669_old_task_onpolicy_signal/initial_sigma.pt.gz",
+    "sha256": "c40ce9f8000ba351b60f30675363bebe6e7bdacf93cc256f7bef957776d0b660",
+    "policy_hash": "9c379a6dd734c926e563a144dea3df475ece066aa6e115ae597e9636e419f1c0",
+    "joint_hash": "913555eb5b5322ddea31913a09fc05b57715377fcd269b98215b430363ac8d03",
+    "bytes": 1063881
+  },
+  "accepted_gate": {
+    "same_candidate_original384_all_retained": true,
+    "complete407": true,
+    "success": 390,
+    "old_retained": 384,
+    "old_lost": [],
+    "gained": [
+      "t502_field_sector0_offset1",
+      "t502_field_sector0_offset2",
+      "t502_field_sector1_offset1",
+      "t502_field_sector2_offset1",
+      "t502_field_sector5_offset1",
+      "t502_field_sector7_offset1"
+    ],
+    "all387": true,
+    "independent_fit_audit": "PASS",
+    "independent_native_audit_recovery": "PASS",
+    "all_scientific_driver_helper_PIDs_exited": true
+  },
+  "field24": {
+    "success": 11,
+    "collision": 10,
+    "timeout": 3,
+    "boundary": 0
+  },
+  "full407_flags": {
+    "collision": 14,
+    "timeout": 3,
+    "field_boundary_failures": 0,
+    "nonfield_abs_coordinate_over7_flag_exempt": 27
+  },
+  "original_root": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility",
+  "original_root_management_state": "FAILED_FINAL_AUDIT_TIMEOUT_PRESERVED",
+  "audit_recovery_root": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694r_audit_recovery",
+  "scientific_fit": {
+    "Actor_live": 1,
+    "Actor_shadow": 1,
+    "Actor_independent": 1,
+    "optimizer_calls": 0,
+    "RL_updates": 0,
+    "Value_updates": 0,
+    "original_T501_parameters_frozen": 64772,
+    "new_supervised_coefficients": 2810,
+    "fixed_centers": 1405,
+    "features": 184,
+    "Actor_input120_GRU64": true
+  },
+  "actual_resources": {
+    "physics": 9864935,
+    "commands": 468,
+    "science_seconds": 3142.409576892853,
+    "audit_seconds_including_timeout": 1035.2911312580109,
+    "recovery_added_physics": 0,
+    "recovery_added_Actor": 0
+  },
+  "limitations": [
+    "Known development/training tasks and source histories, not unseen generalization",
+    "Expanded static radial interpolation, not fixed-capacity11906 learning or new RL",
+    "No matched same-budget algorithm superiority control",
+    "Original optimizer is provenance only and incompatible with expanded-head training",
+    "All original failed roots/parents retained; finite success not universal safety"
+  ],
+  "remote_raw_backup": {
+    "state": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+    "group": "WEEKEND_T694_RETAINED_PRIMARY_0",
+    "members": 15,
+    "manifest": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/long_distance_20261101/source_manifest_WEEKEND_T694_RETAINED_PRIMARY_0.json",
+    "receipt": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/long_distance_20261101/release_receipt_WEEKEND_T694_RETAINED_PRIMARY_0.json",
+    "restore_index": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/RESTORE_INDEX.json",
+    "named_model_verified": true,
+    "all_episode_raw_remotely_archived": false,
+    "other_raw_local_pending": true,
+    "deleted": 0
+  },
+  "backup_verified_epoch": 1795276824.180421,
+  "supplementary_frozen_neighborhood_evidence": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/weekend_20261120_23/t695/SUPPLEMENTARY_SUCCESS_SET.json",
+    "safe_count": 13,
+    "test_count": 24,
+    "matched_T501_safe": 8,
+    "T694_only": 6,
+    "T501_only": 1,
+    "core_complete407_success_unchanged": 390,
+    "total_same_policy_verified_distinct_starts": 403,
+    "do_not_report_403_of407": true,
+    "all13_full_histories_remote_verified": true,
+    "backup_group": "WEEKEND_T695_SUPPLEMENTARY_SUCCESS_0"
+  }
+}
