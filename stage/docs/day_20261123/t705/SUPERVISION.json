@@ -1,0 +1,77 @@
+{
+  "state": "ACTIVE",
+  "epoch": 1795419161.0493584,
+  "actual_status": {
+    "state": "ACTIVE",
+    "child": "fit",
+    "action": "main",
+    "child_pid": 407514,
+    "epoch": 1795419133.1785934
+  },
+  "inputs": 5465,
+  "input_SHA_stat_mismatches": 0,
+  "resource_probe": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "11"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "13"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "15"
+      ],
+      [
+        "0",
+        "8"
+      ],
+      [
+        "0",
+        "9"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "CPUQuota": "800%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 8589934592,
+    "MemorySwapMax": 0,
+    "GPU": "cuda0geometry_only_cpu_exact_deployment"
+  },
+  "fit_call_progress_not_double_accounted": {
+    "Actor_live": 27,
+    "Actor_shadow": 27,
+    "Actor_independent": 0
+  },
+  "absolute_learning_stop": 1795420945,
+  "absolute_native_stop": 1795433845,
+  "absolute_all_stop": 1795434745,
+  "retained": "T698",
+  "new_automatic_science": false
+}
