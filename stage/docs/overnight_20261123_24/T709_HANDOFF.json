@@ -1,0 +1,167 @@
+{
+  "state": "COMPLETE",
+  "results": {
+    "induced": {
+      "known": {
+        "state": "COMPLETE",
+        "audit": "PASS",
+        "safe": 392,
+        "total": 431,
+        "core_success": 382,
+        "lost403": [
+          "dev_task6_00",
+          "dev_task6_01",
+          "dev_task6_06",
+          "dev_task6_09",
+          "dev_task6_25",
+          "dev_task7_17",
+          "hold_task6_00",
+          "t502_field_sector0_offset2",
+          "t502_field_sector0_offset2_T695_xminus",
+          "t502_field_sector0_offset2_T695_yminus",
+          "t502_field_sector1_offset1",
+          "t502_field_sector2_offset1_T695_yplus",
+          "t502_field_sector5_offset1",
+          "t502_field_sector5_offset1_T695_xplus",
+          "t502_field_sector7_offset1",
+          "wide117_80_dev6_LEFT_15",
+          "wide117_80_dev6_LEFT_26"
+        ],
+        "source_success_ids": [
+          "dev_task6_05",
+          "dev_task6_11",
+          "dev_task6_15",
+          "t502_field_sector2_offset1_T695_xplus",
+          "t502_field_sector2_offset2",
+          "t502_field_sector7_offset2"
+        ],
+        "collision": 15,
+        "timeout": 24,
+        "boundary": 17
+      },
+      "new": {
+        "state": "COMPLETE",
+        "audit": "PASS",
+        "safe": 95,
+        "total": 224,
+        "core_success": 0,
+        "lost403": null,
+        "source_success_ids": [],
+        "collision": 85,
+        "timeout": 44,
+        "boundary": 26
+      }
+    },
+    "control": {
+      "known": {
+        "state": "COMPLETE",
+        "audit": "PASS",
+        "safe": 395,
+        "total": 431,
+        "core_success": 384,
+        "lost403": [
+          "dev_task6_00",
+          "dev_task6_01",
+          "dev_task6_06",
+          "dev_task6_25",
+          "dev_task7_23",
+          "hold_task6_06",
+          "t502_field_sector0_offset2",
+          "t502_field_sector0_offset2_T695_xminus",
+          "t502_field_sector1_offset1",
+          "t502_field_sector2_offset1_T695_xminus",
+          "t502_field_sector5_offset1_T695_xminus",
+          "t502_field_sector5_offset1_T695_yminus",
+          "t502_field_sector7_offset1",
+          "wide117_80_dev6_LEFT_26",
+          "wide117_8m_dev6_RIGHT_18"
+        ],
+        "source_success_ids": [
+          "dev_task6_11",
+          "dev_task6_15",
+          "hold_task6_03",
+          "t502_field_sector2_offset1_T695_xplus",
+          "t502_field_sector2_offset2",
+          "t502_field_sector7_offset2"
+        ],
+        "collision": 12,
+        "timeout": 24,
+        "boundary": 15
+      },
+      "new": {
+        "state": "COMPLETE",
+        "audit": "PASS",
+        "safe": 97,
+        "total": 224,
+        "core_success": 0,
+        "lost403": null,
+        "source_success_ids": [],
+        "collision": 86,
+        "timeout": 41,
+        "boundary": 24
+      }
+    },
+    "original": {
+      "known": {
+        "state": "COMPLETE",
+        "audit": "PASS",
+        "safe": 399,
+        "total": 431,
+        "core_success": 387,
+        "lost403": [
+          "dev_task6_00",
+          "dev_task6_06",
+          "dev_task6_17",
+          "dev_task7_25",
+          "hold_task7_06",
+          "t502_field_sector0_offset2",
+          "t502_field_sector0_offset2_T695_xminus",
+          "t502_field_sector1_offset1",
+          "t502_field_sector5_offset1_T695_xminus",
+          "t502_field_sector7_offset1",
+          "wide117_80_dev6_LEFT_07"
+        ],
+        "source_success_ids": [
+          "dev_task6_05",
+          "dev_task6_11",
+          "dev_task6_15",
+          "hold_task6_03",
+          "t502_field_sector2_offset1_T695_xplus",
+          "t502_field_sector2_offset2",
+          "t502_field_sector7_offset2"
+        ],
+        "collision": 12,
+        "timeout": 20,
+        "boundary": 15
+      },
+      "new": {
+        "state": "COMPLETE",
+        "audit": "PASS",
+        "safe": 97,
+        "total": 224,
+        "core_success": 0,
+        "lost403": null,
+        "source_success_ids": [],
+        "collision": 85,
+        "timeout": 42,
+        "boundary": 25
+      }
+    }
+  },
+  "pareto": {
+    "control": {
+      "old_loss_delta": 2,
+      "joint_success_delta": -2,
+      "dominates": false,
+      "dominated": true
+    },
+    "original": {
+      "old_loss_delta": 6,
+      "joint_success_delta": -2,
+      "dominates": false,
+      "dominated": true
+    }
+  },
+  "epoch": 1795439137.7937562,
+  "next_question": "Matched whole-head optimization with unchanged deployment capacity; prior fixed-readout result remains a reference"
+}
