@@ -1,0 +1,95 @@
+{
+  "state": "PASS",
+  "planned224": true,
+  "valid": 220,
+  "invalid": 4,
+  "duplicates": 0,
+  "frozen_loader_checks": {
+    "parent": {
+      "sha256": "8efc9bdeae31866f7d5745948cc9169306a46525c172834f627d3874f29b5003",
+      "policy_hash": "11eca188a1c3ad9a738488df61fcf5cbfe5976e0198330a123524b342a9b69af",
+      "reload_and_owncarry_batch1_exact": true,
+      "tensor_bytes": 2621976
+    },
+    "T696": {
+      "sha256": "2c347f0a5e9d6a6a336b33358cec58e08f777fbf928809acfe2cff4ed295e16f",
+      "policy_hash": "ba24210efd3f33c8ff115f30d8bc0ecac345d7f51df4d9ff1c56777defb01b0a",
+      "reload_and_owncarry_batch1_exact": true,
+      "tensor_bytes": 5220528
+    },
+    "T703": {
+      "sha256": "19d2b4535d5f7e814e93ce3dfdab788048cf2fc10466c50c1703d29863ffe2b3",
+      "policy_hash": "317abfbf8cb2aa9ac1eca376405c3adbba5d6f5795968285c38161ff2fcb90e3",
+      "reload_and_owncarry_batch1_exact": true,
+      "tensor_bytes": 2779660
+    },
+    "refined108": {
+      "sha256": "e8bed4b7547a987539563d64e6916b77e8f3ee81688e6447d0d09ee1d1df364d",
+      "policy_hash": "7ede24dcda3207d912ca93c2471d067a562606574512dd93ee1f7c14d805f4a6",
+      "reload_and_owncarry_batch1_exact": true,
+      "tensor_bytes": 2783560
+    }
+  },
+  "canonical_worker_loader_binding": true,
+  "full_inspector_corruption_red": true,
+  "actual_pure_helper_cgroup": true,
+  "storage_worst_bytes": 3862298624,
+  "new_native": 0,
+  "new_Actor": 0,
+  "new_optimizer": 0,
+  "elapsed_seconds": 33.117435693740845,
+  "resource": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "11"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "13"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "15"
+      ],
+      [
+        "0",
+        "8"
+      ],
+      [
+        "0",
+        "9"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "CPUQuota": "800%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 8589934592,
+    "MemorySwapMax": 0,
+    "GPU": "cuda0geometry_only_cpu_exact_deployment"
+  }
+}

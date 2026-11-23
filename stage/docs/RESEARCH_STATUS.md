@@ -1,3 +1,5 @@
+2026-11-23 用户授权新T704四模型冻结新起点评测：T694父/T696/T703/refined108，224固定XY+yaw联合新起点每模型+28exact，共1008science/1064cmd/55,941,696physics最坏，0学习。真实零步初态/四模型reload/worker-loader/助手cgroup/完整audit腐坏拒绝预检PASS；4个pi跨界角表示原误拒已仅同4点零步纠正、原记录保留，全部224valid0duplicate，登记序列化上限拒绝及最小manifest引用修复保留，现REGISTERED尚未launch待source。各旧job保持结束，T698保留。新任务独立transport900、root学习0/native17:47:08/全停18:02:08，北京时间，更早action从严。见day_20261123/t704/PLAN/INITIALS/ENGINEERING_NOTES。
+
 2026-11-23 T703固定T702投影/逐中心半径对照结束：COMPLETE，原始结果与独立审计见day_20261123/t703/FINDINGS。T698保持；同T694父链控制研究、固定78已曝光，不自动下一任务。
 
 2026-11-23 用户继续授权新T703：冻结T702实际8维投影/1737中心/3474系数，仅用固定最近保护分离规则构造逐中心FP32存储半径、float64计算，新增157684B<MLP161584。0native0update入口/助手cgroup/worker-loader/投影batch1预检与过大半径反例检测PASS，REGISTERED尚未launch待精确source；原T702COMPLETE不重启，T698保持。新任务独立transport900s，旧campaign与T702额度不延；学习13:02:44/native14:17:44/全停14:32:44，北京时间，action更早从严。见day_20261123/t703/PLAN及actualstatus。
