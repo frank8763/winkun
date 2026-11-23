@@ -1,26 +1,83 @@
 {
-  "state": "PRELAUNCH_FIXED_REPRESENTATION",
-  "epoch": 1795428649.996692,
-  "diagnosis_complete_no_fix_proven": true,
-  "diagnosis_solver_iterations": 49,
-  "preflight": "PASS",
-  "new_formal_science_not_started": true,
+  "state": "ACTIVE",
+  "epoch": 1795428762.7592063,
+  "actual_status": {
+    "state": "ACTIVE",
+    "child": "fit",
+    "action": "main",
+    "child_pid": 476653,
+    "epoch": 1795428736.6519227
+  },
+  "locked_inputs": 5491,
+  "locked_dependencies": 1434,
+  "source_protocol_equal": true,
+  "input_SHA_stat_mismatches": 0,
+  "resource_probe": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "11"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "13"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "15"
+      ],
+      [
+        "0",
+        "8"
+      ],
+      [
+        "0",
+        "9"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "CPUQuota": "800%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 8589934592,
+    "MemorySwapMax": 0,
+    "GPU": "cuda0geometry_only_cpu_exact_deployment"
+  },
+  "formal_progress_not_double_accounted": {
+    "Solver_live": 0,
+    "Solver_shadow": 0,
+    "Solver_independent": 0,
+    "Candidate_live": 0,
+    "Candidate_shadow": 0,
+    "Candidate_independent": 0
+  },
+  "diagnosis_solver_iterations_separate": 49,
+  "absolute_learning_stop": 1795431740.3730187,
+  "absolute_native_stop": 1795445240.3730187,
+  "absolute_all_stop": 1795446140.3730187,
   "retained": "T698",
-  "absolute_limits": {
-    "id": "T707",
-    "state": "NEW_USER_AUTHORIZED_DIAGNOSIS_THEN_EQUIVALENT_REPRESENTATION",
-    "authorization_epoch": 1795428140.3730187,
-    "user_request": "\u4e0b\u4e00\u6b65\u7ee7\u7eed\u63a8\u8fdb",
-    "absolute_learning_stop": 1795431740.3730187,
-    "absolute_native_stop": 1795445240.3730187,
-    "absolute_all_stop": 1795446140.3730187,
-    "old_T706_failed_unchanged": true,
-    "old_deadlines_unchanged": true,
-    "diagnosis_max_seconds": 300,
-    "diagnosis_solver_iterations_cap": 160,
-    "new_formal_solver_each_cap": 256,
-    "new_formal_assignments_each_cap": 2,
-    "transport_new_cap": 900,
-    "assistant_selected_bounds": true
-  }
+  "no_automatic_next_science": true
 }

@@ -1,3 +1,5 @@
+2026-11-23 T707同容量固定隐藏层约束回放结束：FAILED，完整成对结果/原403保持/224曝光回归见day_20261123/t707/FINDINGS。T698保持，无自动下一任务。
+
 2026-11-23 用户要求继续后T707独立数值诊断完成：复现T706 NumericalError17，删闲置变量仍17、可逆缩放15，49iter/0Actor/0native，缓存OOM失败原件保留，300s上界记账，无根因或修复证明。新同anchor T707仅固定等价completed-square sourceSOC表示，其余目标/七源上界/rho/求解器/容差不变，toy数值预检/真实loader/worker/helper/审计腐坏拒绝PASS，已REGISTERED待精确source/唯一launch。旧T706FAILED不改，T698保持。学习19:02:20/native22:47:20/全停23:02:20北京时间，不重锚；独立formal256solveriter各类/2candidate，旧4089账冻结。见day_20261123/t707/PLAN。
 
 2026-11-23 T706同容量固定隐藏层约束回放结束：FAILED，完整成对结果/原403保持/224曝光回归见day_20261123/t706/FINDINGS。T698保持，无自动下一任务。
