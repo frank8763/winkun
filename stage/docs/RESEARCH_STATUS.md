@@ -1,3 +1,5 @@
+2026-11-23 用户直接授权新T702：固定8维Gaussian投影/共享半径、同T694父链403旧+7源、151KB有限保持容量反证。实际0native0update入口/助手cgroup/worker-loader/投影batch1预检PASS并REGISTERED，尚未launch，等待精确source；原T701R全部结束不重启，T698保持。新任务独立transport900s，不增旧campaign18000s上限；原根学习11:46:24/native13:01:24/全停13:16:24，北京时间，早于action从严。见day_20261123/t702/PLAN与actualstatus。
+
 2026-11-23 T701R固定四块原生验收结束：COMPLETE，0新拟合，逐块独立审计与核心/旧403保持/固定78见day_20261123/t701r/FINDINGS。原T701助手解释器FAILED保留；模型/fit已DAY_T701_PRIMARY_0远端核验，新native raw仅本地未称归档。T698保持，不自动下一实验。
 
 2026-11-23 T701拟合与独立审计PASS但原生前助手系统Python缺MuJoCo导致工程FAILED，0新native；81live/shadow/independent已结且模型主证据远端完整核验。新T701R只接四个未执行验收块，真实系统Python助手/注册testcgroup循环预检PASS，科学模型/算术/任务不改、0新拟合、原12:34全停绝不延。源传输仅剩127.23秒，pre60+final60、不再归档新raw；新native仍须实际完整审计后才可报告能力，T698保留。当前T701R已登记未launch待精确source。
