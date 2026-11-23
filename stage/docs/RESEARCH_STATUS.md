@@ -1,3 +1,5 @@
+2026-11-23 用户授权T705固定隐藏层同容量约束回放：两个最后线性层凸解(等权/七源loss不增约束)，两臂新增均161584B，最多34live/shadow/independent且累计<=4096。真实loader/worker/系统helper/完整审计腐坏拒绝及toyQP预检通过，toy数值证书准备拒绝已保存；REGISTERED尚未launch待精确source。完整known431+69exact及已曝光joint224+28exact，两臂总1504science/1560cmd/58211442physics最大，T704结束不重跑，T698保持。学习16:02:25/native19:37:25/全停19:52:25北京时间不延；见day_20261123/t705/PLAN。
+
 2026-11-23 T704冻结四模型新联合起点评测结束：COMPLETE，独立audit与完整成对/分组结果见day_20261123/t704/FINDINGS及PAIRED_RESULTS。0学习，T698保持；同图前瞻固定起点，非未知地图或独立世界样本，不自动下一任务。
 
 2026-11-23 用户授权新T704四模型冻结新起点评测：T694父/T696/T703/refined108，224固定XY+yaw联合新起点每模型+28exact，共1008science/1064cmd/55,941,696physics最坏，0学习。真实零步初态/四模型reload/worker-loader/助手cgroup/完整audit腐坏拒绝预检PASS；4个pi跨界角表示原误拒已仅同4点零步纠正、原记录保留，全部224valid0duplicate，登记序列化上限拒绝及最小manifest引用修复保留，现REGISTERED尚未launch待source。各旧job保持结束，T698保留。新任务独立transport900、root学习0/native17:47:08/全停18:02:08，北京时间，更早action从严。见day_20261123/t704/PLAN/INITIALS/ENGINEERING_NOTES。
