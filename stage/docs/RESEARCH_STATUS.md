@@ -1,3 +1,5 @@
+2026-11-23 T704冻结四模型新联合起点评测结束：COMPLETE，独立audit与完整成对/分组结果见day_20261123/t704/FINDINGS及PAIRED_RESULTS。0学习，T698保持；同图前瞻固定起点，非未知地图或独立世界样本，不自动下一任务。
+
 2026-11-23 用户授权新T704四模型冻结新起点评测：T694父/T696/T703/refined108，224固定XY+yaw联合新起点每模型+28exact，共1008science/1064cmd/55,941,696physics最坏，0学习。真实零步初态/四模型reload/worker-loader/助手cgroup/完整audit腐坏拒绝预检PASS；4个pi跨界角表示原误拒已仅同4点零步纠正、原记录保留，全部224valid0duplicate，登记序列化上限拒绝及最小manifest引用修复保留，现REGISTERED尚未launch待source。各旧job保持结束，T698保留。新任务独立transport900、root学习0/native17:47:08/全停18:02:08，北京时间，更早action从严。见day_20261123/t704/PLAN/INITIALS/ENGINEERING_NOTES。
 
 2026-11-23 T703固定T702投影/逐中心半径对照结束：COMPLETE，原始结果与独立审计见day_20261123/t703/FINDINGS。T698保持；同T694父链控制研究、固定78已曝光，不自动下一任务。
