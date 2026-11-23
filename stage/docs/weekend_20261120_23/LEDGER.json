@@ -1,7 +1,7 @@
 {
   "physics": 391438807,
   "commands": 17274,
-  "science_seconds": 71226.48684434319,
+  "science_seconds": 73614.7955434742,
   "audit_seconds": 7157.053608417511,
   "transport_seconds": 17992.76906633377,
   "Actor_live": 4089,
@@ -1255,14 +1255,26 @@
     },
     {
       "id": "T710",
-      "state": "RESERVED",
+      "state": "FAILED",
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t710_whole_head_replay",
       "Actor_old_ledger_cap_unchanged": true,
       "separate_gradient_each_cap": 320,
       "separate_optimizer_attempts_each_cap": 256,
       "max_physics": 58211442,
       "max_commands": 1560,
-      "transport_separate_cap": 900
+      "transport_separate_cap": 900,
+      "accounted": {
+        "physics": 0,
+        "commands": 0,
+        "science_seconds": 2388.308699131012,
+        "audit_seconds": 0,
+        "Gradient_live": 320,
+        "Gradient_shadow": 285,
+        "Gradient_independent": 0,
+        "Optimizer_live": 158,
+        "Optimizer_shadow": 140,
+        "Optimizer_independent": 0
+      }
     }
   ]
 }
