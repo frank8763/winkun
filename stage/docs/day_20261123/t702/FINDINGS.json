@@ -1,0 +1,74 @@
+{
+  "state": "COMPLETE",
+  "rows": [
+    {
+      "block": "known_proj8",
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "success": 410,
+      "total": 431,
+      "core": 396,
+      "lost403": 0,
+      "source_success": 7
+    },
+    {
+      "block": "new_proj8",
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "success": 42,
+      "total": 78,
+      "core": 0,
+      "lost403": null,
+      "source_success": 0
+    }
+  ],
+  "fit": {
+    "state": "COMPLETE",
+    "finals": {
+      "proj8": {
+        "model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t702_projected_global/fit/proj8.pt.gz",
+          "sha256": "82b0e3c7694bb4070176dd4c723c71c627121a2c4dd7941c622cf98e3ed7b858",
+          "bytes": 1969003,
+          "policy_hash": "1608c686a18648f42928b25d677a3aacc379abb3948c820d74f0a5da9ed1ee4d",
+          "joint_hash": "e850f3c51570d6201f0d929ae0e3b592605b036c3de545a4252d5402849f5471"
+        },
+        "construction": {
+          "seed": 202611230702,
+          "dimension": 8,
+          "centers": 1737,
+          "protected_decisions": 81956,
+          "projection_hash": "1ae7716cc402de3b5bfff9999e58ea4fcc73aa5d31c4478931deed17d8266dad",
+          "projected_data_hash": "c5edb56139b27ed1e66a50c6f26b81e8fe4580c84faa952c5be7356eee60f26e",
+          "shared_radius": 0.019352226674383324,
+          "minimum_squared_separation": 0.0015598029040262951,
+          "old_basis_exact_zero": true,
+          "source_K_exact_identity": true,
+          "state_hash": "4d23a07b065ec41c95e1b45bb1b92597b2d71c65314d888afbb45f90143bf1f4",
+          "added_tensor_bytes": 150744,
+          "one_seed_one_dimension_one_radius_rule": true,
+          "new_Adam": 0,
+          "new_RL": 0
+        },
+        "metrics": {
+          "total_tensor_bytes": 2772720,
+          "added_tensor_bytes": 150744,
+          "common_parent_bytes": 2621976,
+          "complete403plus7_owncarry_command_gate": true,
+          "old_decisions": 81956,
+          "source_decisions": 1737,
+          "batch1_CPU15_median_ms": 0.446424,
+          "batch1_CPU15_p95_ms": 0.62095625,
+          "peak_process_rss_bytes": 1069707264,
+          "peak_includes_training_cache_and_Python": true,
+          "projection_matrix_and_shared_radius_counted": true
+        }
+      }
+    }
+  },
+  "retained": "T698",
+  "new78_exposed_regression": true,
+  "raw": "ALL_LOCAL_RETAINED_PRIMARY_ONLY_REMOTE_IF_RECEIPT_PASS",
+  "no_novelty_or_unknown_map_claim": true,
+  "epoch": 1795404980.50281
+}
