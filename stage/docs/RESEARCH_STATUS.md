@@ -1,3 +1,5 @@
+2026-11-23 用户继续授权新T703：冻结T702实际8维投影/1737中心/3474系数，仅用固定最近保护分离规则构造逐中心FP32存储半径、float64计算，新增157684B<MLP161584。0native0update入口/助手cgroup/worker-loader/投影batch1预检与过大半径反例检测PASS，REGISTERED尚未launch待精确source；原T702COMPLETE不重启，T698保持。新任务独立transport900s，旧campaign与T702额度不延；学习13:02:44/native14:17:44/全停14:32:44，北京时间，action更早从严。见day_20261123/t703/PLAN及actualstatus。
+
 2026-11-23 T702单一8维投影/共享半径对照结束：COMPLETE，原始结果与独立审计见day_20261123/t702/FINDINGS。T698保持；同T694父链控制研究、固定78已曝光，不自动下一任务。
 
 2026-11-23 用户直接授权新T702：固定8维Gaussian投影/共享半径、同T694父链403旧+7源、151KB有限保持容量反证。实际0native0update入口/助手cgroup/worker-loader/投影batch1预检PASS并REGISTERED，尚未launch，等待精确source；原T701R全部结束不重启，T698保持。新任务独立transport900s，不增旧campaign18000s上限；原根学习11:46:24/native13:01:24/全停13:16:24，北京时间，早于action从严。见day_20261123/t702/PLAN与actualstatus。

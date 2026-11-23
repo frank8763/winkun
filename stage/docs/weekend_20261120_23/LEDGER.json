@@ -1,7 +1,7 @@
 {
   "physics": 253385560,
   "commands": 11697,
-  "science_seconds": 52453.91290974617,
+  "science_seconds": 52575.91290974617,
   "audit_seconds": 5380.999456167221,
   "transport_seconds": 17992.76906633377,
   "Actor_live": 4061,
@@ -977,7 +977,14 @@
     }
   ],
   "charged_daytime_preparation": [
-    "T700R_T701_ZERO_UPDATE_PREFLIGHT_CONSERVATIVE10S"
+    "T700R_T701_ZERO_UPDATE_PREFLIGHT_CONSERVATIVE10S",
+    {
+      "id": "T703_PREFLIGHT_CAP",
+      "science_seconds": 122,
+      "accounting": "conservative120s_cgroup_cap_plus2s_synthetic_radius_check_not_claim_actual_elapsed",
+      "new_Actor": 0,
+      "new_native": 0
+    }
   ],
   "new_monday_experiments": [
     {
@@ -1027,6 +1034,15 @@
         "Actor_shadow": 1,
         "Actor_independent": 1
       }
+    },
+    {
+      "id": "T703",
+      "state": "RESERVED",
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t703_projected_local",
+      "Actor_each_cap": 1,
+      "max_physics": 18246759,
+      "max_commands": 613,
+      "transport_separate_cap": 900
     }
   ]
 }
