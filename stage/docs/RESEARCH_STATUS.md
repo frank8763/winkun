@@ -1,3 +1,5 @@
+2026-11-23 用户授权T706同容量逐源约束回放：meanold vs已有Group-DRO worstoldID目标适配，两臂七源逐IDloss不增，均161584B新增部署张量，不冒称新机制/超越论文。旧Actor4089/4089/1785及4096cap冻结；新T706独立最多每类256solveriters+2candidateassignments，0Adam/RL/Value。真实loader/worker/helper/完整审计腐坏拒绝及toy conic可行/不可行红绿PASS，隔离Clarabel/scipy1434依赖SHA锁定，REGISTERED尚未launch待精确source。两臂完整431+69exact及224曝光回归+28exact/58211442physics1560cmd最大。学习18:09:03/native21:54:03/全停22:09:03北京时间，原T705等旧任务不延。T698保持，见day_20261123/t706/PLAN。
+
 2026-11-23 T705同容量固定隐藏层约束回放结束：COMPLETE，完整成对结果/原403保持/224曝光回归见day_20261123/t705/FINDINGS。T698保持，无自动下一任务。
 
 2026-11-23 用户授权T705固定隐藏层同容量约束回放：两个最后线性层凸解(等权/七源loss不增约束)，两臂新增均161584B，最多34live/shadow/independent且累计<=4096。真实loader/worker/系统helper/完整审计腐坏拒绝及toyQP预检通过，toy数值证书准备拒绝已保存；REGISTERED尚未launch待精确source。完整known431+69exact及已曝光joint224+28exact，两臂总1504science/1560cmd/58211442physics最大，T704结束不重跑，T698保持。学习16:02:25/native19:37:25/全停19:52:25北京时间不延；见day_20261123/t705/PLAN。
