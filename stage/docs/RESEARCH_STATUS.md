@@ -1,3 +1,5 @@
+2026-11-23 用户检查并继续后T708新同容量A-GEM平均旧参考vs最差旧ID参考128步：T707AlmostSolved18拒绝/0Actor0native原失败保留，不再更换锥表示。两臂均161584B新增/同B0隐藏冻结，源ID平均loss梯度、lr=1/Lsource，无SGD搜索；显式新增512梯度求值/256手动参数步各live-shadow-independent，旧4089/4089/1785与4096cap冻结。真实loader/worker/helper/native审计腐坏拒绝及projection数值edge预检PASS，REGISTERED尚未launch待精确source。两臂完整431+69exact与224曝光回归+28exact，主比较保持-迁移Pareto而非零遗忘，A-GEM既有方法适配非全论文复现/新颖性。学习19:24:07/native23:09:07/全停23:24:07北京时间精确见协议，T698保持，见day_20261123/t708/PLAN。
+
 2026-11-23 T707同容量固定隐藏层约束回放结束：FAILED，完整成对结果/原403保持/224曝光回归见day_20261123/t707/FINDINGS。T698保持，无自动下一任务。
 
 2026-11-23 用户要求继续后T707独立数值诊断完成：复现T706 NumericalError17，删闲置变量仍17、可逆缩放15，49iter/0Actor/0native，缓存OOM失败原件保留，300s上界记账，无根因或修复证明。新同anchor T707仅固定等价completed-square sourceSOC表示，其余目标/七源上界/rho/求解器/容差不变，toy数值预检/真实loader/worker/helper/审计腐坏拒绝PASS，已REGISTERED待精确source/唯一launch。旧T706FAILED不改，T698保持。学习19:02:20/native22:47:20/全停23:02:20北京时间，不重锚；独立formal256solveriter各类/2candidate，旧4089账冻结。见day_20261123/t707/PLAN。
