@@ -1,0 +1,81 @@
+{
+  "state": "COMPLETE",
+  "rows": [
+    {
+      "block": "known_proj8",
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "success": 410,
+      "total": 431,
+      "core": 396,
+      "lost403": 0,
+      "source_success": 7
+    },
+    {
+      "block": "new_proj8",
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "success": 45,
+      "total": 78,
+      "core": 0,
+      "lost403": null,
+      "source_success": 0
+    }
+  ],
+  "fit": {
+    "state": "COMPLETE",
+    "finals": {
+      "proj8": {
+        "model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t703_projected_local/fit/proj8.pt.gz",
+          "sha256": "19d2b4535d5f7e814e93ce3dfdab788048cf2fc10466c50c1703d29863ffe2b3",
+          "bytes": 1974765,
+          "policy_hash": "317abfbf8cb2aa9ac1eca376405c3adbba5d6f5795968285c38161ff2fcb90e3",
+          "joint_hash": "0c0b45aa025b3ab19c5af20372656894d714e2dffb4c0c5bff815e94646c0de6"
+        },
+        "construction": {
+          "projection_reference_sha256": "82b0e3c7694bb4070176dd4c723c71c627121a2c4dd7941c622cf98e3ed7b858",
+          "projection_hash": "1ae7716cc402de3b5bfff9999e58ea4fcc73aa5d31c4478931deed17d8266dad",
+          "projected_data_hash": "c5edb56139b27ed1e66a50c6f26b81e8fe4580c84faa952c5be7356eee60f26e",
+          "centers_hash": "2dfc5493f471d5120b5c91cddcb6d81b5e8cf8868a4cf61d5910498bc62fe26e",
+          "unchanged_source_coefficients_hash": "2053740930815f8df9ecbee420002bcce56ab1f87c047d4f898479fea6fa958c",
+          "radius_dtype": "float32_storage_float64_evaluation",
+          "radii_hash": "8372932bc79d2927d02049478f585955d1f5ad61e22d5253903f67e15f0ff4fd",
+          "minimum_radius": 0.019352227449417114,
+          "median_radius": 0.4068743586540222,
+          "maximum_radius": 2.8542709350585938,
+          "expansion_min": 1.0000000400488174,
+          "expansion_median": 21.024679252677657,
+          "expansion_max": 147.4905695909821,
+          "old_basis_exact_zero": true,
+          "source_K_exact_identity": true,
+          "protected_decisions": 81956,
+          "centers": 1737,
+          "state_hash": "dc0d42411085888f77b98c4df7f3a77fa57be154e34158bbcebb02098cf1b372",
+          "added_tensor_bytes": 157684,
+          "no_seed_dimension_radius_search": true,
+          "new_Adam": 0,
+          "new_RL": 0
+        },
+        "metrics": {
+          "total_tensor_bytes": 2779660,
+          "added_tensor_bytes": 157684,
+          "common_parent_bytes": 2621976,
+          "complete403plus7_owncarry_command_gate": true,
+          "old_decisions": 81956,
+          "source_decisions": 1737,
+          "batch1_CPU15_median_ms": 0.440492,
+          "batch1_CPU15_p95_ms": 0.460676,
+          "peak_process_rss_bytes": 1067208704,
+          "peak_includes_training_cache_and_Python": true,
+          "projection_matrix_and_all_radii_counted": true
+        }
+      }
+    }
+  },
+  "retained": "T698",
+  "new78_exposed_regression": true,
+  "raw": "ALL_LOCAL_RETAINED_PRIMARY_ONLY_REMOTE_IF_RECEIPT_PASS",
+  "no_novelty_or_unknown_map_claim": true,
+  "epoch": 1795409405.7670538
+}
