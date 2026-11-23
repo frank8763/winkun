@@ -1,20 +1,20 @@
 {
-  "state": "T699_FAILED_PRESERVED_CONTINUATION_REGISTERED_PRELAUNCH",
-  "epoch": 1795381539.0423317,
+  "state": "CONTINUATION_HEALTHY_REMAINING_KNOWN_CAPACITY_TESTS",
+  "epoch": 1795387056.1928623,
   "unit": "stage-t699.service",
   "driver_pid": 41450,
   "helper_pid": 41468,
   "status": {
     "state": "ACTIVE",
-    "child_pid": 44956,
-    "pid": 44956,
-    "driver_pid": 41450,
-    "child": "known_plain",
+    "child_pid": 188445,
+    "pid": 188445,
+    "driver_pid": 151984,
+    "child": "known_replay_434",
     "action": "main",
-    "epoch": 1795365401.9530284,
-    "physics": 3430710,
-    "commands": 139,
-    "completed": 125
+    "epoch": 1795387052.550611,
+    "physics": 2233547,
+    "commands": 104,
+    "completed": 90
   },
   "counts_live_progress_not_reaccounted": {
     "live": 3841,
@@ -293,5 +293,269 @@
     "red_projected500": 462.2316784998475,
     "green_projected500": 36.00012400056585,
     "only_outside_root_global_count_cached": true
+  },
+  "continuation_current": {
+    "state": "CONTINUATION_HEALTHY_REMAINING_KNOWN_CAPACITY_TESTS",
+    "epoch": 1795387056.192418,
+    "unit": "stage-t699-continuation.service",
+    "driver_pid": 151984,
+    "helper_pid": 151997,
+    "status": {
+      "state": "ACTIVE",
+      "child_pid": 188445,
+      "pid": 188445,
+      "driver_pid": 151984,
+      "child": "known_replay_434",
+      "action": "main",
+      "epoch": 1795387052.550611,
+      "physics": 2233547,
+      "commands": 104,
+      "completed": 90
+    },
+    "resource_probe": {
+      "state": "PASS",
+      "stage_cpus": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "stage_physical_cores": [
+        [
+          "0",
+          "10"
+        ],
+        [
+          "0",
+          "11"
+        ],
+        [
+          "0",
+          "12"
+        ],
+        [
+          "0",
+          "13"
+        ],
+        [
+          "0",
+          "14"
+        ],
+        [
+          "0",
+          "15"
+        ],
+        [
+          "0",
+          "8"
+        ],
+        [
+          "0",
+          "9"
+        ]
+      ],
+      "phase_process_metadata_only": [],
+      "CPUQuota": "800%",
+      "Nice": 19,
+      "CPUWeight": 10,
+      "MemoryMax": 8589934592,
+      "MemorySwapMax": 0,
+      "GPU": "unused_CPU_only"
+    },
+    "processes": [
+      {
+        "pid": 151984,
+        "cpus": [
+          15
+        ]
+      },
+      {
+        "pid": 151997,
+        "cpus": [
+          15
+        ]
+      },
+      {
+        "pid": 151998,
+        "cpus": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "pid": 152023,
+        "cpus": [
+          8
+        ]
+      },
+      {
+        "pid": 152028,
+        "cpus": [
+          9
+        ]
+      },
+      {
+        "pid": 152036,
+        "cpus": [
+          10
+        ]
+      },
+      {
+        "pid": 152044,
+        "cpus": [
+          11
+        ]
+      },
+      {
+        "pid": 152052,
+        "cpus": [
+          12
+        ]
+      },
+      {
+        "pid": 152058,
+        "cpus": [
+          13
+        ]
+      },
+      {
+        "pid": 152066,
+        "cpus": [
+          14
+        ]
+      }
+    ],
+    "original_T699_failed_and_known_plain_audit_expired": true,
+    "original_science_not_repeated": true,
+    "new_Actor": 0,
+    "new_optimizer": 0,
+    "original_root_absolute": 1795393002.6544747,
+    "native_stop": 1795392900,
+    "source_pending": {
+      "state": "SOURCE300_PENDING_UNTIL_CONTINUATION_ALL_EXIT",
+      "remote_commit": "bf6fad8ccb30fc2d6ffe4d135a26495c13716014",
+      "root_tree": "b367184fdd10bf017fa292daa89640d503551c99",
+      "source_shell_actual_exit0": true,
+      "charge": 300,
+      "accounted": false
+    },
+    "all_original_input_SHA_count": 5384,
+    "all_original_input_SHA_checked": true,
+    "next_action": "Only read actual continuation status/resources/locked SHA. Next fixed blocks are same seven original new-start suites, then remaining known capacity/seed suites if original worst-wall admission fits. Never retry original expired plain audit, rerun fit/native, change model/task/deadline or archive/source in parallel. Original T699 remains FAILED; final reports distinguish verified/provisional/missing.",
+    "actual_worker_pids": [
+      188454,
+      188455,
+      188456,
+      188462,
+      188464,
+      188466,
+      188468
+    ],
+    "all_worker_affinities_correct": true,
+    "locked_input_sha_mismatches": 0,
+    "original_child_deadlines": {
+      "absolute_native_stop": 1795389540.3262825,
+      "absolute_all_stop": 1795389960.326285
+    },
+    "original_native_remaining_seconds": 2175.9441878795624,
+    "no_parallel_archive_or_source": true,
+    "retained": "T698",
+    "no_new_learning": true,
+    "completed_audited_blocks": [
+      {
+        "child": "known_replay_1736",
+        "audit": "PASS",
+        "science_rows": 500,
+        "physics": 11077315,
+        "commands": 514
+      },
+      {
+        "child": "new_historical_A",
+        "audit": "PASS",
+        "science_rows": 85,
+        "physics": 2249276,
+        "commands": 99
+      },
+      {
+        "child": "new_historical_parent",
+        "audit": "PASS",
+        "science_rows": 85,
+        "physics": 2263209,
+        "commands": 99
+      },
+      {
+        "child": "new_plain",
+        "audit": "PASS",
+        "science_rows": 85,
+        "physics": 2304189,
+        "commands": 99
+      },
+      {
+        "child": "new_replay_108",
+        "audit": "PASS",
+        "science_rows": 85,
+        "physics": 2313123,
+        "commands": 99
+      },
+      {
+        "child": "new_replay_1736",
+        "audit": "PASS",
+        "science_rows": 85,
+        "physics": 2373727,
+        "commands": 99
+      },
+      {
+        "child": "new_replay_1736_seed2",
+        "audit": "PASS",
+        "science_rows": 85,
+        "physics": 2079168,
+        "commands": 99
+      },
+      {
+        "child": "new_replay_434",
+        "audit": "PASS",
+        "science_rows": 85,
+        "physics": 2226901,
+        "commands": 99
+      }
+    ],
+    "remaining_native_action_seconds": 2484.1338560581207,
+    "comparison_not_yet_complete": true,
+    "no_extra_science_archive_source": true,
+    "no_parallel_archive_source": true,
+    "all_seven_new_start_suites_audited": true,
+    "overall_comparison_not_yet_complete": true,
+    "completed_audited_block_names": [
+      "known_replay_108",
+      "known_replay_1736",
+      "new_historical_A",
+      "new_historical_parent",
+      "new_plain",
+      "new_replay_108",
+      "new_replay_1736",
+      "new_replay_1736_seed2",
+      "new_replay_434"
+    ],
+    "no_parallel_source_archive": true
+  },
+  "original_failure_notified": true,
+  "final_monday_review": {
+    "state": "ALL_SCIENCE_STOPPED_AUTOMATION_DELETED",
+    "retained": "T698",
+    "continuation": "COMPLETE",
+    "original": "FAILED_PLAIN_AUDIT_EXPIRED",
+    "review": "MONDAY_REVIEW_20261123.md",
+    "epoch": 1795395406.9794443,
+    "final_model_raw_backup": "LOCAL_RETAINED_NOT_REMOTE_VERIFIED"
   }
 }

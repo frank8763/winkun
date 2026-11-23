@@ -1,9 +1,9 @@
 {
-  "physics": 153092697,
-  "commands": 7109,
-  "science_seconds": 39411.72365689278,
-  "audit_seconds": 4053.2724924087524,
-  "transport_seconds": 16361.381383180618,
+  "physics": 213596731,
+  "commands": 9858,
+  "science_seconds": 46814.89197063446,
+  "audit_seconds": 4557.368479013443,
+  "transport_seconds": 16661.38138318062,
   "Actor_live": 3979,
   "Actor_shadow": 3979,
   "Actor_independent": 1675,
@@ -839,14 +839,43 @@
     },
     {
       "id": "T699_CONTINUATION",
-      "state": "RESERVED",
+      "state": "COMPLETE",
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t699_unexecuted_continuation",
       "max_physics": 86485204,
       "max_commands": 2749,
       "Actor_each_cap": 0,
       "Value_each_cap": 0,
       "original_T699_root_absolute_unchanged": 1795393002.6544747,
-      "completed_children": []
+      "completed_children": [
+        "known_replay_1736_evaluate",
+        "known_replay_1736_audit",
+        "new_historical_parent_evaluate",
+        "new_historical_parent_audit",
+        "new_historical_A_evaluate",
+        "new_historical_A_audit",
+        "new_plain_evaluate",
+        "new_plain_audit",
+        "new_replay_1736_evaluate",
+        "new_replay_1736_audit",
+        "new_replay_108_evaluate",
+        "new_replay_108_audit",
+        "new_replay_434_evaluate",
+        "new_replay_434_audit",
+        "new_replay_1736_seed2_evaluate",
+        "new_replay_1736_seed2_audit",
+        "known_replay_108_evaluate",
+        "known_replay_108_audit",
+        "known_replay_434_evaluate",
+        "known_replay_434_audit",
+        "known_replay_1736_seed2_evaluate",
+        "known_replay_1736_seed2_audit"
+      ],
+      "accounted": {
+        "physics": 60504034,
+        "commands": 2749,
+        "science_seconds": 7403.168313741684,
+        "audit_seconds": 504.09598660469055
+      }
     }
   ],
   "charged_source_sync_commits": [
@@ -898,13 +927,15 @@
     "a1718ae7e7b4e10c178a58a142fa00a4864c109d",
     "2d590727dede48196f5efa62685b05530a42e95d",
     "ea8e7f224e285b2e1e4129efd65c8a3c21e040b2",
-    "2f511c4b8d77860ab099706022acb9ce35bb70bf"
+    "2f511c4b8d77860ab099706022acb9ce35bb70bf",
+    "bf6fad8ccb30fc2d6ffe4d135a26495c13716014"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"
   ],
   "transport_remote_commits_accounted": [
     "de3bea058b9f48e8bb590338307ea999faf5e795",
-    "bba37c8c895e98006c6b82fdfb18548b19399602"
+    "bba37c8c895e98006c6b82fdfb18548b19399602",
+    "bf6fad8ccb30fc2d6ffe4d135a26495c13716014"
   ]
 }
