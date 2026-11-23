@@ -1,3 +1,5 @@
+2026-11-23 用户要求继续后T707独立数值诊断完成：复现T706 NumericalError17，删闲置变量仍17、可逆缩放15，49iter/0Actor/0native，缓存OOM失败原件保留，300s上界记账，无根因或修复证明。新同anchor T707仅固定等价completed-square sourceSOC表示，其余目标/七源上界/rho/求解器/容差不变，toy数值预检/真实loader/worker/helper/审计腐坏拒绝PASS，已REGISTERED待精确source/唯一launch。旧T706FAILED不改，T698保持。学习19:02:20/native22:47:20/全停23:02:20北京时间，不重锚；独立formal256solveriter各类/2candidate，旧4089账冻结。见day_20261123/t707/PLAN。
+
 2026-11-23 T706同容量固定隐藏层约束回放结束：FAILED，完整成对结果/原403保持/224曝光回归见day_20261123/t706/FINDINGS。T698保持，无自动下一任务。
 
 2026-11-23 用户授权T706同容量逐源约束回放：meanold vs已有Group-DRO worstoldID目标适配，两臂七源逐IDloss不增，均161584B新增部署张量，不冒称新机制/超越论文。旧Actor4089/4089/1785及4096cap冻结；新T706独立最多每类256solveriters+2candidateassignments，0Adam/RL/Value。真实loader/worker/helper/完整审计腐坏拒绝及toy conic可行/不可行红绿PASS，隔离Clarabel/scipy1434依赖SHA锁定，REGISTERED尚未launch待精确source。两臂完整431+69exact及224曝光回归+28exact/58211442physics1560cmd最大。学习18:09:03/native21:54:03/全停22:09:03北京时间，原T705等旧任务不延。T698保持，见day_20261123/t706/PLAN。

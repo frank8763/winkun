@@ -1,0 +1,299 @@
+{
+  "mode": "red",
+  "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t707_numerical_replay/diagnose.py\", line 48, in main\n    try:W,returned=F.conic(stat,W0,'mean_taskwise',guard,lambda st,k,kind:events.append(dict(stage=st,iteration=k,kind=kind)),time_limit=60.)\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t706_taskwise_replay/fit.py\", line 70, in conic\n    assert str(solution.status)=='Solved',('Fixed conic solve failed',str(solution.status),solution.iterations)\nAssertionError: ('Fixed conic solve failed', 'NumericalError', 17)\n",
+  "curves": [
+    {
+      "iteration": 0,
+      "gap": 2475586.470492893,
+      "primal": 0.04208794407062555,
+      "dual": 4.464768768086788e-16
+    },
+    {
+      "iteration": 1,
+      "gap": 195254.21003412886,
+      "primal": 0.003520384926523483,
+      "dual": 1.232350104256944e-15
+    },
+    {
+      "iteration": 2,
+      "gap": 19053.84078122722,
+      "primal": 0.00035006506712401294,
+      "dual": 4.24244895586836e-15
+    },
+    {
+      "iteration": 3,
+      "gap": 245.33707203589233,
+      "primal": 4.521228325641325e-06,
+      "dual": 1.1854317712160812e-13
+    },
+    {
+      "iteration": 4,
+      "gap": 30.36276099235718,
+      "primal": 5.326651606787893e-07,
+      "dual": 1.0381080865163154e-13
+    },
+    {
+      "iteration": 5,
+      "gap": 7.770449535167117,
+      "primal": 6.624608940584583e-08,
+      "dual": 4.515932425488414e-14
+    },
+    {
+      "iteration": 6,
+      "gap": 0.8495051986138107,
+      "primal": 4.487598865492448e-09,
+      "dual": 1.1750698473013279e-14
+    },
+    {
+      "iteration": 7,
+      "gap": 0.2025523298951175,
+      "primal": 3.455016751763823e-10,
+      "dual": 2.0573509177266663e-14
+    },
+    {
+      "iteration": 8,
+      "gap": 0.020791266911758588,
+      "primal": 5.485308534326999e-12,
+      "dual": 1.048299914047851e-14
+    },
+    {
+      "iteration": 9,
+      "gap": 0.0011175296988288341,
+      "primal": 1.0089516011279506e-12,
+      "dual": 6.67325562278269e-15
+    },
+    {
+      "iteration": 10,
+      "gap": 4.222416724786182e-05,
+      "primal": 2.3086169171138617e-12,
+      "dual": 7.266824496766059e-15
+    },
+    {
+      "iteration": 11,
+      "gap": 1.7150102338270301e-06,
+      "primal": 4.80755550276171e-11,
+      "dual": 7.016099126544546e-15
+    },
+    {
+      "iteration": 12,
+      "gap": 8.373602777833611e-08,
+      "primal": 1.6211681095574893e-09,
+      "dual": 7.132411436409788e-15
+    },
+    {
+      "iteration": 13,
+      "gap": 4.560447575130411e-09,
+      "primal": 1.2478189286084005e-07,
+      "dual": 6.1484165047677496e-15
+    },
+    {
+      "iteration": 14,
+      "gap": 2.9474256368899887e-10,
+      "primal": 7.721219437238618e-06,
+      "dual": 7.350693743619062e-15
+    },
+    {
+      "iteration": 15,
+      "gap": 3.6253333668412324e-11,
+      "primal": 5.681776964294934e-05,
+      "dual": 6.8188686041183586e-15
+    },
+    {
+      "iteration": 16,
+      "gap": 2.1331825195147758e-12,
+      "primal": 0.0002383955316123697,
+      "dual": 6.6008392578681124e-15
+    },
+    {
+      "iteration": 17,
+      "gap": 6.402656183013278e-13,
+      "primal": 0.006963789082694128,
+      "dual": 6.565927635384231e-15
+    }
+  ],
+  "events": [
+    {
+      "stage": "BEFORE",
+      "iteration": 1,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 1,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 2,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 2,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 3,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 3,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 4,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 4,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 5,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 5,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 6,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 6,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 7,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 7,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 8,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 8,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 9,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 9,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 10,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 10,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 11,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 11,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 12,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 12,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 13,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 13,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 14,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 14,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 15,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 15,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 16,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 16,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "BEFORE",
+      "iteration": 17,
+      "kind": "conic_iteration"
+    },
+    {
+      "stage": "AFTER",
+      "iteration": 17,
+      "kind": "conic_iteration"
+    }
+  ],
+  "matrix": {
+    "variables": 219,
+    "rows": 1540,
+    "nonzeros": 334194,
+    "free_last_column": true
+  },
+  "raw_status": "NumericalError",
+  "iterations": 17,
+  "no_actor_assignments": true,
+  "no_native": true,
+  "new_authorized_diagnosis_not_original_retry": true,
+  "epoch": 1795428147.2877986,
+  "certificate": null
+}
