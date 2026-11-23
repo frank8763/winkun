@@ -1,12 +1,22 @@
 {
   "state": "ACTIVE_FIT_INDEPENDENT_AUDIT",
-  "checked_epoch": 1795397208.6838918,
+  "checked_epoch": 1795397367.5263767,
   "actual_status": {
-    "state": "ACTIVE",
-    "child": "fit",
-    "action": "audit",
-    "child_pid": 213528,
-    "epoch": 1795397033.9120824
+    "state": "FAILED",
+    "error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t699_unexecuted_continuation/run.py\", line 153, in driver\n    assert read(DOC/'AFFINITY_GUARD.json')['pid']==h.pid\n  File \"/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/experiments/t699_matched_value/t699_common.py\", line 15, in read\n    value = json.loads(Path(path).read_text())\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1134, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/day_20261123/t701/AFFINITY_GUARD.json'\n",
+    "missing_unexecuted_blocks": [],
+    "scientific_pids": [
+      214426
+    ],
+    "all_scientific_processes_stopped": true,
+    "helper_pid": 214426,
+    "helper_stopped": true,
+    "original_T699_stays_FAILED": true,
+    "old_plain_audit_stays_FAILED_EXPIRED": true,
+    "new_Actor": 0,
+    "new_optimizer": 0,
+    "retained": "T698",
+    "epoch": 1795397287.6681452
   },
   "MainPID": 212043,
   "finalizer_pid": 213483,
@@ -17,5 +27,12 @@
   "quant32_added_tensor_bytes": 1320120,
   "complete_native_not_yet_passed": true,
   "retained": "T698",
-  "absolute_all_stop": 1795408454.5318966
+  "absolute_all_stop": 1795408454.5318966,
+  "locked_inputs_verified": 5395,
+  "locked_input_mismatches": 0,
+  "actor_before": {
+    "live": 81,
+    "shadow": 81,
+    "independent": 81
+  }
 }

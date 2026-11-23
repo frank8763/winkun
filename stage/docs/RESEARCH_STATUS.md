@@ -1,3 +1,5 @@
+2026-11-23 T701拟合与独立审计PASS但原生前助手系统Python缺MuJoCo导致工程FAILED，0新native；81live/shadow/independent已结且模型主证据远端完整核验。新T701R只接四个未执行验收块，真实系统Python助手/注册testcgroup循环预检PASS，科学模型/算术/任务不改、0新拟合、原12:34全停绝不延。源传输仅剩127.23秒，pre60+final60、不再归档新raw；新native仍须实际完整审计后才可报告能力，T698保留。当前T701R已登记未launch待精确source。
+
 2026-11-23 周一新授权“下一步开始”：T700R新授权独立外部复核500条旧plain记录PASS（27.351秒/0新物理与学习），确认391/407核心、丢原403中7、7源全成功；原T699/T700 FAILED与旧过期审计原件不变。T701新白天有界比较已唯一launch，fp32中心压缩与小回放全批L-BFGS精修，同T694父/403旧+7源/固定已曝光431与78，当前fit，尚无新原生能力结果。81live/shadow/independent上限、不重启旧job、不延旧截止；新T701学习09:54/native12:24/全停12:34（精确absolute见新协议）。主/影子压缩几何已一致，逐位命令门仍进行；T698仍保留。另有单次资源/退后收尾服务，不重建周期自动化。见day_20261123/t701/PLAN与实际status。
 
 2026-11-23 T699原root FAILED：plain500条原生完成11001515physics/514cmd，但独立audit360s超时、旧child已过absolute不重试。目录重复全扫描红462s/绿36s已复现；仅修工程guard在新continuation衔接原未执行blocks，0新学习、不重已消费物理、不延原root08:16:42及native08:15，预先声明满容量known及完整新起点套件优先。T698仍保留，plain结果仅provisional，不能声称完整对照通过。见overnight_20261122_23/continuation。
