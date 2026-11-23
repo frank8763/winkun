@@ -1,3 +1,5 @@
+2026-11-23 用户要求认真思考继续后T709新同容量诱导状态覆盖对照：固定T708两候选各51旧ID完整历史共102条，不按成功失败选择；保持403每ID权重/7源/218参数读出/161584B，复原T705 balanced同算术逐位control后复用完整验收，仅新candidate完整431+69exact与224+28exact。真实loader/worker/系统helper/完整inspector腐坏拒绝及toySPD红绿PASS，尚未登记launch。原T691诱导监督KL失败保留，此为已有方法单次覆盖消融非新DAgger/泛化。T698保持，具体预算和截止见day_20261123/t709/PLAN。
+
 2026-11-23 T708同容量固定隐藏层A-GEM参考梯度比较结束：COMPLETE，完整成对结果/原403保持/224曝光回归见day_20261123/t708/FINDINGS。T698保持，无自动下一任务。
 
 2026-11-23 用户检查并继续后T708新同容量A-GEM平均旧参考vs最差旧ID参考128步：T707AlmostSolved18拒绝/0Actor0native原失败保留，不再更换锥表示。两臂均161584B新增/同B0隐藏冻结，源ID平均loss梯度、lr=1/Lsource，无SGD搜索；显式新增512梯度求值/256手动参数步各live-shadow-independent，旧4089/4089/1785与4096cap冻结。真实loader/worker/helper/native审计腐坏拒绝及projection数值edge预检PASS，REGISTERED尚未launch待精确source。两臂完整431+69exact与224曝光回归+28exact，主比较保持-迁移Pareto而非零遗忘，A-GEM既有方法适配非全论文复现/新颖性。学习19:24:07/native23:09:07/全停23:24:07北京时间精确见协议，T698保持，见day_20261123/t708/PLAN。
