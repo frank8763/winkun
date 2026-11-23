@@ -1,0 +1,89 @@
+{
+  "state": "ACTIVE",
+  "epoch": 1795430540.96362,
+  "actual_status": {
+    "state": "ACTIVE",
+    "child_pid": 483169,
+    "pid": 483169,
+    "driver_pid": 481816,
+    "child": "known_agem_mean",
+    "action": "main",
+    "epoch": 1795430540.8897243,
+    "physics": 1707568,
+    "commands": 76,
+    "completed": 63
+  },
+  "locked_inputs": 5501,
+  "input_SHA_stat_mismatches": 0,
+  "resource_probe": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "11"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "13"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "15"
+      ],
+      [
+        "0",
+        "8"
+      ],
+      [
+        "0",
+        "9"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "CPUQuota": "800%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 8589934592,
+    "MemorySwapMax": 0,
+    "GPU": "cuda0geometry_only_cpu_exact_deployment"
+  },
+  "fit_independent_audit": "PASS",
+  "learning_ledger": {
+    "Gradient_live": 512,
+    "Gradient_shadow": 512,
+    "Gradient_independent": 512,
+    "Step_live": 256,
+    "Step_shadow": 256,
+    "Step_independent": 256
+  },
+  "actual_baseline_fit": {
+    "old_mean": 0.00027318535805730007,
+    "old_max": 0.0022360186233677565,
+    "source_mean": 0.009338936576400381
+  },
+  "retained": "T698",
+  "absolute_all_stop": 1795447447.299219,
+  "no_automatic_next_science": true
+}
