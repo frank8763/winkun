@@ -1,0 +1,1445 @@
+{
+  "state": "COMPLETE",
+  "results": {
+    "induced": {
+      "known": {
+        "state": "COMPLETE",
+        "audit": "PASS",
+        "safe": 392,
+        "total": 431,
+        "core_success": 382,
+        "lost403": [
+          "dev_task6_00",
+          "dev_task6_01",
+          "dev_task6_06",
+          "dev_task6_09",
+          "dev_task6_25",
+          "dev_task7_17",
+          "hold_task6_00",
+          "t502_field_sector0_offset2",
+          "t502_field_sector0_offset2_T695_xminus",
+          "t502_field_sector0_offset2_T695_yminus",
+          "t502_field_sector1_offset1",
+          "t502_field_sector2_offset1_T695_yplus",
+          "t502_field_sector5_offset1",
+          "t502_field_sector5_offset1_T695_xplus",
+          "t502_field_sector7_offset1",
+          "wide117_80_dev6_LEFT_15",
+          "wide117_80_dev6_LEFT_26"
+        ],
+        "source_success_ids": [
+          "dev_task6_05",
+          "dev_task6_11",
+          "dev_task6_15",
+          "t502_field_sector2_offset1_T695_xplus",
+          "t502_field_sector2_offset2",
+          "t502_field_sector7_offset2"
+        ],
+        "collision": 15,
+        "timeout": 24,
+        "boundary": 17
+      },
+      "new": {
+        "state": "COMPLETE",
+        "audit": "PASS",
+        "safe": 95,
+        "total": 224,
+        "core_success": 0,
+        "lost403": null,
+        "source_success_ids": [],
+        "collision": 85,
+        "timeout": 44,
+        "boundary": 26
+      }
+    },
+    "control": {
+      "known": {
+        "state": "COMPLETE",
+        "audit": "PASS",
+        "safe": 395,
+        "total": 431,
+        "core_success": 384,
+        "lost403": [
+          "dev_task6_00",
+          "dev_task6_01",
+          "dev_task6_06",
+          "dev_task6_25",
+          "dev_task7_23",
+          "hold_task6_06",
+          "t502_field_sector0_offset2",
+          "t502_field_sector0_offset2_T695_xminus",
+          "t502_field_sector1_offset1",
+          "t502_field_sector2_offset1_T695_xminus",
+          "t502_field_sector5_offset1_T695_xminus",
+          "t502_field_sector5_offset1_T695_yminus",
+          "t502_field_sector7_offset1",
+          "wide117_80_dev6_LEFT_26",
+          "wide117_8m_dev6_RIGHT_18"
+        ],
+        "source_success_ids": [
+          "dev_task6_11",
+          "dev_task6_15",
+          "hold_task6_03",
+          "t502_field_sector2_offset1_T695_xplus",
+          "t502_field_sector2_offset2",
+          "t502_field_sector7_offset2"
+        ],
+        "collision": 12,
+        "timeout": 24,
+        "boundary": 15
+      },
+      "new": {
+        "state": "COMPLETE",
+        "audit": "PASS",
+        "safe": 97,
+        "total": 224,
+        "core_success": 0,
+        "lost403": null,
+        "source_success_ids": [],
+        "collision": 86,
+        "timeout": 41,
+        "boundary": 24
+      }
+    },
+    "original": {
+      "known": {
+        "state": "COMPLETE",
+        "audit": "PASS",
+        "safe": 399,
+        "total": 431,
+        "core_success": 387,
+        "lost403": [
+          "dev_task6_00",
+          "dev_task6_06",
+          "dev_task6_17",
+          "dev_task7_25",
+          "hold_task7_06",
+          "t502_field_sector0_offset2",
+          "t502_field_sector0_offset2_T695_xminus",
+          "t502_field_sector1_offset1",
+          "t502_field_sector5_offset1_T695_xminus",
+          "t502_field_sector7_offset1",
+          "wide117_80_dev6_LEFT_07"
+        ],
+        "source_success_ids": [
+          "dev_task6_05",
+          "dev_task6_11",
+          "dev_task6_15",
+          "hold_task6_03",
+          "t502_field_sector2_offset1_T695_xplus",
+          "t502_field_sector2_offset2",
+          "t502_field_sector7_offset2"
+        ],
+        "collision": 12,
+        "timeout": 20,
+        "boundary": 15
+      },
+      "new": {
+        "state": "COMPLETE",
+        "audit": "PASS",
+        "safe": 97,
+        "total": 224,
+        "core_success": 0,
+        "lost403": null,
+        "source_success_ids": [],
+        "collision": 85,
+        "timeout": 42,
+        "boundary": 25
+      }
+    }
+  },
+  "paired": {
+    "induced_vs_control_known": {
+      "gained_ids": [
+        "dev_task6_05",
+        "dev_task7_23",
+        "hold_task6_06",
+        "t502_field_sector2_offset1_T695_xminus",
+        "t502_field_sector5_offset1_T695_xminus",
+        "t502_field_sector5_offset1_T695_yminus",
+        "wide117_8m_dev6_RIGHT_18"
+      ],
+      "lost_ids": [
+        "dev_task6_09",
+        "dev_task7_17",
+        "hold_task6_00",
+        "hold_task6_03",
+        "t502_field_sector0_offset2_T695_xplus",
+        "t502_field_sector0_offset2_T695_yminus",
+        "t502_field_sector2_offset1_T695_yplus",
+        "t502_field_sector5_offset1",
+        "t502_field_sector5_offset1_T695_xplus",
+        "wide117_80_dev6_LEFT_15"
+      ],
+      "common_safe": 385
+    },
+    "induced_vs_control_new": {
+      "gained_ids": [
+        "T704_dev_task6_05_outer_225",
+        "T704_dev_task6_11_outer_135",
+        "T704_dev_task6_15_near_45",
+        "T704_dev_task6_15_outer_225",
+        "T704_t502_field_sector0_offset2_near_45",
+        "T704_t502_field_sector2_offset1_outer_315",
+        "T704_t502_field_sector2_offset2_near_225",
+        "T704_t502_field_sector7_offset2_outer_315"
+      ],
+      "lost_ids": [
+        "T704_dev_task6_05_outer_135",
+        "T704_dev_task6_11_near_135",
+        "T704_dev_task6_15_near_225",
+        "T704_t502_field_sector0_offset1_outer_315",
+        "T704_t502_field_sector0_offset2_near_315",
+        "T704_t502_field_sector0_offset2_outer_135",
+        "T704_t502_field_sector2_offset1_outer_135",
+        "T704_t502_field_sector5_offset1_near_315",
+        "T704_t502_field_sector7_offset2_outer_225",
+        "T704_t502_field_sector7_offset2_outer_45"
+      ],
+      "common_safe": 87
+    },
+    "induced_old403_vs_control": {
+      "regained_ids": [
+        "dev_task7_23",
+        "hold_task6_06",
+        "t502_field_sector2_offset1_T695_xminus",
+        "t502_field_sector5_offset1_T695_xminus",
+        "t502_field_sector5_offset1_T695_yminus",
+        "wide117_8m_dev6_RIGHT_18"
+      ],
+      "newly_lost_ids": [
+        "dev_task6_09",
+        "dev_task7_17",
+        "hold_task6_00",
+        "t502_field_sector0_offset2_T695_yminus",
+        "t502_field_sector2_offset1_T695_yplus",
+        "t502_field_sector5_offset1",
+        "t502_field_sector5_offset1_T695_xplus",
+        "wide117_80_dev6_LEFT_15"
+      ],
+      "still_lost_ids": [
+        "dev_task6_00",
+        "dev_task6_01",
+        "dev_task6_06",
+        "dev_task6_25",
+        "t502_field_sector0_offset2",
+        "t502_field_sector0_offset2_T695_xminus",
+        "t502_field_sector1_offset1",
+        "t502_field_sector7_offset1",
+        "wide117_80_dev6_LEFT_26"
+      ]
+    },
+    "induced_vs_original_known": {
+      "gained_ids": [
+        "dev_task6_17",
+        "dev_task7_25",
+        "hold_task7_06",
+        "t502_field_sector5_offset1_T695_xminus",
+        "wide117_80_dev6_LEFT_07"
+      ],
+      "lost_ids": [
+        "dev_task6_01",
+        "dev_task6_09",
+        "dev_task6_25",
+        "dev_task7_17",
+        "hold_task6_00",
+        "hold_task6_03",
+        "t502_field_sector0_offset2_T695_yminus",
+        "t502_field_sector2_offset1_T695_yplus",
+        "t502_field_sector5_offset1",
+        "t502_field_sector5_offset1_T695_xplus",
+        "wide117_80_dev6_LEFT_15",
+        "wide117_80_dev6_LEFT_26"
+      ],
+      "common_safe": 387
+    },
+    "induced_vs_original_new": {
+      "gained_ids": [
+        "T704_dev_task6_05_outer_225",
+        "T704_dev_task6_15_outer_315",
+        "T704_dev_task6_15_outer_45",
+        "T704_t502_field_sector0_offset2_near_45",
+        "T704_t502_field_sector2_offset2_outer_315",
+        "T704_t502_field_sector5_offset1_near_45",
+        "T704_t502_field_sector7_offset2_outer_135"
+      ],
+      "lost_ids": [
+        "T704_dev_task6_11_near_135",
+        "T704_dev_task6_15_near_225",
+        "T704_t502_field_sector0_offset1_outer_225",
+        "T704_t502_field_sector0_offset1_outer_315",
+        "T704_t502_field_sector0_offset1_outer_45",
+        "T704_t502_field_sector5_offset1_near_315",
+        "T704_t502_field_sector5_offset1_outer_225",
+        "T704_t502_field_sector5_offset1_outer_45",
+        "T704_t502_field_sector7_offset2_outer_225"
+      ],
+      "common_safe": 88
+    },
+    "induced_old403_vs_original": {
+      "regained_ids": [
+        "dev_task6_17",
+        "dev_task7_25",
+        "hold_task7_06",
+        "t502_field_sector5_offset1_T695_xminus",
+        "wide117_80_dev6_LEFT_07"
+      ],
+      "newly_lost_ids": [
+        "dev_task6_01",
+        "dev_task6_09",
+        "dev_task6_25",
+        "dev_task7_17",
+        "hold_task6_00",
+        "t502_field_sector0_offset2_T695_yminus",
+        "t502_field_sector2_offset1_T695_yplus",
+        "t502_field_sector5_offset1",
+        "t502_field_sector5_offset1_T695_xplus",
+        "wide117_80_dev6_LEFT_15",
+        "wide117_80_dev6_LEFT_26"
+      ],
+      "still_lost_ids": [
+        "dev_task6_00",
+        "dev_task6_06",
+        "t502_field_sector0_offset2",
+        "t502_field_sector0_offset2_T695_xminus",
+        "t502_field_sector1_offset1",
+        "t502_field_sector7_offset1"
+      ]
+    }
+  },
+  "groups": {
+    "neighborhood_parent_id": {
+      "t502_field_sector0_offset1": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 5,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 7,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector0_offset2": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 1,
+            "collision": 0,
+            "timeout": 7,
+            "boundary": 7
+          },
+          "control": {
+            "executed": 8,
+            "safe": 2,
+            "collision": 0,
+            "timeout": 6,
+            "boundary": 6
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 8,
+            "boundary": 8
+          }
+        }
+      },
+      "t502_field_sector0_offset3": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector1_offset1": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 8,
+            "boundary": 8
+          },
+          "control": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 8,
+            "boundary": 8
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 8,
+            "boundary": 8
+          }
+        }
+      },
+      "t502_field_sector1_offset2": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector1_offset3": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector2_offset1": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 7,
+            "collision": 1,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 7,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 7,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector2_offset2": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 7,
+            "collision": 1,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 7,
+            "collision": 1,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector2_offset3": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector3_offset1": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector3_offset2": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector3_offset3": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector4_offset1": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector4_offset2": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector4_offset3": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 8,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 8,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 8,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector5_offset1": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 5,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 3
+          },
+          "control": {
+            "executed": 8,
+            "safe": 6,
+            "collision": 0,
+            "timeout": 2,
+            "boundary": 2
+          },
+          "original": {
+            "executed": 8,
+            "safe": 7,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 1
+          }
+        }
+      },
+      "t502_field_sector5_offset2": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector5_offset3": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector6_offset1": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 8,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector6_offset2": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector6_offset3": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector7_offset1": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 8,
+            "boundary": 8
+          },
+          "control": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 8,
+            "boundary": 8
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 8,
+            "boundary": 8
+          }
+        }
+      },
+      "t502_field_sector7_offset2": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 6,
+            "collision": 0,
+            "timeout": 2,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 7,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 6,
+            "collision": 0,
+            "timeout": 2,
+            "boundary": 0
+          }
+        }
+      },
+      "t502_field_sector7_offset3": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "dev_task6_05": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 7,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 7,
+            "collision": 1,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 6,
+            "collision": 1,
+            "timeout": 1,
+            "boundary": 0
+          }
+        }
+      },
+      "dev_task6_11": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 5,
+            "collision": 2,
+            "timeout": 1,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 5,
+            "collision": 2,
+            "timeout": 1,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 6,
+            "collision": 2,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "dev_task6_15": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 5,
+            "collision": 1,
+            "timeout": 2,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 4,
+            "collision": 1,
+            "timeout": 3,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 4,
+            "collision": 1,
+            "timeout": 3,
+            "boundary": 0
+          }
+        }
+      },
+      "hold_task6_03": {
+        "planned": 8,
+        "models": {
+          "induced": {
+            "executed": 8,
+            "safe": 7,
+            "collision": 1,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 8,
+            "safe": 7,
+            "collision": 1,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 8,
+            "safe": 7,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0
+          }
+        }
+      }
+    },
+    "prospective_ring": {
+      "near": {
+        "planned": 112,
+        "models": {
+          "induced": {
+            "executed": 112,
+            "safe": 52,
+            "collision": 40,
+            "timeout": 20,
+            "boundary": 12
+          },
+          "control": {
+            "executed": 112,
+            "safe": 53,
+            "collision": 41,
+            "timeout": 18,
+            "boundary": 11
+          },
+          "original": {
+            "executed": 112,
+            "safe": 53,
+            "collision": 40,
+            "timeout": 19,
+            "boundary": 13
+          }
+        }
+      },
+      "outer": {
+        "planned": 112,
+        "models": {
+          "induced": {
+            "executed": 112,
+            "safe": 43,
+            "collision": 45,
+            "timeout": 24,
+            "boundary": 14
+          },
+          "control": {
+            "executed": 112,
+            "safe": 44,
+            "collision": 45,
+            "timeout": 23,
+            "boundary": 13
+          },
+          "original": {
+            "executed": 112,
+            "safe": 44,
+            "collision": 45,
+            "timeout": 23,
+            "boundary": 12
+          }
+        }
+      }
+    },
+    "evaluation_cluster": {
+      "field_sector0": {
+        "planned": 24,
+        "models": {
+          "induced": {
+            "executed": 24,
+            "safe": 5,
+            "collision": 8,
+            "timeout": 11,
+            "boundary": 7
+          },
+          "control": {
+            "executed": 24,
+            "safe": 7,
+            "collision": 8,
+            "timeout": 9,
+            "boundary": 6
+          },
+          "original": {
+            "executed": 24,
+            "safe": 7,
+            "collision": 8,
+            "timeout": 9,
+            "boundary": 8
+          }
+        }
+      },
+      "field_sector1": {
+        "planned": 24,
+        "models": {
+          "induced": {
+            "executed": 24,
+            "safe": 0,
+            "collision": 16,
+            "timeout": 8,
+            "boundary": 8
+          },
+          "control": {
+            "executed": 24,
+            "safe": 0,
+            "collision": 16,
+            "timeout": 8,
+            "boundary": 8
+          },
+          "original": {
+            "executed": 24,
+            "safe": 0,
+            "collision": 16,
+            "timeout": 8,
+            "boundary": 8
+          }
+        }
+      },
+      "field_sector2": {
+        "planned": 24,
+        "models": {
+          "induced": {
+            "executed": 24,
+            "safe": 15,
+            "collision": 9,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 24,
+            "safe": 14,
+            "collision": 9,
+            "timeout": 1,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 24,
+            "safe": 14,
+            "collision": 9,
+            "timeout": 1,
+            "boundary": 0
+          }
+        }
+      },
+      "field_sector3": {
+        "planned": 24,
+        "models": {
+          "induced": {
+            "executed": 24,
+            "safe": 16,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 24,
+            "safe": 16,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 24,
+            "safe": 16,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "field_sector4": {
+        "planned": 24,
+        "models": {
+          "induced": {
+            "executed": 24,
+            "safe": 8,
+            "collision": 8,
+            "timeout": 8,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 24,
+            "safe": 8,
+            "collision": 8,
+            "timeout": 8,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 24,
+            "safe": 8,
+            "collision": 8,
+            "timeout": 8,
+            "boundary": 0
+          }
+        }
+      },
+      "field_sector5": {
+        "planned": 24,
+        "models": {
+          "induced": {
+            "executed": 24,
+            "safe": 13,
+            "collision": 8,
+            "timeout": 3,
+            "boundary": 3
+          },
+          "control": {
+            "executed": 24,
+            "safe": 14,
+            "collision": 8,
+            "timeout": 2,
+            "boundary": 2
+          },
+          "original": {
+            "executed": 24,
+            "safe": 15,
+            "collision": 8,
+            "timeout": 1,
+            "boundary": 1
+          }
+        }
+      },
+      "field_sector6": {
+        "planned": 24,
+        "models": {
+          "induced": {
+            "executed": 24,
+            "safe": 8,
+            "collision": 16,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 24,
+            "safe": 8,
+            "collision": 16,
+            "timeout": 0,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 24,
+            "safe": 8,
+            "collision": 16,
+            "timeout": 0,
+            "boundary": 0
+          }
+        }
+      },
+      "field_sector7": {
+        "planned": 24,
+        "models": {
+          "induced": {
+            "executed": 24,
+            "safe": 6,
+            "collision": 8,
+            "timeout": 10,
+            "boundary": 8
+          },
+          "control": {
+            "executed": 24,
+            "safe": 7,
+            "collision": 8,
+            "timeout": 9,
+            "boundary": 8
+          },
+          "original": {
+            "executed": 24,
+            "safe": 6,
+            "collision": 8,
+            "timeout": 10,
+            "boundary": 8
+          }
+        }
+      },
+      "shared_5m_LEFT_source_snapshot": {
+        "planned": 32,
+        "models": {
+          "induced": {
+            "executed": 32,
+            "safe": 24,
+            "collision": 4,
+            "timeout": 4,
+            "boundary": 0
+          },
+          "control": {
+            "executed": 32,
+            "safe": 23,
+            "collision": 5,
+            "timeout": 4,
+            "boundary": 0
+          },
+          "original": {
+            "executed": 32,
+            "safe": 23,
+            "collision": 4,
+            "timeout": 5,
+            "boundary": 0
+          }
+        }
+      }
+    }
+  },
+  "coverage": {
+    "induced": {
+      "covered51": {
+        "total": 51,
+        "safe": 40,
+        "lost": [
+          "dev_task6_00",
+          "dev_task6_25",
+          "dev_task7_17",
+          "t502_field_sector0_offset2",
+          "t502_field_sector0_offset2_T695_xminus",
+          "t502_field_sector0_offset2_T695_yminus",
+          "t502_field_sector1_offset1",
+          "t502_field_sector2_offset1_T695_yplus",
+          "t502_field_sector5_offset1",
+          "t502_field_sector5_offset1_T695_xplus",
+          "t502_field_sector7_offset1"
+        ]
+      },
+      "uncovered352": {
+        "total": 352,
+        "safe": 346,
+        "lost": [
+          "dev_task6_01",
+          "dev_task6_06",
+          "dev_task6_09",
+          "hold_task6_00",
+          "wide117_80_dev6_LEFT_15",
+          "wide117_80_dev6_LEFT_26"
+        ]
+      }
+    },
+    "control": {
+      "covered51": {
+        "total": 51,
+        "safe": 40,
+        "lost": [
+          "dev_task6_00",
+          "dev_task6_25",
+          "hold_task6_06",
+          "t502_field_sector0_offset2",
+          "t502_field_sector0_offset2_T695_xminus",
+          "t502_field_sector1_offset1",
+          "t502_field_sector2_offset1_T695_xminus",
+          "t502_field_sector5_offset1_T695_xminus",
+          "t502_field_sector5_offset1_T695_yminus",
+          "t502_field_sector7_offset1",
+          "wide117_8m_dev6_RIGHT_18"
+        ]
+      },
+      "uncovered352": {
+        "total": 352,
+        "safe": 348,
+        "lost": [
+          "dev_task6_01",
+          "dev_task6_06",
+          "dev_task7_23",
+          "wide117_80_dev6_LEFT_26"
+        ]
+      }
+    },
+    "original": {
+      "covered51": {
+        "total": 51,
+        "safe": 44,
+        "lost": [
+          "dev_task6_00",
+          "dev_task7_25",
+          "t502_field_sector0_offset2",
+          "t502_field_sector0_offset2_T695_xminus",
+          "t502_field_sector1_offset1",
+          "t502_field_sector5_offset1_T695_xminus",
+          "t502_field_sector7_offset1"
+        ]
+      },
+      "uncovered352": {
+        "total": 352,
+        "safe": 348,
+        "lost": [
+          "dev_task6_06",
+          "dev_task6_17",
+          "hold_task7_06",
+          "wide117_80_dev6_LEFT_07"
+        ]
+      }
+    }
+  },
+  "pareto": {
+    "control": {
+      "old_loss_delta": 2,
+      "joint_success_delta": -2,
+      "dominates": false,
+      "dominated": true
+    },
+    "original": {
+      "old_loss_delta": 6,
+      "joint_success_delta": -2,
+      "dominates": false,
+      "dominated": true
+    }
+  },
+  "initial_hashes_equal_historical": true,
+  "retained": "T698",
+  "epoch": 1795439114.6047318,
+  "matched_deployed_added_tensor_bytes": 161584,
+  "selected_old_IDs": 51,
+  "histories": 102,
+  "old_ID_weights_unchanged": true,
+  "offline_one_fixed_snapshot_not_iterative_DAgger": true,
+  "teacher_recovery_not_demonstrated": true,
+  "exposed_regression_not_new_holdout": true,
+  "new_Adam": 0,
+  "new_RL": 0
+}
