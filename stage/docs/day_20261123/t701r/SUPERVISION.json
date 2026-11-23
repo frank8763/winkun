@@ -1,0 +1,67 @@
+{
+  "state": "ACTIVE_REAL_NATIVE_ACCEPTANCE",
+  "checked_epoch": 1795397847.2663426,
+  "actual_status": {
+    "state": "ACTIVE",
+    "child_pid": 216839,
+    "pid": 216839,
+    "driver_pid": 216833,
+    "child": "known_quant32",
+    "action": "main",
+    "epoch": 1795397842.1389296,
+    "physics": 477110,
+    "commands": 35,
+    "completed": 21
+  },
+  "unit": "stage-t701r.service",
+  "actual_driver_pid": 216833,
+  "actual_helper_pid": 216838,
+  "actual_workers": [
+    {
+      "parent": 216839,
+      "workers": [
+        216848,
+        216849,
+        216852,
+        216855,
+        216857,
+        216868,
+        216873
+      ],
+      "actual_affinity": [
+        [
+          8
+        ],
+        [
+          9
+        ],
+        [
+          10
+        ],
+        [
+          11
+        ],
+        [
+          12
+        ],
+        [
+          13
+        ],
+        [
+          14
+        ]
+      ]
+    }
+  ],
+  "input_count": 5405,
+  "all_locked_SHA_match": true,
+  "full_final_result_not_available": true,
+  "original_T701_fits_reused_SHA": true,
+  "new_learning": 0,
+  "source60_pending": true,
+  "final_source60_reserved": true,
+  "new_raw_backup": "LOCAL_ONLY",
+  "absolute_all_stop": 1795408454.5318966,
+  "one_shot_finalizer": "stage-t701r-finalizer.service",
+  "no_recurring_automation": true
+}
