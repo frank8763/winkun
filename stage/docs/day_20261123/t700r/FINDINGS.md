@@ -1,0 +1,7 @@
+# Independent Monday external review complete
+
+T700R reviewed all500 saved original known_plain science rows with the original invariant inspector, full11831 locked-input SHA at entry/exit, full payload/exact/native integration reconciliation, and a corrupt-action-digest rejection. PASS,27.351269721984863s audit, zero newly integrated physics/commands/optimizer/Actor. All review processes and both cgroups exited. The result is separately attributed to renewed Monday authorization; original T699 and T700 remain FAILED, old expired audit remains FAILED.
+
+Confirmed core391/407, total404/431, old403 lost7, all7source successful,13neighborhood success. Lost original IDs: dev_task6_00/dev_task6_06/dev_task6_13,field0_1_yminus,field0_2,field0_2_yminus,field1_1. The same-data ordinary-radius ablation thus learns the source trajectories but loses old successes; protected T696 has396core+14supp and loses0old403. This supports the finite-history protection mechanism in this one comparison, not every interpolation method or unknown-map generalization. Original raw arrays unchanged, all original failure evidence retained.
+
+T700 initial import collision consumed1.0280344486236572s audit/0rows. Recovery preflight fixed generic run namespace before native import; no training/native was repeated. Both preparation-source remote commits were content-tree verified, actual shell exit0 and each300s uniquely accounted after all units exited.

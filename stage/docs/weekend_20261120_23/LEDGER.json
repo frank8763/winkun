@@ -1,9 +1,9 @@
 {
   "physics": 213596731,
   "commands": 9858,
-  "science_seconds": 46814.89197063446,
-  "audit_seconds": 4558.396513462067,
-  "transport_seconds": 16661.38138318062,
+  "science_seconds": 46824.89197063446,
+  "audit_seconds": 4585.7477831840515,
+  "transport_seconds": 17261.38138318062,
   "Actor_live": 3979,
   "Actor_shadow": 3979,
   "Actor_independent": 1675,
@@ -928,7 +928,9 @@
     "2d590727dede48196f5efa62685b05530a42e95d",
     "ea8e7f224e285b2e1e4129efd65c8a3c21e040b2",
     "2f511c4b8d77860ab099706022acb9ce35bb70bf",
-    "bf6fad8ccb30fc2d6ffe4d135a26495c13716014"
+    "bf6fad8ccb30fc2d6ffe4d135a26495c13716014",
+    "3da9b240a8371badeeb41183d8486be3d3f6d281",
+    "13bbe53676005442b96e4a6c27d81c334771d1c8"
   ],
   "charged_transport_attempts": [
     "T672_METADATA_OVER_2M"
@@ -936,7 +938,9 @@
   "transport_remote_commits_accounted": [
     "de3bea058b9f48e8bb590338307ea999faf5e795",
     "bba37c8c895e98006c6b82fdfb18548b19399602",
-    "bf6fad8ccb30fc2d6ffe4d135a26495c13716014"
+    "bf6fad8ccb30fc2d6ffe4d135a26495c13716014",
+    "3da9b240a8371badeeb41183d8486be3d3f6d281",
+    "13bbe53676005442b96e4a6c27d81c334771d1c8"
   ],
   "external_readonly_reviews": [
     {
@@ -950,6 +954,31 @@
         "commands": 0,
         "Actor_each": 0
       }
+    },
+    {
+      "id": "T700R_EXTERNAL_REVIEW",
+      "state": "PASS",
+      "external_readonly_review": true,
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t700r_import_isolation",
+      "accounted": {
+        "audit_seconds": 27.351269721984863,
+        "physics": 0,
+        "commands": 0,
+        "Actor_each": 0
+      }
+    }
+  ],
+  "charged_daytime_preparation": [
+    "T700R_T701_ZERO_UPDATE_PREFLIGHT_CONSERVATIVE10S"
+  ],
+  "new_monday_experiments": [
+    {
+      "id": "T701",
+      "state": "RESERVED",
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701_compact_retention",
+      "Actor_each_cap": 81,
+      "max_physics": 36493518,
+      "max_commands": 1226
     }
   ]
 }
