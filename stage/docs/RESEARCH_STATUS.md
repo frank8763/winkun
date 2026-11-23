@@ -1,3 +1,5 @@
+2026-11-23 周一新授权“下一步开始”：T700R新授权独立外部复核500条旧plain记录PASS（27.351秒/0新物理与学习），确认391/407核心、丢原403中7、7源全成功；原T699/T700 FAILED与旧过期审计原件不变。T701新白天有界比较已唯一launch，fp32中心压缩与小回放全批L-BFGS精修，同T694父/403旧+7源/固定已曝光431与78，当前fit，尚无新原生能力结果。81live/shadow/independent上限、不重启旧job、不延旧截止；新T701学习09:54/native12:24/全停12:34（精确absolute见新协议）。主/影子压缩几何已一致，逐位命令门仍进行；T698仍保留。另有单次资源/退后收尾服务，不重建周期自动化。见day_20261123/t701/PLAN与实际status。
+
 2026-11-23 T699原root FAILED：plain500条原生完成11001515physics/514cmd，但独立audit360s超时、旧child已过absolute不重试。目录重复全扫描红462s/绿36s已复现；仅修工程guard在新continuation衔接原未执行blocks，0新学习、不重已消费物理、不延原root08:16:42及native08:15，预先声明满容量known及完整新起点套件优先。T698仍保留，plain结果仅provisional，不能声称完整对照通过。见overnight_20261122_23/continuation。
 
 2026-11-23 用户停止后明确重新授权今夜T699：同T694父模型的普通插值/三容量回放BC/第二初始化公平比较，另78固定新起点及成本审计；当前仅预检PASS、RESERVED、未launch，无新能力结果。旧USER_STOP和所有旧run原件保留；新学习07:30/native08:15/全停09:00及每action更早absolute不延。T698398/407+14supp=412仍保留。见overnight_20261122_23/{PLAN.md,NEW_START_CONTRACT.md,SUPERVISION.json}。

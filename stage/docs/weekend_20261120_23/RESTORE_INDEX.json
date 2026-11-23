@@ -22625,12 +22625,112 @@
           "sha256": "adc69c51657e01be1be3748d47d840535d3e879d5e8404f6c38188d062ef2c1e"
         }
       ]
+    },
+    {
+      "group": "DAY_T701_PRIMARY_0",
+      "receipt": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/long_distance_20261101/release_receipt_DAY_T701_PRIMARY_0.json",
+      "manifest": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/docs/long_distance_20261101/source_manifest_DAY_T701_PRIMARY_0.json",
+      "remote_receipt": {
+        "state": "FULL_REMOTE_READBACK_AND_EVERY_MEMBER_SHA_VERIFIED",
+        "group": "DAY_T701_PRIMARY_0",
+        "url": "https://github.com/frank8763/winkun/releases/tag/stage-eight-only-2026-11-11",
+        "parts": [
+          {
+            "order": 0,
+            "asset_id": 781089175,
+            "asset_url": "https://github.com/frank8763/winkun/releases/download/stage-eight-only-2026-11-11/stage-day_t701_primary_0-5c8d1ffde6e1-000.bin",
+            "bytes": 4194304,
+            "sha256": "ccc9a13583e110dc24a3d4facc35c4ffac8cd1d74c6ee22b253e9d1591f18b62"
+          },
+          {
+            "order": 1,
+            "asset_id": 781089418,
+            "asset_url": "https://github.com/frank8763/winkun/releases/download/stage-eight-only-2026-11-11/stage-day_t701_primary_0-5c8d1ffde6e1-001.bin",
+            "bytes": 704306,
+            "sha256": "427703eeae884c186880d26a837a8f7bfa1f3f7c83943015a1ce6caadeaca3e2"
+          }
+        ],
+        "bytes": 4898610,
+        "sha256": "5c8d1ffde6e1c553bd43bd43e31717d083b1fd4595f7ed458d1a965cbe0b5d24",
+        "manifest_sha256": "4e973b5aff92135c5a1f66f27e4069b231d7122c2d1dcb5d67840ffaaef7388d",
+        "members": 13,
+        "temporary_disk_archive_bytes": 0,
+        "files_deleted": 0,
+        "verified_epoch": 1795397304.1395044
+      },
+      "members": [
+        {
+          "path": "stage/runs/t701_compact_retention/protocol.json",
+          "bytes": 1025380,
+          "sha256": "7d927eb0aeef3df8b69592b9f37af897b17adb15a83e13206eaa343fcbb12fdd"
+        },
+        {
+          "path": "stage/runs/t701_compact_retention/fit/quant32.pt.gz",
+          "bytes": 2752631,
+          "sha256": "af8999ed872d49b5e4021529324569f886fef1a5d25077a18904961747c63866"
+        },
+        {
+          "path": "stage/runs/t701_compact_retention/fit/replay_refined108.pt.gz",
+          "bytes": 1978636,
+          "sha256": "e8bed4b7547a987539563d64e6916b77e8f3ee81688e6447d0d09ee1d1df364d"
+        },
+        {
+          "path": "stage/runs/t701_compact_retention/fit/summary.json",
+          "bytes": 27987,
+          "sha256": "ae92e8b884a3feb56cdcecedfcf3bb33836565df4b2097d18df8f13d80db796b"
+        },
+        {
+          "path": "stage/runs/t701_compact_retention/fit/audit.json",
+          "bytes": 14310,
+          "sha256": "2b2ca3e68cd557d530a6281af10105da80bad2af182e2783fbe6ac2fb941d897"
+        },
+        {
+          "path": "stage/runs/t701_compact_retention/fit/fit_calls.jsonl",
+          "bytes": 55843,
+          "sha256": "1ad46fb3cd282e2fec008597aa9ca63a023b0750b7bb0e341f5c0fed9a76822b"
+        },
+        {
+          "path": "stage/runs/t701_compact_retention/FIT_LEDGER.json",
+          "bytes": 319,
+          "sha256": "8a0d9eab84d831ca722c058219c59a3c7514e3a57847d0b7414369704503c8fb"
+        },
+        {
+          "path": "stage/runs/t701_compact_retention/LEDGER.json",
+          "bytes": 531,
+          "sha256": "d449a9dbc9bef05c0dfac7f6f6e3baa5d16318c3b6ea5ae44822e6fc4b0f48e0"
+        },
+        {
+          "path": "stage/runs/t701_compact_retention/FINAL_REPORT.json",
+          "bytes": 1339,
+          "sha256": "ca65ebdc6ba4164755892ce888fd51fa937a28e8a21ee391e7c4886fbc74b53f"
+        },
+        {
+          "path": "stage/runs/t701_compact_retention/SEALED.json",
+          "bytes": 1339,
+          "sha256": "ca65ebdc6ba4164755892ce888fd51fa937a28e8a21ee391e7c4886fbc74b53f"
+        },
+        {
+          "path": "stage/runs/t701_compact_retention/status.json",
+          "bytes": 1315,
+          "sha256": "fe43d43d0d9f89f3f73bfba5adf0a492ac2571bcd258663f68162baeab727eb8"
+        },
+        {
+          "path": "stage/runs/t700_plain_external_review/audit.json",
+          "bytes": 5400,
+          "sha256": "6c5cc6ebde506cafa62bb6f31389e725f8deaeb51f5dba5545c477c653680de9"
+        },
+        {
+          "path": "stage/runs/t700r_import_isolation/audit.json",
+          "bytes": 1648,
+          "sha256": "820c330fdb9203fbc3a44b3637b2e76231fa4cf7719e5e43088f33521495d9d2"
+        }
+      ]
     }
   ],
   "other_raw_remote": "PENDING",
   "original_manifests_preserved": true,
   "raw_deleted": 0,
-  "epoch": 1795341455.357921,
+  "epoch": 1795397304.3038688,
   "files_deleted": 0,
   "other_raw_pending": true
 }

@@ -1,0 +1,930 @@
+{
+  "state": "FAILED",
+  "rows": [
+    {
+      "block": "known_quant32",
+      "state": "MISSING_NOT_ZERO_FAILURE",
+      "verified": false
+    },
+    {
+      "block": "new_quant32",
+      "state": "MISSING_NOT_ZERO_FAILURE",
+      "verified": false
+    },
+    {
+      "block": "known_replay_refined108",
+      "state": "MISSING_NOT_ZERO_FAILURE",
+      "verified": false
+    },
+    {
+      "block": "new_replay_refined108",
+      "state": "MISSING_NOT_ZERO_FAILURE",
+      "verified": false
+    }
+  ],
+  "fit": {
+    "state": "COMPLETE",
+    "finals": {
+      "quant32": {
+        "model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701_compact_retention/fit/quant32.pt.gz",
+          "sha256": "af8999ed872d49b5e4021529324569f886fef1a5d25077a18904961747c63866",
+          "bytes": 2752631,
+          "policy_hash": "ee9ddd62cb014b3a12fc718dc8e398e3004b4779d11af9388965970c6f02a5a9",
+          "joint_hash": "d4b1ae849d1ba421090239302708ce8c91862acbdf6abf35eb7def2387e0130b"
+        },
+        "construction": {
+          "centers": 1737,
+          "protected_decisions": 81956,
+          "center_storage": "float32",
+          "computation": "float64",
+          "protected_basis_exact_zero": true,
+          "original_source_K_offdiagonal_exact_zero": true,
+          "diagonal_hash": "b23666667a51703207e341e494b3fd7204ddeaaab02cfa64e74e78bd8d1f3cc4",
+          "minimum_diagonal": 0.9999999994652928,
+          "maximum_quantization_error": 6.322548147837475e-07,
+          "minimum_radius": 0.01804638900871988,
+          "state_hash": "96d1adc891717d36c05a52b4c38e9b7293ef3de1c59a7d3713c91d6eea3b04c7",
+          "no_center_selection_or_radius_rescue": true
+        },
+        "metrics": {
+          "old_command_ids_changed": [],
+          "new_command_ids_changed": [],
+          "old_decisions_changed": 0,
+          "new_decisions_changed": 0,
+          "old_decisions": 81956,
+          "new_decisions": 1737,
+          "complete_410_owncarry_command_gate": true,
+          "total_tensor_bytes": 3942096,
+          "added_tensor_bytes": 1320120,
+          "common_parent_bytes": 2621976,
+          "batch1_CPU15_median_ms": 0.563973,
+          "batch1_CPU15_p95_ms": 0.605825,
+          "latency_warmup": 64,
+          "latency_samples": 256,
+          "peak_process_rss_bytes": 1177501696,
+          "peak_includes_cached_training_data_and_Python": true,
+          "decoded_center_workspace_counted": true
+        }
+      },
+      "replay_refined108": {
+        "model": {
+          "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701_compact_retention/fit/replay_refined108.pt.gz",
+          "sha256": "e8bed4b7547a987539563d64e6916b77e8f3ee81688e6447d0d09ee1d1df364d",
+          "bytes": 1978636,
+          "policy_hash": "7ede24dcda3207d912ca93c2471d067a562606574512dd93ee1f7c14d805f4a6",
+          "joint_hash": "b11bcf32046e6653afb70cd27a0235b050ccd42dce17652c332eba07ef20c90b"
+        },
+        "construction": {
+          "state_hash": "27712516c7def78ac6ca46230525c28af168bc2dcb307fd08cc8287579c41abe",
+          "optimizer_hash": "6c670fe4f018fdb0e3984914088e04b68082ea91328edcd8515483a891099478",
+          "gradient_evaluations": 80,
+          "accepted_outer_steps": 38,
+          "budget_reached": true,
+          "last_evaluated_gradient_inf": 0.0007590325436508026,
+          "curve": [
+            {
+              "evaluation": 0,
+              "loss": 0.004922648660926749,
+              "gradient_inf": 0.002300235923074956
+            },
+            {
+              "evaluation": 1,
+              "loss": 0.0051638569792286405,
+              "gradient_inf": 0.011410167295532802
+            },
+            {
+              "evaluation": 2,
+              "loss": 0.004910763344236828,
+              "gradient_inf": 0.0010748172281966038
+            },
+            {
+              "evaluation": 3,
+              "loss": 0.004910763344236828,
+              "gradient_inf": 0.0010748172281966038
+            },
+            {
+              "evaluation": 4,
+              "loss": 0.004908083778965345,
+              "gradient_inf": 0.0006759680894401833
+            },
+            {
+              "evaluation": 5,
+              "loss": 0.004908083778965345,
+              "gradient_inf": 0.0006759680894401833
+            },
+            {
+              "evaluation": 6,
+              "loss": 0.004904878546053349,
+              "gradient_inf": 0.0003577360481871502
+            },
+            {
+              "evaluation": 7,
+              "loss": 0.004904878546053349,
+              "gradient_inf": 0.0003577360481871502
+            },
+            {
+              "evaluation": 8,
+              "loss": 0.004903079842385347,
+              "gradient_inf": 0.00035340629559626547
+            },
+            {
+              "evaluation": 9,
+              "loss": 0.004903079842385347,
+              "gradient_inf": 0.00035340629559626547
+            },
+            {
+              "evaluation": 10,
+              "loss": 0.00490049516166437,
+              "gradient_inf": 0.0008454893484437117
+            },
+            {
+              "evaluation": 11,
+              "loss": 0.00490049516166437,
+              "gradient_inf": 0.0008454893484437117
+            },
+            {
+              "evaluation": 12,
+              "loss": 0.004898511386288364,
+              "gradient_inf": 0.000661926049893496
+            },
+            {
+              "evaluation": 13,
+              "loss": 0.004898511386288364,
+              "gradient_inf": 0.000661926049893496
+            },
+            {
+              "evaluation": 14,
+              "loss": 0.004896839483367269,
+              "gradient_inf": 0.0004082853451073471
+            },
+            {
+              "evaluation": 15,
+              "loss": 0.004896839483367269,
+              "gradient_inf": 0.0004082853451073471
+            },
+            {
+              "evaluation": 16,
+              "loss": 0.004893815740070785,
+              "gradient_inf": 0.0005547347545954387
+            },
+            {
+              "evaluation": 17,
+              "loss": 0.004893815740070785,
+              "gradient_inf": 0.0005547347545954387
+            },
+            {
+              "evaluation": 18,
+              "loss": 0.0048893665105857985,
+              "gradient_inf": 0.0007897267049643909
+            },
+            {
+              "evaluation": 19,
+              "loss": 0.0048893665105857985,
+              "gradient_inf": 0.0007897267049643909
+            },
+            {
+              "evaluation": 20,
+              "loss": 0.004881970469099583,
+              "gradient_inf": 0.000790344968477875
+            },
+            {
+              "evaluation": 21,
+              "loss": 0.004881970469099583,
+              "gradient_inf": 0.000790344968477875
+            },
+            {
+              "evaluation": 22,
+              "loss": 0.004884370445116383,
+              "gradient_inf": 0.0016658390222283256
+            },
+            {
+              "evaluation": 23,
+              "loss": 0.004878692136497719,
+              "gradient_inf": 0.0007486376385778199
+            },
+            {
+              "evaluation": 24,
+              "loss": 0.004878692136497719,
+              "gradient_inf": 0.0007486376385778199
+            },
+            {
+              "evaluation": 25,
+              "loss": 0.0048746266963384886,
+              "gradient_inf": 0.00031140596459951116
+            },
+            {
+              "evaluation": 26,
+              "loss": 0.0048746266963384886,
+              "gradient_inf": 0.00031140596459951116
+            },
+            {
+              "evaluation": 27,
+              "loss": 0.0048722554519907875,
+              "gradient_inf": 0.00042444676474831636
+            },
+            {
+              "evaluation": 28,
+              "loss": 0.0048722554519907875,
+              "gradient_inf": 0.00042444676474831636
+            },
+            {
+              "evaluation": 29,
+              "loss": 0.004869646579597035,
+              "gradient_inf": 0.0004676180516635066
+            },
+            {
+              "evaluation": 30,
+              "loss": 0.004869646579597035,
+              "gradient_inf": 0.0004676180516635066
+            },
+            {
+              "evaluation": 31,
+              "loss": 0.004866279813611556,
+              "gradient_inf": 0.0006002051998368252
+            },
+            {
+              "evaluation": 32,
+              "loss": 0.004866279813611556,
+              "gradient_inf": 0.0006002051998368252
+            },
+            {
+              "evaluation": 33,
+              "loss": 0.004862439839974644,
+              "gradient_inf": 0.0004941023816694901
+            },
+            {
+              "evaluation": 34,
+              "loss": 0.004862439839974644,
+              "gradient_inf": 0.0004941023816694901
+            },
+            {
+              "evaluation": 35,
+              "loss": 0.00485887902149731,
+              "gradient_inf": 0.0003763609376619824
+            },
+            {
+              "evaluation": 36,
+              "loss": 0.00485887902149731,
+              "gradient_inf": 0.0003763609376619824
+            },
+            {
+              "evaluation": 37,
+              "loss": 0.004856364525141876,
+              "gradient_inf": 0.0003766359657543391
+            },
+            {
+              "evaluation": 38,
+              "loss": 0.004856364525141876,
+              "gradient_inf": 0.0003766359657543391
+            },
+            {
+              "evaluation": 39,
+              "loss": 0.0048540450078643806,
+              "gradient_inf": 0.00039630226097016395
+            },
+            {
+              "evaluation": 40,
+              "loss": 0.0048540450078643806,
+              "gradient_inf": 0.00039630226097016395
+            },
+            {
+              "evaluation": 41,
+              "loss": 0.004851016224996687,
+              "gradient_inf": 0.0003939591590692594
+            },
+            {
+              "evaluation": 42,
+              "loss": 0.004851016224996687,
+              "gradient_inf": 0.0003939591590692594
+            },
+            {
+              "evaluation": 43,
+              "loss": 0.004848675937249121,
+              "gradient_inf": 0.0005814517456601523
+            },
+            {
+              "evaluation": 44,
+              "loss": 0.004848675937249121,
+              "gradient_inf": 0.0005814517456601523
+            },
+            {
+              "evaluation": 45,
+              "loss": 0.00484566937927177,
+              "gradient_inf": 0.0005084301693719877
+            },
+            {
+              "evaluation": 46,
+              "loss": 0.00484566937927177,
+              "gradient_inf": 0.0005084301693719877
+            },
+            {
+              "evaluation": 47,
+              "loss": 0.004842643912135059,
+              "gradient_inf": 0.0010947648200884202
+            },
+            {
+              "evaluation": 48,
+              "loss": 0.004842643912135059,
+              "gradient_inf": 0.0010947648200884202
+            },
+            {
+              "evaluation": 49,
+              "loss": 0.004839739926692193,
+              "gradient_inf": 0.0005073777676012543
+            },
+            {
+              "evaluation": 50,
+              "loss": 0.004839739926692193,
+              "gradient_inf": 0.0005073777676012543
+            },
+            {
+              "evaluation": 51,
+              "loss": 0.004838337173277655,
+              "gradient_inf": 0.00046401237035088166
+            },
+            {
+              "evaluation": 52,
+              "loss": 0.004838337173277655,
+              "gradient_inf": 0.00046401237035088166
+            },
+            {
+              "evaluation": 53,
+              "loss": 0.004837251547816811,
+              "gradient_inf": 0.0003859139766728008
+            },
+            {
+              "evaluation": 54,
+              "loss": 0.004837251547816811,
+              "gradient_inf": 0.0003859139766728008
+            },
+            {
+              "evaluation": 55,
+              "loss": 0.004835052100319433,
+              "gradient_inf": 0.0003205158703004867
+            },
+            {
+              "evaluation": 56,
+              "loss": 0.004835052100319433,
+              "gradient_inf": 0.0003205158703004867
+            },
+            {
+              "evaluation": 57,
+              "loss": 0.004831353978163385,
+              "gradient_inf": 0.0005318652659642513
+            },
+            {
+              "evaluation": 58,
+              "loss": 0.004831353978163385,
+              "gradient_inf": 0.0005318652659642513
+            },
+            {
+              "evaluation": 59,
+              "loss": 0.0048331944166810905,
+              "gradient_inf": 0.0016611510711045522
+            },
+            {
+              "evaluation": 60,
+              "loss": 0.004829957237181969,
+              "gradient_inf": 0.0005944372977630069
+            },
+            {
+              "evaluation": 61,
+              "loss": 0.004829957237181969,
+              "gradient_inf": 0.0005944372977630069
+            },
+            {
+              "evaluation": 62,
+              "loss": 0.004828411031719616,
+              "gradient_inf": 0.00031645710537743667
+            },
+            {
+              "evaluation": 63,
+              "loss": 0.004828411031719616,
+              "gradient_inf": 0.00031645710537743667
+            },
+            {
+              "evaluation": 64,
+              "loss": 0.004826996110272787,
+              "gradient_inf": 0.00025111318958951126
+            },
+            {
+              "evaluation": 65,
+              "loss": 0.004826996110272787,
+              "gradient_inf": 0.00025111318958951126
+            },
+            {
+              "evaluation": 66,
+              "loss": 0.004825100680965523,
+              "gradient_inf": 0.00034910645385686384
+            },
+            {
+              "evaluation": 67,
+              "loss": 0.004825100680965523,
+              "gradient_inf": 0.00034910645385686384
+            },
+            {
+              "evaluation": 68,
+              "loss": 0.004822430406829963,
+              "gradient_inf": 0.0005909524271737324
+            },
+            {
+              "evaluation": 69,
+              "loss": 0.004822430406829963,
+              "gradient_inf": 0.0005909524271737324
+            },
+            {
+              "evaluation": 70,
+              "loss": 0.004819942001104677,
+              "gradient_inf": 0.0006973606874232095
+            },
+            {
+              "evaluation": 71,
+              "loss": 0.004819942001104677,
+              "gradient_inf": 0.0006973606874232095
+            },
+            {
+              "evaluation": 72,
+              "loss": 0.004817468480687678,
+              "gradient_inf": 0.0005347190444914092
+            },
+            {
+              "evaluation": 73,
+              "loss": 0.004817468480687678,
+              "gradient_inf": 0.0005347190444914092
+            },
+            {
+              "evaluation": 74,
+              "loss": 0.004813237432633503,
+              "gradient_inf": 0.00039076554383105045
+            },
+            {
+              "evaluation": 75,
+              "loss": 0.004813237432633503,
+              "gradient_inf": 0.00039076554383105045
+            },
+            {
+              "evaluation": 76,
+              "loss": 0.004809977780332563,
+              "gradient_inf": 0.0004687407476784682
+            },
+            {
+              "evaluation": 77,
+              "loss": 0.004809977780332563,
+              "gradient_inf": 0.0004687407476784682
+            },
+            {
+              "evaluation": 78,
+              "loss": 0.0048060609672288404,
+              "gradient_inf": 0.0007590325436508026
+            },
+            {
+              "evaluation": 79,
+              "loss": 0.0048060609672288404,
+              "gradient_inf": 0.0007590325436508026
+            }
+          ],
+          "optimizer": "fullbatch_LBFGS_strong_wolfe",
+          "objective": "same T699 equal-old-new ID-balanced residual MSE",
+          "finite_optimization_pilot_not_BC_optimum": true
+        },
+        "metrics": {
+          "old_command_ids_changed": [
+            "dev_task0_00",
+            "dev_task0_01",
+            "dev_task0_02",
+            "dev_task0_03",
+            "dev_task0_04",
+            "dev_task0_05",
+            "dev_task0_06",
+            "dev_task0_07",
+            "dev_task0_08",
+            "dev_task0_09",
+            "dev_task0_10",
+            "dev_task0_11",
+            "dev_task0_12",
+            "dev_task0_13",
+            "dev_task0_14",
+            "dev_task0_15",
+            "dev_task0_16",
+            "dev_task0_17",
+            "dev_task0_18",
+            "dev_task0_19",
+            "dev_task0_20",
+            "dev_task0_21",
+            "dev_task0_22",
+            "dev_task0_23",
+            "dev_task0_24",
+            "dev_task0_25",
+            "dev_task0_26",
+            "dev_task1_00",
+            "dev_task1_01",
+            "dev_task1_02",
+            "dev_task1_03",
+            "dev_task1_04",
+            "dev_task1_05",
+            "dev_task1_06",
+            "dev_task1_07",
+            "dev_task1_08",
+            "dev_task1_09",
+            "dev_task1_10",
+            "dev_task1_11",
+            "dev_task1_12",
+            "dev_task1_13",
+            "dev_task1_14",
+            "dev_task1_15",
+            "dev_task1_16",
+            "dev_task1_17",
+            "dev_task1_18",
+            "dev_task1_19",
+            "dev_task1_20",
+            "dev_task1_21",
+            "dev_task1_22",
+            "dev_task1_23",
+            "dev_task1_24",
+            "dev_task1_25",
+            "dev_task1_26",
+            "dev_task2_00",
+            "dev_task2_01",
+            "dev_task2_02",
+            "dev_task2_03",
+            "dev_task2_04",
+            "dev_task2_05",
+            "dev_task2_06",
+            "dev_task2_07",
+            "dev_task2_08",
+            "dev_task2_09",
+            "dev_task2_10",
+            "dev_task2_11",
+            "dev_task2_12",
+            "dev_task2_13",
+            "dev_task2_14",
+            "dev_task2_15",
+            "dev_task2_16",
+            "dev_task2_17",
+            "dev_task2_18",
+            "dev_task2_19",
+            "dev_task2_20",
+            "dev_task2_21",
+            "dev_task2_22",
+            "dev_task2_23",
+            "dev_task2_24",
+            "dev_task2_25",
+            "dev_task2_26",
+            "dev_task3_00",
+            "dev_task3_01",
+            "dev_task3_02",
+            "dev_task3_03",
+            "dev_task3_04",
+            "dev_task3_05",
+            "dev_task3_06",
+            "dev_task3_07",
+            "dev_task3_08",
+            "dev_task3_09",
+            "dev_task3_10",
+            "dev_task3_11",
+            "dev_task3_12",
+            "dev_task3_13",
+            "dev_task3_14",
+            "dev_task3_15",
+            "dev_task3_16",
+            "dev_task3_17",
+            "dev_task3_18",
+            "dev_task3_19",
+            "dev_task3_20",
+            "dev_task3_21",
+            "dev_task3_22",
+            "dev_task3_23",
+            "dev_task3_24",
+            "dev_task3_25",
+            "dev_task3_26",
+            "dev_task4_00",
+            "dev_task4_01",
+            "dev_task4_02",
+            "dev_task4_03",
+            "dev_task4_04",
+            "dev_task4_05",
+            "dev_task4_06",
+            "dev_task4_07",
+            "dev_task4_08",
+            "dev_task4_09",
+            "dev_task4_10",
+            "dev_task4_11",
+            "dev_task4_12",
+            "dev_task4_13",
+            "dev_task4_14",
+            "dev_task4_15",
+            "dev_task4_16",
+            "dev_task4_17",
+            "dev_task4_18",
+            "dev_task4_19",
+            "dev_task4_20",
+            "dev_task4_21",
+            "dev_task4_22",
+            "dev_task4_23",
+            "dev_task4_24",
+            "dev_task4_25",
+            "dev_task4_26",
+            "dev_task5_00",
+            "dev_task5_01",
+            "dev_task5_02",
+            "dev_task5_03",
+            "dev_task5_04",
+            "dev_task5_09",
+            "dev_task5_10",
+            "dev_task5_11",
+            "dev_task5_12",
+            "dev_task5_13",
+            "dev_task5_14",
+            "dev_task5_15",
+            "dev_task5_16",
+            "dev_task5_18",
+            "dev_task5_19",
+            "dev_task5_20",
+            "dev_task5_21",
+            "dev_task5_22",
+            "dev_task5_23",
+            "dev_task5_24",
+            "dev_task5_25",
+            "dev_task5_26",
+            "dev_task6_00",
+            "dev_task6_01",
+            "dev_task6_02",
+            "dev_task6_03",
+            "dev_task6_04",
+            "dev_task6_06",
+            "dev_task6_07",
+            "dev_task6_08",
+            "dev_task6_09",
+            "dev_task6_10",
+            "dev_task6_12",
+            "dev_task6_13",
+            "dev_task6_14",
+            "dev_task6_16",
+            "dev_task6_17",
+            "dev_task6_18",
+            "dev_task6_19",
+            "dev_task6_20",
+            "dev_task6_21",
+            "dev_task6_22",
+            "dev_task6_23",
+            "dev_task6_24",
+            "dev_task6_25",
+            "dev_task6_26",
+            "dev_task7_00",
+            "dev_task7_01",
+            "dev_task7_02",
+            "dev_task7_03",
+            "dev_task7_04",
+            "dev_task7_05",
+            "dev_task7_06",
+            "dev_task7_07",
+            "dev_task7_08",
+            "dev_task7_09",
+            "dev_task7_10",
+            "dev_task7_11",
+            "dev_task7_12",
+            "dev_task7_13",
+            "dev_task7_14",
+            "dev_task7_15",
+            "dev_task7_16",
+            "dev_task7_17",
+            "dev_task7_18",
+            "dev_task7_19",
+            "dev_task7_20",
+            "dev_task7_21",
+            "dev_task7_22",
+            "dev_task7_23",
+            "dev_task7_24",
+            "dev_task7_25",
+            "dev_task7_26",
+            "hold_task0_00",
+            "hold_task0_01",
+            "hold_task0_02",
+            "hold_task0_03",
+            "hold_task0_04",
+            "hold_task0_05",
+            "hold_task0_06",
+            "hold_task0_07",
+            "hold_task1_00",
+            "hold_task1_01",
+            "hold_task1_02",
+            "hold_task1_03",
+            "hold_task1_04",
+            "hold_task1_05",
+            "hold_task1_06",
+            "hold_task1_07",
+            "hold_task2_00",
+            "hold_task2_01",
+            "hold_task2_02",
+            "hold_task2_03",
+            "hold_task2_04",
+            "hold_task2_05",
+            "hold_task2_06",
+            "hold_task2_07",
+            "hold_task3_00",
+            "hold_task3_01",
+            "hold_task3_02",
+            "hold_task3_03",
+            "hold_task3_04",
+            "hold_task3_05",
+            "hold_task3_06",
+            "hold_task3_07",
+            "hold_task4_00",
+            "hold_task4_01",
+            "hold_task4_02",
+            "hold_task4_03",
+            "hold_task4_04",
+            "hold_task4_05",
+            "hold_task4_06",
+            "hold_task4_07",
+            "hold_task5_00",
+            "hold_task5_01",
+            "hold_task5_02",
+            "hold_task5_03",
+            "hold_task5_04",
+            "hold_task5_05",
+            "hold_task5_06",
+            "hold_task5_07",
+            "hold_task6_00",
+            "hold_task6_01",
+            "hold_task6_02",
+            "hold_task6_04",
+            "hold_task6_05",
+            "hold_task6_06",
+            "hold_task6_07",
+            "hold_task7_00",
+            "hold_task7_01",
+            "hold_task7_02",
+            "hold_task7_03",
+            "hold_task7_04",
+            "hold_task7_05",
+            "hold_task7_06",
+            "hold_task7_07",
+            "t502_field_sector0_offset1",
+            "t502_field_sector0_offset1_T695_xminus",
+            "t502_field_sector0_offset1_T695_xplus",
+            "t502_field_sector0_offset1_T695_yminus",
+            "t502_field_sector0_offset1_T695_yplus",
+            "t502_field_sector0_offset2",
+            "t502_field_sector0_offset2_T695_xminus",
+            "t502_field_sector0_offset2_T695_yminus",
+            "t502_field_sector1_offset1",
+            "t502_field_sector2_offset1",
+            "t502_field_sector2_offset1_T695_xminus",
+            "t502_field_sector2_offset1_T695_yminus",
+            "t502_field_sector2_offset1_T695_yplus",
+            "t502_field_sector3_offset1",
+            "t502_field_sector3_offset2",
+            "t502_field_sector4_offset1",
+            "t502_field_sector5_offset1",
+            "t502_field_sector5_offset1_T695_xminus",
+            "t502_field_sector5_offset1_T695_xplus",
+            "t502_field_sector5_offset1_T695_yminus",
+            "t502_field_sector5_offset1_T695_yplus",
+            "t502_field_sector5_offset2",
+            "t502_field_sector6_offset1",
+            "t502_field_sector7_offset1",
+            "wide117_80_dev6_LEFT_00",
+            "wide117_80_dev6_LEFT_01",
+            "wide117_80_dev6_LEFT_02",
+            "wide117_80_dev6_LEFT_03",
+            "wide117_80_dev6_LEFT_04",
+            "wide117_80_dev6_LEFT_05",
+            "wide117_80_dev6_LEFT_06",
+            "wide117_80_dev6_LEFT_07",
+            "wide117_80_dev6_LEFT_08",
+            "wide117_80_dev6_LEFT_09",
+            "wide117_80_dev6_LEFT_10",
+            "wide117_80_dev6_LEFT_11",
+            "wide117_80_dev6_LEFT_12",
+            "wide117_80_dev6_LEFT_13",
+            "wide117_80_dev6_LEFT_14",
+            "wide117_80_dev6_LEFT_15",
+            "wide117_80_dev6_LEFT_16",
+            "wide117_80_dev6_LEFT_17",
+            "wide117_80_dev6_LEFT_18",
+            "wide117_80_dev6_LEFT_19",
+            "wide117_80_dev6_LEFT_20",
+            "wide117_80_dev6_LEFT_21",
+            "wide117_80_dev6_LEFT_22",
+            "wide117_80_dev6_LEFT_23",
+            "wide117_80_dev6_LEFT_24",
+            "wide117_80_dev6_LEFT_25",
+            "wide117_80_dev6_LEFT_26",
+            "wide117_80_dev6_RIGHT_00",
+            "wide117_80_dev6_RIGHT_01",
+            "wide117_80_dev6_RIGHT_02",
+            "wide117_80_dev6_RIGHT_03",
+            "wide117_80_dev6_RIGHT_04",
+            "wide117_80_dev6_RIGHT_05",
+            "wide117_80_dev6_RIGHT_06",
+            "wide117_80_dev6_RIGHT_07",
+            "wide117_80_dev6_RIGHT_08",
+            "wide117_80_dev6_RIGHT_09",
+            "wide117_80_dev6_RIGHT_10",
+            "wide117_80_dev6_RIGHT_11",
+            "wide117_80_dev6_RIGHT_12",
+            "wide117_80_dev6_RIGHT_13",
+            "wide117_80_dev6_RIGHT_14",
+            "wide117_80_dev6_RIGHT_15",
+            "wide117_80_dev6_RIGHT_16",
+            "wide117_80_dev6_RIGHT_17",
+            "wide117_80_dev6_RIGHT_18",
+            "wide117_80_dev6_RIGHT_19",
+            "wide117_80_dev6_RIGHT_20",
+            "wide117_80_dev6_RIGHT_21",
+            "wide117_80_dev6_RIGHT_22",
+            "wide117_80_dev6_RIGHT_23",
+            "wide117_80_dev6_RIGHT_24",
+            "wide117_80_dev6_RIGHT_25",
+            "wide117_80_dev6_RIGHT_26",
+            "wide117_8m_dev6_LEFT_00",
+            "wide117_8m_dev6_LEFT_01",
+            "wide117_8m_dev6_LEFT_02",
+            "wide117_8m_dev6_LEFT_03",
+            "wide117_8m_dev6_LEFT_04",
+            "wide117_8m_dev6_LEFT_05",
+            "wide117_8m_dev6_LEFT_06",
+            "wide117_8m_dev6_LEFT_07",
+            "wide117_8m_dev6_LEFT_08",
+            "wide117_8m_dev6_LEFT_09",
+            "wide117_8m_dev6_LEFT_10",
+            "wide117_8m_dev6_LEFT_11",
+            "wide117_8m_dev6_LEFT_12",
+            "wide117_8m_dev6_LEFT_13",
+            "wide117_8m_dev6_LEFT_14",
+            "wide117_8m_dev6_LEFT_15",
+            "wide117_8m_dev6_LEFT_16",
+            "wide117_8m_dev6_LEFT_17",
+            "wide117_8m_dev6_LEFT_18",
+            "wide117_8m_dev6_LEFT_19",
+            "wide117_8m_dev6_LEFT_20",
+            "wide117_8m_dev6_LEFT_21",
+            "wide117_8m_dev6_LEFT_22",
+            "wide117_8m_dev6_LEFT_23",
+            "wide117_8m_dev6_LEFT_24",
+            "wide117_8m_dev6_LEFT_25",
+            "wide117_8m_dev6_LEFT_26",
+            "wide117_8m_dev6_RIGHT_00",
+            "wide117_8m_dev6_RIGHT_01",
+            "wide117_8m_dev6_RIGHT_02",
+            "wide117_8m_dev6_RIGHT_03",
+            "wide117_8m_dev6_RIGHT_04",
+            "wide117_8m_dev6_RIGHT_05",
+            "wide117_8m_dev6_RIGHT_06",
+            "wide117_8m_dev6_RIGHT_07",
+            "wide117_8m_dev6_RIGHT_08",
+            "wide117_8m_dev6_RIGHT_09",
+            "wide117_8m_dev6_RIGHT_10",
+            "wide117_8m_dev6_RIGHT_11",
+            "wide117_8m_dev6_RIGHT_12",
+            "wide117_8m_dev6_RIGHT_13",
+            "wide117_8m_dev6_RIGHT_14",
+            "wide117_8m_dev6_RIGHT_15",
+            "wide117_8m_dev6_RIGHT_16",
+            "wide117_8m_dev6_RIGHT_17",
+            "wide117_8m_dev6_RIGHT_18",
+            "wide117_8m_dev6_RIGHT_19",
+            "wide117_8m_dev6_RIGHT_20",
+            "wide117_8m_dev6_RIGHT_21",
+            "wide117_8m_dev6_RIGHT_22",
+            "wide117_8m_dev6_RIGHT_23",
+            "wide117_8m_dev6_RIGHT_24",
+            "wide117_8m_dev6_RIGHT_25",
+            "wide117_8m_dev6_RIGHT_26"
+          ],
+          "new_command_ids_changed": [
+            "dev_task6_05",
+            "dev_task6_11",
+            "dev_task6_15",
+            "hold_task6_03",
+            "t502_field_sector2_offset1_T695_xplus",
+            "t502_field_sector2_offset2",
+            "t502_field_sector7_offset2"
+          ],
+          "old_decisions_changed": 78676,
+          "new_decisions_changed": 1737,
+          "old_decisions": 81956,
+          "new_decisions": 1737,
+          "complete_410_owncarry_command_gate": false,
+          "total_tensor_bytes": 2783560,
+          "added_tensor_bytes": 161584,
+          "common_parent_bytes": 2621976,
+          "batch1_CPU15_median_ms": 0.369254,
+          "batch1_CPU15_p95_ms": 0.42357325,
+          "latency_warmup": 64,
+          "latency_samples": 256,
+          "peak_process_rss_bytes": 1177501696,
+          "peak_includes_cached_training_data_and_Python": true,
+          "decoded_center_workspace_counted": true
+        }
+      }
+    }
+  },
+  "retained": "T698",
+  "no_novelty_or_unknown_map_claim": true,
+  "new78_is_exposed_fixed_regression_set": true,
+  "all_units_and_processes_stopped_guard": true,
+  "epoch": 1795397292.9302633
+}
