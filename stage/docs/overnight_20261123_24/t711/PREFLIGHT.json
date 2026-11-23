@@ -1,0 +1,92 @@
+{
+  "state": "PASS",
+  "valid": 96,
+  "invalid": 0,
+  "duplicates": 0,
+  "models": [
+    "parent",
+    "compact",
+    "B0",
+    "constrained",
+    "coverage"
+  ],
+  "missing_models": [
+    {
+      "name": "whole_nominal",
+      "reason": "producer_model_or_fit_audit_missing"
+    },
+    {
+      "name": "whole_induced",
+      "reason": "producer_model_or_fit_audit_missing"
+    }
+  ],
+  "storage_worst_bytes": 2218524672,
+  "worker_binding": true,
+  "corrupt_inspector_RED": true,
+  "actual_helper_cgroup": true,
+  "new_native": 0,
+  "new_learning": 0,
+  "elapsed_seconds": 16.05462884902954,
+  "resources": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "11"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "13"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "15"
+      ],
+      [
+        "0",
+        "8"
+      ],
+      [
+        "0",
+        "9"
+      ]
+    ],
+    "phase_process_metadata_only": [
+      {
+        "pid": 582346,
+        "allowed_cpus": [
+          5
+        ],
+        "physical_overlap": []
+      }
+    ],
+    "CPUQuota": "800%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 8589934592,
+    "MemorySwapMax": 0,
+    "GPU": "cuda0geometry_only_cpu_exact_deployment"
+  }
+}
