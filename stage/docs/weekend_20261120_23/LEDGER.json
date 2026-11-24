@@ -1,8 +1,8 @@
 {
-  "physics": 410922975,
-  "commands": 17944,
-  "science_seconds": 76577.96777562523,
-  "audit_seconds": 7331.6586537361145,
+  "physics": 464740584,
+  "commands": 20396,
+  "science_seconds": 83108.0791032734,
+  "audit_seconds": 7741.740535497665,
   "transport_seconds": 17992.76906633377,
   "Actor_live": 4089,
   "Actor_shadow": 4089,
@@ -1302,13 +1302,37 @@
   "new_tuesday_experiments": [
     {
       "id": "T712",
-      "state": "RESERVED",
+      "state": "COMPLETE",
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t712_retention_tradeoff",
       "max_physics": 72987036,
       "max_commands": 2452,
       "separate_gradient_each_cap": 240,
       "separate_optimizer_each_cap": 192,
-      "Actor_old_cap_unchanged": true
+      "Actor_old_cap_unchanged": true,
+      "accounted": {
+        "physics": 53817609,
+        "commands": 2452,
+        "science_seconds": 6524.437102556229,
+        "audit_seconds": 410.0818817615509,
+        "Gradient_live": 240,
+        "Gradient_shadow": 240,
+        "Gradient_independent": 240,
+        "Optimizer_live": 116,
+        "Optimizer_shadow": 116,
+        "Optimizer_independent": 116,
+        "Radius_live": 1,
+        "Radius_shadow": 1,
+        "Radius_independent": 1
+      }
+    },
+    {
+      "id": "T712_PREPARATION",
+      "state": "PASS",
+      "science_seconds": 5.674225091934204,
+      "new_native": 0,
+      "new_actual_model_optimization": 0,
+      "synthetic_optimizer_attempts": 4,
+      "synthetic_gradient_evaluations": 6
     }
   ]
 }

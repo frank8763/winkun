@@ -1,10 +1,45 @@
 {
-  "state": "REGISTERED_NOT_LAUNCHED",
+  "state": "ACTIVE",
   "unit": "stage-t712.service",
   "finalizer": "stage-t712-finalizer.service",
   "notification": "Meaningful complete result or real failure/budget risk only; unchanged healthy progression quiet",
   "absolute_learning_stop": 1795501800.0,
   "absolute_native_stop": 1795519800.0,
   "absolute_all_stop": 1795521600.0,
-  "new_periodic_automation": false
+  "new_periodic_automation": false,
+  "actual_status": {
+    "state": "ACTIVE",
+    "child_pid": 824400,
+    "pid": 824400,
+    "driver_pid": 817266,
+    "child": "new_plain",
+    "action": "main",
+    "epoch": 1795487069.280965,
+    "physics": 1388892,
+    "commands": 63,
+    "completed": 49
+  },
+  "checked_epoch": 1795487074.6981928,
+  "source_remote": "6984357f6efb5ef8ac5a9fb652d4144059d39933",
+  "source_tree": "5f31788ebc37ea1d239c4062f44f3d731a2878ab",
+  "one_shot_finalizer_waits_for_actual_exit": true,
+  "locked_input_count": 5667,
+  "locked_input_mismatches": [],
+  "fit_audited_models": [
+    "plain",
+    "replay50",
+    "replay80",
+    "replay95"
+  ],
+  "retained": "T698",
+  "completed_native_blocks": [
+    "known_plain"
+  ],
+  "known_plain_audit": "PASS",
+  "known_plain_old403_lost": 5,
+  "remaining_estimate_seconds": [
+    3900,
+    6600
+  ],
+  "estimate_is_not_deadline_extension": true
 }
