@@ -1,6 +1,6 @@
 {
-  "state": "REGISTERED_PENDING_EXACT_SOURCE",
-  "epoch": 1795495992.6961412,
+  "state": "ACTIVE",
+  "epoch": 1795500382.5609484,
   "unit": "stage-t714.service",
   "one_shot_finalizer": "stage-t714-finalizer.service",
   "quiet_while_healthy": true,
@@ -15,5 +15,47 @@
   "absolute_all_stop": 1795525200.0,
   "no_periodic_automation": true,
   "no_automatic_next_science": true,
-  "scientific_inputs_locked": true
+  "scientific_inputs_locked": true,
+  "actual_status": {
+    "state": "ACTIVE",
+    "child_pid": 917110,
+    "pid": 917110,
+    "driver_pid": 897962,
+    "child": "acquisition_success",
+    "action": "main",
+    "epoch": 1795499905.9531403,
+    "physics": 975722,
+    "commands": 32,
+    "completed": 18
+  },
+  "inputs": 5741,
+  "input_sha_mismatches": [],
+  "pre_source_remote_commit": "55ec82e9f4dd63d8d3b3985b7b6fa10275ffad6a",
+  "fit_call_counts": {
+    "self_live_optimizer": 39,
+    "self_live_gradient": 80,
+    "self_shadow_optimizer": 39,
+    "self_shadow_gradient": 80
+  },
+  "helper_pid": 897976,
+  "actual_first_fit_running": false,
+  "actual_independent_audits": {
+    "B0": "PASS",
+    "nominal": "PASS",
+    "self": "PASS",
+    "success": "PASS"
+  },
+  "inputs_sha_mismatches": [],
+  "completed_native_blocks": [
+    "new_self",
+    "acquisition_self",
+    "known_success",
+    "new_success",
+    "known_self"
+  ],
+  "healthy": true,
+  "no_new_launch": true,
+  "handoff_relay": "stage-t714-handoff-relay.service",
+  "handoff_path": "stage/docs/day_20261124/t714_handoff/HANDOFF.md",
+  "phase": "FOUR_FIXED_MODEL_NEW_LAYOUT_TESTS"
 }
