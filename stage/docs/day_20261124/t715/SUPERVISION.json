@@ -1,0 +1,18 @@
+{
+  "state": "REGISTERED_PENDING_EXACT_SOURCE",
+  "epoch": 1795503483.5347319,
+  "unit": "stage-t715.service",
+  "one_shot_finalizer": "stage-t715-finalizer.service",
+  "handoff_relay": "stage-t715-handoff-relay.service",
+  "quiet_while_healthy": true,
+  "notify_only": [
+    "complete_audited_result",
+    "real_failure",
+    "stuck",
+    "deadline_or_budget_risk"
+  ],
+  "absolute_learning_stop": 1795510800.0,
+  "absolute_native_stop": 1795522500.0,
+  "absolute_all_stop": 1795525200.0,
+  "no_automatic_next_science": true
+}
