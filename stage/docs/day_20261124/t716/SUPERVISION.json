@@ -1,11 +1,44 @@
 {
-  "state": "REGISTERED_PENDING_EXACT_SOURCE",
-  "epoch": 1795512604.1136122,
+  "state": "ACTIVE",
+  "epoch": 1795512921.476413,
   "unit": "stage-t716.service",
   "finalizer": "stage-t716-finalizer.service",
   "quiet_while_healthy": true,
   "new_learning": 0,
   "absolute_native_stop": 1795514135.0359535,
   "absolute_all_stop": 1795515275.0359557,
-  "no_next_science": true
+  "no_next_science": true,
+  "actual_status": {
+    "state": "ACTIVE",
+    "child_pid": 973336,
+    "pid": 973336,
+    "driver_pid": 972720,
+    "child": "recovery_replay50",
+    "action": "main",
+    "epoch": 1795512920.3396692,
+    "physics": 19165,
+    "commands": 11,
+    "completed": 0
+  },
+  "locked_inputs": 6201,
+  "input_sha_mismatches": [],
+  "source_remote_commit": "89931a26c00ceb551e6c80a8ed4147db149ab4d0",
+  "source_timeout_recovered": true,
+  "no_scientific_retries": true,
+  "seven_worker_affinity_verified": true,
+  "worker_pids": [
+    972735,
+    972751,
+    972760,
+    972769,
+    972771,
+    972773,
+    972776
+  ],
+  "no_learning_or_fit_events": true,
+  "completed_native_blocks": [
+    "recovery_compact"
+  ],
+  "healthy": true,
+  "compact_summary_safe4of14": "INDEPENDENT_AUDIT_PASS_FULL18_GATE_PENDING"
 }
