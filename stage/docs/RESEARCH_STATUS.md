@@ -1,3 +1,7 @@
+2026-11-24 T716既有神经teacher恢复资格已REGISTERED，未launch待精确source：compact固定14ID/replay50四ID，B0真实首次1cm完整prefix后teacher自主，36science+28worker管理cmd/1628828physics最大/0学习；完整原teacherhistory inspector、corruptprefix、真实worker/helper预检PASS。新原jobnative注册+1560/all+2700且从严20:15/21，T698保持。见day_20261124/t716/PLAN及actualstatus。
+
+2026-11-24 17:10用户“继续”：T715原最后native/childdeadline已于暂停中到期，先杀冻结过期nativegroup再恢复driver仅结算，原root真实FAILED/TimeoutExpired和raw不改，最终fresh区间结果缺测、非算法完整negative；先前六块已auditPASS。28主要成员remote逐SHA通过，finalsource2105fe885ab776ece1f182814dc446147141b425/tree3d432e6856adea3eb81cdf00709277c4797af019核验，全部science/driver/helper/finalizer/source/relay已退。17:00学习已截止，不新学/不延，继续0learning既有神经teacher恢复资格准备T716：固定compact14+replay50四项既有原起点成功与18首次1cm恢复点已逐SHA/同time元数据核验，0新physics/forward/optimizer，未登记或launch；见day_20261124/t716/{PLAN.md,FIXED_ASSIGNMENT.json}，native20:15/all21仍从严。T698保持。
+
 2026-11-24 T715同容量执行命令区间监督对照结束：FAILED，完整预定面板=False；已曝光18来源验收和新三布局72起点成对结果见day_20261124/t715/FINDINGS及PAIRED_RESULTS。T698保持，无自动下一任务。
 
 2026-11-24 16:07用户要求“先暂停一下”：T715科学/driver/helper/workers、finalizer及handoff三注册cgroup全部冻结并核验frozen1，接力automation暂停，未启动下一任务。test_interval已86/96science rows但尚未完整/最终audit，不提前结论。原始模型/raw/进程现场保留；原17:00学习/20:15native/21全停及更早actiondeadline不延，须用户明确恢复才可继续。见day_20261124/t715/USER_PAUSE.json。
