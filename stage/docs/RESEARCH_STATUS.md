@@ -1,3 +1,5 @@
+2026-11-24 用户新授权今晚学习19:30/native20:15/全停21:00，T717闭环条件恢复PPO已REGISTERED，未launch待源码精确同步。固定B0/20198小头、12训练6验证/3freshblock/独立Value，前缀只因果复原不入梯度，无旧403保持损失或传统导航；216science含exact/9746212physics/272cmd最大，live-shadow-independent各Actor/Value14含预检2。真实worker0物理取消/loader/密度/owncarry/独立Adam预检PASS，准备自守卫零步拒绝保留；T698保持。见day_20261124/t717/PLAN与actualstatus。
+
 2026-11-24 T716既有神经teacher恢复资格结束：COMPLETE，完整面板=True，条件恢复5/18、全18门=False。0学习，非单student原起点能力；17:00已截止不整合，T698保持，见day_20261124/t716/FINDINGS及RECOVERY_RESULTS。
 
 2026-11-24 T716既有神经teacher恢复资格已REGISTERED，未launch待精确source：compact固定14ID/replay50四ID，B0真实首次1cm完整prefix后teacher自主，36science+28worker管理cmd/1628828physics最大/0学习；完整原teacherhistory inspector、corruptprefix、真实worker/helper预检PASS。新原jobnative注册+1560/all+2700且从严20:15/21，T698保持。见day_20261124/t716/PLAN及actualstatus。

@@ -1,6 +1,6 @@
 {
-  "state": "ACTIVE",
-  "epoch": 1795512921.476413,
+  "state": "COMPLETE_GATE_FAILED_ALL_UNITS_EXITED",
+  "epoch": 1795513535.7853105,
   "unit": "stage-t716.service",
   "finalizer": "stage-t716-finalizer.service",
   "quiet_while_healthy": true,
@@ -40,5 +40,21 @@
     "recovery_compact"
   ],
   "healthy": true,
-  "compact_summary_safe4of14": "INDEPENDENT_AUDIT_PASS_FULL18_GATE_PENDING"
+  "compact_summary_safe4of14": "INDEPENDENT_AUDIT_PASS_FULL18_GATE_PENDING",
+  "all18_recovery_qualified": false,
+  "safe": 5,
+  "total": 18,
+  "collision": 1,
+  "timeout": 12,
+  "boundary_overlap": 9,
+  "all_actual_pids_exited": true,
+  "science_rows": 36,
+  "primary_remote_members": 16,
+  "full_histories_local_pending": true,
+  "final_source": {
+    "state": "ACTUAL_EXIT0_EXACT_TREE_VERIFIED",
+    "remote_commit": "37e6b93d4b504e6e92deb138afa800cb8e59a146",
+    "root_tree": "e8d53fddf87cf84649aa0870ebf914ab3d38f698"
+  },
+  "automation_stop_requested": true
 }
