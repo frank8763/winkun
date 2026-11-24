@@ -1,0 +1,161 @@
+{
+  "state": "COMPLETE",
+  "complete_panel": true,
+  "results": {
+    "recovery": {
+      "total": 18,
+      "safe": 1,
+      "safe_ids": [
+        "T699_new_t502_field_sector0_offset2_yplus"
+      ],
+      "collision_ids": [
+        "T699_new_dev_task6_15_yminus"
+      ],
+      "timeout_ids": [
+        "T699_new_dev_task6_15_xminus",
+        "T699_new_dev_task6_15_yawminus",
+        "T699_new_hold_task6_03_yplus",
+        "T699_new_t502_field_sector0_offset1_yawplus",
+        "T699_new_t502_field_sector0_offset2_xminus",
+        "T699_new_t502_field_sector0_offset2_xplus",
+        "T699_new_t502_field_sector0_offset2_yawminus",
+        "T699_new_t502_field_sector0_offset2_yminus",
+        "T699_new_t502_field_sector1_offset1_xminus",
+        "T699_new_t502_field_sector2_offset1_yplus",
+        "T699_new_t502_field_sector5_offset1_yawminus",
+        "T711_t502_field_sector0_offset1_r04_a22.5",
+        "T711_t502_field_sector0_offset2_r04_a112.5",
+        "T711_t502_field_sector0_offset2_r04_a202.5",
+        "T711_t502_field_sector0_offset2_r04_a292.5",
+        "T711_t502_field_sector5_offset1_r04_a22.5"
+      ],
+      "boundary_ids": [
+        "T699_new_t502_field_sector0_offset2_xminus",
+        "T699_new_t502_field_sector0_offset2_xplus",
+        "T699_new_t502_field_sector0_offset2_yawminus",
+        "T699_new_t502_field_sector0_offset2_yminus",
+        "T699_new_t502_field_sector1_offset1_xminus",
+        "T699_new_t502_field_sector5_offset1_yawminus",
+        "T711_t502_field_sector0_offset2_r04_a112.5",
+        "T711_t502_field_sector0_offset2_r04_a202.5",
+        "T711_t502_field_sector0_offset2_r04_a292.5",
+        "T711_t502_field_sector5_offset1_r04_a22.5"
+      ],
+      "training_safe": 1,
+      "validation_safe": 0
+    },
+    "original": {
+      "total": 18,
+      "safe": 1,
+      "safe_ids": [
+        "T699_new_dev_task6_15_yminus"
+      ],
+      "collision_ids": [],
+      "timeout_ids": [
+        "T699_new_dev_task6_15_xminus",
+        "T699_new_dev_task6_15_yawminus",
+        "T699_new_hold_task6_03_yplus",
+        "T699_new_t502_field_sector0_offset1_yawplus",
+        "T699_new_t502_field_sector0_offset2_xminus",
+        "T699_new_t502_field_sector0_offset2_xplus",
+        "T699_new_t502_field_sector0_offset2_yawminus",
+        "T699_new_t502_field_sector0_offset2_yminus",
+        "T699_new_t502_field_sector0_offset2_yplus",
+        "T699_new_t502_field_sector1_offset1_xminus",
+        "T699_new_t502_field_sector2_offset1_yplus",
+        "T699_new_t502_field_sector5_offset1_yawminus",
+        "T711_t502_field_sector0_offset1_r04_a22.5",
+        "T711_t502_field_sector0_offset2_r04_a112.5",
+        "T711_t502_field_sector0_offset2_r04_a202.5",
+        "T711_t502_field_sector0_offset2_r04_a292.5",
+        "T711_t502_field_sector5_offset1_r04_a22.5"
+      ],
+      "boundary_ids": [
+        "T699_new_t502_field_sector0_offset2_xminus",
+        "T699_new_t502_field_sector0_offset2_xplus",
+        "T699_new_t502_field_sector0_offset2_yawminus",
+        "T699_new_t502_field_sector0_offset2_yminus",
+        "T699_new_t502_field_sector0_offset2_yplus",
+        "T699_new_t502_field_sector1_offset1_xminus",
+        "T699_new_t502_field_sector5_offset1_yawminus",
+        "T711_t502_field_sector0_offset2_r04_a112.5",
+        "T711_t502_field_sector0_offset2_r04_a202.5",
+        "T711_t502_field_sector0_offset2_r04_a292.5",
+        "T711_t502_field_sector5_offset1_r04_a22.5"
+      ],
+      "training_safe": 1,
+      "validation_safe": 0
+    }
+  },
+  "acquisition_gate": false,
+  "model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t717_onpolicy_recovery/training/model_2.pt.gz",
+    "sha256": "d37f60fae0829bf0d2cd0cf61aa54f36f786683968a93ae5b75cf2b1885d22c6",
+    "bytes": 1978594,
+    "policy_hash": "6a05ade53ed555c2f265c468db2737eaec683ccf5c9cf9485ff7c58d439a27fa",
+    "joint_hash": "b50f405ba67479076ade69f7efe22f2a628d4a079dc3bc3a1552c11d9bc5bbe4"
+  },
+  "training_audit": "PASS",
+  "validation_audit": "PASS",
+  "actual_cost": {
+    "state": "COMPLETE",
+    "children": [
+      {
+        "name": "training",
+        "mode": "train",
+        "pid": 986420,
+        "audit": false,
+        "returncode": 0,
+        "elapsed_seconds": 772.1819252967834,
+        "physics": 4423046,
+        "commands": 186,
+        "conservative_upper_if_summary_missing": false
+      },
+      {
+        "name": "training",
+        "mode": "train_audit",
+        "pid": 988630,
+        "audit": true,
+        "returncode": 0,
+        "elapsed_seconds": 61.23418712615967
+      },
+      {
+        "name": "validation",
+        "mode": "evaluate",
+        "pid": 988774,
+        "audit": false,
+        "returncode": 0,
+        "elapsed_seconds": 474.82881331443787,
+        "physics": 3184286,
+        "commands": 86,
+        "conservative_upper_if_summary_missing": false
+      },
+      {
+        "name": "validation",
+        "mode": "evaluate_audit",
+        "pid": 989760,
+        "audit": true,
+        "returncode": 0,
+        "elapsed_seconds": 27.986210346221924
+      }
+    ],
+    "totals": {
+      "physics": 7607332,
+      "commands": 272,
+      "science_seconds": 1247.0107386112213,
+      "audit_seconds": 89.22039747238159,
+      "Actor_Adam_live": 14,
+      "Actor_Adam_shadow": 14,
+      "Actor_Adam_independent": 14,
+      "Value_Adam_live": 14,
+      "Value_Adam_shadow": 14,
+      "Value_Adam_independent": 14
+    },
+    "old_4096_counters_unchanged": true
+  },
+  "retained": "T698",
+  "integration": "NOT_RUN_SEPARATE_FUTURE_AUTHORIZATION_REQUIRED",
+  "old403": "NOT_MEASURED_PHASE1_ACQUISITION_ONLY",
+  "no_new_algorithm_or_generalization_claim": true,
+  "epoch": 1795516050.8905132
+}
