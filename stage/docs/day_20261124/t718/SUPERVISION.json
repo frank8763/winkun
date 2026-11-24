@@ -1,10 +1,136 @@
 {
-  "state": "REGISTERED_AWAITING_EXACT_SOURCE",
-  "epoch": 1795516722.1504846,
-  "max_physics": 9772968,
-  "max_commands": 244,
+  "state": "ACTIVE",
+  "epoch": 1795516814.8768702,
+  "status": {
+    "state": "ACTIVE",
+    "child_pid": 994760,
+    "pid": 994760,
+    "driver_pid": 994741,
+    "child": "recovery_baseline",
+    "action": "main",
+    "epoch": 1795516812.320689,
+    "physics": 170719,
+    "commands": 14,
+    "completed": 0
+  },
+  "workers": [
+    {
+      "pid": 994776,
+      "state": "S",
+      "CPU": [
+        8
+      ]
+    },
+    {
+      "pid": 994782,
+      "state": "S",
+      "CPU": [
+        9
+      ]
+    },
+    {
+      "pid": 994784,
+      "state": "S",
+      "CPU": [
+        10
+      ]
+    },
+    {
+      "pid": 994786,
+      "state": "S",
+      "CPU": [
+        11
+      ]
+    },
+    {
+      "pid": 994791,
+      "state": "S",
+      "CPU": [
+        12
+      ]
+    },
+    {
+      "pid": 994794,
+      "state": "R",
+      "CPU": [
+        13
+      ]
+    },
+    {
+      "pid": 994803,
+      "state": "S",
+      "CPU": [
+        14
+      ]
+    }
+  ],
+  "driver": 994741,
+  "helper": 994755,
+  "locked_inputs": 6236,
+  "locked_SHA_mismatches": 0,
+  "resources": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "11"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "13"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "15"
+      ],
+      [
+        "0",
+        "8"
+      ],
+      [
+        "0",
+        "9"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "CPUQuota": "800%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 8589934592,
+    "MemorySwapMax": 0,
+    "GPU": "cuda0geometry_only_cpu_exact_deployment"
+  },
+  "unit": "MainPID=994739\nMemoryCurrent=4690313216\nActiveState=active\n",
   "new_learning": 0,
-  "old_and_T717_all_units_stopped": true,
+  "source_pending": {
+    "state": "PRE_SOURCE_ACTUAL_EXIT0_EXACT_TREE_VERIFIED_PENDING_POST_SCIENCE_CHARGE",
+    "remote_commit": "1358414146193a25a8aab3404260dc5e28aaacc1",
+    "root_tree": "3afa99559b8d0ae45f48b0957825f08b0b9b32c1",
+    "seconds": 300,
+    "charge_once_after_all_science_exits": true
+  },
   "T717_deterministic_gate_still_failed": true,
-  "T698_retained": true
+  "no_periodic_automation": true
 }

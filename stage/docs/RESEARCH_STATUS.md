@@ -1,3 +1,5 @@
+2026-11-24 T718冻结随机策略vs同噪声B0对照结束：COMPLETE，完整面板=True，描述性附加收益标记=False；各54fresh与54exact、18条件内配对结果见day_20261124/t718/PAIRED_RESULTS。0学习，不撤销T717确定性能力门失败或启动整合，T698保持。
+
 2026-11-24 用户要求继续推进，T718冻结随机策略vs探索噪声对照已REGISTERED、未launch待精确source；同T717初始B0/最终模型、同sigma.2、固定18恢复条件×3新共享seed各54fresh+54exact，共216science/244含管理cmd，0学习。真实双模型worker取消0物理及全prefix/密度/owncarry预检PASS，T717确定性门失败保留，不自动整合，native20:15/all21从严。见day_20261124/t718/PLAN及actualstatus。
 
 2026-11-24 T717新授权闭环恢复PPO结束：COMPLETE，完整面板=True、预声明能力门=False；固定12训练/6验证、完整18条件恢复与18原起点见day_20261124/t717/PAIRED_RESULTS。原GRU冻结/20198头可塑，无旧403保持或自动整合，T698保持。
