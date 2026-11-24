@@ -1,3 +1,5 @@
+2026-11-24 用户要求检查并开启下一轮，T720冻结T719完整曝光78+96面板已REGISTERED未launch待精确source，0学习；同candidate18已审原起点+2重叠exact按SHA/初态/审计复用，新增156fresh+29exact=185science/213含管理cmd，完整174逐ID gains/losses/collisions验收。加载器/进程pickling准备零物理拒绝原件保留，真实worker/helper及全复用initialpayload预检PASS。原19:30停学习/20:15native/21全停不延，旧403/core407未测且T719能力门仍FAIL，T698保持。见day_20261124/t720/PLAN及actualstatus。
+
 2026-11-24 T719全结果加权回放结束：COMPLETE，完整面板=True、预声明能力门=False；固定12训练/6验证、完整18条件恢复与18原起点见day_20261124/t719/PAIRED_RESULTS。原GRU冻结/20198头可塑，无旧403保持或自动整合，T698保持。
 
 2026-11-24 用户继续授权T719全72实际恢复轨迹结果加权MLE，已REGISTERED未launch待精确source；同B0/20198头、全72含成功失败正权重/逐ID与轨迹归一化、16Adam各live-shadow-independent加预检1，共各17独立新账、0Value/0新采样物理，不称PPO/AWR原创。真实worker0物理/密度/完整carry/梯度重建预检PASS；协议2MiB准备拒绝和过早source本地拒绝原件保留，固定同字节manifest引用恢复；最终完整18恢复+18原起点各exact/86cmd，学习19:30/native20:15/all21从严，T698保持。见day_20261124/t719/PLAN及actualstatus。

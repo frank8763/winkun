@@ -1,136 +1,35 @@
 {
-  "state": "ACTIVE",
-  "epoch": 1795518713.9602928,
-  "status": {
-    "state": "ACTIVE",
-    "child": "fit",
-    "action": "fit",
-    "child_pid": 1005898,
-    "driver_pid": 1005879,
-    "epoch": 1795518673.9478693,
-    "absolute_action_stop": 1795519273.9478693
+  "state": "COMPLETE_ALL_UNITS_EXITED",
+  "epoch": 1795519459.031086,
+  "recovery_safe": 4,
+  "training_safe": 2,
+  "validation_safe": 2,
+  "original_safe": 8,
+  "acquisition_gate": false,
+  "all_audits": "PASS",
+  "locked_inputs": 6324,
+  "locked_SHA_mismatches": 0,
+  "primary_members": 17,
+  "full_histories_local_pending": true,
+  "source": {
+    "state": "ACTUAL_EXIT0_EXACT_TREE_VERIFIED",
+    "remote_commit": "24a534c2b804e42c5998bd5b71f4790a7c24ece3",
+    "root_tree": "a225337d6166c63fd51d5c156a26d25399d0ea45"
   },
-  "actual_child_state": "R",
-  "thread_affinities": {
-    "1005898": [
-      14
+  "transport": {
+    "cap": 900,
+    "charged_seconds": 627.7935149669647,
+    "source_commits": [
+      "85cec1094ea52f15c3776336f4b2dfd0e13e285e",
+      "24a534c2b804e42c5998bd5b71f4790a7c24ece3"
     ],
-    "1005909": [
-      14
-    ],
-    "1005910": [
-      14
-    ],
-    "1005911": [
-      14
-    ],
-    "1005912": [
-      14
-    ],
-    "1005913": [
-      14
-    ],
-    "1005914": [
-      14
-    ],
-    "1005915": [
-      14
-    ],
-    "1005916": [
-      14
-    ],
-    "1005917": [
-      14
-    ],
-    "1005918": [
-      14
-    ],
-    "1005919": [
-      14
-    ],
-    "1005920": [
-      14
-    ],
-    "1005921": [
-      14
-    ],
-    "1005922": [
-      14
-    ],
-    "1005983": [
-      14
+    "attempts": [
+      {
+        "state": "NO_NETWORK_PREMATURE_LOCAL_ROOT_PROTOCOL_REJECTION",
+        "charged_seconds": 5
+      }
     ]
   },
-  "locked_input_count": 6324,
-  "locked_SHA_mismatches": 0,
-  "resource_probe": {
-    "state": "PASS",
-    "stage_cpus": [
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15
-    ],
-    "stage_physical_cores": [
-      [
-        "0",
-        "10"
-      ],
-      [
-        "0",
-        "11"
-      ],
-      [
-        "0",
-        "12"
-      ],
-      [
-        "0",
-        "13"
-      ],
-      [
-        "0",
-        "14"
-      ],
-      [
-        "0",
-        "15"
-      ],
-      [
-        "0",
-        "8"
-      ],
-      [
-        "0",
-        "9"
-      ]
-    ],
-    "phase_process_metadata_only": [],
-    "CPUQuota": "800%",
-    "Nice": 19,
-    "CPUWeight": 10,
-    "MemoryMax": 8589934592,
-    "MemorySwapMax": 0,
-    "GPU": "cuda0geometry_only_cpu_exact_deployment"
-  },
-  "unit": "MainPID=1005877\nMemoryCurrent=839036928\nCPUUsageNSec=42443298000\nActiveState=active\n",
-  "formal_calls": {
-    "Actor_Adam_live": 14,
-    "Actor_Adam_shadow": 1,
-    "Actor_Adam_independent": 1
-  },
-  "no_new_native_yet": true,
-  "source_pending": {
-    "state": "PRE_SOURCE_ACTUAL_EXIT0_EXACT_TREE_VERIFIED_PENDING_POST_SCIENCE_CHARGE",
-    "remote_commit": "85cec1094ea52f15c3776336f4b2dfd0e13e285e",
-    "root_tree": "3929e715b11d4aa98b2d68b5a5a7184689f745dc",
-    "seconds": 300,
-    "source_original_phase_includes_preserved_SSL_failure": true,
-    "charge_once_after_allscience_exit": true
-  },
+  "T698_retained": true,
   "no_periodic_automation": true
 }
