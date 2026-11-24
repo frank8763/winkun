@@ -1,136 +1,18 @@
 {
-  "state": "ACTIVE",
-  "epoch": 1795514787.2640789,
-  "status": {
-    "state": "ACTIVE",
-    "child_pid": 986420,
-    "pid": 986420,
-    "driver_pid": 986406,
-    "child": "training",
-    "action": "main",
-    "epoch": 1795514784.3557851,
-    "physics": 420835,
-    "commands": 28,
-    "completed": 14
-  },
-  "workers": [
-    {
-      "pid": 986433,
-      "state": "R",
-      "CPU": [
-        8
-      ]
-    },
-    {
-      "pid": 986446,
-      "state": "R",
-      "CPU": [
-        9
-      ]
-    },
-    {
-      "pid": 986448,
-      "state": "R",
-      "CPU": [
-        10
-      ]
-    },
-    {
-      "pid": 986451,
-      "state": "R",
-      "CPU": [
-        11
-      ]
-    },
-    {
-      "pid": 986453,
-      "state": "R",
-      "CPU": [
-        12
-      ]
-    },
-    {
-      "pid": 986456,
-      "state": "R",
-      "CPU": [
-        13
-      ]
-    },
-    {
-      "pid": 986458,
-      "state": "R",
-      "CPU": [
-        14
-      ]
-    }
-  ],
-  "resource_probe": {
-    "state": "PASS",
-    "stage_cpus": [
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15
-    ],
-    "stage_physical_cores": [
-      [
-        "0",
-        "10"
-      ],
-      [
-        "0",
-        "11"
-      ],
-      [
-        "0",
-        "12"
-      ],
-      [
-        "0",
-        "13"
-      ],
-      [
-        "0",
-        "14"
-      ],
-      [
-        "0",
-        "15"
-      ],
-      [
-        "0",
-        "8"
-      ],
-      [
-        "0",
-        "9"
-      ]
-    ],
-    "phase_process_metadata_only": [],
-    "CPUQuota": "800%",
-    "Nice": 19,
-    "CPUWeight": 10,
-    "MemoryMax": 8589934592,
-    "MemorySwapMax": 0,
-    "GPU": "cuda0geometry_only_cpu_exact_deployment"
-  },
-  "unit": "MainPID=986404\nMemoryCurrent=4747284480\nCPUUsageNSec=304564896000\nActiveState=active\n",
-  "locked_input_count": 6220,
+  "state": "COMPLETE_ALL_PROCESSES_EXITED",
+  "epoch": 1795516421.4659681,
+  "recovery_safe": 1,
+  "training_safe": 1,
+  "validation_safe": 0,
+  "original_safe": 1,
+  "acquisition_gate": false,
+  "locked_inputs": 6220,
   "locked_SHA_mismatches": 0,
-  "driver": 986406,
-  "helper": 986419,
-  "source": {
-    "state": "PRE_SOURCE_ACTUAL_EXIT0_EXACT_TREE_VERIFIED_PENDING_POST_SCIENCE_CHARGE",
-    "remote_commit": "3ab5371932fb846e58fe4aa29b8a68d3ce8315e2",
-    "root_tree": "3461ffc40ebc0467da4ccaef95cf2869cda3bed0",
-    "seconds": 300,
-    "charge_only_once_after_all_science_exits": true
-  },
-  "no_completed_learning_block_yet": true,
-  "finalizer_one_shot": true,
-  "no_periodic_automation": true
+  "full_native_and_optimizer_audits": "PASS",
+  "retained": "T698",
+  "primary_members": 17,
+  "full_histories_local_pending": true,
+  "transport_charged": 607.9526982307434,
+  "source_remote": "51a546e8d2bd40b43c0096ef763bf9d77581916d",
+  "one_shot_finalizer_stopped": true
 }

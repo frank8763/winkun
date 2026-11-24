@@ -1,0 +1,84 @@
+{
+  "state": "PASS",
+  "checks": [
+    {
+      "arm": "baseline",
+      "model_sha": "a1aade3ed7ea5530073fa324cecf84436ae821d26512d32d18e1a659e328c852",
+      "policy_hash": "c5168f09a3f62ec07b08e7d4166a889d66765472434a7689f9f779602886adff",
+      "same_sigma": [
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "arm": "trained",
+      "model_sha": "d37f60fae0829bf0d2cd0cf61aa54f36f786683968a93ae5b75cf2b1885d22c6",
+      "policy_hash": "6a05ade53ed555c2f265c468db2737eaec683ccf5c9cf9485ff7c58d439a27fa",
+      "same_sigma": [
+        0.2,
+        0.2
+      ]
+    }
+  ],
+  "actual_worker_and_helper": true,
+  "corrupt_prefix_rejected": true,
+  "full_stochastic_owncarry_density_fixture": true,
+  "all18_prefix_suffix_dispatch": true,
+  "new_native": 0,
+  "new_learning": 0,
+  "elapsed_seconds": 9.57917308807373,
+  "resources": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "11"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "13"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "15"
+      ],
+      [
+        "0",
+        "8"
+      ],
+      [
+        "0",
+        "9"
+      ]
+    ],
+    "phase_process_metadata_only": [],
+    "CPUQuota": "800%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 8589934592,
+    "MemorySwapMax": 0,
+    "GPU": "cuda0geometry_only_cpu_exact_deployment"
+  }
+}

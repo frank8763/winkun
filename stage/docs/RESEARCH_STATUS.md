@@ -1,3 +1,5 @@
+2026-11-24 用户要求继续推进，T718冻结随机策略vs探索噪声对照已REGISTERED、未launch待精确source；同T717初始B0/最终模型、同sigma.2、固定18恢复条件×3新共享seed各54fresh+54exact，共216science/244含管理cmd，0学习。真实双模型worker取消0物理及全prefix/密度/owncarry预检PASS，T717确定性门失败保留，不自动整合，native20:15/all21从严。见day_20261124/t718/PLAN及actualstatus。
+
 2026-11-24 T717新授权闭环恢复PPO结束：COMPLETE，完整面板=True、预声明能力门=False；固定12训练/6验证、完整18条件恢复与18原起点见day_20261124/t717/PAIRED_RESULTS。原GRU冻结/20198头可塑，无旧403保持或自动整合，T698保持。
 
 2026-11-24 用户新授权今晚学习19:30/native20:15/全停21:00，T717闭环条件恢复PPO已REGISTERED，未launch待源码精确同步。固定B0/20198小头、12训练6验证/3freshblock/独立Value，前缀只因果复原不入梯度，无旧403保持损失或传统导航；216science含exact/9746212physics/272cmd最大，live-shadow-independent各Actor/Value14含预检2。真实worker0物理取消/loader/密度/owncarry/独立Adam预检PASS，准备自守卫零步拒绝保留；T698保持。见day_20261124/t717/PLAN与actualstatus。

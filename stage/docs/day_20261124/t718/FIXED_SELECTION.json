@@ -1,0 +1,989 @@
+{
+  "models": {
+    "baseline": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t717_onpolicy_recovery/initial_sigma.pt.gz",
+      "sha256": "a1aade3ed7ea5530073fa324cecf84436ae821d26512d32d18e1a659e328c852",
+      "bytes": 1978622,
+      "policy_hash": "c5168f09a3f62ec07b08e7d4166a889d66765472434a7689f9f779602886adff",
+      "joint_hash": "b11bcf32046e6653afb70cd27a0235b050ccd42dce17652c332eba07ef20c90b"
+    },
+    "trained": {
+      "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t717_onpolicy_recovery/training/model_2.pt.gz",
+      "sha256": "d37f60fae0829bf0d2cd0cf61aa54f36f786683968a93ae5b75cf2b1885d22c6",
+      "bytes": 1978594,
+      "policy_hash": "6a05ade53ed555c2f265c468db2737eaec683ccf5c9cf9485ff7c58d439a27fa",
+      "joint_hash": "b50f405ba67479076ade69f7efe22f2a628d4a079dc3bc3a1552c11d9bc5bbe4"
+    }
+  },
+  "jobs": [
+    {
+      "id": "T699_new_dev_task6_15_xminus",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.023,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.0,
+      "source_reset_id": "T699_new_dev_task6_15_xminus",
+      "expected_initial120_sha256": null,
+      "neighborhood_parent_id": "dev_task6_15",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/new_replay_refined108/episodes/0012_fresh.npz",
+      "source_sha256": "5d4f84ad65e3f1d0dbdece0f954830c1edcd38db2069f660e1a356af79cc6b44",
+      "recovery_first": 3
+    },
+    {
+      "id": "T699_new_dev_task6_15_yawminus",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.03,
+      "delta_yaw_deg": -2.7,
+      "source_reset_id": "T699_new_dev_task6_15_yawminus",
+      "expected_initial120_sha256": null,
+      "neighborhood_parent_id": "dev_task6_15",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/new_replay_refined108/episodes/0016_fresh.npz",
+      "source_sha256": "1d80b2e1c662cf424136ae4b6b9fe22306371a0c126397e5457102921bc78a7d",
+      "recovery_first": 29
+    },
+    {
+      "id": "T699_new_dev_task6_15_yminus",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.006999999999999999,
+      "delta_yaw_deg": -2.0,
+      "source_reset_id": "T699_new_dev_task6_15_yminus",
+      "expected_initial120_sha256": null,
+      "neighborhood_parent_id": "dev_task6_15",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/new_replay_refined108/episodes/0014_fresh.npz",
+      "source_sha256": "0bf8da851b26c7a0d20e6bd92ddcda4036a98fafc3d16a0a164f45b166be09b8",
+      "recovery_first": 7
+    },
+    {
+      "id": "T699_new_hold_task6_03_yplus",
+      "group": "task6",
+      "case": {
+        "id": "5m_2029653601_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.0,
+        "step_cap": 23334,
+        "group": "original_5m_primary"
+      },
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t207_parameter_pg/tasks/original_5m_2029653601_LEFT.npz",
+      "delta_x_m": -0.015,
+      "delta_y_m": 0.038,
+      "delta_yaw_deg": 1.0,
+      "source_reset_id": "T699_new_hold_task6_03_yplus",
+      "expected_initial120_sha256": null,
+      "neighborhood_parent_id": "hold_task6_03",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/new_replay_refined108/episodes/0021_fresh.npz",
+      "source_sha256": "dc5cd1d042352cd42e6f4d2ab89190274ffb88416de668f3fc7317865076c196",
+      "recovery_first": 5
+    },
+    {
+      "id": "T699_new_t502_field_sector0_offset1_yawplus",
+      "source_reset_id": "T699_new_t502_field_sector0_offset1_yawplus",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.2044946801652205,
+        "step_cap": 34697,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        6.8,
+        0.0,
+        1.975712713257581
+      ],
+      "fullfield_goal_xy": [
+        4.8083261120685235,
+        4.808326112068523
+      ],
+      "start_sector": 0,
+      "sector_offset": 1,
+      "neighborhood_parent_id": "t502_field_sector0_offset1",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/new_replay_refined108/episodes/0029_fresh.npz",
+      "source_sha256": "6142047f9f726a0762c4d663aec93522a866780d7198b58a93610d5fa803c02d",
+      "recovery_first": 1
+    },
+    {
+      "id": "T699_new_t502_field_sector0_offset2_xminus",
+      "source_reset_id": "T699_new_t502_field_sector0_offset2_xminus",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 9.616652224137047,
+        "step_cap": 64112,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        6.777,
+        0.0,
+        2.356194490192345
+      ],
+      "fullfield_goal_xy": [
+        4.1637991171010006e-16,
+        6.8
+      ],
+      "start_sector": 0,
+      "sector_offset": 2,
+      "neighborhood_parent_id": "t502_field_sector0_offset2",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/new_replay_refined108/episodes/0030_fresh.npz",
+      "source_sha256": "c7ee514b52d173b2708c7b350077dc966a2ac2a7a6b15ed7d790a4c06e9c97f7",
+      "recovery_first": 5
+    },
+    {
+      "id": "T699_new_t502_field_sector0_offset2_xplus",
+      "source_reset_id": "T699_new_t502_field_sector0_offset2_xplus",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 9.616652224137047,
+        "step_cap": 64112,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        6.8229999999999995,
+        0.0,
+        2.356194490192345
+      ],
+      "fullfield_goal_xy": [
+        4.1637991171010006e-16,
+        6.8
+      ],
+      "start_sector": 0,
+      "sector_offset": 2,
+      "neighborhood_parent_id": "t502_field_sector0_offset2",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/new_replay_refined108/episodes/0031_fresh.npz",
+      "source_sha256": "42c5a8a042d7292dc0f83740b43036afba3f8881561e14b716628f2ad73b065d",
+      "recovery_first": 4
+    },
+    {
+      "id": "T699_new_t502_field_sector0_offset2_yawminus",
+      "source_reset_id": "T699_new_t502_field_sector0_offset2_yawminus",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 9.616652224137047,
+        "step_cap": 64112,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        6.8,
+        0.0,
+        2.3439771854283844
+      ],
+      "fullfield_goal_xy": [
+        4.1637991171010006e-16,
+        6.8
+      ],
+      "start_sector": 0,
+      "sector_offset": 2,
+      "neighborhood_parent_id": "t502_field_sector0_offset2",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/new_replay_refined108/episodes/0034_fresh.npz",
+      "source_sha256": "dd9a12c2acd9448aadccad6bf413d8aee2e5cd2991366c0cac58d6ae23646ac6",
+      "recovery_first": 11
+    },
+    {
+      "id": "T699_new_t502_field_sector0_offset2_yminus",
+      "source_reset_id": "T699_new_t502_field_sector0_offset2_yminus",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 9.616652224137047,
+        "step_cap": 64112,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        6.8,
+        -0.023,
+        2.356194490192345
+      ],
+      "fullfield_goal_xy": [
+        4.1637991171010006e-16,
+        6.8
+      ],
+      "start_sector": 0,
+      "sector_offset": 2,
+      "neighborhood_parent_id": "t502_field_sector0_offset2",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/new_replay_refined108/episodes/0032_fresh.npz",
+      "source_sha256": "366967dcf170075a2333a22f0b3d77b287fdfc6d787db98d4a5925209e5aebd7",
+      "recovery_first": 15
+    },
+    {
+      "id": "T699_new_t502_field_sector0_offset2_yplus",
+      "source_reset_id": "T699_new_t502_field_sector0_offset2_yplus",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 9.616652224137047,
+        "step_cap": 64112,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        6.8,
+        0.023,
+        2.356194490192345
+      ],
+      "fullfield_goal_xy": [
+        4.1637991171010006e-16,
+        6.8
+      ],
+      "start_sector": 0,
+      "sector_offset": 2,
+      "neighborhood_parent_id": "t502_field_sector0_offset2",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/new_replay_refined108/episodes/0033_fresh.npz",
+      "source_sha256": "d927638a7ca65db07994c2e5cf02bc6530ea7fc52724c0c891cf6f1bcbef3937",
+      "recovery_first": 13
+    },
+    {
+      "id": "T699_new_t502_field_sector1_offset1_xminus",
+      "source_reset_id": "T699_new_t502_field_sector1_offset1_xminus",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.204494680165221,
+        "step_cap": 34697,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        4.785326112068524,
+        4.808326112068523,
+        2.748893571891069
+      ],
+      "fullfield_goal_xy": [
+        4.1637991171010006e-16,
+        6.8
+      ],
+      "start_sector": 1,
+      "sector_offset": 1,
+      "neighborhood_parent_id": "t502_field_sector1_offset1",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/new_replay_refined108/episodes/0036_fresh.npz",
+      "source_sha256": "5493e5408afa0767fab073e756005af99b24dff4a478ce03b0656aa3ba03dc91",
+      "recovery_first": 17
+    },
+    {
+      "id": "T699_new_t502_field_sector2_offset1_yplus",
+      "source_reset_id": "T699_new_t502_field_sector2_offset1_yplus",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.2044946801652205,
+        "step_cap": 34697,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        4.1637991171010006e-16,
+        6.8229999999999995,
+        -2.748893571891069
+      ],
+      "fullfield_goal_xy": [
+        -4.808326112068523,
+        4.8083261120685235
+      ],
+      "start_sector": 2,
+      "sector_offset": 1,
+      "neighborhood_parent_id": "t502_field_sector2_offset1",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/new_replay_refined108/episodes/0045_fresh.npz",
+      "source_sha256": "10a96a392beaed95b15db37cf201e41efefea6a30d84f4c9e3f5fa41aefd670b",
+      "recovery_first": 50
+    },
+    {
+      "id": "T699_new_t502_field_sector5_offset1_yawminus",
+      "source_reset_id": "T699_new_t502_field_sector5_offset1_yawminus",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.204494680165221,
+        "step_cap": 34697,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        -4.808326112068524,
+        -4.808326112068523,
+        -0.4049163864626845
+      ],
+      "fullfield_goal_xy": [
+        -1.2491397351303002e-15,
+        -6.8
+      ],
+      "start_sector": 5,
+      "sector_offset": 1,
+      "neighborhood_parent_id": "t502_field_sector5_offset1",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/new_replay_refined108/episodes/0064_fresh.npz",
+      "source_sha256": "03e0992bee58eb1d030ee2a0b0206591bfc945d8b5ae7ab2c548c02cabad9880",
+      "recovery_first": 2
+    },
+    {
+      "id": "T711_t502_field_sector0_offset1_r04_a22.5",
+      "source_reset_id": "T711_t502_field_sector0_offset1_r04_a22.5",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.2044946801652205,
+        "step_cap": 34697,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        6.836955181300452,
+        0.015307337294603592,
+        1.9792033717615696
+      ],
+      "fullfield_goal_xy": [
+        4.8083261120685235,
+        4.808326112068523
+      ],
+      "start_sector": 0,
+      "sector_offset": 1,
+      "neighborhood_parent_id": "t502_field_sector0_offset1",
+      "prospective_ring": "fixed_r04_yaw09",
+      "prospective_direction_deg": 22.5,
+      "prospective_delta": [
+        0.03695518130045147,
+        0.015307337294603592,
+        0.9
+      ],
+      "evaluation_cluster": "field_sector0",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t711_fresh_starts/new_B0/episodes/0000_fresh.npz",
+      "source_sha256": "9329f7ac36a97a1b35bbcba0f7f21d37bb48ac5e4e2ce5098f86f1c39390499e",
+      "recovery_first": 1
+    },
+    {
+      "id": "T711_t502_field_sector0_offset2_r04_a112.5",
+      "source_reset_id": "T711_t502_field_sector0_offset2_r04_a112.5",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 9.616652224137047,
+        "step_cap": 64112,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        6.784692662705396,
+        0.03695518130045147,
+        2.340486526924396
+      ],
+      "fullfield_goal_xy": [
+        4.1637991171010006e-16,
+        6.8
+      ],
+      "start_sector": 0,
+      "sector_offset": 2,
+      "neighborhood_parent_id": "t502_field_sector0_offset2",
+      "prospective_ring": "fixed_r04_yaw09",
+      "prospective_direction_deg": 112.5,
+      "prospective_delta": [
+        -0.015307337294603589,
+        0.03695518130045147,
+        -0.9
+      ],
+      "evaluation_cluster": "field_sector0",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t711_fresh_starts/new_B0/episodes/0005_fresh.npz",
+      "source_sha256": "d00967a08c5af9ddba0cc5fc59e5f8d9b29ca032a211f7767a255397c5ec70a8",
+      "recovery_first": 6
+    },
+    {
+      "id": "T711_t502_field_sector0_offset2_r04_a202.5",
+      "source_reset_id": "T711_t502_field_sector0_offset2_r04_a202.5",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 9.616652224137047,
+        "step_cap": 64112,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        6.763044818699548,
+        -0.015307337294603587,
+        2.3719024534602937
+      ],
+      "fullfield_goal_xy": [
+        4.1637991171010006e-16,
+        6.8
+      ],
+      "start_sector": 0,
+      "sector_offset": 2,
+      "neighborhood_parent_id": "t502_field_sector0_offset2",
+      "prospective_ring": "fixed_r04_yaw09",
+      "prospective_direction_deg": 202.5,
+      "prospective_delta": [
+        -0.03695518130045147,
+        -0.015307337294603587,
+        0.9
+      ],
+      "evaluation_cluster": "field_sector0",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t711_fresh_starts/new_B0/episodes/0006_fresh.npz",
+      "source_sha256": "eb5ccf2fbc31f6ba03abeca18eac884e361dc7b6e212d1f5cdad0eee2d921511",
+      "recovery_first": 4
+    },
+    {
+      "id": "T711_t502_field_sector0_offset2_r04_a292.5",
+      "source_reset_id": "T711_t502_field_sector0_offset2_r04_a292.5",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 9.616652224137047,
+        "step_cap": 64112,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        6.815307337294604,
+        -0.036955181300451466,
+        2.340486526924396
+      ],
+      "fullfield_goal_xy": [
+        4.1637991171010006e-16,
+        6.8
+      ],
+      "start_sector": 0,
+      "sector_offset": 2,
+      "neighborhood_parent_id": "t502_field_sector0_offset2",
+      "prospective_ring": "fixed_r04_yaw09",
+      "prospective_direction_deg": 292.5,
+      "prospective_delta": [
+        0.015307337294603601,
+        -0.036955181300451466,
+        -0.9
+      ],
+      "evaluation_cluster": "field_sector0",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t711_fresh_starts/new_B0/episodes/0007_fresh.npz",
+      "source_sha256": "836f432c9db37ec820ccae25380d3196396b3f5ef07d12c12bac332d06a13002",
+      "recovery_first": 3
+    },
+    {
+      "id": "T711_t502_field_sector5_offset1_r04_a22.5",
+      "source_reset_id": "T711_t502_field_sector5_offset1_r04_a22.5",
+      "group": "6m_LEFT",
+      "case": {
+        "id": "6m_LEFT",
+        "seed": 2029653601,
+        "angle_deg": -17.3,
+        "side": "LEFT",
+        "distance_m": 5.204494680165221,
+        "step_cap": 34697,
+        "group": "original_5m_primary"
+      },
+      "delta_x_m": 0.0,
+      "delta_y_m": 0.0,
+      "delta_yaw_deg": 0.0,
+      "seed": 0,
+      "mode": "deterministic",
+      "exact_snapshot": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t256_distance_frontier/tasks/base6_LEFT.npz",
+      "expected_initial120_sha256": null,
+      "wide_course": true,
+      "circle_shift_x_m": 0.6,
+      "fullfield_start_pose": [
+        -4.7713709307680725,
+        -4.793018774773919,
+        -0.3769911184307752
+      ],
+      "fullfield_goal_xy": [
+        -1.2491397351303002e-15,
+        -6.8
+      ],
+      "start_sector": 5,
+      "sector_offset": 1,
+      "neighborhood_parent_id": "t502_field_sector5_offset1",
+      "prospective_ring": "fixed_r04_yaw09",
+      "prospective_direction_deg": 22.5,
+      "prospective_delta": [
+        0.03695518130045147,
+        0.015307337294603592,
+        0.9
+      ],
+      "evaluation_cluster": "field_sector5",
+      "source_path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t711_fresh_starts/new_B0/episodes/0060_fresh.npz",
+      "source_sha256": "2ce6e4f0b2c297227fc229d609c6b69eb050c9db09ee1c4e0a051b102cc1b291",
+      "recovery_first": 1
+    }
+  ],
+  "training_ids": [
+    "T711_t502_field_sector0_offset1_r04_a22.5",
+    "T699_new_t502_field_sector0_offset2_yminus",
+    "T699_new_t502_field_sector0_offset2_yawminus",
+    "T711_t502_field_sector0_offset2_r04_a112.5",
+    "T699_new_dev_task6_15_yawminus",
+    "T711_t502_field_sector5_offset1_r04_a22.5",
+    "T699_new_dev_task6_15_yminus",
+    "T699_new_t502_field_sector0_offset2_yplus",
+    "T699_new_t502_field_sector5_offset1_yawminus",
+    "T699_new_t502_field_sector0_offset1_yawplus",
+    "T699_new_t502_field_sector2_offset1_yplus",
+    "T711_t502_field_sector0_offset2_r04_a292.5"
+  ],
+  "validation_ids": [
+    "T699_new_t502_field_sector0_offset2_xplus",
+    "T711_t502_field_sector0_offset2_r04_a202.5",
+    "T699_new_t502_field_sector1_offset1_xminus",
+    "T699_new_hold_task6_03_yplus",
+    "T699_new_t502_field_sector0_offset2_xminus",
+    "T699_new_dev_task6_15_xminus"
+  ],
+  "replicates": [
+    0,
+    1,
+    2
+  ],
+  "common_seeds": [
+    [
+      20261124718,
+      0,
+      0
+    ],
+    [
+      20261124718,
+      0,
+      1
+    ],
+    [
+      20261124718,
+      0,
+      2
+    ],
+    [
+      20261124718,
+      0,
+      3
+    ],
+    [
+      20261124718,
+      0,
+      4
+    ],
+    [
+      20261124718,
+      0,
+      5
+    ],
+    [
+      20261124718,
+      0,
+      6
+    ],
+    [
+      20261124718,
+      0,
+      7
+    ],
+    [
+      20261124718,
+      0,
+      8
+    ],
+    [
+      20261124718,
+      0,
+      9
+    ],
+    [
+      20261124718,
+      0,
+      10
+    ],
+    [
+      20261124718,
+      0,
+      11
+    ],
+    [
+      20261124718,
+      0,
+      12
+    ],
+    [
+      20261124718,
+      0,
+      13
+    ],
+    [
+      20261124718,
+      0,
+      14
+    ],
+    [
+      20261124718,
+      0,
+      15
+    ],
+    [
+      20261124718,
+      0,
+      16
+    ],
+    [
+      20261124718,
+      0,
+      17
+    ],
+    [
+      20261124718,
+      1,
+      0
+    ],
+    [
+      20261124718,
+      1,
+      1
+    ],
+    [
+      20261124718,
+      1,
+      2
+    ],
+    [
+      20261124718,
+      1,
+      3
+    ],
+    [
+      20261124718,
+      1,
+      4
+    ],
+    [
+      20261124718,
+      1,
+      5
+    ],
+    [
+      20261124718,
+      1,
+      6
+    ],
+    [
+      20261124718,
+      1,
+      7
+    ],
+    [
+      20261124718,
+      1,
+      8
+    ],
+    [
+      20261124718,
+      1,
+      9
+    ],
+    [
+      20261124718,
+      1,
+      10
+    ],
+    [
+      20261124718,
+      1,
+      11
+    ],
+    [
+      20261124718,
+      1,
+      12
+    ],
+    [
+      20261124718,
+      1,
+      13
+    ],
+    [
+      20261124718,
+      1,
+      14
+    ],
+    [
+      20261124718,
+      1,
+      15
+    ],
+    [
+      20261124718,
+      1,
+      16
+    ],
+    [
+      20261124718,
+      1,
+      17
+    ],
+    [
+      20261124718,
+      2,
+      0
+    ],
+    [
+      20261124718,
+      2,
+      1
+    ],
+    [
+      20261124718,
+      2,
+      2
+    ],
+    [
+      20261124718,
+      2,
+      3
+    ],
+    [
+      20261124718,
+      2,
+      4
+    ],
+    [
+      20261124718,
+      2,
+      5
+    ],
+    [
+      20261124718,
+      2,
+      6
+    ],
+    [
+      20261124718,
+      2,
+      7
+    ],
+    [
+      20261124718,
+      2,
+      8
+    ],
+    [
+      20261124718,
+      2,
+      9
+    ],
+    [
+      20261124718,
+      2,
+      10
+    ],
+    [
+      20261124718,
+      2,
+      11
+    ],
+    [
+      20261124718,
+      2,
+      12
+    ],
+    [
+      20261124718,
+      2,
+      13
+    ],
+    [
+      20261124718,
+      2,
+      14
+    ],
+    [
+      20261124718,
+      2,
+      15
+    ],
+    [
+      20261124718,
+      2,
+      16
+    ],
+    [
+      20261124718,
+      2,
+      17
+    ]
+  ],
+  "order": "same fixed18 orderedjobs in eachreplicate, baseline then trained; no outcome-based selection",
+  "sigma": [
+    0.2,
+    0.2
+  ],
+  "deterministic_existing_results": "T717 final recovery1/18 and original1/18; reused not rerun"
+}
