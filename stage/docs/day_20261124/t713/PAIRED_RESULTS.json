@@ -1,0 +1,1005 @@
+{
+  "state": "COMPLETE",
+  "models": {
+    "parent": {
+      "model": "parent",
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "success": 27,
+      "total": 72,
+      "collision": 29,
+      "timeout": 16,
+      "boundary": 8,
+      "physics": 2917525,
+      "commands": 110,
+      "model_checkpoint": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "sha256": "8efc9bdeae31866f7d5745948cc9169306a46525c172834f627d3874f29b5003",
+        "bytes": 2388227,
+        "policy_hash": "11eca188a1c3ad9a738488df61fcf5cbfe5976e0198330a123524b342a9b69af",
+        "joint_hash": "b5ce0c737fbaa8e9480563ea277f12c98c53b2c127978a97aeae5ac4b574cf07"
+      }
+    },
+    "compact": {
+      "model": "compact",
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "success": 28,
+      "total": 72,
+      "collision": 28,
+      "timeout": 16,
+      "boundary": 8,
+      "physics": 2935258,
+      "commands": 110,
+      "model_checkpoint": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t703_projected_local/fit/proj8.pt.gz",
+        "sha256": "19d2b4535d5f7e814e93ce3dfdab788048cf2fc10466c50c1703d29863ffe2b3",
+        "bytes": 1974765,
+        "policy_hash": "317abfbf8cb2aa9ac1eca376405c3adbba5d6f5795968285c38161ff2fcb90e3",
+        "joint_hash": "0c0b45aa025b3ab19c5af20372656894d714e2dffb4c0c5bff815e94646c0de6"
+      }
+    },
+    "B0": {
+      "model": "B0",
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "success": 30,
+      "total": 72,
+      "collision": 28,
+      "timeout": 14,
+      "boundary": 8,
+      "physics": 2901563,
+      "commands": 110,
+      "model_checkpoint": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701_compact_retention/fit/replay_refined108.pt.gz",
+        "sha256": "e8bed4b7547a987539563d64e6916b77e8f3ee81688e6447d0d09ee1d1df364d",
+        "bytes": 1978636,
+        "policy_hash": "7ede24dcda3207d912ca93c2471d067a562606574512dd93ee1f7c14d805f4a6",
+        "joint_hash": "b11bcf32046e6653afb70cd27a0235b050ccd42dce17652c332eba07ef20c90b"
+      }
+    }
+  },
+  "historical_known": {
+    "compact": {
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "core407": 396,
+      "old403_losses": 0,
+      "source7_success": 7,
+      "summary": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t703_projected_local/known_proj8/summary.json",
+      "model_sha256": "19d2b4535d5f7e814e93ce3dfdab788048cf2fc10466c50c1703d29863ffe2b3"
+    },
+    "B0": {
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "core407": 387,
+      "old403_losses": 11,
+      "source7_success": 7,
+      "summary": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/known_replay_refined108/summary.json",
+      "model_sha256": "e8bed4b7547a987539563d64e6916b77e8f3ee81688e6447d0d09ee1d1df364d"
+    },
+    "parent": {
+      "old403_losses": 0,
+      "core407": 390,
+      "supp24": 13,
+      "source7_success": 0,
+      "scope": "T694 retained core390 plus audited T69513supp; seven T696 source IDs were outside this403, not a newly run known suite"
+    }
+  },
+  "paired": {
+    "B0_vs_parent": {
+      "gained_ids": [
+        "T713_layout1_t502_field_sector0_offset2",
+        "T713_layout2_t502_field_sector7_offset2",
+        "T713_layout3_t502_field_sector2_offset2"
+      ],
+      "lost_ids": [],
+      "common_success": 27,
+      "common_failure": 42
+    },
+    "compact_vs_parent": {
+      "gained_ids": [
+        "T713_layout3_t502_field_sector2_offset2"
+      ],
+      "lost_ids": [],
+      "common_success": 27,
+      "common_failure": 44
+    },
+    "B0_vs_compact": {
+      "gained_ids": [
+        "T713_layout1_t502_field_sector0_offset2",
+        "T713_layout2_t502_field_sector7_offset2"
+      ],
+      "lost_ids": [],
+      "common_success": 28,
+      "common_failure": 42
+    }
+  },
+  "groups": {
+    "neighborhood_parent_id": {
+      "t502_field_sector0_offset1": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 2,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 2,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 2,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector0_offset2": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 1,
+            "timeout": 2,
+            "boundary": 2,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 1,
+            "timeout": 2,
+            "boundary": 2,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 1,
+            "collision": 0,
+            "timeout": 2,
+            "boundary": 2,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector0_offset3": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector1_offset1": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 3,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector1_offset2": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector1_offset3": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector2_offset1": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector2_offset2": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 2,
+            "collision": 1,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector2_offset3": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 1,
+            "timeout": 2,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector3_offset1": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector3_offset2": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector3_offset3": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector4_offset1": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector4_offset2": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector4_offset3": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector5_offset1": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector5_offset2": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector5_offset3": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector6_offset1": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector6_offset2": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector6_offset3": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector7_offset1": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 3,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector7_offset2": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 2,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 2,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector7_offset3": {
+        "planned": 3,
+        "models": {
+          "parent": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 3,
+            "safe": 0,
+            "collision": 3,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      }
+    },
+    "prospective_ring": {
+      "layout1": {
+        "planned": 24,
+        "models": {
+          "parent": {
+            "executed": 24,
+            "safe": 10,
+            "collision": 9,
+            "timeout": 5,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 24,
+            "safe": 10,
+            "collision": 9,
+            "timeout": 5,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 24,
+            "safe": 11,
+            "collision": 9,
+            "timeout": 4,
+            "boundary": 2,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "layout2": {
+        "planned": 24,
+        "models": {
+          "parent": {
+            "executed": 24,
+            "safe": 8,
+            "collision": 9,
+            "timeout": 7,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 24,
+            "safe": 8,
+            "collision": 9,
+            "timeout": 7,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 24,
+            "safe": 9,
+            "collision": 9,
+            "timeout": 6,
+            "boundary": 3,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "layout3": {
+        "planned": 24,
+        "models": {
+          "parent": {
+            "executed": 24,
+            "safe": 9,
+            "collision": 11,
+            "timeout": 4,
+            "boundary": 2,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 24,
+            "safe": 10,
+            "collision": 10,
+            "timeout": 4,
+            "boundary": 2,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 24,
+            "safe": 10,
+            "collision": 10,
+            "timeout": 4,
+            "boundary": 3,
+            "administrative_censor": 0
+          }
+        }
+      }
+    },
+    "evaluation_cluster": {
+      "layout1": {
+        "planned": 24,
+        "models": {
+          "parent": {
+            "executed": 24,
+            "safe": 10,
+            "collision": 9,
+            "timeout": 5,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 24,
+            "safe": 10,
+            "collision": 9,
+            "timeout": 5,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 24,
+            "safe": 11,
+            "collision": 9,
+            "timeout": 4,
+            "boundary": 2,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "layout2": {
+        "planned": 24,
+        "models": {
+          "parent": {
+            "executed": 24,
+            "safe": 8,
+            "collision": 9,
+            "timeout": 7,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 24,
+            "safe": 8,
+            "collision": 9,
+            "timeout": 7,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 24,
+            "safe": 9,
+            "collision": 9,
+            "timeout": 6,
+            "boundary": 3,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "layout3": {
+        "planned": 24,
+        "models": {
+          "parent": {
+            "executed": 24,
+            "safe": 9,
+            "collision": 11,
+            "timeout": 4,
+            "boundary": 2,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 24,
+            "safe": 10,
+            "collision": 10,
+            "timeout": 4,
+            "boundary": 2,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 24,
+            "safe": 10,
+            "collision": 10,
+            "timeout": 4,
+            "boundary": 3,
+            "administrative_censor": 0
+          }
+        }
+      }
+    }
+  },
+  "planned_initials": 72,
+  "valid_initials": 72,
+  "invalid": [],
+  "duplicates": [],
+  "paired_initial_hashes_exact": true,
+  "new_learning": 0,
+  "retained": "T698",
+  "interpretation": "Three fixed source-derived obstacle translations; held-out geometry, path feasibility unknown, not independent worlds or training replication",
+  "epoch": 1795494885.6085522
+}

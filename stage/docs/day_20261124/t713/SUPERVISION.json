@@ -1,7 +1,25 @@
 {
-  "state": "REGISTERED_NOT_LAUNCHED",
+  "state": "ACTIVE",
   "unit": "stage-t713.service",
   "finalizer": "stage-t713-finalizer.service",
   "notification": "Only complete meaningful results, real failure/stall or budget risk; unchanged healthy progress quiet",
-  "new_periodic_automation": false
+  "new_periodic_automation": false,
+  "actual_status": {
+    "state": "ACTIVE",
+    "child_pid": 877667,
+    "pid": 877667,
+    "driver_pid": 877643,
+    "child": "new_parent",
+    "action": "main",
+    "epoch": 1795493113.323626,
+    "physics": 30429,
+    "commands": 14,
+    "completed": 0
+  },
+  "checked_epoch": 1795493116.4026923,
+  "locked_inputs": 5695,
+  "locked_mismatches": [],
+  "source_remote": "6393320f7546e5332a3870dfceba3229595175c1",
+  "root_all_stop": 1795503846.8156695,
+  "retained": "T698"
 }
