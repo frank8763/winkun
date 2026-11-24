@@ -1,3 +1,5 @@
+2026-11-24 T720冻结T719完整曝光面板验收结束：COMPLETE，完整=True，174起点安全91vsB092；完整逐ID gains/losses/collisions见day_20261124/t720/PAIRED_RESULTS。18已审原起点与重叠exact复用，无新学习，旧403/core407仍未测，不撤销T719能力门失败，T698保持。
+
 2026-11-24 用户要求检查并开启下一轮，T720冻结T719完整曝光78+96面板已REGISTERED未launch待精确source，0学习；同candidate18已审原起点+2重叠exact按SHA/初态/审计复用，新增156fresh+29exact=185science/213含管理cmd，完整174逐ID gains/losses/collisions验收。加载器/进程pickling准备零物理拒绝原件保留，真实worker/helper及全复用initialpayload预检PASS。原19:30停学习/20:15native/21全停不延，旧403/core407未测且T719能力门仍FAIL，T698保持。见day_20261124/t720/PLAN及actualstatus。
 
 2026-11-24 T719全结果加权回放结束：COMPLETE，完整面板=True、预声明能力门=False；固定12训练/6验证、完整18条件恢复与18原起点见day_20261124/t719/PAIRED_RESULTS。原GRU冻结/20198头可塑，无旧403保持或自动整合，T698保持。
