@@ -1,139 +1,32 @@
 {
-  "state": "ACTIVE_ZERO_LEARNING",
-  "epoch": 1795519873.1257215,
-  "status": {
-    "state": "ACTIVE",
-    "child_pid": 1012578,
-    "pid": 1012578,
-    "driver_pid": 1012554,
-    "child": "panel78",
-    "action": "main",
-    "epoch": 1795519869.2657857,
-    "physics": 130759,
-    "commands": 14,
-    "completed": 7
-  },
-  "workers": [
-    {
-      "pid": 1012590,
-      "state": "R",
-      "CPU": [
-        8
-      ]
-    },
-    {
-      "pid": 1012591,
-      "state": "R",
-      "CPU": [
-        9
-      ]
-    },
-    {
-      "pid": 1012594,
-      "state": "R",
-      "CPU": [
-        10
-      ]
-    },
-    {
-      "pid": 1012596,
-      "state": "R",
-      "CPU": [
-        11
-      ]
-    },
-    {
-      "pid": 1012614,
-      "state": "R",
-      "CPU": [
-        12
-      ]
-    },
-    {
-      "pid": 1012616,
-      "state": "R",
-      "CPU": [
-        13
-      ]
-    },
-    {
-      "pid": 1012618,
-      "state": "R",
-      "CPU": [
-        14
-      ]
-    }
-  ],
-  "driver": 1012554,
-  "helper": 1012570,
+  "state": "COMPLETE_ALL_SCIENCE_DRIVER_HELPER_FINALIZER_UNITS_EXITED",
+  "epoch": 1795521889.4837856,
+  "safe": 91,
+  "baseline_safe": 92,
+  "gained": 8,
+  "lost": 9,
+  "collision": 44,
+  "baseline_collision": 41,
   "locked_inputs": 6514,
   "locked_SHA_mismatches": 0,
-  "resources": {
-    "state": "PASS",
-    "stage_cpus": [
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15
-    ],
-    "stage_physical_cores": [
-      [
-        "0",
-        "10"
-      ],
-      [
-        "0",
-        "11"
-      ],
-      [
-        "0",
-        "12"
-      ],
-      [
-        "0",
-        "13"
-      ],
-      [
-        "0",
-        "14"
-      ],
-      [
-        "0",
-        "15"
-      ],
-      [
-        "0",
-        "8"
-      ],
-      [
-        "0",
-        "9"
-      ]
-    ],
-    "phase_process_metadata_only": [],
-    "CPUQuota": "800%",
-    "Nice": 19,
-    "CPUWeight": 10,
-    "MemoryMax": 8589934592,
-    "MemorySwapMax": 0,
-    "GPU": "cuda0geometry_only_cpu_exact_deployment"
+  "all_audits": "PASS",
+  "primary_members": 16,
+  "full_histories_local_pending": true,
+  "final_source": {
+    "state": "ACTUAL_EXIT0_EXACT_TREE_VERIFIED",
+    "remote_commit": "1a423d9af5ce0a4688d179ba934d2ffcd1f90ea8",
+    "root_tree": "d79c2ab75fdcfa4eb559f28da3112bab5e6cfc73"
   },
-  "unit": "MainPID=1012552\nMemoryCurrent=4738473984\nCPUUsageNSec=139582166000\nActiveState=active\n",
-  "total174": 174,
-  "reused18_original_plus2exact": true,
-  "new_fresh156": 156,
-  "new_exact29": 29,
+  "transport": {
+    "cap": 900,
+    "charged_seconds": 608.3326394557953,
+    "source_commits": [
+      "3b07b88cc948d293daaf6935d630f954b01f6b49",
+      "1a423d9af5ce0a4688d179ba934d2ffcd1f90ea8"
+    ],
+    "attempts": []
+  },
+  "T698_retained": true,
   "new_learning": 0,
-  "source_pending": {
-    "state": "PRE_SOURCE_ACTUAL_EXIT0_EXACT_TREE_VERIFIED_PENDING_POST_SCIENCE_CHARGE",
-    "remote_commit": "3b07b88cc948d293daaf6935d630f954b01f6b49",
-    "root_tree": "e06f6f39de5b3cb4274db6dceafb294aa277b097",
-    "seconds": 300,
-    "charge_once_after_allscienceexit": true
-  },
   "no_periodic_automation": true
 }

@@ -1,0 +1,126 @@
+{
+  "state": "READONLY_RETROSPECTIVE_NOT_NEW_SCIENCE",
+  "epoch": 1795521889.750754,
+  "T720": {
+    "complete": true,
+    "all_audits": "PASS",
+    "safe": 91,
+    "baseline_safe": 92,
+    "gained": 8,
+    "lost": 9,
+    "collision": 44,
+    "baseline_collision": 41,
+    "old403": "NOT_MEASURED"
+  },
+  "T719": {
+    "recovery_safe": 4,
+    "original_safe": 8,
+    "Actor_Adam_live": 16,
+    "body_frozen": true,
+    "gate": false
+  },
+  "T717": {
+    "fresh_training_episodes": 72,
+    "unique_training_conditions": 12,
+    "rounds": 3,
+    "Actor_Adam_live": 12,
+    "Value_Adam_live": 12,
+    "body_frozen": true,
+    "deterministic_recovery_safe": 1,
+    "original_safe": 1,
+    "gate": false
+  },
+  "T718": {
+    "stochastic_safe": 35,
+    "baseline_same_noise_safe": 29,
+    "collision": 7,
+    "baseline_collision": 6,
+    "gate": false
+  },
+  "T716": {
+    "zero_learning": true,
+    "conditional_teacher_safe": 5,
+    "total": 18,
+    "not_one_policy": true
+  },
+  "T714": {
+    "success_source_acquisition_safe": 3,
+    "old403_lost": 12,
+    "freshsafe": 26,
+    "freshbaseline": 28,
+    "gate": false
+  },
+  "T715": {
+    "state": "FAILED_AFTER_USER_PAUSE",
+    "last_panel_partial_rows": 86,
+    "planned": 96,
+    "not_complete_algorithm_negative": true
+  },
+  "verified_affinity": {
+    "source_commit": "c4faa2e2",
+    "source_path": "stage/docs/day_20261124/t719/SUPERVISION.json",
+    "epoch": 1795518713.9602928,
+    "thread_affinities": {
+      "1005898": [
+        14
+      ],
+      "1005909": [
+        14
+      ],
+      "1005910": [
+        14
+      ],
+      "1005911": [
+        14
+      ],
+      "1005912": [
+        14
+      ],
+      "1005913": [
+        14
+      ],
+      "1005914": [
+        14
+      ],
+      "1005915": [
+        14
+      ],
+      "1005916": [
+        14
+      ],
+      "1005917": [
+        14
+      ],
+      "1005918": [
+        14
+      ],
+      "1005919": [
+        14
+      ],
+      "1005920": [
+        14
+      ],
+      "1005921": [
+        14
+      ],
+      "1005922": [
+        14
+      ],
+      "1005983": [
+        14
+      ]
+    },
+    "no_causal_speedup_measurement": true
+  },
+  "eligibility_arithmetic": {
+    "gamma_native": 0.999966667222216,
+    "lambda_per_decision": 0.95,
+    "typical_decision_seconds": 0.2,
+    "trace_half_life_seconds": 2.5377630268579083,
+    "lambda_power_200": 3.50526662488287e-05,
+    "interpretation": "GAE TD-error trace only, not proof of task effective horizon or bias bug; accurate Value may propagate long credit"
+  },
+  "new_experiment_registered": false,
+  "new_experiment_launched": false,
+  "new_learning_authorization": false
+}
