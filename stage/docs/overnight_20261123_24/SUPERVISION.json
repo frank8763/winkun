@@ -1,24 +1,130 @@
 {
-  "state": "WAITING_T709_NO_NEW_SCIENCE",
-  "epoch": 1795438661.2654638,
-  "actual_previous_status": {
+  "state": "STOPPED_T710_FAILED_T711_COMPLETE",
+  "epoch": 1795442192.7845469,
+  "current": {
     "state": "ACTIVE",
-    "child_pid": 546877,
-    "pid": 546877,
-    "driver_pid": 529077,
-    "child": "new_induced",
+    "child_pid": 583242,
+    "pid": 583242,
+    "driver_pid": 583205,
+    "child": "new_parent",
     "action": "main",
-    "epoch": 1795438661.2187417,
-    "physics": 4908221,
-    "commands": 154,
-    "completed": 140
+    "epoch": 1795442188.9590402,
+    "physics": 484772,
+    "commands": 21,
+    "completed": 7
   },
-  "prepared_program_hashes": 15,
-  "hash_mismatches": 0,
-  "old_active_protocol_inputs": 5630,
-  "night_unit_properties": "MainPID=551821\nActiveState=active\n",
-  "stage710_run_created": false,
-  "stage711_run_created": false,
-  "original_deadlines_unchanged": true,
-  "notification": "Routine healthy progress silent; only complete meaningful outcomes, real failure/stall or budget risk"
+  "locked_inputs": 5666,
+  "input_SHA_stat_mismatches": 0,
+  "resource_probe": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "11"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "13"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "15"
+      ],
+      [
+        "0",
+        "8"
+      ],
+      [
+        "0",
+        "9"
+      ]
+    ],
+    "phase_process_metadata_only": [
+      {
+        "pid": 583497,
+        "allowed_cpus": [
+          5
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 583514,
+        "allowed_cpus": [
+          5
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 583515,
+        "allowed_cpus": [
+          5
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 583551,
+        "allowed_cpus": [
+          2
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 583554,
+        "allowed_cpus": [
+          2
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 583555,
+        "allowed_cpus": [
+          2
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 583556,
+        "allowed_cpus": [
+          2
+        ],
+        "physical_overlap": []
+      }
+    ],
+    "CPUQuota": "800%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 8589934592,
+    "MemorySwapMax": 0,
+    "GPU": "cuda0geometry_only_cpu_exact_deployment"
+  },
+  "missing_T710_models_explicit": true,
+  "no_T710_updates_repeated": true,
+  "all_original_deadlines_unchanged": true,
+  "notification": "T710 fit deadline failure is real and must be reported; T711 healthy only silent unless meaningful change",
+  "actual_state_correction_epoch": 1795485318.1572282,
+  "actual_T711": "stage/runs/t711_fresh_starts/FINAL_REPORT.json",
+  "old_deadlines_unchanged": true,
+  "no_original_job_restarted": true
 }

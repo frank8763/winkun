@@ -1,0 +1,55 @@
+{
+  "source": "stage/docs/overnight_20261123_24/t711/PAIRED_RESULTS.json",
+  "source_sha256": "938470a9b21565bc84d3eb54da659fefe2a3bf666505c0f9eab93d5c7c29c851",
+  "rows": [
+    {
+      "model": "parent",
+      "old_successes_lost": 0,
+      "old_reference": 403,
+      "fresh_safe": 32,
+      "fresh_total": 96,
+      "added_tensor_bytes": 0,
+      "audit": "PASS"
+    },
+    {
+      "model": "compact",
+      "old_successes_lost": 0,
+      "old_reference": 403,
+      "fresh_safe": 32,
+      "fresh_total": 96,
+      "added_tensor_bytes": 157684,
+      "audit": "PASS"
+    },
+    {
+      "model": "B0",
+      "old_successes_lost": 11,
+      "old_reference": 403,
+      "fresh_safe": 39,
+      "fresh_total": 96,
+      "added_tensor_bytes": 161584,
+      "audit": "PASS"
+    },
+    {
+      "model": "constrained",
+      "old_successes_lost": 12,
+      "old_reference": 403,
+      "fresh_safe": 37,
+      "fresh_total": 96,
+      "added_tensor_bytes": 161584,
+      "audit": "PASS"
+    },
+    {
+      "model": "coverage",
+      "old_successes_lost": 17,
+      "old_reference": 403,
+      "fresh_safe": 38,
+      "fresh_total": 96,
+      "added_tensor_bytes": 161584,
+      "audit": "PASS"
+    }
+  ],
+  "new_training": 0,
+  "new_native": 0,
+  "common_parent_tensor_bytes": 2621976,
+  "not_independent_world_samples": true
+}

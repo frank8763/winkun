@@ -1,0 +1,2238 @@
+{
+  "state": "COMPLETE",
+  "models": {
+    "parent": {
+      "model": "parent",
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "success": 32,
+      "total": 96,
+      "collision": 40,
+      "timeout": 24,
+      "boundary": 9,
+      "physics": 3971972,
+      "commands": 134,
+      "model_checkpoint": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t694_full_history_compatibility/fit/proposal.pt.gz",
+        "sha256": "8efc9bdeae31866f7d5745948cc9169306a46525c172834f627d3874f29b5003",
+        "bytes": 2388227,
+        "policy_hash": "11eca188a1c3ad9a738488df61fcf5cbfe5976e0198330a123524b342a9b69af",
+        "joint_hash": "b5ce0c737fbaa8e9480563ea277f12c98c53b2c127978a97aeae5ac4b574cf07"
+      }
+    },
+    "compact": {
+      "model": "compact",
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "success": 32,
+      "total": 96,
+      "collision": 40,
+      "timeout": 24,
+      "boundary": 9,
+      "physics": 3962074,
+      "commands": 134,
+      "model_checkpoint": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t703_projected_local/fit/proj8.pt.gz",
+        "sha256": "19d2b4535d5f7e814e93ce3dfdab788048cf2fc10466c50c1703d29863ffe2b3",
+        "bytes": 1974765,
+        "policy_hash": "317abfbf8cb2aa9ac1eca376405c3adbba5d6f5795968285c38161ff2fcb90e3",
+        "joint_hash": "0c0b45aa025b3ab19c5af20372656894d714e2dffb4c0c5bff815e94646c0de6"
+      }
+    },
+    "B0": {
+      "model": "B0",
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "success": 39,
+      "total": 96,
+      "collision": 40,
+      "timeout": 17,
+      "boundary": 12,
+      "physics": 3839515,
+      "commands": 134,
+      "model_checkpoint": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701_compact_retention/fit/replay_refined108.pt.gz",
+        "sha256": "e8bed4b7547a987539563d64e6916b77e8f3ee81688e6447d0d09ee1d1df364d",
+        "bytes": 1978636,
+        "policy_hash": "7ede24dcda3207d912ca93c2471d067a562606574512dd93ee1f7c14d805f4a6",
+        "joint_hash": "b11bcf32046e6653afb70cd27a0235b050ccd42dce17652c332eba07ef20c90b"
+      }
+    },
+    "constrained": {
+      "model": "constrained",
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "success": 37,
+      "total": 96,
+      "collision": 40,
+      "timeout": 19,
+      "boundary": 12,
+      "physics": 3861131,
+      "commands": 134,
+      "model_checkpoint": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t705_constrained_replay/fit/constrained.pt.gz",
+        "sha256": "b6a380d55df993347841616045abe7a258a5e06bdee0be2cd211f1d580c7a526",
+        "bytes": 1978641,
+        "policy_hash": "07df91dfea42b658bd30134a916220a42427c3e16d721aa0f04ff434af2a9783",
+        "joint_hash": "d5623de5282b24e7869c2db688384889255ac80f9da348170c1fd5c530217f6a"
+      }
+    },
+    "coverage": {
+      "model": "coverage",
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "success": 38,
+      "total": 96,
+      "collision": 40,
+      "timeout": 18,
+      "boundary": 12,
+      "physics": 3849476,
+      "commands": 134,
+      "model_checkpoint": {
+        "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t709_induced_replay/fit/induced.pt.gz",
+        "sha256": "d39457c2e1080219f38d3ee4f72b45e5f3bfb217d336dd03f752e7ae46aa0e4e",
+        "bytes": 1978646,
+        "policy_hash": "f4f97cdad86ceb4912ef20e8e45dd98e7fc5a8e6e1d6a2f241ca5c029993707f",
+        "joint_hash": "f3c0b42bceb28953b8ee30a1ade03be2bf22c98291ab1a9dcd336d25a850a285"
+      }
+    },
+    "whole_nominal": {
+      "model": "whole_nominal",
+      "state": "MISSING",
+      "audit": "MISSING",
+      "success": null,
+      "total": null,
+      "collision": 0,
+      "timeout": 0,
+      "boundary": 0,
+      "physics": null,
+      "commands": null,
+      "model_checkpoint": null
+    },
+    "whole_induced": {
+      "model": "whole_induced",
+      "state": "MISSING",
+      "audit": "MISSING",
+      "success": null,
+      "total": null,
+      "collision": 0,
+      "timeout": 0,
+      "boundary": 0,
+      "physics": null,
+      "commands": null,
+      "model_checkpoint": null
+    }
+  },
+  "historical_known": {
+    "compact": {
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "core407": 396,
+      "old403_losses": 0,
+      "source7_success": 7,
+      "summary": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t703_projected_local/known_proj8/summary.json",
+      "model_sha256": "19d2b4535d5f7e814e93ce3dfdab788048cf2fc10466c50c1703d29863ffe2b3"
+    },
+    "B0": {
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "core407": 387,
+      "old403_losses": 11,
+      "source7_success": 7,
+      "summary": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t701r_native_entry/known_replay_refined108/summary.json",
+      "model_sha256": "e8bed4b7547a987539563d64e6916b77e8f3ee81688e6447d0d09ee1d1df364d"
+    },
+    "constrained": {
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "core407": 386,
+      "old403_losses": 12,
+      "source7_success": 6,
+      "summary": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t705_constrained_replay/known_constrained/summary.json",
+      "model_sha256": "b6a380d55df993347841616045abe7a258a5e06bdee0be2cd211f1d580c7a526"
+    },
+    "coverage": {
+      "state": "COMPLETE",
+      "audit": "PASS",
+      "core407": 382,
+      "old403_losses": 17,
+      "source7_success": 6,
+      "summary": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t709_induced_replay/known_induced/summary.json",
+      "model_sha256": "d39457c2e1080219f38d3ee4f72b45e5f3bfb217d336dd03f752e7ae46aa0e4e"
+    },
+    "whole_nominal": {
+      "state": "MISSING",
+      "audit": "MISSING",
+      "core407": null,
+      "old403_losses": null,
+      "source7_success": null,
+      "summary": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t710_whole_head_replay/known_nominal/summary.json",
+      "model_sha256": null
+    },
+    "whole_induced": {
+      "state": "MISSING",
+      "audit": "MISSING",
+      "core407": null,
+      "old403_losses": null,
+      "source7_success": null,
+      "summary": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t710_whole_head_replay/known_induced/summary.json",
+      "model_sha256": null
+    },
+    "parent": {
+      "old403_losses": 0,
+      "core407": 390,
+      "supp24": 13,
+      "source7_success": 0,
+      "scope": "T694 retained core390 plus audited T69513supp; seven T696 source IDs were outside this403, not a newly run known suite"
+    }
+  },
+  "paired": {
+    "coverage_vs_constrained": {
+      "gained_ids": [
+        "T711_t502_field_sector0_offset2_r04_a292.5",
+        "T711_t502_field_sector7_offset2_r04_a292.5"
+      ],
+      "lost_ids": [
+        "T711_t502_field_sector5_offset1_r04_a22.5"
+      ],
+      "common_success": 36,
+      "common_failure": 57
+    },
+    "compact_vs_parent": {
+      "gained_ids": [],
+      "lost_ids": [],
+      "common_success": 32,
+      "common_failure": 64
+    }
+  },
+  "groups": {
+    "neighborhood_parent_id": {
+      "t502_field_sector0_offset1": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 1,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 1,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 2,
+            "collision": 0,
+            "timeout": 2,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 2,
+            "collision": 0,
+            "timeout": 2,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector0_offset2": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 1,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 1,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 1,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector0_offset3": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector1_offset1": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 1,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector1_offset2": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector1_offset3": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector2_offset1": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector2_offset2": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector2_offset3": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector3_offset1": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector3_offset2": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector3_offset3": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector4_offset1": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector4_offset2": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector4_offset3": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector5_offset1": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 1,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 1,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector5_offset2": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector5_offset3": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector6_offset1": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector6_offset2": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector6_offset3": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector7_offset1": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector7_offset2": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 1,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 1,
+            "collision": 0,
+            "timeout": 3,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 3,
+            "collision": 0,
+            "timeout": 1,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 4,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "t502_field_sector7_offset3": {
+        "planned": 4,
+        "models": {
+          "parent": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 4,
+            "safe": 0,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      }
+    },
+    "prospective_ring": {
+      "fixed_r04_yaw09": {
+        "planned": 96,
+        "models": {
+          "parent": {
+            "executed": 96,
+            "safe": 32,
+            "collision": 40,
+            "timeout": 24,
+            "boundary": 9,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 96,
+            "safe": 32,
+            "collision": 40,
+            "timeout": 24,
+            "boundary": 9,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 96,
+            "safe": 39,
+            "collision": 40,
+            "timeout": 17,
+            "boundary": 12,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 96,
+            "safe": 37,
+            "collision": 40,
+            "timeout": 19,
+            "boundary": 12,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 96,
+            "safe": 38,
+            "collision": 40,
+            "timeout": 18,
+            "boundary": 12,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      }
+    },
+    "evaluation_cluster": {
+      "field_sector0": {
+        "planned": 12,
+        "models": {
+          "parent": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 4,
+            "timeout": 4,
+            "boundary": 1,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 4,
+            "timeout": 4,
+            "boundary": 1,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 12,
+            "safe": 3,
+            "collision": 4,
+            "timeout": 5,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 12,
+            "safe": 2,
+            "collision": 4,
+            "timeout": 6,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 12,
+            "safe": 3,
+            "collision": 4,
+            "timeout": 5,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "field_sector1": {
+        "planned": 12,
+        "models": {
+          "parent": {
+            "executed": 12,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 12,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 12,
+            "safe": 1,
+            "collision": 8,
+            "timeout": 3,
+            "boundary": 3,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 12,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 12,
+            "safe": 0,
+            "collision": 8,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "field_sector2": {
+        "planned": 12,
+        "models": {
+          "parent": {
+            "executed": 12,
+            "safe": 3,
+            "collision": 4,
+            "timeout": 5,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 12,
+            "safe": 3,
+            "collision": 4,
+            "timeout": 5,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 12,
+            "safe": 8,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 12,
+            "safe": 8,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 12,
+            "safe": 8,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "field_sector3": {
+        "planned": 12,
+        "models": {
+          "parent": {
+            "executed": 12,
+            "safe": 8,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 12,
+            "safe": 8,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 12,
+            "safe": 8,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 12,
+            "safe": 8,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 12,
+            "safe": 8,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "field_sector4": {
+        "planned": 12,
+        "models": {
+          "parent": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 4,
+            "timeout": 4,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 4,
+            "timeout": 4,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 4,
+            "timeout": 4,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 4,
+            "timeout": 4,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 4,
+            "timeout": 4,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "field_sector5": {
+        "planned": 12,
+        "models": {
+          "parent": {
+            "executed": 12,
+            "safe": 8,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 12,
+            "safe": 8,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 12,
+            "safe": 7,
+            "collision": 4,
+            "timeout": 1,
+            "boundary": 1,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 12,
+            "safe": 8,
+            "collision": 4,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 12,
+            "safe": 7,
+            "collision": 4,
+            "timeout": 1,
+            "boundary": 1,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "field_sector6": {
+        "planned": 12,
+        "models": {
+          "parent": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 8,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      },
+      "field_sector7": {
+        "planned": 12,
+        "models": {
+          "parent": {
+            "executed": 12,
+            "safe": 1,
+            "collision": 4,
+            "timeout": 7,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "compact": {
+            "executed": 12,
+            "safe": 1,
+            "collision": 4,
+            "timeout": 7,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "B0": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 4,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "constrained": {
+            "executed": 12,
+            "safe": 3,
+            "collision": 4,
+            "timeout": 5,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "coverage": {
+            "executed": 12,
+            "safe": 4,
+            "collision": 4,
+            "timeout": 4,
+            "boundary": 4,
+            "administrative_censor": 0
+          },
+          "whole_nominal": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          },
+          "whole_induced": {
+            "executed": 0,
+            "safe": 0,
+            "collision": 0,
+            "timeout": 0,
+            "boundary": 0,
+            "administrative_censor": 0
+          }
+        }
+      }
+    }
+  },
+  "planned_initials": 96,
+  "valid_initials": 96,
+  "invalid": [],
+  "duplicates": [],
+  "paired_initial_hashes_exact": true,
+  "new_learning": 0,
+  "retained": "T698",
+  "interpretation": "Frozen prospective same-geometry starts; not unseen maps, independent worlds or training-seed replicates",
+  "epoch": 1795445241.6698117
+}
