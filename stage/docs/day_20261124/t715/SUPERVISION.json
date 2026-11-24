@@ -1,6 +1,6 @@
 {
-  "state": "REGISTERED_PENDING_EXACT_SOURCE",
-  "epoch": 1795503483.5347319,
+  "state": "USER_RESUMED_FINALIZATION_ONLY",
+  "epoch": 1795511466.4364448,
   "unit": "stage-t715.service",
   "one_shot_finalizer": "stage-t715-finalizer.service",
   "handoff_relay": "stage-t715-handoff-relay.service",
@@ -14,5 +14,54 @@
   "absolute_learning_stop": 1795510800.0,
   "absolute_native_stop": 1795522500.0,
   "absolute_all_stop": 1795525200.0,
-  "no_automatic_next_science": true
+  "no_automatic_next_science": true,
+  "actual_status": {
+    "state": "ACTIVE",
+    "child_pid": 958122,
+    "pid": 958122,
+    "driver_pid": 940372,
+    "child": "test_interval",
+    "action": "main",
+    "epoch": 1795507383.0634694,
+    "physics": 1440878,
+    "commands": 49,
+    "completed": 35
+  },
+  "input_count": 6179,
+  "input_sha_mismatches": [],
+  "fit_call_counts": {
+    "live_optimizer": 39,
+    "live_gradient": 80,
+    "shadow_optimizer": 39,
+    "shadow_gradient": 80
+  },
+  "helper_pid": 940392,
+  "source_remote_commit": "68e06fa18ac19c1471aafc248cb472024ab0942e",
+  "healthy": null,
+  "independent_audits": {
+    "B0": "PASS",
+    "raw": "PASS",
+    "interval": "PASS"
+  },
+  "inputs_sha_mismatches": [],
+  "completed_native_blocks": [
+    "test_raw",
+    "new_interval",
+    "acquisition_interval",
+    "known_interval",
+    "exposed_interval",
+    "test_B0"
+  ],
+  "post_T715_review": "stage/docs/day_20261124/NEXT_AFTER_T715_PRIMARY_REVIEW.md",
+  "post_T715_candidate_not_registered": true,
+  "known_learned_teacher": "single compact14of18 plus single replay50coversother4; union notsingle18of18",
+  "phase": "LAST_FIXED_LAYOUT_NATIVE_BLOCK",
+  "new_science_preparation_started": false,
+  "user_resume_required": false,
+  "all_registered_cgroups_frozen": true,
+  "no_next_science": true,
+  "original_deadlines_not_extended": true,
+  "expired_final_native_block_not_resumed": true,
+  "new_learning_closed": true,
+  "no_next_science_until_all_finalizers_exit": true
 }

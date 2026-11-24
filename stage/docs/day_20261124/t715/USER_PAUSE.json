@@ -1,0 +1,85 @@
+{
+  "state": "USER_PAUSED_ALL_REGISTERED_T715_CGROUPS_FROZEN",
+  "epoch": 1795507649.8564324,
+  "user_instruction": "先暂停一下",
+  "original_status": {
+    "state": "ACTIVE",
+    "child_pid": 958122,
+    "pid": 958122,
+    "driver_pid": 940372,
+    "child": "test_interval",
+    "action": "main",
+    "epoch": 1795507635.1696267,
+    "physics": 2998778,
+    "commands": 100,
+    "completed": 86
+  },
+  "units": [
+    {
+      "unit": "stage-t715.service",
+      "properties": {
+        "MainPID": "940370",
+        "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/stage-t715.service",
+        "Id": "stage-t715.service",
+        "ActiveState": "active",
+        "FreezerState": "frozen"
+      },
+      "cgroup_events": {
+        "populated": "1",
+        "frozen": "1"
+      },
+      "pids": [
+        940370,
+        940372,
+        940392,
+        958122,
+        958148,
+        958149,
+        958150,
+        958151,
+        958154,
+        958156,
+        958162,
+        958164
+      ]
+    },
+    {
+      "unit": "stage-t715-finalizer.service",
+      "properties": {
+        "MainPID": "940424",
+        "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/stage-t715-finalizer.service",
+        "Id": "stage-t715-finalizer.service",
+        "ActiveState": "active",
+        "FreezerState": "frozen"
+      },
+      "cgroup_events": {
+        "populated": "1",
+        "frozen": "1"
+      },
+      "pids": [
+        940424
+      ]
+    },
+    {
+      "unit": "stage-t715-handoff-relay.service",
+      "properties": {
+        "MainPID": "940428",
+        "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/stage-t715-handoff-relay.service",
+        "Id": "stage-t715-handoff-relay.service",
+        "ActiveState": "active",
+        "FreezerState": "frozen"
+      },
+      "cgroup_events": {
+        "populated": "1",
+        "frozen": "1"
+      },
+      "pids": [
+        940428
+      ]
+    }
+  ],
+  "original_deadlines_not_extended": true,
+  "raw_and_models_preserved": true,
+  "no_next_science": true,
+  "unfreeze_requires_user_resume": true
+}
