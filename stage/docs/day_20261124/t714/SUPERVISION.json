@@ -1,0 +1,19 @@
+{
+  "state": "REGISTERED_PENDING_EXACT_SOURCE",
+  "epoch": 1795495992.6961412,
+  "unit": "stage-t714.service",
+  "one_shot_finalizer": "stage-t714-finalizer.service",
+  "quiet_while_healthy": true,
+  "notify_only": [
+    "complete_audited_result",
+    "real_failure",
+    "stuck",
+    "deadline_or_budget_risk"
+  ],
+  "absolute_learning_stop": 1795510800.0,
+  "absolute_native_stop": 1795522500.0,
+  "absolute_all_stop": 1795525200.0,
+  "no_periodic_automation": true,
+  "no_automatic_next_science": true,
+  "scientific_inputs_locked": true
+}
