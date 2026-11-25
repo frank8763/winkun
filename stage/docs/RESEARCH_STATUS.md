@@ -1,3 +1,7 @@
+2026-11-25 用户要求下一步开始，T722固定B0与T721最终MC小头各半参数插值已REGISTERED未launch待精确source。0学习/0优化器/0扩容，完整old403+174曝光+18恢复+24现在曝光起点，共619fresh+73exact=692science/748含管理cmd；独立构造和真实worker/helper/完整payload/corruptred预检PASS，原preflight自守卫拒绝0native/optimizer保留。CPU8..15七worker，今日native12:30/all13:00与更早action从严。所有原件保留、T698保持，本机离线driver/finalizer，无外部heartbeat，见day_20261125/t722。
+
+2026-11-25 T721通宵GAE.95与完整折扣MC对照结束：COMPLETE，完整面板=True；结果见overnight_20261124_25/t721/FINDINGS及PAIRED_RESULTS。单paired训练seed、20198头/冻结GRU，T698保留，无自动新实验。
+
 2026-11-24 用户新授权T721通宵GAE.95与MC1.0同容量闭环对照，已REGISTERED未launch待源码精确同步；原超2MiB与字段引用顺序准备拒绝保留，SHA锁定study_data引用后登记成功。每臂12freshblocks/48Actor与Value步，完整old403/exposed174/recovery18/前瞻24，2276science/2738含管理命令/88,524,752physics最大；原GRU冻结20198头、两臂共同MC Value targets，单pairedseed非充分训练保证，T698保持。真实worker0物理、两臂独立Adam与完整carry、CPU8..15实际线程、序列化含Adam状态、完整schema最高熵ZIP预检PASS。旧affinity映射准备拒绝及最小恢复保留，2各角色预检更新不重跑。新学习11月25北京07:30/native08:15/all09:00，更早action从严。见overnight_20261124_25/t721。
 
 2026-11-24 T720冻结T719完整曝光面板验收结束：COMPLETE，完整=True，174起点安全91vsB092；完整逐ID gains/losses/collisions见day_20261124/t720/PAIRED_RESULTS。18已审原起点与重叠exact复用，无新学习，旧403/core407仍未测，不撤销T719能力门失败，T698保持。

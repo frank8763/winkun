@@ -1,0 +1,128 @@
+{
+  "state": "ACTIVE_LOCAL_AUTONOMOUS_OFFLINE_CAPABLE",
+  "status": {
+    "state": "ACTIVE",
+    "child_pid": 1048666,
+    "pid": 1048666,
+    "driver_pid": 1038201,
+    "child": "gae95_train1",
+    "action": "main",
+    "epoch": 1795526356.688811,
+    "physics": 3813766,
+    "commands": 171,
+    "completed": 115
+  },
+  "completed_training_blocks": {
+    "gae95": 7,
+    "mc1": 4
+  },
+  "planned_training_blocks_each": 12,
+  "completed_independent_audits": {
+    "gae95_train0": "PASS",
+    "mc1_train0": "PASS"
+  },
+  "locked_inputs": 6535,
+  "input_sha_mismatches": 0,
+  "resources": {
+    "state": "PASS",
+    "stage_cpus": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "stage_physical_cores": [
+      [
+        "0",
+        "10"
+      ],
+      [
+        "0",
+        "11"
+      ],
+      [
+        "0",
+        "12"
+      ],
+      [
+        "0",
+        "13"
+      ],
+      [
+        "0",
+        "14"
+      ],
+      [
+        "0",
+        "15"
+      ],
+      [
+        "0",
+        "8"
+      ],
+      [
+        "0",
+        "9"
+      ]
+    ],
+    "phase_process_metadata_only": [
+      {
+        "pid": 1037884,
+        "allowed_cpus": [
+          5
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 1037888,
+        "allowed_cpus": [
+          5
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 1037893,
+        "allowed_cpus": [
+          2
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 1037896,
+        "allowed_cpus": [
+          2
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 1037897,
+        "allowed_cpus": [
+          2
+        ],
+        "physical_overlap": []
+      },
+      {
+        "pid": 1037898,
+        "allowed_cpus": [
+          2
+        ],
+        "physical_overlap": []
+      }
+    ],
+    "CPUQuota": "800%",
+    "Nice": 19,
+    "CPUWeight": 10,
+    "MemoryMax": 8589934592,
+    "MemorySwapMax": 0,
+    "GPU": "cuda0geometry_only_cpu_exact_deployment"
+  },
+  "external_heartbeat_deleted": true,
+  "offline_finalizer_active": true,
+  "no_scientific_changes": true,
+  "training_samples_not_final_ability": true,
+  "epoch": 1795526358.9568202
+}

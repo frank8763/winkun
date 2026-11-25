@@ -1,8 +1,8 @@
 {
-  "physics": 569337629,
-  "commands": 24487,
-  "science_seconds": 108543.53269175912,
-  "audit_seconds": 8672.75069141388,
+  "physics": 633090496,
+  "commands": 27225,
+  "science_seconds": 118316.47054247285,
+  "audit_seconds": 9504.788161039352,
   "transport_seconds": 17992.76906633377,
   "Actor_live": 4089,
   "Actor_shadow": 4089,
@@ -1520,13 +1520,25 @@
     },
     {
       "id": "T721",
-      "state": "RESERVED",
+      "state": "COMPLETE",
       "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t721_credit_assignment",
       "max_physics": 88524752,
       "max_commands": 2738,
       "new_independent_Actor_Adam_each": 98,
       "new_independent_Value_Adam_each": 98,
-      "preparation_science_seconds": 3600
+      "preparation_science_seconds": 3600,
+      "accounted": {
+        "physics": 63752867,
+        "commands": 2738,
+        "science_seconds": 9472.93785071373,
+        "audit_seconds": 832.037469625473,
+        "Actor_Adam_live": 98,
+        "Actor_Adam_shadow": 98,
+        "Actor_Adam_independent": 98,
+        "Value_Adam_live": 98,
+        "Value_Adam_shadow": 98,
+        "Value_Adam_independent": 98
+      }
     }
   ],
   "preparations": [
@@ -1600,6 +1612,17 @@
       "new_optimizer": 0,
       "all_preparation_attempts_in_one_bound": true,
       "old_failures_preserved": true
+    }
+  ],
+  "new_wednesday_experiments": [
+    {
+      "id": "T722",
+      "state": "RESERVED",
+      "out": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t722_mc_interpolation",
+      "max_physics": 23957772,
+      "max_commands": 748,
+      "new_optimizer": 0,
+      "preparation_science_seconds": 300
     }
   ]
 }

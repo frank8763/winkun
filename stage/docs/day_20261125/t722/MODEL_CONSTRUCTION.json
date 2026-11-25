@@ -1,0 +1,31 @@
+{
+  "state": "PASS",
+  "baseline": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t717_onpolicy_recovery/initial_sigma.pt.gz",
+    "sha256": "a1aade3ed7ea5530073fa324cecf84436ae821d26512d32d18e1a659e328c852",
+    "bytes": 1978622,
+    "policy_hash": "c5168f09a3f62ec07b08e7d4166a889d66765472434a7689f9f779602886adff",
+    "joint_hash": "b11bcf32046e6653afb70cd27a0235b050ccd42dce17652c332eba07ef20c90b"
+  },
+  "MC": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t721_credit_assignment/mc1_train2/model_11.pt.gz",
+    "sha256": "46bd913724445d873c28a9b3dff5d3776a8e696951dbb91c20a32ae8b4f0d4e9",
+    "bytes": 1978583,
+    "policy_hash": "799d77175d6234a2b66dfbd557d26c3e383f6b11c89432fd59e2ce78597835a2",
+    "joint_hash": "ce2bb70af0a01061c77b5828532595436171cb2f01d21845305ec1447f56ed4e"
+  },
+  "model": {
+    "path": "/home/linghu/Documents/Codex/2026-10-30/new-chat/winkun/stage/runs/t722_mc_interpolation/midpoint.pt.gz",
+    "sha256": "f02ab18f28fbb4516c3853b51c39facbd64286644b995c370e4ac1dca09eeab1",
+    "bytes": 1978363,
+    "policy_hash": "ee8912975aeb9991ced8372568cb3dfc1828e44b67195e414a50ef1c87cf838c",
+    "joint_hash": "15502310375a30f9bb59c8c61819c620b8c9cefe47ebb692649a95a9261346b3"
+  },
+  "alpha": 0.5,
+  "formula": "B0+0.5*(MC-B0) for replay_head only",
+  "live_shadow_independent_exact": true,
+  "unchanged_all_body_tensors": true,
+  "optimizer": 0,
+  "native": 0,
+  "added_parameters": 0
+}
